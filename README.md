@@ -22,7 +22,7 @@ If you run this with the MacOS built-in Bash shell it will throw errors about th
 | -- | -- |
 | pull-data.sh | Pulls down the Datasheets HTML and HCL JSON data from cisco.com |
 | process-data.sh | Converts all JSON files to MarkDown format |
-| query-data.sh | Queries the JSON files and provides firmware information for a specific blade type |
+| query-data.sh | Queries the JSON files and provides firmware information for a specific blade type. Still WIP  - no menu yet, you will need to edit vars inside the file to make it run on different blade models. |
 
 
 ## Directories
