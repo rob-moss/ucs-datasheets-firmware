@@ -1,0 +1,4727 @@
+[
+    {
+        "rowindex": 1,
+        "mainrelease": "6.0(1)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "September 02, 2025"
+    },
+    {
+        "rowindex": 1,
+        "mainrelease": "6.0(1)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6600, 6500, and 6400 Series FI: 6.0(1.250198)\nCisco UCS X-Series Direct (UCS 9108 100G) FI: 6.0(1.250198)"
+    },
+    {
+        "rowindex": 1,
+        "mainrelease": "6.0(1)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M8 (X215c, X210c): 6.0(1.250120)\nX-Series M7 (X410c, X210c): 6.0(1.250120)\nX-Series M6 (X210c): 6.0(1.250120)\n\nC-Series M8 (C245): 6.0(1.250130)\nC-Series M8 (C240, C225, C220): 6.0(1.250127)\nC-Series M7 (C240, C220): 6.0(1.250127)\nC-Series M6 (C245, C240, C225, C220): 6.0(1.250127)\n\nB-Series M6 (B200): 6.0(1.250126)\nB-Series M5 (B200, B480): 6.0(1.250126)\n"
+    },
+    {
+        "rowindex": 1,
+        "mainrelease": "6.0(1)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "September 02, 2025"
+    },
+    {
+        "rowindex": 1,
+        "mainrelease": "6.0(1)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "6.0(1.250130)\n\n6.0(1.250127)"
+    },
+    {
+        "rowindex": 1,
+        "mainrelease": "6.0(1)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M8 (C245): 6.0(1.250130)\n\nC-Series M8 (C220, C225, C240): 6.0(1.250127)\nC-Series M7 (C220, C240): 6.0(1.250127)\nC-Series M6 (C220, C240, C225, C245): 6.0(1.250127)"
+    },
+    {
+        "rowindex": 1,
+        "mainrelease": "6.0(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "September 02, 2025"
+    },
+    {
+        "rowindex": 1,
+        "mainrelease": "6.0(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "6.0(1b)"
+    },
+    {
+        "rowindex": 1,
+        "mainrelease": "6.0(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M8 (X210c): 6.0(1.250122)\nX-Series M8 (X215c): 6.0(1.250120)\nX-Series M7 (X210c, X410c): 6.0(1.250120)\nX-Series M6 (X210c): 6.0(1.250117)\n\nC-Series M8 (C245, C225):6.0(1.250130)\nC-Series M7 (C240, C220): 6.0(1.250129)\nC-Series M6 (C245, C240, C225, C220): 6.0(1.250127)\n\nB-Series M6 (B200): 6.0(1.250125)\nB-Series M5 (B200, B480): 6.0(1.250126)"
+    },
+    {
+        "rowindex": 2,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "August 25, 2025"
+    },
+    {
+        "rowindex": 2,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 2,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M8 (C245): 4.3(6.250060)"
+    },
+    {
+        "rowindex": 2,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "August 25, 2025"
+    },
+    {
+        "rowindex": 2,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(6.250060)"
+    },
+    {
+        "rowindex": 2,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M8 (C245): 4.3(6.250060)"
+    },
+    {
+        "rowindex": 2,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 2,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 2,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 3,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "July 07, 2025"
+    },
+    {
+        "rowindex": 3,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6500 and 6400 Series FI: 4.3(6.250084)\nCisco UCS X-Series Direct (UCS 9108 100G) FI: 4.3(6.250135)"
+    },
+    {
+        "rowindex": 3,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M8 (X210c): 5.4(0.250052)\nX-Series M8 (X215c): 5.4(0.250048)\nX-Series M7 (X210c, X410c): 5.4(0.250048)\nX-Series M6 (X210c): 5.4(0.250047)\n\nC-Series M8 (C245, C240, C225, C220): 4.3(6.250053)\nC-Series M7 (C240, C220): 4.3(6.250053)\nC-Series M6 (C245, C240, C225, C220): 4.3(6.250053)\n\nB-Series M6 (B200): 5.4(0.250048)\nB-Series M5 (B200, B480): 5.4(0.250047)"
+    },
+    {
+        "rowindex": 3,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "July 07, 2025"
+    },
+    {
+        "rowindex": 3,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(6.250053)"
+    },
+    {
+        "rowindex": 3,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M8 (C220, C225, C240, C245): 4.3(6.250053)\nC-Series M7 (C220, C240): 4.3(6.250053)\nC-Series M6 (C220, C240, C225, C245): 4.3(6.250053)\nS-Series M5 (S3260 ): 4.3(6.250053)"
+    },
+    {
+        "rowindex": 3,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "July 07, 2025"
+    },
+    {
+        "rowindex": 3,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.3(6c)"
+    },
+    {
+        "rowindex": 3,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M8 (X210c): 5.4(0.250052)\nX-Series M8 (X215c): 5.4(0.250048)\nX-Series M7 (X210c, X410c): 5.4(0.250048)\nX-Series M6 (X210c): 5.4(0.250047)\n\nC-Series M8 (C245, C225): 4.3(6.250053)\nC-Series M7 (C240, C220): 4.3(6.250053)\nC-Series M6 (C245, C240, C225, C220): 4.3(6.250053)\nC-Series M5 (C480, C220): 4.3(2.250037)\nC-Series M5 (C240): 4.3(2.250037)\nC-Series M5 (C125): 4.3(2.250022)\nS-Series M5 (S3260): 4.3(6.250039)\n\nB-Series M6 (B200): 5.4(0.250048)\nB-Series M5 (B200, B480): 5.4(0.250047)\n"
+    },
+    {
+        "rowindex": 4,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "May 22, 2025"
+    },
+    {
+        "rowindex": 4,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 4,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M8 (X210c): 5.4(0.250044)\nX-Series M8 (X215c): 5.4(0.250040)\nX-Series M7 (X210c, X410c): 5.4(0.250040)\n\nC-Series M8 (C245, C225, C240, C220): 4.3(6.250044)\nC-Series M7 (C220, C240): 4.3(6.250044)"
+    },
+    {
+        "rowindex": 4,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "May 22, 2025"
+    },
+    {
+        "rowindex": 4,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(6.250044)"
+    },
+    {
+        "rowindex": 4,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M8 (C245, C225, C240, C220): 4.3(6.250044)\nC-Series M7 (C220, C240): 4.3(6.250044)"
+    },
+    {
+        "rowindex": 4,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "May 22, 2025"
+    },
+    {
+        "rowindex": 4,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.3(6b)"
+    },
+    {
+        "rowindex": 4,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M8 (X210c): 5.4(0.250044)\nX-Series M8 (X215c): 5.4(0.250042)\nX-Series M7 (X210c, X410c): 5.4(0.250040)\nX-Series M6 (X210c): 5.4(0.250033)\n\nC-Series M8 (C240, C220, C245, C225): 4.3(6.250044)\nC-Series M7 (C240, C220): 4.3(6.250044)\nC-Series M6 (C245, C240, C225, C220): 4.3(6.250040)\nC-Series M5 (C480, C220): 4.3(2.250016)\nC-Series M5 (C240): 4.3(2.250021)\nC-Series M5 (C125): 4.3(2.250022)\nS-Series M5 (S3260): 4.3(6.250039)\n\nB-Series M6 (B200): 5.4(0.250034)\nB-Series M5 (B200, B480): 5.4(0.250034)\n"
+    },
+    {
+        "rowindex": 5,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "April 30, 2025"
+    },
+    {
+        "rowindex": 5,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6500 and 6400 Series FI: 4.3(6.250048)\nCisco UCS X-Series Direct (UCS 9108 100G) FI: 4.3(6.250094)"
+    },
+    {
+        "rowindex": 5,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M8 (X210c): 5.4(0.250037)\nX-Series M8 (X215c): 5.4(0.250035)\nX-Series M7 (X210c, X410c): 5.4(0.250035)\nX-Series M6 (X210c): 5.4(0.250033)\n\nC-Series M8 (C240, C220): 4.3(6.250039)\nC-Series M8 (C245, C225): 4.3(6.250040)\nC-Series M7 (C220, C240): 4.3(6.250040)\nC-Series M6 (C245, C240, C225, C220): 4.3(6.250040)\n\nB-Series M6 (B200): 5.4(0.250034)\nB-Series M5 (B200, B480): 5.4(0.250034)"
+    },
+    {
+        "rowindex": 5,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "April 30, 2025"
+    },
+    {
+        "rowindex": 5,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(6.250039)\n4.3(6.250040)"
+    },
+    {
+        "rowindex": 5,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M8 (C220, C240): 4.3(6.250039)\nC-Series M8 (C225, C245): 4.3(6.250040)\nC-Series M7 (C220, C240): 4.3(6.250040)\nC-Series M6 (C220, C240, C225, C245): 4.3(6.250040)\nS-Series M5 (S3260): 4.3(6.250039)"
+    },
+    {
+        "rowindex": 5,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "April 30, 2025"
+    },
+    {
+        "rowindex": 5,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.3(6a)"
+    },
+    {
+        "rowindex": 5,
+        "mainrelease": "4.3(6)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M8 (X210c): 5.4(0.250037)\nX-Series M8 (X215c): 5.4(0.250035)\nX-Series M7 (X210c, X410c): 5.4(0.250035)\nX-Series M6 (X210c): 5.4(0.250033)\n\nC-Series M8 (C240, C220): 4.3(6.250039)\nC-Series M8 (C245, C225): 4.3(6.250040)\nC-Series M7 (C240, C220): 4.3(6.250040)\nC-Series M6 (C245, C240, C225, C220): 4.3(6.250040)\nC-Series M5 (C480, C220): 4.3(2.250016)\nC-Series M5 (C240): 4.3(2.250021)\nC-Series M5 (C125): 4.3(2.250022)\nS-Series M5 (S3260): 4.3(6.250039)\n\nB-Series M6 (B200): 5.4(0.250034)\nB-Series M5 (B200, B480): 5.4(0.250034)"
+    },
+    {
+        "rowindex": 6,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "September 02, 2025"
+    },
+    {
+        "rowindex": 6,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 6,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M8 (C225): 4.3(5.250045)"
+    },
+    {
+        "rowindex": 6,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "August 29, 2025"
+    },
+    {
+        "rowindex": 6,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(5.250045)"
+    },
+    {
+        "rowindex": 6,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M8 (C225): 4.3(5.250045)"
+    },
+    {
+        "rowindex": 6,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 6,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 6,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 7,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "July 07, 2025"
+    },
+    {
+        "rowindex": 7,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 7,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M8 (C245, C225): 4.3(5.250043)"
+    },
+    {
+        "rowindex": 7,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "July 04, 2025"
+    },
+    {
+        "rowindex": 7,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(5.250043)"
+    },
+    {
+        "rowindex": 7,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M8 (C245, C225): 4.3(5.250043)"
+    },
+    {
+        "rowindex": 7,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 7,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 7,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 8,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "June 05, 2025"
+    },
+    {
+        "rowindex": 8,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6500 and 6400 Series FI: 4.3(5.250012)\nCisco UCS X-Series Direct (UCS 9108 100G) FI: 4.3(5.250034)"
+    },
+    {
+        "rowindex": 8,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 8,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 8,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 8,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 8,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "June 05, 2025"
+    },
+    {
+        "rowindex": 8,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.3(5e)"
+    },
+    {
+        "rowindex": 8,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M8 (X215c): 5.3(0.250021)\nX-Series M7 (X410c, X210c): 5.3(0.250021)\nX-Series M6 (X210c): 5.4(0.250033)\n\nC-Series M8 (C225, C245): 4.3(2.250030)\nC-Series M7 (C220, C240): 4.3(5.250030)\nC-Series M6 (C220, C240, C225, C245): 4.3(5.250030)\nC-Series M5 (C220, C480): 4.3(2.250016)\nC-Series M5 (C240): 4.3(2.250021)\nC-Series M5 (C125): 4.3(2.250016)\nS-Series M5 (S3260): 4.3(5.250030)\n\nB-Series M6 (B200): 5.3(0.250021)\nB-Series M5 (B200, B480): 5.3(0.250021)\n"
+    },
+    {
+        "rowindex": 9,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "May 19, 2025"
+    },
+    {
+        "rowindex": 9,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 9,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M8 (C245, C225): 4.3(5.250033)\nC-Series M7 (C240,C220): 4.3(5.250033)\nC-Series M6 (C245, C240, C225,C220): 4.3(5.250033)"
+    },
+    {
+        "rowindex": 9,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "May 19, 2025"
+    },
+    {
+        "rowindex": 9,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(5.250033)"
+    },
+    {
+        "rowindex": 9,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M8 (C245, C225): 4.3(5.250033)\nC-Series M7 (C240,C220): 4.3(5.250033)\nC-Series M6 (C245, C240, C225,C220): 4.3(5.250033)\nS-Series M5 (S3260): 4.3(5.250033)"
+    },
+    {
+        "rowindex": 9,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 9,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 9,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 10,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "April 10, 2025"
+    },
+    {
+        "rowindex": 10,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS X-Series Direct (UCS 9108 100G) FI: 4.3(5.250033)"
+    },
+    {
+        "rowindex": 10,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 10,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 10,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 10,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 10,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 10,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 10,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 11,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "March 25, 2025"
+    },
+    {
+        "rowindex": 11,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6500 and 6400 Series FI: 4.3(5.250011)"
+    },
+    {
+        "rowindex": 11,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M8 (C245, C225): 4.3(5.250030)\nC-Series M7 (C240,C220): 4.3(5.250030)\nC-Series M6 (C245, C240, C225, C220): 4.3(5.250030)"
+    },
+    {
+        "rowindex": 11,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "March 25, 2025"
+    },
+    {
+        "rowindex": 11,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(5.250030)"
+    },
+    {
+        "rowindex": 11,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M8 (C245, C225): 4.3(5.250030)\nC-Series M7 (C240, C220): 4.3(5.250030)\nC-Series M6 (C220, C240, C225, C245): 4.3(5.250030)\nS-Series M5 (S3260): 4.3(5.250030)"
+    },
+    {
+        "rowindex": 11,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "March 25, 2025"
+    },
+    {
+        "rowindex": 11,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.3(5d)"
+    },
+    {
+        "rowindex": 11,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M8 (X215c): 5.3(0.250021)\nX-Series M7 (X410c, X210c): 5.3(0.250021)\nX-Series M6 (X210c): 5.3(0.250021)\n\nC-Series M8 (C225, C245): 4.3(2.250016)\nC-Series M7 (C220, C240): 4.3(2.250016)\nC-Series M6 (C220, C240, C225, C245): 4.3(2.250016)\nC-Series M5 (C220, C240, C480): 4.3(2.250016)\nC-Series M5 (C125): 4.3(2.250016)\nS-Series M5 (S3260): 4.3(5.250030)\n\nB-Series M6 (B200): 5.3(0.250021)\nB-Series M5 (B200, B480): 5.3(0.250021)\n"
+    },
+    {
+        "rowindex": 12,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "March 05, 2025"
+    },
+    {
+        "rowindex": 12,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 12,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M8 (X215c): 5.3(0.250021)\nX-Series M7 (X210c, X410c): 5.3(0.250021)\nX-Series M6 (X210c): 5.3(0.250021)\n\nB-Series M6 (B200): 5.3(0.250021)\nB-Series M5 (B200, B480): 5.3(0.250021)"
+    },
+    {
+        "rowindex": 12,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 12,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 12,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 12,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 12,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 12,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 13,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "February 11, 2025"
+    },
+    {
+        "rowindex": 13,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6500 and 6400 Series FI: 4.3(5.250004)"
+    },
+    {
+        "rowindex": 13,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 13,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 13,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 13,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 13,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 13,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 13,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 14,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "January 20, 2025"
+    },
+    {
+        "rowindex": 14,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6500 and 6400 Series FI: <strike>4.3(5.240040)</strike> (Deprecated)\nCisco UCS X-Series Direct (UCS 9108 100G) FI: 4.3(5.240191)"
+    },
+    {
+        "rowindex": 14,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M8 (X215c): 5.3(0.250001)\nX-Series M7 (X210c, X410c): 5.3(0.250001)\nX-Series M6 (X210c): 5.3(0.250001)\n\nC-Series M8 (C245, C225): 4.3(5.250001) \nC-Series M7 (C240,C220): 4.3(5.250001) \nC-Series M6 (C245, C240, C225,C220): 4.3(5.250001)\n\nB-Series M6 (B200): 5.3(0.250001)\nB-Series M5 (B200, B480): 5.3(0.250001)"
+    },
+    {
+        "rowindex": 14,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "January 16, 2025"
+    },
+    {
+        "rowindex": 14,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(5.250001)"
+    },
+    {
+        "rowindex": 14,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M8 (C245, C225): 4.3(5.250001)\nC-Series M7 (C240, C220): 4.3(5.250001)\nC-Series M6 (C220, C240, C225, C245): 4.3(5.250001)"
+    },
+    {
+        "rowindex": 14,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "January 16, 2025"
+    },
+    {
+        "rowindex": 14,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.3(5c)"
+    },
+    {
+        "rowindex": 14,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M8 (X215c): 4.3(5c)\nX-Series M7 (X410c, X210c): 4.3(5c)\nX-Series M6 (X210c): 5.3(0.250001)\n\nC-Series M8 (C225, C245): 4.3(5.250001)\nC-Series M7 (C220, C240): 4.3(5.250001)\nC-Series M6 (C220, C240, C225, C245): 4.3(5.250001)\nC-Series M5 (C220, C240, C480): 4.3(5.250001)\nC-Series M5 (C125): 4.3(2.240107)\nS-Series M5 (S3260): 4.3(5.250001)\n\nB-Series M6 (B200): 4.3(5c)\nB-Series M5 (B200, B480): 4.3(5c)\n"
+    },
+    {
+        "rowindex": 15,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "October 22, 2024"
+    },
+    {
+        "rowindex": 15,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6500 and 6400 Series FI: 4.3(5.240032)\nCisco UCS X-Series Direct (UCS 9108 100G) FI: 4.3(5.240162)"
+    },
+    {
+        "rowindex": 15,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M8 (X215c): 5.3(0.240016)\nX-Series M7 (X210c, X410c): 5.3(0.240016)\nX-Series M6 (X210c): 5.3(0.240016)\n\nC-Series M8 (C245, C225): 4.3(5.240021)\nC-Series M7 (C240,C220): 4.3(5.240021) \nC-Series M6 (C245, C240, C225,C220): 4.3(5.240021)\n\nB-Series M6 (B200): 5.3(0.240014)\nB-Series M5 (B200, B480): 5.3(0.240014)"
+    },
+    {
+        "rowindex": 15,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "October 22, 2024 "
+    },
+    {
+        "rowindex": 15,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(5.240021)"
+    },
+    {
+        "rowindex": 15,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M8 (C245, C225): 4.3(5.240021)\nC-Series M7 (C240,C220): 4.3(5.240021)\nC-Series M6 (C245, C240, C225,C220): 4.3(5.240021)"
+    },
+    {
+        "rowindex": 15,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "October 22, 2024"
+    },
+    {
+        "rowindex": 15,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.3(5a)"
+    },
+    {
+        "rowindex": 15,
+        "mainrelease": "4.3(5)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M8 (X215c): 4.3(5a)\nX-Series M7 (X410c, X210c): 4.3(5a)\nX-Series M6 (X210c): 5.3(0.240016)\n\nC-Series M8 (C225, C245): 4.3(5.240021)\nC-Series M7 (C220, C240): 4.3(5.240021)\nC-Series M6 (C220, C240, C225, C245): 4.3(5.240021)\nC-Series M5 (C220, C240, C480): 4.3(2.240090)\nC-Series M5 (C125): 4.3(2.240090)\nS-Series M5 (S3260): 4.3(5.240021)\n\nB-Series M6 (B200): 4.3(5a)\nB-Series M5 (B200, B480): 4.3(5a)\n"
+    },
+    {
+        "rowindex": 16,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 16,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 16,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 16,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "August 7, 2025"
+    },
+    {
+        "rowindex": 16,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(4.252001)"
+    },
+    {
+        "rowindex": 16,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C240, C220): 4.3(4.252001)"
+    },
+    {
+        "rowindex": 16,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 16,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 16,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 17,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "December 16, 2024"
+    },
+    {
+        "rowindex": 17,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 17,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M7 (X410c,  X210c): 5.2(2.240080)\nX-Series M6 (X210c): 5.2(2.240078)\n\nC-Series M7 (C240, C210): 4.3(4.242066)\nC-Series M6 (C245, C225, C240, C220): 4.3(4.242066)\n\nB-Series M6 (B200): 5.2(2.240080)\nB-Series M5 (B200, B480): 5.2(2.240080)"
+    },
+    {
+        "rowindex": 17,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "December 16, 2024"
+    },
+    {
+        "rowindex": 17,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(4.242066)"
+    },
+    {
+        "rowindex": 17,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M7 (C220, C240): 4.3(4.242066)\nC-Series M6 (C220, C240, C225, C245): 4.3(4.242066)\nS-Series M5 (S3260): 4.3(4.242066)"
+    },
+    {
+        "rowindex": 17,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "December 16, 2024"
+    },
+    {
+        "rowindex": 17,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.3(4f)"
+    },
+    {
+        "rowindex": 17,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M8 (X215c): 5.2(2.240074)\nX-Series M7 (X410c, X210c): 5.2(2.240074)\nX-Series M6 (X210c): 5.2(2.240073)\n\nC-Series M8 (C245): 4.3(4.241014)\nC-Series M7 (C220, C240): 4.3(2.240090)\nC-Series M6 (C220, C240, C225, C245): 4.3(2.240090)\nC-Series M5 (C220, C240, C480): 4.3(2.240090)\nC-Series M5 (C125): 4.3(2.240090)\nS-Series M5 (S3260): 4.3(2.240090)\n\nB-Series M6 (B200): 5.2(2.240073)\nB-Series M5 (B200, B480): 5.2(2.240073)\n"
+    },
+    {
+        "rowindex": 18,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 18,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 18,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 18,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 18,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 18,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 18,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "October 28, 2024"
+    },
+    {
+        "rowindex": 18,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.3(4e)"
+    },
+    {
+        "rowindex": 18,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M7 (X410c, X210c): 5.2(2.240074)\nX-Series M6 (X210c): 5.2(2.240073)\n\nC-Series M8 (C245): 4.3(4.241014)\nC-Series M7 (C220, C240): 4.3(4.241063)\nC-Series M6 (C220, C240, C225, C245): 4.3(4.241063)\nC-Series M5 (C220, C240, C480): 4.3(2.240090)\nC-Series M5 (C125): 4.3(2.240090)\nS-Series M5 (S3260): 4.3(4.241063)\n\nB-Series M6 (B200): 5.2(2.240073)\nB-Series M5 (B200, B480): 5.2(2.240073)\n"
+    },
+    {
+        "rowindex": 19,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 19,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 19,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 19,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 19,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 19,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 19,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "October 7, 2024"
+    },
+    {
+        "rowindex": 19,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "<strike>4.3(4d)</strike> (Deprecated)"
+    },
+    {
+        "rowindex": 19,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M7 (X410c, X210c): 5.2(2.240074)\nX-Series M6 (X210c): 5.2(2.240073)\n\nC-Series M8 (C245): 4.3(4.241014)\nC-Series M7 (C220, C240): 4.3(4.240152)\nC-Series M6 (C220, C240, C225, C245): 4.3(4.240152)\nC-Series M5 (C220, C240, C480): 4.3(2.240053)\nC-Series M5 (C125): 4.3(2.240090)\nS-Series M5 (S3260): 4.3(4.240152)\n\nB-Series M6 (B200): 5.2(2.240073)\nB-Series M5 (B200, B480): 5.2(2.240073)\n"
+    },
+    {
+        "rowindex": 20,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "September 26, 2024"
+    },
+    {
+        "rowindex": 20,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 20,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M7 (C240, C220): 4.3.4.242038\nC-Series M6 (C245, C240, C225, C220): 4.3.4.242038"
+    },
+    {
+        "rowindex": 20,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "September 24, 2024"
+    },
+    {
+        "rowindex": 20,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(4.242038)"
+    },
+    {
+        "rowindex": 20,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M7 (C240, C220): 4.3(4.242038)\nC-Series M6 (C245, C240, C225, C220): 4.3(4.242038)\nS-Series M5 (S3260): 4.3(4.242038)"
+    },
+    {
+        "rowindex": 20,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 20,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 20,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 21,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "September 03, 2024"
+    },
+    {
+        "rowindex": 21,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6500 and 6400 Series FI 4.3(4.240074)"
+    },
+    {
+        "rowindex": 21,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M7 (X410c, X210c): 5.2(2.240074)\nX-Series M6 (X210c): 5.2(2.240073)\n\nB-Series M6 (B200): 5.2(2.240073)"
+    },
+    {
+        "rowindex": 21,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 21,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 21,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 21,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "September 01, 2024"
+    },
+    {
+        "rowindex": 21,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "<strike>4.3(4c)</strike> (Deprecated)"
+    },
+    {
+        "rowindex": 21,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M7 (X410c, X210c): 5.2(2.240074)\nX-Series M6 (X210c): 5.2(2.240073)\n\nC-Series M8 (C245): 4.3(4.241014)\nC-Series M7 (C220, C240): 4.3(4.240152)\nC-Series M6 (C220, C240, C225, C245): 4.3(4.240152)\nC-Series M5 (C220, C240, C480): 4.3(2.240053)\nC-Series M5 (C125): 4.3(2.240077)\nS-Series M5 (S3260): 4.3(4.240152)\n\nB-Series M6 (B200): 5.2(2.240073)\nB-Series M5 (B200, B480): 5.2(2.240073)\n"
+    },
+    {
+        "rowindex": 22,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "August 20, 2024"
+    },
+    {
+        "rowindex": 22,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 22,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M7 (C240, C220): 4.3(4.241063)\nC-Series M6 (C245, C240, C225, C220): 4.3(4.241063)"
+    },
+    {
+        "rowindex": 22,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "August 21, 2024"
+    },
+    {
+        "rowindex": 22,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(4.241063)"
+    },
+    {
+        "rowindex": 22,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M7 (C240, C220): 4.3(4.241063)\nC-Series M6 (C245, C240, C225, C220): 4.3(4.241063)\nS-Series M5 (S3260): 4.3(4.241063)"
+    },
+    {
+        "rowindex": 22,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 22,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 22,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 23,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "August 13, 2024"
+    },
+    {
+        "rowindex": 23,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 23,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M5 (C220, C240, C480): 4.3(2.240077)"
+    },
+    {
+        "rowindex": 23,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "August 08, 2024"
+    },
+    {
+        "rowindex": 23,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(2.240077)"
+    },
+    {
+        "rowindex": 23,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M5 (C220 M5, C240 M5, C480, C125): 4.3(2.240077)\nS-Series M5 (S3260): 4.3(2.240077)"
+    },
+    {
+        "rowindex": 23,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 23,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 23,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 24,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "July 25, 2024"
+    },
+    {
+        "rowindex": 24,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS X-Series Direct (UCS 9108 100G) FI: 4.3(4.240078)"
+    },
+    {
+        "rowindex": 24,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 24,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 24,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 24,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 24,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "July 25, 2024"
+    },
+    {
+        "rowindex": 24,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "<strike>4.3(4b)</strike> (Deprecated)"
+    },
+    {
+        "rowindex": 24,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M7 (X410c, X210c): 5.2(2.240053)\nX-Series M6 (X210c): 5.2(2.240053)\n\nC-Series M8 (C245): 4.3(4.241014)\nC-Series M7 (C220, C240): 4.3(4.240152)\nC-Series M6 (C220, C240, C225, C245): 4.3(4.240152)\nC-Series M5 (C220, C240, C480): 4.3(2.240053)\nC-Series M5 (C125): 4.3(2.240053)\nS-Series M5 (S3260): 4.3(4.240152)\n\nB-Series M6 (B200): 5.2(2.240051)\nB-Series M5 (B200, B480): 5.2(2.240051)\n"
+    },
+    {
+        "rowindex": 25,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "June 25, 2024"
+    },
+    {
+        "rowindex": 25,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 25,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M8 (C245): 4.3(4.241014)"
+    },
+    {
+        "rowindex": 25,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": " \t\n\nJune 25, 2024"
+    },
+    {
+        "rowindex": 25,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(4.241014)"
+    },
+    {
+        "rowindex": 25,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M8 (C245): 4.3(4.241014)"
+    },
+    {
+        "rowindex": 25,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "June 25, 2024"
+    },
+    {
+        "rowindex": 25,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "<strike>4.3(4b)</strike> (Deprecated)"
+    },
+    {
+        "rowindex": 25,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M7 (X410c, X210c): 5.2(2.240053)\nX-Series M6 (X210c): 5.2(2.240053)\n\nC-Series M8 (C245): 4.3(4.241014)\nC-Series M7 (C220, C240): 4.3(4.240152)\nC-Series M6 (C220, C240, C225, C245): 4.3(4.240152)\nC-Series M5 (C220, C240, C480): 4.3(2.240053)\nC-Series M5 (C125): 4.3(2.240053)\nS-Series M5 (S3260): 4.3(4.240152)\n\nB-Series M6 (B200): 5.2(2.240051)\nB-Series M5 (B200, B480): 5.2(2.240051)\n"
+    },
+    {
+        "rowindex": 26,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "June 05, 2024"
+    },
+    {
+        "rowindex": 26,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6500 and 6400 Series FI: 4.3(4.240066)"
+    },
+    {
+        "rowindex": 26,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M7 (X410c, X210c): 5.2(2.240053)\nX-Series M6 (X210c): 5.2(2.240053)\n\nC-Series M7 (C240, C210): 4.3(4.240152)\nC-Series M6 (C245, C225, C240, C220): 4.3(4.240152)\n\nB-Series M6 (B200): 5.2(2.240051)\nB-Series M5 (B200, B480): 5.2(2.240051)"
+    },
+    {
+        "rowindex": 26,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "June 05, 2024"
+    },
+    {
+        "rowindex": 26,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(4.240152)"
+    },
+    {
+        "rowindex": 26,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M7 (C220, C240): 4.3(4.240152)\nC-Series M6 (C220, C240, C225, C245): 4.3(4.240152)\nS-Series M5 (S3260): 4.3(4.240152)"
+    },
+    {
+        "rowindex": 26,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "June 05, 2024"
+    },
+    {
+        "rowindex": 26,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "<strike>4.3(4a)</strike> (Deprecated)"
+    },
+    {
+        "rowindex": 26,
+        "mainrelease": "4.3(4)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M7 (X410c, X210c): 5.2(2.240053)\nX-Series M6 (X210c): 5.2(2.240053)\n\nC-Series M7 (C220, C240): 4.3(4.240152)\nC-Series M6 (C220, C240, C225, C245): 4.3(4.240152)\nC-Series M5 (C220, C240, C480): 4.3(2.240053)\nC-Series M5 (C125): 4.3(2.240053)\nS-Series M5 (S3260): 4.3(4.240152)\n\nB-Series M6 (B200): 5.2(2.240051)\nB-Series M5 (B200, B480): 5.2(2.240051)\n"
+    },
+    {
+        "rowindex": 27,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "April 24, 2024"
+    },
+    {
+        "rowindex": 27,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 27,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M7 (C240, C220): 4.3(3.240043)\nC-Series M6 (C245, C225, C240, C220): 4.3(3.240043)"
+    },
+    {
+        "rowindex": 27,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "April 22, 2024"
+    },
+    {
+        "rowindex": 27,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(3.240043)"
+    },
+    {
+        "rowindex": 27,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M7 (C220, C240): 4.3(3.240043)\nC-Series M6 (C220, C240, C225, C245): 4.3(3.240043)"
+    },
+    {
+        "rowindex": 27,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "April 22, 2024"
+    },
+    {
+        "rowindex": 27,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.3(3c)"
+    },
+    {
+        "rowindex": 27,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M7 (X410c, X210c): 5.2(1.240010)\nX-Series M6 (X210c): 5.2(1.240010)\n\nC-Series M7 (C220, C240): 4.3(3.240022)\nC-Series M6 (C220, C240, C225, C245): 4.3(3.240022)\nC-Series M5 (C220, C240, C480): 4.3(2.240002)\nC-Series M5 (C125): 4.3(2.240002)\nS-Series M5 (S3260): 4.3(3.240022)\n\nB-Series M6 (B200): 5.2(1.240010)\nB-Series M5 (B200, B480): 5.2(0.230127)\n"
+    },
+    {
+        "rowindex": 28,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 28,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 28,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 28,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "April 16, 2024"
+    },
+    {
+        "rowindex": 28,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(3.240041)"
+    },
+    {
+        "rowindex": 28,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "S-Series M5 (S3260): 4.3(3.240041)"
+    },
+    {
+        "rowindex": 28,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 28,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 28,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 29,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "February 15, 2024"
+    },
+    {
+        "rowindex": 29,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6500 and 6400 Series FI: 4.3(3.240007)"
+    },
+    {
+        "rowindex": 29,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M7 (X410c, X210c): 5.2(1.240010)\nX-Series M6 (X210c): 5.2(1.240010)\n\nC-Series M7 (C240, C220): 4.3(3.240022)\nC-Series M6 (C245, C225, C240, C220): 4.3(3.240022)\n\nB-Series M6 (B200): 5.2(1.240010)\nB-Series M5 (B480, B200): 5.2(0.230127)"
+    },
+    {
+        "rowindex": 29,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "February 15, 2024"
+    },
+    {
+        "rowindex": 29,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(3.240022)"
+    },
+    {
+        "rowindex": 29,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M7 (C220, C240): 4.3(3.240022)\nC-Series M6 (C220, C240, C225, C245): 4.3(3.240022)\nS-Series M5 (S3260): 4.3(3.240022)"
+    },
+    {
+        "rowindex": 29,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "February 15, 2024"
+    },
+    {
+        "rowindex": 29,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.3(3a)"
+    },
+    {
+        "rowindex": 29,
+        "mainrelease": "4.3(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M7 (X410c, X210c): 5.2(1.240010)\nX-Series M6 (X210c): 5.2(1.240010)\n\nC-Series M7 (C220, C240): 4.3(3.240022)\nC-Series M6 (C220, C240, C225, C245): 4.3(3.240022)\nC-Series M5 (C220, C240, C480): 4.3(2.240002)\nC-Series M5 (C125): 4.3(2.240002)\nS-Series M5 (S3260): 4.3(3.240022)\n\nB-Series M6 (B200): 5.2(1.240010)\nB-Series M5 (B200, B480): 5.2(0.230127)\n"
+    },
+    {
+        "rowindex": 30,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "July 31, 2025"
+    },
+    {
+        "rowindex": 30,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 30,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M5 (C480, C240, C220): 4.3(2.250045)"
+    },
+    {
+        "rowindex": 30,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "July 31, 2025"
+    },
+    {
+        "rowindex": 30,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(2.250045)"
+    },
+    {
+        "rowindex": 30,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M5 (C480, C240, C220): 4.3(2.250045)"
+    },
+    {
+        "rowindex": 30,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 30,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 30,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 31,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "July 07, 2025"
+    },
+    {
+        "rowindex": 31,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 31,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M5 (C480, C220, C240): 4.3(2.250037)"
+    },
+    {
+        "rowindex": 31,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "July 07, 2025"
+    },
+    {
+        "rowindex": 31,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(2.250037)"
+    },
+    {
+        "rowindex": 31,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M5 (C480, C240, C220): 4.3(2.250037)"
+    },
+    {
+        "rowindex": 31,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 31,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 31,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 32,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "March 18, 2025"
+    },
+    {
+        "rowindex": 32,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 32,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M5 (C240): 4.3(2.250021)"
+    },
+    {
+        "rowindex": 32,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "March 18, 2025"
+    },
+    {
+        "rowindex": 32,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(2.250021)"
+    },
+    {
+        "rowindex": 32,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M5 (C240): 4.3(2.250021)"
+    },
+    {
+        "rowindex": 32,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 32,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 32,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 33,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "February 28, 2025"
+    },
+    {
+        "rowindex": 33,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 33,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M5 (C220, C240, C480): 4.3(2.250016)"
+    },
+    {
+        "rowindex": 33,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "February 28, 2025"
+    },
+    {
+        "rowindex": 33,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(2.250016)"
+    },
+    {
+        "rowindex": 33,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M5 (C220, C240, C480, C125): 4.3(2.250016)\nS-Series M5 (S3260): 4.3(2.250016)"
+    },
+    {
+        "rowindex": 33,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 33,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 33,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 34,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "December 09, 2024"
+    },
+    {
+        "rowindex": 34,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 34,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M5 (C220, C240, C480): 4.3(2.240107)"
+    },
+    {
+        "rowindex": 34,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "December 09, 2024"
+    },
+    {
+        "rowindex": 34,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(2.240107)"
+    },
+    {
+        "rowindex": 34,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M5 (C220, C240, C480, C125): 4.3(2.240107)\nS-Series M5 (S3260): 4.3(2.240107)"
+    },
+    {
+        "rowindex": 34,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 34,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 34,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 35,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 35,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 35,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 35,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 35,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 35,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 35,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "October 23, 2024"
+    },
+    {
+        "rowindex": 35,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.3(2f)"
+    },
+    {
+        "rowindex": 35,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M7 (X410c, X210c): 4.3(2f)\nX-Series M6 (X210c): 5.2(0.230127)\n\nC-Series M7 (C220, C240): 4.3(2.240002)\nC-Series M6 (C220, C240, C225, C245): 4.3(2.240002)\nC-Series M5 (C220, C240, C480): 4.3(2.240002)\nC-Series M5 (C125): 4.3(2.240002)\nS-Series M5 (S3260): 4.3(2.240002)\n\nB-Series M6 (B200): 4.3(2f)\nB-Series M5 (B200, B480): 4.3(2f)\n"
+    },
+    {
+        "rowindex": 36,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "October 08, 2024"
+    },
+    {
+        "rowindex": 36,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 36,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M5 (C220, C240, C480): 4.3(2.240090)"
+    },
+    {
+        "rowindex": 36,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "October 01, 2024"
+    },
+    {
+        "rowindex": 36,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(2.240090)"
+    },
+    {
+        "rowindex": 36,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M5 (C220, C240, C480, C125): 4.3(2.240090)\nS-Series M5 (S3260): 4.3(2.240090)"
+    },
+    {
+        "rowindex": 36,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 36,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 36,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 37,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "August 12, 2024"
+    },
+    {
+        "rowindex": 37,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 37,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M5 (C220, C240, C480): 4.3(2.240077)"
+    },
+    {
+        "rowindex": 37,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": " \t\nAugust 08, 2024"
+    },
+    {
+        "rowindex": 37,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(2.240077)"
+    },
+    {
+        "rowindex": 37,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M5 (C220, C240, C480, C125): 4.3(2.240077)\nS-Series M5 (S3260): 4.3(2.240077)"
+    },
+    {
+        "rowindex": 37,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 37,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 37,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 38,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "June 03, 2024"
+    },
+    {
+        "rowindex": 38,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 38,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M5 (C480, C240, C220): 4.3(2.240053)"
+    },
+    {
+        "rowindex": 38,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "May 30, 2024"
+    },
+    {
+        "rowindex": 38,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(2.240053)"
+    },
+    {
+        "rowindex": 38,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M5 (C220, C240, C480, C125): 4.3(2.240053)\nS-Series M5 (S3260): 4.3(2.240053)"
+    },
+    {
+        "rowindex": 38,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 38,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 38,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 39,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "May 22, 2024"
+    },
+    {
+        "rowindex": 39,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 39,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M6 (C245, C225): 4.3(2.240037)"
+    },
+    {
+        "rowindex": 39,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "May 21, 2024"
+    },
+    {
+        "rowindex": 39,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(2.240037)"
+    },
+    {
+        "rowindex": 39,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C225, C245): 4.3(2.240037)"
+    },
+    {
+        "rowindex": 39,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 39,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 39,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 40,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "March 07, 2024"
+    },
+    {
+        "rowindex": 40,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 40,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M7 (C240, C220): 4.3(2.240009)\nC-Series M6 (C245, C225, C240, C220): 4.3(2.240009)\nC-Series M5 (C480, C240, C220): 4.3(2.240009)"
+    },
+    {
+        "rowindex": 40,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "March 05, 2024"
+    },
+    {
+        "rowindex": 40,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(2.240009)"
+    },
+    {
+        "rowindex": 40,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.3(2.240009)\nC-Series M5 (C220, C240, C480, C125): 4.3(2.240009)\nS-Series M5 (S3260): 4.3(2.240009)"
+    },
+    {
+        "rowindex": 40,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 40,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 40,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 41,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "January 25, 2024"
+    },
+    {
+        "rowindex": 41,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6500 and 6400 Series FI: 4.3(2.240002)"
+    },
+    {
+        "rowindex": 41,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M7 (X410c, X210c): 5.2(0.230127)\nX-Series M6 (X210c): 5.2(0.230127)\n\nC-Series M7 (C240, C220): 4.3(2.240002)\nC-Series M6 (C245, C225, C240, C220): 4.3(2.240002)\nC-Series M5 (C480, C240, C220): 4.3(2.240002)\n\nB-Series M6 (B200): 5.2(0.230127)\nB-Series M5 (B480, B200): 5.2(0.230127)"
+    },
+    {
+        "rowindex": 41,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "January 23, 2024"
+    },
+    {
+        "rowindex": 41,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(2.240002)"
+    },
+    {
+        "rowindex": 41,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M7 (C220, C240): 4.3(2.240002)\nC-Series M6 (C220, C240, C225, C245): 4.3(2.240002)\nC-Series M5 (C220, C240, C480, C125): 4.3(2.240002)\nS-Series M5 (S3260): 4.3(2.240002)"
+    },
+    {
+        "rowindex": 41,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "January 23, 2024"
+    },
+    {
+        "rowindex": 41,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.3(2e)"
+    },
+    {
+        "rowindex": 41,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M7 (X410c, X210c): 4.3(2e)\nX-Series M6 (X210c): 5.2(0.230127)\n\nC-Series M7 (C220, C240): 4.3(2.240002)\nC-Series M6 (C220, C240, C225, C245): 4.3(2.240002)\nC-Series M5 (C220, C240, C480): 4.3(2.240002)\nC-Series M5 (C125): 4.3(2.240002)\nS-Series M5 (S3260): 4.3(2.240002)\n\nB-Series M6 (B200): 4.3(2e)\nB-Series M5 (B200, B480): 4.3(2e)\n"
+    },
+    {
+        "rowindex": 42,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "November 16, 2023"
+    },
+    {
+        "rowindex": 42,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6500 and 6400 Series FI: 4.3(2.230129)"
+    },
+    {
+        "rowindex": 42,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M7 (X410c, X210c): 5.2(0.230092)\nX-Series M6 (X210c): 5.2(0.230092)\n\nC-Series M7 (C240, C220): 4.3(2.230270)\nC-Series M6 (C245, C225, C240, C220): 4.3(2.230270)\nC-Series M5 (C480, C240, C220): 4.3(2.230270)\n\nB-Series M6 (B200): 5.2(0.230100)\nB-Series M5 (B200, B480): 5.2(0.230100)"
+    },
+    {
+        "rowindex": 42,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "November 14, 2023"
+    },
+    {
+        "rowindex": 42,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(2.230270)"
+    },
+    {
+        "rowindex": 42,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M7 (C220, C240): 4.3(2.230270)\nC-Series M6 (C220, C240, C225, C245 ): 4.3(2.230270)\nC-Series M5 (C220, C240, C480, C125): 4.3(2.230270)\nS-Series M5 (S3260): 4.3(2.230270)"
+    },
+    {
+        "rowindex": 42,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "November 14, 2023"
+    },
+    {
+        "rowindex": 42,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.3(2c)"
+    },
+    {
+        "rowindex": 42,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M7 (X410c, X210c): 4.3(2c)\nX-Series M6 (X210c): 5.2(0.230092)\n\nC-Series M7 (C220, C240): 4.3(2.230270)\nC-Series M6 (C220, C240, C225, C245): 4.3(2.230270)\nC-Series M5 (C220, C240, C480): 4.3(2.230270)\nC-Series M5 (C125): 4.3(2.230270)\nS-Series M5 (S3260): 4.3(2.230270)\n\nB-Series M6 (B200): 4.3(2c)\nB-Series M5 (B200, B480): 4.3(2c)\n"
+    },
+    {
+        "rowindex": 43,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "September 12, 2023"
+    },
+    {
+        "rowindex": 43,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 43,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M7 (X410c): 5.2(0.230061)"
+    },
+    {
+        "rowindex": 43,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 43,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 43,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 43,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 43,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 43,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 44,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "August 16, 2023"
+    },
+    {
+        "rowindex": 44,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6500 and 6400 Series FI: 4.3(2.230117)"
+    },
+    {
+        "rowindex": 44,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M7 (X210c, X410c): 5.2(0.230041)\nX-Series M6 (X210c): 5.2(0.230040)\n\nC-Series M7 (C220, C240): 4.3(2.230207)\nC-Series M6 (C220, C240, C225, C245): 4.3(2.230207)\nC-Series M5 (C220, C240, C480): 4.3(2.230207) \n\nB-Series M6 (B200): 5.2(0.230039)\nB-Series M5 (B200, B480): 5.2(0.230039)"
+    },
+    {
+        "rowindex": 44,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "August 16, 2023"
+    },
+    {
+        "rowindex": 44,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(2.230207)"
+    },
+    {
+        "rowindex": 44,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M7 (C220, C240): 4.3(2.230207)\nC-Series M6 (C220, C240, C225, C245): 4.3(2.230207)\nC-Series M5 (C220, C240, C480, C125): 4.3(2.230207)\nS-Series M5 (S3260): 4.3(2.230207)"
+    },
+    {
+        "rowindex": 44,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "August 16, 2023"
+    },
+    {
+        "rowindex": 44,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.3(2b)"
+    },
+    {
+        "rowindex": 44,
+        "mainrelease": "4.3(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "X-Series M7 (X410c, X210c): 4.3(2b)\nX-Series M6 (X210c): 5.2(0.230040)\n\nC-Series M7 (C220, C240): 4.3(2.230207)\nC-Series M6 (C220, C240, C225, C245): 4.3(2.230207)\nC-Series M5 (C220, C240, C480): 4.3(2.230207)\nC-Series M5 (C125): 4.3(2.230207)\nS-Series M5 (S3260): 4.3(2.230207)\n\nB-Series M6 (B200): 4.3(2b)\nB-Series M5 (B200, B480): 4.3(2b)\n"
+    },
+    {
+        "rowindex": 45,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "June 06, 2024"
+    },
+    {
+        "rowindex": 45,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 45,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M7 (C220, C240): 4.3(1.230138)"
+    },
+    {
+        "rowindex": 45,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "June 5, 2023"
+    },
+    {
+        "rowindex": 45,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(1.230138)"
+    },
+    {
+        "rowindex": 45,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M7 (C220, C240): 4.3(1.230138)"
+    },
+    {
+        "rowindex": 45,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 45,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 45,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 46,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "April 13, 2024"
+    },
+    {
+        "rowindex": 46,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 46,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M7 (C220, C240): 4.3(1.230124)"
+    },
+    {
+        "rowindex": 46,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "April 04, 2023"
+    },
+    {
+        "rowindex": 46,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(1.230124​)"
+    },
+    {
+        "rowindex": 46,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M7 (C220, C240): 4.3(1.230124​)"
+    },
+    {
+        "rowindex": 46,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": null
+    },
+    {
+        "rowindex": 46,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 46,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 47,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "March 09, 2023"
+    },
+    {
+        "rowindex": 47,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 47,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M7 (C220, C240): 4.3(1.230097)"
+    },
+    {
+        "rowindex": 47,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "March 03, 2023"
+    },
+    {
+        "rowindex": 47,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.3(1.230097)"
+    },
+    {
+        "rowindex": 47,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M7 (C220, C240): 4.3(1.230097)"
+    },
+    {
+        "rowindex": 47,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": null
+    },
+    {
+        "rowindex": 47,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 47,
+        "mainrelease": "4.3(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 48,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "September 23, 2025"
+    },
+    {
+        "rowindex": 48,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6500 and 6400 Series FI: 4.2(3n)"
+    },
+    {
+        "rowindex": 48,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M6 (x210c): 5.0(4j)\n\nC-Series M5 (C480, C240, C220): 4.2(3p)\nC-Series M6 (C245, C225, C240, C220): 4.2(3p)\n\nB-Series M6 (B200): 4.2(3m)\nB-Series M5 (B480, B200): 4.2(3m)\n"
+    },
+    {
+        "rowindex": 48,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "September 23, 2025"
+    },
+    {
+        "rowindex": 48,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(3p)"
+    },
+    {
+        "rowindex": 48,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C245, C225, C240, C220): 4.2(3p)\nC-Series M5 (C480, C240, C220, C480 ML, C125): 4.2(3p)\nS-Series M5 (S3260): 4.2(3p)\nS-Series M4 (S3260): 4.2(3p)"
+    },
+    {
+        "rowindex": 48,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "September 23, 2025"
+    },
+    {
+        "rowindex": 48,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(3p)"
+    },
+    {
+        "rowindex": 48,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(3m)\nC-Series M5 (C220, C240, C480, C125): 4.2(3m)\nC-Series M4 (C220, C240, C460): 4.1(2m)\nC-Series M4 (C3260): 4.2(3k)\nS-Series M5 (S3260): 4.2(3m)\n\nB-Series M6 (B200): 4.2(3j)\nB-Series M5 (B200, B480): 4.2(3j)\nB-Series M4 (B200, B420): 4.2(2a)\n\n"
+    },
+    {
+        "rowindex": 49,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "February 21, 2025"
+    },
+    {
+        "rowindex": 49,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "Cisco UCS 6500 and 6400 Series FI: 4.2(3m) "
+    },
+    {
+        "rowindex": 49,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M6 (x210c): 5.0(4i)\n\nC-Series M5 (C480, C240, C220): 4.2(3o)\nC-Series M6 (C245, C225, C240, C220): 4.2(3o)\n\nB-Series M6 (B200): 4.2(3l)\nB-Series M5 (B480, B200): 4.2(3l)"
+    },
+    {
+        "rowindex": 49,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "February 21, 2025"
+    },
+    {
+        "rowindex": 49,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(3o) "
+    },
+    {
+        "rowindex": 49,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C245, C225, C240, C220): 4.2(3o)\nC-Series M5 (C480, C240, C220, C480 ML, C125): 4.2(3o)\nS-Series M5 (S3260): 4.2(3o)\nS-Series M4 (S3260): 4.2(3o)"
+    },
+    {
+        "rowindex": 49,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "February 21, 2025"
+    },
+    {
+        "rowindex": 49,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(3o)"
+    },
+    {
+        "rowindex": 49,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(3o)\nC-Series M5 (C220, C240, C480, C125): 4.2(3o)\nC-Series M4 (C220, C240, C460): 4.1(2m)\nC-Series M4 (C3260): 4.2(3k)\nS-Series M5 (S3260): 4.2(3o)\n\nB-Series M6 (B200): 4.2(3l)\nB-Series M5 (B200, B480): 4.2(3l)\nB-Series M4 (B200, B420): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 50,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "December 19, 2024"
+    },
+    {
+        "rowindex": 50,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "No release"
+    },
+    {
+        "rowindex": 50,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M6 (x210c): 5.0(4h)\n\nC-Series M6 (C245, C225, C240, C220): 4.2(3n)\nC-Series M5 (C480, C240, C220): 4.2(3n)\n\n\nB-Series M6 (B200): 4.2(3k)\nB-Series M5 (B480, B200): 4.2(3k)"
+    },
+    {
+        "rowindex": 50,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "December 19, 2024"
+    },
+    {
+        "rowindex": 50,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(3n) "
+    },
+    {
+        "rowindex": 50,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(3n)\nC-Series M5 (C220, C480, C240, C480 ML, C125): 4.2(3n)\nS-Series M5 (S3260): 4.2(3n)\nS-Series M4 (S3260): 4.2(3n)"
+    },
+    {
+        "rowindex": 50,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "December 19, 2024"
+    },
+    {
+        "rowindex": 50,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(3n)"
+    },
+    {
+        "rowindex": 50,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(3m)\nC-Series M5 (C220, C240, C480, C125): 4.2(3m)\nC-Series M5 (C240 SD): 4.2(3m)\nC-Series M5 (C480 ML): 4.2(3m)\nC-Series M4 (C220, C240, C460): 4.1(2m)\nC-Series M4 (C3260): 4.2(3k)\nS-Series M5 (S3260): 4.2(3m)\n\nB-Series M6 (B200): 4.2(3j)\nB-Series M5 (B200, B480): 4.2(3j)\nB-Series M4 (B200, B260, B420, B460): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 51,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "October 01, 2024"
+    },
+    {
+        "rowindex": 51,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(3l)"
+    },
+    {
+        "rowindex": 51,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "X-Series M6 (x210c): 5.0(4g)\n\nC-Series M6 (C245, C225, C240, C220): 4.2(3m)\nC-Series M5 (C480, C240, C220): 4.2(3m)\n\nB-Series M6 (B200): 4.2(3j)\nB-Series M5 (B480, B200): 4.2(3j)"
+    },
+    {
+        "rowindex": 51,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "September 27, 2024"
+    },
+    {
+        "rowindex": 51,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(3m) "
+    },
+    {
+        "rowindex": 51,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(3m) \nC-Series M5 (C220, C480, C240, C480 ML, C125): 4.2(3m) \nS-Series M5 (S3260): 4.2(3m) \nS-Series M4 (S3260): 4.2(3m)"
+    },
+    {
+        "rowindex": 51,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "October 23, 2024"
+    },
+    {
+        "rowindex": 51,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(3m)"
+    },
+    {
+        "rowindex": 51,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(3m)\nC-Series M5 (C220, C240, C480, C125): 4.2(3m)\nC-Series M5 (C240 SD): 4.2(3m)\nC-Series M5 (C480 ML): 4.2(3m)\nC-Series M4 (C220, C240, C460): 4.1(2m)\nC-Series M4 (C3260): 4.2(3k)\nS-Series M5 (S3260): 4.2(3m)\n\nB-Series M6 (B200): 4.2(3j)\nB-Series M5 (B200, B480): 4.2(3j)\nB-Series M4 (B200, B260, B420, B460): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 52,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "June 17, 2024"
+    },
+    {
+        "rowindex": 52,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(3k)"
+    },
+    {
+        "rowindex": 52,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M6 (C245, C225, C240, C220): 4.2(3l)\nC-Series M5 (C480, C240, C220): 4.2(3l)\n\nB-Series M6 (B200): 4.2(3i)\nB-Series M5 (B480, B200): 4.2(3i)"
+    },
+    {
+        "rowindex": 52,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "June 14, 2024"
+    },
+    {
+        "rowindex": 52,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(3l) "
+    },
+    {
+        "rowindex": 52,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C245, C225, C240, C220): 4.2(3l)\nC-Series M5 (C480, C240, C220, C480 ML, C125): 4.2(3l)\nS-Series M5 (S3260): 4.2(3l)\nS-Series M4 (S3260): 4.2(3l)"
+    },
+    {
+        "rowindex": 52,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "September 30, 2024"
+    },
+    {
+        "rowindex": 52,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(3l)"
+    },
+    {
+        "rowindex": 52,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(3m)\nC-Series M5 (C220, C240, C480, C125): 4.2(3m)\nC-Series M5 (C240 SD): 4.2(3m)\nC-Series M5 (C480 ML): 4.2(3m) \nC-Series M4 (C220, C240, C460): 4.1(2m)\nC-Series M4 (C3260): 4.2(3k)\nS-Series M5 (S3260): 4.2(3m)\n\nB-Series M6 (B200): 4.2(3j) \nB-Series M5 (B200, B480): 4.2(3j)\nB-Series M4 (B200, B260, B420, B460): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 53,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 53,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 53,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 53,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "April 16, 2024"
+    },
+    {
+        "rowindex": 53,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(3k) "
+    },
+    {
+        "rowindex": 53,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "S-Series M5 (S3260): 4.2(3k)"
+    },
+    {
+        "rowindex": 53,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "June 14, 2024"
+    },
+    {
+        "rowindex": 53,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(3k)"
+    },
+    {
+        "rowindex": 53,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(3l)\nC-Series M5 (C220, C240, C480, C125): 4.2(3l)\nC-Series M5 (C240 SD): 4.2(3l)\nC-Series M5 (C480 ML): 4.2(3l)\nC-Series M4 (C220, C240, C460): 4.1(2m)\nC-Series M4 (C3260): 4.2(3j)\nS-Series M5 (S3260): 4.2(3l)\n\nB-Series M6 (B200): 4.2(3i)\nB-Series M5 (B200, B480): 4.2(3i)\nB-Series M4 (B200, B260, B420, B460): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 54,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "February 23, 2024"
+    },
+    {
+        "rowindex": 54,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(3j)"
+    },
+    {
+        "rowindex": 54,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M6 (C245, C225, C240, C220): 4.2(3j)\nC-Series M5 (C480, C240, C220): 4.2(3j)\n\nB-Series M6 (B200): 4.2(3h)\nB-Series M5 (B480, B200): 4.2(3h)"
+    },
+    {
+        "rowindex": 54,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "February 21, 2024"
+    },
+    {
+        "rowindex": 54,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(3j) "
+    },
+    {
+        "rowindex": 54,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(3j)\nC-Series M5 (C220, C480, C240, C480 ML, C125): 4.2(3j)\nS-Series M5 (S3260): 4.2(3j)\nS-Series M4 (S3260): 4.2(3j)"
+    },
+    {
+        "rowindex": 54,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "February 21, 2024"
+    },
+    {
+        "rowindex": 54,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(3j)"
+    },
+    {
+        "rowindex": 54,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(3j)\nC-Series M5 (C220, C240, C480, C125): 4.2(3j)\nC-Series M5 (C240 SD): 4.2(3j)\nC-Series M5 (C480 ML): 4.2(3j)\nC-Series M4 (C220, C240, C460): 4.1(2m)\nC-Series M4 (C3260): 4.2(3h)\nS-Series M5 (S3260): 4.2(3j)\n\nB-Series M6 (B200): 4.2(3h)\nB-Series M5 (B200, B480): 4.2(3h)\nB-Series M4 (B200, B260, B420, B460): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 55,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 55,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 55,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 55,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "November 6, 2023"
+    },
+    {
+        "rowindex": 55,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(3i) "
+    },
+    {
+        "rowindex": 55,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(3i)\nC-Series M5 (C220, C480, C240, C480 ML, C125): 4.2(3i)\nS-Series M5 (S3260): 4.2(3i)\nS-Series M4 (S3260): 4.2(3i)"
+    },
+    {
+        "rowindex": 55,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "November 06, 2023"
+    },
+    {
+        "rowindex": 55,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(3i)"
+    },
+    {
+        "rowindex": 55,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(3h)\nC-Series M5 (C220, C240, C480, C125): 4.2(3h)\nC-Series M5 (C240 SD): 4.2(3h)\nC-Series M5 (C480 ML): 4.2(3h)\nC-Series M4 (C220, C240): 4.1(2l)\nC-Series M4 (C3260): 4.2(3g)\nC-Series M4 (C460): 4.1(2k)\nS-Series M5 (S3260): 4.2(3h)\n\nB-Series M6 (B200): 4.2(3f) \nB-Series M5 (B200, B480): 4.2(3f)\nB-Series M4 (B200, B260, B420, B460): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 56,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "October 01, 2023"
+    },
+    {
+        "rowindex": 56,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(3h)"
+    },
+    {
+        "rowindex": 56,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M6 (C245, C225, C240, C220): 4.2(3h)\nC-Series M5 (C480, C240, C220): 4.2(3h)\n\nB-Series M6 (B200): 4.2(3f)\nB-Series M5 (B480, B200): 4.2(3f)"
+    },
+    {
+        "rowindex": 56,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "September 28, 2023"
+    },
+    {
+        "rowindex": 56,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(3h) "
+    },
+    {
+        "rowindex": 56,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(3h)\nC-Series M5 (C220, C480, C240, C480 ML, C125): 4.2(3h)\nS-Series M5 (S3260): 4.2(3h)\nS-Series M4 (S3260): 4.2(3h)"
+    },
+    {
+        "rowindex": 56,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "September 28, 2023"
+    },
+    {
+        "rowindex": 56,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(3h)"
+    },
+    {
+        "rowindex": 56,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(3h)\nC-Series M5 (C220, C240, C480, C125): 4.2(3h)\nC-Series M5 (C480 ML): 4.2(3h)\nC-Series M5 (C240 SD): 4.2(3h)\nC-Series M4 (C220, C240): 4.1(2l)\nC-Series M4 (C460): 4.1(2k)\nC-Series M4 (C3260): 4.2(3f)\nS-Series M5 (S3260): 4.2(3h)\n\nB-Series M6 (B200): 4.2(3f)\nB-Series M5 (B200, B480): 4.2(3f)\nB-Series M4 (B200, B260, B420, B460): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 57,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "August 01, 2023"
+    },
+    {
+        "rowindex": 57,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(3g)"
+    },
+    {
+        "rowindex": 57,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M6 (C245, C225, C240, C220): 4.2(3g)\nC-Series M5 (C480, C240, C220): 4.2(3g)\n\nB-Series M6 (B200): 4.2(3e)\nB-Series M5 (B480): 4.2(3e)"
+    },
+    {
+        "rowindex": 57,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "July 17, 2023"
+    },
+    {
+        "rowindex": 57,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(3g) "
+    },
+    {
+        "rowindex": 57,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(3g)\nC-Series M5 (C220, C480, C240, C480 ML, C125): 4.2(3g)\nS-Series M5 (S3260): 4.2(3g)\nS-Series M4 (S3260): 4.2(3g)"
+    },
+    {
+        "rowindex": 57,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "July 17, 2023"
+    },
+    {
+        "rowindex": 57,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(3g)"
+    },
+    {
+        "rowindex": 57,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(3g)\nC-Series M5 (C220, C240, C480, C125): 4.2(3g)\nC-Series M5 (C240 SD): 4.2(3g)\nC-Series M5 (C480 ML): 4.2(3g) \nC-Series M4 (C220, C240, C460): 4.1(2k)\nC-Series M4 (C3260): 4.2(3e)\nS-Series M5 (S3260): 4.2(3g)\n\nB-Series M6 (B200): 4.2(3e)\nB-Series M5 (B200, B480): 4.2(3e)\nB-Series M4 (B200, B260, B420, B460): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 58,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "May 17, 2023"
+    },
+    {
+        "rowindex": 58,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(3e)"
+    },
+    {
+        "rowindex": 58,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M6 (C245, C225, C240, C220): 4.2(3e)\nC-Series M5 (C480, C240, C220): 4.2(3e)"
+    },
+    {
+        "rowindex": 58,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "May 15, 2023"
+    },
+    {
+        "rowindex": 58,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(3e) "
+    },
+    {
+        "rowindex": 58,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(3e)\nC-Series M5 (C220, C480, C240, C480 ML, C125): 4.2(3e)\nS-Series M5 (S3260): 4.2(3e)\nS-Series M4 (S3260): 4.2(3e)"
+    },
+    {
+        "rowindex": 58,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "\t\nMay 15, 2023"
+    },
+    {
+        "rowindex": 58,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(3e)"
+    },
+    {
+        "rowindex": 58,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(3e)\nC-Series M5 (C220, C240, C480, C125): 4.2(3e)\nC-Series M5 (C240 SD): 4.2(3e)\nC-Series M5 (C480 ML): 4.2(3e)\nC-Series M4 (C220, C240, C460): 4.1(2k)\nC-Series M4 (C3260): 4.2(3c)\nS-Series M5 (S3260): 4.2(3e)\n\nB-Series M6 (B200): 4.2(3d)\nB-Series M5 (B200, B480): 4.2(3d)\nB-Series M4 (B200, B260, B420, B460): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 59,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "March 22, 2023"
+    },
+    {
+        "rowindex": 59,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(3d)"
+    },
+    {
+        "rowindex": 59,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M6 (C245, C225, C240, C220): 4.2(3d)\nC-Series M5 (C480, C240, C220): 4.2(3d)"
+    },
+    {
+        "rowindex": 59,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "March 20, 2023"
+    },
+    {
+        "rowindex": 59,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(3d) "
+    },
+    {
+        "rowindex": 59,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(3d)\nC-Series M5 (C220, C480, C240, C480 ML, C125): 4.2(3d)\nS-Series M5 (S3260): 4.2(3d)\nS-Series M4 (S3260): 4.2(3d)"
+    },
+    {
+        "rowindex": 59,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "March 20, 2023"
+    },
+    {
+        "rowindex": 59,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(3d)"
+    },
+    {
+        "rowindex": 59,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(3d)\nC-Series M5 (C220, C240, C480, C125): 4.2(3d)\nC-Series M5 (C240 SD): 4.2(3d)\nC-Series M5 (C480 ML): 4.2(3d)\nC-Series M4 (C220, C240, C460): 4.1(2k)\nC-Series M4 (C3260): 4.2(3b)\nS-Series M5 (S3260): 4.2(3d)\n\nB-Series M6 (B200): 4.2(3c)\nB-Series M5 (B200, B480): 4.2(3c)\nB-Series M4 (B200, B260, B420, B460): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 60,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "January 18, 2023"
+    },
+    {
+        "rowindex": 60,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(3b), 4.2(3c)"
+    },
+    {
+        "rowindex": 60,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 60,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "No release"
+    },
+    {
+        "rowindex": 60,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 60,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 60,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No release"
+    },
+    {
+        "rowindex": 60,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 60,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 61,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "January 09, 2023"
+    },
+    {
+        "rowindex": 61,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(3b)"
+    },
+    {
+        "rowindex": 61,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M6 (C245, C240, C225, C220): 4.2(3b)\nC-Series M5 (C480, C240, C220): 4.2(3b)\n\nB-Series M6 (B200): 4.2(3b)\nB-Series M5 (B480, B200): 4.2(3b)"
+    },
+    {
+        "rowindex": 61,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "January 6, 2023"
+    },
+    {
+        "rowindex": 61,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(3b) "
+    },
+    {
+        "rowindex": 61,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(3b)\nC-Series M5 (C220, C480, C240, C480 ML, C125): 4.2(3b)\nS-Series M5 (S3260): 4.2(3b)\nS-Series M4 (S3260): 4.2(3b)"
+    },
+    {
+        "rowindex": 61,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "January 06, 2023"
+    },
+    {
+        "rowindex": 61,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(3b)"
+    },
+    {
+        "rowindex": 61,
+        "mainrelease": "4.2(3)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(3b)\nC-Series M5 (C220, C240, C480, C125): 4.2(3b)\nC-Series M5 (C240 SD): 4.2(3b)\nC-Series M5 (C480 ML): 4.2(3b)\nC-Series M4 (C220, C240, C460): 4.1(2k)\nC-Series M4 (C3260): 4.2(3a)\nS-Series M5 (S3260): 4.2(3b)\n\nB-Series M6 (B200): 4.2(3b)\nB-Series M5 (B200, B480): 4.2(3b)\nB-Series M4 (B200, B260, B420, B460): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 62,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "November 28, 2022"
+    },
+    {
+        "rowindex": 62,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(2d)"
+    },
+    {
+        "rowindex": 62,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M6 (C245, C240, C225, C220): 4.2(2g)\nC-Series M5 (C480, C240, C220): 4.2(2g)\n\nB-Series M5 (B480): 4.2(2e)\nB-Series M6 (B200): 4.2(2e)"
+    },
+    {
+        "rowindex": 62,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "November 23, 2022"
+    },
+    {
+        "rowindex": 62,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(2g) "
+    },
+    {
+        "rowindex": 62,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(2g)\nC-Series M5 (C220, C480, C240, C125): 4.2(2g)\nS-Series M5 (S3260): 4.2(2g)"
+    },
+    {
+        "rowindex": 62,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No release"
+    },
+    {
+        "rowindex": 62,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 62,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 63,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "September 20, 2022"
+    },
+    {
+        "rowindex": 63,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(2c)"
+    },
+    {
+        "rowindex": 63,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M6 (C245, C240, C225, C220): 4.2(2f)\nC-Series M5 (C480, C240, C220): 4.2(2f)"
+    },
+    {
+        "rowindex": 63,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "September 20, 2022"
+    },
+    {
+        "rowindex": 63,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(2f) "
+    },
+    {
+        "rowindex": 63,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(2f)\nC-Series M5 (C220, C480, C240, C125): 4.2(2f)\nS-Series M5 (S3260): 4.2(2f)"
+    },
+    {
+        "rowindex": 63,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "March 03, 2023"
+    },
+    {
+        "rowindex": 63,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(2e)"
+    },
+    {
+        "rowindex": 63,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(2g)\nC-Series M5 (C220, C240, C480, C125): 4.2(2g)\nC-Series M5 (C240 SD): 4.2(2g)\nC-Series M5 (C480 ML): 4.2(2g)\nC-Series M4 (C220, C240, C460): 4.1(2k)\nC-Series M4 (C3260): 4.2(2e)\nS-Series M5 (S3260): 4.2(2g)\n\nB Series M6 (B200): 4.2(2e)\nB Series M5 (B200, B480): 4.2(2e)\nB-Series M4 (B200, B420): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 64,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "August 04, 2022"
+    },
+    {
+        "rowindex": 64,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(2b)"
+    },
+    {
+        "rowindex": 64,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "No Release"
+    },
+    {
+        "rowindex": 64,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "No release"
+    },
+    {
+        "rowindex": 64,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 64,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 64,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "November 23, 2022"
+    },
+    {
+        "rowindex": 64,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(2d)"
+    },
+    {
+        "rowindex": 64,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(2g)\nC-Series M5 (C220, C240, C480, C125): 4.2(2g)\nC-Series M5 (C240 SD): 4.2(2g)\nC-Series M5 (C480 ML): 4.2(2g)\nC-Series M4 (C220, C240, C460): 4.1(2k)\nC-Series M4 (C3260): 4.2(2e)\nS-Series M5 (S3260): 4.2(2g)\n\nB-Series M6 (B200): 4.2(2e)\nB-Series M5 (B200, B480): 4.2(2e)\nB-Series M4 (B200, B420): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 65,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "No release"
+    },
+    {
+        "rowindex": 65,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 65,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 65,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "No release"
+    },
+    {
+        "rowindex": 65,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 65,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 65,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "September 20, 2022"
+    },
+    {
+        "rowindex": 65,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(2c)"
+    },
+    {
+        "rowindex": 65,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(2f)\nC-Series M5 (C220, C240, C480, C125): 4.2(2f)\nC-Series M5 (C240 SD): 4.2(2f)\nC-Series M5 (C480 ML): 4.2(2f)\nC-Series M4 (C220, C240, C460): 4.1(2k)\nC-Series M4 (C3260): 4.2(2d)\nS-Series M5 (S3260): 4.2(2f)\n\nB-Series M6 (B200): 4.2(2d)\nB-Series M5 (B200, B480): 4.2(2d)\nB-Series M4 (B200, B420): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 66,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "July 14, 2022"
+    },
+    {
+        "rowindex": 66,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(2a)"
+    },
+    {
+        "rowindex": 66,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 66,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "July 8, 2022"
+    },
+    {
+        "rowindex": 66,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(2a)"
+    },
+    {
+        "rowindex": 66,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(2a)\nC-Series M5 (C220, C480, C240, C125): 4.2(2a)\nS-Series M5 (S3260): 4.2(2a)"
+    },
+    {
+        "rowindex": 66,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "July 08, 2022"
+    },
+    {
+        "rowindex": 66,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(2a)"
+    },
+    {
+        "rowindex": 66,
+        "mainrelease": "4.2(2)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(2a)\nC-Series M5 (C220, C240, C480, C125): 4.2(2a)\nC-Series M5 (C240 SD): 4.2(2a)\nC-Series M5 (C480 ML): 4.2(2a)\nC-Series M4 (C220, C240, C460): 4.1(2k)\nC-Series M4 (C3260): 4.2(2a)\nS-Series M5 (S3260): 4.2(2a)\n\nB-Series M6 (B200): 4.2(2a)\nB-Series M5 (B200, B480): 4.2(2a)\nB-Series M4 (B200, B420): 4.2(2a)\n"
+    },
+    {
+        "rowindex": 67,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "No release"
+    },
+    {
+        "rowindex": 67,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 67,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 67,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "August 1, 2022"
+    },
+    {
+        "rowindex": 67,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(1j)"
+    },
+    {
+        "rowindex": 67,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(1j)"
+    },
+    {
+        "rowindex": 67,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "August 01, 2022"
+    },
+    {
+        "rowindex": 67,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(1n)"
+    },
+    {
+        "rowindex": 67,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(1j)\nC-Series M5 (C220, C240, C480, C125): 4.1(3i)\nC-Series M5 (C240 SD): 4.1(3i)\nC-Series M5 (C480 ML): 4.1(3i)\nC-Series M4 (C220, C240, C460): 4.1(2k)\nC-Series M4 (C3260): 4.1(3f)\nS-Series M5 (S3260): 4.1(3i)\n\nB-Series M6 (B200): 4.2(1h)\nB-Series M5 (B200, B480): 4.2(1h)\nB-Series M4 (B200, B420): 4.2(1a)\n"
+    },
+    {
+        "rowindex": 68,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "May 19, 2022"
+    },
+    {
+        "rowindex": 68,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(1m)"
+    },
+    {
+        "rowindex": 68,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M6 (C240): 4.2(1i)\n\nB-Series M5 (B480, B200): 4.2(1f)\nB-Series M6 (B200): 4.2(1f)"
+    },
+    {
+        "rowindex": 68,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "May 16, 2022"
+    },
+    {
+        "rowindex": 68,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(1i)"
+    },
+    {
+        "rowindex": 68,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(1i)"
+    },
+    {
+        "rowindex": 68,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "May 16, 2022"
+    },
+    {
+        "rowindex": 68,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(1m)"
+    },
+    {
+        "rowindex": 68,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(1i)\nC-Series M5 (C220, C240, C125, C480): 4.1(3f)\nC-Series M5 (C240 SD): 4.1(3f)\nC-Series M5 (C480 ML): 4.1(3f)\nC-Series M4 (C220, C240, C460): 4.1(2h)\nC-Series M4 (C3260): 4.1(3e)\nS-Series M5 (S3260): 4.1(3g)\n\nB-Series M6 (B200): 4.2(1f)\nB-Series M5 (B200, B480): 4.2(1f)\nB-Series M4 (B200, B420): 4.2(1a)\n"
+    },
+    {
+        "rowindex": 69,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "No release"
+    },
+    {
+        "rowindex": 69,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 69,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 69,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "March 22, 2022"
+    },
+    {
+        "rowindex": 69,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(1g)"
+    },
+    {
+        "rowindex": 69,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C225, C245): 4.2(1g)"
+    },
+    {
+        "rowindex": 69,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No release"
+    },
+    {
+        "rowindex": 69,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 69,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 70,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "February 15, 2022"
+    },
+    {
+        "rowindex": 70,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(1l)"
+    },
+    {
+        "rowindex": 70,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M6 (C245, C240, C225, C220): 4.2(1f)"
+    },
+    {
+        "rowindex": 70,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "February 7, 2022"
+    },
+    {
+        "rowindex": 70,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(1f)"
+    },
+    {
+        "rowindex": 70,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(1f)"
+    },
+    {
+        "rowindex": 70,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "February 15, 2022"
+    },
+    {
+        "rowindex": 70,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(1l)"
+    },
+    {
+        "rowindex": 70,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(1f)\nC-Series M5 (C220, C240, C480, C125): 4.1(3f)\nC-Series M5 (C240 SD): 4.1(3f)\nC-Series M5 (C480 ML): 4.1(3f)\nC-Series M4 (C220, C240, C460): 4.1(2h)\nC-Series M4 (C3260): 4.1(3e)\nS-Series M5 (S3260): 4.1(3f)\n\nB-Series M6 (B200): 4.2(1e)\nB-Series M5 (B200, B480): 4.2(1e)\nB-Series M4 (B200, B420): 4.2(1a)\n"
+    },
+    {
+        "rowindex": 71,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "September 17, 2021"
+    },
+    {
+        "rowindex": 71,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(1h)"
+    },
+    {
+        "rowindex": 71,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 71,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "No release"
+    },
+    {
+        "rowindex": 71,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 71,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 71,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No release"
+    },
+    {
+        "rowindex": 71,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 71,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 72,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "October 27, 2021"
+    },
+    {
+        "rowindex": 72,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(1i)"
+    },
+    {
+        "rowindex": 72,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M6 (C245, C240, C225, C220): 4.2(1e)"
+    },
+    {
+        "rowindex": 72,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "October 26, 2021"
+    },
+    {
+        "rowindex": 72,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(1e)"
+    },
+    {
+        "rowindex": 72,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C225, C245): 4.2(1e)"
+    },
+    {
+        "rowindex": 72,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "October 26, 2021"
+    },
+    {
+        "rowindex": 72,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(1i)"
+    },
+    {
+        "rowindex": 72,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(1e)\nC-Series M5 (C220, C240, C480, C125): 4.1(3d)\nC-Series M5 (C240 SD): 4.1(3d)\nC-Series M5 (C480 ML): 4.1(3d)\nC-Series M4 (C220, C240, C460): 4.1(2f)\nC-Series M4 (C3260): 4.1(3d)\nS-Series M5 (S3260): 4.1(3d)\n\nB-Series M6 (B200): 4.2(1c)\nB-Series M5 (B200, B480): 4.2(1c)\nB-Series M4 (B200, B420): 4.2(1a)\n"
+    },
+    {
+        "rowindex": 73,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "No release"
+    },
+    {
+        "rowindex": 73,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 73,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": null
+    },
+    {
+        "rowindex": 73,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "September 1, 2021"
+    },
+    {
+        "rowindex": 73,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(1c)"
+    },
+    {
+        "rowindex": 73,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C225, C245): 4.2(1c)"
+    },
+    {
+        "rowindex": 73,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "No release"
+    },
+    {
+        "rowindex": 73,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": null
+    },
+    {
+        "rowindex": 73,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": null
+    },
+    {
+        "rowindex": 74,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "August 17, 2021"
+    },
+    {
+        "rowindex": 74,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(1f)"
+    },
+    {
+        "rowindex": 74,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M6 (C240, C220): 4.2(1b)"
+    },
+    {
+        "rowindex": 74,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "August 17, 2021"
+    },
+    {
+        "rowindex": 74,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(1b)"
+    },
+    {
+        "rowindex": 74,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240): 4.2(1b)"
+    },
+    {
+        "rowindex": 74,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "August 17, 2021"
+    },
+    {
+        "rowindex": 74,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(1f)"
+    },
+    {
+        "rowindex": 74,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(1b)\nC-Series M5 (C220, C240, C480, C125): 4.1(3d)\nC-Series M5 (C240 SD): 4.1(3d)\nC-Series M5 (C480 ML): 4.1(3d)\nC-Series M4 (C220, C240, C460): 4.1(2f)\nC-Series M4 (C3260): 4.1(3d)\nS-Series M5 (S3260): 4.1(3d)\n\nB-Series M6 (B200): 4.2(1b)\nB-Series M5 (B200, B480): 4.2(1b)\nB-Series M4 (B200, B420): 4.2(1a)\n"
+    },
+    {
+        "rowindex": 75,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Date Posted",
+        "value": "June 28, 2021"
+    },
+    {
+        "rowindex": 75,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Infra Firmware",
+        "value": "4.2(1d)"
+    },
+    {
+        "rowindex": 75,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco Intersight",
+        "header": "Server Firmware",
+        "value": "C-Series M6 (C245, C240, C220): 4.2(1a)"
+    },
+    {
+        "rowindex": 75,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Date Posted",
+        "value": "June 24, 2021"
+    },
+    {
+        "rowindex": 75,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Patch",
+        "value": "4.2(1a)"
+    },
+    {
+        "rowindex": 75,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco IMC",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245): 4.2(1a)"
+    },
+    {
+        "rowindex": 75,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Date Posted",
+        "value": "June 24, 2021"
+    },
+    {
+        "rowindex": 75,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Patch",
+        "value": "4.2(1d)"
+    },
+    {
+        "rowindex": 75,
+        "mainrelease": "4.2(1)",
+        "productname": "Cisco UCS Manager",
+        "header": "Platforms",
+        "value": "C-Series M6 (C220, C240, C245, C225): 4.2(1a)\nC-Series M5 (C220, C240, C480, C125): 4.1(3c)\nC-Series M5 (C240 SD): 4.1(3c)\nC-Series M5 (C480 ML): 4.1(3c)\nC-Series M4 (C220, C240, C460): 4.1(2f)\nC-Series M4 (C3260): 4.1(3c)\nS-Series M5 (S3260): 4.1(3c)\n\nB-Series M6 (B200): 4.2(1a)\nB-Series M5 (B200, B480): 4.2(1a)\nB-Series M4 (B200, B420): 4.2(1a)\n"
+    }
+]

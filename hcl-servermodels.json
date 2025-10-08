@@ -1,0 +1,277 @@
+[
+	{
+		"T_ID": "200,201",
+		"ID": "204,259",
+		"SERVER_MODEL": "Cisco UCS C220 M5SX"
+	},
+	{
+		"T_ID": "244,245",
+		"ID": "207,265",
+		"SERVER_MODEL": "Cisco UCS C240 M5L"
+	},
+	{
+		"T_ID": "246,247",
+		"ID": "206,262",
+		"SERVER_MODEL": "Cisco UCS C240 M5S"
+	},
+	{
+		"T_ID": "265,266",
+		"ID": "335,337",
+		"SERVER_MODEL": "Cisco UCS C245 M6SX"
+	},
+	{
+		"T_ID": "262",
+		"ID": "400",
+		"SERVER_MODEL": "Cisco UCS C240 M8SX"
+	},
+	{
+		"T_ID": "255",
+		"ID": "341",
+		"SERVER_MODEL": "Cisco UCS C240 M6SX"
+	},
+	{
+		"T_ID": "267,268",
+		"ID": "387,403",
+		"SERVER_MODEL": "Cisco UCS C245 M8SX"
+	},
+	{
+		"T_ID": "209",
+		"ID": "398",
+		"SERVER_MODEL": "Cisco UCS C220 M8S"
+	},
+	{
+		"T_ID": "190,191",
+		"ID": "53,160",
+		"SERVER_MODEL": "Cisco UCS C220 M4L"
+	},
+	{
+		"T_ID": "228,229",
+		"ID": "275,276",
+		"SERVER_MODEL": "Cisco UCS C240 M3S2"
+	},
+	{
+		"T_ID": "212,213",
+		"ID": "334,355",
+		"SERVER_MODEL": "Cisco UCS C225 M6S"
+	},
+	{
+		"T_ID": "210,211",
+		"ID": "336,353",
+		"SERVER_MODEL": "Cisco UCS C225 M6N"
+	},
+	{
+		"T_ID": "230,231",
+		"ID": "290,292",
+		"SERVER_MODEL": "Cisco UCS C240 M4 SNEBS"
+	},
+	{
+		"T_ID": "192,193",
+		"ID": "52,159",
+		"SERVER_MODEL": "Cisco UCS C220 M4S"
+	},
+	{
+		"T_ID": "251",
+		"ID": "340",
+		"SERVER_MODEL": "Cisco UCS C240 M6L"
+	},
+	{
+		"T_ID": "252",
+		"ID": "342",
+		"SERVER_MODEL": "Cisco UCS C240 M6N"
+	},
+	{
+		"T_ID": "248",
+		"ID": "300",
+		"SERVER_MODEL": "Cisco UCS C240 M5SD"
+	},
+	{
+		"T_ID": "253",
+		"ID": "333",
+		"SERVER_MODEL": "Cisco UCS C240 M6S"
+	},
+	{
+		"T_ID": "186,187",
+		"ID": "19,36",
+		"SERVER_MODEL": "Cisco UCS C220 M3L"
+	},
+	{
+		"T_ID": "256,257",
+		"ID": "361,379",
+		"SERVER_MODEL": "Cisco UCS C240 M7SN"
+	},
+	{
+		"T_ID": "204,205",
+		"ID": "363,377",
+		"SERVER_MODEL": "Cisco UCS C220 M7N"
+	},
+	{
+		"T_ID": "270,271,272",
+		"ID": "50,65,173",
+		"SERVER_MODEL": "Cisco UCS C460 M4"
+	},
+	{
+		"T_ID": "188,189",
+		"ID": "18,35",
+		"SERVER_MODEL": "Cisco UCS C220 M3S"
+	},
+	{
+		"T_ID": "242,243",
+		"ID": "237,264",
+		"SERVER_MODEL": "Cisco UCS C240 M5 SNEBS"
+	},
+	{
+		"T_ID": "206,207",
+		"ID": "362,378",
+		"SERVER_MODEL": "Cisco UCS C220 M7S"
+	},
+	{
+		"T_ID": "224,225",
+		"ID": "21,38",
+		"SERVER_MODEL": "Cisco UCS C240 M3L"
+	},
+	{
+		"T_ID": "182,183",
+		"ID": "33,47",
+		"SERVER_MODEL": "Cisco UCS C22 M3L"
+	},
+	{
+		"T_ID": "180,181",
+		"ID": "239,299",
+		"SERVER_MODEL": "Cisco UCS C125"
+	},
+	{
+		"T_ID": "208",
+		"ID": "408",
+		"SERVER_MODEL": "Cisco UCS C220 M8E3S"
+	},
+	{
+		"T_ID": "258,259",
+		"ID": "360,380",
+		"SERVER_MODEL": "Cisco UCS C240 M7SX"
+	},
+	{
+		"T_ID": "226,227",
+		"ID": "20,37",
+		"SERVER_MODEL": "Cisco UCS C240 M3S"
+	},
+	{
+		"T_ID": "184,185",
+		"ID": "22,46",
+		"SERVER_MODEL": "Cisco UCS C22 M3S"
+	},
+	{
+		"T_ID": "196,197",
+		"ID": "233,260",
+		"SERVER_MODEL": "Cisco UCS C220 M5 SNEBS"
+	},
+	{
+		"T_ID": "249,250",
+		"ID": "236,263",
+		"SERVER_MODEL": "Cisco UCS C240 M5SX"
+	},
+	{
+		"T_ID": "216,217",
+		"ID": "389,404",
+		"SERVER_MODEL": "Cisco UCS C225 M8S"
+	},
+	{
+		"T_ID": "236,237",
+		"ID": "289,291",
+		"SERVER_MODEL": "Cisco UCS C240 M4S2"
+	},
+	{
+		"T_ID": "202",
+		"ID": "339",
+		"SERVER_MODEL": "Cisco UCS C220 M6N"
+	},
+	{
+		"T_ID": "273,274",
+		"ID": "221,251",
+		"SERVER_MODEL": "Cisco UCS C480 M5"
+	},
+	{
+		"T_ID": "260",
+		"ID": "401",
+		"SERVER_MODEL": "Cisco UCS C240 M8E3S"
+	},
+	{
+		"T_ID": "214,215",
+		"ID": "388,405",
+		"SERVER_MODEL": "Cisco UCS C225 M8N"
+	},
+	{
+		"T_ID": "275,276",
+		"ID": "244,293",
+		"SERVER_MODEL": "Cisco UCS C480 M5ML"
+	},
+	{
+		"T_ID": "203",
+		"ID": "332",
+		"SERVER_MODEL": "Cisco UCS C220 M6S"
+	},
+	{
+		"T_ID": "222,223",
+		"ID": "48,295",
+		"SERVER_MODEL": "Cisco UCS C24 M3S2"
+	},
+	{
+		"T_ID": "232,233",
+		"ID": "55,162",
+		"SERVER_MODEL": "Cisco UCS C240 M4L"
+	},
+	{
+		"T_ID": "218,219",
+		"ID": "34,49",
+		"SERVER_MODEL": "Cisco UCS C24 M3L"
+	},
+	{
+		"T_ID": "234,235",
+		"ID": "54,161",
+		"SERVER_MODEL": "Cisco UCS C240 M4S"
+	},
+	{
+		"T_ID": "194,195",
+		"ID": "233,260",
+		"SERVER_MODEL": "Cisco UCS C220 M5 SN"
+	},
+	{
+		"T_ID": "240,241",
+		"ID": "237,264",
+		"SERVER_MODEL": "Cisco UCS C240 M5 SN"
+	},
+	{
+		"T_ID": "220,221",
+		"ID": "23,296",
+		"SERVER_MODEL": "Cisco UCS C24 M3S"
+	},
+	{
+		"T_ID": "198,199",
+		"ID": "205,253",
+		"SERVER_MODEL": "Cisco UCS C220 M5L"
+	},
+	{
+		"T_ID": "238,239",
+		"ID": "273,274",
+		"SERVER_MODEL": "Cisco UCS C240 M4SX"
+	},
+	{
+		"T_ID": "263,264",
+		"ID": "32,304",
+		"SERVER_MODEL": "Cisco UCS C240 SNEBS"
+	},
+	{
+		"T_ID": "254",
+		"ID": "343",
+		"SERVER_MODEL": "Cisco UCS C240 M6SN"
+	},
+	{
+		"T_ID": "269",
+		"ID": "59",
+		"SERVER_MODEL": "Cisco UCS C3160 M3"
+	},
+	{
+		"T_ID": "261",
+		"ID": "402",
+		"SERVER_MODEL": "Cisco UCS C240 M8L"
+	}
+]
