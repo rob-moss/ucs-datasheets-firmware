@@ -41,7 +41,8 @@ function gethtmltotitle() {
     url=$1
     echo "Pulling $url"
 
-    wget -q --show-progress -O "$outdir/temp_index.html" "$url"
+    curl --progress-bar "$url" -o "$outdir/temp_index.html"
+#    wget -q --show-progress -O "$outdir/temp_index.html" "$url"
 
 #    tidy -m "$outdir/temp_index.html"
 
@@ -86,6 +87,13 @@ for key in "${!datasheets[@]}"; do
 #  echo "Key: $key Value: ${datasheets[$key]}"
   gethtmltotitle "${datasheets[$key]}"
 done
+
+echo "* Fetch whitepapers"
+for key in "${!whitepapers[@]}"; do
+#  echo "Key: $key Value: ${datasheets[$key]}"
+  gethtmltotitle "${whitepapers[$key]}"
+done
+
 
 echo "* Fetch HCL json data"
 for key in "${!hcl[@]}"; do
