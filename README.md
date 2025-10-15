@@ -15,6 +15,7 @@ This has been intially prototyped in the Bash shell. This will work on any Linux
 To run this on a Mac you will need to install a newer version of Bash, which can be done with the homebrew / brew command;
 ```brew install bash```
 
+
 If you run this with the MacOS built-in Bash shell it will throw errors about the creation of associative arrays ```declare -A arrayname```
 
 ## Files
