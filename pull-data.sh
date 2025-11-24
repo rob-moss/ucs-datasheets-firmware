@@ -73,6 +73,12 @@ jsondir=./jsondata
 mkdir -p $jsondir
 
 
+echo "* Fetch CLI guides"
+# Fetch CLI Guides
+for key in "${!cliguides[@]}"; do
+#  echo "Key: $key Value: ${relnotes[$key]}"
+  gethtmltotitle "${cliguides[$key]}"
+done
 
 
 echo "* Fetch release notes"

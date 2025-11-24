@@ -105,6 +105,17 @@ hcl["ucsm-b200m6-v1-esxi-8u3"]="https://pwc014-nextgen-prod-rcdn.cisco.com/publi
 # hcl["imm-b200m4-v3-esxi-83u3"]=""
 
 
+declare -A cliguides
+cliguides["cli43admin"]="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Admin-Management/4-3/b_cisco_ucs_manager_cli_administration_mgmt_guide_4-3.html"
+cliguides["cli43firmware"]="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_CLI_Firmware_Management_Guide_4-3.html"
+cliguides["cli43inframgt"]="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3.html"
+cliguides["cli43netmgt"]="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3.html"
+cliguides["cli43servermgt"]="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_cli_guide_4_3.html"
+cliguides["cli43sysmgt"]="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3.html"
+# cliguides["cli43"]=""
+# cliguides["cli43"]=""
+# cliguides["cli43"]=""
+
 
 ######################
 
