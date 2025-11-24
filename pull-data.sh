@@ -1,4 +1,5 @@
 #!/opt/homebrew/bin/bash
+# v1.1
 
 echo "* Setting up to pull data"
 
@@ -9,6 +10,7 @@ source ./urldata.sh
 ## If it doesn't exist, pull it down
 ## If it's older than a week, pull it down
 ## If it's less than a week old, leave it and notify "File is fresh, not pulling down"
+
 
 ###
 # Fetching JSON payload:
