@@ -1,4 +1,5 @@
 #!/bin/bash
+# v1.0
 
 echo "* Pull data"
 ./pull-data.sh
@@ -10,6 +11,7 @@ echo "* Copy data to Onedrive: OneDrive/OneDrive - Cisco/CIRCUIT UCS Datasheets"
 onedrivedir=~/OneDrive/"OneDrive - Cisco/CIRCUIT UCS Datasheets"
 rm "$onedrivedir"/*
 cp -R ucs-firmware-docs/* "$onedrivedir"
+
 
 echo "* Add new files to Git"
 git add *
