@@ -22,7 +22,7 @@ relnotes["42"]='https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/rele
 relnotes["43"]='https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-4_3.html'
 relnotes["60"]='https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-6_0.html'
 relnotes["vic43"]='https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/VIC/4-3/b-release-notes-for-cisco-ucs-virtual-interface-card-drivers-release-4-3.html'
-
+relnotes["43crossver"]="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cross-version-fw-support_4_3.html"
 
 
 # JSON files
