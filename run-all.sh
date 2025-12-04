@@ -7,10 +7,15 @@ echo "* Pull data"
 echo "* Process data"
 ./process-data.sh
 
-echo "* Copy data to Onedrive: OneDrive/OneDrive - Cisco/CIRCUIT UCS Datasheets"
-onedrivedir=~/OneDrive/"OneDrive - Cisco/CIRCUIT UCS Datasheets"
-rm "$onedrivedir"/*
-cp -R ucs-firmware-docs/* "$onedrivedir"
+onedrivedir=~/OneDrive/"OneDrive - Cisco/CIRCUIT Project - UCS Datasheets"
+echo "* Copy data to Onedrive: ${onedrivedir}"
+if [ -d "${onedrivedir}" ]; then
+	rm "$onedrivedir"/*
+	cp -R ucs-firmware-docs/* "$onedrivedir"
+else
+	echo "** directory ${onedrivedir} not found!! Exiting"
+	exit 1
+fi
 
 
 echo "* Add new files to Git"
