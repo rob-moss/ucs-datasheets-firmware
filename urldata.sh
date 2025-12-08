@@ -117,6 +117,20 @@ cliguides["cli43sysmgt"]="https://www.cisco.com/c/en/us/td/docs/unified_computin
 # cliguides["cli43"]=""
 
 
+# Admin guides for CLI and GUI
+# https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html
+# There are many links here and these links sometimes have other links inside to chapters.
+# Likely I will need to use a HTML Mirror mode in wget recursive or similar
+# declare -A adminguides
+# admninguides["60guigettingstarted"]="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/6-0/b-cisco-ucs-manager-getting-started-guide-release-6_0.html"
+# admninguides["60guiadminmgmt"]="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/6-0/b_cisco_ucs_admin_mgmt_guide_6_0.html"
+# admninguides["60guifwmgmt"]="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/6-0/b_UCSM_GUI_Firmware_Management_Guide_6_0.html"
+# admninguides["60guiinframgmt"]="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/6-0/b_UCSM_GUI_Infrastructure_Management_Guide_6_0.html"
+# admninguides["60gui"]=""
+# admninguides["60gui"]=""
+
+
+
 ######################
 
 
