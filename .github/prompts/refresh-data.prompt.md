@@ -1,4 +1,4 @@
 ---
 agent: agent
 ---
-* Execute the run-all shell script
+* Execute the run-all.sh shell script

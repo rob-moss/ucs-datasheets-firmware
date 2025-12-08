@@ -12,17 +12,20 @@ The matrix should have the following columns:
 - Infrastructure Version
 - Host FW versions (B and C Server Bundle Versions)
 - Supported Fabric Interconnect + IOM
-- Supported UCS Server Models
 - Notes (if any)
 
 The output should be as follows;
-- Beginning with firmware version 4.2(2)
 - List all supported server models and fabric interconnect + IOM combinations for each firmware version
+- Do not list UCS B, C or X series servers in this table
+- Begin firmware versions with the latest first, going down to 4.2(2) as the oldest supported version
+- Format the output in markdown table format
 
-The filename should be `ucs-firmware-reports/ucs-crossfirmware-4.3.md`
+
+
+The filename should be `ucs-firmware-reports/ucs-crossfirmware-4.3.md`. You can replace the contents of this file with the generated report.
 
 
 An example of the output format in markdown:
-| Infrastructure Bundle | B and C Server Bundle Versions | Supported Fabric Interconnect + IOM | Supported UCS Server Models | Notes |
+| Infrastructure Bundle | B and C Server Bundle Versions | Supported Fabric Interconnect + IOM | Notes |
 |----------------------|--------------------------------|-------------------------------------|----------------------------|--------|
-| **4.3(6)** | 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI:** 6332, 6332-16UP, 6454, 64108, 6536<br>**IOM:** 2204, 2208, 2304, 2304V2, 2408 | B200 M4, B200 M5, B200 M6, B480 M5 | Full support for all M5, and M6 generation servers. IOM-2408 requires FI 6400/6536. IOM-2304/2304V2 requires FI 6300/6536 |
+| **4.3(6)** | 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI:** 6332, 6332-16UP, 6454, 64108, 6536<br>**IOM:** 2204, 2208, 2304, 2304V2, 2408 | IOM-2408 requires FI 6400/6536. IOM-2304/2304V2 requires FI 6300/6536 |
