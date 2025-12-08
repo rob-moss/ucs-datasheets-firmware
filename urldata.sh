@@ -34,7 +34,7 @@ equiv='https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/c/sw/UCS-
 declare -A jsons
 jsons["UCS-Equivalency-Matrix"]="$equiv"
 jsons["ucsmupgradematrix"]="$ucsmupgradematrix"
-
+jsons["ucsmcrossver"]="https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/ucs-manager/cross_version_firmware_matrix_6_0_onwards/custom_excel_data.json"
 
 
 # Datasheets associative array
