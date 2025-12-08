@@ -14,11 +14,17 @@ The matrix should have the following columns:
 - Supported Fabric Interconnect + IOM
 - Notes (if any)
 
+
 The output should be as follows;
 - List all supported server models and fabric interconnect + IOM combinations for each firmware version
 - Do not list UCS B, C or X series servers in this table
 - Begin firmware versions with the latest first, going down to 4.2(2) as the oldest supported version
 - Format the output in markdown table format
+
+In the summary section at the end of the report, include:
+- Links to each of the document sections used to compile the report as a URL to the public document
+- Any important notes or caveats about cross-firmware support for UCS Manager 4.3
+
 
 
 

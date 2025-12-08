@@ -201,6 +201,83 @@ This matrix shows the supported combinations of Infrastructure (A Bundle) and Se
 
 ---
 
+---
+
+## Summary
+
+### Document Sources
+
+This report was compiled from the following official Cisco documentation:
+
+1. **Primary Source:** [Cisco UCS Manager Cross-Version Firmware Support, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cross-version-fw-support_4_3.html)
+   - Main compatibility matrix for mixed A, B, and C bundle versions
+   - Platform support tables (Tables 1-4)
+   - Hardware compatibility guidelines
+
+2. **Supporting Documentation:**
+   - [Release Notes for Cisco UCS Manager, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-4_3.html)
+   - [Cisco UCS Equivalency Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/c/sw/UCS-Equivalency-Matrix/index.html)
+   - [UCS Hardware and Software Interoperability Matrix](https://ucshcltool.cloudapps.cisco.com/public/)
+
+### Important Notes and Caveats
+
+#### Critical Cross-Version Firmware Guidelines
+
+1. **Upgrade Sequence:**
+   - ⚠️ **ALWAYS upgrade Infrastructure (A Bundle) BEFORE Server Firmware (B/C Bundle)**
+   - Failure to follow this sequence may result in compatibility issues or service disruption
+
+2. **Configuration Validation:**
+   - Verify ALL UCS domain configurations are supported by firmware versions on server endpoints
+   - Check that features enabled in UCS Manager are compatible with older server firmware versions
+   - Review release notes for any deprecated features or configuration limitations
+
+3. **IOM Mixing Restrictions:**
+   - ⚠️ **CRITICAL:** Cannot mix IOM-2304 and IOM-2304V2 in the same chassis
+   - Attempting to mix these IOMs will result in configuration errors
+   - IOM-2304V2 requires minimum UCSM 4.0(4) infrastructure
+
+4. **Fabric Interconnect Limitations:**
+   - **FI-6536:** Minimum infrastructure version 4.2(3) required
+   - **FI-6200:** End of support - not compatible with M6 generation servers or newer firmware
+   - **FI-6324 (Mini):** Limited to single chassis deployments only
+
+5. **IOM to FI Dependencies:**
+   - **IOM-2408:** ONLY supported with FI 6400 or FI 6536 series
+   - **IOM-2304/2304V2:** ONLY supported with FI 6300 or FI 6536 series
+   - **IOM-2204/2208:** Universal support across all FI models
+
+6. **X-Series Specific Restrictions:**
+   - UCS X-Series Direct (UCSX-S9108-100G) supports X-Series compute nodes ONLY
+   - ⚠️ Cannot downgrade infrastructure below 4.3(4b) once upgraded
+   - X210c M8 compute nodes cannot downgrade below 4.3(6a)
+
+7. **Backward Compatibility:**
+   - Infrastructure version 4.3(6) maintains backward compatibility with server bundles back to 4.1(1)
+   - Infrastructure version 4.2(3) maintains backward compatibility with server bundles back to 4.0(1)
+   - Server bundle 4.0(x) versions NOT supported with infrastructure 4.3(x) on FI-6536
+
+8. **Platform Transition Considerations:**
+   - When migrating from FI-6200 to newer platforms, plan for infrastructure and server firmware upgrades
+   - M6 servers require minimum infrastructure 4.2(1)
+   - Verify VIC adapter compatibility when upgrading to newer IOM models
+
+9. **Testing and Validation:**
+   - Test cross-version firmware combinations in non-production environments first
+   - Validate all service profiles and policies after infrastructure upgrades
+   - Monitor system health metrics during and after firmware updates
+
+10. **Support and Documentation:**
+    - Always consult the latest release notes before upgrading
+    - Use the UCS Hardware Compatibility Tool to verify specific hardware/firmware combinations
+    - Review the Cisco UCS Equivalency Matrix for component version mappings
+
+### Version Coverage
+
+This report covers firmware versions from **4.2(2)** through **4.3(6)**, representing the current supported cross-version firmware matrix for UCS Manager 4.3. Older versions (4.0(x) and 4.1(x)) are included in backward compatibility references but are not the primary focus of this document.
+
+---
+
 ## References
 
 - **Official Documentation:** [Cisco UCS Manager Cross-Version Firmware Support, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cross-version-fw-support_4_3.html)
