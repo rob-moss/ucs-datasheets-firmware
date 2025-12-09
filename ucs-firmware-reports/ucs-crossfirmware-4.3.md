@@ -1,7 +1,7 @@
 # UCS Manager 4.3 Cross-Version Firmware Compatibility Matrix
 
 **Source:** Cisco UCS Manager Cross-Version Firmware Support, Release 4.3  
-**Generated:** December 8, 2025  
+**Generated:** December 9, 2025  
 **Last Updated:** September 23, 2025 (Cisco official documentation)
 
 ---
@@ -9,6 +9,8 @@
 ## Overview
 
 This matrix shows the supported combinations of Infrastructure (A Bundle) and Server Firmware (B/C Bundle) versions across different Cisco UCS platforms. The Infrastructure Bundle includes Cisco UCS Manager, Cisco NX-OS, IOM and FEX firmware. The Server Bundle includes host firmware, BIOS, Cisco IMC, adapter firmware and drivers.
+
+**Note:** This report covers cross-version firmware compatibility for UCS Manager infrastructure (Fabric Interconnects, IOMs) and does not enumerate specific server model support in the infrastructure tables below. Server model compatibility information is available in the Cisco UCS Hardware Compatibility List (HCL).
 
 ---
 
@@ -287,7 +289,7 @@ This report covers firmware versions from **4.2(2)** through **4.3(6)**, represe
 
 ---
 
-**Document Version:** 1.0  
-**Generated:** December 8, 2025  
+**Document Version:** 1.1  
+**Generated:** December 9, 2025  
 **Based on:** Cisco UCS Manager Release 4.3(6)  
 **Source Document:** Cisco UCS Manager Cross-Version Firmware Support, Release 4.3 (Updated September 23, 2025)
