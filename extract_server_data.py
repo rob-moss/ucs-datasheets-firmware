@@ -117,26 +117,38 @@ def parse_json_file(filepath):
         
         for entry in data:
             # Extract server firmware version from Version field
-            # Find the latest version that is 4.2 or above
+            # Find the latest version that is 4.2(2) or above
             if 'Version' in entry:
                 version = entry['Version']
-                # Only include versions 4.2 and above
-                if version and version.startswith('4.'):
+                # Only include versions 4.2(2) and above
+                if version:
                     try:
-                        version_parts = version.split('(')[0].split('.')
-                        if len(version_parts) >= 2:
-                            major, minor = int(version_parts[0]), int(version_parts[1])
-                            if (major == 4 and minor >= 2) or major > 4:
-                                # Keep the latest qualifying version
-                                if not server_firmware:
-                                    server_firmware = version
-                                else:
-                                    # Compare versions - keep the higher one
-                                    current_parts = server_firmware.split('(')[0].split('.')
-                                    if len(current_parts) >= 2:
-                                        curr_major, curr_minor = int(current_parts[0]), int(current_parts[1])
-                                        if major > curr_major or (major == curr_major and minor > curr_minor):
-                                            server_firmware = version
+                        # Parse version like "4.2(2)" into major.minor(patch)
+                        if '(' in version:
+                            base_version = version.split('(')[0]
+                            patch_version = version.split('(')[1].rstrip(')')
+                            version_parts = base_version.split('.')
+                            
+                            if len(version_parts) >= 2:
+                                major, minor = int(version_parts[0]), int(version_parts[1])
+                                patch = int(patch_version) if patch_version else 0
+                                
+                                # Check if >= 4.2(2)
+                                if major > 4 or (major == 4 and minor > 2) or (major == 4 and minor == 2 and patch >= 2):
+                                    # Keep the latest qualifying version
+                                    if not server_firmware:
+                                        server_firmware = version
+                                    else:
+                                        # Compare versions - keep the higher one
+                                        if '(' in server_firmware:
+                                            curr_base = server_firmware.split('(')[0]
+                                            curr_patch = server_firmware.split('(')[1].rstrip(')')
+                                            curr_parts = curr_base.split('.')
+                                            if len(curr_parts) >= 2:
+                                                curr_major, curr_minor = int(curr_parts[0]), int(curr_parts[1])
+                                                curr_p = int(curr_patch) if curr_patch else 0
+                                                if major > curr_major or (major == curr_major and minor > curr_minor) or (major == curr_major and minor == curr_minor and patch > curr_p):
+                                                    server_firmware = version
                     except:
                         pass
             
@@ -239,8 +251,21 @@ def main():
                 'server_firmware': server_firmware
             })
     
-    # Sort rows by blade model, CPU version (ascending), ESXi version (descending)
-    table_rows.sort(key=lambda x: (x['blade'], x['cpu'], -esxi_sort_key(x['esxi'])[0], -esxi_sort_key(x['esxi'])[1], -esxi_sort_key(x['esxi'])[2]))
+    # Sort rows by blade model, server firmware (ascending), CPU version (ascending), ESXi version (ascending - oldest first)
+    def firmware_sort_key(fw):
+        """Parse firmware version for sorting (e.g., 4.2(2) -> (4, 2, 2))"""
+        try:
+            if '(' in fw:
+                base = fw.split('(')[0]
+                patch = fw.split('(')[1].rstrip(')')
+                parts = base.split('.')
+                if len(parts) >= 2:
+                    return (int(parts[0]), int(parts[1]), int(patch) if patch else 0)
+        except:
+            pass
+        return (0, 0, 0)
+    
+    table_rows.sort(key=lambda x: (x['blade'], firmware_sort_key(x['server_firmware']), x['cpu'], esxi_sort_key(x['esxi'])))
     
     # Generate markdown output
     output_file = 'ucs-firmware-reports/server-adapter-driver-matrix-raw.md'
