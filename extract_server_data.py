@@ -61,17 +61,18 @@ def extract_adapter_model(full_model_name):
     """
     Extract just the adapter model number from full name.
     Example: "Cisco UCSB-MLOM-40G-04: Cisco UCS 1440 Virtual Interface Card" -> "VIC 1440"
+    Excludes Port Expander adapters per v2 requirements.
     """
+    # Skip Port Expander adapters
+    if 'Port Expander' in full_model_name:
+        return None
+    
     # Look for VIC model numbers (1340, 1380, 1440, 1480, 15411, etc.)
     vic_match = re.search(r'UCS\s+(\d+)\s+Virtual\s+Interface\s+Card', full_model_name)
     if vic_match:
         return f"VIC {vic_match.group(1)}"
     
-    # Look for other adapter patterns
-    if 'Port Expander' in full_model_name:
-        return "Port Expander"
-    
-    return full_model_name
+    return None
 
 def extract_driver_name(driver_version_string):
     """
@@ -90,6 +91,16 @@ def extract_driver_name(driver_version_string):
             return driver_name
     
     return None
+
+def esxi_sort_key(esxi_version):
+    """
+    Create a sort key for ESXi versions to sort in descending order.
+    Example: "ESXi 8.0 U3" -> (8, 0, 3)
+    """
+    match = re.search(r'ESXi\s+(\d+)\.(\d+)\s+U(\d+)', esxi_version)
+    if match:
+        return (int(match.group(1)), int(match.group(2)), int(match.group(3)))
+    return (0, 0, 0)
 
 def parse_json_file(filepath):
     """Parse a single JSON HCL file and extract adapter/driver data."""
@@ -164,7 +175,10 @@ def main():
         adapter_drivers = defaultdict(set)
         
         for adapter_info in adapters:
-            if adapter_info['adapter'] and adapter_info['firmware'] and adapter_info['driver']:
+            # Skip if adapter is None (e.g., Port Expanders excluded)
+            if not adapter_info['adapter']:
+                continue
+            if adapter_info['firmware'] and adapter_info['driver']:
                 adapter_key = f"{adapter_info['adapter']} + FW {adapter_info['firmware']}"
                 driver_str = f"{adapter_info['driver']} ({adapter_info['driver_version']})"
                 adapter_drivers[adapter_key].add(driver_str)
@@ -180,8 +194,23 @@ def main():
                 'drivers': driver_list
             })
     
+    # Sort rows by blade model, CPU version, and ESXi version (descending)
+    # Group by blade model and CPU version for section headers
+    from collections import OrderedDict
+    grouped_data = OrderedDict()
+    
+    for row in table_rows:
+        key = (row['blade'], row['cpu'])
+        if key not in grouped_data:
+            grouped_data[key] = []
+        grouped_data[key].append(row)
+    
+    # Sort ESXi versions within each group (descending - latest first)
+    for key in grouped_data:
+        grouped_data[key].sort(key=lambda x: esxi_sort_key(x['esxi']), reverse=True)
+    
     # Generate markdown output
-    output_file = 'ucs-firmware-reports/server-adapter-driver-matrix.md'
+    output_file = 'ucs-firmware-reports/server-adapter-driver-matrix-raw.md'
     
     # Create directory if it doesn't exist
     os.makedirs('ucs-firmware-reports', exist_ok=True)
@@ -191,15 +220,21 @@ def main():
         f.write("**Generated:** December 10, 2025\n\n")
         f.write("This matrix shows UCS blade server models with their supported adapters, firmware versions, ESXi versions, and drivers.\n\n")
         
-        # Write table header
-        f.write("| Blade Model | CPU Version | ESXi Version | Adapter Model + Firmware | Driver + Version |\n")
-        f.write("|-------------|-------------|--------------|--------------------------|------------------|\n")
+        # Write sections for each blade model + CPU version
+        for (blade_model, cpu_version), rows in grouped_data.items():
+            f.write(f"## {blade_model} {cpu_version}\n\n")
+            
+            # Write table header
+            f.write("| Blade Model | CPU Version | ESXi Version | Adapter Model + Firmware | Driver + Version |\n")
+            f.write("|-------------|-------------|--------------|--------------------------|------------------|\n")
+            
+            # Write table rows for this section
+            for row in rows:
+                f.write(f"| {row['blade']} | {row['cpu']} | {row['esxi']} | {row['adapter']} | {row['drivers']} |\n")
+            
+            f.write("\n")
         
-        # Write table rows
-        for row in table_rows:
-            f.write(f"| {row['blade']} | {row['cpu']} | {row['esxi']} | {row['adapter']} | {row['drivers']} |\n")
-        
-        f.write("\n---\n\n")
+        f.write("---\n\n")
         f.write("*Report generated from UCS HCL JSON files*\n")
     
     print(f"\nMarkdown file generated: {output_file}")

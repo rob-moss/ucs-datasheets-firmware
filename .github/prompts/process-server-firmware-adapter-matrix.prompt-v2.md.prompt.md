@@ -1,6 +1,6 @@
 ---
 agent: agent
-name: GenerateUCSServerFirmwareAdapterMatrix_v1
+name: process-server-firmware-adapter-matrix-v3
 description: Generate a UCS Server Hardware Compatibility Matrix in markdown format by extracting data from JSON files.
 ---
 
@@ -40,7 +40,7 @@ Extract from the `HardwareTypes.Adapters.CNA` array:
    - Extract VIC model numbers from full names
    - Example: "Cisco UCSB-MLOM-40G-04: Cisco UCS 1440 Virtual Interface Card" → "VIC 1440"
    - Example: "Cisco UCSB-ML-V5Q10G: UCS 15411 Virtual Interface Card" → "VIC 15411"
-   - Include Port Expander adapters
+   - Exclude Port Expander adapters
 
 2. **Firmware Versions**:
    - Extract from `FirmwareVersion` field
