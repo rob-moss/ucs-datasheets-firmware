@@ -83,11 +83,11 @@ hcl["ucsm-b480m5-v1-esxi-8u3"]='https://pwc014-nextgen-prod-rcdn.cisco.com/publi
 hcl["ucsm-b480m5-v1-esxi-7u3"]='https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=209,248&processor_ID=153&osVendor_ID=5&osVersion_ID=936&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined'
 # b200m4 cpuv3 variants
 hcl["ucsm-b200m4-v3-esxi-67u3"]="https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=51,157&processor_ID=61&osVendor_ID=5&osVersion_ID=909&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined"
-hcl["ucsm-b200m4-v3-esxi-73u3"]="https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=51,157&processor_ID=61&osVendor_ID=5&osVersion_ID=936&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined"
+hcl["ucsm-b200m4-v3-esxi-7u3"]="https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=51,157&processor_ID=61&osVendor_ID=5&osVersion_ID=936&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined"
 #hcl["ucsm-b200m4v3esxi83u3"]=""
 # b200m4 cpuv4 variants
 hcl["ucsm-b200m4-v4-esxi-67u3"]="https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=51,157&processor_ID=84&osVendor_ID=5&osVersion_ID=909&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined"
-hcl["ucsm-b200m4-v4-esxi-73u3"]="https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=51,157&processor_ID=84&osVendor_ID=5&osVersion_ID=936&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined"
+hcl["ucsm-b200m4-v4-esxi-7u3"]="https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=51,157&processor_ID=84&osVendor_ID=5&osVersion_ID=936&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined"
 #hcl["ucsm-b200m4v4esxi83u3"]=""
 # b200m5 variants
 hcl["ucsm-b200m5-v1-esxi-67u3"]="https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=199,247&processor_ID=148&osVendor_ID=5&osVersion_ID=909&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined"

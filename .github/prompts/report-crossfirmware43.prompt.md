@@ -6,6 +6,21 @@ Read the Cisco UCS Manager Cross-Version Firmware Support, Release 4.3 document 
 
 Ensure the data is accurate and corresponds to the official UCS Cross-Reference Hardware Compatibility Matrix for UCS Manager 4.3.
 
+This document provides information on the compatibility of different UCS Manager firmware versions with various server models, fabric interconnects, and IOMs.
+
+This report is focused on UCS Manager and not Intersight, Intersight Managed Mode or IMM.
+
+At the beginning of the report list the following fields, based on the document metadata.  The Document Version should be incremented each time this report is generated.
+- Source
+- Generated
+- Last Updated
+- Document version
+
+
+
+
+Your instructions are
+
 
 Create a matrix of firmware versions that support the hardware listed above.
 The matrix should have the following columns:
@@ -13,6 +28,10 @@ The matrix should have the following columns:
 - Host FW versions (B and C Server Bundle Versions)
 - Supported Fabric Interconnect + IOM
 - Notes (if any)
+
+Create separate matrixes for the following UCS Fabric Interconnects:
+- UCS 6300/6400/6500 Series Fabric Interconnects
+- UCS 6324 and UCS Mini Series Fabric Interconnects
 
 
 The output should be as follows;
@@ -27,15 +46,21 @@ In the summary section at the end of the report, include:
 
 
 
+# Output file
+The filename should be `ucs-firmware-reports/ucs-crossfirmware-4.3.md`.
+- You can replace the contents of this file with the generated report.
+- You can read the previous report version from this file if needed and increment its version number.
 
-The filename should be `ucs-firmware-reports/ucs-crossfirmware-4.3.md`. You can replace the contents of this file with the generated report.
 
-
+# Cross Firmware Output
 An example of the output format in markdown:
 | Infrastructure Bundle | B and C Server Bundle Versions | Supported Fabric Interconnect + IOM | Notes |
 |----------------------|--------------------------------|-------------------------------------|----------------------------|--------|
 | **4.3(6)** | 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI:** 6332, 6332-16UP, 6454, 64108, 6536<br>**IOM:** 2204, 2208, 2304, 2304V2, 2408 | IOM-2408 requires FI 6400/6536. IOM-2304/2304V2 requires FI 6300/6536 |
 
+
+
+# Server Models Support
 In another table, with the heading of "Server Models Support", list all supported server models for UCS Manager 4.3 firmware versions.
 - the server firmware version should be listed in descending order, starting from the latest version 4.3(6) down to 4.2(2)
 - the table should include the following columns:
@@ -53,7 +78,9 @@ In another table, with the heading of "Server Models Support", list all supporte
   - The nenic/nfnic Driver versions should list all supported versions for that firmware version from the "Driver Version" field, ie "1.0.6.0-1OEM.700.1.0.15843807 nenic-ens" or "5.0.0.43-1OEM.700.1.0.15843807 nfnic"
   - List the drivers supported for that firmware version, separated by commas
 
- Create a matrix in the following format:
+
+# Server Models Report Output
+Create a matrix in the following format:
 
 | Server firmware version | Server Models Supported | Adapter and Firmware Supported | ESXi Versions | Driver nenic/nefnic versions |
 |-----------------------|------------------------|--------------------|---------------|--------------------------|
