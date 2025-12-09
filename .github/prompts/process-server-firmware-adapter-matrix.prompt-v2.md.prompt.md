@@ -49,12 +49,10 @@ Extract from the `HardwareTypes.Adapters.CNA` array:
 3. **Driver Names**:
    - Extract from `DriverVersion` field (typically the last word in the string)
    - Filter for: `nenic`, `nfnic`, `nenic-ens`, `nfnic-ens`
-   - Example: "2.0.11.0-1OEM.800.1.0.20143090 nenic" → "nenic"
+   - Example: "2.0.11.0-1OEM.800.1.0.20143090 nenic" → "nenic" and "2.0.11.0-1OEM.800.1.0.20143090" is the version
 
 
 ## Output Format
-
-Generate a markdown file named `ucs-firmware-reports/server-adapter-driver-matrix.md` with the following structure:
 
 Create a markdown matrix with the following fields:
 - Blade Model
@@ -66,6 +64,7 @@ Create a markdown matrix with the following fields:
 An example is below:
 | Blade Model | CPU Version | ESXi Version | Adapter Model + Firmware | Driver + Version |
 | ------------ | ------------ | ------------ | ------------ | ------------ |  ------------ | 
+| B200 M4 | V3 | ESXi 6.7 U3 | VIC 1280 - 4.4(1) | nenic-ens 1.0.2.0-1OEM.670.0.0.8169922 |
 
 
 
@@ -86,7 +85,7 @@ An example is below:
 
 2. **Sort Configurations**: Within each model, sort by:
    - CPU version (V1, V2, V3, V4)
-   - ESXi version (ascending)
+   - ESXi version (descending, latest first)
 
 3. **List All Adapters**: Include all unique adapter/firmware combinations found in the JSON data
 
@@ -113,7 +112,7 @@ An example is below:
 
 Save the generated markdown file as:
 ```
-server-adapter-driver-matrix.md
+ucs-firmware-reports/server-adapter-driver-matrix-raw.md
 ```
 
 ## Execution

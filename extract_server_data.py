@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 """
-Extract server model, adapter, ESXi, and driver data from JSON HCL files
-and export to a concise markdown format.
+UCS Server Hardware Compatibility Matrix Generator (v2)
+
+This script extracts UCS blade server hardware compatibility data from JSON files
+and generates a comprehensive markdown report in table format showing:
+- Blade Model
+- CPU Version  
+- ESXi Version
+- Adapter Model + Firmware
+- Driver + Version
 """
 
 import json
 import os
 import re
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 
 def parse_filename(filename):
     """
@@ -121,7 +128,7 @@ def parse_json_file(filepath):
         return []
 
 def main():
-    """Main function to process all JSON files and generate markdown."""
+    """Main function to process all JSON files and generate markdown table."""
     
     jsondata_dir = 'jsondata'
     
@@ -129,12 +136,9 @@ def main():
         print(f"Error: Directory {jsondata_dir} not found")
         return
     
-    # Dictionary to organize data by blade model, CPU version, and ESXi version
-    # Key: (blade_model, cpu_version, esxi_version)
-    server_data = defaultdict(lambda: {
-        'adapters': set(),
-        'driver_versions': defaultdict(set)  # driver_name -> set of full version strings
-    })
+    # List to store all rows for the table
+    # Each row: (blade_model, cpu_version, esxi_version, adapter_fw, driver_ver)
+    table_rows = []
     
     # Process each JSON file
     for filename in sorted(os.listdir(jsondata_dir)):
@@ -156,17 +160,25 @@ def main():
         # Parse JSON file
         adapters = parse_json_file(filepath)
         
-        key = (blade_model, cpu_version, esxi_version)
+        # Group by adapter+firmware to collect all drivers
+        adapter_drivers = defaultdict(set)
         
         for adapter_info in adapters:
-            # Add adapter with firmware version
-            if adapter_info['adapter'] and adapter_info['firmware']:
-                adapter_str = f"{adapter_info['adapter']} (FW: {adapter_info['firmware']})"
-                server_data[key]['adapters'].add(adapter_str)
-            
-            # Add driver version string grouped by driver name
-            if adapter_info['driver'] and adapter_info['driver_version']:
-                server_data[key]['driver_versions'][adapter_info['driver']].add(adapter_info['driver_version'])
+            if adapter_info['adapter'] and adapter_info['firmware'] and adapter_info['driver']:
+                adapter_key = f"{adapter_info['adapter']} + FW {adapter_info['firmware']}"
+                driver_str = f"{adapter_info['driver']} ({adapter_info['driver_version']})"
+                adapter_drivers[adapter_key].add(driver_str)
+        
+        # Create table rows
+        for adapter_fw, drivers in sorted(adapter_drivers.items()):
+            driver_list = "<br>".join(sorted(drivers))
+            table_rows.append({
+                'blade': blade_model,
+                'cpu': cpu_version,
+                'esxi': esxi_version,
+                'adapter': adapter_fw,
+                'drivers': driver_list
+            })
     
     # Generate markdown output
     output_file = 'ucs-firmware-reports/server-adapter-driver-matrix.md'
@@ -176,51 +188,22 @@ def main():
 
     with open(output_file, 'w') as f:
         f.write("# UCS Server Hardware Compatibility Matrix\n\n")
-        f.write("**Generated:** December 9, 2025\n\n")
+        f.write("**Generated:** December 10, 2025\n\n")
         f.write("This matrix shows UCS blade server models with their supported adapters, firmware versions, ESXi versions, and drivers.\n\n")
-        f.write("---\n\n")
         
-        # Group by blade model
-        current_model = None
+        # Write table header
+        f.write("| Blade Model | CPU Version | ESXi Version | Adapter Model + Firmware | Driver + Version |\n")
+        f.write("|-------------|-------------|--------------|--------------------------|------------------|\n")
         
-        for key in sorted(server_data.keys()):
-            blade_model, cpu_version, esxi_version = key
-            data = server_data[key]
-            
-            # Add heading when model changes
-            if blade_model != current_model:
-                f.write(f"\n## {blade_model}\n\n")
-                current_model = blade_model
-            
-            f.write(f"### {blade_model} - {cpu_version} - {esxi_version}\n\n")
-            
-            # Create table format
-            f.write("| Adapter Model + Firmware | Driver + Version |\n")
-            f.write("| ------------------------ | ---------------- |\n")
-            
-            # Group adapters and drivers together
-            if data['adapters'] and data['driver_versions']:
-                # Write adapters
-                adapters_list = sorted(data['adapters'])
-                
-                # Write drivers
-                driver_entries = []
-                for driver_name in sorted(data['driver_versions'].keys()):
-                    versions = sorted(data['driver_versions'][driver_name])
-                    for ver in versions:
-                        driver_entries.append(f"{driver_name}: {ver}")
-                
-                # Combine into table rows
-                max_rows = max(len(adapters_list), len(driver_entries))
-                for i in range(max_rows):
-                    adapter_cell = adapters_list[i] if i < len(adapters_list) else ""
-                    driver_cell = driver_entries[i] if i < len(driver_entries) else ""
-                    f.write(f"| {adapter_cell} | {driver_cell} |\n")
-            
-            f.write("\n---\n\n")
+        # Write table rows
+        for row in table_rows:
+            f.write(f"| {row['blade']} | {row['cpu']} | {row['esxi']} | {row['adapter']} | {row['drivers']} |\n")
+        
+        f.write("\n---\n\n")
+        f.write("*Report generated from UCS HCL JSON files*\n")
     
     print(f"\nMarkdown file generated: {output_file}")
-    print(f"Processed {len(server_data)} server configurations")
+    print(f"Total table rows: {len(table_rows)}")
 
 if __name__ == '__main__':
     main()
