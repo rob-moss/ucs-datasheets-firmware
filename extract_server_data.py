@@ -103,18 +103,47 @@ def esxi_sort_key(esxi_version):
     return (0, 0, 0)
 
 def parse_json_file(filepath):
-    """Parse a single JSON HCL file and extract adapter/driver data."""
+    """Parse a single JSON HCL file and extract adapter/driver data and server firmware."""
     try:
         with open(filepath, 'r') as f:
             data = json.load(f)
         
         results = []
+        server_firmware = None
         
         # JSON is an array of hardware versions
         if not isinstance(data, list):
             data = [data]
         
         for entry in data:
+            # Extract server firmware version from Version field
+            # Find the latest version that is 4.2 or above
+            if 'Version' in entry:
+                version = entry['Version']
+                # Only include versions 4.2 and above
+                if version and version.startswith('4.'):
+                    try:
+                        version_parts = version.split('(')[0].split('.')
+                        if len(version_parts) >= 2:
+                            major, minor = int(version_parts[0]), int(version_parts[1])
+                            if (major == 4 and minor >= 2) or major > 4:
+                                # Keep the latest qualifying version
+                                if not server_firmware:
+                                    server_firmware = version
+                                else:
+                                    # Compare versions - keep the higher one
+                                    current_parts = server_firmware.split('(')[0].split('.')
+                                    if len(current_parts) >= 2:
+                                        curr_major, curr_minor = int(current_parts[0]), int(current_parts[1])
+                                        if major > curr_major or (major == curr_major and minor > curr_minor):
+                                            server_firmware = version
+                    except:
+                        pass
+            
+            # Only process adapters from entries with server_firmware >= 4.2
+            if not server_firmware:
+                continue
+                
             # Extract adapters (CNA)
             if 'HardwareTypes' in entry and 'Adapters' in entry['HardwareTypes']:
                 if 'CNA' in entry['HardwareTypes']['Adapters']:
@@ -129,7 +158,8 @@ def parse_json_file(filepath):
                                 'adapter': adapter_model,
                                 'firmware': firmware_version,
                                 'driver': driver_name,
-                                'driver_version': driver_version
+                                'driver_version': driver_version,
+                                'server_firmware': server_firmware
                             })
         
         return results
@@ -171,6 +201,9 @@ def main():
         # Parse JSON file
         adapters = parse_json_file(filepath)
         
+        # Get server firmware (should be same for all adapters in file)
+        server_firmware = adapters[0]['server_firmware'] if adapters and adapters[0].get('server_firmware') else 'Unknown'
+        
         # Group by adapter+firmware to collect all drivers
         adapter_drivers = defaultdict(set)
         
@@ -179,8 +212,19 @@ def main():
             if not adapter_info['adapter']:
                 continue
             if adapter_info['firmware'] and adapter_info['driver']:
-                adapter_key = f"{adapter_info['adapter']} + FW {adapter_info['firmware']}"
-                driver_str = f"{adapter_info['driver']} ({adapter_info['driver_version']})"
+                # Use dash separator instead of + FW
+                adapter_key = f"{adapter_info['adapter']} - {adapter_info['firmware']}"
+                # Extract just the version number (remove extra text after driver name)
+                driver_parts = adapter_info['driver_version'].strip().split()
+                if driver_parts:
+                    # Version is everything except the last word (which is the driver name)
+                    if len(driver_parts) > 1:
+                        version = ' '.join(driver_parts[:-1])
+                    else:
+                        version = driver_parts[0]
+                    driver_str = f"{adapter_info['driver']} {version}"
+                else:
+                    driver_str = adapter_info['driver']
                 adapter_drivers[adapter_key].add(driver_str)
         
         # Create table rows
@@ -191,23 +235,12 @@ def main():
                 'cpu': cpu_version,
                 'esxi': esxi_version,
                 'adapter': adapter_fw,
-                'drivers': driver_list
+                'drivers': driver_list,
+                'server_firmware': server_firmware
             })
     
-    # Sort rows by blade model, CPU version, and ESXi version (descending)
-    # Group by blade model and CPU version for section headers
-    from collections import OrderedDict
-    grouped_data = OrderedDict()
-    
-    for row in table_rows:
-        key = (row['blade'], row['cpu'])
-        if key not in grouped_data:
-            grouped_data[key] = []
-        grouped_data[key].append(row)
-    
-    # Sort ESXi versions within each group (descending - latest first)
-    for key in grouped_data:
-        grouped_data[key].sort(key=lambda x: esxi_sort_key(x['esxi']), reverse=True)
+    # Sort rows by blade model, CPU version (ascending), ESXi version (descending)
+    table_rows.sort(key=lambda x: (x['blade'], x['cpu'], -esxi_sort_key(x['esxi'])[0], -esxi_sort_key(x['esxi'])[1], -esxi_sort_key(x['esxi'])[2]))
     
     # Generate markdown output
     output_file = 'ucs-firmware-reports/server-adapter-driver-matrix-raw.md'
@@ -220,21 +253,16 @@ def main():
         f.write("**Generated:** December 10, 2025\n\n")
         f.write("This matrix shows UCS blade server models with their supported adapters, firmware versions, ESXi versions, and drivers.\n\n")
         
-        # Write sections for each blade model + CPU version
-        for (blade_model, cpu_version), rows in grouped_data.items():
-            f.write(f"## {blade_model} {cpu_version}\n\n")
-            
-            # Write table header
-            f.write("| Blade Model | CPU Version | ESXi Version | Adapter Model + Firmware | Driver + Version |\n")
-            f.write("|-------------|-------------|--------------|--------------------------|------------------|\n")
-            
-            # Write table rows for this section
-            for row in rows:
-                f.write(f"| {row['blade']} | {row['cpu']} | {row['esxi']} | {row['adapter']} | {row['drivers']} |\n")
-            
-            f.write("\n")
+        # Write single table with all data
+        f.write("| Blade Model + CPU Version | Server Firmware | ESXi Version | Adapter Model + Firmware | Driver + Version |\n")
+        f.write("|---------------------------|-----------------|--------------|--------------------------|------------------|\n")
         
-        f.write("---\n\n")
+        # Write all rows
+        for row in table_rows:
+            blade_cpu = f"{row['blade']} {row['cpu']}"
+            f.write(f"| {blade_cpu} | {row['server_firmware']} | {row['esxi']} | {row['adapter']} | {row['drivers']} |\n")
+        
+        f.write("\n---\n\n")
         f.write("*Report generated from UCS HCL JSON files*\n")
     
     print(f"\nMarkdown file generated: {output_file}")

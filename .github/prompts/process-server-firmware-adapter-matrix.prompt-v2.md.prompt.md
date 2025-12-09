@@ -1,6 +1,6 @@
 ---
 agent: agent
-name: process-server-firmware-adapter-matrix-v3
+name: process-server-firmware-adapter-matrix-v4
 description: Generate a UCS Server Hardware Compatibility Matrix in markdown format by extracting data from JSON files.
 ---
 
@@ -34,6 +34,12 @@ Parse filenames like `b200m5-v2-esxi-8u3.json` or `ucsm-b200m6-v1-esxi-7u3.json`
 
 ### From JSON Content
 
+Extract from the JSON structure:
+1. **Server Firmware**: From `Version` field in JSON
+  - Example: 4.2(2)
+  - Only include versions 4.2 and above ie beginning with 4.2
+
+
 Extract from the `HardwareTypes.Adapters.CNA` array:
 
 1. **Adapter Model Numbers**:
@@ -50,21 +56,22 @@ Extract from the `HardwareTypes.Adapters.CNA` array:
    - Extract from `DriverVersion` field (typically the last word in the string)
    - Filter for: `nenic`, `nfnic`, `nenic-ens`, `nfnic-ens`
    - Example: "2.0.11.0-1OEM.800.1.0.20143090 nenic" → "nenic" and "2.0.11.0-1OEM.800.1.0.20143090" is the version
+   - Do not use braces () around the version
 
 
 ## Output Format
 
 Create a markdown matrix with the following fields:
-- Blade Model
-- CPU Version
+- Blade Model + CPU Version
+- Server Firmware
 - ESXi Version
 - Adapter Model and Firmware
 - Driver Names and Versions
 
 An example is below:
-| Blade Model | CPU Version | ESXi Version | Adapter Model + Firmware | Driver + Version |
+| Blade Model + CPU Version | Server Firmware | ESXi Version | Adapter Model + Firmware | Driver + Version |
 | ------------ | ------------ | ------------ | ------------ | ------------ |  ------------ | 
-| B200 M4 | V3 | ESXi 6.7 U3 | VIC 1280 - 4.4(1) | nenic-ens 1.0.2.0-1OEM.670.0.0.8169922 |
+| B200 M4 V3 | 4.2(2) | ESXi 6.7 U3 | VIC 1280 - 4.4(1) | nenic-ens 1.0.2.0-1OEM.670.0.0.8169922 |
 
 
 
@@ -121,3 +128,6 @@ After creating the script:
 1. Save it as `extract_server_data.py`
 2. Run it with: `python3 extract_server_data.py`
 3. Verify the output file `server-adapter-driver-matrix.md` is created successfully
+4. Review the markdown report for accuracy and completeness
+5. Commit the script and output file to the repository with the commit message "Updated server firmware adapter matrix version x"
+6. Run the prompt `push-all` to push changes to GitHub
