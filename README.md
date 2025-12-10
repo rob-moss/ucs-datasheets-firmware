@@ -16,7 +16,34 @@ This project collects and processes UCS Datasheets, Hardware Compatibility List 
 
 ## Setup and Requirements
 
+### Python Environment Setup
+
+This project requires Python 3.7 or higher. The Python scripts use only standard library modules, so no external dependencies are required for the main functionality.
+
+**Create and activate a virtual environment**:
+```bash
+# Create virtual environment
+python3 -m venv .venv
+
+# Activate virtual environment
+# On macOS/Linux:
+source .venv/bin/activate
+
+# On Windows:
+.venv\Scripts\activate
+```
+
+**Install dependencies** (if needed for future enhancements):
+```bash
+# Currently, all scripts use standard library only
+# If requirements.txt is added in the future:
+pip install -r requirements.txt
+```
+
+**Note**: The core Python scripts (`extract_server_data.py`, `validate_firmware_data.py`, `json_to_markdown.py`) use only Python standard library modules and require no additional pip packages.
+
 ### Bash Shell Requirements
+
 This project uses Bash 5.x features. On **macOS**, the built-in Bash 3.x will not work.
 
 **Install Bash 5.x on macOS**:
