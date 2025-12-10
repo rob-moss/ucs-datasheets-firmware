@@ -1,38 +1,137 @@
-###
 # UCS Datasheets, HCL and Firmware
 
-This project is used to collect UCS Datasheets, HCL data and Firmware recommendations for Cisco UCS server products including X-Series.
+This project collects and processes UCS Datasheets, Hardware Compatibility List (HCL) data, and Firmware recommendations for Cisco UCS server products.
 
-To be used for CIRCUIT or other AI LLMs to query for specific product information.
+**Purpose**: Provide structured, AI-readable documentation for CIRCUIT and other AI LLMs to query specific UCS product information.
 
+**Key Features**:
 * Gathers UCS product datasheets in HTML format
-* Gathers UCS Manager Release notes 4.2, 4.3 and 6.0 in HTML format
-* Gathers UCS HCL JSON files for most common Blade models: b200, x210c for VMware ESXi 6.7u3, 7u3, 8u3
-* Converts all JSON files to MarkDown format for consumption by CIRCUIT
+* Collects UCS Manager Release notes (4.2, 4.3, and 6.0) in HTML format
+* Downloads UCS HCL JSON files for common blade models (B200, B480, X210c) for VMware ESXi 6.7 U3, 7.0 U3, 8.0 U3
+* Converts JSON files to Markdown format for AI consumption
+* Generates comprehensive firmware compatibility reports
+* Validates firmware data consistency across sources
 
-## Setup and running
-This has been intially prototyped in the Bash shell. This will work on any Linux host using Bash 5.x but will not work on MacOS built-in Bash shell (3.x). 
+---
 
-To run this on a Mac you will need to install a newer version of Bash, which can be done with the homebrew / brew command;
-```brew install bash```
+## Setup and Requirements
 
+### Bash Shell Requirements
+This project uses Bash 5.x features. On **macOS**, the built-in Bash 3.x will not work.
 
-If you run this with the MacOS built-in Bash shell it will throw errors about the creation of associative arrays ```declare -A arrayname```
+**Install Bash 5.x on macOS**:
+```bash
+brew install bash
+```
 
-## Files
-| File | Description |
-| -- | -- |
-| pull-data.sh | Pulls down the Datasheets HTML and HCL JSON data from cisco.com |
-| process-data.sh | Converts all JSON files to MarkDown format |
-| query-data.sh | Queries the JSON files and provides firmware information for a specific blade type. Still WIP  - no menu yet, you will need to edit vars inside the file to make it run on different blade models. |
+**Note**: The built-in macOS Bash will throw errors about associative arrays (`declare -A arrayname`).
 
+---
+
+## Shell Scripts
+
+| Script | Description |
+|--------|-------------|
+| **run-all.sh** | Master script that executes full data refresh: pulls data, processes it, copies to OneDrive, and commits to git |
+| **pull-data.sh** | Downloads UCS datasheets (HTML) and HCL JSON data from cisco.com |
+| **process-data.sh** | Converts all JSON files to Markdown format using `json_to_markdown.py` |
+| **query-data.sh** | Queries JSON files for firmware information for specific blade types (WIP - manual variable editing required) |
+| **urldata.sh** | Contains URLs for data sources |
+
+---
+
+## Python Scripts
+
+| Script | Output Files | Description |
+|--------|--------------|-------------|
+| **json_to_markdown.py** | `markdown_out/*.md` | General-purpose converter: transforms JSON/JSONL files to Markdown tables with collapsible raw JSON sections. Handles dicts, lists, and nested structures. Used by `process-data.sh` |
+| **extract_server_data.py** | `ucs-firmware-reports/server-adapter-driver-matrix-raw.md` | Extracts UCS blade server compatibility data from JSON files (v4). Generates comprehensive matrix showing blade models, CPU versions, ESXi versions, adapter models/firmware, and driver versions |
+| **validate_firmware_data.py** | `validation_report.md`<br>`validation_report.txt` | Validates firmware data consistency (v5). Compares JSON files against markdown reports to identify discrepancies in blade configurations, adapters, ESXi versions, and drivers |
+
+---
+
+## AI Agent Prompt Files
+
+Located in `.github/prompts/`, these files provide instructions for AI agents (like GitHub Copilot) to automate report generation:
+
+| Prompt File | Output File(s) | Description |
+|-------------|----------------|-------------|
+| **refresh-data.prompt.md** | Various | Executes `run-all.sh` to perform full data refresh cycle |
+| **process-server-firmware-adapter-matrix.prompt.md** | `ucs-firmware-reports/server-adapter-driver-matrix-raw.md` | Generates Python script (`extract_server_data.py`) to create UCS Server Hardware Compatibility Matrix from JSON files (v4) |
+| **validate-server-firmware-adapter-matrix.prompt.md** | `validation_report.md`<br>`validation_report.txt` | Creates Python validation script (`validate_firmware_data.py`) to compare JSON data against markdown reports and identify discrepancies (v5) |
+| **report-infra-server-models.prompt.md** | `ucs-firmware-reports/report-recommended-firmware.md` | Generates firmware recommendation report showing recommended versions for Infrastructure and Server models with compatibility matrices |
+| **report-crossfirmware43.prompt.md** | `ucs-firmware-reports/report-ucs-crossfirmware-4.3.md` | Generates comprehensive cross-version firmware support report (v2) for UCS Manager 4.3, including infrastructure/server compatibility matrices, upgrade paths, and best practices |
+| **push-all.prompt.md** | N/A | Executes `git push all` to push changes to all configured git remotes |
+
+---
+
+## Report Files
+
+Located in `ucs-firmware-reports/`:
+
+| Report File | Generated By | Description |
+|-------------|--------------|-------------|
+| **server-adapter-driver-matrix-raw.md** | `extract_server_data.py`<br>(via `process-server-firmware-adapter-matrix.prompt.md`) | Raw compatibility matrix showing blade models, CPU versions, ESXi versions, VIC adapters with firmware, and driver versions. Source data for other reports |
+| **report-recommended-firmware.md** | AI agent via<br>`report-infra-server-models.prompt.md` | Consolidated firmware recommendations for UCS Infrastructure and Servers. Lists recommended versions: 6.0(1b) (Latest), 4.3(6c) (Recommended Stable), 4.2(3o) (Long-term Stable) with compatibility matrices |
+| **report-ucs-crossfirmware-4.3.md** | AI agent via<br>`report-crossfirmware43.prompt.md` | Comprehensive cross-version firmware support report for UCS Manager 4.3. Includes infrastructure bundles, server bundles, fabric interconnect compatibility, IOM support, upgrade paths, and best practices |
+| **recommended-firmware.md** | Manual/Legacy | Legacy firmware recommendations file |
+| **ucs-crossfirmware-4.3.md** | Manual/Legacy | Legacy cross-firmware support documentation |
+
+---
 
 ## Directories
-  
-| Dir | Description |
-|--|--|
-| jsondata/ | JSON data files in JSON format -- HCL data, equivalency matrix, upgrade matrix |
-| ucs-firmware-docs/ | All UCS product datasheets, HCL data in Markdown. All of these files can be added to a CIRCUIT Project | 
-| wip/ | Work In Progress files, can be ignored |
+
+| Directory | Description |
+|-----------|-------------|
+| **jsondata/** | JSON data files: HCL data, equivalency matrix, upgrade matrix, server/adapter compatibility data from cisco.com |
+| **ucs-firmware-docs/** | UCS product datasheets and HCL data in HTML and Markdown formats. Ready for CIRCUIT AI project import |
+| **ucs-firmware-reports/** | Generated firmware compatibility and recommendation reports in Markdown format |
+| **wip/** | Work-in-progress files (can be ignored) |
+| **.github/prompts/** | AI agent prompt instruction files for automated report generation |
+
+---
+
+## Workflow
+
+### Full Data Refresh
+```bash
+./run-all.sh
+```
+This will:
+1. Pull latest datasheets and JSON data from cisco.com
+2. Convert JSON files to Markdown
+3. Copy output to OneDrive (if configured)
+4. Commit and push changes to git
+
+### Generate Specific Reports
+Use AI agents (GitHub Copilot) with the prompt files:
+1. Open desired prompt file from `.github/prompts/`
+2. Execute the prompt instructions with AI agent
+3. Generated reports appear in `ucs-firmware-reports/`
+
+### Validate Data Consistency
+```bash
+python3 validate_firmware_data.py
+```
+Generates validation reports showing any discrepancies between JSON source data and markdown reports.
+
+---
+
+## Data Sources
+
+All data is sourced from official Cisco documentation:
+- Cisco UCS Hardware Compatibility List (HCL)
+- Cisco UCS Manager Release Notes and Documentation
+- Cisco UCS Product Datasheets
+- Cisco UCS Cross-Version Firmware Support Documentation
+
+---
+
+## Version Information
+
+- **extract_server_data.py**: v4
+- **validate_firmware_data.py**: v5
+- **report-crossfirmware43.prompt.md**: v2
+- **Last Updated**: December 11, 2025
 
 
