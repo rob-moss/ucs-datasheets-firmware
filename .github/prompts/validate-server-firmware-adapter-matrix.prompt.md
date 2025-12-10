@@ -6,6 +6,9 @@ description: Validate UCS firmware data between JSON files and markdown report t
 
 # Validate UCS Server Firmware Adapter Matrix
 
+## Version
+
+
 ## Objective
 Create a validation script that compares UCS firmware data between JSON files and the markdown report to identify discrepancies in blade server configurations, adapter models, ESXi versions, and driver versions.
 

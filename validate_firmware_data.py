@@ -2,6 +2,7 @@
 """
 Validation Script for UCS Firmware Data
 Compares JSON firmware data against the markdown report to identify discrepancies
+Version 5
 """
 
 import json
@@ -69,7 +70,8 @@ class FirmwareValidator:
                         if 'nfnic' in driver.lower() and 'nvme' in driver.lower():
                             continue
                         
-                        driver_match = re.match(r'(\w+)\s+([\d\.\-\w]+)', driver)
+                        # Match driver type (including hyphenated names like nenic-ens) and version
+                        driver_match = re.match(r'([\w-]+)\s+([\d\.\-\w]+)', driver)
                         if driver_match:
                             driver_type = driver_match.group(1)
                             driver_version = driver_match.group(2)
@@ -178,11 +180,17 @@ class FirmwareValidator:
                                 continue
                             
                             # Extract VIC model number (e.g., "VIC 1240", "VIC 1340") for comparison
+                            # Pattern 1: "VIC ####" - direct VIC reference
                             vic_match = re.search(r'(VIC\s+\d+)', model, re.I)
                             if vic_match:
                                 adapter_model = vic_match.group(1).upper()
                             else:
-                                adapter_model = model
+                                # Pattern 2: "UCS #### Virtual Interface Card" - extract number
+                                ucs_match = re.search(r'UCS\s+(\d+)\s+Virtual\s+Interface\s+Card', model, re.I)
+                                if ucs_match:
+                                    adapter_model = f"VIC {ucs_match.group(1)}"
+                                else:
+                                    adapter_model = model
                             
                             adapter_fw = adapter.get('FirmwareVersion', '')
                             driver_version = adapter.get('DriverVersion', '')
@@ -355,8 +363,8 @@ class FirmwareValidator:
                 blade_cpu = disc['blade_model']
                 server_fw = disc.get('server_fw', 'N/A')
                 esxi = disc['esxi_version']
-                adapter_display = disc.get('adapter_full_name', disc['adapter_model'])
-                adapter = f"{adapter_display} - {disc['adapter_fw']}"
+                # Use shortened adapter model (VIC ####) for consistent output format
+                adapter = f"{disc['adapter_model']} - {disc['adapter_fw']}"
                 driver = f"{disc['driver_type']} {disc['json_driver_version']}"
                 print(f"| {blade_cpu} | {server_fw} | {esxi} | {adapter} | {driver} |")
         
