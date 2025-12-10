@@ -3,15 +3,17 @@
 ## Document Information
 
 - **Source**: Cisco UCS Manager Cross-Version Firmware Support, Release 4.3
-- **Generated**: December 10, 2025
+- **Generated**: December 11, 2025
 - **Last Updated**: September 23, 2025 (from official documentation)
-- **Document Version**: 1.0
+- **Document Version**: 1.1
 
 ## Overview
 
 This report provides comprehensive information about cross-version firmware support for Cisco UCS Manager Release 4.3. It details compatibility between infrastructure bundle versions, server bundle versions, and supported hardware components.
 
-**Recommended Firmware Versions**: **4.3(6c)**, **4.2(3o)**
+**Recommended Firmware Versions**: **6.0(1b)** (Latest), **4.3(6c)** (Recommended Stable), **4.2(3o)** (Long-term Stable)
+
+**Note**: This document covers UCS Manager 4.3.x firmware versions. For UCS Manager 6.0(1b) compatibility information, refer to the UCS Manager 6.0 Cross-Version Firmware Support documentation.
 
 ---
 
@@ -21,12 +23,12 @@ This section covers standard UCS deployments using 6300, 6400, and 6536 Series F
 
 | Infrastructure Bundle | B and C Server Bundle Versions | Supported Fabric Interconnect + IOM | Notes |
 |----------------------|--------------------------------|-------------------------------------|--------|
-| **4.3(6)** | 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI**: 6332, 6332-16UP, 6454, 64108, 6536<br>**IOM**: 2204, 2208, 2304, 2304V2, 2408 | Latest release with full backward compatibility |
+| **4.3(6c)** | 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI**: 6332, 6332-16UP, 6454, 64108, 6536<br>**IOM**: 2204, 2208, 2304, 2304V2, 2408 | **RECOMMENDED STABLE**. Latest 4.3.x release with full backward compatibility |
 | **4.3(5)** | 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI**: 6332, 6332-16UP, 6454, 64108, 6536<br>**IOM**: 2204, 2208, 2304, 2304V2, 2408 | Supports all 6300/6400/6536 models |
 | **4.3(4)** | 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI**: 6332, 6332-16UP, 6454, 64108, 6536<br>**IOM**: 2204, 2208, 2304, 2304V2, 2408 | Full IOM support including 2408 |
 | **4.3(3)** | 4.3(3), 4.3(2), 4.3(1), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI**: 6332, 6332-16UP, 6454, 64108, 6536<br>**IOM**: 2204, 2208, 2304, 2304V2, 2408 | Compatible with all current generation IOMs |
 | **4.3(2)** | 4.3(2), 4.3(1), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI**: 6332, 6332-16UP, 6454, 64108, 6536<br>**IOM**: 2204, 2208, 2304, 2304V2, 2408 | Stable release with broad compatibility |
-| **4.2(3)** | 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1), 4.0(4), 4.0(2), 4.0(1) | **FI**: 6200, 6332, 6332-16UP, 6454, 64108, 6536<br>**IOM**: 2204, 2208, 2304, 2304V2, 2408 | **Recommended**. First version supporting FI-6536. Includes legacy 6200 support |
+| **4.2(3o)** | 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1), 4.0(4), 4.0(2), 4.0(1) | **FI**: 6200, 6332, 6332-16UP, 6454, 64108, 6536<br>**IOM**: 2204, 2208, 2304, 2304V2, 2408 | **LONG-TERM STABLE**. First version supporting FI-6536. Includes legacy 6200 support |
 | **4.2(2)** | 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1), 4.0(4), 4.0(2), 4.0(1) | **FI**: 6200, 6332, 6332-16UP, 6454, 64108<br>**IOM**: 2204, 2208, 2304, 2304V2, 2408 | Supports 6200 Series and all 6300/6400 models |
 
 ### Key Points:
@@ -43,12 +45,12 @@ UCS Mini deployments use the 6324 Fabric Interconnect for simplified, single-cha
 
 | Infrastructure Bundle | B and C Server Bundle Versions | Supported Fabric Interconnect + IOM | Notes |
 |----------------------|--------------------------------|-------------------------------------|--------|
-| **4.3(6)** | 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI**: 6324 (Mini)<br>**IOM**: 2204, 2208 | Single chassis deployment, max 8 blade servers |
+| **4.3(6c)** | 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI**: 6324 (Mini)<br>**IOM**: 2204, 2208 | **RECOMMENDED STABLE**. Single chassis deployment, max 8 blade servers |
 | **4.3(5)** | 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI**: 6324 (Mini)<br>**IOM**: 2204, 2208 | Single chassis deployment, max 8 blade servers |
 | **4.3(4)** | 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI**: 6324 (Mini)<br>**IOM**: 2204, 2208 | Single chassis deployment, max 8 blade servers |
 | **4.3(3)** | 4.3(3), 4.3(2), 4.3(1), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI**: 6324 (Mini)<br>**IOM**: 2204, 2208 | Single chassis deployment, max 8 blade servers |
 | **4.3(2)** | 4.3(2), 4.3(1), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI**: 6324 (Mini)<br>**IOM**: 2204, 2208 | Single chassis deployment, max 8 blade servers |
-| **4.2(3)** | 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1), 4.0(4), 4.0(2), 4.0(1) | **FI**: 6324 (Mini)<br>**IOM**: 2204, 2208 | Single chassis deployment, max 8 blade servers |
+| **4.2(3o)** | 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1), 4.0(4), 4.0(2), 4.0(1) | **FI**: 6324 (Mini)<br>**IOM**: 2204, 2208 | **LONG-TERM STABLE**. Single chassis deployment, max 8 blade servers |
 | **4.2(2)** | 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1), 4.0(4), 4.0(2), 4.0(1) | **FI**: 6324 (Mini)<br>**IOM**: 2204, 2208 | Single chassis deployment, max 8 blade servers |
 
 ### UCS Mini Limitations:
@@ -61,7 +63,7 @@ UCS Mini deployments use the 6324 Fabric Interconnect for simplified, single-cha
 
 ## Section 3: Server Models Support
 
-### Server Bundle 4.2(3) - Comprehensive Compatibility Matrix
+### Server Bundle 4.2(3o) - Long-Term Stable Compatibility Matrix
 
 | Server Model | VIC Adapters (Firmware) | Supported ESXi Versions | Driver Versions | Notes |
 |--------------|------------------------|------------------------|-----------------|--------|
@@ -186,11 +188,13 @@ For technical support and additional information:
 - Contact Cisco TAC for deployment-specific guidance and support
 
 **Recommended Actions**:
-1. Standardize on firmware versions **4.3(6c)** or **4.2(3o)** for optimal stability
-2. Plan upgrades during scheduled maintenance windows
-3. Validate all component compatibility before beginning upgrades
-4. Keep infrastructure firmware current to leverage latest features and fixes
-5. Monitor Cisco security advisories and apply critical patches promptly
+1. For latest features and capabilities, plan migration to **6.0(1b)** (refer to UCS Manager 6.0 documentation)
+2. For stable 4.3.x deployments, standardize on **4.3(6c)** for optimal stability and latest 4.3 features
+3. For long-term stability on 4.2.x, maintain **4.2(3o)** with extended support and backward compatibility
+4. Plan upgrades during scheduled maintenance windows
+5. Validate all component compatibility before beginning upgrades
+6. Keep infrastructure firmware current to leverage latest features and fixes
+7. Monitor Cisco security advisories and apply critical patches promptly
 
 ---
 
