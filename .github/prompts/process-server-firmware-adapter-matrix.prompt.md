@@ -8,6 +8,10 @@ description: Generate a UCS Server Hardware Compatibility Matrix in markdown for
 
 Create a Python script that extracts UCS blade server hardware compatibility data from JSON files and generates a comprehensive markdown report.
 
+The version of this prompt v4. The Python Script should also include this version information in a comment at the top, and the output markdown should also include the version information.
+
+
+
 ## Data Source
 
 Parse all JSON files in the `jsondata/` directory, excluding:
@@ -37,7 +41,7 @@ Parse filenames like `b200m5-v2-esxi-8u3.json` or `ucsm-b200m6-v1-esxi-7u3.json`
 Extract from the JSON structure:
 1. **Server Firmware**: From `Version` field in JSON
   - Example: 4.2(2)
-  - Only include versions 4.2 and above ie beginning with 4.2
+  - Only include versions 4.2(2) and above ie beginning with 4.2(2) and later
 
 
 Extract from the `HardwareTypes.Adapters.CNA` array:
@@ -60,6 +64,10 @@ Extract from the `HardwareTypes.Adapters.CNA` array:
 
 
 ## Output Format
+Between UCS Blade verisons, separate each model server with an empty row.
+
+The Headings for the markdown file should include the version of this prompt used to generate it, e.g., "Generated with process-server-firmware-adapter-matrix-v4".
+
 
 Create a markdown matrix with the following fields:
 - Blade Model + CPU Version
@@ -91,8 +99,9 @@ An example is below:
 1. **Group by Blade Model**: Organize sections by server model (B200 M4, B200 M5, B200 M6, B480 M5)
 
 2. **Sort Configurations**: Within each model, sort by:
+   - Server firmware version (ascending, oldest first)
    - CPU version (V1, V2, V3, V4)
-   - ESXi version (descending, latest first)
+   - ESXi version (ascending, oldest first)
 
 3. **List All Adapters**: Include all unique adapter/firmware combinations found in the JSON data
 
