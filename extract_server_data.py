@@ -268,7 +268,7 @@ def main():
     table_rows.sort(key=lambda x: (x['blade'], firmware_sort_key(x['server_firmware']), x['cpu'], esxi_sort_key(x['esxi'])))
     
     # Generate markdown output
-    output_file = 'ucs-firmware-reports/server-adapter-driver-matrix-raw.md'
+    output_file = 'ucs-firmware-reports/server-adapter-driver-matrix-v2.md'
     
     # Create directory if it doesn't exist
     os.makedirs('ucs-firmware-reports', exist_ok=True)
@@ -278,14 +278,21 @@ def main():
         f.write("**Generated:** December 10, 2025\n\n")
         f.write("This matrix shows UCS blade server models with their supported adapters, firmware versions, ESXi versions, and drivers.\n\n")
         
-        # Write single table with all data
+        # Write single table with all data, inserting empty rows between blade models
         f.write("| Blade Model + CPU Version | Server Firmware | ESXi Version | Adapter Model + Firmware | Driver + Version |\n")
         f.write("|---------------------------|-----------------|--------------|--------------------------|------------------|\n")
         
-        # Write all rows
+        # Track current blade model to insert empty rows between different models
+        current_blade = None
         for row in table_rows:
             blade_cpu = f"{row['blade']} {row['cpu']}"
+            
+            # Insert empty row when blade model changes
+            if current_blade is not None and row['blade'] != current_blade:
+                f.write("| | | | | |\n")
+            
             f.write(f"| {blade_cpu} | {row['server_firmware']} | {row['esxi']} | {row['adapter']} | {row['drivers']} |\n")
+            current_blade = row['blade']
         
         f.write("\n---\n\n")
         f.write("*Report generated from UCS HCL JSON files*\n")
