@@ -1,8 +1,10 @@
 ---
 agent: agent
+name: report-crossfirmware43-v1
 ---
 Read the Cisco UCS Manager Cross-Version Firmware Support, Release 4.3 document located at: ucs-firmware-docs/Cisco UCS Manager Cross-Version Firmware Support, Release 4.3 - Cisco.html
 
+Also read the file ucs-firmware-reports/report-recommended-firmware.md which lists the Recommended Firmware for Infrastructure.
 
 Ensure the data is accurate and corresponds to the official UCS Cross-Reference Hardware Compatibility Matrix for UCS Manager 4.3.
 
@@ -10,6 +12,7 @@ This document provides information on the compatibility of different UCS Manager
 
 This report is focused on UCS Manager and not Intersight, Intersight Managed Mode or IMM.
 
+# Headings and Structure
 At the beginning of the report list the following fields, based on the document metadata.  The Document Version should be incremented each time this report is generated.
 - Source
 - Generated
@@ -17,9 +20,12 @@ At the beginning of the report list the following fields, based on the document 
 - Document version
 
 
+# Actions to take
 
+Compare the Recommended Firmware versions for Infrastructure from the report-recommended-firmware.md file with the data in the Cisco UCS Manager Cross-Version Firmware Support, Release 4.3 document.
 
-Your instructions are
+1. For each Recommended Firmware version for Infrastructure, use the Recommended verison rather than the overall version ie 4.3(6c) rather than 4.3(6) to find all matching firmware versions in the Cross-Version Firmware Support document.
+
 
 
 Create a matrix of firmware versions that support the hardware listed above.
@@ -47,7 +53,7 @@ In the summary section at the end of the report, include:
 
 
 # Output file
-The filename should be `ucs-firmware-reports/ucs-crossfirmware-4.3.md`.
+The filename should be `ucs-firmware-reports/report-ucs-crossfirmware-4.3.md`.
 - You can replace the contents of this file with the generated report.
 - You can read the previous report version from this file if needed and increment its version number.
 
@@ -56,7 +62,7 @@ The filename should be `ucs-firmware-reports/ucs-crossfirmware-4.3.md`.
 An example of the output format in markdown:
 | Infrastructure Bundle | B and C Server Bundle Versions | Supported Fabric Interconnect + IOM | Notes |
 |----------------------|--------------------------------|-------------------------------------|----------------------------|--------|
-| **4.3(6)** | 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI:** 6332, 6332-16UP, 6454, 64108, 6536<br>**IOM:** 2204, 2208, 2304, 2304V2, 2408 | IOM-2408 requires FI 6400/6536. IOM-2304/2304V2 requires FI 6300/6536 |
+| **4.3(6c)** | 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) | **FI:** 6332, 6332-16UP, 6454, 64108, 6536<br>**IOM:** 2204, 2208, 2304, 2304V2, 2408 | IOM-2408 requires FI 6400/6536. IOM-2304/2304V2 requires FI 6300/6536 |
 
 
 
