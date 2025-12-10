@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-UCS Server Hardware Compatibility Matrix Generator (v2)
+UCS Server Hardware Compatibility Matrix Generator (v4)
 
 This script extracts UCS blade server hardware compatibility data from JSON files
 and generates a comprehensive markdown report in table format showing:
@@ -268,7 +268,7 @@ def main():
     table_rows.sort(key=lambda x: (x['blade'], firmware_sort_key(x['server_firmware']), x['cpu'], esxi_sort_key(x['esxi'])))
     
     # Generate markdown output
-    output_file = 'ucs-firmware-reports/server-adapter-driver-matrix-v2.md'
+    output_file = 'ucs-firmware-reports/server-adapter-driver-matrix-raw.md'
     
     # Create directory if it doesn't exist
     os.makedirs('ucs-firmware-reports', exist_ok=True)
@@ -276,6 +276,7 @@ def main():
     with open(output_file, 'w') as f:
         f.write("# UCS Server Hardware Compatibility Matrix\n\n")
         f.write("**Generated:** December 10, 2025\n\n")
+        f.write("**Generated with:** process-server-firmware-adapter-matrix-v4\n\n")
         f.write("This matrix shows UCS blade server models with their supported adapters, firmware versions, ESXi versions, and drivers.\n\n")
         
         # Write single table with all data, inserting empty rows between blade models
