@@ -7,7 +7,7 @@ This project collects and processes UCS Datasheets, Hardware Compatibility List 
 **Key Features**:
 * Gathers UCS product datasheets in HTML format
 * Collects UCS Manager Release notes (4.2, 4.3, and 6.0) in HTML format
-* Downloads UCS HCL JSON files for common blade models (B200, B480, X210c) for VMware ESXi 6.7 U3, 7.0 U3, 8.0 U3
+* Downloads UCS HCL JSON files for common blade models (B200, B480) for VMware ESXi 6.7 U3, 7.0 U3, 8.0 U3
 * Converts JSON files to Markdown format for AI consumption
 * Generates comprehensive firmware compatibility reports
 * Validates firmware data consistency across sources
