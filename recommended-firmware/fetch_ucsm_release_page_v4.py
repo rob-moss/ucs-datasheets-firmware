@@ -2,7 +2,7 @@
 
 #!/usr/bin/env python3
 """
-Fetches UCS firmware release pages from software.cisco.com (Version 3)
+Fetches UCS firmware release pages from software.cisco.com (Version 4)
 
 This script fetches release information for multiple UCS firmware types:
 - Infrastructure (UCS Manager, Fabric Interconnects, etc.)
@@ -10,19 +10,22 @@ This script fetches release information for multiple UCS firmware types:
 - C-Series Rack Servers
 
 Features:
-- Fetches from 3 different firmware sources
+- Fetches from 3 different firmware sources (only 3 HTTP requests)
 - Validates HTTP 200 responses and HTML content
 - Detects JavaScript-rendered pages (Angular SPA)
-- Extracts recommended firmware versions
+- Extracts JavaScript files and parses for version strings
+- Searches for all <span id="selectedRelease"> tags
 - Updates the recommended-firmware.md file with URLs
-- Saves HTML for reference
+- NO FALLBACK: Exits with error if versions cannot be extracted
 
 Note: Cisco's download site is an Angular single-page application where content
-is rendered client-side. The script uses the version from the URL parameter as
-the authoritative source since it matches the page being requested.
+is rendered client-side. This script attempts to parse JavaScript files to extract
+the recommended versions that would populate the page.
 
 Usage:
-    python fetch_ucsm_release_page_v3.py
+    python fetch_ucsm_release_page_v4.py
+    python fetch_ucsm_release_page_v4.py --no-update
+    python fetch_ucsm_release_page_v4.py --save-html
 """
 
 import argparse
@@ -265,12 +268,93 @@ class CiscoSoftwarePageFetcher:
         }
 
 
-def parse_recommended_versions(html_content):
+def extract_script_urls(html_content, base_url):
     """
-    Extracts ALL recommended firmware versions from HTML
+    Extracts JavaScript file URLs from HTML
     
     Args:
         html_content: HTML content string
+        base_url: Base URL to resolve relative paths
+    
+    Returns:
+        list: List of JavaScript URLs
+    """
+    script_pattern = r'<script[^>]*src="([^"]+)"[^>]*>'
+    matches = re.findall(script_pattern, html_content, re.IGNORECASE)
+    
+    script_urls = []
+    for match in matches:
+        # Convert relative URLs to absolute
+        if match.startswith('http'):
+            script_urls.append(match)
+        elif match.startswith('/'):
+            script_urls.append(f"{base_url}{match}")
+        else:
+            script_urls.append(f"{base_url}/{match}")
+    
+    return script_urls
+
+
+def extract_css_urls(html_content, base_url):
+    """
+    Extracts CSS file URLs from HTML
+    
+    Args:
+        html_content: HTML content string
+        base_url: Base URL to resolve relative paths
+    
+    Returns:
+        list: List of CSS URLs
+    """
+    css_pattern = r'<link[^>]*href="([^"]+\.css)"[^>]*>'
+    matches = re.findall(css_pattern, html_content, re.IGNORECASE)
+    
+    css_urls = []
+    for match in matches:
+        # Convert relative URLs to absolute
+        if match.startswith('http'):
+            css_urls.append(match)
+        elif match.startswith('/'):
+            css_urls.append(f"{base_url}{match}")
+        else:
+            css_urls.append(f"{base_url}/{match}")
+    
+    return css_urls
+
+
+def parse_versions_from_javascript(js_content):
+    """
+    Extracts firmware versions from JavaScript content
+    
+    Args:
+        js_content: JavaScript content string
+    
+    Returns:
+        list: List of version strings found
+    """
+    # UCS Manager version pattern: X.Y(Za) where X.Y is major.minor and Za is patch
+    # Examples: 4.2(3o), 4.3(6c), 6.0(1b)
+    version_pattern = r'\b(\d+\.\d+\([0-9a-z]+\))\b'
+    
+    matches = re.findall(version_pattern, js_content, re.IGNORECASE)
+    
+    # Deduplicate and sort
+    versions = []
+    for match in matches:
+        if match not in versions:
+            versions.append(match)
+    
+    return versions
+
+
+def parse_recommended_versions(html_content, session=None, base_url="https://software.cisco.com"):
+    """
+    Extracts ALL recommended firmware versions from HTML and JavaScript
+    
+    Args:
+        html_content: HTML content string
+        session: Optional requests session for fetching JavaScript
+        base_url: Base URL for resolving relative paths
     
     Returns:
         list: List of recommended versions found, or empty list if none found
@@ -284,17 +368,85 @@ def parse_recommended_versions(html_content):
     except Exception as e:
         print(f"  Warning: HTML parser failed: {e}")
     
-    # Fallback to regex search for all instances
+    # Search in HTML for span tags
     pattern = r'<span[^>]*id="selectedRelease"[^>]*>([^<]+)</span>'
     matches = re.findall(pattern, html_content, re.IGNORECASE)
     if matches:
-        # Clean and deduplicate
         versions = []
         for match in matches:
             version = match.strip()
             if version and version not in versions:
                 versions.append(version)
         return versions
+    
+    # If no versions found in HTML, extract and parse JavaScript and CSS files
+    if session:
+        print("  No versions in HTML, extracting resource files...")
+        
+        # Create htmlfiles directory for saving files
+        htmlfiles_dir = ensure_htmlfiles_directory()
+        
+        # Extract and save CSS files
+        css_urls = extract_css_urls(html_content, base_url)
+        if css_urls:
+            print(f"  Found {len(css_urls)} CSS files")
+            for css_url in css_urls[:3]:  # Save first 3 CSS files
+                try:
+                    filename = css_url.split('/')[-1].split('?')[0]  # Remove query params
+                    response = session.get(css_url, timeout=10)
+                    if response.status_code == 200:
+                        saved_path = save_text_file(response.text, filename, htmlfiles_dir)
+                        if saved_path:
+                            print(f"    Saved CSS: {filename}")
+                    time.sleep(0.2)
+                except Exception as e:
+                    pass  # Silent fail for CSS files
+        
+        # Extract JavaScript files
+        script_urls = extract_script_urls(html_content, base_url)
+        
+        if script_urls:
+            print(f"  Found {len(script_urls)} JavaScript files")
+            all_versions = []
+            
+            # Focus on main.*.js files which typically contain app logic
+            main_scripts = [url for url in script_urls if 'main.' in url and url.endswith('.js')]
+            
+            for script_url in main_scripts[:5]:  # Check up to 5 main scripts
+                try:
+                    filename = script_url.split('/')[-1]
+                    print(f"  Fetching: {filename}")
+                    response = session.get(script_url, timeout=15)
+                    if response.status_code == 200:
+                        print(f"    Downloaded {len(response.text)} bytes")
+                        
+                        # Save JavaScript file to htmlfiles directory
+                        saved_path = save_text_file(response.text, filename, htmlfiles_dir)
+                        if saved_path:
+                            print(f"    Saved to: {saved_path}")
+                        
+                        versions = parse_versions_from_javascript(response.text)
+                        if versions:
+                            print(f"    Found {len(versions)} version strings")
+                            all_versions.extend(versions)
+                        else:
+                            print(f"    No version strings found in this file")
+                    else:
+                        print(f"    Failed: HTTP {response.status_code}")
+                    time.sleep(0.3)  # Small delay between JS requests
+                except Exception as e:
+                    print(f"    Warning: Failed to fetch: {e}")
+                    import traceback
+                    traceback.print_exc()
+            
+            # Deduplicate
+            unique_versions = []
+            for v in all_versions:
+                if v not in unique_versions:
+                    unique_versions.append(v)
+            
+            if unique_versions:
+                return unique_versions
     
     return []
 
@@ -396,6 +548,18 @@ def update_firmware_file(firmware_data, firmware_file_path):
         return False
 
 
+def ensure_htmlfiles_directory():
+    """
+    Creates the htmlfiles directory if it doesn't exist
+    
+    Returns:
+        Path: Path to the htmlfiles directory
+    """
+    htmlfiles_dir = Path('htmlfiles')
+    htmlfiles_dir.mkdir(exist_ok=True)
+    return htmlfiles_dir
+
+
 def save_html(content, output_path):
     """
     Saves HTML content to a file
@@ -414,18 +578,55 @@ def save_html(content, output_path):
     
     return output_path
 
+def save_text_file(content, filename, directory):
+    """
+    Saves text content to a file in the specified directory
+    
+    Args:
+        content: Text content string
+        filename: Name of the file
+        directory: Directory path to save to
+    
+    Returns:
+        Path: Path to saved file
+    """
+    output_path = Path(directory) / filename
+    
+    try:
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+        return output_path
+    except Exception as e:
+        print(f"    Warning: Failed to save {filename}: {e}")
+        return None
+
+def save_text_file(content, filename, directory):
+    """
+    Saves text content to a file in the specified directory
+    
+    Args:
+        content: Text content string
+        filename: Name of the file
+        directory: Directory path to save to
+    
+    Returns:
+        Path: Path to saved file
+    """
+    output_path = Path(directory) / filename
+    
+    try:
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+        return output_path
+    except Exception as e:
+        print(f"    Warning: Failed to save {filename}: {e}")
+        return None
+
 
 def main():
     """Main script execution"""
     parser = argparse.ArgumentParser(
         description='Fetches UCS firmware release pages from software.cisco.com (v3 - multiple sources)'
-    )
-    parser.add_argument(
-        '--versions',
-        '-v',
-        nargs='+',
-        default=['4.2-dfl', '4.3-dfl', '6.0-dfl'],
-        help='Release versions to fetch (default: 4.2(3o) 4.3(6c) 6.0(1b))'
     )
     parser.add_argument(
         '--show-session',
@@ -442,18 +643,13 @@ def main():
         action='store_true',
         help='Do not update the firmware file, only display the versions'
     )
-    parser.add_argument(
-        '--save-html',
-        action='store_true',
-        help='Save HTML files for each firmware source'
-    )
     
     args = parser.parse_args()
     
     try:
-        print("\033[96mCisco UCS Firmware Release Page Fetcher (v3)\033[0m")
+        print("\033[96mCisco UCS Firmware Release Page Fetcher (v4)\033[0m")
         print("=" * 60 + "\n")
-        print(f"Fetching all recommended firmware versions from 3 sources\n")
+        print(f"Extracting recommended firmware versions from HTML/JavaScript\n")
         
         # Dictionary to store firmware data (lists for each source)
         firmware_data = {
@@ -503,6 +699,14 @@ def main():
                 continue
             print(f"  ✓ HTML content appears valid ({len(html_content)} bytes)")
             
+            # Save HTML to htmlfiles directory
+            htmlfiles_dir = ensure_htmlfiles_directory()
+            timestamp = datetime.now().strftime('%Y%m%d-%H%M%S')
+            html_filename = f"{source_key}-{timestamp}.html"
+            html_saved_path = save_text_file(html_content, html_filename, htmlfiles_dir)
+            if html_saved_path:
+                print(f"  💾 Saved HTML to: {html_saved_path}")
+            
             # Parse ALL recommended firmware versions from the page
             print(f"\n\033[93mStep 2b: Parsing ALL recommended firmware versions...\033[0m")
             
@@ -511,22 +715,29 @@ def main():
             
             if is_spa:
                 print("  ℹ Detected JavaScript single-page application")
-                print("  Content is rendered client-side - HTML parser cannot extract versions")
-                print(f"  Using default versions: \033[92m{', '.join(args.versions)}\033[0m")
-                recommended_versions = args.versions
+                print("  Content is rendered client-side - parsing JavaScript files...")
             else:
-                # Search for ALL instances of <span id="selectedRelease">
                 print("  Searching for all <span id=\"selectedRelease\"> tags...")
-                recommended_versions = parse_recommended_versions(html_content)
-                
-                if recommended_versions:
-                    print(f"  ✓ Found {len(recommended_versions)} recommended versions:")
-                    for v in recommended_versions:
-                        print(f"    - \033[92m{v}\033[0m")
-                else:
-                    print("  ⚠ Could not parse recommended versions from HTML")
-                    print(f"  Using default versions: \033[92m{', '.join(args.versions)}\033[0m")
-                    recommended_versions = args.versions
+            
+            # Try to parse versions from HTML and JavaScript
+            recommended_versions = parse_recommended_versions(
+                html_content, 
+                session=fetcher.session,
+                base_url=fetcher.BASE_URL
+            )
+            
+            if recommended_versions:
+                print(f"  ✓ Found {len(recommended_versions)} recommended versions:")
+                for v in recommended_versions:
+                    print(f"    - \033[92m{v}\033[0m")
+            else:
+                print("\n\033[91m✗ ERROR: Could not extract recommended versions from HTML or JavaScript\033[0m")
+                print("\033[91mCisco's website may be blocking automated access or page structure changed.\033[0m")
+                print("\033[93mPlease try:\033[0m")
+                print("  1. Visit the page manually in a browser to verify it loads correctly")
+                print("  2. Check if bot protection has been updated")
+                print("  3. Capture fresh browser cookies if needed\n")
+                return 1
             
             if recommended_versions:
                 print(f"\n\033[96m" + "=" * 60)
@@ -543,14 +754,7 @@ def main():
                         'name': source_info['name']
                     })
             
-            # Save HTML if requested
-            if args.save_html:
-                timestamp = datetime.now().strftime('%Y%m%d-%H%M%S')
-                output_path = f"ucs-{source_key}-all-versions-{timestamp}.html"
-                saved_path = save_html(html_content, output_path)
-                print(f"  💾 Saved HTML to: {saved_path.name}")
-            
-            # Small delay between requests
+            # Small delay between sources
             time.sleep(1)
         
         # Summary
