@@ -45,7 +45,7 @@
 
 ## Intersight help guides
 ### SaaS guides
-- https://intersight.com/help/saas/resources/upgrading_server_firmware_using_firmware_policy
+- [Intersight SaaS Upgrading Firmware guide](https://intersight.com/help/saas/resources/upgrading_server_firmware_using_firmware_policy)
 - [Intersight SaaS guide](https://intersight.com/help/saas)
 - [Intersight SaaS Servers guide](https://intersight.com/help/saas/operate/servers)
 - [Intersight SaaS Configure Servers guide](https://intersight.com/help/saas/configure/servers)
@@ -88,6 +88,7 @@
 
 
 ### Appliance (CVA / PVA) guides
+> Note: Intersight Appliance documentation is generally similar to the SaaS documentation, but with some differences in some local features and settings.
 - [Intersight Appliance guide](https://intersight.com/help/appliance)
 - [Intersight Appliance Servers guide](https://intersight.com/help/appliance/operate/servers)
 - [Intersight Appliance System Settings](https://intersight.com/help/appliance/system/settings)
