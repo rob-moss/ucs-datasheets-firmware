@@ -33,37 +33,85 @@ source .venv/bin/activate
 .venv\Scripts\activate
 ```
 
-**Install dependencies** (if needed for future enhancements):
+**Install dependencies**:
 ```bash
-# Currently, all scripts use standard library only
-# If requirements.txt is added in the future:
-pip install -r requirements.txt
+pip install requests beautifulsoup4 html2text pdfminer.six
 ```
-
-**Note**: The core Python scripts (`extract_server_data.py`, `validate_firmware_data.py`, `json_to_markdown.py`) use only Python standard library modules and require no additional pip packages.
-
-### Bash Shell Requirements
-
-This project uses Bash 5.x features. On **macOS**, the built-in Bash 3.x will not work.
-
-**Install Bash 5.x on macOS**:
-```bash
-brew install bash
-```
-
-**Note**: The built-in macOS Bash will throw errors about associative arrays (`declare -A arrayname`).
 
 ---
 
-## Shell Scripts
+## Fetching Cisco Documentation
 
-| Script | Description |
-|--------|-------------|
-| **run-all.sh** | Master script that executes full data refresh: pulls data, processes it, copies to OneDrive, and commits to git |
-| **pull-data.sh** | Downloads UCS datasheets (HTML) and HCL JSON data from cisco.com |
-| **process-data.sh** | Converts all JSON files to Markdown format using `json_to_markdown.py` |
-| **query-data.sh** | Queries JSON files for firmware information for specific blade types (WIP - manual variable editing required) |
-| **urldata.sh** | Contains URLs for data sources |
+### `fetch_cisco_docs.py`
+
+This script reads a list of URLs from `urls.md` and downloads them in two phases:
+
+**Phase 1 – Download**: fetches each URL and saves the raw file to the appropriate subdirectory under `ucs-docs-raw/`:
+
+| File type | Raw output directory |
+|-----------|----------------------|
+| HTML pages (+ sub-pages) | `ucs-docs-raw/html/` |
+| PDF files | `ucs-docs-raw/pdf/` |
+| JSON files | `ucs-docs-raw/json/` |
+| Other file types | `ucs-docs-raw/other/` |
+
+**Phase 2 – Convert**: reads the saved raw files and converts them to Markdown, writing the output to `ucs-docs/`.
+
+For JSON URLs the `Accept: application/json` header is set so the server returns structured JSON data. The converted Markdown includes a rendered table (or list/code block depending on structure) followed by a collapsible raw JSON appendix.
+
+#### Basic usage
+
+```bash
+# Activate virtual environment first
+source .venv/bin/activate
+
+# Fetch all URLs listed in urls.md (default)
+python3 fetch_cisco_docs.py
+
+# Specify a different URLs file
+python3 fetch_cisco_docs.py my-urls.md
+```
+
+#### CLI options
+
+```
+usage: fetch_cisco_docs.py [-h] [-o OUTPUT_DIR]
+                           [--html-raw-dir HTML_RAW_DIR]
+                           [--pdf-raw-dir PDF_RAW_DIR]
+                           [--json-raw-dir JSON_RAW_DIR]
+                           [--other-raw-dir OTHER_RAW_DIR]
+                           [-d DELAY] [--max-pages MAX_PAGES]
+                           [-f]
+                           [urls_file]
+
+positional arguments:
+  urls_file             Path to the file containing URLs (default: urls.md)
+
+optional arguments:
+  -o, --output-dir      Markdown output directory (default: ./ucs-docs)
+  --html-raw-dir        Directory for raw HTML files (default: ./ucs-docs-raw/html)
+  --pdf-raw-dir         Directory for raw PDF files (default: ./ucs-docs-raw/pdf)
+  --json-raw-dir        Directory for raw JSON files (default: ./ucs-docs-raw/json)
+  --other-raw-dir       Directory for raw files of unrecognised type (default: ./ucs-docs-raw/other)
+  -d, --delay           Delay between requests in seconds (default: 1.0)
+  --max-pages           Maximum pages to fetch per HTML guide (default: 200)
+  -f, --force           Force re-download of all files, ignoring freshness checks
+```
+
+#### Caching behaviour
+
+The script skips re-downloading files that were already fetched within the last 24 hours. Use `-f` / `--force` to bypass all cache checks and re-download everything.
+
+#### Output layout
+
+```
+ucs-docs/                          ← converted Markdown files
+ucs-docs-raw/
+    html/                          ← raw HTML pages (one file per page)
+    pdf/                           ← raw PDF files
+    json/                          ← raw JSON files
+    other/                         ← raw files of unrecognised type
+```
 
 ---
 
@@ -71,7 +119,8 @@ brew install bash
 
 | Script | Output Files | Description |
 |--------|--------------|-------------|
-| **json_to_markdown.py** | `markdown_out/*.md` | General-purpose converter: transforms JSON/JSONL files to Markdown tables with collapsible raw JSON sections. Handles dicts, lists, and nested structures. Used by `process-data.sh` |
+| **fetch_cisco_docs.py** | `ucs-docs/*.md`<br>`ucs-docs-raw/html/`<br>`ucs-docs-raw/pdf/`<br>`ucs-docs-raw/json/`<br>`ucs-docs-raw/other/` | Fetches Cisco documentation URLs from `urls.md` in two phases: download raw files to typed subdirectories under `ucs-docs-raw/`, then convert to Markdown in `ucs-docs/`. Supports HTML guides (with recursive sub-page crawling), PDF, JSON, and other file types. Includes 24-hour file cache and `--force` re-download flag. |
+| **json_to_markdown.py** | `markdown_out/*.md` | General-purpose converter: transforms JSON/JSONL files to Markdown tables with collapsible raw JSON sections. Handles dicts, lists, and nested structures. Also used internally by `fetch_cisco_docs.py` for JSON rendering. |
 | **extract_server_data.py** | `ucs-firmware-reports/server-adapter-driver-matrix-raw.md` | Extracts UCS blade server compatibility data from JSON files (v4). Generates comprehensive matrix showing blade models, CPU versions, ESXi versions, adapter models/firmware, and driver versions |
 | **validate_firmware_data.py** | `validation_report.md`<br>`validation_report.txt` | Validates firmware data consistency (v5). Compares JSON files against markdown reports to identify discrepancies in blade configurations, adapters, ESXi versions, and drivers |
 
@@ -83,7 +132,7 @@ Located in `.github/prompts/`, these files provide instructions for AI agents (l
 
 | Prompt File | Output File(s) | Description |
 |-------------|----------------|-------------|
-| **refresh-data.prompt.md** | Various | Executes `run-all.sh` to perform full data refresh cycle |
+| **refresh-data.prompt.md** | Various | Triggers a full documentation refresh cycle using `fetch_cisco_docs.py` |
 | **process-server-firmware-adapter-matrix.prompt.md** | `ucs-firmware-reports/server-adapter-driver-matrix-raw.md` | Generates Python script (`extract_server_data.py`) to create UCS Server Hardware Compatibility Matrix from JSON files (v4) |
 | **validate-server-firmware-adapter-matrix.prompt.md** | `validation_report.md`<br>`validation_report.txt` | Creates Python validation script (`validate_firmware_data.py`) to compare JSON data against markdown reports and identify discrepancies (v5) |
 | **report-infra-server-models.prompt.md** | `ucs-firmware-reports/report-recommended-firmware.md` | Generates firmware recommendation report showing recommended versions for Infrastructure and Server models with compatibility matrices |
@@ -110,6 +159,8 @@ Located in `ucs-firmware-reports/`:
 
 | Directory | Description |
 |-----------|-------------|
+| **ucs-docs/** | Converted Markdown documentation files generated by `fetch_cisco_docs.py` |
+| **ucs-docs-raw/** | Raw downloaded files, organised by type: `html/`, `pdf/`, `json/`, `other/` |
 | **jsondata/** | JSON data files: HCL data, equivalency matrix, upgrade matrix, server/adapter compatibility data from cisco.com |
 | **ucs-firmware-docs/** | UCS product datasheets and HCL data in HTML and Markdown formats. Ready for CIRCUIT AI project import |
 | **ucs-firmware-reports/** | Generated firmware compatibility and recommendation reports in Markdown format |
@@ -120,15 +171,21 @@ Located in `ucs-firmware-reports/`:
 
 ## Workflow
 
-### Full Data Refresh
+### Fetch and Convert Cisco Documentation
 ```bash
-./run-all.sh
+source .venv/bin/activate
+python3 fetch_cisco_docs.py
 ```
 This will:
-1. Pull latest datasheets and JSON data from cisco.com
-2. Convert JSON files to Markdown
-3. Copy output to OneDrive (if configured)
-4. Commit and push changes to git
+1. Read all URLs from `urls.md`
+2. Download raw files to `ucs-docs-raw/html/`, `ucs-docs-raw/pdf/`, `ucs-docs-raw/json/`, or `ucs-docs-raw/other/` depending on file type
+3. Convert each downloaded file to Markdown and write to `ucs-docs/`
+4. Skip files already downloaded within the last 24 hours (use `-f` to force a full re-download)
+
+### Force Re-download Everything
+```bash
+python3 fetch_cisco_docs.py --force
+```
 
 ### Generate Specific Reports
 Use AI agents (GitHub Copilot) with the prompt files:

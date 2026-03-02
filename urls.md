@@ -1,0 +1,119 @@
+# UCS Manager configuration guides for GUI and CLI all versions
+### Cisco UCS Manager - Configuration Guides - Cisco
+> Note: The links below are going to be fetched, parsed, and converted to Markdown for later indexing and searching purposes.
+> https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html
+
+
+
+# UCS Manager 4.3 
+## GUI Configuration guides
+ - [Cisco UCS Manager Server Management Guide, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3.html)
+ - [Cisco UCS Manager Getting Started Guide, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/b_ucsm_getting_started_guide_4_3.html)
+ - [Cisco UCS Manager Administration Management Guide 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3.html)
+ - [Cisco UCS Manager Firmware Management Guide, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3.html)
+ - [Cisco UCS Manager Infrastructure Management Guide, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3.html)
+ - [Cisco UCS Manager Network Management Guide, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3.html)
+ - [Cisco UCS Manager Server Management Guide, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3.html)
+ - [Cisco UCS Manager System Monitoring Guide, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3.html)
+ - [Cisco UCS Manager Storage Management Guide, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3.html)
+ - [Migration Guide for Cisco UCS Fabric Interconnects, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3.html)
+ - [Cisco UCS Manager VIC Configuration Guide, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/4-3/b-vic-configuration-guide-4-3.html)
+
+
+## CLI Guides
+- [UCS Manager CLI Administration Management Guide 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Admin-Management/4-3/b_cisco_ucs_manager_cli_administration_mgmt_guide_4-3.html)
+- [UCS Manager CLI Firmware Management Guide 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_CLI_Firmware_Management_Guide_4-3.html)
+- [UCS Manager CLI Infrastructure Management Guide 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3.html)
+- [UCS Manager CLI Network Management Guide 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3.html)
+- [UCS Manager CLI Server Management Guide 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_cli_guide_4_3.html)
+- [UCS Manager CLI System Monitoring Guide 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3.html)
+- [Cisco UCS Manager Storage Management Guide using the CLI, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3.html)
+- [Cisco UCS S3260 Server Integration with Cisco UCS Manager Using the CLI, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3.html)
+
+# UCS Manager API guides
+- [UCS Management Overview - Cisco UCS Manager API - Cisco DevNet](https://developer.cisco.com/docs/ucs-dev-center/ucs-management-overview/)
+- [UCS Manager - Cisco UCS Manager API - Cisco DevNet](https://developer.cisco.com/docs/ucs-dev-center/ucs-manager/#ucs-manager-developer-api-toolkit)
+
+# Intersight Managed Mode guides
+- [Release Notes for Cisco Intersight Unified Edge eCMC Firmware Release, 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html)
+- [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0.html)
+- [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/imm_infra_fw_rn_4_3/b_imm_infra_fw_rn_lb.html)
+- [Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html)
+- [Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 4.3, 5.2, 5.3, and 5.4](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/4_3/b_intersight_server_fw_rn_4_3.html)
+
+# Hardware guides
+- [Cisco UCS VIC 15000 Series Ethernet Fabric Adapter Whitepaper](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.html)
+
+# Whitepapers
+- [IMM Sharing Across Organizations and Cloning](https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.html)
+- [UCS M7 Platforms Performance Tuning](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/ucs-m7-platforms-wp.html)
+- [Cisco UCS VIC 15000 Series Ethernet Fabric Adapter Whitepaper](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.html)
+
+# Release Notes
+- [UCS Manager Release Notes 4.2](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/cisco-ucs-manager-rn-4-2.html)
+- [UCS Manager Release Notes 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-4_3.html)
+- [UCS Manager Release Notes 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-6_0.html)
+- [VIC Drivers Release Notes 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/VIC/4-3/b-release-notes-for-cisco-ucs-virtual-interface-card-drivers-release-4-3.html)
+- [UCS Manager Cross-Version Firmware Support 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cross-version-fw-support_4_3.html)
+
+
+# JSON Data Files
+- [UCS Equivalency Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/c/sw/UCS-Equivalency-Matrix/custom_excel_data.json)
+- [UCSM Upgrade/Downgrade Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/ucs-manager/UCSM-upgrade-downgrade-matrix/ReleaseMatrix.json)
+- [UCSM Cross-Version Firmware Matrix (6.0 onwards)](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/ucs-manager/cross_version_firmware_matrix_6_0_onwards/custom_excel_data.json)
+
+# Datasheets
+## B-Series Blade Servers
+- [Cisco UCS B200 M4 Blade Server](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b200-m4-blade-server/datasheet-c78-732434.html)
+- [Cisco UCS B200 M5 Blade Server](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-739296.html)
+- [Cisco UCS B200 M6 Blade Server](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-2368888.html)
+- [Cisco UCS B480 M5 Blade Server](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-739280.html)
+
+## X-Series Compute Nodes
+- [Cisco UCS X210c M6 Compute Node](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2465523.html)
+- [Cisco UCS X210c M7 Compute Node](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m7-compute-node-ds.html)
+- [Cisco UCS X210c M8 Compute Node](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.html)
+
+## Chassis
+- [Cisco UCS 5100 Series Blade Server Chassis](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.html)
+- [Cisco UCS 9108 Modular Chassis](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2472574.html)
+
+## I/O Modules (IOMs)
+- [Cisco UCS 2200 Series IOM (2204XP / 2208XP)](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/data_sheet_c78-675243.html)
+- [Cisco UCS 2304 Fabric Extender](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/datasheet-c78-675243.html)
+- [Cisco UCS 2408 Fabric Extender](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-742624.html)
+
+## Fabric Interconnects
+- [Cisco UCS 6300 Series Fabric Interconnects](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/datasheet-c78-736682.html)
+- [Cisco UCS 6324 Fabric Interconnect](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/datasheet-c78-732207.html)
+- [Cisco UCS 6400 Series Fabric Interconnects](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.html)
+- [Cisco UCS 6536 Fabric Interconnect](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.html)
+
+## Virtual Interface Cards (VICs)
+- [Cisco UCS VIC 1340](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/ucs-virtual-interface-card-1340/datasheet-c78-732517.html)
+- [Cisco UCS VIC 1380](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/ucs-virtual-interface-card-1380/datasheet-c78-732516.html)
+- [Cisco UCS VIC 1400 Series](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.html)
+- [Cisco UCS VIC 15000 Series](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.html)
+
+# HCL Queries
+## UCS Managed Mode - B480 M5
+- [UCS Managed Mode B480 M5 v1 / ESXi 8u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=209,248&processor_ID=153&osVendor_ID=5&osVersion_ID=1025&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
+- [UCS Managed Mode B480 M5 v1 / ESXi 7u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=209,248&processor_ID=153&osVendor_ID=5&osVersion_ID=936&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
+
+## UCS Managed Mode - B200 M4
+- [UCS Managed Mode B200 M4 CPU v3 / ESXi 6.7u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=51,157&processor_ID=61&osVendor_ID=5&osVersion_ID=909&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
+- [UCS Managed Mode B200 M4 CPU v3 / ESXi 7u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=51,157&processor_ID=61&osVendor_ID=5&osVersion_ID=936&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
+- [UCS Managed Mode B200 M4 CPU v4 / ESXi 6.7u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=51,157&processor_ID=84&osVendor_ID=5&osVersion_ID=909&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
+- [UCS Managed Mode B200 M4 CPU v4 / ESXi 7u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=51,157&processor_ID=84&osVendor_ID=5&osVersion_ID=936&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
+
+## UCS Managed Mode - B200 M5
+- [UCS Managed Mode B200 M5 CPU v1 / ESXi 6.7u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=199,247&processor_ID=148&osVendor_ID=5&osVersion_ID=909&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
+- [UCS Managed Mode B200 M5 CPU v1 / ESXi 7u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=199,247&processor_ID=148&osVendor_ID=5&osVersion_ID=936&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
+- [UCS Managed Mode B200 M5 CPU v1 / ESXi 8u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=199,247&processor_ID=148&osVendor_ID=5&osVersion_ID=1025&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
+- [UCS Managed Mode B200 M5 CPU v2 / ESXi 6.7u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=199,247&processor_ID=173&osVendor_ID=5&osVersion_ID=909&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
+- [UCS Managed Mode B200 M5 CPU v2 / ESXi 7u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=199,247&processor_ID=173&osVendor_ID=5&osVersion_ID=936&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
+- [UCS Managed Mode B200 M5 CPU v2 / ESXi 8u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=199,247&processor_ID=173&osVendor_ID=5&osVersion_ID=1025&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
+
+## UCS Managed Mode - B200 M6
+- [UCS Managed Mode B200 M6 CPU v1 / ESXi 7u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=331&processor_ID=254&osVendor_ID=5&osVersion_ID=936&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
+- [UCS Managed Mode B200 M6 CPU v1 / ESXi 8u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=331&processor_ID=254&osVendor_ID=5&osVersion_ID=1025&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
