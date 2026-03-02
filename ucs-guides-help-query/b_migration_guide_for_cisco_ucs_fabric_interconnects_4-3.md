@@ -1,6 +1,6 @@
 # Documentation: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3.html
 
-*Fetched on: 2026-02-19 15:09:15*
+*Fetched on: 2026-02-27 17:18:23*
 
 ---
 

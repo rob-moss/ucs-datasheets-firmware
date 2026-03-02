@@ -1,6 +1,6 @@
 # Documentation: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3.html
 
-*Fetched on: 2026-02-19 15:06:08*
+*Fetched on: 2026-02-27 17:10:55*
 
 ---
 
@@ -3576,32 +3576,10 @@ OS Watchdog Timer Timeout |  If OS does not boot within the specified time, OS w
 
 ---
 
-## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_firmware_upgrades.html
+## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_managing_diagnostics.html
 
-## Firmware Upgrades   
+## Overview of Cisco UCS Manager Diagnostics  
   
-Beginning with Cisco UCS Manager Release 4.2(3), Cisco is releasing unified Cisco UCS Manager software and firmware upgrades for the following platforms with every release of Cisco UCS Manager: 
-
-  * Cisco UCS Fabric Interconnects 9108 100G with Cisco UCS X-Series servers. 
-
-  * Cisco UCS 6500 Series Fabric Interconnect with Cisco UCS B-Series, C-Series, and S-Series servers. 
-
-  * Cisco UCS 6400 Series Fabric Interconnect with Cisco UCS B-Series, C-Series, and S-Series servers. 
-
-  * Cisco UCS 6300 Series Fabric Interconnect with Cisco UCS B-Series, C-Series, and S-Series servers.
-
-  * Cisco UCS 6324 Fabric Interconnect with Cisco UCS B-Series Servers and C-Series Servers, which is also known as UCS Mini.
-
-
-You can upgrade the firmware through Auto Install, packages in service profiles, using the firmware automatic synchronization server policy, and directly at endpoints. For more information on guidelines and installing firmware, see the Cisco UCS Firmware Management Guide. 
-
-
----
-
-## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_managing_diagnostics.html
-
-## Overview of Cisco UCS Manager Diagnostics
-
 The Cisco UCS Manager diagnostics tool enables you to verify the health of the hardware components on your servers. The diagnostics tool provides a variety of tests to exercise and stress the various hardware subsystems on the servers, such as memory and CPU. You can use the tool to run a sanity check on the state of your servers after you fix or replace a hardware component. You can also use this tool to run comprehensive burn-in tests before you deploy a new server in your production environment. 
 
 When a system is new, a default diagnostics policy is created in org scope. This default policy is named default and it cannot be deleted. The user will receive an error message if they try to delete it. The default diagnostic policy is the preferred way to execute the same set of tests across all servers. Any diagnostic policy, including the default can be customized. 

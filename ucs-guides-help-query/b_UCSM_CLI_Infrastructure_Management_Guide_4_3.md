@@ -1,22 +1,22 @@
-# Documentation: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3.html
+# Documentation: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3.html
 
-*Fetched on: 2026-02-27 17:14:06*
+*Fetched on: 2026-02-27 17:21:48*
 
 ---
 
-## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3.html
+## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3.html
 
 ![Clear Contents of Search](/etc/designs/cdc/fw/i/ic_clear_gray.png)
 
 
 ---
 
-## Page 2: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3.pdf
+## Page 2: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3.pdf
 
 
 ---
 
-## Page 3: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3/b_UCSM_GUI_Infrastructure_Management_Guide_preface_00.html
+## Page 3: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_4_1_preface_00.html
 
 ## Audience
 
@@ -33,57 +33,46 @@ This guide is intended primarily for data center administrators with responsibil
 
 ---
 
-## Page 4: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3/b_UCSM_GUI_Infrastructure_Management_Guide_chapter_01.html
+## Page 4: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01101.html
 
 ## New and Changed Information
 
-This section provides information on new feature and changed behavior in Cisco UCS Manager, Release 4.3. 
+This section provides information on new feature and changed behavior in Release 4.3.
 
 Table 1. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(6a) Feature |  Description |  Where Documented  
 ---|---|---  
-Support for Cisco UCS C-Series M8 servers |  Cisco UCS Manager now supports Cisco UCS C240 M8 Server and UCS C220 M8 Server.  |  [Configuring Acoustic Mode](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_0111.html#Cisco_Task.dita_0d8c0006-8788-4d5d-b9cc-66524d76ee7f)  
-Support for Package Power Limit (PPL) |  Cisco UCS Manager supports configuring the Package Power Limit for Power Control Policy. |  [Creating a Power Control Policy](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_0111.html#task_90D6E47B3D7848998BE002803144620C)  
-Support for Maximum Cooling in Fan Speed Policy |  Cisco UCS Manager supports Maximum Cooling option in Fan Speed Policy to optimize cooling efficiency for CPU. |  [Creating a Power Control Policy](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_0111.html#task_90D6E47B3D7848998BE002803144620C)  
+Support for Package Power Limit (PPL) |  Cisco UCS Manager supports configuring the Package Power Limit for Power Control Policy. |  [Creating a Power Control Policy](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html#task_E14D7E00D291462A8BAF78D11C604A4C)  
+Support for Maximum Cooling in Fan Speed Policy |  Cisco UCS Manager supports Maximum Cooling option in Fan Speed Policy to optimize cooling efficiency for CPU. |  [Creating a Power Control Policy](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html#task_E14D7E00D291462A8BAF78D11C604A4C)  
 Table 2. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(5a) Feature |  Description |  Where Documented  
 ---|---|---  
-Support for Cisco UCS C-Series M8 servers |  Cisco UCS Manager now supports Cisco UCS C225 M8 Servers.  | 
+Support for Cisco UCS C-Series M8 server |  Cisco UCS Manager now supports Cisco UCS C225 M8 Server.  |  [Data Sanitization](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01000.html#data-sanitization)  
+Support for Cisco UCS X-Series M8 server |  Cisco UCS Manager now supports Cisco UCS X215c M8 Compute Node.  | 
 
-  * [Acoustic Mode Fan Profile](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_0111.html#Cisco_Concept.dita_417107c7-b3b2-42ee-b8b4-6b64d391bfc5)
-  * [Data Sanitization](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_01000.html#data-sanitization)
-
-  
-Support for Cisco UCS X-Series M8 servers |  Cisco UCS Manager now supports Cisco UCS X215c M8 Compute Node.  | 
-
-  * [Data Sanitization](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_01000.html#data-sanitization)
-  * [Overview of Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_010.html#overview-of-cisco-ucs-x-direct)
+  * [Overview of Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html#overview-of-cisco-ucs-x-direct)
+  * [Data Sanitization](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01000.html#data-sanitization)
 
   
 Table 3. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b) Feature |  Description |  Where Documented  
 ---|---|---  
-Support for Cisco UCS Fabric Interconnects 9108 100G |  Cisco UCS Manager now supports Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct).  | 
+Support for Cisco UCS X-Series Direct |  Cisco UCS Manager now supports Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct).  | 
 
-  * [Link-Level Flow Control](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_010.html#concept_7D5436A5ECF144B787687A2A7CBF10A9)
-  * [Cisco UCS Building Blocks and Connectivity](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_010.html#concept_uxd_4pl_3jb)
-  * [Cisco UCS Fabric Infrastructure Portfolio](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_010.html#concept_pmw_z1l_3jb)
-  * [Ports on the Cisco UCS Fabric Interconnects](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_010.html#id_118320)
-  * [Overview of Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_010.html#overview-of-cisco-ucs-x-direct)
-  * [Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) Architecture](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_010.html#cisco-ucs-x-direct-architecture)
-  * [Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_010.html#port-breakout-functionality-on-cisco-ucs-x-direct)
-  * [Cisco UCS X9508 Series Chassis](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_0100.html#Cisco_Concept.dita_49f28e35-3a99-4e1e-bfd0-cbea468cba66)
-  * [Chassis/FEX Discovery Policy](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_011.html#concept_40AFE09861FA4D02A9879856A1411FAC)
-  * [Configuring the Chassis/FEX Discovery Policy](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_011.html#task_jqd_b5y_ndb)
-  * [Configuring a Chassis Connectivity Policy](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_011.html#task_47277BC1D4504CA798A6BEDD6040B765)
-  * [Rack Server Discovery Policy](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_011.html#concept_470499F6E81D4CC8B06113234D7D33B8)
-  * [Power Capping in Cisco UCS](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_0111.html#concept_943D968485A04A92BAA307A2FC59AD18)
+  * [Cisco UCS Building Blocks and Connectivity](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html#concept_uxd_4pl_3jb)
+  * [Overview of Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html#overview-of-cisco-ucs-x-direct)
+  * [Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) Architecture](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html#cisco-ucs-x-direct-architecture)
+  * [Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html#port-breakout-functionality-on-cisco-ucs-x-direct)
+  * [Chassis/FEX Discovery Policy](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_011.html#concept_40AFE09861FA4D02A9879856A1411FAC)
+  * [Configuring the Chassis/FEX Discovery Policy](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_011.html#task_4984141203506035088)
+  * [Chassis Connectivity Policy](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_011.html#concept_4E5E1F56073248329020AC2927156A9F)
+  * [Configuring a Chassis Connectivity Policy](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_011.html#task_D41B14E4E5524F53845D38A6C8FF2C50)
+  * [Power Capping in Cisco UCS](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html#concept_943D968485A04A92BAA307A2FC59AD18)
 
   
-Table 4. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b) Feature |  Description |  Where Documented  
+Table 4. New Features and Changed Behavior in Cisco UCS Manager, Release4.3(4b) Feature |  Description |  Where Documented  
 ---|---|---  
 Support for Cisco UCS C-Series M8 servers |  Cisco UCS Manager now supports Cisco UCS C245 M8 Servers.  | 
 
-  * [Power Capping in Cisco UCS](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_0111.html#concept_943D968485A04A92BAA307A2FC59AD18)
-  * [Acoustic Mode Fan Profile](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_0111.html#Cisco_Concept.dita_417107c7-b3b2-42ee-b8b4-6b64d391bfc5)
-  * [Data Sanitization](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_01000.html#data-sanitization)
+  * [Power Capping in Cisco UCS](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html#concept_943D968485A04A92BAA307A2FC59AD18)
+  * [Data Sanitization](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01000.html#data-sanitization)
 
   
 Table 5. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(2c) Feature |  Description |  Where Documented  
@@ -98,7 +87,7 @@ Support for Cisco UCS VIC cards |  Cisco UCS Manager supports the following Cisc
 |  —  
 Table 6. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(2b) Feature |  Description |  Where Documented  
 ---|---|---  
-Support for Power Capping and Power Management for Cisco UCSX-9508 Chassis |  Cisco UCS Manager now supports Power Capping and Power Management for Cisco UCSX-9508 Chassis. |  [Power Capping in Cisco UCS](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_0111.html#concept_943D968485A04A92BAA307A2FC59AD18)  
+Support for Power Capping and Power Management for Cisco UCSX-9508 Chassis |  Cisco UCS Manager now supports Power Capping and Power Management for Cisco UCSX-9508 Chassis. |  [Power Capping in Cisco UCS](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html#concept_943D968485A04A92BAA307A2FC59AD18)  
 Support for Cisco UCS X9508 server chassis with Cisco UCS X-Series servers |  Cisco UCS Manager supports Cisco UCSX-9508 Chassis with the following Cisco UCS X-Series servers:
 
   * Cisco UCS X210c M7 Compute Node
@@ -110,58 +99,39 @@ Support Cisco UCS C-Series M7 servers |  Cisco UCS Manager now supports the foll
   * Cisco UCS C240 M7 Server
   * Cisco UCS C220 M7 Server
 
-|  [Power Capping in Cisco UCS](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_0111.html#concept_943D968485A04A92BAA307A2FC59AD18)  
-Support for Cisco UCS X9508 Server Chassis equipped with X-Fabric Module (XFM) |  Cisco UCS Manager introduces inventory support for Cisco UCS X9508 Server Chassis equipped with X-Fabric Module (XFM) |  [Viewing X-Fabric Module (XFM) Fan Status](b_UCSM_GUI_Infrastructure_Management_Guide_chapter_0111.html#viewing-xfm-overall-status)  
+|  [Power Capping in Cisco UCS](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html#concept_943D968485A04A92BAA307A2FC59AD18)  
+Support for Cisco UCS X9508 Server Chassis equipped with X-Fabric Module (XFM) |  Cisco UCS Manager introduces inventory support for Cisco UCS X9508 Server Chassis equipped with X-Fabric Module (XFM) |  [Viewing X-Fabric Module (XFM) Fan Status](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html#viewing-xfm-fan-overall-status)  
 Support for Cisco UCS 6200 Series Fabric Interconnect is deprecated |  Cisco UCS Manager deprecates support for Cisco UCS 6200 Series Fabric Interconnects. |  —   
 Support for Cisco UCS M4 servers are deprecated |  Cisco UCS Manager deprecates support for UCS B-series, C-series, and S-series M4 servers. |  — 
 
 
 ---
 
-## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3/b_UCSM_GUI_Infrastructure_Management_Guide_chapter_010.html
+## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html
 
-## Cisco Unified Computing System Overview   
+## Cisco UCS Manager User CLI Documentation  
   
-Cisco UCS has a unique architecture that integrates compute, data network access, and storage network access into a common set of components under a single-pane-of-glass management interface. 
+Cisco UCS Manager offers you a new set of smaller, use-case based documentation described in the following table: 
 
-Cisco UCS fuses access layer networking and servers. This high-performance, next-generation server system provides a data center with a high degree of workload agility and scalability. The hardware and software components support Cisco's unified fabric, which runs multiple types of data center traffic over a single converged network adapter. 
-
-Figure 1. Cisco Unified Computing System Architecture  ![](/c/dam/en/us/td/i/300001-400000/300001-310000/305001-306000/305219.jpg)
-
-### Architectural Simplification 
-
-The simplified architecture of Cisco UCS reduces the number of required devices and centralizes switching resources. By eliminating switching inside a chassis, network access-layer fragmentation is significantly reduced. Cisco UCS implements Cisco unified fabric within racks and groups of racks, supporting Ethernet and Fibre Channel protocols over 10 Gigabit Cisco Data Center Ethernet and Fibre Channel over Ethernet (FCoE) links. This radical simplification reduces the number of switches, cables, adapters, and management points by up to two-thirds. All devices in a Cisco UCS domain remain under a single management domain, which remains highly available through the use of redundant components. 
-
-### High Availability 
-
-The management and data plane of Cisco UCS is designed for high availability and redundant access layer fabric interconnects. In addition, Cisco UCS supports existing high availability and disaster recovery solutions for the data center, such as data replication and application-level clustering technologies. 
-
-### Scalability
-
-A single Cisco UCS domain supports multiple chassis and their servers, all of which are administered through one Cisco UCS Manager. For more detailed information about the scalability, speak to your Cisco representative. 
-
-### Flexibility
-
-A Cisco UCS domain allows you to quickly align computing resources in the data center with rapidly changing business requirements. This built-in flexibility is determined by whether you choose to fully implement the stateless computing feature. Pools of servers and other system resources can be applied as necessary to respond to workload fluctuations, support new applications, scale existing software and business services, and accommodate both scheduled and unscheduled downtime. Server identity can be abstracted into a mobile service profile that can be moved from server to server with minimal downtime and no need for additional network configuration. 
-
-With this level of flexibility, you can quickly and easily scale server capacity without having to change the server identity or reconfigure the server, LAN, or SAN. During a maintenance window, you can quickly do the following: 
-
-  * Deploy new servers to meet unexpected workload demand and rebalance resources and traffic. 
-
-  * Shut down an application, such as a database management system, on one server and then boot it up again on another server with increased I/O capacity and memory resources. 
-
-
-### Optimized for Server Virtualization 
-
-Cisco UCS has been optimized to implement VM-FEX technology. This technology provides improved support for server virtualization, including better policy-based configuration and security, conformance with a company's operational model, and accommodation for VMware's VMotion. 
+Guide  |  Description   
+---|---  
+[Cisco UCS Manager Getting Started Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses Cisco UCS architecture and Day 0 operations, including Cisco UCS Manager initial configuration, and configuration best practices.   
+[Cisco UCS Manager Administration Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses password management, role-based access configuration, remote authentication, communication services, CIMC session management, organizations, backup and restore, scheduling options, BIOS tokens and deferred deployments.   
+[Cisco UCS Manager Infrastructure Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses physical and virtual infrastructure components used and managed by Cisco UCS Manager.   
+[Cisco UCS Manager Firmware Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses downloading and managing firmware, upgrading through Auto Install, upgrading through service profiles, directly upgrading at endpoints using firmware auto sync, managing the capability catalog, deployment scenarios, and troubleshooting.   
+[Cisco UCS Manager Server Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses the new licenses, registering Cisco UCS domains with Cisco UCS Central, power capping, server boot, server profiles and server-related policies.   
+[Cisco UCS Manager Storage Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of storage management such as SAN and VSAN in Cisco UCS Manager.   
+[Cisco UCS Manager Network Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of network management such as LAN and VLAN connectivity in Cisco UCS Manager.   
+[Cisco UCS Manager System Monitoring Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of system and health monitoring including system statistics in Cisco UCS Manager.   
+[Cisco UCS S3260 Server Integration with Cisco UCS Manager](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of management of UCS S-Series servers that are managed through Cisco UCS Manager. 
 
 
 ---
 
-## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3/b_UCSM_GUI_Infrastructure_Management_Guide_chapter_011.html
+## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_011.html
 
-## Chassis/FEX Discovery Policy 
-
+## Chassis/FEX Discovery Policy   
+  
 The chassis/FEX discovery policy determines how the system reacts when you add a new chassis or FEX. Cisco UCS Manager uses the settings in the chassis/FEX discovery policy to determine the minimum threshold for the number of links between the chassis or FEX and the fabric interconnect and whether to group links from the IOM to the fabric interconnect in a fabric port channel. 
 
 In a Cisco UCS Mini (Cisco UCS 6324 Fabric Interconnect) setup, chassis discovery policy is supported only on the extended chassis. 
@@ -266,39 +236,88 @@ Cisco UCS supports port-channeling only through the Link Aggregation Control Pro
 
 Once a fabric port channel is created, links can be added or removed by changing the link group preference and reacknowledging the chassis, or by enabling or disabling the chassis from the port channel. 
 
-### Configuring the Chassis/FEX Discovery Policy
+### Configuring the Chassis/FEX Discovery Policy 
 
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+In a setup with Cisco UCS 6400 Series Fabric Interconnects, the Link Grouping Preference value for Chassis/FEX Discovery Policy is not user configurable. The value is set to Port Channel. 
+
+* * *  
+  
+---|---  
+  
 #### Procedure
 
-* * *
-
-**Step 1** |  In the Navigation pane, click Equipment.   
+| Command or Action | Purpose  
+---|---|---  
+**Step 1** |  UCS-A#  scope org / |  Enters the root organization mode.  |  **Note** |  The chassis/FEX discovery policy can be accessed only from the root organization.   
 ---|---  
-**Step 2** |  Click the Equipment node.   
-**Step 3** |  In the Work pane, click the Policies tab.   
-**Step 4** |  Click the Global Policies subtab.   
-**Step 5** |  In the Chassis/FEX Discovery Policy area, specify the action and the link grouping preference. 
-
-  1. In the Action field, specify the minimum threshold for the number of links between the chassis or FEX and the fabric interconnect. 
-  2. In the Link Grouping Preference field, specify whether the links from the IOMs or FEXes to the fabric interconnects are grouped in a port channel.  |  **Note** | 
-  * In a setup with Cisco UCS X-Series Direct, Cisco UCS 6500 Series Fabric Interconnect, and Cisco UCS 6400 Series Fabric Interconnects the Link Grouping Preference value for Chassis/FEX Discovery Policy is not user configurable. The value is set to Port Channel. 
-  * For Cisco UCS Manager to discover VIC 1455 and VIC 1457, Link Grouping Preference must be configured as Port Channel.   
+**Step 2** |  UCS-A /org #  scope chassis-disc-policy |  Enters organization chassis/FEX discovery policy mode.   
+**Step 3** |  UCS-A /org/chassis-disc-policy #  set action ` `{1-link | 2-link | 4-link | 8-link | platform-max}  |  Specifies the minimum threshold for the number of links between the chassis or FEX and the fabric interconnect.   
+**Step 4** |  (Optional) UCS-A /org/chassis-disc-policy # set descr ` ` description | (Optional)  Provides a description for the chassis/FEX discovery policy.  |  **Note** |  If your description includes spaces, special characters, or punctuation, you must begin and end your description with quotation marks. The quotation marks will not appear in the description field of any  show command output.   
 ---|---  
-  3. In the Multicast Hardware Hash field, specify whether all the links from the IOMs or FEXes to the fabric interconnects in a port channel can be used for multicast traffic. 
+**Step 5** |  UCS-A /org/chassis-disc-policy #  set link-aggregation-pref ` `{none | port-channel}  |  Specifies whether the links from the IOMs or FEXes to the fabric interconnects are grouped in a port channel.  |  **Note** |  The link grouping preference only takes effect if both sides of the links between an IOM and IFM (IOM for Cisco UCS X-Series Servers) or FEX and the fabric interconnect support fabric port channels. If one side of the links does not support fabric port channels, this preference is ignored and the links are not grouped in a port channel.   
+---|---  
+**Note** |  For UCS manager to discover VIC 1455 and VIC 1457, Link Grouping Preference must be configured as Port Channel.   
+---|---  
+**Step 6** |  UCS-A /org/chassis-disc-policy # set multicast-hw-hash {disabled | enabled}  |  Specifies whether the all the links between the IOM and the fabric interconnect in a port channel can be used for multicast traffic. 
 
-The following fabric interconnects do not support Multicast Hardware Hash: 
-
-  * Cisco UCS X-Series Direct
-
-  * Cisco UCS 6500 Series Fabric Interconnect
-
-  * Cisco UCS 6400 Series Fabric Interconnect
-
+  * disabled —Only one link between the IOM and the fabric interconnect is used for multicast traffic 
+  * enabled —All links between the IOM and the fabric interconnect can be used for multicast traffic 
 
   
-**Step 6** |  Click Save Changes.   
+**Step 7** |  (Optional) UCS-A /org/chassis-disc-policy #  set qualifier ` ` qualifier | (Optional)  Uses the specified server pool policy qualifications to associate this policy with a server pool.   
+**Step 8** |  UCS-A /org/chassis-disc-policy #  commit-buffer |  Commits the transaction to the system configuration.   
   
-* * *
+#### Example
+
+The following example scopes to the default chassis/FEX discovery policy, sets it to discover chassis with four links to a fabric interconnect, provides a description for the policy, specifies the server pool policy qualifications that will be used to qualify the chassis, and commits the transaction: 
+    
+    
+    UCS-A# **scope org /**
+    UCS-A /org # **scope chassis-disc-policy**
+    UCS-A /org/chassis-disc-policy* # **set action 4-link**
+    UCS-A /org/chassis-disc-policy* # **set descr "This is an example chassis/FEX discovery policy."**
+    UCS-A /org/chassis-disc-policy* # **set qualifier ExampleQual**
+    UCS-A /org/chassis-disc-policy* # **commit-buffer**
+    UCS-A /org/chassis-disc-policy # 
+    
+    
+    
+
+The following example scopes to the default chassis/FEX discovery policy, sets it to discover chassis with eight links to a fabric interconnect, provides a description for the policy, sets the link grouping preference to port channel, specifies the server pool policy qualifications that will be used to qualify the chassis, and commits the transaction: 
+    
+    
+    UCS-A# **scope org /**
+    UCS-A /org # **scope chassis-disc-policy**
+    UCS-A /org/chassis-disc-policy* # **set action 8-link**
+    UCS-A /org/chassis-disc-policy* # **set descr "This is an example chassis/FEX discovery policy."**
+    UCS-A /org/chassis-disc-policy* # **set link-aggregation-pref port-channel**
+    UCS-A /org/chassis-disc-policy* # **set qualifier ExampleQual**
+    UCS-A /org/chassis-disc-policy* # **commit-buffer**
+    UCS-A /org/chassis-disc-policy # 
+    
+    
+    
+
+The following example scopes to the default chassis/FEX discovery policy, sets it to discover chassis with four links to a fabric interconnect, provides a description for the policy, sets the link grouping preference to port channel, enables multicast hardware hashing, specifies the server pool policy qualifications that will be used to qualify the chassis, and commits the transaction: 
+    
+    
+    UCS-A# scope org /
+    UCS-A /org # scope chassis-disc-policy
+    UCS-A /org/chassis-disc-policy* # set action 4-link
+    UCS-A /org/chassis-disc-policy* # set descr "This is an example chassis/FEX discovery
+    policy."
+    UCS-A /org/chassis-disc-policy* # set link-aggregation-pref port-channel
+    UCS-A /org/chassis-disc-policy* # set multicast-hw-hash enabled
+    UCS-A /org/chassis-disc-policy* # set qualifier ExampleQual
+    UCS-A /org/chassis-disc-policy* # commit-buffer
+    UCS-A /org/chassis-disc-policy #
+    
+    
 
 #### What to do next
 
@@ -307,11 +326,11 @@ To customize fabric port channel connectivity for a specific chassis, configure 
 
 ---
 
-## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3/b_UCSM_GUI_Infrastructure_Management_Guide_chapter_0100.html
+## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_4_1_chapter_0100.html
 
-## Chassis Management in Cisco UCS Manager GUI
+## Chassis Management in Cisco UCS Manager CLI
 
-You can manage and monitor all chassis in a Cisco UCS domain through Cisco UCS Manager GUI. 
+You can manage and monitor all chassis in a Cisco UCS domain through Cisco UCS Manager CLI. 
 
 ### Cisco UCS X9508 Series Chassis
 
@@ -426,13 +445,11 @@ To use a extended chassis, do the following:
 
 ---
 
-## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3/b_UCSM_GUI_Infrastructure_Management_Guide_chapter_0101.html
+## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0101.html
 
-## I/O Module Management in Cisco UCS Manager GUI
+## I/O Module Management in Cisco UCS Manager CLI
 
-Beginning with release 4.3(2a), Cisco UCS Manager supports Cisco UCS X9508 server chassis with Cisco UCS X-Series servers. Cisco UCS X-Series servers support Intelligent Fabric Modules (IFM), which function similarly to the Input/Output Module (IOM) in Cisco UCS B-Series servers. This guide uses the term IOM to refer both IOM and IFM.
-
-You can manage and monitor all I/O modules in a Cisco UCS domain through Cisco UCS Manager GUI. 
+You can manage and monitor all I/O modules in a Cisco UCS domain through Cisco UCS Manager CLI. 
 
 Cisco UCS Manager Release 4.1(1) extends support for the Cisco 2408 IO module to the Cisco UCS 64108 Fabric Interconnect. 
 
@@ -445,7 +462,7 @@ Cisco UCS Manager Release 3.1(1) introduces the Cisco UCS-IOM-2304 I/O module wi
 
 ---
 
-## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3/b_UCSM_GUI_Infrastructure_Management_Guide_chapter_0110.html
+## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0110.html
 
 ## SIOC Management in Cisco UCS Manager
 
@@ -507,7 +524,7 @@ If the firmware of the replaced SIOC is not the same version as the peer SIOC, t
 
 ---
 
-## Page 10: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3/b_UCSM_GUI_Infrastructure_Management_Guide_chapter_0111.html
+## Page 10: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html
 
 ## Power Capping in Cisco UCS
 
@@ -554,7 +571,7 @@ Global Power Profiling  |  Specifies how the power cap values of the servers are
 
 ---
 
-## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3/b_UCSM_GUI_Infrastructure_Management_Guide_chapter_01000.html
+## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01000.html
 
 ## Blade Server Management   
   
@@ -566,77 +583,13 @@ The power supply units go into power save mode when a chassis has two blades or 
 
 If a blade server slot in a chassis is empty, Cisco UCS Manager provides information, errors, and faults for that slot. You can also re-acknowledge the slot to resolve server mismatch errors and to have Cisco UCS Manager rediscover the blade server in the slot. 
 
-### Guidelines for Removing and Decommissioning Blade Servers 
-
-Consider the following guidelines when deciding whether to remove or decommission a blade server using Cisco UCS Manager: 
-
-#### Decommissioning a Blade Server 
-
-If you want to temporarily decommission a physically present and connected blade server, you can temporarily remove it from the configuration. A portion of the server's information is retained by Cisco UCS Manager for future use, in case the blade server is recommissioned. 
-
-#### Removing a Blade Server 
-
-Removing is performed when you physically remove a blade server from the Cisco UCS Manager by disconnecting it from the chassis. You cannot remove a blade server from Cisco UCS Manager if it is physically present and connected to a chassis. After the physical removal of the blade server is completed, the configuration for that blade server can be removed in Cisco UCS Manager. 
-
-During removal, active links to the blade server are disabled, all entries from databases are removed, and the server is automatically removed from any server pools that it was assigned to during discovery. 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-Only servers added to a server pool automatically during discovery are removed automatically. Servers that were manually added to a server pool must be removed manually. 
-
-* * *  
-  
----|---  
-  
-To add a removed blade server back to the configuration, it must be reconnected, then rediscovered. When a server is reintroduced to Cisco UCS Manager, it is treated as a new server and is subject to the deep discovery process. For this reason, it is possible for Cisco UCS Manager to assign the server a new ID that might be different from the ID that it held before. 
-
-### Recommendations for Avoiding Unexpected Server Power Changes 
-
-If a server is not associated with a service profile, you can use any available means to change the server power state, including the physical `Power` or `Reset` buttons on the server. 
-
-If a server is associated with, or assigned to, a service profile, you should only use the following methods to change the server power state: 
-
-  * In Cisco UCS Manager GUI, go to the General tab for the server or the service profile associated with the server and select Boot Server or Shutdown Server from the Actions area. 
-
-  * In Cisco UCS Manager CLI, scope to the server or the service profile associated with the server and use the power up or power down commands. 
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Important** | 
-
-* * *
-
-Do _not_ use any of the following options on an associated server that is currently powered off: 
-
-  * Reset in the GUI 
-  * cycle cycle-immediate or reset hard-reset-immediate in the CLI 
-  * The physical `Power` or `Reset` buttons on the server 
-
-
-* * *  
-  
----|---  
-  
-If you reset, cycle, or use the physical power buttons on a server that is currently powered off, the server's actual power state might become out of sync with the desired power state setting in the service profile. If the communication between the server and Cisco UCS Manager is disrupted or if the service profile configuration changes, Cisco UCS Manager might apply the desired power state from the service profile to the server, causing an unexpected power change. 
-
-Power synchronization issues can lead to an unexpected server restart, as shown below: 
-
-Desired Power State in Service Profile  |  Current Server Power State  |  Server Power State After Communication Is Disrupted   
----|---|---  
-Up  |  Powered Off  |  Powered On   
-Down  |  Powered On  |  Powered On  |  **Note** |  Running servers are not shut down regardless of the desired power state in the service profile.   
----|---
-
 
 ---
 
-## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3/b_UCSM_GUI_Infrastructure_Management_Guide_chapter_01001.html
+## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01001.html
 
-## Rack-Mount Server Management   
-  
+## Rack-Mount Server Management 
+
 You can manage and monitor all rack-mount servers that are integrated with a Cisco UCS domain through Cisco UCS Manager. All management and monitoring features are supported for rack-mount servers except power capping. Some rack-mount server management tasks, such as changes to the power state, can be performed from both the server and service profile. The remaining management tasks can only be performed on the server. 
 
 Cisco UCS Manager provides information, errors, and faults for each rack-mount server that it has discovered. 
@@ -655,7 +608,7 @@ For information on how to integrate a supported Cisco UCS rack-mount server with
 
 ---
 
-## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3/b_UCSM_GUI_Infrastructure_Management_Guide_chapter_01010.html
+## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01010.html
 
 ## Cisco UCS S3260 Server Node Management   
   
@@ -668,7 +621,7 @@ If a server slot in a chassis is empty, Cisco UCS Manager provides information, 
 
 ---
 
-## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3/b_UCSM_GUI_Infrastructure_Management_Guide_chapter_01011.html
+## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01011.html
 
 ## Virtual Circuits 
 
@@ -694,11 +647,11 @@ The NIF is selected based on the number of physical connections between the IOM 
 
 ---
 
-## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3/b_UCSM_GUI_Infrastructure_Management_Guide_chapter_01100.html
+## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01100.html
 
 ## Recovering the Corrupt BIOS on a Blade Server 
 
-Sometimes, an issue with a server might require you to recover the corrupted BIOS. This procedure is not part of the normal maintenance of a server. After you recover the BIOS, the server boots with the running version of the firmware for that server. This radio button might dim if the BIOS does not require recovery or the option is not available for a particular server. 
+On rare occasions, an issue with a blade server may require you to recover the corrupted BIOS. This procedure is not part of the normal maintenance of a server. After you recover the BIOS, the blade server boots with the running version of the firmware for that server. 
 
 ### Before you begin
 
@@ -715,34 +668,22 @@ Remove all attached or mapped USB storage from a server before you attempt to re
   
 ### Procedure
 
-* * *
-
-**Step 1** |  In the Navigation pane, click Equipment.   
----|---  
-**Step 2** |  Expand Equipment > Chassis > Chassis Number > Servers.   
-**Step 3** |  Choose the server for which you want to recover the BIOS.   
-**Step 4** |  In the Work pane, click the General tab.   
-**Step 5** |  In the Actions area, click Recover Server.   
-**Step 6** |  In the Recover Server dialog box, do the following: 
-
-  1. Click Recover Corrupt BIOS.  |  **Note** |  If this option is not available for a specific server, follow the instructions to update and activate the BIOS for a server.   
----|---  
-  2. Click OK. 
-
-
+| Command or Action | Purpose  
+---|---|---  
+**Step 1** |  UCS-A#  scope server ` ` chassis-id / server-id |  Enters chassis server mode for the specified blade server in the specified chassis.   
+**Step 2** |  UCS-A /chassis/server #  recover-bios ` ` version |  Loads and activates the specified BIOS version.   
+**Step 3** |  UCS-A /chassis/server #  commit-buffer |  Commits the transaction.   
   
-**Step 7** |  If a confirmation dialog box displays, click Yes.   
-**Step 8** |  In the Recover Corrupt BIOS dialog box, do the following: 
+### Example
 
-  1. Complete the following fields:  | Name  | Description   
----|---  
-Version To Be Activated drop-down list |  Choose the firmware version from the drop-down list to activate.   
-  2. Click OK. 
-
-
-  
-  
-* * *
+The following example shows how to recover the BIOS: 
+    
+    
+    UCS-A# **scope server 1/7**
+    UCS-A /chassis/server # **recover-bios S5500.0044.0.3.1.010620101125**
+    UCS-A /chassis/server* # **commit-buffer**
+    UCS-A /chassis/server # 
+    
 
 
 ---

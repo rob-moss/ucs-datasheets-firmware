@@ -1,6 +1,6 @@
 # Documentation: https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html
 
-*Fetched on: 2026-02-19 15:05:39*
+*Fetched on: 2026-02-27 17:09:41*
 
 ---
 
@@ -75,25 +75,25 @@ use JS to put chosen tab in here or hide
 
 ### Recent Security Notices
 
-  * 27-Aug-2025
+  * 25-Feb-2026
 
-[ Security Advisory: Cisco UCS Manager Software Command Injection Vulnerabilities ](/c/en/us/support/docs/csa/cisco-sa-ucs-multi-cmdinj-E4Ukjyrz.html)
+[ Security Advisory: Cisco FXOS and UCS Manager Software Stored Cross-Site Scripting Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsfxosxss-7skVE8Zv.html)
 
-  * 27-Aug-2025
+  * 25-Feb-2026
 
-[ Security Advisory: Cisco NX-OS Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-nxos-cmdinj-qhNze5Ss.html)
+[ Security Advisory: Cisco NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-n3kn9k_aci_lldp_dos-NdgRrrA3.html)
 
-  * 27-Aug-2025
+  * 25-Feb-2026
 
-[ Security Advisory: Cisco UCS Manager Software Stored Cross-Site Scripting Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucs-xss-Ey6XhyPS.html)
+[ Security Advisory: Cisco FXOS and UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsciv-wGYtC78q.html)
 
-  * 27-Aug-2025
+  * 25-Feb-2026
 
-[ Security Advisory: Cisco Integrated Management Controller Virtual Keyboard Video Monitor Open Redirect Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucs-vkvmorv-CnKrV7HK.html)
+[ Security Advisory: Cisco UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-cmdinj-GvxLPeSB.html)
 
-  * 27-Aug-2025
+  * 25-Feb-2026
 
-[ Security Advisory: Cisco NX-OS Software Sensitive Log Information Disclosure Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-nxos-infodis-TEcTYSFG.html)
+[ Security Advisory: Cisco UCS Manager Software Privilege Escalation Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-afwae-mOgUfyLn.html)
 
 
 ### Document Categories
@@ -132,6 +132,11 @@ use JS to put chosen tab in here or hide
 
 #### Security Advisories, Responses and Notices
 
+  * [Cisco NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-n3kn9k_aci_lldp_dos-NdgRrrA3.html)25-Feb-2026new
+  * [Cisco FXOS and UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsciv-wGYtC78q.html)25-Feb-2026new
+  * [Cisco FXOS and UCS Manager Software Stored Cross-Site Scripting Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsfxosxss-7skVE8Zv.html)25-Feb-2026new
+  * [Cisco UCS Manager Software Privilege Escalation Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-afwae-mOgUfyLn.html)25-Feb-2026new
+  * [Cisco UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-cmdinj-GvxLPeSB.html)25-Feb-2026new
   * [Cisco Integrated Management Controller Virtual Keyboard Video Monitor Open Redirect Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucs-vkvmorv-CnKrV7HK.html)27-Aug-2025
   * [Cisco UCS Manager Software Command Injection Vulnerabilities ](/c/en/us/support/docs/csa/cisco-sa-ucs-multi-cmdinj-E4Ukjyrz.html)27-Aug-2025
   * [Cisco Integrated Management Controller Virtual Keyboard Video Monitor Stored Cross-Site Scripting Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucs-kvmsxss-6h7AnUyk.html)27-Aug-2025
@@ -142,21 +147,16 @@ use JS to put chosen tab in here or hide
   * [Cisco NX-OS Software Image Verification Bypass Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-nxos-image-sig-bypas-pQDRQvjL.html)07-Apr-2025
   * [Cisco UCS B-Series, Managed C-Series, and X-Series Servers Redfish API Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-cimc-redfish-cominj-sbkv5ZZ.html)02-Oct-2024
   * [Cisco NX-OS Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-nxos-cmdinj-Lq6jsZhH.html)28-Aug-2024
-  * [Cisco UCS 6400 and 6500 Series Fabric Interconnects Intersight Managed Mode Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsfi-imm-syn-p6kZTDQC.html)28-Feb-2024
-  * [Cisco FXOS and NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-nxos-lldp-dos-z7PncTgt.html)28-Feb-2024
-  * [Cisco Firepower 4100 Series, Firepower 9300 Security Appliances, and UCS 6300 Series Fabric Interconnects SNMP Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-fp-ucsfi-snmp-dos-qtv69NAO.html)23-Aug-2023
-  * [Cisco FXOS Software and UCS Manager Software Configuration Backup Static Key Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-bkpsky-H8FCQgsA.html)24-Mar-2023
-  * [Cisco Nexus 9300-FX3 Series Fabric Extender for UCS Fabric Interconnects Authentication Bypass Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-elyfex-dos-gfvcByx.html)22-Feb-2023
 [View all documentation of this type ](/c/en/us/support/servers-unified-computing/ucs-manager/products-security-advisories-list.html)
 ### Release and Compatibility
 
 #### Release Notes
 
-  * [Release Notes for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-4_3.html)14-Jan-2026updated
-  * [Release Bundle Contents for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-4-3.html)14-Jan-2026updated
-  * [Release Notes for Cisco UCS Tools ](/c/en/us/td/docs/unified_computing/ucs/release/notes/UCS-Tools-ESXi-RN.html)08-Jan-2026updated
-  * [Release Notes for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-6_0.html)18-Dec-2025
-  * [Release Bundle Contents for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-6-0.html)18-Dec-2025
+  * [Release Notes for Cisco UCS Tools ](/c/en/us/td/docs/unified_computing/ucs/release/notes/UCS-Tools-ESXi-RN.html)23-Feb-2026updated
+  * [Release Notes for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-4_3.html)23-Feb-2026updated
+  * [Release Bundle Contents for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-4-3.html)23-Feb-2026updated
+  * [Release Notes for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-6_0.html)06-Feb-2026updated
+  * [Release Bundle Contents for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-6-0.html)06-Feb-2026updated
   * [Release Notes for Cisco UCS Manager, Release 4.2 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/cisco-ucs-manager-rn-4-2.html)23-Sep-2025
   * [Release Bundle Contents for Cisco UCS Manager, Release 4.2 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-4-2.html)23-Sep-2025
   * [Cisco UCS Manager Internal Dependencies, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cisco-ucs-manager-internal-dependencies--release-4-3.html)23-Sep-2025
@@ -272,7 +272,7 @@ use JS to put chosen tab in here or hide
   * [Cisco UCS Manager Storage Management Guide, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/6-0/b_ucsm_gui_storage_management_guide_6_0.html)02-Sep-2025
   * [Migration Guide for Cisco UCS Fabric Interconnects, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/6-0/b_migration_guide_for_cisco_ucs_fabric_interconnects_6_0.html)02-Sep-2025
   * [Cisco UCS Manager VIC Configuration Guide, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/6-0/b-vic-configuration-guide-6-0.html)02-Sep-2025
-  * [Cisco UCS 6400, 6536, 6664, and UCSX-S9108-100G FI Configuration Limits for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Configuration-Limits/6-0/b_ucs_configuration_limits_6_0.html)02-Sep-2025
+  * [Cisco UCS 6400, 6500, 6600 Series, and UCSX-S9108-100G FI Configuration Limits for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Configuration-Limits/6-0/b_ucs_configuration_limits_6_0.html)02-Sep-2025
   * [Cisco UCS S3260 Server Integration with Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Dense-Storage-Server-Integ-Mgmt/6-0/b_UCSM_s3260_Integration_Guide_6_0.html)02-Sep-2025
   * [Cisco UCS Manager Administration Management Using the CLI, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Admin-Management/6-0/b_cisco_ucs_manager_cli_administration_mgmt_guide_6-0.html)02-Sep-2025
   * [Cisco UCS Manager Firmware Management Using the CLI, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Firmware-Mgmt/6-0/b_UCSM_CLI_Firmware_Management_Guide_6-0.html)02-Sep-2025
@@ -422,25 +422,25 @@ use JS to put chosen tab in here or hide
 
 ### Recent Security Notices
 
-  * 27-Aug-2025
+  * 25-Feb-2026
 
-[ Security Advisory: Cisco UCS Manager Software Command Injection Vulnerabilities ](/c/en/us/support/docs/csa/cisco-sa-ucs-multi-cmdinj-E4Ukjyrz.html)
+[ Security Advisory: Cisco FXOS and UCS Manager Software Stored Cross-Site Scripting Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsfxosxss-7skVE8Zv.html)
 
-  * 27-Aug-2025
+  * 25-Feb-2026
 
-[ Security Advisory: Cisco NX-OS Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-nxos-cmdinj-qhNze5Ss.html)
+[ Security Advisory: Cisco NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-n3kn9k_aci_lldp_dos-NdgRrrA3.html)
 
-  * 27-Aug-2025
+  * 25-Feb-2026
 
-[ Security Advisory: Cisco UCS Manager Software Stored Cross-Site Scripting Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucs-xss-Ey6XhyPS.html)
+[ Security Advisory: Cisco FXOS and UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsciv-wGYtC78q.html)
 
-  * 27-Aug-2025
+  * 25-Feb-2026
 
-[ Security Advisory: Cisco Integrated Management Controller Virtual Keyboard Video Monitor Open Redirect Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucs-vkvmorv-CnKrV7HK.html)
+[ Security Advisory: Cisco UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-cmdinj-GvxLPeSB.html)
 
-  * 27-Aug-2025
+  * 25-Feb-2026
 
-[ Security Advisory: Cisco NX-OS Software Sensitive Log Information Disclosure Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-nxos-infodis-TEcTYSFG.html)
+[ Security Advisory: Cisco UCS Manager Software Privilege Escalation Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-afwae-mOgUfyLn.html)
 
 
 ### Document Categories
@@ -479,6 +479,11 @@ use JS to put chosen tab in here or hide
 
 #### Security Advisories, Responses and Notices
 
+  * [Cisco NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-n3kn9k_aci_lldp_dos-NdgRrrA3.html)25-Feb-2026new
+  * [Cisco FXOS and UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsciv-wGYtC78q.html)25-Feb-2026new
+  * [Cisco FXOS and UCS Manager Software Stored Cross-Site Scripting Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsfxosxss-7skVE8Zv.html)25-Feb-2026new
+  * [Cisco UCS Manager Software Privilege Escalation Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-afwae-mOgUfyLn.html)25-Feb-2026new
+  * [Cisco UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-cmdinj-GvxLPeSB.html)25-Feb-2026new
   * [Cisco Integrated Management Controller Virtual Keyboard Video Monitor Open Redirect Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucs-vkvmorv-CnKrV7HK.html)27-Aug-2025
   * [Cisco UCS Manager Software Command Injection Vulnerabilities ](/c/en/us/support/docs/csa/cisco-sa-ucs-multi-cmdinj-E4Ukjyrz.html)27-Aug-2025
   * [Cisco Integrated Management Controller Virtual Keyboard Video Monitor Stored Cross-Site Scripting Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucs-kvmsxss-6h7AnUyk.html)27-Aug-2025
@@ -489,21 +494,16 @@ use JS to put chosen tab in here or hide
   * [Cisco NX-OS Software Image Verification Bypass Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-nxos-image-sig-bypas-pQDRQvjL.html)07-Apr-2025
   * [Cisco UCS B-Series, Managed C-Series, and X-Series Servers Redfish API Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-cimc-redfish-cominj-sbkv5ZZ.html)02-Oct-2024
   * [Cisco NX-OS Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-nxos-cmdinj-Lq6jsZhH.html)28-Aug-2024
-  * [Cisco UCS 6400 and 6500 Series Fabric Interconnects Intersight Managed Mode Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsfi-imm-syn-p6kZTDQC.html)28-Feb-2024
-  * [Cisco FXOS and NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-nxos-lldp-dos-z7PncTgt.html)28-Feb-2024
-  * [Cisco Firepower 4100 Series, Firepower 9300 Security Appliances, and UCS 6300 Series Fabric Interconnects SNMP Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-fp-ucsfi-snmp-dos-qtv69NAO.html)23-Aug-2023
-  * [Cisco FXOS Software and UCS Manager Software Configuration Backup Static Key Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-bkpsky-H8FCQgsA.html)24-Mar-2023
-  * [Cisco Nexus 9300-FX3 Series Fabric Extender for UCS Fabric Interconnects Authentication Bypass Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-elyfex-dos-gfvcByx.html)22-Feb-2023
 [View all documentation of this type ](/c/en/us/support/servers-unified-computing/ucs-manager/products-security-advisories-list.html)
 ### Release and Compatibility
 
 #### Release Notes
 
-  * [Release Notes for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-4_3.html)14-Jan-2026updated
-  * [Release Bundle Contents for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-4-3.html)14-Jan-2026updated
-  * [Release Notes for Cisco UCS Tools ](/c/en/us/td/docs/unified_computing/ucs/release/notes/UCS-Tools-ESXi-RN.html)08-Jan-2026updated
-  * [Release Notes for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-6_0.html)18-Dec-2025
-  * [Release Bundle Contents for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-6-0.html)18-Dec-2025
+  * [Release Notes for Cisco UCS Tools ](/c/en/us/td/docs/unified_computing/ucs/release/notes/UCS-Tools-ESXi-RN.html)23-Feb-2026updated
+  * [Release Notes for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-4_3.html)23-Feb-2026updated
+  * [Release Bundle Contents for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-4-3.html)23-Feb-2026updated
+  * [Release Notes for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-6_0.html)06-Feb-2026updated
+  * [Release Bundle Contents for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-6-0.html)06-Feb-2026updated
   * [Release Notes for Cisco UCS Manager, Release 4.2 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/cisco-ucs-manager-rn-4-2.html)23-Sep-2025
   * [Release Bundle Contents for Cisco UCS Manager, Release 4.2 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-4-2.html)23-Sep-2025
   * [Cisco UCS Manager Internal Dependencies, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cisco-ucs-manager-internal-dependencies--release-4-3.html)23-Sep-2025
@@ -619,7 +619,7 @@ use JS to put chosen tab in here or hide
   * [Cisco UCS Manager Storage Management Guide, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/6-0/b_ucsm_gui_storage_management_guide_6_0.html)02-Sep-2025
   * [Migration Guide for Cisco UCS Fabric Interconnects, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/6-0/b_migration_guide_for_cisco_ucs_fabric_interconnects_6_0.html)02-Sep-2025
   * [Cisco UCS Manager VIC Configuration Guide, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/6-0/b-vic-configuration-guide-6-0.html)02-Sep-2025
-  * [Cisco UCS 6400, 6536, 6664, and UCSX-S9108-100G FI Configuration Limits for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Configuration-Limits/6-0/b_ucs_configuration_limits_6_0.html)02-Sep-2025
+  * [Cisco UCS 6400, 6500, 6600 Series, and UCSX-S9108-100G FI Configuration Limits for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Configuration-Limits/6-0/b_ucs_configuration_limits_6_0.html)02-Sep-2025
   * [Cisco UCS S3260 Server Integration with Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Dense-Storage-Server-Integ-Mgmt/6-0/b_UCSM_s3260_Integration_Guide_6_0.html)02-Sep-2025
   * [Cisco UCS Manager Administration Management Using the CLI, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Admin-Management/6-0/b_cisco_ucs_manager_cli_administration_mgmt_guide_6-0.html)02-Sep-2025
   * [Cisco UCS Manager Firmware Management Using the CLI, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Firmware-Mgmt/6-0/b_UCSM_CLI_Firmware_Management_Guide_6-0.html)02-Sep-2025

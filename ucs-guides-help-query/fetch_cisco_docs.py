@@ -12,6 +12,8 @@ This script:
 import os
 import re
 import time
+import datetime
+import email.utils
 import requests
 from urllib.parse import urljoin, urlparse, unquote
 from bs4 import BeautifulSoup
@@ -21,17 +23,19 @@ from collections import OrderedDict
 
 
 class CiscoDocFetcher:
-    def __init__(self, output_dir=".", delay=1.0):
+    def __init__(self, output_dir=".", delay=1.0, force=False):
         """
         Initialize the documentation fetcher.
-        
+
         Args:
             output_dir: Directory to save markdown files
             delay: Delay between requests in seconds (be respectful)
+            force: Skip all freshness checks and re-download every file
         """
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(exist_ok=True)
         self.delay = delay
+        self.force = force
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
@@ -49,32 +53,49 @@ class CiscoDocFetcher:
         """Extract all URLs from a markdown file."""
         urls = []
         with open(filepath, 'r', encoding='utf-8') as f:
-            content = f.read()
-            # Find all URLs (both markdown links and plain URLs)
-            markdown_links = re.findall(r'\[([^\]]+)\]\(([^\)]+)\)', content)
-            plain_urls = re.findall(r'(?<![\(\[])(https?://[^\s\)\]]+)', content)
-            
-            # Add URLs from markdown links
-            urls.extend([url for _, url in markdown_links])
-            # Add plain URLs
-            urls.extend(plain_urls)
-            
+            for raw_line in f:
+                line = raw_line.strip()
+
+                # Skip blank lines and comment lines
+                if not line or line.startswith('#') or line == '':
+                    continue
+
+                # Find all URLs (both markdown links and plain URLs)
+                markdown_links = re.findall(r'\[([^\]]+)\]\(([^\)]+)\)', line)
+                plain_urls = re.findall(r'(?<![\(\[])(https?://[^\s\)\]]+)', line)
+
+                # Add URLs from markdown links
+                urls.extend([url for _, url in markdown_links])
+                # Add plain URLs
+                urls.extend(plain_urls)
+
         return list(OrderedDict.fromkeys(urls))  # Remove duplicates while preserving order
     
     def get_filename_from_url(self, url):
-        """Extract filename from URL."""
+        """
+        Extract a Markdown filename from a URL.
+
+        Returns None if the URL has no usable filename component (e.g. bare
+        domain, trailing slash, or a path whose basename has no meaningful stem).
+        """
         parsed = urlparse(url)
         path = unquote(parsed.path)
-        
-        # Get the last part of the path
-        filename = os.path.basename(path)
-        
+
+        # Get the last non-empty path segment
+        basename = os.path.basename(path.rstrip('/'))
+
+        # Reject empty basenames or those with no stem (e.g. just an extension)
+        if not basename or basename.startswith('.'):
+            return None
+
         # Remove .html extension and add .md
-        if filename.endswith('.html'):
-            filename = filename[:-5] + '.md'
-        elif not filename.endswith('.md'):
-            filename = filename + '.md'
-            
+        if basename.endswith('.html'):
+            filename = basename[:-5] + '.md'
+        elif basename.endswith('.md'):
+            filename = basename
+        else:
+            filename = basename + '.md'
+
         return filename
     
     def is_same_guide(self, url, base_url):
@@ -237,6 +258,95 @@ class CiscoDocFetcher:
         
         return cleaned
     
+    def _parse_fetched_on(self, output_path):
+        """
+        Read the '*Fetched on: YYYY-MM-DD HH:MM:SS*' timestamp embedded in a
+        Markdown file and return a timezone-aware UTC datetime.
+
+        Returns None if the line is absent or cannot be parsed.
+        """
+        try:
+            with open(output_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    m = re.search(
+                        r'\*Fetched on:\s*(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2})\*',
+                        line
+                    )
+                    if m:
+                        naive = datetime.datetime.strptime(m.group(1), '%Y-%m-%d %H:%M:%S')
+                        # strptime produces a naive datetime; treat it as local time
+                        return naive.astimezone(datetime.timezone.utc)
+        except Exception:
+            pass
+        return None
+
+    def check_should_download(self, url, output_path):
+        """
+        Determine whether the remote URL needs to be downloaded.
+
+        Rules (applied in order):
+        0. If --force is set, always download regardless of any other check.
+        1. If the local file was last modified less than 24 hours ago (filesystem
+           mtime) → skip (file is fresh enough; may have been manually edited).
+        2. Send an HTTP HEAD request for the URL and compare Last-Modified
+           against the 'Fetched on' timestamp embedded in the Markdown file
+           (falls back to filesystem mtime if the header is missing):
+           a. Remote is not newer → skip.
+           b. Remote is newer, no header, or HEAD fails → download.
+
+        Returns:
+            (skip: bool, reason: str)
+        """
+        # Rule 0: force flag overrides everything
+        if self.force:
+            return False, "force flag set (-f): skipping all freshness checks"
+
+        path = Path(output_path)
+        if not path.exists():
+            return False, "local file does not exist"
+
+        file_mtime = datetime.datetime.fromtimestamp(path.stat().st_mtime, tz=datetime.timezone.utc)
+        age = datetime.datetime.now(tz=datetime.timezone.utc) - file_mtime
+
+        # Rule 1: file was modified (on disk) within the last 24 hours
+        if age < datetime.timedelta(hours=24):
+            return True, f"local file is {age.seconds // 3600}h {(age.seconds % 3600) // 60}m old (< 1 day)"
+
+        # Rule 2: compare HTTP Last-Modified against the 'Fetched on' date
+        #         embedded in the Markdown file (falls back to filesystem mtime
+        #         if the header line is missing or unparseable).
+        fetched_on = self._parse_fetched_on(output_path)
+        if fetched_on:
+            reference_dt = fetched_on
+            reference_label = f"'Fetched on' date {fetched_on.strftime('%Y-%m-%d %H:%M:%S UTC')}"
+        else:
+            reference_dt = file_mtime
+            reference_label = f"file mtime {file_mtime.strftime('%Y-%m-%d %H:%M:%S UTC')} (no 'Fetched on' found in file)"
+
+        try:
+            print(f"  HEAD {url}")
+            resp = self.session.head(url, timeout=15, allow_redirects=True)
+            last_modified_str = resp.headers.get('Last-Modified') or resp.headers.get('last-modified')
+            if last_modified_str:
+                remote_mtime = datetime.datetime.fromtimestamp(
+                    email.utils.parsedate_to_datetime(last_modified_str).timestamp(),
+                    tz=datetime.timezone.utc
+                )
+                if remote_mtime <= reference_dt:
+                    return True, (
+                        f"remote Last-Modified {remote_mtime.strftime('%Y-%m-%d %H:%M:%S UTC')} "
+                        f"<= {reference_label}"
+                    )
+                else:
+                    return False, (
+                        f"remote Last-Modified {remote_mtime.strftime('%Y-%m-%d %H:%M:%S UTC')} "
+                        f"> {reference_label}"
+                    )
+            else:
+                return False, "no Last-Modified header; downloading to be safe"
+        except Exception as e:
+            return False, f"HEAD request failed ({e}); downloading to be safe"
+
     def process_guide(self, base_url, max_pages=200):
         """
         Process a complete documentation guide.
@@ -320,16 +430,28 @@ class CiscoDocFetcher:
             print(f"{'='*80}")
             
             try:
+                # Determine output path early so freshness checks can use it
+                filename = self.get_filename_from_url(url)
+                if not filename:
+                    print(f"\n⚠  Skipping (no usable filename): {url}")
+                    continue
+                output_path = self.output_dir / filename
+
+                # Freshness checks — skip download if local copy is current
+                skip, reason = self.check_should_download(url, output_path)
+                if skip:
+                    print(f"\n⏭  Skipping (up to date): {reason}")
+                    print(f"   File: {output_path}")
+                    continue
+                else:
+                    print(f"\n↓  Downloading: {reason}")
+
                 # Process the guide
                 markdown_content = self.process_guide(url)
-                
-                # Save to file
-                filename = self.get_filename_from_url(url)
-                output_path = self.output_dir / filename
-                
+
                 with open(output_path, 'w', encoding='utf-8') as f:
                     f.write(markdown_content)
-                
+
                 print(f"\n✓ Saved to: {output_path}")
                 
             except Exception as e:
@@ -378,11 +500,21 @@ def main():
         help='Maximum pages to fetch per guide (default: 200)'
     )
     
+    parser.add_argument(
+        '-f', '--force',
+        action='store_true',
+        default=False,
+        help='Force re-download of all files, ignoring freshness checks'
+    )
+
     args = parser.parse_args()
-    
+
     # Create fetcher
-    fetcher = CiscoDocFetcher(output_dir=args.output_dir, delay=args.delay)
-    
+    fetcher = CiscoDocFetcher(output_dir=args.output_dir, delay=args.delay, force=args.force)
+
+    if args.force:
+        print("\n⚠  Force mode enabled: all files will be re-downloaded")
+
     # Process URLs file
     fetcher.process_urls_file(args.urls_file)
 

@@ -1,22 +1,22 @@
-# Documentation: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3.html
+# Documentation: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_CLI_Firmware_Management_Guide_4-3.html
 
-*Fetched on: 2026-02-27 17:13:14*
+*Fetched on: 2026-02-27 17:20:16*
 
 ---
 
-## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3.html
+## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_CLI_Firmware_Management_Guide_4-3.html
 
 ![Clear Contents of Search](/etc/designs/cdc/fw/i/ic_clear_gray.png)
 
 
 ---
 
-## Page 2: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3.pdf
+## Page 2: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_CLI_Firmware_Management_Guide_4-3.pdf
 
 
 ---
 
-## Page 3: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_preface_00.html
+## Page 3: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_CLI_Firmware_Management_Guide_4-3/b_UCSM_CLI_Firmware_Management_Guide_preface_00.html
 
 ## Audience  
   
@@ -33,60 +33,64 @@ This guide is intended primarily for data center administrators with responsibil
 
 ---
 
-## Page 4: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/chapter.html
+## Page 4: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_CLI_Firmware_Management_Guide_4-3/m-new-and-changed-information.html
 
-## New and Changed Information for This Release 
+## New and Changed Information
 
 This section provides information on new feature and changed behavior in Cisco UCS Manager, Release 4.3.
 
 Table 1. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(6a) Feature |  Description |  Where Documented  
 ---|---|---  
-Support for Cisco UCS C-Series M8 and Cisco UCS X-Series M8 servers |  Cisco UCS Manager now supports Cisco UCS C220 M8 Server, Cisco UCS C240 M8 Server, and UCS X210c M8 Compute Node.  |  [Server Pack](b_UCSM_GUI_Firmware_Management_Guide_chapter_01.html#concept_307E8D76B75640079C5A6EF6636B2977)  
-Table 2. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(5a) Feature |  Description |  Where Documented  
+Support for Cisco UCS C-Series M8 and Cisco UCS X-Series M8 servers |  Cisco UCS Manager now supports Cisco UCS C240 M8 Server, Cisco UCS C220 M8 Server, and UCS X210c M8 Compute Node.  |  [Server Pack](b_UCSM_CLI_Firmware_Management_Guide_chapter_01.html#concept_307E8D76B75640079C5A6EF6636B2977)  
+Table 2. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(5a) Feature  |  Description  |  Where Documented   
 ---|---|---  
-Support for Cisco UCS C-Series M8 and Cisco UCS X-Series M8 servers |  Cisco UCS Manager now supports Cisco UCS C225 M8 Server and Cisco UCS X215c M8 Compute Node.  |  [Server Pack](b_UCSM_GUI_Firmware_Management_Guide_chapter_01.html#concept_307E8D76B75640079C5A6EF6636B2977)  
-Table 3. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b) Feature |  Description |  Where Documented  
+Support for Cisco UCS C-Series M8 and X-Series M8 servers |  Cisco UCS Manager now supports Cisco UCS C225 M8 Server and Cisco UCS X215c M8 Compute Node.  |  [Server Pack](b_UCSM_CLI_Firmware_Management_Guide_chapter_01.html#concept_307E8D76B75640079C5A6EF6636B2977)  
+Table 3. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b) Feature  |  Description  |  Where Documented   
 ---|---|---  
-Support for Cisco UCS X-Series Direct |  Cisco UCS Manager now supports Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct).  | 
+Support for Cisco UCS Fabric Interconnects 9108 100G |  Cisco UCS Manager now supports Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct).  | 
 
-  * [Overview](b_UCSM_GUI_Firmware_Management_Guide_chapter_01.html#concept_epr_qzz_pjb)
-  * [Components That Support Firmware Upgrade](b_UCSM_GUI_Firmware_Management_Guide_chapter_01.html#concept_k54_vzz_pjb)
-  * [Direct Firmware Upgrade at Endpoints](b_UCSM_GUI_Firmware_Management_Guide_chapter_011.html#concept_syg_5ms_zdb)
-  * [Obtaining Software Bundles from Cisco](b_UCSM_GUI_Firmware_Management_Guide_chapter_011.html#task_v5y_2kr_zdb)
-  * [Firmware Image Management](b_UCSM_GUI_Firmware_Management_Guide_chapter_011.html#concept_cfq_2gr_zdb)
+  * [Overview](b_UCSM_CLI_Firmware_Management_Guide_chapter_01.html#concept_epr_qzz_pjb)
+  * [Components That Support Firmware Upgrade](b_UCSM_CLI_Firmware_Management_Guide_chapter_01.html#concept_k54_vzz_pjb)
+  * [Direct Firmware Upgrade at Endpoints](b_UCSM_CLI_Firmware_Management_Guide_chapter_01.html#concept_D45D1AE0617B4A2DA523A6EA1FB27B3A)
+  * [Verifying the Ethernet Data Path](b_UCSM_CLI_Firmware_Management_Guide_chapter_010.html#task_9C7303165E1D456F81D0862D05F413AB)
+  * [Firmware Upgrades through Auto Install](b_UCSM_CLI_Firmware_Management_Guide_chapter_01.html#concept_4F52361A2A7D4459B64BE93BC9CA566A)
+  * [Firmware Image Management](b_UCSM_CLI_Firmware_Management_Guide_chapter_011.html#concept_cfq_2gr_zdb)
+  * [Obtaining Software Bundles from Cisco](b_UCSM_CLI_Firmware_Management_Guide_chapter_011.html#task_v5y_2kr_zdb)
 
   
-Table 4. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b) Feature |  Description |  Where Documented  
+Table 4. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b) Feature  |  Description  |  Where Documented   
 ---|---|---  
-Support for Cisco UCS C-Series M8 server |  Cisco UCS Manager now supports Cisco UCS C245 M8 Server.  |  [Server Pack](b_UCSM_GUI_Firmware_Management_Guide_chapter_01.html#concept_307E8D76B75640079C5A6EF6636B2977)  
-Table 5. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4a) Feature |  Description |  Where Documented  
+Support for Cisco UCS C-Series M8 server |  Cisco UCS Manager now supports Cisco UCS C245 M8 Server.  |  [Server Pack](b_UCSM_CLI_Firmware_Management_Guide_chapter_01.html#concept_307E8D76B75640079C5A6EF6636B2977)  
+Table 5. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4a) Feature  |  Description  |  Where Documented   
 ---|---|---  
-Cross version firmware update |  The Cisco UCS Manager A bundle software (Cisco UCS Manager, Cisco NX-OS, IOM and FEX firmware) can be mixed with previous B or C bundle releases on the servers (host firmware [FW], BIOS, Cisco IMC, adapter FW and drivers).  |  [Cross-Version Firmware Support](b_UCSM_GUI_Firmware_Management_Guide_chapter_01.html#ucsmRN_43_crossversion)  
+Cross-Version Firmware Support |  The Cisco UCS Manager A bundle software (Cisco UCS Manager, Cisco NX-OS, IOM and FEX firmware) can be mixed with previous B or C bundle releases on the servers (host firmware [FW], BIOS, Cisco IMC, adapter FW and drivers).  | [Cross-Version Firmware Support](b_UCSM_CLI_Firmware_Management_Guide_chapter_01.html#ucsmRN_43_crossversion)  
+Force option to activate capability catalog.  |  Introduction of Force option to activate capability catalog.  |  [Activating a Capability Catalog Update](b_UCSM_CLI_Firmware_Management_Guide_chapter_0100.html#task_67A8990409FF49968F6EFDAFB61C9598)  
+Deprecated command |  The show cat-updater command is deprecated.  |  —  
 Table 6. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(2c) Feature  |  Description  |  Where Documented   
 ---|---|---  
-Support for Cisco UCS X-Series server |  Cisco UCS Manager supports Cisco UCS X410c M7 Compute Node.  Cisco UCS X-Series servers support Intelligent Fabric Modules (IFM), which function similarly to the Input/Output Module (IOM) in Cisco UCS B-Series servers.  |  [Server Pack](b_UCSM_GUI_Firmware_Management_Guide_chapter_01.html#concept_307E8D76B75640079C5A6EF6636B2977)  
+Support for Cisco UCS X-Series servers |  Cisco UCS Manager supports Cisco UCS X410c M7 Compute Node.  Cisco UCS X-Series servers support Intelligent Fabric Modules (IFM), which function similarly to the Input/Output Module (IOM) in Cisco UCS B-Series servers.  |  [Server Pack](b_UCSM_CLI_Firmware_Management_Guide_chapter_01.html#concept_307E8D76B75640079C5A6EF6636B2977)  
 Table 7. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(2b) Feature  |  Description  |  Where Documented   
 ---|---|---  
-Support for Firmware Upgrade |  Cisco UCS Manager supports Firmware Upgrade to Cisco UCS Manager Release 4.3 version |  [Firmware Upgrade to Cisco UCS Manager Release 4.3](b_UCSM_GUI_Firmware_Management_Guide_chapter_01.html#firmware-upgrade-to-cisco-ucs-manager-release-4.3)  
+Support for Firmware Upgrade |  Cisco UCS Manager supports Firmware Upgrade to Cisco UCS Manager Release 4.3 version |  [Firmware Upgrade to Cisco UCS Manager Release 4.3](b_UCSM_CLI_Firmware_Management_Guide_chapter_01.html#firmware-upgrade-to-cisco-ucs-manager-release-4.3)  
 Support for Cisco UCS C-Series M7 servers. |  Cisco UCS Manager supports the following C-Series M7 servers:
 
   * Cisco UCS C240 M7 Server
   * Cisco UCS C220 M7 Server
 
-|  [Server Pack](b_UCSM_GUI_Firmware_Management_Guide_chapter_01.html#concept_307E8D76B75640079C5A6EF6636B2977)  
+|  [Server Pack](b_UCSM_CLI_Firmware_Management_Guide_chapter_01.html#concept_307E8D76B75640079C5A6EF6636B2977)  
 Support for Cisco UCS X9508 server chassis with Cisco UCS X-Series servers |  Cisco UCS Manager supports Cisco UCSX-9508 Chassis with the following Cisco UCS X-Series servers: 
 
   * Cisco UCS X210c M7 Compute Node
   * Cisco UCS X210c M6 Compute Node
 
-Cisco UCS X-Series servers support Intelligent Fabric Modules (IFM), which function similarly to the Input/Output Module (IOM) in Cisco UCS B-Series servers.  |  [Server Pack](b_UCSM_GUI_Firmware_Management_Guide_chapter_01.html#concept_307E8D76B75640079C5A6EF6636B2977)  
-Support for Cisco UCS 6200 Series Fabric Interconnect is deprecated |  Cisco UCS Manager deprecates support for Cisco UCS 6200 Series Fabric Interconnects. |  [Cross-Version Firmware Support](b_UCSM_GUI_Firmware_Management_Guide_chapter_01.html#ucsmRN_43_crossversion)  
+Cisco UCS X-Series servers support Intelligent Fabric Modules (IFM), which function similarly to the Input/Output Module (IOM) in Cisco UCS B-Series servers.  |  [Server Pack](b_UCSM_CLI_Firmware_Management_Guide_chapter_01.html#concept_307E8D76B75640079C5A6EF6636B2977)  
+Support for Cisco UCS 6200 Series Fabric Interconnect is deprecated |  Cisco UCS Manager deprecates support for Cisco UCS 6200 Series Fabric Interconnects. |  [Cross-Version Firmware Support](b_UCSM_CLI_Firmware_Management_Guide_chapter_01.html#ucsmRN_43_crossversion)  
 Support for Cisco UCS M4 servers are deprecated. |  Cisco UCS Manager deprecates support for UCS B-series, C-series, and S-series M4 servers. |  —
 
 
 ---
 
-## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_chapter_01.html
+## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_CLI_Firmware_Management_Guide_4-3/b_UCSM_CLI_Firmware_Management_Guide_chapter_01.html
 
 ## Overview  
   
@@ -192,26 +196,26 @@ For capability catalog upgrades, update and activate occur simultaneously. You o
   
 ---|---  
   
-### Cisco UCS Manager User Documentation
+### Cisco UCS Manager User CLI Documentation
 
-Cisco UCS Manager offers you a new set of smaller, use-case based documentation described in the following table: 
+Cisco UCS Manager offers you a set of smaller, use-case based documentation described in the following table: 
 
 Guide  |  Description   
 ---|---  
-[Cisco UCS Manager Getting Started Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses Cisco UCS architecture and Day 0 operations, including Cisco UCS Manager initial configuration and configuration best practices.   
-[Cisco UCS Manager Administration Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses password management, role-based access configuration, remote authentication, communication services, CIMC session management, organizations, backup and restore, scheduling options, BIOS tokens, and deferred deployments.   
+[Cisco UCS Manager Getting Started Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses Cisco UCS architecture and Day 0 operations, including Cisco UCS Manager initial configuration, and configuration best practices.   
+[Cisco UCS Manager Administration Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses password management, role-based access configuration, remote authentication, communication services, CIMC session management, organizations, backup and restore, scheduling options, BIOS tokens and deferred deployments.   
 [Cisco UCS Manager Infrastructure Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses physical and virtual infrastructure components used and managed by Cisco UCS Manager.   
 [Cisco UCS Manager Firmware Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses downloading and managing firmware, upgrading through Auto Install, upgrading through service profiles, directly upgrading at endpoints using firmware auto sync, managing the capability catalog, deployment scenarios, and troubleshooting.   
-[Cisco UCS Manager Server Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses the new licenses, registering Cisco UCS domain with Cisco UCS Central, power capping, server boot, server profiles, and server-related policies.   
-[Cisco UCS Manager Storage Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of storage management, such as SAN and VSAN in Cisco UCS Manager.   
-[Cisco UCS Manager Network Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of network management, such as LAN and VLAN connectivity in Cisco UCS Manager.   
-[Cisco UCS Manager System Monitoring Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of system and health monitoring, including system statistics in Cisco UCS Manager.   
+[Cisco UCS Manager Server Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses the new licenses, registering Cisco UCS domains with Cisco UCS Central, power capping, server boot, server profiles and server-related policies.   
+[Cisco UCS Manager Storage Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of storage management such as SAN and VSAN in Cisco UCS Manager.   
+[Cisco UCS Manager Network Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of network management such as LAN and VLAN connectivity in Cisco UCS Manager.   
+[Cisco UCS Manager System Monitoring Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of system and health monitoring including system statistics in Cisco UCS Manager.   
 [Cisco UCS S3260 Server Integration with Cisco UCS Manager](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of management of UCS S-Series servers that are managed through Cisco UCS Manager. 
 
 
 ---
 
-## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/m_prerequisites_guidelines.html
+## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_CLI_Firmware_Management_Guide_4-3/b_UCSM_CLI_Firmware_Management_Guide_chapter_010.html
 
 ## Guidelines, and Best Practices for Firmware Upgrades   
   
@@ -401,36 +405,180 @@ Ensure that you do not initiate Auto Install with fabric evacuation enabled on t
   
 ---|---  
   
-##### Configuring Fabric Interconnect Traffic Evacuation 
-
-You can use the steps detailed here, or click Play on this [video](http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/videos/3-1/enable_and_disable_fi_traffic_evacuation.html) (http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/videos/3-1/enable_and_disable_fi_traffic_evacuation.html) to watch how to enable and disable fabric interconnect traffic evacuation. 
+##### Stopping Traffic on a Fabric Interconnect 
 
 ###### Procedure
 
-* * *
+| Command or Action | Purpose  
+---|---|---  
+**Step 1** |  UCS-A # scope fabric-interconnect {a | b}  |  Enters fabric interconnect mode for the specified Fabric Interconnect.   
+**Step 2** |  UCS-A /fabric-interconnect # stop server traffic [force]  |  Stops all the traffic that is active through the specified Fabric Interconnect.  Use the force option to evacuate a Fabric Interconnect irrespective of its current evacuation state.   
+**Step 3** |  UCS-A /fabric-interconnect # commit-buffer |  Commits the transaction to the system configuration.   
+  
+###### Example
 
-**Step 1** |  In the Navigation pane, click Equipment.   
+This example shows how to stop all traffic that is active through Fabric Interconnect B: 
+    
+    
+    UCS-A# **scope fabric-interconnect b**
+    UCS-A /fabric-interconnect # **stop server traffic**
+    Warning: Enabling fabric evacuation will stop all traffic through this Fabric Interconnect from servers attached through IOM/FEX. The traffic will fail over to the Primary Fabric Interconnect for fail over vnics.
+    UCS-A /fabric-interconnect # **commit-buffer**
+    
+    
+    
+
+##### Restarting Traffic on a Fabric Interconnect 
+
+###### Procedure
+
+| Command or Action | Purpose  
+---|---|---  
+**Step 1** |  UCS-A # scope fabric-interconnect {a | b}  |  Enters fabric interconnect mode for the specified Fabric Interconnect.   
+**Step 2** |  UCS-A /fabric-interconnect # start server traffic |  Restarts traffic through the specified Fabric Interconnect.   
+**Step 3** |  UCS-A /fabric-interconnect # commit-buffer |  Commits the transaction to the system configuration.   
+  
+###### Example
+
+This example shows how to restart traffic through Fabric Interconnect B: 
+    
+    
+    UCS-A# **scope fabric-interconnect b**
+    UCS-A /fabric-interconnect # **start server traffic**
+    Warning: Resetting fabric evacuation will cause server traffic that failed over to the Primary Fabric Interconnect to fail back to this Fabric Interconnect.
+    UCS-A /fabric-interconnect # **commit-buffer**
+    
+    
+    
+
+##### Verifying Fabric Evacuation 
+
+###### Procedure
+
+Command or Action | Purpose  
 ---|---  
-**Step 2** |  Expand Equipment > Fabric Interconnects > Fabric_Interconnect_Name.   
-**Step 3** |  In the Work pane, click the General tab.   
-**Step 4** |  In the Actions area of the General tab, click Configure Evacuation.  The Configure Evacuation dialog box appears.   
-**Step 5** |  To configure evacuation of the traffic through the specified fabric interconnect, click one of the following radio buttons in the Admin Evac Mode field: 
+UCS-A# show service-profile circuit server server-id |  Shows the network circuit information for the service profile associated with the specified server.   
+  
+###### Example
 
-  * On—Stops all the traffic that is active through the specified fabric interconnect. 
-  * Off—Restarts traffic through the specified fabric interconnect. 
+This example shows the VIF paths before fabric evacuation. 
 
-  
-**Step 6** |  (Optional) To evacuate the traffic through a fabric interconnect irrespective of its current evacuation state, check the Force check box.   
-**Step 7** |  Click Apply.  A warning dialog box appears. 
-    
-    
-    Enabling fabric evacuation will stop all traffic through this Fabric Interconnect from servers attached through IOM/FEX. 
-    The traffic will fail over to the Primary Fabric Interconnect for fail over vnics.
-    Are you sure you want to continue?  
-  
-**Step 8** |  Click OK to confirm fabric interconnect traffic evacuation and continue.   
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
 * * *
+
+  * VIF at Fabric Interconnect A shows that traffic is initially active through the Fabric interconnect. 
+  * VIF at Fabric Interconnect B is passive before evacuation. 
+
+
+* * *  
+  
+---|---  
+      
+    
+    UCS-A# **show service-profile circuit server 1/6**
+    Service Profile: test1
+    Server: 1/6
+        Fabric ID: A
+            Path ID: 1
+            VIF        vNIC            Link State  Oper State Prot State    Prot Role   Admin Pin  Oper Pin   Transport
+            ---------- --------------- ----------- ---------- ------------- ----------- ---------- ---------- ---------
+                   692 eth0            Up          Active     Active        Primary     0/0        1/15       Ether
+        Fabric ID: B
+            Path ID: 1
+            VIF        vNIC            Link State  Oper State Prot State    Prot Role   Admin Pin  Oper Pin   Transport
+            ---------- --------------- ----------- ---------- ------------- ----------- ---------- ---------- ---------
+                   693 eth0            Up          Active     Passive       Backup      0/0        1/15       Ether
+    UCS-A#
+    
+    
+    
+
+This example shows the VIF paths after Fabric Interconnect A is evacuated. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * After fail over, the VIF state at Fabric Interconnect A goes into error. 
+  * VIF at Fabric Interconnect B takes over as active. 
+
+
+* * *  
+  
+---|---  
+      
+    
+    UCS-A# **show service-profile circuit server 1/6**
+    Service Profile: test1
+    Server: 1/6
+        Fabric ID: A
+            Path ID: 1
+            VIF        vNIC            Link State  Oper State Prot State    Prot Role   Admin Pin  Oper Pin   Transport
+            ---------- --------------- ----------- ---------- ------------- ----------- ---------- ---------- ---------
+                   692 eth0            Error       Error      Active        Primary     0/0        0/0        Ether
+        Fabric ID: B
+            Path ID: 1
+            VIF        vNIC            Link State  Oper State Prot State    Prot Role   Admin Pin  Oper Pin   Transport
+            ---------- --------------- ----------- ---------- ------------- ----------- ---------- ---------- ---------
+                   693 eth0            Up          Active     Passive       Backup      0/0        1/15       Ether
+    UCS-A#
+    
+
+##### Displaying the Status of Evacuation at a Fabric Interconnect 
+
+###### Procedure
+
+| Command or Action | Purpose  
+---|---|---  
+**Step 1** |  UCS-A # scope fabric-interconnect {a | b}  |  Enters fabric interconnect mode for the specified Fabric Interconnect.   
+**Step 2** |  UCS-A /fabric-interconnect # show detail |  Displays details about the specified Fabric Interconnect.   
+  
+###### Example
+
+This example shows how to display the detailed status of a Fabric Interconnect. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Admin Evacuation and Oper Evacuation show the status of evacuation at the Fabric Interconnect. 
+
+* * *  
+  
+---|---  
+      
+    
+     UCS-A /fabric-interconnect # **show detail**
+    
+    Fabric Interconnect:
+        ID: B
+        Product Name: Cisco UCS 6248UP
+        PID: UCS-FI-6248UP
+        VID: V01
+        Vendor: Cisco Systems, Inc.
+        Serial (SN): SSI171400HG
+        HW Revision: 0
+        Total Memory (MB): 16165
+        OOB IP Addr: 10.193.32.172
+        OOB Gateway: 10.193.32.1
+        OOB Netmask: 255.255.255.0
+        OOB IPv6 Address: ::
+        OOB IPv6 Gateway: ::
+        Prefix: 64
+        Operability: Operable
+        Thermal Status: Ok
+        Admin Evacuation: On
+        Oper Evacuation: On
+        Current Task 1:
+        Current Task 2:
+        Current Task 3:
+    
+    
+    
 
 #### Secure Firmware Update 
 
@@ -620,78 +768,495 @@ After you finish the upgrade, you can use the Firmware Auto Sync Server policy i
 
 ---
 
-## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_chapter_0100.html
+## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_CLI_Firmware_Management_Guide_4-3/b_UCSM_CLI_Firmware_Management_Guide_chapter_011.html
 
-## Capability Catalog   
+##  Download and Manage Firmware in Cisco UCS Manager   
   
-The Capability Catalog is a set of tunable parameters, strings, and rules. Cisco UCS uses the catalog to update the display and configurability of components such as newly qualified DIMMs and disk drives for servers. 
+### Firmware Image Management
 
-The catalog is divided by hardware components, such as the chassis, CPU, local disk, and I/O module. You can use the catalog to view the list of providers available for that component. There is one provider per hardware component. Each provider is identified by the vendor, model (PID), and revision. For each provider, you can also view details of the equipment manufacturer and the form factor. 
+Cisco delivers all firmware updates to Cisco UCS components in bundles of images. Each image represents an individual firmware package specific to one hardware component. For example: IOM image, Cisco UCS Manager image, and so on.Cisco UCS firmware updates are available to be downloaded to fabric interconnects in a Cisco UCS domain in the following bundles: 
 
-For information about which hardware components are dependent upon a particular catalog release, see the component support tables in the [Service Notes for the B- Series servers](http://www.cisco.com/en/US/products/ps10280/prod_installation_guides_list.html). For information about which components are introduced in a specific release, see the Cisco UCS [Release Notes](http://www.cisco.com/en/US/products/ps10281/prod_release_notes_list.html). 
-
-### Contents of the Capability Catalog 
-
-The contents of the Capability Catalog include the following: 
-
-Implementation-Specific Tunable Parameters 
+Cisco UCS Infrastructure Software Bundle
     
 
-  * Power and thermal constraints 
+Cisco UCS Manager includes infrastructure bundles that contain firmware images required to update components such as:
 
-  * Slot ranges and numbering 
+  * Cisco UCS Manager software 
 
-  * Adapter capacities 
+  * Kernel and system firmware for the fabric interconnects 
 
-
-Hardware-Specific Rules 
-    
-
-  * Firmware compatibility for components such as the BIOS, CIMC, RAID controller, and adapters 
-
-  * Diagnostics 
-
-  * Hardware-specific reboot 
-
-
-User Display Strings 
-    
-
-  * Part numbers, such as the CPN, PID/VID 
-
-  * Component descriptions 
-
-  * Physical layout/dimensions 
-
-  * OEM information 
-
-
-### Updates to the Capability Catalog
-
-The Cisco UCS Infrastructure Software Bundle includes capability catalog updates. Unless otherwise instructed by Cisco Technical Assistance Center, you only need to activate the capability catalog update after you've downloaded, updated, and activated a Cisco UCS Infrastructure Software Bundle. 
-
-As soon as you activate a capability catalog update, Cisco UCS immediately updates to the new baseline catalog. You do not have to perform any further tasks. Updates to the capability catalog do not require you to reboot or reinstall any component in a Cisco UCS domain. 
-
-Each Cisco UCS Infrastructure Software Bundle contains a baseline catalog. In rare circumstances, Cisco releases an update to the capability catalog between Cisco UCS releases and makes it available on the same site where you download firmware images. 
+  * I/O module/FI-IO module firmware
 
 ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
 
-The capability catalog version is determined by the version of Cisco UCS that you are using. You can upgrade a capability catalog within the same major release version. For example, Cisco UCS 3.2(2) release can use a capability catalog with the same major release version like 3.2(1) and cannot use a capability catalog with the release version 3.0(1). However, there is an exception for Cisco UCS release 4.2(1) as it can be used only with 4.2(1) release version of capability catalog and not with later releases like 4.2(2) or previous releases like 4.0(1). 
+Cisco UCS X-Series Direct, Cisco UCS 6500 Series Fabric Interconnects, Cisco UCS 6400 Series Fabric Interconnects do not have separate kickstart and system images. 
 
 * * *  
   
----|---
+---|---  
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+The UCS infrastructure bundle for one platform cannot be used to activate another platform. 
+
+* * *  
+  
+---|---  
+Cisco UCS B-Series Blade Server Software Bundle
+    
+
+This bundle includes the following firmware images that are required to update the firmware for the blade servers in a Cisco UCS domain. In addition to the bundles created for a release, these bundles can also be released between infrastructure bundles to enable Cisco UCS Manager to support a blade server that is not included in the most recent infrastructure bundle. 
+
+  * CIMC firmware 
+
+  * BIOS firmware 
+
+  * Adapter firmware 
+
+  * Board controller firmware 
+
+  * Third-party firmware images required by the new server 
+
+
+     ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+For all server components where firmware updates are applicable (such as CIMC, BIOS, or Disk), when the firmware version of a component is the same across two different firmware packages, Cisco UCS Manager selects the component firmware from the package with the latest package version.  This behavior prioritizes the latest package version for the component firmware rather than strictly adhering to the firmware version specified in the Host Firmware Package (HFP) policy associated with the server. This behavior ensures that the most recent package version is used for firmware components when versions are identical, potentially overriding the HFP policy version. 
+
+* * *  
+  
+---|---  
+Cisco UCS C-Series Rack-Mount UCS-Managed Server Software Bundle
+    
+
+This bundle includes the following firmware images that are required to update components on rack-mount servers that have been integrated with and are managed by Cisco UCS Manager: 
+
+  * CIMC firmware 
+
+  * BIOS firmware 
+
+  * Adapter firmware 
+
+  * Storage controller firmware 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+You cannot use this bundle for standalone C-series servers. The firmware management system in those servers cannot interpret the header required by Cisco UCS Manager. For information on how to upgrade standalone C-series servers, see the C-series configuration guides. 
+
+* * *  
+  
+---|---  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+For all server components where firmware updates are applicable (such as CIMC, BIOS, or Disk), when the firmware version of a component is the same across two different firmware packages, Cisco UCS Manager selects the component firmware from the package with the latest package version.  This behavior prioritizes the latest package version for the component firmware rather than strictly adhering to the firmware version specified in the Host Firmware Package (HFP) policy associated with the server. This behavior ensures that the most recent package version is used for firmware components when versions are identical, potentially overriding the HFP policy version. 
+
+* * *  
+  
+---|---  
+  
+Cisco also provides release notes, which you can obtain on the same website from which you obtained the bundles.
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/caut.gif)  
+**Caution** | 
+
+* * *
+
+Ensure that before starting the auto-install process, you capture the data according to [Verification that the Data Path is Ready](b_UCSM_CLI_Firmware_Management_Guide_chapter_010.html#concept_7406EAC0852E4A52968DFBAE84E1A1C8). 
+
+  * Before acknowledging the pending activity during auto-install, it is important to confirm that all the subordinate VIF paths are rebuilt. 
+  * Ensure that you monitor the UCS VIF paths only from the CLI and not from the faults within the UCS Manager GUI.
+  * If you fail to monitor the UCS VIF paths, it may result in partial or complete "All Paths Down" state.
+
+We recommend that you follow the guidelines prior to any processes that require reboot of both Fabric Interconnects.
+
+* * *  
+  
+---|---  
+  
+**Recommendation:** Before starting any firmware upgrade or downgrade, refer [Cisco UCS Manager Upgrade and Downgrade Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/ucs-manager/UCSM-upgrade-downgrade-matrix/index.html). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+For more information, see [Cisco UCS Manager Release Bundle Contents](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-release-notes-list.html). 
+
+* * *  
+  
+---|---  
+  
+#### Firmware Image Headers
+
+Every firmware image has a header, which includes the following:
+
+  * Checksum
+
+  * Version information
+
+  * Compatibility information that the system can use to verify the compatibility of component images and any dependencies
+
+
+#### Firmware Image Catalog 
+
+Cisco UCS Manager maintains an inventory of all available images. The image catalog contains a list of images and packages. A package is a read-only object that is created when it is downloaded. It does not occupy disk space and represents a list or collection of images that were unpacked as part of the package download. When an individual image is downloaded, the package name remains the same as the image name. 
+
+Cisco UCS Manager provides you with two views of the catalog of firmware images and their contents that have been downloaded to the fabric interconnect: 
+
+Packages 
+    
+
+This view provides you with a read-only representation of the firmware bundles that have been downloaded onto the fabric interconnect. This view is sorted by image, not by the contents of the image. For packages, you can use this view to see which component images are in each downloaded firmware bundle. 
+
+Images 
+    
+
+The images view lists the component images available on the system. You cannot use this view to see complete firmware bundles or to group the images by bundle. The information available about each component image includes the name of the component, the image size, the image version, and the vendor and model of the component. 
+
+You can use this view to identify the firmware updates available for each component. You can also use this view to delete obsolete and unneeded images. After all the images in the package have been deleted, Cisco UCS Manager deletes the package itself. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/tip.gif)  
+**Tip** | 
+
+* * *
+
+Cisco UCS Manager stores the images in bootflash on the fabric interconnect. In a cluster system, space usage in bootflash on both fabric interconnects is the same, because all images are synchronized between them. Faults are raised when the bootflash partition exceeds 70 percent and total used space exceeds 90 percent. If Cisco UCS Manager generates such a fault, delete obsolete images to free up space. 
+
+* * *  
+  
+---|---  
+  
+### Obtaining Software Bundles from Cisco
+
+#### Before you begin
+
+Determine which of the following software bundles you need in order to update the Cisco UCS domain: 
+
+  * Cisco UCS Infrastructure Software Bundle for Cisco UCS Fabric Interconnects 9108 100G, Cisco UCS 6500 Series Fabric Interconnect, Cisco UCS 6400 Series Fabric Interconnect, 6300 Series Fabric Interconnects—Required for all Cisco UCS domains. 
+
+  * Cisco UCS B-Series Blade Server Software Bundle—Required for all Cisco UCS domains that include blade servers. 
+
+  * Cisco UCS C-Series Rack-Mount UCS-Managed Server Software Bundle—Only required for Cisco UCS domains that include integrated rack-mount servers. This bundle contains firmware to enable Cisco UCS Manager to manage those servers and is not applicable to standalone C-Series rack-mount servers. 
+
+
+#### Procedure
+
+* * *
+
+**Step 1** |  In a web browser, navigate to [ Cisco.com](http://www.cisco.com).   
+---|---  
+**Step 2** |  Under Support, click All Downloads.   
+**Step 3** |  In the center pane, click Servers - Unified Computing.   
+**Step 4** |  If prompted, enter your Cisco.com username and password to log in.   
+**Step 5** |  In the right pane, click the link for the software bundles you require, as follows:  | Bundle  | Navigation Path  
+---|---  
+Cisco UCS Infrastructure Software Bundle for Cisco UCS Fabric Interconnects 9108 100G, Cisco UCS 6500 Series Fabric Interconnect, Cisco UCS 6400 Series Fabric Interconnect, 6300 Series Fabric Interconnects,  and 6324 Fabric Interconnects  |  Click UCS Infrastructure and UCS Manager Software > Unified Computing System (UCS) Infrastructure Software Bundle.   
+Cisco UCS B-Series Blade Server Software Bundle |  Click UCS B-Series Blade Server Software > Unified Computing System (UCS) Server Software Bundle.   
+Cisco UCS C-Series Rack-Mount UCS-Managed Server Software Bundle |  Click UCS C-Series Rack-Mount UCS-Managed Server Software > Unified Computing System (UCS) Server Software Bundle.   
+**Tip** |  The Unified Computing System (UCS) Documentation Roadmap Bundle, which is accessible through these paths, is a downloadable ISO image of all Cisco UCS documentation.   
+---|---  
+**Step 6** |  On the first page from which you download a software bundle, click the Release Notes link to download the latest version of the Release Notes.   
+**Step 7** |  For each software bundle that you want to download, do the following: 
+
+  1. Click the link for the latest release 4.0 software bundle.  The release number is followed by a number and a letter in parentheses. The number identifies the maintenance release level, and the letter differentiates between patches of that maintenance release. For more information about what is in each maintenance release and patch, see the latest version of the Release Notes. 
+  2. Click one of the following buttons and follow the instructions provided: 
+  * Download Now—Allows you to download the software bundle immediately. 
+  * Add to Cart—Adds the software bundle to your cart to be downloaded at a later time. 
+  3. Follow the prompts to complete your download of the software bundle(s). 
+
+  
+**Step 8** |  Read the Release Notes before upgrading your Cisco UCS domain.   
+  
+* * *
+
+#### What to do next
+
+Download the software bundles to the fabric interconnect. 
+
+### Downloading Firmware Images to the Fabric Interconnect from a Remote Location
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+In a cluster setup, the image file for the firmware bundle is downloaded to both fabric interconnects, regardless of which fabric interconnect is used to initiate the download. Cisco UCS Manager maintains all firmware packages and images in both fabric interconnects in sync. If one fabric interconnect is down, the download finishes successfully. The images are synced to the other fabric interconnect when it comes back online. 
+
+* * *  
+  
+---|---  
+  
+#### Before you begin
+
+Obtain the required firmware bundles from Cisco. 
+
+#### Procedure
+
+| Command or Action | Purpose  
+---|---|---  
+**Step 1** |  UCS-A#  scope firmware |  Enters firmware mode.   
+**Step 2** |  UCS-A /firmware #  download image ` ` URL |  Downloads the firmware bundle. Using the download path provided by Cisco, specify the URL with one of the following syntax: 
+
+  * ftp:// server-ip-addr / path
+  * scp:// username@server-ip-addr / path
+  * sftp:// username@server-ip-addr / path
+  * tftp:// server-ip-addr : port-num / path |  **Note** |  TFTP has a file size limitation of 32 MB. Because firmware bundles can be much larger than that, we recommend that you do not select TFTP for firmware downloads.   
+---|---  
+  * usbA:/ path
+
+  * usbB:/ path
+
+
+**Note** |  USB A and USB B are applicable only for Cisco UCS 6324 (UCS Mini) and Cisco UCS 6300 Series fabric interconnects.  For Cisco UCS 6300 Series fabric interconnects, only the first of the two ports is detected.   
+---|---  
+**Note** |  If you use a hostname rather than an IP address, configure a DNS server in Cisco UCS Manager.   
+---|---  
+**Step 3** |  Enter the password for the remote server.  |  The password for the remote server username. This field does not apply if the protocol is tftp.   
+**Step 4** |  UCS-A /firmware #  show download-task |  Displays the status for your download task. When your image is completely downloaded, the task state changes from Downloading to Downloaded. The CLI does not automatically refresh, so you may have to enter the  show download-task command multiple times until the task state displays Downloaded.   
+**Step 5** |  Repeat this task until all of the firmware bundles have been downloaded to the fabric interconnect.  |   
+  
+#### Example
+
+The following example uses SCP to download the firmware package. 
+    
+    
+    UCS-A# **scope firmware**
+    UCS-A /firmware # **download image scp://user1@111.100.10.10/images/ucs-k9-bundle.4.0.1.988.bin**
+    OR
+    **download image usbB:/username/ucs-k9-bundle-b-series.4.0.1a.B.bin**
+    UCS-A /firmware # **show download-task**
+    UCS-A /firmware # 
+
+#### What to do next
+
+After the image file for the firmware bundles download completes, update the firmware on the endpoints. 
+
+### Displaying the Firmware Package Download Status
+
+After a firmware download operation has been started, you can check the download status to see if the package is still downloading or if it has completely downloaded. 
+
+#### Procedure
+
+| Command or Action | Purpose  
+---|---|---  
+**Step 1** |  UCS-A#  scope firmware |  Enters firmware mode.   
+**Step 2** |  UCS-A /firmware #  show download-task |  Displays the status for your download task. When your image is completely downloaded, the task state changes from Downloading to Downloaded. The CLI does not automatically refresh, so you may have to enter the  show download-task command multiple times until the task state displays Downloaded.   
+  
+#### Example
+
+The following example displays the download status for the firmware package. The  show download-task command is entered multiple times until the download state indicates that the firmware package has been downloaded: 
+    
+    
+    UCS-A# **scope firmware**
+    UCS-A /firmware # **show download-task**
+    
+    Download task:
+    File Name 																						       Protocol   Server            Userid      State
+    --------- 																							      --------   ---------------   ---------			-----
+    ucs-6400-k9-bundle-infra.4.0.1a.A.bin  Scp        100.100.100.10    user1       Downloading
+    
+    UCS-A /firmware # **show download-task**
+    
+    Download task:
+    File Name 																						       Protocol   Server            Userid      State
+    --------- 																							      --------   ---------------   ---------			-----
+    ucs-6400-k9-bundle-infra.4.0.1a.A.bin  Scp        100.100.100.10    user1       Downloading
+    
+    UCS-A /firmware # **show download-task**
+    
+    Download task:
+    File Name 																						       Protocol   Server            Userid      State
+    --------- 																							      --------   ---------------   ---------			-----
+    ucs-6400-k9-bundle-infra.4.0.1a.A.bin  Scp        100.100.100.10    user1       Downloaded
+    
+
+### Canceling an Image Download
+
+You can cancel the download task for an image only while it is in progress. After the image has downloaded, deleting the download task does not delete the image that was downloaded. You cannot cancel the FSM related to the image download task. 
+
+#### Procedure
+
+| Command or Action | Purpose  
+---|---|---  
+**Step 1** |  UCS-A#  scope firmware |  Enters firmware mode.   
+**Step 2** |  UCS-A /firmware #  delete download-task ` ` image_filename |  Deletes the specified image file.   
+**Step 3** |  UCS-A /firmware #  commit-buffer |  Commits the transaction to the system configuration.   
+  
+#### Example
+
+The following example cancels an image download: 
+    
+    
+    UCS-A# **scope firmware**
+    UCS-A /firmware # **delete download-task ucs-k9-bundle-b-series.4.0.1a.B.bin**
+    UCS-A /firmware* # **commit-buffer**
+    UCS-A /firmware* 
+
+### Displaying All Available Software Images on the Fabric Interconnect
+
+This procedure is optional and displays the available software images on the fabric interconnect for all endpoints. You can also use the  show image command in each endpoint mode to display the available software images for that endpoint. 
+
+#### Procedure
+
+| Command or Action | Purpose  
+---|---|---  
+**Step 1** |  UCS-A#  scope firmware |  Enters firmware mode.   
+**Step 2** |  UCS-A /firmware #  show image |  Displays all software images downloaded onto the fabric interconnect.  |  **Note** |  You must provide the software version number when directly updating an endpoint. If you intend to directly update firmware at an endpoint, note its version number in the right column.   
+---|---  
+  
+#### Example
+
+The following example displays all available software images on the fabric interconnect: 
+    
+    
+    UCS-A# **scope firmware**
+    UCS-A /firmware # **show image**
+    
+    Name                                          Type                 Version
+    --------------------------------------------- -------------------- -------
+    ucs-2200.3.2.2cS2.gbin                        Chassis Adaptor      3.2(2cS2)
+    ucs-2200.4.0.0.46.gbin                        Chassis Adaptor      4.0(0.46)
+    ucs-3260.3.0.4d.gbin                          Chassis Management Controller
+                                                                       3.0(4d)
+    ucs-3260.4.0.0.149.gbin                       Chassis Management Controller
+                                                                       4.0(0.149)
+    ucs-3260.4.0.0.155.gbin                       Chassis Management Controller
+                                                                       4.0(0.155)
+    ucs-6100-k9-kickstart.5.0.3.N2.3.22cS2.gbin   Fabric Interconnect Kernel
+                                                                       5.0(3)N2(3.22cS2)
+    ucs-6100-k9-kickstart.5.0.3.N2.4.00.46.gbin   Fabric Interconnect Kernel
+                                                                       5.0(3)N2(4.00.46)
+    ucs-6100-k9-system.5.0.3.N2.3.22cS2.gbin      Fabric Interconnect System
+                                                                       5.0(3)N2(3.22cS2)
+    ucs-6100-k9-system.5.0.3.N2.4.00.46.gbin      Fabric Interconnect System
+                                                                       5.0(3)N2(4.00.46)
+    ucs-adaptor-pcie-ucsc-pcie-x710ta4.800031CA-1.812.1.gbin
+                                                  Adapter              800031CA-1.812.1
+    ucs-adaptor-pcie-ucsc-pcie-xxx710da2.8000364C-1.812.1.gbin
+                                                  Adapter              8000364C-1.812.1
+    ucs-bmc-brdprog-S3260M5.2.0.gbin              Board Controller     2.0
+    
+    
+    ...
+     
+    
+    
+
+### Displaying All Available Packages on the Fabric Interconnect
+
+This procedure is optional and displays the available software packages on the fabric interconnect for all endpoints.. You can also use the  show package command in each endpoint mode to display the available software images for that endpoint. 
+
+#### Procedure
+
+| Command or Action | Purpose  
+---|---|---  
+**Step 1** |  UCS-A#  scope firmware |  Enters firmware mode.   
+**Step 2** |  UCS-A /firmware #  show package |  Displays all software packages downloaded onto the fabric interconnect.  |  **Note** |  You must provide the software version number when directly updating an endpoint. If you intend to directly update firmware at an endpoint, note its version number in the right column.   
+---|---  
+  
+#### Example
+
+The following example displays all available software packages on the fabric interconnect: 
+    
+    
+    UCS-A# **scope firmware**
+    UCS-A /firmware # **show package**
+    Name                                          Version
+    --------------------------------------------- -------
+    ucs-c125-bios.C125.4.0.0.15.0504180159.gbin
+    ucs-c125-bios.C125.4.0.0.17.0518180446.gbin
+    ucs-c125-k9-cimc.4.0.0.130.gbin
+    ucs-c125-k9-cimc.4.0.0.149.gbin
+    ucs-k9-bundle-c-series.3.1.3h.C.gbin          3.1(3h)C
+    ucs-k9-bundle-c-series.4.0.0.112.C.gbin       4.0(0.112)C
+    ucs-k9-bundle-c-series.4.0.0.115.C.gbin       4.0(0.115)C
+    ucs-k9-bundle-infra.3.2.2eS9.A.gbin           3.2(2eS9)A
+    ucs-k9-bundle-infra.4.0.0.57.A.gbin           4.0(0.57)A
+    ucs-manager-k9.4.0.0.8769.gbin
+    ucs-manager-k9.4.0.0.8777.gbin
+    ucs-manager-k9.4.0.0.8911.gbin
+    
+    
+
+### Determining the Contents of a Firmware Package
+
+#### Procedure
+
+| Command or Action | Purpose  
+---|---|---  
+**Step 1** |  UCS-A#  scope firmware |  Enters firmware mode.   
+**Step 2** |  UCS-A /firmware #  show package ` ` package-name ` ` expand |  Displays the contents of the specified firmware package.   
+  
+#### Example
+
+The following example displays the contents of a firmware package: 
+    
+    
+    UCS-A# **scope firmware**
+    UCS-A /firmware # **show package ucs-k9-bundle-infra.4.0.0.57.A.gbin expand**
+    Package ucs-k9-bundle-infra.4.0.0.57.A.gbin:
+        Images:
+            ucs-2200.4.0.0.46.gbin
+            ucs-6100-k9-kickstart.5.0.3.N2.4.00.46.gbin
+            ucs-6100-k9-system.5.0.3.N2.4.00.46.gbin
+            ucs-manager-k9.4.0.0.56b.gbin
+    
+    
+
+### Checking the Available Space on a Fabric Interconnect
+
+If an image download fails, check whether the bootflash on the fabric interconnect or fabric interconnects in the Cisco UCS has sufficient available space. 
+
+#### Procedure
+
+| Command or Action | Purpose  
+---|---|---  
+**Step 1** |  UCS-A#  scope fabric-interconnect ` `{a | b}  |  Enters fabric interconnect mode for the specified fabric.   
+**Step 2** |  UCS-A /fabric-interconnect #  show storage ` `[detail | expand}  |  Displays the available space for the specified fabric.  |  **Note** |  When you download a firmware image bundle, a fabric interconnect needs at least twice as much available space as the size of the firmware image bundle. If the bootflash does not have sufficient space, delete the obsolete firmware, core files, and other unneeded objects from the fabric interconnect.   
+---|---  
+  
+#### Example
+
+The following example displays the available space for a fabric interconnect: 
+    
+    
+    UCS-A# **scope fabric-interconnect a**
+    UCS-A /fabric-interconnect # **show storage**
+    Storage on local flash drive of fabric interconnect:
+        Partition        Size (MBytes)    Used Percentage
+        ---------------- ---------------- ---------------
+        bootflash        16342            81
+        opt              3873             3
+        spare            5759             2
+        usbdrive         Nothing          Empty
+        var_sysmgr       2000             24
+        var_tmp          600              2
+        volatile         240              Empty
+        workspace        3848             6
+    UCS-A /fabric-interconnect # 
 
 
 ---
 
-## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_chapter_0101.html
+## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_CLI_Firmware_Management_Guide_4-3/b_UCSM_CLI_Firmware_Management_Guide_chapter_0101.html
 
-## Recovering Fabric Interconnect During Upgrade   
-  
+## Recovering Fabric Interconnect During Upgrade 
+
 If one or both fabric interconnects fail during failover or firmware upgrade, you can recover them by using one of the following approaches: 
 
   * Recover a fabric interconnect when you do not have a working image on the fabric interconnect 

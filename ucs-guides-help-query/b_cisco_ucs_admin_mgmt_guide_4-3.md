@@ -1,6 +1,6 @@
 # Documentation: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3.html
 
-*Fetched on: 2026-02-19 15:06:56*
+*Fetched on: 2026-02-27 17:12:30*
 
 ---
 
@@ -774,89 +774,7 @@ Minimum Interval Between Tasks field |  The minimum length of time that the syst
 
 ---
 
-## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_gui_deferred_deployments_of_service_profile_updates.html
-
-## Service Profile Deferred Deployments 
-
-Some modifications to a service profile or to an updating service profile template can be disruptive and require a reboot of the server. You can, however, configure deferred deployment to control when those disruptive configuration changes are implemented. For example, you can choose to deploy the service profile changes immediately or have them deployed during a specified maintenance window. You can also choose whether or not a service profile deployment requires explicit user acknowledgment. 
-
-Deferred deployment is available for all configuration changes that occur through the association of a service profile with a server. These configuration changes can be prompted by a change to a service profile, to a policy that is included in a service profile, or to an updating service profile template. For example, you can defer the upgrade and activation of firmware through host firmware packages and management firmware packages, such as server BIOS, RAID controller, host HBA, and network adapters. However, you cannot defer the direct deployment of firmware images for components that do not use either of the firmware packages, such as Cisco UCS Manager, fabric interconnects, I/O modules, and FI-IO modules.. 
-
-Deferred deployment is not available for the following actions which require the reboot of a server: 
-
-  * Initial association of a service profile with a server 
-
-  * Final disassociation of a service profile from a server, without associating the service profile with a different server 
-
-  * Decommissioning a server 
-
-  * Re-acknowledging a server 
-
-  * Resetting a server 
-
-
-If you want to defer the deployment of service profile changes, you must configure one or more maintenance policies and configure each service profile with a maintenance policy. If you want to define the time period when the deployment should occur, you also need to create at least one schedule with one or more recurring occurrences or one time occurrences, and include that schedule in a maintenance policy. 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-The Cisco UCS X-Series Direct does not support I/O Module operations; it utilizes the FI-I/O Module instead.
-
-* * *  
-  
----|---  
-  
-###  Schedules for Deferred Deployments 
-
-A schedule contains a set of occurrences. These occurrences can be one time only or can recur at a specified time and day each week. The options defined in the occurrence, such as the duration of the occurrence or the maximum number of tasks to be run, determine whether a service profile change is deployed. For example, if a change cannot be deployed during a given maintenance window because the maximum duration or number of tasks was reached, that deployment is carried over to the next maintenance window. 
-
-Each schedule checks periodically to see whether the Cisco UCS domain entered one or more maintenance windows. If so, the schedule executes the deployments that are eligible according to the constraints specified in the maintenance policy. 
-
-A schedule contains one or more occurrences, which determine the maintenance windows associated with that schedule. An occurrence can be one of the following: 
-
-One Time Occurrence 
-    
-
-One time occurrences define a single maintenance window. These windows continue until the maximum duration of the window or the maximum number of tasks that can be run in the window is reached. 
-
-Recurring Occurrence 
-    
-
-Recurring occurrences define a series of maintenance windows. These windows continue until the maximum number of tasks or the end of the day specified in the occurrence was reached. 
-
-### Guidelines and Limitations for Deferred Deployments 
-
-#### Service Profile Association Changes and Maintenance Policy Options
-
-When changing service profile association, the following maintenance policy options can affect how the changes are applied: 
-
-  * If the On Next Boot and User Ack options are enabled in a maintenance policy, the service profile association change displays a warning that an acknowledgement is required. However, association will happen immediately. 
-
-  * If the On Next Boot and User Ack options are not enabled in a maintenance policy, the service profile association change displays a warning that an acknowledgement is required, and will remain pending until acknowledged. 
-
-
-#### Cannot Undo All Changes to Service Profiles or Service Profile Templates 
-
-If you cancel a pending change, Cisco UCS Manager attempts to roll back the change without rebooting the server. However, for complex changes, Cisco UCS Manager may have to reboot the server a second time to roll back the change. For example, if you delete a vNIC, Cisco UCS Manager reboots the server according to the maintenance policy included in the service profile. You cannot cancel this reboot and change, even if you restore the original vNIC in the service profile. Instead, Cisco UCS Manager schedules a second deployment and reboot of the server. 
-
-#### Association of Service Profile Can Exceed Boundaries of Maintenance Window 
-
-After Cisco UCS Manager begins the association of the service profile, the scheduler and maintenance policy do not have any control over the procedure. If the service profile association does not complete within the allotted maintenance window, the process continues until it is completed. For example, this can occur if the association does not complete in time because of retried stages or other issues. 
-
-#### Cannot Specify Order of Pending Activities 
-
-Scheduled deployments run in parallel and independently. You cannot specify the order in which the deployments occur. You also cannot make the deployment of one service profile change dependent upon the completion of another. 
-
-#### Cannot Perform Partial Deployment of Pending Activity 
-
-Cisco UCS Manager applies all changes made to a service profile in the scheduled maintenance window. You cannot make several changes to a service profile at the same time and then have those changes be spread across several maintenance windows. When Cisco UCS Manager deploys the service profile changes, it updates the service profile to match the most recent configuration in the database. 
-
-
----
-
-## Page 18: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_ucs_fault_suppression.html
+## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_ucs_fault_suppression.html
 
 ## Global Fault Policy 
 
@@ -877,7 +795,7 @@ A fault in Cisco UCS has the following lifecycle:
 
 ---
 
-## Page 19: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_gui_kvm_console_4-0.html
+## Page 18: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_gui_kvm_console_4-0.html
 
 ## KVM Console
 
@@ -939,7 +857,7 @@ Installing an OS using the KVM console may be slower than using the KVM dongle b
 
 ---
 
-## Page 20: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_gui_cisco_intersight_management.html
+## Page 19: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_gui_cisco_intersight_management.html
 
 ## Intersight Management Mode
 
