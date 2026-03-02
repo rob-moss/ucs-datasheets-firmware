@@ -30,9 +30,11 @@
 - [Cisco UCS Manager Storage Management Guide using the CLI, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3.html)
 - [Cisco UCS S3260 Server Integration with Cisco UCS Manager Using the CLI, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3.html)
 
-# UCS Manager API guides
+## UCS Manager API guides
 - [UCS Management Overview - Cisco UCS Manager API - Cisco DevNet](https://developer.cisco.com/docs/ucs-dev-center/ucs-management-overview/)
 - [UCS Manager - Cisco UCS Manager API - Cisco DevNet](https://developer.cisco.com/docs/ucs-dev-center/ucs-manager/#ucs-manager-developer-api-toolkit)
+
+
 
 # Intersight Managed Mode guides
 - [Release Notes for Cisco Intersight Unified Edge eCMC Firmware Release, 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html)
@@ -40,6 +42,61 @@
 - [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/imm_infra_fw_rn_4_3/b_imm_infra_fw_rn_lb.html)
 - [Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html)
 - [Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 4.3, 5.2, 5.3, and 5.4](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/4_3/b_intersight_server_fw_rn_4_3.html)
+
+## Intersight help guides
+### SaaS guides
+- https://intersight.com/help/saas/resources/upgrading_server_firmware_using_firmware_policy
+- [Intersight SaaS guide](https://intersight.com/help/saas)
+- [Intersight SaaS Servers guide](https://intersight.com/help/saas/operate/servers)
+- [Intersight SaaS Configure Servers guide](https://intersight.com/help/saas/configure/servers)
+- [Intersight SaaS Configure Chassis guide](https://intersight.com/help/saas/configure/chassis)
+- [Intersight SaaS Configure Fabric Interconnects guide](https://intersight.com/help/saas/configure/fabric_interconnects)
+- [Intersight SaaS Configure Unified Edge guide](https://intersight.com/help/saas/configure/unified_edge)
+- [Intersight SaaS Configure Workloads guide](https://intersight.com/help/saas/configure/Workloads)
+- [Intersight SaaS Configure HyperFlex Cluster guide](https://intersight.com/help/saas/configure/hyperflex_cluster)
+- [Intersight SaaS Configure Nutanix HCI guide](https://intersight.com/help/saas/configure/nutanix/hci_nutanix)
+- [Intersight SaaS Configure Nutanix Compute Only guide](https://intersight.com/help/saas/configure/nutanix/compute_nutanix)
+- [Intersight SaaS Rule suppression guide](https://intersight.com/help/saas/configure/rules/suppression_rules)
+- [Intersight SaaS Configure Custom HCL guide](https://intersight.com/help/saas/configure/custom_hcl)
+- [Intersight SaaS Monitoring Overview](https://intersight.com/help/saas/monitoring/monitoring_overview)
+- [Intersight SaaS Monitoring Get Started](https://intersight.com/help/saas/monitoring/monitoring_get_started)
+- [Intersight SaaS Monitoring Data Collection](https://intersight.com/help/saas/monitoring/monitoring_data_collection)
+- [Intersight SaaS Monitoring Metrics Explorer](https://intersight.com/help/saas/monitoring/monitoring_metrics_explorer)
+- [Intersight SaaS Monitoring SFP Metric](https://intersight.com/help/saas/monitoring/sfp_metric)
+- [Intersight SaaS Monitoring Metrics Devices](https://intersight.com/help/saas/monitoring/monitoring_metrics_devices)
+- [Intersight SaaS Monitoring Dashboard](https://intersight.com/help/saas/monitoring/monitoring_dashboard)
+- [Intersight SaaS Monitoring User Case CPU Utilization](https://intersight.com/help/saas/monitoring/monitoring_usercase_cpu_Utilization)
+- [Intersight SaaS Supported Devices for Monitoring](https://intersight.com/help/saas/monitoring/supported_devices_monitoring)
+- [Intersight SaaS Supported Metrics for Monitoring](https://intersight.com/help/saas/monitoring/monitoring_supported_metric)
+- [Intersight SaaS Monitoring Topology](https://intersight.com/help/saas/monitoring/topology)
+- [Intersight SaaS System Target](https://intersight.com/help/saas/system/target)
+- [Intersight SaaS System Software Repository](https://intersight.com/help/saas/system/software_repo)
+- [Intersight SaaS System Diagnostic Data](https://intersight.com/help/saas/system/diagnostic_data)
+- [Intersight SaaS System Account Details](https://intersight.com/help/saas/system/account_details)
+- [Intersight SaaS System Role Based Access](https://intersight.com/help/saas/system/role_based_access)
+- [Intersight SaaS System Locations](https://intersight.com/help/saas/system/locations)
+- [Intersight SaaS System Tags](https://intersight.com/help/saas/system/tags)
+- [Intersight SaaS Settings](https://intersight.com/help/saas/settings)
+- [Intersight SaaS Resources](https://intersight.com/help/saas/resources)
+- [Intersight SaaS Resources RBAC](https://intersight.com/help/saas/resources/RBAC)
+- [Intersight SaaS Resources Config Sharing Across Orgs](https://intersight.com/help/saas/resources/config_sharing_across_orgs)
+- [Intersight SaaS Resources Privilege Sets](https://intersight.com/help/saas/resources/Privilege_Sets)
+- [Intersight SaaS Resources Managing Roles and Privileges](https://intersight.com/help/saas/resources/Managing_Roles_and_Privileges)
+- [Intersight SaaS Resources Using Organizations with Policies and Profiles](https://intersight.com/help/saas/resources/Using_Organizations_with_Policies_and_Profiles)
+- [Intersight SaaS Device Console](https://intersight.com/help/saas/device_console)
+- [Intersight SaaS Glossary](https://intersight.com/help/saas/glossary)
+
+
+### Appliance (CVA / PVA) guides
+- [Intersight Appliance guide](https://intersight.com/help/appliance)
+- [Intersight Appliance Servers guide](https://intersight.com/help/appliance/operate/servers)
+- [Intersight Appliance System Settings](https://intersight.com/help/appliance/system/settings)
+- [Intersight Appliance Settings](https://intersight.com/help/appliance/settings)
+- [Intersight Appliance Device Console](https://intersight.com/help/appliance/device_console)
+- [Intersight Appliance CVA Whats New](https://intersight.com/help/appliance/whats_new/connected_appliance/)
+- [Intersight Appliance PVA Whats New](https://intersight.com/help/appliance/whats_new/private_appliance/)
+
+
 
 # Hardware guides
 - [Cisco UCS VIC 15000 Series Ethernet Fabric Adapter Whitepaper](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.html)

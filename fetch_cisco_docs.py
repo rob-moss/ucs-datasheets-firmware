@@ -606,12 +606,26 @@ class CiscoDocFetcher:
 
             soup = BeautifulSoup(content, 'html.parser')
 
-            # Derive Markdown filename from the base page <title>
+            # Derive Markdown filename from the base page <title>,
+            # unless this is an Intersight URL — use the URL path segment then.
             if url == base_url:
-                title = self._get_html_title(soup)
-                if title:
-                    md_filename = self._title_to_filename(title)
-                    print(f"  Title: {title}")
+                if base_url.startswith('https://intersight.com'):
+                    url_stem = self._url_to_raw_filename(base_url)
+                    md_filename = url_stem if url_stem.endswith('.md') else url_stem + '.md'
+                    parsed_path = urlparse(base_url).path
+                    if '/saas/' in parsed_path:
+                        prefix = 'intersight-saas-'
+                    elif '/appliance/' in parsed_path:
+                        prefix = 'intersight-appliance-'
+                    else:
+                        prefix = 'intersight-'
+                    md_filename = prefix + md_filename
+                    print(f"  Intersight URL — using URL-based filename: {md_filename}")
+                else:
+                    title = self._get_html_title(soup)
+                    if title:
+                        md_filename = self._title_to_filename(title)
+                        print(f"  Title: {title}")
 
             # Discover sub-pages for further crawling.
             # Only queue HTML pages – PDFs and other file types linked from a
