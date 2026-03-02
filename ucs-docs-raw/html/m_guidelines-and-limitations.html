@@ -1,0 +1,2450 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="en" xml:lang="en"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="en/us";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.cpe === undefined) {
+        window.cpe = {};
+    }
+
+    cpe.accountName = "prod";
+    cpe.config = ["cinf","dsc","pps"];
+    cpe.hideMethod = "elements";
+
+    window.targetGlobalSettings = JSON.parse('{\x22timeout\x22:4000}');
+    window.targetPageParamsAll = () => JSON.parse('{\x22entity\x22:\x22{\\\x22id\\\x22:\\\x221724248412692876\\\x22,\\\x22categoryId\\\x22:\\\x22\\\x22}\x22}');
+
+    
+    const bullseyeLibrary = `/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/external/bullseye.js`;
+
+    import(bullseyeLibrary);
+</script>
+<script src="/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/regional-mbox/regional-mbox.js"></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <title>Cisco UCS Manager VIC Configuration Guide, Release 4.3 - Guidelines, Limitations, and Requirements [Cisco UCS Manager] - Cisco</title>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="Guidelines, Limitations, and Requirements"  />
+    <meta name="title" content="Cisco UCS Manager VIC Configuration Guide, Release 4.3 - Guidelines, Limitations, and Requirements [Cisco UCS Manager]"  />
+    <meta name="documentId" content="1724248412679875"  />
+    <meta name="templateName" content="book"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="WEM"  />
+    <meta name="docType" content="TSD Products Configuration Guide Chapter"  />
+    <meta name="concept" content="Cisco UCS Manager"  />
+    <meta name="iaPath" content="cisco.com#Products#Cisco Products#Servers - Unified Computing#Cisco UCS Manager"  />
+    <meta name="contentType" content="cisco.com#US#preSales"  />
+    <meta name="locale" content="US"  />
+    <meta name="language" content="en"  />
+    <meta name="country" content="US"  />
+    <meta name="CCID_Page" content="cc001777"  />
+    <meta name="date" content="Fri Sep 05 05:01:34 PDT 2025"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="Cisco UCS Manager VIC Configuration Guide, Release 4.3 - Guidelines, Limitations, and Requirements [Cisco UCS Manager]"  />
+    <meta property="og:description" content="Guidelines, Limitations, and Requirements"  />
+    <meta property="og:url" content="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/4-3/b-vic-configuration-guide-4-3/m_guidelines-and-limitations.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/4-3/b-vic-configuration-guide-4-3/m_guidelines-and-limitations.html"/>
+	
+
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/en\/us\/td\/docs\/unified_computing\/ucs\/ucs\u002Dmanager\/GUI\u002DUser\u002DGuides\/VIC\u002DConfiguration\u002DGuide\/4\u002D3\/b\u002Dvic\u002Dconfiguration\u002Dguide\u002D4\u002D3\/m_guidelines\u002Dand\u002Dlimitations");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/cisco-sans.min.css" type="text/css">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/books.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", 'You are being logged out.');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "Guidelines, Limitations, and Requirements",  		  
+          "url": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/4-3/b-vic-configuration-guide-4-3/m_guidelines-and-limitations.html",
+          "description": "Guidelines, Limitations, and Requirements",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="hvck7tyxelwrg2nfbvfa-f-c4461bb85-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":27,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"2b70f59e","ak.r":37441,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"61.68.175.0","ak.cport":51583,"ak.gh":"23.199.68.174","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772424522","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==Cg8ya23nxwYVvrYMA2UOJaHPFaJsk5i9Qs6XW44Do5nBssYRagJI4NoCRpl5MUZadKRaTaBmI0JZo5lTkelQx3fI+t7JNRqIgvHJTPyB5kKE0d1tphp6wVthbjenf9VJ7Fpn4gx+dRPUBQKbiFKuKGBbjIi6C1f15MNK/f3/3khCpk2z+ViNvIniDRC3l91cqwWz6ZnbgHtGYqwQGWiluUYp1NrT2EYuRK6a+sXVB8BBGjZ77MivMC5uA0OMxbFB5FqupOy4SuhEmYpvaHwY88S7K87Z444YZQ0OdIPtNde/66jtUhKrdwqkAC7lr0Bzp0MKUpbuRJ4s+A8LRlrKqx7zmjFv/EMYv/TiK5y0QQbpWXptCjtukn7HXj0RpWtyuU0XmL3y6Ee6FQnYj4phYXvQZf/gy4Rfh2F73SjCNr4=","ak.pv":"540","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body id="wcq" class="fw-res cdc-support cdc-books cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">Skip to content</a></li>
+        <li><a id="skiplink-search" href="#">Skip to search</a></li>
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">Skip to footer</a></li>
+    </ul>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/us/en/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/index.html">Cisco.com Worldwide</a></li>
+            <li><a tabindex="-1" href="/c/en/us/products/index.html">Products and Services</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/solutions/index.html">Solutions</a></li>
+            <li><a tabindex="-1" href="/c/en/us/support/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/c/en/us/training-events.html">Learn</a></li>
+            <li><a tabindex="-1" href="//www.cisco.com/c/en/us/about/sitemap.html">Explore Cisco</a></li>
+            <li><a tabindex="-1" href="/c/en/us/buy.html">How to Buy</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Partners Home</a></li>                
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/cisco-partner-program/index.html?ccid=cc000864&dtid=odiprc001129">Partner Program</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/support-help/index.html">Support</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/tools/index.html?dtid=odiprc001129">Tools</a></li>
+            <li><a tabindex="-1" href="https://locatr.cloudapps.cisco.com/WWChannels/LOCATR/pf/index.jsp#/">Find a Cisco Partner</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/connect-with-a-partner/index.html?ccid=cc000864&dtid=odiprc001129">Meet our Partners</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Become a Cisco Partner</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based user-driven-nav" aria-label="breadcrumbs" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/index.html'><span itemprop='name'>Home</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/index.html'><span itemprop='name'>Support</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/all-products.html'><span itemprop='name'>Product Support</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/category.html'><span itemprop='name'>Servers - Unified Computing</span><meta itemprop='position' content='4' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/series.html'><span itemprop='name'>Cisco UCS Manager</span><meta itemprop='position' content='5' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html'><span itemprop='name'>Configuration Guides</span><meta itemprop='position' content='6' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+        
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">Cisco UCS Manager VIC Configuration Guide, Release 4.3</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   <!-- have to do this for _g.I18n to be defined in preview and publish modes -->
+  
+  <script type="text/javascript">
+      // initialize dictionary for i18n
+      cdc.util.ensureNamespace("cdc.rc");
+    cdc.rc.eotkeys = {
+        showOnly5Products : "Show Only 5 Products",       
+        showAllRowsProducts : "Show All nRows Products",
+        supportCommunityUrl : "https://community.cisco.com/t5/technology-and-support/ct-p/technology-support",
+        supportCommunity : "Cisco Community",
+        thankYou : "Thank You",
+        viewersAlso : "Customers Also Viewed", 
+        show : "Show", 
+        more : "More", 
+        showOnly3Documents: "Show Only 3 Documents"
+      };
+  </script>
+
+
+
+<div class="row blowout full visitedlinks">
+    <div class="col full">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers techdocs">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button aria-expanded="false" >Bias-Free Language</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>Bias-Free Language</h3>
+            <p>The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. <a href="https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html">Learn more</a> about how Cisco is using Inclusive Language.</p>
+        </div>
+        
+    </div><!-- disclaimers -->
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* this is needed for the translation selector */
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+    var bookTitle = 'Book Title Page';
+</script>
+
+<span id="actionBar-top"></span>
+<section id="actionBar" class="noprint base-blowout">
+    <span class="icons">
+        
+        <button class="bookToc simpleOverlay-trigger" id="onlyforTrigger"> <!--US140575-->
+            Book Contents
+        </button>
+            <div class="bookToc simpleOverlay-content">
+               <div role="heading" class="title">Book Contents</div>
+               <!--googleoff: index--><!--googleoff: snippet-->  
+               <div class="content">
+                  
+
+
+
+<ul id="bookToc">
+    <li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/4-3/b-vic-configuration-guide-4-3/b_RoCE_Config_Guide_Test_preface_00.html">Preface</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/4-3/b-vic-configuration-guide-4-3/m_overview-of-vic-configuration-guide.html">Overview of Cisco Virtual Interface Card (VIC) Configuration Guide</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/4-3/b-vic-configuration-guide-4-3/m_guidelines-and-limitations.html">Guidelines, Limitations, and Requirements</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/4-3/b-vic-configuration-guide-4-3/m-rdma-over-converged-ethernet--roce--version-2.html">Configuring RDMA Over Converged Ethernet (RoCE) version 2 </a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/4-3/b-vic-configuration-guide-4-3/m-single-root-i-o-virtualization.html">Configuring Single Root I/O Virtualization (SR-IOV) </a></li>
+
+</ul>
+
+
+               </div>
+               <!--googleon: index--><!--googleon: snippet-->               
+            </div>
+
+        
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='versionddcontainer chapter'></div>
+<script type="text/html" class="versionstemp">
+            <div class="versionsdd">
+                <button class="versionbutton" aria-haspopup="true" aria-expanded="false" aria-labelledby="other versions" class="version"><label></label></button>
+                <ul class="versionlist" aria-labelledby="other versions">
+                <%
+                    let pageUrl = window.location.pathname.replace("/content/","/c/").toLowerCase();
+                    if (true) pageUrl = pageUrl.substring(0,pageUrl.lastIndexOf("/"))+".html";
+                    for(let i=0; i< data.length; i++) {
+                        let item = data[i],
+                            myurl = item.linkUrl,
+                            urlm = myurl.replace("/content/","/c/");;
+                            mytitle = item.linkTitle;
+                            myclass= urlm.toLowerCase() == pageUrl ? "class=\"selected\"":""; 
+%>
+                    <li><a href="${myurl}" ${myclass}>${mytitle}</a></li>
+<%
+                  }   %>
+                </ul>
+             </div>
+</script>
+    
+        <span class="utilities">
+          <button title="Search in this Book" class="mobileSearch simpleOverlay-trigger">
+            Search
+          </button>
+          <div class="mobileSearch simpleOverlay-content">
+            <div class="title">Find Matches in This Book</div>
+              <!--googleoff: index--><!--googleoff: snippet-->  
+              <div class="content">
+                <form id="mobileBooksearch" class="chapter">
+                   <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit"></button>
+                   <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+                </form>
+                <div id="overlayResults" role="region" aria-live="polite" >
+                   <!-- important, keep this results div begin end on same line in here -->
+                   <div class="results"></div>
+                </div>
+              </div>
+              <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "Save";
+    cdc.rc.savedoc.saved = "Saved";
+</script>
+
+    <button class="save" aria-expanded="false" aria-label="Save">
+        <label>Save</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/4-3/b-vic-configuration-guide-4-3/m_guidelines-and-limitations.html">Log in</a> to Save Content
+    </div>
+
+
+          <!-- Translation Selctor -->
+          <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+ 
+
+
+ 
+          <div class="translations simpleOverlay-content" role="dialog" id="dialogt" aria-labelledby="onlyForNonEN" aria-modal="true">
+            <div role="heading" class="title">Available Languages</div>
+               <!--googleoff: index--><!--googleoff: snippet--> 
+            <script language="javascript">                    
+                cdc.translations.map = "{en-us=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/4-3/b-vic-configuration-guide-4-3/m_guidelines-and-limitations.html, x-default=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/4-3/b-vic-configuration-guide-4-3/m_guidelines-and-limitations.html}";//storing the map for use in the JS
+                cdc.translations.locale="en_us";
+            </script>
+            <div class="content">
+              <div class="availableLanguagesList">
+                  <ul id="translationsList">
+                  </ul> 
+              </div>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+          
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // stored value for overlay label to use in js
+    var downloadOPtionLabel = 'Download Options',
+    	bookSearchlabel = 'Find Matches in This Book',
+    	translationsLabel = 'Translations',
+    	bookConentLabel= 'Book Contents';
+</script>
+
+
+        
+
+
+
+        <button title="Document Download Options" id="dwnld-button" class="downloadOptions simpleOverlay-trigger" aria-expanded="false">
+            Download
+        </button>
+        <div class="downloadOptions simpleOverlay-content" role="dialog" id="dialogd" aria-labelledby="dwnld-button" aria-modal="true" class="default_dialog">
+            <div role="heading" class="title">Download Options</div>
+            <!--googleoff: index--><!--googleoff: snippet-->  
+            <div class="content">
+                <header>
+
+                    <h3 class="h4"> Book Title</p>
+                    <p>Cisco UCS Manager VIC Configuration Guide, Release 4.3</p>
+                    <p class="h4"> Chapter Title</p>
+                    <h3>Guidelines, Limitations, and Requirements</p>
+
+                </header>
+                <ul>
+
+                        <li >    
+                            <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/4-3/b-vic-configuration-guide-4-3.pdf" class="pdfIcon">PDF - Complete Book 
+                            <span>(2.1 MB)</span></a>
+
+                                   <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/VIC-Configuration-Guide/4-3/b-vic-configuration-guide-4-3/m_guidelines-and-limitations.pdf" class="chapter">PDF - This Chapter <span>(1.0 MB)</span></a>
+                                                            
+                            <p>View with Adobe Reader on a variety of devices</p>
+                        </li>                                  
+              </ul>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+        </div>
+
+          <button title="Print Friendly Page" class="print simpleOverlay-trigger">
+              Print
+          </button>
+        </span> 
+    </span>
+    <form id="booksearch" tabindex="0" class="chapter">
+       <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+       <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+    </form>
+      <div id="searchresult" role="region" aria-live="polite"><button class="close" title="Close Panel"><span></span><span></span></button>
+         <span class="headArrow"></span>
+         <h2>Results</h2>
+         <div class="matches">
+         </div>
+         <div class="results" tabindex="0">
+         </div>
+      </div>
+      <div id="searchResultChapterTitle"></div>
+</section>
+<script type="text/html" id="navigateMatchesTemplate">
+   <div>
+      <button class="up on" title="Previous Match"><span></span></button>
+      <button class="up off" title="Previous Match Not Available"><span></span></button>
+      <span class="matchlabel">Matches</span>
+      <button class="down on" title="Next Match"><span></span></button>
+      <button class="down off" title="Next Match Not Available"><span></span></button>
+   </div>
+</script>
+<script type="text/html" id="noChapterMatchTemplate">
+   <p>There are no Matches in this chapter.</p>
+</script>
+<script type="text/html" id="searchResultsListTemplate">
+   <p class="h3">Chapters with Matches</p>
+   <ul>
+<% var i = 0;
+    while ( modelData.links[i] ) {  %>
+      <li>
+<%     curpage = (window.location.pathname.indexOf(modelData.links[i].href) > -1 )?true:false;
+        if ( i === modelData.curpage ) {
+            if ( ! jQuery('.mobileSearch').css("display") == "block") { %>
+               <span class="currentIndicator"></span>${modelData.links[i].title}
+<%         } else {                %>
+               <span class="currentIndicator"></span><button class="curpage" data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%         }
+        } else {  %>
+            <button data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%     }  %>            
+      </li> 
+<% i++;
+    } %>
+   </ul> 
+</script>      
+<script type="text/html" id="noBookMatchTemplate">
+   <p class="head">No matches found in this book</p>
+   <p>This feature looks for an exact match of what you entered in the box.</p>
+   <p>If you entered several words, try reducing the entry to one or two and search again.</p>
+</script>
+<script type="text/html" id="errorTemplate">
+   <p>Search is currently unavailable due to technical issues. We are working to resolve the problem as quickly as possible.</p>
+</script>
+<script type="text/html" id="mobileSearchFooterTemplate">
+   <div id="mobileSearchFooter">
+      <button class="mobileSearch" title="Search in this Book"></button>
+      <button class="closeFooter"><span></span><span></span></button>
+      <div class="matches"> 
+      </div>
+   </div>   
+</script>
+ 
+    </div>
+</div>
+<div class="row blowout narrow-wide-v2 flip visitedlinks">
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div id="documentInfo">
+                  <dl>
+                     
+                      <dt>Updated:</dt><dd> November 26, 2024</dd>
+                     
+                  </dl>
+                    
+              </div>
+
+ 
+    </div>
+    <div id="chapterTitleDiv" class="col wide-v2 indent-at-xlarge">
+        <!-- this will be chapter title for chapters or header for TOC for books -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="chapter-title">Chapter: Guidelines, Limitations, and Requirements </h2>  
+    
+
+    </div>
+</div>
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <div id="pageContentDiv" class="col wide-v2 indent-at-xlarge" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
+
+    
+ 
+ 
+
+<div id="chapterToc" class="base-blowout">
+    <button><span></span>Chapter Contents</button>
+    <div>
+    
+<ul>
+<li><a href="#guidelines-and-limitations">Guidelines, Limitations, and Requirements</a></li>
+<li><a href="#d7150e16a1635">RoCEv2 for Windows</a>
+<ul>
+<li><a href="#id_119971">Guidelines for Using SMB Direct support using RoCEv2</a></li>
+<li><a href="#id_126722">Windows Requirements</a></li>
+</ul></li>
+<li><a href="#d7150e366a1635">RoCEv2 for Linux</a>
+<ul>
+<li><a href="#id_130371">Guidelines for using NVMe over Fabrics (NVMeoF) with RoCEv2</a></li>
+<li><a href="#id_130589">Linux Requirements</a></li>
+</ul></li>
+<li><a href="#d7150e647a1635">RoCEv2 For ESXi</a>
+<ul>
+<li><a href="#id_130371">Guidelines for using RoCEv2 Protocol in the Native ENIC driver on ESXi</a></li>
+<li><a href="#Cisco_Concept.dita_da110247-e290-4c64-8fef-0580f2c0c693">ESXi nENIC RDMA Requirements</a></li>
+</ul></li>
+<li><a href="#d7150e832a1635">SR-IOV for ESXi</a>
+<ul>
+<li><a href="#overview-of-virtualization">Guidelines and Limitations</a></li>
+<li><a href="#linux-requirements">ESXi Requirements</a></li>
+</ul></li>
+<li><a href="#d7150e1039a1635">SR-IOV for Linux</a>
+<ul>
+<li><a href="#general-guidelines-and-limitations">Guidelines and Limitations</a></li>
+<li><a href="#id_130589">Linux Requirements</a></li>
+</ul></li>
+<li><a href="#d7150e1234a1635">NDIS Poll Mode support for Windows</a>
+<ul>
+<li><a href="#_0b6e5db5-8483-4de3-a7f6-345ca135f879">Overview and Supported Configurations</a></li></ul></li></ul>
+    <button id="chapterToc-close">Close<span></span></button>
+    </div>
+</div>
+
+ 
+    <div id="chapterContent">
+    
+                  <h1 class="title topictitle1" id="ariaid-title1">Guidelines, Limitations, and Requirements</h1>
+                  <!-- minitoc start -->
+                  <nav role="navigation" class="related-links"></nav>
+                  <!-- minitoc end -->
+                  <p class="topictitle1" id="d7150e16a1635">RoCEv2 for Windows</p>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title2" lang="en-US" id="id_119971">
+                     <h2 class="title topictitle2" id="ariaid-title2">Guidelines for Using SMB Direct support using RoCEv2</h2>
+                     <section class="body conbody">
+                        
+                        
+                        <section class="section" id="id_119971__d7150e37">
+                           <h3 class="title sectiontitle">General Guidelines and Limitations</h3>
+                           
+                           
+                           <ul class="ul">
+                              
+                              <li class="li">
+                                 
+                                 
+                                 <p class="p">Cisco UCS Manager release 4.1.x and later releases support Microsoft SMB Direct with RoCEv2 on Microsoft Windows Server 2019
+                                    and later. Cisco recommends that you have all KB updates from Microsoft for your Windows Server release. See <a class="xref" href="#id_126722">Windows Requirements</a>. 
+                                 </p>
+                                 
+                                 <table class="olh_note" border="0" role="note">
+                                    <tr>
+                                       <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                       </td>
+                                       <td border="0" class="olh_note">
+                                          <section class="note__content">
+                                             <hr>
+                                             
+                                             <p class="p">RoCEv2 is not supported on Microsoft Windows Server 2016.</p>
+                                             
+                                             <hr>
+                                          </section>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Cisco recommends you check <a class="xref" href="https://ucshcltool.cloudapps.cisco.com/public/" target="_blank">UCS Hardware and Software Compatibility</a> specific to your Cisco UCS Manager release to determine support for Microsoft SMB Direct with RoCEv2 on Microsoft Windows.
+                                    
+                                 </p>
+                                 
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Microsoft SMB Direct with RoCEv2 is supported only with Cisco UCS VIC 1400 Series, 14000 Series, and 15000 Series adapters.
+                                    It is not supported with UCS VIC 1200 Series and 1300 Series adapters. SMB Direct with RoCEv2 is supported on all UCS Fabric
+                                    Interconnects. 
+                                 </p>
+                                 
+                                 <table class="olh_note" border="0" role="note">
+                                    <tr>
+                                       <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                       </td>
+                                       <td border="0" class="olh_note">
+                                          <section class="note__content">
+                                             <hr>
+                                             
+                                             <p class="p">RoCEv1 is not supported with Cisco UCS VIC 1400 Series, Cisco UCS VIC 14000 Series, and Cisco UCS VIC 15000 Series.</p>
+                                             
+                                             <hr>
+                                          </section>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2 configuration is supported only between Cisco adapters. Interoperability between Cisco adapters and third party adapters
+                                    is not supported.
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2 supports two RoCEv2 enabled vNIC per adapter and four virtual ports per adapter interface, independent of SET switch
+                                    configuration.
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2 cannot be used on the same vNIC interface as NVGRE, NetFlow, and VMQ features.</p>
+                                 
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Support for RoCEv2 protocol for Windows 2019 NDKPI mode 1 and mode 2, with both IPV4 and IPV6.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2-enabled vNIC interfaces must have the no-drop QoS system class enabled in <span class="ph">Cisco UCS Manager</span>.
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">The RoCE Properties queue pairs setting must for be a minimum of 4 queue pairs.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Maximum number of queue pairs per adapter is 2048.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">The maximum number of memory regions per rNIC interface is 131072.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p"><span class="ph">Cisco UCS Manager</span> does not support fabric failover for vNICs with RoCEv2 enabled.
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">SMB Direct with RoCEv2 is supported on both IPv4 and IPv6.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2 cannot be used with GENEVE offload.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">The QoS No Drop class configuration must be properly configured on upstream switches such as Cisco Nexus 9000 series switches.
+                                    QoS configurations may vary between different upstream switches.
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2 cannot be used with usNIC.</p>
+                                 
+                              </li>
+                              
+                           </ul>
+                           
+                        </section>
+                        
+                        <section class="section" id="id_119971__d7150e169">
+                           <h3 class="title sectiontitle">MTU Properties</h3>
+                           
+                           
+                           <ul class="ul">
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">In older versions of the VIC driver, the MTU was derived from either a Cisco UCS Manager service profile or from the Cisco
+                                    IMC vNIC MTU setting in non-cluster setup. This behavior changes on Cisco UCS VIC 1400 Series and later adapters, where MTU
+                                    is controlled from the Windows OS Jumbo Packet advanced property. A value configured from Cisco UCS Manager or Cisco IMC has
+                                    no effect.
+                                 </p>
+                                 
+                              </li>
+                              
+                              
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">The RoCEv2 MTU value is always power-of-two and the maximum limit is 4096.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2 MTU is derived from the Ethernet MTU.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2 MTU is the highest power-of-two that is less than the Ethernet MTU. For example:</p>
+                                 
+                                 <ul class="ul">
+                                    
+                                    <li class="li">
+                                       
+                                       <p class="p">if the Ethernet value is 1500, then the RoCEv2 MTU value is 1024 </p>
+                                       
+                                    </li>
+                                    
+                                    <li class="li">
+                                       
+                                       <p class="p">if the Ethernet value is 4096, then the RoCEv2 MTU value is 4096 </p>
+                                       
+                                    </li>
+                                    
+                                    <li class="li">
+                                       
+                                       <p class="p">if the Ethernet value is 9000, then the RoCEv2 MTU value is 4096 </p>
+                                       
+                                    </li>
+                                    
+                                 </ul>
+                                 
+                              </li>
+                              
+                           </ul>
+                           
+                        </section>
+                        
+                        <section class="section" id="id_119971__d7150e223">
+                           <h3 class="title sectiontitle">Windows NDPKI Modes of Operation</h3>
+                           
+                           
+                           <ul class="ul">
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">The implementation of Network Direct Kernel Provider Interface (NDPKI) supports two modes of operation: Mode 1 and Mode 2.
+                                    Mode 1 and Mode 2 relate to the implementation of Network Direct Kernel Provider Interface (NDKPI): Mode 1 is native RDMA,
+                                    and Mode 2 involves configuration for the virtual port with RDMA. Cisco does not support NDPKI Mode 3 operation. 
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">The recommended default adapter policy for RoCEv2 Mode 1 is <span class="keyword parmname">Win-HPN-SMBd</span> .
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">The recommended default adapter policy for RoCEv2 Mode 2 is <span class="keyword parmname">MQ-SMBd</span>.
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2 enabled vNICs for Mode2 operation require the QoS host control policy set to <span class="keyword parmname">full</span>.
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Mode 2 is inclusive of Mode 1: Mode 1 must be enabled to operate Mode 2.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">On Windows, the RoCEv2 interface supports MSI &amp; MSIx interrupt modes. By default, it is in MSIx interrupt mode. Cisco recommends
+                                    you avoid changing interrupt mode when the interface is configured with RoCEv2 properties.
+                                 </p>
+                                 
+                              </li>
+                              
+                           </ul>
+                           
+                        </section>
+                        
+                        
+                        <section class="section" id="id_119971__d7150e278">
+                           <h3 class="title sectiontitle">Downgrade Limitations</h3>
+                           
+                           
+                           <p class="p">Cisco recommends you remove the RoCEv2 configuration before downgrading to any non-supported RoCEv2 release. If the configuration
+                              is not removed or disabled, downgrade will fail.
+                           </p>
+                           
+                        </section>
+                        
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title3" lang="en-US" id="id_126722">
+                     <h2 class="title topictitle2" id="ariaid-title3">Windows Requirements</h2>
+                     <section class="body conbody">
+                        
+                        <p class="p">Configuration and use of RDMA over Converged Ethernet for RoCEv2 in Windows Server requires the following:</p>
+                        <ul class="ul">
+                           <li class="li">
+                              
+                              <p class="p">Windows 2019 and later versions with latest Microsoft updates</p>
+                              
+                           </li>
+                           <li class="li">
+                              
+                              <p class="p">UCS Manager release 4.1.1 or later</p>
+                              
+                           </li>
+                           <li class="li">
+                              
+                              <p class="p">VIC Driver version 5.4.0.x or later</p>
+                              
+                           </li>
+                           <li class="li">
+                              
+                              <p class="p"><span class="ph">UCS M5 B-Series or </span>C-Series servers with VIC 1400 Series adapters: only Cisco UCS VIC 1400 Series or VIC 15000 series adapters are supported.
+                              </p>
+                              
+                           </li>
+                        </ul>
+                        <table class="olh_note" border="0" role="note">
+                           <tr>
+                              <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                              </td>
+                              <td border="0" class="olh_note">
+                                 <section class="note__content">
+                                    <hr>
+                                    
+                                    <p class="p">All Powershell commands or advanced property configurations are common across all Windows versions unless explicitly mentioned.</p>
+                                    
+                                    <hr>
+                                 </section>
+                              </td>
+                           </tr>
+                        </table>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <p class="topictitle1" id="d7150e366a1635">RoCEv2 for Linux</p>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title4" lang="en-US" id="id_130371">
+                     <h2 class="title topictitle2" id="ariaid-title4">Guidelines for using NVMe over Fabrics (NVMeoF) with RoCEv2</h2>
+                     <section class="body conbody">
+                        
+                        
+                        <section class="section" id="id_130371__d7150e383">
+                           <h3 class="title sectiontitle">General Guidelines and Limitations</h3>
+                           
+                           
+                           <ul class="ul">
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Cisco recommends you check <a class="xref" href="https://ucshcltool.cloudapps.cisco.com/public/" target="_blank">UCS Hardware and Software Compatibility</a> specific to your Cisco UCS Manager release to determine support for NVMeoF. NVMeoF is supported on Cisco UCS M5 and later
+                                    B-Series and C- Series servers. 
+                                 </p>
+                                 
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">NVMe over RDMA with RoCEv2 is supported with the fourth generation Cisco UCS VIC 1400 Series, Cisco UCS VIC 14000, and Cisco
+                                    UCS VIC 15000 Series adapters. NVMe over RDMA is not supported on Cisco UCS 6324 Fabric Interconnects or on Cisco UCS VIC
+                                    1200 Series and Cisco 1300 Series adapters.
+                                    
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">When creating RoCEv2 interfaces, use Cisco UCS Manager provided <span class="keyword parmname">Linux-NVMe-RoCE</span> adapter policy.
+                                 </p>
+                                 
+                                 <table class="olh_note" border="0" role="note">
+                                    <tr>
+                                       <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                       </td>
+                                       <td border="0" class="olh_note">
+                                          <section class="note__content">
+                                             <hr>
+                                             
+                                             <p class="p">Do not use the default Linux Adapter policy with RoCEv2; RoCEv2 interfaces will not be created in the OS.</p>
+                                             
+                                             <hr>
+                                          </section>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">When configuring RoCEv2 interfaces, use both the enic and enic_rdma binary drivers downloaded from Cisco.com and install the
+                                    matched set of enic and enic_rdma drivers. Attempting to use the binary enic_rdma driver downloaded from Cisco.com with an
+                                    inbox enic driver will not work.
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2 supports maximum two RoCEv2 enabled interfaces per adapter.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Booting from an NVMeoF namespace is not supported.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2 cannot be used with GENEVE offload.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Layer 3 routing is not supported.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2 does not support bonding.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Saving a crashdump to an NVMeoF namespace during a system crash is not supported.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">NVMeoF cannot be used with usNIC, VMFEX, VxLAN, VMQ, VMMQ, NVGRE, GENEVE Offload, and DPDK features.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Netflow monitoring is not supported on RoCEv2 interfaces.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p"> In the Linux-NVMe-RoCE policy, do not change values of Queue Pairs, Memory Regions, Resource Groups, and Priority settings
+                                    other than to Cisco provided default values. NVMeoF functionality may not be guaranteed with different settings for Queue
+                                    Pairs, Memory Regions, Resource Groups, and Priority.
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">The QoS no drop class configuration must be properly configured on upstream switches such as Cisco Nexus 9000 series switches.
+                                    QoS configurations will vary between different upstream switches.
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Set MTU size correctly on the VLANs and QoS policy on upstream switches.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Spanning Tree Protocol (STP) may cause temporary loss of network connectivity when a failover or failback event occurs. To
+                                    prevent this issue from occurring, disable STP on uplink switches.
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Cisco UCS Manager does not support fabric failover for vNICs with RoCEv2 enabled.</p>
+                                 
+                              </li>
+                              
+                           </ul>
+                           
+                        </section>
+                        
+                        <section class="section" id="id_130371__d7150e509">
+                           <h3 class="title sectiontitle">Interrupts</h3>
+                           
+                           
+                           <ul class="ul">
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Linux RoCEv2 interface supports only MSIx interrupt mode. Cisco recommends avoiding changing interrupt mode when the interface
+                                    is configured with RoCEv2 properties.
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">The minimum interrupt count for using RoCEv2 with Linux is 8. </p>
+                                 
+                              </li>
+                              
+                           </ul>
+                           
+                        </section>
+                        
+                        <section class="section" id="id_130371__d7150e530">
+                           <h3 class="title sectiontitle">Downgrade Limitations</h3>
+                           
+                           
+                           <p class="p">Cisco recommends you remove the RoCEv2 configuration before downgrading to any non-supported RoCEv2 release.</p>
+                           
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title5" lang="en-US" id="id_130589">
+                     <h2 class="title topictitle2" id="ariaid-title5">Linux Requirements</h2>
+                     <section class="body conbody">
+                        
+                        <p class="p">Configuration and use of RoCEv2 in Linux requires the following:</p>
+                        <ul class="ul">
+                           
+                           <li class="li">
+                              
+                              <p class="p">InfiniBand kernel API module ib_core</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Red Hat Enterprise Linux 8.x and 9.x versions</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Cisco UCS Manager release 4.1.1 or later</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Minimum VIC firmware 5.1(1x) for IPv4 support and 5.1(2x) for IPv6 support</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Cisco UCS M5 and later B or C-series servers with Cisco UCS VIC 1400 or Cisco UCS VIC 15000 Series adapters</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">eNIC driver version 4.0.0.6-802-21 or later provided with the 4.1.1 release package</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">enic_rdma driver version 1.0.0.6-802-21 or later provided with the 4.1.1 release package</p>
+                              
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr>
+                                          
+                                          <p class="p">Use eNIC driver version 4.0.0.10-802.34 or later and enic_rdma driver version 1.0.0.10-802.34 or later for IPv6 support.</p>
+                                          
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">A storage array that supports NVMeoF connection</p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <p class="topictitle1" id="d7150e647a1635">RoCEv2 For ESXi</p>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title6" lang="en-US" id="id_130371">
+                     <h2 class="title topictitle2" id="ariaid-title6">Guidelines for using RoCEv2 Protocol in the Native ENIC driver on ESXi</h2>
+                     <section class="body conbody">
+                        
+                        
+                        <section class="section" id="id_130371__d7150e664">
+                           <h3 class="title sectiontitle">General Guidelines and Limitations</h3>
+                           
+                           
+                           <ul class="ul">
+                              
+                              <li class="li">
+                                 
+                                 <p class="p"><span class="ph">Cisco UCS Manager release 4.2(3b)</span> supports RoCEv2 on ESXi 7.0 U3, ESXi 8.0, ESXi 8.0 U1, ESXi 8.0 U2, and ESXi 8.0 U3.
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Cisco recommends you check <a class="xref" href="https://ucshcltool.cloudapps.cisco.com/public/" target="_blank">UCS Hardware and Software Compatibility</a> specific to your Cisco UCS Manager release to determine support for ESXi. RoCEv2 on ESXi is supported on Cisco UCS B-Series
+                                    and C-Series servers with Cisco UCS VIC 15000 Series and later adapters.
+                                 </p>
+                                 
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2 on ESXi is not supported on UCS VIC 1200, 1300 and 1400 Series adapters. </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RDMA on ESXi nENIC currently supports only ESXi NVME that is part of the ESXi kernel. The current implementation does not
+                                    support the ESXi user space RDMA application.
+                                 </p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Multiple MAC addresses and multiple VLANs are supported only on VIC 15000 Series adapters.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2 cannot be used with GENEVE offload.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2 cannot be used on the same vNIC interface with VXLAN, Geneve Offload, QinQ, and VMQ.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">RoCEv2 supports maximum two RoCEv2 enabled interfaces per adapter.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Pvrdma, VSAN over RDMA, and iSER are not supported.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">The COS setting is not supported on Cisco UCS Manager.</p>
+                                 
+                              </li>
+                              
+                           </ul>
+                           
+                        </section>
+                        
+                        <section class="section" id="id_130371__d7150e740">
+                           <h3 class="title sectiontitle">Downgrade Limitations</h3>
+                           
+                           
+                           <p class="p">Cisco recommends you remove the RoCEv2 configuration before downgrading to any non-supported RoCEv2 release.</p>
+                           
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title7" lang="en-US" id="Cisco_Concept.dita_da110247-e290-4c64-8fef-0580f2c0c693">
+                     <h2 class="title topictitle2" id="ariaid-title7">ESXi nENIC RDMA Requirements</h2>
+                     <section class="body conbody">
+                        
+                        
+                        <p class="p">Configuration and use of RoCEv2 in ESXi requires the following:</p>
+                        
+                        <ul class="ul">
+                           
+                           <li class="li">
+                              
+                              <p class="p">VMware ESXi 7.0 U2, ESXi 8.0, ESXi 8.0 U1, ESXi 8.0 U2, and ESXi 8.0 U3</p>
+                              
+                           </li>
+                           
+                           
+                           <li class="li">
+                              
+                              <p class="p">Cisco UCS Manager release 4.2.3 or later</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Cisco VMware nENIC driver version 2.0.10.0 for ESXi 7.0U3 and 2.0.11.0 for ESXi 8.0 and later. provides both standard eNIC
+                                 and RDMA support
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">A storage array that supports NVMeoF connection. Currently, tested and supported on Pure Storage with Cisco Nexus 9300 Series
+                                 switches.
+                              </p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <p class="topictitle1" id="d7150e832a1635">SR-IOV for ESXi</p>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title8" lang="en-US" id="overview-of-virtualization">
+                     <h2 class="title topictitle2" id="ariaid-title8">Guidelines and Limitations</h2>
+                     <section class="body conbody">
+                        
+                        
+                        <ul class="ul">
+                           
+                           
+                           <li class="li">
+                              
+                              <p class="p">Cisco recommends that you check <a class="xref" href="https://ucshcltool.cloudapps.cisco.com/public/" target="_blank">UCS Hardware and Software Compatibility</a> specific to your Cisco UCS Manager release to determine support for SR-IOV.
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">SR-IOV is supported with Cisco UCS VIC 1400 series, 15000 series, and later series adapters. SR-IOV is not supported on Cisco
+                                 UCS VIC 1200 and 1300 series adapters.
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">SR-IOV is supported with Cisco UCS AMD<sup class="ph sup">®</sup>/Intel<sup class="ph sup">®</sup> based C-Series, B-Series, and X-Series servers.
+                              </p>
+                              
+                           </li>
+                           
+                           
+                           
+                           <li class="li">
+                              
+                              <p class="p">SR-IOV cannot be configured on the same vNIC with VXLAN, Geneve Offload, QinQ, VMQ/VMMQ, RoCE, or usNIC.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">aRFS is not supported on SR-IOV VF.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">iSCSI boot is not supported on SR-IOV VF.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">DPDK on SRIOV VF is not supported when the host has Linux OS.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">SR-IOV interface supports MSIx interrupt mode.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Precision Time Protocol (PTP) is not supported on SR-IOV VF.</p>
+                              
+                           </li>
+                           
+                           
+                           <li class="li">
+                              
+                              <p class="p">Cisco recommends not do downgrade the adapter firmware to lower than 5.3(2.32) and to remove SR-IOV related configurations
+                                 before downgrading Cisco UCS Manger to non-supported SR-IOV release.
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">For Cisco UCS VIC 1400/14000, Receive Side Scaling (RSS) must be enabled on PF to support VF RSS. </p>
+                              
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr>RSS turned off on PF disables the RSS on all VFs.
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">For Cisco UCS VIC 15000 series adapters, turning off the RSS on PF works on all the VFs.</p>
+                              
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr>The PF and VF RSS are independent of each other. The VF driver enables and configures RSS on VF, when there are multiple RQs.
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">On ESXi hosts configured with SR-IOV vNICs and Virtual Machines (VMs) utilizing enumerated Virtual Functions (VFs), the system
+                                 might experience a Purple Screen of Death (PSOD) during cold or warm reboot operations.
+                              </p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title9" lang="en-US" id="linux-requirements">
+                     <h2 class="title topictitle2" id="ariaid-title9">ESXi Requirements</h2>
+                     <section class="body conbody">
+                        
+                        <p class="p">Configuration and use of SR-IOV in ESXi requires the following:</p>
+                        
+                        <ul class="ul">
+                           
+                           <li class="li">
+                              
+                              <p class="p"><span class="ph">Cisco UCS Manager release 4.3(2b)</span></p>
+                              
+                           </li>
+                           
+                           
+                           <li class="li">
+                              
+                              <p class="p">Cisco VIC firmware version 5.3(2.32) or later</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">VMware ESXi 7.0 U3 and 8.0 or later</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">VMs with RHEL 8.7 or later and RHEL 9.0 or later</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Cisco VMware nENIC driver version 2.0.10.0 for ESXi 7.0 U3 and 2.0.11.0 for ESXi 8.0 and later </p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Cisco RHEL ENIC driver version 4.4.0.1-930.10 or later</p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <p class="topictitle1" id="d7150e1039a1635">SR-IOV for Linux</p>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title10" lang="en-US" id="general-guidelines-and-limitations">
+                     <h2 class="title topictitle2" id="ariaid-title10">Guidelines and Limitations</h2>
+                     <section class="body conbody">
+                        
+                        <ul class="ul">
+                           
+                           <li class="li">
+                              
+                              <p class="p">Cisco recommends that you check <a class="xref" href="https://ucshcltool.cloudapps.cisco.com/public/" target="_blank">UCS Hardware and Software Compatibility</a> specific to your Cisco UCS Manager release to determine the support for SR-IOV.
+                              </p>
+                              
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">SR-IOV is supported with Cisco UCS VIC 1400, 14000, 15000 series adapters. SR-IOV is not supported on Cisco UCS VIC 1200 and
+                                 1300 series adapters.
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">SR-IOV is supported with AMD<sup class="ph sup">®</sup>/Intel<sup class="ph sup">®</sup> based Cisco UCS C-Series, B-Series, and X-Series servers.
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">SR-IOV is not supported in Physical NIC mode.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">SR-IOV does not support VLAN Access mode.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">SR-IOV cannot be configured on the same vNIC with VXLAN, Geneve Offload, QinQ, VMQ/VMMQ, RoCE, or usNIC.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">aRFS is not supported on SR-IOV VF.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">iSCSI boot is not supported on SR-IOV VF.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">DPDK on SRIOV VF is not supported when the host has Linux OS.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">SR-IOV interface supports MSIx interrupt mode.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Precision Time Protocol (PTP) is not supported on SR-IOV VF.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Cisco recommends that you do not downgrade the adapter firmware to lower than 5.3(2.32) and to remove SR-IOV related configurations
+                                 before downgrading Cisco UCS Manager to non-supported SR-IOV release.
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">On Linux hosts with SR-IOV configured on vNICs and Virtual Functions (VFs) enumerated, VFs are not persistent across reboots
+                                 and must be recreated after each system reboot.
+                              </p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title11" lang="en-US" id="id_130589">
+                     <h2 class="title topictitle2" id="ariaid-title11">Linux Requirements</h2>
+                     <section class="body conbody">
+                        <p class="p">Configuration and use of SR-IOV in Linux requires the following:</p>
+                        <ul class="ul">
+                           
+                           <li class="li">
+                              
+                              <p class="p">Host OS: Red Hat Enterprise Linux 8.10 or later, 9.4 or later, Ubuntu 22.0.4.2 LTS</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Guest OS: Red Hat Enterprise Linux 8.10, 9.4, Ubuntu 22.0.4.2 LTS</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Virtualization Packages installed on the host</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">eNIC driver version 4.7.0.5-1076.6 or later</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Cisco UCS Manager Release 4.3(5a) or later</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Cisco VIC firmware 5.3(4.75) or later</p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <p class="topictitle1" id="d7150e1234a1635">NDIS Poll Mode support for Windows</p>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title12" lang="en-US" id="_0b6e5db5-8483-4de3-a7f6-345ca135f879">
+                     <h2 class="title topictitle2" id="ariaid-title12">Overview and Supported Configurations</h2>
+                     <section class="body conbody">
+                        
+                        <p class="p"><strong class="ph b">Overview</strong>
+                           
+                        </p>
+                        
+                        <p class="p">NDIS Poll Mode allows the operating system to control how network traffic is processed, providing improvements over older
+                           methods that relied on Deferred Procedure Calls (DPCs). By using the NDIS layer, the operating system manages network processing
+                           directly, which enhances performance, stability, and efficiency, especially during periods of heavy network activity.
+                        </p>
+                        
+                        <p class="p"><strong class="ph b">Supported Configurations for NDIS Poll Mode:</strong></p>
+                        
+                        <ul class="ul">
+                           
+                           <li class="li">
+                              
+                              <p class="p"><span class="ph uicontrol">Supported Operating Systems:</span> Windows Server 2025 and later
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p"><span class="ph uicontrol">Supported Adapters:</span> Cisco UCS VIC 15000 Series
+                              </p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                        <table class="olh_note" border="0" role="note">
+                           <tr>
+                              <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                              </td>
+                              <td border="0" class="olh_note">
+                                 <section class="note__content">
+                                    <hr>
+                                    
+                                    <p class="p">For additional information on NDIS Poll Mode and its underlying mechanisms in Windows drivers, refer to <a class="xref" href="https://learn.microsoft.com/en-us/windows-hardware/drivers/network/ndis-poll-mode" target="_blank">Microsoft's Windows Driver and Network documentation</a>.
+                                    </p>
+                                    
+                                    <hr>
+                                 </section>
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+               </article>
+            </article>
+         </main>
+      
+
+</div> 
+ 
+    </div>
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent noprint base-blowout">
+    <div class="eotPersonalization">
+        <section id="eotTDCampaign"></section>
+    </div>    
+    <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>Was this Document Helpful?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes" aria-label="Was this Document Helpful?? Yes">Yes</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no" aria-label="Was this Document Helpful?? No">No</button>
+  </span>
+  <span lang="en" class="eot-feedback-olwrap">
+    
+      <a href="javascript: void(0);" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">Feedback</a>
+    
+  </span>
+</div>
+
+
+</div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+    </div>
+			
+    <div class="letUsHelp">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eotLetUsHelp">
+    <h3>Contact Cisco</h3>
+    <ul>
+         <li><a id="eotLetUsHelpProdDocUrl" href="https://mycase.cloudapps.cisco.com/start?prodDocUrl=">Open a Support Case</a><img src="/etc/designs/cdc/fw/i/icon_lock_small.png" alt="login required"/></li>
+        <li>(Requires a <a href="//www.cisco.com/c/en/us/services/order-services.html">Cisco Service Contract</a>)</li>
+    </ul>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        var getURL=jQuery("#eotLetUsHelpProdDocUrl").attr("href"), 
+            domInd = location.href.indexOf('cisco.com') ;
+        if ( domInd > -1 && domInd < location.href.search(/\w\/\w/) ) {
+            getURL += encodeURI(location.href);
+        }
+		jQuery("#eotLetUsHelpProdDocUrl").attr("href",getURL);
+    });
+</script>
+
+
+    </div>
+
+    <div id="eotRightRailMBox"><!--MBox-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IT:components/mbox/banner-mbox:V0.0.0 -->
+
+
+
+<div>
+    <div class="mboxDefault"></div>   
+    <script type="text/javascript">
+        var test="";
+        if(test!=undefined && test.trim().length>0){
+           mboxCreate('en-us_dg_support_bookchapters','type=default','');
+        }else{
+           mboxCreate('en-us_dg_support_bookchapters','type=default');
+        }
+       
+    </script>
+</div>
+<!--MBox--></div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+	<script type="text/javascript">
+			    var eottdatp = document.getElementsByClassName('eot-tdatp');
+			    if (eottdatp && eottdatp.style) {
+        			eottdatp.style.display="none";
+			    }
+        		  </script>
+  	
+
+
+    </div>
+			
+    <div></div>
+
+</div>
+
+
+    </div>
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/us/en/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/clientlibs/responsive/js/books.min.js"></script>
+
+<script src="/etc/designs/cdc/fw/m/books_metricsrule.js" type="text/javascript" async></script>
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>

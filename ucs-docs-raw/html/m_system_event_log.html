@@ -1,0 +1,2370 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="en" xml:lang="en"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="en/us";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.cpe === undefined) {
+        window.cpe = {};
+    }
+
+    cpe.accountName = "prod";
+    cpe.config = ["cinf","dsc","pps"];
+    cpe.hideMethod = "elements";
+
+    window.targetGlobalSettings = JSON.parse('{\x22timeout\x22:4000}');
+    window.targetPageParamsAll = () => JSON.parse('{\x22entity\x22:\x22{\\\x22id\\\x22:\\\x221692168041029718\\\x22,\\\x22categoryId\\\x22:\\\x22\\\x22}\x22}');
+
+    
+    const bullseyeLibrary = `/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/external/bullseye.js`;
+
+    import(bullseyeLibrary);
+</script>
+<script src="/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/regional-mbox/regional-mbox.js"></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <title>Cisco UCS Manager System Monitoring Guide, Release 4.3 - System Event
+	 Log [Cisco UCS Manager] - Cisco</title>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="System Event Log"  />
+    <meta name="title" content="Cisco UCS Manager System Monitoring Guide, Release 4.3 - System Event
+	 Log [Cisco UCS Manager]"  />
+    <meta name="documentId" content="1692168040981717"  />
+    <meta name="templateName" content="book"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="WEM"  />
+    <meta name="docType" content="TSD Products Configuration Guide Chapter"  />
+    <meta name="concept" content="Cisco UCS Manager"  />
+    <meta name="iaPath" content="cisco.com#Products#Cisco Products#Servers - Unified Computing#Cisco UCS Manager"  />
+    <meta name="contentType" content="cisco.com#US#preSales"  />
+    <meta name="locale" content="US"  />
+    <meta name="language" content="en"  />
+    <meta name="country" content="US"  />
+    <meta name="CCID_Page" content="cc001777"  />
+    <meta name="date" content="Thu Jul 10 00:21:08 PDT 2025"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="Cisco UCS Manager System Monitoring Guide, Release 4.3 - System Event
+	 Log [Cisco UCS Manager]"  />
+    <meta property="og:description" content="System Event Log"  />
+    <meta property="og:url" content="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_system_event_log.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_system_event_log.html"/>
+	
+
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/en\/us\/td\/docs\/unified_computing\/ucs\/ucs\u002Dmanager\/GUI\u002DUser\u002DGuides\/System\u002DMonitoring\/4\u002D3\/b\u002Ducsm\u002Dgui\u002Dsystem\u002Dmonitoring\u002Dguide\u002D4\u002D3\/m_system_event_log");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/cisco-sans.min.css" type="text/css">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/books.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", 'You are being logged out.');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "System Event
+	 Log",  		  
+          "url": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_system_event_log.html",
+          "description": "System Event Log",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="hvck7tyxelwrg2nfbuda-f-bfea7934a-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":13,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"2b6ff81a","ak.r":37441,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"61.68.175.0","ak.cport":51583,"ak.gh":"23.199.68.174","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772424454","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==s7R3d/iodk8TC0pxrnsF7byfe/2jZ5EkdbDByRLR0r+7RToLpXMRVOaDQA07lOcjeka6A6TVTT1K1x87YWGp3Isoexld39KhpLX/8rUqx8QgAEQXHlpzAR5ZkeFekZV/99txC2ju0BZqoeTKFFvAAKvoCM5x6JRnh9ON7NcJp8PGFMO2rr2G9Pi4Z+x6IA6PB2q1PClB45lHAdt5Hxh8qbjBeno8QXs5k4g5GvEqzL1RuevMAYFZWJLOvj4o4BVXADJnciq+/7L41n2tfsajAAgYv5jgD53CK309JwfwDon9GZnRKo4mkJ4XYuN9nkb/q8Bmaqyd4oCTiFiMtikI9gGxvLejER2DJzUu1Y/5oIkwKdr2boKJHRbhdbRRwScR5TdEbCaLrCjbLZG3UQ923Ci4nzdmyjqgw1+m3NHO1Sw=","ak.pv":"540","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body id="wcq" class="fw-res cdc-support cdc-books cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">Skip to content</a></li>
+        <li><a id="skiplink-search" href="#">Skip to search</a></li>
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">Skip to footer</a></li>
+    </ul>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/us/en/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/index.html">Cisco.com Worldwide</a></li>
+            <li><a tabindex="-1" href="/c/en/us/products/index.html">Products and Services</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/solutions/index.html">Solutions</a></li>
+            <li><a tabindex="-1" href="/c/en/us/support/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/c/en/us/training-events.html">Learn</a></li>
+            <li><a tabindex="-1" href="//www.cisco.com/c/en/us/about/sitemap.html">Explore Cisco</a></li>
+            <li><a tabindex="-1" href="/c/en/us/buy.html">How to Buy</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Partners Home</a></li>                
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/cisco-partner-program/index.html?ccid=cc000864&dtid=odiprc001129">Partner Program</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/support-help/index.html">Support</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/tools/index.html?dtid=odiprc001129">Tools</a></li>
+            <li><a tabindex="-1" href="https://locatr.cloudapps.cisco.com/WWChannels/LOCATR/pf/index.jsp#/">Find a Cisco Partner</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/connect-with-a-partner/index.html?ccid=cc000864&dtid=odiprc001129">Meet our Partners</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Become a Cisco Partner</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based user-driven-nav" aria-label="breadcrumbs" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/index.html'><span itemprop='name'>Home</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/index.html'><span itemprop='name'>Support</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/all-products.html'><span itemprop='name'>Product Support</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/category.html'><span itemprop='name'>Servers - Unified Computing</span><meta itemprop='position' content='4' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/series.html'><span itemprop='name'>Cisco UCS Manager</span><meta itemprop='position' content='5' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html'><span itemprop='name'>Configuration Guides</span><meta itemprop='position' content='6' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+        
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">Cisco UCS Manager System Monitoring Guide, Release 4.3</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   <!-- have to do this for _g.I18n to be defined in preview and publish modes -->
+  
+  <script type="text/javascript">
+      // initialize dictionary for i18n
+      cdc.util.ensureNamespace("cdc.rc");
+    cdc.rc.eotkeys = {
+        showOnly5Products : "Show Only 5 Products",       
+        showAllRowsProducts : "Show All nRows Products",
+        supportCommunityUrl : "https://community.cisco.com/t5/technology-and-support/ct-p/technology-support",
+        supportCommunity : "Cisco Community",
+        thankYou : "Thank You",
+        viewersAlso : "Customers Also Viewed", 
+        show : "Show", 
+        more : "More", 
+        showOnly3Documents: "Show Only 3 Documents"
+      };
+  </script>
+
+
+
+<div class="row blowout full visitedlinks">
+    <div class="col full">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers techdocs">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button aria-expanded="false" >Bias-Free Language</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>Bias-Free Language</h3>
+            <p>The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. <a href="https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html">Learn more</a> about how Cisco is using Inclusive Language.</p>
+        </div>
+        
+    </div><!-- disclaimers -->
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* this is needed for the translation selector */
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+    var bookTitle = 'Book Title Page';
+</script>
+
+<span id="actionBar-top"></span>
+<section id="actionBar" class="noprint base-blowout">
+    <span class="icons">
+        
+        <button class="bookToc simpleOverlay-trigger" id="onlyforTrigger"> <!--US140575-->
+            Book Contents
+        </button>
+            <div class="bookToc simpleOverlay-content">
+               <div role="heading" class="title">Book Contents</div>
+               <!--googleoff: index--><!--googleoff: snippet-->  
+               <div class="content">
+                  
+
+
+
+<ul id="bookToc">
+    <li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_preface.html">Preface</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m-new-and-changed-4-3.html">New and Changed
+	 Information for This Release</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_system_monitoring_overview.html">System Monitoring
+	 Overview</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_syslog.html">Syslog</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_system_event_log.html">System Event
+	 Log</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_core_file_exporter.html">Core File
+	 Exporter</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_audit_logs.html">Audit Logs</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_fault_collection_suppression.html">Fault Collection and
+	 Suppression</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_snmp_monitoring.html">SNMP
+	 Configuration</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m-spdm-security.html">SPDM Security</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_statistics_collection_policy.html">Statistics
+	 Collection Policy Configuration</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_call_home_and_smart_call_home_monitoring.html">Call Home and Smart
+	 Call Home Configuration</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_hardware_monitoring.html"> Hardware
+	 Monitoring</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_traffic_monitoring.html">Traffic
+	 Monitoring</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_netflow_monitoring.html">Netflow
+	 Monitoring</a></li>
+
+</ul>
+
+
+               </div>
+               <!--googleon: index--><!--googleon: snippet-->               
+            </div>
+
+        
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='versionddcontainer chapter'></div>
+<script type="text/html" class="versionstemp">
+            <div class="versionsdd">
+                <button class="versionbutton" aria-haspopup="true" aria-expanded="false" aria-labelledby="other versions" class="version"><label></label></button>
+                <ul class="versionlist" aria-labelledby="other versions">
+                <%
+                    let pageUrl = window.location.pathname.replace("/content/","/c/").toLowerCase();
+                    if (true) pageUrl = pageUrl.substring(0,pageUrl.lastIndexOf("/"))+".html";
+                    for(let i=0; i< data.length; i++) {
+                        let item = data[i],
+                            myurl = item.linkUrl,
+                            urlm = myurl.replace("/content/","/c/");;
+                            mytitle = item.linkTitle;
+                            myclass= urlm.toLowerCase() == pageUrl ? "class=\"selected\"":""; 
+%>
+                    <li><a href="${myurl}" ${myclass}>${mytitle}</a></li>
+<%
+                  }   %>
+                </ul>
+             </div>
+</script>
+    
+        <span class="utilities">
+          <button title="Search in this Book" class="mobileSearch simpleOverlay-trigger">
+            Search
+          </button>
+          <div class="mobileSearch simpleOverlay-content">
+            <div class="title">Find Matches in This Book</div>
+              <!--googleoff: index--><!--googleoff: snippet-->  
+              <div class="content">
+                <form id="mobileBooksearch" class="chapter">
+                   <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit"></button>
+                   <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+                </form>
+                <div id="overlayResults" role="region" aria-live="polite" >
+                   <!-- important, keep this results div begin end on same line in here -->
+                   <div class="results"></div>
+                </div>
+              </div>
+              <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "Save";
+    cdc.rc.savedoc.saved = "Saved";
+</script>
+
+    <button class="save" aria-expanded="false" aria-label="Save">
+        <label>Save</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_system_event_log.html">Log in</a> to Save Content
+    </div>
+
+
+          <!-- Translation Selctor -->
+          <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+ 
+
+
+ 
+          <div class="translations simpleOverlay-content" role="dialog" id="dialogt" aria-labelledby="onlyForNonEN" aria-modal="true">
+            <div role="heading" class="title">Available Languages</div>
+               <!--googleoff: index--><!--googleoff: snippet--> 
+            <script language="javascript">                    
+                cdc.translations.map = "{en-us=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_system_event_log.html, x-default=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_system_event_log.html}";//storing the map for use in the JS
+                cdc.translations.locale="en_us";
+            </script>
+            <div class="content">
+              <div class="availableLanguagesList">
+                  <ul id="translationsList">
+                  </ul> 
+              </div>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+          
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // stored value for overlay label to use in js
+    var downloadOPtionLabel = 'Download Options',
+    	bookSearchlabel = 'Find Matches in This Book',
+    	translationsLabel = 'Translations',
+    	bookConentLabel= 'Book Contents';
+</script>
+
+
+        
+
+
+
+        <button title="Document Download Options" id="dwnld-button" class="downloadOptions simpleOverlay-trigger" aria-expanded="false">
+            Download
+        </button>
+        <div class="downloadOptions simpleOverlay-content" role="dialog" id="dialogd" aria-labelledby="dwnld-button" aria-modal="true" class="default_dialog">
+            <div role="heading" class="title">Download Options</div>
+            <!--googleoff: index--><!--googleoff: snippet-->  
+            <div class="content">
+                <header>
+
+                    <h3 class="h4"> Book Title</p>
+                    <p>Cisco UCS Manager System Monitoring Guide, Release 4.3</p>
+                    <p class="h4"> Chapter Title</p>
+                    <h3>System Event
+	 Log</p>
+
+                </header>
+                <ul>
+
+                        <li >    
+                            <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3.pdf" class="pdfIcon">PDF - Complete Book 
+                            <span>(3.49 MB)</span></a>
+
+                                   <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3/m_system_event_log.pdf" class="chapter">PDF - This Chapter <span>(1.06 MB)</span></a>
+                                                            
+                            <p>View with Adobe Reader on a variety of devices</p>
+                        </li>                                  
+              </ul>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+        </div>
+
+          <button title="Print Friendly Page" class="print simpleOverlay-trigger">
+              Print
+          </button>
+        </span> 
+    </span>
+    <form id="booksearch" tabindex="0" class="chapter">
+       <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+       <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+    </form>
+      <div id="searchresult" role="region" aria-live="polite"><button class="close" title="Close Panel"><span></span><span></span></button>
+         <span class="headArrow"></span>
+         <h2>Results</h2>
+         <div class="matches">
+         </div>
+         <div class="results" tabindex="0">
+         </div>
+      </div>
+      <div id="searchResultChapterTitle"></div>
+</section>
+<script type="text/html" id="navigateMatchesTemplate">
+   <div>
+      <button class="up on" title="Previous Match"><span></span></button>
+      <button class="up off" title="Previous Match Not Available"><span></span></button>
+      <span class="matchlabel">Matches</span>
+      <button class="down on" title="Next Match"><span></span></button>
+      <button class="down off" title="Next Match Not Available"><span></span></button>
+   </div>
+</script>
+<script type="text/html" id="noChapterMatchTemplate">
+   <p>There are no Matches in this chapter.</p>
+</script>
+<script type="text/html" id="searchResultsListTemplate">
+   <p class="h3">Chapters with Matches</p>
+   <ul>
+<% var i = 0;
+    while ( modelData.links[i] ) {  %>
+      <li>
+<%     curpage = (window.location.pathname.indexOf(modelData.links[i].href) > -1 )?true:false;
+        if ( i === modelData.curpage ) {
+            if ( ! jQuery('.mobileSearch').css("display") == "block") { %>
+               <span class="currentIndicator"></span>${modelData.links[i].title}
+<%         } else {                %>
+               <span class="currentIndicator"></span><button class="curpage" data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%         }
+        } else {  %>
+            <button data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%     }  %>            
+      </li> 
+<% i++;
+    } %>
+   </ul> 
+</script>      
+<script type="text/html" id="noBookMatchTemplate">
+   <p class="head">No matches found in this book</p>
+   <p>This feature looks for an exact match of what you entered in the box.</p>
+   <p>If you entered several words, try reducing the entry to one or two and search again.</p>
+</script>
+<script type="text/html" id="errorTemplate">
+   <p>Search is currently unavailable due to technical issues. We are working to resolve the problem as quickly as possible.</p>
+</script>
+<script type="text/html" id="mobileSearchFooterTemplate">
+   <div id="mobileSearchFooter">
+      <button class="mobileSearch" title="Search in this Book"></button>
+      <button class="closeFooter"><span></span><span></span></button>
+      <div class="matches"> 
+      </div>
+   </div>   
+</script>
+ 
+    </div>
+</div>
+<div class="row blowout narrow-wide-v2 flip visitedlinks">
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div id="documentInfo">
+                  <dl>
+                     
+                      <dt>Updated:</dt><dd> April 30, 2025</dd>
+                     
+                  </dl>
+                    
+              </div>
+
+ 
+    </div>
+    <div id="chapterTitleDiv" class="col wide-v2 indent-at-xlarge">
+        <!-- this will be chapter title for chapters or header for TOC for books -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="chapter-title">Chapter: System Event
+	 Log </h2>  
+    
+
+    </div>
+</div>
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <div id="pageContentDiv" class="col wide-v2 indent-at-xlarge" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
+
+    
+ 
+ 
+
+<div id="chapterToc" class="base-blowout">
+    <button><span></span>Chapter Contents</button>
+    <div>
+    
+<ul>
+<li><a href="#topic_EC51D597D8C94512827FFFEA55D9DE62">System Event                              	 Log</a></li>
+<li><a href="#concept_BDC597C3AE5942C89C43EE0643791D9E">System Event                              	 Log</a></li>
+<li><a href="#task_B94526A046184B5F8A846EE21F54C591">Viewing the System Event Log for an Individual Server</a></li>
+<li><a href="#task_D30109CCFF08477DADE7E7FCC7A9D8B9">Viewing the System Event Log for the Servers in a Chassis</a></li>
+<li><a href="#task_412247AC919545FFA93CECAA01D67CC1">Configuring the SEL Policy</a></li>
+<li><a href="#task_A422F7675589488DB8FCA5E9D5C3A7A7">Copying One or More                              	 Entries in the System Event Log</a></li>
+<li><a href="#task_4715E035ADF542C691FF9F2A9CC994B4">Printing the System                              	 Event Log</a></li>
+<li><a href="#task_69E4AA74DBE94B7EBF5255906C66DB02">Refreshing the                              	 System Event Log</a></li>
+<li><a href="#task_3ED322C94CDD4D3885747CCFA83EB252">Manually Backing Up the System Event Log</a></li>
+<li><a href="#task_F02EDE3B5CD3490193E77C65EA765BD1">Manually Clearing                              	 the System Event Log</a></li></ul>
+    <button id="chapterToc-close">Close<span></span></button>
+    </div>
+</div>
+
+ 
+    <div id="chapterContent">
+    
+                  <h1 class="title topictitle1" id="ariaid-title1">System Event
+                     	 Log
+                  </h1>
+                  <!-- minitoc start -->
+                  <nav role="navigation" class="related-links">
+                     <ul class="ullinks">
+                        <li class="link ulchildlink"><a href="#concept_BDC597C3AE5942C89C43EE0643791D9E">System Event Log</a></li>
+                        <li class="link ulchildlink"><a href="#task_B94526A046184B5F8A846EE21F54C591">Viewing the System Event Log for an Individual Server</a></li>
+                        <li class="link ulchildlink"><a href="#task_D30109CCFF08477DADE7E7FCC7A9D8B9">Viewing the System Event Log for the Servers in a Chassis</a></li>
+                        <li class="link ulchildlink"><a href="#task_412247AC919545FFA93CECAA01D67CC1">Configuring the SEL Policy</a></li>
+                        <li class="link ulchildlink"><a href="#task_A422F7675589488DB8FCA5E9D5C3A7A7">Copying One or More Entries in the System Event Log</a></li>
+                        <li class="link ulchildlink"><a href="#task_4715E035ADF542C691FF9F2A9CC994B4">Printing the System Event Log</a></li>
+                        <li class="link ulchildlink"><a href="#task_69E4AA74DBE94B7EBF5255906C66DB02">Refreshing the System Event Log</a></li>
+                        <li class="link ulchildlink"><a href="#task_3ED322C94CDD4D3885747CCFA83EB252">Manually Backing Up the System Event Log</a></li>
+                        <li class="link ulchildlink"><a href="#task_F02EDE3B5CD3490193E77C65EA765BD1">Manually Clearing the System Event Log</a></li>
+                     </ul>
+                  </nav>
+                  <!-- minitoc end -->
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title2" lang="en-US" id="concept_BDC597C3AE5942C89C43EE0643791D9E">
+                     <h2 class="title topictitle2" id="ariaid-title2">System Event
+                        	 Log
+                     </h2>
+                     <section class="body conbody">
+                        <p class="p">The System Event Log
+                           		(SEL) resides on the CIMC in NVRAM. The SEL is used for troubleshooting system
+                           		health. It records most server-related events, such as instances of over or
+                           		under voltage, temperature events, fan events, and BIOS events. The types of
+                           		events supported by SEL include BIOS events, memory unit events, processor
+                           		events, and motherboard events. 
+                           	 
+                        </p>
+                        <p class="p">The SEL logs are
+                           		stored in the CIMC NVRAM, through a SEL log policy. It is best practice to
+                           		periodically download and clear the SEL logs. The SEL file is approximately
+                           		40KB in size, and no further events can be recorded once it is full. It must be
+                           		cleared before additional events can be recorded. 
+                           	 
+                        </p>
+                        <p class="p">You can use the SEL
+                           		policy to back up the SEL to a remote server, and optionally to clear the SEL
+                           		after a backup operation occurs. Backup operations can be triggered based on
+                           		specific actions, or they can be set to occur at regular intervals. You can
+                           		also manually back up or clear the SEL. 
+                           	 
+                        </p>
+                        <p class="p">The backup file is
+                           		automatically generated. The filename format is sel-<var class="keyword varname">SystemName-ChassisID-ServerID-ServerSerialNumber-Timestamp</var>.
+                           		
+                           	 
+                        </p>
+                        <p class="p">For example, sel-UCS-A-ch01-serv01-QCI12522939-20091121160736. 
+                           	 
+                        </p>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title3" lang="en-US" id="task_B94526A046184B5F8A846EE21F54C591">
+                     <h2 class="title topictitle2" id="ariaid-title3">Viewing the System Event Log for an Individual Server</h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_B94526A046184B5F8A846EE21F54C591__steps_BD46523C5DAF4E9B9AF96E7234654F72">
+                           <tbody>
+                              <tr class="li step" id="task_B94526A046184B5F8A846EE21F54C591__step_A82BDCF57105408D86E0AB84830A4F9E">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">Equipment</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_B94526A046184B5F8A846EE21F54C591__step_5A22C7A61FC849EBB30D6AB2A86E4D6D">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Expand 
+                                       			 <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Chassis</span> &gt; <span class="ph uicontrol"> 
+                                             				  <var class="keyword varname">Chassis Number</var></span> &gt; <span class="ph uicontrol">Servers</span></span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_B94526A046184B5F8A846EE21F54C591__step_1577D9CB0C874CF985B51E5BF74BEBFE">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click the server for which you want to view the system event log.</p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_B94526A046184B5F8A846EE21F54C591__step_DA0EBC46154B470A8CA7CB3A0E37DEB4">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Work</span> pane, click the 
+                                       			 <span class="ph uicontrol">SEL
+                                          				Logs</span> tab. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info" id="task_B94526A046184B5F8A846EE21F54C591__d40e1177"> 
+                                       			 
+                                       <p class="p"><span class="ph">Cisco UCS Manager</span> retrieves the system event log for the server and displays the
+                                          				list of events. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title4" lang="en-US" id="task_D30109CCFF08477DADE7E7FCC7A9D8B9">
+                     <h2 class="title topictitle2" id="ariaid-title4">Viewing the System Event Log for the Servers in a Chassis</h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_D30109CCFF08477DADE7E7FCC7A9D8B9__steps_BD46523C5DAF4E9B9AF96E7234654F72">
+                           <tbody>
+                              <tr class="li step" id="task_D30109CCFF08477DADE7E7FCC7A9D8B9__step_A82BDCF57105408D86E0AB84830A4F9E">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">Equipment</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_D30109CCFF08477DADE7E7FCC7A9D8B9__step_2927DFD47E644384962CCC8D2B5D8D7B">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">On the <span class="ph uicontrol">Equipment</span> tab, expand <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Chassis</span> &gt; <span class="ph uicontrol">
+                                             <var class="keyword varname">Chassis_Name</var>
+                                             </span></span>.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_D30109CCFF08477DADE7E7FCC7A9D8B9__step_6BC34D67BD444A5A9EA038D6A588A56C">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Work</span> pane, click the 
+                                       			 <span class="ph uicontrol">SEL
+                                          				Logs</span> tab. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info" id="task_D30109CCFF08477DADE7E7FCC7A9D8B9__d40e1177"> 
+                                       			 
+                                       <p class="p"><span class="ph">Cisco UCS Manager</span> retrieves the system event log for the server and displays the
+                                          				list of events. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_D30109CCFF08477DADE7E7FCC7A9D8B9__step_1577D9CB0C874CF985B51E5BF74BEBFE">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the Server table, click the server for which you want to view the system event log.</p>
+                                    <section class="itemgroup info"></section>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p"><span class="ph">Cisco UCS Manager</span> retrieves the system event log for the server and displays the
+                                          				list of events. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title5" lang="en-US" id="task_412247AC919545FFA93CECAA01D67CC1">
+                     <h2 class="title topictitle2" id="ariaid-title5">Configuring the SEL Policy</h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_412247AC919545FFA93CECAA01D67CC1__steps_34D0BB843A9A45EBB476F569F5B0597B">
+                           <tbody>
+                              <tr class="li step" id="task_412247AC919545FFA93CECAA01D67CC1__step_1FA60C3810484E7D834A2CE00805EC56">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">Equipment</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_412247AC919545FFA93CECAA01D67CC1__step_D71E0EED116947B5B64D521B233509B2">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click the 
+                                       			 <span class="ph uicontrol">Equipment</span> node. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_412247AC919545FFA93CECAA01D67CC1__step_0B4E4883F7F74267A9DA17EC47AF7536">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Work</span> pane, click the 
+                                       			 <span class="ph uicontrol">Policies</span> tab.
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_412247AC919545FFA93CECAA01D67CC1__step_8D4A24F48EA9434585DE22F29F9D49DC">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click the 
+                                       			 <span class="ph uicontrol">SEL Policy</span> subtab.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_412247AC919545FFA93CECAA01D67CC1__step_8DF4EA5DEF104B199B4DF66A1B84E8C0">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">(Optional) 
+                                       In the <span class="ph uicontrol">General</span> area, type a description of the policy in the <span class="ph uicontrol">Description</span> field.
+                                    </p>
+                                    <section class="itemgroup info">
+                                       
+                                       <p class="p">The other fields in this area are read-only.</p>
+                                       
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_412247AC919545FFA93CECAA01D67CC1__step_ECB9DF9B5F9B47FEA5853B6A39051060">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the <span class="ph uicontrol">Backup Configuration</span> area, complete the following fields:
+                                    </p>
+                                    <section class="itemgroup info">
+                                       
+                                       <table width="100%" border="1" class="table" id="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512">
+                                          <caption></caption>
+                                          <colgroup>
+                                             <col style="width:33.33333333333333%">
+                                             <col style="width:66.66666666666666%">
+                                          </colgroup>
+                                          <thead class="thead">
+                                             <tr>
+                                                <th font-weight="bold" class="entry" id="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__1">Name 
+                                                   				  
+                                                </th>
+                                                <th font-weight="bold" class="entry" id="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__2">Description 
+                                                   				  
+                                                </th>
+                                             </tr>
+                                          </thead>
+                                          <tbody class="tbody">
+                                             <tr>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph"><span class="ph uicontrol">Protocol</span> field</span> 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__2 "> 
+                                                   					 
+                                                   <p class="p">The protocol to use when communicating with the remote server.
+                                                      						This can be one of the following: 
+                                                      					 
+                                                   </p> 
+                                                   					 
+                                                   <ul class="ul" id="task_412247AC919545FFA93CECAA01D67CC1__ul_2B53E99FFE2D4C5CAA68E12466F3A848">
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d150e3418"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">FTP</span> 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d150e3426"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">TFTP</span> 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d150e3434"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">SCP</span> 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d150e3442"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">SFTP</span> 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d150e3450"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">USB A</span>—The USB drive inserted into fabric
+                                                            							 interconnect A. 
+                                                            						  
+                                                         </p> 
+                                                         						  
+                                                         <p class="p">This
+                                                            							 option is only available for certain system configurations. 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d150e3461"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">USB B</span>—The USB drive inserted into fabric
+                                                            							 interconnect B. 
+                                                            						  
+                                                         </p> 
+                                                         						  
+                                                         <p class="p">This
+                                                            							 option is only available for certain system configurations. 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                   </ul> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph uicontrol">Hostname</span> field 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__2 "> 
+                                                   					 
+                                                   <p class="p">The
+                                                      						hostname or IP address of the server on which the backup configuration resides.
+                                                      						
+                                                      						<span class="ph">If you use a hostname rather than an IPv4 or IPv6 address, you
+                                                         				must configure a DNS server. If the 
+                                                         			 	<span class="ph">Cisco UCS domain</span> is not registered with 
+                                                         			 	<span class="ph">Cisco UCS Central</span> or DNS management is set to 
+                                                         				<span class="ph uicontrol">local</span>, configure a DNS server in 
+                                                         			 	<span class="ph">Cisco UCS Manager</span>. If the 
+                                                         			 	<span class="ph">Cisco UCS domain</span> is registered with 
+                                                         			 	<span class="ph">Cisco UCS Central</span> and DNS management is set to 
+                                                         				<span class="ph uicontrol">global</span>, configure a DNS server in 
+                                                         			 	<span class="ph">Cisco UCS Central</span>.</span> 
+                                                      					 
+                                                   </p> 
+                                                   					 
+                                                   <table class="olh_note" border="0" role="note">
+                                                      <tr>
+                                                         <td width="1%" class="td_faq" role="heading" border="0">
+                                                            <p><b>Note</b></p>&nbsp;
+                                                         </td>
+                                                         <td border="0" class="td_faq">
+                                                            <section class="note__content"> 
+                                                               						
+                                                               <p class="p">The name
+                                                                  						  of the backup file is generated by 
+                                                                  						  <span class="ph">Cisco UCS</span>. The name is in the following format: 
+                                                                  						
+                                                               </p> 
+                                                               						
+                                                               <section class="p"> 
+                                                                  						  <pre class="pre codeblock"><code>sel-<var class="keyword varname">system-name</var>-ch<var class="keyword varname">chassis-id</var>-
+serv<var class="keyword varname">blade-id</var>-<var class="keyword varname">blade-serial</var>
+-<var class="keyword varname">timestamp</var></code></pre> 
+                                                                  						</section> 
+                                                               					 
+                                                            </section>
+                                                         </td>
+                                                      </tr>
+                                                   </table> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph uicontrol">Remote Path</span> field 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__2 "> 
+                                                   					 
+                                                   <p class="p">The
+                                                      						absolute path to the file on the remote server, if required. 
+                                                      					 
+                                                   </p> 
+                                                   					 
+                                                   <p class="p">If you use
+                                                      						SCP, the absolute path is always required. If you use any other protocol, you
+                                                      						may not need to specify a remote path, provided that the file resides in the
+                                                      						default download folder. For details about how your file server is configured,
+                                                      						contact your system administrator. 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph uicontrol">Backup Interval</span> drop-down list 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__2 "> 
+                                                   					 
+                                                   <p class="p">The time
+                                                      						to wait between automatic backups. This can be one of the following: 
+                                                      					 
+                                                   </p> 
+                                                   					 
+                                                   <ul class="ul" id="task_412247AC919545FFA93CECAA01D67CC1__d154e202">
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d154e203"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">Never</span>—Do not perform any automatic SEL data backups.
+                                                            							 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d154e211"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">1 Hour</span> 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d154e219"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">2 Hours</span> 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d154e227"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">4 Hours</span> 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d154e235"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">8 Hours</span> 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d154e243"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">24 Hours</span> 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d154e251"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">1 Week</span> 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d154e259"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">1 Month</span> 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                   </ul> 
+                                                   					 
+                                                   <table class="olh_note" border="0" role="note">
+                                                      <tr>
+                                                         <td width="1%" class="td_faq" role="heading" border="0">
+                                                            <p><b>Note</b></p>&nbsp;
+                                                         </td>
+                                                         <td border="0" class="td_faq">
+                                                            <section class="note__content"> 
+                                                               						
+                                                               <p class="p">If you
+                                                                  						  want the system to create automatic backups, make sure that you check the 
+                                                                  						  <span class="ph uicontrol">Timer</span> check box in the 
+                                                                  						  <span class="ph uicontrol">Action</span> option box. 
+                                                                  						
+                                                               </p> 
+                                                               					 
+                                                            </section>
+                                                         </td>
+                                                      </tr>
+                                                   </table> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph uicontrol">Format</span> field 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__2 "> 
+                                                   					 
+                                                   <p class="p">The
+                                                      						format to use for the backup file. This can be one of the following: 
+                                                      					 
+                                                   </p> 
+                                                   					 
+                                                   <ul class="ul" id="task_412247AC919545FFA93CECAA01D67CC1__d154e294">
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d154e295"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">Ascii</span> 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d154e303"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">Binary</span> 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                   </ul> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph uicontrol">Clear on Backup</span> check box 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__2 "> 
+                                                   					 
+                                                   <p class="p">If
+                                                      						checked, 
+                                                      						<span class="ph">Cisco UCS</span> clears all system event logs after the backup is
+                                                      						completed. 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph"><span class="ph uicontrol">User</span> field</span> 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__2 "> 
+                                                   					 
+                                                   <p class="p">The username the system should use to log into the remote server. This field does not apply if the protocol is TFTP. </p> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph"><span class="ph uicontrol">Password</span>
+                                                         						  field</span> 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__2 "> 
+                                                   					 
+                                                   <p class="p">The password for the remote server username. This field does not apply if the protocol is TFTP. </p> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph uicontrol">Action</span> check box 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__2 "> 
+                                                   					 
+                                                   <p class="p">For each
+                                                      						box that is checked, the system creates an SEL backup when that event is
+                                                      						encountered: 
+                                                      					 
+                                                   </p> 
+                                                   					 
+                                                   <ul class="ul" id="task_412247AC919545FFA93CECAA01D67CC1__d154e371">
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d154e372"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">Log Full</span>—The log reaches the maximum size allowed. 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d154e380"> 
+                                                         						  <span class="ph uicontrol">On Change of Association</span>—The association between a
+                                                         						  server and its service profile changes. 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d154e385"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">On Clear</span>—The user manually clears a system event
+                                                            							 log. 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                      <li class="li" id="task_412247AC919545FFA93CECAA01D67CC1__d154e393"> 
+                                                         						  
+                                                         <p class="p"> 
+                                                            							 <span class="ph uicontrol">Timer</span>—The time interval specified in the 
+                                                            							 <span class="ph uicontrol">Backup Interval</span> drop-down list is reached. 
+                                                            						  
+                                                         </p> 
+                                                         						
+                                                      </li>
+                                                   </ul> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph uicontrol">Reset Configuration</span> button 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_412247AC919545FFA93CECAA01D67CC1__table_0FDEE01130B7405A85B983C62C0B4512__entry__2 "> 
+                                                   					 
+                                                   <p class="p">Click
+                                                      						this button to reset the background configuration information. 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_412247AC919545FFA93CECAA01D67CC1__step_003FECE5699345298D858CCAB27C42D7">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click 
+                                       			 <span class="ph uicontrol">Save
+                                          				Changes</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title6" lang="en-US" id="task_A422F7675589488DB8FCA5E9D5C3A7A7">
+                     <h2 class="title topictitle2" id="ariaid-title6">Copying One or More
+                        	 Entries in the System Event Log
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_A422F7675589488DB8FCA5E9D5C3A7A7__context_A26A624C48E5482DB1771C49CA627C06">
+                           		
+                           <p class="p" id="task_A422F7675589488DB8FCA5E9D5C3A7A7__p_ContextSELMgmt">This task assumes that you are viewing the system event log for
+                              		  a server from the 
+                              		  <span class="ph uicontrol">SEL
+                                 			 Logs</span> tab for a server or a chassis.
+                              		
+                           </p>
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_A422F7675589488DB8FCA5E9D5C3A7A7__steps_7C1603F53E7C4D91851C500DE45C306F">
+                           <tbody>
+                              <tr class="li step" id="task_A422F7675589488DB8FCA5E9D5C3A7A7__step_82EC35AF73FD4C9CA0B526DF97AC85AB">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">After the 
+                                       			 <span class="ph">Cisco UCS Manager GUI</span> displays the system event log in the 
+                                       			 <span class="ph uicontrol">SEL
+                                          				Logs</span> tab, use your mouse to highlight the entry or entries that you
+                                       			 want to copy from the system event log.
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A422F7675589488DB8FCA5E9D5C3A7A7__step_B466E61824CD4FE6B94FBF630A298341">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click 
+                                       			 <span class="ph uicontrol">Copy</span> to copy the highlighted text to the clipboard.
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A422F7675589488DB8FCA5E9D5C3A7A7__step_17ADDDAC780C4E44857BB29F8AAFDCC4">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Paste the
+                                       			 highlighted text into a text editor or other document.
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title7" lang="en-US" id="task_4715E035ADF542C691FF9F2A9CC994B4">
+                     <h2 class="title topictitle2" id="ariaid-title7">Printing the System
+                        	 Event Log
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_4715E035ADF542C691FF9F2A9CC994B4__context_A26A624C48E5482DB1771C49CA627C06">
+                           		
+                           <p class="p" id="task_4715E035ADF542C691FF9F2A9CC994B4__p_ContextSELMgmt">This task assumes that you are viewing the system event log for
+                              		  a server from the 
+                              		  <span class="ph uicontrol">SEL
+                                 			 Logs</span> tab for a server or a chassis.
+                              		
+                           </p>
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_4715E035ADF542C691FF9F2A9CC994B4__steps_2A1F0EBE30554E1C8D6E0492F79C6D88">
+                           <tbody>
+                              <tr class="li step" id="task_4715E035ADF542C691FF9F2A9CC994B4__step_B886D02536124BC9A6CA4FB006AF7393">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">After the 
+                                       			 <span class="ph">Cisco UCS Manager GUI</span> displays the system event log in the 
+                                       			 <span class="ph uicontrol">SEL
+                                          				Logs</span> tab, click 
+                                       			 <span class="ph uicontrol">Print</span>.
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_4715E035ADF542C691FF9F2A9CC994B4__step_634D368E547745A687BFCC12E238A538">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="ph"><span class="keyword wintitle">Print</span> dialog box</span>, do the following:
+                                       		  
+                                    </p>
+                                    <ol type="a" class="ol substeps" id="task_4715E035ADF542C691FF9F2A9CC994B4__substeps_0EF71755EA35447EBD71801A608A8E09">
+                                       <li class="li substep" id="task_4715E035ADF542C691FF9F2A9CC994B4__substep_E53D0DE7F1644C6198D71239C38BABE7">
+                                          <p class="ph cmd">(Optional) Modify the
+                                             				  default printer, or any other fields or options.
+                                             				
+                                          </p>
+                                       </li>
+                                       <li class="li substep" id="task_4715E035ADF542C691FF9F2A9CC994B4__substep_2EEF3C631A50454299DA069EB41E02EA">
+                                          <p class="ph cmd">Click 
+                                             				  <span class="ph uicontrol">Print</span>.
+                                             				
+                                          </p>
+                                       </li>
+                                    </ol>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title8" lang="en-US" id="task_69E4AA74DBE94B7EBF5255906C66DB02">
+                     <h2 class="title topictitle2" id="ariaid-title8">Refreshing the
+                        	 System Event Log
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_69E4AA74DBE94B7EBF5255906C66DB02__context_A26A624C48E5482DB1771C49CA627C06">
+                           		
+                           <p class="p" id="task_69E4AA74DBE94B7EBF5255906C66DB02__p_ContextSELMgmt">This task assumes that you are viewing the system event log for
+                              		  a server from the 
+                              		  <span class="ph uicontrol">SEL
+                                 			 Logs</span> tab for a server or a chassis.
+                              		
+                           </p>
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_69E4AA74DBE94B7EBF5255906C66DB02__steps_D11DDED92C804B8EBA0AB4A85242CA38">
+                           <tbody>
+                              <tr class="li step" id="task_69E4AA74DBE94B7EBF5255906C66DB02__step_8664BAD157794BC4AE944D3708EF9082">
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> After the 
+                                       			 <span class="ph">Cisco UCS Manager GUI</span> displays the system event log in the 
+                                       			 <span class="ph uicontrol">SEL
+                                          				Logs</span> tab, click 
+                                       			 <span class="ph uicontrol">Refresh</span>.
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">
+                                          				<span class="ph">Cisco UCS Manager</span> retrieves the system event log for the server and displays
+                                          				the updated list of events.
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title9" lang="en-US" id="task_3ED322C94CDD4D3885747CCFA83EB252">
+                     <h2 class="title topictitle2" id="ariaid-title9">Manually Backing Up the System Event Log</h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_3ED322C94CDD4D3885747CCFA83EB252__context_A26A624C48E5482DB1771C49CA627C06">
+                           
+                           <p class="p" id="task_3ED322C94CDD4D3885747CCFA83EB252__p_ContextSELMgmt">This task assumes that you are viewing the system event log for a server from the <span class="ph uicontrol">SEL Logs</span> tab for a server or a chassis.
+                           </p>
+                           
+                        </section>
+                        <section class="section prereq p" id="task_3ED322C94CDD4D3885747CCFA83EB252__prereq_1BABDA92FFD94549AF4815D459CADDF2">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section>
+                           
+                           <p class="p">Configure the system event
+                              		  log policy. The manual backup operation uses the remote destination configured
+                              		  in the system event log policy. 
+                              		
+                           </p>
+                           
+                           
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_3ED322C94CDD4D3885747CCFA83EB252__steps_A5A5153AE0C54A1297ACD2B596A0ACFF">
+                           <tbody>
+                              <tr class="li step" id="task_3ED322C94CDD4D3885747CCFA83EB252__step_A2D3B92D5DC94FE988DD832BBEB1985E">
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">
+                                       After <span class="ph">Cisco UCS Manager GUI</span> displays the system event log in the <span class="ph uicontrol">SEL Logs</span> tab, click <span class="ph uicontrol">Backup</span>.
+                                    </p>
+                                    <section class="itemgroup info">
+                                       
+                                       <p class="p">
+                                          <span class="ph">Cisco UCS Manager</span> backs up the system event log to the location specified in the SEL policy.
+                                       </p>
+                                       
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title10" lang="en-US" id="task_F02EDE3B5CD3490193E77C65EA765BD1">
+                     <h2 class="title topictitle2" id="ariaid-title10">Manually Clearing
+                        	 the System Event Log
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_F02EDE3B5CD3490193E77C65EA765BD1__context_A26A624C48E5482DB1771C49CA627C06"> 
+                           		
+                           <p class="p" id="task_F02EDE3B5CD3490193E77C65EA765BD1__p_ContextSELMgmt">This task assumes that you are viewing the system event log for
+                              		  a server from the 
+                              		  <span class="ph uicontrol">SEL
+                                 			 Logs</span> tab for a server or a chassis.
+                              		
+                           </p>
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_F02EDE3B5CD3490193E77C65EA765BD1__steps_141281BB0A434693B3E8833A8EF59896">
+                           <tbody>
+                              <tr class="li step" id="task_F02EDE3B5CD3490193E77C65EA765BD1__step_A2C385752BA5497B8E902EB64ABC91C0">
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> After 
+                                       			 <span class="ph">Cisco UCS Manager GUI</span> displays the system event log in the 
+                                       			 <span class="ph uicontrol">SEL
+                                          				Logs</span> tab, click 
+                                       			 <span class="ph uicontrol">Clear</span>.
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info">
+                                       			 
+                                       <section class="p">
+                                          				
+                                          <table class="olh_note" border="0" role="note">
+                                             <tr>
+                                                <td width="1%" class="td_faq" role="heading" border="0">
+                                                   <p><b>Note</b></p>&nbsp;
+                                                </td>
+                                                <td border="0" class="td_faq">
+                                                   <section class="note__content">
+                                                      				
+                                                      <p class="p">This action
+                                                         				  triggers an automatic backup if 
+                                                         				  <span class="ph uicontrol">Clear</span> is enabled in the SEL policy 
+                                                         				  <span class="ph uicontrol">Action</span> option box.
+                                                         				
+                                                      </p>
+                                                      			 
+                                                   </section>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                          			 
+                                       </section> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+               </article>
+            </article>
+         </main>
+      
+
+</div> 
+ 
+    </div>
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent noprint base-blowout">
+    <div class="eotPersonalization">
+        <section id="eotTDCampaign"></section>
+    </div>    
+    <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>Was this Document Helpful?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes" aria-label="Was this Document Helpful?? Yes">Yes</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no" aria-label="Was this Document Helpful?? No">No</button>
+  </span>
+  <span lang="en" class="eot-feedback-olwrap">
+    
+      <a href="javascript: void(0);" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">Feedback</a>
+    
+  </span>
+</div>
+
+
+</div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+    </div>
+			
+    <div class="letUsHelp">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eotLetUsHelp">
+    <h3>Contact Cisco</h3>
+    <ul>
+         <li><a id="eotLetUsHelpProdDocUrl" href="https://mycase.cloudapps.cisco.com/start?prodDocUrl=">Open a Support Case</a><img src="/etc/designs/cdc/fw/i/icon_lock_small.png" alt="login required"/></li>
+        <li>(Requires a <a href="//www.cisco.com/c/en/us/services/order-services.html">Cisco Service Contract</a>)</li>
+    </ul>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        var getURL=jQuery("#eotLetUsHelpProdDocUrl").attr("href"), 
+            domInd = location.href.indexOf('cisco.com') ;
+        if ( domInd > -1 && domInd < location.href.search(/\w\/\w/) ) {
+            getURL += encodeURI(location.href);
+        }
+		jQuery("#eotLetUsHelpProdDocUrl").attr("href",getURL);
+    });
+</script>
+
+
+    </div>
+
+    <div id="eotRightRailMBox"><!--MBox-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IT:components/mbox/banner-mbox:V0.0.0 -->
+
+
+
+<div>
+    <div class="mboxDefault"></div>   
+    <script type="text/javascript">
+        var test="";
+        if(test!=undefined && test.trim().length>0){
+           mboxCreate('en-us_dg_support_bookchapters','type=default','');
+        }else{
+           mboxCreate('en-us_dg_support_bookchapters','type=default');
+        }
+       
+    </script>
+</div>
+<!--MBox--></div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+	<script type="text/javascript">
+			    var eottdatp = document.getElementsByClassName('eot-tdatp');
+			    if (eottdatp && eottdatp.style) {
+        			eottdatp.style.display="none";
+			    }
+        		  </script>
+  	
+
+
+    </div>
+			
+    <div></div>
+
+</div>
+
+
+    </div>
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/us/en/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/clientlibs/responsive/js/books.min.js"></script>
+
+<script src="/etc/designs/cdc/fw/m/books_metricsrule.js" type="text/javascript" async></script>
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>

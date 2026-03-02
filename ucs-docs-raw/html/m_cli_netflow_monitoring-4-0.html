@@ -1,0 +1,3303 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="en" xml:lang="en"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="en/us";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.cpe === undefined) {
+        window.cpe = {};
+    }
+
+    cpe.accountName = "prod";
+    cpe.config = ["cinf","dsc","pps"];
+    cpe.hideMethod = "elements";
+
+    window.targetGlobalSettings = JSON.parse('{\x22timeout\x22:4000}');
+    window.targetPageParamsAll = () => JSON.parse('{\x22entity\x22:\x22{\\\x22id\\\x22:\\\x221692168032188680\\\x22,\\\x22categoryId\\\x22:\\\x22\\\x22}\x22}');
+
+    
+    const bullseyeLibrary = `/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/external/bullseye.js`;
+
+    import(bullseyeLibrary);
+</script>
+<script src="/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/regional-mbox/regional-mbox.js"></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <title>Cisco UCS Manager System Monitoring Guide Using the CLI, Release 4.3 - Netflow
+	 Monitoring [Cisco UCS Manager] - Cisco</title>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="Netflow Monitoring"  />
+    <meta name="title" content="Cisco UCS Manager System Monitoring Guide Using the CLI, Release 4.3 - Netflow
+	 Monitoring [Cisco UCS Manager]"  />
+    <meta name="documentId" content="1692168032172679"  />
+    <meta name="templateName" content="book"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="WEM"  />
+    <meta name="docType" content="TSD Products Configuration Guide Chapter"  />
+    <meta name="concept" content="Cisco UCS Manager"  />
+    <meta name="iaPath" content="cisco.com#Products#Cisco Products#Servers - Unified Computing#Cisco UCS Manager"  />
+    <meta name="contentType" content="cisco.com#US#preSales"  />
+    <meta name="locale" content="US"  />
+    <meta name="language" content="en"  />
+    <meta name="country" content="US"  />
+    <meta name="CCID_Page" content="cc001777"  />
+    <meta name="date" content="Fri Jul 25 10:07:19 PDT 2025"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="Cisco UCS Manager System Monitoring Guide Using the CLI, Release 4.3 - Netflow
+	 Monitoring [Cisco UCS Manager]"  />
+    <meta property="og:description" content="Netflow Monitoring"  />
+    <meta property="og:url" content="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_netflow_monitoring-4-0.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_netflow_monitoring-4-0.html"/>
+	
+
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/en\/us\/td\/docs\/unified_computing\/ucs\/ucs\u002Dmanager\/CLI\u002DUser\u002DGuides\/System\u002DMonitoring\/4\u002D3\/b\u002Ducsm\u002Dcli\u002Dsystem\u002Dmonitoring\u002Dguide\u002D4\u002D3\/m_cli_netflow_monitoring\u002D4\u002D0");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/cisco-sans.min.css" type="text/css">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/books.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", 'You are being logged out.');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "Netflow
+	 Monitoring",  		  
+          "url": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_netflow_monitoring-4-0.html",
+          "description": "Netflow Monitoring",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="hvck7tyxelwrg2nfbxoq-f-7b26a7871-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":21,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"2b72d9d7","ak.r":37441,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"61.68.175.0","ak.cport":51583,"ak.gh":"23.199.68.174","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772424669","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==eRrRxgYDmw2iC1e8E5UBSC2iOmdtgn3JDxcnAjBo2uKPYNdQdmocjMSEZij4CSZjJMhwfF6dHSbqywYvO43IEj0tXQHITo781Mdv86PkfX5eWZSVbR6V3eQQC6erDnO7Hkgmasj4+8WuiRkwWGLzhKwy2K/5BjLt9hpSejWAcyao3jheCHdj98dwyTq5jsQ1kMiEUtT1Cy88/zq7BopKdG/+YUXtAtozmoD7mHu2ZEGbEkJ7W6b5PEVZ+phi+ZCRdSvC7f5eaUoh98HtFxu5SAPeFlS3w+oCRO9+kZho6QN6e0ba5uaFMgpa9kw98D0IOpaoIb2LPfOg8u1QhGZU/XBE2H5ausTPSaIG1zcE51qoPz8v0h5TsUfmEBRLCwYgt2aogdIITAOaH110UPlmM4KMtocrb/EpWxsEvKpc21g=","ak.pv":"540","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body id="wcq" class="fw-res cdc-support cdc-books cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">Skip to content</a></li>
+        <li><a id="skiplink-search" href="#">Skip to search</a></li>
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">Skip to footer</a></li>
+    </ul>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/us/en/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/index.html">Cisco.com Worldwide</a></li>
+            <li><a tabindex="-1" href="/c/en/us/products/index.html">Products and Services</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/solutions/index.html">Solutions</a></li>
+            <li><a tabindex="-1" href="/c/en/us/support/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/c/en/us/training-events.html">Learn</a></li>
+            <li><a tabindex="-1" href="//www.cisco.com/c/en/us/about/sitemap.html">Explore Cisco</a></li>
+            <li><a tabindex="-1" href="/c/en/us/buy.html">How to Buy</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Partners Home</a></li>                
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/cisco-partner-program/index.html?ccid=cc000864&dtid=odiprc001129">Partner Program</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/support-help/index.html">Support</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/tools/index.html?dtid=odiprc001129">Tools</a></li>
+            <li><a tabindex="-1" href="https://locatr.cloudapps.cisco.com/WWChannels/LOCATR/pf/index.jsp#/">Find a Cisco Partner</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/connect-with-a-partner/index.html?ccid=cc000864&dtid=odiprc001129">Meet our Partners</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Become a Cisco Partner</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based user-driven-nav" aria-label="breadcrumbs" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/index.html'><span itemprop='name'>Home</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/index.html'><span itemprop='name'>Support</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/all-products.html'><span itemprop='name'>Product Support</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/category.html'><span itemprop='name'>Servers - Unified Computing</span><meta itemprop='position' content='4' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/series.html'><span itemprop='name'>Cisco UCS Manager</span><meta itemprop='position' content='5' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html'><span itemprop='name'>Configuration Guides</span><meta itemprop='position' content='6' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+        
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">Cisco UCS Manager System Monitoring Guide Using the CLI, Release 4.3</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   <!-- have to do this for _g.I18n to be defined in preview and publish modes -->
+  
+  <script type="text/javascript">
+      // initialize dictionary for i18n
+      cdc.util.ensureNamespace("cdc.rc");
+    cdc.rc.eotkeys = {
+        showOnly5Products : "Show Only 5 Products",       
+        showAllRowsProducts : "Show All nRows Products",
+        supportCommunityUrl : "https://community.cisco.com/t5/technology-and-support/ct-p/technology-support",
+        supportCommunity : "Cisco Community",
+        thankYou : "Thank You",
+        viewersAlso : "Customers Also Viewed", 
+        show : "Show", 
+        more : "More", 
+        showOnly3Documents: "Show Only 3 Documents"
+      };
+  </script>
+
+
+
+<div class="row blowout full visitedlinks">
+    <div class="col full">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers techdocs">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button aria-expanded="false" >Bias-Free Language</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>Bias-Free Language</h3>
+            <p>The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. <a href="https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html">Learn more</a> about how Cisco is using Inclusive Language.</p>
+        </div>
+        
+    </div><!-- disclaimers -->
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* this is needed for the translation selector */
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+    var bookTitle = 'Book Title Page';
+</script>
+
+<span id="actionBar-top"></span>
+<section id="actionBar" class="noprint base-blowout">
+    <span class="icons">
+        
+        <button class="bookToc simpleOverlay-trigger" id="onlyforTrigger"> <!--US140575-->
+            Book Contents
+        </button>
+            <div class="bookToc simpleOverlay-content">
+               <div role="heading" class="title">Book Contents</div>
+               <!--googleoff: index--><!--googleoff: snippet-->  
+               <div class="content">
+                  
+
+
+
+<ul id="bookToc">
+    <li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_preface.html">Preface</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m-new-and-changed-4-3-cli.html">New and Changed
+	 Information for This Release</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_system_monitoring_overview-4_3.html">System Monitoring
+	 Overview</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_syslog.html">Syslog</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_system_event_log_management.html">System Event
+	 Log</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_audit_logs.html">Audit Logs</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_log_file_exporter.html">Log File
+	 Exporter</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_core_file_exporter.html">Core File
+	 Exporter</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m-system-monitoring-and-debugging.html">System Monitoring and Debugging</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_fault_collection_and_suppression.html">Fault Collection and
+	 Suppression</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_snmp_configuration.html">SNMP
+	 Configuration</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_statistics_collection_policies.html">Statistics
+	 Collection Policy Configuration</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_call_home_and_smart_call_home.html">Call Home and Smart
+	 Call Home Configuration</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_database_health_monitoring.html">Database Health
+	 Monitoring</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_hardware_monitoring.html"> Hardware
+	 Monitoring</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_netflow_monitoring-4-0.html">Netflow
+	 Monitoring</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_traffic_monitoring-4-0.html">Traffic
+	 Monitoring</a></li>
+
+</ul>
+
+
+               </div>
+               <!--googleon: index--><!--googleon: snippet-->               
+            </div>
+
+        
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='versionddcontainer chapter'></div>
+<script type="text/html" class="versionstemp">
+            <div class="versionsdd">
+                <button class="versionbutton" aria-haspopup="true" aria-expanded="false" aria-labelledby="other versions" class="version"><label></label></button>
+                <ul class="versionlist" aria-labelledby="other versions">
+                <%
+                    let pageUrl = window.location.pathname.replace("/content/","/c/").toLowerCase();
+                    if (true) pageUrl = pageUrl.substring(0,pageUrl.lastIndexOf("/"))+".html";
+                    for(let i=0; i< data.length; i++) {
+                        let item = data[i],
+                            myurl = item.linkUrl,
+                            urlm = myurl.replace("/content/","/c/");;
+                            mytitle = item.linkTitle;
+                            myclass= urlm.toLowerCase() == pageUrl ? "class=\"selected\"":""; 
+%>
+                    <li><a href="${myurl}" ${myclass}>${mytitle}</a></li>
+<%
+                  }   %>
+                </ul>
+             </div>
+</script>
+    
+        <span class="utilities">
+          <button title="Search in this Book" class="mobileSearch simpleOverlay-trigger">
+            Search
+          </button>
+          <div class="mobileSearch simpleOverlay-content">
+            <div class="title">Find Matches in This Book</div>
+              <!--googleoff: index--><!--googleoff: snippet-->  
+              <div class="content">
+                <form id="mobileBooksearch" class="chapter">
+                   <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit"></button>
+                   <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+                </form>
+                <div id="overlayResults" role="region" aria-live="polite" >
+                   <!-- important, keep this results div begin end on same line in here -->
+                   <div class="results"></div>
+                </div>
+              </div>
+              <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "Save";
+    cdc.rc.savedoc.saved = "Saved";
+</script>
+
+    <button class="save" aria-expanded="false" aria-label="Save">
+        <label>Save</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_netflow_monitoring-4-0.html">Log in</a> to Save Content
+    </div>
+
+
+          <!-- Translation Selctor -->
+          <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+ 
+
+
+ 
+          <div class="translations simpleOverlay-content" role="dialog" id="dialogt" aria-labelledby="onlyForNonEN" aria-modal="true">
+            <div role="heading" class="title">Available Languages</div>
+               <!--googleoff: index--><!--googleoff: snippet--> 
+            <script language="javascript">                    
+                cdc.translations.map = "{en-us=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_netflow_monitoring-4-0.html, x-default=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_netflow_monitoring-4-0.html}";//storing the map for use in the JS
+                cdc.translations.locale="en_us";
+            </script>
+            <div class="content">
+              <div class="availableLanguagesList">
+                  <ul id="translationsList">
+                  </ul> 
+              </div>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+          
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // stored value for overlay label to use in js
+    var downloadOPtionLabel = 'Download Options',
+    	bookSearchlabel = 'Find Matches in This Book',
+    	translationsLabel = 'Translations',
+    	bookConentLabel= 'Book Contents';
+</script>
+
+
+        
+
+
+
+        <button title="Document Download Options" id="dwnld-button" class="downloadOptions simpleOverlay-trigger" aria-expanded="false">
+            Download
+        </button>
+        <div class="downloadOptions simpleOverlay-content" role="dialog" id="dialogd" aria-labelledby="dwnld-button" aria-modal="true" class="default_dialog">
+            <div role="heading" class="title">Download Options</div>
+            <!--googleoff: index--><!--googleoff: snippet-->  
+            <div class="content">
+                <header>
+
+                    <h3 class="h4"> Book Title</p>
+                    <p>Cisco UCS Manager System Monitoring Guide Using the CLI, Release 4.3</p>
+                    <p class="h4"> Chapter Title</p>
+                    <h3>Netflow
+	 Monitoring</p>
+
+                </header>
+                <ul>
+
+                        <li >    
+                            <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3.pdf" class="pdfIcon">PDF - Complete Book 
+                            <span>(3.48 MB)</span></a>
+
+                                   <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_cli_netflow_monitoring-4-0.pdf" class="chapter">PDF - This Chapter <span>(1.11 MB)</span></a>
+                                                            
+                            <p>View with Adobe Reader on a variety of devices</p>
+                        </li>                                  
+              </ul>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+        </div>
+
+          <button title="Print Friendly Page" class="print simpleOverlay-trigger">
+              Print
+          </button>
+        </span> 
+    </span>
+    <form id="booksearch" tabindex="0" class="chapter">
+       <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+       <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+    </form>
+      <div id="searchresult" role="region" aria-live="polite"><button class="close" title="Close Panel"><span></span><span></span></button>
+         <span class="headArrow"></span>
+         <h2>Results</h2>
+         <div class="matches">
+         </div>
+         <div class="results" tabindex="0">
+         </div>
+      </div>
+      <div id="searchResultChapterTitle"></div>
+</section>
+<script type="text/html" id="navigateMatchesTemplate">
+   <div>
+      <button class="up on" title="Previous Match"><span></span></button>
+      <button class="up off" title="Previous Match Not Available"><span></span></button>
+      <span class="matchlabel">Matches</span>
+      <button class="down on" title="Next Match"><span></span></button>
+      <button class="down off" title="Next Match Not Available"><span></span></button>
+   </div>
+</script>
+<script type="text/html" id="noChapterMatchTemplate">
+   <p>There are no Matches in this chapter.</p>
+</script>
+<script type="text/html" id="searchResultsListTemplate">
+   <p class="h3">Chapters with Matches</p>
+   <ul>
+<% var i = 0;
+    while ( modelData.links[i] ) {  %>
+      <li>
+<%     curpage = (window.location.pathname.indexOf(modelData.links[i].href) > -1 )?true:false;
+        if ( i === modelData.curpage ) {
+            if ( ! jQuery('.mobileSearch').css("display") == "block") { %>
+               <span class="currentIndicator"></span>${modelData.links[i].title}
+<%         } else {                %>
+               <span class="currentIndicator"></span><button class="curpage" data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%         }
+        } else {  %>
+            <button data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%     }  %>            
+      </li> 
+<% i++;
+    } %>
+   </ul> 
+</script>      
+<script type="text/html" id="noBookMatchTemplate">
+   <p class="head">No matches found in this book</p>
+   <p>This feature looks for an exact match of what you entered in the box.</p>
+   <p>If you entered several words, try reducing the entry to one or two and search again.</p>
+</script>
+<script type="text/html" id="errorTemplate">
+   <p>Search is currently unavailable due to technical issues. We are working to resolve the problem as quickly as possible.</p>
+</script>
+<script type="text/html" id="mobileSearchFooterTemplate">
+   <div id="mobileSearchFooter">
+      <button class="mobileSearch" title="Search in this Book"></button>
+      <button class="closeFooter"><span></span><span></span></button>
+      <div class="matches"> 
+      </div>
+   </div>   
+</script>
+ 
+    </div>
+</div>
+<div class="row blowout narrow-wide-v2 flip visitedlinks">
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div id="documentInfo">
+                  <dl>
+                     
+                      <dt>Updated:</dt><dd> April 30, 2025</dd>
+                     
+                  </dl>
+                    
+              </div>
+
+ 
+    </div>
+    <div id="chapterTitleDiv" class="col wide-v2 indent-at-xlarge">
+        <!-- this will be chapter title for chapters or header for TOC for books -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="chapter-title">Chapter: Netflow
+	 Monitoring </h2>  
+    
+
+    </div>
+</div>
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <div id="pageContentDiv" class="col wide-v2 indent-at-xlarge" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
+
+    
+ 
+ 
+
+<div id="chapterToc" class="base-blowout">
+    <button><span></span>Chapter Contents</button>
+    <div>
+    
+<ul>
+<li><a href="#topic_21D5D95F3C014897A9B278B168632396">Netflow                              	 Monitoring</a></li>
+<li><a href="#concept_k2x_dxz_22b">NetFlow Monitoring</a></li>
+<li><a href="#netflow-limitations">NetFlow Limitations</a></li>
+<li><a href="#enable_netflow">Enabling or Disabling NetFlow Monitoring</a></li>
+<li><a href="#task_F5D48AA00555439297497295CA2ADA84">Configuring a Flow                              	 Record Definition</a></li>
+<li><a href="#task_B79D9888B19F48D0893F4B4BE5999BA0">Configuring an                              	 Exporter Profile</a></li>
+<li><a href="#task_D33061E2DEFA43099845A3DF8E75385C">Configuring a                              	 Netflow Collector</a></li>
+<li><a href="#task_BF9F2F7EAC874A39B31C4E374EFA415E">Configuring a Flow                              	 Exporter</a></li>
+<li><a href="#task_5F1ECB7963044256B96A47A8C9E6C1D0">Configuring a Flow                              	 Monitor</a></li>
+<li><a href="#task_CD0A063605094E228E6993214C833CB7">Configuring a Flow                              	 Monitor Session</a></li>
+<li><a href="#task_D16710336D844A43AE352234F4874C40">Configuring a                              	 NetFlow Cache Active and Inactive Timeout</a></li>
+<li><a href="#task_D10CCFF22B17458591B7A144E98E2762">Associating a Flow                              	 Monitor Session to a vNIC</a></li></ul>
+    <button id="chapterToc-close">Close<span></span></button>
+    </div>
+</div>
+
+ 
+    <div id="chapterContent">
+    
+                  <h1 class="title topictitle1" id="ariaid-title1">Netflow
+                     	 Monitoring
+                  </h1>
+                  <!-- minitoc start -->
+                  <nav role="navigation" class="related-links">
+                     <ul class="ullinks">
+                        <li class="link ulchildlink"><a href="#concept_k2x_dxz_22b">NetFlow Monitoring</a></li>
+                        <li class="link ulchildlink"><a href="#netflow-limitations">NetFlow Limitations</a></li>
+                        <li class="link ulchildlink"><a href="#enable_netflow">Enabling or Disabling NetFlow Monitoring</a></li>
+                        <li class="link ulchildlink"><a href="#task_F5D48AA00555439297497295CA2ADA84">Configuring a Flow Record Definition</a></li>
+                        <li class="link ulchildlink"><a href="#task_B79D9888B19F48D0893F4B4BE5999BA0">Configuring an Exporter Profile</a></li>
+                        <li class="link ulchildlink"><a href="#task_D33061E2DEFA43099845A3DF8E75385C">Configuring a Netflow Collector</a></li>
+                        <li class="link ulchildlink"><a href="#task_BF9F2F7EAC874A39B31C4E374EFA415E">Configuring a Flow Exporter</a></li>
+                        <li class="link ulchildlink"><a href="#task_5F1ECB7963044256B96A47A8C9E6C1D0">Configuring a Flow Monitor</a></li>
+                        <li class="link ulchildlink"><a href="#task_CD0A063605094E228E6993214C833CB7">Configuring a Flow Monitor Session</a></li>
+                        <li class="link ulchildlink"><a href="#task_D16710336D844A43AE352234F4874C40">Configuring a NetFlow Cache Active and Inactive Timeout</a></li>
+                        <li class="link ulchildlink"><a href="#task_D10CCFF22B17458591B7A144E98E2762">Associating a Flow Monitor Session to a vNIC</a></li>
+                     </ul>
+                  </nav>
+                  <!-- minitoc end -->
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title2" lang="en-US" id="concept_k2x_dxz_22b">
+                     <h2 class="title topictitle2" id="ariaid-title2">NetFlow Monitoring</h2>
+                     <section class="body conbody">
+                        <p class="p">NetFlow is a standard network protocol for collecting IP traffic data. NetFlow enables you to define a flow in terms of unidirectional
+                           IP packets that share certain characteristics. All packets that match the flow definition are collected and exported to one
+                           or more external NetFlow Collectors, where they can be further aggregated, analyzed, and used for application-specific processing.
+                           
+                        </p>
+                        <p class="p"><span class="ph">Cisco UCS Manager</span> uses NetFlow-capable adapters (<span class="ph">Cisco UCS</span>
+                           			<span class="ph">Cisco UCS</span> VIC 1300 series, <span class="ph">Cisco UCS</span> VIC 1400 series<span class="ph">, <span class="ph">Cisco UCS</span> VIC 14000 series, and <span class="ph">Cisco UCS</span> VIC 15000 series</span>) to communicate with the routers and switches that collect and export flow information. 
+                        </p>
+                        		
+                        		
+                        <p class="p">Starting from <span class="ph">4.3(2b)</span> release, NetFlow monitoring is supported on Cisco UCS 6400 and 6500 series Fabric Interconnects.
+                        </p>
+                        		
+                        <p class="p">Starting from <span class="ph">4.3(4b)</span> release, NetFlow monitoring is supported on <span class="ph">Cisco UCS Fabric Interconnects 9108 100G</span> (<span class="ph">Cisco UCS X-Series Direct</span>).
+                        </p>
+                        <section class="section" id="concept_k2x_dxz_22b__section_7B9023E373E34FABA0248D94E2B60765">
+                           <h3 class="title sectiontitle">Network Flows</h3>
+                           			
+                           			
+                           <p class="p">A flow is a set of unidirectional IP packets that have common properties such as, the source or destination of the traffic,
+                              routing information, and protocol used. Flows are collected when they match the definitions in the flow record definition.
+                              
+                           </p>
+                           		
+                        </section>
+                        <section class="section" id="concept_k2x_dxz_22b__section_36D2913EE90D4E5FB68FE296DD937F42">
+                           <h3 class="title sectiontitle">Flow Record Definitions</h3>
+                           			
+                           			
+                           <p class="p">A flow record definition contains information about the properties used to define the flow, which can include both characteristic
+                              properties or measured properties. Characteristic properties, also called flow keys, are the properties that define the flow.
+                              <span class="ph">Cisco UCS Manager</span> supports IPv4, IPv6, and Layer 2 keys. Measured characteristics, also called flow values or non-keys, measurable values such
+                              as the number of bytes contained in all packets of the flow, or the total number of packets. 
+                           </p>
+                           			
+                           <p class="p">A flow record definition is a specific combination of flow keys and flow values. The two types of flow record definitions
+                              are: 
+                           </p>
+                           			
+                           <ul class="ul">
+                              <li class="li" id="concept_k2x_dxz_22b__li_FF82FA976358434F96DCCD4A36AC271C">
+                                 					
+                                 <p class="p"><span class="ph uicontrol">System-defined</span>—Default flow record definitions supplied by <span class="ph">Cisco UCS Manager</span>. 
+                                 </p>
+                                 				
+                              </li>
+                              <li class="li" id="concept_k2x_dxz_22b__li_6C4ACFD4CA314AEB9A842A4E4F15FFC3">
+                                 					
+                                 <p class="p"><span class="ph uicontrol">User-defined</span>—Flow record definitions that you can create yourself. 
+                                 </p>
+                                 				
+                              </li>
+                           </ul>
+                           		
+                        </section>
+                        <section class="section" id="concept_k2x_dxz_22b__section_3AC4CB061CE2463AB28A276427637CC8">
+                           <h3 class="title sectiontitle">Flow Exporters, Flow Exporter Profiles, and Flow Collectors</h3>
+                           			
+                           			
+                           <p class="p">Flow exporters transfer the flows to the flow connector based on the information in a flow exporter profile. The flow exporter
+                              profile contains the networking properties used to export NetFlow packets. The networking properties include a VLAN, the source
+                              IP address, and the subnet mask for each fabric interconnect. 
+                           </p>
+                           			
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr>
+                                       				
+                                       <p class="p">In the <span class="ph">Cisco UCS Manager GUI</span>, the networking properties are defined in an exporter interface that is included in the profile. In the <span class="ph">Cisco UCS Manager CLI</span>, the properties are defined in the profile. 
+                                       </p>
+                                       			
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table>
+                           			
+                           <p class="p">Flow collectors receive the flows from the flow exporter. Each flow collector contains an IP address, port, external gateway
+                              IP, and VLAN that defines where the flows are sent. 
+                           </p>
+                           		
+                        </section>
+                        <section class="section" id="concept_k2x_dxz_22b__section_5F269FEC0BA842A7BCFA38D40F7EE031">
+                           <h3 class="title sectiontitle">Flow Monitors and Flow Monitor Sessions</h3>
+                           			
+                           			
+                           <p class="p">A flow monitor consists of a flow definition, one or two flow exporters, and a timeout policy. You can use a flow monitor
+                              to specify which flow information you want to gather, and where you want to collect it from. Each flow monitor operates in
+                              either the egress or ingress direction. 
+                           </p>
+                           			
+                           <p class="p">A flow monitor session contains up to four flow monitors: two flow monitors in the ingress direction and two flow monitors
+                              in the egress direction. A flow monitor session can also be associated with a vNIC. 
+                           </p>
+                           		
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title3" lang="en-US" id="netflow-limitations">
+                     <h2 class="title topictitle2" id="ariaid-title3">NetFlow Limitations</h2>
+                     <section class="body conbody">
+                        
+                        <p class="p">The following limitations apply to NetFlow monitoring: </p>
+                        
+                        <ul class="ul" id="netflow-limitations__ul_E274C272273F4ACE889736C1DF37CBB7">
+                           
+                           <li class="li" id="netflow-limitations__li_AB3B15942CC44D0DAA74C9447A914E66">
+                              
+                              <p class="p">NetFlow monitoring is supported on Cisco UCS VIC 1300, 1400, 14000, and 15000 series adapters. On Cisco UCS VIC 1200 series
+                                 adapters, NetFlow is not recommended with FCoE traffic.
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">For <span class="ph"><span class="ph">Cisco UCS Fabric Interconnects 9108 100G</span>, </span>Cisco UCS 6500 series, and Cisco UCS 6400 Series Fabric Interconnects:
+                              </p>
+                              
+                              <ul class="ul">
+                                 
+                                 <li class="li">
+                                    
+                                    <p class="p">Netflow monitoring includes both host receive and transmit directions. The NetFlow monitoring session applied to the Host
+                                       Receive Direction Monitor will enable both transmit and receive monitoring, while NetFlow monitoring session applied to the
+                                       Host Transmit Direction Monitor is a NO-OP.
+                                    </p>
+                                    
+                                 </li>
+                                 
+                                 <li class="li">
+                                    
+                                    <p class="p">Vethernet interface netflow monitor will always have <span class="ph uicontrol">NFM_RECORD_L2_SRC_VLAN</span> enabled.
+                                    </p>
+                                    
+                                 </li>
+                                 
+                                 
+                                 <li class="li">
+                                    
+                                    <p class="p"><span class="ph uicontrol">Active Timeout</span> and <span class="ph uicontrol">Inactive Timeout</span> values in <span class="ph uicontrol">Flow Timeout Policy</span> cannot be modified.
+                                    </p>
+                                    
+                                 </li>
+                                 
+                              </ul>
+                              
+                           </li>
+                           
+                           <li class="li" id="netflow-limitations__li_E973D69F97D84E18988C25AF8B87F5F3">
+                              
+                              <p class="p">You can have up to 64 flow record definitions, flow exporters, and flow monitors. </p>
+                              
+                           </li>
+                           
+                           <li class="li" id="netflow-limitations__li_56D8307A5A264C2AB05C2B8B6372BCEB">
+                              
+                              <p class="p">NetFlow is not supported in vNIC template objects.</p>
+                              
+                           </li>
+                           
+                           <li class="li" id="netflow-limitations__li_A9251E18FD9B4EEEB38D4B4C4DCE3797">
+                              
+                              <p class="p">PVLANs and local VLANs are not supported for service VLANs.</p>
+                              
+                           </li>
+                           
+                           <li class="li" id="netflow-limitations__li_397E36D08C0F4CC58A55A394C393EB9A">
+                              
+                              <p class="p">All VLANs must be public and must be common to both fabric interconnects.</p>
+                              
+                           </li>
+                           
+                           <li class="li" id="netflow-limitations__li_CDA006FD2A8641278DC2751064B89C43">
+                              
+                              <p class="p">VLANs must be defined as an exporter interface before they can be used with a flow collector. </p>
+                              
+                           </li>
+                           
+                           <li class="li" id="netflow-limitations__li_20BB7C9ED9E2471B96E6D0DAE01EB63B">
+                              
+                              <p class="p">You cannot use NetFlow with usNIC, Virtual Machine Queue, Virtual Machine Multiple Queues, RoCE, SRIOV, Geneve, or Linux ARFS
+                                 enabled vNIC.
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Enabling NetFlow Monitoring does not allow you to downgrade Cisco UCS Manager software. To downgrade, disable Netflow Monitoring
+                                 feature. 
+                              </p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title4" lang="en-US" id="enable_netflow">
+                     <h2 class="title topictitle2" id="ariaid-title4">Enabling or Disabling NetFlow Monitoring</h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps" id="enable_netflow__steps_EAF99D07CB814C0AB4FC4B5095C018A3">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="enable_netflow__step_25FAC556458C4E8781BAD367F65A6626">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A# <span><span class="keyword kwd">scope eth-flow-mon</span> </span>
+                                       				
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">Enters the ethernet flow monitor mode. </p>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="enable_netflow__step_E8A13711E8BD4462802C4D0FAF04A9F0">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /eth-flow-mon # <span>
+                                          						<var>enable|disable</var> </span>
+                                       				
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">Enables the Netflow feature and deploys any existing configuration present in Cisco UCS Manager onto NX-OS.</p>
+                                       					
+                                       <p class="p">Or, disables the Netflow feature and removes any configuration from the NX-OS. Even when you disable NetFlow monitoring, Cisco
+                                          UCS Manager retains the Netflow configuration and deploys the same configuration when you enable Netflow monitoring.
+                                       </p>
+                                       					
+                                       <table class="olh_note" border="0" role="note">
+                                          <tr>
+                                             <td width="1%" class="olh_note" role="heading" border="0">
+                                                <p><b>Note</b></p>&nbsp;
+                                             </td>
+                                             <td border="0" class="olh_note">
+                                                <section class="note__content">
+                                                   						
+                                                   <p class="p">Disabling Netflow removes all Netflow related configuration from backend. All the flow sessions, which are in use are removed.</p>
+                                                   					
+                                                </section>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="enable_netflow__step_DAF64F033BA34759AAFB5EF9E2120EE9">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /eth-flow-mon # <span><span class="keyword kwd">commit-buffer</span> </span>
+                                       				
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">Commits the transaction to the system configuration. </p>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              		
+                           </tbody>
+                        </table>
+                        <section class="example" id="enable_netflow__example_46BF1D6A8E88401DAB52B0F0EE5C2999">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section>
+                           			
+                           <p class="p">The following example shows how to disable NetFlow monitoring: </p>
+                           			<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope eth-flow-mon</b></kbd>
+UCS-A /eth-flow-mon # <kbd class="userinput"><b class="ph userinput">disable</b></kbd>
+Warning: Disabling Netflow will Remove all Netflow related configuration from backend. 
+All the flow session which is in use will get cleaned up.
+UCS-A /eth-flow-mon* # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+UCS-A /eth-flow-mon # 
+</code></pre>
+                           		</section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title5" lang="en-US" id="task_F5D48AA00555439297497295CA2ADA84">
+                     <h2 class="title topictitle2" id="ariaid-title5">Configuring a Flow
+                        	 Record Definition
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps" id="task_F5D48AA00555439297497295CA2ADA84__steps_EAF99D07CB814C0AB4FC4B5095C018A3">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_F5D48AA00555439297497295CA2ADA84__step_25FAC556458C4E8781BAD367F65A6626">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A# 
+                                       			 <span><span class="keyword kwd">scope
+                                             				  eth-flow-mon</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the
+                                          				ethernet flow monitor mode. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_F5D48AA00555439297497295CA2ADA84__step_E8A13711E8BD4462802C4D0FAF04A9F0">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon # 
+                                       			 <span><span class="keyword kwd">enter flow-record</span> 
+                                          				<var>flow-record-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters flow
+                                          				record mode for the specified flow record. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_F5D48AA00555439297497295CA2ADA84__step_54EA2511D957459B8C2C22A6C1ABB300">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-record # 
+                                       			 <span><span class="keyword kwd">set
+                                             				  keytype</span> {<span class="keyword kwd">ipv4keys</span> | 
+                                          				<span class="keyword kwd">ipv6keys</span> | 
+                                          				<span class="keyword kwd">l2keys</span>} </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				key type. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_F5D48AA00555439297497295CA2ADA84__step_525A828DD64B495F92E63088F9FD0303">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-record # 
+                                       			 <span><span class="keyword kwd">set
+                                             				  ipv4keys</span> {<span class="keyword kwd">dest-port</span> | 
+                                          				<span class="keyword kwd">ip-protocol</span> | 
+                                          				<span class="keyword kwd">ip-tos</span>
+                                          				| 
+                                          				<span class="keyword kwd">ipv4-dest-address</span> | 
+                                          				<span class="keyword kwd">ipv4-src-address</span> | 
+                                          				<span class="keyword kwd">src-port</span>} </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				attributes for the key type that you selected in Step 3. 
+                                          			 
+                                       </p> 
+                                       			 
+                                       <table class="olh_note" border="0" role="note">
+                                          <tr>
+                                             <td width="1%" class="olh_note" role="heading" border="0">
+                                                <p><b>Note</b></p>&nbsp;
+                                             </td>
+                                             <td border="0" class="olh_note">
+                                                <section class="note__content"> 
+                                                   				
+                                                   <p class="p">Use this
+                                                      				  command only if you chose 
+                                                      				  <span><span class="keyword kwd">ipv4keys</span> </span> in
+                                                      				  step 3. 
+                                                      				
+                                                   </p> 
+                                                   			 
+                                                </section>
+                                             </td>
+                                          </tr>
+                                       </table> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_F5D48AA00555439297497295CA2ADA84__step_4CF91D7B3B6D4B648FED136EADC5ABF2">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-record # 
+                                       			 <span><span class="keyword kwd">set
+                                             				  ipv6keys</span> {<span class="keyword kwd">dest-port</span> | 
+                                          				<span class="keyword kwd">ip-protocol</span> | 
+                                          				<span class="keyword kwd">ipv6-dest-address</span> | 
+                                          				<span class="keyword kwd">ipv6-src-address</span> | 
+                                          				<span class="keyword kwd">src-port</span>} </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				attributes for the key type that you selected in Step 3. 
+                                          			 
+                                       </p> 
+                                       			 
+                                       <table class="olh_note" border="0" role="note">
+                                          <tr>
+                                             <td width="1%" class="olh_note" role="heading" border="0">
+                                                <p><b>Note</b></p>&nbsp;
+                                             </td>
+                                             <td border="0" class="olh_note">
+                                                <section class="note__content"> 
+                                                   				
+                                                   <p class="p">Use this
+                                                      				  command only if you chose 
+                                                      				  <span><span class="keyword kwd">ipv6keys</span> </span> in
+                                                      				  Step 3. 
+                                                      				
+                                                   </p> 
+                                                   			 
+                                                </section>
+                                             </td>
+                                          </tr>
+                                       </table> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_F5D48AA00555439297497295CA2ADA84__step_C886BE333CAC4B87980FF0B74800744D">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-record # 
+                                       			 <span><span class="keyword kwd">set
+                                             				  l2keys</span> {<span class="keyword kwd">dest-mac-address</span> | 
+                                          				<span class="keyword kwd">ethertype</span> | 
+                                          				<span class="keyword kwd">src-mac-address</span>} </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				attributes for the key type that you chose in Step 3. 
+                                          			 
+                                       </p> 
+                                       			 
+                                       <table class="olh_note" border="0" role="note">
+                                          <tr>
+                                             <td width="1%" class="olh_note" role="heading" border="0">
+                                                <p><b>Note</b></p>&nbsp;
+                                             </td>
+                                             <td border="0" class="olh_note">
+                                                <section class="note__content"> 
+                                                   				
+                                                   <p class="p">Use this
+                                                      				  command only if you selected 
+                                                      				  <span><span class="keyword kwd">l2keys</span> </span> in step
+                                                      				  3. 
+                                                      				
+                                                   </p> 
+                                                   			 
+                                                </section>
+                                             </td>
+                                          </tr>
+                                       </table> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_F5D48AA00555439297497295CA2ADA84__step_7F5EC9F6976745A8A762459170C71AD0">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-record # 
+                                       			 <span><span class="keyword kwd">set
+                                             				  nonkeys</span> {<span class="keyword kwd">counter-bytes-long</span> | 
+                                          				<span class="keyword kwd">counter-packets-long</span> | 
+                                          				<span class="keyword kwd">sys-uptime-first</span> | 
+                                          				<span class="keyword kwd">sys-uptime-last</span>} </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				nonkey attributes. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_F5D48AA00555439297497295CA2ADA84__step_DAF64F033BA34759AAFB5EF9E2120EE9">
+                                    <p><b>Step&nbsp;8</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-record # 
+                                       			 <span><span class="keyword kwd">commit-buffer</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Commits the
+                                          				transaction to the system configuration. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="task_F5D48AA00555439297497295CA2ADA84__example_46BF1D6A8E88401DAB52B0F0EE5C2999">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section> 
+                           		
+                           <p class="p">The following
+                              		  example shows how to create a flow record definition with Layer 2 keys and
+                              		  commit the transaction: 
+                              		
+                           </p> 
+                           		<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope eth-flow-mon</b></kbd>
+UCS-A /eth-flow-mon # <kbd class="userinput"><b class="ph userinput">enter flow-record r1</b></kbd>
+UCS-A /eth-flow-mon/flow-record* # <kbd class="userinput"><b class="ph userinput">set keytype l2keys</b></kbd>
+UCS-A /eth-flow-mon/flow-record* #<kbd class="userinput"><b class="ph userinput">set l2keys dest-mac-address src-mac-address</b></kbd>
+UCS-A /eth-flow-mon/flow-record* # <kbd class="userinput"><b class="ph userinput">set nonkeys sys-uptime counter-bytes counter-packets</b></kbd>
+UCS-A /eth-flow-mon/flow-record* # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+UCS-A /eth-flow-mon/flow-record # 
+</code></pre> 
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title6" lang="en-US" id="task_B79D9888B19F48D0893F4B4BE5999BA0">
+                     <h2 class="title topictitle2" id="ariaid-title6">Configuring an
+                        	 Exporter Profile
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_B79D9888B19F48D0893F4B4BE5999BA0__step_25FAC556458C4E8781BAD367F65A6626">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A# 
+                                       			 <span><span class="keyword kwd">scope
+                                             				  eth-flow-mon</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the
+                                          				ethernet flow monitor mode. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_B79D9888B19F48D0893F4B4BE5999BA0__step_E8A13711E8BD4462802C4D0FAF04A9F0">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon # 
+                                       			 <span><span class="keyword kwd">scope flow-profile</span> 
+                                          				<var>profile-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the flow
+                                          				profile mode for the specified profile. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_B79D9888B19F48D0893F4B4BE5999BA0__step_54EA2511D957459B8C2C22A6C1ABB300">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-profile # 
+                                       			 <span><span class="keyword kwd">show config</span> 
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Displays the
+                                          				flow profile configuration. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_B79D9888B19F48D0893F4B4BE5999BA0__step_A56F7769E4DE410A8C77C4DC4ECED0E4">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-profile # 
+                                       			 <span><span class="keyword kwd">enter vlan</span> 
+                                          				<var>vlan-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				VLAN associated with the exporter profile. PVLANs and local VLAN are not
+                                          				supported. All VLAN must be public and must be common to both fabric
+                                          				interconnects. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_B79D9888B19F48D0893F4B4BE5999BA0__step_920AD13C32964EB1ACF0AB41C544B2B2">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-profile/vlan # 
+                                       			 <span><span class="keyword kwd">enter
+                                             				  fabric</span> {<span class="keyword kwd">a</span> | 
+                                          				<span class="keyword kwd">b</span>} </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters flow
+                                          				profile mode for the specified fabric. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_B79D9888B19F48D0893F4B4BE5999BA0__step_362AA99C640B4FA18EA506032EE62024">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-profile/vlan/fabric/ # 
+                                       			 <span><span class="keyword kwd">set addr</span> 
+                                          				<var>ip-addr</var> 
+                                          				<span class="keyword kwd">subnet</span>
+                                          				
+                                          				<var>ip-addr</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				source IP and subnet mask for the exporter profile on the fabric. 
+                                          			 
+                                       </p> 
+                                       			 
+                                       <table class="olh_note" border="0" role="note">
+                                          <tr>
+                                             <td width="1%" class="olh_note" role="heading" border="0">
+                                                <p><b>Important</b></p>&nbsp;
+                                             </td>
+                                             <td border="0" class="olh_note">
+                                                <section class="note__content">
+                                                   				
+                                                   <p class="p">Make sure the IP address you specify is unique within the 
+                                                      				  <span class="ph">Cisco UCS domain</span>. IP address conflicts can occur if you specify an IP address that
+                                                      				  is already being used by 
+                                                      				  <span class="ph">Cisco UCS Manager</span>.
+                                                      				
+                                                   </p>
+                                                   			 
+                                                </section>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_B79D9888B19F48D0893F4B4BE5999BA0__step_19E4F7F5540647E2A707BC4A83D25C58">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-profile/vlan/fabric/ # 
+                                       			 <span><span class="keyword kwd">commit-buffer</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Commits the
+                                          				transaction to the system configuration. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="task_B79D9888B19F48D0893F4B4BE5999BA0__example_46BF1D6A8E88401DAB52B0F0EE5C2999">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section> 
+                           		
+                           <p class="p">The following
+                              		  example shows how to configure the default exporter profile, set the source IP
+                              		  and subnet mask for the exporter interface on each fabric, and commit the
+                              		  transaction: 
+                              		
+                           </p> 
+                           		<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope eth-flow-mon</b></kbd>
+UCS-A /eth-flow-mon # <kbd class="userinput"><b class="ph userinput">scope flow-profile default</b></kbd>
+UCS-A /eth-flow-mon/flow-profile # <kbd class="userinput"><b class="ph userinput">enter vlan 100</b></kbd>
+UCS-A /eth-flow-mon/flow-profile/vlan* # <kbd class="userinput"><b class="ph userinput">enter fabric a</b></kbd>
+UCS-A /eth-flow-mon/flow-profile/vlan/fabric* # <kbd class="userinput"><b class="ph userinput">set addr 10.10.10.10 subnet 255.255.255.0</b></kbd>
+UCS-A /eth-flow-mon/flow-profile/vlan/fabric* # <kbd class="userinput"><b class="ph userinput">up</b></kbd>
+UCS-A /eth-flow-mon/flow-profile/vlan* # <kbd class="userinput"><b class="ph userinput">enter fabric b</b></kbd>
+UCS-A /eth-flow-mon/flow-profile/vlan/fabric* # <kbd class="userinput"><b class="ph userinput">set addr 10.10.10.11 subnet 255.255.255.0</b></kbd>
+UCS-A /eth-flow-mon/flow-profile/vlan/fabric* # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+UCS-A /eth-flow-mon/flow-profile/vlan/fabric # 
+</code></pre> 
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title7" lang="en-US" id="task_D33061E2DEFA43099845A3DF8E75385C">
+                     <h2 class="title topictitle2" id="ariaid-title7">Configuring a
+                        	 Netflow Collector
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps" id="task_D33061E2DEFA43099845A3DF8E75385C__steps_EAF99D07CB814C0AB4FC4B5095C018A3">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D33061E2DEFA43099845A3DF8E75385C__step_25FAC556458C4E8781BAD367F65A6626">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A# 
+                                       			 <span><span class="keyword kwd">scope
+                                             				  eth-flow-mon</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the
+                                          				ethernet flow monitor mode. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D33061E2DEFA43099845A3DF8E75385C__step_E8A13711E8BD4462802C4D0FAF04A9F0">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon # 
+                                       			 <span><span class="keyword kwd">enter flow-collector</span> 
+                                          				<var>flow-collector-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the flow
+                                          				collector mode for the specified flow collector. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D33061E2DEFA43099845A3DF8E75385C__step_54EA2511D957459B8C2C22A6C1ABB300">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-collector # 
+                                       			 <span><span class="keyword kwd">set dest-port</span> 
+                                          				<var>port_number</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				destination port for the flow collector. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D33061E2DEFA43099845A3DF8E75385C__step_D9CCE5D80C61429B8D235576A42BAF36">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-collector # 
+                                       			 <span><span class="keyword kwd">set vlan</span> 
+                                          				<var>vlan_id</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				VLAN ID for the flow collector. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D33061E2DEFA43099845A3DF8E75385C__step_7E53F1F7D8674033ADBAA7D09F199174">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-collector # 
+                                       			 <span><span class="keyword kwd">enter ip-if</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters IPv4
+                                          				configuration mode. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D33061E2DEFA43099845A3DF8E75385C__step_8B7BCD40E69B403599084F5BB0479551">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-collector/ip-if # 
+                                       			 <span><span class="keyword kwd">set addr</span> 
+                                          				<var>ip-address</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				exporter IP address. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D33061E2DEFA43099845A3DF8E75385C__step_A8333857E6D248A4BEEE5F6A0AFFBE09">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-collector/ip-if # 
+                                       			 <span><span class="keyword kwd">set exporter-gw</span> 
+                                          				<var>gw-address</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				exporter gateway address. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D33061E2DEFA43099845A3DF8E75385C__step_DAF64F033BA34759AAFB5EF9E2120EE9">
+                                    <p><b>Step&nbsp;8</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-collector/ip-if # 
+                                       			 <span><span class="keyword kwd">commit-buffer</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Commits the
+                                          				transaction to the system configuration. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="task_D33061E2DEFA43099845A3DF8E75385C__example_46BF1D6A8E88401DAB52B0F0EE5C2999">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section> 
+                           		
+                           <p class="p">The following
+                              		  example shows how to configure a NetFlow collector, set the exporter IP and
+                              		  gateway address, and commit the transaction: 
+                              		
+                           </p> 
+                           		<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope eth-flow-mon</b></kbd>
+UCS-A /eth-flow-mon # <kbd class="userinput"><b class="ph userinput">enter flow-collector c1</b></kbd>
+UCS-A /eth-flow-mon/flow-collector* # <kbd class="userinput"><b class="ph userinput">set dest-port 9999</b></kbd>
+UCS-A /eth-flow-mon/flow-collector* # <kbd class="userinput"><b class="ph userinput">set vlan vlan100</b></kbd>
+UCS-A /eth-flow-mon/flow-collector* # <kbd class="userinput"><b class="ph userinput">enter ip-if </b></kbd>
+UCS-A /eth-flow-mon/flow-collector/ip-if* # <kbd class="userinput"><b class="ph userinput">set addr 20.20.20.20</b></kbd>
+UCS-A /eth-flow-mon/flow-collector/ip-if* # <kbd class="userinput"><b class="ph userinput">set exporter-gw 10.10.10.1</b></kbd>
+UCS-A /eth-flow-mon/flow-collector/ip-if* # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+UCS-A /eth-flow-mon/flow-collector/ip-if #
+</code></pre> 
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title8" lang="en-US" id="task_BF9F2F7EAC874A39B31C4E374EFA415E">
+                     <h2 class="title topictitle2" id="ariaid-title8">Configuring a Flow
+                        	 Exporter
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps" id="task_BF9F2F7EAC874A39B31C4E374EFA415E__steps_EAF99D07CB814C0AB4FC4B5095C018A3">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_BF9F2F7EAC874A39B31C4E374EFA415E__step_25FAC556458C4E8781BAD367F65A6626">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A# 
+                                       			 <span><span class="keyword kwd">scope
+                                             				  eth-flow-mon</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the
+                                          				ethernet flow monitor mode. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_BF9F2F7EAC874A39B31C4E374EFA415E__step_E8A13711E8BD4462802C4D0FAF04A9F0">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon # 
+                                       			 <span><span class="keyword kwd">enter flow-exporter</span> 
+                                          				<var>flow-exporter-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the flow
+                                          				exporter mode for the specified flow exporter. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_BF9F2F7EAC874A39B31C4E374EFA415E__step_54EA2511D957459B8C2C22A6C1ABB300">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-exporter # 
+                                       			 <span><span class="keyword kwd">set dscp</span> 
+                                          				<var>dscp_number</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				differentiated services code point. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_BF9F2F7EAC874A39B31C4E374EFA415E__step_D9CCE5D80C61429B8D235576A42BAF36">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-exporter # 
+                                       			 <span><span class="keyword kwd">set flow-collector</span> 
+                                          				<var>flow-collector_name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				flow collector. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_BF9F2F7EAC874A39B31C4E374EFA415E__step_7E53F1F7D8674033ADBAA7D09F199174">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-exporter # 
+                                       			 <span><span class="keyword kwd">set
+                                             				  exporter-stats-timeout</span> 
+                                          				<var>timeout_number</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				timeout period for resending NetFlow flow exporter data. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_BF9F2F7EAC874A39B31C4E374EFA415E__step_DB0BD106551E4D8A89B6C160BBB4C498">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-exporter # 
+                                       			 <span><span class="keyword kwd">set
+                                             				  interface-table-timeout</span> 
+                                          				<var>timeout_number</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				time period for resending the NetFlow flow exporter interface table. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_BF9F2F7EAC874A39B31C4E374EFA415E__step_BB486A85A7964248BBE178A1BF2BC841">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-exporter # 
+                                       			 <span><span class="keyword kwd">set
+                                             				  template-data-timeout</span> 
+                                          				<var>timeout_number</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				timeout period for resending NetFlow template data. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_BF9F2F7EAC874A39B31C4E374EFA415E__step_DAF64F033BA34759AAFB5EF9E2120EE9">
+                                    <p><b>Step&nbsp;8</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-exporter # 
+                                       			 <span><span class="keyword kwd">commit-buffer</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Commits the
+                                          				transaction to the system configuration. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="task_BF9F2F7EAC874A39B31C4E374EFA415E__example_46BF1D6A8E88401DAB52B0F0EE5C2999">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section> 
+                           		
+                           <p class="p">The following
+                              		  example shows how to configure a flow exporter, set the timeout values, and
+                              		  commit the transaction: 
+                              		
+                           </p> 
+                           		<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope eth-flow-mon</b></kbd>
+UCS-A /eth-flow-mon # <kbd class="userinput"><b class="ph userinput">enter flow-exporter ex1</b></kbd>
+UCS-A /eth-flow-mon/flow-exporter* # <kbd class="userinput"><b class="ph userinput">set dscp 6</b></kbd>
+UCS-A /eth-flow-mon/flow-exporter* #<kbd class="userinput"><b class="ph userinput"> set flow-collector c1</b></kbd>
+UCS-A /eth-flow-mon/flow-exporter* # <kbd class="userinput"><b class="ph userinput">set exporter-stats-timeout 600</b></kbd>
+UCS-A /eth-flow-mon/flow-exporter* # <kbd class="userinput"><b class="ph userinput">set interface-table-timeout 600</b></kbd>
+UCS-A /eth-flow-mon/flow-exporter* # <kbd class="userinput"><b class="ph userinput">set template-data-timeout 600</b></kbd>
+UCS-A /eth-flow-mon/flow-exporter* # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+UCS-A /eth-flow-mon/flow-exporter # 
+</code></pre> 
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title9" lang="en-US" id="task_5F1ECB7963044256B96A47A8C9E6C1D0">
+                     <h2 class="title topictitle2" id="ariaid-title9">Configuring a Flow
+                        	 Monitor
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps" id="task_5F1ECB7963044256B96A47A8C9E6C1D0__steps_EAF99D07CB814C0AB4FC4B5095C018A3">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F1ECB7963044256B96A47A8C9E6C1D0__step_25FAC556458C4E8781BAD367F65A6626">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A# 
+                                       			 <span><span class="keyword kwd">scope
+                                             				  eth-flow-mon</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the
+                                          				ethernet flow monitor mode. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F1ECB7963044256B96A47A8C9E6C1D0__step_E8A13711E8BD4462802C4D0FAF04A9F0">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon # 
+                                       			 <span><span class="keyword kwd">enter flow-monitor</span> 
+                                          				<var>flow-monitor-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the flow
+                                          				monitor mode for the specified flow monitor. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F1ECB7963044256B96A47A8C9E6C1D0__step_54EA2511D957459B8C2C22A6C1ABB300">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-monitor # 
+                                       			 <span><span class="keyword kwd">set flow-record</span> 
+                                          				<var>flow-record-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				flow record. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F1ECB7963044256B96A47A8C9E6C1D0__step_A56F7769E4DE410A8C77C4DC4ECED0E4">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-monitor # 
+                                       			 <span><span class="keyword kwd">create flow-exporter</span> 
+                                          				<var>flow-exporter-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				first flow exporter. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F1ECB7963044256B96A47A8C9E6C1D0__step_4896C248A93C44598D3E83086BCBE0B6">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-monitor # 
+                                       			 <span><span class="keyword kwd">create flow-exporter</span> 
+                                          				<var>flow-exporter-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				second flow exporter. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F1ECB7963044256B96A47A8C9E6C1D0__step_DAF64F033BA34759AAFB5EF9E2120EE9">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-monitor # 
+                                       			 <span><span class="keyword kwd">commit-buffer</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Commits the
+                                          				transaction to the system configuration. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="task_5F1ECB7963044256B96A47A8C9E6C1D0__example_46BF1D6A8E88401DAB52B0F0EE5C2999">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section> 
+                           		
+                           <p class="p">The following
+                              		  example shows how to create a flow monitor and commit the transaction: 
+                              		
+                           </p> 
+                           		<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope eth-flow-mon</b></kbd>
+UCS-A /eth-flow-mon # <kbd class="userinput"><b class="ph userinput">enter flow-monitor m1</b></kbd>
+UCS-A /eth-flow-mon/flow-monitor* # <kbd class="userinput"><b class="ph userinput">set flow-record r1</b></kbd>
+UCS-A /eth-flow-mon/flow-monitor* # <kbd class="userinput"><b class="ph userinput">create flow-exporter ex1</b></kbd>
+UCS-A /eth-flow-mon/flow-monitor* # <kbd class="userinput"><b class="ph userinput">create flow-exporter ex2</b></kbd>
+UCS-A /eth-flow-mon/flow-monitor* # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+UCS-A /eth-flow-mon/flow-monitor # 
+</code></pre> 
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title10" lang="en-US" id="task_CD0A063605094E228E6993214C833CB7">
+                     <h2 class="title topictitle2" id="ariaid-title10">Configuring a Flow
+                        	 Monitor Session
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps" id="task_CD0A063605094E228E6993214C833CB7__steps_EAF99D07CB814C0AB4FC4B5095C018A3">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_CD0A063605094E228E6993214C833CB7__step_25FAC556458C4E8781BAD367F65A6626">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A# 
+                                       			 <span><span class="keyword kwd">scope
+                                             				  eth-flow-mon</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the
+                                          				ethernet flow monitor mode. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_CD0A063605094E228E6993214C833CB7__step_E8A13711E8BD4462802C4D0FAF04A9F0">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon # 
+                                       			 <span><span class="keyword kwd">enter flow-mon-session</span> 
+                                          				<var>flow-monitor-session-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the flow
+                                          				monitor session mode for the specified flow monitor session. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_CD0A063605094E228E6993214C833CB7__step_54EA2511D957459B8C2C22A6C1ABB300">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-mon-session # 
+                                       			 <span><span class="keyword kwd">create flow-monitor</span> 
+                                          				<var>flow-monitor-1</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				first flow monitor. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_CD0A063605094E228E6993214C833CB7__step_4896C248A93C44598D3E83086BCBE0B6">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-mon-session # 
+                                       			 <span><span class="keyword kwd">create flow-monitor</span> 
+                                          				<var>flow-monitor-2</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				second flow monitor. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_CD0A063605094E228E6993214C833CB7__step_DAF64F033BA34759AAFB5EF9E2120EE9">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-mon-session # 
+                                       			 <span><span class="keyword kwd">commit-buffer</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Commits the
+                                          				transaction to the system configuration. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="task_CD0A063605094E228E6993214C833CB7__example_46BF1D6A8E88401DAB52B0F0EE5C2999">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section> 
+                           		
+                           <p class="p">The following
+                              		  example shows how to create a flow monitor session with two flow monitors: 
+                              		
+                           </p> 
+                           		<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope eth-flow-mon</b></kbd>
+UCS-A /eth-flow-mon # <kbd class="userinput"><b class="ph userinput">enter flow-mon-session s1</b></kbd>
+UCS-A /eth-flow-mon/flow-mon-session* # <kbd class="userinput"><b class="ph userinput">create flow-monitor m1</b></kbd>
+UCS-A /eth-flow-mon/flow-mon-session* # <kbd class="userinput"><b class="ph userinput">create flow-monitor m2</b></kbd>
+UCS-A /eth-flow-mon/flow-mon-session* # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+UCS-A /eth-flow-mon/flow-mon-session # 
+</code></pre> 
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title11" lang="en-US" id="task_D16710336D844A43AE352234F4874C40">
+                     <h2 class="title topictitle2" id="ariaid-title11">Configuring a
+                        	 NetFlow Cache Active and Inactive Timeout
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps" id="task_D16710336D844A43AE352234F4874C40__steps_EAF99D07CB814C0AB4FC4B5095C018A3">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D16710336D844A43AE352234F4874C40__step_25FAC556458C4E8781BAD367F65A6626">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A# 
+                                       			 <span><span class="keyword kwd">scope
+                                             				  eth-flow-mon</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the
+                                          				ethernet flow monitor mode. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D16710336D844A43AE352234F4874C40__step_E8A13711E8BD4462802C4D0FAF04A9F0">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon # 
+                                       			 <span><span class="keyword kwd">scope flow-timeout</span> 
+                                          				<var>timeout-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the flow
+                                          				timeout mode for the specified flow timeout. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D16710336D844A43AE352234F4874C40__step_54EA2511D957459B8C2C22A6C1ABB300">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-timeout # 
+                                       			 <span><span class="keyword kwd">set
+                                             				  cache-timeout-active</span> 
+                                          				<var>timeout-value</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				active timeout value. This value can be between 60 and 4092 seconds. The
+                                          				default value is 120 seconds. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D16710336D844A43AE352234F4874C40__step_AD5D9D8332974FF49CE17343B3F96AC0">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-timeout # 
+                                       			 <span><span class="keyword kwd">set
+                                             				  cache-timeout-inactive</span> 
+                                          				<var>timeout-value</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Specifies the
+                                          				inactive timeout value. This value can be between 15 and 4092 seconds. The
+                                          				default value is 15 seconds. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D16710336D844A43AE352234F4874C40__step_5EF99122F11A4A9E922BDD9C0A5826CD">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /eth-flow-mon/flow-timeout # 
+                                       			 <span><span class="keyword kwd">commit-buffer</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Commits the
+                                          				transaction to the system configuration. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="task_D16710336D844A43AE352234F4874C40__example_46BF1D6A8E88401DAB52B0F0EE5C2999">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section> 
+                           		
+                           <p class="p">The following
+                              		  example shows how to change the NetFlow timeout values and commit the
+                              		  transaction: 
+                              		
+                           </p> 
+                           		<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope eth-flow-mon</b></kbd>
+UCS-A /eth-flow-mon # <kbd class="userinput"><b class="ph userinput">scope flow-timeout default</b></kbd>
+UCS-A /eth-flow-mon/flow-timeout # <kbd class="userinput"><b class="ph userinput">set cache-timeout-active 1800</b></kbd>
+UCS-A /eth-flow-mon/flow-timeout* # <kbd class="userinput"><b class="ph userinput">set cache-timeout-inactive 20</b></kbd>
+UCS-A /eth-flow-mon/flow-timeout* # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+UCS-A /eth-flow-mon/flow-timeout #
+</code></pre> 
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title12" lang="en-US" id="task_D10CCFF22B17458591B7A144E98E2762">
+                     <h2 class="title topictitle2" id="ariaid-title12">Associating a Flow
+                        	 Monitor Session to a vNIC
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps" id="task_D10CCFF22B17458591B7A144E98E2762__steps_EAF99D07CB814C0AB4FC4B5095C018A3">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D10CCFF22B17458591B7A144E98E2762__step_25FAC556458C4E8781BAD367F65A6626">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A# 
+                                       			 <span><span class="keyword kwd">scope org</span> 
+                                          				<var>org-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the
+                                          				organization mode for the specified organization. To enter the root
+                                          				organization mode, enter 
+                                          				<span><span class="keyword kwd">/</span> </span> as the 
+                                          				<span><var>org-name</var> </span>. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D10CCFF22B17458591B7A144E98E2762__step_E8A13711E8BD4462802C4D0FAF04A9F0">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /org # 
+                                       			 <span><span class="keyword kwd">scope service-profile</span> 
+                                          				<var>profile-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the
+                                          				organization service profile mode for the specified service profile. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D10CCFF22B17458591B7A144E98E2762__step_54EA2511D957459B8C2C22A6C1ABB300">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /org/service-profile # 
+                                       			 <span><span class="keyword kwd">scope vnic</span> 
+                                          				<var>vnic-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the
+                                          				organization service profile mode for the specified vNIC. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D10CCFF22B17458591B7A144E98E2762__step_F8186C70065E451CBDDE666498A9EA33">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /org/service-profile/vnic # 
+                                       			 <span><span class="keyword kwd">enter flow-mon-src</span> 
+                                          				<var>flow-monitor-session-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Associates the
+                                          				flow monitor session to the vNIC. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D10CCFF22B17458591B7A144E98E2762__step_DAF64F033BA34759AAFB5EF9E2120EE9">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A
+                                       			 /org/service-profile/vnic # 
+                                       			 <span><span class="keyword kwd">commit-buffer</span> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Commits the
+                                          				transaction to the system configuration. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="task_D10CCFF22B17458591B7A144E98E2762__example_46BF1D6A8E88401DAB52B0F0EE5C2999">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section> 
+                           		
+                           <p class="p">The following
+                              		  example shows how to associate the flow monitor session s1 to the vNIC eth5: 
+                              		
+                           </p> 
+                           		<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope org /</b></kbd>
+UCS-A /org # <kbd class="userinput"><b class="ph userinput">scope service-profile sp1</b></kbd>
+UCS-A /org/service-profile # <kbd class="userinput"><b class="ph userinput">scope vnic eth5</b></kbd>
+UCS-A /org/service-profile/vnic # <kbd class="userinput"><b class="ph userinput">enter flow-mon-src s1</b></kbd>
+UCS-A /org/service-profile/vnic # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+</code></pre> 
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+               </article>
+            </article>
+         </main>
+      
+
+</div> 
+ 
+    </div>
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent noprint base-blowout">
+    <div class="eotPersonalization">
+        <section id="eotTDCampaign"></section>
+    </div>    
+    <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>Was this Document Helpful?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes" aria-label="Was this Document Helpful?? Yes">Yes</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no" aria-label="Was this Document Helpful?? No">No</button>
+  </span>
+  <span lang="en" class="eot-feedback-olwrap">
+    
+      <a href="javascript: void(0);" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">Feedback</a>
+    
+  </span>
+</div>
+
+
+</div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+    </div>
+			
+    <div class="letUsHelp">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eotLetUsHelp">
+    <h3>Contact Cisco</h3>
+    <ul>
+         <li><a id="eotLetUsHelpProdDocUrl" href="https://mycase.cloudapps.cisco.com/start?prodDocUrl=">Open a Support Case</a><img src="/etc/designs/cdc/fw/i/icon_lock_small.png" alt="login required"/></li>
+        <li>(Requires a <a href="//www.cisco.com/c/en/us/services/order-services.html">Cisco Service Contract</a>)</li>
+    </ul>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        var getURL=jQuery("#eotLetUsHelpProdDocUrl").attr("href"), 
+            domInd = location.href.indexOf('cisco.com') ;
+        if ( domInd > -1 && domInd < location.href.search(/\w\/\w/) ) {
+            getURL += encodeURI(location.href);
+        }
+		jQuery("#eotLetUsHelpProdDocUrl").attr("href",getURL);
+    });
+</script>
+
+
+    </div>
+
+    <div id="eotRightRailMBox"><!--MBox-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IT:components/mbox/banner-mbox:V0.0.0 -->
+
+
+
+<div>
+    <div class="mboxDefault"></div>   
+    <script type="text/javascript">
+        var test="";
+        if(test!=undefined && test.trim().length>0){
+           mboxCreate('en-us_dg_support_bookchapters','type=default','');
+        }else{
+           mboxCreate('en-us_dg_support_bookchapters','type=default');
+        }
+       
+    </script>
+</div>
+<!--MBox--></div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+	<script type="text/javascript">
+			    var eottdatp = document.getElementsByClassName('eot-tdatp');
+			    if (eottdatp && eottdatp.style) {
+        			eottdatp.style.display="none";
+			    }
+        		  </script>
+  	
+
+
+    </div>
+			
+    <div></div>
+
+</div>
+
+
+    </div>
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/us/en/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/clientlibs/responsive/js/books.min.js"></script>
+
+<script src="/etc/designs/cdc/fw/m/books_metricsrule.js" type="text/javascript" async></script>
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>

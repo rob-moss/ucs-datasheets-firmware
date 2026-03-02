@@ -1,4 +1,4 @@
 ---
 agent: agent
 ---
-* Execute the run-all.sh shell script
+* Execute the `fetch_cisco_docs.py` script

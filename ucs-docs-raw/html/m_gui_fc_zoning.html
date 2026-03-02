@@ -1,0 +1,3111 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="en" xml:lang="en"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="en/us";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.cpe === undefined) {
+        window.cpe = {};
+    }
+
+    cpe.accountName = "prod";
+    cpe.config = ["cinf","dsc","pps"];
+    cpe.hideMethod = "elements";
+
+    window.targetGlobalSettings = JSON.parse('{\x22timeout\x22:4000}');
+    window.targetPageParamsAll = () => JSON.parse('{\x22entity\x22:\x22{\\\x22id\\\x22:\\\x221692164963668424\\\x22,\\\x22categoryId\\\x22:\\\x22\\\x22}\x22}');
+
+    
+    const bullseyeLibrary = `/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/external/bullseye.js`;
+
+    import(bullseyeLibrary);
+</script>
+<script src="/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/regional-mbox/regional-mbox.js"></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <title>Cisco UCS Manager Storage Management Guide, Release 4.3 - Fibre Channel
+	 Zoning [Cisco UCS Manager] - Cisco</title>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="Fibre Channel Zoning"  />
+    <meta name="title" content="Cisco UCS Manager Storage Management Guide, Release 4.3 - Fibre Channel
+	 Zoning [Cisco UCS Manager]"  />
+    <meta name="documentId" content="1692164963651423"  />
+    <meta name="templateName" content="book"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="WEM"  />
+    <meta name="docType" content="TSD Products Configuration Guide Chapter"  />
+    <meta name="concept" content="Cisco UCS Manager"  />
+    <meta name="iaPath" content="cisco.com#Products#Cisco Products#Servers - Unified Computing#Cisco UCS Manager"  />
+    <meta name="contentType" content="cisco.com#US#preSales"  />
+    <meta name="locale" content="US"  />
+    <meta name="language" content="en"  />
+    <meta name="country" content="US"  />
+    <meta name="CCID_Page" content="cc001777"  />
+    <meta name="date" content="Wed Apr 30 02:58:04 PDT 2025"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="Cisco UCS Manager Storage Management Guide, Release 4.3 - Fibre Channel
+	 Zoning [Cisco UCS Manager]"  />
+    <meta property="og:description" content="Fibre Channel Zoning"  />
+    <meta property="og:url" content="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_fc_zoning.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_fc_zoning.html"/>
+	
+
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/en\/us\/td\/docs\/unified_computing\/ucs\/ucs\u002Dmanager\/GUI\u002DUser\u002DGuides\/Storage\u002DMgmt\/4\u002D3\/b_ucsm_gui_storage_management_guide_4_3\/m_gui_fc_zoning");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/cisco-sans.min.css" type="text/css">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/books.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", 'You are being logged out.');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "Fibre Channel
+	 Zoning",  		  
+          "url": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_fc_zoning.html",
+          "description": "Fibre Channel Zoning",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="hvck7tyxelwrg2nfbuqq-f-219fa844e-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":52,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"2b706270","ak.r":37441,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"61.68.175.0","ak.cport":51583,"ak.gh":"23.199.68.174","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772424481","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==QaIE6ltQ0TpirWBCgeIwIEiq2i/ygmnartCeDy/X03HoDjwAA9v8wJS/5qQ0nedGgnMvU6LN9ggQbJCqvLi0KQthFRg7Mi7Ry1N1CnKwsIDby1EvB0yUnJLIE/S6qG9chn4PYRFXybKxthDIuvE9lydTBABdkfnwoJP6WkV6piHSt1YxFfMaGHAD2/rWaOOo5fZWpsA6I3NO2769MS3SUBCNjbV5NYa5N+jc48nXopbai9i4PdOmtOlfz6HMFS+iOgxPMDR+KVXBHeHIh7cEGLY5c2l15RFX6wBzY4Xb30HXmnoUibU5fNqq4w/Yhl0MfT3ePlQJ3/D0OCfUVzgytj2oHv1BQgjyErMVg1gcJPOBTCO44A+PaRJRwfiynYcRR0Vrnw/9tmIP5LDFOuCroRDdiw2YWWwTJcDfv75vQZQ=","ak.pv":"540","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body id="wcq" class="fw-res cdc-support cdc-books cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">Skip to content</a></li>
+        <li><a id="skiplink-search" href="#">Skip to search</a></li>
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">Skip to footer</a></li>
+    </ul>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/us/en/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/index.html">Cisco.com Worldwide</a></li>
+            <li><a tabindex="-1" href="/c/en/us/products/index.html">Products and Services</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/solutions/index.html">Solutions</a></li>
+            <li><a tabindex="-1" href="/c/en/us/support/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/c/en/us/training-events.html">Learn</a></li>
+            <li><a tabindex="-1" href="//www.cisco.com/c/en/us/about/sitemap.html">Explore Cisco</a></li>
+            <li><a tabindex="-1" href="/c/en/us/buy.html">How to Buy</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Partners Home</a></li>                
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/cisco-partner-program/index.html?ccid=cc000864&dtid=odiprc001129">Partner Program</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/support-help/index.html">Support</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/tools/index.html?dtid=odiprc001129">Tools</a></li>
+            <li><a tabindex="-1" href="https://locatr.cloudapps.cisco.com/WWChannels/LOCATR/pf/index.jsp#/">Find a Cisco Partner</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/connect-with-a-partner/index.html?ccid=cc000864&dtid=odiprc001129">Meet our Partners</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Become a Cisco Partner</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based user-driven-nav" aria-label="breadcrumbs" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/index.html'><span itemprop='name'>Home</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/index.html'><span itemprop='name'>Support</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/all-products.html'><span itemprop='name'>Product Support</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/category.html'><span itemprop='name'>Servers - Unified Computing</span><meta itemprop='position' content='4' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/series.html'><span itemprop='name'>Cisco UCS Manager</span><meta itemprop='position' content='5' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html'><span itemprop='name'>Configuration Guides</span><meta itemprop='position' content='6' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+        
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">Cisco UCS Manager Storage Management Guide, Release 4.3</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   <!-- have to do this for _g.I18n to be defined in preview and publish modes -->
+  
+  <script type="text/javascript">
+      // initialize dictionary for i18n
+      cdc.util.ensureNamespace("cdc.rc");
+    cdc.rc.eotkeys = {
+        showOnly5Products : "Show Only 5 Products",       
+        showAllRowsProducts : "Show All nRows Products",
+        supportCommunityUrl : "https://community.cisco.com/t5/technology-and-support/ct-p/technology-support",
+        supportCommunity : "Cisco Community",
+        thankYou : "Thank You",
+        viewersAlso : "Customers Also Viewed", 
+        show : "Show", 
+        more : "More", 
+        showOnly3Documents: "Show Only 3 Documents"
+      };
+  </script>
+
+
+
+<div class="row blowout full visitedlinks">
+    <div class="col full">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers techdocs">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button aria-expanded="false" >Bias-Free Language</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>Bias-Free Language</h3>
+            <p>The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. <a href="https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html">Learn more</a> about how Cisco is using Inclusive Language.</p>
+        </div>
+        
+    </div><!-- disclaimers -->
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* this is needed for the translation selector */
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+    var bookTitle = 'Book Title Page';
+</script>
+
+<span id="actionBar-top"></span>
+<section id="actionBar" class="noprint base-blowout">
+    <span class="icons">
+        
+        <button class="bookToc simpleOverlay-trigger" id="onlyforTrigger"> <!--US140575-->
+            Book Contents
+        </button>
+            <div class="bookToc simpleOverlay-content">
+               <div role="heading" class="title">Book Contents</div>
+               <!--googleoff: index--><!--googleoff: snippet-->  
+               <div class="content">
+                  
+
+
+
+<ul id="bookToc">
+    <li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/b_UCSM_GUI_Storage_Management_Guide_preface_00.html">Preface</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_new_and_changed_4-3.html">New and Changed
+	 Information</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_storage_management_overview-3_2.html">Overview</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_san_ports_and_port_channels.html">SAN Ports and Port
+	 Channels</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_fc_zoning.html">Fibre Channel
+	 Zoning</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_named_vsans.html">Named VSANs</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_san_pin_groups.html">SAN Pin
+	 Groups</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_fc_identity_assignment.html">FC Identity
+	 Assignment</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_wwn_pools.html">WWN Pools</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_storage-related_policies.html">Storage-Related
+	 Policies</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_sed_management.html">SED Security Policies</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_m-series_storage_profiles.html">Storage
+	 Profiles</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_mini_storage.html">Mini Storage</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_flexflash_sd_card_support.html">Configuring SD Card Support</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_direct_attached_storage.html">Direct Attached
+	 Storage</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_storage_inventory.html">Storage
+	 Inventory</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_drive-diagnostics.html">Drive Diagnostics</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_storage.html">Cisco UCS S3260 System Storage Management</a></li>
+
+</ul>
+
+
+               </div>
+               <!--googleon: index--><!--googleon: snippet-->               
+            </div>
+
+        
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='versionddcontainer chapter'></div>
+<script type="text/html" class="versionstemp">
+            <div class="versionsdd">
+                <button class="versionbutton" aria-haspopup="true" aria-expanded="false" aria-labelledby="other versions" class="version"><label></label></button>
+                <ul class="versionlist" aria-labelledby="other versions">
+                <%
+                    let pageUrl = window.location.pathname.replace("/content/","/c/").toLowerCase();
+                    if (true) pageUrl = pageUrl.substring(0,pageUrl.lastIndexOf("/"))+".html";
+                    for(let i=0; i< data.length; i++) {
+                        let item = data[i],
+                            myurl = item.linkUrl,
+                            urlm = myurl.replace("/content/","/c/");;
+                            mytitle = item.linkTitle;
+                            myclass= urlm.toLowerCase() == pageUrl ? "class=\"selected\"":""; 
+%>
+                    <li><a href="${myurl}" ${myclass}>${mytitle}</a></li>
+<%
+                  }   %>
+                </ul>
+             </div>
+</script>
+    
+        <span class="utilities">
+          <button title="Search in this Book" class="mobileSearch simpleOverlay-trigger">
+            Search
+          </button>
+          <div class="mobileSearch simpleOverlay-content">
+            <div class="title">Find Matches in This Book</div>
+              <!--googleoff: index--><!--googleoff: snippet-->  
+              <div class="content">
+                <form id="mobileBooksearch" class="chapter">
+                   <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit"></button>
+                   <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+                </form>
+                <div id="overlayResults" role="region" aria-live="polite" >
+                   <!-- important, keep this results div begin end on same line in here -->
+                   <div class="results"></div>
+                </div>
+              </div>
+              <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "Save";
+    cdc.rc.savedoc.saved = "Saved";
+</script>
+
+    <button class="save" aria-expanded="false" aria-label="Save">
+        <label>Save</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_fc_zoning.html">Log in</a> to Save Content
+    </div>
+
+
+          <!-- Translation Selctor -->
+          <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+ 
+
+
+ 
+          <div class="translations simpleOverlay-content" role="dialog" id="dialogt" aria-labelledby="onlyForNonEN" aria-modal="true">
+            <div role="heading" class="title">Available Languages</div>
+               <!--googleoff: index--><!--googleoff: snippet--> 
+            <script language="javascript">                    
+                cdc.translations.map = "{en-us=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_fc_zoning.html, x-default=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_fc_zoning.html}";//storing the map for use in the JS
+                cdc.translations.locale="en_us";
+            </script>
+            <div class="content">
+              <div class="availableLanguagesList">
+                  <ul id="translationsList">
+                  </ul> 
+              </div>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+          
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // stored value for overlay label to use in js
+    var downloadOPtionLabel = 'Download Options',
+    	bookSearchlabel = 'Find Matches in This Book',
+    	translationsLabel = 'Translations',
+    	bookConentLabel= 'Book Contents';
+</script>
+
+
+        
+
+
+
+        <button title="Document Download Options" id="dwnld-button" class="downloadOptions simpleOverlay-trigger" aria-expanded="false">
+            Download
+        </button>
+        <div class="downloadOptions simpleOverlay-content" role="dialog" id="dialogd" aria-labelledby="dwnld-button" aria-modal="true" class="default_dialog">
+            <div role="heading" class="title">Download Options</div>
+            <!--googleoff: index--><!--googleoff: snippet-->  
+            <div class="content">
+                <header>
+
+                    <h3 class="h4"> Book Title</p>
+                    <p>Cisco UCS Manager Storage Management Guide, Release 4.3</p>
+                    <p class="h4"> Chapter Title</p>
+                    <h3>Fibre Channel
+	 Zoning</p>
+
+                </header>
+                <ul>
+
+                        <li >    
+                            <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3.pdf" class="pdfIcon">PDF - Complete Book 
+                            <span>(4.82 MB)</span></a>
+
+                                   <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_fc_zoning.pdf" class="chapter">PDF - This Chapter <span>(1.05 MB)</span></a>
+                                                            
+                            <p>View with Adobe Reader on a variety of devices</p>
+                        </li>                                  
+              </ul>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+        </div>
+
+          <button title="Print Friendly Page" class="print simpleOverlay-trigger">
+              Print
+          </button>
+        </span> 
+    </span>
+    <form id="booksearch" tabindex="0" class="chapter">
+       <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+       <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+    </form>
+      <div id="searchresult" role="region" aria-live="polite"><button class="close" title="Close Panel"><span></span><span></span></button>
+         <span class="headArrow"></span>
+         <h2>Results</h2>
+         <div class="matches">
+         </div>
+         <div class="results" tabindex="0">
+         </div>
+      </div>
+      <div id="searchResultChapterTitle"></div>
+</section>
+<script type="text/html" id="navigateMatchesTemplate">
+   <div>
+      <button class="up on" title="Previous Match"><span></span></button>
+      <button class="up off" title="Previous Match Not Available"><span></span></button>
+      <span class="matchlabel">Matches</span>
+      <button class="down on" title="Next Match"><span></span></button>
+      <button class="down off" title="Next Match Not Available"><span></span></button>
+   </div>
+</script>
+<script type="text/html" id="noChapterMatchTemplate">
+   <p>There are no Matches in this chapter.</p>
+</script>
+<script type="text/html" id="searchResultsListTemplate">
+   <p class="h3">Chapters with Matches</p>
+   <ul>
+<% var i = 0;
+    while ( modelData.links[i] ) {  %>
+      <li>
+<%     curpage = (window.location.pathname.indexOf(modelData.links[i].href) > -1 )?true:false;
+        if ( i === modelData.curpage ) {
+            if ( ! jQuery('.mobileSearch').css("display") == "block") { %>
+               <span class="currentIndicator"></span>${modelData.links[i].title}
+<%         } else {                %>
+               <span class="currentIndicator"></span><button class="curpage" data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%         }
+        } else {  %>
+            <button data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%     }  %>            
+      </li> 
+<% i++;
+    } %>
+   </ul> 
+</script>      
+<script type="text/html" id="noBookMatchTemplate">
+   <p class="head">No matches found in this book</p>
+   <p>This feature looks for an exact match of what you entered in the box.</p>
+   <p>If you entered several words, try reducing the entry to one or two and search again.</p>
+</script>
+<script type="text/html" id="errorTemplate">
+   <p>Search is currently unavailable due to technical issues. We are working to resolve the problem as quickly as possible.</p>
+</script>
+<script type="text/html" id="mobileSearchFooterTemplate">
+   <div id="mobileSearchFooter">
+      <button class="mobileSearch" title="Search in this Book"></button>
+      <button class="closeFooter"><span></span><span></span></button>
+      <div class="matches"> 
+      </div>
+   </div>   
+</script>
+ 
+    </div>
+</div>
+<div class="row blowout narrow-wide-v2 flip visitedlinks">
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div id="documentInfo">
+                  <dl>
+                     
+                      <dt>Updated:</dt><dd> April 30, 2025</dd>
+                     
+                  </dl>
+                    
+              </div>
+
+ 
+    </div>
+    <div id="chapterTitleDiv" class="col wide-v2 indent-at-xlarge">
+        <!-- this will be chapter title for chapters or header for TOC for books -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="chapter-title">Chapter: Fibre Channel
+	 Zoning </h2>  
+    
+
+    </div>
+</div>
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <div id="pageContentDiv" class="col wide-v2 indent-at-xlarge" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
+
+    
+ 
+ 
+
+<div id="chapterToc" class="base-blowout">
+    <button><span></span>Chapter Contents</button>
+    <div>
+    
+<ul>
+<li><a href="#topic_073EEA11AAC145D283801D67F2F02CEC">Fibre Channel                              	 Zoning</a></li>
+<li><a href="#concept_3E1E752359B843C69488357F6400E9A6">Information About Fibre Channel Zoning</a>
+<ul>
+<li><a href="#concept_09D087534EB649F5B3181A12C858042D">Information About Zones</a></li>
+<li><a href="#concept_A6867CE8A7AC45B68A0B450AEA3B5C2B">Information About                              	 Zone Sets</a></li>
+</ul></li>
+<li><a href="#concept_7156BDFE58844C10A9F931C0E2112A38">Support for Fibre                              	 Channel Zoning in                               	 Cisco UCS Manager</a>
+<ul>
+<li><a href="#concept_11FECC7937E243E89B4F1A357BB853BC">Cisco UCS Manager-Based Fibre Channel Zoning</a>
+<ul>
+<li><a href="#concept_8FBC34C6485A40B2B8DDDC6DCE9009DA">vHBA Initiator Groups</a></li>
+<li><a href="#concept_26CCFE994BC5478397E8ABF656758395">Fibre Channel                              	 Storage Connection Policy</a></li>
+<li><a href="#concept_B35B473D09094EDB9C8B779266DD8F1A">Fibre Channel Active Zone Set Configuration</a></li>
+</ul></li>
+<li><a href="#concept_58B0D8A39AE94804ABD2BB8E4195BDF1">Switch-Based Fibre Channel Zoning</a></li>
+</ul></li>
+<li><a href="#concept_E9B158B2715749E38082253C0E0BF0BC">Guidelines and recommendations for Cisco UCS Manager-Based Fibre Channel Zoning</a></li>
+<li><a href="#task_DE14E1F55C004D1AB682C64D9D8BAF54">Configuring Fibre                              	 Channel Zoning</a></li>
+<li><a href="#task_A0BD3CCE95334E90A4F4AF98A8AFBAAE">Creating a VSAN for Fibre Channel Zoning</a></li>
+<li><a href="#task_F73C19BA819C4954A7BB246FC080ABDF">Creating a New Fibre                              	 Channel Zone Profile</a></li>
+<li><a href="#id_28619">Deleting a Fibre                              	 Channel Zone Profile</a></li>
+<li><a href="#task_1FB524E9D2BC4CBD839F9D9B92767AE9">Deleting a Fibre                              	 Channel User Zone</a></li>
+<li><a href="#d2818e1732a1635"> Fibre Channel Storage Connection Policies</a>
+<ul>
+<li><a href="#task_4A3D12BCB6F24E12BBC4EB58FC571391">Deleting a Fibre Channel Storage Connection Policy</a></li></ul></li></ul>
+    <button id="chapterToc-close">Close<span></span></button>
+    </div>
+</div>
+
+ 
+    <div id="chapterContent">
+    
+                  <h1 class="title topictitle1" id="ariaid-title1">Fibre Channel
+                     	 Zoning
+                  </h1>
+                  <section class="body"></section>
+                  <!-- minitoc start -->
+                  <nav role="navigation" class="related-links">
+                     <ul class="ullinks">
+                        <li class="link ulchildlink"><a href="#concept_3E1E752359B843C69488357F6400E9A6">Information About Fibre Channel Zoning</a></li>
+                        <li class="link ulchildlink"><a href="#concept_7156BDFE58844C10A9F931C0E2112A38">Support for Fibre Channel Zoning in Cisco UCS Manager</a></li>
+                        <li class="link ulchildlink"><a href="#concept_E9B158B2715749E38082253C0E0BF0BC">Guidelines and recommendations for Cisco UCS Manager-Based Fibre Channel Zoning</a></li>
+                        <li class="link ulchildlink"><a href="#task_DE14E1F55C004D1AB682C64D9D8BAF54">Configuring Fibre Channel Zoning</a></li>
+                        <li class="link ulchildlink"><a href="#task_A0BD3CCE95334E90A4F4AF98A8AFBAAE">Creating a VSAN for Fibre Channel Zoning</a></li>
+                        <li class="link ulchildlink"><a href="#task_F73C19BA819C4954A7BB246FC080ABDF">Creating a New Fibre Channel Zone Profile</a></li>
+                        <li class="link ulchildlink"><a href="#id_28619">Deleting a Fibre Channel Zone Profile</a></li>
+                        <li class="link ulchildlink"><a href="#task_1FB524E9D2BC4CBD839F9D9B92767AE9">Deleting a Fibre Channel User Zone</a></li>
+                     </ul>
+                  </nav>
+                  <!-- minitoc end -->
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title2" lang="en-US" id="concept_3E1E752359B843C69488357F6400E9A6">
+                     <h2 class="title topictitle2" id="ariaid-title2">Information About Fibre Channel Zoning</h2>
+                     <section class="body conbody">
+                        <p class="p">Fibre Channel zoning allows you to partition the  Fibre Channel fabric into one or more  zones. Each zone defines the set
+                           of Fibre Channel initiators and Fibre Channel targets that can communicate with each other in a VSAN. Zoning also enables
+                           you to set up access control between hosts and storage devices or user groups.
+                        </p>
+                        <p class="p">The access and data traffic control provided by zoning does the following:</p>
+                        <ul class="ul">
+                           <li class="li" id="concept_3E1E752359B843C69488357F6400E9A6__li_A5A67C98076349D7A81D01CC37DD4AA8">
+                              <p class="p">Enhances SAN network security</p>
+                           </li>
+                           <li class="li" id="concept_3E1E752359B843C69488357F6400E9A6__li_2D62022D2DFB442A97F79948C2B1F236">
+                              <p class="p">Helps prevent data loss or corruption</p>
+                           </li>
+                           <li class="li" id="concept_3E1E752359B843C69488357F6400E9A6__li_EC2B3663DD064CAF8A3E222CE976D073">
+                              <p class="p">Reduces performance issues</p>
+                           </li>
+                        </ul>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links">
+                        <ul class="ullinks">
+                           <li class="link ulchildlink"><a href="#concept_09D087534EB649F5B3181A12C858042D">Information About Zones</a></li>
+                           <li class="link ulchildlink"><a href="#concept_A6867CE8A7AC45B68A0B450AEA3B5C2B">Information About Zone Sets</a></li>
+                        </ul>
+                     </nav>
+                     <!-- minitoc end -->
+                     <article class="topic concept nested2" aria-labelledby="ariaid-title3" lang="en-US" id="concept_09D087534EB649F5B3181A12C858042D">
+                        <h3 class="title topictitle3" id="ariaid-title3">Information About Zones</h3>
+                        <section class="body conbody">
+                           <p class="p">A zone consists of multiple zone members and has the following characteristics:</p>
+                           <ul class="ul">
+                              <li class="li" id="concept_09D087534EB649F5B3181A12C858042D__li_5FC2E0F70B4E4E0C9EC27BBD453AF8D1">
+                                 
+                                 
+                                 
+                                 <p class="p">Members in a zone can access each other; members in different zones cannot access each other.</p>
+                                 
+                                 
+                                 
+                              </li>
+                              <li class="li" id="concept_09D087534EB649F5B3181A12C858042D__li_0145C740D4B7464BA8F4FCAA988041E9">
+                                 
+                                 
+                                 
+                                 <p class="p">Zones can vary in size.</p>
+                                 
+                                 
+                                 
+                              </li>
+                              <li class="li" id="concept_09D087534EB649F5B3181A12C858042D__li_89DFD5ACD4FA437BA5B36A5CA29D698B">
+                                 
+                                 
+                                 
+                                 <p class="p">Devices can belong to more than one zone.</p>
+                                 
+                                 
+                                 
+                              </li>
+                              <li class="li" id="concept_09D087534EB649F5B3181A12C858042D__li_164F8A0090EC41E9A141B5F3E850EDF8">
+                                 
+                                 
+                                 
+                                 <p class="p">A physical fabric can have a maximum of 8,000 zones.</p>
+                                 
+                                 
+                                 
+                              </li>
+                           </ul>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic concept nested2" aria-labelledby="ariaid-title4" lang="en-US" id="concept_A6867CE8A7AC45B68A0B450AEA3B5C2B">
+                        <h3 class="title topictitle3" id="ariaid-title4">Information About
+                           	 Zone Sets
+                        </h3>
+                        <section class="body conbody">
+                           <p class="p"> Each zone set
+                              		consists of one or more zones. You can use zone sets to enforce access control
+                              		within the Fibre Channel fabric. In addition, zone sets provide you with the
+                              		following advantages:
+                              	 
+                           </p>
+                           <ul class="ul" id="concept_A6867CE8A7AC45B68A0B450AEA3B5C2B__ul_9AABFB2F68E44122985CDFC6C2988DB7">
+                              <li class="li" id="concept_A6867CE8A7AC45B68A0B450AEA3B5C2B__li_AE8100CB72FE4B47990A17EC9D7240AA"> 
+                                 		  
+                                 <p class="p">Only one zone set
+                                    			 can be active at any time.
+                                    		  
+                                 </p> 
+                                 		
+                              </li>
+                              <li class="li" id="concept_A6867CE8A7AC45B68A0B450AEA3B5C2B__li_E416DC2E760547BB812A1894E424C16F"> 
+                                 		  
+                                 <p class="p">All zones in a
+                                    			 zone set can be activated or deactivated as a single entity across all switches
+                                    			 in the fabric.
+                                    		  
+                                 </p> 
+                                 		
+                              </li>
+                              <li class="li" id="concept_A6867CE8A7AC45B68A0B450AEA3B5C2B__li_14EF9DBCF4524760830C98C52D44E5A9">
+                                 		  
+                                 <p class="p">Changes to a zone
+                                    			 set are not applied until the zone set has been activated. If you make changes
+                                    			 to the active zone set, you must reactivate that zone set to apply the changes.
+                                    		  
+                                 </p>
+                                 		
+                              </li>
+                              <li class="li" id="concept_A6867CE8A7AC45B68A0B450AEA3B5C2B__li_0DF06C339EB24398B927DCD9A6A45DAD"> 
+                                 		  
+                                 <p class="p">A zone can be a
+                                    			 member of more than one zone set.
+                                    		  
+                                 </p> 
+                                 		
+                              </li>
+                              <li class="li" id="concept_A6867CE8A7AC45B68A0B450AEA3B5C2B__li_C3B25FBB6844417DA5318DCF7A52FE50"> 
+                                 		  
+                                 <p class="p">A switch in a zone
+                                    			 can have a maximum of 500 zone sets.
+                                    		  
+                                 </p> 
+                                 		
+                              </li>
+                           </ul>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title5" lang="en-US" id="concept_7156BDFE58844C10A9F931C0E2112A38">
+                     <h2 class="title topictitle2" id="ariaid-title5">Support for Fibre
+                        	 Channel Zoning in 
+                        	 <span class="ph">Cisco UCS Manager</span></h2>
+                     <section class="body conbody">
+                        <section class="section" id="concept_7156BDFE58844C10A9F931C0E2112A38__section_B529574EE0FF41AFAF0A7A8B26B92BB2">
+                           		
+                           <p class="p"><span class="ph">Cisco UCS Manager</span>
+                              		  supports switch-based Fibre Channel zoning and 
+                              		  <span class="ph">Cisco UCS Manager</span>-based
+                              		  Fibre Channel zoning. You cannot configure a combination of zoning types in the
+                              		  same 
+                              		  <span class="ph">Cisco UCS domain</span>.
+                              		  You can configure a 
+                              		  <span class="ph">Cisco UCS domain</span>
+                              		  with one of the following types of zoning:
+                              		
+                           </p>
+                           		
+                           <ul class="ul">
+                              <li class="li" id="concept_7156BDFE58844C10A9F931C0E2112A38__li_9804B988E289436D88F3BF9F738F512F">
+                                 			 
+                                 <p class="p"><span class="ph">Cisco UCS Manager</span>-based
+                                    				Fibre Channel zoning—This configuration combines direct attach storage with
+                                    				local zoning. Fibre Channel or FCoE storage is directly connected to the fabric
+                                    				interconnects and zoning is performed in 
+                                    				<span class="ph">Cisco UCS Manager</span>,
+                                    				using 
+                                    				<span class="ph">Cisco UCS</span>
+                                    				local zoning. Any existing Fibre Channel or FCoE uplink connections need to be
+                                    				disabled. 
+                                    				<span class="ph">Cisco UCS</span>
+                                    				does not currently support active Fibre Channel or FCoE uplink connections
+                                    				coexisting with the utilization of the UCS Local Zoning feature.
+                                    			 
+                                 </p>
+                                 		  
+                              </li>
+                              <li class="li" id="concept_7156BDFE58844C10A9F931C0E2112A38__li_BA90190766F2461F974A0F6EEBE20F67">
+                                 			 
+                                 <p class="p">Switch-based
+                                    				Fibre Channel zoning—This configuration combines direct attach storage with
+                                    				uplink zoning. The Fibre Channel or FCoE storage is directly connected to the
+                                    				fabric interconnects and zoning is performed externally to the 
+                                    				<span class="ph">Cisco UCS domain</span>
+                                    				through an MDS or Nexus 5000 switch. This configuration does not support local
+                                    				zoning in the 
+                                    				<span class="ph">Cisco UCS domain</span>.
+                                    			 
+                                 </p>
+                                 		  
+                              </li>
+                           </ul>
+                           		
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr>
+                                       		  
+                                       <p class="p">Zoning is
+                                          			 configured on a per-VSAN basis. You cannot enable zoning at the fabric level.
+                                          		  
+                                       </p>
+                                       		
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table>
+                           	 
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links">
+                        <ul class="ullinks">
+                           <li class="link ulchildlink"><a href="#concept_11FECC7937E243E89B4F1A357BB853BC">Cisco UCS Manager-Based Fibre Channel Zoning</a></li>
+                           <li class="link ulchildlink"><a href="#concept_58B0D8A39AE94804ABD2BB8E4195BDF1">Switch-Based Fibre Channel Zoning</a></li>
+                        </ul>
+                     </nav>
+                     <!-- minitoc end -->
+                     <article class="topic concept nested2" aria-labelledby="ariaid-title6" lang="en-US" id="concept_11FECC7937E243E89B4F1A357BB853BC">
+                        <h3 class="title topictitle3" id="ariaid-title6"><span class="ph">Cisco UCS Manager</span>-Based Fibre Channel Zoning
+                        </h3>
+                        <section class="body conbody">
+                           <p class="p">With <span class="ph">Cisco UCS Manager</span>-based zoning, <span class="ph">Cisco UCS Manager</span> controls the Fibre Channel zoning configuration for the  <span class="ph">Cisco UCS domain</span>, including creating and activating zones for all VSANs that you set up with this type of zoning. This type of zoning is also
+                              know as local zoning or direct attach storage with local zoning. 
+                           </p>
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr>
+                                       <p class="p">You cannot implement <span class="ph">Cisco UCS Manager</span>-based zoning if the VSAN is also configured to communicate with a VSAN on  an upstream switch and includes Fibre Channel
+                                          or FCoE uplink ports.
+                                       </p>
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table>
+                           <section class="section" id="concept_11FECC7937E243E89B4F1A357BB853BC__section_C09D5D7F9B3647E28CA4E83FA9E86380">
+                              <h4 class="title sectiontitle">Supported Fibre Channel Zoning Modes</h4>
+                              <p class="p"><span class="ph">Cisco UCS Manager</span>-based zoning supports the following types of zoning:
+                              </p>
+                              <ul class="ul">
+                                 <li class="li" id="concept_11FECC7937E243E89B4F1A357BB853BC__li_777B72DDA4A24FC680C2BA921D6E87DB">
+                                    <p class="p">Single initiator single target—<span class="ph" id="concept_11FECC7937E243E89B4F1A357BB853BC__ph_SingleInitiatorSingleTarget"><span class="ph">Cisco UCS Manager</span> automatically creates one zone for each vHBA and storage port pair. Each zone has two members. We recommend that you configure
+                                          this type of zoning unless you expect the number of zones to exceed the maximum supported.</span></p>
+                                 </li>
+                                 <li class="li" id="concept_11FECC7937E243E89B4F1A357BB853BC__li_FDF2D225EC664EF7B9D9441E2A195476">
+                                    <p class="p">Single initiator multiple targets—<span class="ph" id="concept_11FECC7937E243E89B4F1A357BB853BC__ph_SingleInitiatorMultipleTargets"><span class="ph">Cisco UCS Manager</span> automatically creates one zone for each vHBA. We recommend that you configure this type of zoning if you expect the number
+                                          of zones to reach or exceed the maximum supported.</span></p>
+                                 </li>
+                              </ul>
+                           </section>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links">
+                           <ul class="ullinks">
+                              <li class="link ulchildlink"><a href="#concept_8FBC34C6485A40B2B8DDDC6DCE9009DA">vHBA Initiator Groups</a></li>
+                              <li class="link ulchildlink"><a href="#concept_26CCFE994BC5478397E8ABF656758395">Fibre Channel Storage Connection Policy</a></li>
+                              <li class="link ulchildlink"><a href="#concept_B35B473D09094EDB9C8B779266DD8F1A">Fibre Channel Active Zone Set Configuration</a></li>
+                           </ul>
+                        </nav>
+                        <!-- minitoc end -->
+                        <article class="topic concept nested3" aria-labelledby="ariaid-title7" lang="en-US" id="concept_8FBC34C6485A40B2B8DDDC6DCE9009DA">
+                           <h4 class="title topictitle4" id="ariaid-title7">vHBA Initiator Groups</h4>
+                           <section class="body conbody">
+                              <p class="p">vHBA initiator groups determine the Fibre Channel zoning configuration for all vHBAs in a service profile.  <span class="ph">Cisco UCS Manager</span> does not include any default vHBA initiator groups. You must  create vHBA initiator groups in any service profile that is
+                                 to be assigned to servers included in a zone. 
+                              </p>
+                              <p class="p">The configuration in a vHBA initiator group determines  the following:</p>
+                              <ul class="ul">
+                                 <li class="li" id="concept_8FBC34C6485A40B2B8DDDC6DCE9009DA__li_115D07319BE2403C92C214C49EA92822">
+                                    <p class="p">The vHBAs included in the initiator group, which are sometimes  referred to as vHBA initiators.</p>
+                                 </li>
+                                 <li class="li" id="concept_8FBC34C6485A40B2B8DDDC6DCE9009DA__li_6DA2A0988F07437CB19C9476BCC0D2BB">
+                                    <p class="p">A Fibre Channel storage connection policy, which includes the associated VSAN and the Fibre Channel target ports on the storage
+                                       array.
+                                    </p>
+                                 </li>
+                                 <li class="li" id="concept_8FBC34C6485A40B2B8DDDC6DCE9009DA__li_05CABFF0DFEE4FC0A5F030E101618AAD">
+                                    <p class="p">The type of Fibre Channel zoning to be configured for the vHBAs included in the group.</p>
+                                 </li>
+                              </ul>
+                           </section>
+                           <!-- minitoc start -->
+                           <nav role="navigation" class="related-links"></nav>
+                           <!-- minitoc end -->
+                        </article>
+                        <article class="topic concept nested3" aria-labelledby="ariaid-title8" lang="en-US" id="concept_26CCFE994BC5478397E8ABF656758395">
+                           <h4 class="title topictitle4" id="ariaid-title8">Fibre Channel
+                              	 Storage Connection Policy
+                           </h4>
+                           <section class="body conbody">
+                              <p class="p">The Fibre Channel
+                                 		storage connection policy contains a collection of target storage ports on
+                                 		storage arrays that you use to configure 
+                                 		<span class="ph">Cisco UCS Manager</span>-based
+                                 		Fibre Channel zoning. You can create this policy under an organization or an
+                                 		initiator group.
+                                 	 
+                              </p>
+                              <p class="p">The storage arrays in
+                                 		these zones must be directly connected to the fabric interconnects. The target
+                                 		storage ports on these arrays that you include in the Fibre Channel storage
+                                 		connection policy can be either Fibre Channel storage ports or FCoE storage
+                                 		ports. You use the WWN of a port to add it to the policy and to identify the
+                                 		port for the Fibre Channel zone.
+                                 	 
+                              </p>
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr>
+                                          		
+                                          <p class="p"><span class="ph">Cisco UCS Manager</span>
+                                             		  does not create default Fibre Channel storage.
+                                             		
+                                          </p>
+                                          	 
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </section>
+                           <!-- minitoc start -->
+                           <nav role="navigation" class="related-links"></nav>
+                           <!-- minitoc end -->
+                        </article>
+                        <article class="topic concept nested3" aria-labelledby="ariaid-title9" lang="en-US" id="concept_B35B473D09094EDB9C8B779266DD8F1A">
+                           <h4 class="title topictitle4" id="ariaid-title9">Fibre Channel Active Zone Set Configuration</h4>
+                           <section class="body conbody">
+                              <p class="p">In each VSAN that has been enabled for Fibre Channel zoning, <span class="ph">Cisco UCS Manager</span> automatically configures one zone set and multiple zones. The zone membership specifies the set of initiators and targets
+                                 that are allowed to communicate with each other. <span class="ph">Cisco UCS Manager</span> automatically activates that zone set.
+                              </p>
+                              <p class="p"><span class="ph">Cisco UCS Manager</span> processes the user-configured vHBA initiator groups and their associated Fibre Channel storage connection policy to determine
+                                 the desired connectivity between Fibre Channel initiators and targets. <span class="ph">Cisco UCS Manager</span> uses the following information to build pair-wise zone membership between initiators and targets:
+                              </p>
+                              <ul class="ul">
+                                 <li class="li" id="concept_B35B473D09094EDB9C8B779266DD8F1A__li_06E3538C1C5B4B1EB0419D70D25121C0">
+                                    <p class="p">The port WWNs of the vHBA initiators derived from  the vHBA initiator groups.</p>
+                                 </li>
+                                 <li class="li" id="concept_B35B473D09094EDB9C8B779266DD8F1A__li_D479FFC20786450BA46ADA5D1002A9D2">
+                                    <p class="p">The port WWNs of the storage array derived from the storage connection policy.</p>
+                                 </li>
+                              </ul>
+                           </section>
+                           <!-- minitoc start -->
+                           <nav role="navigation" class="related-links"></nav>
+                           <!-- minitoc end -->
+                        </article>
+                     </article>
+                     <article class="topic concept nested2" aria-labelledby="ariaid-title10" lang="en-US" id="concept_58B0D8A39AE94804ABD2BB8E4195BDF1">
+                        <h3 class="title topictitle3" id="ariaid-title10">Switch-Based Fibre Channel Zoning</h3>
+                        <section class="body conbody">
+                           <p class="p">With switch-based zoning, a  <span class="ph">Cisco UCS domain</span> inherits the zoning configuration from the upstream switch. You cannot configure or view information about your zoning configuration
+                              in  <span class="ph">Cisco UCS Manager</span>. You have to disable zoning on a VSAN in <span class="ph">Cisco UCS Manager</span> to use switch-based zoning for that VSAN.
+                           </p>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title11" lang="en-US" id="concept_E9B158B2715749E38082253C0E0BF0BC">
+                     <h2 class="title topictitle2" id="ariaid-title11">Guidelines and recommendations for <span class="ph">Cisco UCS Manager</span>-Based Fibre Channel Zoning
+                     </h2>
+                     <section class="body conbody">
+                        <p class="p">When you plan your configuration for Fibre Channel zoning, consider the following guidelines and recommendations:</p>
+                        <section class="section" id="concept_E9B158B2715749E38082253C0E0BF0BC__section_6214D431F142413B8FE3FB24FFD22B2C">
+                           <h3 class="title sectiontitle">Fibre Channel Switching Mode Must Be Switch Mode for <span class="ph">Cisco UCS Manager</span> Configurations
+                           </h3>
+                           <p class="p">If you want <span class="ph">Cisco UCS Manager</span> to handle Fibre Channel zoning, the fabric interconnects must be in Fibre Channel Switch mode. You cannot configure Fibre
+                              Channel zoning in End-Host mode.
+                           </p>
+                        </section>
+                        <section class="section" id="concept_E9B158B2715749E38082253C0E0BF0BC__section_FB70A5B870794A6B97A45465B5586823">
+                           <h3 class="title sectiontitle">Symmetrical Configuration Is Recommended for High Availability</h3>
+                           <p class="p">If a <span class="ph">Cisco UCS domain</span>  is configured for high availability with two fabric interconnects, we recommend that both fabric interconnects are configured
+                              with the same set of VSANs.
+                           </p>
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title12" lang="en-US" id="task_DE14E1F55C004D1AB682C64D9D8BAF54">
+                     <h2 class="title topictitle2" id="ariaid-title12">Configuring Fibre
+                        	 Channel Zoning
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__context_D2B85C19D5D14FA491309A2E9E8CAE32"> 
+                           		
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr> 
+                                       		  
+                                       <p class="p">This procedure
+                                          			 provides a high level overview of the steps required to configure a 
+                                          			 <span class="ph">Cisco UCS domain</span> for Fibre Channel zoning that is controlled by 
+                                          			 <span class="ph">Cisco UCS Manager</span>.
+                                          			 You must ensure that you complete all of the following steps.
+                                          		  
+                                       </p> 
+                                       		
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table> 
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__step_E071521060484D65AC3E0E84E800CA8C">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">If you have not
+                                       			 already done so, disconnect the fabric interconnects in the 
+                                       			 <span class="ph">Cisco UCS domain</span> from any external Fibre Channel switches, such as an MDS. 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose"></td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__step_01CF4AB15CC04D30B591681C8851F623">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">If the 
+                                       			 <span class="ph">Cisco UCS domain</span> still includes zones that were managed by the external Fibre
+                                       			 Channel switch, run the 
+                                       			 <span><span class="keyword kwd">clear-unmanaged-fc-zone-all</span> </span> command on every
+                                       			 affected VSAN to remove those zones. 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">This
+                                          				functionality is not currently available in the 
+                                          				<span class="ph">Cisco UCS Manager GUI</span>.
+                                          				You must perform this step in the 
+                                          				<span class="ph">Cisco UCS Manager CLI</span>.
+                                          				
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__step_A52F61322D8A429F8A5D39FDA51FE987">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">Configure the
+                                       			 Fibre Channel switching mode for both fabric interconnects in Fibre Channel
+                                       			 Switch mode. 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">You cannot
+                                          				configure Fibre Channel zoning in End-Host mode. See 
+                                          				<a class="xref" href="m_direct_attached_storage.html#task_B6E0C2A15FE84D498503ADC19CDB160B">Configuring Fibre Channel Switching Mode</a>.
+                                          				
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__step_6033F75326DD49ACB314D102762E472F">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">Configure the
+                                       			 Fibre Channel and FCoE storage ports that you require to carry traffic for the
+                                       			 Fibre Channel zones. 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">See 
+                                          				<a class="xref" href="m_gui_san_ports_and_port_channels.html#task_A33D13CA58924EB1AD35EBA473B92625">Configuring an Ethernet Port as an FCoE Storage Port</a>
+                                          				and 
+                                          				<a class="xref" href="m_gui_san_ports_and_port_channels.html#task_684142421BB74218AB63FFB7E7D47626">Configuring a Fibre Channel Storage Port</a>.
+                                          				
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__step_40CE646057A54834A01CB9472D46AE75">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">Create one or
+                                       			 more VSANs and enable Fibre Channel zoning on all VSANs that you require to
+                                       			 carry traffic for the Fibre Channel zones. 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">For a cluster
+                                          				configuration, we recommend that you create the VSANs that you intend to
+                                          				include in a Fibre Channel zone 
+                                          				<span class="ph">in the SAN Uplinks Manager and use the
+                                             				  common/global configuration to ensure they are 
+                                             				</span> accessible to both fabric interconnects. See 
+                                          				<a class="xref" href="#task_A0BD3CCE95334E90A4F4AF98A8AFBAAE">Creating a VSAN for Fibre Channel Zoning</a>.
+                                          				
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__step_BE1E25519516448798696A721676C7C4">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">Create one or
+                                       			 more Fibre Channel storage connection policies. 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">You can perform
+                                          				this step when you configure Fibre Channel zoning in the service profiles, if
+                                          				you prefer. See 
+                                          				<a class="xref" href="#task_A0BD3CCE95334E90A4F4AF98A8AFBAAE">Creating a VSAN for Fibre Channel Zoning</a>.
+                                          				
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__step_9E575F39DFFA48ED8FF6E23F521BE348">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">Configure zoning
+                                       			 in service profiles or service profile templates for servers that need to
+                                       			 communicate through Fibre Channel zones. 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Complete the
+                                          				following steps to complete this configuration: 
+                                          			 
+                                       </p> 
+                                       			 
+                                       <ul class="ul">
+                                          <li class="li" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__li_8399F2B5868145D1A51A1647E35372FB"> 
+                                             				  
+                                             <p class="p">Enable
+                                                					 zoning in the VSAN or VSANs assigned to the vHBAs. See 
+                                                					 <a class="xref" href="#task_A0BD3CCE95334E90A4F4AF98A8AFBAAE">Creating a VSAN for Fibre Channel Zoning</a>
+                                                					 
+                                                				  
+                                             </p> 
+                                             				
+                                          </li>
+                                          <li class="li" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__li_5B586367D612453994E042F8E0EC1024"> 
+                                             				  
+                                             <p class="p">Configure
+                                                					 one or more vHBA initiator groups. See 
+                                                					 <a class="xref" href="m_direct_attached_storage.html#task_5A6F2261CE4645038ACA1288ED7A338D">Creating a Service Profile with the Expert Wizard</a>.
+                                                					 
+                                                				  
+                                             </p> 
+                                             				
+                                          </li>
+                                       </ul> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links">
+                        <ul class="ullinks">
+                           <li class="link ulchildlink"><a href="#task_A4B3F995CF8747D4BB13B66700DBC687">Creating a Fibre Channel Storage Connection Policy</a></li>
+                           <li class="link ulchildlink"><a href="#task_5A6F2261CE4645038ACA1288ED7A338D">Creating a Service Profile with the Expert Wizard</a></li>
+                           <li class="link ulchildlink"><a href="#task_64FBDFB2355A45D78157390D10F5631D">Associating a Service Profile with a Server or Server Pool</a></li>
+                           <li class="link ulchildlink"><a href="#task_DC3C0A9175F742CF967695E126ECBD77">Verifying Fibre Channel Zoning Configuration</a></li>
+                           <li class="link ulchildlink"><a href="#task_43A7B2D750E540378994F796D0ACF907">Troubleshooting Fibre Channel Zoning Configuration</a></li>
+                        </ul>
+                     </nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title13" lang="en-US" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE">
+                     <h2 class="title topictitle2" id="ariaid-title13">Creating a VSAN for Fibre Channel Zoning</h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__context_D81B3DE8B18D4563AA03BA3E44C16FDA"> 
+                           		 
+                           	 
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr> 
+                                       		  
+                                       <p class="p">FCoE VLANs in
+                                          			 the SAN cloud and VLANs in the LAN cloud must have different IDs. Using the
+                                          			 same ID for an FCoE VLAN in a VSAN and a VLAN results in a critical fault and
+                                          			 traffic disruption for all vNICs and uplink ports using that FCoE VLAN.
+                                          			 Ethernet traffic is dropped on any VLAN with an ID that overlaps with an FCoE
+                                          			 VLAN ID. 
+                                          		  
+                                       </p> 
+                                       		
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table>
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              <tr class="li step" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__step_0AE1F389189B4907973BA454517528FD">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">SAN</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__step_782437E3FC7344819DDDF9436CC71763">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">On the <span class="ph uicontrol">SAN</span> tab, click the <span class="ph uicontrol">SAN</span> node.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__step_720E2DEC577647E08815676C0B6D9976">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Work</span> pane, click the 
+                                       			 <span class="ph uicontrol">SAN
+                                          				Uplinks Manager</span> link on the 
+                                       			 <span class="ph uicontrol">SAN
+                                          				Uplinks</span> tab. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup stepresult"> 
+                                       			 
+                                       <p class="p">The SAN
+                                          				Uplinks Manager opens in a separate window. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__step_718363F06CF441BC9BF99ECF57F21C08">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the SAN
+                                       			 Uplinks Manager, click the 
+                                       			 <span class="ph uicontrol">VSAN</span> tab. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">You can create
+                                          				the VSAN on any of the subtabs. However, if you use the 
+                                          				<span class="ph uicontrol">All</span> subtab, you can view all of the configured VSANs
+                                          				in the table. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__step_A27749CE4288490F980D496C4E8CA150">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> On the icon
+                                       			 bar to the right of the table, click 
+                                       			 <span class="ph uicontrol">+</span>. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">If the 
+                                          				<span class="ph uicontrol">+</span> icon is disabled, click an entry in the table to
+                                          				enable it. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__step_CreateVSANdb">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Create VSAN</span> dialog box, complete the following
+                                       			 fields: 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <table width="100%" border="1" class="table" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__table_2FE18E71FDAF4B85A7F0F1D4AF7D8EBB">
+                                          <caption></caption>
+                                          <colgroup>
+                                             <col style="width:33.33333333333333%">
+                                             <col style="width:66.66666666666666%">
+                                          </colgroup>
+                                          <thead class="thead">
+                                             <tr>
+                                                <th font-weight="bold" class="entry" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__table_2FE18E71FDAF4B85A7F0F1D4AF7D8EBB__entry__1">Name</th>
+                                                <th font-weight="bold" class="entry" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__table_2FE18E71FDAF4B85A7F0F1D4AF7D8EBB__entry__2">Description</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody class="tbody">
+                                             <tr>
+                                                <td class="entry" headers="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__table_2FE18E71FDAF4B85A7F0F1D4AF7D8EBB__entry__1 ">
+                                                   
+                                                   <p class="p">
+                                                      <span class="ph"><span class="ph uicontrol">Name</span> field</span>
+                                                      
+                                                   </p>
+                                                   
+                                                </td>
+                                                <td class="entry" headers="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__table_2FE18E71FDAF4B85A7F0F1D4AF7D8EBB__entry__2 ">
+                                                   
+                                                   <p class="p">The name assigned to the network.</p>
+                                                   
+                                                   <p class="p">This
+                                                      		  name can be between 1 and 32 alphanumeric characters. You cannot use spaces or
+                                                      		  any special characters other than - (hyphen), _ (underscore), : (colon), and .
+                                                      		  (period), and you cannot change this name after the object is saved. 
+                                                      		
+                                                   </p>
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__table_2FE18E71FDAF4B85A7F0F1D4AF7D8EBB__entry__1 ">
+                                                   <p class="p"><span class="ph" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__FCzoningRadioButton"><span class="ph uicontrol">FC Zoning</span> field</span></p>
+                                                </td>
+                                                <td class="entry" headers="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__table_2FE18E71FDAF4B85A7F0F1D4AF7D8EBB__entry__2 ">
+                                                   <p class="p" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__FCzoningDesc">Click the radio button to determine whether <span class="ph">Cisco UCS Manager</span> configures Fibre Channel zoning for the <span class="ph">Cisco UCS domain</span>. This can be one of the following:
+                                                   </p>
+                                                   <ul class="ul" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__FCzoningValues">
+                                                      <li class="li" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__d102e271">
+                                                         <p class="p"><span class="ph uicontrol">Disabled</span>—The upstream switch handles Fibre Channel zoning, or Fibre Channel zoning is not implemented for the <span class="ph">Cisco UCS domain</span>. <span class="ph">Cisco UCS Manager</span> does not configure Fibre Channel zoning.
+                                                         </p>
+                                                      </li>
+                                                      <li class="li" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__d102e282">
+                                                         <p class="p"><span class="ph uicontrol">Enabled</span>—<span class="ph">Cisco UCS Manager</span> configures and controls Fibre Channel zoning for the <span class="ph">Cisco UCS domain</span>.
+                                                         </p>
+                                                      </li>
+                                                   </ul>
+                                                   <table class="olh_note" border="0" role="note">
+                                                      <tr>
+                                                         <td width="1%" class="td_faq" role="heading" border="0">
+                                                            <p><b>Note</b></p>&nbsp;
+                                                         </td>
+                                                         <td border="0" class="td_faq">
+                                                            <section class="note__content">
+                                                               <p class="p"> If you enable Fibre Channel zoning through <span class="ph">Cisco UCS Manager</span>, do not configure the upstream switch with any VSANs that are being used for Fibre Channel zoning.
+                                                               </p>
+                                                            </section>
+                                                         </td>
+                                                      </tr>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__table_2FE18E71FDAF4B85A7F0F1D4AF7D8EBB__entry__1 ">
+                                                   
+                                                   <p class="p"><span class="ph uicontrol">Type</span> radio button
+                                                   </p>
+                                                   
+                                                </td>
+                                                <td class="entry" headers="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__table_2FE18E71FDAF4B85A7F0F1D4AF7D8EBB__entry__2 ">
+                                                   
+                                                   <p class="p">Click the radio button to determine how the VSAN should be configured. This can be one of the following:</p>
+                                                   
+                                                   <ul class="ul" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__d101e82">
+                                                      <li class="li" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__d101e83">
+                                                         
+                                                         <p class="p">
+                                                            <span class="ph uicontrol">Common/Global</span>—The VSAN maps to the same VSAN ID in all available fabrics.
+                                                         </p>
+                                                         
+                                                      </li>
+                                                      <li class="li" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__d101e91">
+                                                         
+                                                         <p class="p">
+                                                            <span class="ph uicontrol">Fabric A</span>—The VSAN maps to the a VSAN ID that exists only in fabric A.
+                                                         </p>
+                                                         
+                                                      </li>
+                                                      <li class="li" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__d101e99">
+                                                         
+                                                         <p class="p">
+                                                            <span class="ph uicontrol">Fabric B</span>—The VSAN maps to the a VSAN ID that exists only in fabric B.
+                                                         </p>
+                                                         
+                                                      </li>
+                                                      <li class="li" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__d101e107">
+                                                         
+                                                         <p class="p">
+                                                            <span class="ph uicontrol">Both Fabrics Configured Differently</span>—The VSAN maps to a different VSAN ID in each available fabric. If you choose this option, <span class="ph">Cisco UCS Manager GUI</span> displays  a <span class="ph uicontrol">VSAN ID</span> field and a <span class="ph uicontrol">FCoE VLAN</span>
+                                                            field for each fabric.
+                                                         </p>
+                                                         
+                                                      </li>
+                                                   </ul>
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__table_2FE18E71FDAF4B85A7F0F1D4AF7D8EBB__entry__1 ">
+                                                   
+                                                   <p class="p">
+                                                      <span class="ph uicontrol">VSAN ID</span> field
+                                                   </p>
+                                                   
+                                                </td>
+                                                <td class="entry" headers="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__table_2FE18E71FDAF4B85A7F0F1D4AF7D8EBB__entry__2 ">
+                                                   
+                                                   <p class="p">The unique identifier assigned to the network.</p>
+                                                   
+                                                   <p class="p">The ID can be between 1 and 4078, or  between 4080 and 4093. 4079 is a reserved VSAN ID. In addition, if you plan to use FC
+                                                      end-host mode, the range between 3840 to 4079 is also a reserved VSAN ID range.
+                                                   </p>
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__table_2FE18E71FDAF4B85A7F0F1D4AF7D8EBB__entry__1 ">
+                                                   
+                                                   <p class="p">
+                                                      <span class="ph uicontrol">FCoE VLAN</span>
+                                                      field
+                                                   </p>
+                                                   
+                                                </td>
+                                                <td class="entry" headers="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__table_2FE18E71FDAF4B85A7F0F1D4AF7D8EBB__entry__2 ">
+                                                   
+                                                   <p class="p">The unique identifier
+                                                      						assigned to the VLAN used for Fibre Channel connections. 
+                                                      					 
+                                                   </p>
+                                                   <p class="p">VLAN 4048 is user configurable. However, 
+                                                      		  <span class="ph">Cisco UCS Manager</span> uses VLAN 4048 for the following default values. If you want to
+                                                      		  assign 4048 to a VLAN, you must reconfigure these values: 
+                                                      		
+                                                   </p>
+                                                   <ul class="ul">
+                                                      <li class="li" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__d67e859"> 
+                                                         			 
+                                                         <p class="p">After an
+                                                            				upgrade to 
+                                                            				<span class="ph">Cisco UCS</span>, Release 2.0—The FCoE storage port native VLAN uses VLAN 4048 by
+                                                            				default. If the default FCoE VSAN was set to use VLAN 1 before the upgrade, you
+                                                            				must change it to a VLAN ID that is not used or reserved. For example, consider
+                                                            				changing the default to 4049 if that VLAN ID is not in use. 
+                                                            			 
+                                                         </p> 
+                                                         		  
+                                                      </li>
+                                                      <li class="li" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__d67e867"> 
+                                                         			 
+                                                         <p class="p">After a fresh
+                                                            				install of 
+                                                            				<span class="ph">Cisco UCS</span>, Release 2.0—The FCoE VLAN for the default VSAN uses VLAN 4048 by
+                                                            				default. The FCoE storage port native VLAN uses VLAN 4049. 
+                                                            			 
+                                                         </p> 
+                                                         		  
+                                                      </li>
+                                                   </ul>
+                                                   
+                                                   <p class="p">For FIP-capable, converged network adapters, such as the Cisco UCS CNA M72KR-Q and the Cisco UCS CNA M72KR-E, the named VSAN
+                                                      must be configured with a named VLAN that is not the native VLAN for the FCoE VLAN ID. This configuration ensures that FCoE
+                                                      traffic can pass through these adapters.
+                                                   </p>
+                                                   
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A0BD3CCE95334E90A4F4AF98A8AFBAAE__step_D943B9A9876645A2855C06B8739D6C03">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click <span class="ph uicontrol">OK</span>.
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title14" lang="en-US" id="task_F73C19BA819C4954A7BB246FC080ABDF">
+                     <h2 class="title topictitle2" id="ariaid-title14">Creating a New Fibre
+                        	 Channel Zone Profile
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_F73C19BA819C4954A7BB246FC080ABDF__context_D81B3DE8B18D4563AA03BA3E44C16FDA"> Perform the following
+                           		procedure to create a new Fibre Channel Zone Profile. 
+                           	 
+                        </section>
+                        <section class="section prereq p" id="task_F73C19BA819C4954A7BB246FC080ABDF__prereq_BC944DE8A34D43B6A7B0642E3CCF3E85">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section> 
+                           		
+                           <p class="p">Ensure that the VSAN
+                              		  is created for the Fiber Channel Zoning. 
+                              		
+                           </p> 
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              <tr class="li step" id="task_F73C19BA819C4954A7BB246FC080ABDF__step_0AE1F389189B4907973BA454517528FD">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">SAN</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_F73C19BA819C4954A7BB246FC080ABDF__step_782437E3FC7344819DDDF9436CC71763">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">On the 
+                                       			 <span class="ph uicontrol">SAN</span> tab, click 
+                                       			 <span class="ph uicontrol">Storage
+                                          				Cloud</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_F73C19BA819C4954A7BB246FC080ABDF__step_D5541DD0C7884470AD52A43AF98A1AF7">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Right-click 
+                                       			 <span class="ph uicontrol">FC Zone
+                                          				Profiles</span> and choose 
+                                       			 <span class="ph uicontrol"> Create
+                                          				FC Zone Profile</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_F73C19BA819C4954A7BB246FC080ABDF__step_7BCD46B584064AABBC8FDD3C4707F806">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Create
+                                          				FC Zone Profile</span> dialog box, complete the following fields: 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <table width="100%" border="1" class="table" id="task_F73C19BA819C4954A7BB246FC080ABDF__table_307E364D729E4C03BC07D0778BC60177">
+                                          <caption></caption>
+                                          <colgroup>
+                                             <col style="width:50%">
+                                             <col style="width:50%">
+                                          </colgroup>
+                                          <thead class="thead">
+                                             <tr>
+                                                <th font-weight="bold" class="entry" id="task_F73C19BA819C4954A7BB246FC080ABDF__table_307E364D729E4C03BC07D0778BC60177__entry__1"> 
+                                                   						  
+                                                   <p class="p">Field 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </th>
+                                                <th font-weight="bold" class="entry" id="task_F73C19BA819C4954A7BB246FC080ABDF__table_307E364D729E4C03BC07D0778BC60177__entry__2"> 
+                                                   						  
+                                                   <p class="p">Description 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </th>
+                                             </tr>
+                                          </thead>
+                                          <tbody class="tbody">
+                                             <tr>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_307E364D729E4C03BC07D0778BC60177__entry__1 "> 
+                                                   						  
+                                                   <p class="p"><span class="ph uicontrol">Name</span> field 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_307E364D729E4C03BC07D0778BC60177__entry__2 "> 
+                                                   						  
+                                                   <p class="p">A name for the profile. 
+                                                      						  
+                                                   </p> 
+                                                   						  
+                                                   <p class="p">This name can be between 1 and 32 alphanumeric
+                                                      							 characters. You cannot use spaces or any special characters other than -
+                                                      							 (hyphen), _(underscore), : (colon), and . (period), and you cannot change this
+                                                      							 name after the object is saved. 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_307E364D729E4C03BC07D0778BC60177__entry__1 "> 
+                                                   						  
+                                                   <p class="p"><span class="ph uicontrol">Description</span> field 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_307E364D729E4C03BC07D0778BC60177__entry__2 "> 
+                                                   						  
+                                                   <p class="p">This field is optional. Enter a brief description of the
+                                                      							 zone profile. 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_307E364D729E4C03BC07D0778BC60177__entry__1 "> 
+                                                   						  
+                                                   <p class="p"><span class="ph uicontrol">FC Zoning</span> radio button 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_307E364D729E4C03BC07D0778BC60177__entry__2 "> 
+                                                   						  
+                                                   <p class="p">Select the desired state of the zone profile. 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_307E364D729E4C03BC07D0778BC60177__entry__1 "> 
+                                                   						  
+                                                   <p class="p"><span class="ph uicontrol">FC User Zones</span> 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_307E364D729E4C03BC07D0778BC60177__entry__2 "> 
+                                                   						  
+                                                   <p class="p">Click the 
+                                                      							 <span class="ph uicontrol">+</span> icon on the right of the table
+                                                      							 to create FC User Zone. The 
+                                                      							 <span class="keyword wintitle">Create FC User Zone</span> window is
+                                                      							 displayed. Continue to next step for details to create FC user zone. 
+                                                      						  
+                                                   </p> 
+                                                   						  
+                                                   <section class="p"> 
+                                                      							 
+                                                      <table class="olh_note" border="0" role="note">
+                                                         <tr>
+                                                            <td width="1%" class="td_faq" role="heading" border="0">
+                                                               <p><b>Note</b></p>&nbsp;
+                                                            </td>
+                                                            <td border="0" class="td_faq">
+                                                               <section class="note__content">If 
+                                                                  								<span class="ph uicontrol">+</span> icon is disabled, click an
+                                                                  								entry in the table to enable it. 
+                                                                  							 
+                                                               </section>
+                                                            </td>
+                                                         </tr>
+                                                      </table> 
+                                                      						  
+                                                   </section> 
+                                                   						
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_F73C19BA819C4954A7BB246FC080ABDF__step_7BD4758BBA5649F1B3EDC20CB689F762">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Complete the
+                                       			 following fields in the 
+                                       			 <span class="keyword wintitle">Create
+                                          				FC User Zone</span> dialog box: 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <table width="100%" border="1" class="table" id="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB">
+                                          <caption></caption>
+                                          <colgroup>
+                                             <col style="width:50%">
+                                             <col style="width:50%">
+                                          </colgroup>
+                                          <thead class="thead">
+                                             <tr>
+                                                <th font-weight="bold" class="entry" id="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__1"> 
+                                                   						  
+                                                   <p class="p">Field 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </th>
+                                                <th font-weight="bold" class="entry" id="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__2"> 
+                                                   						  
+                                                   <p class="p">Description 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </th>
+                                             </tr>
+                                          </thead>
+                                          <tbody class="tbody">
+                                             <tr>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__1 "> 
+                                                   						  
+                                                   <p class="p"><span class="ph uicontrol">Name</span> field 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__2 "> 
+                                                   						  
+                                                   <p class="p">A name for the FC Zone. 
+                                                      						  
+                                                   </p> 
+                                                   						  
+                                                   <p class="p">This name can be between 1 and 32 alphanumeric
+                                                      							 characters. You cannot use spaces or any special characters other than -
+                                                      							 (hyphen), _(underscore), : (colon), and . (period), and you cannot change this
+                                                      							 name after the object is saved. 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__1 "> 
+                                                   						  
+                                                   <p class="p"><span class="ph uicontrol">Path</span> radio button 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__2 "> 
+                                                   						  
+                                                   <section class="p">Click the radio button to determine how the VSAN should
+                                                      							 be configured. Following options are available: 
+                                                      						  
+                                                      <ul class="ul">
+                                                         <li class="li" id="task_F73C19BA819C4954A7BB246FC080ABDF__li_FB0B9E8EFFF34B279FA7194D9EE738D5"> 
+                                                            								
+                                                            <p class="p"><span class="ph uicontrol">Path A</span>—The VSAN path to the
+                                                               								  VSAN ID that exists only in fabric A. 
+                                                               								
+                                                            </p> 
+                                                            							 
+                                                         </li>
+                                                         <li class="li" id="task_F73C19BA819C4954A7BB246FC080ABDF__li_15BCFFECA7514A539AD4F0A5D8120B1A"> 
+                                                            								
+                                                            <p class="p"><span class="ph uicontrol">Path B</span>—The VSAN path to the
+                                                               								  VSAN ID that exists only in fabric B. 
+                                                               								
+                                                            </p> 
+                                                            							 
+                                                         </li>
+                                                      </ul> 
+                                                      						  
+                                                   </section> 
+                                                   						
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__1 task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__2 " colspan="2"> 
+                                                   						  
+                                                   <table class="olh_note" border="0" role="note">
+                                                      <tr>
+                                                         <td width="1%" class="td_faq" role="heading" border="0">
+                                                            <p><b>Note</b></p>&nbsp;
+                                                         </td>
+                                                         <td border="0" class="td_faq">
+                                                            <section class="note__content"> 
+                                                               							 
+                                                               <section class="p">Perform one of the following to select a VSAN: 
+                                                                  							 
+                                                                  <ul class="ul">
+                                                                     <li class="li" id="task_F73C19BA819C4954A7BB246FC080ABDF__li_110A7B2C70074429BCCD8995DF8222C2"> 
+                                                                        								  
+                                                                        <p class="p"><span class="ph uicontrol">Select VSAN</span> 
+                                                                           								  
+                                                                        </p> 
+                                                                        								
+                                                                     </li>
+                                                                     <li class="li" id="task_F73C19BA819C4954A7BB246FC080ABDF__li_7AAF1B12D081463AAFEC91A712CDB889"> 
+                                                                        								  
+                                                                        <p class="p"><span class="ph uicontrol">Create VSAN</span> 
+                                                                           								  
+                                                                        </p> 
+                                                                        								
+                                                                     </li>
+                                                                     <li class="li" id="task_F73C19BA819C4954A7BB246FC080ABDF__li_99EA466533294911BAF45B4B145ABFD0"> 
+                                                                        								  
+                                                                        <p class="p"><span class="ph uicontrol">Create Storage VSAN</span> 
+                                                                           								  
+                                                                        </p> 
+                                                                        								
+                                                                     </li>
+                                                                  </ul> 
+                                                                  							 
+                                                               </section> 
+                                                               						  
+                                                            </section>
+                                                         </td>
+                                                      </tr>
+                                                   </table> 
+                                                   						
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__1 "> 
+                                                   						  
+                                                   <p class="p"><span class="ph uicontrol">Select VSAN</span> drop-down list 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__2 "> 
+                                                   						  
+                                                   <p class="p">The unique identifier assigned to the VSANs that exists
+                                                      							 already in the network. 
+                                                      						  
+                                                   </p> 
+                                                   						  
+                                                   <p class="p">The ID can be between 1 and 4078, or between 4080 and
+                                                      							 4093. 4079 is a reserved VSAN ID. You cannot configure fibre channel zoning in
+                                                      							 end-host mode. 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__1 "> 
+                                                   						  
+                                                   <p class="p"><span class="ph uicontrol">Create VSAN</span> link 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__2 "> 
+                                                   						  
+                                                   <p class="p">Click the 
+                                                      							 <span class="ph uicontrol">+</span> icon to create a new VSAN in a
+                                                      							 new window. This allows you to perform the same task as in 
+                                                      							 <a class="xref" href="#task_A0BD3CCE95334E90A4F4AF98A8AFBAAE">Creating a VSAN for Fibre Channel Zoning</a>.
+                                                      							 After creating the VSAN, you can return here and continue creating channel zone
+                                                      							 profile. 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__1 "> 
+                                                   						  
+                                                   <p class="p"><span class="ph uicontrol">Create Storage VSAN</span> link 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__2 "> 
+                                                   						  
+                                                   <p class="p">Click the 
+                                                      							 <span class="ph uicontrol">+</span> icon to create a new storage
+                                                      							 VSAN in a new window. This allows you to perform the same task as in 
+                                                      							 <a class="xref" href="#task_A0BD3CCE95334E90A4F4AF98A8AFBAAE">Creating a VSAN for Fibre Channel Zoning</a>.
+                                                      							 After creating the VSAN, you can return here and continue creating channel zone
+                                                      							 profile. 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__1 "> 
+                                                   						  
+                                                   <p class="p"><span class="ph uicontrol">Member WWPNs</span> 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                                <td class="entry" headers="task_F73C19BA819C4954A7BB246FC080ABDF__table_56E0F1C2E3D94D679BDA2D1527E378EB__entry__2 "> 
+                                                   						  
+                                                   <p class="p">Click the 
+                                                      							 <span class="ph uicontrol">+</span> icon on the right of the table
+                                                      							 to create World Wide Port Name (WWPN). The 
+                                                      							 <span class="keyword wintitle">Create FC Zone Member</span> window is
+                                                      							 displayed. 
+                                                      						  
+                                                   </p> 
+                                                   						  
+                                                   <p class="p">Enter the WWPN for this zone. 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_F73C19BA819C4954A7BB246FC080ABDF__step_D943B9A9876645A2855C06B8739D6C03">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click 
+                                       			 <span class="ph uicontrol">OK</span> for 
+                                       			 <span class="keyword wintitle">Create
+                                          				FC Zone Member</span> window. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_F73C19BA819C4954A7BB246FC080ABDF__step_E83F16F9FA6046FCA48BC7C129366347">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click 
+                                       			 <span class="ph uicontrol">OK</span> for 
+                                       			 <span class="keyword wintitle">Create
+                                          				FC User Zone</span> window. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_F73C19BA819C4954A7BB246FC080ABDF__step_FF556FF85498435A878732FA89880BFA">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;8</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click 
+                                       			 <span class="ph uicontrol">OK</span> for 
+                                       			 <span class="keyword wintitle">Create
+                                          				FC Zone Profile</span> window. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">The new Fibre
+                                          				Channel Zone Profile created is listed under 
+                                          				<span class="ph uicontrol">FC
+                                             				  Zone Profiles</span>. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title15" lang="en-US" id="id_28619">
+                     <h2 class="title topictitle2" id="ariaid-title15">Deleting a Fibre
+                        	 Channel Zone Profile
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="id_28619__context_6D22EA99D3B6451F9571487E6701954C"> 
+                           		
+                           <p class="p">Perform the
+                              		  following procedure to delete a Fibre Channel Zone Profile. 
+                              		
+                           </p> 
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              <tr class="li step" id="id_28619__step_0AE1F389189B4907973BA454517528FD">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">SAN</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="id_28619__step_782437E3FC7344819DDDF9436CC71763">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">On the 
+                                       			 <span class="ph uicontrol">SAN</span> tab, click 
+                                       			 <span class="ph uicontrol">Storage
+                                          				Cloud</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="id_28619__step_D5541DD0C7884470AD52A43AF98A1AF7">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click 
+                                       			 <span class="ph uicontrol">FC Zone
+                                          				Profiles</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="id_28619__step_8515939BC56A419DA4DFC8924755DE4F">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="ph uicontrol">Work</span> pane, right-click the name of the zone
+                                       			 profile you wish to delete. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="id_28619__step_81E0FCC292E34B939EE17D8B06E05B1A">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Choose 
+                                       			 <span class="ph uicontrol">Delete</span> and click 
+                                       			 <span class="ph uicontrol">Yes</span> to confirm. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">The zone profile
+                                          				is deleted from the system. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title16" lang="en-US" id="task_1FB524E9D2BC4CBD839F9D9B92767AE9">
+                     <h2 class="title topictitle2" id="ariaid-title16">Deleting a Fibre
+                        	 Channel User Zone
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_1FB524E9D2BC4CBD839F9D9B92767AE9__context_6D22EA99D3B6451F9571487E6701954C"> 
+                           		
+                           <p class="p">Perform the
+                              		  following procedure to delete a Fibre Channel User Zone. 
+                              		
+                           </p> 
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              <tr class="li step" id="task_1FB524E9D2BC4CBD839F9D9B92767AE9__step_0AE1F389189B4907973BA454517528FD">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">SAN</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_1FB524E9D2BC4CBD839F9D9B92767AE9__step_782437E3FC7344819DDDF9436CC71763">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">On the 
+                                       			 <span class="ph uicontrol">SAN</span> tab, click 
+                                       			 <span class="ph uicontrol">Storage
+                                          				Cloud</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_1FB524E9D2BC4CBD839F9D9B92767AE9__step_D5541DD0C7884470AD52A43AF98A1AF7">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click 
+                                       			 <span class="ph uicontrol">FC Zone
+                                          				Profiles</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_1FB524E9D2BC4CBD839F9D9B92767AE9__step_8515939BC56A419DA4DFC8924755DE4F">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="ph uicontrol">Work</span> pane, select the zone profile. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_1FB524E9D2BC4CBD839F9D9B92767AE9__step_C025F34DC6AE46BAB352F268275B6A70">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> Navigate to FC User Zones.
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_1FB524E9D2BC4CBD839F9D9B92767AE9__step_30E2FC0BAA344F438BAE2A2A11A16010">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> Right-click the name of the user zone you wish to delete.
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_1FB524E9D2BC4CBD839F9D9B92767AE9__step_81E0FCC292E34B939EE17D8B06E05B1A">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Choose 
+                                       			 <span class="ph uicontrol">Delete</span> and click 
+                                       			 <span class="ph uicontrol">Yes</span> to confirm. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">The user zone is
+                                          				deleted from the system. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <p class="topictitle1" id="d2818e1732a1635"> Fibre Channel Storage Connection Policies</p>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title17" lang="en-US" id="task_4A3D12BCB6F24E12BBC4EB58FC571391">
+                     <h2 class="title topictitle2" id="ariaid-title17">Deleting a Fibre Channel Storage Connection Policy</h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              <tr class="li step" id="task_4A3D12BCB6F24E12BBC4EB58FC571391__step_D6B487180C8E4AFAB18B27CD36BA0032">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">SAN</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_4A3D12BCB6F24E12BBC4EB58FC571391__step_81CE006BBD5248518936EAB0CCD1AD2D">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Expand 
+                                       			 <span class="ph menucascade"><span class="ph uicontrol">SAN</span> &gt; <span class="ph uicontrol">Policies</span> &gt; <span class="ph uicontrol"> 
+                                             				  <var class="keyword varname">Organization_Name</var></span></span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_4A3D12BCB6F24E12BBC4EB58FC571391__step_4A3D37F895904E1598045148C5EF862E">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Expand the 
+                                       			 <span class="ph uicontrol">Storage Connection Policies</span> node.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_4A3D12BCB6F24E12BBC4EB58FC571391__step_F7867786DD454F6EBD67E72981FFE629">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Right-click the policy you want to delete and select 
+                                       			 <span class="ph uicontrol">Delete</span>.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_4A3D12BCB6F24E12BBC4EB58FC571391__step_73CEE84C99CA4B01AFA24AC1A88FC06A">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">If a
+                                       			 confirmation dialog box displays, click 
+                                       			 <span class="ph uicontrol">Yes</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+               </article>
+            </article>
+         </main>
+      
+
+</div> 
+ 
+    </div>
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent noprint base-blowout">
+    <div class="eotPersonalization">
+        <section id="eotTDCampaign"></section>
+    </div>    
+    <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>Was this Document Helpful?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes" aria-label="Was this Document Helpful?? Yes">Yes</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no" aria-label="Was this Document Helpful?? No">No</button>
+  </span>
+  <span lang="en" class="eot-feedback-olwrap">
+    
+      <a href="javascript: void(0);" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">Feedback</a>
+    
+  </span>
+</div>
+
+
+</div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+    </div>
+			
+    <div class="letUsHelp">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eotLetUsHelp">
+    <h3>Contact Cisco</h3>
+    <ul>
+         <li><a id="eotLetUsHelpProdDocUrl" href="https://mycase.cloudapps.cisco.com/start?prodDocUrl=">Open a Support Case</a><img src="/etc/designs/cdc/fw/i/icon_lock_small.png" alt="login required"/></li>
+        <li>(Requires a <a href="//www.cisco.com/c/en/us/services/order-services.html">Cisco Service Contract</a>)</li>
+    </ul>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        var getURL=jQuery("#eotLetUsHelpProdDocUrl").attr("href"), 
+            domInd = location.href.indexOf('cisco.com') ;
+        if ( domInd > -1 && domInd < location.href.search(/\w\/\w/) ) {
+            getURL += encodeURI(location.href);
+        }
+		jQuery("#eotLetUsHelpProdDocUrl").attr("href",getURL);
+    });
+</script>
+
+
+    </div>
+
+    <div id="eotRightRailMBox"><!--MBox-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IT:components/mbox/banner-mbox:V0.0.0 -->
+
+
+
+<div>
+    <div class="mboxDefault"></div>   
+    <script type="text/javascript">
+        var test="";
+        if(test!=undefined && test.trim().length>0){
+           mboxCreate('en-us_dg_support_bookchapters','type=default','');
+        }else{
+           mboxCreate('en-us_dg_support_bookchapters','type=default');
+        }
+       
+    </script>
+</div>
+<!--MBox--></div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+	<script type="text/javascript">
+			    var eottdatp = document.getElementsByClassName('eot-tdatp');
+			    if (eottdatp && eottdatp.style) {
+        			eottdatp.style.display="none";
+			    }
+        		  </script>
+  	
+
+
+    </div>
+			
+    <div></div>
+
+</div>
+
+
+    </div>
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/us/en/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/clientlibs/responsive/js/books.min.js"></script>
+
+<script src="/etc/designs/cdc/fw/m/books_metricsrule.js" type="text/javascript" async></script>
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>

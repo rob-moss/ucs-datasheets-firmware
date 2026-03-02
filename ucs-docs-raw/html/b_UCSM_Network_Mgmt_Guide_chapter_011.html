@@ -1,0 +1,3346 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="en" xml:lang="en"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="en/us";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.cpe === undefined) {
+        window.cpe = {};
+    }
+
+    cpe.accountName = "prod";
+    cpe.config = ["cinf","dsc","pps"];
+    cpe.hideMethod = "elements";
+
+    window.targetGlobalSettings = JSON.parse('{\x22timeout\x22:4000}');
+    window.targetPageParamsAll = () => JSON.parse('{\x22entity\x22:\x22{\\\x22id\\\x22:\\\x221692158336485928\\\x22,\\\x22categoryId\\\x22:\\\x22\\\x22}\x22}');
+
+    
+    const bullseyeLibrary = `/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/external/bullseye.js`;
+
+    import(bullseyeLibrary);
+</script>
+<script src="/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/regional-mbox/regional-mbox.js"></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <title>Cisco UCS Manager Network Management Guide, Release 4.3 - LAN
+	 Connectivity [Cisco UCS Manager] - Cisco</title>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="LAN Connectivity"  />
+    <meta name="title" content="Cisco UCS Manager Network Management Guide, Release 4.3 - LAN
+	 Connectivity [Cisco UCS Manager]"  />
+    <meta name="documentId" content="1692158336471927"  />
+    <meta name="templateName" content="book"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="WEM"  />
+    <meta name="docType" content="TSD Products Configuration Guide Chapter"  />
+    <meta name="concept" content="Cisco UCS Manager"  />
+    <meta name="iaPath" content="cisco.com#Products#Cisco Products#Servers - Unified Computing#Cisco UCS Manager"  />
+    <meta name="contentType" content="cisco.com#US#preSales"  />
+    <meta name="locale" content="US"  />
+    <meta name="language" content="en"  />
+    <meta name="country" content="US"  />
+    <meta name="CCID_Page" content="cc001777"  />
+    <meta name="date" content="Fri Sep 05 06:24:10 PDT 2025"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="Cisco UCS Manager Network Management Guide, Release 4.3 - LAN
+	 Connectivity [Cisco UCS Manager]"  />
+    <meta property="og:description" content="LAN Connectivity"  />
+    <meta property="og:url" content="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_011.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_011.html"/>
+	
+
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/en\/us\/td\/docs\/unified_computing\/ucs\/ucs\u002Dmanager\/GUI\u002DUser\u002DGuides\/Network\u002DMgmt\/4\u002D3\/b_UCSM_Network_Mgmt_Guide_4_3\/b_UCSM_Network_Mgmt_Guide_chapter_011");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/cisco-sans.min.css" type="text/css">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/books.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", 'You are being logged out.');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "LAN
+	 Connectivity",  		  
+          "url": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_011.html",
+          "description": "LAN Connectivity",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="hvck7tyxelwrg2nfbtxa-f-578c095bb-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":24,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"2b6fa1e1","ak.r":37441,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"61.68.175.0","ak.cport":51583,"ak.gh":"23.199.68.174","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772424430","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==0ugo/XVNwvtBukRjh36eyp8QQmp4F1SRddRtsn0DB8lT8ziT5IaQsydhwuMEtw9D/n6amt2ykkZiqTrpORN/DpPVGemGVytbqCoFopPi8NgqLPlJo8Q/4pVcWE74H6HdwQlcfSTGX8y5wd7zDTrKlrQMooN5M5kjpwVa09wYJkYL/I069E6xeqyoPyFijlvd58grUjdx7Q5shl6vPgaiBSRBqZ2EqAW4cbdOY3dt40ynPBIvc5R9HKscuvFnH7Tn2m0AOu/Y2iCIcjk74n3K2jN5vRaQUb3Ng+P29X4h95MeMbeHSF1iP6w66GqC98f9ot8hSXs3lSFez+jbHKwd+wsp2YHqpG2jNcYjkEQ69LFEaZQSLi5ixYINGSY7HAQd4In2fmNXovY8K8Zoi1LbG58RwAWq9Bw7wBwXv2THhus=","ak.pv":"540","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body id="wcq" class="fw-res cdc-support cdc-books cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">Skip to content</a></li>
+        <li><a id="skiplink-search" href="#">Skip to search</a></li>
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">Skip to footer</a></li>
+    </ul>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/us/en/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/index.html">Cisco.com Worldwide</a></li>
+            <li><a tabindex="-1" href="/c/en/us/products/index.html">Products and Services</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/solutions/index.html">Solutions</a></li>
+            <li><a tabindex="-1" href="/c/en/us/support/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/c/en/us/training-events.html">Learn</a></li>
+            <li><a tabindex="-1" href="//www.cisco.com/c/en/us/about/sitemap.html">Explore Cisco</a></li>
+            <li><a tabindex="-1" href="/c/en/us/buy.html">How to Buy</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Partners Home</a></li>                
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/cisco-partner-program/index.html?ccid=cc000864&dtid=odiprc001129">Partner Program</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/support-help/index.html">Support</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/tools/index.html?dtid=odiprc001129">Tools</a></li>
+            <li><a tabindex="-1" href="https://locatr.cloudapps.cisco.com/WWChannels/LOCATR/pf/index.jsp#/">Find a Cisco Partner</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/connect-with-a-partner/index.html?ccid=cc000864&dtid=odiprc001129">Meet our Partners</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Become a Cisco Partner</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based user-driven-nav" aria-label="breadcrumbs" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/index.html'><span itemprop='name'>Home</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/index.html'><span itemprop='name'>Support</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/all-products.html'><span itemprop='name'>Product Support</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/category.html'><span itemprop='name'>Servers - Unified Computing</span><meta itemprop='position' content='4' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/series.html'><span itemprop='name'>Cisco UCS Manager</span><meta itemprop='position' content='5' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html'><span itemprop='name'>Configuration Guides</span><meta itemprop='position' content='6' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+        
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">Cisco UCS Manager Network Management Guide, Release 4.3</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   <!-- have to do this for _g.I18n to be defined in preview and publish modes -->
+  
+  <script type="text/javascript">
+      // initialize dictionary for i18n
+      cdc.util.ensureNamespace("cdc.rc");
+    cdc.rc.eotkeys = {
+        showOnly5Products : "Show Only 5 Products",       
+        showAllRowsProducts : "Show All nRows Products",
+        supportCommunityUrl : "https://community.cisco.com/t5/technology-and-support/ct-p/technology-support",
+        supportCommunity : "Cisco Community",
+        thankYou : "Thank You",
+        viewersAlso : "Customers Also Viewed", 
+        show : "Show", 
+        more : "More", 
+        showOnly3Documents: "Show Only 3 Documents"
+      };
+  </script>
+
+
+
+<div class="row blowout full visitedlinks">
+    <div class="col full">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers techdocs">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button aria-expanded="false" >Bias-Free Language</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>Bias-Free Language</h3>
+            <p>The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. <a href="https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html">Learn more</a> about how Cisco is using Inclusive Language.</p>
+        </div>
+        
+    </div><!-- disclaimers -->
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* this is needed for the translation selector */
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+    var bookTitle = 'Book Title Page';
+</script>
+
+<span id="actionBar-top"></span>
+<section id="actionBar" class="noprint base-blowout">
+    <span class="icons">
+        
+        <button class="bookToc simpleOverlay-trigger" id="onlyforTrigger"> <!--US140575-->
+            Book Contents
+        </button>
+            <div class="bookToc simpleOverlay-content">
+               <div role="heading" class="title">Book Contents</div>
+               <!--googleoff: index--><!--googleoff: snippet-->  
+               <div class="content">
+                  
+
+
+
+<ul id="bookToc">
+    <li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_preface_00.html">Preface</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_01.html">New and Changed Information</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_010.html">Overview</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_011.html">LAN
+	 Connectivity</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_0100.html">LAN Ports and Port
+	 Channels</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_0101.html">LAN Uplinks
+	 Manager</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_0110.html">VLANs</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_0111.html">MAC Pools</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_01000.html">Quality of
+	 Service</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_01001.html">Upstream Disjointed
+	 Layer-2 Networks</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_01010.html">Network-Related
+	 Policies</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/m-gui-macsec.html">Configuring MACsec</a></li>
+
+</ul>
+
+
+               </div>
+               <!--googleon: index--><!--googleon: snippet-->               
+            </div>
+
+        
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='versionddcontainer chapter'></div>
+<script type="text/html" class="versionstemp">
+            <div class="versionsdd">
+                <button class="versionbutton" aria-haspopup="true" aria-expanded="false" aria-labelledby="other versions" class="version"><label></label></button>
+                <ul class="versionlist" aria-labelledby="other versions">
+                <%
+                    let pageUrl = window.location.pathname.replace("/content/","/c/").toLowerCase();
+                    if (true) pageUrl = pageUrl.substring(0,pageUrl.lastIndexOf("/"))+".html";
+                    for(let i=0; i< data.length; i++) {
+                        let item = data[i],
+                            myurl = item.linkUrl,
+                            urlm = myurl.replace("/content/","/c/");;
+                            mytitle = item.linkTitle;
+                            myclass= urlm.toLowerCase() == pageUrl ? "class=\"selected\"":""; 
+%>
+                    <li><a href="${myurl}" ${myclass}>${mytitle}</a></li>
+<%
+                  }   %>
+                </ul>
+             </div>
+</script>
+    
+        <span class="utilities">
+          <button title="Search in this Book" class="mobileSearch simpleOverlay-trigger">
+            Search
+          </button>
+          <div class="mobileSearch simpleOverlay-content">
+            <div class="title">Find Matches in This Book</div>
+              <!--googleoff: index--><!--googleoff: snippet-->  
+              <div class="content">
+                <form id="mobileBooksearch" class="chapter">
+                   <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit"></button>
+                   <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+                </form>
+                <div id="overlayResults" role="region" aria-live="polite" >
+                   <!-- important, keep this results div begin end on same line in here -->
+                   <div class="results"></div>
+                </div>
+              </div>
+              <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "Save";
+    cdc.rc.savedoc.saved = "Saved";
+</script>
+
+    <button class="save" aria-expanded="false" aria-label="Save">
+        <label>Save</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_011.html">Log in</a> to Save Content
+    </div>
+
+
+          <!-- Translation Selctor -->
+          <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+ 
+
+
+ 
+          <div class="translations simpleOverlay-content" role="dialog" id="dialogt" aria-labelledby="onlyForNonEN" aria-modal="true">
+            <div role="heading" class="title">Available Languages</div>
+               <!--googleoff: index--><!--googleoff: snippet--> 
+            <script language="javascript">                    
+                cdc.translations.map = "{en-us=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_011.html, x-default=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_011.html}";//storing the map for use in the JS
+                cdc.translations.locale="en_us";
+            </script>
+            <div class="content">
+              <div class="availableLanguagesList">
+                  <ul id="translationsList">
+                  </ul> 
+              </div>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+          
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // stored value for overlay label to use in js
+    var downloadOPtionLabel = 'Download Options',
+    	bookSearchlabel = 'Find Matches in This Book',
+    	translationsLabel = 'Translations',
+    	bookConentLabel= 'Book Contents';
+</script>
+
+
+        
+
+
+
+        <button title="Document Download Options" id="dwnld-button" class="downloadOptions simpleOverlay-trigger" aria-expanded="false">
+            Download
+        </button>
+        <div class="downloadOptions simpleOverlay-content" role="dialog" id="dialogd" aria-labelledby="dwnld-button" aria-modal="true" class="default_dialog">
+            <div role="heading" class="title">Download Options</div>
+            <!--googleoff: index--><!--googleoff: snippet-->  
+            <div class="content">
+                <header>
+
+                    <h3 class="h4"> Book Title</p>
+                    <p>Cisco UCS Manager Network Management Guide, Release 4.3</p>
+                    <p class="h4"> Chapter Title</p>
+                    <h3>LAN
+	 Connectivity</p>
+
+                </header>
+                <ul>
+
+                        <li >    
+                            <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3.pdf" class="pdfIcon">PDF - Complete Book 
+                            <span>(5.04 MB)</span></a>
+
+                                   <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3/b_UCSM_Network_Mgmt_Guide_chapter_011.pdf" class="chapter">PDF - This Chapter <span>(1.1 MB)</span></a>
+                                                            
+                            <p>View with Adobe Reader on a variety of devices</p>
+                        </li>                                  
+              </ul>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+        </div>
+
+          <button title="Print Friendly Page" class="print simpleOverlay-trigger">
+              Print
+          </button>
+        </span> 
+    </span>
+    <form id="booksearch" tabindex="0" class="chapter">
+       <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+       <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+    </form>
+      <div id="searchresult" role="region" aria-live="polite"><button class="close" title="Close Panel"><span></span><span></span></button>
+         <span class="headArrow"></span>
+         <h2>Results</h2>
+         <div class="matches">
+         </div>
+         <div class="results" tabindex="0">
+         </div>
+      </div>
+      <div id="searchResultChapterTitle"></div>
+</section>
+<script type="text/html" id="navigateMatchesTemplate">
+   <div>
+      <button class="up on" title="Previous Match"><span></span></button>
+      <button class="up off" title="Previous Match Not Available"><span></span></button>
+      <span class="matchlabel">Matches</span>
+      <button class="down on" title="Next Match"><span></span></button>
+      <button class="down off" title="Next Match Not Available"><span></span></button>
+   </div>
+</script>
+<script type="text/html" id="noChapterMatchTemplate">
+   <p>There are no Matches in this chapter.</p>
+</script>
+<script type="text/html" id="searchResultsListTemplate">
+   <p class="h3">Chapters with Matches</p>
+   <ul>
+<% var i = 0;
+    while ( modelData.links[i] ) {  %>
+      <li>
+<%     curpage = (window.location.pathname.indexOf(modelData.links[i].href) > -1 )?true:false;
+        if ( i === modelData.curpage ) {
+            if ( ! jQuery('.mobileSearch').css("display") == "block") { %>
+               <span class="currentIndicator"></span>${modelData.links[i].title}
+<%         } else {                %>
+               <span class="currentIndicator"></span><button class="curpage" data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%         }
+        } else {  %>
+            <button data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%     }  %>            
+      </li> 
+<% i++;
+    } %>
+   </ul> 
+</script>      
+<script type="text/html" id="noBookMatchTemplate">
+   <p class="head">No matches found in this book</p>
+   <p>This feature looks for an exact match of what you entered in the box.</p>
+   <p>If you entered several words, try reducing the entry to one or two and search again.</p>
+</script>
+<script type="text/html" id="errorTemplate">
+   <p>Search is currently unavailable due to technical issues. We are working to resolve the problem as quickly as possible.</p>
+</script>
+<script type="text/html" id="mobileSearchFooterTemplate">
+   <div id="mobileSearchFooter">
+      <button class="mobileSearch" title="Search in this Book"></button>
+      <button class="closeFooter"><span></span><span></span></button>
+      <div class="matches"> 
+      </div>
+   </div>   
+</script>
+ 
+    </div>
+</div>
+<div class="row blowout narrow-wide-v2 flip visitedlinks">
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div id="documentInfo">
+                  <dl>
+                     
+                      <dt>Updated:</dt><dd> April 30, 2025</dd>
+                     
+                  </dl>
+                    
+              </div>
+
+ 
+    </div>
+    <div id="chapterTitleDiv" class="col wide-v2 indent-at-xlarge">
+        <!-- this will be chapter title for chapters or header for TOC for books -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="chapter-title">Chapter: LAN
+	 Connectivity </h2>  
+    
+
+    </div>
+</div>
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <div id="pageContentDiv" class="col wide-v2 indent-at-xlarge" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
+
+    
+ 
+ 
+
+<div id="chapterToc" class="base-blowout">
+    <button><span></span>Chapter Contents</button>
+    <div>
+    
+<ul>
+<li><a href="#topic_1B8A08E79CE143BFB25B1FEA478264B2">LAN                              	 Connectivity</a></li>
+<li><a href="#concept_D664B3F2C10B4ED0B10CCFC5A9B3FD92">Fabric Interconnect                              	 Overview</a></li>
+<li><a href="#ioms-and-fabric-interconnects-connectivity">IOMs and Fabric Interconnects Connectivity</a>
+<ul>
+<li><a href="#concept_91D93C80D2B0462AB190A7F18CE60421">Uplink                              	 Connectivity</a></li>
+<li><a href="#concept_26A8ADDDC1554971BB7F2A1368521F55">Downlink                              	 Connectivity</a></li>
+</ul></li>
+<li><a href="#topic_EB4661CB36E14C44A9F5283F47A072A7">Configuring the                              	 Fabric Interconnects</a>
+<ul>
+<li><a href="#concept_B9454968E36347AAB281C752B9624870">Fabric Interconnect                              	 Information Policy</a>
+<ul>
+<li><a href="#configuring-the-information-policy-on-the-fabric-interconnect">Configuring the Information Policy on the Fabric Interconnect</a></li>
+</ul></li>
+<li><a href="#Cisco_Task_in_List_GUI.dita_eae05442-841a-4f7a-994b-2b25c95a12bb">Installing Secure FPGA</a></li>
+<li><a href="#task_FF50026BDFD94639B6295AA3FA866034"> Viewing the LAN                              	 Neighbors of a Fabric Interconnect</a></li>
+<li><a href="#task_FF50026BDFD94639B6295AA3FA866034"> Viewing the SAN                              	 Neighbors of a Fabric Interconnect</a></li>
+<li><a href="#task_FF50026BDFD94639B6295AA3FA866034"> Viewing the LLDP                              	 Neighbors of a Fabric Interconnect</a></li>
+</ul></li>
+<li><a href="#concept_D5A1607B910747E398054FA434D99059">Fabric                              	 Evacuation</a>
+<ul>
+<li><a href="#task_F2604D61B8B24A8DACF84CD9767538A3">Configuring Fabric                              	 Evacuation</a></li>
+<li><a href="#task_2A28700568504AE193D94BFF1007C053">Displaying the                              	 Status of Fabric Evacuation on a Fabric Interconnect</a></li>
+</ul></li>
+<li><a href="#concept_66674E79D04044E8A470B91EDEFA417F">Fabric Interconnect                              	 Switching Modes</a>
+<ul>
+<li><a href="#concept_6E8B26985992424FAFE60F43B20113AF">Ethernet Switching                              	 Mode</a></li>
+<li><a href="#task_DD4FA2EAF3764720A89DF0E26C880E66">Configuring Ethernet Switching Mode</a></li>
+<li><a href="#concept_htb_lcz_ljb">Fibre Channel Switching Mode</a></li>
+<li><a href="#task_B6E0C2A15FE84D498503ADC19CDB160B">Configuring Fibre                              	 Channel Switching Mode</a></li>
+<li><a href="#task_9072365286674D9192D0C5CF750306D9">Changing the                              	 Properties of the Fabric Interconnects</a></li>
+<li><a href="#task_FF50026BDFD94639B6295AA3FA866034">Determining the                              	 Primary Fabric Interconnect</a></li>
+</ul></li>
+<li><a href="#concept_u3h_z1z_ljb">Fabric Interconnect Port Types</a></li>
+<li><a href="#concept_4B7D337624964E3E8C51207F728DF656">vNICs</a></li></ul>
+    <button id="chapterToc-close">Close<span></span></button>
+    </div>
+</div>
+
+ 
+    <div id="chapterContent">
+    
+                  <h1 class="title topictitle1" id="ariaid-title1">LAN
+                     	 Connectivity
+                  </h1>
+                  <!-- minitoc start -->
+                  <nav role="navigation" class="related-links">
+                     <ul class="ullinks">
+                        <li class="link ulchildlink"><a href="#concept_D664B3F2C10B4ED0B10CCFC5A9B3FD92">Fabric Interconnect Overview</a></li>
+                        <li class="link ulchildlink"><a href="#ioms-and-fabric-interconnects-connectivity">IOMs and Fabric Interconnects Connectivity</a></li>
+                        <li class="link ulchildlink"><a href="#topic_EB4661CB36E14C44A9F5283F47A072A7">Configuring the Fabric Interconnects</a></li>
+                        <li class="link ulchildlink"><a href="#concept_D5A1607B910747E398054FA434D99059">Fabric Evacuation</a></li>
+                        <li class="link ulchildlink"><a href="#concept_66674E79D04044E8A470B91EDEFA417F">Fabric Interconnect Switching Modes</a></li>
+                        <li class="link ulchildlink"><a href="#concept_u3h_z1z_ljb">Fabric Interconnect Port Types</a></li>
+                        <li class="link ulchildlink"><a href="#concept_4B7D337624964E3E8C51207F728DF656">vNICs</a></li>
+                     </ul>
+                  </nav>
+                  <!-- minitoc end -->
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title2" lang="en-US" id="concept_D664B3F2C10B4ED0B10CCFC5A9B3FD92">
+                     <h2 class="title topictitle2" id="ariaid-title2">Fabric Interconnect
+                        	 Overview
+                     </h2>
+                     <section class="body conbody">
+                        <p class="p">The fabric
+                           		interconnect is the core component of Cisco UCS. The Cisco UCS Fabric
+                           		Interconnects provide uplink access to LAN, SAN, and out-of-band management
+                           		segment. Cisco UCS infrastructure management is through the embedded management
+                           		software, Cisco UCS Manager, for both hardware and software management. The
+                           		Cisco UCS Fabric Interconnects are Top-of-Rack devices, and provide unified
+                           		access to the Cisco UCS domain. 
+                           	 
+                        </p>
+                        <p class="p">The Cisco UCS FIs
+                           		provide network connectivity and management for the connected servers. The
+                           		Cisco UCS Fabric Interconnects run the Cisco UCS Manager control software and
+                           		consist of expansion modules for the Cisco UCS Manager software. 
+                           	 
+                        </p>
+                        <p class="p">For more information
+                           		about Cisco UCS Fabric Interconnects, see the 
+                           		<cite class="cite">Cisco UCS Manager
+                              		  Getting Started Guide</cite>. 
+                           	 
+                        </p>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title3" lang="en-US" id="ioms-and-fabric-interconnects-connectivity">
+                     <h2 class="title topictitle2" id="ariaid-title3">IOMs and Fabric Interconnects Connectivity</h2>
+                     <section class="body conbody">
+                        
+                        <p class="p">Each chassis is equipped with two IOMs: IOM 1 should be connected to Fabric Interconnect A. IOM 2 should be connected to Fabric
+                           Interconnect B. This configuration provides redundant paths, ensuring uninterrupted operation of the Cisco UCS system even
+                           in the event of a failure in one of the Fabric Interconnects or IOMs. Additionally, this configuration enables traffic load
+                           distribution across both Fabric Interconnects, enhancing load balancing and increasing throughput. As a result, the Cisco
+                           UCS system achieves high availability, reliability, and optimal performance, making it ideal for data center environments.
+                        </p>
+                        
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links">
+                        <ul class="ullinks">
+                           <li class="link ulchildlink"><a href="#concept_91D93C80D2B0462AB190A7F18CE60421">Uplink Connectivity</a></li>
+                           <li class="link ulchildlink"><a href="#concept_26A8ADDDC1554971BB7F2A1368521F55">Downlink Connectivity</a></li>
+                        </ul>
+                     </nav>
+                     <!-- minitoc end -->
+                     <article class="topic concept nested2" aria-labelledby="ariaid-title4" lang="en-US" id="concept_91D93C80D2B0462AB190A7F18CE60421">
+                        <h3 class="title topictitle3" id="ariaid-title4">Uplink
+                           	 Connectivity
+                        </h3>
+                        <section class="body conbody">
+                           <p class="p">Use fabric
+                              		interconnect ports configured as uplink ports to connect to uplink upstream
+                              		network switches. Connect these uplink ports to upstream switch ports as
+                              		individual links, or as links configured as port channels. Port channel
+                              		configurations provide bandwidth aggregation as well as link redundancy. 
+                              	 
+                           </p>
+                           <p class="p">You can achieve
+                              		northbound connectivity from the fabric interconnect through a standard uplink,
+                              		a port channel, or a virtual port channel configuration. The port channel name
+                              		and ID configured on fabric interconnect should match the name and ID
+                              		configuration on the upstream Ethernet switch. 
+                              	 
+                           </p>
+                           <p class="p">It is also possible to
+                              		configure a port channel as a vPC, where port channel uplink ports from a
+                              		fabric interconnect are connected to different upstream switches. After all
+                              		uplink ports are configured, create a port channel for these ports. 
+                              	 
+                           </p>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic concept nested2" aria-labelledby="ariaid-title5" lang="en-US" id="concept_26A8ADDDC1554971BB7F2A1368521F55">
+                        <h3 class="title topictitle3" id="ariaid-title5">Downlink
+                           	 Connectivity
+                        </h3>
+                        <section class="body conbody">
+                           		
+                           <p class="p"><span class="ph">Beginning with release 4.3(2a), Cisco UCS Manager supports Cisco UCS X9508 server chassis with Cisco UCS X-Series servers.
+                                 Cisco UCS X-Series servers support Intelligent Fabric Modules (IFM), which function similarly to the Input/Output Module (IOM)
+                                 in Cisco UCS B-Series servers. This guide uses the term IOM to refer both IOM and IFM.</span></p>
+                           <p class="p">Each fabric
+                              		interconnect is connected to IOMs in the UCS chassis, which provides
+                              		connectivity to each blade server. Internal connectivity from blade servers to
+                              		IOMs is transparently provided by 
+                              		<span class="ph" id="concept_26A8ADDDC1554971BB7F2A1368521F55__CalManager">Cisco UCS Manager</span> using 10BASE-KR Ethernet standard for
+                              		backplane implementations, and no additional configuration is required. You
+                              		must configure the connectivity between the fabric interconnect server ports
+                              		and IOMs. Each IOM, when connected with the fabric interconnect server port,
+                              		behaves as a line card to fabric interconnect, hence IOMs should never be
+                              		cross-connected to the fabric interconnect. Each IOM is connected directly to a
+                              		single fabric interconnect. 
+                              	 
+                           </p>
+                           <p class="p">The Fabric Extender
+                              		(also referred to as the IOM, or FEX) logically extends the fabric
+                              		interconnects to the blade server. The best analogy is to think of it as a
+                              		remote line card that’s embedded in the blade server chassis, allowing
+                              		connectivity to the external world. IOM settings are pushed via Cisco UCS
+                              		Manager and are not managed directly. The primary functions of this module are
+                              		to facilitate blade server I/O connectivity (internal and external), multiplex
+                              		all I/O traffic up to the fabric interconnects, and help monitor and manage the
+                              		Cisco UCS infrastructure. 
+                              	 
+                           </p>
+                           <p class="p">Configure Fabric
+                              		interconnect ports that should be connected to downlink IOM cards as server
+                              		ports. Make sure there is physical connectivity between the fabric interconnect
+                              		and IOMs. You must also configure the IOM ports and the global chassis
+                              		discovery policy. 
+                              	 
+                           </p>
+                           		
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr>
+                                       			
+                                       <p class="p">For UCS 2200 I/O modules, you can also select the Port Channel option and all I/O module-connected server ports will be automatically
+                                          added to a port channel. 
+                                       </p>
+                                       		
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                  </article>
+                  <article class="topic nested1" aria-labelledby="ariaid-title6" lang="en-US" id="topic_EB4661CB36E14C44A9F5283F47A072A7">
+                     <h2 class="title topictitle2" id="ariaid-title6">Configuring the
+                        	 Fabric Interconnects
+                     </h2>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links">
+                        <ul class="ullinks">
+                           <li class="link ulchildlink"><a href="#concept_B9454968E36347AAB281C752B9624870">Fabric Interconnect Information Policy</a></li>
+                           <li class="link ulchildlink"><a href="#Cisco_Task_in_List_GUI.dita_eae05442-841a-4f7a-994b-2b25c95a12bb">Installing Secure FPGA</a></li>
+                           <li class="link ulchildlink"><a href="#task_FF50026BDFD94639B6295AA3FA866034">Viewing the LAN Neighbors of a Fabric Interconnect</a></li>
+                           <li class="link ulchildlink"><a href="#task_FF50026BDFD94639B6295AA3FA866034">Viewing the SAN Neighbors of a Fabric Interconnect</a></li>
+                           <li class="link ulchildlink"><a href="#task_FF50026BDFD94639B6295AA3FA866034">Viewing the LLDP Neighbors of a Fabric Interconnect</a></li>
+                        </ul>
+                     </nav>
+                     <!-- minitoc end -->
+                     <article class="topic concept nested2" aria-labelledby="ariaid-title7" lang="en-US" id="concept_B9454968E36347AAB281C752B9624870">
+                        <h3 class="title topictitle3" id="ariaid-title7">Fabric Interconnect
+                           	 Information Policy
+                        </h3>
+                        <section class="body conbody">
+                           <p class="p">Fabric Interconnect Information Policy enables you to display the uplink switches that are connected to fabric interconnect.</p>
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Important</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr> 
+                                       		
+                                       		
+                                       <p class="p">You must enable the information policy on the fabric interconnect to view the details of SAN, LAN, and LLDP neighbours of
+                                          the fabric interconnect.
+                                       </p> 
+                                       	 
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links">
+                           <ul class="ullinks">
+                              <li class="link ulchildlink"><a href="#configuring-the-information-policy-on-the-fabric-interconnect">Configuring the Information Policy on the Fabric Interconnect</a></li>
+                           </ul>
+                        </nav>
+                        <!-- minitoc end -->
+                        <article class="topic task nested3" aria-labelledby="ariaid-title8" lang="en-US" id="configuring-the-information-policy-on-the-fabric-interconnect">
+                           <h4 class="title topictitle4" id="ariaid-title8">Configuring the Information Policy on the Fabric Interconnect</h4>
+                           <section class="body taskbody">
+                              <section class="tasklabel">
+                                 <h5 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h5>
+                              </section>
+                              <hr noshade>
+                              <table class="stepTable" border="0">
+                                 <tbody>
+                                    
+                                    <tr class="li step">
+                                       <td align="left" valign="top" border="0" width="10%">
+                                          <p><b>Step&nbsp;1</b></p>
+                                       </td>
+                                       <td align="left" valign="top" border="0">
+                                          <p class="ph cmd"> Navigate to <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Policies</span> &gt; <span class="ph uicontrol">Global Policies</span></span></p>
+                                       </td>
+                                    </tr>
+                                    
+                                    <tr class="li step">
+                                       <td align="left" valign="top" border="0" width="10%">
+                                          <p><b>Step&nbsp;2</b></p>
+                                       </td>
+                                       <td align="left" valign="top" border="0">
+                                          <p class="ph cmd">In the <span class="ph uicontrol">Info Policy</span> group, choose one of the following:
+                                          </p>
+                                          <section class="itemgroup info">
+                                             
+                                             <ul class="ul" id="configuring-the-information-policy-on-the-fabric-interconnect__ul_dlq_42p_hz">
+                                                
+                                                <li class="li">
+                                                   
+                                                   <p class="p"><span class="ph uicontrol">Disabled</span>: Click to disable the information policy on the fabric interconnect. This is the default option.
+                                                   </p>
+                                                   
+                                                </li>
+                                                
+                                                <li class="li">
+                                                   
+                                                   <p class="p"><span class="ph uicontrol">Enabled</span>: Click to enable the information policy on the fabric interconnect.
+                                                   </p>
+                                                   
+                                                </li>
+                                                
+                                             </ul>
+                                             
+                                          </section>
+                                       </td>
+                                    </tr>
+                                    
+                                    <tr class="li step">
+                                       <td align="left" valign="top" border="0" width="10%">
+                                          <p><b>Step&nbsp;3</b></p>
+                                       </td>
+                                       <td align="left" valign="top" border="0">
+                                          <p class="ph cmd">Click <span class="ph uicontrol">Save Changes</span>.
+                                          </p>
+                                       </td>
+                                    </tr>
+                                    
+                                 </tbody>
+                              </table>
+                              <hr noshade>
+                           </section>
+                           <!-- minitoc start -->
+                           <nav role="navigation" class="related-links"></nav>
+                           <!-- minitoc end -->
+                        </article>
+                     </article>
+                     <article class="topic task nested2 no_summary_steps" aria-labelledby="ariaid-title9" lang="en-US" id="Cisco_Task_in_List_GUI.dita_eae05442-841a-4f7a-994b-2b25c95a12bb">
+                        <h3 class="title topictitle3" id="ariaid-title9">Installing Secure FPGA</h3>
+                        <section class="body taskbody">
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0">
+                              <tbody>
+                                 
+                                 <tr class="li step" id="Cisco_Task_in_List_GUI.dita_eae05442-841a-4f7a-994b-2b25c95a12bb__step_4EB835AC7D7344B39E16477ACF11A4F8">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                          			 <span class="ph uicontrol">Equipment</span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 
+                                 <tr class="li step">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Expand <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Fabric Interconnects</span> &gt; <span class="ph uicontrol">
+                                                <var class="keyword varname">Fabric_Interconnect_Name</var></span></span>. 
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 
+                                 <tr class="li step" id="Cisco_Task_in_List_GUI.dita_eae05442-841a-4f7a-994b-2b25c95a12bb__step_0FE492A727904B2486CE3F3DA3A99925">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Work</span> pane, click the 
+                                          			 <span class="ph uicontrol">General</span> tab. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 
+                                 <tr class="li step" id="Cisco_Task_in_List_GUI.dita_eae05442-841a-4f7a-994b-2b25c95a12bb__step_2A7082DB5A48402E82BA3F5B0F557CA8">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the <span class="ph uicontrol">Actions</span> area of the <span class="ph uicontrol">General</span> tab, click <span class="ph uicontrol">Install Secure FPGA</span>. 
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 
+                                 <tr class="li step" id="Cisco_Task_in_List_GUI.dita_eae05442-841a-4f7a-994b-2b25c95a12bb__step_16E3F91F7B794A8D84860CCAB1EA7C51">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;5</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the dialog box, click <span class="ph uicontrol">OK</span>. 
+                                       </p>
+                                       <section class="itemgroup info">
+                                          
+                                          <table class="olh_note" border="0" role="note">
+                                             <tr>
+                                                <td width="1%" class="td_faq" role="heading" border="0">
+                                                   <p><b>Warning</b></p>&nbsp;
+                                                </td>
+                                                <td border="0" class="td_faq">
+                                                   <section class="note__content">
+                                                      
+                                                      <p class="p">This procedure will upgrade the FPGA and automatically reboot the system after completion of the FPGA upgrade. Kindly refrain
+                                                         from reloading or power-cycling the system during the upgrade, as the manual reboot will result in failure of Fabric Interconnect.
+                                                      </p>
+                                                      
+                                                   </section>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                          
+                                       </section>
+                                       <section class="itemgroup stepresult">
+                                          
+                                          <p class="p">
+                                             <span class="ph">Cisco UCS Manager</span> restarts the fabric interconnect, logs you out, and disconnects <span class="ph">Cisco UCS Manager GUI</span> on choosing <span class="ph uicontrol">Yes</span> in the warning message. 
+                                          </p>
+                                          
+                                       </section>
+                                    </td>
+                                 </tr>
+                                 
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic task nested2" aria-labelledby="ariaid-title10" lang="en-US" id="task_FF50026BDFD94639B6295AA3FA866034">
+                        <h3 class="title topictitle3" id="ariaid-title10"> Viewing the LAN
+                           	 Neighbors of a Fabric Interconnect
+                        </h3>
+                        <section class="body taskbody">
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0" id="task_FF50026BDFD94639B6295AA3FA866034__steps_8F9F276F92424F3F90D1E82BCC6C776D">
+                              <tbody>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_9D7BC338A6D74186B3769986BB375972">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                          			 <span class="ph uicontrol">Equipment</span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_788D980AC5264A97A0E1C4FF6FEE2E2B">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="ph uicontrol">Equipment</span> tab, expand 
+                                          			 <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Fabric
+                                                				  Interconnects</span></span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_324B1C2715C84250B6B7AB46AA6C1154">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> Click the
+                                          			 fabric interconnect for which you want to view the LAN neighbors. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_B8F4246498284A06826D0AF4AA67132D">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Work</span> pane, click the 
+                                          			 <span class="ph uicontrol">Neighbors</span> tab. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_14C65EAEA8BE4ACD984FE8E54C97F93E">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;5</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Click the 
+                                          			 <span class="ph uicontrol">LAN</span> subtab. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <p class="p">This subtab
+                                             				lists all the LAN neighbors of the specified Fabric Interconnect. 
+                                             			 
+                                          </p> 
+                                          		  
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic task nested2" aria-labelledby="ariaid-title11" lang="en-US" id="task_FF50026BDFD94639B6295AA3FA866034">
+                        <h3 class="title topictitle3" id="ariaid-title11"> Viewing the SAN
+                           	 Neighbors of a Fabric Interconnect
+                        </h3>
+                        <section class="body taskbody">
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0" id="task_FF50026BDFD94639B6295AA3FA866034__steps_8F9F276F92424F3F90D1E82BCC6C776D">
+                              <tbody>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_9D7BC338A6D74186B3769986BB375972">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                          			 <span class="ph uicontrol">Equipment</span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_788D980AC5264A97A0E1C4FF6FEE2E2B">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="ph uicontrol">Equipment</span> tab, expand 
+                                          			 <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Fabric
+                                                				  Interconnects</span></span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_324B1C2715C84250B6B7AB46AA6C1154">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> Click the
+                                          			 fabric interconnect for which you want to view the SAN neighbors. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_B8F4246498284A06826D0AF4AA67132D">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Work</span> pane, click the 
+                                          			 <span class="ph uicontrol">Neighbors</span> tab. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_14C65EAEA8BE4ACD984FE8E54C97F93E">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;5</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Click the 
+                                          			 <span class="ph uicontrol">SAN</span> subtab. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <p class="p">This subtab
+                                             				lists all the SAN neighbors of the specified Fabric Interconnect. 
+                                             			 
+                                          </p> 
+                                          		  
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic task nested2" aria-labelledby="ariaid-title12" lang="en-US" id="task_FF50026BDFD94639B6295AA3FA866034">
+                        <h3 class="title topictitle3" id="ariaid-title12"> Viewing the LLDP
+                           	 Neighbors of a Fabric Interconnect
+                        </h3>
+                        <section class="body taskbody">
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0" id="task_FF50026BDFD94639B6295AA3FA866034__steps_8F9F276F92424F3F90D1E82BCC6C776D">
+                              <tbody>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_9D7BC338A6D74186B3769986BB375972">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                          			 <span class="ph uicontrol">Equipment</span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_788D980AC5264A97A0E1C4FF6FEE2E2B">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Expand 
+                                          			 <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Fabric
+                                                				  Interconnects</span></span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_324B1C2715C84250B6B7AB46AA6C1154">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> Click the
+                                          			 fabric interconnect for which you want to view the LLDP neighbors. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_B8F4246498284A06826D0AF4AA67132D">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Work</span> pane, click the 
+                                          			 <span class="ph uicontrol">Neighbors</span> tab. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_14C65EAEA8BE4ACD984FE8E54C97F93E">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;5</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Click the 
+                                          			 <span class="ph uicontrol">LLDP</span> subtab. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <p class="p">This subtab
+                                             				lists all the LLDP neighbors of the specified Fabric Interconnect. 
+                                             			 
+                                          </p> 
+                                          		  
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title13" lang="en-US" id="concept_D5A1607B910747E398054FA434D99059">
+                     <h2 class="title topictitle2" id="ariaid-title13">Fabric
+                        	 Evacuation
+                     </h2>
+                     <section class="body conbody">
+                        <p class="p"> Cisco UCS Manager introduces fabric evacuation, which is the ability to evacuate all traffic that flows through a fabric
+                           interconnect from all servers attached to it through an IOM or FEX while upgrading a system. Fabric evacuation is not supported
+                           on direct-attached rack servers.
+                        </p>
+                        <p class="p">Upgrading the
+                           		secondary fabric interconnect in a system disrupts active traffic on the fabric
+                           		interconnect. This traffic fails over to the primary fabric interconnect. You
+                           		can use fabric evacuation during the upgrade process as follows: 
+                           	 
+                        </p>
+                        <ol class="ol">
+                           <li class="li" id="concept_D5A1607B910747E398054FA434D99059__li_B2701953F8A6484CA0FCD26972E74978"> 
+                              		  
+                              <p class="p">Stop all the
+                                 			 traffic that is active through a fabric interconnect. 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_D5A1607B910747E398054FA434D99059__li_9F46CABB25D341D598D5A645661EBAE0"> 
+                              		  
+                              <p class="p">For vNICs
+                                 			 configured with failover, verify that the traffic has failed over by using 
+                                 			 <span class="ph">Cisco UCS Manager</span>,
+                                 			 or tools such as vCenter. 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_D5A1607B910747E398054FA434D99059__li_B6361EA0B2EA4B1291C4DAEB5786BAF2"> 
+                              		  
+                              <p class="p">Upgrade the
+                                 			 secondary fabric interconnect. 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_D5A1607B910747E398054FA434D99059__li_F2024BDDF03A46FF9C4C0C67E6311FA3"> 
+                              		  
+                              <p class="p">Restart all the
+                                 			 stopped traffic flows. 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_D5A1607B910747E398054FA434D99059__li_63BEF0F350654CF3B5E3910C0D6B4061"> 
+                              		  
+                              <p class="p">Change the cluster
+                                 			 lead to the secondary fabric interconnect. 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_D5A1607B910747E398054FA434D99059__li_FBA70AA901F24E4B93F9C43B0A56A81A"> 
+                              		  
+                              <p class="p">Repeat steps 1 to
+                                 			 4 and upgrade the primary fabric interconnect. 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                        </ol>
+                        <table class="olh_note" border="0" role="note">
+                           <tr>
+                              <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                              </td>
+                              <td border="0" class="olh_note">
+                                 <section class="note__content">
+                                    <hr>
+                                    			
+                                    <ul class="ul">
+                                       <li class="li">
+                                          					
+                                          <p class="p">Fabric interconnect traffic evacuation is supported only in a cluster configuration. </p>
+                                          				
+                                       </li>
+                                       <li class="li">
+                                          					
+                                          <p class="p">You can evacuate traffic only from the subordinate fabric interconnect. </p>
+                                          				
+                                       </li>
+                                       <li class="li">
+                                          					
+                                          <p class="p">The IOM or FEX backplane ports of the fabric interconnect on which evacuation is configured will go down, and their state
+                                             will appear as <span class="ph uicontrol">Admin down</span>. During the manual upgrade process, to move these backplane ports back to the Up state and resume traffic flow, you must
+                                             explicitly configure <span class="ph uicontrol">Admin Evac Mode</span> as <span class="ph uicontrol">Off</span>. 
+                                          </p>
+                                          				
+                                       </li>
+                                       <li class="li">
+                                          					
+                                          <p class="p">Starting with Cisco UCS Manager Release 3.1(3), you can use fabric evacuation during Auto Install.</p>
+                                          				
+                                       </li>
+                                       <li class="li">
+                                          					
+                                          <p class="p">If you use fabric evacuation outside of the upgrade process, you must re-acknowledge the FEX to get the VIFs back to the online
+                                             state.
+                                          </p>
+                                          				
+                                       </li>
+                                    </ul> 
+                                    	 
+                                    <hr>
+                                 </section>
+                              </td>
+                           </tr>
+                        </table>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links">
+                        <ul class="ullinks">
+                           <li class="link ulchildlink"><a href="#task_F2604D61B8B24A8DACF84CD9767538A3">Configuring Fabric Evacuation</a></li>
+                           <li class="link ulchildlink"><a href="#task_2A28700568504AE193D94BFF1007C053">Displaying the Status of Fabric Evacuation on a Fabric Interconnect</a></li>
+                        </ul>
+                     </nav>
+                     <!-- minitoc end -->
+                     <article class="topic task nested2" aria-labelledby="ariaid-title14" lang="en-US" id="task_F2604D61B8B24A8DACF84CD9767538A3">
+                        <h3 class="title topictitle3" id="ariaid-title14">Configuring Fabric
+                           	 Evacuation
+                        </h3>
+                        <section class="body taskbody">
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0">
+                              <tbody>
+                                 <tr class="li step" id="task_F2604D61B8B24A8DACF84CD9767538A3__step_5042F0EA1A294365AC72C0BE9E28C57D">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                          			 <span class="ph uicontrol">Equipment</span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_F2604D61B8B24A8DACF84CD9767538A3__step_C4DFA7409D2E416A9C38CB9295D31FA8">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Expand 
+                                          			 <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Fabric
+                                                				  Interconnects</span> &gt; <span class="ph uicontrol"> 
+                                                				  <var class="keyword varname">Fabric_Interconnect_Name</var></span></span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_F2604D61B8B24A8DACF84CD9767538A3__step_74006BF3F10C4DEB81B4EE4A3D02B8BE">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Work</span> pane, click the 
+                                          			 <span class="ph uicontrol">General</span> tab. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_F2604D61B8B24A8DACF84CD9767538A3__step_9F0D274623DC4D899163E007D7E09451">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="ph uicontrol">Actions</span> area of the 
+                                          			 <span class="ph uicontrol">General</span> tab, click 
+                                          			 <span class="ph uicontrol">Configure Evacuation</span>. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup stepresult">The
+                                          			 Configure Evacuation dialog box appears. 
+                                          		  
+                                       </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_F2604D61B8B24A8DACF84CD9767538A3__step_A764A3C3F049483E86D9BFEC67524CA8">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;5</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">To configure
+                                          			 fabric evacuation on the specified Fabric Interconnect, click one of the
+                                          			 following radio buttons in the 
+                                          			 <span class="ph uicontrol">Admin
+                                             				Evac Mode</span> field: 
+                                          		  
+                                       </p>
+                                       <ul class="ul choices">
+                                          <li class="li choice" id="task_F2604D61B8B24A8DACF84CD9767538A3__choice_C11BEAB795304B699E647A6E59921CF5"><span class="ph uicontrol">On</span>—Stops all the
+                                             				traffic that is active through the specified Fabric Interconnect. 
+                                             			 
+                                          </li>
+                                          <li class="li choice" id="task_F2604D61B8B24A8DACF84CD9767538A3__choice_E1B4B1615607439E83A2FDA7C0FA8384"><span class="ph uicontrol">Off</span>—Restarts
+                                             				traffic through the specified Fabric Interconnect. 
+                                             			 
+                                          </li>
+                                       </ul>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_F2604D61B8B24A8DACF84CD9767538A3__step_A2E3AA7AFA4443FCAC89D33E84B95316">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;6</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">(Optional) To evacuate a
+                                          			 Fabric Interconnect irrespective of its current evacuation state, check the 
+                                          			 <span class="ph uicontrol">Force</span> check box. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_F2604D61B8B24A8DACF84CD9767538A3__step_29A2FC1FF5C94282AEC36509765C9FC2">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;7</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Click 
+                                          			 <span class="ph uicontrol">Apply</span>. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup stepresult">A warning
+                                          			 dialog box appears. 
+                                          			 <pre class="pre codeblock"><code>Enabling fabric evacuation will stop all traffic through this Fabric Interconnect from servers attached through IOM/FEX. 
+The traffic will fail over to the Primary Fabric Interconnect for fail over vnics.
+Are you sure you want to continue?</code></pre> 
+                                          		  </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_F2604D61B8B24A8DACF84CD9767538A3__step_05C6EA6633BD472A9653419E83FBA335">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;8</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Click 
+                                          			 <span class="ph uicontrol">OK</span> to confirm fabric evacuation and continue. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic task nested2" aria-labelledby="ariaid-title15" lang="en-US" id="task_2A28700568504AE193D94BFF1007C053">
+                        <h3 class="title topictitle3" id="ariaid-title15">Displaying the
+                           	 Status of Fabric Evacuation on a Fabric Interconnect
+                        </h3>
+                        <section class="body taskbody">
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0">
+                              <tbody>
+                                 <tr class="li step" id="task_2A28700568504AE193D94BFF1007C053__step_882B44F34CB3441FB9C79DE7062C0548">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                          			 <span class="ph uicontrol">Equipment</span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_2A28700568504AE193D94BFF1007C053__step_F15C253DB4A348B2B1D6D706B4C3A647">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Expand 
+                                          			 <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Fabric
+                                                				  Interconnects</span> &gt; <span class="ph uicontrol"> 
+                                                				  <var class="keyword varname">Fabric_Interconnect_Name</var></span></span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_2A28700568504AE193D94BFF1007C053__step_C1F332F79E394EF6AFE4E49A41DF256B">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Work</span> pane, click the 
+                                          			 <span class="ph uicontrol">General</span> tab. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_2A28700568504AE193D94BFF1007C053__step_35FBDA1C40E841509FD85AC826413C74">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">The Status area
+                                          			 displays 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup stepresult"> 
+                                          		  
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title16" lang="en-US" id="concept_66674E79D04044E8A470B91EDEFA417F">
+                     <h2 class="title topictitle2" id="ariaid-title16">Fabric Interconnect
+                        	 Switching Modes
+                     </h2>
+                     <section class="body conbody">
+                        <p class="p"> The Cisco UCS Fabric Interconnects operate in two main switching modes: Ethernet or Fibre Channel. These modes are independent
+                           of each other. They determine how the fabric interconnect behaves as a device between the server and network/server and storage
+                           device. 
+                        </p>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links">
+                        <ul class="ullinks">
+                           <li class="link ulchildlink"><a href="#concept_6E8B26985992424FAFE60F43B20113AF">Ethernet Switching Mode</a></li>
+                           <li class="link ulchildlink"><a href="#task_DD4FA2EAF3764720A89DF0E26C880E66">Configuring Ethernet Switching Mode</a></li>
+                           <li class="link ulchildlink"><a href="#concept_htb_lcz_ljb">Fibre Channel Switching Mode</a></li>
+                           <li class="link ulchildlink"><a href="#task_B6E0C2A15FE84D498503ADC19CDB160B">Configuring Fibre Channel Switching Mode</a></li>
+                           <li class="link ulchildlink"><a href="#task_9072365286674D9192D0C5CF750306D9">Changing the Properties of the Fabric Interconnects</a></li>
+                           <li class="link ulchildlink"><a href="#task_FF50026BDFD94639B6295AA3FA866034">Determining the Primary Fabric Interconnect</a></li>
+                        </ul>
+                     </nav>
+                     <!-- minitoc end -->
+                     <article class="topic concept nested2" aria-labelledby="ariaid-title17" lang="en-US" id="concept_6E8B26985992424FAFE60F43B20113AF">
+                        <h3 class="title topictitle3" id="ariaid-title17">Ethernet Switching
+                           	 Mode
+                        </h3>
+                        <section class="body conbody">
+                           <p class="p">The Ethernet switching
+                              		mode determines how the fabric interconnect behaves as a switching device
+                              		between the servers and the network. The fabric interconnect operates in either
+                              		of the following Ethernet switching modes: 
+                              	 
+                           </p>
+                           <section class="section" id="concept_6E8B26985992424FAFE60F43B20113AF__section_AE8E50C4505440F18F7D85B4AAABBD7A">
+                              <h4 class="title sectiontitle">End-Host
+                                 		  Mode
+                              </h4> 
+                              		 
+                              		
+                              		
+                              <p class="p"><span class="ph" id="concept_6E8B26985992424FAFE60F43B20113AF__ph_EndHostModeDefn">End-host mode allows the fabric interconnect to act as an end
+                                    			 host to the network, representing all servers (hosts) connected to it through
+                                    			 vNICs</span>. This behavior is achieved by pinning (either dynamically pinning or
+                                 		  hard pinning) vNICs to uplink ports, which provides redundancy to the network,
+                                 		  and makes the uplink ports appear as server ports to the rest of the fabric. 
+                                 		
+                              </p> 
+                              		
+                              <p class="p">In end-host mode,
+                                 		  the fabric interconnect does not run the Spanning Tree Protocol (STP), but it
+                                 		  avoids loops by denying uplink ports from forwarding traffic to each other and
+                                 		  by denying egress server traffic on more than one uplink port at a time.
+                                 		  End-host mode is the default Ethernet switching mode and should be used if
+                                 		  either of the following is used upstream: 
+                                 		
+                              </p> 
+                              		
+                              <ul class="ul" id="concept_6E8B26985992424FAFE60F43B20113AF__ul_E70526DA879044C09CC1517811FD9550">
+                                 <li class="li" id="concept_6E8B26985992424FAFE60F43B20113AF__li_061CD81B2A90490FB9FF09C1D138B1B1"> 
+                                    			 
+                                    <p class="p">Layer 2
+                                       				switching for Layer 2 aggregation 
+                                       			 
+                                    </p> 
+                                    		  
+                                 </li>
+                                 <li class="li" id="concept_6E8B26985992424FAFE60F43B20113AF__li_CDCCE4E192F44806B6B73A6CEE58726A"> 
+                                    			 
+                                    <p class="p"> Virtual
+                                       				Switching System (VSS) aggregation layer 
+                                       			 
+                                    </p> 
+                                    		  
+                                 </li>
+                              </ul> 
+                              		
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr>When you enable
+                                          		  end-host mode, if a vNIC is hard pinned to an uplink port and this uplink port
+                                          		  goes down, the system cannot repin the vNIC, and the vNIC remains down. 
+                                          		
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table> 
+                              	 
+                           </section>
+                           <section class="section" id="concept_6E8B26985992424FAFE60F43B20113AF__section_A9A3F9C0B99C41438968897E37438304">
+                              <h4 class="title sectiontitle">Switch
+                                 		  Mode
+                              </h4> 
+                              		 
+                              		
+                              <p class="p">Switch mode is the
+                                 		  traditional Ethernet switching mode. The fabric interconnect runs STP to avoid
+                                 		  loops, and broadcast and multicast packets are handled in the traditional way.
+                                 		  Use the switch mode only if the fabric interconnect is directly connected to a
+                                 		  router, or if either of the following is used upstream: 
+                                 		
+                              </p> 
+                              		
+                              <ul class="ul" id="concept_6E8B26985992424FAFE60F43B20113AF__ul_0ACA11CF3AB54AC3828595CC80B35BC9">
+                                 <li class="li" id="concept_6E8B26985992424FAFE60F43B20113AF__li_6B60B0FCAF9C4FFDAE4ADE7F78CCE293"> 
+                                    			 
+                                    <p class="p">Layer 3
+                                       				aggregation 
+                                       			 
+                                    </p> 
+                                    		  
+                                 </li>
+                                 <li class="li" id="concept_6E8B26985992424FAFE60F43B20113AF__li_75B568A3D677462F962B43E6EAEA06D9"> 
+                                    			 
+                                    <p class="p">VLAN in a box 
+                                       			 
+                                    </p> 
+                                    		  
+                                 </li>
+                              </ul> 
+                              	 
+                           </section>
+                           <section class="section" id="concept_6E8B26985992424FAFE60F43B20113AF__section_2B92888669604C6181701E7A79CCE735"> 
+                              		
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr> 
+                                          		  
+                                          <p class="p">For both Ethernet
+                                             			 switching modes, even when vNICs are hard-pinned to uplink ports, all
+                                             			 server-to-server unicast traffic in the server array is sent only through the
+                                             			 fabric interconnect and is never sent through uplink ports. Server-to-server
+                                             			 multicast and broadcast traffic is sent through all uplink ports in the same
+                                             			 VLAN. 
+                                             		  
+                                          </p> 
+                                          		
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table> 
+                              	 
+                           </section>
+                           <section class="section" id="concept_6E8B26985992424FAFE60F43B20113AF__section_rgq_yg1_r1b">
+                              <h4 class="title sectiontitle">Cisco UCS Fabric Interconnect in Switch Mode with Cisco MDS 9000 Family Fibre Channel Switching Modules</h4>
+                              			
+                              			
+                              <p class="p">While creating a port channel between a Cisco MDS 9000 family FC switching module and a Cisco UCS Fabric Interconnect in switch
+                                 mode, use the following order:
+                              </p>
+                              			
+                              <ol class="ol" id="concept_6E8B26985992424FAFE60F43B20113AF__ol_jzf_wh1_r1b">
+                                 <li class="li">
+                                    					
+                                    <p class="p">Create the port channel on the MDS side.</p>
+                                    				
+                                 </li>
+                                 <li class="li">
+                                    					
+                                    <p class="p">Add the port channel member ports.</p>
+                                    				
+                                 </li>
+                                 <li class="li">
+                                    					
+                                    <p class="p">Create the port channel on the Fabric Interconnect side.</p>
+                                    				
+                                 </li>
+                                 <li class="li">
+                                    					
+                                    <p class="p">Add the port channel member ports.</p>
+                                    				
+                                 </li>
+                              </ol>
+                              			
+                              <p class="p">If you create the port channel on the Fabric Interconnect side first, the ports will go into a suspended state.</p>
+                              			
+                              <p class="p">When the Cisco UCS Fabric Interconnect is in switch mode, the port channel mode can only be in <span><span class="keyword kwd">ON</span> </span> mode and not <span><span class="keyword kwd">Active</span> </span>. However, to get the peer wwn information for the Fabric Interconnect, the port channel must be in <span><span class="keyword kwd">Active</span> </span> mode.
+                              </p>
+                              		
+                           </section>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic task nested2" aria-labelledby="ariaid-title18" lang="en-US" id="task_DD4FA2EAF3764720A89DF0E26C880E66">
+                        <h3 class="title topictitle3" id="ariaid-title18">Configuring Ethernet Switching Mode</h3>
+                        <section class="body taskbody">
+                           <section class="section context" id="task_DD4FA2EAF3764720A89DF0E26C880E66__context_F58A7A52C4B14B50866DDFB6EB8B6CB5"> 
+                              		
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Important</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr> 
+                                          		  
+                                          <p class="p">When you change the Ethernet switching mode, <span class="ph">Cisco UCS Manager</span> logs you out and restarts the fabric interconnect. For a cluster configuration, <span class="ph">Cisco UCS Manager</span> restarts both fabric interconnects. The subordinate fabric interconnect reboots first as a result of the change in switching
+                                             mode. The primary fabric interconnect reboots only after you acknowledge it in <span class="keyword wintitle">Pending Activities</span>. The primary fabric interconnect can take several minutes to complete the change in Ethernet switching mode and become system
+                                             ready. The existing configuration is retained. 
+                                          </p>
+                                          		  
+                                          <p class="p">While the fabric
+                                             			 interconnects are rebooting, all blade servers lose LAN and SAN connectivity,
+                                             			 causing a complete outage of all services on the blades. This might cause the
+                                             			 operating system to fail. 
+                                             		  
+                                          </p> 
+                                          		
+                                          		
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table> 
+                              	 
+                           </section>
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0" id="task_DD4FA2EAF3764720A89DF0E26C880E66__steps_5D8FE73855A2447AA8753CF33EEAB250">
+                              <tbody>
+                                 <tr class="li step" id="task_DD4FA2EAF3764720A89DF0E26C880E66__step_4EB835AC7D7344B39E16477ACF11A4F8">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                          			 <span class="ph uicontrol">Equipment</span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_DD4FA2EAF3764720A89DF0E26C880E66__step_9DA6E9C3267E4D80ABA5EC52AFF895B6">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Expand 
+                                          			 <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Fabric
+                                                				  Interconnects</span> &gt; <span class="ph uicontrol"> 
+                                                				  <var class="keyword varname">Fabric_Interconnect_Name</var></span></span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_DD4FA2EAF3764720A89DF0E26C880E66__step_0FE492A727904B2486CE3F3DA3A99925">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Work</span> pane, click the 
+                                          			 <span class="ph uicontrol">General</span> tab. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_DD4FA2EAF3764720A89DF0E26C880E66__step_2A7082DB5A48402E82BA3F5B0F557CA8">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="ph uicontrol">Actions</span> area of the 
+                                          			 <span class="ph uicontrol">General</span> tab, click one of the following
+                                          			 links: 
+                                          		  
+                                       </p>
+                                       <ul class="ul choices" id="task_DD4FA2EAF3764720A89DF0E26C880E66__choices_Mode">
+                                          <li class="li choice" id="task_DD4FA2EAF3764720A89DF0E26C880E66__choice_DDF3619F999349A98A2EC95BB46584B2"> 
+                                             				
+                                             <p class="p"> 
+                                                				  <span class="ph uicontrol">Set Ethernet Switching Mode</span> 
+                                                				
+                                             </p> 
+                                             			 
+                                          </li>
+                                          <li class="li choice" id="task_DD4FA2EAF3764720A89DF0E26C880E66__choice_D6E868531F554CED8C6023D7A24F001D"> 
+                                             				
+                                             <p class="p"> 
+                                                				  <span class="ph uicontrol">Set Ethernet End-Host Mode</span> 
+                                                				
+                                             </p> 
+                                             			 
+                                          </li>
+                                       </ul>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <p class="p">The link for the current mode is dimmed. 
+                                             			 
+                                          </p> 
+                                          		  
+                                       </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_DD4FA2EAF3764720A89DF0E26C880E66__step_16E3F91F7B794A8D84860CCAB1EA7C51">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;5</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the dialog box, click 
+                                          			 <span class="ph uicontrol">Yes</span>. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup stepresult"> 
+                                          			 
+                                          <p class="p"> 
+                                             				<span class="ph">Cisco UCS Manager</span>
+                                             				restarts the fabric interconnect, logs you out, and disconnects 
+                                             				<span class="ph">Cisco UCS Manager GUI</span>.
+                                             				
+                                             			 
+                                          </p> 
+                                          		  
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic concept nested2" aria-labelledby="ariaid-title19" lang="en-US" id="concept_htb_lcz_ljb">
+                        <h3 class="title topictitle3" id="ariaid-title19">Fibre Channel Switching Mode</h3>
+                        <section class="body conbody">
+                           <p class="p">The Fibre Channel switching mode determines how the fabric interconnect behaves as a switching device between the servers
+                              and storage devices. The fabric interconnect operates in either of the following Fibre Channel switching modes: 
+                           </p>
+                           <section class="section" id="concept_htb_lcz_ljb__section_AE8E50C4505440F18F7D85B4AAABBD7A">
+                              <h4 class="title sectiontitle">End-Host Mode</h4>
+                              			
+                              			
+                              			
+                              			
+                              <p class="p">End-host mode is synonymous with N Port Virtualization (NPV) mode. This mode is the default Fibre Channel Switching mode.
+                                 <span class="ph">End-host mode allows the fabric interconnect to act as an end host to the connected fibre channel networks, representing all
+                                    servers (hosts) connected to it through virtual host bus adapters (vHBAs)</span>. This behavior is achieved by pinning (either dynamically pinning or hard-pinning) vHBAs to Fibre Channel uplink ports, which
+                                 makes the Fibre Channel ports appear as server ports (N-ports) to the rest of the fabric. When in end-host mode, the fabric
+                                 interconnect avoids loops by preventing uplink ports from receiving traffic from one another. 
+                              </p>
+                              			
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr>
+                                          				
+                                          <p class="p">When you enable end-host mode, if a vHBA is hard-pinned to an uplink Fibre Channel port and this uplink port goes down, the
+                                             system cannot repin the vHBA, and the vHBA remains down. 
+                                          </p>
+                                          			
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table>
+                              		
+                           </section>
+                           <section class="section" id="concept_htb_lcz_ljb__section_A9A3F9C0B99C41438968897E37438304">
+                              <h4 class="title sectiontitle">Switch Mode</h4>
+                              			
+                              			
+                              <p class="p">Switch mode is not the default Fibre Channel switching mode. Switch mode allows the fabric interconnect to connect directly
+                                 to a storage device. Enabling Fibre Channel switch mode is useful in Pod models where there is no SAN (for example, a single
+                                 <span class="ph">Cisco UCS domain</span> that is connected directly to storage), or where a SAN exists (with an upstream MDS). In Fibre Channel switch mode, SAN pin
+                                 groups are irrelevant. Any existing SAN pin groups are ignored. 
+                              </p>
+                              		
+                           </section>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic task nested2" aria-labelledby="ariaid-title20" lang="en-US" id="task_B6E0C2A15FE84D498503ADC19CDB160B">
+                        <h3 class="title topictitle3" id="ariaid-title20">Configuring Fibre
+                           	 Channel Switching Mode
+                        </h3>
+                        <section class="body taskbody">
+                           <section class="section context" id="task_B6E0C2A15FE84D498503ADC19CDB160B__context_65B6C745CCC34B1E92281CEAEA0B998E"> 
+                              		
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Important</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr> 
+                                          		  
+                                          <p class="p">When you change the Fibre Channel switching mode, <span class="ph">Cisco UCS Manager</span> logs you out and restarts the fabric interconnect. For a cluster configuration, <span class="ph">Cisco UCS Manager</span> restarts both fabric interconnects simultaneously in <span class="ph">Cisco UCS Manager</span> Release 3.1(1) and earlier releases. In <span class="ph">Cisco UCS Manager</span> Release 3.1(2), when the Fibre Channel switching mode is changed, the UCS fabric interconnects reload sequentially. In <span class="ph">Cisco UCS Manager</span> Release 3.1(3), and later releases, the subordinate fabric interconnect reboots first as a result of the change in switching
+                                             mode. The primary fabric interconnect reboots only after you acknowledge it in <span class="keyword wintitle">Pending Activities</span>. The primary fabric interconnect can take several minutes to complete the change in Fibre Channel switching mode and become
+                                             system ready. 
+                                          </p> 
+                                          		
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table> 
+                              		
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr> When the Fibre
+                                          		  Channel switching mode is changed, both UCS fabric interconnects will reload
+                                          		  simultaneously. Reloading of fabric interconnects will cause a system-wide
+                                          		  downtime lasting approximately 10-15 minutes. 
+                                          		
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table> 
+                              	 
+                           </section>
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0" id="task_B6E0C2A15FE84D498503ADC19CDB160B__steps_56CE89AECAE543B2B28343D00C9BD319">
+                              <tbody>
+                                 <tr class="li step" id="task_B6E0C2A15FE84D498503ADC19CDB160B__step_4EB835AC7D7344B39E16477ACF11A4F8">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                          			 <span class="ph uicontrol">Equipment</span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_B6E0C2A15FE84D498503ADC19CDB160B__step_9DA6E9C3267E4D80ABA5EC52AFF895B6">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Expand 
+                                          			 <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Fabric
+                                                				  Interconnects</span> &gt; <span class="ph uicontrol"> 
+                                                				  <var class="keyword varname">Fabric_Interconnect_Name</var></span></span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_B6E0C2A15FE84D498503ADC19CDB160B__step_0FE492A727904B2486CE3F3DA3A99925">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Work</span> pane, click the 
+                                          			 <span class="ph uicontrol">General</span> tab. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_B6E0C2A15FE84D498503ADC19CDB160B__step_2A7082DB5A48402E82BA3F5B0F557CA8">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="ph uicontrol">Actions</span> area of the 
+                                          			 <span class="ph uicontrol">General</span> tab, click one of the following links: 
+                                          		  
+                                       </p>
+                                       <ul class="ul choices" id="task_B6E0C2A15FE84D498503ADC19CDB160B__choices_Mode">
+                                          <li class="li choice" id="task_B6E0C2A15FE84D498503ADC19CDB160B__choice_DDF3619F999349A98A2EC95BB46584B2"> 
+                                             				
+                                             <p class="p"> 
+                                                				  <span class="ph uicontrol">Set
+                                                   					 Fibre Channel Switching Mode</span> 
+                                                				
+                                             </p> 
+                                             			 
+                                          </li>
+                                          <li class="li choice" id="task_B6E0C2A15FE84D498503ADC19CDB160B__choice_D6E868531F554CED8C6023D7A24F001D"> 
+                                             				
+                                             <p class="p"> 
+                                                				  <span class="ph uicontrol">Set
+                                                   					 Fibre Channel End-Host Mode</span> 
+                                                				
+                                             </p> 
+                                             			 
+                                          </li>
+                                       </ul>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <p class="p">The link for the
+                                             				current mode is dimmed. 
+                                             			 
+                                          </p> 
+                                          		  
+                                       </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_B6E0C2A15FE84D498503ADC19CDB160B__step_16E3F91F7B794A8D84860CCAB1EA7C51">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;5</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the dialog
+                                          			 box, click 
+                                          			 <span class="ph uicontrol">Yes</span>. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup stepresult"> 
+                                          			 
+                                          <p class="p"> 
+                                             				<span class="ph">Cisco UCS Manager</span>
+                                             				restarts the fabric interconnect, logs you out, and disconnects 
+                                             				<span class="ph">Cisco UCS Manager GUI</span>.
+                                             				
+                                             			 
+                                          </p> 
+                                          		  
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic task nested2" aria-labelledby="ariaid-title21" lang="en-US" id="task_9072365286674D9192D0C5CF750306D9">
+                        <h3 class="title topictitle3" id="ariaid-title21">Changing the
+                           	 Properties of the Fabric Interconnects
+                        </h3>
+                        <section class="body taskbody">
+                           <section class="section context" id="task_9072365286674D9192D0C5CF750306D9__context_DC1B8AB570944805A5552A226D656A04"> 
+                              		
+                              		
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr> 
+                                          		  
+                                          <p class="p"> To change the
+                                             			 subnet or network prefix for a 
+                                             			 <span class="ph">Cisco UCS domain</span>, you must simultaneously change all subnets or prefixes, the
+                                             			 virtual IPv4 or IPv6 address used to access 
+                                             			 <span class="ph">Cisco UCS Manager</span>, and the IPv4 or IPv6 addresses for both fabric interconnects. 
+                                             		  
+                                          </p> 
+                                          		  
+                                          <p class="p">Both fabric
+                                             			 interconnects must maintain the same management address type, either IPv4 or
+                                             			 IPv6. You cannot change the management address type for Fabric A without
+                                             			 changing the management address type for Fabric B. 
+                                             		  
+                                          </p> 
+                                          		
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table> 
+                              	 
+                           </section>
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0" id="task_9072365286674D9192D0C5CF750306D9__steps_49A2B634E41D41CC889C2AD1A3698A23">
+                              <tbody>
+                                 <tr class="li step" id="task_9072365286674D9192D0C5CF750306D9__step_E21671CAE47342BA9B3D2090584AEEA7">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                          			 <span class="ph uicontrol">Admin</span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_9072365286674D9192D0C5CF750306D9__step_316AD88E993A46548824AE845CC3C8C5">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> Expand 
+                                          			 <span class="ph menucascade"><span class="ph uicontrol">Admin</span> &gt; <span class="ph uicontrol">All</span></span>.
+                                          			 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_9072365286674D9192D0C5CF750306D9__step_122278F6E4F4418C871A0630C5B4C111">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Work</span> pane, click the 
+                                          			 <span class="ph uicontrol">General</span> tab. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_9072365286674D9192D0C5CF750306D9__step_356658A017B241C48CF123A2B9AA416A">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="ph uicontrol">Actions</span> area, click 
+                                          			 <span class="ph uicontrol">Management Interfaces</span> to open the 
+                                          			 <span class="keyword wintitle">Management Interfaces</span> dialog box. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_9072365286674D9192D0C5CF750306D9__step_A9C37B33DA9D417E95093FE722D78B8E">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;5</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Management Interfaces</span> dialog box, modify the values
+                                          			 as necessary. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_9072365286674D9192D0C5CF750306D9__step_D565AA1416704808BF32F1CB54CC865E">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;6</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">To change only
+                                          			 the virtual IP address that you use to access 
+                                          			 <span class="ph">Cisco UCS Manager</span>, enter the desired IP address in either the 
+                                          			 <span class="ph uicontrol">IPv4
+                                             				Address</span> or the 
+                                          			 <span class="ph uicontrol">IPv6
+                                             				Address</span> field in the 
+                                          			 <span class="ph uicontrol">Virtual
+                                             				IP</span> area. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_9072365286674D9192D0C5CF750306D9__step_EAFCAAF90C7C4C058C81E15CC617F847">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;7</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">To change only
+                                          			 the name assigned to the 
+                                          			 <span class="ph">Cisco UCS domain</span>, enter the desired name in the 
+                                          			 <span class="ph"><span class="ph uicontrol">Name</span> field</span> in the 
+                                          			 <span class="ph uicontrol">Virtual
+                                             				IP</span> area. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_9072365286674D9192D0C5CF750306D9__step_7FD9E1D03973465A98DA4F900FF307DA">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;8</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">To change the
+                                          			 subnet and IPv4 address, or the network prefix and IPv6 address, and default
+                                          			 gateway assigned to the fabric interconnects, update the following fields: 
+                                          		  
+                                       </p>
+                                       <ol type="a" class="ol substeps" id="task_9072365286674D9192D0C5CF750306D9__substeps_897AA53427A44909B73E8BFCB9310B48">
+                                          <li class="li substep substepexpand" id="task_9072365286674D9192D0C5CF750306D9__substep_29121D41EB9A4E66A80A972A616D69D4">
+                                             <p class="ph cmd">In the 
+                                                				  <span class="ph uicontrol">Virtual IP</span> area, change the IP address used to
+                                                				  access 
+                                                				  <span class="ph">Cisco UCS Manager</span> in the 
+                                                				  <span class="ph uicontrol">IPv4
+                                                   					 Address</span> or 
+                                                				  <span class="ph uicontrol">IPv6
+                                                   					 Address</span> field. 
+                                                				
+                                             </p>
+                                          </li>
+                                          <li class="li substep substepexpand" id="task_9072365286674D9192D0C5CF750306D9__substep_6DE534D3DBB943DC9D659176D5ABFDDF">
+                                             <p class="ph cmd">In the 
+                                                				  <span class="ph uicontrol">Fabric Interconnect</span> area for each fabric
+                                                				  interconnect, click either the IPv4 or IPv6 tab. 
+                                                				
+                                             </p>
+                                             <section class="itemgroup info"> 
+                                                				
+                                             </section>
+                                          </li>
+                                          <li class="li substep substepexpand" id="task_9072365286674D9192D0C5CF750306D9__substep_EDD1F6143BA748878FD0A979C0C7EF24">
+                                             <p class="ph cmd">On the IPv4
+                                                				  tab, update the IP address, subnet mask, and default gateway. 
+                                                				
+                                             </p>
+                                          </li>
+                                          <li class="li substep substepexpand" id="task_9072365286674D9192D0C5CF750306D9__substep_A6F5BDBD0A404F24B31B4FFA82660E6A">
+                                             <p class="ph cmd">On the IPv6
+                                                				  tab, update the IP address, prefix, and default gateway. 
+                                                				
+                                             </p>
+                                          </li>
+                                       </ol>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_9072365286674D9192D0C5CF750306D9__step_65DB19F76F324938A1182A68206CCF03">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;9</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Click 
+                                          			 <span class="ph uicontrol">OK</span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_9072365286674D9192D0C5CF750306D9__step_25DF7D488A78498B8491715BAAA67310">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;10</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Log out of 
+                                          			 <span class="ph">Cisco UCS Manager GUI</span> and log back in again to see your changes. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic task nested2" aria-labelledby="ariaid-title22" lang="en-US" id="task_FF50026BDFD94639B6295AA3FA866034">
+                        <h3 class="title topictitle3" id="ariaid-title22">Determining the
+                           	 Primary Fabric Interconnect
+                        </h3>
+                        <section class="body taskbody">
+                           <section class="section context" id="task_FF50026BDFD94639B6295AA3FA866034__context_7DE56F2F1BE14E1FBF158933B80809F6"> 
+                              		
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Important</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr> 
+                                          		  
+                                          <p class="p">If the admin
+                                             			 password is lost, you can determine the primary and secondary roles of the
+                                             			 fabric interconnects in a cluster by opening the Cisco UCS Manager GUI from the
+                                             			 IP addresses of both fabric interconnects. The subordinate fabric interconnect
+                                             			 fails with the following message: 
+                                             		  
+                                          </p><samp class="ph systemoutput sysout">UCSM GUI is not available on secondary node.</samp> 
+                                          		
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table> 
+                              	 
+                           </section>
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0" id="task_FF50026BDFD94639B6295AA3FA866034__steps_8F9F276F92424F3F90D1E82BCC6C776D">
+                              <tbody>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_9D7BC338A6D74186B3769986BB375972">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                          			 <span class="ph uicontrol">Equipment</span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_788D980AC5264A97A0E1C4FF6FEE2E2B">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Expand 
+                                          			 <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Fabric
+                                                				  Interconnects</span></span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_324B1C2715C84250B6B7AB46AA6C1154">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> Click the
+                                          			 fabric interconnect for which you want to identify the role. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_6711FB2260B94F5492A06D1CC05B73C4">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Work</span> pane, click the 
+                                          			 <span class="ph uicontrol">General</span> tab. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_D593304DE0DF40D2A5FEA02E2C4B06CF">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;5</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="ph uicontrol">General</span> tab, click the down arrows on the 
+                                          			 <span class="ph uicontrol">High
+                                             				Availability Details</span> bar to expand that area. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_FF50026BDFD94639B6295AA3FA866034__step_557A5F09981F4948B2DABD8C37AB2E67">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;6</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">View the 
+                                          			 <span class="ph uicontrol">Leadership</span> field to determine whether the fabric
+                                          			 interconnect is primary or subordinate. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title23" lang="en-US" id="concept_u3h_z1z_ljb">
+                     <h2 class="title topictitle2" id="ariaid-title23">Fabric Interconnect Port Types</h2>
+                     <section class="body conbody">
+                        <p class="p">By default, all fabric interconnect ports are unconfigured. For Ethernet LAN connectivity, fabric interconnect ports can be
+                           in the following states: 
+                        </p>
+                        <ul class="ul">
+                           <li class="li" id="concept_u3h_z1z_ljb__li_854803AB961A470994805C16E030B252">
+                              				
+                              <p class="p"><strong class="ph b">Unconfigured</strong>—Port is not configured and cannot be used. 
+                              </p>
+                              			
+                           </li>
+                           <li class="li" id="concept_u3h_z1z_ljb__li_77A56C9CF711402085B5BD32254C7E25">
+                              				
+                              <p class="p">
+                                 					<strong class="ph b">Server Port</strong>—Port is configured for downlink connection to an IOM Fabric Extender (FEX) module in a blade chassis.
+                              </p>
+                              			
+                           </li>
+                           <li class="li" id="concept_u3h_z1z_ljb__li_CF5F05DD3F1F4FDDBAC18A06724A570C">
+                              				
+                              <p class="p"><strong class="ph b">Uplink Port</strong>—Port is configured for uplink connection to the upstream Ethernet switch. Uplink ports are always configured as trunk ports.
+                                 
+                              </p>
+                              			
+                           </li>
+                           <li class="li" id="concept_u3h_z1z_ljb__li_6E33344D217D484288A4808DFF6FA905">
+                              				
+                              <p class="p"><strong class="ph b">Disabled</strong>—Port is configured either as an uplink or server port and is currently disabled by the administrator. 
+                              </p>
+                              			
+                           </li>
+                        </ul>
+                        <p class="p">On Cisco UCS 6300 series fabric interconnects, you can configure ports for high-speed Ethernet and Fibre Channel connections.
+                           The Cisco UCS 6332-16UP provides a mix of 1/10-Gbps and 4/8/16-Gbps ports, while the Cisco UCS 6332 32-Port Fabric Interconnect
+                           offers 40-Gbps ports with options for 10-Gbps breakouts.
+                        </p>
+                        <p class="p">On Cisco UCS 6454<span class="ph"> and 64108</span> Fabric Interconnects, ports 1 to 16 are unified ports. These ports can be configured as either Ethernet or Fibre Channel
+                           ports.
+                        </p>
+                        		
+                        <p class="p">On <span class="ph">Cisco UCS 6536 Fabric Interconnect</span>s, ports 33 to 36 are unified ports. These ports can be configured as either Ethernet or Fibre Channel  ports. 
+                        </p>
+                        		
+                        <p class="p">On <span class="ph">Cisco UCS X-Series Direct</span>, also referred as Cisco UCS Fabric Interconnects 9108 100G (UCSX-S9108-100G), supports port breakout for Ethernet Ports (1-8)
+                           and Unified Ports (1 &amp; 2).
+                        </p>
+                        		
+                        <p class="p">On <span class="ph">Cisco UCS 6600 Series Fabric Interconnect</span>s, ports 25-40 are unified ports. These ports can be configured as either Ethernet or Fibre Channel ports.
+                        </p>
+                        		
+                        <table class="olh_note" border="0" role="note">
+                           <tr>
+                              <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                              </td>
+                              <td border="0" class="olh_note">
+                                 <section class="note__content">
+                                    <hr>
+                                    			
+                                    <p class="p">For detailed information on each type of Fabric Interconnect port, see <a class="xref" href="https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html" target="_blank">Cisco UCS Manager Getting Started Guide</a>.
+                                    </p>
+                                    		
+                                    <hr>
+                                 </section>
+                              </td>
+                           </tr>
+                        </table>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title24" lang="en-US" id="concept_4B7D337624964E3E8C51207F728DF656">
+                     <h2 class="title topictitle2" id="ariaid-title24">vNICs</h2>
+                     <section class="body conbody">
+                        <p class="p">Once the connectivity
+                           		between upstream uplink switches and downstream IOMs is established, we can
+                           		connect vNICs from blade servers configuring vNICs. We recommended that you
+                           		create a vNIC template to provide ease of management . 
+                           	 
+                        </p>
+                        <p class="p">vNICs can be created
+                           		within server profiles or by using a vNIC template. Using a vNIC template is
+                           		the recommended method for configuring the NIC settings once, for each
+                           		template, and then quickly creating new vNICs with the desired configuration.
+                           		The vNIC configuration settings can be optimized for various operating systems,
+                           		storage devices, and hypervisors. 
+                           	 
+                        </p>
+                        <p class="p">A vNIC template can be
+                           		configured as either of the following: 
+                           	 
+                        </p>
+                        <ul class="ul">
+                           <li class="li" id="concept_4B7D337624964E3E8C51207F728DF656__li_4FDC679CCED84212964DAB0558DF5047"> 
+                              		  
+                              <p class="p">Initiating
+                                 			 template: This vNIC template will provide one-time configuration for the vNICs
+                                 			 created using this template. Any subsequent changes to the template are not
+                                 			 propagated to abstracted vNICs. 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_4B7D337624964E3E8C51207F728DF656__li_64310E716F3145EBB9D15265EDF8D7D4"> 
+                              		  
+                              <p class="p">Updating template:
+                                 			 This vNIC template will provide initial configuration for the vNICs created
+                                 			 using this template. Any subsequent changes to the template will also be
+                                 			 propagated to abstracted vNICs. We recommend that you to create an updating
+                                 			 vNIC template for production environments. 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                        </ul>
+                        <p class="p">vNIC MAC addresses can
+                           		be assigned manually or by configuring a MAC address pool. It is possible to
+                           		either use the burned-in MAC addresses or abstract MAC addresses from an
+                           		identity pool with system-defined prefixes. Stateless computing is the salient
+                           		feature of the Cisco UCS platform. Therefore we recommend to you abstract vNIC
+                           		MAC addresses for server profiles, and consequently use server vNIC MAC
+                           		addresses from MAC address identity pools instead of using burned-in NIC MAC
+                           		addresses. The benefit of abstracting the MAC identity is that in case of
+                           		physical server failure, the server profile can be easily associated with the
+                           		replacement server. The new server will acquire all the identities associated
+                           		with the old server including the vNIC MAC addresses. From the operating system
+                           		perspective, there is no change at all. 
+                           	 
+                        </p>
+                        <p class="p">We recommend that you
+                           		create vNIC templates with different configurations and create individual vNICs
+                           		from vNIC templates as required. Also, define MAC address pools and assign MAC
+                           		addresses to individual vNICs using those MAC address pools. 
+                           	 
+                        </p>
+                        <p class="p">A vNIC is typically
+                           		abstracted from the physical mezzanine card. Older Emulex, QLogic, and Intel
+                           		NIC cards have fixed ports. The Cisco mezzanine NIC card, also known as a Palo
+                           		card or Virtual Interface Card (VIC), provides dynamic server interfaces. Cisco
+                           		VIC cards provide up to 256 dynamic interfaces. vNICs can be created within
+                           		server profiles or by using a vNIC template. Using a vNIC template is the
+                           		recommended method for configuring the NIC settings, doing so once for each
+                           		template and then quickly creating additional vNICs with the desired
+                           		configurations. The vNIC configuration settings can be optimized for various
+                           		operating systems, storage devices, and hypervisors. 
+                           	 
+                        </p>
+                        <p class="p">The vNIC creation for
+                           		servers is part of the server profile, or server profile template creation.
+                           		Once 
+                           		<span class="ph uicontrol">Create Service Profile Template</span> or 
+                           		<span class="ph uicontrol">Service Profile (Expert)</span> is started for the blade
+                           		servers, creating the vNIC is the second step in the configuration wizard. 
+                           	 
+                        </p>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+               </article>
+            </article>
+         </main>
+      
+
+</div> 
+ 
+    </div>
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent noprint base-blowout">
+    <div class="eotPersonalization">
+        <section id="eotTDCampaign"></section>
+    </div>    
+    <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>Was this Document Helpful?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes" aria-label="Was this Document Helpful?? Yes">Yes</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no" aria-label="Was this Document Helpful?? No">No</button>
+  </span>
+  <span lang="en" class="eot-feedback-olwrap">
+    
+      <a href="javascript: void(0);" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">Feedback</a>
+    
+  </span>
+</div>
+
+
+</div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+    </div>
+			
+    <div class="letUsHelp">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eotLetUsHelp">
+    <h3>Contact Cisco</h3>
+    <ul>
+         <li><a id="eotLetUsHelpProdDocUrl" href="https://mycase.cloudapps.cisco.com/start?prodDocUrl=">Open a Support Case</a><img src="/etc/designs/cdc/fw/i/icon_lock_small.png" alt="login required"/></li>
+        <li>(Requires a <a href="//www.cisco.com/c/en/us/services/order-services.html">Cisco Service Contract</a>)</li>
+    </ul>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        var getURL=jQuery("#eotLetUsHelpProdDocUrl").attr("href"), 
+            domInd = location.href.indexOf('cisco.com') ;
+        if ( domInd > -1 && domInd < location.href.search(/\w\/\w/) ) {
+            getURL += encodeURI(location.href);
+        }
+		jQuery("#eotLetUsHelpProdDocUrl").attr("href",getURL);
+    });
+</script>
+
+
+    </div>
+
+    <div id="eotRightRailMBox"><!--MBox-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IT:components/mbox/banner-mbox:V0.0.0 -->
+
+
+
+<div>
+    <div class="mboxDefault"></div>   
+    <script type="text/javascript">
+        var test="";
+        if(test!=undefined && test.trim().length>0){
+           mboxCreate('en-us_dg_support_bookchapters','type=default','');
+        }else{
+           mboxCreate('en-us_dg_support_bookchapters','type=default');
+        }
+       
+    </script>
+</div>
+<!--MBox--></div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+	<script type="text/javascript">
+			    var eottdatp = document.getElementsByClassName('eot-tdatp');
+			    if (eottdatp && eottdatp.style) {
+        			eottdatp.style.display="none";
+			    }
+        		  </script>
+  	
+
+
+    </div>
+			
+    <div></div>
+
+</div>
+
+
+    </div>
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/us/en/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/clientlibs/responsive/js/books.min.js"></script>
+
+<script src="/etc/designs/cdc/fw/m/books_metricsrule.js" type="text/javascript" async></script>
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>

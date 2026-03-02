@@ -1,0 +1,2379 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="en" xml:lang="en"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="en/us";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.cpe === undefined) {
+        window.cpe = {};
+    }
+
+    cpe.accountName = "prod";
+    cpe.config = ["cinf","dsc","pps"];
+    cpe.hideMethod = "elements";
+
+    window.targetGlobalSettings = JSON.parse('{\x22timeout\x22:4000}');
+    window.targetPageParamsAll = () => JSON.parse('{\x22entity\x22:\x22{\\\x22id\\\x22:\\\x221692158744876982\\\x22,\\\x22categoryId\\\x22:\\\x22\\\x22}\x22}');
+
+    
+    const bullseyeLibrary = `/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/external/bullseye.js`;
+
+    import(bullseyeLibrary);
+</script>
+<script src="/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/regional-mbox/regional-mbox.js"></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <title>Cisco UCS Manager Network Management Guide Using the CLI, Release 4.3 - Upstream Disjointed Layer-2 Networks [Cisco UCS Manager] - Cisco</title>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="Upstream Disjointed Layer-2 Networks"  />
+    <meta name="title" content="Cisco UCS Manager Network Management Guide Using the CLI, Release 4.3 - Upstream Disjointed Layer-2 Networks [Cisco UCS Manager]"  />
+    <meta name="documentId" content="1692158744857981"  />
+    <meta name="templateName" content="book"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="WEM"  />
+    <meta name="docType" content="TSD Products Configuration Guide Chapter"  />
+    <meta name="concept" content="Cisco UCS Manager"  />
+    <meta name="iaPath" content="cisco.com#Products#Cisco Products#Servers - Unified Computing#Cisco UCS Manager"  />
+    <meta name="contentType" content="cisco.com#US#preSales"  />
+    <meta name="locale" content="US"  />
+    <meta name="language" content="en"  />
+    <meta name="country" content="US"  />
+    <meta name="CCID_Page" content="cc001777"  />
+    <meta name="date" content="Tue Sep 16 05:49:36 PDT 2025"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="Cisco UCS Manager Network Management Guide Using the CLI, Release 4.3 - Upstream Disjointed Layer-2 Networks [Cisco UCS Manager]"  />
+    <meta property="og:description" content="Upstream Disjointed Layer-2 Networks"  />
+    <meta property="og:url" content="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01001.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01001.html"/>
+	
+
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/en\/us\/td\/docs\/unified_computing\/ucs\/ucs\u002Dmanager\/CLI\u002DUser\u002DGuides\/Network\u002DMgmt\/4\u002D3\/b_cli_ucsm_network_management_guide_4_3\/b_CLI_UCSM_Network_Management_Guide_chapter_01001");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/cisco-sans.min.css" type="text/css">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/books.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", 'You are being logged out.');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "Upstream Disjointed Layer-2 Networks",  		  
+          "url": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01001.html",
+          "description": "Upstream Disjointed Layer-2 Networks",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="hvck7tyxelwrg2nfbwrq-f-fce0490a2-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":10,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"2b7219cf","ak.r":37441,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"61.68.175.0","ak.cport":51583,"ak.gh":"23.199.68.174","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772424611","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==/y07Mx11NsunDgb6MM4ChTw4K8wTWbuOLaZB70BRWc5k6wBkbPneJy0xCqd5uMNnU1daKT0qoPwIQL6IFskXUNQvFL3tNcu3mKqY2iw2PBC4mNafbXc5k90FP9IDvxXhHmDNFOoYttYL5adZYIDvRPqJA0Q+cBEWbI2OrfDfyCWTmOiW/8BG+mxdAoXzMsSCntrBSHJ4guI6sV0SLwl45N+uG1mOGgCqNOzy8tL8fUUcn/tDGl72kIBLozgDzcHaQFQznIvdLAKtxdWbj6NRA96KkonLEtIkb7jB6LpPr59eW4dRJoEpsceVizb4oSLcgP9+egAqW/hekM8omVWGxO/n1UA4WspwIKmBHjxshWqG2MsmMfROGBBPCuZi/B8cJM2Unf2TKFv950DGlnfI+8W+cJ0vqQdWvwBu+oe26D0=","ak.pv":"540","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body id="wcq" class="fw-res cdc-support cdc-books cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">Skip to content</a></li>
+        <li><a id="skiplink-search" href="#">Skip to search</a></li>
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">Skip to footer</a></li>
+    </ul>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/us/en/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/index.html">Cisco.com Worldwide</a></li>
+            <li><a tabindex="-1" href="/c/en/us/products/index.html">Products and Services</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/solutions/index.html">Solutions</a></li>
+            <li><a tabindex="-1" href="/c/en/us/support/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/c/en/us/training-events.html">Learn</a></li>
+            <li><a tabindex="-1" href="//www.cisco.com/c/en/us/about/sitemap.html">Explore Cisco</a></li>
+            <li><a tabindex="-1" href="/c/en/us/buy.html">How to Buy</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Partners Home</a></li>                
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/cisco-partner-program/index.html?ccid=cc000864&dtid=odiprc001129">Partner Program</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/support-help/index.html">Support</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/tools/index.html?dtid=odiprc001129">Tools</a></li>
+            <li><a tabindex="-1" href="https://locatr.cloudapps.cisco.com/WWChannels/LOCATR/pf/index.jsp#/">Find a Cisco Partner</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/connect-with-a-partner/index.html?ccid=cc000864&dtid=odiprc001129">Meet our Partners</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Become a Cisco Partner</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based user-driven-nav" aria-label="breadcrumbs" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/index.html'><span itemprop='name'>Home</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/index.html'><span itemprop='name'>Support</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/all-products.html'><span itemprop='name'>Product Support</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/category.html'><span itemprop='name'>Servers - Unified Computing</span><meta itemprop='position' content='4' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/series.html'><span itemprop='name'>Cisco UCS Manager</span><meta itemprop='position' content='5' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html'><span itemprop='name'>Configuration Guides</span><meta itemprop='position' content='6' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+        
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">Cisco UCS Manager Network Management Guide Using the CLI, Release 4.3</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   <!-- have to do this for _g.I18n to be defined in preview and publish modes -->
+  
+  <script type="text/javascript">
+      // initialize dictionary for i18n
+      cdc.util.ensureNamespace("cdc.rc");
+    cdc.rc.eotkeys = {
+        showOnly5Products : "Show Only 5 Products",       
+        showAllRowsProducts : "Show All nRows Products",
+        supportCommunityUrl : "https://community.cisco.com/t5/technology-and-support/ct-p/technology-support",
+        supportCommunity : "Cisco Community",
+        thankYou : "Thank You",
+        viewersAlso : "Customers Also Viewed", 
+        show : "Show", 
+        more : "More", 
+        showOnly3Documents: "Show Only 3 Documents"
+      };
+  </script>
+
+
+
+<div class="row blowout full visitedlinks">
+    <div class="col full">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers techdocs">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button aria-expanded="false" >Bias-Free Language</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>Bias-Free Language</h3>
+            <p>The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. <a href="https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html">Learn more</a> about how Cisco is using Inclusive Language.</p>
+        </div>
+        
+    </div><!-- disclaimers -->
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* this is needed for the translation selector */
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+    var bookTitle = 'Book Title Page';
+</script>
+
+<span id="actionBar-top"></span>
+<section id="actionBar" class="noprint base-blowout">
+    <span class="icons">
+        
+        <button class="bookToc simpleOverlay-trigger" id="onlyforTrigger"> <!--US140575-->
+            Book Contents
+        </button>
+            <div class="bookToc simpleOverlay-content">
+               <div role="heading" class="title">Book Contents</div>
+               <!--googleoff: index--><!--googleoff: snippet-->  
+               <div class="content">
+                  
+
+
+
+<ul id="bookToc">
+    <li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_preface_00.html">Preface</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01.html">New and Changed</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_010.html">Overview</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_4_1_chapter_011.html">Lan Connectivity</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_0100.html">Lan Ports and Port Channels</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_0101.html">VLAN</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_0110.html">LAN Pin Groups</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_0111.html">Mac Pools</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01000.html">Quality of Service</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/m_cli_port_security.html">Port Security</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01001.html">Upstream Disjointed Layer-2 Networks</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01011.html">Network-Related Policies</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/m-cli-macsec-4-3.html">Configuring MACsec</a></li>
+
+</ul>
+
+
+               </div>
+               <!--googleon: index--><!--googleon: snippet-->               
+            </div>
+
+        
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='versionddcontainer chapter'></div>
+<script type="text/html" class="versionstemp">
+            <div class="versionsdd">
+                <button class="versionbutton" aria-haspopup="true" aria-expanded="false" aria-labelledby="other versions" class="version"><label></label></button>
+                <ul class="versionlist" aria-labelledby="other versions">
+                <%
+                    let pageUrl = window.location.pathname.replace("/content/","/c/").toLowerCase();
+                    if (true) pageUrl = pageUrl.substring(0,pageUrl.lastIndexOf("/"))+".html";
+                    for(let i=0; i< data.length; i++) {
+                        let item = data[i],
+                            myurl = item.linkUrl,
+                            urlm = myurl.replace("/content/","/c/");;
+                            mytitle = item.linkTitle;
+                            myclass= urlm.toLowerCase() == pageUrl ? "class=\"selected\"":""; 
+%>
+                    <li><a href="${myurl}" ${myclass}>${mytitle}</a></li>
+<%
+                  }   %>
+                </ul>
+             </div>
+</script>
+    
+        <span class="utilities">
+          <button title="Search in this Book" class="mobileSearch simpleOverlay-trigger">
+            Search
+          </button>
+          <div class="mobileSearch simpleOverlay-content">
+            <div class="title">Find Matches in This Book</div>
+              <!--googleoff: index--><!--googleoff: snippet-->  
+              <div class="content">
+                <form id="mobileBooksearch" class="chapter">
+                   <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit"></button>
+                   <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+                </form>
+                <div id="overlayResults" role="region" aria-live="polite" >
+                   <!-- important, keep this results div begin end on same line in here -->
+                   <div class="results"></div>
+                </div>
+              </div>
+              <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "Save";
+    cdc.rc.savedoc.saved = "Saved";
+</script>
+
+    <button class="save" aria-expanded="false" aria-label="Save">
+        <label>Save</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01001.html">Log in</a> to Save Content
+    </div>
+
+
+          <!-- Translation Selctor -->
+          <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+ 
+
+
+ 
+          <div class="translations simpleOverlay-content" role="dialog" id="dialogt" aria-labelledby="onlyForNonEN" aria-modal="true">
+            <div role="heading" class="title">Available Languages</div>
+               <!--googleoff: index--><!--googleoff: snippet--> 
+            <script language="javascript">                    
+                cdc.translations.map = "{en-us=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01001.html, x-default=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01001.html}";//storing the map for use in the JS
+                cdc.translations.locale="en_us";
+            </script>
+            <div class="content">
+              <div class="availableLanguagesList">
+                  <ul id="translationsList">
+                  </ul> 
+              </div>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+          
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // stored value for overlay label to use in js
+    var downloadOPtionLabel = 'Download Options',
+    	bookSearchlabel = 'Find Matches in This Book',
+    	translationsLabel = 'Translations',
+    	bookConentLabel= 'Book Contents';
+</script>
+
+
+        
+
+
+
+        <button title="Document Download Options" id="dwnld-button" class="downloadOptions simpleOverlay-trigger" aria-expanded="false">
+            Download
+        </button>
+        <div class="downloadOptions simpleOverlay-content" role="dialog" id="dialogd" aria-labelledby="dwnld-button" aria-modal="true" class="default_dialog">
+            <div role="heading" class="title">Download Options</div>
+            <!--googleoff: index--><!--googleoff: snippet-->  
+            <div class="content">
+                <header>
+
+                    <h3 class="h4"> Book Title</p>
+                    <p>Cisco UCS Manager Network Management Guide Using the CLI, Release 4.3</p>
+                    <p class="h4"> Chapter Title</p>
+                    <h3>Upstream Disjointed Layer-2 Networks</p>
+
+                </header>
+                <ul>
+
+                        <li >    
+                            <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3.pdf" class="pdfIcon">PDF - Complete Book 
+                            <span>(4.82 MB)</span></a>
+
+                                   <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01001.pdf" class="chapter">PDF - This Chapter <span>(1.1 MB)</span></a>
+                                                            
+                            <p>View with Adobe Reader on a variety of devices</p>
+                        </li>                                  
+              </ul>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+        </div>
+
+          <button title="Print Friendly Page" class="print simpleOverlay-trigger">
+              Print
+          </button>
+        </span> 
+    </span>
+    <form id="booksearch" tabindex="0" class="chapter">
+       <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+       <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+    </form>
+      <div id="searchresult" role="region" aria-live="polite"><button class="close" title="Close Panel"><span></span><span></span></button>
+         <span class="headArrow"></span>
+         <h2>Results</h2>
+         <div class="matches">
+         </div>
+         <div class="results" tabindex="0">
+         </div>
+      </div>
+      <div id="searchResultChapterTitle"></div>
+</section>
+<script type="text/html" id="navigateMatchesTemplate">
+   <div>
+      <button class="up on" title="Previous Match"><span></span></button>
+      <button class="up off" title="Previous Match Not Available"><span></span></button>
+      <span class="matchlabel">Matches</span>
+      <button class="down on" title="Next Match"><span></span></button>
+      <button class="down off" title="Next Match Not Available"><span></span></button>
+   </div>
+</script>
+<script type="text/html" id="noChapterMatchTemplate">
+   <p>There are no Matches in this chapter.</p>
+</script>
+<script type="text/html" id="searchResultsListTemplate">
+   <p class="h3">Chapters with Matches</p>
+   <ul>
+<% var i = 0;
+    while ( modelData.links[i] ) {  %>
+      <li>
+<%     curpage = (window.location.pathname.indexOf(modelData.links[i].href) > -1 )?true:false;
+        if ( i === modelData.curpage ) {
+            if ( ! jQuery('.mobileSearch').css("display") == "block") { %>
+               <span class="currentIndicator"></span>${modelData.links[i].title}
+<%         } else {                %>
+               <span class="currentIndicator"></span><button class="curpage" data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%         }
+        } else {  %>
+            <button data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%     }  %>            
+      </li> 
+<% i++;
+    } %>
+   </ul> 
+</script>      
+<script type="text/html" id="noBookMatchTemplate">
+   <p class="head">No matches found in this book</p>
+   <p>This feature looks for an exact match of what you entered in the box.</p>
+   <p>If you entered several words, try reducing the entry to one or two and search again.</p>
+</script>
+<script type="text/html" id="errorTemplate">
+   <p>Search is currently unavailable due to technical issues. We are working to resolve the problem as quickly as possible.</p>
+</script>
+<script type="text/html" id="mobileSearchFooterTemplate">
+   <div id="mobileSearchFooter">
+      <button class="mobileSearch" title="Search in this Book"></button>
+      <button class="closeFooter"><span></span><span></span></button>
+      <div class="matches"> 
+      </div>
+   </div>   
+</script>
+ 
+    </div>
+</div>
+<div class="row blowout narrow-wide-v2 flip visitedlinks">
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div id="documentInfo">
+                  <dl>
+                     
+                      <dt>Updated:</dt><dd> April 30, 2025</dd>
+                     
+                  </dl>
+                    
+              </div>
+
+ 
+    </div>
+    <div id="chapterTitleDiv" class="col wide-v2 indent-at-xlarge">
+        <!-- this will be chapter title for chapters or header for TOC for books -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="chapter-title">Chapter: Upstream Disjointed Layer-2 Networks </h2>  
+    
+
+    </div>
+</div>
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <div id="pageContentDiv" class="col wide-v2 indent-at-xlarge" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
+
+    
+ 
+ 
+
+<div id="chapterToc" class="base-blowout">
+    <button><span></span>Chapter Contents</button>
+    <div>
+    
+<ul>
+<li><a href="#upstream-disjointed-layer-2-networks">Upstream Disjointed Layer-2 Networks</a></li>
+<li><a href="#concept_291A802984114AC3922DF6A65495883A">Upstream Disjoint                              	 Layer-2 Networks</a></li>
+<li><a href="#concept_4E7BF4F5FA754183B5FE3298755800A1">Guidelines for Configuring Upstream Disjoint L2 Networks</a></li>
+<li><a href="#concept_6D32BCE181CC48A191258FDECA1EF698">Upstream Disjoint L2                              	 Networks Pinning Considerations</a></li>
+<li><a href="#task_F875C103C5BD448D820AF8A00D41C731">Configuring                               	 Cisco UCS for Upstream Disjoint L2 Networks</a></li>
+<li><a href="#task_31DDB316CE2B4811AEBAA907C5512276">Assigning Ports and Port Channels to VLANs</a></li>
+<li><a href="#task_C25329240632447281DCD47BD3CC8DEE">Removing Ports and Port Channels from  VLANs </a></li>
+<li><a href="#task_DDDAA7267EFD40EC99C82AC939BFCC7D">Viewing Ports and Port Channels Assigned to  VLANs</a></li></ul>
+    <button id="chapterToc-close">Close<span></span></button>
+    </div>
+</div>
+
+ 
+    <div id="chapterContent">
+    
+                  <h1 class="title topictitle1" id="ariaid-title1">Upstream Disjointed Layer-2 Networks</h1>
+                  <!-- minitoc start -->
+                  <nav role="navigation" class="related-links">
+                     <ul class="ullinks">
+                        <li class="link ulchildlink"><a href="#concept_291A802984114AC3922DF6A65495883A">Upstream Disjoint Layer-2 Networks</a></li>
+                        <li class="link ulchildlink"><a href="#concept_4E7BF4F5FA754183B5FE3298755800A1">Guidelines for Configuring Upstream Disjoint L2 Networks</a></li>
+                        <li class="link ulchildlink"><a href="#concept_6D32BCE181CC48A191258FDECA1EF698">Upstream Disjoint L2 Networks Pinning Considerations</a></li>
+                        <li class="link ulchildlink"><a href="#task_F875C103C5BD448D820AF8A00D41C731">Configuring Cisco UCS for Upstream Disjoint L2 Networks</a></li>
+                        <li class="link ulchildlink"><a href="#task_31DDB316CE2B4811AEBAA907C5512276">Assigning Ports and Port Channels to VLANs</a></li>
+                        <li class="link ulchildlink"><a href="#task_C25329240632447281DCD47BD3CC8DEE">Removing Ports and Port Channels from VLANs</a></li>
+                        <li class="link ulchildlink"><a href="#task_DDDAA7267EFD40EC99C82AC939BFCC7D">Viewing Ports and Port Channels Assigned to VLANs</a></li>
+                     </ul>
+                  </nav>
+                  <!-- minitoc end -->
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title2" lang="en-US" id="concept_291A802984114AC3922DF6A65495883A">
+                     <h2 class="title topictitle2" id="ariaid-title2">Upstream Disjoint
+                        	 Layer-2 Networks
+                     </h2>
+                     <section class="body conbody">
+                        <p class="p">Upstream disjoint
+                           		layer-2 networks (disjoint L2 networks) are required if you have two or more
+                           		Ethernet clouds that never connect, but must be accessed by servers or virtual
+                           		machines located in the same 
+                           		<span class="ph">Cisco UCS domain</span>. For example, you could configure disjoint L2 networks if you
+                           		require one of the following: 
+                           	 
+                        </p>
+                        <ul class="ul">
+                           <li class="li" id="concept_291A802984114AC3922DF6A65495883A__li_259A0CF4AF9F4EA4BE1C103C1D6BD2A6"> 
+                              		  
+                              <p class="p">Servers or virtual
+                                 			 machines to access a public network and a backup network 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_291A802984114AC3922DF6A65495883A__li_56B586AB384C4540AE32232808436C4D"> 
+                              		  
+                              <p class="p">Servers or virtual
+                                 			 machines for more than one customer are located in the same 
+                                 			 <span class="ph">Cisco UCS domain</span>, and that need to access the L2 networks for both customers in a
+                                 			 multi-tenant system
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                        </ul>
+                        <table class="olh_note" border="0" role="note">
+                           <tr>
+                              <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                              </td>
+                              <td border="0" class="olh_note">
+                                 <section class="note__content">
+                                    <hr> 
+                                    		
+                                    <p class="p">By default, data
+                                       		  traffic in 
+                                       		  <span class="ph">Cisco UCS</span> works on a principle of mutual inclusion. All traffic for all VLANs
+                                       		  and upstream networks travels along all uplink ports and port channels. If you
+                                       		  have upgraded from a release that does not support upstream disjoint layer-2
+                                       		  networks, you must assign the appropriate uplink interfaces to your VLANs, or
+                                       		  traffic for those VLANs continues to flow along all uplink ports and port
+                                       		  channels. 
+                                       		
+                                    </p> 
+                                    	 
+                                    <hr>
+                                 </section>
+                              </td>
+                           </tr>
+                        </table>
+                        <p class="p">The configuration for
+                           		disjoint L2 networks works on a principle of selective exclusion. Traffic for a
+                           		VLAN that is designated as part of a disjoint network can only travel along an
+                           		uplink Ethernet port or port channel that is specifically assigned to that
+                           		VLAN, and is selectively excluded from all other uplink ports and port
+                           		channels. However, traffic for VLANs that are not specifically assigned to an
+                           		uplink Ethernet port or port channel can still travel on all uplink ports or
+                           		port channels, including those that carry traffic for the disjoint L2 networks.
+                           		
+                           	 
+                        </p>
+                        <p class="p">In 
+                           		<span class="ph">Cisco UCS</span>, the VLAN represents the upstream disjoint L2 network. When you design
+                           		your network topology for disjoint L2 networks, you must assign uplink
+                           		interfaces to VLANs not the reverse. 
+                           	 
+                        </p>
+                        <p class="p">For information about
+                           		the maximum number of supported upstream disjoint L2 networks, see the
+                           		appropriate 
+                           		<cite class="cite">Cisco UCS
+                              		  Configuration Limits for Cisco UCS Manager Guide</cite>. 
+                           	 
+                        </p>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title3" lang="en-US" id="concept_4E7BF4F5FA754183B5FE3298755800A1">
+                     <h2 class="title topictitle2" id="ariaid-title3">Guidelines for Configuring Upstream Disjoint L2 Networks</h2>
+                     <section class="body conbody">
+                        <p class="p">When you plan your configuration for upstream disjoint L2 networks, consider the following:</p>
+                        <section class="section" id="concept_4E7BF4F5FA754183B5FE3298755800A1__section_6214D431F142413B8FE3FB24FFD22B2C">
+                           <h3 class="title sectiontitle">Ethernet Switching Mode Must Be End-Host Mode</h3>
+                           <p class="p"><span class="ph">Cisco UCS</span> only supports disjoint L2 networks when the Ethernet switching mode of the fabric interconnects is configured for end-host
+                              mode. You cannot connect to disjoint L2 networks if the Ethernet switching mode of the fabric interconnects is switch mode.
+                           </p>
+                           
+                           
+                        </section>
+                        <section class="section" id="concept_4E7BF4F5FA754183B5FE3298755800A1__section_FB70A5B870794A6B97A45465B5586823">
+                           <h3 class="title sectiontitle">Symmetrical Configuration Is Recommended for High Availability</h3>
+                           <p class="p">If a <span class="ph">Cisco UCS domain</span>  is configured for high availability with two fabric interconnects, we recommend that both fabric interconnects are configured
+                              with the same set of VLANs.
+                           </p>
+                        </section>
+                        <section class="section" id="concept_4E7BF4F5FA754183B5FE3298755800A1__section_D46F90701D81422C81D1BEA898678BAD">
+                           <h3 class="title sectiontitle">VLAN Validity Criteria Are the Same for Uplink Ethernet Ports and Port Channels</h3>
+                           <p class="p">The VLAN used for the disjoint L2 networks must be configured and  assigned to an uplink Ethernet port or uplink Ethernet
+                              port channel. If the port or port channel does not include the VLAN, <span class="ph">Cisco UCS Manager</span> considers the VLAN invalid and does the following:
+                           </p>
+                           <ul class="ul">
+                              <li class="li" id="concept_4E7BF4F5FA754183B5FE3298755800A1__li_EA4DDEA625694DB288265EC7305E892A">
+                                 <p class="p">Displays a configuration warning in the <span class="ph uicontrol">Status Details</span> area for the server.
+                                 </p>
+                              </li>
+                              <li class="li" id="concept_4E7BF4F5FA754183B5FE3298755800A1__li_1CCF4C065B6B4BC8BC4167230F73C950">
+                                 <p class="p">Ignores the configuration for the port or port channel and drops all traffic for  that VLAN.</p>
+                              </li>
+                           </ul>
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr>
+                                       <p class="p">The validity criteria are the same for uplink Ethernet ports and uplink Ethernet port channels. <span class="ph">Cisco UCS Manager</span> does not differentiate between the two.
+                                       </p>
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table>
+                        </section>
+                        <section class="section" id="concept_4E7BF4F5FA754183B5FE3298755800A1__section_A798CA8FA87F46A3B0DF4CC732663858">
+                           <h3 class="title sectiontitle">Overlapping VLANs Are Not Supported</h3>
+                           <p class="p"><span class="ph">Cisco UCS</span> does not support overlapping VLANs in disjoint L2 networks. You must ensure that each VLAN only connects to one upstream
+                              disjoint L2 domain.
+                           </p>
+                        </section>
+                        <section class="section" id="concept_4E7BF4F5FA754183B5FE3298755800A1__section_3FFC691776824633B96349AA09296DAE">
+                           <h3 class="title sectiontitle">Each vNIC Can Only Communicate with One Disjoint L2 Network</h3>
+                           <p class="p">A vNIC can only communicate with one disjoint L2 network.  If a server needs to communicate with multiple disjoint L2 networks,
+                              you must configure a vNIC for each of those networks. 
+                           </p>
+                           <p class="p">To communicate with more than two disjoint L2 networks, a server must have a Cisco VIC adapter that supports more than two
+                              vNICs.
+                           </p>
+                        </section>
+                        <section class="section" id="concept_4E7BF4F5FA754183B5FE3298755800A1__section_D3DD0A8DBCD54902A61E3055F6294B36">
+                           <h3 class="title sectiontitle">Appliance Port Must Be Configured with the Same VLAN as Uplink Ethernet Port or Port Channel</h3>
+                           <p class="p">For an appliance port to communicate with a disjoint L2 network, you must ensure that at least one uplink Ethernet port or
+                              port channel is in the same network and is therefore assigned to  the same VLANs that are used by  the appliance port.  If
+                              <span class="ph">Cisco UCS Manager</span> cannot identify an uplink Ethernet port or port channel that includes all VLANs that carry traffic for an appliance port,
+                              the appliance port experiences a pinning failure and goes down.
+                           </p>
+                           <p class="p">For example, a <span class="ph">Cisco UCS domain</span> includes a global VLAN named vlan500 with an ID of 500.  vlan500 is created as a global VLAN on the uplink Ethernet  port.
+                              However, <span class="ph">Cisco UCS Manager</span> does not propagate this VLAN  to appliance ports. To configure an appliance port with vlan500, you must create another VLAN
+                              named vlan500 with an ID of 500 for the appliance port. You can create this duplicate VLAN in the <span class="ph uicontrol">Appliances</span> node on the <span class="ph uicontrol">LAN</span> tab of the <span class="ph">Cisco UCS Manager GUI</span> or the <span><span class="keyword kwd">eth-storage</span> </span> scope in the <span class="ph">Cisco UCS Manager CLI</span>.  If you are prompted to check for VLAN Overlap, accept the overlap and <span class="ph">Cisco UCS Manager</span> creates the duplicate VLAN for the appliance port.
+                           </p>
+                        </section>
+                        <section class="section" id="concept_4E7BF4F5FA754183B5FE3298755800A1__section_8606CCC5755E4C01804C80A5E46FF43E">
+                           <h3 class="title sectiontitle">Default VLAN 1 Cannot Be Configured Explicitly on an Uplink Ethernet Port or Port Channel</h3>
+                           <p class="p"><span class="ph">Cisco UCS Manager</span> implicitly assigns default VLAN 1 to all uplink ports and port channels. Even if you do not configure any other VLANs, <span class="ph">Cisco UCS</span> uses default VLAN 1 to handle data traffic for all uplink ports and port channels.
+                           </p>
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr>
+                                       <p class="p">After you configure VLANs in a <span class="ph">Cisco UCS domain</span>, default VLAN 1  remains implicitly on all uplink ports and port channels.  You cannot explicitly assign default VLAN 1 to
+                                          an uplink port or port channel, nor can you remove it from an uplink port or port channel.
+                                       </p>
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table>
+                           <p class="p">If you attempt to assign default VLAN 1 to a specific port or port channel, <span class="ph">Cisco UCS Manager</span> raises an Update Failed fault.
+                           </p>
+                           <p class="p">Therefore, if you configure a <span class="ph">Cisco UCS domain</span> for disjoint L2 networks, do not configure any vNICs with default VLAN 1 unless you want all data traffic for that server
+                              to be carried on all uplink Ethernet ports and port channels and sent to all upstream networks.
+                           </p>
+                        </section>
+                        <section class="section" id="concept_4E7BF4F5FA754183B5FE3298755800A1__section_7905B3B6EE144976A9D2E359606EDF73">
+                           <h3 class="title sectiontitle">VLANs for Both FIs Must be Concurrently Assigned</h3>
+                           <p class="p">When you assign a port to a global VLAN, the VLAN is removed from all of the ports that are not explicitly assigned to the
+                              VLAN on both fabric interconnects. The ports on both FIs must be configured at the same time. If the ports are only configured
+                              on the first FI, traffic on the second FI will be disrupted. 
+                           </p>
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title4" lang="en-US" id="concept_6D32BCE181CC48A191258FDECA1EF698">
+                     <h2 class="title topictitle2" id="ariaid-title4">Upstream Disjoint L2
+                        	 Networks Pinning Considerations
+                     </h2>
+                     <section class="body conbody">
+                        <p class="p">Communication with an
+                           		upstream disjoint L2 network requires that you ensure that the pinning is
+                           		properly configured. Whether you implement soft-pinning or hard-pinning, a VLAN
+                           		membership mismatch causes traffic for one or more VLANs to be dropped. 
+                           	 
+                        </p>
+                        <section class="section" id="concept_6D32BCE181CC48A191258FDECA1EF698__section_4CB1B5A7272D460AB593D69E56EAD7A4">
+                           <h3 class="title sectiontitle">Soft-Pinning</h3> 
+                           		 
+                           		
+                           <p class="p">Soft-pinning is the
+                              		  default behavior in 
+                              		  <span class="ph">Cisco UCS</span>. If you plan to implement soft-pinning, you do not need to create LAN
+                              		  pin groups to specify a pin target for a vNIC. Instead, 
+                              		  <span class="ph">Cisco UCS Manager</span> pins the vNIC to an uplink Ethernet port or port channel according
+                              		  to VLAN membership criteria. 
+                              		
+                           </p> 
+                           		
+                           <p class="p">With soft-pinning, 
+                              		  <span class="ph">Cisco UCS Manager</span> validates data traffic from a vNIC against the VLAN membership of
+                              		  all uplink Ethernet ports and port channels. If you have configured disjoint L2
+                              		  networks, 
+                              		  <span class="ph">Cisco UCS Manager</span> must be able to find an uplink Ethernet port or port channel that
+                              		  is assigned to all VLANS on the vNIC. If no uplink Ethernet port or port
+                              		  channel is configured with all VLANs on the vNIC, 
+                              		  <span class="ph">Cisco UCS Manager</span> does the following: 
+                              		
+                           </p> 
+                           		
+                           <ul class="ul">
+                              <li class="li" id="concept_6D32BCE181CC48A191258FDECA1EF698__li_D8882E0144A84B959FC1176E575871FF"> 
+                                 			 
+                                 <p class="p">Brings the link
+                                    				down. 
+                                    			 
+                                 </p> 
+                                 		  
+                              </li>
+                              <li class="li" id="concept_6D32BCE181CC48A191258FDECA1EF698__li_C600717FD0BC4A388CAAB5B6F3352205"> 
+                                 			 
+                                 <p class="p">Drops the
+                                    				traffic for all of the VLANs on the vNIC. 
+                                    			 
+                                 </p> 
+                                 		  
+                              </li>
+                              <li class="li" id="concept_6D32BCE181CC48A191258FDECA1EF698__li_BE8F30BC0694499AB408E7D91E184D44"> 
+                                 			 
+                                 <p class="p">Raises the
+                                    				following faults: 
+                                    			 
+                                 </p> 
+                                 			 
+                                 <ul class="ul">
+                                    <li class="li" id="concept_6D32BCE181CC48A191258FDECA1EF698__li_FAFD45E7B6324FF7A58FA5F06AE4F3A5"> 
+                                       				  
+                                       <p class="p"> Link Down 
+                                          				  
+                                       </p> 
+                                       				
+                                    </li>
+                                    <li class="li" id="concept_6D32BCE181CC48A191258FDECA1EF698__li_1082FD3DC2B44BA9A59C463D6AAE9961"> 
+                                       				  
+                                       <p class="p">VIF Down 
+                                          				  
+                                       </p> 
+                                       				
+                                    </li>
+                                 </ul> 
+                                 		  
+                              </li>
+                           </ul> 
+                           		
+                           <p class="p"><span class="ph">Cisco UCS Manager</span> does not raise a fault or warning about the VLAN configuration. 
+                              		
+                           </p> 
+                           		
+                           <p class="p">For example, a vNIC
+                              		  on a server is configured with VLANs 101, 102, and 103. Interface 1/3 is
+                              		  assigned only to VLAN 102. Interfaces 1/1 and 1/2 are not explicitly assigned
+                              		  to a VLAN, which makes them available for traffic on VLANs 101 and 103. As a
+                              		  result of this configuration, the 
+                              		  <span class="ph">Cisco UCS domain</span> does not include a border port interface that can carry traffic
+                              		  for all three VLANS for which the vNIC is configured. As a result, 
+                              		  <span class="ph">Cisco UCS Manager</span> brings down the vNIC, drops traffic for all three VLANs on the
+                              		  vNIC, and raises the Link Down and VIF Down faults. 
+                              		
+                           </p> 
+                           	 
+                        </section>
+                        <section class="section" id="concept_6D32BCE181CC48A191258FDECA1EF698__section_E4B0D6173A1041929C7C3792CB4AA123">
+                           <h3 class="title sectiontitle">hard-pinning</h3> 
+                           		 
+                           		
+                           <p class="p">hard-pinning occurs
+                              		  when you use LAN pin groups to specify the pinning target for the traffic
+                              		  intended for the disjoint L2 networks. In turn, the uplink Ethernet port or
+                              		  port channel that is the pinning target must be configured to communicate with
+                              		  the appropriate disjoint L2 network. 
+                              		
+                           </p> 
+                           		
+                           <p class="p">With hard-pinning, 
+                              		  <span class="ph">Cisco UCS Manager</span> validates data traffic from a vNIC against the VLAN membership of
+                              		  all uplink Ethernet ports and port channels, and validates the LAN pin group
+                              		  configuration to ensure it includes the VLAN and the uplink Ethernet port or
+                              		  port channel. If the validation fails at any point, 
+                              		  <span class="ph">Cisco UCS Manager</span> does the following: 
+                              		
+                           </p> 
+                           		
+                           <ul class="ul">
+                              <li class="li" id="concept_6D32BCE181CC48A191258FDECA1EF698__li_80D4A076DF3B4AC09A2B5BEB0E5DA100"> 
+                                 			 
+                                 <p class="p">Raises a Pinning
+                                    				VLAN Mismatch fault with a severity of Warning.
+                                    			 
+                                 </p> 
+                                 		  
+                              </li>
+                              <li class="li" id="concept_6D32BCE181CC48A191258FDECA1EF698__li_17435D40E0204C52B0376C096FB49636"> 
+                                 			 
+                                 <p class="p">Drops traffic
+                                    				for the VLAN.
+                                    			 
+                                 </p> 
+                                 		  
+                              </li>
+                              <li class="li" id="concept_6D32BCE181CC48A191258FDECA1EF698__li_748D5B112A8E4AF8B1E28DF016815544"> 
+                                 			 
+                                 <p class="p">Does not bring
+                                    				the link down, so that traffic for other VLANs can continue to flow along it. 
+                                    			 
+                                 </p> 
+                                 		  
+                              </li>
+                           </ul> 
+                           		
+                           <p class="p">For example, if you
+                              		  want to configure hard-pinning for an upstream disjoint L2 network that uses
+                              		  VLAN 177, do the following: 
+                              		
+                           </p> 
+                           		
+                           <ul class="ul">
+                              <li class="li" id="concept_6D32BCE181CC48A191258FDECA1EF698__li_1C7A68DE6ED3455299AD5F8CE670388F"> 
+                                 			 
+                                 <p class="p">Create a LAN pin
+                                    				group with the uplink Ethernet port or port channel that carries the traffic
+                                    				for the disjoint L2 network. 
+                                    			 
+                                 </p> 
+                                 		  
+                              </li>
+                              <li class="li" id="concept_6D32BCE181CC48A191258FDECA1EF698__li_E34EB000E74C4A48ACCE223EE35A4879"> 
+                                 			 
+                                 <p class="p">Configure at
+                                    				least one vNIC in the service profile with VLAN 177 and the LAN pin group. 
+                                    			 
+                                 </p> 
+                                 		  
+                              </li>
+                              <li class="li" id="concept_6D32BCE181CC48A191258FDECA1EF698__li_37580399CB50416FB5A595F60B8DD91A"> 
+                                 			 
+                                 <p class="p">Assign VLAN 177
+                                    				to an uplink Ethernet port or port channel included in the LAN pin group 
+                                    			 
+                                 </p> 
+                                 		  
+                              </li>
+                           </ul> 
+                           		
+                           <p class="p">If the configuration
+                              		  fails at any of these three points, then 
+                              		  <span class="ph">Cisco UCS Manager</span> warns of a VLAN mismatch for VLAN 177 and drops the traffic for
+                              		  that VLAN only. 
+                              		
+                           </p> 
+                           		
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr> 
+                                       		  
+                                       		  
+                                       <p class="p">If changes are
+                                          			 made to soft-pinning configurations resulting in vNIC VLANs not resolving with
+                                          			 disjoint L2 uplink, a warning dialog box is displayed. The warning dialog box
+                                          			 allows you to proceed with your configuration or cancel it. If you decide to
+                                          			 proceed with the mis- configuration, you will experience a reduction is server
+                                          			 traffic performance. 
+                                          		  
+                                       </p> 
+                                       		
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table> 
+                           	 
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title5" lang="en-US" id="task_F875C103C5BD448D820AF8A00D41C731">
+                     <h2 class="title topictitle2" id="ariaid-title5">Configuring 
+                        	 <span class="ph">Cisco UCS</span> for Upstream Disjoint L2 Networks
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_F875C103C5BD448D820AF8A00D41C731__context_D2B85C19D5D14FA491309A2E9E8CAE32"> 
+                           		
+                           <p class="p">When you configure a
+                              		  
+                              		  <span class="ph">Cisco UCS domain</span> to connect with upstream disjoint L2 networks, you need to ensure
+                              		  that you complete all of the following steps. 
+                              		
+                           </p>
+                           			
+                           			 
+                           	 
+                        </section>
+                        <section class="section prereq p" id="task_F875C103C5BD448D820AF8A00D41C731__prereq_2BD0AD2FB3614CA18113E601DBCFDA0C">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section> 
+                           		
+                           <p class="p">Before you begin this configuration, ensure that the ports on the fabric interconnects are properly cabled to support your
+                              disjoint L2 networks configuration.
+                           </p> 
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_F875C103C5BD448D820AF8A00D41C731__step_74F9D0E44416418285CEA697210C7125">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">Configure
+                                       			 Ethernet switching mode for both fabric interconnects in Ethernet End-Host
+                                       			 Mode. 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">The Ethernet switching mode must be in End-Host Mode for <span class="ph">Cisco UCS</span> to be able to communicate with upstream disjoint L2 networks. For more information, see the <cite class="cite">LAN Ports and Port Channel</cite> chapter in this guide..  
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_F875C103C5BD448D820AF8A00D41C731__step_6033F75326DD49ACB314D102762E472F">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">Configure the
+                                       			 ports and port channels that you require to carry traffic for the disjoint L2
+                                       			 networks. 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose"></td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_F875C103C5BD448D820AF8A00D41C731__step_D704692A335D4395B5FF44A1D705E5AF">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">(Optional) Configure the
+                                       			 LAN pin groups required to pin the traffic for the appropriate uplink Ethernet
+                                       			 ports or port channels. 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">(Optional) 
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">For more information, see <a class="xref" href="b_CLI_UCSM_Network_Management_Guide_chapter_0110.html#task_3540574022264588894">Configuring a LAN Pin Group</a>. 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_F875C103C5BD448D820AF8A00D41C731__step_40CE646057A54834A01CB9472D46AE75">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">Create one or
+                                       			 more VLANs. 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">These can be named VLANs or private VLANs. For a cluster configuration, we recommend that you create the VLANs accessible
+                                          to both fabric interconnects. <span class="ph">For more information, see <cite class="cite">VLAN</cite> and <cite class="cite">Upstream Disjointed Layer-2 Networks</cite> chapters in this guide.</span>
+                                          					
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_F875C103C5BD448D820AF8A00D41C731__step_A34112DA99164BF1B608CCCF2AE429DA">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">Assign the
+                                       			 desired ports or port channels to the VLANs for the disjoint L2 networks. 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">When this step
+                                          				is complete, traffic for these VLANs is be sent through the trunks for the
+                                          				assigned ports and/or port channels. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_F875C103C5BD448D820AF8A00D41C731__step_9E575F39DFFA48ED8FF6E23F521BE348">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">Ensure that the
+                                       			 service profiles for all servers that need to communicate with the disjoint L2
+                                       			 networks include the correct LAN connectivity configuration. This configuration
+                                       			 ensures that the vNICs direct the traffic to the appropriate VLAN. 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">You can complete
+                                          				this configuration through one or more vNIC templates, or when you configure
+                                          				the networking options for the service profile. For more information about vNIC
+                                          				templates and service profiles, see the 
+                                          				<cite class="cite">Cisco UCS
+                                             				  Manager Storage Management Guide</cite>. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title6" lang="en-US" id="task_31DDB316CE2B4811AEBAA907C5512276">
+                     <h2 class="title topictitle2" id="ariaid-title6">Assigning Ports and Port Channels to VLANs</h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps" id="task_31DDB316CE2B4811AEBAA907C5512276__steps_9EFFB757D3C04F1FB2FDF3F84355AB2B">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_31DDB316CE2B4811AEBAA907C5512276__step_E1A8FC8460364AB9B0221DE8B76F634A">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A# 
+                                       			 <span> 
+                                          				<span class="keyword kwd">scope eth-uplink</span> 
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters Ethernet uplink mode. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_31DDB316CE2B4811AEBAA907C5512276__step_F5D27C870B2040A09F30F7EE54997F72">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /eth-uplink # 
+                                       			 <span> 
+                                          				<span class="keyword kwd">scope vlan</span> 
+                                          				<kbd class="ph sep"> </kbd> 
+                                          				<var>vlan-name</var> 
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters Ethernet uplink VLAN mode for the specified VLAN. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_31DDB316CE2B4811AEBAA907C5512276__step_185D7BA180FF4562ADB06977A28E961B">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /eth-uplink/vlan # 
+                                       			 <span> 
+                                          				<span class="keyword kwd">create member-port</span><kbd class="ph sep"> </kbd><var>fabric-interconnect</var><kbd class="ph sep"> </kbd><var>slot-id</var><kbd class="ph sep"> </kbd><var>port-id</var>
+                                           </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Assigns the specified VLAN to the specified uplink Ethernet port.</p>
+                                       
+                                       			  
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_31DDB316CE2B4811AEBAA907C5512276__step_5FC22EC82C99407F99B4A7B030D9D1C4">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /eth-uplink/vlan # 
+                                       			 <span> 
+                                          				<span class="keyword kwd">create member-port-channel</span><kbd class="ph sep"> </kbd><var>fabric-interconnect</var><kbd class="ph sep"> </kbd><var>member-port-chan-id</var>
+                                           </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Assigns the specified VLAN to the specified uplink Ethernet port channel.</p>
+                                       
+                                       			  
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_31DDB316CE2B4811AEBAA907C5512276__step_14619AA8803C423882475172E6135728">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /eth-uplink/vlan # 
+                                       			 <span> 
+                                          				<span class="keyword kwd">commit-buffer</span> 
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Commits the transaction to the system configuration. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                    <section class="itemgroup stepresult">
+                                       <p class="p">After a port or port
+                                          		  channel is assigned to one or more VLANs, it is removed from all other VLANs. 
+                                          		
+                                       </p>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="task_31DDB316CE2B4811AEBAA907C5512276__example_24EA1E6D6DF04DC2A7A7308779660F0B">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section> 
+                           		
+                           <p class="p">The following example assigns uplink Ethernet ports to a named VLAN called VLAN100 on fabric interconnect A and commits
+                              		  the transaction: 
+                              		
+                           </p> 
+                           		<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope eth-uplink</b></kbd>
+UCS-A /eth-uplink # <kbd class="userinput"><b class="ph userinput">scope vlan VLAN100</b></kbd>
+UCS-A /eth-uplink/vlan # <kbd class="userinput"><b class="ph userinput">create member-port a 2</b></kbd>
+UCS-A /eth-uplink/vlan # <kbd class="userinput"><b class="ph userinput">create member-port a 4</b></kbd>
+UCS-A /eth-uplink/vlan* # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+UCS-A /eth-uplink/vlan # 
+</code></pre> 
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title7" lang="en-US" id="task_C25329240632447281DCD47BD3CC8DEE">
+                     <h2 class="title topictitle2" id="ariaid-title7">Removing Ports and Port Channels from  VLANs </h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps" id="task_C25329240632447281DCD47BD3CC8DEE__steps_9EFFB757D3C04F1FB2FDF3F84355AB2B">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_C25329240632447281DCD47BD3CC8DEE__step_E1A8FC8460364AB9B0221DE8B76F634A">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A# 
+                                       			 <span> 
+                                          				<span class="keyword kwd">scope eth-uplink</span> 
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters Ethernet uplink mode. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_C25329240632447281DCD47BD3CC8DEE__step_F5D27C870B2040A09F30F7EE54997F72">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /eth-uplink # 
+                                       			 <span> 
+                                          				<span class="keyword kwd">scope vlan</span> 
+                                          				<kbd class="ph sep"> </kbd> 
+                                          				<var>vlan-name</var> 
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters Ethernet uplink VLAN mode for the specified VLAN. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_C25329240632447281DCD47BD3CC8DEE__step_185D7BA180FF4562ADB06977A28E961B">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /eth-uplink/vlan # 
+                                       			 <span> 
+                                          				<span class="keyword kwd">delete member-port</span><kbd class="ph sep"> </kbd><var>fabric-interconnect</var><kbd class="ph sep"> </kbd><var>slot-id</var><kbd class="ph sep"> </kbd><var>port-id</var>
+                                           </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Deletes the specified Uplink Ethernet member port assignment from the VLAN.</p>
+                                       
+                                       			  
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_C25329240632447281DCD47BD3CC8DEE__step_5FC22EC82C99407F99B4A7B030D9D1C4">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /eth-uplink/vlan # 
+                                       			 <span> 
+                                          				<span class="keyword kwd">delete member-port-channel</span><kbd class="ph sep"> </kbd><var>fabric-interconnect</var><kbd class="ph sep"> </kbd><var>member-port-chan-id</var>
+                                           </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Deletes the specified Uplink Ethernet port channel assignment from the VLAN.</p>
+                                       
+                                       			  
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_C25329240632447281DCD47BD3CC8DEE__step_14619AA8803C423882475172E6135728">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /eth-uplink/vlan # 
+                                       			 <span> 
+                                          				<span class="keyword kwd">commit-buffer</span> 
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Commits the transaction to the system configuration. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                    <section class="itemgroup stepresult">
+                                       <table class="olh_note" border="0" role="note">
+                                          <tr>
+                                             <td width="1%" class="olh_note" role="heading" border="0">
+                                                <p><b>Important</b></p>&nbsp;
+                                             </td>
+                                             <td border="0" class="olh_note">
+                                                <section class="note__content"> 
+                                                   		  
+                                                   <p class="p">If you remove
+                                                      			 all port or port channel interfaces from a VLAN, the VLAN returns to the
+                                                      			 default behavior and data traffic on that VLAN flows on all uplink ports and
+                                                      			 port channels. Based on the configuration in the 
+                                                      			 <span class="ph">Cisco UCS domain</span>, this default behavior can cause 
+                                                      			 <span class="ph">Cisco UCS Manager</span> to drop traffic for that VLAN. To avoid this occurrence, Cisco
+                                                      			 recommends that you assign at least one interface to the VLAN or delete the
+                                                      			 VLAN. 
+                                                      		  
+                                                   </p> 
+                                                   		
+                                                </section>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="task_C25329240632447281DCD47BD3CC8DEE__example_24EA1E6D6DF04DC2A7A7308779660F0B">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section> 
+                           		
+                           <p class="p">The following example deletes the association between uplink Ethernet port 2 on fabric interconnect A and the  named VLAN
+                              called MyVLAN and commits
+                              		  the transaction: 
+                              		
+                           </p> 
+                           		<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope eth-uplink</b></kbd>
+UCS-A /eth-uplink # <kbd class="userinput"><b class="ph userinput">scope vlan MyVLAN</b></kbd>
+UCS-A /eth-uplink/vlan # <kbd class="userinput"><b class="ph userinput">delete member-port a 2</b></kbd>
+UCS-A /eth-uplink/vlan* # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+UCS-A /eth-uplink/vlan # 
+</code></pre> 
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title8" lang="en-US" id="task_DDDAA7267EFD40EC99C82AC939BFCC7D">
+                     <h2 class="title topictitle2" id="ariaid-title8">Viewing Ports and Port Channels Assigned to  VLANs</h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps" id="task_DDDAA7267EFD40EC99C82AC939BFCC7D__steps_9EFFB757D3C04F1FB2FDF3F84355AB2B">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DDDAA7267EFD40EC99C82AC939BFCC7D__step_E1A8FC8460364AB9B0221DE8B76F634A">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A# 
+                                       			 <span> 
+                                          				<span class="keyword kwd">scope eth-uplink</span> 
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters Ethernet uplink mode. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DDDAA7267EFD40EC99C82AC939BFCC7D__step_F5D27C870B2040A09F30F7EE54997F72">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /eth-uplink # 
+                                       			 <span> 
+                                          				<span class="keyword kwd">scope vlan</span> 
+                                          				<kbd class="ph sep"> </kbd> 
+                                          				<var>vlan-name</var> 
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters Ethernet uplink VLAN mode for the specified VLAN. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DDDAA7267EFD40EC99C82AC939BFCC7D__step_185D7BA180FF4562ADB06977A28E961B">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /eth-uplink/vlan # 
+                                       			 <span> 
+                                          				<span class="keyword kwd">show member-port</span><kbd class="ph sep"> </kbd>[<span class="keyword kwd">detail</span> | <span class="keyword kwd">expand</span>]
+                                           </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Shows member ports assigned to the specified VLAN.</p>
+                                       
+                                       			  
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DDDAA7267EFD40EC99C82AC939BFCC7D__step_5FC22EC82C99407F99B4A7B030D9D1C4">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /eth-uplink/vlan # 
+                                       			 <span> 
+                                          				<span class="keyword kwd">show member-port-channel</span><kbd class="ph sep"> </kbd><kbd class="ph sep"> </kbd>[<span class="keyword kwd">detail</span> | <span class="keyword kwd">expand</span>]
+                                          
+                                           </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Shows member port channels assigned to the specified VLAN.</p>
+                                       
+                                       			  
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DDDAA7267EFD40EC99C82AC939BFCC7D__step_14619AA8803C423882475172E6135728">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /eth-uplink/vlan # 
+                                       			 <span> 
+                                          				<span class="keyword kwd">commit-buffer</span> 
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Commits the transaction to the system configuration. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="task_DDDAA7267EFD40EC99C82AC939BFCC7D__example_24EA1E6D6DF04DC2A7A7308779660F0B">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section> 
+                           		
+                           <p class="p">The following example displays the full details for uplink Ethernet ports assigned to  a  named VLAN called MyVLAN: 
+                              		
+                           </p> 
+                           		<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope eth-uplink</b></kbd>
+UCS-A /eth-uplink # <kbd class="userinput"><b class="ph userinput">scope vlan MyVLAN</b></kbd>
+UCS-A /eth-uplink/vlan # <kbd class="userinput"><b class="ph userinput">show member-port detail</b></kbd>
+Member Port:
+    Fabric ID: A
+    Slot ID: 1
+    Port ID: 2
+    Mark Native Vlan: No
+UCS-A /eth-uplink/vlan #
+</code></pre> 
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+               </article>
+            </article>
+         </main>
+      
+
+</div> 
+ 
+    </div>
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent noprint base-blowout">
+    <div class="eotPersonalization">
+        <section id="eotTDCampaign"></section>
+    </div>    
+    <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>Was this Document Helpful?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes" aria-label="Was this Document Helpful?? Yes">Yes</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no" aria-label="Was this Document Helpful?? No">No</button>
+  </span>
+  <span lang="en" class="eot-feedback-olwrap">
+    
+      <a href="javascript: void(0);" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">Feedback</a>
+    
+  </span>
+</div>
+
+
+</div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+    </div>
+			
+    <div class="letUsHelp">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eotLetUsHelp">
+    <h3>Contact Cisco</h3>
+    <ul>
+         <li><a id="eotLetUsHelpProdDocUrl" href="https://mycase.cloudapps.cisco.com/start?prodDocUrl=">Open a Support Case</a><img src="/etc/designs/cdc/fw/i/icon_lock_small.png" alt="login required"/></li>
+        <li>(Requires a <a href="//www.cisco.com/c/en/us/services/order-services.html">Cisco Service Contract</a>)</li>
+    </ul>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        var getURL=jQuery("#eotLetUsHelpProdDocUrl").attr("href"), 
+            domInd = location.href.indexOf('cisco.com') ;
+        if ( domInd > -1 && domInd < location.href.search(/\w\/\w/) ) {
+            getURL += encodeURI(location.href);
+        }
+		jQuery("#eotLetUsHelpProdDocUrl").attr("href",getURL);
+    });
+</script>
+
+
+    </div>
+
+    <div id="eotRightRailMBox"><!--MBox-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IT:components/mbox/banner-mbox:V0.0.0 -->
+
+
+
+<div>
+    <div class="mboxDefault"></div>   
+    <script type="text/javascript">
+        var test="";
+        if(test!=undefined && test.trim().length>0){
+           mboxCreate('en-us_dg_support_bookchapters','type=default','');
+        }else{
+           mboxCreate('en-us_dg_support_bookchapters','type=default');
+        }
+       
+    </script>
+</div>
+<!--MBox--></div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+	<script type="text/javascript">
+			    var eottdatp = document.getElementsByClassName('eot-tdatp');
+			    if (eottdatp && eottdatp.style) {
+        			eottdatp.style.display="none";
+			    }
+        		  </script>
+  	
+
+
+    </div>
+			
+    <div></div>
+
+</div>
+
+
+    </div>
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/us/en/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/clientlibs/responsive/js/books.min.js"></script>
+
+<script src="/etc/designs/cdc/fw/m/books_metricsrule.js" type="text/javascript" async></script>
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>
