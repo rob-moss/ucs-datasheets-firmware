@@ -13,7 +13,6 @@
  - [Cisco UCS Manager Firmware Management Guide, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3.html)
  - [Cisco UCS Manager Infrastructure Management Guide, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_GUI_Infrastructure_Management_Guide_4_3.html)
  - [Cisco UCS Manager Network Management Guide, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3.html)
- - [Cisco UCS Manager Server Management Guide, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3.html)
  - [Cisco UCS Manager System Monitoring Guide, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3.html)
  - [Cisco UCS Manager Storage Management Guide, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3.html)
  - [Migration Guide for Cisco UCS Fabric Interconnects, Release 4.3 - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3.html)
@@ -43,7 +42,12 @@
 - [Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html)
 - [Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 4.3, 5.2, 5.3, and 5.4](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/4_3/b_intersight_server_fw_rn_4_3.html)
 
+
+
+
 ## Intersight help guides
+> Note: fetched from intersight.com/help/saas and intersight.com/help/appliance
+
 ### SaaS guides
 - [Intersight SaaS Upgrading Firmware guide](https://intersight.com/help/saas/resources/upgrading_server_firmware_using_firmware_policy)
 - [Intersight SaaS guide](https://intersight.com/help/saas)
@@ -89,7 +93,6 @@
 
 ### Appliance (CVA / PVA) guides
 > Note: Intersight Appliance documentation is generally similar to the SaaS documentation, but with some differences in some local features and settings.
-- [Intersight Appliance guide](https://intersight.com/help/appliance)
 - [Intersight Appliance Servers guide](https://intersight.com/help/appliance/operate/servers)
 - [Intersight Appliance System Settings](https://intersight.com/help/appliance/system/settings)
 - [Intersight Appliance Settings](https://intersight.com/help/appliance/settings)
@@ -99,13 +102,11 @@
 
 
 
-# Hardware guides
-- [Cisco UCS VIC 15000 Series Ethernet Fabric Adapter Whitepaper](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.html)
-
 # Whitepapers
 - [IMM Sharing Across Organizations and Cloning](https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.html)
 - [UCS M7 Platforms Performance Tuning](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/ucs-m7-platforms-wp.html)
 - [Cisco UCS VIC 15000 Series Ethernet Fabric Adapter Whitepaper](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.html)
+
 
 # Release Notes
 - [UCS Manager Release Notes 4.2](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/cisco-ucs-manager-rn-4-2.html)
@@ -113,12 +114,14 @@
 - [UCS Manager Release Notes 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-6_0.html)
 - [VIC Drivers Release Notes 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/VIC/4-3/b-release-notes-for-cisco-ucs-virtual-interface-card-drivers-release-4-3.html)
 - [UCS Manager Cross-Version Firmware Support 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cross-version-fw-support_4_3.html)
+- [UCS Manager Cross-Version Firmware Support 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-6_0.html#ucsmRN_43_crossversion)
 
 
 # JSON Data Files
 - [UCS Equivalency Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/c/sw/UCS-Equivalency-Matrix/custom_excel_data.json)
 - [UCSM Upgrade/Downgrade Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/ucs-manager/UCSM-upgrade-downgrade-matrix/ReleaseMatrix.json)
 - [UCSM Cross-Version Firmware Matrix (6.0 onwards)](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/ucs-manager/cross_version_firmware_matrix_6_0_onwards/custom_excel_data.json)
+
 
 # Datasheets
 ## B-Series Blade Servers

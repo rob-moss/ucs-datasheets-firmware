@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# v6
+# v7 fetch_cisco_docs_v7.py
+# Refactor for onprem-model.js with better caching, error handling, and Intersight CDN support. See commit history for details.
 """
 Fetch Cisco UCS documentation pages and convert to Markdown.
 
@@ -16,7 +17,10 @@ Intersight URLs (intersight.com/help/…) are fetched via Cisco CDN (no JS neede
   1. The CDN version is scraped live from https://intersight.com/help/saas.
      A file-based cache (~/.ucs-docs-raw/html/.intersight_cdn_version, 7-day TTL)
      is validated with a HEAD request before accepting.
-  2. Routes are built from {CDN_BASE}/model/en/cloud-model.json.
+  2. URL Routes changed
+     SaaS routes are built from {CDN_BASE}/model/en/cloud-model.json.
+     Appliance routes are built from {CDN_BASE}/model/en/onprem-model.json.
+     Both model files are fetched dynamically using the same resolved CDN version.
   3. Three saas pages (home, glossary, resources) are client-rendered; they are
      generated directly from model JSON without fetching a CDN URL.
   4. A 403 on any CDN doc page is a non-fatal skip.
@@ -71,7 +75,8 @@ _RAW_DIRS = {'html': RAW_HTML_DIR, 'pdf': RAW_PDF_DIR,
 _EXT_MAP  = {'.html': 'html', '.htm': 'html', '.xhtml': 'html', '.shtml': 'html',
              '.pdf': 'pdf', '.json': 'json'}
 
-CACHE_TTL = datetime.timedelta(hours=24)
+CACHE_TTL    = datetime.timedelta(hours=24)
+DEFAULT_DELAY = 0.0   # seconds between HTTP requests was 0.2
 
 # ---------------------------------------------------------------------------
 # Intersight constants
@@ -79,7 +84,8 @@ CACHE_TTL = datetime.timedelta(hours=24)
 _IS_HOME     = 'https://intersight.com'
 _IS_CDN_BASE = 'https://cdn.intersight.com/components/an-hulk'
 _IS_CDN_TTL  = datetime.timedelta(days=7)
-_IS_CDN_CACHE = RAW_HTML_DIR / '.intersight_cdn_version'
+_IS_CDN_CACHE        = RAW_HTML_DIR / '.intersight_cdn_version'
+_IS_ONPREM_MODEL_CACHE = RAW_HTML_DIR / 'onprem-model.json'
 _IS_HEADERS  = {
     'User-Agent':      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:147.0) Gecko/20100101 Firefox/147.0',
     'Referer':         'https://intersight.com/',
@@ -105,7 +111,8 @@ _IS_MODEL_PAGES = {
     "saas/resources": "resources",
 }
 
-# Appliance CDN paths not present in cloud-model.json (confirmed via Playwright)
+# Appliance CDN path fallbacks used when onprem-model.json does not cover a route.
+# These were originally confirmed via Playwright and are kept as a last resort.
 _IS_APPLIANCE_FALLBACKS = {
     "appliance/whats_new/connected_appliance": "docs/onprem/data/articles/connected_appliance/new_2026/en/index.html",
     "appliance/whats_new/private_appliance":   "docs/onprem/data/articles/private_appliance/new_2026/en/index.html",
@@ -284,8 +291,8 @@ def _extract_cdn_version(html: str) -> str | None:
 
 def _build_intersight_routes(cdn_base: str, model: dict) -> dict[str, str]:
     """
-    Build URL-key -> CDN long-URL mapping from cloud-model.json +
-    hardcoded appliance fallbacks.  Keys match the path after /help/.
+    Build URL-key -> CDN long-URL mapping from cloud-model.json.
+    Keys match the path after /help/ (saas section only).
     """
     routes: dict[str, str] = {}
 
@@ -317,9 +324,51 @@ def _build_intersight_routes(cdn_base: str, model: dict) -> dict[str, str]:
             if link and name:
                 routes[link.lower()] = cdn_url(folder, name, 'resources')
 
-    # Appliance fallbacks
+    return routes
+
+
+def _build_onprem_routes(cdn_base: str, model: dict) -> dict[str, str]:
+    """
+    Build URL-key -> CDN long-URL mapping from onprem-model.json.
+    Keys match the path after /help/ (e.g. 'appliance/settings').
+    The model is walked with an 'appliance/' prefix so route keys align
+    with Intersight help URL paths.
+    _IS_APPLIANCE_FALLBACKS are inserted for any key not found in the model.
+    """
+    routes: dict[str, str] = {}
+
+    def cdn_url(folder: str, file_name: str | None = None,
+                resource: str = 'articles') -> str:
+        return f"{cdn_base}/docs/onprem/data/{resource}/{folder}/{file_name or 'index.html'}"
+
+    def walk(item: dict, prefix: str) -> None:
+        sec  = item.get('section', '')
+        path = f"{prefix}/{sec}".strip('/') if sec else prefix.strip('/')
+        for d in item.get('data') or []:
+            if d.get('folder'):
+                routes[path] = cdn_url(d['folder'], d.get('fileName'),
+                                       d.get('resource') or 'articles')
+            for sub in d.get('items') or []:
+                walk(sub, path)
+        for child in item.get('items') or []:
+            walk(child, path)
+
+    # Article routes, prefixed with 'appliance/' to match /help/appliance/... URLs
+    for art in model.get('articles', []):
+        walk(art, 'appliance')
+
+    # Resource routes for appliance
+    for res in model.get('resources', []):
+        folder = res.get('folder', '')
+        for doc in res.get('docs', []):
+            link, name = doc.get('link', ''), doc.get('name', '')
+            if link and name:
+                routes[link.lower()] = cdn_url(folder, name, 'resources')
+
+    # Fill in any gaps with the hardcoded fallbacks
     for key, path in _IS_APPLIANCE_FALLBACKS.items():
-        routes[key] = f"{cdn_base}/{path}"
+        if key not in routes:
+            routes[key] = f"{cdn_base}/{path}"
 
     return routes
 
@@ -418,7 +467,7 @@ class DocFetcher:
     def __init__(
         self,
         out_dir:   Path  = MD_OUT_DIR,
-        delay:     float = 0.1,     # was 0.1
+        delay:     float = DEFAULT_DELAY,
         max_pages: int   = 200,
         force:     bool  = False,
     ):
@@ -429,7 +478,9 @@ class DocFetcher:
         self._cdn_base: str | None = None   # resolved once per run
         self._cdn_init = False              # True once resolution has been attempted
         self._model:  dict | None = None    # cloud-model.json, loaded once
-        self._routes: dict | None = None    # CDN route table, built once
+        self._routes: dict | None = None    # SaaS CDN route table (cloud-model.json)
+        self._onprem_model:  dict | None = None   # onprem-model.json, loaded once
+        self._onprem_routes: dict | None = None   # Appliance CDN route table (onprem-model.json)
         self._failures: list[dict] = []
 
         for d in _RAW_DIRS.values():
@@ -529,8 +580,42 @@ class DocFetcher:
             cache.write_text(json.dumps(self._model, indent=2), encoding='utf-8')
             print(f'  [IS] Cached → {cache}')
 
+        assert self._model is not None
         self._routes = _build_intersight_routes(self._cdn_base, self._model)
-        print(f'  [IS] {len(self._routes)} routes built')
+        print(f'  [IS] {len(self._routes)} saas routes built')
+
+    def _ensure_onprem_model_routes(self) -> None:
+        """Load onprem-model.json and build appliance routes, at most once per instance."""
+        if self._onprem_routes is not None:
+            return
+        if not self._cdn_base:
+            self._onprem_routes = {}
+            return
+
+        # Load onprem model (cached to disk)
+        cache = _IS_ONPREM_MODEL_CACHE
+        if cache.exists() and not self.force:
+            print(f'  [IS] Using cached {cache.name}')
+            self._onprem_model = json.loads(cache.read_text(encoding='utf-8'))
+        else:
+            url = f'{self._cdn_base}/model/en/onprem-model.json'
+            print(f'  [IS] Fetching {url}')
+            data = self._get(url, {**_IS_HEADERS, 'Accept': 'application/json'})
+            if data is None:
+                print('  [IS] WARNING: could not load onprem-model.json – '
+                      'falling back to _IS_APPLIANCE_FALLBACKS only.')
+                self._onprem_routes = {
+                    k: f'{self._cdn_base}/{v}'
+                    for k, v in _IS_APPLIANCE_FALLBACKS.items()
+                }
+                return
+            self._onprem_model = json.loads(data.decode('utf-8'))
+            cache.write_text(json.dumps(self._onprem_model, indent=2), encoding='utf-8')
+            print(f'  [IS] Cached → {cache}')
+
+        assert self._onprem_model is not None
+        self._onprem_routes = _build_onprem_routes(self._cdn_base, self._onprem_model)
+        print(f'  [IS] {len(self._onprem_routes)} appliance routes built')
 
     # ------------------------------------------------------------------
     # Intersight guide
@@ -538,7 +623,15 @@ class DocFetcher:
 
     def fetch_intersight_guide(self, is_url: str) -> tuple[str, str] | None:
         self._ensure_cdn()
-        self._ensure_model_routes()
+
+        # Choose the correct model/routes based on URL variant
+        is_appliance = urlparse(is_url).path.startswith('/help/appliance')
+        if is_appliance:
+            self._ensure_onprem_model_routes()
+            active_routes = self._onprem_routes or {}
+        else:
+            self._ensure_model_routes()
+            active_routes = self._routes or {}
 
         slug = _intersight_url_slug(is_url)
         raw_path = RAW_HTML_DIR / f'{slug}.html'
@@ -559,7 +652,7 @@ class DocFetcher:
             print(f'  ⏭  cached: {raw_path.name}')
             doc_html = raw_path.read_text(encoding='utf-8')
         else:
-            cdn_url = _resolve_intersight_url(is_url, self._routes or {})
+            cdn_url = _resolve_intersight_url(is_url, active_routes)
             if not cdn_url:
                 print(f'  [IS] WARNING: no CDN URL found for {is_url}')
                 self._failures.append({'url': is_url, 'reason': 'CDN URL not found'})
@@ -676,6 +769,7 @@ class DocFetcher:
             md += '\n\n---\n\n'
 
         print(f'  converted {len(pages)} page(s)')
+        assert md_filename is not None
         return md_filename, _clean_markdown(md)
 
     # ------------------------------------------------------------------
@@ -788,7 +882,7 @@ class DocFetcher:
                 traceback.print_exc()
                 fetched = True
             if fetched and i < len(urls):
-                time.sleep(self.delay * 2)
+                time.sleep(self.delay)
 
         # Write failure report
         failed_path = Path('urls-failed.md')
@@ -800,10 +894,13 @@ class DocFetcher:
                 fh.write('*(no failures)*\n')
             else:
                 for i, fail in enumerate(self._failures, 1):
-                    fh.write(f'## {i}. {fail["url"]}\n\n'
-                             f'- **URL:** {fail["url"]}\n'
-                             f'- **Reason:** {fail["reason"]}\n\n---\n\n')
-        print(f'\nFailed URLs → {failed_path} ({len(self._failures)} failure(s))')
+                    # fh.write(f'## {i}. {fail["url"]}\n\n'
+                    #          f'- **URL:** {fail["url"]}\n'
+                    #          f'- **Reason:** {fail["reason"]}\n\n---\n\n')
+                    print(f'  ✗  {fail["url"]} → {fail["reason"]}')
+
+        print(f'\nFailed URLs → ({len(self._failures)} failure(s))')
+        # print(f'\nFailed URLs → {failed_path} ({len(self._failures)} failure(s))')
         print(f'Done. Processed {len(urls)} URL(s).')
 
 
@@ -837,8 +934,8 @@ def main() -> None:
                    help='Markdown file containing URLs (default: urls.md)')
     p.add_argument('-o', '--output-dir', default=str(MD_OUT_DIR),
                    help=f'Markdown output directory (default: {MD_OUT_DIR})')
-    p.add_argument('-d', '--delay', type=float, default=1.0,
-                   help='Seconds between requests (default: 1.0)')
+    p.add_argument('-d', '--delay', type=float, default=DEFAULT_DELAY,
+                   help=f'Seconds between requests (default: {DEFAULT_DELAY})')
     p.add_argument('--max-pages',  type=int,   default=200,
                    help='Max pages per HTML guide (default: 200)')
     p.add_argument('-f', '--force', action='store_true',
