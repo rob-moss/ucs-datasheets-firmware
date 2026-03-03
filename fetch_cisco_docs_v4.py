@@ -19,10 +19,12 @@ Markdown filenames:
   - intersight.com (other paths) → intersight-<url-slug>.md
 
 Intersight URLs are JavaScript-rendered SPAs.  This script fetches them by:
-  1. Loading the Intersight home page to find the CDN base-bundle.js URL.
-  2. Downloading base-bundle.js and scanning for the versioned CDN doc URL.
-  3. Falling back to reading the CDN version directly from the help page HTML.
-  4. Fetching the static CDN HTML doc page (no JS needed) and converting to MD.
+  1. Reading a cached CDN version string from disk (./ucs-docs-raw/html/.intersight_cdn_version)
+     and validating it with a HEAD request to onprem-model.json (always public).
+  2. If the cache is absent or stale, fetching the Intersight home page to extract the
+     CDN version from HTML (a 403 response is tolerated — we warn and skip IS URLs).
+  3. Constructing the versioned CDN static HTML doc URL and fetching it (no JS needed).
+  4. A 403 on any individual CDN doc page is treated as a non-fatal skip, not an exit.
 
 Dependencies:
     pip install requests beautifulsoup4 html2text pdfminer.six markdownify
@@ -32,6 +34,7 @@ import io
 import json
 import os
 import re
+import sys
 import time
 import datetime
 import email.utils
@@ -62,6 +65,8 @@ try:
     _MARKDOWNIFY_OK = True
 except ImportError:
     _MARKDOWNIFY_OK = False
+    def _markdownify(*a, **kw) -> str:  # type: ignore[misc]
+        return ''
 
 
 # ---------------------------------------------------------------------------
@@ -74,6 +79,24 @@ RAW_HTML_DIR  = Path('./ucs-docs-raw/html')
 # ---------------------------------------------------------------------------
 _INTERSIGHT_HOME    = 'https://intersight.com'
 _INTERSIGHT_CDN_BASE = 'https://cdn.intersight.com/components/an-hulk'
+_IS_HEADERS = {
+    'Referer': 'https://intersight.com/',
+    'Origin': 'https://intersight.com',
+    'Sec-Fetch-Mode': 'cors',
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:147.0) Gecko/20100101 Firefox/147.0',
+    'DNT': '1',
+    'Sec-GPC': '1',
+    'Connection': 'keep-alive',
+    'Sec-Fetch-Dest': 'empty',
+    'Sec-Fetch-Mode': 'cors',
+    'Sec-Fetch-Site': 'same-site',
+}
+
+urlslist = 'urls.md'
+
+# CDN version cache — avoids touching intersight.com on every run
+_CDN_VERSION_CACHE_FILE = RAW_HTML_DIR / '.intersight_cdn_version'
+_CDN_VERSION_CACHE_TTL  = datetime.timedelta(days=7)
 RAW_PDF_DIR   = Path('./ucs-docs-raw/pdf')
 RAW_JSON_DIR  = Path('./ucs-docs-raw/json')
 RAW_OTHER_DIR = Path('./ucs-docs-raw/other')
@@ -235,6 +258,42 @@ _HTML2TEXT.body_width = 0
 
 
 # ---------------------------------------------------------------------------
+# Intersight CDN version cache helpers
+# ---------------------------------------------------------------------------
+
+def _load_cached_cdn_version() -> str | None:
+    """Read the CDN version string from disk cache.  Returns None if absent or stale."""
+    if not _CDN_VERSION_CACHE_FILE.exists():
+        return None
+    age = (
+        datetime.datetime.now(tz=datetime.timezone.utc)
+        - datetime.datetime.fromtimestamp(
+            _CDN_VERSION_CACHE_FILE.stat().st_mtime, tz=datetime.timezone.utc
+        )
+    )
+    if age > _CDN_VERSION_CACHE_TTL:
+        return None
+    version = _CDN_VERSION_CACHE_FILE.read_text(encoding='utf-8').strip()
+    return version or None
+
+
+def _save_cdn_version(version: str) -> None:
+    """Persist a CDN version string to the disk cache."""
+    _CDN_VERSION_CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    _CDN_VERSION_CACHE_FILE.write_text(version, encoding='utf-8')
+
+
+def _validate_cdn_version(version: str) -> bool:
+    """Return True if the CDN version is still live (HEAD on onprem-model.json → 200)."""
+    url = f'{_INTERSIGHT_CDN_BASE}/{version}/model/en/onprem-model.json'
+    try:
+        resp = _SESSION.head(url, timeout=10, allow_redirects=True)
+        return resp.status_code == 200
+    except Exception:
+        return False
+
+
+# ---------------------------------------------------------------------------
 # Core fetcher
 # ---------------------------------------------------------------------------
 
@@ -255,6 +314,9 @@ class DocFetcher:
         self._bundle_text: str | None       = None
         self._cdn_version_base: str | None  = None
 
+        # Failure tracking — written to urls-failed.md at end of run
+        self._failures: list[dict] = []
+
         for d in [out_dir, RAW_HTML_DIR, RAW_PDF_DIR, RAW_JSON_DIR, RAW_OTHER_DIR]:
             d.mkdir(parents=True, exist_ok=True)
 
@@ -267,6 +329,9 @@ class DocFetcher:
         try:
             print(f"  GET {url}")
             resp = _SESSION.get(url, timeout=30, headers=extra_headers or {})
+            if resp.status_code == 403 and 'intersight.com' in url:
+                print(f"  WARNING 403 Forbidden: {url} – skipping.")
+                return None
             resp.raise_for_status()
             time.sleep(self.delay)
             return resp.content
@@ -359,153 +424,165 @@ class DocFetcher:
 
     def _ensure_intersight_bundle(self) -> None:
         """
-        Populate self._bundle_text and self._cdn_version_base (once per instance).
-        Tries:
-          1. Home-page <script src="..."> tags for base-bundle.js
-          2. Regex scan of home-page HTML
-        Sets self._cdn_version_base to the 'an-hulk' version prefix found in the
-        bundle (if any); leaves it None if only a non-hulk bundle was found.
+        Populate self._cdn_version_base (once per instance).  Strategy:
+          1. Read cached CDN version from disk; validate with HEAD on onprem-model.json
+             (always public — no auth required).  Fastest path, no intersight.com touch.
+          2. Fetch the Intersight home page and extract the CDN version from its HTML.
+             A 403 response is treated as a non-fatal warning: we log it and continue
+             with whatever version we already know (or None if this is a fresh run).
+
+        self._bundle_text is set to '' (non-None) once finished so this method is
+        called at most once per DocFetcher instance.
         """
         if self._bundle_text is not None:
-            return  # already loaded
+            return  # already initialised
 
-        print(f'  [IS] Fetching Intersight home page for base-bundle URL …')
+        # --- Step 1: cached CDN version (avoids touching intersight.com) -------
+        cached_version = _load_cached_cdn_version()
+        if cached_version:
+            if _validate_cdn_version(cached_version):
+                self._cdn_version_base = f'{_INTERSIGHT_CDN_BASE}/{cached_version}'
+                self._bundle_text = ''
+                print(f'  [IS] CDN version (from cache): {self._cdn_version_base}')
+                return
+            print(f'  [IS] Cached CDN version {cached_version!r} is stale; refreshing …')
+
+        # --- Step 2: fetch home page (403 → warn, non-fatal) -------------------
+        print(f'  [IS] Fetching Intersight home page for CDN version …')
+        home_html = ''
         try:
-            resp = _SESSION.get(_INTERSIGHT_HOME, timeout=30)
-            resp.raise_for_status()
+            resp = _SESSION.get(_INTERSIGHT_HOME, timeout=30, headers=_IS_HEADERS)
+            if resp.status_code == 403:
+                print(f'  [IS] WARNING: {_INTERSIGHT_HOME} returned 403 '
+                      f'– CDN version unavailable from home page.')
+            elif resp.ok:
+                home_html = resp.text
+            else:
+                print(f'  [IS] WARNING: home page returned HTTP {resp.status_code}.')
         except Exception as exc:
             print(f'  [IS] WARNING: could not fetch home page – {exc}')
-            self._bundle_text = ''
-            return
 
-        home_html = resp.text
-
-        # Locate base-bundle.js URL
-        bundle_url: str | None = None
-        soup = BeautifulSoup(home_html, 'html.parser')
-        for tag in soup.find_all('script', src=True):
-            src = tag['src']
-            if 'base-bundle' in src:
-                bundle_url = src if src.startswith('http') else urljoin(_INTERSIGHT_HOME, src)
-                print(f'  [IS] base-bundle.js via <script>: {bundle_url}')
-                break
-
-        if not bundle_url:
+        if home_html:
+            # (a) Any CDN an-hulk version reference anywhere in the page
             m = re.search(
-                r'(https://cdn\.intersight\.com[^"\' ]*base-bundle[^"\' ]*\.js)',
+                r'cdn\.intersight\.com/components/an-hulk/([^/"\' ]+)/',
                 home_html,
             )
             if m:
-                bundle_url = m.group(1)
-                print(f'  [IS] base-bundle.js via regex: {bundle_url}')
+                version = m.group(1)
+                self._cdn_version_base = f'{_INTERSIGHT_CDN_BASE}/{version}'
+                _save_cdn_version(version)
+                print(f'  [IS] CDN version from home page (regex): {self._cdn_version_base}')
+                self._bundle_text = ''
+                return
 
-        # Extract an-hulk CDN version from the home page directly (used as fallback)
-        m2 = re.search(
-            r'cdn\.intersight\.com/components/an-hulk/([^/"\' ]+)/',
-            home_html,
-        )
-        if m2:
-            self._cdn_version_base = f'{_INTERSIGHT_CDN_BASE}/{m2.group(1)}'
-            print(f'  [IS] CDN version from home page: {self._cdn_version_base}')
-
-        if not bundle_url:
-            print('  [IS] base-bundle.js URL not found; will use CDN version only.')
-            self._bundle_text = ''
-            return
-
-        # Extract an-hulk version from the bundle URL itself
-        m3 = re.match(
-            r'(https://cdn\.intersight\.com/components/an-hulk/[^/]+)',
-            bundle_url,
-        )
-        if m3 and not self._cdn_version_base:
-            self._cdn_version_base = m3.group(1)
-
-        print(f'  [IS] Downloading base-bundle.js …')
-        try:
-            bresp = _SESSION.get(bundle_url, timeout=60, stream=True)
-            bresp.raise_for_status()
-            chunks, size = [], 0
-            for chunk in bresp.iter_content(chunk_size=1024 * 1024):
-                chunks.append(chunk)
-                size += len(chunk)
-                print(f'  [IS] Downloaded {size / 1024 / 1024:.1f} MB …', end='\r')
-            self._bundle_text = b''.join(chunks).decode('utf-8', errors='replace')
-            print(f'\n  [IS] bundle downloaded ({size / 1024 / 1024:.1f} MB)')
-
-            # Also extract an-hulk version from inside the bundle text
-            if not self._cdn_version_base:
-                m4 = re.search(
-                    r'https://cdn\.intersight\.com/components/an-hulk/([^/"\' ]+)/',
-                    self._bundle_text,
+            # (b) Parse <script src="...base-bundle.js..."> for version
+            bundle_url: str | None = None
+            soup = BeautifulSoup(home_html, 'html.parser')
+            for tag in soup.find_all('script', src=True):
+                src = str(tag['src'])
+                if 'base-bundle' in src:
+                    bundle_url = (
+                        src if src.startswith('http') else urljoin(_INTERSIGHT_HOME, src)
+                    )
+                    print(f'  [IS] base-bundle.js via <script>: {bundle_url}')
+                    break
+            if not bundle_url:
+                m2 = re.search(
+                    r'(https://cdn\.intersight\.com[^"\' ]*base-bundle[^"\' ]*\.js)',
+                    home_html,
                 )
-                if m4:
-                    self._cdn_version_base = f'{_INTERSIGHT_CDN_BASE}/{m4.group(1)}'
-        except Exception as exc:
-            print(f'\n  [IS] WARNING: could not download bundle – {exc}')
-            self._bundle_text = ''
+                if m2:
+                    bundle_url = m2.group(1)
+
+            if bundle_url:
+                m3 = re.match(
+                    r'(https://cdn\.intersight\.com/components/an-hulk/([^/]+))',
+                    bundle_url,
+                )
+                if m3:
+                    self._cdn_version_base = m3.group(1)
+                    version = m3.group(2)
+                    _save_cdn_version(version)
+                    print(f'  [IS] CDN version from bundle URL: {self._cdn_version_base}')
+                    self._bundle_text = ''
+                    return
+
+        if not self._cdn_version_base:
+            print('  [IS] WARNING: could not determine CDN version – IS URLs will be skipped.')
+        self._bundle_text = ''
+
+    def _probe_cdn_url(self, url: str) -> bool:
+        """Return True if a HEAD request to *url* returns HTTP 200."""
+        try:
+            r = _SESSION.head(url, timeout=10, headers=_IS_HEADERS, allow_redirects=True)
+            return r.status_code == 200
+        except Exception:
+            return False
 
     def _resolve_is_doc_url(
         self,
         is_url: str,
         topic: str,
-        section_cap: str,
+        section: str,
     ) -> str | None:
         """
         Resolve the CDN HTML URL for an Intersight help topic.
+
+        The CDN S3 bucket uses inconsistent casing for the section sub-directory
+        — some topics store docs under 'Configure' (capitalised) and others under
+        'configure' (lower-case).  We therefore probe both variants with a HEAD
+        request and return the first that answers 200.
+
         Search order:
-          1. bundle text → full CDN URL match
-          2. bundle text → CDN version prefix + constructed path
-          3. cdn_version_base (from home-page) + constructed path
-          4. Fetch the IS help page and extract the CDN version from its HTML
+          1. cdn_version_base + capitalised section  → HEAD probe
+          2. cdn_version_base + lower-case  section  → HEAD probe
+          3. Fetch the IS help page and extract the CDN version, then re-probe
         """
-        doc_path = (
-            f'docs/cloud/data/articles/features/{topic}/{section_cap}/en/index.html'
-        )
+        if not self._cdn_version_base:
+            # --- last resort: fetch the IS help page and scrape the CDN version ---
+            print(f'  [IS] Fetching IS help page to extract CDN version: {is_url}')
+            try:
+                resp = _SESSION.get(is_url, timeout=30, headers=_IS_HEADERS)
+                if resp.status_code == 403:
+                    print(f'  [IS] WARNING 403 Forbidden: {is_url} – skipping version scrape.')
+                    return None
+                m = re.search(
+                    r'cdn\.intersight\.com/components/an-hulk/([^/"\' ]+)/',
+                    resp.text,
+                )
+                if m:
+                    self._cdn_version_base = f'{_INTERSIGHT_CDN_BASE}/{m.group(1)}'
+                    _save_cdn_version(m.group(1))
+                    print(f'  [IS] CDN version from IS help page scrape: {self._cdn_version_base}')
+            except Exception as exc:
+                print(f'  [IS] WARNING: could not fetch IS help page – {exc}')
 
-        # --- bundle search ---
-        bt = self._bundle_text or ''
-        if bt:
-            # Full URL in bundle
-            m = re.search(
-                r'(https://cdn\.intersight\.com/components/an-hulk/[^"\' ]*'
-                + re.escape(f'features/{topic}/{section_cap}/en/index.html')
-                + r')',
-                bt,
-            )
-            if m:
-                print(f'  [IS] Doc URL found in bundle: {m.group(1)}')
-                return m.group(1)
+        if not self._cdn_version_base:
+            return None
 
-            # Version prefix inside bundle
-            if self._cdn_version_base:
-                url = f'{self._cdn_version_base}/{doc_path}'
-                print(f'  [IS] Constructed doc URL from bundle version: {url}')
+        # Try capitalised first, then lower-case.  One HEAD request per attempt.
+        vb = self._cdn_version_base
+        section_cap   = section.capitalize()
+        candidates = [
+            (f'{vb}/docs/cloud/data/articles/features/{topic}/{section_cap}/en/index.html',
+             section_cap),
+            (f'{vb}/docs/cloud/data/articles/features/{topic}/{section}/en/index.html',
+             section),
+        ]
+        # Deduplicate when section is already capitalised-idempotent (e.g. 'operate')
+        seen: set[str] = set()
+        for url, label in candidates:
+            if url in seen:
+                continue
+            seen.add(url)
+            print(f'  [IS] HEAD probe ({label}): {url}')
+            if self._probe_cdn_url(url):
+                print(f'  [IS] Resolved doc URL: {url}')
                 return url
+            print(f'  [IS] 403 for {label}; trying next variant …')
 
-        # --- cdn_version_base from home page ---
-        if self._cdn_version_base:
-            url = f'{self._cdn_version_base}/{doc_path}'
-            print(f'  [IS] Constructed doc URL from CDN version base: {url}')
-            return url
-
-        # --- last resort: fetch the IS help page and scrape the CDN version ---
-        print(f'  [IS] Fetching IS help page to extract CDN version: {is_url}')
-        try:
-            resp = _SESSION.get(is_url, timeout=30)
-            m = re.search(
-                r'cdn\.intersight\.com/components/an-hulk/([^/"\' ]+)/',
-                resp.text,
-            )
-            if m:
-                version_base = f'{_INTERSIGHT_CDN_BASE}/{m.group(1)}'
-                self._cdn_version_base = version_base
-                url = f'{version_base}/{doc_path}'
-                print(f'  [IS] Doc URL from IS help page scrape: {url}')
-                return url
-        except Exception as exc:
-            print(f'  [IS] WARNING: could not fetch IS help page – {exc}')
-
+        print(f'  [IS] WARNING: no working CDN URL found for {topic}/{section}')
         return None
 
     def fetch_intersight_guide(self, is_url: str) -> tuple[str, str] | None:
@@ -531,21 +608,39 @@ class DocFetcher:
 
         print(f'  [IS] Resolving doc URL for {variant}/{section}/{topic} …')
         self._ensure_intersight_bundle()
-        doc_url = self._resolve_is_doc_url(is_url, topic, section_cap)
+        doc_url = self._resolve_is_doc_url(is_url, topic, section)
 
         if not doc_url:
             print(f'  [IS] ERROR: could not determine CDN doc URL for {is_url}')
+            self._failures.append({
+                'is_url': is_url,
+                'cdn_url': None,
+                'reason': 'CDN URL could not be determined',
+            })
             return None
 
         # Fetch CDN page — always decode as UTF-8 to avoid double-encoding artefacts
         print(f'  [IS] GET {doc_url}')
         try:
-            resp = _SESSION.get(doc_url, timeout=30)
+            resp = _SESSION.get(doc_url, timeout=30, headers=_IS_HEADERS)
+            if resp.status_code == 403:
+                print(f'  [IS] WARNING 403 Forbidden: {doc_url} – skipping.')
+                self._failures.append({
+                    'is_url': is_url,
+                    'cdn_url': doc_url,
+                    'reason': 'HTTP 403 Forbidden',
+                })
+                return None
             resp.raise_for_status()
             doc_html = resp.content.decode('utf-8', errors='replace')
             time.sleep(self.delay)
         except Exception as exc:
             print(f'  [IS] ERROR fetching CDN page: {exc}')
+            self._failures.append({
+                'is_url': is_url,
+                'cdn_url': doc_url,
+                'reason': str(exc),
+            })
             return None
 
         # Cache the raw HTML
@@ -621,7 +716,7 @@ class DocFetcher:
         seen: set[str] = set()
         result: list[str] = []
         for a in soup.find_all('a', href=True):
-            href = a['href'].split('#')[0].strip()
+            href = str(a['href']).split('#')[0].strip()
             if not href or href.startswith('javascript:'):
                 continue
             abs_url = urljoin(base_url, href)
@@ -782,8 +877,12 @@ class DocFetcher:
     # Entry point
     # ------------------------------------------------------------------
 
-    def process_url(self, url: str) -> None:
-        """Process a single URL: download, convert, and write the .md file."""
+    def process_url(self, url: str) -> bool:
+        """Process a single URL: download, convert, and write the .md file.
+
+        Returns True if a network fetch was performed, False if the URL was
+        skipped due to a fresh cache (so the caller can skip the inter-URL delay).
+        """
         # Intersight pages are JS-rendered SPAs; use CDN-based fetch instead
         if urlparse(url).netloc == 'intersight.com':
             info = self._parse_is_url(url)
@@ -796,17 +895,17 @@ class DocFetcher:
                 skip, reason = self._should_skip(url, raw_path)
                 if skip:
                     print(f'  ⏭  skipping ({reason})')
-                    return
+                    return False
                 print(f'  ↓  {reason}')
                 result = self.fetch_intersight_guide(url)
                 if result is None:
                     print(f'  ✗  failed: {url}')
-                    return
+                    return True
                 md_filename, content = result
                 out_path = self.out_dir / md_filename
                 out_path.write_text(content, encoding='utf-8')
                 print(f'  ✓  {out_path}')
-                return
+                return True
 
         ctype    = _content_type(url)
         raw_path = _raw_dir(ctype) / _raw_name(url, ctype)
@@ -814,7 +913,7 @@ class DocFetcher:
         skip, reason = self._should_skip(url, raw_path)
         if skip:
             print(f"  ⏭  skipping ({reason})")
-            return
+            return False
         print(f"  ↓  {reason}")
 
         dispatch = {
@@ -826,12 +925,18 @@ class DocFetcher:
         result = dispatch[ctype](url)
         if result is None:
             print(f"  ✗  failed: {url}")
-            return
+            self._failures.append({
+                'is_url': url,
+                'cdn_url': None,
+                'reason': 'fetch failed (see above for details)',
+            })
+            return True
 
         md_filename, content = result
         out_path = self.out_dir / md_filename
         out_path.write_text(content, encoding='utf-8')
         print(f"  ✓  {out_path}")
+        return True
 
     def process_urls_file(self, filepath: str) -> None:
         """Read URLs from a Markdown file and process each one."""
@@ -843,12 +948,31 @@ class DocFetcher:
             print(f"[{i}/{len(urls)}] {url}")
             print('='*72)
             try:
-                self.process_url(url)
+                fetched = self.process_url(url)
             except Exception as exc:
                 print(f"  ✗  unhandled error: {exc}")
                 traceback.print_exc()
-            if i < len(urls):
+                fetched = True  # treat errors as fetched to keep polite pacing
+            if fetched and i < len(urls):
                 time.sleep(self.delay * 2)
+
+        # Write failed-URL report (overwritten every run)
+        failed_path = Path('urls-failed.md')
+        with open(failed_path, 'w', encoding='utf-8') as fh:
+            fh.write('# Failed URLs\n\n')
+            fh.write(f'*Run: {time.strftime("%Y-%m-%d %H:%M:%S")}*  '
+                     f'— {len(self._failures)} failure(s)\n\n')
+            if not self._failures:
+                fh.write('*(no failures)*\n')
+            else:
+                for i, fail in enumerate(self._failures, 1):
+                    fh.write(f'## {i}. {fail["is_url"]}\n\n')
+                    fh.write(f'- **IS URL:** {fail["is_url"]}\n')
+                    cdn = fail.get('cdn_url') or 'N/A'
+                    fh.write(f'- **CDN URL:** {cdn}\n')
+                    fh.write(f'- **Reason:** {fail["reason"]}\n\n')
+                    fh.write('---\n\n')
+        print(f'  Failed URLs → {failed_path} ({len(self._failures)} failure(s))')
 
         print(f"\nDone. Processed {len(urls)} URL(s).")
 
@@ -885,7 +1009,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description='Fetch Cisco UCS/Intersight documentation and convert to Markdown.'
     )
-    parser.add_argument('urls_file', nargs='?', default='urls.md',
+    parser.add_argument('urls_file', nargs='?', default=urlslist,
                         help='Markdown file containing URLs (default: urls.md)')
     parser.add_argument('-o', '--output-dir', default=str(MD_OUT_DIR),
                         help=f'Markdown output directory (default: {MD_OUT_DIR})')
