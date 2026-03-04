@@ -30,9 +30,9 @@ from mcp.server.fastmcp import FastMCP
 _HERE = Path(__file__).parent.resolve()
 DOCS_DIRS: list[Path] = [
     _HERE.parent / "ucs-docs",
-    _HERE.parent / "ucs-guides-help-query",
-    _HERE.parent / "ucs-firmware-docs",
-#    _HERE.parent / "ucs-docs-raw",
+#     _HERE.parent / "ucs-guides-help-query",
+#     _HERE.parent / "ucs-firmware-docs",
+#     _HERE.parent / "ucs-docs-raw",
 ]
 
 # File patterns to include

@@ -340,7 +340,7 @@ def _strip_html(raw: str) -> str:
     return BeautifulSoup(raw, 'html.parser').get_text(' ', strip=True)
 
 
-_UCS_PATH_KEYWORDS = ('unified_computing', 'ucs', 'ucs-manager')
+_UCS_PATH_KEYWORDS = ('unified_computing', 'ucs', 'ucs-manager', 'servers-unified-computing')
 
 
 def _md_outname(url: str, title: str | None = None) -> str:

@@ -1,14 +1,14 @@
-# Cisco UCS 6536 Fabric Interconnect
+# Cisco UCS 6536 Series Fabric Interconnect
 
 | | |
 |---|---|
-| **URL Title** | Cisco UCS 6536 Fabric Interconnect |
+| **URL Title** | Cisco UCS 6536 Series Fabric Interconnect |
 | **URL** | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.html |
 | **Long URL** |  |
 | **HTML Title** | Cisco UCS 6536 Fabric Interconnect Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs6536-fabric-interconnect-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:00:21 |
+| **Fetched on** | 2026-03-04 11:11:19 |
 
 ---
 

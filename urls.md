@@ -148,7 +148,8 @@
 - [Cisco UCS 6300 Series Fabric Interconnects](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/datasheet-c78-736682.html)
 - [Cisco UCS 6324 Fabric Interconnect](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/datasheet-c78-732207.html)
 - [Cisco UCS 6400 Series Fabric Interconnects](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.html)
-- [Cisco UCS 6536 Fabric Interconnect](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.html)
+- [Cisco UCS 6536 Series Fabric Interconnect](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.html)
+- [Cisco UCS 6600 Series Fabric Interconnect](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.html)
 
 ## Virtual Interface Cards (VICs)
 - [Cisco UCS VIC 1340](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/ucs-virtual-interface-card-1340/datasheet-c78-732517.html)

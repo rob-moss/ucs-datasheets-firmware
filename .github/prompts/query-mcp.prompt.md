@@ -1,5 +1,5 @@
 ---
-name: query-mcp
+name: query
 description: Queries the MCP server for UCS guides
 tools: [execute, read, agent, edit, search, web, todo, ucs-docs/*]
 ---

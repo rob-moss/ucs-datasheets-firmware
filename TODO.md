@@ -4,7 +4,16 @@
   * Make Markdown files more concise and focused on the relevant information for firmware versions and datasheets
   * Deduplicate content across multiple sources to avoid redundancy in the Markdown files
   * Remove boilerplate content that is not relevant to the firmware information, such as navigation menus, footers, and unrelated sections of the documentation
-
+* better logic to handle URLs for UCSM, IMM, UCS Hardware, X-Series hardware, Intersight, etc. to ensure that the correct documents are fetched and processed for each category
+  * For example, use specific URL patterns or keywords to identify which documents belong to UCSM, which belong to IMM, etc., and organize the Markdown files accordingly in the ucs-docs directory
+  * Use the URL patterns to categorize the documents and ensure that the correct information is extracted for each category, such as firmware versions, datasheets, and guides
+  * Set the file prefix accordingly based on the category (e.g., ucsm- for UCS Manager, imm- for Intersight Managed Mode, etc.) to maintain consistency and organization in the Markdown files
+  * ucsm for all UCS Manager docs
+  * imm for all Intersight Managed Mode docs
+  * ucshw for all UCS Hardware docs
+  * wp for all Whitepapers
+  * ishelp for all Intersight Help docs
+  * ucsxhw for all X-Series Hardware docs
 
 
 # Recommended Firmware Versions
