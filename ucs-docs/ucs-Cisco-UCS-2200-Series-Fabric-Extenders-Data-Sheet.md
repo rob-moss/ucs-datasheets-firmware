@@ -8,16 +8,15 @@
 | **HTML Title** | Cisco UCS 2200 Series Fabric Extenders Data Sheet |
 | **Source file** | `ucs-docs-raw/html/data_sheet_c78-675243.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:17 |
+| **Fetched on** | 2026-03-04 12:48:17 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/data_sheet_c78-675243.html
 
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
+* Skip to content
+* Skip to search
+* Skip to footer
 
 # Cisco UCS 2200 Series Fabric Extenders Data Sheet
 
@@ -33,12 +32,10 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/data_sheet_c78-675243.pdf) (924.7 KB)   
+* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/data_sheet_c78-675243.pdf) (924.7 KB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:February 14, 2019
 
@@ -52,15 +49,11 @@ The documentation set for this product strives to use bias-free language. For th
 
 ` `
 
-![data_sheet_c78-675243_0.jpg](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/data_sheet_c78-675243.docx/_jcr_content/renditions/data_sheet_c78-675243_0.jpg)
-
 Cisco Unified Computing System Overview
 
 The Cisco Unified Computing System™ (Cisco UCS™) is a next-generation data center platform that unites compute, network, storage access, and virtualization resources into a cohesive system designed to reduce total cost of ownership (TCO) and increase business agility. The system integrates a low-latency, lossless 10 Gigabit Ethernet unified network fabric with enterprise-class, x86-architecture servers. The system is an integrated, scalable, multichassis platform in which all resources participate in a unified management domain (Figure 1).
 
 **Figure 1. **The Cisco Unified Computing System Is a Highly Available Cohesive Architecture 
-
-![data_sheet_c78-675243_1.jpg](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/data_sheet_c78-675243.docx/_jcr_content/renditions/data_sheet_c78-675243_1.jpg)
 
 Product Overview
 
@@ -74,23 +67,17 @@ Cisco UCS 2200 Series Fabric Extenders fit into the back of the Cisco UCS 5100 S
 
 **Figure 2. **Rear of Cisco UCS 5108 Blade Server Chassis with Two Cisco UCS 2208XP Fabric Extenders Inserted 
 
-![data_sheet_c78-675243_2.jpg](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/data_sheet_c78-675243.docx/_jcr_content/renditions/data_sheet_c78-675243_2.jpg)
-
 **Cisco UCS 2208XP Fabric Extender**
 
 The Cisco UCS 2208XP Fabric Extender (Figure 3) has eight 10 Gigabit Ethernet, FCoE-capable, Enhanced Small Form-Factor Pluggable (SFP+) ports that connect the blade chassis to the fabric interconnect. Each Cisco UCS 2208XP has thirty-two 10 Gigabit Ethernet ports connected through the midplane to each half-width slot in the chassis. Typically configured in pairs for redundancy, two fabric extenders provide up to 160 Gbps of I/O to the chassis.
 
 **Figure 3. **Cisco UCS 2208XP Fabric Extender 
 
-![data_sheet_c78-675243_3.jpg](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/data_sheet_c78-675243.docx/_jcr_content/renditions/data_sheet_c78-675243_3.jpg)
-
 **Cisco UCS 2204XP Fabric Extender**
 
 The Cisco UCS 2204XP Fabric Extender (Figure 4) has four 10 Gigabit Ethernet, FCoE-capable, SFP+ ports that connect the blade chassis to the fabric interconnect. Each Cisco UCS 2204XP has sixteen 10 Gigabit Ethernet ports connected through the midplane to each half-width slot in the chassis. Typically configured in pairs for redundancy, two fabric extenders provide up to 80 Gbps of I/O to the chassis.
 
 **Figure 4. **Cisco UCS 2204XP Fabric Extender 
-
-![data_sheet_c78-675243_4.jpg](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/data_sheet_c78-675243.docx/_jcr_content/renditions/data_sheet_c78-675243_4.jpg)
 
 **Cisco SingleConnect Technology**
 
@@ -275,21 +262,17 @@ For more information about the Cisco UCS 2200 Series Fabric Extenders, visit [ht
 
 ### Contact Cisco
 
-  *   * [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+*   * [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
 ##### Call Sales:
 
-  * [ 1-800-553-6387 ](tel:18005536387)
-  * US/CAN | 5am-5pm PT
-  * [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
+* [ 1-800-553-6387 ](tel:18005536387)
+* US/CAN | 5am-5pm PT
+* [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+* [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
 
 ### Was this Document Helpful?
 
-Yes No [ ![Feedback](//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png)Feedback](javascript: void\(0\);)
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+Yes No [ Feedback](javascript: void\(0\);)
 
 ---

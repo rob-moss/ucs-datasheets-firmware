@@ -8,13 +8,11 @@
 | **HTML Title** | Cisco UCS Manager Getting Started Guide, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_ucsm_getting_started_guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:10:54 |
+| **Fetched on** | 2026-03-04 12:47:50 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/b_ucsm_getting_started_guide_4_3.html
-
-![Clear Contents of Search](/etc/designs/cdc/fw/i/ic_clear_gray.png)
 
 ---
 
@@ -24,14 +22,10 @@
 
 This guide is intended primarily for data center administrators with responsibilities and expertise in one or more of the following: 
 
-  * Server administration 
-
-  * Storage administration 
-
-  * Network administration 
-
-  * Network security 
-
+* Server administration 
+* Storage administration 
+* Network administration 
+* Network security
 
 ---
 
@@ -51,13 +45,13 @@ Table 3. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b)
 ---|---|---  
 Support for Cisco UCS Fabric Interconnects 9108 100G |  Cisco UCS Manager now includes support for Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct).  | 
 
-  * [Cisco UCS Fabric Infrastructure Portfolio](m_overview.html#concept_pmw_z1l_3jb)
-  * [Link-Level Flow Control](m_overview.html#concept_7D5436A5ECF144B787687A2A7CBF10A9)
-  * [Cisco UCS Building Blocks and Connectivity](m_overview.html#concept_uxd_4pl_3jb)
-  * [Overview of Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](m_overview.html#overview-of-cisco-ucs-x-direct)
-  * [Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) Architecture](m_overview.html#cisco-ucs-x-direct-architecture)
-  * [Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](m_overview.html#port-breakout-functionality-on-cisco-ucs-x-direct)
-  * [Configure the Primary Fabric Interconnect Using GUI](m_initial_configuration.html#task_2382994894256504235)
+* [Cisco UCS Fabric Infrastructure Portfolio](m_overview.html#concept_pmw_z1l_3jb)
+* [Link-Level Flow Control](m_overview.html#concept_7D5436A5ECF144B787687A2A7CBF10A9)
+* [Cisco UCS Building Blocks and Connectivity](m_overview.html#concept_uxd_4pl_3jb)
+* [Overview of Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](m_overview.html#overview-of-cisco-ucs-x-direct)
+* [Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) Architecture](m_overview.html#cisco-ucs-x-direct-architecture)
+* [Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](m_overview.html#port-breakout-functionality-on-cisco-ucs-x-direct)
+* [Configure the Primary Fabric Interconnect Using GUI](m_initial_configuration.html#task_2382994894256504235)
 
   
 Table 4. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(2c) Feature |  Description |  Where Documented  
@@ -81,7 +75,7 @@ Guide  |  Description
 [Cisco UCS Manager Server Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses the new licenses, registering Cisco UCS domain with Cisco UCS Central, power capping, server boot, server profiles, and server-related policies.   
 [Cisco UCS Manager Storage Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of storage management, such as SAN and VSAN in Cisco UCS Manager.   
 [Cisco UCS Manager Network Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of network management, such as LAN and VLAN connectivity in Cisco UCS Manager.   
-[Cisco UCS Manager System Monitoring Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of system and health monitoring, including system statistics in Cisco UCS Manager. 
+[Cisco UCS Manager System Monitoring Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of system and health monitoring, including system statistics in Cisco UCS Manager.
 
 ---
 
@@ -89,7 +83,7 @@ Guide  |  Description
 
 ## System Requirements Overview   
   
-The following minimum hardware, browser, and port requirements must be met prior to Cisco UCS Manager initial configuration. 
+The following minimum hardware, browser, and port requirements must be met prior to Cisco UCS Manager initial configuration.
 
 ---
 
@@ -102,24 +96,16 @@ Before you get started with Cisco UCS Manager initial configuration, review the 
 The Cisco UCS Manager initial configuration involves the following steps: 
 
 Figure 1. Cisco UCS Manager Initial Configuration Overview   
-![](/c/dam/en/us/td/i/300001-400000/300001-310000/305001-306000/305200.jpg)  
+  
 
-
-  1. Console Setup—This step involves launching Cisco UCS Manager using the serial console. The Fabric Interconnect runs an initial configuration wizard and assigns three IP addresses in the management and administrative subnet: one for each Fabric Interconnect and one for the virtual IP interface that defines the Cisco UCS Manager instance and enables management. For more information on this step, see Console Setup
-
-  2. Configure Administration Policies—This step involves configuration of administration policies, such as DNS Server, NTP, and Time Zone, that are necessary for proper functioning of all components. For more information on this step, see Configure Administration Policies. 
-
-  3. Configure Equipment Policies—This step involves performing chassis discovery by setting the equipment policies in Cisco UCS Manager. The Chassis Discovery Policy specifies the minimum number of connections between the I/O modules and the Fabric Interconnects. This value must be set explicitly. For more information on this step, see Configure Equipment Policies
-
-  4. Configure Unified Ports—This step involves configuring Unified Ports on the primary and subordinate Fabric Interconnects. Configure Unified Ports
-
-  5. Configure Fabric Interconnect Server Ports—This step involves configuring Fabric Interconnect Server Ports. For more information on this step, see Configure Fabric Interconnect Server Ports
-  6. Configure LAN Connectivity—This step involves establishing initial LAN connectivity from Fabric Interconnects. For more information on this step, see Configure LAN Connectivity. 
-
-  7. Configure SAN Connectivity—This step involves establishing initial SAN connectivity from Fabric Interconnects. For more information on this step, see Configure SAN Connectivity
-
-  8. Define Workloads—After completing initial configuration, you can define your workloads. For more information on this step, see Define Workloads. 
-
+1. Console Setup—This step involves launching Cisco UCS Manager using the serial console. The Fabric Interconnect runs an initial configuration wizard and assigns three IP addresses in the management and administrative subnet: one for each Fabric Interconnect and one for the virtual IP interface that defines the Cisco UCS Manager instance and enables management. For more information on this step, see Console Setup
+2. Configure Administration Policies—This step involves configuration of administration policies, such as DNS Server, NTP, and Time Zone, that are necessary for proper functioning of all components. For more information on this step, see Configure Administration Policies. 
+3. Configure Equipment Policies—This step involves performing chassis discovery by setting the equipment policies in Cisco UCS Manager. The Chassis Discovery Policy specifies the minimum number of connections between the I/O modules and the Fabric Interconnects. This value must be set explicitly. For more information on this step, see Configure Equipment Policies
+4. Configure Unified Ports—This step involves configuring Unified Ports on the primary and subordinate Fabric Interconnects. Configure Unified Ports
+5. Configure Fabric Interconnect Server Ports—This step involves configuring Fabric Interconnect Server Ports. For more information on this step, see Configure Fabric Interconnect Server Ports
+6. Configure LAN Connectivity—This step involves establishing initial LAN connectivity from Fabric Interconnects. For more information on this step, see Configure LAN Connectivity. 
+7. Configure SAN Connectivity—This step involves establishing initial SAN connectivity from Fabric Interconnects. For more information on this step, see Configure SAN Connectivity
+8. Define Workloads—After completing initial configuration, you can define your workloads. For more information on this step, see Define Workloads.
 
 ---
 
@@ -131,25 +117,18 @@ Figure 1. Cisco UCS Manager Initial Configuration Overview
 
 Pools are the base building blocks for uniquely identifying hardware resources. As the basis for the UCS management model, they allow Service Profiles to be associated with any blade, while still providing the exact same ID and presentation to the upstream LAN or SAN. There are three sets of pools used as part of best practices: 
 
-  * WWNN and WWPN pools: Provide unique IDs for Fibre Channel resources on a server (Fibre Channel nodes and ports). 
-
-  * MAC address pools: Provide unique IDs for network interface ports. 
-
-  * UUID pools: Provide IDs similar to a serial number or service tag. 
-
+* WWNN and WWPN pools: Provide unique IDs for Fibre Channel resources on a server (Fibre Channel nodes and ports). 
+* MAC address pools: Provide unique IDs for network interface ports. 
+* UUID pools: Provide IDs similar to a serial number or service tag. 
 
 In the Cisco UCS Manager GUI, these pools are all functionally organized, with UUID pools maintained from the Server tab, WWNN and WWPN pools maintained from the SAN tab, and MAC address pools maintained from the LAN tab. 
 
 Define and use Pools as a standard practice. Ensure the following: 
 
-  * UUID pools are referenced when you create Service Profiles. 
-
-  * MAC address pools are referenced when you create vNICs. 
-
-  * WWNN pools are referenced when you create Service Profiles. 
-
-  * WWPN pools are referenced when you create vHBAs. 
-
+* UUID pools are referenced when you create Service Profiles. 
+* MAC address pools are referenced when you create vNICs. 
+* WWNN pools are referenced when you create Service Profiles. 
+* WWPN pools are referenced when you create vHBAs. 
 
 Similarly, Pools should also be referenced when you create any corresponding template objects (vNICs, vHBAs, and Service Profiles). Trade-offs exist when considering pool management. There are two simple ways to manage pools: populate and use the default pools, or create domain-wide pools. This approach reduces the number of objects that need to be configured and managed. Alternatively, operators are free to configure different pools on a per-tenant or per-application basis. This approach can provide more specific identity management and more granular traffic monitoring of tenants, applications. 
 
@@ -167,12 +146,9 @@ Much of the Cisco UCS core value around availability is predicated on SAN boot. 
 
 Refer to the following best practices for boot policies: 
 
-  * Have a CD-ROM as the first in the boot order, for emergencies and for booting in recovery mode. 
-
-  * For SAN boot, define separate boot policies for each storage array that would be serving boot LUNs. 
-
-  * For network boot, define the vNIC device as last in the boot order, following either SAN or local boot. This allows you to perform a network boot and installation, only if the OS was not previously been installed. 
-
+* Have a CD-ROM as the first in the boot order, for emergencies and for booting in recovery mode. 
+* For SAN boot, define separate boot policies for each storage array that would be serving boot LUNs. 
+* For network boot, define the vNIC device as last in the boot order, following either SAN or local boot. This allows you to perform a network boot and installation, only if the OS was not previously been installed. 
 
 #### Host Firmware Policies 
 
@@ -198,10 +174,8 @@ BIOS policy enables very specific control of CPU settings that are normally acce
 
 Refer to the following best practices for templates: 
 
-  * In the Cisco UCS Manager GUI, use expert mode when creating Service Profile templates to achieve the optimal level of control and definition. 
-
-  * When creating templates, reference the subordinate Pools and Policies that have been previously defined. 
-
+* In the Cisco UCS Manager GUI, use expert mode when creating Service Profile templates to achieve the optimal level of control and definition. 
+* When creating templates, reference the subordinate Pools and Policies that have been previously defined. 
 
 #### vNIC and vHBA Templates 
 
@@ -233,10 +207,8 @@ Logical Configuration  |  Service profiles, VLANs, VSANs, pools, policies and te
 All Configurations  |  Both Logical and System configurations   
 For the Logical Configuration and All Configurations backups, select the Cisco UCS Manager Preserve Identities feature to preserve the actual MAC address, WWN, and UUID values; otherwise, the backup references only the logical pool names, but not the actual identities. The following are configuration backup related best practices: 
 
-  * Use the Preserve Identities feature when backing up individual domains for prescribed restoration (same site or domain or exact recovery site or domain). 
-
-  * Do not use Preserve Identities when creating "gold UCSM domain configuration" templates. 
-
+* Use the Preserve Identities feature when backing up individual domains for prescribed restoration (same site or domain or exact recovery site or domain). 
+* Do not use Preserve Identities when creating "gold UCSM domain configuration" templates.
 
 ---
 
@@ -255,7 +227,7 @@ Guide  |  Description
 [Cisco UCS Manager Server Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses the new licenses, registering Cisco UCS domain with Cisco UCS Central, power capping, server boot, server profiles, and server-related policies.   
 [Cisco UCS Manager Storage Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of storage management, such as SAN and VSAN in Cisco UCS Manager.   
 [Cisco UCS Manager Network Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of network management, such as LAN and VLAN connectivity in Cisco UCS Manager.   
-[Cisco UCS Manager System Monitoring Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of system and health monitoring, including system statistics in Cisco UCS Manager. 
+[Cisco UCS Manager System Monitoring Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of system and health monitoring, including system statistics in Cisco UCS Manager.
 
 ---
 
@@ -268,23 +240,15 @@ Before you get started with Cisco UCS Manager initial configuration, review the 
 The Cisco UCS Manager initial configuration involves the following steps: 
 
 Figure 1. Cisco UCS Manager Initial Configuration Overview   
-![](/c/dam/en/us/td/i/300001-400000/300001-310000/305001-306000/305200.jpg)  
+  
 
-
-  1. Console Setup—This step involves launching Cisco UCS Manager using the serial console. The Fabric Interconnect runs an initial configuration wizard and assigns three IP addresses in the management and administrative subnet: one for each Fabric Interconnect and one for the virtual IP interface that defines the Cisco UCS Manager instance and enables management. For more information on this step, see Console Setup
-
-  2. Configure Administration Policies—This step involves configuration of administration policies, such as DNS Server, NTP, and Time Zone, that are necessary for proper functioning of all components. For more information on this step, see Configure Administration Policies. 
-
-  3. Configure Equipment Policies—This step involves performing chassis discovery by setting the equipment policies in Cisco UCS Manager. The Chassis Discovery Policy specifies the minimum number of connections between the I/O modules and the Fabric Interconnects. This value must be set explicitly. For more information on this step, see Configure Equipment Policies
-
-  4. Configure Unified Ports—This step involves configuring Unified Ports on the primary and subordinate Fabric Interconnects. Configure Unified Ports
-
-  5. Configure Fabric Interconnect Server Ports—This step involves configuring Fabric Interconnect Server Ports. For more information on this step, see Configure Fabric Interconnect Server Ports
-  6. Configure LAN Connectivity—This step involves establishing initial LAN connectivity from Fabric Interconnects. For more information on this step, see Configure LAN Connectivity. 
-
-  7. Configure SAN Connectivity—This step involves establishing initial SAN connectivity from Fabric Interconnects. For more information on this step, see Configure SAN Connectivity
-
-  8. Define Workloads—After completing initial configuration, you can define your workloads. For more information on this step, see Define Workloads. 
-
+1. Console Setup—This step involves launching Cisco UCS Manager using the serial console. The Fabric Interconnect runs an initial configuration wizard and assigns three IP addresses in the management and administrative subnet: one for each Fabric Interconnect and one for the virtual IP interface that defines the Cisco UCS Manager instance and enables management. For more information on this step, see Console Setup
+2. Configure Administration Policies—This step involves configuration of administration policies, such as DNS Server, NTP, and Time Zone, that are necessary for proper functioning of all components. For more information on this step, see Configure Administration Policies. 
+3. Configure Equipment Policies—This step involves performing chassis discovery by setting the equipment policies in Cisco UCS Manager. The Chassis Discovery Policy specifies the minimum number of connections between the I/O modules and the Fabric Interconnects. This value must be set explicitly. For more information on this step, see Configure Equipment Policies
+4. Configure Unified Ports—This step involves configuring Unified Ports on the primary and subordinate Fabric Interconnects. Configure Unified Ports
+5. Configure Fabric Interconnect Server Ports—This step involves configuring Fabric Interconnect Server Ports. For more information on this step, see Configure Fabric Interconnect Server Ports
+6. Configure LAN Connectivity—This step involves establishing initial LAN connectivity from Fabric Interconnects. For more information on this step, see Configure LAN Connectivity. 
+7. Configure SAN Connectivity—This step involves establishing initial SAN connectivity from Fabric Interconnects. For more information on this step, see Configure SAN Connectivity
+8. Define Workloads—After completing initial configuration, you can define your workloads. For more information on this step, see Define Workloads.
 
 ---

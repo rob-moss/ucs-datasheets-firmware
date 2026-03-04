@@ -8,7 +8,7 @@
 | **HTML Title** | UCS Management Overview - Cisco UCS Manager API - Cisco DevNet |
 | **Source file** | `ucs-docs-raw/html/ucs-management-overview.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:06 |
+| **Fetched on** | 2026-03-04 12:48:04 |
 
 ---
 
@@ -16,17 +16,14 @@
 
 # UCS Management Overview
 
-![](https://pubhub.devnetcloud.com/media/ucs-dev-center/docs/images/blog-ucs-management-01-550x225.jpg)
-
 Some hardware vendors are talking about their products as if they invented the concept of infrastructure as code. Cisco UCS was architected as [programmable infrastructure](https://www.cisco.com/c/en/us/solutions/data-center-virtualization/programmable-infrastructure/index.html#~overview) from its inception seven years ago. We’ve continued to enhance the programmability we offer you with application program interfaces (APIs), tools, orchestration and integration to fit your coding desires and requirements. 
 
 ## Unified UCS Management
 
 The latest release of **UCS Manager, version 3** , brings together into one place support for the 2nd generation [UCS](https://www.cisco.com/go/ucs) hardware and the latest 3rd, 4th and 5th generation UCS hardware. It includes support for UCS Mini, UCS C-Series and B-Series servers, Cisco HyperFlex hyperconverged infrastructure, and Cisco composable infrastructure – the UCS C3260 and M-Series. It features a new HTLM5 interface.
 
-![](https://pubhub.devnetcloud.com/media/ucs-dev-center/docs/images/blog-ucs-management-02.jpg)  
   
-
+  
 
 ## UCS PowerTool Suite, It’s Sweet
 
@@ -46,10 +43,9 @@ The UCS Python SDKs are built to support Python 2 & 3, the SDKs can be installed
 
 UCS PowerTool and the Python SDK are built on top of the UCS Management open XML APIs; they compose the XML needed for the API request and parse the response. Of course you can always go straight to the source and use the XML API directly. There are user guides for each of the UCS XML API choices. As long as the programming language you want to use supports writing an HTTP client you’re good to go. Or, use utilities like curl or Postman to quickly prototype.
 
-  * [Cisco UCS Manager XML API Programmer’s Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/api/b_ucs_api_book.html)
-  * [Cisco UCS Rack-Mount Servers CIMC XML API Programmer’s Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/sw/api/b_cimc_api_book.html)
-  * [Cisco UCS Central XML API Programmer’s Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-central/api/b_UCSC_XML_API_book.html)
-
+* [Cisco UCS Manager XML API Programmer’s Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/api/b_ucs_api_book.html)
+* [Cisco UCS Rack-Mount Servers CIMC XML API Programmer’s Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/sw/api/b_cimc_api_book.html)
+* [Cisco UCS Central XML API Programmer’s Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-central/api/b_UCSC_XML_API_book.html)
 
 ## Emulation at Its Best
 

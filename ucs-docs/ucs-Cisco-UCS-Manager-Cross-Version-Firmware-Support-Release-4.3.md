@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Cross-Version Firmware Support, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_cross-version-fw-support_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:12 |
+| **Fetched on** | 2026-03-04 12:48:11 |
 
 ---
 
@@ -93,7 +93,7 @@ Host FW Versions (B, C Bundles) |  4.3(6)
 4.1(2) |  Yes |  Yes |  Yes |  No |  No  
 4.1(1) |  Yes  |  Yes  |  Yes  |  No |  No  
 4.0(1), 4.0(4) (B, C Bundles) |  No |  No |  No |  No |  No  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Important** | 
 
 * * *

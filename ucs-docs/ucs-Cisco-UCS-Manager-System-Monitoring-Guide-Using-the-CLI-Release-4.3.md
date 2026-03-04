@@ -8,13 +8,11 @@
 | **HTML Title** | Cisco UCS Manager System Monitoring Guide Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b-ucsm-cli-system-monitoring-guide-4-3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:05 |
+| **Fetched on** | 2026-03-04 12:48:03 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3.html
-
-![Clear Contents of Search](/etc/designs/cdc/fw/i/ic_clear_gray.png)
 
 ---
 
@@ -24,14 +22,10 @@
   
 This guide is intended primarily for data center administrators with responsibilities and expertise in one or more of the following: 
 
-  * Server administration 
-
-  * Storage administration 
-
-  * Network administration 
-
-  * Network security 
-
+* Server administration 
+* Storage administration 
+* Network administration 
+* Network security
 
 ---
 
@@ -45,25 +39,25 @@ Table 1. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(6a)
 ---|---|---  
 Support for X-Series M8 and C-Series M8 servers |  Cisco UCS Manager now supports Cisco UCS X210c M8 Compute Node, Cisco UCS C240 M8 Server, and Cisco UCS C220 M8 Server | 
 
-  * [Support for Local Storage Monitoring](m_cli_hardware_monitoring.html#reference_s5w_2fy_ndb)
-  * [Graphics Card Server Support](m_cli_hardware_monitoring.html#concept_B6CBDE8AAEE041B9A3E5165193A53B36)
-  * [TFM and Supercap Guidelines and Limitations](m_cli_hardware_monitoring.html#concept_ED653EA1CAA349739E8BF2616A29C645)
+* [Support for Local Storage Monitoring](m_cli_hardware_monitoring.html#reference_s5w_2fy_ndb)
+* [Graphics Card Server Support](m_cli_hardware_monitoring.html#concept_B6CBDE8AAEE041B9A3E5165193A53B36)
+* [TFM and Supercap Guidelines and Limitations](m_cli_hardware_monitoring.html#concept_ED653EA1CAA349739E8BF2616A29C645)
 
   
 Table 2. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(5a) Feature  |  Description  |  Where Documented   
 ---|---|---  
 Support for X-Series M8 server |  Cisco UCS Manager now supports Cisco UCS X215c M8 Compute Node | 
 
-  * [Support for Local Storage Monitoring](m_cli_hardware_monitoring.html#reference_s5w_2fy_ndb)
-  * [Graphics Card Server Support](m_cli_hardware_monitoring.html#concept_B6CBDE8AAEE041B9A3E5165193A53B36)
-  * [TFM and Supercap Guidelines and Limitations](m_cli_hardware_monitoring.html#concept_ED653EA1CAA349739E8BF2616A29C645)
+* [Support for Local Storage Monitoring](m_cli_hardware_monitoring.html#reference_s5w_2fy_ndb)
+* [Graphics Card Server Support](m_cli_hardware_monitoring.html#concept_B6CBDE8AAEE041B9A3E5165193A53B36)
+* [TFM and Supercap Guidelines and Limitations](m_cli_hardware_monitoring.html#concept_ED653EA1CAA349739E8BF2616A29C645)
 
   
 Support for C-Series M8 server |  Cisco UCS Manager now supports Cisco UCS C225 M8 Server | 
 
-  * [Support for Local Storage Monitoring](m_cli_hardware_monitoring.html#reference_s5w_2fy_ndb)
-  * [Graphics Card Server Support](m_cli_hardware_monitoring.html#concept_B6CBDE8AAEE041B9A3E5165193A53B36)
-  * [TFM and Supercap Guidelines and Limitations](m_cli_hardware_monitoring.html#concept_ED653EA1CAA349739E8BF2616A29C645)
+* [Support for Local Storage Monitoring](m_cli_hardware_monitoring.html#reference_s5w_2fy_ndb)
+* [Graphics Card Server Support](m_cli_hardware_monitoring.html#concept_B6CBDE8AAEE041B9A3E5165193A53B36)
+* [TFM and Supercap Guidelines and Limitations](m_cli_hardware_monitoring.html#concept_ED653EA1CAA349739E8BF2616A29C645)
 
   
 Support for monitoring port status |  Cisco UCS Manager now supports dynamic polling to monitor the port status |  [Monitoring the Host Ethernet Interface status for a Rack-Mount Server](m_cli_hardware_monitoring.html#monitoring-host-ethernet-interface-status)  
@@ -71,8 +65,8 @@ Table 3. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b)
 ---|---|---  
 Support for Cisco UCS Fabric Interconnects 9108 100G |  Cisco UCS Manager now supports Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)  | 
 
-  * [Enabling Syslog Messages to Store In a Local File](m_cli_syslog.html#task_87ADF499A8214D25B146B67A0CC13C6A)
-  * [NetFlow Monitoring](m_cli_netflow_monitoring-4-0.html#concept_k2x_dxz_22b)
+* [Enabling Syslog Messages to Store In a Local File](m_cli_syslog.html#task_87ADF499A8214D25B146B67A0CC13C6A)
+* [NetFlow Monitoring](m_cli_netflow_monitoring-4-0.html#concept_k2x_dxz_22b)
 
   
 Table 4. New Features and Changed Behavior in Cisco UCS Manager, 4.3(4a) Release Feature  |  Description  |  Where Documented   
@@ -90,46 +84,27 @@ This guide describes how to configure and use system monitoring to manage a Cisc
 
 Cisco UCS Manager can detect system faults: critical, major, minor, and warnings. We recommend that: 
 
-  * You monitor all faults of either critical or major severity status, as immediate action is not required for minor faults and warnings. 
-
-  * You monitor faults that are not of type Finite State Machine (FSM), as FSM faults will transition over time and resolve. 
-
+* You monitor all faults of either critical or major severity status, as immediate action is not required for minor faults and warnings. 
+* You monitor faults that are not of type Finite State Machine (FSM), as FSM faults will transition over time and resolve. 
 
 This guide covers the following information: 
 
-  * System Log 
-
-  * System logs including faults, failures, and alarm thresholds (Syslog) 
-
-  * The three types of Syslogs: Fault, Event, and Audit logs 
-
-  * The Global Fault Policy and settings that control Syslogs 
-
-
-  * System Event Log 
-
-  * System hardware events for servers and chassis components and their internal components (System Event Log [SEL] logs) 
-
-  * The SEL policy that controls SEL logs 
-
-  * Simple Network Management Protocol 
-
-  * SNMP for monitoring devices from a central network management station and the host and user settings 
-
-  * Fault suppression policies for SNMP traps, Call Home notifications, and specific devices 
-
-  * Core File Exporter and logs, such as Syslog, Audit Log, and the System Event Log 
-
-  * Statistics Collection and Threshold Policies for adapters, chassis, host, ports, and servers 
-
-  * Call Home and Smart Call Home Cisco embedded device support 
-
-  * Hardware monitoring using the Cisco UCS Manager user interface 
-
-  * Traffic Monitoring sessions for analysis by a network analyzer 
-
-  * Cisco Netflow Monitor for IP network traffic accounting, usage-based network billing, network planning, security, Denial of Service monitoring capabilities, and network monitoring 
-
+* System Log 
+* System logs including faults, failures, and alarm thresholds (Syslog) 
+* The three types of Syslogs: Fault, Event, and Audit logs 
+* The Global Fault Policy and settings that control Syslogs 
+* System Event Log 
+* System hardware events for servers and chassis components and their internal components (System Event Log [SEL] logs) 
+* The SEL policy that controls SEL logs 
+* Simple Network Management Protocol 
+* SNMP for monitoring devices from a central network management station and the host and user settings 
+* Fault suppression policies for SNMP traps, Call Home notifications, and specific devices 
+* Core File Exporter and logs, such as Syslog, Audit Log, and the System Event Log 
+* Statistics Collection and Threshold Policies for adapters, chassis, host, ports, and servers 
+* Call Home and Smart Call Home Cisco embedded device support 
+* Hardware monitoring using the Cisco UCS Manager user interface 
+* Traffic Monitoring sessions for analysis by a network analyzer 
+* Cisco Netflow Monitor for IP network traffic accounting, usage-based network billing, network planning, security, Denial of Service monitoring capabilities, and network monitoring
 
 ---
 
@@ -139,12 +114,9 @@ This guide covers the following information:
 
 Cisco UCS Manager generates system log, or syslog messages to record the following incidents that take place in the Cisco UCS Manager system: 
 
-  * Routine system operations 
-
-  * Failures and errors 
-
-  * Critical and emergency conditions 
-
+* Routine system operations 
+* Failures and errors 
+* Critical and emergency conditions 
 
 There are three kinds of syslog entries: Fault, Event, and Audit. 
 
@@ -152,7 +124,7 @@ Each syslog message identifies the Cisco UCS Manager process that generated the 
 
 Cisco UCS Manager collects and logs syslog messages internally. You can send them to external syslog servers running a syslog daemon. Logging to a central syslog server helps in aggregation of logs and alerts. Some syslog messages to monitor include, DIMM problems, equipment failures, thermal problems, voltage problems, power problems, high availability (HA) cluster problems, and link failures. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -165,12 +137,10 @@ The FSM faults, threshold faults, and unresolved policy events are not sent to s
   
 Syslog messages contain an event code and fault code. To monitor syslog messages, you can define syslog message filters. These filters can parse the syslog messages based on the criteria you choose. You can use the following criteria to define a filter: 
 
-  * By event or fault codes: Define a filter with a parsing rule to include only the specific codes that you intend to monitor. Messages that do not match these criteria are discarded. 
+* By event or fault codes: Define a filter with a parsing rule to include only the specific codes that you intend to monitor. Messages that do not match these criteria are discarded. 
+* By severity level: Define a filter with a parsing rule to monitor syslog messages with specific severity levels. You can set syslog severity levels individually for OS functions, to facilitate logging and display of messages ranging from brief summaries to detailed information for debugging. 
 
-  * By severity level: Define a filter with a parsing rule to monitor syslog messages with specific severity levels. You can set syslog severity levels individually for OS functions, to facilitate logging and display of messages ranging from brief summaries to detailed information for debugging. 
-
-
-Cisco devices can send their log messages to a Unix-style syslog service. A syslog service simply accepts messages, then stores them in files or prints them according to a simple configuration file. This form of logging is the best available for Cisco devices because it can provide protected long-term storage of logs. 
+Cisco devices can send their log messages to a Unix-style syslog service. A syslog service simply accepts messages, then stores them in files or prints them according to a simple configuration file. This form of logging is the best available for Cisco devices because it can provide protected long-term storage of logs.
 
 ---
 
@@ -186,7 +156,7 @@ You can use the SEL policy to back up the SEL to a remote server, and optionally
 
 The backup file is automatically generated. The filename format is sel-SystemName-ChassisID-ServerID-ServerSerialNumber-Timestamp. 
 
-For example, sel-UCS-A-ch01-serv01-QCI12522939-20091121160736. 
+For example, sel-UCS-A-ch01-serv01-QCI12522939-20091121160736.
 
 ---
 
@@ -194,7 +164,7 @@ For example, sel-UCS-A-ch01-serv01-QCI12522939-20091121160736.
 
 ## Audit Logs
 
-Audit Logs record system events that occurred, where they occurred, and which users initiated them. 
+Audit Logs record system events that occurred, where they occurred, and which users initiated them.
 
 ---
 
@@ -204,14 +174,11 @@ Audit Logs record system events that occurred, where they occurred, and which us
 
 Cisco UCS Manager generates log files for each executable. The log files can be up to 20 MB in size, and up to five backups can be stored on the server. The log file exporter allows you to export the log files to a remote server before they are deleted. The log file names contain the following information: 
 
-  * The name of the process 
+* The name of the process 
+* Timestamp 
+* The name and ID of the fabric interconnect 
 
-  * Timestamp 
-
-  * The name and ID of the fabric interconnect 
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -224,10 +191,8 @@ If you do not enable log exporting, the oldest log files are deleted whenever th
   
 ### Guidelines and Limitations
 
-  * We recommend that you use tftp or password-less scp or sftp for log export. When standard scp or sftp is used, the user password is stored in the configuration file in encrypted format. 
-
-  * On a HA setup, the log files from each side are exported separately. If one side fails to export logs, the other side does not compensate. 
-
+* We recommend that you use tftp or password-less scp or sftp for log export. When standard scp or sftp is used, the user password is stored in the configuration file in encrypted format. 
+* On a HA setup, the log files from each side are exported separately. If one side fails to export logs, the other side does not compensate.
 
 ---
 
@@ -235,7 +200,7 @@ If you do not enable log exporting, the oldest log files are deleted whenever th
 
 ## Core File Exporter 
 
-Critical failures in the Cisco UCS components, such as a fabric interconnect or an I/O module, can cause the system to create a core dump file. Cisco UCS Manager uses the Core File Exporter to immediately export the core dump files to a specified location on the network through TFTP. This functionality allows you to export the tar file with the contents of the core dump file. The Core File Exporter provides system monitoring and automatic export of core dump files that need to be included in TAC cases. 
+Critical failures in the Cisco UCS components, such as a fabric interconnect or an I/O module, can cause the system to create a core dump file. Cisco UCS Manager uses the Core File Exporter to immediately export the core dump files to a specified location on the network through TFTP. This functionality allows you to export the tar file with the contents of the core dump file. The Core File Exporter provides system monitoring and automatic export of core dump files that need to be included in TAC cases.
 
 ---
 
@@ -263,16 +228,11 @@ The global fault policy controls the lifecycle of a fault in a Cisco UCS domain,
 
 A fault in Cisco UCS has the following lifecycle: 
 
-  1. A condition occurs in the system and Cisco UCS Manager raises a fault. This is the active state. 
-
-  2. When the fault is alleviated, it enters a flapping or soaking interval that is designed to prevent flapping. Flapping occurs when a fault is raised and cleared several times in rapid succession. During the flapping interval, the fault retains its severity for the length of time specified in the global fault policy. 
-
-  3. If the condition reoccurs during the flapping interval, the fault returns to the active state. If the condition does not reoccur during the flapping interval, the fault is cleared. 
-
-  4. The cleared fault enters the retention interval. This interval ensures that the fault reaches the attention of an administrator even if the condition that caused the fault has been alleviated and the fault has not been deleted prematurely. The retention interval retains the cleared fault for the length of time specified in the global fault policy. 
-
-  5. If the condition reoccurs during the retention interval, the fault returns to the active state. If the condition does not reoccur, the fault is deleted. 
-
+1. A condition occurs in the system and Cisco UCS Manager raises a fault. This is the active state. 
+2. When the fault is alleviated, it enters a flapping or soaking interval that is designed to prevent flapping. Flapping occurs when a fault is raised and cleared several times in rapid succession. During the flapping interval, the fault retains its severity for the length of time specified in the global fault policy. 
+3. If the condition reoccurs during the flapping interval, the fault returns to the active state. If the condition does not reoccur during the flapping interval, the fault is cleared. 
+4. The cleared fault enters the retention interval. This interval ensures that the fault reaches the attention of an administrator even if the condition that caused the fault has been alleviated and the fault has not been deleted prematurely. The retention interval retains the cleared fault for the length of time specified in the global fault policy. 
+5. If the condition reoccurs during the retention interval, the fault returns to the active state. If the condition does not reoccur, the fault is deleted. 
 
 ### Configuring the Fault Collection Policy
 
@@ -290,8 +250,7 @@ A fault in Cisco UCS has the following lifecycle:
 #### Example
 
 This example configures the fault collection policy to retain cleared fault messages for 30 days, sets the flapping interval to 10 seconds, and commits the transaction. 
-    
-    
+[code] 
     UCS-A# **scope monitoring**
     UCS-A /monitoring # **scope fault policy**
     UCS-A /monitoring/fault-policy # **set clear-action retain**
@@ -299,6 +258,7 @@ This example configures the fault collection policy to retain cleared fault mess
     UCS-A /monitoring/fault-policy* # **set retention-interval 30 0 0 0**
     UCS-A /monitoring/fault-policy* # **commit-buffer**
     UCS-A /monitoring/fault-policy # 
+[/code]
 
 ---
 
@@ -306,7 +266,7 @@ This example configures the fault collection policy to retain cleared fault mess
 
 ## SNMP Overview 
 
-The Simple Network Management Protocol (SNMP) is an application-layer protocol that provides a message format for communication between SNMP managers and agents. SNMP provides a standardized framework and a common language for monitoring and managing devices in a network. 
+The Simple Network Management Protocol (SNMP) is an application-layer protocol that provides a message format for communication between SNMP managers and agents. SNMP provides a standardized framework and a common language for monitoring and managing devices in a network.
 
 ---
 
@@ -320,18 +280,13 @@ For NIC statistics, Cisco UCS Manager displays the average, minimum, and maximum
 
 Statistics can be collected and reported for the following five functional areas of the Cisco UCS system: 
 
-  * Adapter — Statistics related to the adapters 
+* Adapter — Statistics related to the adapters 
+* Chassis — Statistics related to the chassis 
+* Host — This policy is a placeholder for future support 
+* Port — Statistics related to the ports, including server ports, uplink Ethernet ports, and uplink Fibre Channel ports 
+* Server — Statistics related to servers 
 
-  * Chassis — Statistics related to the chassis 
-
-  * Host — This policy is a placeholder for future support 
-
-  * Port — Statistics related to the ports, including server ports, uplink Ethernet ports, and uplink Fibre Channel ports 
-
-  * Server — Statistics related to servers 
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -358,18 +313,15 @@ When you configure Call Home to send messages, Cisco UCS Manager executes the ap
 
 Cisco UCS delivers Call Home messages in the following formats: 
 
-  * Short text format which provides a one or two line description of the fault that is suitable for pagers or printed reports. 
-
-  * Full text format which provides fully formatted message with detailed information that is suitable for human reading. 
-
-  * XML machine-readable format that uses Extensible Markup Language (XML) and Adaptive Messaging Language (AML) XML Schema Definition (XSD). The AML XSD is published on the [Cisco.com website](http://www.cisco.com). The XML format enables communication with the Cisco Systems Technical Assistance Center. 
-
+* Short text format which provides a one or two line description of the fault that is suitable for pagers or printed reports. 
+* Full text format which provides fully formatted message with detailed information that is suitable for human reading. 
+* XML machine-readable format that uses Extensible Markup Language (XML) and Adaptive Messaging Language (AML) XML Schema Definition (XSD). The AML XSD is published on the [Cisco.com website](http://www.cisco.com). The XML format enables communication with the Cisco Systems Technical Assistance Center. 
 
 For information about the faults that can trigger Call Home email alerts, see the Cisco UCS Faults and Error Messages Reference. 
 
 The following figure shows the flow of events after a Cisco UCS fault is triggered in a system with Call Home configured: 
 
-Figure 1. Flow of Events after a Fault is Triggered  ![Flowchart showing events that can occur after a fault is triggered in a Cisco UCS domain](/c/dam/en/us/td/i/100001-200000/190001-200000/196001-197000/196367.jpg)
+Figure 1. Flow of Events after a Fault is Triggered 
 
 ### SMTP Authentication
 
@@ -377,12 +329,10 @@ Beginning with release 4.2(3b), UCS Manager supports secured authentication for 
 
 You can toggle SMTP Authentication between 
 
-  * Off—SMTP Authentication is not used for this Cisco UCS domain. 
+* Off—SMTP Authentication is not used for this Cisco UCS domain. 
+* On—SMTP Authentication is used for this Cisco UCS domain. 
 
-  * On—SMTP Authentication is used for this Cisco UCS domain. 
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -401,10 +351,8 @@ SMTP server should be capable of supporting STARTTLS, SSL based SMTP communicati
   
 Cisco UCS Manager uses a SQLite database stored on the Fabric Interconnects to persist configuration and inventory. Data corruption on both the Flash and NVRAM storage devices can cause failures and loss of customer configuration data. Cisco UCS Manager provides several proactive health check and recovery mechanisms to improve the integrity of the Cisco UCS Manager database. These mechanisms enable active monitoring of the database health. 
 
-  * Periodic Health Check— A periodic check of database integrity ensures that any corruption is caught and recovered proactively. See Triggering Health Check, and Changing Health Check Interval. 
-
-  * Periodic Backup— A periodic internal full state backup of the system ensures a smoother route to recovery in the case of any unrecoverable errors. See Changing Internal Backup Interval. 
-
+* Periodic Health Check— A periodic check of database integrity ensures that any corruption is caught and recovered proactively. See Triggering Health Check, and Changing Health Check Interval. 
+* Periodic Backup— A periodic internal full state backup of the system ensures a smoother route to recovery in the case of any unrecoverable errors. See Changing Internal Backup Interval.
 
 ---
 
@@ -428,7 +376,7 @@ System  | scope monitoring [show] [baseline-faults | callhome | event | fault | 
 Event  |  show event [event-id | detail]  |  Displays the Event log.   
 Fault  | show fault [fault-id | cause | detail | severity | suppressed]  |  Displays the Fault log.   
 SEL  | show sel [chassis-id/blade-id | rack-id]  |  Displays the System Event Log for the chassis, blade, or rack-mount server.   
-Syslog  | scope monitoring [show ] [syslog]  |  Displays the Syslog. 
+Syslog  | scope monitoring [show ] [syslog]  |  Displays the Syslog.
 
 ---
 
@@ -454,16 +402,14 @@ A flow record definition contains information about the properties used to defin
 
 A flow record definition is a specific combination of flow keys and flow values. The two types of flow record definitions are: 
 
-  * System-defined—Default flow record definitions supplied by Cisco UCS Manager. 
-
-  * User-defined—Flow record definitions that you can create yourself. 
-
+* System-defined—Default flow record definitions supplied by Cisco UCS Manager. 
+* User-defined—Flow record definitions that you can create yourself. 
 
 ### Flow Exporters, Flow Exporter Profiles, and Flow Collectors
 
 Flow exporters transfer the flows to the flow connector based on the information in a flow exporter profile. The flow exporter profile contains the networking properties used to export NetFlow packets. The networking properties include a VLAN, the source IP address, and the subnet mask for each fabric interconnect. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -480,7 +426,7 @@ Flow collectors receive the flows from the flow exporter. Each flow collector co
 
 A flow monitor consists of a flow definition, one or two flow exporters, and a timeout policy. You can use a flow monitor to specify which flow information you want to gather, and where you want to collect it from. Each flow monitor operates in either the egress or ingress direction. 
 
-A flow monitor session contains up to four flow monitors: two flow monitors in the ingress direction and two flow monitors in the egress direction. A flow monitor session can also be associated with a vNIC. 
+A flow monitor session contains up to four flow monitors: two flow monitors in the ingress direction and two flow monitors in the egress direction. A flow monitor session can also be associated with a vNIC.
 
 ---
 
@@ -500,14 +446,12 @@ ERSPAN is used to transport mirrored traffic in an IP network. An origin interfa
 
 There are two types of monitoring sessions: 
 
-  * Ethernet
-
-  * Fibre Channel
-
+* Ethernet
+* Fibre Channel
 
 The type of destination port determines what kind of monitoring session you need. For an Ethernet traffic monitoring session, the destination port must be an unconfigured physical port. For a Fibre Channel traffic monitoring session, the destination port must be a Fibre Channel uplink port except when you are using Cisco UCS 6500 Series Fabric Interconnect, Cisco UCS 6400 Series Fabric Interconnect, and 6300 Series Fabric Interconnects. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -525,18 +469,18 @@ An Ethernet traffic monitoring session can monitor any of the following traffic 
 Source Ports  |  Destination Ports   
 ---|---  
   
-  * Uplink Ethernet port 
-  * Ethernet port channel 
-  * VLAN 
-  * Service profile vNIC 
-  * Service profile vHBA 
-  * FCoE port 
-  * Port channels 
-  * Unified uplink port 
-  * VSAN 
+* Uplink Ethernet port 
+* Ethernet port channel 
+* VLAN 
+* Service profile vNIC 
+* Service profile vHBA 
+* FCoE port 
+* Port channels 
+* Unified uplink port 
+* VSAN 
 
 |  Unconfigured Ethernet Port   
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -551,27 +495,18 @@ A server port can be a source, only if it is a non-virtualized rack server adapt
 
 ### Traffic Monitoring for Cisco UCS 6500,6400 Series Fabric Interconnects 
 
-  * Cisco UCS 6500, 6400 Series Fabric Interconnects do not support a Fibre Channel port as a destination port. Therefore, an Ethernet port is the only option for configuring any traffic monitoring session on this Fabric Interconnect. 
-
-  * Cisco UCS 6500, 6400 Series Fabric Interconnects support monitoring traffic in the transmit direction for more than two sources per Fabric Interconnect. 
-
-  * You can monitor or use SPAN on port channels sources for traffic in the transmit and receive directions.
-
-  * You can configure a port as a destination port for only one monitor session.
-
-  * You can monitoring Port-Channel as a source in the transmit direction.
-
-  * You cannot monitor vEth as a source in the transmit direction.
-
+* Cisco UCS 6500, 6400 Series Fabric Interconnects do not support a Fibre Channel port as a destination port. Therefore, an Ethernet port is the only option for configuring any traffic monitoring session on this Fabric Interconnect. 
+* Cisco UCS 6500, 6400 Series Fabric Interconnects support monitoring traffic in the transmit direction for more than two sources per Fabric Interconnect. 
+* You can monitor or use SPAN on port channels sources for traffic in the transmit and receive directions.
+* You can configure a port as a destination port for only one monitor session.
+* You can monitoring Port-Channel as a source in the transmit direction.
+* You cannot monitor vEth as a source in the transmit direction.
 
 ### Traffic Monitoring for Cisco UCS 6300 Fabric Interconnects
 
-  * Cisco UCS 6300 Fabric Interconnect supports port-based mirroring.
-
-  * Cisco UCS 6300 Fabric Interconnects support VLAN SPAN only in the receive direction. 
-
-  * Ethernet SPAN is port based on the Cisco UCS 6300 Fabric Interconnect. 
-
+* Cisco UCS 6300 Fabric Interconnect supports port-based mirroring.
+* Cisco UCS 6300 Fabric Interconnects support VLAN SPAN only in the receive direction. 
+* Ethernet SPAN is port based on the Cisco UCS 6300 Fabric Interconnect. 
 
 ### Traffic Monitoring Across Fibre Channel
 
@@ -582,19 +517,18 @@ A Fibre Channel traffic monitoring session can monitor any of the following traf
 Source Ports  |  Destination Ports   
 ---|---  
   
-  * FC Port 
-  * FC Port Channel 
-  * Uplink Fibre Channel port 
-  * SAN port channel 
-  * VSAN 
-  * Service profile vHBA 
-  * Fibre Channel storage port 
+* FC Port 
+* FC Port Channel 
+* Uplink Fibre Channel port 
+* SAN port channel 
+* VSAN 
+* Service profile vHBA 
+* Fibre Channel storage port 
 
 | 
 
-  * Fibre Channel uplink port 
-  * Unconfigured Ethernet Port (Cisco UCS 6536, 64108, 6454, 6332, and 6332-16UP Fabric Interconnects) 
-
+* Fibre Channel uplink port 
+* Unconfigured Ethernet Port (Cisco UCS 6536, 64108, 6454, 6332, and 6332-16UP Fabric Interconnects)
 
 ---
 
@@ -618,7 +552,7 @@ System  | scope monitoring [show] [baseline-faults | callhome | event | fault | 
 Event  |  show event [event-id | detail]  |  Displays the Event log.   
 Fault  | show fault [fault-id | cause | detail | severity | suppressed]  |  Displays the Fault log.   
 SEL  | show sel [chassis-id/blade-id | rack-id]  |  Displays the System Event Log for the chassis, blade, or rack-mount server.   
-Syslog  | scope monitoring [show ] [syslog]  |  Displays the Syslog. 
+Syslog  | scope monitoring [show ] [syslog]  |  Displays the Syslog.
 
 ---
 
@@ -628,12 +562,9 @@ Syslog  | scope monitoring [show ] [syslog]  |  Displays the Syslog.
   
 Cisco UCS Manager generates system log, or syslog messages to record the following incidents that take place in the Cisco UCS Manager system: 
 
-  * Routine system operations 
-
-  * Failures and errors 
-
-  * Critical and emergency conditions 
-
+* Routine system operations 
+* Failures and errors 
+* Critical and emergency conditions 
 
 There are three kinds of syslog entries: Fault, Event, and Audit. 
 
@@ -641,7 +572,7 @@ Each syslog message identifies the Cisco UCS Manager process that generated the 
 
 Cisco UCS Manager collects and logs syslog messages internally. You can send them to external syslog servers running a syslog daemon. Logging to a central syslog server helps in aggregation of logs and alerts. Some syslog messages to monitor include, DIMM problems, equipment failures, thermal problems, voltage problems, power problems, high availability (HA) cluster problems, and link failures. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -654,12 +585,10 @@ The FSM faults, threshold faults, and unresolved policy events are not sent to s
   
 Syslog messages contain an event code and fault code. To monitor syslog messages, you can define syslog message filters. These filters can parse the syslog messages based on the criteria you choose. You can use the following criteria to define a filter: 
 
-  * By event or fault codes: Define a filter with a parsing rule to include only the specific codes that you intend to monitor. Messages that do not match these criteria are discarded. 
+* By event or fault codes: Define a filter with a parsing rule to include only the specific codes that you intend to monitor. Messages that do not match these criteria are discarded. 
+* By severity level: Define a filter with a parsing rule to monitor syslog messages with specific severity levels. You can set syslog severity levels individually for OS functions, to facilitate logging and display of messages ranging from brief summaries to detailed information for debugging. 
 
-  * By severity level: Define a filter with a parsing rule to monitor syslog messages with specific severity levels. You can set syslog severity levels individually for OS functions, to facilitate logging and display of messages ranging from brief summaries to detailed information for debugging. 
-
-
-Cisco devices can send their log messages to a Unix-style syslog service. A syslog service simply accepts messages, then stores them in files or prints them according to a simple configuration file. This form of logging is the best available for Cisco devices because it can provide protected long-term storage of logs. 
+Cisco devices can send their log messages to a Unix-style syslog service. A syslog service simply accepts messages, then stores them in files or prints them according to a simple configuration file. This form of logging is the best available for Cisco devices because it can provide protected long-term storage of logs.
 
 ---
 
@@ -685,16 +614,14 @@ A flow record definition contains information about the properties used to defin
 
 A flow record definition is a specific combination of flow keys and flow values. The two types of flow record definitions are: 
 
-  * System-defined—Default flow record definitions supplied by Cisco UCS Manager. 
-
-  * User-defined—Flow record definitions that you can create yourself. 
-
+* System-defined—Default flow record definitions supplied by Cisco UCS Manager. 
+* User-defined—Flow record definitions that you can create yourself. 
 
 ### Flow Exporters, Flow Exporter Profiles, and Flow Collectors
 
 Flow exporters transfer the flows to the flow connector based on the information in a flow exporter profile. The flow exporter profile contains the networking properties used to export NetFlow packets. The networking properties include a VLAN, the source IP address, and the subnet mask for each fabric interconnect. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -711,7 +638,7 @@ Flow collectors receive the flows from the flow exporter. Each flow collector co
 
 A flow monitor consists of a flow definition, one or two flow exporters, and a timeout policy. You can use a flow monitor to specify which flow information you want to gather, and where you want to collect it from. Each flow monitor operates in either the egress or ingress direction. 
 
-A flow monitor session contains up to four flow monitors: two flow monitors in the ingress direction and two flow monitors in the egress direction. A flow monitor session can also be associated with a vNIC. 
+A flow monitor session contains up to four flow monitors: two flow monitors in the ingress direction and two flow monitors in the egress direction. A flow monitor session can also be associated with a vNIC.
 
 ---
 
@@ -731,14 +658,12 @@ ERSPAN is used to transport mirrored traffic in an IP network. An origin interfa
 
 There are two types of monitoring sessions: 
 
-  * Ethernet
-
-  * Fibre Channel
-
+* Ethernet
+* Fibre Channel
 
 The type of destination port determines what kind of monitoring session you need. For an Ethernet traffic monitoring session, the destination port must be an unconfigured physical port. For a Fibre Channel traffic monitoring session, the destination port must be a Fibre Channel uplink port except when you are using Cisco UCS 6500 Series Fabric Interconnect, Cisco UCS 6400 Series Fabric Interconnect, and 6300 Series Fabric Interconnects. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -756,18 +681,18 @@ An Ethernet traffic monitoring session can monitor any of the following traffic 
 Source Ports  |  Destination Ports   
 ---|---  
   
-  * Uplink Ethernet port 
-  * Ethernet port channel 
-  * VLAN 
-  * Service profile vNIC 
-  * Service profile vHBA 
-  * FCoE port 
-  * Port channels 
-  * Unified uplink port 
-  * VSAN 
+* Uplink Ethernet port 
+* Ethernet port channel 
+* VLAN 
+* Service profile vNIC 
+* Service profile vHBA 
+* FCoE port 
+* Port channels 
+* Unified uplink port 
+* VSAN 
 
 |  Unconfigured Ethernet Port   
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -782,27 +707,18 @@ A server port can be a source, only if it is a non-virtualized rack server adapt
 
 ### Traffic Monitoring for Cisco UCS 6500,6400 Series Fabric Interconnects 
 
-  * Cisco UCS 6500, 6400 Series Fabric Interconnects do not support a Fibre Channel port as a destination port. Therefore, an Ethernet port is the only option for configuring any traffic monitoring session on this Fabric Interconnect. 
-
-  * Cisco UCS 6500, 6400 Series Fabric Interconnects support monitoring traffic in the transmit direction for more than two sources per Fabric Interconnect. 
-
-  * You can monitor or use SPAN on port channels sources for traffic in the transmit and receive directions.
-
-  * You can configure a port as a destination port for only one monitor session.
-
-  * You can monitoring Port-Channel as a source in the transmit direction.
-
-  * You cannot monitor vEth as a source in the transmit direction.
-
+* Cisco UCS 6500, 6400 Series Fabric Interconnects do not support a Fibre Channel port as a destination port. Therefore, an Ethernet port is the only option for configuring any traffic monitoring session on this Fabric Interconnect. 
+* Cisco UCS 6500, 6400 Series Fabric Interconnects support monitoring traffic in the transmit direction for more than two sources per Fabric Interconnect. 
+* You can monitor or use SPAN on port channels sources for traffic in the transmit and receive directions.
+* You can configure a port as a destination port for only one monitor session.
+* You can monitoring Port-Channel as a source in the transmit direction.
+* You cannot monitor vEth as a source in the transmit direction.
 
 ### Traffic Monitoring for Cisco UCS 6300 Fabric Interconnects
 
-  * Cisco UCS 6300 Fabric Interconnect supports port-based mirroring.
-
-  * Cisco UCS 6300 Fabric Interconnects support VLAN SPAN only in the receive direction. 
-
-  * Ethernet SPAN is port based on the Cisco UCS 6300 Fabric Interconnect. 
-
+* Cisco UCS 6300 Fabric Interconnect supports port-based mirroring.
+* Cisco UCS 6300 Fabric Interconnects support VLAN SPAN only in the receive direction. 
+* Ethernet SPAN is port based on the Cisco UCS 6300 Fabric Interconnect. 
 
 ### Traffic Monitoring Across Fibre Channel
 
@@ -813,18 +729,17 @@ A Fibre Channel traffic monitoring session can monitor any of the following traf
 Source Ports  |  Destination Ports   
 ---|---  
   
-  * FC Port 
-  * FC Port Channel 
-  * Uplink Fibre Channel port 
-  * SAN port channel 
-  * VSAN 
-  * Service profile vHBA 
-  * Fibre Channel storage port 
+* FC Port 
+* FC Port Channel 
+* Uplink Fibre Channel port 
+* SAN port channel 
+* VSAN 
+* Service profile vHBA 
+* Fibre Channel storage port 
 
 | 
 
-  * Fibre Channel uplink port 
-  * Unconfigured Ethernet Port (Cisco UCS 6536, 64108, 6454, 6332, and 6332-16UP Fabric Interconnects) 
-
+* Fibre Channel uplink port 
+* Unconfigured Ethernet Port (Cisco UCS 6536, 64108, 6454, 6332, and 6332-16UP Fabric Interconnects)
 
 ---

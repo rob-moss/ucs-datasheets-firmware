@@ -8,7 +8,7 @@
 | **HTML Title** | Role-Based Access Control in Intersight |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_system_role_based_access.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:09 |
+| **Fetched on** | 2026-03-04 12:48:06 |
 
 ---
 
@@ -32,22 +32,14 @@ An Intersight Account Administrator or a User Access Administrator can add a use
 
 A system-defined role is created by default in an account. Apart from the system-defined roles in Intersight, you can create a user-defined (custom) role. Each system-defined role has only one privilege associated with it whereas a user-defined role can comprise of multiple privileges. Intersight currently supports the following system-defined roles:
 
-  * Device Technician
-
-  * Device Administrator
-
-  * HyperFlex Cluster Administrator
-
-  * Server Administrator
-
-  * User Access Administrator
-
-  * Storage Administrator
-
-  * Virtualization Administrator
-
-  * Support Services
-
+* Device Technician
+* Device Administrator
+* HyperFlex Cluster Administrator
+* Server Administrator
+* User Access Administrator
+* Storage Administrator
+* Virtualization Administrator
+* Support Services
 
 \- For a detailed description of the supported roles in Intersight and their associated privileges, how to add a User or Group, Create a Role or an Organization, and switch between roles, see [Role Based Access Control (RBAC) in Intersight](/help/resources#role_based_access_control_\(rbac\)_in_intersight).
 

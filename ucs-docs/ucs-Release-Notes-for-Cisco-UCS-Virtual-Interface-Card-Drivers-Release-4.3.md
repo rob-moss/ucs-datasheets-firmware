@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco UCS Virtual Interface Card Drivers, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b-release-notes-for-cisco-ucs-virtual-interface-card-drivers-release-4-3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:12 |
+| **Fetched on** | 2026-03-04 12:48:11 |
 
 ---
 
@@ -24,10 +24,8 @@
 
 This document contains information on new features, resolved caveats, open caveats, and workarounds for Cisco UCS Virtual Interface Card (VIC) Drivers, Release 4.3 and later releases. This document also includes the following: 
 
-  * Updated information after the documentation was originally published.
-
-  * Related firmware and BIOS on blade, rack, and modular servers and other Cisco Unified Computing System (UCS) components associated with the release. 
-
+* Updated information after the documentation was originally published.
+* Related firmware and BIOS on blade, rack, and modular servers and other Cisco Unified Computing System (UCS) components associated with the release. 
 
 The following table shows the online change history for this document. 
 
@@ -37,14 +35,14 @@ April 2025 |  Initial release of VIC drivers for Cisco UCS Software Release 4.3(
 March 2025 |  Updated the New Hardware section - release of VIC drivers for Cisco UCS Software Release 4.3(5a).   
 October 2024 | 
 
-  * Initial release of VIC drivers for Cisco UCS Software Release 4.3(5a).
-  * Updated the Resolved Caveats section - release of VIC drivers for Cisco UCS Software Release 4.3(4c). 
+* Initial release of VIC drivers for Cisco UCS Software Release 4.3(5a).
+* Updated the Resolved Caveats section - release of VIC drivers for Cisco UCS Software Release 4.3(4c). 
 
   
 June 2024 | 
 
-  * Initial release of VIC drivers for Cisco UCS Software Release 4.3(4b).
-  * Initial release of VIC drivers for Cisco UCS Software Release 4.3(4a).
+* Initial release of VIC drivers for Cisco UCS Software Release 4.3(4b).
+* Initial release of VIC drivers for Cisco UCS Software Release 4.3(4a).
 
 Initial release of VIC drivers for Cisco UCS Software Release 4.3(4x).  
 January 2024 |  Initial release of VIC drivers for Cisco UCS Software Release 4.3(2d).  
@@ -70,52 +68,34 @@ The Cisco UCS C220 M8 server is a dense, fault-tolerant server that provides val
 
 The Cisco UCS C220 M8 server offers the following: 
 
-  * Processors: Up to 2x Intel Xeon 6700P or 6500P processors (1 or 2)
-
-  * Memory:
-
-  * 32 DIMM slots (16 DIMMS per CPU): 16, 32, 48, 64, 96, 128GB DDR5 at up to 6400 MT/s for up to 4TB of memory
+* Processors: Up to 2x Intel Xeon 6700P or 6500P processors (1 or 2)
+* Memory:
+* 32 DIMM slots (16 DIMMS per CPU): 16, 32, 48, 64, 96, 128GB DDR5 at up to 6400 MT/s for up to 4TB of memory
 
 32, 64GB MRDIMMs at up to 8000 MT/s
 
-  * PCIe expansion: Up to 3 PCIe 5.0 half-height slots or up to 2 PCIe 5.0 full-height slots plus 1 dedicated 24-Gbps RAID controller slot and 1 dedicated mLOM/OCP 3.0 slot 
-
-  * RAID controllers:
-
-  * Cisco® 24-Gbps modular tri-mode RAID controller supports SAS 4 or NVMe hardware RAID
-
-  * Cisco 24-Gbps modular tri-mode SAS Host Bus Adapter (HBA)
-
-  * Internal storage:
-
-  * Backplane options: Up to 10 SFF SAS/SATA/U.3 NVMe drives through SAS4 tri-mode RAID or HBA controller, with optional up to eight direct-attach U.2/U.3 NVMe drives 
+* PCIe expansion: Up to 3 PCIe 5.0 half-height slots or up to 2 PCIe 5.0 full-height slots plus 1 dedicated 24-Gbps RAID controller slot and 1 dedicated mLOM/OCP 3.0 slot 
+* RAID controllers:
+* Cisco® 24-Gbps modular tri-mode RAID controller supports SAS 4 or NVMe hardware RAID
+* Cisco 24-Gbps modular tri-mode SAS Host Bus Adapter (HBA)
+* Internal storage:
+* Backplane options: Up to 10 SFF SAS/SATA/U.3 NVMe drives through SAS4 tri-mode RAID or HBA controller, with optional up to eight direct-attach U.2/U.3 NVMe drives 
 
 Up to 16 E3.S 1T direct-attach NVMe drives at PCIe Gen5 x4 each
 
-  * mLOM/OCP 3.0:
+* mLOM/OCP 3.0:
+* One dedicated PCIe Gen5x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
+* mLOM slot can flexibly accommodate 10/25/50 and 40/100/200 Gbps Cisco VIC adaptersadapters
+* OCP 3.0 slot features full out-of-band manageability that supports Intel X710 OCP dual 10GBase-T through mLOM interposer
+* Power supplies: Hot-pluggable, redundant platinum, and titanium options:
+* Platinum: 1050W DC and 1600W AC
+* Titanium: 1200W AC and 2300W AC
+* Other storage:
+* Dedicated Baseboard Management Controller (BMC) FlexMMC for utilities (on board)
+* Dual M.2 SATA SSDs (internal or hot-swappable) with HW RAID support
+* GPU: Up to three single-wide GPUs supported
 
-  * One dedicated PCIe Gen5x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
-
-  * mLOM slot can flexibly accommodate 10/25/50 and 40/100/200 Gbps Cisco VIC adaptersadapters
-
-  * OCP 3.0 slot features full out-of-band manageability that supports Intel X710 OCP dual 10GBase-T through mLOM interposer
-
-  * Power supplies: Hot-pluggable, redundant platinum, and titanium options:
-
-  * Platinum: 1050W DC and 1600W AC
-
-  * Titanium: 1200W AC and 2300W AC
-
-  * Other storage:
-
-  * Dedicated Baseboard Management Controller (BMC) FlexMMC for utilities (on board)
-
-  * Dual M.2 SATA SSDs (internal or hot-swappable) with HW RAID support
-
-  * GPU: Up to three single-wide GPUs supported
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -136,52 +116,38 @@ You are able to decrease server Operating Expenses (OpEx) for power and cooling,
 
 The Cisco UCS C240 M8 server offers the following: 
 
-  * Processors: Up to 2x Intel Xeon 6700P or 6500P processors (1 or 2)
-
-  * Memory
-
-  * 32 DIMM slots (16 DIMMS per CPU): 16, 32, 48, 64, 96, 128, 256GB DDR5 at up to 6400 MT/s for up to 8TB of memory
+* Processors: Up to 2x Intel Xeon 6700P or 6500P processors (1 or 2)
+* Memory
+* 32 DIMM slots (16 DIMMS per CPU): 16, 32, 48, 64, 96, 128, 256GB DDR5 at up to 6400 MT/s for up to 8TB of memory
 
 32, 64GB MRDIMMs at up to 8000 MT/s
 
-  * PCIe expansion: Up to 8 PCIe 5.0 slots plus 1 dedicated 24-Gbps RAID controller slot and 1 dedicated mLOM/OCP 3.0 slot
-
-  * RAID controllers:
-
-  * Cisco 24-Gbps modular tri-mode RAID controller supports SAS 4 or NVMe hardware RAID
-
-  * Cisco 24-Gbps modular tri-mode SAS Host Bus Adapter (HBA)
-
-  * Internal storage:
-
-  * Backplane options: Up to 28 SFF SAS/SATA/U.3 NVMe drives through SAS4 tri-mode RAID or HBA controller, with optional up to eight direct-attach U.2/U.3 NVMe drives 
+* PCIe expansion: Up to 8 PCIe 5.0 slots plus 1 dedicated 24-Gbps RAID controller slot and 1 dedicated mLOM/OCP 3.0 slot
+* RAID controllers:
+* Cisco 24-Gbps modular tri-mode RAID controller supports SAS 4 or NVMe hardware RAID
+* Cisco 24-Gbps modular tri-mode SAS Host Bus Adapter (HBA)
+* Internal storage:
+* Backplane options: Up to 28 SFF SAS/SATA/U.3 NVMe drives through SAS4 tri-mode RAID or HBA controller, with optional up to eight direct-attach U.2/U.3 NVMe drives 
 
 Up to 36 E3.S 1T direct-attach NVMe drives
 
 Up to 16 LFF SAS HDDs plus optional 4 rear SFF HDD/SSDs
 
-  * mLOM/OCP 3.0: One dedicated PCIe Gen5x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
+* mLOM/OCP 3.0: One dedicated PCIe Gen5x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
 
 mLOM slot can flexibly accommodate 10/25/50 and 40/100/200 Gbps Cisco VIC adapters.
 
 OCP 3.0 slot features full out-of-band manageability that supports Intel X710 OCP Dual 10GBase-T via mLOM interposer
 
-  * Power supplies: Hot-pluggable, redundant platinum and titanium options:
+* Power supplies: Hot-pluggable, redundant platinum and titanium options:
+* Platinum: 1050W DC and 1600W AC
+* Titanium: 1200W AC and 2300W AC
+* Other storage:
+* Dedicated Baseboard Management Controller (BMC) FlexMMC for utilities (on board)
+* Dual M.2 SATA SSDs (internal or hot-swappable) with HW RAID support
+* GPU: Up to three double-wide or eight single-wide GPUs supported
 
-  * Platinum: 1050W DC and 1600W AC
-
-  * Titanium: 1200W AC and 2300W AC
-
-  * Other storage:
-
-  * Dedicated Baseboard Management Controller (BMC) FlexMMC for utilities (on board)
-
-  * Dual M.2 SATA SSDs (internal or hot-swappable) with HW RAID support
-
-  * GPU: Up to three double-wide or eight single-wide GPUs supported
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -198,38 +164,22 @@ Cisco UCS X210c M8 Compute Node is the third generation of compute node to integ
 
 Cisco UCS X210c M8 provides these main features:
 
-  * CPU: up to two Intel® Xeon® 6 Scalable Processors with up to 86 cores per processor and up to 336MB of Level 3 cache per CPU 
-
-  * Memory: up to 8 TB of main memory with 32x 256 GB DDR5-6400 DIMMs and support for MRDIMMs at up to 8000 MT/s
-
-  * Storage:
-
-  * Up to nine hot-pluggable EDSFF E3.S NVMe drives with a new passthrough front mezzanine controller option new to the Cisco UCS X210c M8 
-
-  * Up to six hot-pluggable, Solid-State Drives (SSDs), or Non-Volatile Memory Express (NVMe) 2.5-inch drives with a choice of enterprise-class Redundant Array of Independent Disks (RAIDs) or passthrough controllers with four lanes each of PCIe Gen 5 connectivity 
-
-  * Up to two M.2 SATA drives or two M.2 NVMe drives for flexible boot and local storage capabilities
-
-  * Optional front mezzanine GPU module: the Cisco UCS® front mezzanine GPU module is a passive PCIe Gen 4 front mezzanine option with support for up to two U.2 or U.3 NVMe drives and two HHHL GPUs 
-
-  * Optional PCIe node connectivity for additional GPU support: the Cisco UCS X210c M8 Compute Node can be paired with the Cisco UCS X440p PCIe Node supporting up to two x16 full-height, full-length dual slot GPUs, or four x8 full-height, full-length single-slot GPUs 
-
-  * mLOM virtual interface cards:
-
-  * Cisco UCS VIC (Virtual Interface Card) 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps (2x 25Gbps) of unified fabric connectivity to each of the chassis’s Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server with secure boot technology 
-
-  * Cisco UCS VIC 15230 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis’s Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server with secure boot technology 
-
-  * Optional mezzanine card:
-
-  * Cisco UCS VIC 15422, a 5th Gen virtual interface card, can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 4x 25 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server) 
-
-  * Cisco UCS PCI mezzanine card for Cisco UCS X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the Cisco UCS X440p PCIe Node 
-
-  * All VIC mezzanine cards also provide I/O connections from the Cisco UCS X210c Compute Node to the Cisco UCS X440p PCIe Node
-
-  * Security: The server supports an optional Trusted Platform Module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions 
-
+* CPU: up to two Intel® Xeon® 6 Scalable Processors with up to 86 cores per processor and up to 336MB of Level 3 cache per CPU 
+* Memory: up to 8 TB of main memory with 32x 256 GB DDR5-6400 DIMMs and support for MRDIMMs at up to 8000 MT/s
+* Storage:
+* Up to nine hot-pluggable EDSFF E3.S NVMe drives with a new passthrough front mezzanine controller option new to the Cisco UCS X210c M8 
+* Up to six hot-pluggable, Solid-State Drives (SSDs), or Non-Volatile Memory Express (NVMe) 2.5-inch drives with a choice of enterprise-class Redundant Array of Independent Disks (RAIDs) or passthrough controllers with four lanes each of PCIe Gen 5 connectivity 
+* Up to two M.2 SATA drives or two M.2 NVMe drives for flexible boot and local storage capabilities
+* Optional front mezzanine GPU module: the Cisco UCS® front mezzanine GPU module is a passive PCIe Gen 4 front mezzanine option with support for up to two U.2 or U.3 NVMe drives and two HHHL GPUs 
+* Optional PCIe node connectivity for additional GPU support: the Cisco UCS X210c M8 Compute Node can be paired with the Cisco UCS X440p PCIe Node supporting up to two x16 full-height, full-length dual slot GPUs, or four x8 full-height, full-length single-slot GPUs 
+* mLOM virtual interface cards:
+* Cisco UCS VIC (Virtual Interface Card) 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps (2x 25Gbps) of unified fabric connectivity to each of the chassis’s Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server with secure boot technology 
+* Cisco UCS VIC 15230 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis’s Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server with secure boot technology 
+* Optional mezzanine card:
+* Cisco UCS VIC 15422, a 5th Gen virtual interface card, can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 4x 25 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server) 
+* Cisco UCS PCI mezzanine card for Cisco UCS X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the Cisco UCS X440p PCIe Node 
+* All VIC mezzanine cards also provide I/O connections from the Cisco UCS X210c Compute Node to the Cisco UCS X440p PCIe Node
+* Security: The server supports an optional Trusted Platform Module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions 
 
 ## New Hardware in Release 4.3(5)
 
@@ -241,36 +191,23 @@ The Cisco UCS X215c M8 Compute Node is integrate into the Cisco UCS X-Series Mod
 
 The Cisco UCS X215c M8 Compute Node offers the following:
 
-  * CPU: Up to 2x 4th Generation AMD EPYC Processors with up to 128 cores per processors
-
-  * Memory:
-
-  * 24 DIMM slots (12 DIMMs per CPU socket), up to 4800 MT/s DDR5.
-
-  * Up to 6 TB of capacity.
-
-  * Storage: Up to 6 hot-pluggable, Solid-State Drives (SSDs), or Non-Volatile Memory Express (NVMe) 2.5-inch drives with a choice of enterprise-class Redundant Array of Independent Disks (RAID) or pass-through controllers with four lanes each of PCIe Gen 4 connectivity and up to 2 M.2 SATA or NVMe drives for flexible boot and local storage capabilities. 
-
-  * Optional Front Mezzanine GPU module: The Cisco UCS Front Mezzanine GPU module is a passive PCIe Gen 4 front mezzanine option with support for up to two U.2 or U.3 NVMe drives and two HHHL GPUs. 
-
-  * mLOM virtual interface cards:
-
-  * Cisco UCS Virtual Interface Card (VIC) 15420 occupies the server's Modular LAN on Motherboard (mLOM) slot, enabling up to 50Gbps (2 x25Gbps) of unified fabric connectivity to each of the chassis Intelligent Fabric Modules (IFMs) for 100Gbps connectivity per server. 
-
-  * Cisco UCS Virtual Interface Card (VIC) 15230 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server with secure boot capability. 
-
-  * Optional Mezzanine card:
-
-  * Cisco UCS Virtual Interface Card (VIC) 15422 can occupy the server's mezzanine slot at the bottom rear of the chassis. An included bridge card extends this VIC's 100Gbps (4 x 25Gbps) of network connections through IFM connectors, bringing the total bandwidth to 100Gbps per VIC 15420 and 15422 (for a total of 200Gbps per server). In addition to IFM connectivity, the VIC 15422 I/O connectors link to Cisco UCS X-Fabric technology. 
-
-  * Cisco UCS PCI Mezz card for X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the X440p PCIe Node. 
-
-  * Security: Includes secure boot silicon root of trust FPGA, ACT2 anti-counterfeit provisions, and optional Trusted Platform Model (TPM). 
-
+* CPU: Up to 2x 4th Generation AMD EPYC Processors with up to 128 cores per processors
+* Memory:
+* 24 DIMM slots (12 DIMMs per CPU socket), up to 4800 MT/s DDR5.
+* Up to 6 TB of capacity.
+* Storage: Up to 6 hot-pluggable, Solid-State Drives (SSDs), or Non-Volatile Memory Express (NVMe) 2.5-inch drives with a choice of enterprise-class Redundant Array of Independent Disks (RAID) or pass-through controllers with four lanes each of PCIe Gen 4 connectivity and up to 2 M.2 SATA or NVMe drives for flexible boot and local storage capabilities. 
+* Optional Front Mezzanine GPU module: The Cisco UCS Front Mezzanine GPU module is a passive PCIe Gen 4 front mezzanine option with support for up to two U.2 or U.3 NVMe drives and two HHHL GPUs. 
+* mLOM virtual interface cards:
+* Cisco UCS Virtual Interface Card (VIC) 15420 occupies the server's Modular LAN on Motherboard (mLOM) slot, enabling up to 50Gbps (2 x25Gbps) of unified fabric connectivity to each of the chassis Intelligent Fabric Modules (IFMs) for 100Gbps connectivity per server. 
+* Cisco UCS Virtual Interface Card (VIC) 15230 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server with secure boot capability. 
+* Optional Mezzanine card:
+* Cisco UCS Virtual Interface Card (VIC) 15422 can occupy the server's mezzanine slot at the bottom rear of the chassis. An included bridge card extends this VIC's 100Gbps (4 x 25Gbps) of network connections through IFM connectors, bringing the total bandwidth to 100Gbps per VIC 15420 and 15422 (for a total of 200Gbps per server). In addition to IFM connectivity, the VIC 15422 I/O connectors link to Cisco UCS X-Fabric technology. 
+* Cisco UCS PCI Mezz card for X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the X440p PCIe Node. 
+* Security: Includes secure boot silicon root of trust FPGA, ACT2 anti-counterfeit provisions, and optional Trusted Platform Model (TPM). 
 
 For complete list of supported peripherals for Cisco UCS X215c M8 Compute Node, see [Cisco UCS X215c M8 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x215c-m8-compute-node.pdf). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -295,34 +232,20 @@ You can deploy the Cisco UCS C-Series servers as part of the Cisco Unified Compu
 
 The Cisco UCS C245 M8 Server brings many innovations to the UCS AMD® rack server line. With the introduction of PCIe Gen 5.0 expansion slots for high-speed I/O, a DDR5 memory bus, and expanded storage capabilities, the server delivers significant performance and efficiency gains that will greatly enhance application performance. Features include: 
 
-  * Support for up to two 4th Gen AMD EPYC™ CPUs in a server designed to drive as much as 256 CPU cores (128 cores per socket) 
-
-  * Up to 24 DDR5 DIMM slots, yielding up to 6 TB of capacity, using 256 GB DIMMs (12 DIMMs per socket)
-
-  * Up to 4800 MT/s DDR5 memory
-
-  * Up to 8 x PCIe Gen 4.0 slots or up to 4 x PCIe Gen 5.0 slots, plus a hybrid modular LAN on motherboard (mLOM) /OCP 3.0 slot (details below) 
-
-  * Support for Cisco UCS VIC 15000 Series secure boot adapters as well as a host of third-party NIC options
-
-  * Up to 28 hot-swappable small-form-factor (SFF) SAS/SATA or NVMe drives (with up to 8 direct-attach NVMe drives) and New tri-mode RAID controller supports SAS4 plus NVMe hardware RAID. 
-
-  * M.2 boot options
-
-  * Up to two 960GB SATA M.2 drives with hardware RAID support
-
-  * Up to two 960GB NVMe M.2 drives with NVMe hardware RAID
-
-  * Support for up to Eight GPUs
-
-  * Modular LOM / OCP 3.0
-
-  * One dedicated PCIe Gen4x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
-
-  * mLOM slot that can be used to install a Cisco UCS Virtual Interface Card (VIC) without consuming a PCIe slot, supporting quad-port 10/25/50 Gbps or dual-port 40/100/200 Gbps network connectivity 
-
-  * OCP 3.0 slot that features full out-of-band management for select adapters
-
+* Support for up to two 4th Gen AMD EPYC™ CPUs in a server designed to drive as much as 256 CPU cores (128 cores per socket) 
+* Up to 24 DDR5 DIMM slots, yielding up to 6 TB of capacity, using 256 GB DIMMs (12 DIMMs per socket)
+* Up to 4800 MT/s DDR5 memory
+* Up to 8 x PCIe Gen 4.0 slots or up to 4 x PCIe Gen 5.0 slots, plus a hybrid modular LAN on motherboard (mLOM) /OCP 3.0 slot (details below) 
+* Support for Cisco UCS VIC 15000 Series secure boot adapters as well as a host of third-party NIC options
+* Up to 28 hot-swappable small-form-factor (SFF) SAS/SATA or NVMe drives (with up to 8 direct-attach NVMe drives) and New tri-mode RAID controller supports SAS4 plus NVMe hardware RAID. 
+* M.2 boot options
+* Up to two 960GB SATA M.2 drives with hardware RAID support
+* Up to two 960GB NVMe M.2 drives with NVMe hardware RAID
+* Support for up to Eight GPUs
+* Modular LOM / OCP 3.0
+* One dedicated PCIe Gen4x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
+* mLOM slot that can be used to install a Cisco UCS Virtual Interface Card (VIC) without consuming a PCIe slot, supporting quad-port 10/25/50 Gbps or dual-port 40/100/200 Gbps network connectivity 
+* OCP 3.0 slot that features full out-of-band management for select adapters
 
 Cisco IMC supports all the peripherals supported by Cisco UCS C245 M8 Server. For complete list of supported peripherals for Cisco UCS C245 M8 Server, see [Cisco UCS C245 M8 SFF Rack Server Spec Sheet](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c245-m8-sff-rack-server.pdf&ved=2ahUKEwjDqcbvxdiGAxXuzzgGHUbnAy0QFnoECBUQAQ&usg=AOvVaw0MzOh0jzcaa9bNdqgl3iaT). 
 
@@ -334,12 +257,9 @@ Cisco IMC supports all the peripherals supported by Cisco UCS C245 M8 Server. Fo
 
 Following Cisco UCS VIC Cards are supported from release 4.3(2c) onwards:
 
-  * Cisco UCS VIC 15230 - The Cisco UCS VIC 15230 is a 4x25-Gbps and 2x100G Ethernet/FCoE capable modular LAN On Motherboard (mLOM) designed exclusively for for Cisco X-series M6/M7 Compute Nodes. The Cisco UCS VIC 15230 enables a policy-based, stateless, agile server infrastructure that can present to the host PCIe standards-compliant interfaces that can be dynamically configured as either NICs or HBAs. 
-
-  * Cisco UCS VIC 15427 - The Cisco UCS VIC 15427 is a quad-port small-form-factor pluggable (SFP+/SFP28/SFP56) mLOM card designed for Cisco UCS C-series M6/M7 rack servers. The card supports 10/25/50-Gbps Ethernet or FCoE. The card can present PCIe standards-compliant interfaces to the host, and these can be dynamically configured as either NICs or HBAs. 
-
-  * Cisco UCS VIC 15237 - The Cisco UCS VIC 15237 is a dual-port small-form-factor pluggable (QSFP/QSFP28/QSFP56) mLOM card designed for Cisco UCS C-series M6/M7 rack servers. The card supports 40/100/200-Gbps Ethernet or FCoE. The card can present PCIe standards-compliant interfaces to the host, and these can be dynamically configured as either NICs or HBAs. 
-
+* Cisco UCS VIC 15230 - The Cisco UCS VIC 15230 is a 4x25-Gbps and 2x100G Ethernet/FCoE capable modular LAN On Motherboard (mLOM) designed exclusively for for Cisco X-series M6/M7 Compute Nodes. The Cisco UCS VIC 15230 enables a policy-based, stateless, agile server infrastructure that can present to the host PCIe standards-compliant interfaces that can be dynamically configured as either NICs or HBAs. 
+* Cisco UCS VIC 15427 - The Cisco UCS VIC 15427 is a quad-port small-form-factor pluggable (SFP+/SFP28/SFP56) mLOM card designed for Cisco UCS C-series M6/M7 rack servers. The card supports 10/25/50-Gbps Ethernet or FCoE. The card can present PCIe standards-compliant interfaces to the host, and these can be dynamically configured as either NICs or HBAs. 
+* Cisco UCS VIC 15237 - The Cisco UCS VIC 15237 is a dual-port small-form-factor pluggable (QSFP/QSFP28/QSFP56) mLOM card designed for Cisco UCS C-series M6/M7 rack servers. The card supports 40/100/200-Gbps Ethernet or FCoE. The card can present PCIe standards-compliant interfaces to the host, and these can be dynamically configured as either NICs or HBAs. 
 
 **Release 4.3(2b) adds support for the following:**
 
@@ -347,10 +267,8 @@ Following Cisco UCS VIC Cards are supported from release 4.3(2c) onwards:
 
 Following Cisco UCS VIC Cards are supported from release 4.3(2b) onwards:
 
-  * Cisco UCS VIC 15425—The Cisco UCS VIC 15425 is a quad-port small-form-factor pluggable (SFP+/SFP28/SFP56) PCIe card designed for Cisco UCS C-series M6/M7 rack servers. The card supports 10/25/50-Gbps Ethernet or FCoE. The card can present PCIe standards-compliant interfaces to the host, and these can be dynamically configured as either NICs or HBAs. 
-
-  * Cisco UCS VIC 15235—The Cisco UCS VIC 15235 is a dual-port quad small-form-factor pluggable (QSFP/QSFP28/QSFP56) PCIe card designed for Cisco UCS C-series M6/M7 rack servers. The card supports 40/100/200-Gbps Ethernet or FCoE. The card can present PCIe standards-compliant interfaces to the host, and these can be dynamically configured as either NICs or HBAs. 
-
+* Cisco UCS VIC 15425—The Cisco UCS VIC 15425 is a quad-port small-form-factor pluggable (SFP+/SFP28/SFP56) PCIe card designed for Cisco UCS C-series M6/M7 rack servers. The card supports 10/25/50-Gbps Ethernet or FCoE. The card can present PCIe standards-compliant interfaces to the host, and these can be dynamically configured as either NICs or HBAs. 
+* Cisco UCS VIC 15235—The Cisco UCS VIC 15235 is a dual-port quad small-form-factor pluggable (QSFP/QSFP28/QSFP56) PCIe card designed for Cisco UCS C-series M6/M7 rack servers. The card supports 40/100/200-Gbps Ethernet or FCoE. The card can present PCIe standards-compliant interfaces to the host, and these can be dynamically configured as either NICs or HBAs. 
 
 ## New Hardware in Release 4.3(1)
 
@@ -358,12 +276,10 @@ Following Cisco UCS VIC Cards are supported from release 4.3(2b) onwards:
 
 Following Cisco UCS VIC Cards are supported from release 4.3(1) onwards:
 
-  * Cisco UCS VIC 15420—The Cisco UCS VIC 15420 is a 4x25-Gbps Ethernet/FCoE capable modular LAN On Motherboard (mLOM) designed exclusively for Cisco UCS X210c M6/M7 Compute Node. The Cisco UCS VIC 15420 enables a policy-based, stateless, agile server infrastructure that can present to the host PCIe standards-compliant interfaces that can be dynamically configured as either NICs or HBAs. 
-
-  * Cisco UCS VIC 15422—The Cisco UCS VIC 15422 is a 4x25-Gbps Ethernet/FCoE capable mezzanine card (mezz) designed exclusively for Cisco UCS X210c M6/M7 Compute Node. The card enables a policy-based, stateless, agile server infrastructure that can present PCIe standards-compliant interfaces to the host that can be dynamically configured as either NICs or HBAs. 
+* Cisco UCS VIC 15420—The Cisco UCS VIC 15420 is a 4x25-Gbps Ethernet/FCoE capable modular LAN On Motherboard (mLOM) designed exclusively for Cisco UCS X210c M6/M7 Compute Node. The Cisco UCS VIC 15420 enables a policy-based, stateless, agile server infrastructure that can present to the host PCIe standards-compliant interfaces that can be dynamically configured as either NICs or HBAs. 
+* Cisco UCS VIC 15422—The Cisco UCS VIC 15422 is a 4x25-Gbps Ethernet/FCoE capable mezzanine card (mezz) designed exclusively for Cisco UCS X210c M6/M7 Compute Node. The card enables a policy-based, stateless, agile server infrastructure that can present PCIe standards-compliant interfaces to the host that can be dynamically configured as either NICs or HBAs. 
 
 VIC 15422 is supported with VIC 15420 and can not install VIC 15422 and VIC 15231 together within the same server . This is true for both m6 and M7 blade servers.Also we need to mention to install VIC 15422 mezz card, we need 15420 MLOM + UCSX-V5-BRIDGE 
-
 
 New Features in Release 4.3
 
@@ -371,8 +287,7 @@ New Features in Release 4.3
 
 ### Release 4.3(6) adds support for the following:
 
-  * Support for PXE Boot in IPv6-only environments using UEFI mode for LAN Boot. This enhancement allows administrators to operate in modern network settings while minimizing the dependency on IPv4 addresses, ensuring efficient server provisioning and management. 
-
+* Support for PXE Boot in IPv6-only environments using UEFI mode for LAN Boot. This enhancement allows administrators to operate in modern network settings while minimizing the dependency on IPv4 addresses, ensuring efficient server provisioning and management. 
 
 ## New Software Features in Release 4.3(5)
 
@@ -388,33 +303,25 @@ Using this feature, the VIC driver can also perform debugging, wherein the drive
 
 Below listed are the supported software required on the ESXi server to enable this feature:
 
-  * OS: ESX 8.0U3 and owards
-
-  * FC Switch (MDS) version - 9.4
-
-  * NetApp Data ONTAP OS version - 9.13.1P2
-
-  * Pure Storage version 6.4
-
-  * Native FNIC Version 5.0.0.45-10EM.803.0.0.24022510
-
+* OS: ESX 8.0U3 and owards
+* FC Switch (MDS) version - 9.4
+* NetApp Data ONTAP OS version - 9.13.1P2
+* Pure Storage version 6.4
+* Native FNIC Version 5.0.0.45-10EM.803.0.0.24022510
 
 ## New Features in Release 4.3(2)
 
 ### Release 4.3(2) adds support for the following:
 
-  * QinQ (802.1Q-in-802.1Q) support for Cisco UCS VIC 1400, 14000, and 15000 series adapters.
-
-  * Netflow Monitoring support on Cisco UCS 6400 and 6500 series Fabric Interconnects.
-
-  * SRIOV support on Cisco UCS Manager.
-
+* QinQ (802.1Q-in-802.1Q) support for Cisco UCS VIC 1400, 14000, and 15000 series adapters.
+* Netflow Monitoring support on Cisco UCS 6400 and 6500 series Fabric Interconnects.
+* SRIOV support on Cisco UCS Manager.
 
 VIC Driver Updates for Release 4.3
 
 ## VIC Driver Updates for Release 4.3.6
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -445,7 +352,7 @@ Native FNIC Version 5.0.0.46
 
 Native FNIC driver version 5.0.0.46 is supported with ESX 7.0 U1, ESX 7.0 U2 and ESX 7.0 U3.
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -462,19 +369,15 @@ ENIC Version 1128.x
 
 This driver supports the following Linux Operating System versions: 
 
-  * Red Hat Enterprise Linux 8.8, 8.10, 9.2, 9.4, 9.5
-
-  * SUSE Linux Enterprise Server 12 SP5, 15 SP4, 15 SP5, 15 SP6
-
-  * Ubuntu Server 20.04.1, 20.04.2, 20.04.3, 20.04.4, 20.04.5, 20.04.6, 22.04, 22.04.1, 22.04.2, 22.04.3, 22.04.4, 24.04, 24.04.1 with 6.8.0-51 kernel 
-
+* Red Hat Enterprise Linux 8.8, 8.10, 9.2, 9.4, 9.5
+* SUSE Linux Enterprise Server 12 SP5, 15 SP4, 15 SP5, 15 SP6
+* Ubuntu Server 20.04.1, 20.04.2, 20.04.3, 20.04.4, 20.04.5, 20.04.6, 22.04, 22.04.1, 22.04.2, 22.04.3, 22.04.4, 24.04, 24.04.1 with 6.8.0-51 kernel 
 
 ENIC Version 939.x
 
 This driver supports the following Linux Operating System versions:
 
-  * -Citrix Hypervisor 8.4 LTSR
-
+* -Citrix Hypervisor 8.4 LTSR
 
 ### Linux FNIC Driver Updates
 
@@ -482,29 +385,25 @@ Unified FNIC Driver 2.0.0.10x
 
 This driver supports the following Linux Operating System versions:
 
-  * Red Hat Enterprise Linux 8.8, 8.10, 9.2, 9.4, 9.5
-
-  * SUSE Linux Enterprise Server 12 SP5, 15 SP4, 15 SP5, 15 SP6
-
+* Red Hat Enterprise Linux 8.8, 8.10, 9.2, 9.4, 9.5
+* SUSE Linux Enterprise Server 12 SP5, 15 SP4, 15 SP5, 15 SP6
 
 Unified FNIC Driver 2.0.0.9x
 
 This driver supports the following Linux Operating System versions:
 
-  * Citrix Hypervisor 8.4 LTSR
+* Citrix Hypervisor 8.4 LTSR
 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
-
-  * RDMA and ENS features are not supported with VIC 13xx adapters from the release 4.3(4a) and later releases.
-  * RDMA and ENS Features are supported with VIC 14xx adapters onwards.
-  * fnic multiqueue is supported on RHEL 8.4+, 9.0+ , SLES 12SP5+
-  * FC-NVME is supported for Cisco UCS VIC 14xx and VIC 15xxx adapters on RHEL 8.4+, RHEL 9.0+, SLES 15SP12+
-  * FDMI is supported for VIC 14xx and VIC 15xxx adapters on RHEL 8.4, 8.6, 8.7, 8.8, 9.0, 9.1, 9.2, SLES 12 SP5, SLES 15 SP4 and SLES 15 SP5. 
-  * SLES 15 FC-NVMe is supported with DM multi-pathing and native multi-pathing is not supported.
+* RDMA and ENS features are not supported with VIC 13xx adapters from the release 4.3(4a) and later releases.
+* RDMA and ENS Features are supported with VIC 14xx adapters onwards.
+* fnic multiqueue is supported on RHEL 8.4+, 9.0+ , SLES 12SP5+
+* FC-NVME is supported for Cisco UCS VIC 14xx and VIC 15xxx adapters on RHEL 8.4+, RHEL 9.0+, SLES 15SP12+
+* FDMI is supported for VIC 14xx and VIC 15xxx adapters on RHEL 8.4, 8.6, 8.7, 8.8, 9.0, 9.1, 9.2, SLES 12 SP5, SLES 15 SP4 and SLES 15 SP5. 
+* SLES 15 FC-NVMe is supported with DM multi-pathing and native multi-pathing is not supported.
 
 For the latest set of software and hardware, check the support matrix: <https://www.cisco.com/c/en/us/products/servers-unified-computing/interoperability.html>. 
 
@@ -516,20 +415,17 @@ For the latest set of software and hardware, check the support matrix: <https://
 
 Windows Server 2025 and 2022 NENIC Version 5.15.17.4
 
-  * This driver update provides an VMMQ & RDMA driver for VIC 1400, 14000 and 15000 Series Adapters and Supported QoS Changes.
-
+* This driver update provides an VMMQ & RDMA driver for VIC 1400, 14000 and 15000 Series Adapters and Supported QoS Changes.
 
 Windows Server 2022 and 2019 ENIC Version 4.4.0.15
 
-  * This driver update provides a Spectre-compliant driver for VIC 1300 Series adapters.
-
+* This driver update provides a Spectre-compliant driver for VIC 1300 Series adapters.
 
 ### Windows 2025, 2022 and 2019 FNIC Driver Updates
 
 Windows Server 2025, 2022 and 2019 FNIC Version 3.3.0.24
 
-  * This driver update provides a Spectre-compliant fNIC driver for VIC 15000, 1400, 14000 and VIC 1300 adapters.
-
+* This driver update provides a Spectre-compliant fNIC driver for VIC 15000, 1400, 14000 and VIC 1300 adapters.
 
 ### VIC Management Driver for Standalone Rack Server PCIe Interface Support for Windows 2025, 2022 and 2019
 
@@ -539,7 +435,7 @@ This driver update provides for VIC 1400 and 15000 series adapters.
 
 ## VIC Driver Updates for Release 4.3.4
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -570,7 +466,7 @@ Native FNIC Version 5.0.0.41
 
 Native FNIC driver version 5.0.0.41 is supported with ESX 7.0U1, ESX 7.0U2, ESX 7.0U3, ESX 8.0, ESX 8.0U1.
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -587,18 +483,13 @@ ENIC Version 939.x
 
 This driver supports the following Linux Operating System versions: 
 
-  * Red hat Linux 7.9+ , 8.2+, 9.0+
+* Red hat Linux 7.9+ , 8.2+, 9.0+
+* Citrix Hypervisor 8.2 LTSR
+* SUSE Linux Enterprise Server 12 SP5, 15 SP4, 15 SP5
+* Ubuntu Server 20.04, 20.04.1, 20.04.2, 20.04.3, 20.04.4, 20.04.5, 20.04.6, 22.04, 22.04.1, 22.04.2
+* CentOS 7.9
 
-  * Citrix Hypervisor 8.2 LTSR
-
-  * SUSE Linux Enterprise Server 12 SP5, 15 SP4, 15 SP5
-
-  * Ubuntu Server 20.04, 20.04.1, 20.04.2, 20.04.3, 20.04.4, 20.04.5, 20.04.6, 22.04, 22.04.1, 22.04.2
-
-  * CentOS 7.9
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -615,28 +506,21 @@ Unified FNIC Driver 2.0.0.9x
 
 This driver supports the following Linux Operating System versions:
 
-  * Red Hat Enterprise Linux 7.9, 8.2, 8.4, 8.6, 8.7, 8.8, 9.0, 9.1, 9.2
+* Red Hat Enterprise Linux 7.9, 8.2, 8.4, 8.6, 8.7, 8.8, 9.0, 9.1, 9.2
+* Citrix Hypervisor 8.2 LTSR
+* SUSE Linux Enterprise Server 12 SP5, 15 SP4, 15 SP5
+* CentOS 7.9 
 
-  * Citrix Hypervisor 8.2 LTSR
-
-  * SUSE Linux Enterprise Server 12 SP5, 15 SP4, 15 SP5
-
-  * CentOS 7.9 
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
-
-  * RDMA and ENS features are not supported with VIC 13xx adapters from the release 4.3(4a) and later releases. RDMA and ENS Features are supported with VIC 14xx adapters onwards. 2.0.xx.0 NENIC driver has support for both NENIC and RDMA capabilities.
-  * fNIC multiqueue is supported on on RHEL 8.4, 8.6, 8.7, 8.8, 9.0, 9.1, 9.2, SLES 12 SP5, SLES 15 SP4 and SLES 15 SP5.
-  * FC-NVME is supported for VIC 14xx and VIC 15xxx adapters on RHEL 8.4, 8.6, 8.7, 8.8, 9.0, 9.1, 9.2, SLES 12 SP5, SLES 15 SP4 and SLES 15 SP5. 
-  * FDMI is supported for VIC 14xx and VIC 15xxx adapters on RHEL 8.4, 8.6, 8.7, 8.8, 9.0, 9.1, 9.2, SLES 12 SP5, SLES 15 SP4 and SLES 15 SP5. 
-  * SLES 15 FC-NVMe is supported with DM multi-pathing and native multi-pathing is not supported.
-  * RHEL inbox nvme-cli 1.14 is not working as expected with FC-NVME. Using RHEL 8.4 binaries(nvme-cli 1.12) with RHEL 8.5 FC- NVME is recommended. 
-
-
+* RDMA and ENS features are not supported with VIC 13xx adapters from the release 4.3(4a) and later releases. RDMA and ENS Features are supported with VIC 14xx adapters onwards. 2.0.xx.0 NENIC driver has support for both NENIC and RDMA capabilities.
+* fNIC multiqueue is supported on on RHEL 8.4, 8.6, 8.7, 8.8, 9.0, 9.1, 9.2, SLES 12 SP5, SLES 15 SP4 and SLES 15 SP5.
+* FC-NVME is supported for VIC 14xx and VIC 15xxx adapters on RHEL 8.4, 8.6, 8.7, 8.8, 9.0, 9.1, 9.2, SLES 12 SP5, SLES 15 SP4 and SLES 15 SP5. 
+* FDMI is supported for VIC 14xx and VIC 15xxx adapters on RHEL 8.4, 8.6, 8.7, 8.8, 9.0, 9.1, 9.2, SLES 12 SP5, SLES 15 SP4 and SLES 15 SP5. 
+* SLES 15 FC-NVMe is supported with DM multi-pathing and native multi-pathing is not supported.
+* RHEL inbox nvme-cli 1.14 is not working as expected with FC-NVME. Using RHEL 8.4 binaries(nvme-cli 1.12) with RHEL 8.5 FC- NVME is recommended. 
 * * *  
   
 ---|---  
@@ -645,31 +529,27 @@ This driver supports the following Linux Operating System versions:
 
 Windows Server 2022 and 2019 NENIC Version 5.13.24.2
 
-  * This driver update provides an VMMQ & RDMA driver for VIC 1400 and 15000 Series Adapters and Supported QoS Changes.
+* This driver update provides an VMMQ & RDMA driver for VIC 1400 and 15000 Series Adapters and Supported QoS Changes.
 
 This driver update provides Receive Side Scaling Version 2 (RSSv2) on UCS VIC 15000 series adapter
 
-
 Windows Server 2016 NENIC Version 5.8.25.9
 
-  * This driver update provides an RDMA driver for VIC 1400 and 15000 Series Adapters and Supported QoS Changes.
-
+* This driver update provides an RDMA driver for VIC 1400 and 15000 Series Adapters and Supported QoS Changes.
 
 Windows Server 2022, 2019 and 2016 ENIC Version 4.4.0.12
 
-  * This driver update provides a Spectre-compliant driver for VIC 1300 Series adapters.
-
+* This driver update provides a Spectre-compliant driver for VIC 1300 Series adapters.
 
 ### Windows 2022, 2019 and 2016 FNIC Driver Updates
 
 Windows Server 2022, 2019 and 2016 FNIC Version 3.3.0.24
 
-  * This driver update provides a Spectre-compliant fNIC driver for VIC 15XXX, 14XX and VIC 13XX adapters.
-
+* This driver update provides a Spectre-compliant fNIC driver for VIC 15XXX, 14XX and VIC 13XX adapters.
 
 ## VIC Driver Updates for Release 4.3.2
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -700,7 +580,7 @@ Native FNIC Version 5.0.0.41
 
 Native FNIC driver version 5.0.0.41 is supported with ESX 7.0U1, ESX 7.0U2, ESX 7.0U3, ESX 8.0, ESX 8.0U1.
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -717,16 +597,11 @@ ENIC Version 939.x
 
 This driver supports the following Linux Operating System versions: 
 
-  * Red Hat Enterprise Linux 7.9, 8.2, 8.4, 8.6, 8.7, 8.8, 9.0, 9.1, 9.2
-
-  * Citrix Hypervisor 8.2 LTSR
-
-  * SUSE Linux Enterprise Server 12 SP5, 15 SP4, 15 SP5
-
-  * Ubuntu Server 20.04, 20.04.1, 20.04.2, 20.04.3, 20.04.4, 20.04.5, 20.04.6, 22.04, 22.04.1, 22.04.2
-
-  * CentOS 7.9
-
+* Red Hat Enterprise Linux 7.9, 8.2, 8.4, 8.6, 8.7, 8.8, 9.0, 9.1, 9.2
+* Citrix Hypervisor 8.2 LTSR
+* SUSE Linux Enterprise Server 12 SP5, 15 SP4, 15 SP5
+* Ubuntu Server 20.04, 20.04.1, 20.04.2, 20.04.3, 20.04.4, 20.04.5, 20.04.6, 22.04, 22.04.1, 22.04.2
+* CentOS 7.9
 
 ### Linux FNIC Driver Updates
 
@@ -734,16 +609,12 @@ Unified FNIC Driver 2.0.0.9x
 
 This driver supports the following Linux Operating System versions:
 
-  * Red Hat Enterprise Linux 7.9, 8.2, 8.4, 8.6, 8.7, 8.8, 9.0, 9.1, 9.2
+* Red Hat Enterprise Linux 7.9, 8.2, 8.4, 8.6, 8.7, 8.8, 9.0, 9.1, 9.2
+* Citrix Hypervisor 8.2 LTSR
+* SUSE Linux Enterprise Server 12 SP5, 15 SP4, 15 SP5
+* CentOS 7.9 
 
-  * Citrix Hypervisor 8.2 LTSR
-
-  * SUSE Linux Enterprise Server 12 SP5, 15 SP4, 15 SP5
-
-  * CentOS 7.9 
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -758,27 +629,23 @@ fNIC multiqueue is supported on on RHEL 8.4, 8.6, 8.7, 8.8, 9.0, 9.1, 9.2, SLES 
 
 Windows Server 2022 and 2019 NENIC Version 5.13.24.2
 
-  * This driver update provides an VMMQ & RDMA driver for VIC 1400 and 15000 Series Adapters and Supported QoS Changes.
+* This driver update provides an VMMQ & RDMA driver for VIC 1400 and 15000 Series Adapters and Supported QoS Changes.
 
 This driver update provides Receive Side Scaling Version 2 (RSSv2) on UCS VIC 15000 series adapter
 
-
 Windows Server 2016 NENIC Version 5.8.25.9
 
-  * This driver update provides an RDMA driver for VIC 1400 and 15000 Series Adapters and Supported QoS Changes.
-
+* This driver update provides an RDMA driver for VIC 1400 and 15000 Series Adapters and Supported QoS Changes.
 
 Windows Server 2022, 2019 and 2016 ENIC Version 4.4.0.12
 
-  * This driver update provides a Spectre-compliant driver for VIC 1300 Series adapters.
-
+* This driver update provides a Spectre-compliant driver for VIC 1300 Series adapters.
 
 ### Windows 2022, 2019 and 2016 FNIC Driver Updates
 
 Windows Server 2022, 2019 and 2016 FNIC Version 3.3.0.11
 
-  * This driver update provides a Spectre-compliant fNIC driver for VIC 15XXX, 14XX and VIC 13XX adapters.
-
+* This driver update provides a Spectre-compliant fNIC driver for VIC 15XXX, 14XX and VIC 13XX adapters.
 
 ## **Resolved Caveats**
 
@@ -818,15 +685,15 @@ CSCvv76888 |  On a Cisco VIC 1300 Series adapters, using neNIC Driver version 4.
 CSCvx81384 |  In a UCS Manager service profile where vHBAs are assigned with an FC adapter policy that has more than one I/O Queues, BSOD will be observed after loading the fNIC driver on Windows 2019. The issue is observed on VIC 1400 Series adapters on SAN and Local boot.The server showed BSOD or the below error:  Stop code: PAGE FAULT IN NONPAGED AREA |  Modify the FC adapter policy and set the I/O Queues to 1. |  2.4(08)  
 CSCvr63930 |  On ESXi, a Cisco UCS B-series blade server and Cisco UCS C-series rack server with a a Cisco VIC 1440, VIC 1480,,1455, 1457, or 1467 adapter, the port link speed output is not updating after an uplink is Down /Up.  | 
 
-  * Reboot the ESXi host to get the correct port speed reporting.
-  * If a new UIF link needs to be added or deleted to the existing system, a reboot is required to reflect the correct speed in ESXi. 
+* Reboot the ESXi host to get the correct port speed reporting.
+* If a new UIF link needs to be added or deleted to the existing system, a reboot is required to reflect the correct speed in ESXi. 
 
 |  3.1(1.152)B 2.1(2.56)A  
 CSCvt66474 |  On Cisco VIC 1400 Series adapters, the neNIC driver for Windows 2019 can be installed on Windows 2016 and the Windows 2016 driver can be installed on Windows 2019. However, this is an unsupported configuration.  If the Windows 2019 neNIC driver is installed on Windows 2016, RDMA is not supported. If the Windows 2016 neNIC driver is installed on Windows 2019, the RDMA feature that is supposed to be enabled on Windows 2019 will be disabled.  |  The driver binaries for WS2016 and WS2019 are in folders that are named accordingly. Install the right binary on the platform that is being built or upgraded.  |  4.1(1.49)C  
 CSCvz57245 |  On a B200 M6 blade server with UCS VIC 14425 adapter configured for SAN boot and with 4 vHBAs, LUNs go offline when one of the controller nodes is down or stuck and multiple reboots have occurred.  |  Perform the following steps to bring the LUN back online:
 
-  1. On Windows Server, go to Disk Management, 
-  2. Right click on the disk that has gone offline and click on Online. This should return the LUN to service. 
+1. On Windows Server, go to Disk Management, 
+2. Right click on the disk that has gone offline and click on Online. This should return the LUN to service. 
 
 |  4.2(1a)A  
 CSCwa93556 |  On M5 Blade and Rack servers with VIC 1440 and 1480 adapters, ESXi OS installation fails with FC boot when the adapter policy is set to INTX mode.  |  No workaround. |  4.2(1.151)A  
@@ -865,16 +732,15 @@ Reduce the number of LUNs Per Target (paths) to be scanned by the OS.
 
 For double tagged frames (1Q + 1Q) generated by the host are sent out by the VICs, you must configure the following commands on the Linux host. 
 
-  1. Disable VLAN TX offload on the 14xx or 15xxx VNICs that need to transmit out double tagged (1Q + 1Q) frames.
+1. Disable VLAN TX offload on the 14xx or 15xxx VNICs that need to transmit out double tagged (1Q + 1Q) frames.
 
 Perform this from the host and enter the following `ethtool` command: 
 
 `ethtool -K <interface_name> txvlan off`
 
-  2. To verify that the VLAN TX offload feature has been turned off, enter the following command:
+2. To verify that the VLAN TX offload feature has been turned off, enter the following command:
 
 `ethtool -k <interface_name> | grep tx-vlan-offload`
-
 
 ### Windows : Default adapter policy win-HPN-SMBd to be changed to 512+ for large logical processors value 
 
@@ -902,18 +768,12 @@ For VIC 14xx adapters, you can change the MTU size of the vNIC from the host int
 
 ### RDMA Limitations
 
-  * The VIC 1400 Series Windows drivers on Blade and Rack servers do not support more than 2 RDMA engines per adaptor. Currently, Windows can only support RDMA on 4 VPorts on each RDMA Engine. 
-
-  * RoCE version 1 is not supported with any fourth generation Cisco UCS VIC 1400 Series adapters.
-
-  * UCS Manager does not support fabric failover for vNICs with RoCEv2 enabled.
-
-  * RoCEv2 cannot be used on the same vNIC interface as NVGRE, NetFlow, and VMQ features.
-
-  * RoCEv2 cannot be used with usNIC.
-
-  * RoCEv2 cannot be used with GENEVE offload.
-
+* The VIC 1400 Series Windows drivers on Blade and Rack servers do not support more than 2 RDMA engines per adaptor. Currently, Windows can only support RDMA on 4 VPorts on each RDMA Engine. 
+* RoCE version 1 is not supported with any fourth generation Cisco UCS VIC 1400 Series adapters.
+* UCS Manager does not support fabric failover for vNICs with RoCEv2 enabled.
+* RoCEv2 cannot be used on the same vNIC interface as NVGRE, NetFlow, and VMQ features.
+* RoCEv2 cannot be used with usNIC.
+* RoCEv2 cannot be used with GENEVE offload.
 
 ### Configuration Fails When 16 vHBAs are Configured with Maximum I/O Queues
 
@@ -960,10 +820,10 @@ Check the list of controller queues and queue size for the controllers:
 # `vsish -e get /vmkModules/vmknvme/controllers/`controller number`/info`
 
 All Controllers on the same target will support same queue size, for exaple:
-    
-    
+[code] 
     Number of Queues:4
     Queue Size:32
+[/code]
 
 To tune the VMs, change the `queue_depth` of all NVMe devices on the VMs to match the controller Queue Size. For example, if you are running a RHE VM, enter the command: 
 
@@ -973,7 +833,7 @@ Verify that the queue_depth was set to 32 by running the command:
 
 # cat /sys/block/sdb/ device/queue_depth
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -983,7 +843,7 @@ This change is not persistent after reboot.
 * * *  
   
 ---|---  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1016,6 +876,6 @@ For information on obtaining documentation, submitting a service request, and ga
 
 Subscribe to the What's New in Cisco Product Documentation as a Really Simple Syndication (RSS) feed and set content to be delivered directly to your desktop using a reader application. The RSS feeds are a free service and Cisco currently supports RSS version 2.0. 
 
-Follow [Cisco UCS Docs on Twitter](http://twitter.com/ciscoucsdocs) to receive document update notifications. 
+Follow [Cisco UCS Docs on Twitter](http://twitter.com/ciscoucsdocs) to receive document update notifications.
 
 ---

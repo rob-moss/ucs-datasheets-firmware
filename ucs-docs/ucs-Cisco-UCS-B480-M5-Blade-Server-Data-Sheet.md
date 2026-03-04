@@ -8,16 +8,15 @@
 | **HTML Title** | Cisco UCS B480 M5 Blade Server Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-739280.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:14 |
+| **Fetched on** | 2026-03-04 12:48:12 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-739280.html
 
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
+* Skip to content
+* Skip to search
+* Skip to footer
 
 # Cisco UCS B480 M5 Blade Server Data Sheet
 
@@ -35,12 +34,10 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-739280.pdf) (285.1 KB)   
+* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-739280.pdf) (285.1 KB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:August 25, 2023
 
@@ -54,26 +51,24 @@ __ __ __ __
 
 Contact Cisco
 
-  * Contact Cisco __
-  * __
-
-  * __
+* Contact Cisco __
+* __
+* __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-  * __
+* __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-  * __
+* __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-  * __
+* __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
 
 Save
 
@@ -87,36 +82,31 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-739280.pdf) (285.1 KB)   
+* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-739280.pdf) (285.1 KB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:August 25, 2023
 
 #### Table of Contents
 
-  * Product overview
-  * Exceptional expandability
-  * Product specifications
-  * System requirements
-  * Ordering information
-  * Warranty information
-  * Product environmental information
-  * Cisco Customer Recycling Solutions
-  * Cisco and Partner Services
-  * Cisco Capital
-  * For more information
-  * Document history
-
+* Product overview
+* Exceptional expandability
+* Product specifications
+* System requirements
+* Ordering information
+* Warranty information
+* Product environmental information
+* Cisco Customer Recycling Solutions
+* Cisco and Partner Services
+* Cisco Capital
+* For more information
+* Document history
 
 ` `
 
 The Cisco UCS® B480 M5 Blade Server delivers market-leading performance, versatility, and density without compromise.
-
-![Cisco UCS® B480 M5 Blade Server](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-739280.docx/_jcr_content/renditions/datasheet-c78-739280_0.jpg)
 
 Product overview
 
@@ -231,21 +221,16 @@ New or revised topic |  Described in |  Date
   
   
 
-
 * * *
 
 [1] Requires a DDR4 DIMM for deployment (e.g. 12 Intel Optane DC Persistent Memory Modules require 12 DDR4 DIMMs). The sizes of DCPMM must be the same and the DDR4 DIMMS must the same. But between the DCPMM and DIMMs, the sizes may vary, as shown in the 18-TB configuration described earlier in this data sheet. 
 
 ### Our experts recommend
 
-  * [Cisco Compute Security Overview White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.html "Cisco Compute Security Overview White Paper")
-  * [Cisco UCS B200 M5 Blade Server At-a-Glance](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/at-a-glance-c45-739250.pdf "Cisco UCS B200 M5 Blade Server At-a-Glance")
-  * [Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/q-and-a-c67-2381951.html "Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ")
-
+* [Cisco Compute Security Overview White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.html "Cisco Compute Security Overview White Paper")
+* [Cisco UCS B200 M5 Blade Server At-a-Glance](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/at-a-glance-c45-739250.pdf "Cisco UCS B200 M5 Blade Server At-a-Glance")
+* [Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/q-and-a-c67-2381951.html "Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ")
 
 ### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

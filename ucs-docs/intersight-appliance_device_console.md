@@ -8,7 +8,7 @@
 | **HTML Title** | Device Console |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_device_console.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:09 |
+| **Fetched on** | 2026-03-04 12:48:07 |
 
 ---
 
@@ -26,10 +26,8 @@ To access the Device Console user interface, log in to the Fabric Interconnect u
 
 You can also log into the Device Console of a Fabric Interconnect in Intersight Managed Mode using your enterprise LDAP account. To enable LDAP authentication attach the following policies:
 
-  * An LDAP policy for HTTP and SSH access.
-
-  * Certificate Management policy (optional) for secure access.
-
+* An LDAP policy for HTTP and SSH access.
+* Certificate Management policy (optional) for secure access.
 
 For more information, see the Creating an LDAP Policy and Creating a Certificate Management Policy sections in [Configuring Domain Policies](/help/resources/cisco_intersight_managed_mode_configuration#configuring_ucs_domain_policies).
 
@@ -37,18 +35,12 @@ For more information, see the Creating an LDAP Policy and Creating a Certificate
 
 The FI Device Console UI consists of the following main elements:
 
-  * A central pane that includes four tabs:
-
-  * [System Information](/help/device_console#system_information_\(fabric_interconnects\))
-
-  * [Device Connector](/help/device_console#device_connector) (Common)
-
-  * [Inventory](/help/device_console#inventory_\(fabric_interconnects\))
-
-  * [Diagnostic Data](/help/device_console#diagnostic_data_\(fabric_interconnect\))
-
-  * A top navigation menu that contains the Help menu and Logout button.
-
+* A central pane that includes four tabs:
+* [System Information](/help/device_console#system_information_\(fabric_interconnects\))
+* [Device Connector](/help/device_console#device_connector) (Common)
+* [Inventory](/help/device_console#inventory_\(fabric_interconnects\))
+* [Diagnostic Data](/help/device_console#diagnostic_data_\(fabric_interconnect\))
+* A top navigation menu that contains the Help menu and Logout button.
 
 ## Device Connector
 
@@ -62,9 +54,9 @@ Property| Description
 ---|---  
 Device Connector| Displays the following:
 
-  * The Access Mode of the Device Connector.
-  * The status of the connection between the Device Connector, the Internet, and Cisco Intersight.
-  * The claim status of the device.
+* The Access Mode of the Device Connector.
+* The status of the connection between the Device Connector, the Internet, and Cisco Intersight.
+* The claim status of the device.
 
   
 Settings| Click Settings to configure the Device Connector settings to enable the capabilities of Cisco Intersight.For more information, see [Configuring Device Connector](/help/resources/configuring_device_connector).  
@@ -93,14 +85,10 @@ The Inventory screen provides comprehensive details for managed components withi
 
 **Subtabs of the Inventory screen:**
 
-  * Servers
-
-  * Chassis
-
-  * Fabric Extender (applies to Fabric Interconnects only)
-
-  * PCIe Nodes
-
+* Servers
+* Chassis
+* Fabric Extender (applies to Fabric Interconnects only)
+* PCIe Nodes
 
 **Servers Tab**
 
@@ -111,11 +99,11 @@ Details| Description
 Name| Displays the name of the server, with a prefixed icon indicating whether the server is powered on or off.  
 Status| Displays the lifecycle state of the server. The values can be:
 
-  * None — When the server has been recommissioned but discovery is yet to start.
-  * Active — When the server is discovered.
-  * Decommissioned — When the server is removed from the Cisco UCS configuration. However, the server hardware physically remains in the Cisco UCS instance.
-  * DiscoveryFailed — When the server discovery has failed.
-  * SlotMismatch — When the configuration of a blade server is not correct and server rediscovery is required in the slot.
+* None — When the server has been recommissioned but discovery is yet to start.
+* Active — When the server is discovered.
+* Decommissioned — When the server is removed from the Cisco UCS configuration. However, the server hardware physically remains in the Cisco UCS instance.
+* DiscoveryFailed — When the server discovery has failed.
+* SlotMismatch — When the configuration of a blade server is not correct and server rediscovery is required in the slot.
 
   
 PID| Displays the Product ID (PID) of the server.  
@@ -125,23 +113,18 @@ User Label| Displays the user label that is set for the server.
   
 You can perform the following server actions:
 
-  * Power On/Off
-
-  * Turn On Locator
-
-  * Launch KVM
-
-  * Launch IMC
+* Power On/Off
+* Turn On Locator
+* Launch KVM
+* Launch IMC
 
 For more information on firmware requirements, see Firmware Requirements for Launching IMC from Device Console section in [Supported Systems](https://intersight.com/help/saas/supported_systems).
-  * Launch API Explorer
-
-  * Generate Tech Support Bundle
+* Launch API Explorer
+* Generate Tech Support Bundle
 
 Note:
 
 The resulting Tech Support Bundles can be downloaded from the Diagnostic Data tab.
-
 
 Performing Redfish™ Based Server Operations from the API Explorer.
 
@@ -153,10 +136,8 @@ For an overview of Redfish™ based server operations and examples, see <https:/
 
 To perform Redfish™ Based server operations from the API Explorer, do the following:
 
-  1. On the Servers table view, select the server and click the ellipsis (…).
-
-  2. From the ellipsis (…), select Launch API Explorer.
-
+1. On the Servers table view, select the server and click the ellipsis (…).
+2. From the ellipsis (…), select Launch API Explorer.
 
 **Chassis Tab**
 
@@ -168,9 +149,9 @@ Name| Displays the name for the chassis.
 ID| Displays the unique ID for the chassis.  
 Status| Displays the status of the chassis. The values can be:
 
-  * Active — When the chassis is discovered.
-  * Decommissioned —When the Chassis is physically present and connected, but temporarily removed from the Cisco UCS configuration.
-  * DiscoveryFailed — When the chassis discovery has failed.
+* Active — When the chassis is discovered.
+* Decommissioned —When the Chassis is physically present and connected, but temporarily removed from the Cisco UCS configuration.
+* DiscoveryFailed — When the chassis discovery has failed.
 
   
 Model| Displays the chassis model.  
@@ -178,12 +159,9 @@ Serial| Displays the host ID/serial number of the chassis.
   
 You can perform the following chassis operations:
 
-  * Launch API Explorer (IOM 1)
-
-  * Launch API Explorer (IOM 2)
-
-  * Generate Tech Support Bundle
-
+* Launch API Explorer (IOM 1)
+* Launch API Explorer (IOM 2)
+* Generate Tech Support Bundle
 
 Performing Redfish™ Based Chassis Operations from the API Explorer
 
@@ -195,10 +173,8 @@ For an overview of Redfish™ based chassis operations and examples, see <https:
 
 To perform Redfish™ Based chassis operations from the API Explorer, do the following:
 
-  1. On the Chassis table view, select the chassis and click the ellipsis (…).
-
-  2. From the ellipsis (…), select Launch API Explorer.
-
+1. On the Chassis table view, select the chassis and click the ellipsis (…).
+2. From the ellipsis (…), select Launch API Explorer.
 
 **Fabric Extender Tab**
 
@@ -210,10 +186,10 @@ Name| Displays the name for the FEX.
 Identifier| Displays the unique ID for the FEX.  
 Lifecycle| Displays the current state of the FEX lifecycle. The values can be:
 
-  * Online — When the FEX is connected.
-  * Decommissioned — When the FEX is physically present and connected, but temporarily removed from the Cisco UCS configuration.
-  * Unclaimed — When the FEX has not been claimed to the Intersight account.
-  * Discovery Failure — When the discovery of FEX has failed.
+* Online — When the FEX is connected.
+* Decommissioned — When the FEX is physically present and connected, but temporarily removed from the Cisco UCS configuration.
+* Unclaimed — When the FEX has not been claimed to the Intersight account.
+* Discovery Failure — When the discovery of FEX has failed.
 
   
 Model| Displays the FEX model.  
@@ -229,9 +205,9 @@ Details| Description
 Name| Displays the name for the FEX.  
 Status| Displays the status of the PCIe node. The values can be:
 
-  * Active — When the PCIe node is discovered.
-  * Decommissioned —When the PCIe node is physically present and connected, but temporarily removed from the Cisco UCS configuration.
-  * DiscoveryFailed — When the PCIe node discovery has failed.
+* Active — When the PCIe node is discovered.
+* Decommissioned —When the PCIe node is physically present and connected, but temporarily removed from the Cisco UCS configuration.
+* DiscoveryFailed — When the PCIe node discovery has failed.
 
   
 Model| Displays the hardware model of the PCIe node.  
@@ -241,10 +217,8 @@ Locator LED| Displays the state of the locator LED of this PCIe node.
   
 We can perform these operation on PCIe node from the Device Console:
 
-  * Turn On/Off Locator
-
-  * Generate Tech Support Bundle
-
+* Turn On/Off Locator
+* Generate Tech Support Bundle
 
 ## Diagnostic Data
 
@@ -254,41 +228,29 @@ From the Diagnostic Data tab, you can collect diagnostic data for severs, chassi
 
 You can generate tech support bundles for the following:
 
-  * Server—Contains technical support data for blade and rack servers including all adapters. For blade severs, tech support data is collected for IOMs.
-
-  * Chassis—Contains technical support data for a given chassis including IOMs.
-
-  * Fabric Interconnect—Contains technical support data for Fabric Interconnect. The data can be for either the local or both the local and peer switches.
-
-  * PCIe Node—Contains technical support data for PCIe nodes.
-
+* Server—Contains technical support data for blade and rack servers including all adapters. For blade severs, tech support data is collected for IOMs.
+* Chassis—Contains technical support data for a given chassis including IOMs.
+* Fabric Interconnect—Contains technical support data for Fabric Interconnect. The data can be for either the local or both the local and peer switches.
+* PCIe Node—Contains technical support data for PCIe nodes.
 
 **Generating and Downloading Tech Support Bundles**
 
 To generate and download a tech support bundle:
 
-  1. Log in to Device Console.
-
-  2. Go to Diagnostic Data > Tech Support Bundles.
-
-  3. Click Generate Tech Support Bundle in the right side of the screen above the table view.
-
-  4. In the Generate Tech Support Bundle dialog box:
-
-     1. Select a Device Type—Chassis, Fabric Interconnect, Fabric Extenders, Server, or PCIe Node—to generate the corresponding tech support bundle.
-
-     2. If you select Fabric Interconnect as the device type, choose either Local Switch or Local and Peer Switches and proceed to step 4d. Otherwise, continue to the next step.
-
-     3. From the second drop-down menu, select the device for which the tech support bundle needs to be generated.
-
-     4. Click Generate to initiate the process.
+1. Log in to Device Console.
+2. Go to Diagnostic Data > Tech Support Bundles.
+3. Click Generate Tech Support Bundle in the right side of the screen above the table view.
+4. In the Generate Tech Support Bundle dialog box:
+1. Select a Device Type—Chassis, Fabric Interconnect, Fabric Extenders, Server, or PCIe Node—to generate the corresponding tech support bundle.
+2. If you select Fabric Interconnect as the device type, choose either Local Switch or Local and Peer Switches and proceed to step 4d. Otherwise, continue to the next step.
+3. From the second drop-down menu, select the device for which the tech support bundle needs to be generated.
+4. Click Generate to initiate the process.
 
 You can see the download status for the tech support bundle generation under the Oper State column. Once the generation is complete, the status changes from In Progress to Available.
 
-     5. In the relevant row for the device, from the ellipsis (…), click Download to start the download.
+5. In the relevant row for the device, from the ellipsis (…), click Download to start the download.
 
 This operation may take several minutes to complete. The downloaded file is saved in your default download location. You can manually delete any file by selecting Delete from the ellipsis (**…**) menu located next to each record.
-
 
 **Core Files**
 
@@ -298,14 +260,11 @@ Core files get generated on Cisco Integrated Management Controller, Chassis Mana
 
 To generate and download a core file, do the following:
 
-  1. Log in to Device Console.
-
-  2. Go to Diagnostic Data > Core Files.
-
-  3. In the relevant row for the file, from the ellipsis (…), click Download to start the download
+1. Log in to Device Console.
+2. Go to Diagnostic Data > Core Files.
+3. In the relevant row for the file, from the ellipsis (…), click Download to start the download
 
 The downloaded file is saved in your default download location.
-
 
 You can manually delete any file by selecting Delete from the ellipsis (…) menu located next to each record.
 

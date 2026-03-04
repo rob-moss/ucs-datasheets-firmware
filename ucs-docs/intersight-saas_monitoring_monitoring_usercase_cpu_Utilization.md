@@ -8,7 +8,7 @@
 | **HTML Title** | Tutorial: Active CPU Utilization Metrics for Monitoring Server Performance |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_monitoring_usercase_cpu_Utilization.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:08 |
+| **Fetched on** | 2026-03-04 12:48:06 |
 
 ---
 
@@ -22,22 +22,14 @@ This proactive approach ensures optimal server performance, aids in planning for
 
 To view the Active CPU Utilization metrics, do the following:
 
-  1. Navigate to **Metrics Explorer**.
-
-  2. In the Metrics Explorer, select instrument type as **Physical Processor** , metrics as **Active CPU Utilization**.
-
-  3. Choose the statistic for the metrics. Depending on the type of metrics you wish to view, select the statistics as follows:
-
-  * **Maximum** : The highest percentage of time the CPU is in the active state over the monitoring period. This is crucial for identifying peak usage times and potential bottlenecks.
-
-  * **Minimum** : The lowest percentage of time the CPU is in the active state during the monitoring period. This helps identify periods of minimal activity.
-
-  * **Average** : The average percentage of time the CPU remains in the active state over a specified period.
+1. Navigate to **Metrics Explorer**.
+2. In the Metrics Explorer, select instrument type as **Physical Processor** , metrics as **Active CPU Utilization**.
+3. Choose the statistic for the metrics. Depending on the type of metrics you wish to view, select the statistics as follows:
+* **Maximum** : The highest percentage of time the CPU is in the active state over the monitoring period. This is crucial for identifying peak usage times and potential bottlenecks.
+* **Minimum** : The lowest percentage of time the CPU is in the active state during the monitoring period. This helps identify periods of minimal activity.
+* **Average** : The average percentage of time the CPU remains in the active state over a specified period.
 
 The Metric Explorer displays the Active CPU Utilization line graph across all devices.
 
-  4. To view the data for the hosts, in the **Group By** condition, select **Host Name**. The Metric Explorer displays the Active CPU Utilization line graph for each host.
-
-  5. Specify the **Filter By** condition to view the Active CPU Utilization metrics for a specific domain. Use the **Domain Name** to do so. Our final filter should then look like this:
-
-![](../files/CPU_utilization.png)
+4. To view the data for the hosts, in the **Group By** condition, select **Host Name**. The Metric Explorer displays the Active CPU Utilization line graph for each host.
+5. Specify the **Filter By** condition to view the Active CPU Utilization metrics for a specific domain. Use the **Domain Name** to do so. Our final filter should then look like this:

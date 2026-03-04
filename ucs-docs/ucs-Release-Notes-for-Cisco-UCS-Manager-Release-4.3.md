@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco UCS Manager, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_release-notes-ucsm-4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:11 |
+| **Fetched on** | 2026-03-04 12:48:09 |
 
 ---
 
@@ -26,10 +26,8 @@ Cisco UCS™ Manager, Release 4.3 provides unified, embedded management of all s
 
 This document contains information on new features, resolved caveats, open caveats, and workarounds for Cisco UCS Manager, Release 4.3. This document also includes the following: 
 
-  * Current information that became available after the technical documentation was published 
-
-  * Related firmware and BIOS on blade and rack servers and other Cisco Unified Computing System (UCS) components associated with the release 
-
+* Current information that became available after the technical documentation was published 
+* Related firmware and BIOS on blade and rack servers and other Cisco Unified Computing System (UCS) components associated with the release 
 
 ## Deprecation Notice
 
@@ -39,10 +37,8 @@ Releases 4.3(4a), 4.3(4b), 4.3(4c), and 4.3(4d) are deprecated and firmware file
 
 Cisco recommends that you upgrade to release 4.3(4e) or later. For more information, refer to the Deferral Notices: 
 
-  * <https://www.cisco.com/c/en/us/support/docs/field-notices/742/fn74201.html>
-
-  * <https://www.cisco.com/c/en/us/support/docs/field-notices/742/fn74209.html>
-
+* <https://www.cisco.com/c/en/us/support/docs/field-notices/742/fn74201.html>
+* <https://www.cisco.com/c/en/us/support/docs/field-notices/742/fn74209.html>
 
 ## Revision History
 
@@ -93,93 +89,51 @@ Cisco UCS Manager, Release 4.3 is a unified software release for all supported U
 
 ### New Hardware Features
 
-  * New Hardware in Release 4.3(6f)—None 
-
-  * New Hardware in Release 4.3(6e)—None 
-
-  * New Hardware in Release 4.3(6d)—None 
-
-  * New Hardware in Release 4.3(6c)
-
-  * New Hardware in Release 4.3(6b)—None 
-
-  * New Hardware in Release 4.3(6a)
-
-  * New Hardware in Release 4.3(5d)—None 
-
-  * New Hardware in Release 4.3(5c)
-
-  * New Hardware in Release 4.3(5a)
-
-  * New Hardware in Release 4.3(4f)—None 
-
-  * New Hardware in Release 4.3(4e)—None 
-
-  * New Hardware in Release 4.3(4d)—None 
-
-  * New Hardware in Release 4.3(4c)—None 
-
-  * New Hardware in Release 4.3(4b)
-
-  * New Hardware in Release 4.3(4a)
-
-  * New Hardware in Release 4.3(3c)—None 
-
-  * New Hardware in Release 4.3(3a)
-
-  * New Hardware in Release 4.3(2f)—None 
-
-  * New Hardware in Release 4.3(2e)—None 
-
-  * New Hardware in Release 4.3(2c)
-
-  * New Hardware in Release 4.3(2b)
-
+* New Hardware in Release 4.3(6f)—None 
+* New Hardware in Release 4.3(6e)—None 
+* New Hardware in Release 4.3(6d)—None 
+* New Hardware in Release 4.3(6c)
+* New Hardware in Release 4.3(6b)—None 
+* New Hardware in Release 4.3(6a)
+* New Hardware in Release 4.3(5d)—None 
+* New Hardware in Release 4.3(5c)
+* New Hardware in Release 4.3(5a)
+* New Hardware in Release 4.3(4f)—None 
+* New Hardware in Release 4.3(4e)—None 
+* New Hardware in Release 4.3(4d)—None 
+* New Hardware in Release 4.3(4c)—None 
+* New Hardware in Release 4.3(4b)
+* New Hardware in Release 4.3(4a)
+* New Hardware in Release 4.3(3c)—None 
+* New Hardware in Release 4.3(3a)
+* New Hardware in Release 4.3(2f)—None 
+* New Hardware in Release 4.3(2e)—None 
+* New Hardware in Release 4.3(2c)
+* New Hardware in Release 4.3(2b)
 
 ### New Software Features
 
-  * New Software in Release 4.3(6f)—None 
-
-  * New Software in Release 4.3(6e)—None 
-
-  * New Software in Release 4.3(6d)—None 
-
-  * New Software in Release 4.3(6c)—None 
-
-  * New Software in Release 4.3(6b)—None 
-
-  * New Software Feature in Release 4.3(6a)
-
-  * New Software Feature in Release 4.3(5d)
-
-  * New Software Feature in Release 4.3(5c)
-
-  * New Software Feature in Release 4.3(5a)
-
-  * New Software in Release 4.3(4f)—None 
-
-  * New Software in Release 4.3(4e)—None 
-
-  * New Software in Release 4.3(4d)—None 
-
-  * New Software in Release 4.3(4c)—None 
-
-  * New Software Feature in Release 4.3(4b)—None 
-
-  * New Software Feature in Release 4.3(4a)
-
-  * New Software Feature in Release 4.3(3c)
-
-  * New Software Feature in Release 4.3(3a)—None 
-
-  * New Software in Release 4.3(2f)—None 
-
-  * New Software Feature in Release 4.3(2e)—None 
-
-  * New Software Feature in Release 4.3(2c)—None 
-
-  * New Software Feature in Release 4.3(2b)
-
+* New Software in Release 4.3(6f)—None 
+* New Software in Release 4.3(6e)—None 
+* New Software in Release 4.3(6d)—None 
+* New Software in Release 4.3(6c)—None 
+* New Software in Release 4.3(6b)—None 
+* New Software Feature in Release 4.3(6a)
+* New Software Feature in Release 4.3(5d)
+* New Software Feature in Release 4.3(5c)
+* New Software Feature in Release 4.3(5a)
+* New Software in Release 4.3(4f)—None 
+* New Software in Release 4.3(4e)—None 
+* New Software in Release 4.3(4d)—None 
+* New Software in Release 4.3(4c)—None 
+* New Software Feature in Release 4.3(4b)—None 
+* New Software Feature in Release 4.3(4a)
+* New Software Feature in Release 4.3(3c)
+* New Software Feature in Release 4.3(3a)—None 
+* New Software in Release 4.3(2f)—None 
+* New Software Feature in Release 4.3(2e)—None 
+* New Software Feature in Release 4.3(2c)—None 
+* New Software Feature in Release 4.3(2b)
 
 ### New Hardware in Release 4.3
 
@@ -201,56 +155,33 @@ You are able to decrease server Operating Expenses (OpEx) for power and cooling,
 
 The Cisco UCS C240 M8 Server offers the following: 
 
-  * Processors: Up to 2x Intel Xeon 6700P or 6500P processors (1 or 2)
-
-  * Memory
-
-  * 32 DIMM slots (16 DIMMS per CPU): 16, 32, 48, 64, 96, 128, 256GB DDR5 at up to 6400 MT/s for up to 8TB of memory
-
-  * 32, 64GB MRDIMMs at up to 8000 MT/s
-
-  * PCIe expansion: Up to 8 PCIe 5.0 slots plus 1 dedicated 24-Gbps RAID controller slot and 1 dedicated mLOM/OCP 3.0 slot
-
-  * RAID controllers:
-
-  * Cisco 24-Gbps modular tri-mode RAID controller supports SAS 4 or NVMe hardware RAID
-
-  * Cisco 24-Gbps modular tri-mode SAS Host Bus Adapter (HBA)
-
-  * Internal storage:
-
-  * Backplane options: Up to 28 SFF SAS/SATA/U.3 NVMe drives through SAS4 tri-mode RAID or HBA controller, with optional up to eight direct-attach U.2/U.3 NVMe drives 
-
-  * Up to 36 E3.S 1T direct-attach NVMe drives
-
-  * Up to 16 LFF SAS HDDs plus optional 4 rear SFF HDD/SSDs
-
-  * mLOM/OCP 3.0:
-
-  * One dedicated PCIe Gen5x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
-
-  * mLOM slot can flexibly accommodate 10/25/50 and 40/100/200 Gbps Cisco VIC adapters
-
-  * OCP 3.0 slot features full out-of-band manageability that supports Intel X710 OCP Dual 10GBase-T via mLOM interposer
-
-  * Power supplies: Hot-pluggable, redundant platinum and titanium options:
-
-  * Platinum: 1050W DC and 1600W AC
-
-  * Titanium: 1200W AC and 2300W AC
-
-  * Other storage:
-
-  * Dedicated Baseboard Management Controller (BMC) FlexMMC for utilities (on board)
-
-  * Dual M.2 SATA SSDs (internal or hot-swappable) with HW RAID support
-
-  * GPU: Up to three double-wide or eight single-wide GPUs supported
-
+* Processors: Up to 2x Intel Xeon 6700P or 6500P processors (1 or 2)
+* Memory
+* 32 DIMM slots (16 DIMMS per CPU): 16, 32, 48, 64, 96, 128, 256GB DDR5 at up to 6400 MT/s for up to 8TB of memory
+* 32, 64GB MRDIMMs at up to 8000 MT/s
+* PCIe expansion: Up to 8 PCIe 5.0 slots plus 1 dedicated 24-Gbps RAID controller slot and 1 dedicated mLOM/OCP 3.0 slot
+* RAID controllers:
+* Cisco 24-Gbps modular tri-mode RAID controller supports SAS 4 or NVMe hardware RAID
+* Cisco 24-Gbps modular tri-mode SAS Host Bus Adapter (HBA)
+* Internal storage:
+* Backplane options: Up to 28 SFF SAS/SATA/U.3 NVMe drives through SAS4 tri-mode RAID or HBA controller, with optional up to eight direct-attach U.2/U.3 NVMe drives 
+* Up to 36 E3.S 1T direct-attach NVMe drives
+* Up to 16 LFF SAS HDDs plus optional 4 rear SFF HDD/SSDs
+* mLOM/OCP 3.0:
+* One dedicated PCIe Gen5x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
+* mLOM slot can flexibly accommodate 10/25/50 and 40/100/200 Gbps Cisco VIC adapters
+* OCP 3.0 slot features full out-of-band manageability that supports Intel X710 OCP Dual 10GBase-T via mLOM interposer
+* Power supplies: Hot-pluggable, redundant platinum and titanium options:
+* Platinum: 1050W DC and 1600W AC
+* Titanium: 1200W AC and 2300W AC
+* Other storage:
+* Dedicated Baseboard Management Controller (BMC) FlexMMC for utilities (on board)
+* Dual M.2 SATA SSDs (internal or hot-swappable) with HW RAID support
+* GPU: Up to three double-wide or eight single-wide GPUs supported
 
 Cisco UCS Manager supports all the peripherals supported by Cisco UCS C240 M8 Server. For complete list of supported peripherals for Cisco UCS C240 M8 Server, see [Cisco UCS C240 M8 SFF Rack Server](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-sff-rack-server.pdf). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -273,54 +204,32 @@ The Cisco UCS C220 M8 Server is a dense, fault-tolerant server that provides val
 
 The Cisco UCS C220 M8 Server offers the following: 
 
-  * Processors: Up to 2x Intel Xeon 6700P or 6500P processors (1 or 2)
-
-  * Memory:
-
-  * 32 DIMM slots (16 DIMMS per CPU): 16, 32, 48, 64, 96, 128GB DDR5 at up to 6400 MT/s for up to 4TB of memory
-
-  * 32, 64GB MRDIMMs at up to 8000 MT/s
-
-  * PCIe expansion: Up to 3 PCIe 5.0 half-height slots or up to 2 PCIe 5.0 full-height slots plus 1 dedicated 24-Gbps RAID controller slot and 1 dedicated mLOM/OCP 3.0 slot 
-
-  * RAID controllers:
-
-  * Cisco® 24-Gbps modular tri-mode RAID controller supports SAS 4 or NVMe hardware RAID
-
-  * Cisco 24-Gbps modular tri-mode SAS Host Bus Adapter (HBA)
-
-  * Internal storage:
-
-  * Backplane options: Up to 10 SFF SAS/SATA/U.3 NVMe drives through SAS4 tri-mode RAID or HBA controller, with optional up to eight direct-attach U.2/U.3 NVMe drives 
-
-  * Up to 16 E3.S 1T direct-attach NVMe drives at PCIe Gen5 x4 each
-
-  * mLOM/OCP 3.0:
-
-  * One dedicated PCIe Gen5x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
-
-  * mLOM slot can flexibly accommodate 10/25/50 and 40/100/200 Gbps Cisco VIC adapters
-
-  * OCP 3.0 slot features full out-of-band manageability that supports Intel X710 OCP dual 10GBase-T through mLOM interposer
-
-  * Power supplies: Hot-pluggable, redundant platinum, and titanium options:
-
-  * Platinum: 1050W DC and 1600W AC
-
-  * Titanium: 1200W AC and 2300W AC
-
-  * Other storage:
-
-  * Dedicated Baseboard Management Controller (BMC) FlexMMC for utilities (on board)
-
-  * Dual M.2 SATA SSDs (internal or hot-swappable) with HW RAID support
-
-  * GPU: Up to three single-wide GPUs supported
-
+* Processors: Up to 2x Intel Xeon 6700P or 6500P processors (1 or 2)
+* Memory:
+* 32 DIMM slots (16 DIMMS per CPU): 16, 32, 48, 64, 96, 128GB DDR5 at up to 6400 MT/s for up to 4TB of memory
+* 32, 64GB MRDIMMs at up to 8000 MT/s
+* PCIe expansion: Up to 3 PCIe 5.0 half-height slots or up to 2 PCIe 5.0 full-height slots plus 1 dedicated 24-Gbps RAID controller slot and 1 dedicated mLOM/OCP 3.0 slot 
+* RAID controllers:
+* Cisco® 24-Gbps modular tri-mode RAID controller supports SAS 4 or NVMe hardware RAID
+* Cisco 24-Gbps modular tri-mode SAS Host Bus Adapter (HBA)
+* Internal storage:
+* Backplane options: Up to 10 SFF SAS/SATA/U.3 NVMe drives through SAS4 tri-mode RAID or HBA controller, with optional up to eight direct-attach U.2/U.3 NVMe drives 
+* Up to 16 E3.S 1T direct-attach NVMe drives at PCIe Gen5 x4 each
+* mLOM/OCP 3.0:
+* One dedicated PCIe Gen5x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
+* mLOM slot can flexibly accommodate 10/25/50 and 40/100/200 Gbps Cisco VIC adapters
+* OCP 3.0 slot features full out-of-band manageability that supports Intel X710 OCP dual 10GBase-T through mLOM interposer
+* Power supplies: Hot-pluggable, redundant platinum, and titanium options:
+* Platinum: 1050W DC and 1600W AC
+* Titanium: 1200W AC and 2300W AC
+* Other storage:
+* Dedicated Baseboard Management Controller (BMC) FlexMMC for utilities (on board)
+* Dual M.2 SATA SSDs (internal or hot-swappable) with HW RAID support
+* GPU: Up to three single-wide GPUs supported
 
 Cisco UCS Manager supports all the peripherals supported by Cisco UCS C220 M8 Server. For complete list of supported peripherals for Cisco UCS C220 M8 Server, see [Cisco UCS C220 M8 SFF Rack Server Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-sff-rack-server.pdf). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -337,52 +246,29 @@ The Cisco UCS X210c M8 Compute Node is the third generation of compute node to i
 
 The Cisco UCS X210c M8 Compute Node provides these main features: 
 
-  * Processors: Up to 2x Intel Xeon 6 Scalable Processors (1 or 2)
-
-  * Memory: Up to 32 DDR5 DIMM slots (up to 16 DIMMS per CPU)
-
-  * 16, 32, 64, 128, 256GB RDIMM at up to 6400 MT/s
-
-  * Support of 32, 64GB MRDIMM at up to 8000 MT/s
-
-  * mLOM: mLOM slot for Cisco UCS VIC 15420 or Cisco VIC 15230
-
-  * Mezzanine adapter (rear): Cisco UCS 15422 mezzanine card with UCS VIC 15000 bridge connector compatible with Cisco UCS VIC 15420 
-
-  * Mezzanine Module (front)
-
-  * EDSFF E3.S NVMe passthrough controller
-
-  * NVMe passthrough controller (for U.2 and U.3 NVMe drives only)
-
-  * RAID controller with 4GB cache (for SSD and mix of SSD and NVMe)
-
-  * GPU front mezzanine
-
-  * No front mezzanine
-
-  * Internal storage and GPU
-
-  * Front mezzanine storage options:
-
-  * Up to 9x EDSFF E3.S NVMe drives
-
-  * Up to 6x 2.5-inch SAS and SATA RAID-compatible SSDs
-
-  * Up to 6x 2.5-inch NVMe PCIe drives
-
-  * A mixture of up to six SAS/SATA or NVMe drives
-
-  * Note: Drives require a RAID or passthrough controller in the front mezzanine module slot.
-
-  * Boot drive options:
-
-  * Mini storage module with 2x M.2 (up to 960GB per drive) SATA drives with Hardware RAID
-
-  * Mini storage module with 2x M.2 (up to 960GB per drive) NVMe drives in pass-through mode
-
-  * GPU options: GPU front mezzanine module with 2x 2.5-inch NVMe drives and 2x GPUs
-
+* Processors: Up to 2x Intel Xeon 6 Scalable Processors (1 or 2)
+* Memory: Up to 32 DDR5 DIMM slots (up to 16 DIMMS per CPU)
+* 16, 32, 64, 128, 256GB RDIMM at up to 6400 MT/s
+* Support of 32, 64GB MRDIMM at up to 8000 MT/s
+* mLOM: mLOM slot for Cisco UCS VIC 15420 or Cisco VIC 15230
+* Mezzanine adapter (rear): Cisco UCS 15422 mezzanine card with UCS VIC 15000 bridge connector compatible with Cisco UCS VIC 15420 
+* Mezzanine Module (front)
+* EDSFF E3.S NVMe passthrough controller
+* NVMe passthrough controller (for U.2 and U.3 NVMe drives only)
+* RAID controller with 4GB cache (for SSD and mix of SSD and NVMe)
+* GPU front mezzanine
+* No front mezzanine
+* Internal storage and GPU
+* Front mezzanine storage options:
+* Up to 9x EDSFF E3.S NVMe drives
+* Up to 6x 2.5-inch SAS and SATA RAID-compatible SSDs
+* Up to 6x 2.5-inch NVMe PCIe drives
+* A mixture of up to six SAS/SATA or NVMe drives
+* Note: Drives require a RAID or passthrough controller in the front mezzanine module slot.
+* Boot drive options:
+* Mini storage module with 2x M.2 (up to 960GB per drive) SATA drives with Hardware RAID
+* Mini storage module with 2x M.2 (up to 960GB per drive) NVMe drives in pass-through mode
+* GPU options: GPU front mezzanine module with 2x 2.5-inch NVMe drives and 2x GPUs
 
 Cisco UCS Manager supports all the peripherals supported by Cisco UCS X210c M8 Compute Node. For complete list of supported peripherals for Cisco UCS X210c M8 Compute Node, see [Cisco UCS X210c M8 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x210cm8-specsheet.pdf). 
 
@@ -409,47 +295,33 @@ NVIDIA L4:70W, 24GB, 1-slot HHHL GPU (UCSC-GPU-L4)
   
 Support for the following new GPU:
 
-  * AMD MI210 GPU; 300W 64GB, 2 slot FHFL (UCSX-GPU-MI210) with Cisco UCS X215c M8 Compute Node. 
-
+* AMD MI210 GPU; 300W 64GB, 2 slot FHFL (UCSX-GPU-MI210) with Cisco UCS X215c M8 Compute Node. 
 
 #### Controller Support
 
 Support for the following controllers with Cisco UCS X210c M8 Compute Node: 
 
-  * 24G Tri-Mode M1 RAID Controller w/4GB FBWC 6Drv (UCSX-RAID-M1L6)
-
-  * UCS X10c Compute Pass Through Controller for E3.S (Front) (UCSX-X10C-PTE3)
-
-  * UCSX Front UCSX Front panel w/M.2 RAID controller Included for SATA drvpanel with M.2 RAID controller for SATA drives (UCSX-M2I-HWRD-FPS)
-
+* 24G Tri-Mode M1 RAID Controller w/4GB FBWC 6Drv (UCSX-RAID-M1L6)
+* UCS X10c Compute Pass Through Controller for E3.S (Front) (UCSX-X10C-PTE3)
+* UCSX Front UCSX Front panel w/M.2 RAID controller Included for SATA drvpanel with M.2 RAID controller for SATA drives (UCSX-M2I-HWRD-FPS)
 
 #### Third-Party Adapters
 
 Support for the following NVIDIA OEM adapters with Cisco UCS C220 M8 and C240 M8 servers: 
 
-  * NVIDIA OEM MCX623436AC-CDAB CX6Dx 2x100G QSFP56 x16 OCP NIC (UCSC-O-N6CD100GFO)
-
-  * NVIDIA OEM MCX623106AC-CDAT 2x100 GbE QSFP56 PCIe Crypto Enabled (UCSC-P-M6CD100GFO)
-
-  * NVIDIA OEM MCX623106AS-CDAT 2x100 GbE QSFP56 PCIe Crypto Disabled (UCSC-P-M6DD100GFO)
-
-  * NVIDIA OEM MCX631432AC-ADAB CX6Lx 2x25G SFP28 x8 OCP NIC (UCSC-O-N6CD25GFO)
-
-  * NVIDIA OEM MCX755106AS-HEAT 2x200GbE QSFP112 Gen5x16, PCIe VPI NIC; No Crypto (UCSC-P-N7D200GFO)
-
-  * NVIDIA OEM MCX713104AS-ADAT CX-7 4x25GbE SFP56 Gen4 x16 PCIe NIC (UCSC-P-N7Q25GFO)
-
-  * NVIDIA OEM MCX715105AS-WEAT CX-7 1x400GbE QSFP112 PCIe Gen5 x16 VPI NIC (UCSC-P-N7S400GFO)
-
-  * NVIDIA OEM MCX631102AS-ADAT CX6Lx 2x25GbE SFP28 x8 PCIe NIC (UCSC-P-N6D25GFO)
-
+* NVIDIA OEM MCX623436AC-CDAB CX6Dx 2x100G QSFP56 x16 OCP NIC (UCSC-O-N6CD100GFO)
+* NVIDIA OEM MCX623106AC-CDAT 2x100 GbE QSFP56 PCIe Crypto Enabled (UCSC-P-M6CD100GFO)
+* NVIDIA OEM MCX623106AS-CDAT 2x100 GbE QSFP56 PCIe Crypto Disabled (UCSC-P-M6DD100GFO)
+* NVIDIA OEM MCX631432AC-ADAB CX6Lx 2x25G SFP28 x8 OCP NIC (UCSC-O-N6CD25GFO)
+* NVIDIA OEM MCX755106AS-HEAT 2x200GbE QSFP112 Gen5x16, PCIe VPI NIC; No Crypto (UCSC-P-N7D200GFO)
+* NVIDIA OEM MCX713104AS-ADAT CX-7 4x25GbE SFP56 Gen4 x16 PCIe NIC (UCSC-P-N7Q25GFO)
+* NVIDIA OEM MCX715105AS-WEAT CX-7 1x400GbE QSFP112 PCIe Gen5 x16 VPI NIC (UCSC-P-N7S400GFO)
+* NVIDIA OEM MCX631102AS-ADAT CX6Lx 2x25GbE SFP28 x8 PCIe NIC (UCSC-P-N6D25GFO)
 
 Support for the following BlueField adapters with Cisco UCS C220 M8 and C240 M8 servers: 
 
-  * NVIDIA BlueField-3 B3210E DPU 2x100G QSFP112, PCIe Gen5.0 x16, Crypto Disabled (900-9D3B6-00CC-EA0)
-
-  * NVIDIA BlueField-3 B3220L SuperNIC 2x200G QSFP112, PCIe Gen5.0 x16, Crypto Disabled (UCSC-P-N3220L)
-
+* NVIDIA BlueField-3 B3210E DPU 2x100G QSFP112, PCIe Gen5.0 x16, Crypto Disabled (900-9D3B6-00CC-EA0)
+* NVIDIA BlueField-3 B3220L SuperNIC 2x200G QSFP112, PCIe Gen5.0 x16, Crypto Disabled (UCSC-P-N3220L)
 
 ### New Hardware in Release 4.3(5c)
 
@@ -457,147 +329,86 @@ Support for the following BlueField adapters with Cisco UCS C220 M8 and C240 M8 
 
 Support for the following 5th Gen AMD® EPYC® Processors with Cisco UCS C245 M8 servers: 
 
-  * AMD 9655 2.6GHz 400W 96C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9655)
-
-  * AMD 9575F 3.3GHz 400W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9575F)
-
-  * AMD 9555 3.2GHz 360W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9555)
-
-  * AMD 9355 3.4GHz 280W 32C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9355)
-
-  * AMD 9135 3.5GHz 200W 16C/64MB Cache DDR5 6000MT/s (UCS-CPU-A9135)
-
-  * AMD 9655P 2.6GHz 400W 96C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9655P)
-
-  * AMD 9555P 3.2GHz 360W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9555P)
-
-  * AMD 9455P 2.9GHz 300W 48C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9455P)
-
-  * AMD 9355P 3.55GHz 280W 32C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9355P)
-
-  * AMD 9645 2.0GHz 320W 96C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9645)
-
-  * AMD 9455 2.9GHz 300W 48C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9455)
-
-  * AMD 9365 3.2GHz 300W 36C/192MB Cache DDR5 6000MT/s (UCS-CPU-A9365)
-
-  * AMD 9255 3.2GHz 200W 24C/128MB Cache DDR5 6000MT/s (UCS-CPU-A9255)
-
-  * AMD 9015 3.5GHz 155W 8C/64MB Cache DDR5 6000MT/s (UCS-CPU-A9015)
-
-  * AMD 9475F 3.6GHz 360W 48C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9475F)
-
-  * AMD 9375F 3.7GHz 320W 32C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9375F)
-
-  * AMD 9845 2.0GHz 400W 160C/320MB Cache DDR5 6000MT/s (UCS-CPU-A9845)
-
-  * AMD 9825 2.0GHz 400W 144C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9825)
-
-  * AMD 9745 2.2GHz 400W 128C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9745)
-
-  * AMD 9565 3.0GHz 400W 72C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9565)
-
-  * AMD 9535 2.1GHz 300W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9535)
-
-  * AMD 9335 3.2GHz 210W 32C/128MB Cache DDR5 6000MT/s (UCS-CPU-A9335)
-
-  * AMD 9275F 3.9GHz 320W 24C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9275F)
-
-  * AMD 9175F 4.2GHz 320W 16C/512MB Cache DDR5 6000MT/s (UCS-CPU-A9175F)
-
-  * AMD 9115 3.2GHz 165W 16C/64MB Cache DDR5 6000MT/s (UCS-CPU-A9115)
-
+* AMD 9655 2.6GHz 400W 96C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9655)
+* AMD 9575F 3.3GHz 400W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9575F)
+* AMD 9555 3.2GHz 360W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9555)
+* AMD 9355 3.4GHz 280W 32C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9355)
+* AMD 9135 3.5GHz 200W 16C/64MB Cache DDR5 6000MT/s (UCS-CPU-A9135)
+* AMD 9655P 2.6GHz 400W 96C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9655P)
+* AMD 9555P 3.2GHz 360W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9555P)
+* AMD 9455P 2.9GHz 300W 48C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9455P)
+* AMD 9355P 3.55GHz 280W 32C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9355P)
+* AMD 9645 2.0GHz 320W 96C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9645)
+* AMD 9455 2.9GHz 300W 48C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9455)
+* AMD 9365 3.2GHz 300W 36C/192MB Cache DDR5 6000MT/s (UCS-CPU-A9365)
+* AMD 9255 3.2GHz 200W 24C/128MB Cache DDR5 6000MT/s (UCS-CPU-A9255)
+* AMD 9015 3.5GHz 155W 8C/64MB Cache DDR5 6000MT/s (UCS-CPU-A9015)
+* AMD 9475F 3.6GHz 360W 48C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9475F)
+* AMD 9375F 3.7GHz 320W 32C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9375F)
+* AMD 9845 2.0GHz 400W 160C/320MB Cache DDR5 6000MT/s (UCS-CPU-A9845)
+* AMD 9825 2.0GHz 400W 144C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9825)
+* AMD 9745 2.2GHz 400W 128C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9745)
+* AMD 9565 3.0GHz 400W 72C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9565)
+* AMD 9535 2.1GHz 300W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9535)
+* AMD 9335 3.2GHz 210W 32C/128MB Cache DDR5 6000MT/s (UCS-CPU-A9335)
+* AMD 9275F 3.9GHz 320W 24C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9275F)
+* AMD 9175F 4.2GHz 320W 16C/512MB Cache DDR5 6000MT/s (UCS-CPU-A9175F)
+* AMD 9115 3.2GHz 165W 16C/64MB Cache DDR5 6000MT/s (UCS-CPU-A9115)
 
 Support for the following 5th Gen AMD® EPYC® Processors with Cisco UCS C225 M8 servers: 
 
-  * AMD 9355 3.4GHz 280W 32C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9355)
-
-  * AMD 9135 3.5GHz 200W 16C/64MB Cache DDR5 6000MT/s (UCS-CPU-A9135)
-
-  * AMD 9655P 2.6GHz 400W 96C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9655P)
-
-  * AMD 9555P 3.2GHz 360W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9555P)
-
-  * AMD 9355P 3.4GHz 280W 32C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9355P)
-
-  * AMD 9825 2.0GHz 390W 144C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9825)
-
-  * AMD 9745 2.4GHz 400W 128C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9745)
-
-  * AMD 9655 2.6GHz 400W 96C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9655)
-
-  * AMD 9565 3.0GHz 400W 72C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9565)
-
-  * AMD 9575F 3.3GHz 400W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9575F)
-
-  * AMD 9555 3.2GHz 360W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9555)
-
-  * AMD 9645 2.0GHz 320W 96C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9645)
-
-  * AMD 9455 2.9GHz 300W 48C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9455)
-
-  * AMD 9365 3.2GHz 300W 36C/192MB Cache DDR5 6000MT/s (UCS-CPU-A9365)
-
-  * AMD 9255 3.2GHz 200W 24C/128MB Cache DDR5 6000MT/s (UCS-CPU-A9255)
-
-  * AMD 9015 3.5GHz 155W 8C/64MB Cache DDR5 6000MT/s (UCS-CPU-A9015)
-
-  * AMD 9475F 3.6GHz 360W 48C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9475F)
-
-  * AMD 9375F 3.7GHz 320W 32C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9375F)
-
-  * AMD 9845 2.1GHz 390W 160C/320MB Cache DDR5 6000MT/s (UCS-CPU-A9845)
-
-  * AMD 9535 2.1GHz 300W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9535)
-
-  * AMD 9335 3.2GHz 210W 32C/128MB Cache DDR5 6000MT/s (UCS-CPU-A9335)
-
-  * AMD 9275F 3.9GHz 320W 24C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9275F)
-
-  * AMD 9175F 4.2GHz 320W 16C/512MB Cache DDR5 6000MT/s (UCS-CPU-A9175F)
-
-  * AMD 9455P 2.9GHz 300W 48C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9455P)
-
-  * AMD 9115 3.2GHz 165W 16C/64MB Cache DDR5 6000MT/s (UCS-CPU-A9115)
-
+* AMD 9355 3.4GHz 280W 32C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9355)
+* AMD 9135 3.5GHz 200W 16C/64MB Cache DDR5 6000MT/s (UCS-CPU-A9135)
+* AMD 9655P 2.6GHz 400W 96C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9655P)
+* AMD 9555P 3.2GHz 360W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9555P)
+* AMD 9355P 3.4GHz 280W 32C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9355P)
+* AMD 9825 2.0GHz 390W 144C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9825)
+* AMD 9745 2.4GHz 400W 128C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9745)
+* AMD 9655 2.6GHz 400W 96C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9655)
+* AMD 9565 3.0GHz 400W 72C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9565)
+* AMD 9575F 3.3GHz 400W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9575F)
+* AMD 9555 3.2GHz 360W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9555)
+* AMD 9645 2.0GHz 320W 96C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9645)
+* AMD 9455 2.9GHz 300W 48C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9455)
+* AMD 9365 3.2GHz 300W 36C/192MB Cache DDR5 6000MT/s (UCS-CPU-A9365)
+* AMD 9255 3.2GHz 200W 24C/128MB Cache DDR5 6000MT/s (UCS-CPU-A9255)
+* AMD 9015 3.5GHz 155W 8C/64MB Cache DDR5 6000MT/s (UCS-CPU-A9015)
+* AMD 9475F 3.6GHz 360W 48C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9475F)
+* AMD 9375F 3.7GHz 320W 32C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9375F)
+* AMD 9845 2.1GHz 390W 160C/320MB Cache DDR5 6000MT/s (UCS-CPU-A9845)
+* AMD 9535 2.1GHz 300W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9535)
+* AMD 9335 3.2GHz 210W 32C/128MB Cache DDR5 6000MT/s (UCS-CPU-A9335)
+* AMD 9275F 3.9GHz 320W 24C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9275F)
+* AMD 9175F 4.2GHz 320W 16C/512MB Cache DDR5 6000MT/s (UCS-CPU-A9175F)
+* AMD 9455P 2.9GHz 300W 48C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9455P)
+* AMD 9115 3.2GHz 165W 16C/64MB Cache DDR5 6000MT/s (UCS-CPU-A9115)
 
 Support for the following 5th Gen AMD® EPYC® Processors with Cisco UCS X215c M8 Compute Node: 
 
-  * AMD 9655 2.6GHz 400W 96C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9655)
-
-  * AMD 9575F 3.3GHz 400W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9575F)
-
-  * AMD 9555 3.2GHz 360W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9555)
-
-  * AMD 9355 3.4GHz 280W 32C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9355)
-
-  * AMD 9135 3.5GHz 200W 16C/64MB Cache DDR5 6000MT/s (UCS-CPU-A9135)
-
+* AMD 9655 2.6GHz 400W 96C/384MB Cache DDR5 6000MT/s (UCS-CPU-A9655)
+* AMD 9575F 3.3GHz 400W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9575F)
+* AMD 9555 3.2GHz 360W 64C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9555)
+* AMD 9355 3.4GHz 280W 32C/256MB Cache DDR5 6000MT/s (UCS-CPU-A9355)
+* AMD 9135 3.5GHz 200W 16C/64MB Cache DDR5 6000MT/s (UCS-CPU-A9135)
 
 #### GPU Support
 
 Support for the following new GPU:
 
-  * AMD MI210 GPU; 300W 64GB, 2 slot FHFL (UCSC-GPU-MI210) on Cisco UCS C245 M8 servers
-
+* AMD MI210 GPU; 300W 64GB, 2 slot FHFL (UCSC-GPU-MI210) on Cisco UCS C245 M8 servers
 
 #### RAID Controllers
 
 Cisco UCS Manager adds support for the following Cisco Tri-Mode M1 24G RAID with Cisco UCS C245 M8 Server and Cisco UCS C225 M8 Server equipped with 5th Gen AMD® EPYC Processors: 
 
-  * UCSC-RAID-M1L16
-
-  * UCSC-RAID-MP1L32
-
+* UCSC-RAID-M1L16
+* UCSC-RAID-MP1L32
 
 Cisco UCS Manager adds support for the following Cisco Tri-Mode M1 24G RAID and HBA controllers with Cisco UCS C245 M8 Server and Cisco UCS C225 M8 Server equipped with 4th Gen AMD® EPYC Processors: 
 
-  * UCSC-HBA-M1L16
-
-  * UCSC-RAID-M1L16
-
-  * UCSC-RAID-MP1L32
-
+* UCSC-HBA-M1L16
+* UCSC-RAID-M1L16
+* UCSC-RAID-MP1L32
 
 ### New Hardware in Release 4.3(5a)
 
@@ -609,36 +420,23 @@ The Cisco UCS X215c M8 Compute Node is integrate into the Cisco UCS X-Series Mod
 
 The Cisco UCS X215c M8 Compute Node offers the following: 
 
-  * CPU: Up to 2x 4th Generation AMD EPYC Processors with up to 128 cores per processors
-
-  * Memory:
-
-  * 24 DIMM slots (12 DIMMs per CPU socket), up to 4800 MT/s DDR5.
-
-  * Up to 6 TB of capacity.
-
-  * Storage: Up to 6 hot-pluggable, Solid-State Drives (SSDs), or Non-Volatile Memory Express (NVMe) 2.5-inch drives with a choice of enterprise-class Redundant Array of Independent Disks (RAID) or pass-through controllers with four lanes each of PCIe Gen 4 connectivity and up to 2 M.2 SATA or NVMe drives for flexible boot and local storage capabilities. 
-
-  * Optional Front Mezzanine GPU module: The Cisco UCS Front Mezzanine GPU module is a passive PCIe Gen 4 front mezzanine option with support for up to two U.2 or U.3 NVMe drives and two HHHL GPUs. 
-
-  * mLOM virtual interface cards:
-
-  * Cisco UCS Virtual Interface Card (VIC) 15420 occupies the server's Modular LAN on Motherboard (mLOM) slot, enabling up to 50Gbps (2 x25Gbps) of unified fabric connectivity to each of the chassis Intelligent Fabric Modules (IFMs) for 100Gbps connectivity per server. 
-
-  * Cisco UCS Virtual Interface Card (VIC) 15230 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server with secure boot capability. 
-
-  * Optional Mezzanine card:
-
-  * Cisco UCS Virtual Interface Card (VIC) 15422 can occupy the server's mezzanine slot at the bottom rear of the chassis. An included bridge card extends this VIC's 100Gbps (4 x 25Gbps) of network connections through IFM connectors, bringing the total bandwidth to 100Gbps per VIC 15420 and 15422 (for a total of 200Gbps per server). In addition to IFM connectivity, the VIC 15422 I/O connectors link to Cisco UCS X-Fabric technology. 
-
-  * Cisco UCS PCI Mezz card for X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the X440p PCIe Node. 
-
-  * Security: Includes secure boot silicon root of trust FPGA, ACT2 anti-counterfeit provisions, and optional Trusted Platform Model (TPM). 
-
+* CPU: Up to 2x 4th Generation AMD EPYC Processors with up to 128 cores per processors
+* Memory:
+* 24 DIMM slots (12 DIMMs per CPU socket), up to 4800 MT/s DDR5.
+* Up to 6 TB of capacity.
+* Storage: Up to 6 hot-pluggable, Solid-State Drives (SSDs), or Non-Volatile Memory Express (NVMe) 2.5-inch drives with a choice of enterprise-class Redundant Array of Independent Disks (RAID) or pass-through controllers with four lanes each of PCIe Gen 4 connectivity and up to 2 M.2 SATA or NVMe drives for flexible boot and local storage capabilities. 
+* Optional Front Mezzanine GPU module: The Cisco UCS Front Mezzanine GPU module is a passive PCIe Gen 4 front mezzanine option with support for up to two U.2 or U.3 NVMe drives and two HHHL GPUs. 
+* mLOM virtual interface cards:
+* Cisco UCS Virtual Interface Card (VIC) 15420 occupies the server's Modular LAN on Motherboard (mLOM) slot, enabling up to 50Gbps (2 x25Gbps) of unified fabric connectivity to each of the chassis Intelligent Fabric Modules (IFMs) for 100Gbps connectivity per server. 
+* Cisco UCS Virtual Interface Card (VIC) 15230 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server with secure boot capability. 
+* Optional Mezzanine card:
+* Cisco UCS Virtual Interface Card (VIC) 15422 can occupy the server's mezzanine slot at the bottom rear of the chassis. An included bridge card extends this VIC's 100Gbps (4 x 25Gbps) of network connections through IFM connectors, bringing the total bandwidth to 100Gbps per VIC 15420 and 15422 (for a total of 200Gbps per server). In addition to IFM connectivity, the VIC 15422 I/O connectors link to Cisco UCS X-Fabric technology. 
+* Cisco UCS PCI Mezz card for X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the X440p PCIe Node. 
+* Security: Includes secure boot silicon root of trust FPGA, ACT2 anti-counterfeit provisions, and optional Trusted Platform Model (TPM). 
 
 For complete list of supported peripherals for Cisco UCS X215c M8 Compute Node, see [Cisco UCS X215c M8 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x215c-m8-compute-node.pdf). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -661,46 +459,28 @@ The C225 M8 rack server brings many new innovations to the Cisco UCS AMD rack se
 
 The key features of Cisco UCS C225 M8 Server include: 
 
-  * Supports one 4th Gen AMD EPYC CPU, with up to 128 cores per socket
-
-  * Up to 12 DDR5 DIMMs for up to 1.5 TB of capacity using 128 GB DIMMs
-
-  * Up to 4800 MT/s DDR5 memory
-
-  * Up to 3 PCIe 4.0 slots or up to 2 PCIe 5.0 slots, plus a modular LAN on motherboard (mLOM) / OCP slot 3.0 (details below)
-
-  * Support for Cisco UCS VIC 15000 Series adapters as well as a host of third-party NIC options
-
-  * UCS C225 M8S chassis: up to 10 SAS/SATA or NVMe disk drives
-
-  * New tri-mode RAID controller supports SAS4 or NVMe hardware RAID
-
-  * Up to 4 direct-attach NVMe SSDs
-
-  * UCS C225 M8N chassis: up to 10 direct attach NVMe SSDs
-
-  * All 10 NVMe drives connected at PCIe Gen4 x4
-
-  * M.2 boot options
-
-  * Up to two 960GB SATA M.2 drives with hardware RAID, or
-
-  * Up to two 960GB NVMe M.2 drives with NVMe hardware RAID
-
-  * Up to three GPUs supported
-
-  * Hybrid modular LOM/OCP 3.0
-
-  * One dedicated Gen 4.0 x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
-
-  * mLOM allows for Cisco UCS Virtual Interface Cards (VICs) without consuming a PCIe slot, supporting quad-port 10/25/50 Gbps or dual-port 40/100/200 Gbps network connectivity 
-
-  * OCP 3.0 slot features full out-of-band management for select adapters
-
+* Supports one 4th Gen AMD EPYC CPU, with up to 128 cores per socket
+* Up to 12 DDR5 DIMMs for up to 1.5 TB of capacity using 128 GB DIMMs
+* Up to 4800 MT/s DDR5 memory
+* Up to 3 PCIe 4.0 slots or up to 2 PCIe 5.0 slots, plus a modular LAN on motherboard (mLOM) / OCP slot 3.0 (details below)
+* Support for Cisco UCS VIC 15000 Series adapters as well as a host of third-party NIC options
+* UCS C225 M8S chassis: up to 10 SAS/SATA or NVMe disk drives
+* New tri-mode RAID controller supports SAS4 or NVMe hardware RAID
+* Up to 4 direct-attach NVMe SSDs
+* UCS C225 M8N chassis: up to 10 direct attach NVMe SSDs
+* All 10 NVMe drives connected at PCIe Gen4 x4
+* M.2 boot options
+* Up to two 960GB SATA M.2 drives with hardware RAID, or
+* Up to two 960GB NVMe M.2 drives with NVMe hardware RAID
+* Up to three GPUs supported
+* Hybrid modular LOM/OCP 3.0
+* One dedicated Gen 4.0 x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
+* mLOM allows for Cisco UCS Virtual Interface Cards (VICs) without consuming a PCIe slot, supporting quad-port 10/25/50 Gbps or dual-port 40/100/200 Gbps network connectivity 
+* OCP 3.0 slot features full out-of-band management for select adapters
 
 Cisco UCS Manager supports all the peripherals supported by Cisco UCS C225 M8 Server. For complete list of supported peripherals for Cisco UCS C225 M8 Server, see [Cisco UCS C225 M8 SFF Rack Server Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-sff-rack-server.pdf). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -715,30 +495,22 @@ Cisco UCS C225 M8 Server supports only 15000 Series secure boot VIC adapters.
 
 Cisco UCS Manager adds support for the following Cisco Tri-Mode M1 24G RAID and HBA controllers on Cisco UCS C-Series M7 servers: 
 
-  * UCSC-HBA-M1L16 and UCSC-RAID-M1L16 on Cisco UCSC-C220-M7 servers
-
-  * UCSC-HBA-M1L16 and UCSC-RAID-MP1L32 on Cisco UCSC-C240-M7 servers 
-
+* UCSC-HBA-M1L16 and UCSC-RAID-M1L16 on Cisco UCSC-C220-M7 servers
+* UCSC-HBA-M1L16 and UCSC-RAID-MP1L32 on Cisco UCSC-C240-M7 servers 
 
 #### GPU Support
 
 Support for the following new GPUs:
 
-  * NVIDIA A16 GPU on X440p: PCIE 250W 4X16GB, FHFL (UCSC-CGPU-A16 )—Cisco UCS X215c M8 (with PCIe Node). 
-
-  * NVIDIAH100-NVL GPU 400W, 94GB, 2-slot FHFL (UCSC-GPU-H100-NVL)—Cisco UCS X215c M8 (with PCIe Node), UCS X210c M7, UCS C245 M8, UCS C240 M7. 
-
-  * NVIDIA L4-Mezz GPU 70W, 24GB, 1-slot HHHL (UCSX-GPU-L4-Mezz)—Cisco UCS X215c M8 and UCS X210c M7. 
-
+* NVIDIA A16 GPU on X440p: PCIE 250W 4X16GB, FHFL (UCSC-CGPU-A16 )—Cisco UCS X215c M8 (with PCIe Node). 
+* NVIDIAH100-NVL GPU 400W, 94GB, 2-slot FHFL (UCSC-GPU-H100-NVL)—Cisco UCS X215c M8 (with PCIe Node), UCS X210c M7, UCS C245 M8, UCS C240 M7. 
+* NVIDIA L4-Mezz GPU 70W, 24GB, 1-slot HHHL (UCSX-GPU-L4-Mezz)—Cisco UCS X215c M8 and UCS X210c M7. 
 
 Extended support for the following existing GPUs:
 
-  * NVIDIAL40 300W, 48GB wPWR CBL (UCSC-GPU-L40)—Cisco UCS X215c M8 (with PCIe Node). 
-
-  * NVIDIA L40S: 350W, 48GB, 2-slot FHFL GPU (UCSC-GPU-L40S)—Cisco UCS X215c M8 (with PCIe Node). 
-
-  * NVIDIA L4:70W, 24GB, 1-slot HHHL GPU (UCSC-GPU-L4)—Cisco UCS X215c M8 (with PCIe Node). 
-
+* NVIDIAL40 300W, 48GB wPWR CBL (UCSC-GPU-L40)—Cisco UCS X215c M8 (with PCIe Node). 
+* NVIDIA L40S: 350W, 48GB, 2-slot FHFL GPU (UCSC-GPU-L40S)—Cisco UCS X215c M8 (with PCIe Node). 
+* NVIDIA L4:70W, 24GB, 1-slot HHHL GPU (UCSC-GPU-L4)—Cisco UCS X215c M8 (with PCIe Node). 
 
 ### New Hardware in Release 4.3(4b)
 
@@ -762,38 +534,24 @@ You can deploy the Cisco UCS C-Series rack servers as part of the Cisco Unified 
 
 The Cisco UCS C245 M8 Server brings many innovations to the UCS AMD® rack server line. With the introduction of PCIe Gen 5.0 expansion slots for high-speed I/O, a DDR5 memory bus, and expanded storage capabilities, the server delivers significant performance and efficiency gains that will greatly enhance application performance. Features include: 
 
-  * Support for up to two 4th Gen AMD EPYC™ CPUs in a server designed to drive as much as 256 CPU cores (128 cores per socket) 
-
-  * Up to 24 DDR5 DIMM slots
-
-  * Up to 4800 MT/s DDR5 memory
-
-  * Up to 8 x PCIe Gen 4.0 slots or up to 4 x PCIe Gen 5.0 slots, plus a hybrid modular LAN on motherboard (mLOM) /OCP 3.0 slot (details below) 
-
-  * Support for Cisco UCS VIC 15000 Series adapters as well as a host of third-party NIC options
-
-  * Up to 28 hot-swappable small-form-factor (SFF) SAS/SATA or NVMe drives (with up to 8 direct-attach NVMe drives) and New tri-mode RAID controller supports SAS4 plus NVMe hardware RAID. 
-
-  * M.2 boot options
-
-  * Up to two 960GB SATA M.2 drives with hardware RAID support
-
-  * Up to two 960GB NVMe M.2 drives with NVMe hardware RAID
-
-  * Support for up to Eight GPUs
-
-  * Modular LOM / OCP 3.0
-
-  * One dedicated PCIe Gen4x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
-
-  * mLOM slot that can be used to install a Cisco UCS Virtual Interface Card (VIC) without consuming a PCIe slot, supporting quad-port 10/25/50 Gbps or dual-port 40/100/200 Gbps network connectivity 
-
-  * OCP 3.0 slot that features full out-of-band management for select adapters
-
+* Support for up to two 4th Gen AMD EPYC™ CPUs in a server designed to drive as much as 256 CPU cores (128 cores per socket) 
+* Up to 24 DDR5 DIMM slots
+* Up to 4800 MT/s DDR5 memory
+* Up to 8 x PCIe Gen 4.0 slots or up to 4 x PCIe Gen 5.0 slots, plus a hybrid modular LAN on motherboard (mLOM) /OCP 3.0 slot (details below) 
+* Support for Cisco UCS VIC 15000 Series adapters as well as a host of third-party NIC options
+* Up to 28 hot-swappable small-form-factor (SFF) SAS/SATA or NVMe drives (with up to 8 direct-attach NVMe drives) and New tri-mode RAID controller supports SAS4 plus NVMe hardware RAID. 
+* M.2 boot options
+* Up to two 960GB SATA M.2 drives with hardware RAID support
+* Up to two 960GB NVMe M.2 drives with NVMe hardware RAID
+* Support for up to Eight GPUs
+* Modular LOM / OCP 3.0
+* One dedicated PCIe Gen4x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
+* mLOM slot that can be used to install a Cisco UCS Virtual Interface Card (VIC) without consuming a PCIe slot, supporting quad-port 10/25/50 Gbps or dual-port 40/100/200 Gbps network connectivity 
+* OCP 3.0 slot that features full out-of-band management for select adapters
 
 Cisco UCS Manager supports all the peripherals supported by Cisco UCS C245 M8 Server. For complete list of supported peripherals for Cisco UCS C245 M8 Server, see [Cisco UCS C245 M8 SFF Rack Server Spec Sheet](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c245-m8-sff-rack-server.pdf&ved=2ahUKEwjDqcbvxdiGAxXuzzgGHUbnAy0QFnoECBUQAQ&usg=AOvVaw0MzOh0jzcaa9bNdqgl3iaT). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -806,42 +564,26 @@ Cisco UCS C245 M8 Server supports only 15000 Series secure boot VIC adapters.
   
 ### New Hardware in Release 4.3(4a)
 
-  * Support for the following RAID controllers:
-
-  * Cisco Tri-Mode 24G SAS RAID Controller w/4GB Cache (UCSC-RAID-HP) with Cisco UCS C220 M7 and C240 M7 servers.
-
-  * Cisco boot optimized M.2 NVMe RAID controller (UCS-M2-NVRAID) with Cisco UCS C220 M7 and C240 M7 servers.
+* Support for the following RAID controllers:
+* Cisco Tri-Mode 24G SAS RAID Controller w/4GB Cache (UCSC-RAID-HP) with Cisco UCS C220 M7 and C240 M7 servers.
+* Cisco boot optimized M.2 NVMe RAID controller (UCS-M2-NVRAID) with Cisco UCS C220 M7 and C240 M7 servers.
 
 This controller supports only RAID0, RAID1, or JBOD (default - JBOD) mode and only UEFI boot mode. 
 
-  * Support for the UCS-TPM-002D TPM module with Cisco UCS X410c M7, X210c M7, X210c M6, B200 M6, C220 M7, C240 M7, C220 M6, and C240 M6 servers. 
-
-  * Support for the UCS-TPM2-002D TPM module on Cisco UCS C225 M6 and C245 M6 servers.
-
-  * Support for Cisco UCSX-440P PCIe Node. For more information, see [Cisco UCS X440p PCIe Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x440p-specsheet.pdf). 
-
-  * Support for the following GPUs:
-
-  * Intel® Data Center GPU Flex 140, HHHL, 75W PCIe (UCSC-GPU-FLEX140) with Cisco UCS C220 M7 and C240 M7 servers 
-
-  * Intel® Data Center GPU Flex 170, FH-3/4L, 150W PCIe (UCSC-GPU-FLEX170) with Cisco UCS C240 M7 servers 
-
-  * NVIDIA® 350W, 40GB, 2-Slot FHFL L40S GPU (UCSX-GPU-L40S) on Cisco UCS X440p PCIe Node and Cisco UCS C240 M7 servers 
-
-  * NVIDIA® Hopper L4 70W, 24GB, 1-slot HHHL (UCSC-GPU-L4M6) with Cisco UCS C220 and C240 M6 servers 
-
-  * NVIDIA® H100 on Cisco UCS X440p PCIe Node, and Cisco UCS C240 M7 servers 
-
-  * Support for Hynix® 96GB 2Rx4 PC5-5600B-RA0-1010-XT (HMCGM4MGBRB) DIMM with Cisco UCS X410c M7 servers equipped with the following processors: 
-
-  * Intel® Xeon® Gold 6416H Processor 
-
-  * Intel® Xeon® Gold 6418H Processor 
-
-  * Intel® Xeon® Gold 6434H Processor 
-
-  * Intel® Xeon® Gold 6448H Processor 
-
+* Support for the UCS-TPM-002D TPM module with Cisco UCS X410c M7, X210c M7, X210c M6, B200 M6, C220 M7, C240 M7, C220 M6, and C240 M6 servers. 
+* Support for the UCS-TPM2-002D TPM module on Cisco UCS C225 M6 and C245 M6 servers.
+* Support for Cisco UCSX-440P PCIe Node. For more information, see [Cisco UCS X440p PCIe Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x440p-specsheet.pdf). 
+* Support for the following GPUs:
+* Intel® Data Center GPU Flex 140, HHHL, 75W PCIe (UCSC-GPU-FLEX140) with Cisco UCS C220 M7 and C240 M7 servers 
+* Intel® Data Center GPU Flex 170, FH-3/4L, 150W PCIe (UCSC-GPU-FLEX170) with Cisco UCS C240 M7 servers 
+* NVIDIA® 350W, 40GB, 2-Slot FHFL L40S GPU (UCSX-GPU-L40S) on Cisco UCS X440p PCIe Node and Cisco UCS C240 M7 servers 
+* NVIDIA® Hopper L4 70W, 24GB, 1-slot HHHL (UCSC-GPU-L4M6) with Cisco UCS C220 and C240 M6 servers 
+* NVIDIA® H100 on Cisco UCS X440p PCIe Node, and Cisco UCS C240 M7 servers 
+* Support for Hynix® 96GB 2Rx4 PC5-5600B-RA0-1010-XT (HMCGM4MGBRB) DIMM with Cisco UCS X410c M7 servers equipped with the following processors: 
+* Intel® Xeon® Gold 6416H Processor 
+* Intel® Xeon® Gold 6418H Processor 
+* Intel® Xeon® Gold 6434H Processor 
+* Intel® Xeon® Gold 6448H Processor 
 
 ### New Hardware in Release 4.3(3a)
 
@@ -849,169 +591,97 @@ This controller supports only RAID0, RAID1, or JBOD (default - JBOD) mode and on
 
 Support for the following 5th Gen Intel® Xeon® Scalable Processors with Cisco X210c M7 servers: 
 
-  * Intel® Xeon® Platinum 8558P Processor 
-
-  * Intel® Xeon® Platinum 8562Y+ Processor 
-
-  * Intel® Xeon® Platinum 8592+ Processor 
-
-  * Intel® Xeon® Platinum 8568Y+ Processor 
-
-  * Intel® Xeon® Platinum 8592V Processor 
-
-  * Intel® Xeon® Platinum 8580 Processor 
-
-  * Intel® Xeon® Platinum 8558 Processor 
-
-  * Intel® Xeon® Platinum 8558U Processor 
-
-  * Intel® Xeon® Platinum 8570 Processor 
-
-  * Intel® Xeon® Platinum 8571N Processor 
-
-  * Intel® Xeon® Platinum 8581V Processor 
-
-  * Intel® Xeon® Gold 6542Y Processor 
-
-  * Intel® Xeon® Gold 6544Y Processor 
-
-  * Intel® Xeon® Gold 6530 Processor 
-
-  * Intel® Xeon® Gold 6554S Processor 
-
-  * Intel® Xeon® Gold 6548Y+ Processor 
-
-  * Intel® Xeon® Gold 6526Y Processor 
-
-  * Intel® Xeon® Gold 6534 Processor 
-
-  * Intel® Xeon® Gold 6538Y+ Processor 
-
-  * Intel® Xeon® Gold 6548N Processor 
-
-  * Intel® Xeon® Gold 5512U Processor 
-
-  * Intel® Xeon® Gold 5515+ Processor 
-
-  * Intel® Xeon® Gold 5520+ Processor 
-
-  * Intel® Xeon® Gold 6538N Processor 
-
-  * Intel® Xeon® Silver 4514Y Processor 
-
-  * Intel® Xeon® Silver 4516Y+ Processor 
-
+* Intel® Xeon® Platinum 8558P Processor 
+* Intel® Xeon® Platinum 8562Y+ Processor 
+* Intel® Xeon® Platinum 8592+ Processor 
+* Intel® Xeon® Platinum 8568Y+ Processor 
+* Intel® Xeon® Platinum 8592V Processor 
+* Intel® Xeon® Platinum 8580 Processor 
+* Intel® Xeon® Platinum 8558 Processor 
+* Intel® Xeon® Platinum 8558U Processor 
+* Intel® Xeon® Platinum 8570 Processor 
+* Intel® Xeon® Platinum 8571N Processor 
+* Intel® Xeon® Platinum 8581V Processor 
+* Intel® Xeon® Gold 6542Y Processor 
+* Intel® Xeon® Gold 6544Y Processor 
+* Intel® Xeon® Gold 6530 Processor 
+* Intel® Xeon® Gold 6554S Processor 
+* Intel® Xeon® Gold 6548Y+ Processor 
+* Intel® Xeon® Gold 6526Y Processor 
+* Intel® Xeon® Gold 6534 Processor 
+* Intel® Xeon® Gold 6538Y+ Processor 
+* Intel® Xeon® Gold 6548N Processor 
+* Intel® Xeon® Gold 5512U Processor 
+* Intel® Xeon® Gold 5515+ Processor 
+* Intel® Xeon® Gold 5520+ Processor 
+* Intel® Xeon® Gold 6538N Processor 
+* Intel® Xeon® Silver 4514Y Processor 
+* Intel® Xeon® Silver 4516Y+ Processor 
 
 Support for the following 5th Gen Intel® Xeon® Scalable Processors with Cisco UCS C220 M7 and C240 M7 servers: 
 
-  * Intel® Xeon® Platinum 8592V Processor 
-
-  * Intel® Xeon® Platinum 8562Y+ Processor 
-
-  * Intel® Xeon® Platinum 8568Y+ Processor 
-
-  * Intel® Xeon® Platinum 8592+ Processor 
-
-  * Intel® Xeon® Platinum 8558P Processor 
-
-  * Intel® Xeon® Platinum 8580 Processor 
-
-  * Intel® Xeon® Platinum 8558 Processor 
-
-  * Intel® Xeon® Gold 6542Y Processor 
-
-  * Intel® Xeon® Gold 6544Y Processor 
-
-  * Intel® Xeon® Gold 6548Y+ Processor 
-
-  * Intel® Xeon® Gold 6526Y Processor 
-
-  * Intel® Xeon® Gold 6530 Processor 
-
-  * Intel® Xeon® Gold 6534 Processor 
-
-  * Intel® Xeon® Gold 6554S Processor 
-
-  * Intel® Xeon® Gold 6538Y+ Processor 
-
-  * Intel® Xeon® Gold 5515+ Processor 
-
-  * Intel® Xeon® Gold 5520+ Processor 
-
-  * Intel® Xeon® Gold 6548N Processor 
-
-  * Intel® Xeon® Silver 4514Y Processor 
-
-  * Intel® Xeon® Silver 4516Y+ Processor 
-
+* Intel® Xeon® Platinum 8592V Processor 
+* Intel® Xeon® Platinum 8562Y+ Processor 
+* Intel® Xeon® Platinum 8568Y+ Processor 
+* Intel® Xeon® Platinum 8592+ Processor 
+* Intel® Xeon® Platinum 8558P Processor 
+* Intel® Xeon® Platinum 8580 Processor 
+* Intel® Xeon® Platinum 8558 Processor 
+* Intel® Xeon® Gold 6542Y Processor 
+* Intel® Xeon® Gold 6544Y Processor 
+* Intel® Xeon® Gold 6548Y+ Processor 
+* Intel® Xeon® Gold 6526Y Processor 
+* Intel® Xeon® Gold 6530 Processor 
+* Intel® Xeon® Gold 6534 Processor 
+* Intel® Xeon® Gold 6554S Processor 
+* Intel® Xeon® Gold 6538Y+ Processor 
+* Intel® Xeon® Gold 5515+ Processor 
+* Intel® Xeon® Gold 5520+ Processor 
+* Intel® Xeon® Gold 6548N Processor 
+* Intel® Xeon® Silver 4514Y Processor 
+* Intel® Xeon® Silver 4516Y+ Processor 
 
 #### Support for 5600 DIMMs
 
 Support for the following 5600 DIMMs with Cisco UCS X210c M7 servers:
 
-  * Samsung® 16GB 1Rx8 PC5-5600B-RD0-1010-XT (KR M321R2GA3PB0-CWMKH 2323) 
-
-  * Samsung® 32GB 1Rx4 PC5-5600B-RC0-1010-XT (M321R4GA0PB0-CWM) 
-
-  * Samsung® 64GB 2Rx4 PC5-5600B-RA0-1010-XT (KR M321R8GA0PB0-CWMCH 2326) 
-
-  * Samsung® 96GB (M321RYGA0PB0-CWM) 
-
-  * Hynix® 16GB 1Rx8 PC5-5600B-RD0-1010-XT (HMCG78AGBRA190N BB 307) 
-
-  * Hynix® 32GB 1Rx4 PC5-5600B-RC0-1010-XT (HMCG84AGBRA190N BB 310) 
-
-  * Hynix® 64GB 2Rx4 PC5-5600B-RA0-1010-XT (HMCG94AGBRA177N BB 327) 
-
-  * Hynix® 96GB 96GB 2Rx4 PC5-5600B-RA0-1010-XT (HMCGM4MGBRB) 
-
-  * Hynix® 128GB 2S2Rx4 PC5-5600B-RA0-1010-XT (HMCT04AGERA) 
-
+* Samsung® 16GB 1Rx8 PC5-5600B-RD0-1010-XT (KR M321R2GA3PB0-CWMKH 2323) 
+* Samsung® 32GB 1Rx4 PC5-5600B-RC0-1010-XT (M321R4GA0PB0-CWM) 
+* Samsung® 64GB 2Rx4 PC5-5600B-RA0-1010-XT (KR M321R8GA0PB0-CWMCH 2326) 
+* Samsung® 96GB (M321RYGA0PB0-CWM) 
+* Hynix® 16GB 1Rx8 PC5-5600B-RD0-1010-XT (HMCG78AGBRA190N BB 307) 
+* Hynix® 32GB 1Rx4 PC5-5600B-RC0-1010-XT (HMCG84AGBRA190N BB 310) 
+* Hynix® 64GB 2Rx4 PC5-5600B-RA0-1010-XT (HMCG94AGBRA177N BB 327) 
+* Hynix® 96GB 96GB 2Rx4 PC5-5600B-RA0-1010-XT (HMCGM4MGBRB) 
+* Hynix® 128GB 2S2Rx4 PC5-5600B-RA0-1010-XT (HMCT04AGERA) 
 
 Support for the following 5600 DIMMs with Cisco UCS C240 M7 and C220 M7 servers:
 
-  * Hynix® 16GB 1Rx8 PC5-5600B-RD0-1010-XT (HMCG78AGBRA190N BB 307) 
-
-  * Hynix® 32GB 1Rx4 PC5-5600B-RC0-1010-XT (HMCG84AGBRA190N BB 310) 
-
-  * Hynix® 64GB 2Rx4 PC5-5600B-RA0-1010-XT (HMCG94AGBRA177N BB 327) 
-
-  * Hynix® 96GB 2Rx4 PC5-5600B-RA0-1010-XT (HMCGM4MGBRB) 
-
-  * Hynix® 128GB 2S2Rx4 PC5-5600B-RA0-1010-XT (HMCT04AGERA) 
-
-  * Samsung® 16GB 1Rx8 PC5-5600B-RD0-1010-XT (KR M321R2GA3PB0-CWMKH 2323) 
-
-  * Samsung® 32GB 1Rx4 PC5-5600B-RC0-1010-XT (M321R4GA0PB0-CWM) 
-
-  * Samsung® 64GB 2Rx4 PC5-5600B-RA0-1010-XT (KR M321R8GA0PB0-CWMCH 2326) 
-
-  * Micron® 96GB 2RX4 PC5-5600B-RA0-1010-XT (MTC40F204WS1RC56BB1 317) 
-
+* Hynix® 16GB 1Rx8 PC5-5600B-RD0-1010-XT (HMCG78AGBRA190N BB 307) 
+* Hynix® 32GB 1Rx4 PC5-5600B-RC0-1010-XT (HMCG84AGBRA190N BB 310) 
+* Hynix® 64GB 2Rx4 PC5-5600B-RA0-1010-XT (HMCG94AGBRA177N BB 327) 
+* Hynix® 96GB 2Rx4 PC5-5600B-RA0-1010-XT (HMCGM4MGBRB) 
+* Hynix® 128GB 2S2Rx4 PC5-5600B-RA0-1010-XT (HMCT04AGERA) 
+* Samsung® 16GB 1Rx8 PC5-5600B-RD0-1010-XT (KR M321R2GA3PB0-CWMKH 2323) 
+* Samsung® 32GB 1Rx4 PC5-5600B-RC0-1010-XT (M321R4GA0PB0-CWM) 
+* Samsung® 64GB 2Rx4 PC5-5600B-RA0-1010-XT (KR M321R8GA0PB0-CWMCH 2326) 
+* Micron® 96GB 2RX4 PC5-5600B-RA0-1010-XT (MTC40F204WS1RC56BB1 317) 
 
 Support for Hynix® 96GB 2Rx4 PC5-5600B-RA0-1010-XT (HMCGM4MGBRB) DIMM with Cisco UCS X410c M7 servers equipped with the following processors: 
 
-  * Intel® Xeon® Platinum 8444H Processor 
-
-  * Intel® Xeon® Platinum 8450H Processor 
-
-  * Intel® Xeon® Platinum 8454H Processor 
-
-  * Intel® Xeon® Platinum 8460H Processor 
-
-  * Intel® Xeon® Platinum 8468H Processor 
-
-  * Intel® Xeon® Platinum 8490H Processor 
-
+* Intel® Xeon® Platinum 8444H Processor 
+* Intel® Xeon® Platinum 8450H Processor 
+* Intel® Xeon® Platinum 8454H Processor 
+* Intel® Xeon® Platinum 8460H Processor 
+* Intel® Xeon® Platinum 8468H Processor 
+* Intel® Xeon® Platinum 8490H Processor 
 
 #### Supported GPUs
 
 Support for the following Intel® GPU cards with the CPUs listed here: 
 
-  * Support for Intel® Data Center GPU Flex 170, FH-3/4L, 150W PCIe with Cisco UCS C240 M7 servers 
-
-  * Support for Intel® Data Center GPU Flex 140, HHHL, 75W PCIe with Cisco UCS C220 M7 and C240 M7 servers 
-
+* Support for Intel® Data Center GPU Flex 170, FH-3/4L, 150W PCIe with Cisco UCS C240 M7 servers 
+* Support for Intel® Data Center GPU Flex 140, HHHL, 75W PCIe with Cisco UCS C220 M7 and C240 M7 servers 
 
 ### New Hardware in Release 4.3(2c)
 
@@ -1021,41 +691,26 @@ The Cisco UCS X410c M7 Compute Node is the first 4-socket 4th Gen Intel® Xeon®
 
 The Cisco UCS X410c M7 Compute Node provides these main features: 
 
-  * CPU: Four 4th Gen Intel Xeon Scalable Processors with up to 60 cores per processor
-
-  * Memory: Up to 16TB of main memory with 64x 256 GB DDR5-4800 Memory DIMMs
-
-  * Storage: Up to six hot-pluggable solid-state drives (SSDs), or non-volatile memory express (NVMe) 2.5-inch drives with a choice of enterprise-class RAID or passthrough controllers, up to two M.2 SATA drives with optional hardware RAID 
-
-  * mLOM virtual interface cards:
-
-  * Cisco UCS VIC 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps of unified fabric connectivity to each of the chassis’s intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-
-  * Cisco UCS VIC 15231 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis’s intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-
-  * Cisco UCS VIC 15230 (with secure boot feature) occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis’s intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-
-  * Optional mezzanine card:
-
-  * Cisco UCS 5th Gen VIC 15422 can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
-
-  * Cisco UCS PCI Mezz card for Cisco UCS X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the Cisco UCS X440p PCIe Node. 
-
-  * All VIC mezzanine cards also provide I/O connections from the X410c M7 compute node to the X440p PCIe node.
-
-  * Security: The server supports an optional trusted platform module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions. 
-
+* CPU: Four 4th Gen Intel Xeon Scalable Processors with up to 60 cores per processor
+* Memory: Up to 16TB of main memory with 64x 256 GB DDR5-4800 Memory DIMMs
+* Storage: Up to six hot-pluggable solid-state drives (SSDs), or non-volatile memory express (NVMe) 2.5-inch drives with a choice of enterprise-class RAID or passthrough controllers, up to two M.2 SATA drives with optional hardware RAID 
+* mLOM virtual interface cards:
+* Cisco UCS VIC 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps of unified fabric connectivity to each of the chassis’s intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+* Cisco UCS VIC 15231 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis’s intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+* Cisco UCS VIC 15230 (with secure boot feature) occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis’s intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+* Optional mezzanine card:
+* Cisco UCS 5th Gen VIC 15422 can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
+* Cisco UCS PCI Mezz card for Cisco UCS X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the Cisco UCS X440p PCIe Node. 
+* All VIC mezzanine cards also provide I/O connections from the X410c M7 compute node to the X440p PCIe node.
+* Security: The server supports an optional trusted platform module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions. 
 
 #### Cisco UCS VIC Cards
 
 Following Cisco UCS VIC Cards are supported from release 4.3(2c) onwards: 
 
-  * Cisco UCS VIC 15427—The Cisco UCS VIC 15427 is a Quad Port CNA MLOM, 4 x 10/25/50G with Secure Boot for Cisco UCS C-Series M6 and M7 servers. 
-
-  * Cisco UCS VIC 15230—The Cisco UCS VIC 15230 is a MLOM with Secure Boot for Cisco UCS X210c M6, X210c M7, and X410c M7 servers. 
-
-  * Cisco UCS VIC 15237 mLOM—The Cisco UCS VIC 15237 mLOM is a MLOM, 2x40/100/200G with Secure Boot for Cisco UCS C-Series M6 and M7 servers. 
-
+* Cisco UCS VIC 15427—The Cisco UCS VIC 15427 is a Quad Port CNA MLOM, 4 x 10/25/50G with Secure Boot for Cisco UCS C-Series M6 and M7 servers. 
+* Cisco UCS VIC 15230—The Cisco UCS VIC 15230 is a MLOM with Secure Boot for Cisco UCS X210c M6, X210c M7, and X410c M7 servers. 
+* Cisco UCS VIC 15237 mLOM—The Cisco UCS VIC 15237 mLOM is a MLOM, 2x40/100/200G with Secure Boot for Cisco UCS C-Series M6 and M7 servers. 
 
 ### New Hardware in Release 4.3(2b)
 
@@ -1075,30 +730,18 @@ The Cisco UCS X210c M7 Compute Node is the second generation of compute node to 
 
 The Cisco UCS X210c M7 Compute Node provides these main features: 
 
-  * CPU: Up to 2x 4th Gen Intel® Xeon® Scalable Processors with up to 60 cores per processor and up to 2.625 MB Level 3 cache per core and up to 112.5 MB per CPU. 
-
-  * Memory: Up to 8TB of main memory with 32x 256 GB DDR5-4800 DIMMs.
-
-  * Storage: Up to six hot-pluggable, solid-state drives (SSDs), or non-volatile memory express (NVMe) 2.5-inch drives with a choice of enterprise-class redundant array of independent disks (RAIDs) or passthrough controllers, up to two M.2 SATA and M.2 NVMe drives with optional hardware RAID. 
-
-  * Optional front mezzanine GPU module: The Cisco UCS front mezzanine GPU module is a passive PCIe Gen 4.0 front mezzanine option with support for up to two U.2 NVMe drives and two HHHL GPUs. 
-
-  * mLOM virtual interface cards:
-
-  * Cisco UCS Virtual Interface Card (VIC) 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-
-  * ◦ Cisco UCS Virtual Interface Card (VIC) 15231 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-
-  * Optional mezzanine card:
-
-  * Cisco UCS 5th Gen Virtual Interface Card (VIC) 15422 can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
-
-  * Cisco UCS PCI Mezz card for X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the Cisco UCS X440p PCIe Node. 
-
-  * All VIC mezzanine cards also provide I/O connections from the X210c M7 compute node to the X440p PCIe Node.
-
-  * Security: The server supports an optional trusted platform module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions. 
-
+* CPU: Up to 2x 4th Gen Intel® Xeon® Scalable Processors with up to 60 cores per processor and up to 2.625 MB Level 3 cache per core and up to 112.5 MB per CPU. 
+* Memory: Up to 8TB of main memory with 32x 256 GB DDR5-4800 DIMMs.
+* Storage: Up to six hot-pluggable, solid-state drives (SSDs), or non-volatile memory express (NVMe) 2.5-inch drives with a choice of enterprise-class redundant array of independent disks (RAIDs) or passthrough controllers, up to two M.2 SATA and M.2 NVMe drives with optional hardware RAID. 
+* Optional front mezzanine GPU module: The Cisco UCS front mezzanine GPU module is a passive PCIe Gen 4.0 front mezzanine option with support for up to two U.2 NVMe drives and two HHHL GPUs. 
+* mLOM virtual interface cards:
+* Cisco UCS Virtual Interface Card (VIC) 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+* ◦ Cisco UCS Virtual Interface Card (VIC) 15231 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+* Optional mezzanine card:
+* Cisco UCS 5th Gen Virtual Interface Card (VIC) 15422 can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
+* Cisco UCS PCI Mezz card for X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the Cisco UCS X440p PCIe Node. 
+* All VIC mezzanine cards also provide I/O connections from the X210c M7 compute node to the X440p PCIe Node.
+* Security: The server supports an optional trusted platform module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions. 
 
 #### Cisco UCS X210c M6 Compute Node
 
@@ -1106,41 +749,26 @@ The Cisco UCS X210c M6 Compute Node is the first computing device to integrate i
 
 The Cisco UCS X210c M6 Compute Node provides these main features: 
 
-  * CPU: Up to 2x 3rd Gen Intel® Xeon® Scalable Processors with up to 40 cores per processor and 1.5 MB Level 3 cache per core 
-
-  * Memory: Up to 32x 256 GB DDR4-3200 DIMMs for up to 8 TB of main memory. Configuring up to 16x 512-GB Intel Optane™ persistent memory DIMMs can yield up to 12 TB of memory. 
-
-  * Storage: Up to 6 hot-pluggable, solid-state drives (SSDs), or non-volatile memory express (NVMe) 2.5-inch drives with a choice of enterprise-class redundant array of independent disks (RAIDs) or pass-through controllers with four lanes each of PCIe Gen 4 connectivity and up to 2 M.2 SATA drives for flexible boot and local storage capabilities 
-
-  * Optional front mezzanine GPU module: The Cisco UCS Front Mezzanine GPU module is a passive PCIe Gen 4 front mezzanine option with support for up to two U.2 NVMe drives and two GPUs. 
-
-  * mLOM virtual interface cards:
-
-  * Cisco UCS Virtual Interface Card (VIC) 14425 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-
-  * Cisco UCS VIC 15231 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-
-  * Cisco UCS VIC 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-
-  * Optional mezzanine card:
-
-  * Cisco UCS VIC 14825 can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
-
-  * Cisco UCS VIC 15422 X-Series mezz (UCSX-ME-V5Q50G) 4x25G can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
-
-  * Cisco UCS PCI Mezz card for X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the X440p PCIe Node. 
-
-  * Security: The server supports an optional trusted platform module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions 
-
+* CPU: Up to 2x 3rd Gen Intel® Xeon® Scalable Processors with up to 40 cores per processor and 1.5 MB Level 3 cache per core 
+* Memory: Up to 32x 256 GB DDR4-3200 DIMMs for up to 8 TB of main memory. Configuring up to 16x 512-GB Intel Optane™ persistent memory DIMMs can yield up to 12 TB of memory. 
+* Storage: Up to 6 hot-pluggable, solid-state drives (SSDs), or non-volatile memory express (NVMe) 2.5-inch drives with a choice of enterprise-class redundant array of independent disks (RAIDs) or pass-through controllers with four lanes each of PCIe Gen 4 connectivity and up to 2 M.2 SATA drives for flexible boot and local storage capabilities 
+* Optional front mezzanine GPU module: The Cisco UCS Front Mezzanine GPU module is a passive PCIe Gen 4 front mezzanine option with support for up to two U.2 NVMe drives and two GPUs. 
+* mLOM virtual interface cards:
+* Cisco UCS Virtual Interface Card (VIC) 14425 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+* Cisco UCS VIC 15231 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+* Cisco UCS VIC 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+* Optional mezzanine card:
+* Cisco UCS VIC 14825 can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
+* Cisco UCS VIC 15422 X-Series mezz (UCSX-ME-V5Q50G) 4x25G can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
+* Cisco UCS PCI Mezz card for X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the X440p PCIe Node. 
+* Security: The server supports an optional trusted platform module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions 
 
 #### Intelligent Fabric Module
 
 The Intelligent Fabric Modules (IFMs) bring the unified fabric into the blade server enclosure, providing connectivity between the blade servers and the fabric interconnect, simplifying diagnostics, cabling, and management. Cisco UCS X-Series Servers support following IFMs: 
 
-  * Cisco UCS 9108 25G IFMs (UCSX-I-9108-25G)
-
-  * Cisco UCS 9108 100G IFMs (UCSX-I-9108-100G)
-
+* Cisco UCS 9108 25G IFMs (UCSX-I-9108-25G)
+* Cisco UCS 9108 100G IFMs (UCSX-I-9108-100G)
 
 #### Cisco UCS C240 M7 Server
 
@@ -1162,24 +790,19 @@ You can deploy the Cisco UCS C-Series rack servers as standalone servers or as p
 
 Following Cisco UCS VIC Cards are supported from release 4.3(2) onwards:
 
-  * Cisco UCS VIC 15425—The Cisco UCS VIC 15425 is a quad-port small-form-factor pluggable (SFP+/SFP28/SFP56) PCIe card designed for Cisco UCS C-series M6/M7 rack servers. The card supports 10/25/50-Gbps Ethernet or FCoE. The card can present PCIe standards-compliant interfaces to the host, and these can be dynamically configured as either NICs or HBAs. 
-
-  * Cisco UCS VIC 15235—The Cisco UCS VIC 15235 is a dual-port quad small-form-factor pluggable (QSFP/QSFP28/QSFP56) PCIe card designed for Cisco UCS C-series M6/M7 rack servers. The card supports 40/100/200-Gbps Ethernet or FCoE. The card can present PCIe standards-compliant interfaces to the host, and these can be dynamically configured as either NICs or HBAs. 
-
-  * Cisco UCS VIC 15231—The Cisco UCS VIC 15231 is a 2x100-Gbps Ethernet/FCoE-capable modular LAN on motherboard (mLOM) designed exclusively for the Cisco UCS X210 Compute Node. The Cisco UCS VIC 15231 enables a policy-based, stateless, agile server infrastructure that can present to the host PCIe standards-compliant interfaces that can be dynamically configured as either NICs or HBAs. 
+* Cisco UCS VIC 15425—The Cisco UCS VIC 15425 is a quad-port small-form-factor pluggable (SFP+/SFP28/SFP56) PCIe card designed for Cisco UCS C-series M6/M7 rack servers. The card supports 10/25/50-Gbps Ethernet or FCoE. The card can present PCIe standards-compliant interfaces to the host, and these can be dynamically configured as either NICs or HBAs. 
+* Cisco UCS VIC 15235—The Cisco UCS VIC 15235 is a dual-port quad small-form-factor pluggable (QSFP/QSFP28/QSFP56) PCIe card designed for Cisco UCS C-series M6/M7 rack servers. The card supports 40/100/200-Gbps Ethernet or FCoE. The card can present PCIe standards-compliant interfaces to the host, and these can be dynamically configured as either NICs or HBAs. 
+* Cisco UCS VIC 15231—The Cisco UCS VIC 15231 is a 2x100-Gbps Ethernet/FCoE-capable modular LAN on motherboard (mLOM) designed exclusively for the Cisco UCS X210 Compute Node. The Cisco UCS VIC 15231 enables a policy-based, stateless, agile server infrastructure that can present to the host PCIe standards-compliant interfaces that can be dynamically configured as either NICs or HBAs. 
 
 Cisco UCS VIC 15231 occupies the modular LAN on motherboard (mLOM) slot of the server, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 200 Gbps (2x 100G) connectivity per server. 
 
-  * Cisco UCS VIC 15420—The Cisco UCS VIC 15420 is a 4x25-Gbps Ethernet/FCoE capable modular LAN On Motherboard (mLOM) designed exclusively for Cisco UCS X210c M6/M7 Compute Node. The Cisco UCS VIC 15420 enables a policy-based, stateless, agile server infrastructure that can present to the host PCIe standards-compliant interfaces that can be dynamically configured as either NICs or HBAs. 
+* Cisco UCS VIC 15420—The Cisco UCS VIC 15420 is a 4x25-Gbps Ethernet/FCoE capable modular LAN On Motherboard (mLOM) designed exclusively for Cisco UCS X210c M6/M7 Compute Node. The Cisco UCS VIC 15420 enables a policy-based, stateless, agile server infrastructure that can present to the host PCIe standards-compliant interfaces that can be dynamically configured as either NICs or HBAs. 
 
 Cisco UCS VIC 15420 card occupies the modular LAN on the motherboard (mLOM) slot of the server, enabling up to 50 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
 
-  * Cisco UCS VIC 15422—The Cisco UCS VIC 15422 is a 4x25-Gbps Ethernet/FCoE capable mezzanine card (mezz) designed exclusively for Cisco UCS X210c M6/M7 Compute Node. The card enables a policy-based, stateless, agile server infrastructure that can present PCIe standards-compliant interfaces to the host that can be dynamically configured as either NICs or HBAs. 
-
-  * Cisco UCS VIC 14425—The Cisco UCS VIC 14425 is a 4x25-Gbps Ethernet/FCoE capable modular LAN On Motherboard (mLOM) designed exclusively for Cisco UCS X210c M6 Compute Node. The Cisco UCS VIC 14425 enables a policy-based, stateless, agile server infrastructure that can present to the host PCIe standards-compliant interfaces that can be dynamically configured as either NICs or HBAs. 
-
-  * Cisco UCS VIC 14825—The Cisco UCS VIC 14825 is a 4x25-Gbps Ethernet/FCoE capable mezzanine card (mezz) designed exclusively for Cisco UCS X210c M6 Compute Node. Cisco UCS X The card enables a policy-based, stateless, agile server infrastructure that can present PCIe standards-compliant interfaces to the host that can be dynamically configured as either NICs or HBAs. The UCS VIC 14000 bridge connector is required with the mezz card to connect the UCS X-Series Blade Server to Intelligent Fabric Module UCSX-I-9108-25G. 
-
+* Cisco UCS VIC 15422—The Cisco UCS VIC 15422 is a 4x25-Gbps Ethernet/FCoE capable mezzanine card (mezz) designed exclusively for Cisco UCS X210c M6/M7 Compute Node. The card enables a policy-based, stateless, agile server infrastructure that can present PCIe standards-compliant interfaces to the host that can be dynamically configured as either NICs or HBAs. 
+* Cisco UCS VIC 14425—The Cisco UCS VIC 14425 is a 4x25-Gbps Ethernet/FCoE capable modular LAN On Motherboard (mLOM) designed exclusively for Cisco UCS X210c M6 Compute Node. The Cisco UCS VIC 14425 enables a policy-based, stateless, agile server infrastructure that can present to the host PCIe standards-compliant interfaces that can be dynamically configured as either NICs or HBAs. 
+* Cisco UCS VIC 14825—The Cisco UCS VIC 14825 is a 4x25-Gbps Ethernet/FCoE capable mezzanine card (mezz) designed exclusively for Cisco UCS X210c M6 Compute Node. Cisco UCS X The card enables a policy-based, stateless, agile server infrastructure that can present PCIe standards-compliant interfaces to the host that can be dynamically configured as either NICs or HBAs. The UCS VIC 14000 bridge connector is required with the mezz card to connect the UCS X-Series Blade Server to Intelligent Fabric Module UCSX-I-9108-25G. 
 
 #### Supported GPUs
 
@@ -1191,7 +814,7 @@ NVIDIA H100-80 GPU |  No |  Yes
 NVIDIA L40 GPU |  No |  Yes  
 NVIDIA L4 GPU |  No |  Yes  
 NVIDIA T4 GPU |  Yes |  No  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1214,18 +837,12 @@ Cisco UCS Manager supports all the peripherals supported by Cisco UCS C240 M7 Se
 
 Cisco UCS Manager adds the following new features:
 
-  * Package Power Limit (PPL) feature, aimed at measuring and controlling the power delivered to the CPU socket on the motherboard. This feature is supported only with Cisco UCS C225, C245 M8, and X210c servers. It enhances power management efficiency and ensures optimal power usage by allowing users to configure PPL to Default, Maximum, or Minimum, thereby optimizing server performance and energy efficiency. 
-
-  * Expanded Forward Error Correction (FEC) capabilities, adding RS Cons 16 and RS 1eee to its existing suite of options which includes Auto, CL74, and CL91. Both RS Cons 16 and RS 1eee FEC options are supported on Cisco Nexus switches and are configurable for 25 Gbps port speed, providing flexibility and enhanced error correction for high-speed networking environments. This enhancement boosts data integrity and transmission reliability for Ethernet and Appliance ports to optimize network performance and efficiency. 
-
-  * New option in the fan policy of Power Control Policy, Maximum Cooling, designed for C-Series servers to optimize cooling efficiency. This option enforces a 100% Pulse Width Modulation (PWM) fan speed, ensuring that CPU temperatures remain as low as possible. You can select this new option in addition to Acoustic, Low Power, Balanced, High Power, and Max Power, offering enhanced control over server cooling strategies. 
-
-  * Support for PXE Boot in IPv6-only environments using UEFI mode for LAN Boot. This enhancement allows administrators to operate in modern network settings while minimizing the dependency on IPv4 addresses, ensuring efficient server provisioning and management. 
-
-  * The session timeout setting in Cisco UCS Manager has been updated from Never to a default of 30 minutes for GUI inactivity. This change enhances security by automatically ending inactive sessions. You can still adjust the timeout setting to meet specific security needs. 
-
-  * Support for the NVMe Management Interface (NVMe-MI) for all Cisco UCS M8 servers. This advancement facilitates seamless integration of next-generation NVMe drives, ensuring robust compatibility and enhanced performance for advanced NVMe drive management and integration: 
-
+* Package Power Limit (PPL) feature, aimed at measuring and controlling the power delivered to the CPU socket on the motherboard. This feature is supported only with Cisco UCS C225, C245 M8, and X210c servers. It enhances power management efficiency and ensures optimal power usage by allowing users to configure PPL to Default, Maximum, or Minimum, thereby optimizing server performance and energy efficiency. 
+* Expanded Forward Error Correction (FEC) capabilities, adding RS Cons 16 and RS 1eee to its existing suite of options which includes Auto, CL74, and CL91. Both RS Cons 16 and RS 1eee FEC options are supported on Cisco Nexus switches and are configurable for 25 Gbps port speed, providing flexibility and enhanced error correction for high-speed networking environments. This enhancement boosts data integrity and transmission reliability for Ethernet and Appliance ports to optimize network performance and efficiency. 
+* New option in the fan policy of Power Control Policy, Maximum Cooling, designed for C-Series servers to optimize cooling efficiency. This option enforces a 100% Pulse Width Modulation (PWM) fan speed, ensuring that CPU temperatures remain as low as possible. You can select this new option in addition to Acoustic, Low Power, Balanced, High Power, and Max Power, offering enhanced control over server cooling strategies. 
+* Support for PXE Boot in IPv6-only environments using UEFI mode for LAN Boot. This enhancement allows administrators to operate in modern network settings while minimizing the dependency on IPv4 addresses, ensuring efficient server provisioning and management. 
+* The session timeout setting in Cisco UCS Manager has been updated from Never to a default of 30 minutes for GUI inactivity. This change enhances security by automatically ending inactive sessions. You can still adjust the timeout setting to meet specific security needs. 
+* Support for the NVMe Management Interface (NVMe-MI) for all Cisco UCS M8 servers. This advancement facilitates seamless integration of next-generation NVMe drives, ensuring robust compatibility and enhanced performance for advanced NVMe drive management and integration: 
 
 ### New Software Feature in Release 4.3(5d)
 
@@ -1237,18 +854,15 @@ Additionally, syslog messages are generated for authentication failures, providi
 
 Cisco UCS Manager 4.3(5c) now supports Local Disk Configuration Policy for the following Cisco Tri-Mode M1 24G RAID and HBA controllers on the Cisco UCS C225 M8 and C245 M8 servers: 
 
-  * UCSC-HBA-M1L16
-
-  * UCSC-RAID-M1L16
-
-  * UCSC-RAID-MP1L32
-
+* UCSC-HBA-M1L16
+* UCSC-RAID-M1L16
+* UCSC-RAID-MP1L32
 
 ### New Software Feature in Release 4.3(5a)
 
-  * The Cisco UCS Manager release 4.3(5a) introduces advanced security management to protect sensitive data and ensure network integrity. This release includes encryption management with an AES encryption master key option. Additionally, Media Access Control Security (MACsec) now supports Type-6 (AES encryption) in addition to Type-0 and Type-7 encryption for Ethernet uplink ports on Cisco UCS 6536, 6454, and 64108 Fabric Interconnects through GUI and CLI interfaces. This feature offers robust encryption capabilities, allowing administrators to manage encryption settings effectively and ensure data security and compliance with encryption standards. 
+* The Cisco UCS Manager release 4.3(5a) introduces advanced security management to protect sensitive data and ensure network integrity. This release includes encryption management with an AES encryption master key option. Additionally, Media Access Control Security (MACsec) now supports Type-6 (AES encryption) in addition to Type-0 and Type-7 encryption for Ethernet uplink ports on Cisco UCS 6536, 6454, and 64108 Fabric Interconnects through GUI and CLI interfaces. This feature offers robust encryption capabilities, allowing administrators to manage encryption settings effectively and ensure data security and compliance with encryption standards. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1258,22 +872,17 @@ This functionality is not supported on Cisco UCS X-Series Direct (Cisco UCS Fabr
 * * *  
   
 ---|---  
-  * Cisco UCS Manager now includes dynamic polling support to monitor the port status (up/down) and port speed of third-party Network Interface Cards (NICs) on Cisco UCS C-Series M6, M7, and M8 servers, offering real-time insights into network interface performance and ensuring optimal server connectivity and efficiency. 
-
-  * Cisco UCS Manager enhances support for the server personality configuration of Hyperconverged Infrastructure (HCI). This feature is supported on Cisco UCS M6, M7, and M8 servers, allowing the servers to function either as standard UCS servers or HCI servers. The server personality field is an informational attribute that indicates the specific configuration or role assigned to the server. This simplifies the management of HCI and offers great visibility into server roles, enabling more efficient operations. 
-
-  * Cisco UCS Manager supports enabling the EtherChannel pinning option for Cisco UCS VIC adapters to enhance performance. This option allows vNIC adapters with EtherChannel capabilities to utilize multiple uplink ports for optimized traffic distribution. This setting applies only to eNIC interfaces on Cisco UCS 1400, 14000, and 15000 series adapters and does not apply to fNIC interfaces. 
-
-  * Cisco UCS Manager enables IPv6 overlay offload functionality. This feature, supported by updated async drivers, optimizes IPv6 network performance and enhances efficiency. 
-
-  * Support for U.2 Solidigm P5520 NVMe High Perf. Medium Endurance and U.2 Solidigm P5620 NVMe High Perf. High Endurance with Cisco UCS UCS C225 M8, C245 M8, and all M7 and M6 servers. 
-
+* Cisco UCS Manager now includes dynamic polling support to monitor the port status (up/down) and port speed of third-party Network Interface Cards (NICs) on Cisco UCS C-Series M6, M7, and M8 servers, offering real-time insights into network interface performance and ensuring optimal server connectivity and efficiency. 
+* Cisco UCS Manager enhances support for the server personality configuration of Hyperconverged Infrastructure (HCI). This feature is supported on Cisco UCS M6, M7, and M8 servers, allowing the servers to function either as standard UCS servers or HCI servers. The server personality field is an informational attribute that indicates the specific configuration or role assigned to the server. This simplifies the management of HCI and offers great visibility into server roles, enabling more efficient operations. 
+* Cisco UCS Manager supports enabling the EtherChannel pinning option for Cisco UCS VIC adapters to enhance performance. This option allows vNIC adapters with EtherChannel capabilities to utilize multiple uplink ports for optimized traffic distribution. This setting applies only to eNIC interfaces on Cisco UCS 1400, 14000, and 15000 series adapters and does not apply to fNIC interfaces. 
+* Cisco UCS Manager enables IPv6 overlay offload functionality. This feature, supported by updated async drivers, optimizes IPv6 network performance and enhances efficiency. 
+* Support for U.2 Solidigm P5520 NVMe High Perf. Medium Endurance and U.2 Solidigm P5620 NVMe High Perf. High Endurance with Cisco UCS UCS C225 M8, C245 M8, and all M7 and M6 servers. 
 
 ### New Software Feature in Release 4.3(4a)
 
-  * Cisco UCS Manager introduces support for Media Access Control Security (MACsec) type-0 and type-7 encryption for Ethernet uplink ports on Cisco UCS FI 6536, 6454 and 64108 through GUI and CLI interfaces. 
+* Cisco UCS Manager introduces support for Media Access Control Security (MACsec) type-0 and type-7 encryption for Ethernet uplink ports on Cisco UCS FI 6536, 6454 and 64108 through GUI and CLI interfaces. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1283,9 +892,9 @@ This functionality is not supported on Cisco UCS X-Series Direct.
 * * *  
   
 ---|---  
-  * Cisco UCS Manager support for ERSPAN traffic monitoring on Cisco UCS 6536, 6454, and 64108 Fabric Interconnects.
+* Cisco UCS Manager support for ERSPAN traffic monitoring on Cisco UCS 6536, 6454, and 64108 Fabric Interconnects.
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1295,34 +904,20 @@ This functionality is not supported on Cisco UCS X-Series Direct.
 * * *  
   
 ---|---  
-  * Cisco UCS Manager now provides support to configure Hybrid Slots Configuration policy for Cisco Tri-Mode 24G SAS RAID Controller w/4GB Cache (UCSC-RAID-HP) that indicates whether the RAID controller can handle U.3 drives in RAID or Direct attached modes. 
-
-  * Cisco UCS Manager uses Data Sanitization feature to erase all sensitive data, thus making extraction or recovery of data impossible on the following UCS servers: 
-
-  * Cisco UCS C220 M7, C240 M7, X210c M7, X410c M7
-
-  * Cisco UCS C220 M6, C240 M6, C225 M6, C245 M6, B200 M6, X210c M6 servers
-
-  * Cisco UCS C220 M5, C240 M5, C480 M5, C125 M5, B200 M5, B480 M5 servers
-
-  * Cisco UCS Manager supports inventory listing for PCIe Node adapters.
-
-  * Cisco UCS Manager supports TLS 1.3 protocol for HTTPS communication for improved Transport Layer Security.
-
-  * New Ethernet port error, MACsec and DCE counters are added for the adapters under statistics. 
-
-  * Starting with Cisco UCS Manager release 4.3(4a), new optimized adapter policies are available for Windows, Linux, and VMware operating systems, for the Cisco UCS VIC 1400, 14000 and 15000 series adapter. 
-
-  * Starting with Cisco UCS Manager release 4.3(4a), adapter stats collection includes the following: 
-
-  * rx_no_buffer counters of vNIC which is represented as no buffer drop packets. 
-
-  * support for PFC pause time through TxWait and RxWait counters. 
-
-  * NXOS now includes Fabric Interconnect port data-rate and PFC monitoring and is accessible through show logging onboard commands, capturing threshold crossings without duplications allowing user to monitor congestion in the Cisco UCS fabric interconnects. 
-
-  * Release 4.3(4a) qualifies the new CipherTrust KMIP server from Thales®, which is set to take over from the old SafeNet and Vormetric servers that are being phased out. The new CipherTrust KMIP server offers enhanced usability and an expanded feature set, but keeps the user experience the same. Support for new CipherTrust in Cisco UCS Manager starts with version 4.3(4a). For detailed instructions on the configuration process of the CipherTrust KMIP manager, please refer to the CipherTrust Manager user guide provided by Thales®. 
-
+* Cisco UCS Manager now provides support to configure Hybrid Slots Configuration policy for Cisco Tri-Mode 24G SAS RAID Controller w/4GB Cache (UCSC-RAID-HP) that indicates whether the RAID controller can handle U.3 drives in RAID or Direct attached modes. 
+* Cisco UCS Manager uses Data Sanitization feature to erase all sensitive data, thus making extraction or recovery of data impossible on the following UCS servers: 
+* Cisco UCS C220 M7, C240 M7, X210c M7, X410c M7
+* Cisco UCS C220 M6, C240 M6, C225 M6, C245 M6, B200 M6, X210c M6 servers
+* Cisco UCS C220 M5, C240 M5, C480 M5, C125 M5, B200 M5, B480 M5 servers
+* Cisco UCS Manager supports inventory listing for PCIe Node adapters.
+* Cisco UCS Manager supports TLS 1.3 protocol for HTTPS communication for improved Transport Layer Security.
+* New Ethernet port error, MACsec and DCE counters are added for the adapters under statistics. 
+* Starting with Cisco UCS Manager release 4.3(4a), new optimized adapter policies are available for Windows, Linux, and VMware operating systems, for the Cisco UCS VIC 1400, 14000 and 15000 series adapter. 
+* Starting with Cisco UCS Manager release 4.3(4a), adapter stats collection includes the following: 
+* rx_no_buffer counters of vNIC which is represented as no buffer drop packets. 
+* support for PFC pause time through TxWait and RxWait counters. 
+* NXOS now includes Fabric Interconnect port data-rate and PFC monitoring and is accessible through show logging onboard commands, capturing threshold crossings without duplications allowing user to monitor congestion in the Cisco UCS fabric interconnects. 
+* Release 4.3(4a) qualifies the new CipherTrust KMIP server from Thales®, which is set to take over from the old SafeNet and Vormetric servers that are being phased out. The new CipherTrust KMIP server offers enhanced usability and an expanded feature set, but keeps the user experience the same. Support for new CipherTrust in Cisco UCS Manager starts with version 4.3(4a). For detailed instructions on the configuration process of the CipherTrust KMIP manager, please refer to the CipherTrust Manager user guide provided by Thales®. 
 
 ### New Software Feature in Release 4.3(3c)
 
@@ -1330,57 +925,38 @@ Cisco UCS Manager is enhanced to better handle high power demand during discover
 
 ### New Software Feature in Release 4.3(2b)
 
-  * Beginning with release 4.3(2b), Cisco UCS Manager introduces support for Secure Boot on the following Virtual Interface Cards (VIC) on Cisco UCS C-Series and X-Series servers: 
-
-  * Cisco UCS VIC 15420
-
-  * Cisco UCS VIC 15422
-
-  * Cisco UCS VIC 15235
-
-  * Cisco UCS VIC 15425
+* Beginning with release 4.3(2b), Cisco UCS Manager introduces support for Secure Boot on the following Virtual Interface Cards (VIC) on Cisco UCS C-Series and X-Series servers: 
+* Cisco UCS VIC 15420
+* Cisco UCS VIC 15422
+* Cisco UCS VIC 15235
+* Cisco UCS VIC 15425
 
 Secure Boot is a trustworthy technology that ensures the code running on Cisco hardware platforms is authentic, unmodified, and operational as intended. The Secure Boot uses a trust anchor module (TAm) in hardware to verify the bootloader code. It also protects the boot code in hardware and checks digitally signed images to verify that only genuine, unmodified code boots on a Cisco device. 
 
-  * Added Windows NENIC Driver support to enable Receive Side Scaling Version 2 (RSSv2) for Cisco UCS VIC 15000 series adapters. When RSS is enabled on the VIC, multiple hardware receive queues can be configured on the Physical Function (PF). With RSSv2, the VIC adapters can now support up to 16 queues (4x). RSSv2 is supported on the following servers: 
-
-  * Cisco UCS B-Series and C-Series M6 servers
-
-  * Cisco UCS C-Series and X-Series M7 servers
-
-  * Added support for NVMeOF using RDMA on Cisco UCS VIC 14000 series adapters.
-
-  * Support for Cisco UCS VIC Q-in-Q tunneling configuration. A Cisco UCS Manager based Q-in-Q (802.1Q-in-802.1Q) tunnel originating from Cisco UCS VIC allows to segregate the traffic in the Cisco UCS infrastructure, and helps to expand the VLAN space through the double-tagging of packets in hypervisor or non-hypervisor environments. 
-
-  * Added support for migrating Cisco UCS 6400 Series Fabric Interconnect to Cisco UCS 6536 Fabric Interconnect:
-
-  * Support for UCS-FI-6454 to UCS-FI-6536 migration
-
-  * Support for UCS-FI-64108 to UCS-FI-6536 migration
-
-  * Support for UCS-FI-6454 to UCS-FI-6536 migration with UCS Central
-
-  * Support for UCS-FI-64108 to UCS-FI-6536 migration with UCS Central
-
-  * Cisco UCS Manager introduces Netflow Monitoring support for Cisco UCS 6400 and 6500 Series Fabric Interconnects.
+* Added Windows NENIC Driver support to enable Receive Side Scaling Version 2 (RSSv2) for Cisco UCS VIC 15000 series adapters. When RSS is enabled on the VIC, multiple hardware receive queues can be configured on the Physical Function (PF). With RSSv2, the VIC adapters can now support up to 16 queues (4x). RSSv2 is supported on the following servers: 
+* Cisco UCS B-Series and C-Series M6 servers
+* Cisco UCS C-Series and X-Series M7 servers
+* Added support for NVMeOF using RDMA on Cisco UCS VIC 14000 series adapters.
+* Support for Cisco UCS VIC Q-in-Q tunneling configuration. A Cisco UCS Manager based Q-in-Q (802.1Q-in-802.1Q) tunnel originating from Cisco UCS VIC allows to segregate the traffic in the Cisco UCS infrastructure, and helps to expand the VLAN space through the double-tagging of packets in hypervisor or non-hypervisor environments. 
+* Added support for migrating Cisco UCS 6400 Series Fabric Interconnect to Cisco UCS 6536 Fabric Interconnect:
+* Support for UCS-FI-6454 to UCS-FI-6536 migration
+* Support for UCS-FI-64108 to UCS-FI-6536 migration
+* Support for UCS-FI-6454 to UCS-FI-6536 migration with UCS Central
+* Support for UCS-FI-64108 to UCS-FI-6536 migration with UCS Central
+* Cisco UCS Manager introduces Netflow Monitoring support for Cisco UCS 6400 and 6500 Series Fabric Interconnects.
 
 NetFlow monitoring includes both Host Receive and Transmit Direction Monitor. On Cisco UCS 6400 series and Cisco UCS 6536 Fabric Interconnects, NetFlow monitoring session applied to the Host Receive Direction Monitor will enable both transmit and receive monitoring, while NetFlow monitoring session applied to the Host transmit Direction Monitor is a NO-OP. 
 
-  * Cisco UCS Manager introduces Policy Driven Chassis Group Cap for Cisco UCSX-9508 Chassis.
-
-  * SR-IOV support for ESXi on Cisco UCS VIC 15000 Series with Cisco UCS M6/M7 B-series, C-series and X-series servers and on Cisco UCS VIC 1400/14000 series for Cisco UCS M5/M6 B-series and C-series servers. 
-
-  * QSFP - 100G SR 1.2 support with Cisco UCS VIC 1400 and 15000 Series.
-
-  * Cisco UCS Manager now supports soft check for IIS license.
+* Cisco UCS Manager introduces Policy Driven Chassis Group Cap for Cisco UCSX-9508 Chassis.
+* SR-IOV support for ESXi on Cisco UCS VIC 15000 Series with Cisco UCS M6/M7 B-series, C-series and X-series servers and on Cisco UCS VIC 1400/14000 series for Cisco UCS M5/M6 B-series and C-series servers. 
+* QSFP - 100G SR 1.2 support with Cisco UCS VIC 1400 and 15000 Series.
+* Cisco UCS Manager now supports soft check for IIS license.
 
 Cisco UCS X-Series Servers and Cisco M7 Servers require a valid Cisco Intersight license and a connection to Intersight to remain compliant. If Cisco UCS Manager 4.3(2) detects Cisco UCS X-Series or any M7 hardware, it checks to ensure that the domain is claimed with a Cisco Intersight instance (SaaS, Connected Virtual Appliance, or Private Virtual Appliance). If the domain is not claimed within Cisco Intersight (where the Cisco Intersight licenses are managed), Cisco UCS Manager displays a major fault to notify you of this requirement so that you can take necessary steps to move to a compliant deployment. 
 
-  * Cisco UCS Manager also supports BMC Auto Upgrade functionality—If you migrate Cisco UCS X-Series Servers running Cisco IMC release lower than 4.3(2b) from IMM to Cisco UCS Manager managed mode, then Cisco UCS Manager auto upgrades Cisco IMC version to 4.3(2b). 
-
-  * User Acknowledgment during Cisco UCS infra upgrade through Auto-Install is enhanced for better user experience:
-        
-        Reboot Now
+* Cisco UCS Manager also supports BMC Auto Upgrade functionality—If you migrate Cisco UCS X-Series Servers running Cisco IMC release lower than 4.3(2b) from IMM to Cisco UCS Manager managed mode, then Cisco UCS Manager auto upgrades Cisco IMC version to 4.3(2b). 
+* User Acknowledgment during Cisco UCS infra upgrade through Auto-Install is enhanced for better user experience:
+[code] Reboot Now
         
         Are you sure you want to **apply** the changes **immediately**?
         Acknowledging will cause a reboot of the Primary Fabric Interconnect.  
@@ -1392,7 +968,7 @@ Cisco UCS X-Series Servers and Cisco M7 Servers require a valid Cisco Intersight
                  • No unexpected faults that may indicate a potential error, exist.
         
         Click Yes to apply the pending changes.
-
+[/code]
 
 ### Security Fixes
 
@@ -1410,8 +986,7 @@ There are no security fixes in release 4.3(6e).
 
 The Cisco UCS B-Series M6 Blade Servers, UCS C-Series M6 Rack Servers, and UCS X-Series M6 Compute Nodes include an Intel® CPU that is affected by the vulnerability identified by the following Common Vulnerability and Exposures (CVE) ID: 
 
-  * CVE-2025-20067—Observable timing discrepancy in firmware for some Intel® CSME and Intel® SPS may allow a privileged user to potentially enable information disclosure via local access. 
-
+* CVE-2025-20067—Observable timing discrepancy in firmware for some Intel® CSME and Intel® SPS may allow a privileged user to potentially enable information disclosure via local access. 
 
 The affected third-party software component has been upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
 
@@ -1419,18 +994,12 @@ The affected third-party software component has been upgraded to a version that 
 
 The Cisco products UCS C-Series M7 Rack Servers and UCS X-Series M7 Compute Nodes include an Intel® CPU that is affected by the vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2025-21096—Improper buffer restrictions in the firmware for some Intel® TDX may allow a privileged user to potentially enable escalation of privilege via local access. 
-
-  * CVE-2025-20053—Improper buffer restrictions for some Intel® Xeon® processor firmware with SGX enabled may allow a privileged user to potentially enable escalation of privilege via local access. 
-
-  * CVE-2025-24305—Insufficient control flow management in the Alias Checking Trusted Module (ACTM) firmware for some Intel® Xeon® processors may allow a privileged user to potentially enable escalation of privilege via local access. 
-
-  * CVE-2025-20613—Predictable Seed in Pseudo-Random Number Generator (PRNG) in the firmware for some Intel® TDX may allow an authenticated user to potentially enable information disclosure via local access. 
-
-  * CVE-2025-21090—Missing reference to active allocated resource for some Intel® Xeon® processors may allow an authenticated user to potentially enable denial of service via local access. 
-
-  * CVE-2025-22853—Improper synchronization in the firmware for some Intel® TDX may allow a privileged user to potentially enable escalation of privilege via local access. 
-
+* CVE-2025-21096—Improper buffer restrictions in the firmware for some Intel® TDX may allow a privileged user to potentially enable escalation of privilege via local access. 
+* CVE-2025-20053—Improper buffer restrictions for some Intel® Xeon® processor firmware with SGX enabled may allow a privileged user to potentially enable escalation of privilege via local access. 
+* CVE-2025-24305—Insufficient control flow management in the Alias Checking Trusted Module (ACTM) firmware for some Intel® Xeon® processors may allow a privileged user to potentially enable escalation of privilege via local access. 
+* CVE-2025-20613—Predictable Seed in Pseudo-Random Number Generator (PRNG) in the firmware for some Intel® TDX may allow an authenticated user to potentially enable information disclosure via local access. 
+* CVE-2025-21090—Missing reference to active allocated resource for some Intel® Xeon® processors may allow an authenticated user to potentially enable denial of service via local access. 
+* CVE-2025-22853—Improper synchronization in the firmware for some Intel® TDX may allow a privileged user to potentially enable escalation of privilege via local access. 
 
 The affected third-party software component has been upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
 
@@ -1440,8 +1009,7 @@ The affected third-party software component has been upgraded to a version that 
 
 The Cisco UCS B-Series M5/M6 Blade Servers, UCS C-Series M5/M6 Rack Servers, and UCS X-Series M6 Compute Nodes include an Intel CPU that is affected by the vulnerability identified by the following Common Vulnerability and Exposures (CVE) ID: 
 
-  * CVE-2024-45332—Exposure of sensitive information caused by shared microarchitectural predictor state that influences transient execution in the indirect branch predictors for some Intel® Processors may allow an authenticated user to potentially enable information disclosure via local access. 
-
+* CVE-2024-45332—Exposure of sensitive information caused by shared microarchitectural predictor state that influences transient execution in the indirect branch predictors for some Intel® Processors may allow an authenticated user to potentially enable information disclosure via local access. 
 
 The affected third-party software component has been upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
 
@@ -1449,12 +1017,9 @@ The affected third-party software component has been upgraded to a version that 
 
 The Cisco products UCS C-Series M7 Rack Servers and UCS X-Series M7 Compute Nodes include an Intel CPU that is affected by the vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2025-20103—Insufficient resource pool in the core management mechanism for some Intel® Processors may allow an authenticated user to potentially enable denial of service via local access. 
-
-  * CVE-2025-20054—Uncaught exception in the core management mechanism for some Intel® Processors may allow an authenticated user to potentially enable denial of service through local access. 
-
-  * CVE-2024-45332—Exposure of sensitive information caused by shared microarchitectural predictor state that influences transient execution in the indirect branch predictors for some Intel® Processors may allow an authenticated user to potentially enable information disclosure via local access. 
-
+* CVE-2025-20103—Insufficient resource pool in the core management mechanism for some Intel® Processors may allow an authenticated user to potentially enable denial of service via local access. 
+* CVE-2025-20054—Uncaught exception in the core management mechanism for some Intel® Processors may allow an authenticated user to potentially enable denial of service through local access. 
+* CVE-2024-45332—Exposure of sensitive information caused by shared microarchitectural predictor state that influences transient execution in the indirect branch predictors for some Intel® Processors may allow an authenticated user to potentially enable information disclosure via local access. 
 
 ## Security Fixes in Release 4.3(6b)
 
@@ -1466,96 +1031,51 @@ There are no security fixes in release 4.3(6b).
 
 Cisco UCS Manager includes Third-party Software that is affected by the vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2010-5298—Race condition in the ssl3_read_bytes function in s3_pkt.c in OpenSSL through 1.0.1g, when SSL_MODE_RELEASE_BUFFERS is enabled, allows remote attackers to inject data across sessions or cause a denial of service (use-after-free and parsing error) through an SSL connection in a multithreaded environment. 
-
-  * CVE-2011-0014—ssl/t1_lib.c in OpenSSL 0.9.8h through 0.9.8q and 1.0.0 through 1.0.0c allows remote attackers to cause a denial of service (crash), and possibly obtain sensitive information in applications that use OpenSSL, through a malformed ClientHello handshake message that triggers an out-of-bounds memory access, also called OCSP stapling vulnerability. 
-
-  * CVE-2011-1945—The elliptic curve cryptography (ECC) subsystem in OpenSSL 1.0.0d and earlier, when the Elliptic Curve Digital Signature Algorithm (ECDSA) is used for the ECDHE_ECDSA cipher suite, does not properly implement curves over binary fields, which makes it easier for context-dependent attackers to determine private keys through a timing attack and a lattice calculation. 
-
-  * CVE-2011-3207—crypto/x509/x509_vfy.c in OpenSSL 1.0.x before 1.0.0e does not initialize certain structure members, which makes it easier for remote attackers to bypass CRL validation by using a nextUpdate value corresponding to a time in the past. 
-
-  * CVE-2011-3210—The ephemeral ECDH ciphersuite functionality in OpenSSL 0.9.8 through 0.9.8r and 1.0.x before 1.0.0e does not ensure thread safety during processing of handshake messages from clients, which allows remote attackers to cause a denial of service (daemon crash) through out-of-order messages that violate the TLS protocol. 
-
-  * CVE-2011-4108—The DTLS implementation in OpenSSL before 0.9.8s and 1.x before 1.0.0f performs a MAC check only if certain padding is valid, which makes it easier for remote attackers to recover plaintext through a padding oracle attack. 
-
-  * CVE-2011-4576—The SSL 3.0 implementation in OpenSSL before 0.9.8s and 1.x before 1.0.0f does not properly initialize data structures for block cipher padding, which might allow remote attackers to obtain sensitive information by decrypting the padding data sent by an SSL peer. 
-
-  * CVE-2011-4577—OpenSSL before 0.9.8s and 1.x before 1.0.0f, when RFC 3779 support is enabled, allows remote attackers to cause a denial of service (assertion failure) through an X.509 certificate containing certificate-extension data associated with IP address blocks or Autonomous System (AS) identifiers. 
-
-  * CVE-2011-4619—The Server Gated Cryptography (SGC) implementation in OpenSSL before 0.9.8s and 1.x before 1.0.0f does not properly handle handshake restarts, which allows remote attackers to cause a denial of service (CPU consumption) through unspecified vectors. 
-
-  * CVE-2012-0027—The GOST ENGINE in OpenSSL before 1.0.0f does not properly handle invalid parameters for the GOST block cipher, which allows remote attackers to cause a denial of service (daemon crash) through crafted data from a TLS client. 
-
-  * CVE-2012-0884—The implementation of Cryptographic Message Syntax (CMS) and PKCS #7 in OpenSSL before 0.9.8u and 1.x before 1.0.0h does not properly restrict certain oracle behavior, which makes it easier for context-dependent attackers to decrypt data through a Million Message Attack (MMA) adaptive chosen ciphertext attack. 
-
-  * CVE-2012-1165—The mime_param_cmp function in crypto/asn1/asn_mime.c in OpenSSL before 0.9.8u and 1.x before 1.0.0h allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) through a crafted S/MIME message, a different vulnerability than CVE-2006-7250. 
-
-  * CVE-2012-2110—The asn1_d2i_read_bio function in crypto/asn1/a_d2i_fp.c in OpenSSL before 0.9.8v, 1.0.0 before 1.0.0i, and 1.0.1 before 1.0.1a does not properly interpret integer data, which allows remote attackers to conduct buffer overflow attacks, and cause a denial of service (memory corruption) or possibly have unspecified other impact, through crafted DER data, as demonstrated by an X.509 certificate or an RSA public key. 
-
-  * CVE-2012-2333—Integer underflow in OpenSSL before 0.9.8x, 1.0.0 before 1.0.0j, and 1.0.1 before 1.0.1c, when TLS 1.1, TLS 1.2, or DTLS is used with CBC encryption, allows remote attackers to cause a denial of service (buffer over-read) or possibly have unspecified other impact through a crafted TLS packet that is not properly handled during a certain explicit IV calculation. 
-
-  * CVE-2013-0166—OpenSSL before 0.9.8y, 1.0.0 before 1.0.0k, and 1.0.1 before 1.0.1d does not properly perform signature verification for OCSP responses, which allows remote OCSP servers to cause a denial of service (NULL pointer dereference and application crash) through an invalid key. 
-
-  * CVE-2013-0169—The TLS protocol 1.1 and 1.2 and the DTLS protocol 1.0 and 1.2, as used in OpenSSL, OpenJDK, PolarSSL, and other products, do not properly consider timing side-channel attacks on a MAC check requirement during the processing of malformed CBC padding, which allows remote attackers to conduct distinguishing attacks and plaintext-recovery attacks through statistical analysis of timing data for crafted packets, also called the Lucky Thirteen issue. 
-
-  * CVE-2013-6449—The ssl_get_algorithm2 function in ssl/s3_lib.c in OpenSSL before 1.0.2 obtains a certain version number from an incorrect data structure, which allows remote attackers to cause a denial of service (daemon crash) through crafted traffic from a TLS 1.2 client. 
-
-  * CVE-2013-6450—The DTLS retransmission implementation in OpenSSL 1.0.0 before 1.0.0l and 1.0.1 before 1.0.1f does not properly maintain data structures for digest and encryption contexts, which might allow man-in-the-middle attackers to trigger the use of a different context and cause a denial of service (application crash) by interfering with packet delivery, related to ssl/d1_both.c and ssl/t1_enc.c. 
-
-  * CVE-2014-0076—The Montgomery ladder implementation in OpenSSL through 1.0.0l does not ensure that certain swap operations have a constant-time behavior, which makes it easier for local users to obtain ECDSA nonces through a FLUSH+RELOAD cache side-channel attack. 
-
-  * CVE-2014-0195—The dtls1_reassemble_fragment function in d1_both.c in OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h does not properly validate fragment lengths in DTLS ClientHello messages, which allows remote attackers to execute arbitrary code or cause a denial of service (buffer overflow and application crash) through a long non-initial fragment. 
-
-  * CVE-2014-0198—The do_ssl3_write function in s3_pkt.c in OpenSSL 1.x through 1.0.1g, when SSL_MODE_RELEASE_BUFFERS is enabled, does not properly manage a buffer pointer during certain recursive calls, which allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) through vectors that trigger an alert condition. 
-
-  * CVE-2014-0221—The dtls1_get_message_fragment function in d1_both.c in OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h allows remote attackers to cause a denial of service (recursion and client crash) through a DTLS hello message in an invalid DTLS handshake. 
-
-  * CVE-2014-0224—OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h does not properly restrict processing of ChangeCipherSpec messages, which allows man-in-the-middle attackers to trigger use of a zero-length master key in certain OpenSSL-to-OpenSSL communications, and consequently hijack sessions or obtain sensitive information, through a crafted TLS handshake, also called the CCS Injection vulnerability. 
-
-  * CVE-2014-3470—The ssl3_send_client_key_exchange function in s3_clnt.c in OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h, when an anonymous ECDH cipher suite is used, allows remote attackers to cause a denial of service (NULL pointer dereference and client crash) by triggering a NULL certificate value. 
-
-  * CVE-2014-3505—Double free vulnerability in d1_both.c in the DTLS implementation in OpenSSL 0.9.8 before 0.9.8zb, 1.0.0 before 1.0.0n, and 1.0.1 before 1.0.1i allows remote attackers to cause a denial of service (application crash) through crafted DTLS packets that trigger an error condition. 
-
-  * CVE-2014-3506—d1_both.c in the DTLS implementation in OpenSSL 0.9.8 before 0.9.8zb, 1.0.0 before 1.0.0n, and 1.0.1 before 1.0.1i allows remote attackers to cause a denial of service (memory consumption) through crafted DTLS handshake messages that trigger memory allocations corresponding to large length values. 
-
-  * CVE-2014-3507—Memory leak in d1_both.c in the DTLS implementation in OpenSSL 0.9.8 before 0.9.8zb, 1.0.0 before 1.0.0n, and 1.0.1 before 1.0.1i allows remote attackers to cause a denial of service (memory consumption) through zero-length DTLS fragments that trigger improper handling of the return value of a certain insert function. 
-
-  * CVE-2014-3508—The OBJ_obj2txt function in crypto/objects/obj_dat.c in OpenSSL 0.9.8 before 0.9.8zb, 1.0.0 before 1.0.0n, and 1.0.1 before 1.0.1i, when pretty printing is used, does not ensure the presence of '\0' characters, which allows context-dependent attackers to obtain sensitive information from process stack memory by reading output from X509_name_oneline, X509_name_print_ex, and unspecified other functions. 
-
-  * CVE-2014-3509—Race condition in the ssl_parse_serverhello_tlsext function in t1_lib.c in OpenSSL 1.0.0 before 1.0.0n and 1.0.1 before 1.0.1i, when multithreading and session resumption are used, allows remote SSL servers to cause a denial of service (memory overwrite and client application crash) or possibly have unspecified other impact by sending Elliptic Curve (EC) Supported Point Formats Extension data. 
-
-  * CVE-2014-3510—The ssl3_send_client_key_exchange function in s3_clnt.c in OpenSSL 0.9.8 before 0.9.8zb, 1.0.0 before 1.0.0n, and 1.0.1 before 1.0.1i allows remote DTLS servers to cause a denial of service (NULL pointer dereference and client application crash) through a crafted handshake message in conjunction with a (1) anonymous DH or (2) anonymous ECDH ciphersuite. 
-
-  * CVE-2014-3511—The ssl23_get_client_hello function in s23_srvr.c in OpenSSL 1.0.1 before 1.0.1i allows man-in-the-middle attackers to force the use of TLS 1.0 by triggering ClientHello message fragmentation in communication between a client and server that both support later TLS versions, related to a protocol downgrade issue. 
-
-  * CVE-2014-3512—Multiple buffer overflows in crypto/srp/srp_lib.c in the SRP implementation in OpenSSL 1.0.1 before 1.0.1i allow remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact through an invalid SRP (1) g, (2) A, or (3) B parameter. 
-
-  * CVE-2014-3566—The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other products, uses nondeterministic CBC padding, which makes it easier for man-in-the-middle attackers to obtain cleartext data through a padding-oracle attack, aka the POODLE issue. 
-
-  * CVE-2014-3567—Memory leak in the tls_decrypt_ticket function in t1_lib.c in OpenSSL before 0.9.8zc, 1.0.0 before 1.0.0o, and 1.0.1 before 1.0.1j allows remote attackers to cause a denial of service (memory consumption) through a crafted session ticket that triggers an integrity-check failure. 
-
-  * CVE-2014-3568—OpenSSL before 0.9.8zc, 1.0.0 before 1.0.0o, and 1.0.1 before 1.0.1j does not properly enforce the no-ssl3 build option, which allows remote attackers to bypass intended access restrictions through an SSL 3.0 handshake, related to s23_clnt.c and s23_srvr.c. 
-
-  * CVE-2014-3570—The BN_sqr implementation in OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k does not properly calculate the square of a BIGNUM value, which might make it easier for remote attackers to defeat cryptographic protection mechanisms through unspecified vectors, related to crypto/bn/asm/mips.pl, crypto/bn/asm/x86_64-gcc.c, and crypto/bn/bn_asm.c. 
-
-  * CVE-2014-3571—OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) through a crafted DTLS message that is processed with a different read operation for the handshake header than for the handshake body, related to the dtls1_get_record function in d1_pkt.c and the ssl3_read_n function in s3_pkt.c. 
-
-  * CVE-2014-3572—The ssl3_get_key_exchange function in s3_clnt.c in OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k allows remote SSL servers to conduct ECDHE-to-ECDH downgrade attacks and trigger a loss of forward secrecy by omitting the ServerKeyExchange message. 
-
-  * CVE-2014-8176—The dtls1_clear_queues function in ssl/d1_lib.c in OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h frees data structures without considering that application data can arrive between a ChangeCipherSpec message and a Finished message, which allows remote DTLS peers to cause a denial of service (memory corruption and application crash) or possibly have unspecified other impact through unexpected application data. 
-
-  * CVE-2014-8275—OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k does not enforce certain constraints on certificate data, which allows remote attackers to defeat a fingerprint-based certificate-blacklist protection mechanism by including crafted data within a certificate's unsigned portion, related to crypto/asn1/a_verify.c, crypto/dsa/dsa_asn1.c, crypto/ecdsa/ecs_vrf.c, and crypto/x509/x_all.c. 
-
-  * CVE-2015-0204—The ssl3_get_key_exchange function in s3_clnt.c in OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k allows remote SSL servers to conduct RSA-to-EXPORT_RSA downgrade attacks and facilitate brute-force decryption by offering a weak ephemeral RSA key in a noncompliant role, related to the FREAK issue. NOTE: the scope of this CVE is only client code based on OpenSSL, not EXPORT_RSA issues associated with servers or other TLS implementations. 
-
-  * CVE-2015-0205—The ssl3_get_cert_verify function in s3_srvr.c in OpenSSL 1.0.0 before 1.0.0p and 1.0.1 before 1.0.1k accepts client authentication with a Diffie-Hellman (DH) certificate without requiring a CertificateVerify message, which allows remote attackers to obtain access without knowledge of a private key through crafted TLS Handshake Protocol traffic to a server that recognizes a Certification Authority with DH support. 
-
-  * CVE-2015-0206—Memory leak in the dtls1_buffer_record function in d1_pkt.c in OpenSSL 1.0.0 before 1.0.0p and 1.0.1 before 1.0.1k allows remote attackers to cause a denial of service (memory consumption) by sending many duplicate records for the next epoch, leading to failure of replay detection. 
-
-  * CVE-2015-0209—Use-after-free vulnerability in the d2i_ECPrivateKey function in crypto/ec/ec_asn1.c in OpenSSL before 0.9.8zf, 1.0.0 before 1.0.0r, 1.0.1 before 1.0.1m, and 1.0.2 before 1.0.2a might allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly have unspecified other impact through a malformed Elliptic Curve (EC) private-key file that is improperly handled during import. 
-
-  * CVE-2015-0286—The ASN1_TYPE_cmp function in crypto/asn1/a_type.c in OpenSSL before 0.9.8zf, 1.0.0 before 1.0.0r, 1.0.1 before 1.0.1m, and 1.0.2 before 1.0.2a does not properly perform boolean-type comparisons, which allows remote attackers to cause a denial of service (invalid read operation and application crash) through a crafted X.509 certificate to an endpoint that uses the certificate-verification feature. 
-
+* CVE-2010-5298—Race condition in the ssl3_read_bytes function in s3_pkt.c in OpenSSL through 1.0.1g, when SSL_MODE_RELEASE_BUFFERS is enabled, allows remote attackers to inject data across sessions or cause a denial of service (use-after-free and parsing error) through an SSL connection in a multithreaded environment. 
+* CVE-2011-0014—ssl/t1_lib.c in OpenSSL 0.9.8h through 0.9.8q and 1.0.0 through 1.0.0c allows remote attackers to cause a denial of service (crash), and possibly obtain sensitive information in applications that use OpenSSL, through a malformed ClientHello handshake message that triggers an out-of-bounds memory access, also called OCSP stapling vulnerability. 
+* CVE-2011-1945—The elliptic curve cryptography (ECC) subsystem in OpenSSL 1.0.0d and earlier, when the Elliptic Curve Digital Signature Algorithm (ECDSA) is used for the ECDHE_ECDSA cipher suite, does not properly implement curves over binary fields, which makes it easier for context-dependent attackers to determine private keys through a timing attack and a lattice calculation. 
+* CVE-2011-3207—crypto/x509/x509_vfy.c in OpenSSL 1.0.x before 1.0.0e does not initialize certain structure members, which makes it easier for remote attackers to bypass CRL validation by using a nextUpdate value corresponding to a time in the past. 
+* CVE-2011-3210—The ephemeral ECDH ciphersuite functionality in OpenSSL 0.9.8 through 0.9.8r and 1.0.x before 1.0.0e does not ensure thread safety during processing of handshake messages from clients, which allows remote attackers to cause a denial of service (daemon crash) through out-of-order messages that violate the TLS protocol. 
+* CVE-2011-4108—The DTLS implementation in OpenSSL before 0.9.8s and 1.x before 1.0.0f performs a MAC check only if certain padding is valid, which makes it easier for remote attackers to recover plaintext through a padding oracle attack. 
+* CVE-2011-4576—The SSL 3.0 implementation in OpenSSL before 0.9.8s and 1.x before 1.0.0f does not properly initialize data structures for block cipher padding, which might allow remote attackers to obtain sensitive information by decrypting the padding data sent by an SSL peer. 
+* CVE-2011-4577—OpenSSL before 0.9.8s and 1.x before 1.0.0f, when RFC 3779 support is enabled, allows remote attackers to cause a denial of service (assertion failure) through an X.509 certificate containing certificate-extension data associated with IP address blocks or Autonomous System (AS) identifiers. 
+* CVE-2011-4619—The Server Gated Cryptography (SGC) implementation in OpenSSL before 0.9.8s and 1.x before 1.0.0f does not properly handle handshake restarts, which allows remote attackers to cause a denial of service (CPU consumption) through unspecified vectors. 
+* CVE-2012-0027—The GOST ENGINE in OpenSSL before 1.0.0f does not properly handle invalid parameters for the GOST block cipher, which allows remote attackers to cause a denial of service (daemon crash) through crafted data from a TLS client. 
+* CVE-2012-0884—The implementation of Cryptographic Message Syntax (CMS) and PKCS #7 in OpenSSL before 0.9.8u and 1.x before 1.0.0h does not properly restrict certain oracle behavior, which makes it easier for context-dependent attackers to decrypt data through a Million Message Attack (MMA) adaptive chosen ciphertext attack. 
+* CVE-2012-1165—The mime_param_cmp function in crypto/asn1/asn_mime.c in OpenSSL before 0.9.8u and 1.x before 1.0.0h allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) through a crafted S/MIME message, a different vulnerability than CVE-2006-7250. 
+* CVE-2012-2110—The asn1_d2i_read_bio function in crypto/asn1/a_d2i_fp.c in OpenSSL before 0.9.8v, 1.0.0 before 1.0.0i, and 1.0.1 before 1.0.1a does not properly interpret integer data, which allows remote attackers to conduct buffer overflow attacks, and cause a denial of service (memory corruption) or possibly have unspecified other impact, through crafted DER data, as demonstrated by an X.509 certificate or an RSA public key. 
+* CVE-2012-2333—Integer underflow in OpenSSL before 0.9.8x, 1.0.0 before 1.0.0j, and 1.0.1 before 1.0.1c, when TLS 1.1, TLS 1.2, or DTLS is used with CBC encryption, allows remote attackers to cause a denial of service (buffer over-read) or possibly have unspecified other impact through a crafted TLS packet that is not properly handled during a certain explicit IV calculation. 
+* CVE-2013-0166—OpenSSL before 0.9.8y, 1.0.0 before 1.0.0k, and 1.0.1 before 1.0.1d does not properly perform signature verification for OCSP responses, which allows remote OCSP servers to cause a denial of service (NULL pointer dereference and application crash) through an invalid key. 
+* CVE-2013-0169—The TLS protocol 1.1 and 1.2 and the DTLS protocol 1.0 and 1.2, as used in OpenSSL, OpenJDK, PolarSSL, and other products, do not properly consider timing side-channel attacks on a MAC check requirement during the processing of malformed CBC padding, which allows remote attackers to conduct distinguishing attacks and plaintext-recovery attacks through statistical analysis of timing data for crafted packets, also called the Lucky Thirteen issue. 
+* CVE-2013-6449—The ssl_get_algorithm2 function in ssl/s3_lib.c in OpenSSL before 1.0.2 obtains a certain version number from an incorrect data structure, which allows remote attackers to cause a denial of service (daemon crash) through crafted traffic from a TLS 1.2 client. 
+* CVE-2013-6450—The DTLS retransmission implementation in OpenSSL 1.0.0 before 1.0.0l and 1.0.1 before 1.0.1f does not properly maintain data structures for digest and encryption contexts, which might allow man-in-the-middle attackers to trigger the use of a different context and cause a denial of service (application crash) by interfering with packet delivery, related to ssl/d1_both.c and ssl/t1_enc.c. 
+* CVE-2014-0076—The Montgomery ladder implementation in OpenSSL through 1.0.0l does not ensure that certain swap operations have a constant-time behavior, which makes it easier for local users to obtain ECDSA nonces through a FLUSH+RELOAD cache side-channel attack. 
+* CVE-2014-0195—The dtls1_reassemble_fragment function in d1_both.c in OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h does not properly validate fragment lengths in DTLS ClientHello messages, which allows remote attackers to execute arbitrary code or cause a denial of service (buffer overflow and application crash) through a long non-initial fragment. 
+* CVE-2014-0198—The do_ssl3_write function in s3_pkt.c in OpenSSL 1.x through 1.0.1g, when SSL_MODE_RELEASE_BUFFERS is enabled, does not properly manage a buffer pointer during certain recursive calls, which allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) through vectors that trigger an alert condition. 
+* CVE-2014-0221—The dtls1_get_message_fragment function in d1_both.c in OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h allows remote attackers to cause a denial of service (recursion and client crash) through a DTLS hello message in an invalid DTLS handshake. 
+* CVE-2014-0224—OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h does not properly restrict processing of ChangeCipherSpec messages, which allows man-in-the-middle attackers to trigger use of a zero-length master key in certain OpenSSL-to-OpenSSL communications, and consequently hijack sessions or obtain sensitive information, through a crafted TLS handshake, also called the CCS Injection vulnerability. 
+* CVE-2014-3470—The ssl3_send_client_key_exchange function in s3_clnt.c in OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h, when an anonymous ECDH cipher suite is used, allows remote attackers to cause a denial of service (NULL pointer dereference and client crash) by triggering a NULL certificate value. 
+* CVE-2014-3505—Double free vulnerability in d1_both.c in the DTLS implementation in OpenSSL 0.9.8 before 0.9.8zb, 1.0.0 before 1.0.0n, and 1.0.1 before 1.0.1i allows remote attackers to cause a denial of service (application crash) through crafted DTLS packets that trigger an error condition. 
+* CVE-2014-3506—d1_both.c in the DTLS implementation in OpenSSL 0.9.8 before 0.9.8zb, 1.0.0 before 1.0.0n, and 1.0.1 before 1.0.1i allows remote attackers to cause a denial of service (memory consumption) through crafted DTLS handshake messages that trigger memory allocations corresponding to large length values. 
+* CVE-2014-3507—Memory leak in d1_both.c in the DTLS implementation in OpenSSL 0.9.8 before 0.9.8zb, 1.0.0 before 1.0.0n, and 1.0.1 before 1.0.1i allows remote attackers to cause a denial of service (memory consumption) through zero-length DTLS fragments that trigger improper handling of the return value of a certain insert function. 
+* CVE-2014-3508—The OBJ_obj2txt function in crypto/objects/obj_dat.c in OpenSSL 0.9.8 before 0.9.8zb, 1.0.0 before 1.0.0n, and 1.0.1 before 1.0.1i, when pretty printing is used, does not ensure the presence of '\0' characters, which allows context-dependent attackers to obtain sensitive information from process stack memory by reading output from X509_name_oneline, X509_name_print_ex, and unspecified other functions. 
+* CVE-2014-3509—Race condition in the ssl_parse_serverhello_tlsext function in t1_lib.c in OpenSSL 1.0.0 before 1.0.0n and 1.0.1 before 1.0.1i, when multithreading and session resumption are used, allows remote SSL servers to cause a denial of service (memory overwrite and client application crash) or possibly have unspecified other impact by sending Elliptic Curve (EC) Supported Point Formats Extension data. 
+* CVE-2014-3510—The ssl3_send_client_key_exchange function in s3_clnt.c in OpenSSL 0.9.8 before 0.9.8zb, 1.0.0 before 1.0.0n, and 1.0.1 before 1.0.1i allows remote DTLS servers to cause a denial of service (NULL pointer dereference and client application crash) through a crafted handshake message in conjunction with a (1) anonymous DH or (2) anonymous ECDH ciphersuite. 
+* CVE-2014-3511—The ssl23_get_client_hello function in s23_srvr.c in OpenSSL 1.0.1 before 1.0.1i allows man-in-the-middle attackers to force the use of TLS 1.0 by triggering ClientHello message fragmentation in communication between a client and server that both support later TLS versions, related to a protocol downgrade issue. 
+* CVE-2014-3512—Multiple buffer overflows in crypto/srp/srp_lib.c in the SRP implementation in OpenSSL 1.0.1 before 1.0.1i allow remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact through an invalid SRP (1) g, (2) A, or (3) B parameter. 
+* CVE-2014-3566—The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other products, uses nondeterministic CBC padding, which makes it easier for man-in-the-middle attackers to obtain cleartext data through a padding-oracle attack, aka the POODLE issue. 
+* CVE-2014-3567—Memory leak in the tls_decrypt_ticket function in t1_lib.c in OpenSSL before 0.9.8zc, 1.0.0 before 1.0.0o, and 1.0.1 before 1.0.1j allows remote attackers to cause a denial of service (memory consumption) through a crafted session ticket that triggers an integrity-check failure. 
+* CVE-2014-3568—OpenSSL before 0.9.8zc, 1.0.0 before 1.0.0o, and 1.0.1 before 1.0.1j does not properly enforce the no-ssl3 build option, which allows remote attackers to bypass intended access restrictions through an SSL 3.0 handshake, related to s23_clnt.c and s23_srvr.c. 
+* CVE-2014-3570—The BN_sqr implementation in OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k does not properly calculate the square of a BIGNUM value, which might make it easier for remote attackers to defeat cryptographic protection mechanisms through unspecified vectors, related to crypto/bn/asm/mips.pl, crypto/bn/asm/x86_64-gcc.c, and crypto/bn/bn_asm.c. 
+* CVE-2014-3571—OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) through a crafted DTLS message that is processed with a different read operation for the handshake header than for the handshake body, related to the dtls1_get_record function in d1_pkt.c and the ssl3_read_n function in s3_pkt.c. 
+* CVE-2014-3572—The ssl3_get_key_exchange function in s3_clnt.c in OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k allows remote SSL servers to conduct ECDHE-to-ECDH downgrade attacks and trigger a loss of forward secrecy by omitting the ServerKeyExchange message. 
+* CVE-2014-8176—The dtls1_clear_queues function in ssl/d1_lib.c in OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h frees data structures without considering that application data can arrive between a ChangeCipherSpec message and a Finished message, which allows remote DTLS peers to cause a denial of service (memory corruption and application crash) or possibly have unspecified other impact through unexpected application data. 
+* CVE-2014-8275—OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k does not enforce certain constraints on certificate data, which allows remote attackers to defeat a fingerprint-based certificate-blacklist protection mechanism by including crafted data within a certificate's unsigned portion, related to crypto/asn1/a_verify.c, crypto/dsa/dsa_asn1.c, crypto/ecdsa/ecs_vrf.c, and crypto/x509/x_all.c. 
+* CVE-2015-0204—The ssl3_get_key_exchange function in s3_clnt.c in OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k allows remote SSL servers to conduct RSA-to-EXPORT_RSA downgrade attacks and facilitate brute-force decryption by offering a weak ephemeral RSA key in a noncompliant role, related to the FREAK issue. NOTE: the scope of this CVE is only client code based on OpenSSL, not EXPORT_RSA issues associated with servers or other TLS implementations. 
+* CVE-2015-0205—The ssl3_get_cert_verify function in s3_srvr.c in OpenSSL 1.0.0 before 1.0.0p and 1.0.1 before 1.0.1k accepts client authentication with a Diffie-Hellman (DH) certificate without requiring a CertificateVerify message, which allows remote attackers to obtain access without knowledge of a private key through crafted TLS Handshake Protocol traffic to a server that recognizes a Certification Authority with DH support. 
+* CVE-2015-0206—Memory leak in the dtls1_buffer_record function in d1_pkt.c in OpenSSL 1.0.0 before 1.0.0p and 1.0.1 before 1.0.1k allows remote attackers to cause a denial of service (memory consumption) by sending many duplicate records for the next epoch, leading to failure of replay detection. 
+* CVE-2015-0209—Use-after-free vulnerability in the d2i_ECPrivateKey function in crypto/ec/ec_asn1.c in OpenSSL before 0.9.8zf, 1.0.0 before 1.0.0r, 1.0.1 before 1.0.1m, and 1.0.2 before 1.0.2a might allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly have unspecified other impact through a malformed Elliptic Curve (EC) private-key file that is improperly handled during import. 
+* CVE-2015-0286—The ASN1_TYPE_cmp function in crypto/asn1/a_type.c in OpenSSL before 0.9.8zf, 1.0.0 before 1.0.0r, 1.0.1 before 1.0.1m, and 1.0.2 before 1.0.2a does not properly perform boolean-type comparisons, which allows remote attackers to cause a denial of service (invalid read operation and application crash) through a crafted X.509 certificate to an endpoint that uses the certificate-verification feature. 
 
 The affected third-party software component has been upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
 
@@ -1563,8 +1083,7 @@ The affected third-party software component has been upgraded to a version that 
 
 Cisco UCS M5 servers are affected by the vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2024-28047—Improper input validation in UEFI firmware for some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access. 
-
+* CVE-2024-28047—Improper input validation in UEFI firmware for some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access. 
 
 The affected third-party software component has been upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
 
@@ -1578,48 +1097,27 @@ There are no security fixes in release 4.3(5d).
 
 Cisco UCS C-Series M7 Rack Servers and Cisco UCS X-Series M7 Compute Nodes include an Intel® CPU that is affected by the vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2024-27457—Improper check for unusual or exceptional conditions in Intel(R) TDX Module firmware before version 1.5.06 may allow a privileged user to potentially enable information disclosure via local access. 
-
-  * CVE-2024-23918—Improper conditions check in some Intel(R) Xeon(R) processor memory controller configurations when using Intel(R) SGX may allow a privileged user to potentially enable escalation of privilege via local access. 
-
-  * CVE-2024-21820—Incorrect default permissions in some Intel(R) Xeon(R) processor memory controller configurations when using Intel(R) SGX may allow a privileged user to potentially enable escalation of privilege via local access. 
-
-  * CVE-2024-21853—Improper finite state machines (FSMs) in the hardware logic in some 4th and 5th Generation Intel(R) Xeon(R) Processors may allow an authorized user to potentially enable denial of service via local access. 
-
-  * CVE-2024-25565—Insufficient control flow management in UEFI firmware for some Intel(R) Xeon(R) Processors may allow an authenticated user to enable denial of service via local access. 
-
-  * CVE-2024-23984—Observable discrepancy in RAPL interface for some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access. 
-
-  * CVE-2024-24968—Improper finite state machines (FSMs) in hardware logic in some Intel(R) Processors may allow a privileged user to potentially enable a denial of service via local access. 
-
-  * CVE-2024-22185—Time-of-check Time-of-use Race Condition in some Intel(R) processors with Intel(R) ACTM may allow a privileged user to potentially enable escalation of privilege via local access. 
-
-  * CVE-2024-24985—Exposure of resource to wrong sphere in some Intel(R) processors with Intel(R) ACTM may allow a privileged user to potentially enable escalation of privilege via local access. 
-
-  * CVE-2024-21829—Improper input validation in UEFI firmware error handler for some Intel(R) Processors may allow a privileged user to potentially enable escalation of privilege via local access. 
-
-  * CVE-2024-23599—Race condition in Seamless Firmware Updates for some Intel(R) reference platforms may allow a privileged user to potentially enable denial of service via local access. 
-
-  * CVE-2024-21781—Improper input validation in UEFI firmware for some Intel(R) Processors may allow a privileged user to enable information disclosure or denial of service via local access. 
-
-  * CVE-2024-39279—Insufficient granularity of access control in UEFI firmware in some Intel(R) processors may allow an authenticated user to potentially enable denial of service via local access. 
-
-  * CVE-2024-28047—Improper input validation in UEFI firmware for some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access. 
-
-  * CVE-2024-31157—Improper initialization in UEFI firmware OutOfBandXML module in some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access. 
-
-  * CVE-2024-36293—Improper access control in the EDECCSSA user leaf function for some Intel(R) Processors with Intel(R) SGX may allow an authenticated user to potentially enable denial of service via local access. 
-
-  * CVE-2024-31068—Improper Finite State Machines (FSMs) in Hardware Logic for some Intel(R) Processors may allow privileged user to potentially enable denial of service via local access. 
-
-  * CVE-2024-25571—Improper input validation in some Intel(R) SPS firmware before SPS_E5_06.01.04.059.0 may allow a privileged user to potentially enable denial of service via local access. 
-
-  * CVE-2024-21859—Improper buffer restrictions in the UEFI firmware for some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access. 
-
-  * CVE-2024-31155—Improper buffer restrictions in the UEFI firmware for some Intel(R) Processors may allow a privileged user to potentially enable escalation of privilege via local access. 
-
-  * CVE-2024-37020—Sequence of processor instructions leads to unexpected behavior in the Intel(R) DSA V1.0 for some Intel(R) Xeon(R) Processors may allow an authenticated user to potentially enable denial of service via local access. 
-
+* CVE-2024-27457—Improper check for unusual or exceptional conditions in Intel(R) TDX Module firmware before version 1.5.06 may allow a privileged user to potentially enable information disclosure via local access. 
+* CVE-2024-23918—Improper conditions check in some Intel(R) Xeon(R) processor memory controller configurations when using Intel(R) SGX may allow a privileged user to potentially enable escalation of privilege via local access. 
+* CVE-2024-21820—Incorrect default permissions in some Intel(R) Xeon(R) processor memory controller configurations when using Intel(R) SGX may allow a privileged user to potentially enable escalation of privilege via local access. 
+* CVE-2024-21853—Improper finite state machines (FSMs) in the hardware logic in some 4th and 5th Generation Intel(R) Xeon(R) Processors may allow an authorized user to potentially enable denial of service via local access. 
+* CVE-2024-25565—Insufficient control flow management in UEFI firmware for some Intel(R) Xeon(R) Processors may allow an authenticated user to enable denial of service via local access. 
+* CVE-2024-23984—Observable discrepancy in RAPL interface for some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access. 
+* CVE-2024-24968—Improper finite state machines (FSMs) in hardware logic in some Intel(R) Processors may allow a privileged user to potentially enable a denial of service via local access. 
+* CVE-2024-22185—Time-of-check Time-of-use Race Condition in some Intel(R) processors with Intel(R) ACTM may allow a privileged user to potentially enable escalation of privilege via local access. 
+* CVE-2024-24985—Exposure of resource to wrong sphere in some Intel(R) processors with Intel(R) ACTM may allow a privileged user to potentially enable escalation of privilege via local access. 
+* CVE-2024-21829—Improper input validation in UEFI firmware error handler for some Intel(R) Processors may allow a privileged user to potentially enable escalation of privilege via local access. 
+* CVE-2024-23599—Race condition in Seamless Firmware Updates for some Intel(R) reference platforms may allow a privileged user to potentially enable denial of service via local access. 
+* CVE-2024-21781—Improper input validation in UEFI firmware for some Intel(R) Processors may allow a privileged user to enable information disclosure or denial of service via local access. 
+* CVE-2024-39279—Insufficient granularity of access control in UEFI firmware in some Intel(R) processors may allow an authenticated user to potentially enable denial of service via local access. 
+* CVE-2024-28047—Improper input validation in UEFI firmware for some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access. 
+* CVE-2024-31157—Improper initialization in UEFI firmware OutOfBandXML module in some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access. 
+* CVE-2024-36293—Improper access control in the EDECCSSA user leaf function for some Intel(R) Processors with Intel(R) SGX may allow an authenticated user to potentially enable denial of service via local access. 
+* CVE-2024-31068—Improper Finite State Machines (FSMs) in Hardware Logic for some Intel(R) Processors may allow privileged user to potentially enable denial of service via local access. 
+* CVE-2024-25571—Improper input validation in some Intel(R) SPS firmware before SPS_E5_06.01.04.059.0 may allow a privileged user to potentially enable denial of service via local access. 
+* CVE-2024-21859—Improper buffer restrictions in the UEFI firmware for some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access. 
+* CVE-2024-31155—Improper buffer restrictions in the UEFI firmware for some Intel(R) Processors may allow a privileged user to potentially enable escalation of privilege via local access. 
+* CVE-2024-37020—Sequence of processor instructions leads to unexpected behavior in the Intel(R) DSA V1.0 for some Intel(R) Xeon(R) Processors may allow an authenticated user to potentially enable denial of service via local access. 
 
 ## Security Fixes in Release 4.3(5a)
 
@@ -1627,8 +1125,7 @@ Cisco UCS C-Series M7 Rack Servers and Cisco UCS X-Series M7 Compute Nodes inclu
 
 Cisco UCS 6400 Series Fabric Interconnects and UCS 6500 Series Fabric Interconnects in UCS Manager Mode includes Third-party Software that is affected by the vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2024-6387—A security regression (CVE-2006-5051) has been discovered in the OpenSSH server (sshd). A race condition exists that may cause sshd to handle certain signals unsafely. This vulnerability can potentially be exploited by an unauthenticated, remote attacker by failing to authenticate within a specified time period. 
-
+* CVE-2024-6387—A security regression (CVE-2006-5051) has been discovered in the OpenSSH server (sshd). A race condition exists that may cause sshd to handle certain signals unsafely. This vulnerability can potentially be exploited by an unauthenticated, remote attacker by failing to authenticate within a specified time period. 
 
 The affected third-party software component has been upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
 
@@ -1636,8 +1133,7 @@ The affected third-party software component has been upgraded to a version that 
 
 Cisco UCS B-Series Blade Servers - Serial over LAN (SOL) and Cisco UCS X-Series Compute Nodes - Serial over LAN (SOL) includes Third-party Software that is affected by the vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2024-6387—A security regression (CVE-2006-5051) has been discovered in the OpenSSH server (sshd). A race condition exists that may cause sshd to handle certain signals unsafely. This vulnerability can potentially be exploited by an unauthenticated, remote attacker by failing to authenticate within a specified time period. 
-
+* CVE-2024-6387—A security regression (CVE-2006-5051) has been discovered in the OpenSSH server (sshd). A race condition exists that may cause sshd to handle certain signals unsafely. This vulnerability can potentially be exploited by an unauthenticated, remote attacker by failing to authenticate within a specified time period. 
 
 The affected third-party software component has been upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
 
@@ -1645,8 +1141,7 @@ The affected third-party software component has been upgraded to a version that 
 
 Cisco UCS Manager includes Third-party Software that is affected by the vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2023-52425—libexpat through 2.5.0 allows a denial of service (resource consumption) because many full reparsings are required in the case of a large token for which multiple buffer fills are needed. 
-
+* CVE-2023-52425—libexpat through 2.5.0 allows a denial of service (resource consumption) because many full reparsings are required in the case of a large token for which multiple buffer fills are needed. 
 
 The affected third-party software component has been upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
 
@@ -1668,8 +1163,7 @@ There are no security fixes in release 4.3(4d).
 
 Cisco UCS Manager includes Third-party Software that is affected by the vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2024-6387—A race condition has been identified in the sshd service related to its signal handler. If a client fails to authenticate within the LoginGraceTime period (default is 120 seconds, previously 600 seconds in older OpenSSH versions), the sshd SIGALRM handler is triggered asynchronously. This handler, however, invokes several functions that are not safe to call from within a signal handler, such as syslog(). 
-
+* CVE-2024-6387—A race condition has been identified in the sshd service related to its signal handler. If a client fails to authenticate within the LoginGraceTime period (default is 120 seconds, previously 600 seconds in older OpenSSH versions), the sshd SIGALRM handler is triggered asynchronously. This handler, however, invokes several functions that are not safe to call from within a signal handler, such as syslog(). 
 
 The affected third-party software component has been upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
 
@@ -1683,10 +1177,9 @@ There are no security fixes in release 4.3(4b).
 
 Cisco UCS Manager includes Third-party Software that is affected by the vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2023-48795—The SSH transport protocol with certain OpenSSH extensions, found in OpenSSH before 9.6 and other products, allows remote attackers to bypass integrity checks, such that some packets are omitted (from the extension negotiation message), and a client and server may consequently end up with a connection for which some security features have been downgraded or disabled, also known as Terrapin attack. 
+* CVE-2023-48795—The SSH transport protocol with certain OpenSSH extensions, found in OpenSSH before 9.6 and other products, allows remote attackers to bypass integrity checks, such that some packets are omitted (from the extension negotiation message), and a client and server may consequently end up with a connection for which some security features have been downgraded or disabled, also known as Terrapin attack. 
 
 This occurs because the SSH Binary Packet Protocol (BPP), implemented by these extensions, mishandles the handshake phase and use of sequence numbers. For example, when there is an effective attack against SSH's use of ChaCha20-Poly1305 (and CBC with Encrypt-then-MAC), the bypass occurs in chacha20-poly1305@openssh.com, (and if CBC is used, then the -etm@openssh.com MAC algorithms). 
-
 
 The affected third-party software component has been upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
 
@@ -1700,8 +1193,7 @@ There are no security fixes in Release 4.3(3c).
 
 Cisco UCS Manager includes Third-party Software that is affected by the vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2023-38408—The PKCS#11 feature in ssh-agent in OpenSSH before 9.3p2 has an insufficiently trustworthy search path, leading to remote code execution if an agent is forwarded to an attacker-controlled system. (Code in /usr/lib is not necessarily safe for loading into ssh-agent.) 
-
+* CVE-2023-38408—The PKCS#11 feature in ssh-agent in OpenSSH before 9.3p2 has an insufficiently trustworthy search path, leading to remote code execution if an agent is forwarded to an attacker-controlled system. (Code in /usr/lib is not necessarily safe for loading into ssh-agent.) 
 
 The affected third-party software component has been upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
 
@@ -1709,36 +1201,21 @@ The affected third-party software component has been upgraded to a version that 
 
 This product includes Third-party Software that is affected by the vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2007-2768—OpenSSH, when using OPIE (One-Time Passwords in Everything) for PAM, allows remote attackers to determine the existence of certain user accounts, which displays a different response if the user account exists and is configured to use one-time passwords (OTP), a similar issue to CVE-2007-2243. 
-
-  * CVE-2008-3844—Certain Red Hat Enterprise Linux (RHEL) 4 and 5 packages for OpenSSH, as signed in August 2008 using a legitimate Red Hat GPG key, contain an externally introduced modification (Trojan Horse) that allows the package authors to have an unknown impact. 
-
-  * CVE-2016-20012—OpenSSH through 8.7 allows remote attackers, who have a suspicion that a certain combination of username and public key is known to an SSH server, to test whether this suspicion is correct. This occurs because a challenge is sent only when that combination could be valid for a login session. 
-
-  * CVE-2018-15473—OpenSSH through 7.7 is prone to a user enumeration vulnerability due to not delaying bailout for an invalid authenticating user until after the packet containing the request has been fully parsed, related to `auth2-gss.c`, `auth2-hostbased.c`, and `auth2-pubkey.c`. 
-
-  * CVE-2018-15919—Remotely observable behavior in `auth-gss2.c` in OpenSSH through 7.8 could be used by remote attackers to detect existence of users on a target system when GSS2 is in use. 
-
-  * CVE-2018-20685—In OpenSSH 7.9, `scp.c` in the scp client allows remote SSH servers to bypass intended access restrictions via the filename of `.` or an empty filename. The impact is modifying the permissions of the target directory on the client side. 
-
-  * CVE-2019-6109—An issue was discovered in OpenSSH 7.9. Due to missing character encoding in the progress display, a malicious server (or Man-in-The-Middle attacker) can employ crafted object names to manipulate the client output, for example, by using ANSI control codes to hide additional files being transferred. This affects `refresh_progress_meter()` in `progressmeter.c`. 
-
-  * CVE-2019-6110—In OpenSSH 7.9, due to accepting and displaying arbitrary stderr output from the server, a malicious server (or Man-in-The-Middle attacker) can manipulate the client output, for example, to use ANSI control codes to hide additional files being transferred. 
-
-  * CVE-2019-6111—An issue was discovered in OpenSSH 7.9. Due to the scp implementation being derived from 1983 rcp, the server chooses which files/directories are sent to the client. However, the scp client only performs cursory validation of the object name returned (only directory traversal attacks are prevented). A malicious scp server (or Man-in-The-Middle attacker) can overwrite arbitrary files in the scp client target directory. If recursive operation (-r) is performed, the server can manipulate subdirectories as well (for example, to overwrite the .ssh/authorized_keys file). 
-
-  * CVE-2020-14145—The client side in OpenSSH 5.7 through 8.4 has an Observable Discrepancy leading to an information leak in the algorithm negotiation. This allows man-in-the-middle attackers to target initial connection attempts (where no host key for the server has been cached by the client). 
-
-  * CVE-2020-15778—scp in OpenSSH through 8.3p1 allows command injection in the scp.c toremote function, as demonstrated by backtick characters in the destination argument. 
-
-  * CVE-2021-28041—ssh-agent in OpenSSH before 8.5 has a double free that may be relevant in a few less-common scenarios, such as unconstrained agent-socket access on a legacy operating system, or the forwarding of an agent to an attacker-controlled host. 
-
-  * CVE-2021-36368—An issue was discovered in OpenSSH before 8.9. If a client is using public-key authentication with agent forwarding but without -oLogLevel=verbose, and an attacker has silently modified the server to support the None authentication option, then the user cannot determine whether FIDO authentication is going to confirm that the user wishes to connect to that server, or that the user wishes to allow that server to connect to a different server on the user's behalf. 
-
-  * CVE-2021-41617—sshd in OpenSSH 6.2 through 8.x before 8.8, when certain non-default configurations are used, allows privilege escalation because supplemental groups are not initialized as expected. Helper programs for AuthorizedKeysCommand and AuthorizedPrincipalsCommand may run with privileges associated with group memberships of the sshd process, if the configuration specifies running the command as a different user. 
-
-  * CVE-2023-38408—The PKCS#11 feature in ssh-agent in OpenSSH before 9.3p2 has an insufficiently trustworthy search path, leading to remote code execution if an agent is forwarded to an attacker-controlled system. (Code in /usr/lib is not necessarily safe for loading into ssh-agent.) 
-
+* CVE-2007-2768—OpenSSH, when using OPIE (One-Time Passwords in Everything) for PAM, allows remote attackers to determine the existence of certain user accounts, which displays a different response if the user account exists and is configured to use one-time passwords (OTP), a similar issue to CVE-2007-2243. 
+* CVE-2008-3844—Certain Red Hat Enterprise Linux (RHEL) 4 and 5 packages for OpenSSH, as signed in August 2008 using a legitimate Red Hat GPG key, contain an externally introduced modification (Trojan Horse) that allows the package authors to have an unknown impact. 
+* CVE-2016-20012—OpenSSH through 8.7 allows remote attackers, who have a suspicion that a certain combination of username and public key is known to an SSH server, to test whether this suspicion is correct. This occurs because a challenge is sent only when that combination could be valid for a login session. 
+* CVE-2018-15473—OpenSSH through 7.7 is prone to a user enumeration vulnerability due to not delaying bailout for an invalid authenticating user until after the packet containing the request has been fully parsed, related to `auth2-gss.c`, `auth2-hostbased.c`, and `auth2-pubkey.c`. 
+* CVE-2018-15919—Remotely observable behavior in `auth-gss2.c` in OpenSSH through 7.8 could be used by remote attackers to detect existence of users on a target system when GSS2 is in use. 
+* CVE-2018-20685—In OpenSSH 7.9, `scp.c` in the scp client allows remote SSH servers to bypass intended access restrictions via the filename of `.` or an empty filename. The impact is modifying the permissions of the target directory on the client side. 
+* CVE-2019-6109—An issue was discovered in OpenSSH 7.9. Due to missing character encoding in the progress display, a malicious server (or Man-in-The-Middle attacker) can employ crafted object names to manipulate the client output, for example, by using ANSI control codes to hide additional files being transferred. This affects `refresh_progress_meter()` in `progressmeter.c`. 
+* CVE-2019-6110—In OpenSSH 7.9, due to accepting and displaying arbitrary stderr output from the server, a malicious server (or Man-in-The-Middle attacker) can manipulate the client output, for example, to use ANSI control codes to hide additional files being transferred. 
+* CVE-2019-6111—An issue was discovered in OpenSSH 7.9. Due to the scp implementation being derived from 1983 rcp, the server chooses which files/directories are sent to the client. However, the scp client only performs cursory validation of the object name returned (only directory traversal attacks are prevented). A malicious scp server (or Man-in-The-Middle attacker) can overwrite arbitrary files in the scp client target directory. If recursive operation (-r) is performed, the server can manipulate subdirectories as well (for example, to overwrite the .ssh/authorized_keys file). 
+* CVE-2020-14145—The client side in OpenSSH 5.7 through 8.4 has an Observable Discrepancy leading to an information leak in the algorithm negotiation. This allows man-in-the-middle attackers to target initial connection attempts (where no host key for the server has been cached by the client). 
+* CVE-2020-15778—scp in OpenSSH through 8.3p1 allows command injection in the scp.c toremote function, as demonstrated by backtick characters in the destination argument. 
+* CVE-2021-28041—ssh-agent in OpenSSH before 8.5 has a double free that may be relevant in a few less-common scenarios, such as unconstrained agent-socket access on a legacy operating system, or the forwarding of an agent to an attacker-controlled host. 
+* CVE-2021-36368—An issue was discovered in OpenSSH before 8.9. If a client is using public-key authentication with agent forwarding but without -oLogLevel=verbose, and an attacker has silently modified the server to support the None authentication option, then the user cannot determine whether FIDO authentication is going to confirm that the user wishes to connect to that server, or that the user wishes to allow that server to connect to a different server on the user's behalf. 
+* CVE-2021-41617—sshd in OpenSSH 6.2 through 8.x before 8.8, when certain non-default configurations are used, allows privilege escalation because supplemental groups are not initialized as expected. Helper programs for AuthorizedKeysCommand and AuthorizedPrincipalsCommand may run with privileges associated with group memberships of the sshd process, if the configuration specifies running the command as a different user. 
+* CVE-2023-38408—The PKCS#11 feature in ssh-agent in OpenSSH before 9.3p2 has an insufficiently trustworthy search path, leading to remote code execution if an agent is forwarded to an attacker-controlled system. (Code in /usr/lib is not necessarily safe for loading into ssh-agent.) 
 
 The affected third-party software component has been upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
 
@@ -1752,30 +1229,23 @@ There are no security fixes in release 4.3(2f).
 
 Cisco UCS C225 M6 and C245 M6 servers with certain AMD® CPUs are affected by vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) ID: 
 
-  * CVE-2023-20569—A side channel vulnerability on some of the AMD® CPUs may allow an attacker to influence the return address prediction. This may result in speculative execution at an attacker-controlled address, potentially leading to information disclosure. 
-
+* CVE-2023-20569—A side channel vulnerability on some of the AMD® CPUs may allow an attacker to influence the return address prediction. This may result in speculative execution at an attacker-controlled address, potentially leading to information disclosure. 
 
 ### Defect ID - CSCwh43415
 
 Cisco UCS C225 M6 and C245 M6 servers with AMD® CPUs are affected by vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2021-26345—Failure to validate the value in APCB may allow a privileged attacker to tamper with the APCB token to force an out-of-bounds memory read potentially resulting in a denial of service. 
-
-  * CVE-2022-23830—SMM configuration may not be immutable, as intended, when SNP is enabled resulting in a potential limited loss of guest memory integrity. 
-
-  * CVE-2021-46774—Insufficient DRAM address validation in System Management Unit (SMU) may allow an attacker to read/write from/to an invalid DRAM address, potentially resulting in denial-of-service. 
-
-  * CVE-2023-20519—A Use-After-Free vulnerability in the management of an SNP guest context page may allow a malicious hypervisor to masquerade as the guest's migration agent resulting in a potential loss of guest integrity. 
-
-  * CVE-2023-20566—Improper address validation in ASP with SNP enabled may potentially allow an attacker to compromise guest memory integrity. 
-
+* CVE-2021-26345—Failure to validate the value in APCB may allow a privileged attacker to tamper with the APCB token to force an out-of-bounds memory read potentially resulting in a denial of service. 
+* CVE-2022-23830—SMM configuration may not be immutable, as intended, when SNP is enabled resulting in a potential limited loss of guest memory integrity. 
+* CVE-2021-46774—Insufficient DRAM address validation in System Management Unit (SMU) may allow an attacker to read/write from/to an invalid DRAM address, potentially resulting in denial-of-service. 
+* CVE-2023-20519—A Use-After-Free vulnerability in the management of an SNP guest context page may allow a malicious hypervisor to masquerade as the guest's migration agent resulting in a potential loss of guest integrity. 
+* CVE-2023-20566—Improper address validation in ASP with SNP enabled may potentially allow an attacker to compromise guest memory integrity. 
 
 ### Defect ID - CSCwh68315
 
 The Cisco products UCS B-Series M6 Blade Servers; UCS C-Series M6 Rack Servers; UCS X-Series M6 Compute Nodes include an Intel® CPU that is affected by the vulnerability identified by the following Common Vulnerability and Exposures (CVE) ID: 
 
-  * CVE-2023-23583—Sequence of processor instructions leads to unexpected behavior for some Intel® Processors may allow an authenticated user to potentially enable escalation of privilege and/or information disclosure and/or denial of service via local access. 
-
+* CVE-2023-23583—Sequence of processor instructions leads to unexpected behavior for some Intel® Processors may allow an authenticated user to potentially enable escalation of privilege and/or information disclosure and/or denial of service via local access. 
 
 ## Security Fixes in Release 4.3(2c)
 
@@ -1783,28 +1253,22 @@ The Cisco products UCS B-Series M6 Blade Servers; UCS C-Series M6 Rack Servers; 
 
 Cisco UCS Manager includes Third-party Software that is affected by the vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2022-0778—The BN_mod_sqrt() function, which computes a modular square root, contains a bug that can cause it to loop forever for non-prime moduli. This function is used when parsing certificates that contain elliptic curve public keys in compressed form or explicit elliptic curve parameters with a base point encoded in compressed form. 
+* CVE-2022-0778—The BN_mod_sqrt() function, which computes a modular square root, contains a bug that can cause it to loop forever for non-prime moduli. This function is used when parsing certificates that contain elliptic curve public keys in compressed form or explicit elliptic curve parameters with a base point encoded in compressed form. 
 
 It is possible to trigger the infinite loop by crafting a certificate that has invalid explicit curve parameters. Certificate parsing happens prior to verification of the certificate signature, and hence, any process that parses an externally supplied certificate may thus be subject to a denial of service attack. 
 
 The infinite loop can also be reached when parsing crafted private keys as they can contain explicit elliptic curve parameters. Vulnerable situations include: 
 
-  * TLS clients consuming server certificates
-
-  * TLS servers consuming client certificates
-
-  * Hosting providers taking certificates or private keys from customers
-
-  * Certificate authorities parsing certification requests from subscribers
-
-  * Anything else which parses ASN.1 elliptic curve parameters
-
-  * Also any other applications that use the BN_mod_sqrt() where the attacker can control the parameter values are vulnerable to this DoS issue 
+* TLS clients consuming server certificates
+* TLS servers consuming client certificates
+* Hosting providers taking certificates or private keys from customers
+* Certificate authorities parsing certification requests from subscribers
+* Anything else which parses ASN.1 elliptic curve parameters
+* Also any other applications that use the BN_mod_sqrt() where the attacker can control the parameter values are vulnerable to this DoS issue 
 
 In the OpenSSL 1.0.2 version the public key is not parsed during initial parsing of the certificate which makes it slightly harder to trigger the infinite loop. However, any operation which requires the public key from the certificate triggers the infinite loop. In particular the attacker can use a self-signed certificate to trigger the loop during verification of the certificate signature. This issue affects OpenSSL versions 1.0.2, 1.1.1 and 3.0. It was addressed in the releases of 1.1.1n and 3.0.2 on the 15th March 2022. Fixed in OpenSSL 3.0.2 (Affected 3.0.0,3.0.1). Fixed in OpenSSL 1.1.1n (Affected 1.1.1-1.1.1m). Fixed in OpenSSL 1.0.2zd (Affected 1.0.2-1.0.2zc). 
 
 The affected third-party software component is upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
-
 
 ## Security Fixes in Release 4.3(2b)
 
@@ -1812,20 +1276,18 @@ The affected third-party software component is upgraded to a version that includ
 
 Cisco UCS Manager feature if affected by the following Common Vulnerability and Exposures (CVE) ID:
 
-  * CVE-2023-20016—A vulnerability in the backup configuration feature of Cisco UCS Manager and in the configuration export feature of Cisco FXOS Software could allow an unauthenticated attacker with access to a backup file to decrypt sensitive information stored in the full state and configuration backup files. 
-
-  * This vulnerability is due to a weakness in the encryption method used for the backup function. An attacker could exploit this vulnerability by leveraging a static key used for the backup configuration feature. A successful exploit could allow the attacker to decrypt sensitive information that is stored in full state and configuration backup files, such as local user credentials, authentication server passwords, Simple Network Management Protocol (SNMP) community names, and other credentials. 
+* CVE-2023-20016—A vulnerability in the backup configuration feature of Cisco UCS Manager and in the configuration export feature of Cisco FXOS Software could allow an unauthenticated attacker with access to a backup file to decrypt sensitive information stored in the full state and configuration backup files. 
+* This vulnerability is due to a weakness in the encryption method used for the backup function. An attacker could exploit this vulnerability by leveraging a static key used for the backup configuration feature. A successful exploit could allow the attacker to decrypt sensitive information that is stored in full state and configuration backup files, such as local user credentials, authentication server passwords, Simple Network Management Protocol (SNMP) community names, and other credentials. 
 
 Cisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability. 
 
-  * For more information see [Cisco FXOS Software and UCS Manager Software Configuration Backup Static Key Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ucsm-bkpsky-H8FCQgsA)
-
+* For more information see [Cisco FXOS Software and UCS Manager Software Configuration Backup Static Key Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ucsm-bkpsky-H8FCQgsA)
 
 ### Defect ID - CSCwf30460
 
 Cisco UCS M6 B-Series and C-Series servers are affected by vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2022-41804—Unauthorized error injection in Intel® SGX or Intel® TDX for some Intel® Xeon® Processors which may allow a privileged user to potentially enable escalation of privilege through local access. 
+* CVE-2022-41804—Unauthorized error injection in Intel® SGX or Intel® TDX for some Intel® Xeon® Processors which may allow a privileged user to potentially enable escalation of privilege through local access. 
 
 CVE-2022-40982—Information exposure through microarchitectural state after transient execution in certain vector execution units for some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure through local access. 
 
@@ -1833,15 +1295,13 @@ CVE-2023-23908—Improper access control in some 3rd Generation Intel® Xeon® S
 
 CVE-2022-37343— Improper access control in the BIOS firmware for some Intel® Processors may allow a privileged user to potentially enable escalation of privilege through local access. 
 
-
 ### Defect ID - CSCwf30468
 
 Cisco UCS M5 B-Series and C-Series servers are affected by vulnerabilities identified by the following Common Vulnerability and Exposures (CVE) IDs: 
 
-  * CVE-2022-40982—Information exposure through microarchitectural state after transient execution in certain vector execution units for some Intel® Processors may allow an authenticated user to potentially enable information disclosure through local access. 
+* CVE-2022-40982—Information exposure through microarchitectural state after transient execution in certain vector execution units for some Intel® Processors may allow an authenticated user to potentially enable information disclosure through local access. 
 
 CVE-2022-43505—Insufficient control flow management in the BIOS firmware for some Intel® Processors may allow a privileged user to potentially enable denial of service through local access. 
-
 
 ## Resolved Caveats
 
@@ -1914,8 +1374,8 @@ Defect ID |  Symptom |  First Bundle Affected |  Resolved in Release
 CSCwn65779 |  The UCS-FI-64108 Fabric Interconnects may experience unexpected reboots due to kernel panics. This is not a very common case. Initially, the Primary Fabric Interconnect (B) encountered a kernel panic and rebooted, leading to a cluster failover to the Secondary FI (A). About 48 hours later, the new Primary FI (A) also suffered a kernel panic and rebooted. The stack trace reveals a null pointer dereference, resulting in a fatal exception.  This issue is resolved. |  4.2(3g)A |  4.3(5d)A   
 CSCwn41380 |  Cisco UCS Blade servers lose SAN connectivity when one of the FC up-link or FI is down because of the following reasons:
 
-  * FC link is congested
-  * Peer FC link is down due to peer system crash or errors on the receiving side
+* FC link is congested
+* Peer FC link is down due to peer system crash or errors on the receiving side
 
 This issue is resolved. |  4.2(1f)A |  4.3(5d)A   
 CSCwn32035 |  Some 5108 Chassis fans may pull the SDA line of the I2C bus low for an extended duration, causing the I2C bus to lock up and all system fans are flagged as faulty. Alarms are seen for the bad fans.  While not common, if it happens, replace the faulty fans, if the problem persists, contact TAC for more assistance. This issue is resolved. |  4.3(5a) |  4.3(5d)  
@@ -1949,10 +1409,10 @@ Defect ID |  Symptom |  First Bundle Affected |  Resolved in Release
 CSCwm67631 |  After updating the BMC and BIOS, clicking Power Off followed by Reset CMOS may result in a failure.  The server remains powered off even after a Redfish power-on command. This issue occurs with UCS Blade servers equipped with AMD® processors are fully populated with 64GB or higher DIMMs and all drives loaded, not previously powered on.  This issue is resolved. |  4.3(5a)A  |  4.3(5a)A   
 CSCwk91747 |  FC traffic may experience a brief disruption due to the flap of vEth associated with the vFC interfaces in the following scenarios:
 
-  * Rebooting one of the Fabric Interconnects (affects all servers with vHBAs).
-  * PMON restart (affects all servers with vHBAs).
-  * Making changes to the vNIC or vHBA in the service profile associated with a server (affects the specific server whose service profile is modified). 
-  * Loss of CIMC connectivity due to a CIMC reset or other issues (affects the specific server with CIMC connectivity issues).
+* Rebooting one of the Fabric Interconnects (affects all servers with vHBAs).
+* PMON restart (affects all servers with vHBAs).
+* Making changes to the vNIC or vHBA in the service profile associated with a server (affects the specific server whose service profile is modified). 
+* Loss of CIMC connectivity due to a CIMC reset or other issues (affects the specific server with CIMC connectivity issues).
 
 This disruption can cause an FC traffic outage and may result in the operating system hanging, requiring a reset to restore normal functionality.  This issue impacts vFC interfaces corresponding to the vHBAs and FC traffic of the servers only. It does not impact the vNIC interfaces and Ethernet traffic of the servers.  |  4.3(4a)A |  4.3(5a)A   
   
@@ -1972,10 +1432,10 @@ Defect ID |  Symptom |  First Bundle Affected |  Resolved in Release
 ---|---|---|---  
 CSCwk91747 |  FC traffic may experience a brief disruption due to the flap of vEth associated with the vFC interfaces in the following scenarios:
 
-  * Rebooting one of the Fabric Interconnects (affects all servers with vHBAs).
-  * PMON restart (affects all servers with vHBAs).
-  * Making changes to the vNIC or vHBA in the service profile associated with a server (affects the specific server whose service profile is modified). 
-  * Loss of CIMC connectivity due to a CIMC reset or other issues (affects the specific server with CIMC connectivity issues).
+* Rebooting one of the Fabric Interconnects (affects all servers with vHBAs).
+* PMON restart (affects all servers with vHBAs).
+* Making changes to the vNIC or vHBA in the service profile associated with a server (affects the specific server whose service profile is modified). 
+* Loss of CIMC connectivity due to a CIMC reset or other issues (affects the specific server with CIMC connectivity issues).
 
 This disruption can cause an FC traffic outage and may result in the operating system hanging, requiring a reset to restore normal functionality.  This issue impacts vFC interfaces corresponding to the vHBAs and FC traffic of the servers only. It does not impact the vNIC interfaces and Ethernet traffic of the servers.  |  4.3(4a)A |  4.3(4e)A   
   
@@ -1999,8 +1459,7 @@ CSCwk49974 |  Cisco UCS-FI-6454 Fabric Interconnects Cisco UCS Manager release 4
 CSCwk09092 |  During an upgrade of Cisco UCS Manager from 4.2(3g) to 4.3(3a) on Cisco UCS-FI-6454 Fabric Interconnects in UCS Manager Cluster mode, the Data Management Engine (DME) consumes 100% of FI CPU resources, leading to significant slowness. This results in the DME being inaccessible and unable to use scope commands. The Cisco UCS Manager GUI becomes inaccessible, CLI logins take excessive time and often fall to the default role regardless of the account, and changes in Cisco UCS Manager cannot be made. The issue persists through failover, pmon stop/start, and container restarts.  This issue is resolved. |  4.3(3a)A |  4.3(4c)A   
 CSCwf96053 |  When deploying a new Cisco UCS Domain within a Cisco UCS Central environment, global identifiers such as MAC pools, UUID pools, and iSCSI IP pools are not visible on Cisco UCS 6454 FI domains. This issue does not affect Cisco UCS 6300 FI. The issue occurs with Cisco UCS Central 2.0(1r) and Cisco UCS Manager 4.2(3d) on Cisco UCS 6454 FI, while Cisco UCS Manager 4.2(2c) or 4.2(1d) on Cisco 6300 FI works fine. The issue persists despite pushing global policies and identifiers from Cisco UCS Central.  This issue is resolved. |  4.2(3k)A |  4.3(4c)A   
 CSCwk66102 |  After upgrading Cisco UCS Manager from 4.3(2e)A to 4.3(3c)A on Cisco UCSX-FI-6536 Fabric Interconnects, the Communication Service FSM fails with the following error: 
-    
-    
+[code]
     [FSM:FAILED]: 
     communication 
     service configuration
@@ -2011,6 +1470,7 @@ CSCwk66102 |  After upgrading Cisco UCS Manager from 4.3(2e)A to 4.3(3c)A on Cis
     mismatch: Rn:
     '[SNMP String]', Prop:'SNMP
         String'
+[/code]
 
 This issue occurs despite the SNMP string being correctly set. The failure may impact LDAP authentication if FQDN is used for the LDAP server(s) due to DNS not being programmed when the FSM fails.  This issue is resolved. |  4.3(3c)A |  4.3(4c)A   
 CSCwm02504 |  When updating the UBM firmware on Cisco UCS X210c M6 servers with UCSX-X10C-RAIDF, the update may fail with the following error: Error: Failed to get product serial number This results in the UBM getting stuck in an activating state, which can be observed under the installed firmware tab by expanding the RAID controller. This issue is typically found in IMM-based firmwares, as no UCS Manager firmwares have featured a 0x42e UBM firmware.  This issue is resolved. |  4.3(3a)A |  4.3(4c)A   
@@ -2037,10 +1497,10 @@ CSCwj08579 |  In a setup equipped with Cisco UCSX-9508 Chassis, there is an issu
 CSCwj00344 |  Cisco UCS Manager may report insufficient power during discovery and deep discovery phases. This issue is resolved. Cisco UCS Manager is updated to report real-time power available in Cisco UCSX-9508 Chassis equipped with Cisco UCS X-Series servers. This enhancement helps you to monitor power during discovery and deep discovery phases when the chassis available power is limited.  |  4.3(3a)A |  4.3(3c)A   
 CSCwj54974 |  After upgrading Cisco UCS Manager to release 4.3(3c) version, a Cisco UCS X-Series server may revert to using the maximum power budget listed in the catalog if Cisco UCS Manager is unable to perform real-time power profiling accurately. This could lead to a situation where Cisco UCS Manager predicts insufficient power budget allocation, which might prevent the server from being discovered or associated successfully.  This issue occurs under following conditions:
 
-  * UEFI BIOS Boot Security is enabled and applied to a server from Boot Order Service Profile Policy.
-  * Global Power Profiling Policy is enabled.
-  * A server is discovered or re-acknowledged before the activation of the host firmware pack version 4.3(3c).
-  * Either the Grid Power mode is activated, or there is a reduced number of power supply units in a chassis.
+* UEFI BIOS Boot Security is enabled and applied to a server from Boot Order Service Profile Policy.
+* Global Power Profiling Policy is enabled.
+* A server is discovered or re-acknowledged before the activation of the host firmware pack version 4.3(3c).
+* Either the Grid Power mode is activated, or there is a reduced number of power supply units in a chassis.
 
 This issue is resolved. |  4.3(3a)B |  4.3(3c)B   
 CSCwj28488 |  Cisco UCS server is unable to start the PNUOS because BIOS/bt/biosSecureVars/dbx_os file with an invalid certificate prevents PNUOS from operating. The dbx_os file holds certificates added by the operating system and specifies which certificates are prohibited from loading. The cause of the failure is a secure boot violation and following error message is displayed: Invalid signature detected. Check secure boot policy in setupThis issue is resolved. |  4.3(3a)A |  4.3(3c)A   
@@ -2086,8 +1546,7 @@ CSCwf52054  |  Cisco UCS 2200/2300/2400 IOMs may go offline after upgrading to r
 CSCwh15315 |  Third-party SFP goes into unsupported state after upgrading to release 4.2(2a)A or later.  This issue is resolved. |  4.2(2a)A |  4.3(2c)A   
 CSCwf56305 |  Cisco UCS VIC 1455 shows incorrect Port enumeration.  This issue is resolved. |  4.2(2a)A |  4.3(2c)A   
 CSCwh60769 |  DIMMs with M321R8GA0BB0-CQKDS OEM part number (Samsung 64gb DIMMs 4800MHz) display the following fault:
-    
-    
+[code]
     Severity: Warning
     Code: F0502
     ID: 327373
@@ -2098,6 +1557,7 @@ CSCwh60769 |  DIMMs with M321R8GA0BB0-CQKDS OEM part number (Samsung 64gb DIMMs 
     /board/memarray-X/mem-X
     Name: Memory Unit Identity Unestablishable
     Cause: Identity Unestablishable
+[/code]
 
 This issue is resolved. |  4.3(2b)A  |  4.3(2c)A   
 CSCwf91291 |  The RAID controller in Cisco UCS X210c servers may read incorrect voltage value and mark the battery as dead. This results in the following error: Battery Backup unit IMM/ chassis-x/server-y/ controller-1/ BBU is marked bad and needs to be replacedThis issue is resolved. |  4.3(2b)A |  4.3(2c)A   
@@ -2130,8 +1590,8 @@ Defect ID |  Symptom |  Workaround |  First Bundle Affected
 ---|---|---|---  
 CSCwr21671 |  Cisco UCS B200 M5 blade servers equipped with 12G RAID controllers, recurring hardware errors may cause storage controller failures and server outages. Affected systems may report L2/L3 cache errors on the RAID controller, trigger Cisco UCS Manager equipment inoperable faults, and experience unexpected system crashes or reboots.  | 
 
-  1. When the error message is displayed during boot, press x to allow the server to continue starting. 
-  2. Power off the server and reseat the RAID controller.
+1. When the error message is displayed during boot, press x to allow the server to continue starting. 
+2. Power off the server and reseat the RAID controller.
 
 |  4.3(6f)  
 CSCwt28631 |  Telnet remote user sessions cannot execute the `connect nxos` command because Telnet does not establish a secure remote login environment, and the required environment variable `UCSM_IS_REMOTE_LOGIN=1` is not set. This prevents the AAA FSM from completing and causes the system to block the command. SSH sessions successfully execute `connect nxos` as they create a validated remote login context.  |  Use SSH instead of Telnet, as SSH sets the required environment variable UCSM_IS_REMOTE_LOGIN=1, enabling secure remote login and proper command execution. Disable Telnet access if it is not needed. Limit management access to secure protocols like SSH to ensure secure authentication and system operation.  |  4.3(6f)  
@@ -2223,10 +1683,10 @@ CSCwi70374 |  If you have configured Cisco UCS Manager to only allow TLSv1.3 und
 CSCwj40445 |  The issue is seen in Cisco UCS Central where updating a Global Service Profile Template with certain number of Service Profiles and analyzing the impact of a host firmware policy change erroneously reports incorrect number of affected servers.  This problem occurs when the Service Profiles are from different sub-organizations; however, it does not manifest when Service Profiles are from the same sub-organization.  |  In Cisco UCS Central, create a new Host Firmware Policy with the same package but ensure it is not in use. Apply this policy to the Service Profile Template in question, run impact analysis, and if the expected number of affected profiles is reported, you may safely save and proceed with the changes.  |  4.3(2b)A  
 CSCwk91747 |  FC traffic may experience a brief disruption due to the flap of vEth associated with the vFC interfaces in the following scenarios:
 
-  * Rebooting one of the Fabric Interconnects (affects all servers with vHBAs).
-  * PMON restart (affects all servers with vHBAs).
-  * Making changes to the vNIC or vHBA in the service profile associated with a server (affects the specific server whose service profile is modified). 
-  * Loss of CIMC connectivity due to a CIMC reset or other issues (affects the specific server with CIMC connectivity issues).
+* Rebooting one of the Fabric Interconnects (affects all servers with vHBAs).
+* PMON restart (affects all servers with vHBAs).
+* Making changes to the vNIC or vHBA in the service profile associated with a server (affects the specific server whose service profile is modified). 
+* Loss of CIMC connectivity due to a CIMC reset or other issues (affects the specific server with CIMC connectivity issues).
 
 This disruption can cause an FC traffic outage and may result in the operating system hanging, requiring a reset to restore normal functionality.  This issue impacts vFC interfaces corresponding to the vHBAs and FC traffic of the servers only. It does not impact the vNIC interfaces and Ethernet traffic of the servers.  |  The FC traffic recover automatically after a brief disruption.  If the operating system hangs, a reset may be required to restore normal functionality. |  4.3(4a)  
   
@@ -2242,16 +1702,16 @@ Defect ID |  Symptom |  Workaround |  First Bundle Affected
 ---|---|---|---  
 CSCwi70964 |  In a setup up equipped with Cisco UCS M7 servers (with Intel® Xeon® Platinum 8558P Processor) and Nvidia® H100 GPU adapter, RHEL/Ubuntu installation or bootup fail with kernal panic.  |  Perform one of the following:
 
-  * Update BIOS settings MMIO High Granularity to 1024GB from Advanced > Socket Config > Uncore Config > Uncore General Config
-  * Disable QAT setting for all processors in BIOS settings from Advanced > Socket Confg > IIO Config > IOAT Config > Sck0 IOAT Config.  Disable CPM. Perform these for all the sockets in the processor.
+* Update BIOS settings MMIO High Granularity to 1024GB from Advanced > Socket Config > Uncore Config > Uncore General Config
+* Disable QAT setting for all processors in BIOS settings from Advanced > Socket Confg > IIO Config > IOAT Config > Sck0 IOAT Config.  Disable CPM. Perform these for all the sockets in the processor.
 
 |  4.3(3a)B and C   
 CSCwi84495 |  Cisco UCS M7 Blade servers equipped with Intel® Xeon® Platinum 8558P Processor and Intel Flex 170 GPU adapter fail to boot and gets into continuous reset loop.  |  Disable QAT setting for all processors in BIOS settings from Advanced > Socket Confg > IIO Config > IOAT Config > Sck0 IOAT Config.  Disable CPM. Perform these for all the sockets in the processor. |  4.3(3a)B and C   
 CSCwi01267 |  In a setup up equipped with Cisco UCS M7 Blade servers and Intel® Flex 170, 140 GPU adapters, RHEL/Ubuntu installation or bootup fail with kernal panic.  |  Update BIOS following MMIO High settings from Advanced > Socket Config > Uncore Config > Uncore General Config
 
-  * MMIO High Granularity to 1024 GB
-  * MMIO High Base to 56T
-  * Disable Limit CPU PA to 46 bits
+* MMIO High Granularity to 1024 GB
+* MMIO High Base to 56T
+* Disable Limit CPU PA to 46 bits
 
 |  4.3(3a)B and C   
 CSCwd35712 |  A critical defect has been identified in the Cisco UCS Manager where the Data Management Engine (DME) crashes due to an instance id not found error.  Additional symptoms include the inability to access the Cisco UCS Manager GUI, non-functionality of cluster management services, and a core dump indicated by the show pmon state command via SSH.  The problem is not firmware-specific and can impact any Cisco UCS Manager domain. Although the data plane and server operations of the domain remain unaffected, there is no workaround for this issue, and affected environments may require restoration from a backup.  |  There is no known workaround. Restore the domain from backup. |  4.2(1d)  
@@ -2277,14 +1737,13 @@ Defect ID |  Symptom |  Workaround |  First Bundle Affected
 ---|---|---|---  
 CSCwe09048 |  If you install ESXi OS on SAN LUN on Cisco UCS X210 M6 server and same service profile is associated with Cisco UCS X210 M7 server, the OS results in PSOD boot error.  | 
 
-  1. Press Shift + O to enter boot option. 
-  2. Execute the following command to get the recovery_key:`esxcli system settings encryption recovery list`
-  3. Provide this TPM recovery key as a boot option during Cisco UCS X210 M7 boot.` encryptionRecoveryKey=``recovery_key`
+1. Press Shift + O to enter boot option. 
+2. Execute the following command to get the recovery_key:`esxcli system settings encryption recovery list`
+3. Provide this TPM recovery key as a boot option during Cisco UCS X210 M7 boot.` encryptionRecoveryKey=``recovery_key`
 
 | 4.3(2b)  
 CSCwf53294 |  In a setup with Cisco UCS M7 servers, RHEL 8.7 does not boot up when VMD is enabled in the BIOS.  Server boots to a blank screen or boot halts with the following message: 
-    
-    
+[code] 
     DMAR: DRHD: handling 
     fault status reg 2 DMAR: 
     [INTR-REMAP] Request device 
@@ -2292,19 +1751,20 @@ CSCwf53294 |  In a setup with Cisco UCS M7 servers, RHEL 8.7 does not boot up wh
     [fault reason 0x25] 
     Blocked a compatibility 
     format interrupt request. 
+[/code]
 
 |  Perform one of the following:
 
-  1. Cisco recommends that you should upgrade to RHEL release 8.8
-  2. For existing RHEL 8.7 installation, perform the following:
-     1. Upgrade the kernel to 4.18.0-425.13.1.el8_7 or later. 
-     2. Remove boot parameter intremap=off if used before
-     3. Update BIOS to release 4.3(2b)
-  3. For new RHEL 8.7 installation, perform the following:
-     1. Disable VMD.
-     2. Install RHEL version 8.7
-     3. Update kernel to 4.18.0-425.13.1.el8_7 or later. 
-     4. Reboot and Enable VMD in the BIOS.
+1. Cisco recommends that you should upgrade to RHEL release 8.8
+2. For existing RHEL 8.7 installation, perform the following:
+1. Upgrade the kernel to 4.18.0-425.13.1.el8_7 or later. 
+2. Remove boot parameter intremap=off if used before
+3. Update BIOS to release 4.3(2b)
+3. For new RHEL 8.7 installation, perform the following:
+1. Disable VMD.
+2. Install RHEL version 8.7
+3. Update kernel to 4.18.0-425.13.1.el8_7 or later. 
+4. Reboot and Enable VMD in the BIOS.
 
 |  4.3(2b)  
 CSCwf44478 |  In a setup equipped with Cisco UCS C-Series and X-Series M7 servers, running RHEL OS versions 8.6 or 9.0, Micron 7450 NVMe drives do not get detected after hot-plug.  |  For RHEL version 8.6, update kernel to version 4.18.0-425.13.1.el8_7 or later For RHEL version 9.0, update kernel to version 5.14.0-162.6.1.el9_1 or later |  4.3(2b)  
@@ -2345,8 +1805,8 @@ Defect ID |  Symptom |  Workaround |  First Bundle Affected
 ---|---|---|---  
 CSCwo27237 |  During Microsoft Windows 2025® operating system installations on any Cisco UCS M8 servers equipped with Intel® processor (both rack and blade configurations) with VMD enabled in the BIOS, the loading of the F6 Intel VMD driver may experience a longer-than-usual delay. The time required to display NVMe drives increases with the number of NVMe drives present in the system.  |  Once the windows installer screen appears, perform the following steps:
 
-  1. Click Load VMD driver once and wait upto 3 mins before you hit refresh. 
-  2. If the drives are not listed, load driver the second time.
+1. Click Load VMD driver once and wait upto 3 mins before you hit refresh. 
+2. If the drives are not listed, load driver the second time.
 
 If you see any error message, click the back button to search for the disks again. All the NVMe drive should be visible now. |  4.3(6a)  
   
@@ -2360,8 +1820,8 @@ Defect ID | Symptom | Workaround | First Bundle Affected
 ---|---|---|---  
 CSCwq27350 |  After upgrading to release 4.3(5c), some UCS 5100 series chassis with B200-M5 servers may show high power budget allocations despite low average power consumption. This can cause chassis capacity alerts, especially when the chassis is configured as Grid. The issue leads to power budget unavailability faults and server discovery or association failures due to insufficient power availability.  |  Perform one of the following actions:
 
-  * Change the blade power priority setting from no-cap to cap.  OR
-  * Change the PSU redundancy policy to N or N+1 to increase the available power for chassis allocation. 
+* Change the blade power priority setting from no-cap to cap.  OR
+* Change the PSU redundancy policy to N or N+1 to increase the available power for chassis allocation. 
 
 | 4.3(5c) and 4.2(3l)   
   
@@ -2372,9 +1832,9 @@ Defect ID |  Symptom |  Workaround |  First Bundle Affected
 CSCwm70985 | During or immediately after a firmware upgrade/downgrade on NVIDIA L40s GPUs, no read/write operations should be performed on the card. However, PNUOS performs read operations using the `nvidia-smi` utility to check the GPU mode immediately after the upgrade. This issue occurs when upgrading/downgrading firmware on NVIDIA L40 GPUs, causing PNUOS to crash and raise a major fault. As a result, Cisco UCS Manager does not support mode switch for NVIDIA L40 GPUs from release 4.3(5a) onwards.  |  You can perform mode changes using NVIDIA tools on the host OS if required.  This limitation does not affect other L-series GPUs, which continue to support mode changes. |  4.3(5a)  
 CSCwj96037 |  In an ESXi 8.0U2 environment with VMs running RHEL9.3/RHEL9.4, there are observed issues when hot-pluggable Intel® and Micron® NVMe drives are removed or inserted. Commands such as lsblk, lspci, and nvme list do not update correctly, resulting in incorrect drive information and potential VM power-off. VMs may not properly recognize and update new drive information after NVMe drive removal or insertion.  |  Perform the following steps to ensure that VM can detect the newly inserted NVME drive:
 
-  1. Power off VM.
-  2. Add PCIe NVME Drive to VM Config.
-  3. Power on VM.
+1. Power off VM.
+2. Add PCIe NVME Drive to VM Config.
+3. Power on VM.
 
 |  4.3(5a)  
   
@@ -2436,18 +1896,18 @@ CSCwe98830 |  If Cisco UCS S3260 chassis is equipped with Cisco UCS B-Series ser
 CSCwe48563 |  In a setup equipped with Cisco UCS 6400 Series or 6536 FIs, logical configuration from any 4.2(3) patch release to 4.2(3b) succeeds instead of failing due to enhancement in the security.  |  There is no known workaround. |  4.3(2b)  
 CSCwe32091 |  Under the following conditions Cisco UCS VIC support MAX LUN values above 1024:
 
-  * UCS Manager with release 4.2(3d) or later.
-  * Cisco UCS VIC firmware version 5.2.3c.230101 or earlier for 14XX series or 4.5.3b.230101 or earlier for 13XX series.
+* UCS Manager with release 4.2(3d) or later.
+* Cisco UCS VIC firmware version 5.2.3c.230101 or earlier for 14XX series or 4.5.3b.230101 or earlier for 13XX series.
 
 |  There is no known workaround. Update Cisco UCS VIC firmware version. |  4.3(2b)  
 CSCwf61445 |  Cisco recommends the below screen resolutions for launching the UCS Manager for the best experience.
 
-  * 1920 x 1080
-  * 1600 x 900
-  * 1440 x 900
-  * 1360 x 768
-  * 1280 x 768
-  * 1280 x 720
+* 1920 x 1080
+* 1600 x 900
+* 1440 x 900
+* 1360 x 768
+* 1280 x 768
+* 1280 x 720
 
 Cisco UCS Manager does not support browser full screen mode. Hence, use the recommended resolutions only. |  There is no known workaround. |  4.3(2b)  
 CSCvp31928 |  UCS Manager allows you to delete security without any warning. Set-up continues to function normally without security.  |  This issue does not have any functionality impact. |  4.3(2b)  
@@ -2521,7 +1981,7 @@ You may also view the extended version of the Mixed Cisco UCS Releases Supported
 
 For reference, the [Cisco UCS Equivalency Matrix for Cisco Intersight, Cisco IMC, and Cisco UCS Manager](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/c/sw/UCS-Equivalency-Matrix/index.html)outlines the release timeline for Cisco Intersight, Cisco Integrated Management Controller (Cisco IMC), and Cisco UCS Manager. It includes essential information such as the date each patch was posted, the specific patch version, and the platforms that are supported by each release. By referring to this matrix, you can identify the appropriate firmware and software versions required for your servers before migrating them to Cisco Intersight. This ensures that your server infrastructure remains supported and operates efficiently during and after the transition. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Important** | 
 
 * * *
@@ -2538,10 +1998,8 @@ To get a complete overview of all the possible upgrade paths in Cisco UCS Manage
 
 ### Upgrade and Downgrade to Release 4.3(6)
 
-  * In a setup equipped with Cisco UCS C240 M8 Server, UCS C220 M8 Server, or UCS X210c M8 Compute Node, you cannot downgrade Infrastructure Firmware Version (A Bundle) or Host Firmware Version (C or B Bundle) to any release earlier than 4.3(6a). 
-
-  * If you enable the Package Power Limit (PPL) feature on Cisco UCS C225 and C245 M8 servers after upgrading to release 4.3(6) and then downgrade to any previous release, the configuration settings for PPL feature, while retained, will not be adjustable from any user interface. 
-
+* In a setup equipped with Cisco UCS C240 M8 Server, UCS C220 M8 Server, or UCS X210c M8 Compute Node, you cannot downgrade Infrastructure Firmware Version (A Bundle) or Host Firmware Version (C or B Bundle) to any release earlier than 4.3(6a). 
+* If you enable the Package Power Limit (PPL) feature on Cisco UCS C225 and C245 M8 servers after upgrading to release 4.3(6) and then downgrade to any previous release, the configuration settings for PPL feature, while retained, will not be adjustable from any user interface. 
 
 Table 7. Upgrade Paths to Release 4.3(6) Upgrade from Release |  Recommended Upgrade Path  
 ---|---  
@@ -2555,63 +2013,52 @@ Upgrade from any 4.3(2) release |  Direct upgrade to release 4.3(6). |  **Note**
 Upgrade from any 4.2(2) or 4.2(3) release |  Direct upgrade to release 4.3(6).  
 Upgrade from any 4.2(1) release | 
 
-  1. Upgrade from 4.2(1i) or later patch—Direct upgrade to release 4.3(6).
-  2. Upgrade from a patch earlier than 4.2(1i) —
-     1. Upgrade to release 4.2(1i)A bundle and activate. |  **Note** |  Do not download release 4.3(6)A bundle before activating release 4.2(1i)A.  
+1. Upgrade from 4.2(1i) or later patch—Direct upgrade to release 4.3(6).
+2. Upgrade from a patch earlier than 4.2(1i) —
+1. Upgrade to release 4.2(1i)A bundle and activate. |  **Note** |  Do not download release 4.3(6)A bundle before activating release 4.2(1i)A.  
 ---|---  
-     2. Download and upgrade to release 4.3(6).
-
+2. Download and upgrade to release 4.3(6).
 
   
 Upgrade from any 4.1(3) release | 
 
-  1. Upgrade from 4.1(3h) or later patch—Direct upgrade to release 4.3(6).
-  2. Upgrade from a patch earlier than 4.1(3h)—
-     1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(6)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade from 4.1(3h) or later patch—Direct upgrade to release 4.3(6).
+2. Upgrade from a patch earlier than 4.1(3h)—
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(6)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-     2. Download and upgrade to release 4.3(6).
-
+2. Download and upgrade to release 4.3(6).
 
   
 Upgrade from any 4.1(2) release | 
 
-  1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(6)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(6)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-  2. Download and upgrade to release 4.3(6).
-
+2. Download and upgrade to release 4.3(6).
 
   
 Upgrade from any 4.1(1) release | 
 
-  1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(6)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(6)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-  2. Download and upgrade to release 4.3(6).
-
+2. Download and upgrade to release 4.3(6).
 
   
 Upgrade from any 4.0(4) release | 
 
-  1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(6)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(6)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-  2. Download and upgrade to release 4.3(6).
-
+2. Download and upgrade to release 4.3(6).
 
   
   
 ### Upgrade and Downgrade to Release 4.3(5)
 
-  * In a setup equipped with Cisco UCS C225 M8 Server or Cisco UCS X215c M8 Compute Node, you cannot downgrade Infrastructure Firmware Version (A Bundle) or Host Firmware Version (C Bundle) to any release earlier than 4.3(5a). 
-
-  * If your setup includes any of the following components, then you can not downgrade to any release earlier than 4.3(5a): 
-
-  * Cisco Tri-mode M1 24G RAID Controller W/4GB FBWC (16 Drives) (UCSC-RAID-M1L16)
-
-  * Cisco Tri-mode M1 24G HBA Controller (16 Drives) (UCSC-HBA-M1L16)
-
-  * Cisco Tri-mode M1 24G RAID Controller W/4GB FBWC (32Drives) (UCSC-RAID-MP1L32)
-
-  * MACsec Type-6 keys are supported in releases 4.3(5a) and later. You must remove Type-6 keys or migrate Type-6 keys to supported types, Type-0 or Type-7, before downgrading to any 4.3(4) release. If you wish to downgrade to any release earlier than 4.3(4a), then you must disable MACsec functionality before downgrading. 
-
+* In a setup equipped with Cisco UCS C225 M8 Server or Cisco UCS X215c M8 Compute Node, you cannot downgrade Infrastructure Firmware Version (A Bundle) or Host Firmware Version (C Bundle) to any release earlier than 4.3(5a). 
+* If your setup includes any of the following components, then you can not downgrade to any release earlier than 4.3(5a): 
+* Cisco Tri-mode M1 24G RAID Controller W/4GB FBWC (16 Drives) (UCSC-RAID-M1L16)
+* Cisco Tri-mode M1 24G HBA Controller (16 Drives) (UCSC-HBA-M1L16)
+* Cisco Tri-mode M1 24G RAID Controller W/4GB FBWC (32Drives) (UCSC-RAID-MP1L32)
+* MACsec Type-6 keys are supported in releases 4.3(5a) and later. You must remove Type-6 keys or migrate Type-6 keys to supported types, Type-0 or Type-7, before downgrading to any 4.3(4) release. If you wish to downgrade to any release earlier than 4.3(4a), then you must disable MACsec functionality before downgrading. 
 
 Table 8. Upgrade Paths to Release 4.3(5) Upgrade from Release |  Recommended Upgrade Path  
 ---|---  
@@ -2624,85 +2071,64 @@ Upgrade from any 4.3(2) release |  Direct upgrade to release 4.3(5). |  **Note**
 Upgrade from any 4.2(2) or 4.2(3) release |  Direct upgrade to release 4.3(5).  
 Upgrade from any 4.2(1) release | 
 
-  1. Upgrade from 4.2(1i) or later patch—Direct upgrade to release 4.3(5).
-  2. Upgrade from a patch earlier than 4.2(1i) —
-     1. Upgrade to release 4.2(1i)A bundle and activate. |  **Note** |  Do not download release 4.3(5)A bundle before activating release 4.2(1i)A.  
+1. Upgrade from 4.2(1i) or later patch—Direct upgrade to release 4.3(5).
+2. Upgrade from a patch earlier than 4.2(1i) —
+1. Upgrade to release 4.2(1i)A bundle and activate. |  **Note** |  Do not download release 4.3(5)A bundle before activating release 4.2(1i)A.  
 ---|---  
-     2. Download and upgrade to release 4.3(5).
-
+2. Download and upgrade to release 4.3(5).
 
   
 Upgrade from any 4.1(3) release | 
 
-  1. Upgrade from 4.1(3h) or later patch—Direct upgrade to release 4.3(5).
-  2. Upgrade from a patch earlier than 4.1(3h)—
-     1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(5)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade from 4.1(3h) or later patch—Direct upgrade to release 4.3(5).
+2. Upgrade from a patch earlier than 4.1(3h)—
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(5)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-     2. Download and upgrade to release 4.3(5).
-
+2. Download and upgrade to release 4.3(5).
 
   
 Upgrade from any 4.1(2) release | 
 
-  1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(5)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(5)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-  2. Download and upgrade to release 4.3(5).
-
+2. Download and upgrade to release 4.3(5).
 
   
 Upgrade from any 4.1(1) release | 
 
-  1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(5)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(5)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-  2. Download and upgrade to release 4.3(5).
-
+2. Download and upgrade to release 4.3(5).
 
   
 Upgrade from any 4.0(4) release | 
 
-  1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(5)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(5)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-  2. Download and upgrade to release 4.3(5).
-
+2. Download and upgrade to release 4.3(5).
 
   
   
 ### Upgrade and Downgrade to Release 4.3(4)
 
-  * You cannot downgrade Infrastructure Firmware Version (A Bundle) of a Cisco UCS X-Series Direct setup to any release earlier than 4.3(4b). 
-
-  * In a setup equipped with Cisco UCS C245 M8 Server, you cannot downgrade Infrastructure Firmware Version (A Bundle) or Host Firmware Version (C Bundle) to any release earlier than 4.3(4b). 
-
-  * When upgrading the Cisco UCS-FI-6324 Fabric Interconnect from firmware version 4.3(3) or 4.3(2), first download Infrastructure A bundle for release 4.3(4) and perform the upgrade. Then, proceed to download the server bundles for version 4.3(4). 
-
-  * If your setup includes any of the following components, then you can not downgrade to any release earlier than 4.3(4a): 
-
-  * Cisco UCSX-440P PCIe Node
-
-  * Cisco Tri-Mode 24G SAS RAID Controller w/4GB Cache (UCSC-RAID-HP) 
-
-  * To downgrade to any release earlier than 4.3(4a), you must remove the configuration for ERSPAN source traffic monitoring sessions and ERSPAN Origin Interface configuration. 
-
-  * If you have enabled MACsec after upgrading to release 4.3(4a) or later, then you must disable it before downgrading to any release earlier than 4.3(4a). 
-
-  * If your configuration includes any of the following adapters for management connectivity between Rack servers and UCS Fabric Interconnect, then you cannot upgrade to release 4.3(4a) or later: 
-
-  * Qlogic QL41132HORJ dual port 10GBase T OCP (UCSC-OCP-QD10GC)
-
-  * QLogic QL41162HLRJ PCIe dual-port 10Gb Base-T PCIe NIC (UCSC-PCIE-QD10GC)
-
-  * Cisco FastLinQ QL41212H 25GbE (UCSC-PCIE-QD25GF)
-
-  * Qlogic QL41232HOCU dual port 25G OCP (UCSC-OCP-QD25GF)
-
-  * Qlogic FastLinQ QL45412H 40GbE (UCSC-PCIE-QD40GF)
-
-  * QLogic QL45611HLCU single port 100GbE PCIe NIC (UCSC-PCIE-QS100GF)
-
-  * Qlogic FastLinQ QL45631HOCU single port 100G QSFP28 OCP 2.0 (UCSC-OCP-QS100GF)
+* You cannot downgrade Infrastructure Firmware Version (A Bundle) of a Cisco UCS X-Series Direct setup to any release earlier than 4.3(4b). 
+* In a setup equipped with Cisco UCS C245 M8 Server, you cannot downgrade Infrastructure Firmware Version (A Bundle) or Host Firmware Version (C Bundle) to any release earlier than 4.3(4b). 
+* When upgrading the Cisco UCS-FI-6324 Fabric Interconnect from firmware version 4.3(3) or 4.3(2), first download Infrastructure A bundle for release 4.3(4) and perform the upgrade. Then, proceed to download the server bundles for version 4.3(4). 
+* If your setup includes any of the following components, then you can not downgrade to any release earlier than 4.3(4a): 
+* Cisco UCSX-440P PCIe Node
+* Cisco Tri-Mode 24G SAS RAID Controller w/4GB Cache (UCSC-RAID-HP) 
+* To downgrade to any release earlier than 4.3(4a), you must remove the configuration for ERSPAN source traffic monitoring sessions and ERSPAN Origin Interface configuration. 
+* If you have enabled MACsec after upgrading to release 4.3(4a) or later, then you must disable it before downgrading to any release earlier than 4.3(4a). 
+* If your configuration includes any of the following adapters for management connectivity between Rack servers and UCS Fabric Interconnect, then you cannot upgrade to release 4.3(4a) or later: 
+* Qlogic QL41132HORJ dual port 10GBase T OCP (UCSC-OCP-QD10GC)
+* QLogic QL41162HLRJ PCIe dual-port 10Gb Base-T PCIe NIC (UCSC-PCIE-QD10GC)
+* Cisco FastLinQ QL41212H 25GbE (UCSC-PCIE-QD25GF)
+* Qlogic QL41232HOCU dual port 25G OCP (UCSC-OCP-QD25GF)
+* Qlogic FastLinQ QL45412H 40GbE (UCSC-PCIE-QD40GF)
+* QLogic QL45611HLCU single port 100GbE PCIe NIC (UCSC-PCIE-QS100GF)
+* Qlogic FastLinQ QL45631HOCU single port 100G QSFP28 OCP 2.0 (UCSC-OCP-QS100GF)
 
 If these adapters are not used for management connectivity with UCS Fabric Interconnect, then upgrade to release 4.3(4a) is allowed. However, if you need to revert to release 4.3(4a) or an earlier version, then you must re-acknowledge the server to recover the adapter inventory. 
-
 
 Table 9. Upgrade Paths to Release 4.3(4) Upgrade from Release |  Recommended Upgrade Path  
 ---|---  
@@ -2713,73 +2139,60 @@ Upgrade from any 4.3(2) release |  Direct upgrade to release 4.3(4). |  **Note**
 Upgrade from any 4.2(2) or 4.2(3) release |  Direct upgrade to release 4.3(4).  
 Upgrade from any 4.2(1) release | 
 
-  1. Upgrade from 4.2(1i) or later patch—Direct upgrade to release 4.3(4).
-  2. Upgrade from a patch earlier than 4.2(1i) —
-     1. Upgrade to release 4.2(1i)A bundle and activate. |  **Note** |  Do not download release 4.3(4)A bundle before activating release 4.2(1i)A.  
+1. Upgrade from 4.2(1i) or later patch—Direct upgrade to release 4.3(4).
+2. Upgrade from a patch earlier than 4.2(1i) —
+1. Upgrade to release 4.2(1i)A bundle and activate. |  **Note** |  Do not download release 4.3(4)A bundle before activating release 4.2(1i)A.  
 ---|---  
-     2. Download and upgrade to release 4.3(4).
-
+2. Download and upgrade to release 4.3(4).
 
   
 Upgrade from any 4.1(3) release | 
 
-  1. Upgrade from 4.1(3h) or later patch—Direct upgrade to release 4.3(4).
-  2. Upgrade from a patch earlier than 4.1(3h)—
-     1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(4)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade from 4.1(3h) or later patch—Direct upgrade to release 4.3(4).
+2. Upgrade from a patch earlier than 4.1(3h)—
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(4)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-     2. Download and upgrade to release 4.3(4).
-
+2. Download and upgrade to release 4.3(4).
 
   
 Upgrade from any 4.1(2) release | 
 
-  1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(4)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(4)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-  2. Download and upgrade to release 4.3(4).
-
+2. Download and upgrade to release 4.3(4).
 
   
 Upgrade from any 4.1(1) release | 
 
-  1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(4)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(4)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-  2. Download and upgrade to release 4.3(4).
-
+2. Download and upgrade to release 4.3(4).
 
   
 Upgrade from any 4.0(4) release | 
 
-  1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(4)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(4)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-  2. Download and upgrade to release 4.3(4).
-
+2. Download and upgrade to release 4.3(4).
 
   
   
 ### Upgrade and Downgrade to Release 4.3(3)
 
-  1. You cannot downgrade any Cisco UCS C220 M7, C240 M7, and X210c server equipped with any 5th Gen Intel® Xeon® Scalable Processor listed in New Hardware in Release 4.3(3a) to any release earlier than 4.3(3a). 
-
-  2. If you are planing to install any 15000 series Cisco UCS VIC, first supported in any 4.3 release, then ensure that you first upgrade the servers to the minimum supported release and then install the adapters in the server. 
+1. You cannot downgrade any Cisco UCS C220 M7, C240 M7, and X210c server equipped with any 5th Gen Intel® Xeon® Scalable Processor listed in New Hardware in Release 4.3(3a) to any release earlier than 4.3(3a). 
+2. If you are planing to install any 15000 series Cisco UCS VIC, first supported in any 4.3 release, then ensure that you first upgrade the servers to the minimum supported release and then install the adapters in the server. 
 
 If you install the adapters into the server running an earlier release and then upgrade the servers to the supported release, the servers require A/C power cycle to recognize the adapters. 
 
 For example, to install Cisco UCS VIC 15427 adapter, first upgrade to release 4.3(2c) or later and then install the adapter in the server. 
 
-  3. If you are managing Cisco UCS X-Series chassis or Cisco UCS M7 servers after upgrading to any 4.3(3) release, then you must decommission the X-Series chassis and M7 servers before downgrading to any unsupported release. Refer New Features in Release 4.3 for minimum supported version for Cisco UCS X-Series chassis and Cisco UCS M7 servers. 
-
-  4. Cisco UCS M4 servers are not supported by 4.3(2) and later releases. You must decommission Cisco UCS M4 servers before upgrading to release 4.3(3). 
-
-  5. Once you upgrade to 4.3(3) or any later release and enable Netflow feature from Cisco UCS Manager GUI, then you cannot downgrade to any release earlier than 4.3(2). To downgrade to any release earlier than 4.3(2), you must first disable Netflow feature from Cisco UCS Manager GUI. 
-
-  6. Once you upgrade Cisco UCS 6400 or 64108 FI to 4.3(3) or any later release and enable Q-in-Q feature from Cisco UCS Manager GUI, then you cannot downgrade to any release earlier than 4.3(2). To downgrade to any release earlier than 4.3(2), you must first disable Q-in-Q feature from Cisco UCS Manager GUI. 
-
-  7. Once you upgrade to release 4.3(3) or later and enable SMTP Authentication under Call Home in Cisco UCS Manager GUI, then you cannot downgrade to any release earlier than 4.3(2). To downgrade to any release earlier than 4.3(2), you must first disable SMTP Authentication from Cisco UCS Manager GUI. 
-
-  8. If you have installed any Cisco UCS VIC with secure boot feature, then you cannot downgrade to any release earlier than 4.3(2).
-
-  9. If Fibre Channel ports on UCS Fabric Interconnect are connected to non-Cisco products, ensure that these are operating as individual Fibre Channel links and not aggregated into a port channel. Fibre Channel port channels are not compatible with non-Cisco technology. 
-
+3. If you are managing Cisco UCS X-Series chassis or Cisco UCS M7 servers after upgrading to any 4.3(3) release, then you must decommission the X-Series chassis and M7 servers before downgrading to any unsupported release. Refer New Features in Release 4.3 for minimum supported version for Cisco UCS X-Series chassis and Cisco UCS M7 servers. 
+4. Cisco UCS M4 servers are not supported by 4.3(2) and later releases. You must decommission Cisco UCS M4 servers before upgrading to release 4.3(3). 
+5. Once you upgrade to 4.3(3) or any later release and enable Netflow feature from Cisco UCS Manager GUI, then you cannot downgrade to any release earlier than 4.3(2). To downgrade to any release earlier than 4.3(2), you must first disable Netflow feature from Cisco UCS Manager GUI. 
+6. Once you upgrade Cisco UCS 6400 or 64108 FI to 4.3(3) or any later release and enable Q-in-Q feature from Cisco UCS Manager GUI, then you cannot downgrade to any release earlier than 4.3(2). To downgrade to any release earlier than 4.3(2), you must first disable Q-in-Q feature from Cisco UCS Manager GUI. 
+7. Once you upgrade to release 4.3(3) or later and enable SMTP Authentication under Call Home in Cisco UCS Manager GUI, then you cannot downgrade to any release earlier than 4.3(2). To downgrade to any release earlier than 4.3(2), you must first disable SMTP Authentication from Cisco UCS Manager GUI. 
+8. If you have installed any Cisco UCS VIC with secure boot feature, then you cannot downgrade to any release earlier than 4.3(2).
+9. If Fibre Channel ports on UCS Fabric Interconnect are connected to non-Cisco products, ensure that these are operating as individual Fibre Channel links and not aggregated into a port channel. Fibre Channel port channels are not compatible with non-Cisco technology. 
 
 Table 10. Upgrade Paths to Release 4.3(3) Upgrade from Release |  Recommended Upgrade Path  
 ---|---  
@@ -2787,117 +2200,100 @@ Upgrade from any 4.3(2) release |  Direct upgrade to release 4.3(3).
 Upgrade from any 4.2(2) or 4.2(3) release |  Direct upgrade to release 4.3(3).  
 Upgrade from any 4.2(1) release | 
 
-  1. Upgrade from 4.2(1i) or later patch—Direct upgrade to release 4.3(3).
-  2. Upgrade from a patch earlier than 4.2(1i) —
-     1. Upgrade to release 4.2(1i)A bundle and activate. |  **Note** |  Do not download release 4.3(3)A bundle before activating release 4.2(1i)A.  
+1. Upgrade from 4.2(1i) or later patch—Direct upgrade to release 4.3(3).
+2. Upgrade from a patch earlier than 4.2(1i) —
+1. Upgrade to release 4.2(1i)A bundle and activate. |  **Note** |  Do not download release 4.3(3)A bundle before activating release 4.2(1i)A.  
 ---|---  
-     2. Download and upgrade to release 4.3(3).
-
+2. Download and upgrade to release 4.3(3).
 
   
 Upgrade from any 4.1(3) release | 
 
-  1. Upgrade from 4.1(3h) or later patch—Direct upgrade to release 4.3(3).
-  2. Upgrade from a patch earlier than 4.1(3h)—
-     1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(3)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade from 4.1(3h) or later patch—Direct upgrade to release 4.3(3).
+2. Upgrade from a patch earlier than 4.1(3h)—
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(3)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-     2. Download and upgrade to release 4.3(3).
-
+2. Download and upgrade to release 4.3(3).
 
   
 Upgrade from any 4.1(2) release | 
 
-  1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(3)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(3)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-  2. Download and upgrade to release 4.3(3).
-
+2. Download and upgrade to release 4.3(3).
 
   
 Upgrade from any 4.1(1) release | 
 
-  1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(3)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(3)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-  2. Download and upgrade to release 4.3(3).
-
+2. Download and upgrade to release 4.3(3).
 
   
 Upgrade from any 4.0(4) release | 
 
-  1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(3)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(3)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-  2. Download and upgrade to release 4.3(3).
-
+2. Download and upgrade to release 4.3(3).
 
   
   
 ### Infrastructure Upgrade and Downgrade to Release 4.3(2)
 
-  1. If you are planing to install any 15000 series Cisco UCS VIC, first supported in 4.3(2) release, then ensure that you first upgrade the servers to the supported release and then install the adapters in the server. 
+1. If you are planing to install any 15000 series Cisco UCS VIC, first supported in 4.3(2) release, then ensure that you first upgrade the servers to the supported release and then install the adapters in the server. 
 
 If you install the adapters into the server running an earlier release and then upgrade the servers to the supported release, the servers require A/C power cycle to recognize the adapters. 
 
 For example, to install Cisco UCS VIC 15427 adapter, first upgrade to release 4.3(2c) or later and then install the adapter in the server. 
 
-  2. If you are managing Cisco UCS X-Series chassis or Cisco UCS M7 servers after upgrading to release 4.3(2), then you must decommission the X-Series chassis and M7 servers before downgrading. 
-
-  3. Cisco UCS M4 servers are not supported by 4.3(2) and later releases. You must decommission Cisco UCS M4 servers before upgrading to release 4.3(2) 
-
-  4. Once you upgrade to release 4.3(2) or later and enable Netflow feature from Cisco UCS Manager GUI, then you cannot downgrade to any previous release. To downgrade to any release earlier than 4.3(2), you must first disable Netflow feature from Cisco UCS Manager GUI. 
-
-  5. Once you upgrade Cisco UCS 6400 or 64108 FI to release 4.3(2) or later and enable Q-in-Q feature from Cisco UCS Manager GUI, then you cannot downgrade to any previous release. To downgrade to any release earlier than 4.3(2), you must first disable Q-in-Q feature from Cisco UCS Manager GUI. 
-
-  6. Once you upgrade to release 4.3(2) or later and enable SMTP Authentication under Call Home in Cisco UCS Manager GUI, then you cannot downgrade to any previous release. To downgrade to any release earlier than 4.3(2), you must first disable SMTP Authentication from Cisco UCS Manager GUI. 
-
-  7. If you have installed any Cisco UCS VIC with secure boot feature, then you cannot dowgrade to any previous release.
-
-  8. If Fibre Channel ports on UCS Fabric Interconnect are connected to non-Cisco products, ensure that these are operating as individual Fibre Channel links and not aggregated into a port channel. Fibre Channel port channels are not compatible with non-Cisco technology. 
-
+2. If you are managing Cisco UCS X-Series chassis or Cisco UCS M7 servers after upgrading to release 4.3(2), then you must decommission the X-Series chassis and M7 servers before downgrading. 
+3. Cisco UCS M4 servers are not supported by 4.3(2) and later releases. You must decommission Cisco UCS M4 servers before upgrading to release 4.3(2) 
+4. Once you upgrade to release 4.3(2) or later and enable Netflow feature from Cisco UCS Manager GUI, then you cannot downgrade to any previous release. To downgrade to any release earlier than 4.3(2), you must first disable Netflow feature from Cisco UCS Manager GUI. 
+5. Once you upgrade Cisco UCS 6400 or 64108 FI to release 4.3(2) or later and enable Q-in-Q feature from Cisco UCS Manager GUI, then you cannot downgrade to any previous release. To downgrade to any release earlier than 4.3(2), you must first disable Q-in-Q feature from Cisco UCS Manager GUI. 
+6. Once you upgrade to release 4.3(2) or later and enable SMTP Authentication under Call Home in Cisco UCS Manager GUI, then you cannot downgrade to any previous release. To downgrade to any release earlier than 4.3(2), you must first disable SMTP Authentication from Cisco UCS Manager GUI. 
+7. If you have installed any Cisco UCS VIC with secure boot feature, then you cannot dowgrade to any previous release.
+8. If Fibre Channel ports on UCS Fabric Interconnect are connected to non-Cisco products, ensure that these are operating as individual Fibre Channel links and not aggregated into a port channel. Fibre Channel port channels are not compatible with non-Cisco technology. 
 
 Table 11. Upgrade Paths to Release 4.3(2) Upgrade from Release |  Recommended Upgrade Path  
 ---|---  
 Upgrade from any 4.2(2) or 4.2(3) release |  Direct upgrade to release 4.3(2).  
 Upgrade from any 4.2(1) release | 
 
-  1. Upgrade from 4.2(1i) or later patch—Direct upgrade to release 4.3(2).
-  2. Upgrade from a patch earlier than 4.2(1i) —
-     1. Upgrade to release 4.2(1i)A bundle and activate. |  **Note** |  Do not download release 4.3(2)A bundle before activating release 4.2(1i)A.  
+1. Upgrade from 4.2(1i) or later patch—Direct upgrade to release 4.3(2).
+2. Upgrade from a patch earlier than 4.2(1i) —
+1. Upgrade to release 4.2(1i)A bundle and activate. |  **Note** |  Do not download release 4.3(2)A bundle before activating release 4.2(1i)A.  
 ---|---  
-     2. Download and upgrade to release 4.3(2).
-
+2. Download and upgrade to release 4.3(2).
 
   
 Upgrade from any 4.1(3) release | 
 
-  1. Upgrade from 4.1(3h) or later patch—Direct upgrade to release 4.3(2).
-  2. Upgrade from a patch earlier than 4.1(3h)—
-     1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(2)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade from 4.1(3h) or later patch—Direct upgrade to release 4.3(2).
+2. Upgrade from a patch earlier than 4.1(3h)—
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(2)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-     2. Download and upgrade to release 4.3(2).
-
+2. Download and upgrade to release 4.3(2).
 
   
 Upgrade from any 4.1(2) release | 
 
-  1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(2)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(2)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-  2. Download and upgrade to release 4.3(2).
-
+2. Download and upgrade to release 4.3(2).
 
   
 Upgrade from any 4.1(1) release | 
 
-  1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(2)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(2)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-  2. Download and upgrade to release 4.3(2).
-
+2. Download and upgrade to release 4.3(2).
 
   
 Upgrade from any 4.0(4) release | 
 
-  1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(2)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
+1. Upgrade to release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version and activate. |  **Note** |  Do not download release 4.3(2)A bundle before activating release 4.1(3h)A bundle or later infrastructure bundle in 4.1(3) release version.   
 ---|---  
-  2. Download and upgrade to release 4.3(2).
-
+2. Download and upgrade to release 4.3(2).
 
   
   
@@ -2963,13 +2359,11 @@ NVMe-TCP |  HV Hitachi VSP One Block 24 |  Cisco UCSX-S9108-100G |  Cisco UCS 15
 ---|---  
 HV Hitachi VSP One Block 26  
 HV Hitachi VSP One Block 28  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
-
 + under OS Support column refers to the newer release in that release train. 
-
 * * *  
   
 ---|---  
@@ -2984,7 +2378,7 @@ Cisco UCS 6536 FI |  9.2 |  9.4
 Cisco UCS 6454 FI |  8.4, 9.2 |  9.4  
 Cisco UCS 64108 FI |  8.4, 9.2 |  9.4  
 Cisco UCS X-Series Direct |  — |  9.4  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -3021,76 +2415,51 @@ Cisco UCS X-Series Direct |  NA |  9.2
 
 Support for the following servers is introduced in this release and continues in future releases within the same release train:
 
-  * Cisco UCS C240 M8 Server
-
-  * Cisco UCS C220 M8 Server
-
-  * Cisco UCS X210c M8 Compute Node
-
+* Cisco UCS C240 M8 Server
+* Cisco UCS C220 M8 Server
+* Cisco UCS X210c M8 Compute Node
 
 ### 4.3(5a)
 
 Support for the following servers is introduced in this release and continues in future releases within the same release train:
 
-  * Cisco UCS X215c M8 Compute Node
-
-  * Cisco UCS C225 M8 Server
-
+* Cisco UCS X215c M8 Compute Node
+* Cisco UCS C225 M8 Server
 
 ### 4.3(4b)
 
 Support for the following server is introduced in this release and continues in future releases within the same release train:
 
-  * Cisco UCS C245 M8 Server
-
+* Cisco UCS C245 M8 Server
 
 ### 4.3(2c)
 
 Support for the following server is introduced in this release and continues in future releases within the same release train:
 
-  * Cisco UCS X410c M7 Compute Node
-
+* Cisco UCS X410c M7 Compute Node
 
 ### 4.3(2b)
 
 The following servers are supported in this release and continue to receive support in subsequent releases within the same release train: 
 
-  * Cisco UCS X210c M7 Compute Node
-
-  * Cisco UCS X210c M6 Compute Node
-
-  * Cisco UCS C240 M7 Server
-
-  * Cisco UCS C220 M7 Server
-
-  * Cisco UCS C220 M6
-
-  * Cisco UCS C240 M6
-
-  * Cisco UCS C245 M6
-
-  * Cisco UCS C225 M6
-
-  * Cisco UCS B200 M6
-
-  * Cisco UCS B200 M5
-
-  * Cisco UCS B480 M5
-
-  * Cisco UCS C220 M5
-
-  * Cisco UCS C240 M5
-
-  * Cisco UCS C240 SD M5
-
-  * Cisco UCS C480 M5
-
-  * Cisco UCS C480 M5 ML
-
-  * Cisco UCS S3260 M5
-
-  * Cisco UCS C125 M5
-
+* Cisco UCS X210c M7 Compute Node
+* Cisco UCS X210c M6 Compute Node
+* Cisco UCS C240 M7 Server
+* Cisco UCS C220 M7 Server
+* Cisco UCS C220 M6
+* Cisco UCS C240 M6
+* Cisco UCS C245 M6
+* Cisco UCS C225 M6
+* Cisco UCS B200 M6
+* Cisco UCS B200 M5
+* Cisco UCS B480 M5
+* Cisco UCS C220 M5
+* Cisco UCS C240 M5
+* Cisco UCS C240 SD M5
+* Cisco UCS C480 M5
+* Cisco UCS C480 M5 ML
+* Cisco UCS S3260 M5
+* Cisco UCS C125 M5
 
 ## System Requirements
 
@@ -3102,16 +2471,12 @@ For detailed information about supported operating system, see the interactive [
 
 To access the Cisco UCS Manager GUI, Cisco recommends using the most recent version of one of the following supported browsers for Windows, Linux RHEL, and MacOS: 
 
-  * Microsoft Edge
+* Microsoft Edge
+* Mozilla Firefox
+* Google Chrome
+* Apple Safari
 
-  * Mozilla Firefox
-
-  * Google Chrome
-
-  * Apple Safari
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -3168,7 +2533,7 @@ Table 15. Supported Hardware for UCS 6332, UCS 6332-16UP Fabric Interconnects Ty
 **Fabric Interconnects** |  UCS 6332UP  UCS 6332-16UP   
 **Fabric Extenders** |  2232 PP 2348 2304v1/v2 2204/2208  
 **Power Supplies** |  UCS-PSU-6332-AC UCS-PSU-6332-DC  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -3183,15 +2548,12 @@ The 40G backplane setting is not applicable for 22xx IOMs.
 
 Following is the list of Gb connector modules, transceiver modules, and supported cables: 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
-
-  * Transceiver modules and cables that are supported on a specific Fabric Interconnect are not always supported on all VIC adapters, IOMs, or FEXes that are compatible with that Fabric Interconnect. Detailed compatibility matrices for the transceiver modules are available here:<https://www.cisco.com/c/en/us/support/interfaces-modules/transceiver-modules/products-device-support-tables-list.html>
-  * S-Class transceivers, for example, QSFP-40G-SR4-S, do not support FCoE.
-
-
+* Transceiver modules and cables that are supported on a specific Fabric Interconnect are not always supported on all VIC adapters, IOMs, or FEXes that are compatible with that Fabric Interconnect. Detailed compatibility matrices for the transceiver modules are available here:<https://www.cisco.com/c/en/us/support/interfaces-modules/transceiver-modules/products-device-support-tables-list.html>
+* S-Class transceivers, for example, QSFP-40G-SR4-S, do not support FCoE.
 * * *  
   
 ---|---  
@@ -3309,7 +2671,7 @@ Table 18. UCS 6300 Series Fabric Interconnects Gb Connector Modules  |  Transcei
   
 2 SFP-10G-AOC cables are only supported for Cisco 1455 and 1457 VIC cards. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -3398,27 +2760,18 @@ NVIDIA H200-NVL GPU |  UCSC-GPU-H200-NVL |  Cisco UCS C240 M8 |  4.3(6c) |  4.3(
 
 Beginning with Cisco UCS Manager release 4.3(4a) following adapters are not supported: 
 
-  * Qlogic QL41132HORJ dual port 10GBase T OCP (UCSC-OCP-QD10GC)
-
-  * QLogic QL41162HLRJ PCIe dual-port 10Gb Base-T PCIe NIC (UCSC-PCIE-QD10GC)
-
-  * Cisco FastLinQ QL41212H 25GbE (UCSC-PCIE-QD25GF)
-
-  * Qlogic QL41232HOCU dual port 25G OCP (UCSC-OCP-QD25GF)
-
-  * Qlogic FastLinQ QL45412H 40GbE (UCSC-PCIE-QD40GF)
-
-  * QLogic QL45611HLCU single port 100GbE PCIe NIC (UCSC-PCIE-QS100GF)
-
-  * Qlogic FastLinQ QL45631HOCU single port 100G QSFP28 OCP 2.0 (UCSC-OCP-QS100GF)
-
+* Qlogic QL41132HORJ dual port 10GBase T OCP (UCSC-OCP-QD10GC)
+* QLogic QL41162HLRJ PCIe dual-port 10Gb Base-T PCIe NIC (UCSC-PCIE-QD10GC)
+* Cisco FastLinQ QL41212H 25GbE (UCSC-PCIE-QD25GF)
+* Qlogic QL41232HOCU dual port 25G OCP (UCSC-OCP-QD25GF)
+* Qlogic FastLinQ QL45412H 40GbE (UCSC-PCIE-QD40GF)
+* QLogic QL45611HLCU single port 100GbE PCIe NIC (UCSC-PCIE-QS100GF)
+* Qlogic FastLinQ QL45631HOCU single port 100G QSFP28 OCP 2.0 (UCSC-OCP-QS100GF)
 
 ### Release 4.3(2b)
 
-  * Beginning with Cisco UCS Manager Release 4.3(2b), all Cisco UCS M4 and older servers and their accessories are no longer supported on all platforms (6300 Series, and 6400 Series Fabric Interconnects). 
-
-  * Beginning with Cisco UCS Manager Release 4.3(2b), Cisco UCS 6200 Series FI is no longer supported. 
-
+* Beginning with Cisco UCS Manager Release 4.3(2b), all Cisco UCS M4 and older servers and their accessories are no longer supported on all platforms (6300 Series, and 6400 Series Fabric Interconnects). 
+* Beginning with Cisco UCS Manager Release 4.3(2b), Cisco UCS 6200 Series FI is no longer supported. 
 
 ## Capability Catalog
 
@@ -3437,185 +2790,185 @@ Table 20. Version Mapping UCS Release |  Catalog File Name |  Additional PIDs in
 4.3(6b) |  ucs-catalog.4.3.6b.T.bin |  —  
 4.3(6a) |  ucs-catalog.4.3.6a.T.bin |  Cisco UCS X210c M8 Compute Node
 
-  * UCSX-210C-M8
-  * UCSX-210C-M8-U
+* UCSX-210C-M8
+* UCSX-210C-M8-U
 
 Cisco UCS C240 M8 Server
 
-  * UCSC-C240-M8SX
+* UCSC-C240-M8SX
 
 Cisco UCS C220 M8 Server
 
-  * UCSC-C220-M8S
+* UCSC-C220-M8S
 
 Intel® CPUs: 
 
-  * UCS-CPU-I6748P
-  * UCS-CPU-I6738P
-  * UCS-CPU-I6728P
-  * UCS-CPU-I6505P
-  * UCS-CPU-I6714P
-  * UCS-CPU-I6507P
-  * UCS-CPU-I6788P
-  * UCS-CPU-I6768P 
+* UCS-CPU-I6748P
+* UCS-CPU-I6738P
+* UCS-CPU-I6728P
+* UCS-CPU-I6505P
+* UCS-CPU-I6714P
+* UCS-CPU-I6507P
+* UCS-CPU-I6788P
+* UCS-CPU-I6768P 
 
 GPU:
 
-  * UCSC-GPU-FLEX170
-  * UCSX-GPU-MI210
+* UCSC-GPU-FLEX170
+* UCSX-GPU-MI210
 
 Controllers:
 
-  * UCSX-RAID-M1L6
-  * UCSX-X10C-PTE3
-  * UCSX-M2I-HWRD-FPS
+* UCSX-RAID-M1L6
+* UCSX-X10C-PTE3
+* UCSX-M2I-HWRD-FPS
 
 Drives:
 
-  * UCS-HDM8TW1S74K
-  * UCS-HDM20TW1S74K
-  * UCS-SD19TM1X-EV
-  * UCS-SD76TM1X-EV
-  * UCS-SD19TBEM2NK9
-  * UCS-SD76TS1X-EV
-  * UCS-SD64TS3X-EP
-  * UCS-SD38T63X-EP
-  * UCS-HDB1T8GS10K4K
-  * UCS-HDB2T4GS10K4K
-  * UCS-HD24T10BNK9
-  * UCS-S3260-HDW16TR
-  * UCS-NVB12T8O1P
-  * UCS-NVB15T3O1L 
+* UCS-HDM8TW1S74K
+* UCS-HDM20TW1S74K
+* UCS-SD19TM1X-EV
+* UCS-SD76TM1X-EV
+* UCS-SD19TBEM2NK9
+* UCS-SD76TS1X-EV
+* UCS-SD64TS3X-EP
+* UCS-SD38T63X-EP
+* UCS-HDB1T8GS10K4K
+* UCS-HDB2T4GS10K4K
+* UCS-HD24T10BNK9
+* UCS-S3260-HDW16TR
+* UCS-NVB12T8O1P
+* UCS-NVB15T3O1L 
 
 DIMM:
 
-  * UCS-MR256G4RG5
+* UCS-MR256G4RG5
 
 Third-party Adapters:
 
-  * UCSC-O-N6CD100GFO
-  * UCSC-P-M6CD100GFO
-  * UCSC-P-M6DD100GFO
-  * UCSC-O-N6CD25GFO
-  * UCSC-P-N7D200GFO
-  * UCSC-P-N7Q25GFO
-  * UCSC-P-N7S400GFO
-  * 900-9D3B6-00CC-EA0
-  * UCSC-P-N3220L
-  * UCSC-P-N6D25GFO
+* UCSC-O-N6CD100GFO
+* UCSC-P-M6CD100GFO
+* UCSC-P-M6DD100GFO
+* UCSC-O-N6CD25GFO
+* UCSC-P-N7D200GFO
+* UCSC-P-N7Q25GFO
+* UCSC-P-N7S400GFO
+* 900-9D3B6-00CC-EA0
+* UCSC-P-N3220L
+* UCSC-P-N6D25GFO
 
   
 4.3(5d) |  ucs-catalog.4.3.5d.T.bin |  Drives for Cisco UCS B200 M6 servers:
 
-  * UCS-SDC960SA1V
-  * UCS-SDC1T9SA1V
-  * UCS-SDC3T8SA1V
-  * UCS-SDC7T6SA1V 
+* UCS-SDC960SA1V
+* UCS-SDC1T9SA1V
+* UCS-SDC3T8SA1V
+* UCS-SDC7T6SA1V 
 
 Drives for Cisco UCS B-Series M5 servers:
 
-  * UCS-SDA960SA1V
-  * UCS-SDA1T9SA1V
-  * UCS-SDA3T8SA1V
-  * UCS-SDA7T6SA1V 
+* UCS-SDA960SA1V
+* UCS-SDA1T9SA1V
+* UCS-SDA3T8SA1V
+* UCS-SDA7T6SA1V 
 
 Drives for Cisco UCS C-Series and X-Series servers:
 
-  * UCS-SDB960SA1V
-  * UCS-SDB1T9SA1V
-  * UCS-SDB3T8SA1V
-  * UCS-SDB7T6SA1V 
+* UCS-SDB960SA1V
+* UCS-SDB1T9SA1V
+* UCS-SDB3T8SA1V
+* UCS-SDB7T6SA1V 
 
   
 4.3(5c) |  ucs-catalog.4.3.5c.T.bin |  CPUs for Cisco UCS C245 M8 servers:
 
-  * UCS-CPU-A9655
-  * UCS-CPU-A9575F
-  * UCS-CPU-A9555
-  * UCS-CPU-A9355
-  * UCS-CPU-A9135 
+* UCS-CPU-A9655
+* UCS-CPU-A9575F
+* UCS-CPU-A9555
+* UCS-CPU-A9355
+* UCS-CPU-A9135 
 
 CPUs for Cisco UCS C225 M8 servers:
 
-  * UCS-CPU-A9355
-  * UCS-CPU-A9135
-  * UCS-CPU-A9655P
-  * UCS-CPU-A9555P\
-  * UCS-CPU-A9355P
+* UCS-CPU-A9355
+* UCS-CPU-A9135
+* UCS-CPU-A9655P
+* UCS-CPU-A9555P\
+* UCS-CPU-A9355P
 
 CPUs for Cisco UCSX-215C-M8 Compute Node:
 
-  * UCSX-CPU-A9655
-  * UCSX-CPU-A9555
-  * UCSX-CPU-A9355
-  * UCSX-CPU-A9135
-  * UCSX-CPU-A9575F 
+* UCSX-CPU-A9655
+* UCSX-CPU-A9555
+* UCSX-CPU-A9355
+* UCSX-CPU-A9135
+* UCSX-CPU-A9575F 
 
 GPU Support:
 
-  * UCSC-GPU-MI210
+* UCSC-GPU-MI210
 
   
 4.3(5a) |  ucs-catalog.4.3.5a.T.bin |  Cisco UCS X215c M8 Compute Node
 
-  * UCSX-215C-M8
-  * UCSX-215C-M8-U
+* UCSX-215C-M8
+* UCSX-215C-M8-U
 
 Cisco UCS C225 M8 Server
 
-  * UCSC-C225-M8S
-  * UCSC-C225-M8N
+* UCSC-C225-M8S
+* UCSC-C225-M8N
 
 Cisco Tri-Mode M1 24G RAID and HBA controllers:
 
-  * UCSC-RAID-MP1L32
-  * UCSC-RAID-M1L16 
-  * o UCSC-HBA-M1L16 
+* UCSC-RAID-MP1L32
+* UCSC-RAID-M1L16 
+* o UCSC-HBA-M1L16 
 
 GPUs:
 
-  * UCSC-CGPU-A16
-  * UCSC-GPU-H100-NVL
-  * UCSX-GPU-L4-Mezz
+* UCSC-CGPU-A16
+* UCSC-GPU-H100-NVL
+* UCSX-GPU-L4-Mezz
 
 Drives:
 
-  * UCS-NVB1T9O1V
-  * UCSB-NVA1T9O1V
-  * UCS-NVB3T8O1V
-  * UCSB-NVA3T8O1V
-  * UCS-NVB7T6O1V
-  * UCSB-NVA7T6O1V
-  * UCS-NVB15TO1V
-  * UCSB-NVA15TO1V
-  * UCS-NVB1T6O1P
-  * UCSB-NVA1T6O1P
-  * UCS-NVB3T2O1P
-  * UCSB-NVA3T2O1P
-  * UCS-NVB6T4O1P
-  * UCSB-NVA6T4O1P
-  * UCS-NVB12T8O1P
-  * UCS-SDB480OA1V
-  * UCS-SDB960OA1V
-  * UCS-SDB3T8OA1V
-  * UCSB-SDA480OA1V
-  * UCSB-SDA960OA1V
-  * UCSB-SDA3T8OA1V
-  * UCSB-SDC480OA1V
-  * UCSB-SDC960OA1V
-  * UCSB-SDC3T8OA1V
-  * UCS-SDB480OA1P
-  * UCS-SDB960OA1P
-  * UCS-SDB1T9OA1P
-  * UCS-SDB3T8OA1P
-  * UCSB-SDA480OA1P
-  * UCSB-SDA960OA1P
-  * UCSB-SDA1T9OA1P
-  * UCSB-SDC480OA1P
-  * UCSB-SDC960OA1P
-  * UCSB-SDC1T9OA1P
-  * UCS-M2240OA1V
-  * UCS-M2480OA1V
+* UCS-NVB1T9O1V
+* UCSB-NVA1T9O1V
+* UCS-NVB3T8O1V
+* UCSB-NVA3T8O1V
+* UCS-NVB7T6O1V
+* UCSB-NVA7T6O1V
+* UCS-NVB15TO1V
+* UCSB-NVA15TO1V
+* UCS-NVB1T6O1P
+* UCSB-NVA1T6O1P
+* UCS-NVB3T2O1P
+* UCSB-NVA3T2O1P
+* UCS-NVB6T4O1P
+* UCSB-NVA6T4O1P
+* UCS-NVB12T8O1P
+* UCS-SDB480OA1V
+* UCS-SDB960OA1V
+* UCS-SDB3T8OA1V
+* UCSB-SDA480OA1V
+* UCSB-SDA960OA1V
+* UCSB-SDA3T8OA1V
+* UCSB-SDC480OA1V
+* UCSB-SDC960OA1V
+* UCSB-SDC3T8OA1V
+* UCS-SDB480OA1P
+* UCS-SDB960OA1P
+* UCS-SDB1T9OA1P
+* UCS-SDB3T8OA1P
+* UCSB-SDA480OA1P
+* UCSB-SDA960OA1P
+* UCSB-SDA1T9OA1P
+* UCSB-SDC480OA1P
+* UCSB-SDC960OA1P
+* UCSB-SDC1T9OA1P
+* UCS-M2240OA1V
+* UCS-M2480OA1V
 
   
 4.3(4f) |  ucs-catalog.4.3.4f.T.bin |  —  
@@ -3624,167 +2977,167 @@ Drives:
 4.3(4c) |  ucs-catalog.4.3.4c.T.bin |  —  
 4.3(4b) |  ucs-catalog.4.3.4b.T.bin |  Cisco UCS C245 M8 Server
 
-  * UCSC-C245-M8SX
+* UCSC-C245-M8SX
 
 Cisco UCS 9108 100G FI
 
-  * UCSX-S9108-100G
+* UCSX-S9108-100G
 
   
 4.3(4a) | ucs-catalog.4.3.4a.T.bin |  RAID Controllers:
 
-  * UCSC-RAID-HP
-  * UCS-M2-NVRAID
+* UCSC-RAID-HP
+* UCS-M2-NVRAID
 
 TPM Module:
 
-  * UCS-TPM-002D
+* UCS-TPM-002D
 
 GPU:
 
-  * UCSX-GPU-FLEX170
-  * UCSX-GPU-FLEX140
-  * UCSX-GPU-L40S
-  * UCSC-GPU-L4M6
-  * UCSX-GPU-H100-80
+* UCSX-GPU-FLEX170
+* UCSX-GPU-FLEX140
+* UCSX-GPU-L40S
+* UCSC-GPU-L4M6
+* UCSX-GPU-H100-80
 
   
 4.3(3c) |  ucs-catalog.4.3.3c.T.bin |  —  
 4.3(3a) |  ucs-catalog.4.3.3a.T.bin |  CPUs for Cisco UCS X210c M7 Compute Node:
 
-  * UCSX-CPU-I8592V
-  * UCSX-CPU-I8592+
-  * UCSX-CPU-I8581V
-  * UCSX-CPU-I8580
-  * UCSX-CPU-I8571N
-  * UCSX-CPU-I8570
-  * UCSX-CPU-I8568Y+
-  * UCSX-CPU-I8562Y+
-  * UCSX-CPU-I8558U
-  * UCSX-CPU-I8558P
-  * UCSX-CPU-I8558
-  * UCSX-CPU-I6554S
-  * UCSX-CPU-I6548Y+
-  * UCSX-CPU-I6548N
-  * UCSX-CPU-I6544Y
-  * UCSX-CPU-I6542Y
-  * UCSX-CPU-I6538Y+
-  * UCSX-CPU-I6538N
-  * UCSX-CPU-I6534
-  * UCSX-CPU-I6530
-  * UCSX-CPU-I6526Y
-  * UCSX-CPU-I5520+
-  * UCSX-CPU-I5515+
-  * UCSX-CPU-I5512U
-  * UCSX-CPU-I4516Y+
-  * UCSX-CPU-I4514Y
+* UCSX-CPU-I8592V
+* UCSX-CPU-I8592+
+* UCSX-CPU-I8581V
+* UCSX-CPU-I8580
+* UCSX-CPU-I8571N
+* UCSX-CPU-I8570
+* UCSX-CPU-I8568Y+
+* UCSX-CPU-I8562Y+
+* UCSX-CPU-I8558U
+* UCSX-CPU-I8558P
+* UCSX-CPU-I8558
+* UCSX-CPU-I6554S
+* UCSX-CPU-I6548Y+
+* UCSX-CPU-I6548N
+* UCSX-CPU-I6544Y
+* UCSX-CPU-I6542Y
+* UCSX-CPU-I6538Y+
+* UCSX-CPU-I6538N
+* UCSX-CPU-I6534
+* UCSX-CPU-I6530
+* UCSX-CPU-I6526Y
+* UCSX-CPU-I5520+
+* UCSX-CPU-I5515+
+* UCSX-CPU-I5512U
+* UCSX-CPU-I4516Y+
+* UCSX-CPU-I4514Y
 
 CPUs for Cisco UCS C220 M7 and C240 M7 servers:
 
-  * UCS-CPU-I6542Y
-  * UCS-CPU-I6544Y
-  * UCS-CPU-I6548Y+
-  * UCS-CPU-I6526Y
-  * UCS-CPU-I6530
-  * UCS-CPU-I8562Y+
-  * UCS-CPU-I8568Y+
-  * UCS-CPU-I8592+
-  * UCS-CPU-I8558P
-  * UCS-CPU-I6534
-  * UCS-CPU-I6554S
-  * UCS-CPU-I6538Y+
-  * UCS-CPU-I4514Y
-  * UCS-CPU-I8580
-  * UCS-CPU-I8592V
-  * UCS-CPU-I5515+
-  * UCS-CPU-I5520+
-  * UCS-CPU-I4516Y+
-  * UCS-CPU-I8558
-  * UCS-CPU-I6548N
+* UCS-CPU-I6542Y
+* UCS-CPU-I6544Y
+* UCS-CPU-I6548Y+
+* UCS-CPU-I6526Y
+* UCS-CPU-I6530
+* UCS-CPU-I8562Y+
+* UCS-CPU-I8568Y+
+* UCS-CPU-I8592+
+* UCS-CPU-I8558P
+* UCS-CPU-I6534
+* UCS-CPU-I6554S
+* UCS-CPU-I6538Y+
+* UCS-CPU-I4514Y
+* UCS-CPU-I8580
+* UCS-CPU-I8592V
+* UCS-CPU-I5515+
+* UCS-CPU-I5520+
+* UCS-CPU-I4516Y+
+* UCS-CPU-I8558
+* UCS-CPU-I6548N
 
 DIMMs for Cisco UCS C220 M7 and C240 M7 servers:
 
-  * UCS-MRX16G1RE3
-  * UCS-MRX32G1RE3
-  * UCS-MRX64G2RE3
-  * UCS-MRX96G2RF3
-  * UCS-MR128G4RE3
+* UCS-MRX16G1RE3
+* UCS-MRX32G1RE3
+* UCS-MRX64G2RE3
+* UCS-MRX96G2RF3
+* UCS-MR128G4RE3
 
 DIMMs for Cisco UCS X210c M7 Compute Node:
 
-  * UCSX-MRX16G1RE3
-  * UCSX-MRX32G1RE3
-  * UCSX-MRX64G2RE3
-  * UCSX-MRX96G2RF3
-  * UCSX-MR128G4RE3
+* UCSX-MRX16G1RE3
+* UCSX-MRX32G1RE3
+* UCSX-MRX64G2RE3
+* UCSX-MRX96G2RF3
+* UCSX-MR128G4RE3
 
   
 4.3(2f) |  ucs-catalog.4.3.2f.T.bin |  —  
 4.3(2e) |  ucs-catalog.4.3.2e.T.bin |  —  
 4.3(2c) |  ucs-catalog.4.3.2c.T.bin |  Cisco UCS X410c M7 Compute Node:
 
-  * UCSX-410C-M7
-  * UCSX-410C-M7-U
+* UCSX-410C-M7
+* UCSX-410C-M7-U
 
 Cisco UCS VIC:
 
-  * UCSC-M-V5Q50GV2
-  * UCSC-M-V5Q50GV2D
-  * UCSX-ML-V5D200GV2
-  * UCSX-ML-V5D200GV2D
-  * UCSC-M-V5D200GV2
-  * UCSC-M-V5D200GV2D
+* UCSC-M-V5Q50GV2
+* UCSC-M-V5Q50GV2D
+* UCSX-ML-V5D200GV2
+* UCSX-ML-V5D200GV2D
+* UCSC-M-V5D200GV2
+* UCSC-M-V5D200GV2D
 
   
 4.3(2b) |  ucs-catalog.4.3.2b.T.bin |  Cisco UCSX-9508 Chassis M7:
 
-  * UCSX-M7-MLB
-  * UCSX-9508-D=
-  * UCSX-9508-D-U
-  * UCSX-9508-D-CH
+* UCSX-M7-MLB
+* UCSX-9508-D=
+* UCSX-9508-D-U
+* UCSX-9508-D-CH
 
 Cisco UCS X210c M7 Compute Node:
 
-  * UCSX-210C-M7
-  * UCSX-210C-M7-U
+* UCSX-210C-M7
+* UCSX-210C-M7-U
 
 Cisco UCS X210c M6 Compute Node:
 
-  * UCSX-210C-M6
-  * UCSX-210C-M6-U
+* UCSX-210C-M6
+* UCSX-210C-M6-U
 
 Cisco UCS C240 M7 Server:
 
-  * UCSC-C240-M7SX
-  * UCSC-C240-M7SN
+* UCSC-C240-M7SX
+* UCSC-C240-M7SN
 
 Cisco UCS C220 M7 Server:
 
-  * UCSC-C220-M7S
-  * UCSC-C220-M7N
+* UCSC-C220-M7S
+* UCSC-C220-M7N
 
 Intelligent Fabric Module:
 
-  * UCSX-I-9108-25G
-  * UCSX-I-9108-100G
+* UCSX-I-9108-25G
+* UCSX-I-9108-100G
 
 Cisco UCS VIC:
 
-  * UCSC-P-V5Q50G
-  * UCSC-P-V5D200G
-  * UCSX-ML-V5D200G-D
-  * UCSX-ML-V5Q50G-D
-  * UCSX-ME-V5Q50G-D
-  * UCSX-V4-Q25GML
-  * UCSX-V4-Q25GME
+* UCSC-P-V5Q50G
+* UCSC-P-V5D200G
+* UCSX-ML-V5D200G-D
+* UCSX-ML-V5Q50G-D
+* UCSX-ME-V5Q50G-D
+* UCSX-V4-Q25GML
+* UCSX-V4-Q25GME
 
 NVIDIA GPU:
 
-  * UCSC-GPU-T4-16
+* UCSC-GPU-T4-16
 
 PSU:
 
-  * UCSB-PSU-2500ACDV
+* UCSB-PSU-2500ACDV
 
   
   
@@ -3792,28 +3145,17 @@ PSU:
 
 For more information, you can access related documents from the following links:
 
-  * [Release Bundle Contents for Cisco UCS Software](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-release-notes-list.html)
-
-  * [Cisco UCS C-series Rack Server Integration Guides](http://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-c-series-rack-mount-ucs-managed-server-software/products-installation-and-configuration-guides-list.html)
-
-  * [Cisco UCS C-series Software Release Notes](http://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-c-series-integrated-management-controller/products-release-notes-list.html)
-
-  * [Release Notes for Cisco Intersight Infrastructure Firmware](https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html)
-
-  * [Release Notes for Cisco UCS Central](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-central-software/products-release-notes-list.html)
-
-  * [Cisco UCS Manager Upgrade/Downgrade Support Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/ucs-manager/UCSM-upgrade-downgrade-matrix/index.html) Tool 
-
-  * [Cisco UCS Equivalency Matrix for Cisco Intersight, Cisco IMC, and Cisco UCS Manager](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/c/sw/UCS-Equivalency-Matrix/index.html) Tool 
-
-  * [Cisco UCS Manager Internal Dependencies Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/ucs-manager/internal_dependencies_matrix_6_0_onwards/index.html) Tool 
-
-  * [Cisco UCS Manager Internal Dependencies, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cisco-ucs-manager-internal-dependencies--release-4-3.html)
-
-  * [Cisco UCS Manager Cross Version Firmware Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/ucs-manager/cross_version_firmware_matrix_6_0_onwards/index.html) Tool 
-
-  * [Cisco UCS Manager Cross-Version Firmware Support, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cross-version-fw-support_4_3.html)
-
+* [Release Bundle Contents for Cisco UCS Software](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-release-notes-list.html)
+* [Cisco UCS C-series Rack Server Integration Guides](http://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-c-series-rack-mount-ucs-managed-server-software/products-installation-and-configuration-guides-list.html)
+* [Cisco UCS C-series Software Release Notes](http://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-c-series-integrated-management-controller/products-release-notes-list.html)
+* [Release Notes for Cisco Intersight Infrastructure Firmware](https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html)
+* [Release Notes for Cisco UCS Central](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-central-software/products-release-notes-list.html)
+* [Cisco UCS Manager Upgrade/Downgrade Support Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/ucs-manager/UCSM-upgrade-downgrade-matrix/index.html) Tool 
+* [Cisco UCS Equivalency Matrix for Cisco Intersight, Cisco IMC, and Cisco UCS Manager](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/c/sw/UCS-Equivalency-Matrix/index.html) Tool 
+* [Cisco UCS Manager Internal Dependencies Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/ucs-manager/internal_dependencies_matrix_6_0_onwards/index.html) Tool 
+* [Cisco UCS Manager Internal Dependencies, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cisco-ucs-manager-internal-dependencies--release-4-3.html)
+* [Cisco UCS Manager Cross Version Firmware Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/ucs-manager/cross_version_firmware_matrix_6_0_onwards/index.html) Tool 
+* [Cisco UCS Manager Cross-Version Firmware Support, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cross-version-fw-support_4_3.html)
 
 ---
 
@@ -3898,7 +3240,7 @@ Host FW Versions (B, C Bundles) |  4.3(6)
 4.1(2) |  Yes |  Yes |  Yes |  No |  No  
 4.1(1) |  Yes  |  Yes  |  Yes  |  No |  No  
 4.0(1), 4.0(4) (B, C Bundles) |  No |  No |  No |  No |  No  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Important** | 
 
 * * *
@@ -3919,7 +3261,7 @@ If you implement cross-version firmware, you must ensure that the configurations
 
 # Blade Servers
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -3944,7 +3286,7 @@ B480 M5 |  3.2(2b) |  3.2(2b) |  4.0(4o) |  4.0(1a) |  4.1(1a) |  4.2(3p) |  - |
   
 ## Rack Servers
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -4062,7 +3404,7 @@ UCSB-PSU-2500ACDV  UCSB-PSU-2500DC48  UCSC-PSU-930WDC  UCSC-PSU2V2-930WDC  UCSC-
 
 We recommend that you use the current software version for Gb port speed connections. Following is the list of Gb connector modules and supported cables: 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -4152,7 +3494,7 @@ Cisco UCSC-OCP-QD10GC (QLogic FastLinQ QL41132H Dual Port 10GbE Adapter) |  4.0(
 Cisco UCSC-PCIE-QD10GC (Qlogic QL41162HLRJ-11-SP dual-port 10GBase-T CNA) |  4.0(2a |  4.0(2a |  - |  4.0(2a) |  - |  4.0(2a) |  - |  - |  - |  4.3(6e)  
 Cisco UCSB-MLOM-PT-01 (Cisco Port Expander Card) |  3.2(2b) |  3.2(2b) |  - |  4.0(1a) |  - |  4.0(1a) |  - |  - |  - |  4.3(6e)  
 Cisco UCSC-PCIE-QD32GF (Qlogic QLE2742 Dual Port 32Gb FC HBA) |  3.2(3a) |  3.2(3a) |  - |  4.0(1a) |  - |  4.1(1a) |  - |  - |  - |  4.3(6e)  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -4329,7 +3671,7 @@ Table 16. Cisco UCS FI 9108 100G - Cisco UCS Blade Servers Cisco VIC |  UCSX-S91
 15231 (UCSX-ML-V5D200G) |  Cisco UCS X410c M7, X210c M7, X210c M6  
 15230 (UCSX-ML-V5D200GV2) |  Cisco UCS X210c M8, X215c M8, X410c M7, X210c M7, and X210c M6   
 15420 (UCSX-ML-V5Q50G) |  Cisco UCS X210c M8, X215c M8, X410c M7, X210c M7, and X210c M6   
-15420 + UCS VIC 15000 bridge connector + 15422  (UCSX-ML-V5Q50G + UCSX-V5-BRIDGE +  UCSX-ME-V5Q50G) |  Cisco UCS X210c M8, X215c M8, X410c M7, X210c M7, and X210c M6 
+15420 + UCS VIC 15000 bridge connector + 15422  (UCSX-ML-V5Q50G + UCSX-V5-BRIDGE +  UCSX-ME-V5Q50G) |  Cisco UCS X210c M8, X215c M8, X410c M7, X210c M7, and X210c M6
 
 ---
 
@@ -4381,25 +3723,25 @@ March 10, 2023 |  Updated the Open Caveats in Release 2.0(1r) section
 2.0(1v) |  September 2, 2024 |  Created release notes for Cisco UCS Central Release 2.0(1v).   
 October 30, 2024 |  Updated the following sections: 
 
-  * Behavior Changes in Release 2.0(1v)
-  * Supported Operating Systems
-  * Feature Support Matrix
-  * Open Caveats in Release 2.0(1v)
+* Behavior Changes in Release 2.0(1v)
+* Supported Operating Systems
+* Feature Support Matrix
+* Open Caveats in Release 2.0(1v)
 
   
 August 12, 2025 |  Updated the following section: Open Caveats in Release 2.0(1v)  
 2.0(1w) |  January 24, 2025 |  Updated the following sections: 
 
-  * Feature Support Matrix
-  * Known Limitations and Behaviors
-  * Resolved Caveats in Release 2.0(1w)
+* Feature Support Matrix
+* Known Limitations and Behaviors
+* Resolved Caveats in Release 2.0(1w)
 
   
 June 17, 2025 |  Updated the following sections: 
 
-  * Behavior Changes in Release 2.0(1w)
-  * Feature Support Matrix
-  * Open Caveats in Release 2.0(1w)
+* Behavior Changes in Release 2.0(1w)
+* Feature Support Matrix
+* Open Caveats in Release 2.0(1w)
 
   
 August 12, 2025 |  Updated the following section: Open Caveats in Release 2.0(1w)  
@@ -4408,34 +3750,27 @@ August 12, 2025 |  Updated the following section: Open Caveats in Release 2.0(1w
 
 Cisco recommends the following guidelines for managing Cisco UCS domains from Cisco UCS Central:
 
-  * Cisco recommends that you always register Cisco UCS domains using Cisco UCS Central's Fully Qualified Domain Name (FQDN). If domains are registered with FQDN, any change in the Cisco UCS Central IP address is transparent to the domain. 
-
-  * Cisco UCS Central does not support changing Cisco UCS Central's IP address if a Cisco UCS domain is registered with a Cisco UCS Central IP address. For more information, see the Changing a Cisco UCS Central IP Address section in the [Cisco UCS Central Installation and Upgrade Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-central/install-upgrade/2-0/b_Cisco_UCSC_Install_and_Upgrade_Guide_2_0/b_Cisco_UCSC_Install_and_Upgrade_Guide_2_0_chapter_0111.html#task_h4p_1ht_ty). 
-
-  * Before you upgrade Cisco UCS Central, it is recommended that you do a full state backup and take a VM snapshot. 
-
-  * You can migrate a Cisco UCS Central instance to support Data Center migration or disaster recovery scenarios. For more information about migrating a Cisco UCS Central instance, see the Cisco UCS Central Instance Migration section in the [Cisco UCS Central Installation and Upgrade Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-central/install-upgrade/2-0/b_Cisco_UCSC_Install_and_Upgrade_Guide_2_0/b_Cisco_UCSC_Install_and_Upgrade_Guide_2_0_chapter_0111.html#task_h4p_1ht_ty). 
-
-  * Unregistering a registered Cisco UCS domain in a production system has serious implications. Do not unregister a Cisco UCS domain unless you choose to permanently not manage it again from Cisco UCS Central. For more information about registering and unregistering a Cisco UCS Domain from Cisco UCS Central, see the Cisco UCS Domains and Cisco UCS Central section in the [Cisco UCS Central Installation and Upgrade Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-central/install-upgrade/2-0/b_Cisco_UCSC_Install_and_Upgrade_Guide_2_0/b_Cisco_UCSC_Install_and_Upgrade_Guide_2_0_chapter_0111.html#task_h4p_1ht_ty). 
+* Cisco recommends that you always register Cisco UCS domains using Cisco UCS Central's Fully Qualified Domain Name (FQDN). If domains are registered with FQDN, any change in the Cisco UCS Central IP address is transparent to the domain. 
+* Cisco UCS Central does not support changing Cisco UCS Central's IP address if a Cisco UCS domain is registered with a Cisco UCS Central IP address. For more information, see the Changing a Cisco UCS Central IP Address section in the [Cisco UCS Central Installation and Upgrade Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-central/install-upgrade/2-0/b_Cisco_UCSC_Install_and_Upgrade_Guide_2_0/b_Cisco_UCSC_Install_and_Upgrade_Guide_2_0_chapter_0111.html#task_h4p_1ht_ty). 
+* Before you upgrade Cisco UCS Central, it is recommended that you do a full state backup and take a VM snapshot. 
+* You can migrate a Cisco UCS Central instance to support Data Center migration or disaster recovery scenarios. For more information about migrating a Cisco UCS Central instance, see the Cisco UCS Central Instance Migration section in the [Cisco UCS Central Installation and Upgrade Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-central/install-upgrade/2-0/b_Cisco_UCSC_Install_and_Upgrade_Guide_2_0/b_Cisco_UCSC_Install_and_Upgrade_Guide_2_0_chapter_0111.html#task_h4p_1ht_ty). 
+* Unregistering a registered Cisco UCS domain in a production system has serious implications. Do not unregister a Cisco UCS domain unless you choose to permanently not manage it again from Cisco UCS Central. For more information about registering and unregistering a Cisco UCS Domain from Cisco UCS Central, see the Cisco UCS Domains and Cisco UCS Central section in the [Cisco UCS Central Installation and Upgrade Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-central/install-upgrade/2-0/b_Cisco_UCSC_Install_and_Upgrade_Guide_2_0/b_Cisco_UCSC_Install_and_Upgrade_Guide_2_0_chapter_0111.html#task_h4p_1ht_ty). 
 
 When you unregister any registered Cisco UCS domain from Cisco UCS Central: 
 
-  * You can no longer manage the service profiles, policies, and other configuration for the Cisco UCS domain from Cisco UCS Central. 
+* You can no longer manage the service profiles, policies, and other configuration for the Cisco UCS domain from Cisco UCS Central. 
+* All global service profiles and policies become local and continue to operate as local entities. When you re-register the domain, the service profiles, and policies remain local. 
 
-  * All global service profiles and policies become local and continue to operate as local entities. When you re-register the domain, the service profiles, and policies remain local. 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Important** | 
 
 * * *
-
-  * Cisco UCS Central does not support High Availability (HA) for new installations. Cisco recommends that you install Cisco UCS Central in Standalone mode in a single virtual machine, and leverage the High Availability capabilities of the Hypervisor. 
-  * Upgrading Cisco UCS Central release 2.0(1d) or 2.0(1e) to 2.0(1k) could fail due to CSCvt12270. Cisco recommends that you first upgrade to Cisco UCS Central 2.0(1j) and then upgrade to 2.0(1k). For more information about this defect, see Open Caveats in release 2.0(1k). 
-
+* Cisco UCS Central does not support High Availability (HA) for new installations. Cisco recommends that you install Cisco UCS Central in Standalone mode in a single virtual machine, and leverage the High Availability capabilities of the Hypervisor. 
+* Upgrading Cisco UCS Central release 2.0(1d) or 2.0(1e) to 2.0(1k) could fail due to CSCvt12270. Cisco recommends that you first upgrade to Cisco UCS Central 2.0(1j) and then upgrade to 2.0(1k). For more information about this defect, see Open Caveats in release 2.0(1k). 
 * * *  
   
 ---|---  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/caut.gif)  
+  
 **Caution** | 
 
 * * *
@@ -4446,7 +3781,6 @@ Cisco recommends that you contact Cisco Technical Support if you want to unregis
   
 ---|---  
 
-
 See Related Documentation on Cisco.com for current information on Cisco UCS Central. 
 
 System Requirements
@@ -4455,47 +3789,33 @@ System Requirements
 
 To access the Cisco UCS Central GUI, your computer must meet or exceed the following minimum system requirements: 
 
-  * Windows
+* Windows
+* Microsoft Edge 106 and above
+* Internet Explorer 11 and above 
+* Firefox 45.0.2 and above 
+* Chrome 49 and above 
+* Linux RHEL 
+* Firefox 45.0.2 and above 
+* Chrome 49 and above 
+* MacOS 
+* Firefox 45.0.2 and above 
+* Chrome 49 and above 
+* Safari 9.0.3 and above 
 
-  * Microsoft Edge 106 and above
-
-  * Internet Explorer 11 and above 
-
-  * Firefox 45.0.2 and above 
-
-  * Chrome 49 and above 
-
-  * Linux RHEL 
-
-  * Firefox 45.0.2 and above 
-
-  * Chrome 49 and above 
-
-  * MacOS 
-
-  * Firefox 45.0.2 and above 
-
-  * Chrome 49 and above 
-
-  * Safari 9.0.3 and above 
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
 
 Cisco UCS Central does not support browser full screen mode. We recommend the below screen resolutions to launch the Cisco UCS Central GUI: 
 
-  * 1920 x 1080
-  * 1600 x 900
-  * 1440 x 900
-  * 1360 x 768
-  * 1280 x 768
-  * 1280 x 720
-  * 1280 x 600
-
-
+* 1920 x 1080
+* 1600 x 900
+* 1440 x 900
+* 1360 x 768
+* 1280 x 768
+* 1280 x 720
+* 1280 x 600
 * * *  
   
 ---|---  
@@ -4504,14 +3824,12 @@ Cisco UCS Central does not support browser full screen mode. We recommend the be
 
 The released ISO is supported by the following: 
 
-  * VMware ESXi 7.0 and later
+* VMware ESXi 7.0 and later
 
 See the VMware Product Lifecycle website at https://lifecycle.vmware.com/#/
 
-  * Microsoft Hyper-V Server 2016, Microsoft Hyper-V Server 2019, and Microsoft Hyper-V Server 2022
-
-  * KVM Hypervisor on Red Hat Enterprise Linux 7.2, 7.3, 7.4, and later
-
+* Microsoft Hyper-V Server 2016, Microsoft Hyper-V Server 2019, and Microsoft Hyper-V Server 2022
+* KVM Hypervisor on Red Hat Enterprise Linux 7.2, 7.3, 7.4, and later
 
 The released OVA is supported by VMware ESXi 7.0 and later.
 
@@ -4548,47 +3866,42 @@ Fabric Evacuation in Firmware Auto Install |  Supports automatic configuration o
 Launch HTML5 KVM Client |  Launches the HTML5 based KVM client directly from the Cisco UCS Central GUI.   
 New Policies |  The following new policies are introduced in Cisco UCS Central 2.0:
 
-  * Multicast Policy with IGMP Snooping
-  * Power Sync Policy
-  * Statistics Threshold Policy
-  * Graphics Card Policy
-  * QoS System Class
-  * Hardware Change Discovery Policy
-  * Port Auto-Discovery Policy
-  * KMIP Certification Policy
+* Multicast Policy with IGMP Snooping
+* Power Sync Policy
+* Statistics Threshold Policy
+* Graphics Card Policy
+* QoS System Class
+* Hardware Change Discovery Policy
+* Port Auto-Discovery Policy
+* KMIP Certification Policy
 
   
 Server Reboot Log |  Displays a server reboot log with the last five reasons for the reset, along with the time and source of power transition.  
 Cisco UCS Manager DirectView tabs |  Launches DirectView of Cisco UCS Manager Server Statistics tabs from 2.0 to view details of CIMC Sessions, System Event Logs, VIF paths, Statistics, Temperatures, Power, and Installed Firmware.   
 UI enhancements |  Introduces the following UI enhancements:
 
-  * Spotlight search bar to enable a comprehensive search for objects by their names. Top 10 results and suggested entries are displayed. 
-  * Restore Tabs to save open tabs and enable direct access to the same session when you log back in to Cisco UCS Central. 
-  * Favorites widget on the widgets menu bar to save your most used components, tabs, and dialogs for creating or editing policies.
-  * Clone Policies icon to enable deep cloning a policy with a new name, parent organization or domain group, and description if applicable, in order to help you make minor edits without having to create a new policy. 
+* Spotlight search bar to enable a comprehensive search for objects by their names. Top 10 results and suggested entries are displayed. 
+* Restore Tabs to save open tabs and enable direct access to the same session when you log back in to Cisco UCS Central. 
+* Favorites widget on the widgets menu bar to save your most used components, tabs, and dialogs for creating or editing policies.
+* Clone Policies icon to enable deep cloning a policy with a new name, parent organization or domain group, and description if applicable, in order to help you make minor edits without having to create a new policy. 
 
   
   
 ## Behavior Changes in Release 2.0(1w)
 
-  * Cisco UCS Central 2.0(1w) supports the following hardware:
-
-  * Cisco UCS C220 M8 Server
-
-  * Cisco UCS C240 M8 Server
-
-  * Cisco UCS X210c M8 Compute Node
-
+* Cisco UCS Central 2.0(1w) supports the following hardware:
+* Cisco UCS C220 M8 Server
+* Cisco UCS C240 M8 Server
+* Cisco UCS X210c M8 Compute Node
 
 ## Behavior Changes in Release 2.0(1v)
 
 Cisco UCS Central 2.0(1v) has added support for the following: 
 
-  * Cisco UCS Central 2.0(1v) supports the following hardware:
+* Cisco UCS Central 2.0(1v) supports the following hardware:
+* Cisco UCS X-Series Direct
 
-  * Cisco UCS X-Series Direct
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -4598,19 +3911,14 @@ FC breakout ports is not supported.
 * * *  
   
 ---|---  
-  * Cisco UCS C245 M8 Server
+* Cisco UCS C245 M8 Server
+* Cisco UCS C225 M8 Server
+* Cisco UCS X215c M8 Compute Node
+* Support for the following RAID controllers:
+* Cisco boot optimized M.2 NVMe RAID controller (UCS-M2-NVRAID) with Cisco UCS C220 M7, C240 M7 servers, and Cisco UCS C245 M8 servers. This controller supports only RAID0, RAID1, or JBOD (default - JBOD) mode and only UEFI boot mode. 
+* Cisco Tri-Mode 24G SAS RAID Controller w/4GB Cache (UCSC-RAID-HP) with Cisco UCS C220 M7, C240 M7 servers, and Cisco UCS C245 M8 servers. 
 
-  * Cisco UCS C225 M8 Server
-
-  * Cisco UCS X215c M8 Compute Node
-
-  * Support for the following RAID controllers:
-
-  * Cisco boot optimized M.2 NVMe RAID controller (UCS-M2-NVRAID) with Cisco UCS C220 M7, C240 M7 servers, and Cisco UCS C245 M8 servers. This controller supports only RAID0, RAID1, or JBOD (default - JBOD) mode and only UEFI boot mode. 
-
-  * Cisco Tri-Mode 24G SAS RAID Controller w/4GB Cache (UCSC-RAID-HP) with Cisco UCS C220 M7, C240 M7 servers, and Cisco UCS C245 M8 servers. 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -4620,41 +3928,25 @@ Hybrid Slot configuration is not supported on UCSC-RAID-HP controller.
 * * *  
   
 ---|---  
-  * Cisco UCS Central adds support for the following Cisco Tri-Mode M1 24G RAID and HBA controllers on Cisco UCS C-Series M7 servers:
-
+* Cisco UCS Central adds support for the following Cisco Tri-Mode M1 24G RAID and HBA controllers on Cisco UCS C-Series M7 servers:
   * UCSC-HBA-M1L16 and UCSC-RAID-M1L16 on Cisco UCSC-C220-M7 servers
-
   * UCSC-HBA-M1L16 and UCSC-RAID-MP1L32 on Cisco UCSC-C240-M7 servers
+* Intel® Data Center GPU Flex 140, HHHL, 75W PCIe (UCSC-GPU-FLEX140) with Cisco UCS C220 M7 and C240 M7 servers. 
+* Intel® Data Center GPU Flex 170, FH-3/4L, 150W PCIe (UCSC-GPU-FLEX170) with Cisco UCS C240 M7 servers. 
+* Added support for the following Graphics Processing Units (GPUs) on Cisco UCS X-series X440p PCIe nodes.
+* UCSX-GPU-A100
+* UCSX-GPU-A16
+* UCSX-GPU-A40
+* UCSX-GPU-FLEX140
+* UCSX-GPU-FLEX170
+* UCSX-GPU-H100
+* UCSX-GPU-H100-NVL
+* UCSX-GPU-L4
+* UCSX-GPU-L40
+* UCSX-GPU-L40S
+* UCSX-GPU-T4
 
-  * Intel® Data Center GPU Flex 140, HHHL, 75W PCIe (UCSC-GPU-FLEX140) with Cisco UCS C220 M7 and C240 M7 servers. 
-
-  * Intel® Data Center GPU Flex 170, FH-3/4L, 150W PCIe (UCSC-GPU-FLEX170) with Cisco UCS C240 M7 servers. 
-
-  * Added support for the following Graphics Processing Units (GPUs) on Cisco UCS X-series X440p PCIe nodes.
-
-  * UCSX-GPU-A100
-
-  * UCSX-GPU-A16
-
-  * UCSX-GPU-A40
-
-  * UCSX-GPU-FLEX140
-
-  * UCSX-GPU-FLEX170
-
-  * UCSX-GPU-H100
-
-  * UCSX-GPU-H100-NVL
-
-  * UCSX-GPU-L4
-
-  * UCSX-GPU-L40
-
-  * UCSX-GPU-L40S
-
-  * UCSX-GPU-T4
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -4664,9 +3956,9 @@ For more information, see [Cisco UCS X440p PCIe Node Spec Sheet](https://www.cis
 * * *  
   
 ---|---  
-  * Support for password encryption with AES and user-provided keys for backup or restore, and for export or import.
+* Support for password encryption with AES and user-provided keys for backup or restore, and for export or import.
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -4676,9 +3968,9 @@ You cannot perform backup, restore, import, or export operations from a supporte
 * * *  
   
 ---|---  
-  * You cannot create a Cisco UCS Central IPv6 Pool using ULA addresses.
+* You cannot create a Cisco UCS Central IPv6 Pool using ULA addresses.
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -4688,13 +3980,11 @@ It displays an _IPv6 address must be global unicast_ error when creating and sav
 * * *  
   
 ---|---  
-  * Cisco IT Security is migrating SSO (Single Sign-On) services from the PingAccess/PingFederate applications to Duo SSO/Cisco Customer Identity (CCI, powered by OKTA). Due to this migration, you must authenticate using SSO before downloading or syncing the image list from the image library. 
+* Cisco IT Security is migrating SSO (Single Sign-On) services from the PingAccess/PingFederate applications to Duo SSO/Cisco Customer Identity (CCI, powered by OKTA). Due to this migration, you must authenticate using SSO before downloading or syncing the image list from the image library. 
+* The SNMP community string will be encrypted in the configuration XML file and not in cleartext.
+* Cisco UCS Central supports the inventory listing for Cisco UCS X440p PCIe node adapters.
 
-  * The SNMP community string will be encrypted in the configuration XML file and not in cleartext.
-
-  * Cisco UCS Central supports the inventory listing for Cisco UCS X440p PCIe node adapters.
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -4705,76 +3995,45 @@ For more information, see [Cisco UCS X440p PCIe Node Spec Sheet](https://www.cis
   
 ---|---  
 
-
 ## Behavior Changes in Release 2.0(1u)
 
 Cisco UCS Central 2.0(1u) has added support for the following: 
 
-  * Support for the 5th Gen Intel® Xeon® Scalable Processors with Cisco UCS X210c M7, C220 M7 and C240 M7 servers
-
-  * Support for the following Cisco UCS VIC adapters:
-
-  * Cisco UCS VIC 15427
-
-  * Cisco UCS VIC 15237
-
-  * Cisco UCS VIC 15230
-
-  * New policies added under root domain and sub-domain:
-
-  * Power Save Policy
-
-  * Cisco UCS X9508 Chassis Power Extended Mode Policy
-
-  * Cisco UCS X9508 Chassis Fan Control Policy
-
-  * Under sub-domain, the Power Allocation and Profile power options are replaced with the Power Cap Management option. 
-
+* Support for the 5th Gen Intel® Xeon® Scalable Processors with Cisco UCS X210c M7, C220 M7 and C240 M7 servers
+* Support for the following Cisco UCS VIC adapters:
+* Cisco UCS VIC 15427
+* Cisco UCS VIC 15237
+* Cisco UCS VIC 15230
+* New policies added under root domain and sub-domain:
+* Power Save Policy
+* Cisco UCS X9508 Chassis Power Extended Mode Policy
+* Cisco UCS X9508 Chassis Fan Control Policy
+* Under sub-domain, the Power Allocation and Profile power options are replaced with the Power Cap Management option. 
 
 ## Behavior Changes in Release 2.0(1t)
 
 Cisco UCS Central 2.0(1t) supports the following: 
 
-  * Support for the following Cisco UCS C-series servers:
-
-  * Cisco UCS C220 M7 Server
-
-  * Cisco UCS C240 M7 Server
-
-  * Support for Cisco UCSX-9508 Chassis
-
-  * Support for the following Cisco UCS X-Series servers with Cisco UCSX-9508 Chassis:
-
-  * Cisco UCS X210c M6 Compute Node
-
-  * Cisco UCS X210c M7 Compute Node
-
-  * Cisco UCS X410c M7 Compute Node
-
-  * Support for the following Intelligent Fabric Modules with Cisco UCS X-Series Servers:
-
-  * UCSX-I-9108-25G
-
-  * UCSX-I-9108-100G
-
-  * Support for the following UCS VIC cards:
-
-  * Cisco UCS VIC 15420
-
-  * Cisco UCS VIC 15422
-
-  * Cisco UCS VIC 15425
-
-  * Cisco UCS VIC 15231
-
-  * Cisco UCS VIC 15235
-
-  * Cisco UCS VIC 14425
-
-  * Cisco UCS VIC 14825
-
-  * N+2 Power Redundancy to satisfy non-redundancy plus two additional power supplies for redundancy. Only Cisco UCS X9508 chassis supports N+2 redundancy mode. 
-
+* Support for the following Cisco UCS C-series servers:
+* Cisco UCS C220 M7 Server
+* Cisco UCS C240 M7 Server
+* Support for Cisco UCSX-9508 Chassis
+* Support for the following Cisco UCS X-Series servers with Cisco UCSX-9508 Chassis:
+* Cisco UCS X210c M6 Compute Node
+* Cisco UCS X210c M7 Compute Node
+* Cisco UCS X410c M7 Compute Node
+* Support for the following Intelligent Fabric Modules with Cisco UCS X-Series Servers:
+* UCSX-I-9108-25G
+* UCSX-I-9108-100G
+* Support for the following UCS VIC cards:
+* Cisco UCS VIC 15420
+* Cisco UCS VIC 15422
+* Cisco UCS VIC 15425
+* Cisco UCS VIC 15231
+* Cisco UCS VIC 15235
+* Cisco UCS VIC 14425
+* Cisco UCS VIC 14825
+* N+2 Power Redundancy to satisfy non-redundancy plus two additional power supplies for redundancy. Only Cisco UCS X9508 chassis supports N+2 redundancy mode. 
 
 ## Behavior Changes in Release 2.0(1s)
 
@@ -4784,16 +4043,13 @@ No new hardware has been qualified in the Cisco UCS Central 2.0(1s) release.
 
 Cisco UCS Central 2.0(1r) supports the following hardware: 
 
-  * Cisco UCS 5th Gen FI (UCS-FI-6536)
-
-  * Cisco UCS VIC 15411 – 4 x 10G mLOM adapter on Cisco UCS B-series M6 servers
-
-  * Cisco UCS VIC 15238 – 2 x 40G/100G/200G mLOM adapter on Cisco UCS C-series M6 rack servers
-
+* Cisco UCS 5th Gen FI (UCS-FI-6536)
+* Cisco UCS VIC 15411 – 4 x 10G mLOM adapter on Cisco UCS B-series M6 servers
+* Cisco UCS VIC 15238 – 2 x 40G/100G/200G mLOM adapter on Cisco UCS C-series M6 rack servers
 
 ## Behavior Changes in Release 2.0(1q)
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -4806,11 +4062,10 @@ For a seamless download of the Firmware Image Packages under the Image library, 
   
 Cisco UCS Central 2.0(1q) supports the following hardware: 
 
-  * Support for Cisco UCS VIC 1440+PE with Cisco UCS 6300/6400 fabric interconnects and 22xx series IOMs.
+* Support for Cisco UCS VIC 1440+PE with Cisco UCS 6300/6400 fabric interconnects and 22xx series IOMs.
+* Support of Cisco UCS VIC 15428 MLOM 4-port adapter on Cisco UCS C-series M6 rack servers.
 
-  * Support of Cisco UCS VIC 15428 MLOM 4-port adapter on Cisco UCS C-series M6 rack servers.
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -4820,7 +4075,7 @@ Release 2.0(1r) supports Cisco UCS 5th Gen FI (UCS-FI-6536).
 * * *  
   
 ---|---  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -4830,71 +4085,53 @@ Release 2.0(1q) does not support Cisco UCS 5th Gen FI (UCS-FI-6536).
 * * *  
   
 ---|---  
-  * QSFP-40/100-SRBD Network Interface Card at 40G on Cisco VIC 1300 and 1400.
-
-  * Intel X710T4LG 4x10 GbE RJ45 PCIe NIC (Carlsville ASIC) with Cisco UCS C220 M6, C240 M6, C225 M6, and C245 M6 servers.
-
-  * Qlogic QLE 2772 Fibre Channel Adapter with Cisco UCS C125 M5 servers.
-
-  * Qlogic QLE 2772 or QLE 2742 Fibre Channel Adapter with Cisco UCS S3260 servers.
-
-  * QLogic QLE2772 2x32GFC Gen 6 Enhanced PCIe HBA) with Cisco UCS C225 M6 and C245 M6 servers.
-
-  * MLNX MCX623106AS-CDAT, 2x100 GbE QSFP56 PCIe (non-Crypto/TLS) with Cisco UCS C225 M6 and C245 M6 servers.
-
-  * UCSC-P-B7D32GF (Cisco-Emulex LPe35002-M2-2x32GFC Gen 7 PCIe HBA)
-
+* QSFP-40/100-SRBD Network Interface Card at 40G on Cisco VIC 1300 and 1400.
+* Intel X710T4LG 4x10 GbE RJ45 PCIe NIC (Carlsville ASIC) with Cisco UCS C220 M6, C240 M6, C225 M6, and C245 M6 servers.
+* Qlogic QLE 2772 Fibre Channel Adapter with Cisco UCS C125 M5 servers.
+* Qlogic QLE 2772 or QLE 2742 Fibre Channel Adapter with Cisco UCS S3260 servers.
+* QLogic QLE2772 2x32GFC Gen 6 Enhanced PCIe HBA) with Cisco UCS C225 M6 and C245 M6 servers.
+* MLNX MCX623106AS-CDAT, 2x100 GbE QSFP56 PCIe (non-Crypto/TLS) with Cisco UCS C225 M6 and C245 M6 servers.
+* UCSC-P-B7D32GF (Cisco-Emulex LPe35002-M2-2x32GFC Gen 7 PCIe HBA)
 
 ## Behavior Changes in Release 2.0(1p)
 
 Cisco UCS Central 2.0(1p) supports the following hardware: 
 
-  * Cisco UCS C245 M6 —The Cisco UCS C245 M6 contains one or two AMD EPYC CPUs with up to 64 cores per socket. It also comes with 32 DIMM slots with a network speed of 3200 MHX DDR4, providing up to 8 TB of capacity. You can install up to 28 small-form factor (SFF) front-loading hot-pluggable drives. 
-
+* Cisco UCS C245 M6 —The Cisco UCS C245 M6 contains one or two AMD EPYC CPUs with up to 64 cores per socket. It also comes with 32 DIMM slots with a network speed of 3200 MHX DDR4, providing up to 8 TB of capacity. You can install up to 28 small-form factor (SFF) front-loading hot-pluggable drives. 
 
 ## Behavior Changes in Release 2.0(1o)
 
 Cisco UCS Central 2.0(1o) supports the following hardware: 
 
-  * Cisco UCS B200 M6 Server—The Cisco UCS B200 M6 Server is a half-width blade server that is designed for the Cisco UCS 5108 Blade Server Chassis. You can install up to eight UCS B200 M6 blade servers in a UCS 5108 chassis, mixing with other models of Cisco UCS blade servers in the chassis, as required. 
-
-  * Cisco UCS C220 M6 Server—The Cisco UCS C220 M6 Server is a one-rack unit server that can be used as standalone, or as part of Cisco UCS, which unifies computing, networking, management, virtualization, and storage access into a single integrated architecture. 
-
-  * Cisco UCS C240 M6 Server—The Cisco UCS C240 M6 Server is a 2 rack-unit, rack server chassis that can operate in both standalone environments and as part of Cisco UCS. Cisco UCS C240 M6 Servers support a maximum of two 3rd Gen Intel® Xeon® Scalable Processors, in either one or two CPU configurations. 
-
+* Cisco UCS B200 M6 Server—The Cisco UCS B200 M6 Server is a half-width blade server that is designed for the Cisco UCS 5108 Blade Server Chassis. You can install up to eight UCS B200 M6 blade servers in a UCS 5108 chassis, mixing with other models of Cisco UCS blade servers in the chassis, as required. 
+* Cisco UCS C220 M6 Server—The Cisco UCS C220 M6 Server is a one-rack unit server that can be used as standalone, or as part of Cisco UCS, which unifies computing, networking, management, virtualization, and storage access into a single integrated architecture. 
+* Cisco UCS C240 M6 Server—The Cisco UCS C240 M6 Server is a 2 rack-unit, rack server chassis that can operate in both standalone environments and as part of Cisco UCS. Cisco UCS C240 M6 Servers support a maximum of two 3rd Gen Intel® Xeon® Scalable Processors, in either one or two CPU configurations. 
 
 ## Behavior Changes in Release 2.0(1l)
 
 Cisco UCS Central 2.0(1l) supports the following hardware: 
 
-  * Cisco UCS C240 SD M5 Rack Server—The new UCS C240 SD M5 is a purpose-built server aimed to address the use cases such as edge computing in space-constrained environments. This 2RU server has been redesigned to a 22” (55.9 cm) chassis-depth and enables fully front-accessible peripherals, including PCIe slots, drives and mLOM slots. 
-
-  * CSCvv10016—Cisco UCS Central 2.0(1l) supports additional BIOS tokens that are supported by Cisco UCS Manager release 4.1(2a). 
-
+* Cisco UCS C240 SD M5 Rack Server—The new UCS C240 SD M5 is a purpose-built server aimed to address the use cases such as edge computing in space-constrained environments. This 2RU server has been redesigned to a 22” (55.9 cm) chassis-depth and enables fully front-accessible peripherals, including PCIe slots, drives and mLOM slots. 
+* CSCvv10016—Cisco UCS Central 2.0(1l) supports additional BIOS tokens that are supported by Cisco UCS Manager release 4.1(2a). 
 
 ## Behavior Changes in Release 2.0(1k)
 
 Cisco UCS Central 2.0(1k) supports the following hardware: 
 
-  * High density Fourth Generation Fabric Interconnect—The Cisco UCS 64108 Fabric Interconnect is a core part of the Cisco Unified Computing System, providing both network connectivity and management capabilities for the system. Cisco UCS 64108 Fabric Interconnects support 96 10/25-Gbps ports, 16 10/25-Gbps unified ports, and 12 40/100-Gbps uplink ports. 
-
-  * Cisco UCS Central 2.0(1k) supports additional BIOS tokens that are supported by Cisco UCS Manager release 4.1(1a). For a complete and up to date list of all supported BIOS tokens, defaults, and their values, see the [UCS Server BIOS Tokens](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Server-BIOS-Tokens/4-1/b_UCS_BIOS_Tokens_Guide_4_1/b_UCS_BIOS_Tokens_Guide_4_1_chapter_01.html) guide. 
-
+* High density Fourth Generation Fabric Interconnect—The Cisco UCS 64108 Fabric Interconnect is a core part of the Cisco Unified Computing System, providing both network connectivity and management capabilities for the system. Cisco UCS 64108 Fabric Interconnects support 96 10/25-Gbps ports, 16 10/25-Gbps unified ports, and 12 40/100-Gbps uplink ports. 
+* Cisco UCS Central 2.0(1k) supports additional BIOS tokens that are supported by Cisco UCS Manager release 4.1(1a). For a complete and up to date list of all supported BIOS tokens, defaults, and their values, see the [UCS Server BIOS Tokens](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Server-BIOS-Tokens/4-1/b_UCS_BIOS_Tokens_Guide_4_1/b_UCS_BIOS_Tokens_Guide_4_1_chapter_01.html) guide. 
 
 ## Behavior Changes in Release 2.0(1j)
 
-  * Cisco UCS Central now supports 100 locales. 
-
+* Cisco UCS Central now supports 100 locales. 
 
 ## Behavior Changes in Release 2.0(1i)
 
-  * Cisco UCS Central does not allow changing the initial power state of a global service profile or a service profile template. The initial power state will not be pushed to Cisco UCS Manager as part of the Service profile association. However, you can continue to perform normal power operations on the servers as before. This behavior change is introduced as a fix for the defect CSCvp40200. For more information on the resolved Caveats in Cisco UCS Central 2.0(1i), see Resolved Caveats in Release 2.0(1i). 
+* Cisco UCS Central does not allow changing the initial power state of a global service profile or a service profile template. The initial power state will not be pushed to Cisco UCS Manager as part of the Service profile association. However, you can continue to perform normal power operations on the servers as before. This behavior change is introduced as a fix for the defect CSCvp40200. For more information on the resolved Caveats in Cisco UCS Central 2.0(1i), see Resolved Caveats in Release 2.0(1i). 
+* Cisco UCS Central 2.0(1i) supports additional BIOS tokens that are supported by Cisco UCS Manager release 4.0(4a). For a complete and up to date list of all supported BIOS tokens, defaults, and their values, see the [UCS Server BIOS Tokens](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Server-BIOS-Tokens/4-0/b_UCS_BIOS_Tokens_Guide_4_0/b_UCS_BIOS_Tokens_Guide_4_0_chapter_01.html#reference_sjd_dzp_dhb) guide. 
+* You will no longer be able to download the Hardware Compatibility Catalog stored in https:/ / ucshclserver.cloudapps.cisco.com/ fetch/ current.tar.gz from Cisco.com. Cisco recommends that you run the following command to download the HCL catalog and then import it into Cisco UCS Central from the UI. 
 
-  * Cisco UCS Central 2.0(1i) supports additional BIOS tokens that are supported by Cisco UCS Manager release 4.0(4a). For a complete and up to date list of all supported BIOS tokens, defaults, and their values, see the [UCS Server BIOS Tokens](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Server-BIOS-Tokens/4-0/b_UCS_BIOS_Tokens_Guide_4_0/b_UCS_BIOS_Tokens_Guide_4_0_chapter_01.html#reference_sjd_dzp_dhb) guide. 
-
-  * You will no longer be able to download the Hardware Compatibility Catalog stored in https:/ / ucshclserver.cloudapps.cisco.com/ fetch/ current.tar.gz from Cisco.com. Cisco recommends that you run the following command to download the HCL catalog and then import it into Cisco UCS Central from the UI. 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Attention** | 
 
 * * *
@@ -4903,32 +4140,27 @@ Before you run the command, ensure that you have internet connectivity.
 
 * * *  
   
----|---  
-          
-        curl -k -f --connect-timeout 30 --dump-header "hcl_download_header" -o current.tar.gz https://ucshclserver.cloudapps.cisco.com/fetch/current.tar.gz -u CCOusername:CCOPassword' 
-
+---|---
+[code] curl -k -f --connect-timeout 30 --dump-header "hcl_download_header" -o current.tar.gz https://ucshclserver.cloudapps.cisco.com/fetch/current.tar.gz -u CCOusername:CCOPassword' 
+[/code]  
+  
 
 ## Behavior Changes in Release 2.0(1g)
 
-  * Cisco UCS Central 2.0(1g) supports Cisco UCS C 480 ML M5 Servers. 
-
-  * Cisco UCS Central does not support High Availability for new installations.
-
+* Cisco UCS Central 2.0(1g) supports Cisco UCS C 480 ML M5 Servers. 
+* Cisco UCS Central does not support High Availability for new installations.
 
 ## Behavior Changes in Release 2.0(1f)
 
 Cisco UCS Central 2.0(1f) supports the following hardware: 
 
-  * Cisco UCS 6454 Fabric Interconnects
-
-  * Cisco UCS VIC 1400 series adapter cards on Cisco UCS M5 servers
-
-  * New SIOC and Cisco UCS VIC 1400 adapter cards with S3260 storage servers
-
+* Cisco UCS 6454 Fabric Interconnects
+* Cisco UCS VIC 1400 series adapter cards on Cisco UCS M5 servers
+* New SIOC and Cisco UCS VIC 1400 adapter cards with S3260 storage servers
 
 Cisco UCS Central 2.0(1f) supports BIOS tokens for Cisco UCS Manager release 4.0(1a). For a complete, and up to date list of supported BIOS tokens, defaults, and values, see M5 Server BIOS Tokens in the [Cisco UCS M5 Server BIOS Tokens](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Server-BIOS-Tokens/3-2/b_UCS_BIOS_Tokens.html#reference_wcn_tyb_z1b) guide. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -4975,37 +4207,24 @@ Table 3. Supported M5 Server Models  Cisco UCS Central Release  |  Cisco UCS Man
 
 ### Deprecation Announcements
 
-  * Cisco UCS Central no longer includes the Flex-based UI. The HTML5 UI is the only graphical interface available. 
-
-  * The Statistics Management feature is deprecated and is no longer supported in Cisco UCS Central. 
-
-  * After March 3, 2017, Cisco UCS Central version 1.4 or earlier will be unable to fetch the updated firmware image list from Cisco.com. If you are running Cisco UCS Central version 1.4 or earlier, you can manually download firmware images directly from Cisco.com and import them to Cisco UCS Central. To continue to have Cisco UCS Central fetch the available image data from Cisco.com and place the firmware image in the Image Library, Cisco recommends that you upgrade to Cisco UCS Central release 1.5 or later. 
-
+* Cisco UCS Central no longer includes the Flex-based UI. The HTML5 UI is the only graphical interface available. 
+* The Statistics Management feature is deprecated and is no longer supported in Cisco UCS Central. 
+* After March 3, 2017, Cisco UCS Central version 1.4 or earlier will be unable to fetch the updated firmware image list from Cisco.com. If you are running Cisco UCS Central version 1.4 or earlier, you can manually download firmware images directly from Cisco.com and import them to Cisco UCS Central. To continue to have Cisco UCS Central fetch the available image data from Cisco.com and place the firmware image in the Image Library, Cisco recommends that you upgrade to Cisco UCS Central release 1.5 or later. 
 
 ### Feature Support
 
 ### Behavior Changes Based on Design
 
-  * The Spotlight search bar replaces the search bar, and allows you to search for profiles, policies, pools, VLANs/VSANs, templates, domains, orgs, domain groups etc by their names, descriptions, and labels. Spotlight auto-completes the search field with suggestions as you type and displays the top 10 potential matches to the term you type. 
-
-  * Icons in the Sidebar navigation menu enable direct and easy access to all objects in Cisco UCS Central. Browse tables, Organization navigation, and Domain group navigation are now part of Sidebar navigation. 
-
-  * From the Organizations tree view, you can directly navigate to that org’s Profiles, Templates, Pools, Policies, and Permitted VLANs. The corresponding tab in the selected org is highlighted and opened when you click these objects. 
-
-  * Cisco UCS Central 2.0 prevents you from deleting critical objects such as service profiles, domain groups, organizations, and service profile templates from the Cisco UCS Central GUI and the command line. When you attempt to delete any of these items from Cisco UCS Central, an error message with the potential impact displays. 
-
-  * You must create the global service profile template before you can create a service profile. 
-
-  * vNIC and vHBA Placement is now referred to as Interface Placement. 
-
-  * Registration Policy is now referred to as Domain Group Qualification Policy. 
-
-  * ID Range Qualification Policy is now referred to as ID Range Access Control Policy. 
-
-  * There are no qualified IP addresses for ID Range Access Control Policy. 
-
-  * Only the configuration export (all-config) and backup (full-state) options are used in Cisco UCS Central. Other backup types such as config logical and config system are not supported. 
-
+* The Spotlight search bar replaces the search bar, and allows you to search for profiles, policies, pools, VLANs/VSANs, templates, domains, orgs, domain groups etc by their names, descriptions, and labels. Spotlight auto-completes the search field with suggestions as you type and displays the top 10 potential matches to the term you type. 
+* Icons in the Sidebar navigation menu enable direct and easy access to all objects in Cisco UCS Central. Browse tables, Organization navigation, and Domain group navigation are now part of Sidebar navigation. 
+* From the Organizations tree view, you can directly navigate to that org’s Profiles, Templates, Pools, Policies, and Permitted VLANs. The corresponding tab in the selected org is highlighted and opened when you click these objects. 
+* Cisco UCS Central 2.0 prevents you from deleting critical objects such as service profiles, domain groups, organizations, and service profile templates from the Cisco UCS Central GUI and the command line. When you attempt to delete any of these items from Cisco UCS Central, an error message with the potential impact displays. 
+* You must create the global service profile template before you can create a service profile. 
+* vNIC and vHBA Placement is now referred to as Interface Placement. 
+* Registration Policy is now referred to as Domain Group Qualification Policy. 
+* ID Range Qualification Policy is now referred to as ID Range Access Control Policy. 
+* There are no qualified IP addresses for ID Range Access Control Policy. 
+* Only the configuration export (all-config) and backup (full-state) options are used in Cisco UCS Central. Other backup types such as config logical and config system are not supported. 
 
 ## Feature Support Matrix 
 
@@ -5042,7 +4261,7 @@ Cisco UCS Central |  Supported Versions of Cisco UCS Manager
   
 The following table provides a list of specific features in Cisco UCS Central, and the Cisco UCS Manager release versions in which these features are supported: 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -5125,15 +4344,12 @@ IPv6 inband management support  |  No  |  2.2(2c) and later  |  2.5(1a) and late
 Estimate Impact on Reconnect  |  1.2(1a)  |  No  |  2.2(3a) and later  |  2.5(1a) and later  |  3.0(1c) and later  |  3.1(1a) and later   
 Precision Boot Order Control  |  No  |  2.2(1b) and later  |  2.5(1a) and later  |  3.0(1c) and later  |  3.1(1a) and later   
 Scriptable vMedia  |  1.2(1e) and later  |  No  |  2.2(2c) and later  |  2.5(1a) and later  |  3.0(2c) and later  |  3.1(1a) and later   
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
-
-  * Searching for policy/policy components or resources is supported in Cisco UCS Manager, releases 2.1(2x) and 2.1(3x). To import policies, you must have Cisco UCS Manager, releases 2.2(1b) or higher. 
-  * For precision boot order control, the blade server must have CIMC version 2.2(1b) or above. 
-
-
+* Searching for policy/policy components or resources is supported in Cisco UCS Manager, releases 2.1(2x) and 2.1(3x). To import policies, you must have Cisco UCS Manager, releases 2.2(1b) or higher. 
+* For precision boot order control, the blade server must have CIMC version 2.2(1b) or above. 
 * * *  
   
 ---|---  
@@ -5142,14 +4358,11 @@ Scriptable vMedia  |  1.2(1e) and later  |  No  |  2.2(2c) and later  |  2.5(1a)
 
 You can upgrade Cisco UCS Central to release 2.0 from any of the following releases: 
 
-  * From 1.4 to 2.0 
+* From 1.4 to 2.0 
+* From 1.5 to 2.0
+* If you want to upgrade Cisco UCS Central from release 2.0(1d) or 2.0(1e) to 2.0(1m), you must first upgrade to release 2.0(1l) and then to 2.0(1m). 
 
-  * From 1.5 to 2.0
-
-  * If you want to upgrade Cisco UCS Central from release 2.0(1d) or 2.0(1e) to 2.0(1m), you must first upgrade to release 2.0(1l) and then to 2.0(1m). 
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -5174,25 +4387,25 @@ CSCwf75644 |  The background image does not load properly in the Cisco UCS Centr
 CSCwh32835 |  When a Cisco UCS X-series chassis is connected to the domain, the fan details of IFM modules for X-series chassis are not displayed in Cisco Central GUI Chassis page.  |  You can view the fan details for IFM using Cisco UCS Central CLI.  
 CSCuy37428  CSCuv32055  |  When registering a Cisco UCS domain immediately after installation, you may see one of the following issues: 
 
-  * After installing Cisco UCS Central on RHEL 7.2 KVM, domain registration fails. 
-  * After installing Cisco UCS Central on VMware using the ISO image, domain registration may fail due to a time sync issue between Cisco UCS Manager and Cisco UCS Central. 
+* After installing Cisco UCS Central on RHEL 7.2 KVM, domain registration fails. 
+* After installing Cisco UCS Central on VMware using the ISO image, domain registration may fail due to a time sync issue between Cisco UCS Manager and Cisco UCS Central. 
 
 |  If this issue occurs, regenerate the certificate manually from the CLI in Cisco UCS Central using the following commands: 
-    
-    
+[code] 
     # connect policy-mgr
     # scope org
     # scope device-profile
     # scope security
     # scope keyring default
     # set regenerate yes
-    # commit-buffer  
+    # commit-buffer
+[/code]  
   
 CSCux75985  CSCuy07572  |  Excluding components from the host firmware package policy is supported in Cisco UCS Manager release 2.2.7 and above. When excluding components, you should be aware of the following: 
 
-  * The global-default host firmware package policy includes all components, but if you create a new custom host firmware package policy, the local disk component is automatically excluded. 
-  * Host firmware package policies created in Cisco UCS Central 1.3 or previous do not support excluding components. These policies are not changed when you upgrade to Cisco UCS Central release 1.5. 
-  * If you create your own custom host firmware package policy with excluded components, including the local disk component that is excluded by default, you cannot include that host firmware package policy in a service profile associated with a server running a Cisco UCS Manager version prior to 2.2.7. If you do, you will see the following error during service profile association: ucs domain does not have the matching server capabilities for this service-profile
+* The global-default host firmware package policy includes all components, but if you create a new custom host firmware package policy, the local disk component is automatically excluded. 
+* Host firmware package policies created in Cisco UCS Central 1.3 or previous do not support excluding components. These policies are not changed when you upgrade to Cisco UCS Central release 1.5. 
+* If you create your own custom host firmware package policy with excluded components, including the local disk component that is excluded by default, you cannot include that host firmware package policy in a service profile associated with a server running a Cisco UCS Manager version prior to 2.2.7. If you do, you will see the following error during service profile association: ucs domain does not have the matching server capabilities for this service-profile
 
 |  If you have issues with your custom host firmware package policies that include excluded components, you can either remove all excluded components in the host firmware package policy, or upgrade your version of Cisco UCS Manager to release 2.2.7 or above.   
   
@@ -5388,8 +4601,8 @@ Release  |  Description
 CSCvm81056 |  VLAN Group is no longer deleted from the uplink port-channel when a new VLAN is added to an existing VLAN group, or when the same VLAN is added to a vNIC template with Cisco UCS Central 2.0(1d).   
 CSCvo45661 |  VSANs with FCOE ID 4011 and 4012 can now be created from Cisco UCS Central 2.0(1g) on the following: 
 
-  * Cisco UCS 6332 Fabric Interconnect running Cisco UCS Manager 4.0(2b)
-  * Cisco UCS 6248 Fabric Interconnect running Cisco UCS Manager3.2(3i)
+* Cisco UCS 6332 Fabric Interconnect running Cisco UCS Manager 4.0(2b)
+* Cisco UCS 6248 Fabric Interconnect running Cisco UCS Manager3.2(3i)
 
   
 CSCvo62782 |  Configuring Cisco.com credentials with Cisco UCS Central GUI no longer fails. The credentials can now be saved.  
@@ -5551,16 +4764,16 @@ CSCwd52410 |  When Cisco UCS-FI-6536 is registered to Cisco UCS Central and FC b
 CSCwe21986 |  FC breakout for Cisco UCS-FI-6536 is not supported in Cisco UCS Central 2.0.1(r) release. So, the FC breakout ports for Cisco UCS-FI-6536 cannot be configured in Cisco UCS Central. |  The FC breakout ports must be configured and monitored from Cisco UCS Manager.  
 CSCwd66816 |  After importing Cisco UCS firmware bundle to Cisco UCS Central, few files do not appear in the Images tab in the Cisco UCS Central GUI.  Logs also confirm that there are missing files, irrespective of the imported firmware bundle version. You can also confirm this by checking the bundles from the library in Cisco UCS Central. Example: While importing Cisco UCS `A` bundle, Cisco UCS Central might display the following files: 
 
-  * `ucs-2200-6300.4.1.3g.bin`
-  * `ucs-2300-6300.4.1.3g.bin`
-  * `ucs-6300-ucs-manager-k9.4.1.3h.bin`
-  * `ucs-6300-k9-system.5.0.3.N2.4.13g.bin`
+* `ucs-2200-6300.4.1.3g.bin`
+* `ucs-2300-6300.4.1.3g.bin`
+* `ucs-6300-ucs-manager-k9.4.1.3h.bin`
+* `ucs-6300-k9-system.5.0.3.N2.4.13g.bin`
 
 The missing file: `ucs-6300-k9-kickstart.5.0.3.N2.4.12b.bin` This issue occurs while using Cisco UCS Central to upgrade the Cisco UCS Manager domain. |  Upgrade manually using Cisco UCS Manager.  
 CSCwe18667 |  Cisco UCS M6 servers unable to upgrade BIOS firmware when using a global Host Firmware Package from Cisco UCS Central. This issue is first seen in Cisco UCS Central 2.0(1p) and 2.0(1q) releases. This issue occurs when Cisco UCS B-series or C-series package is uploaded to Cisco UCS Central. And Cisco UCS Central fails to extract the Cisco UCS M6 BIOS image.  This issue occurs when either the package uploaded is from a local file or downloaded from Cisco.com. | 
 
-  * Upload the Cisco UCS B-series or C-series 4.2(x) bundle directly to Cisco UCS Manager.
-  * Create a new global Host Firmware Package in UCS Central and apply it to the server.
+* Upload the Cisco UCS B-series or C-series 4.2(x) bundle directly to Cisco UCS Manager.
+* Create a new global Host Firmware Package in UCS Central and apply it to the server.
 
   
   
@@ -5607,11 +4820,8 @@ CSCve02287 |  Cisco UCS Central completes installation without a warning about i
 
 In addition to these release notes, you can find documentation for Cisco UCS Central in the following locations on Cisco.com: 
 
-  * [Cisco UCS Central Configuration Guides](http://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-central-software/products-installation-and-configuration-guides-list.html)
-
-  * [Cisco UCS Central CLI Reference Manual](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-central-software/products-command-reference-list.html)
-
-  * [Cisco UCS Central Faults Reference Manual](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-central-software/products-system-message-guides-list.html)
-
+* [Cisco UCS Central Configuration Guides](http://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-central-software/products-installation-and-configuration-guides-list.html)
+* [Cisco UCS Central CLI Reference Manual](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-central-software/products-command-reference-list.html)
+* [Cisco UCS Central Faults Reference Manual](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-central-software/products-system-message-guides-list.html)
 
 ---

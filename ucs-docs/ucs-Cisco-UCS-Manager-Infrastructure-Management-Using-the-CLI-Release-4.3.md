@@ -8,13 +8,11 @@
 | **HTML Title** | Cisco UCS Manager Infrastructure Management Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_UCSM_CLI_Infrastructure_Management_Guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:01 |
+| **Fetched on** | 2026-03-04 12:47:59 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3.html
-
-![Clear Contents of Search](/etc/designs/cdc/fw/i/ic_clear_gray.png)
 
 ---
 
@@ -24,14 +22,10 @@
   
 This guide is intended primarily for data center administrators with responsibilities and expertise in one or more of the following: 
 
-  * Server administration 
-
-  * Storage administration 
-
-  * Network administration 
-
-  * Network security 
-
+* Server administration 
+* Storage administration 
+* Network administration 
+* Network security
 
 ---
 
@@ -50,31 +44,31 @@ Table 2. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(5a)
 Support for Cisco UCS C-Series M8 server |  Cisco UCS Manager now supports Cisco UCS C225 M8 Server.  |  [Data Sanitization](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01000.html#data-sanitization)  
 Support for Cisco UCS X-Series M8 server |  Cisco UCS Manager now supports Cisco UCS X215c M8 Compute Node.  | 
 
-  * [Overview of Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html#overview-of-cisco-ucs-x-direct)
-  * [Data Sanitization](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01000.html#data-sanitization)
+* [Overview of Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html#overview-of-cisco-ucs-x-direct)
+* [Data Sanitization](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01000.html#data-sanitization)
 
   
 Table 3. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b) Feature |  Description |  Where Documented  
 ---|---|---  
 Support for Cisco UCS X-Series Direct |  Cisco UCS Manager now supports Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct).  | 
 
-  * [Cisco UCS Building Blocks and Connectivity](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html#concept_uxd_4pl_3jb)
-  * [Overview of Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html#overview-of-cisco-ucs-x-direct)
-  * [Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) Architecture](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html#cisco-ucs-x-direct-architecture)
-  * [Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html#port-breakout-functionality-on-cisco-ucs-x-direct)
-  * [Chassis/FEX Discovery Policy](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_011.html#concept_40AFE09861FA4D02A9879856A1411FAC)
-  * [Configuring the Chassis/FEX Discovery Policy](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_011.html#task_4984141203506035088)
-  * [Chassis Connectivity Policy](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_011.html#concept_4E5E1F56073248329020AC2927156A9F)
-  * [Configuring a Chassis Connectivity Policy](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_011.html#task_D41B14E4E5524F53845D38A6C8FF2C50)
-  * [Power Capping in Cisco UCS](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html#concept_943D968485A04A92BAA307A2FC59AD18)
+* [Cisco UCS Building Blocks and Connectivity](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html#concept_uxd_4pl_3jb)
+* [Overview of Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html#overview-of-cisco-ucs-x-direct)
+* [Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) Architecture](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html#cisco-ucs-x-direct-architecture)
+* [Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html#port-breakout-functionality-on-cisco-ucs-x-direct)
+* [Chassis/FEX Discovery Policy](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_011.html#concept_40AFE09861FA4D02A9879856A1411FAC)
+* [Configuring the Chassis/FEX Discovery Policy](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_011.html#task_4984141203506035088)
+* [Chassis Connectivity Policy](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_011.html#concept_4E5E1F56073248329020AC2927156A9F)
+* [Configuring a Chassis Connectivity Policy](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_011.html#task_D41B14E4E5524F53845D38A6C8FF2C50)
+* [Power Capping in Cisco UCS](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html#concept_943D968485A04A92BAA307A2FC59AD18)
 
   
 Table 4. New Features and Changed Behavior in Cisco UCS Manager, Release4.3(4b) Feature |  Description |  Where Documented  
 ---|---|---  
 Support for Cisco UCS C-Series M8 servers |  Cisco UCS Manager now supports Cisco UCS C245 M8 Servers.  | 
 
-  * [Power Capping in Cisco UCS](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html#concept_943D968485A04A92BAA307A2FC59AD18)
-  * [Data Sanitization](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01000.html#data-sanitization)
+* [Power Capping in Cisco UCS](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html#concept_943D968485A04A92BAA307A2FC59AD18)
+* [Data Sanitization](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01000.html#data-sanitization)
 
   
 Table 5. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(2c) Feature |  Description |  Where Documented  
@@ -82,9 +76,9 @@ Table 5. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(2c)
 Support for Cisco UCS X-Series servers |  Cisco UCS Manager supports Cisco UCS X410c M7 Compute Node.  Cisco UCS X-Series servers support Intelligent Fabric Modules (IFM), which function similarly to the Input/Output Module (IOM) in Cisco UCS B-Series servers.  |  —   
 Support for Cisco UCS VIC cards |  Cisco UCS Manager supports the following Cisco UCS VIC cards:
 
-  * Cisco UCS VIC 15230
-  * Cisco UCS VIC 15237 mLOM
-  * Cisco UCS VIC 15427
+* Cisco UCS VIC 15230
+* Cisco UCS VIC 15237 mLOM
+* Cisco UCS VIC 15427
 
 |  —  
 Table 6. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(2b) Feature |  Description |  Where Documented  
@@ -92,19 +86,19 @@ Table 6. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(2b)
 Support for Power Capping and Power Management for Cisco UCSX-9508 Chassis |  Cisco UCS Manager now supports Power Capping and Power Management for Cisco UCSX-9508 Chassis. |  [Power Capping in Cisco UCS](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html#concept_943D968485A04A92BAA307A2FC59AD18)  
 Support for Cisco UCS X9508 server chassis with Cisco UCS X-Series servers |  Cisco UCS Manager supports Cisco UCSX-9508 Chassis with the following Cisco UCS X-Series servers:
 
-  * Cisco UCS X210c M7 Compute Node
-  * Cisco UCS X210c M6 Compute Node
+* Cisco UCS X210c M7 Compute Node
+* Cisco UCS X210c M6 Compute Node
 
 Cisco UCS X-Series servers support Intelligent Fabric Modules (IFM), which function similarly to the Input/Output Module (IOM) in Cisco UCS B-Series servers.  |  —   
 Support Cisco UCS C-Series M7 servers |  Cisco UCS Manager now supports the following C-Series M7 servers:
 
-  * Cisco UCS C240 M7 Server
-  * Cisco UCS C220 M7 Server
+* Cisco UCS C240 M7 Server
+* Cisco UCS C220 M7 Server
 
 |  [Power Capping in Cisco UCS](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html#concept_943D968485A04A92BAA307A2FC59AD18)  
 Support for Cisco UCS X9508 Server Chassis equipped with X-Fabric Module (XFM) |  Cisco UCS Manager introduces inventory support for Cisco UCS X9508 Server Chassis equipped with X-Fabric Module (XFM) |  [Viewing X-Fabric Module (XFM) Fan Status](b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html#viewing-xfm-fan-overall-status)  
 Support for Cisco UCS 6200 Series Fabric Interconnect is deprecated |  Cisco UCS Manager deprecates support for Cisco UCS 6200 Series Fabric Interconnects. |  —   
-Support for Cisco UCS M4 servers are deprecated |  Cisco UCS Manager deprecates support for UCS B-series, C-series, and S-series M4 servers. |  — 
+Support for Cisco UCS M4 servers are deprecated |  Cisco UCS Manager deprecates support for UCS B-series, C-series, and S-series M4 servers. |  —
 
 ---
 
@@ -124,7 +118,7 @@ Guide  |  Description
 [Cisco UCS Manager Storage Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of storage management such as SAN and VSAN in Cisco UCS Manager.   
 [Cisco UCS Manager Network Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of network management such as LAN and VLAN connectivity in Cisco UCS Manager.   
 [Cisco UCS Manager System Monitoring Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of system and health monitoring including system statistics in Cisco UCS Manager.   
-[Cisco UCS S3260 Server Integration with Cisco UCS Manager](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of management of UCS S-Series servers that are managed through Cisco UCS Manager. 
+[Cisco UCS S3260 Server Integration with Cisco UCS Manager](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of management of UCS S-Series servers that are managed through Cisco UCS Manager.
 
 ---
 
@@ -140,7 +134,7 @@ In a Cisco UCS Mini (Cisco UCS 6324 Fabric Interconnect) setup, chassis discover
 
 If you have a Cisco UCS domain with some of the chassis' wired with one link, some with two links, some with four links, and some with eight links, Cisco recommends configuring the chassis/FEX discovery policy for the minimum number links in the domain so that Cisco UCS Manager can discover all chassis. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/tip.gif)  
+  
 **Tip** | 
 
 * * *
@@ -174,7 +168,7 @@ If the IOM has 8 links, the chassis is not fully discovered by Cisco UCS Manager
 
 For hardware configurations that support fabric port channels, link grouping determines whether all of the links from the IOM to the fabric interconnect are grouped in to a fabric port channel during chassis discovery. If the link grouping preference is set to Port Channel, all of the links from the IOM to the fabric interconnect are grouped in a fabric port channel. If set to None, links from the IOM are pinned to the fabric interconnect. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Important** | 
 
 * * *
@@ -187,7 +181,7 @@ For Cisco UCS X-Series Direct, Cisco UCS 6500 Series Fabric Interconnects, Cisco
   
 After a fabric port channel is created through Cisco UCS Manager, you can add or remove links by changing the link group preference and re-acknowledging the chassis, or by enabling or disabling the chassis from the port channel. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -202,7 +196,7 @@ The link grouping preference only takes effect if both sides of the links betwee
 
 In a port channel, by default, ingress multicast traffic on any port in the fabric interconnect (FI) selects a particular link between the IOM and the fabric interconnect to egress the traffic. To reduce potential issues with the bandwidth, and to provide effective load balancing of the ingress multicast traffic, hardware hashing is used for multicast traffic. When multicast hardware hashing is enabled, all links between the IOM and the fabric interconnect in a port channel can be used for multicast traffic. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -238,7 +232,7 @@ Once a fabric port channel is created, links can be added or removed by changing
 
 ### Configuring the Chassis/FEX Discovery Policy 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -265,8 +259,8 @@ In a setup with Cisco UCS 6400 Series Fabric Interconnects, the Link Grouping Pr
 ---|---  
 **Step 6** |  UCS-A /org/chassis-disc-policy # set multicast-hw-hash {disabled | enabled}  |  Specifies whether the all the links between the IOM and the fabric interconnect in a port channel can be used for multicast traffic. 
 
-  * disabled —Only one link between the IOM and the fabric interconnect is used for multicast traffic 
-  * enabled —All links between the IOM and the fabric interconnect can be used for multicast traffic 
+* disabled —Only one link between the IOM and the fabric interconnect is used for multicast traffic 
+* enabled —All links between the IOM and the fabric interconnect can be used for multicast traffic 
 
   
 **Step 7** |  (Optional) UCS-A /org/chassis-disc-policy #  set qualifier ` ` qualifier | (Optional)  Uses the specified server pool policy qualifications to associate this policy with a server pool.   
@@ -275,8 +269,7 @@ In a setup with Cisco UCS 6400 Series Fabric Interconnects, the Link Grouping Pr
 #### Example
 
 The following example scopes to the default chassis/FEX discovery policy, sets it to discover chassis with four links to a fabric interconnect, provides a description for the policy, specifies the server pool policy qualifications that will be used to qualify the chassis, and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope org /**
     UCS-A /org # **scope chassis-disc-policy**
     UCS-A /org/chassis-disc-policy* # **set action 4-link**
@@ -287,10 +280,10 @@ The following example scopes to the default chassis/FEX discovery policy, sets i
     
     
     
+[/code]
 
 The following example scopes to the default chassis/FEX discovery policy, sets it to discover chassis with eight links to a fabric interconnect, provides a description for the policy, sets the link grouping preference to port channel, specifies the server pool policy qualifications that will be used to qualify the chassis, and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope org /**
     UCS-A /org # **scope chassis-disc-policy**
     UCS-A /org/chassis-disc-policy* # **set action 8-link**
@@ -302,10 +295,10 @@ The following example scopes to the default chassis/FEX discovery policy, sets i
     
     
     
+[/code]
 
 The following example scopes to the default chassis/FEX discovery policy, sets it to discover chassis with four links to a fabric interconnect, provides a description for the policy, sets the link grouping preference to port channel, enables multicast hardware hashing, specifies the server pool policy qualifications that will be used to qualify the chassis, and commits the transaction: 
-    
-    
+[code] 
     UCS-A# scope org /
     UCS-A /org # scope chassis-disc-policy
     UCS-A /org/chassis-disc-policy* # set action 4-link
@@ -318,10 +311,11 @@ The following example scopes to the default chassis/FEX discovery policy, sets i
     UCS-A /org/chassis-disc-policy #
     
     
+[/code]
 
 #### What to do next
 
-To customize fabric port channel connectivity for a specific chassis, configure the chassis connectivity policy. 
+To customize fabric port channel connectivity for a specific chassis, configure the chassis connectivity policy.
 
 ---
 
@@ -339,20 +333,13 @@ The system is primed with Cisco UCS 9108 Intelligent Fabric Modules that provide
 
 The major feature of the chasssi include:
 
-  * 7-Rack-Unit (7RU) chassis has 8x front-facing flexible slots. These can house a combination of compute nodes and a pool of future I/O resources that may include GPU accelerators, disk storage, and nonvolatile memory. 
-
-  * 2x Cisco UCS 9108 Intelligent Fabric Modules (IFMs) at the top of the chassis that connect the chassis to upstream Cisco UCS 6400 Series Fabric Interconnects. Each IFM features. 
-
-  * Up to 100 Gbps of unified fabric connectivity per compute node
-
-  * 8x 25-Gbps SFP28 uplink ports. The unified fabric carries management traffic to the Cisco Intersight cloud-operations platform, Fibre Channel over Ethernet (FCoE) traffic, and production Ethernet traffic to the fabric interconnects. 
-
-  * At the bottom are slots ready to house future I/O modules that can flexibly connect the compute modules with I/O devices. We call this connectivity Cisco UCS X-Fabric technology because “X” is a variable that can evolve with new technology developments. 
-
-  * Six 2800W Power Supply Units (PSUs) provide 54V power to the chassis with N, N+1, and N+N redundancy. A higher voltage allows efficient power delivery with less copper and reduced power loss. 
-
-  * Efficient, 4x100mm, dual counter-rotating fans deliver industry-leading airflow and power efficiency. Optimized thermal algorithms enable different cooling modes to best support the network environment. Cooling is modular so that future enhancements can potentially handle open- or closed-loop liquid cooling to support even higher-power processors. 
-
+* 7-Rack-Unit (7RU) chassis has 8x front-facing flexible slots. These can house a combination of compute nodes and a pool of future I/O resources that may include GPU accelerators, disk storage, and nonvolatile memory. 
+* 2x Cisco UCS 9108 Intelligent Fabric Modules (IFMs) at the top of the chassis that connect the chassis to upstream Cisco UCS 6400 Series Fabric Interconnects. Each IFM features. 
+* Up to 100 Gbps of unified fabric connectivity per compute node
+* 8x 25-Gbps SFP28 uplink ports. The unified fabric carries management traffic to the Cisco Intersight cloud-operations platform, Fibre Channel over Ethernet (FCoE) traffic, and production Ethernet traffic to the fabric interconnects. 
+* At the bottom are slots ready to house future I/O modules that can flexibly connect the compute modules with I/O devices. We call this connectivity Cisco UCS X-Fabric technology because “X” is a variable that can evolve with new technology developments. 
+* Six 2800W Power Supply Units (PSUs) provide 54V power to the chassis with N, N+1, and N+N redundancy. A higher voltage allows efficient power delivery with less copper and reduced power loss. 
+* Efficient, 4x100mm, dual counter-rotating fans deliver industry-leading airflow and power efficiency. Optimized thermal algorithms enable different cooling modes to best support the network environment. Cooling is modular so that future enhancements can potentially handle open- or closed-loop liquid cooling to support even higher-power processors. 
 
 This Cisco UCS X9508 Chassis supports Cisco UCS X-Series Direct, Cisco UCS 6536, UCS 6454, UCS 64108 fabric interconnects.
 
@@ -372,13 +359,11 @@ Cisco UCS Manager Release 3.1(2) introduces support for the Cisco UCS S3260 chas
 
 The Cisco UCS S3260 chassis is a 4U chassis that is designed to operate in a standalone environment and also as part of the Cisco Unified Computing System. It has the following main components: 
 
-  * Four 1050 Watt AC modular power supplies (2 + 2 shared and redundant mode of operation) 
+* Four 1050 Watt AC modular power supplies (2 + 2 shared and redundant mode of operation) 
+* Two System IO Controller (SIOC) slots 
+* Two storage server slots out of which one can be used for storage expansion 
 
-  * Two System IO Controller (SIOC) slots 
-
-  * Two storage server slots out of which one can be used for storage expansion 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -388,42 +373,31 @@ The second server slot in the chassis can be utilized by an HDD expansion tray m
 * * *  
   
 ---|---  
-  * 56 3.5” drive bays with an optional 4 x 3.5” HDD expansion tray module instead of the second server 
-
-  * Up to 360 TB storage capacity by using 6 TB HDDs 
-
-  * Serial Attached SCSI (SAS) expanders that can be configured to assign the 3.5” drives to individual server modules 
-
-  * The two servers in the chassis can be replaced by a single, dual-height server with an IO expander 
-
+* 56 3.5” drive bays with an optional 4 x 3.5” HDD expansion tray module instead of the second server 
+* Up to 360 TB storage capacity by using 6 TB HDDs 
+* Serial Attached SCSI (SAS) expanders that can be configured to assign the 3.5” drives to individual server modules 
+* The two servers in the chassis can be replaced by a single, dual-height server with an IO expander 
 
 ### Cisco UCS 5108 Blade Server Chassis 
 
 The Cisco UCS 5100 Series Blade Server Chassis is logically part of the fabric interconnects, thus creating a single, coherent management domain and decreasing management complexity. In the management domain, server management is handled by the fabric interconnect, while I/O and network management is extended to every chassis and blade server. Basing the I/O infrastructure on a unified fabric allows the Cisco Unified Computing System to have a simple and streamlined chassis yet offer a comprehensive set of I/O options. This results in the chassis having only five basic components: 
 
-  * The physical chassis with passive midplane and active environmental monitoring circuitry 
-
-  * Four power-supply bays with power entry in the rear, and redundant-capable, hot-swappable power supply units accessible from the front panel 
-
-  * Eight hot-swappable fan trays, each with two fans 
-
-  * Two fabric extender slots accessible from the back panel 
-
-  * Eight blade server slots accessible from the front panel 
-
+* The physical chassis with passive midplane and active environmental monitoring circuitry 
+* Four power-supply bays with power entry in the rear, and redundant-capable, hot-swappable power supply units accessible from the front panel 
+* Eight hot-swappable fan trays, each with two fans 
+* Two fabric extender slots accessible from the back panel 
+* Eight blade server slots accessible from the front panel 
 
 The blade server chassis has flexible partitioning with removable dividers to handle two blade server form factors: 
 
-  * Half-width blade servers have access to power and two 10GBASE-KR connections, one to each fabric extender slot. 
-
-  * Full-width blade servers connect to power and two connections to each fabric extender. 
-
+* Half-width blade servers have access to power and two 10GBASE-KR connections, one to each fabric extender slot. 
+* Full-width blade servers connect to power and two connections to each fabric extender. 
 
 ### Extended Chassis for UCS Mini 
 
 Cisco UCS Manager Release 3.1(1) introduces support for an extended UCS 5108 chassis to an existing single-chassis Cisco UCS 6324 fabric interconnect setup. This extended chassis enables you to configure an additional 8 servers. Unlike the primary chassis, the extended chassis supports IOMs. Currently, it supports UCS-IOM-2204XP and UCS-IOM-2208XP IOMs. The extended chassis can only be connected through the scalability port on the FI-IOM. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Important** | 
 
 * * *
@@ -435,12 +409,9 @@ Currently, Cisco UCS Manager supports only one extended chassis for UCS Mini.
 ---|---  
 To use a extended chassis, do the following: 
 
-  * Connect the second Cisco UCS 5108 chassis to the existing single-chassis Cisco UCS 6324 Series fabric interconnect configuration through the scalability port. 
-
-  * Configure the chassis discovery policy. 
-
-  * Configure the server ports and wait for the second chassis to be discovered. 
-
+* Connect the second Cisco UCS 5108 chassis to the existing single-chassis Cisco UCS 6324 Series fabric interconnect configuration through the scalability port. 
+* Configure the chassis discovery policy. 
+* Configure the server ports and wait for the second chassis to be discovered.
 
 ---
 
@@ -456,7 +427,7 @@ Cisco UCS Manager Release 4.0(4c) introduces the Cisco 2408 IO module. This IO M
 
 Cisco UCS Manager Release 4.0(4a) introduces the Cisco UCS-IOM-2304V2 I/O module which is based on Cisco UCS-IOM-2304 I/O module. 
 
-Cisco UCS Manager Release 3.1(1) introduces the Cisco UCS-IOM-2304 I/O module with 40 GbE connectivity to the Cisco UCS 6300 Series Fabric Interconnect. The Cisco UCS Manager Getting Started Guide provides more information about this functionality. 
+Cisco UCS Manager Release 3.1(1) introduces the Cisco UCS-IOM-2304 I/O module with 40 GbE connectivity to the Cisco UCS 6300 Series Fabric Interconnect. The Cisco UCS Manager Getting Started Guide provides more information about this functionality.
 
 ---
 
@@ -472,43 +443,32 @@ You can remove or replace an SIOC from a chassis. Removal or replacement of an S
 
 #### Guidelines for SIOC Removal 
 
-  * To remove the active SIOC, or both SIOCs, shut down and remove power from the entire chassis. You must disconnect all power cords to completely remove power. 
-
-  * Removal of SIOCs from a chassis results in the entire chassis being disconnected from Cisco UCS Manager. 
-
+* To remove the active SIOC, or both SIOCs, shut down and remove power from the entire chassis. You must disconnect all power cords to completely remove power. 
+* Removal of SIOCs from a chassis results in the entire chassis being disconnected from Cisco UCS Manager. 
 
 #### SIOC Removal 
 
 Do the following to remove an SIOC from the system: 
 
-  1. Shut down and remove power from the entire chassis. You must disconnect all power cords to completely remove power.
-
-  2. Disconnect the cables connecting the SIOC to the system. 
-
-  3. Remove the SIOC from the system. 
-
+1. Shut down and remove power from the entire chassis. You must disconnect all power cords to completely remove power.
+2. Disconnect the cables connecting the SIOC to the system. 
+3. Remove the SIOC from the system. 
 
 #### SIOC Replacement 
 
 Do the following to remove an SIOC from the system and replace it with another SIOC: 
 
-  1. Shut down and remove power from the entire chassis. You must disconnect all power cords to completely remove power.
-
-  2. Disconnect the cables connecting the SIOC to the system. 
-
-  3. Remove the SIOC from the system. 
-
-  4. Connect the new SIOC to the system. 
-
-  5. Connect the cables to the SIOC. 
-
-  6. Connect power cords and then power on the system.
-
-  7. Acknowledge the new SIOC. 
+1. Shut down and remove power from the entire chassis. You must disconnect all power cords to completely remove power.
+2. Disconnect the cables connecting the SIOC to the system. 
+3. Remove the SIOC from the system. 
+4. Connect the new SIOC to the system. 
+5. Connect the cables to the SIOC. 
+6. Connect power cords and then power on the system.
+7. Acknowledge the new SIOC. 
 
 The server connected to the replaced SIOC is rediscovered. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -517,8 +477,7 @@ If the firmware of the replaced SIOC is not the same version as the peer SIOC, t
 
 * * *  
   
----|---  
-
+---|---
 
 ---
 
@@ -530,20 +489,15 @@ You can control the maximum power consumption on a server through power capping,
 
 Cisco UCS Manager supports power capping on the following: 
 
-  * Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) 
-
-  * UCS 6500 Series Fabric Interconnects
-
-  * UCS 6400 Series Fabric Interconnects
-
-  * UCS 6300 Series Fabric Interconnects 
-
-  * UCS 6324 Series Fabric Interconnects (Cisco UCS Mini)
-
+* Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) 
+* UCS 6500 Series Fabric Interconnects
+* UCS 6400 Series Fabric Interconnects
+* UCS 6300 Series Fabric Interconnects 
+* UCS 6324 Series Fabric Interconnects (Cisco UCS Mini)
 
 You can use Policy Driven Chassis Group Power Cap, or Manual Blade Level Power Cap methods to allocate power that applies to all of the servers in a chassis. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -564,7 +518,7 @@ Power Save Policy |  Globally manages the chassis to maximize energy efficiency 
 Cisco UCSX-9508 Chassis Power Extended Policy |  Manages the chassis to maximize energy efficiency or availability.  Power Extended Policy is effective only when we have PSU Redundant Policy Mode. For example, the total power available can be extended when we have N+1, N+2 and Grid to PSU Redundancy modes.   
 Cisco UCSX-9508 Chassis Fan Control Policy |  Manages you to control the fan speed to bring down server power consumption and noise levels.  
 Global Power Allocation |  Specifies the Policy Driven Chassis Group Power Cap or the Manual Blade Level Power Cap to apply to all servers in a chassis.   
-Global Power Profiling  |  Specifies how the power cap values of the servers are calculated. If it is enabled, the servers will be profiled during discovery through benchmarking. This policy applies when the Global Power Allocation Policy is set to Policy Driven Chassis Group Cap. 
+Global Power Profiling  |  Specifies how the power cap values of the servers are calculated. If it is enabled, the servers will be profiled during discovery through benchmarking. This policy applies when the Global Power Allocation Policy is set to Policy Driven Chassis Group Cap.
 
 ---
 
@@ -578,7 +532,7 @@ The remaining management tasks can only be performed on the server.
 
 The power supply units go into power save mode when a chassis has two blades or less. When a third blade is added to the chassis and is fully discovered, the power supply units return to regular mode. 
 
-If a blade server slot in a chassis is empty, Cisco UCS Manager provides information, errors, and faults for that slot. You can also re-acknowledge the slot to resolve server mismatch errors and to have Cisco UCS Manager rediscover the blade server in the slot. 
+If a blade server slot in a chassis is empty, Cisco UCS Manager provides information, errors, and faults for that slot. You can also re-acknowledge the slot to resolve server mismatch errors and to have Cisco UCS Manager rediscover the blade server in the slot.
 
 ---
 
@@ -590,7 +544,7 @@ You can manage and monitor all rack-mount servers that are integrated with a Cis
 
 Cisco UCS Manager provides information, errors, and faults for each rack-mount server that it has discovered. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/tip.gif)  
+  
 **Tip** | 
 
 * * *
@@ -611,7 +565,7 @@ You can manage and monitor all Cisco UCS S3260 server nodes in a Cisco UCS domai
 
 The remaining management tasks can only be performed on the server. 
 
-If a server slot in a chassis is empty, Cisco UCS Manager provides information, errors, and faults for that slot. You can also re-acknowledge the slot to resolve server mismatch errors and rediscover the server in the slot. 
+If a server slot in a chassis is empty, Cisco UCS Manager provides information, errors, and faults for that slot. You can also re-acknowledge the slot to resolve server mismatch errors and rediscover the server in the slot.
 
 ---
 
@@ -623,7 +577,7 @@ A virtual circuit or virtual path refers to the path that a frame takes from its
 
 In the server, the OS decides the Ethernet interface from which to send the frame. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -636,7 +590,7 @@ During service profile configuration, you can select the fabric interconnect to 
   
 After the host vNIC is selected, the frame exits the selected vNIC and, through the host interface port (HIF), enters the IOM to which the vNIC is pinned. The frame is then forwarded to the corresponding network Interface port (NIF) and then to the Fabric Interconnect to which the IOM is pinned. 
 
-The NIF is selected based on the number of physical connections between the IOM and the Fabric Interconnect, and on the server ID from which the frame originated. 
+The NIF is selected based on the number of physical connections between the IOM and the Fabric Interconnect, and on the server ID from which the frame originated.
 
 ---
 
@@ -648,7 +602,7 @@ On rare occasions, an issue with a blade server may require you to recover the c
 
 ### Before you begin
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Important** | 
 
 * * *
@@ -670,13 +624,13 @@ Remove all attached or mapped USB storage from a server before you attempt to re
 ### Example
 
 The following example shows how to recover the BIOS: 
-    
-    
+[code] 
     UCS-A# **scope server 1/7**
     UCS-A /chassis/server # **recover-bios S5500.0044.0.3.1.010620101125**
     UCS-A /chassis/server* # **commit-buffer**
     UCS-A /chassis/server # 
     
+[/code]
 
 ---
 
@@ -688,20 +642,15 @@ You can control the maximum power consumption on a server through power capping,
 
 Cisco UCS Manager supports power capping on the following: 
 
-  * Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) 
-
-  * UCS 6500 Series Fabric Interconnects
-
-  * UCS 6400 Series Fabric Interconnects
-
-  * UCS 6300 Series Fabric Interconnects 
-
-  * UCS 6324 Series Fabric Interconnects (Cisco UCS Mini)
-
+* Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) 
+* UCS 6500 Series Fabric Interconnects
+* UCS 6400 Series Fabric Interconnects
+* UCS 6300 Series Fabric Interconnects 
+* UCS 6324 Series Fabric Interconnects (Cisco UCS Mini)
 
 You can use Policy Driven Chassis Group Power Cap, or Manual Blade Level Power Cap methods to allocate power that applies to all of the servers in a chassis. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -722,7 +671,7 @@ Power Save Policy |  Globally manages the chassis to maximize energy efficiency 
 Cisco UCSX-9508 Chassis Power Extended Policy |  Manages the chassis to maximize energy efficiency or availability.  Power Extended Policy is effective only when we have PSU Redundant Policy Mode. For example, the total power available can be extended when we have N+1, N+2 and Grid to PSU Redundancy modes.   
 Cisco UCSX-9508 Chassis Fan Control Policy |  Manages you to control the fan speed to bring down server power consumption and noise levels.  
 Global Power Allocation |  Specifies the Policy Driven Chassis Group Power Cap or the Manual Blade Level Power Cap to apply to all servers in a chassis.   
-Global Power Profiling  |  Specifies how the power cap values of the servers are calculated. If it is enabled, the servers will be profiled during discovery through benchmarking. This policy applies when the Global Power Allocation Policy is set to Policy Driven Chassis Group Cap. 
+Global Power Profiling  |  Specifies how the power cap values of the servers are calculated. If it is enabled, the servers will be profiled during discovery through benchmarking. This policy applies when the Global Power Allocation Policy is set to Policy Driven Chassis Group Cap.
 
 ---
 
@@ -736,7 +685,7 @@ The remaining management tasks can only be performed on the server.
 
 The power supply units go into power save mode when a chassis has two blades or less. When a third blade is added to the chassis and is fully discovered, the power supply units return to regular mode. 
 
-If a blade server slot in a chassis is empty, Cisco UCS Manager provides information, errors, and faults for that slot. You can also re-acknowledge the slot to resolve server mismatch errors and to have Cisco UCS Manager rediscover the blade server in the slot. 
+If a blade server slot in a chassis is empty, Cisco UCS Manager provides information, errors, and faults for that slot. You can also re-acknowledge the slot to resolve server mismatch errors and to have Cisco UCS Manager rediscover the blade server in the slot.
 
 ---
 
@@ -756,7 +705,7 @@ Guide  |  Description
 [Cisco UCS Manager Storage Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of storage management such as SAN and VSAN in Cisco UCS Manager.   
 [Cisco UCS Manager Network Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of network management such as LAN and VLAN connectivity in Cisco UCS Manager.   
 [Cisco UCS Manager System Monitoring Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of system and health monitoring including system statistics in Cisco UCS Manager.   
-[Cisco UCS S3260 Server Integration with Cisco UCS Manager](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of management of UCS S-Series servers that are managed through Cisco UCS Manager. 
+[Cisco UCS S3260 Server Integration with Cisco UCS Manager](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of management of UCS S-Series servers that are managed through Cisco UCS Manager.
 
 ---
 
@@ -772,7 +721,7 @@ In a Cisco UCS Mini (Cisco UCS 6324 Fabric Interconnect) setup, chassis discover
 
 If you have a Cisco UCS domain with some of the chassis' wired with one link, some with two links, some with four links, and some with eight links, Cisco recommends configuring the chassis/FEX discovery policy for the minimum number links in the domain so that Cisco UCS Manager can discover all chassis. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/tip.gif)  
+  
 **Tip** | 
 
 * * *
@@ -806,7 +755,7 @@ If the IOM has 8 links, the chassis is not fully discovered by Cisco UCS Manager
 
 For hardware configurations that support fabric port channels, link grouping determines whether all of the links from the IOM to the fabric interconnect are grouped in to a fabric port channel during chassis discovery. If the link grouping preference is set to Port Channel, all of the links from the IOM to the fabric interconnect are grouped in a fabric port channel. If set to None, links from the IOM are pinned to the fabric interconnect. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Important** | 
 
 * * *
@@ -819,7 +768,7 @@ For Cisco UCS X-Series Direct, Cisco UCS 6500 Series Fabric Interconnects, Cisco
   
 After a fabric port channel is created through Cisco UCS Manager, you can add or remove links by changing the link group preference and re-acknowledging the chassis, or by enabling or disabling the chassis from the port channel. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -834,7 +783,7 @@ The link grouping preference only takes effect if both sides of the links betwee
 
 In a port channel, by default, ingress multicast traffic on any port in the fabric interconnect (FI) selects a particular link between the IOM and the fabric interconnect to egress the traffic. To reduce potential issues with the bandwidth, and to provide effective load balancing of the ingress multicast traffic, hardware hashing is used for multicast traffic. When multicast hardware hashing is enabled, all links between the IOM and the fabric interconnect in a port channel can be used for multicast traffic. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -870,7 +819,7 @@ Once a fabric port channel is created, links can be added or removed by changing
 
 ### Configuring the Chassis/FEX Discovery Policy 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -897,8 +846,8 @@ In a setup with Cisco UCS 6400 Series Fabric Interconnects, the Link Grouping Pr
 ---|---  
 **Step 6** |  UCS-A /org/chassis-disc-policy # set multicast-hw-hash {disabled | enabled}  |  Specifies whether the all the links between the IOM and the fabric interconnect in a port channel can be used for multicast traffic. 
 
-  * disabled —Only one link between the IOM and the fabric interconnect is used for multicast traffic 
-  * enabled —All links between the IOM and the fabric interconnect can be used for multicast traffic 
+* disabled —Only one link between the IOM and the fabric interconnect is used for multicast traffic 
+* enabled —All links between the IOM and the fabric interconnect can be used for multicast traffic 
 
   
 **Step 7** |  (Optional) UCS-A /org/chassis-disc-policy #  set qualifier ` ` qualifier | (Optional)  Uses the specified server pool policy qualifications to associate this policy with a server pool.   
@@ -907,8 +856,7 @@ In a setup with Cisco UCS 6400 Series Fabric Interconnects, the Link Grouping Pr
 #### Example
 
 The following example scopes to the default chassis/FEX discovery policy, sets it to discover chassis with four links to a fabric interconnect, provides a description for the policy, specifies the server pool policy qualifications that will be used to qualify the chassis, and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope org /**
     UCS-A /org # **scope chassis-disc-policy**
     UCS-A /org/chassis-disc-policy* # **set action 4-link**
@@ -919,10 +867,10 @@ The following example scopes to the default chassis/FEX discovery policy, sets i
     
     
     
+[/code]
 
 The following example scopes to the default chassis/FEX discovery policy, sets it to discover chassis with eight links to a fabric interconnect, provides a description for the policy, sets the link grouping preference to port channel, specifies the server pool policy qualifications that will be used to qualify the chassis, and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope org /**
     UCS-A /org # **scope chassis-disc-policy**
     UCS-A /org/chassis-disc-policy* # **set action 8-link**
@@ -934,10 +882,10 @@ The following example scopes to the default chassis/FEX discovery policy, sets i
     
     
     
+[/code]
 
 The following example scopes to the default chassis/FEX discovery policy, sets it to discover chassis with four links to a fabric interconnect, provides a description for the policy, sets the link grouping preference to port channel, enables multicast hardware hashing, specifies the server pool policy qualifications that will be used to qualify the chassis, and commits the transaction: 
-    
-    
+[code] 
     UCS-A# scope org /
     UCS-A /org # scope chassis-disc-policy
     UCS-A /org/chassis-disc-policy* # set action 4-link
@@ -950,9 +898,10 @@ The following example scopes to the default chassis/FEX discovery policy, sets i
     UCS-A /org/chassis-disc-policy #
     
     
+[/code]
 
 #### What to do next
 
-To customize fabric port channel connectivity for a specific chassis, configure the chassis connectivity policy. 
+To customize fabric port channel connectivity for a specific chassis, configure the chassis connectivity policy.
 
 ---

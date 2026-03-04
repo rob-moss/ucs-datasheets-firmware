@@ -8,13 +8,11 @@
 | **HTML Title** | Migration Guide for Cisco UCS Fabric Interconnects, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:10:59 |
+| **Fetched on** | 2026-03-04 12:47:56 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3.html
-
-![Clear Contents of Search](/etc/designs/cdc/fw/i/ic_clear_gray.png)
 
 ---
 
@@ -40,17 +38,16 @@ Table 5. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(2b)
 ---|---|---  
 Migrating Cisco UCS 6400 Series Fabric Interconnects to Cisco UCS 6500 Series Fabric Interconnects |  Cisco UCS Manager supports migration of UCS 6400 series Fabric Interconnects to Cisco UCS 6536 Fabric Interconnect. | 
 
-  * [Cisco UCS 6400 Series Fabric Interconnect Migration Considerations](m-migrating-and-upgrading-cisco-ucs-hardware-components-for-6500-series-fabric-interconnect_4_3.html#concept_vxm_lxc_zdb)
-  * [Validating Feature Configurations for Cisco UCS 6536 before Upgrade](m-migrating-and-upgrading-cisco-ucs-hardware-components-for-6500-series-fabric-interconnect_4_3.html#Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d)
-  * [Migrating from UCS 6400 Series Fabric Interconnects to UCS 6536 Fabric Interconnects](m-migrating-and-upgrading-cisco-ucs-hardware-components-for-6500-series-fabric-interconnect_4_3.html#task_i25_zkc_zdb)
+* [Cisco UCS 6400 Series Fabric Interconnect Migration Considerations](m-migrating-and-upgrading-cisco-ucs-hardware-components-for-6500-series-fabric-interconnect_4_3.html#concept_vxm_lxc_zdb)
+* [Validating Feature Configurations for Cisco UCS 6536 before Upgrade](m-migrating-and-upgrading-cisco-ucs-hardware-components-for-6500-series-fabric-interconnect_4_3.html#Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d)
+* [Migrating from UCS 6400 Series Fabric Interconnects to UCS 6536 Fabric Interconnects](m-migrating-and-upgrading-cisco-ucs-hardware-components-for-6500-series-fabric-interconnect_4_3.html#task_i25_zkc_zdb)
 
   
 Migrating Cisco UCS 6400 Series Fabric Interconnects to Cisco UCS 6500 Series Fabric Interconnects with UCS Central |  Cisco UCS Manager supports migration of UCS 6400 series Fabric Interconnects to Cisco UCS 6536 Fabric Interconnects with UCS Central.  | 
 
-  * [Considerations for migrating Cisco UCS 6400 Series Fabric Interconnects to Cisco UCS 6500 Series Fabric Interconnects with Cisco UCS Central](m-migrating-and-upgrading-cisco-ucs-hardware-components-for-6500-series-fabric-interconnect_4_3.html#considerations-for-6454-fi-to-64108-fi-migration-with-ucs-central)
-  * [Validating Feature Configurations for Cisco UCS 6536 before Upgrade](m-migrating-and-upgrading-cisco-ucs-hardware-components-for-6500-series-fabric-interconnect_4_3.html#Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d)
-  * [Migrating from UCS 6400 Series Fabric Interconnects to UCS 6536 Fabric Interconnects](m-migrating-and-upgrading-cisco-ucs-hardware-components-for-6500-series-fabric-interconnect_4_3.html#task_i25_zkc_zdb)
-
+* [Considerations for migrating Cisco UCS 6400 Series Fabric Interconnects to Cisco UCS 6500 Series Fabric Interconnects with Cisco UCS Central](m-migrating-and-upgrading-cisco-ucs-hardware-components-for-6500-series-fabric-interconnect_4_3.html#considerations-for-6454-fi-to-64108-fi-migration-with-ucs-central)
+* [Validating Feature Configurations for Cisco UCS 6536 before Upgrade](m-migrating-and-upgrading-cisco-ucs-hardware-components-for-6500-series-fabric-interconnect_4_3.html#Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d)
+* [Migrating from UCS 6400 Series Fabric Interconnects to UCS 6536 Fabric Interconnects](m-migrating-and-upgrading-cisco-ucs-hardware-components-for-6500-series-fabric-interconnect_4_3.html#task_i25_zkc_zdb)
 
 ---
 
@@ -62,7 +59,7 @@ The Cisco UCS 6536 Fabric Interconnect is a core part of the Cisco Unified Compu
 
 Cisco UCS 6500 Series Fabric Interconnects currently include Cisco UCS 6536 Fabric Interconnect. All servers attached to a Cisco UCS 6536 Fabric Interconnect become part of a single, highly available management domain. In addition, by supporting a unified fabric, Cisco UCS 6536 Fabric Interconnect provides both LAN and SAN connectivity for all servers within its domain. 
 
-The Cisco UCS 6536 Fabric Interconnect supports multiple traffic classes over a lossless Ethernet fabric from the server through the fabric interconnect. 
+The Cisco UCS 6536 Fabric Interconnect supports multiple traffic classes over a lossless Ethernet fabric from the server through the fabric interconnect.
 
 ---
 
@@ -234,7 +231,7 @@ Table 9. Cisco UCS FI 9108 100G - Cisco UCS Blade Servers Cisco VIC |  UCSX-S910
 15231 (UCSX-ML-V5D200G) |  Cisco UCS X410c M7, X210c M7, X210c M6  
 15230 (UCSX-ML-V5D200GV2) |  Cisco UCS X210c M8, X215c M8, X410c M7, X210c M7, and X210c M6   
 15420 (UCSX-ML-V5Q50G) |  Cisco UCS X210c M8, X215c M8, X410c M7, X210c M7, and X210c M6   
-15420 + UCS VIC 15000 bridge connector + 15422  (UCSX-ML-V5Q50G + UCSX-V5-BRIDGE +  UCSX-ME-V5Q50G) |  Cisco UCS X210c M8, X215c M8, X410c M7, X210c M7, and X210c M6 
+15420 + UCS VIC 15000 bridge connector + 15422  (UCSX-ML-V5Q50G + UCSX-V5-BRIDGE +  UCSX-ME-V5Q50G) |  Cisco UCS X210c M8, X215c M8, X410c M7, X210c M7, and X210c M6
 
 ---
 
@@ -250,23 +247,16 @@ Prerequisites
 
 Before performing the migration from Cisco UCS 6454 Fabric Interconnects to Cisco UCS 64108 Fabric Interconnect, ensure that the following prerequisites are met for a successful migration: 
 
-  * Back up and export Cisco UCS Manager configuration before initiating the upgrade.
+* Back up and export Cisco UCS Manager configuration before initiating the upgrade.
+* Take an inventory of the Cisco UCS domain and remove any unsupported hardware.
+* Ensure to enable the cluster failover.
+* Do not attempt to implement new software features from the new Cisco UCS software version until all required hardware is installed. 
+* Make sure both Cisco UCS 6400 series Fabric Interconnects are on the same UCSM build before migration.
+* Standalone installations should expect down time. In a cluster configuration, migrating the Fabric Interconnects can result in a small traffic disruption when the traffic fails over from one Fabric Interconnect to another. To avoid that there is no permanent traffic loss during migration, ensure that there is redundancy in the UCS domain on both Fabric Interconnects before migration and test the redundancy before starting the migration. 
+* Ensure the latest firmware bundle is downloaded and upgraded through GUI or CLI. Incase of attempting to upgrade the firmware bundle using other methods (loader prompt/erase configuration) can result in missing package version. 
+* Before migration, make sure that the FC Speed is 8Gbps on Cisco UCS 6454 Fabric Interconnects or the connected switch supports 8Gbps speed. 
 
-  * Take an inventory of the Cisco UCS domain and remove any unsupported hardware.
-
-  * Ensure to enable the cluster failover.
-
-  * Do not attempt to implement new software features from the new Cisco UCS software version until all required hardware is installed. 
-
-  * Make sure both Cisco UCS 6400 series Fabric Interconnects are on the same UCSM build before migration.
-
-  * Standalone installations should expect down time. In a cluster configuration, migrating the Fabric Interconnects can result in a small traffic disruption when the traffic fails over from one Fabric Interconnect to another. To avoid that there is no permanent traffic loss during migration, ensure that there is redundancy in the UCS domain on both Fabric Interconnects before migration and test the redundancy before starting the migration. 
-
-  * Ensure the latest firmware bundle is downloaded and upgraded through GUI or CLI. Incase of attempting to upgrade the firmware bundle using other methods (loader prompt/erase configuration) can result in missing package version. 
-
-  * Before migration, make sure that the FC Speed is 8Gbps on Cisco UCS 6454 Fabric Interconnects or the connected switch supports 8Gbps speed. 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -276,32 +266,23 @@ Post migration, you can configure the FC Port (Scalability Port) speed on Cisco 
 * * *  
   
 ---|---  
-  * Migrating to different IOM models can result in peer communication issue between IOMs of the Primary and Secondary Fabric Interconnects. 
-
-  * Make a detailed record of the cabling between FEX and fabric interconnects. You must preserve the physical port mapping to maintain the server pinning already configured and minimize down time. 
-
-  * For a cluster configuration, both fabric interconnects must have symmetrical connection topologies between fabric interconnect and FEX. 
-
-  * Use the same speed cables on all the adapter ports that are connected to same Fabric Interconnect. Cisco UCS VIC adapter ports connected to Cisco UCS 64108 fabric interconnect through a mix of 10G and 25G cables can result in UCS rack-mount server discovery failure and ports moving to suspended state. 
-
-  * A WWN pool can include only WWNNs or WWPNs in the ranges from 20:00:00:00:00:00:00:00 to 20:FF:00:FF:FF:FF:FF:FF or from 50:00:00:00:00:00:00:00 to 5F:FF:00:FF:FF:FF:FF:FF. All other WWN ranges are reserved. When fibre channel traffic is sent through the UCS infrastructure the source WWPN is converted to a MAC address. You cannot use WWPN pool which can translate to source multicast MAC addresses. To ensure the uniqueness of the Cisco UCS WWNNs and WWPNs in the SAN fabric, Cisco recommends using the following WWN prefix for all blocks in a pool: 20:00:00:25:B5:XX:XX:XX 
-
+* Migrating to different IOM models can result in peer communication issue between IOMs of the Primary and Secondary Fabric Interconnects. 
+* Make a detailed record of the cabling between FEX and fabric interconnects. You must preserve the physical port mapping to maintain the server pinning already configured and minimize down time. 
+* For a cluster configuration, both fabric interconnects must have symmetrical connection topologies between fabric interconnect and FEX. 
+* Use the same speed cables on all the adapter ports that are connected to same Fabric Interconnect. Cisco UCS VIC adapter ports connected to Cisco UCS 64108 fabric interconnect through a mix of 10G and 25G cables can result in UCS rack-mount server discovery failure and ports moving to suspended state. 
+* A WWN pool can include only WWNNs or WWPNs in the ranges from 20:00:00:00:00:00:00:00 to 20:FF:00:FF:FF:FF:FF:FF or from 50:00:00:00:00:00:00:00 to 5F:FF:00:FF:FF:FF:FF:FF. All other WWN ranges are reserved. When fibre channel traffic is sent through the UCS infrastructure the source WWPN is converted to a MAC address. You cannot use WWPN pool which can translate to source multicast MAC addresses. To ensure the uniqueness of the Cisco UCS WWNNs and WWPNs in the SAN fabric, Cisco recommends using the following WWN prefix for all blocks in a pool: 20:00:00:25:B5:XX:XX:XX 
 
 Recommendations
 
 Following are the best practices for a successful migration:
 
-  * For minimal disruption during migration, ensure that there is redundancy for Ethernet and FC traffic from the servers in the UCS domain across both 6454 Fabric Interconnects before migration. 
+* For minimal disruption during migration, ensure that there is redundancy for Ethernet and FC traffic from the servers in the UCS domain across both 6454 Fabric Interconnects before migration. 
+* Changes to the topology, such as the number of servers or uplink connections, should be performed after the fabric interconnect migration is complete. 
+* During the migration of Fabric Interconnects, ensure the Cluster ID is not changed.
+* During the migration, image synchronization between fabric interconnects is not allowed. This is done to prevent incompatible images from getting synchronized. It is necessary to download B-Series, C-Series, and S-Series server software bundles again after migration is complete. 
+* Unconfigure the fibre channel ports on the migrating subordinate Cisco UCS 6454 Fabric Interconnect and reconfigure on the Cisco UCS 64108 Fabric Interconnect. 
 
-  * Changes to the topology, such as the number of servers or uplink connections, should be performed after the fabric interconnect migration is complete. 
-
-  * During the migration of Fabric Interconnects, ensure the Cluster ID is not changed.
-
-  * During the migration, image synchronization between fabric interconnects is not allowed. This is done to prevent incompatible images from getting synchronized. It is necessary to download B-Series, C-Series, and S-Series server software bundles again after migration is complete. 
-
-  * Unconfigure the fibre channel ports on the migrating subordinate Cisco UCS 6454 Fabric Interconnect and reconfigure on the Cisco UCS 64108 Fabric Interconnect. 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -311,7 +292,6 @@ For more information on migrating Cisco UCS 6454 Fabric Interconnect to Cisco UC
 * * *  
   
 ---|---  
-
 
 ### Validating Feature Configurations for Cisco UCS 64108 Fabric Interconnect before Upgrade
 
@@ -333,16 +313,11 @@ Failure to comply with these remediation steps will result in a migration warnin
 
 In addition to Cisco UCS 6400 Series Fabric Interconnect Migration Considerations, consider the following prerequisites when migrating with Cisco UCS Central: 
 
-  * Before initiating the migration, ensure to have a complete backup of Cisco UCS Manager and UCS Central configurations.
-
-  * To avoid any configuration issues during migration, make sure the following policies on Policy Resolution Control is set to Local in Cisco UCS Manager: 
-
-  * Infrastructure and Catalog Firmware Policy
-
-  * Equipment Policy
-
-  * Port Configuration Policy
-
+* Before initiating the migration, ensure to have a complete backup of Cisco UCS Manager and UCS Central configurations.
+* To avoid any configuration issues during migration, make sure the following policies on Policy Resolution Control is set to Local in Cisco UCS Manager: 
+* Infrastructure and Catalog Firmware Policy
+* Equipment Policy
+* Port Configuration Policy
 
 ---
 
@@ -532,7 +507,7 @@ Table 9. Cisco UCS FI 9108 100G - Cisco UCS Blade Servers Cisco VIC |  UCSX-S910
 15231 (UCSX-ML-V5D200G) |  Cisco UCS X410c M7, X210c M7, X210c M6  
 15230 (UCSX-ML-V5D200GV2) |  Cisco UCS X210c M8, X215c M8, X410c M7, X210c M7, and X210c M6   
 15420 (UCSX-ML-V5Q50G) |  Cisco UCS X210c M8, X215c M8, X410c M7, X210c M7, and X210c M6   
-15420 + UCS VIC 15000 bridge connector + 15422  (UCSX-ML-V5Q50G + UCSX-V5-BRIDGE +  UCSX-ME-V5Q50G) |  Cisco UCS X210c M8, X215c M8, X410c M7, X210c M7, and X210c M6 
+15420 + UCS VIC 15000 bridge connector + 15422  (UCSX-ML-V5Q50G + UCSX-V5-BRIDGE +  UCSX-ME-V5Q50G) |  Cisco UCS X210c M8, X215c M8, X410c M7, X210c M7, and X210c M6
 
 ---
 
@@ -544,6 +519,6 @@ The Cisco UCS 6536 Fabric Interconnect is a core part of the Cisco Unified Compu
 
 Cisco UCS 6500 Series Fabric Interconnects currently include Cisco UCS 6536 Fabric Interconnect. All servers attached to a Cisco UCS 6536 Fabric Interconnect become part of a single, highly available management domain. In addition, by supporting a unified fabric, Cisco UCS 6536 Fabric Interconnect provides both LAN and SAN connectivity for all servers within its domain. 
 
-The Cisco UCS 6536 Fabric Interconnect supports multiple traffic classes over a lossless Ethernet fabric from the server through the fabric interconnect. 
+The Cisco UCS 6536 Fabric Interconnect supports multiple traffic classes over a lossless Ethernet fabric from the server through the fabric interconnect.
 
 ---

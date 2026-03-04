@@ -8,16 +8,15 @@
 | **HTML Title** | Cisco UCS X210c M8 Compute Node Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-x210c-m8-compute-node-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:16 |
+| **Fetched on** | 2026-03-04 12:48:15 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.html
 
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
+* Skip to content
+* Skip to search
+* Skip to footer
 
 # Cisco UCS X210c M8 Compute Node Data Sheet
 
@@ -35,12 +34,10 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.pdf) (167.1 KB)   
+* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.pdf) (167.1 KB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:January 5, 2026
 
@@ -54,26 +51,24 @@ __ __ __ __
 
 Contact Cisco
 
-  * Contact Cisco __
-  * __
-
-  * __
+* Contact Cisco __
+* __
+* __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-  * __
+* __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-  * __
+* __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-  * __
+* __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
 
 Save
 
@@ -87,28 +82,25 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.pdf) (167.1 KB)   
+* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.pdf) (167.1 KB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:January 5, 2026
 
 #### Table of Contents
 
-  * Product overview
-  * Features and benefits
-  * Product specifications
-  * System requirements
-  * Ordering information
-  * Warranty information
-  * Product sustainability
-  * Product environmental information
-  * Cisco and partner services
-  * Cisco Capital
-
+* Product overview
+* Features and benefits
+* Product specifications
+* System requirements
+* Ordering information
+* Warranty information
+* Product sustainability
+* Product environmental information
+* Cisco and partner services
+* Cisco Capital
 
 ` `
 
@@ -248,24 +240,19 @@ Cisco Capital®makes it easier to get the right technology to achieve your objec
 
 ### Our experts recommend
 
-  * [Cisco UCS X-Series with Intel Flex Data Center GPUs and VDI White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.html "Cisco UCS X-Series with Intel Flex Data Center GPUs and VDI White Paper")
-  * [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
-  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
-
+* [Cisco UCS X-Series with Intel Flex Data Center GPUs and VDI White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.html "Cisco UCS X-Series with Intel Flex Data Center GPUs and VDI White Paper")
+* [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
+* [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
 ### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---
 
 ## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.html
 
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
+* Skip to content
+* Skip to search
+* Skip to footer
 
 # Cisco UCS X-Series with Intel Flex Data Center GPUs and VDI White Paper
 
@@ -281,12 +268,10 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.pdf) (2.9 MB)   
+* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.pdf) (2.9 MB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:April 18, 2025
 
@@ -300,26 +285,24 @@ __ __ __ __
 
 Contact Cisco
 
-  * Contact Cisco __
-  * __
-
-  * __
+* Contact Cisco __
+* __
+* __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-  * __
+* __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-  * __
+* __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-  * __
+* __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
 
 Save
 
@@ -331,31 +314,28 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.pdf) (2.9 MB)   
+* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.pdf) (2.9 MB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:April 18, 2025
 
 #### Table of Contents
 
-  * Cisco UCS X-Series with the Cisco Intersight platform
-  * Cisco UCS X-Series Modular System
-  * Why use Intel Flex GPU for graphics deployments on VDI
-  * Intel Data Center GPU Flex cards
-  * Reference architecture
-  * Configure Cisco UCS X-Series Modular System
-  * Install Intel GPU software on the VMware ESXi host
-  * Configure host graphics settings
-  * Intel Data Center Flex GPUs
-  * SPECviewperf results with Intel Flex Virtual Workstation profiles
-  * Login Enterprise knowledge worker results with Intel Flex 140 profiles
-  * Conclusion
-  * For more information
-
+* Cisco UCS X-Series with the Cisco Intersight platform
+* Cisco UCS X-Series Modular System
+* Why use Intel Flex GPU for graphics deployments on VDI
+* Intel Data Center GPU Flex cards
+* Reference architecture
+* Configure Cisco UCS X-Series Modular System
+* Install Intel GPU software on the VMware ESXi host
+* Configure host graphics settings
+* Intel Data Center Flex GPUs
+* SPECviewperf results with Intel Flex Virtual Workstation profiles
+* Login Enterprise knowledge worker results with Intel Flex 140 profiles
+* Conclusion
+* For more information
 
 ` `
 
@@ -374,8 +354,6 @@ Cisco delivers the future-ready Cisco UCS X-Series Modular System (Figure 1) to 
 ● **Future ready:** Cisco UCS X-Fabric technology is designed to accommodate new devices and interconnects as they become available, including the capability to extend the server’s PCIe connectivity to attach additional Graphics Processing Unit (GPU) accelerators for an even more compelling virtual desktop experience.
 
 The Cisco UCS X-Series with the Cisco Intersight platform is future-ready foundational infrastructure that can support your virtual desktops and applications today and for years to come. With Cisco Intersight software, you can simplify management of all your locations: data center, remote office, branch office, industrial, and edge.
-
-![Cisco UCS X-Series Modular System](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_0.png)
 
 Figure 1. 
 
@@ -401,8 +379,6 @@ The Cisco UCS X9508 Chassis (Figure 2) has the following main features:
 
 ● Four 100-mm dual counter-rotating fans deliver industry-leading airflow and power efficiency. Optimized thermal algorithms enable different cooling modes to best support the network environment. Cooling is modular so that future enhancements can potentially handle open- or closed-loop liquid cooling to support even higher-power processors.
 
-![Cisco UCS X9508 Chassis, front \(left\) and back \(right\)](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_1.png)
-
 Figure 2. 
 
 Cisco UCS X9508 Chassis, front (left) and back (right)
@@ -425,8 +401,6 @@ The Cisco UCS X210c M7 Compute Node (Figure 3) is the first computing device to 
 
 ● **Security:** the server supports an optional Trusted Platform Module (TPM). Additional features include a secure boot Field Programmable Gate Array (FPGA) and Anti-Counterfeit Technology 2 (ACT2) anticounterfeit provisions.
 
-![Cisco UCS X210c M7 Compute Node](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_2.jpg)
-
 Figure 3. 
 
 Cisco UCS X210c M7 Compute Node
@@ -440,8 +414,6 @@ The Cisco UCS X440p PCIe Node (Figure 4) is the first PCIe resource node to inte
 ● Intel Flex 140 GPU
 
 ● Intel Flex 170 GPU
-
-![Cisco UCS X440p PCIe Node](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_3.png)
 
 Figure 4. 
 
@@ -484,8 +456,6 @@ For desktop virtualization applications, the Intel Data Center GPU Flex 140 and 
 Reference architecture
 
 Figure 5 provides an overview of the environment used in testing.
-
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_4.png)
 
 Figure 5. 
 
@@ -543,8 +513,6 @@ UCSX-GPU-FLEX 140-MEZZ placement
 
 ● The Cisco UCS X440p PCIe Node provides two (riser A) or four (riser B) PCIe slots connected to an adjacent Cisco UCS X210c M7 Compute Node to support Intel Flex GPUs (Figures 6 and 7).
 
-![Cisco UCS X440p PCIe Node placement](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_5.png)
-
 Figure 6. 
 
 Cisco UCS X440p PCIe Node placement
@@ -552,8 +520,6 @@ Cisco UCS X440p PCIe Node placement
 ● **Riser A:** supports up to two dual-width Intel Flex 170 GPUs
 
 ● **Riser B:** supports up to four single-width Intel Flex 140 GPUs
-
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_6.png)
 
 Figure 7. 
 
@@ -567,8 +533,6 @@ The Cisco Intersight platform provides an integrated and intuitive management ex
 
 See Figure 8 for configuring Cisco UCS with Cisco Intersight Managed Mode (IMM).
 
-![Cisco Intersight workflow](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_7.png)
-
 Figure 8. 
 
 Cisco Intersight workflow
@@ -581,19 +545,13 @@ The detailed process is available in several guides available at Cisco.com:
 
 This environment uses one PCI node with two Intel Flex 170 cards, one PCI node with four Intel Flex 140 cards, and the compute node with two Flex 140 cards (Figures 9, 10, and 11).
 
-![Cisco Intersight views of the PCI node inventory with Intel Flex 170](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_8.png)
-
 Figure 9. 
 
 Cisco Intersight views of the PCI node inventory with Intel Flex 170
 
-![Cisco Intersight views of the PCI node inventory with Intel Flex 140](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_9.png)
-
 Figure 10. 
 
 Cisco Intersight views of the PCI node inventory with Intel Flex 140
-
-![Cisco Intersight views of the compute node inventory with Intel Flex 140](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_10.png)
 
 Figure 11. 
 
@@ -604,19 +562,14 @@ Install Intel GPU software on the VMware ESXi host
 This section summarizes the installation process for configuring an ESXi host and virtual machine for GPU support (Figure 12). 
 
 1. Download the Intel Flex GPU driver pack for VMware vSphere ESXi 8.0 U2.
-
 2. Enable the ESXi shell and the Secure Shell (SSH) protocol on the vSphere host from the Troubleshooting Mode Options menu of the vSphere Configuration Console (Figure 13).
-
-![VMware ESXi Configuration Console](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_11.png)
 
 Figure 12. 
 
 VMware ESXi Configuration Console
 
 3. Upload the Intel driver (vSphere Installation Bundle [VIB] file) to the /tmp directory on the ESXi host using a tool such as WinSCP. (Shared storage is preferred if you are installing drivers on multiple servers or using the VMware Update Manager.)
-
 4. Log in as root to the vSphere console through SSH using a tool such as Putty.
-
 5. The ESXi host must be in maintenance mode for you to install the VIB module. To place the host in maintenance mode, use this command: 
 
 esxcli software component apply –no-sig-check -d /tmp/Intel-idcgpu_1.1.0.1286-1OEM.800.1.0.20613240_22435138.zip
@@ -675,8 +628,6 @@ After the Intel GPU Software has been installed, configure host graphics in vCen
 
 1. Select the ESXi host and click the Configure tab. From the list of options at the left, select Graphics under Hardware. Click Edit Host Graphics Settings (Figure 13).
 
-![Host graphics settings in vCenter](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_12.png)
-
 Figure 13. 
 
 Host graphics settings in vCenter
@@ -686,8 +637,6 @@ Host graphics settings in vCenter
 ◦ Shared Direct (Vendor shared passthrough graphics)
 
 ◦ Spread VMs across GPUs (best performance)
-
-![Edit Host Graphics Settings window in vCenter](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_13.png)
 
 Figure 14. 
 
@@ -769,25 +718,17 @@ Cisco UCS X210c M7 Compute Node with PCI node (FLEX 140-3GB)
 
 Figures 15 through 19 show the results for Microsoft Windows 10 with four vCPUs and 16 GB of memory and the Intel Flex 140-3GB profile on a Cisco UCS X210c M7 Compute Node with dual Intel Xeon Gold 6448H 2.40-GHz 32-core processors and 2 TB of 4800-MHz RAM.
 
-![SPECviewperf composite scores](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_14.png)
-
 Figure 15. 
 
 SPECviewperf composite scores
-
-![Perfmon virtual machine CPU utilization](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_15.png)
 
 Figure 16. 
 
 Perfmon virtual machine CPU utilization
 
-![Perfmon virtual machine memory utilization](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_16.png)
-
 Figure 17. 
 
 Perfmon virtual machine memory utilization
-
-![Perfmon GPU utilization](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_17.png)
 
 Figure 18. 
 
@@ -797,31 +738,21 @@ Cisco UCS X210c M7 Compute Node with PCI node (FLEX 170-8GB)
 
 Figures 20 through 24 show the results for Microsoft Windows 10 with four vCPUs and 16 GB of memory and the Intel Flex 170-8GB profile on a Cisco UCS X210c M7 Compute Node with dual Intel Xeon Gold 6448H 2.40-GHz 32-core processors and 2 TB of 4800-MHz RAM.
 
-![SPECviewperf composite scores](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_18.png)
-
 Figure 19. 
 
 SPECviewperf composite scores
-
-![Perfmon virtual machine CPU utilization](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_19.png)
 
 Figure 20. 
 
 Perfmon virtual machine CPU utilization
 
-![Perfmon virtual machine memory utilization](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_20.png)
-
 Figure 21. 
 
 Perfmon virtual machine memory utilization
 
-![Perfmon GPU utilization](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_21.png)
-
 Figure 22. 
 
 Perfmon GPU utilization
-
-![Perfmon GPU memory utilization](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_22.png)
 
 Figure 23. 
 
@@ -831,25 +762,17 @@ Cisco UCS X210c M7 Compute Node with PCI node (FLEX 170-4GB)
 
 Figures 25 through 29 show the results for Microsoft Windows 10 with four vCPUs and 16 GB of memory and the Intel Flex 170-4GB profile on a Cisco UCS X210c M7 Compute Node with dual Intel Xeon Gold 6448H 2.40-GHz 32-core processors and 1 TB of 4800-MHz RAM.
 
-![SPECviewperf composite scores](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_23.png)
-
 Figure 24. 
 
 SPECviewperf composite scores
-
-![Perfmon virtual machine CPU Utilization](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_24.png)
 
 Figure 25. 
 
 Perfmon virtual machine CPU Utilization
 
-![Perfmon virtual machine memory utilization](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_25.png)
-
 Figure 26. 
 
 Perfmon virtual machine memory utilization
-
-![Perfmon GPU utilization](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_26.png)
 
 Figure 27. 
 
@@ -881,25 +804,17 @@ Figures 30 through 33 show the results for a graphics intensive knowledge worker
 
 **Note: **No VMware or Citrix optimizations were applied to the desktop image.
 
-![Login Enterprise performance chart](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_27.png)
-
 Figure 28. 
 
 Login Enterprise performance chart
-
-![GPU utilization](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_28.png)
 
 Figure 29. 
 
 GPU utilization
 
-![Virtual machine processor consumed %](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_29.png)
-
 Figure 30. 
 
 Virtual machine processor consumed %
-
-![Citrix ICA frame rate \(frames per second\)](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.docx/_jcr_content/renditions/ucs-x-series-intel-flex-dc-gpu-vdi-wp_30.png)
 
 Figure 31. 
 
@@ -923,23 +838,18 @@ For additional information about topics discussed in this document, see the foll
 
 ### Our experts recommend
 
-  * [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
-  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
-
+* [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
+* [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
 ### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---
 
 ## Page 3: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html
 
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
+* Skip to content
+* Skip to search
+* Skip to footer
 
 # Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance
 
@@ -955,12 +865,10 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.pdf) (280.1 KB)   
+* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.pdf) (280.1 KB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:July 21, 2023
 
@@ -974,26 +882,24 @@ __ __ __ __
 
 Contact Cisco
 
-  * Contact Cisco __
-  * __
-
-  * __
+* Contact Cisco __
+* __
+* __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-  * __
+* __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-  * __
+* __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-  * __
+* __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
 
 Save
 
@@ -1005,22 +911,19 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.pdf) (280.1 KB)   
+* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.pdf) (280.1 KB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:July 21, 2023
 
 #### Table of Contents
 
-  * Overview
-  * Benefits
-  * Why Cisco UCS X-Series for VMware vSAN
-  * Learn more
-
+* Overview
+* Benefits
+* Why Cisco UCS X-Series for VMware vSAN
+* Learn more
 
 ` `
 
@@ -1056,25 +959,19 @@ VMware vSAN ReadyNode [Cisco certified servers](https://compatibilityguide.broad
 
   
 
-
 * * *
 
 [1] IDC 1Q2023 Worldwide Quarterly Converged Systems Tracker, March 2023 
 
 ### Our experts recommend
 
-  * [Cisco UCS X-Series with Intel Flex Data Center GPUs and VDI White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.html "Cisco UCS X-Series with Intel Flex Data Center GPUs and VDI White Paper")
-  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
-
+* [Cisco UCS X-Series with Intel Flex Data Center GPUs and VDI White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.html "Cisco UCS X-Series with Intel Flex Data Center GPUs and VDI White Paper")
+* [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
 ### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---
 
 ## Page 4: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/deploy-ucs-compute-node-with-imm-for-vdi.html
-
 
 ---

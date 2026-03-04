@@ -8,7 +8,7 @@
 | **HTML Title** | Software Repository |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_system_software_repo.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:09 |
+| **Fetched on** | 2026-03-04 12:48:06 |
 
 ---
 
@@ -18,11 +18,7 @@ Choose System > Software Repository to add or view the Firmware links, OS Image 
 
 For detailed instructions about adding images, see the following:
 
-  * [Adding a Firmware Link](../../../../../../../../../../help/resources/add_firmware_link)
-
-  * [Adding an OS Image](../../../../../../../../../../help/resources/adding_OSimage)
-
-  * [Adding a Server Configuration Utility](../../../../../../../../../../help/resources/adding_scu)
-
-  * [Adding an Operating System Configuration File](https://intersight.com/help/saas/resources/adding_an_operating_system_file)
-
+* [Adding a Firmware Link](../../../../../../../../../../help/resources/add_firmware_link)
+* [Adding an OS Image](../../../../../../../../../../help/resources/adding_OSimage)
+* [Adding a Server Configuration Utility](../../../../../../../../../../help/resources/adding_scu)
+* [Adding an Operating System Configuration File](https://intersight.com/help/saas/resources/adding_an_operating_system_file)

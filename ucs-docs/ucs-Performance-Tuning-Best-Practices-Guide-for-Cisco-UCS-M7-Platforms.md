@@ -8,16 +8,15 @@
 | **HTML Title** | Performance Tuning Best Practices Guide for Cisco UCS M7 Platforms |
 | **Source file** | `ucs-docs-raw/html/ucs-m7-platforms-wp.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:09 |
+| **Fetched on** | 2026-03-04 12:48:08 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/ucs-m7-platforms-wp.html
 
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
+* Skip to content
+* Skip to search
+* Skip to footer
 
 # Performance Tuning Best Practices Guide for Cisco UCS M7 Platforms
 
@@ -33,12 +32,10 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/ucs-m7-platforms-wp.pdf) (630.7 KB)   
+* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/ucs-m7-platforms-wp.pdf) (630.7 KB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:June 2, 2023
 
@@ -58,33 +55,30 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/ucs-m7-platforms-wp.pdf) (630.7 KB)   
+* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/ucs-m7-platforms-wp.pdf) (630.7 KB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:June 2, 2023
 
 #### Table of Contents
 
-  * Purpose and scope
-  * What you will learn
-  * BIOS tuning scenarios
-  * Tuning for general-purpose workloads
-  * Tuning for enterprise workloads
-  * Cisco UCS BIOS options
-  * Processor settings
-  * Memory settings
-  * Power and performance configuration
-  * Fan Control Policy (CIMC/IMM)
-  * BIOS settings for Cisco UCS M7 servers
-  * BIOS recommendations for various general-purpose workloads
-  * Additional BIOS recommendations for enterprise workloads
-  * Conclusion
-  * For more information
-
+* Purpose and scope
+* What you will learn
+* BIOS tuning scenarios
+* Tuning for general-purpose workloads
+* Tuning for enterprise workloads
+* Cisco UCS BIOS options
+* Processor settings
+* Memory settings
+* Power and performance configuration
+* Fan Control Policy (CIMC/IMM)
+* BIOS settings for Cisco UCS M7 servers
+* BIOS recommendations for various general-purpose workloads
+* Additional BIOS recommendations for enterprise workloads
+* Conclusion
+* For more information
 
 ` `
 
@@ -739,13 +733,9 @@ For more information about Cisco UCS C-Series, and X-Series M7 servers, see the 
 
 ### Our experts recommend
 
-  * [Cisco UCS B200 M5 Blade Server At-a-Glance](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/at-a-glance-c45-739250.pdf "Cisco UCS B200 M5 Blade Server At-a-Glance")
-  * [Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/q-and-a-c67-2381951.html "Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ")
-
+* [Cisco UCS B200 M5 Blade Server At-a-Glance](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/at-a-glance-c45-739250.pdf "Cisco UCS B200 M5 Blade Server At-a-Glance")
+* [Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/q-and-a-c67-2381951.html "Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ")
 
 ### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

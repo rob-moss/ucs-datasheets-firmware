@@ -8,13 +8,11 @@
 | **HTML Title** | Cisco UCS Manager Network Management Guide Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_cli_ucsm_network_management_guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:02 |
+| **Fetched on** | 2026-03-04 12:48:00 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3.html
-
-![Clear Contents of Search](/etc/designs/cdc/fw/i/ic_clear_gray.png)
 
 ---
 
@@ -24,14 +22,10 @@
 
 This guide is intended primarily for data center administrators with responsibilities and expertise in one or more of the following: 
 
-  * Server administration 
-
-  * Storage administration 
-
-  * Network administration 
-
-  * Network security 
-
+* Server administration 
+* Storage administration 
+* Network administration 
+* Network security
 
 ---
 
@@ -45,8 +39,8 @@ Table 1. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(6c)
 ---|---|---  
 Support for RS Cons 16 and RS 1eee configuration options |  Cisco UCS Manager now supports RS Cons 16 and RS 1eee configuration options for Ethernet Port Forward Error Correction. | 
 
-  * [Configuring an Uplink Ethernet Port for Forward Error Correction](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#task_ftg_gvm_d2b)
-  * [Configuring an Appliance Port for Forward Error Correction](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#task_ftg_gvm_d2b_app)
+* [Configuring an Uplink Ethernet Port for Forward Error Correction](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#task_ftg_gvm_d2b)
+* [Configuring an Appliance Port for Forward Error Correction](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#task_ftg_gvm_d2b_app)
 
   
 Table 2. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(5a) Feature  |  Description  |  Where Documented   
@@ -56,31 +50,31 @@ Table 3. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b)
 ---|---|---  
 Support for Cisco UCS Fabric Interconnects 9108 100G | Cisco UCS Manager now supports Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)  | 
 
-  * [Guidelines for Configuring Unified Ports](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#concept_0249934662D1439AA5E926A503AC8B4B)
-  * [Fabric Interconnect Port Types](b_CLI_UCSM_Network_Management_Guide_4_1_chapter_011.html#concept_551C21C9FE2F45E9BFE81361FA47E42C)
-  * [Unified Ports on 6300 Series Fabric Interconnects](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#concept_EBA4291165434774AB50F91C74633538)
-  * [Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#port-breakout-functionality-on-cisco-ucs-x-direct)
-  * [Configuring Multiple Breakout Ports](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#task_36B159CB4E204986A5692F4D645F8F2C)
-  * [Configuring Breakout Appliance Ports](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#task_A85F71DFA78543959CA64713660A591B)
-  * [Configuring Ethernet Breakout Ports on Cisco UCS Fabric Interconnects 9108 100G](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#Cisco_Task_in_List_GUI.dita_2eb4b4d0-ea28-4eac-98bc-153d9574a3b6)
-  * [Configuring Breakout Appliance Ports](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#task_A85F71DFA78543959CA64713660A591B)
-  * [Configuring Q-in-Q Forwarding](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#Cisco_Task.dita_f1691856-af85-42a8-83d0-ce75909c4c23)
-  * [Unconfiguring Q-in-Q Forwarding](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#Cisco_Task.dita_91fe934d-6ded-4a29-81b2-548512392ff9)
-  * [Configuring FCoE Uplink for Forward Error Correction](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#task_c5p_rqt_k2b)
-  * [Named VLANs](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#concept_D1DA6EF2EF0446099CFC3FAD4AEBDB87)
-  * [VLAN Port Count Optimization](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#concept_4BA5803EA5134951BAB8C42025832137)
-  * [VIC QinQ Tunneling - Supported Combinations and Limitations](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#receive-side-scaling-version-2-limitations)
-  * [Quality of Service](b_CLI_UCSM_Network_Management_Guide_chapter_01000.html#concept_ED0A5836EDCB4F3C9128AB453351698A)
-  * [Multicast Policy](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#concept_84AC40A047CC4E10B4CD2FBFCDFC6262)
-  * [Guidelines and Limitations for MACsec](m-cli-macsec-4-3.html#c-guidelines-and-limitations-for-macsec)
+* [Guidelines for Configuring Unified Ports](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#concept_0249934662D1439AA5E926A503AC8B4B)
+* [Fabric Interconnect Port Types](b_CLI_UCSM_Network_Management_Guide_4_1_chapter_011.html#concept_551C21C9FE2F45E9BFE81361FA47E42C)
+* [Unified Ports on 6300 Series Fabric Interconnects](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#concept_EBA4291165434774AB50F91C74633538)
+* [Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#port-breakout-functionality-on-cisco-ucs-x-direct)
+* [Configuring Multiple Breakout Ports](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#task_36B159CB4E204986A5692F4D645F8F2C)
+* [Configuring Breakout Appliance Ports](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#task_A85F71DFA78543959CA64713660A591B)
+* [Configuring Ethernet Breakout Ports on Cisco UCS Fabric Interconnects 9108 100G](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#Cisco_Task_in_List_GUI.dita_2eb4b4d0-ea28-4eac-98bc-153d9574a3b6)
+* [Configuring Breakout Appliance Ports](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#task_A85F71DFA78543959CA64713660A591B)
+* [Configuring Q-in-Q Forwarding](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#Cisco_Task.dita_f1691856-af85-42a8-83d0-ce75909c4c23)
+* [Unconfiguring Q-in-Q Forwarding](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#Cisco_Task.dita_91fe934d-6ded-4a29-81b2-548512392ff9)
+* [Configuring FCoE Uplink for Forward Error Correction](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#task_c5p_rqt_k2b)
+* [Named VLANs](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#concept_D1DA6EF2EF0446099CFC3FAD4AEBDB87)
+* [VLAN Port Count Optimization](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#concept_4BA5803EA5134951BAB8C42025832137)
+* [VIC QinQ Tunneling - Supported Combinations and Limitations](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#receive-side-scaling-version-2-limitations)
+* [Quality of Service](b_CLI_UCSM_Network_Management_Guide_chapter_01000.html#concept_ED0A5836EDCB4F3C9128AB453351698A)
+* [Multicast Policy](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#concept_84AC40A047CC4E10B4CD2FBFCDFC6262)
+* [Guidelines and Limitations for MACsec](m-cli-macsec-4-3.html#c-guidelines-and-limitations-for-macsec)
 
   
 Table 4. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b) Feature  |  Description  |  Where Documented   
 ---|---|---  
 Support for Cisco UCS C-Series M8 servers | Cisco UCS Manager now supports Cisco UCS C245 M8 Servers.  | 
 
-  * [Receive Side Scaling Version 2 (RSSv2)](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#rssv2)
-  * [Single Root I/O Virtualization HPN Connection Policy](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#sriov-hpn-policy-cli)
+* [Receive Side Scaling Version 2 (RSSv2)](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#rssv2)
+* [Single Root I/O Virtualization HPN Connection Policy](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#sriov-hpn-policy-cli)
 
   
 Table 5. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4a) Feature  |  Description  |  Where Documented   
@@ -91,56 +85,56 @@ Table 6. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(2c)
 Support Cisco UCS X-Series Servers |  Cisco UCS Manager supports Cisco UCS X410c M7 Compute Node.  Cisco UCS X-Series servers support Intelligent Fabric Modules (IFM), which function similarly to the Input/Output Module (IOM) in Cisco UCS B-Series servers.  |  —  
 Support for Cisco UCS VIC cards |  Cisco UCS Manager supports the following Cisco UCS VIC cards:
 
-  * Cisco UCS VIC 15230
-  * Cisco UCS VIC 15427
-  * Cisco UCS VIC 15237 mLOM
+* Cisco UCS VIC 15230
+* Cisco UCS VIC 15427
+* Cisco UCS VIC 15237 mLOM
 
 |  —  
 Table 7. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(2b) Feature  |  Description  |  Where Documented   
 ---|---|---  
 Support Cisco UCS C-Series M7 servers |  Cisco UCS Manager supports the following C-Series M7 servers:
 
-  * Cisco UCS C240 M7 Server
-  * Cisco UCS C220 M7 Server
+* Cisco UCS C240 M7 Server
+* Cisco UCS C220 M7 Server
 
 |  —  
 Support Cisco UCS X-Series chassis and servers |  Cisco UCS Manager supports Cisco UCS X9508 server chassis with the following Cisco UCS X-Series servers:
 
-  * Cisco UCS X210c M7 Compute Node
-  * Cisco UCS X210c M6 Compute Node
+* Cisco UCS X210c M7 Compute Node
+* Cisco UCS X210c M6 Compute Node
 
 Cisco UCS X-Series servers support Intelligent Fabric Modules (IFM), which function similarly to the Input/Output Module (IOM) in Cisco UCS B-Series servers.  |  —  
 Support for Receive Side Scaling Version 2 | Cisco UCS Manager introduces support for Receive Side Scaling Version 2 | 
 
-  * [Receive Side Scaling Version 2 (RSSv2)](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#rssv2)
-  * [Configuring an Ethernet Adapter Policy to Enable RSS on Windows Operating Systems](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#task_5DD4B30A2263454D95C6C38881F009F0)
+* [Receive Side Scaling Version 2 (RSSv2)](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#rssv2)
+* [Configuring an Ethernet Adapter Policy to Enable RSS on Windows Operating Systems](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#task_5DD4B30A2263454D95C6C38881F009F0)
 
   
 Support for VIC QinQ Tunneling | Cisco UCS Manager introduces support for VIC QinQ Tunneling. | 
 
-  * [VIC QinQ Tunneling](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#vic-qinq-tunneling)
-  * [Enabling QinQ on a vNIC of LAN Connectivity Policy](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#creating-a-qinq-offload)
-  * [Enabling QinQ on a vNIC of a Service Profile](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#creating-a-qinq-offload)
-  * [Enabling QinQ on a vNIC Template](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#creating-a-qinq-offload)
-  * [Viewing QinQ](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#creating-a-qinq-offload)
-  * [Disabling QinQ on a vNIC of a Service Profile](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#creating-a-qinq-offload)
-  * [Disabling QinQ on a vNIC Template](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#creating-a-qinq-offload)
-  * [Disabling QinQ on a vNIC of LAN Connectivity Policy](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#creating-a-qinq-offload)
-  * [Adding a VLAN on a vNIC Template](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#configuring-a-vnic-template)
-  * [Adding a VLAN on a vNIC of LAN Connectivity Policy](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#create-vlan)
-  * [Adding a VLAN on a vNIC of a Service Profile](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#create-vlan)
-  * [Deleting a VLAN in a VNIC template](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#create-vlan)
-  * [Deleting a VLAN on a vNIC of LAN Connectivity Policy](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#create-vlan)
-  * [Deleting a VLAN on a vNIC of a Service Profile](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#create-vlan)
-  * [VIC QinQ Tunneling - Supported Combinations and Limitations](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#receive-side-scaling-version-2-limitations)
+* [VIC QinQ Tunneling](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#vic-qinq-tunneling)
+* [Enabling QinQ on a vNIC of LAN Connectivity Policy](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#creating-a-qinq-offload)
+* [Enabling QinQ on a vNIC of a Service Profile](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#creating-a-qinq-offload)
+* [Enabling QinQ on a vNIC Template](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#creating-a-qinq-offload)
+* [Viewing QinQ](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#creating-a-qinq-offload)
+* [Disabling QinQ on a vNIC of a Service Profile](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#creating-a-qinq-offload)
+* [Disabling QinQ on a vNIC Template](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#creating-a-qinq-offload)
+* [Disabling QinQ on a vNIC of LAN Connectivity Policy](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#creating-a-qinq-offload)
+* [Adding a VLAN on a vNIC Template](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#configuring-a-vnic-template)
+* [Adding a VLAN on a vNIC of LAN Connectivity Policy](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#create-vlan)
+* [Adding a VLAN on a vNIC of a Service Profile](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#create-vlan)
+* [Deleting a VLAN in a VNIC template](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#create-vlan)
+* [Deleting a VLAN on a vNIC of LAN Connectivity Policy](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#create-vlan)
+* [Deleting a VLAN on a vNIC of a Service Profile](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#create-vlan)
+* [VIC QinQ Tunneling - Supported Combinations and Limitations](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#receive-side-scaling-version-2-limitations)
 
   
 Support for SR-IOV | Cisco UCS Manager provides Single Root I/O Virtualization High Performance Networking (SRIOV-HPN) Connection Policy support. | 
 
-  * [Single Root I/O Virtualization HPN Connection Policy](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#sriov-hpn-policy-cli)
-  * [Configuring SRIOV HPN Connection Policy](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#configuring-sriov-hpn-connection-policy)
-  * [Assigning SRIOV-HPN Connection Policy to a vNIC](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#assigning-sriov-hpn-connection-policy-to-a-vnic)
-  * [Deleting SRIOV HPN Connection Policy](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#deleting-sriov-hpn-connection-policy)
+* [Single Root I/O Virtualization HPN Connection Policy](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#sriov-hpn-policy-cli)
+* [Configuring SRIOV HPN Connection Policy](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#configuring-sriov-hpn-connection-policy)
+* [Assigning SRIOV-HPN Connection Policy to a vNIC](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#assigning-sriov-hpn-connection-policy-to-a-vnic)
+* [Deleting SRIOV HPN Connection Policy](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#deleting-sriov-hpn-connection-policy)
 
   
 Deprecated support for Cisco UCS B-Series and C-Series M4 servers |  Cisco UCS Manager deprecates support for Cisco UCS B-Series and C-Series M4 servers. |  —  
@@ -154,22 +148,14 @@ Deprecated support for Cisco UCS 6200 series Fabric Interconnect |  Cisco UCS Ma
   
 This guide includes the following information: 
 
-  * Configure/Enable Server Ports; Configure/Enable Uplink Ports; Configure/Enable FC Ports. 
-
-  * Create LAN Pin Groups 
-
-  * Create VLANs and VLAN groups 
-
-  * Create Server Links 
-
-  * Configure QoS System Class 
-
-  * Configure Global Policies 
-
-  * Monitor Network Health 
-
-  * Traffic Monitoring 
-
+* Configure/Enable Server Ports; Configure/Enable Uplink Ports; Configure/Enable FC Ports. 
+* Create LAN Pin Groups 
+* Create VLANs and VLAN groups 
+* Create Server Links 
+* Configure QoS System Class 
+* Configure Global Policies 
+* Monitor Network Health 
+* Traffic Monitoring
 
 ---
 
@@ -181,7 +167,7 @@ The fabric interconnect is the core component of Cisco UCS. The Cisco UCS Fabric
 
 The Cisco UCS FIs provide network connectivity and management for the connected servers. The Cisco UCS Fabric Interconnects run the Cisco UCS Manager control software and consist of expansion modules for the Cisco UCS Manager software. 
 
-For more information about Cisco UCS Fabric Interconnects, see the Cisco UCS Manager Getting Started Guide. 
+For more information about Cisco UCS Fabric Interconnects, see the Cisco UCS Manager Getting Started Guide.
 
 ---
 
@@ -191,7 +177,7 @@ For more information about Cisco UCS Fabric Interconnects, see the Cisco UCS Man
 
 Unified ports are ports on the Cisco UCS 6300 Series Fabric Interconnects that you can configure to carry either Ethernet or Fibre Channel traffic. A Cisco UCS domain cannot use these un-reserved ports until you configure them. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -220,23 +206,16 @@ Ethernet Port Mode
 
 When you set the port mode to Ethernet, you can configure the following port types: 
 
-  * Server ports 
+* Server ports 
+* Ethernet uplink ports 
+* Ethernet port channel members 
+* FCoE ports 
+* Appliance ports 
+* Appliance port channel members 
+* SPAN destination ports 
+* SPAN source ports 
 
-  * Ethernet uplink ports 
-
-  * Ethernet port channel members 
-
-  * FCoE ports 
-
-  * Appliance ports 
-
-  * Appliance port channel members 
-
-  * SPAN destination ports 
-
-  * SPAN source ports 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -246,21 +225,17 @@ For SPAN source ports, configure one of the port types and then configure the po
 * * *  
   
 ---|---  
-
 
 Fibre Channel Port Mode
 
 When you set the port mode to Fibre Channel, you can configure the following port types: 
 
-  * Fibre Channel uplink ports 
+* Fibre Channel uplink ports 
+* Fibre Channel port channel members
+* Fibre Channel storage ports 
+* SPAN source ports 
 
-  * Fibre Channel port channel members
-
-  * Fibre Channel storage ports 
-
-  * SPAN source ports 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -271,12 +246,11 @@ For SPAN source ports, configure one of the port types and then configure the po
   
 ---|---  
 
-
 ### Data Traffic Interruption from Port Mode Changing 
 
 Port mode changes can cause an interruption to the data traffic for the Cisco UCS domain. The length of the interruption and the affected traffic depend upon the configuration of the Cisco UCS domain and the module on which you made the port mode changes. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/tip.gif)  
+  
 **Tip** | 
 
 * * *
@@ -297,10 +271,8 @@ A cluster configuration has two fabric interconnects. After you make port change
 
 If you change the port modes on the expansion module of one fabric interconnect and then wait for that to reboot before changing the port modes on the second fabric interconnect, the following occurs: 
 
-  * With server vNIC failover, traffic fails over to the other fabric interconnect and no interruption occurs. 
-
-  * Without server vNIC failover, all data traffic through the fabric interconnect on which you changed the port modes is interrupted for approximately eight minutes while the fabric interconnect reboots. 
-
+* With server vNIC failover, traffic fails over to the other fabric interconnect and no interruption occurs. 
+* Without server vNIC failover, all data traffic through the fabric interconnect on which you changed the port modes is interrupted for approximately eight minutes while the fabric interconnect reboots. 
 
 When you change the port modes on the fixed modules of both fabric interconnects simultaneously, all data traffic through the fabric interconnects are interrupted for approximately eight minutes while the fabric interconnects reboot. 
 
@@ -316,12 +288,9 @@ Consider the following guidelines and restrictions when configuring unified port
 
 Because the Cisco UCS Manager GUI interface uses a slider to configure the port mode for unified ports on a fixed or expansion module, it automatically enforces the following restrictions which limits how port modes can be assigned to unified ports. When using the Cisco UCS Manager CLI interface, these restrictions are enforced when you commit the transaction to the system configuration. If the port mode configuration violates any of the following restrictions, the Cisco UCS Manager CLI displays an error: 
 
-  * Ethernet ports must be grouped together in a block. For each module (fixed or expansion), the Ethernet port block must start with the first port and end with an even numbered port. 
-
-  * Fibre Channel ports must be grouped together in a block. For each module (fixed or expansion), the first port in the Fibre Channel port block must follow the last Ethernet port and extend to include the rest of the ports in the module. For configurations that include only Fibre Channel ports, the Fibre Channel block must start with the first port on the fixed or expansion module. 
-
-  * Alternating Ethernet and Fibre Channel ports is not supported. 
-
+* Ethernet ports must be grouped together in a block. For each module (fixed or expansion), the Ethernet port block must start with the first port and end with an even numbered port. 
+* Fibre Channel ports must be grouped together in a block. For each module (fixed or expansion), the first port in the Fibre Channel port block must follow the last Ethernet port and extend to include the rest of the ports in the module. For configurations that include only Fibre Channel ports, the Fibre Channel block must start with the first port on the fixed or expansion module. 
+* Alternating Ethernet and Fibre Channel ports is not supported. 
 
 **Example of a valid configuration** — Might include unified ports 1–16 on the fixed module configured in Ethernet port mode and ports 17–32 in Fibre Channel port mode. On the expansion module you could configure ports 1–4 in Ethernet port mode and then configure ports 5–16 in Fibre Channel mode. The rule about alternating Ethernet and Fibre Channel port types is not violated because this port arrangement complies with the rules on each individual module. 
 
@@ -339,9 +308,9 @@ Commiting the buffer before configuring multiple interfaces will result in an er
 
 The following are cautions and guidelines to follow while working with unified uplink ports and unified storage ports: 
 
-  * In an unified uplink port, if you enable one component as a SPAN source, the other component will automatically become a SPAN source. 
+* In an unified uplink port, if you enable one component as a SPAN source, the other component will automatically become a SPAN source. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -351,24 +320,17 @@ If you create or delete a SPAN source under the Ethernet uplink port, Cisco UCS 
 * * *  
   
 ---|---  
-  * You must configure a non default native VLAN on FCoE and unified uplink ports. This VLAN is not used for any traffic. Cisco UCS Manager will reuse an existing fcoe-storage-native-vlan for this purpose. This fcoe-storage-native-vlan will be used as a native VLAN on FCoE and unified uplinks. 
-
-  * In an unified uplink port, if you do not specify a non default VLAN for the Ethernet uplink port the fcoe-storage-native-vlan will be assigned as the native VLAN on the unified uplink port. If the Ethernet port has a non default native VLAN specified as native VLAN, this will be assigned as the native VLAN for unified uplink port. 
-
-  * When you create or delete a member port under an Ethernet port channel, Cisco UCS Manager automatically creates or deletes the member port under FCoE port channel. The same happens when you create or delete a member port in FCoE port channel. 
-
-  * When you configure an Ethernet port as a standalone port, such as server port, Ethernet uplink, FCoE uplink or FCoE storage and make it a member port for an Ethernet or FCoE port channel, Cisco UCS Manager automatically makes this port a member of both Ethernet and FCoE port channels. 
-
-  * When you remove the membership for a member port from being a member of server uplink, Ethernet uplink, FCoE uplink or FCoE storage, Cisco UCS Manager deletes the corresponding members ports from Ethernet port channel and FCoE port channel and creates a new standalone port. 
-
-  * If you downgrade Cisco UCS Manager from release 2.1 to any of the prior releases, all unified uplink ports and port channels will be converted to Ethernet ports and Ethernet port channels when the downgrade is complete. Similarly, all the unified storage ports will be converted to appliance ports. 
-
-  * For unified uplink ports and unified storage ports, when you create two interfaces, only one license is checked out. As long as either interface is enabled, the license remains checked out. The license will be released only if both the interfaces are disabled for a unified uplink port or a unified storage port. 
-
+* You must configure a non default native VLAN on FCoE and unified uplink ports. This VLAN is not used for any traffic. Cisco UCS Manager will reuse an existing fcoe-storage-native-vlan for this purpose. This fcoe-storage-native-vlan will be used as a native VLAN on FCoE and unified uplinks. 
+* In an unified uplink port, if you do not specify a non default VLAN for the Ethernet uplink port the fcoe-storage-native-vlan will be assigned as the native VLAN on the unified uplink port. If the Ethernet port has a non default native VLAN specified as native VLAN, this will be assigned as the native VLAN for unified uplink port. 
+* When you create or delete a member port under an Ethernet port channel, Cisco UCS Manager automatically creates or deletes the member port under FCoE port channel. The same happens when you create or delete a member port in FCoE port channel. 
+* When you configure an Ethernet port as a standalone port, such as server port, Ethernet uplink, FCoE uplink or FCoE storage and make it a member port for an Ethernet or FCoE port channel, Cisco UCS Manager automatically makes this port a member of both Ethernet and FCoE port channels. 
+* When you remove the membership for a member port from being a member of server uplink, Ethernet uplink, FCoE uplink or FCoE storage, Cisco UCS Manager deletes the corresponding members ports from Ethernet port channel and FCoE port channel and creates a new standalone port. 
+* If you downgrade Cisco UCS Manager from release 2.1 to any of the prior releases, all unified uplink ports and port channels will be converted to Ethernet ports and Ethernet port channels when the downgrade is complete. Similarly, all the unified storage ports will be converted to appliance ports. 
+* For unified uplink ports and unified storage ports, when you create two interfaces, only one license is checked out. As long as either interface is enabled, the license remains checked out. The license will be released only if both the interfaces are disabled for a unified uplink port or a unified storage port. 
 
 ### Configuring the Port Mode 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/caut.gif)  
+  
 **Caution** | 
 
 * * *
@@ -416,20 +378,19 @@ fc-uplink
   
 Based on the module for which you configured the port modes, data traffic for the Cisco UCS domain is interrupted as follows: 
 
-  * Fixed module—The fabric interconnect reboots. All data traffic through that fabric interconnect is interrupted. In a cluster configuration that provides high availability and includes servers with vNICs that are configured for failover, traffic fails over to the other fabric interconnect and no interruption occurs. Changing the port mode for both sides at once results in both fabric interconnects rebooting simultaneously and a complete loss of traffic until both fabric interconnects are brought back up.
+* Fixed module—The fabric interconnect reboots. All data traffic through that fabric interconnect is interrupted. In a cluster configuration that provides high availability and includes servers with vNICs that are configured for failover, traffic fails over to the other fabric interconnect and no interruption occurs. Changing the port mode for both sides at once results in both fabric interconnects rebooting simultaneously and a complete loss of traffic until both fabric interconnects are brought back up.
 
 It takes about 8 minutes for the fixed module to reboot. 
 
-  * Expansion module—The module reboots. All data traffic through ports in that module is interrupted. 
+* Expansion module—The module reboots. All data traffic through ports in that module is interrupted. 
 
 It takes about 1 minute for the expansion module to reboot. 
-
 
 #### Example
 
 The following example changes ports 3 and 4 on slot 1 from Ethernet uplink ports in Ethernet port mode to uplink Fibre Channel ports in Fibre Channel port mode: 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -438,9 +399,8 @@ This example is not applicable for Cisco UCS 6500 Series Fabric Interconnect.
 
 * * *  
   
----|---  
-      
-    
+---|---
+[code] 
     UCS-A# **scope fc-uplink**
     UCS-A /fc-uplink # **scope fabric a**
     UCS-A /fc-uplink/fabric # **create interface 1 3**
@@ -451,7 +411,8 @@ This example is not applicable for Cisco UCS 6500 Series Fabric Interconnect.
     Warning: This operation will change the port mode (from Ethernet to FC or vice-versa). 
     When committed, this change will require the fixed module to restart.
     UCS-A /fc-uplink/fabric/interface* #**commit-buffer**
-
+[/code]  
+  
 Configuring Breakout Ports
 
 ### Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) 
@@ -467,22 +428,14 @@ Fibre Channel 1/1 and 1/2 |  4x8G, 4x16G, 4x32G |  Fibre Channel 1/1/1 to Fibre 
 
 Breakout ports are supported as destinations for traffic monitoring. The following are the guidelines for breakout functionality for Cisco UCS Fabric Interconnects 9108 100G: 
 
-  * Breakout Availability: Breakout functionality is available for physical ports 1-8. 
-
-  * Ethernet Breakout: Ethernet breakout ports can be configured on physical ports 1 through 8, resulting in 32 logical ports. 
-
-  * Fibre Channel Breakout: Fibre Channel breakout ports can be configured on unified ports 1/1 and 1/2, resulting in 8 logical ports. 
-
-  * Port Configurations: Physical Ports 1-8 can be configured as Uplink Ports, FCoE Uplink Ports, FCoE Storage Ports, and Appliance Ports. 
-
-  * Port Conversions: All port conversions support up to 8 standard ports or 8 breakout ports. 
-
-  * Server Ports: Configuration as Server Ports is not supported.
-
-  * Fibre Channel Direct Ports: Direct ports for Fibre Channel are not supported. 
-
-  * Traffic Monitoring: Breakout ports can be utilized as destinations for traffic monitoring. 
-
+* Breakout Availability: Breakout functionality is available for physical ports 1-8. 
+* Ethernet Breakout: Ethernet breakout ports can be configured on physical ports 1 through 8, resulting in 32 logical ports. 
+* Fibre Channel Breakout: Fibre Channel breakout ports can be configured on unified ports 1/1 and 1/2, resulting in 8 logical ports. 
+* Port Configurations: Physical Ports 1-8 can be configured as Uplink Ports, FCoE Uplink Ports, FCoE Storage Ports, and Appliance Ports. 
+* Port Conversions: All port conversions support up to 8 standard ports or 8 breakout ports. 
+* Server Ports: Configuration as Server Ports is not supported.
+* Fibre Channel Direct Ports: Direct ports for Fibre Channel are not supported. 
+* Traffic Monitoring: Breakout ports can be utilized as destinations for traffic monitoring. 
 
 ### Port Breakout Functionality on Cisco UCS 6536 Fabric Interconnects
 
@@ -496,7 +449,7 @@ When you break out a 40G port into 10G ports or a 100G port into 25G ports, the 
 
 FC breakout is supported on ports 36 through 33 when each port is configured with a four-port breakout cable. For example: Four FC breakout ports on the physical port 33 are numbered as 1/33/1, 1/33/2, 1/33/3, and 1/33/4. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -509,11 +462,11 @@ Fibre Channel support is only available through the configuration of the Unified
   
 The following image shows the rear view of the Cisco UCS 6536 fabric interconnect:
 
-Figure 1. Cisco UCS 6536 Fabric Interconnect Rear View  ![](/c/dam/en/us/td/i/500001-600000/540001-550000/540001-541000/540805.jpg)
+Figure 1. Cisco UCS 6536 Fabric Interconnect Rear View 
 
 The following image shows the rear view of the Cisco UCS 6536 fabric interconnect that include Ports and LEDs:
 
-Figure 2. Cisco UCS 6536 Fabric Interconnect Rear View  ![](/c/dam/en/us/td/i/500001-600000/540001-550000/540001-541000/540989.jpg) 1  |  Ports 1-32. Uplink ports are Ethernet port that can operate with the port speed of 10 Gbps/25 Gbps/40 Gbps/100 Gbps. When using a breakout cable, each of these ports can operate as: 4 x 10 Gbps/4x 25 Gbps/1 x 40 Gbps/1 x 100 Gbps Ethernet or FCoE ports.  |  2  |  Ports 33-36. Unified Ports can operate with port speed of 10 Gbps/25 Gbps/ 40 Gbps/100 Gbps Ethernet. or  8 Gbps/16 Gbps/32 Gbps Fibre Channel (FC). When using a breakout cable, each of these ports can operate as 4 x 10 Gbps/4 x 25 Gbps Ethernet or 4x8Gbps/4x16Gbps/4x32Gbps FC ports.   
+Figure 2. Cisco UCS 6536 Fabric Interconnect Rear View  1  |  Ports 1-32. Uplink ports are Ethernet port that can operate with the port speed of 10 Gbps/25 Gbps/40 Gbps/100 Gbps. When using a breakout cable, each of these ports can operate as: 4 x 10 Gbps/4x 25 Gbps/1 x 40 Gbps/1 x 100 Gbps Ethernet or FCoE ports.  |  2  |  Ports 33-36. Unified Ports can operate with port speed of 10 Gbps/25 Gbps/ 40 Gbps/100 Gbps Ethernet. or  8 Gbps/16 Gbps/32 Gbps Fibre Channel (FC). When using a breakout cable, each of these ports can operate as 4 x 10 Gbps/4 x 25 Gbps Ethernet or 4x8Gbps/4x16Gbps/4x32Gbps FC ports.   
 ---|---|---|---  
 3  |  Ports 1-36. Uplink ports and Unified ports that can be configured as Ethernet Breakout Port and can operate with the port speed of 10 Gbps/25 Gbps/40 Gbps/100 Gbps.  When using a breakout cable, each of these ports can operate as: 4 x 10 Gbps/4x 25 Gbps/1 x 40 Gbps/1 x 100 Gbps Ethernet or FCoE ports.  |  4 | System environment (fan fault) LED  
 5 |  System status (STS) LED |  6 |  Beacon (BCN) LED  
@@ -522,28 +475,17 @@ Figure 2. Cisco UCS 6536 Fabric Interconnect Rear View  ![](/c/dam/en/us/td/i/50
 
 The following are the guidelines for breakout functionality for Cisco UCS 6536 Fabric Interconnects: 
 
-  * The configurable breakout ports are from port 1-36.
-
-  * You can configure the speed for each breakout port. Each breakout port can be configured at the speed of 4 x 8 Gbps/ 4 x 16 Gbps/ 4 x 32 Gbps for Fibre Channel. 
-
-  * For Fibre Channel breakout, each breakout port can be configured at the speed of 4 x 8 Gbps/ 4 x 16 Gbps/ 4 x 32 Gbps.
-
-  * For Ethernet breakout, each breakout port can be configured at the speed of 4 x 10 Gbps/4 x 25 Gbps.
-
-  * Fibre Channel breakout ports are supported, and Fiber Channel direct ports are not supported.
-
-  * FC breakout port can be configured from 1/36 through 1/33. FC breakout ports (36-33) cannot be configured unless the previous ports are FC breakout ports. Configuration of a single (individual) FC breakout port is also supported. 
-
-  * If the breakout mode for any of the supported Fabric Interconnect ports (1-36) is an Ethernet breakout, the Fabric Interconnect does not lead to a reboot. 
-
-  * If the breakout mode for any of the supported Fabric Interconnect ports (36-33) is a Fibre Channel uplink breakout, the Fabric Interconnect leads to a reboot. 
-
-  * Breakout ports are supported as destinations for traffic monitoring.
-
-  * Ports 1-36 can be configured as Server Port, FCoE Uplink Port, Appliance Port, and Monitor Port.
-
-  * Port 36-33 can be configured also as FC Uplink Port or FC Storage Port when configured as unified port.
-
+* The configurable breakout ports are from port 1-36.
+* You can configure the speed for each breakout port. Each breakout port can be configured at the speed of 4 x 8 Gbps/ 4 x 16 Gbps/ 4 x 32 Gbps for Fibre Channel. 
+* For Fibre Channel breakout, each breakout port can be configured at the speed of 4 x 8 Gbps/ 4 x 16 Gbps/ 4 x 32 Gbps.
+* For Ethernet breakout, each breakout port can be configured at the speed of 4 x 10 Gbps/4 x 25 Gbps.
+* Fibre Channel breakout ports are supported, and Fiber Channel direct ports are not supported.
+* FC breakout port can be configured from 1/36 through 1/33. FC breakout ports (36-33) cannot be configured unless the previous ports are FC breakout ports. Configuration of a single (individual) FC breakout port is also supported. 
+* If the breakout mode for any of the supported Fabric Interconnect ports (1-36) is an Ethernet breakout, the Fabric Interconnect does not lead to a reboot. 
+* If the breakout mode for any of the supported Fabric Interconnect ports (36-33) is a Fibre Channel uplink breakout, the Fabric Interconnect leads to a reboot. 
+* Breakout ports are supported as destinations for traffic monitoring.
+* Ports 1-36 can be configured as Server Port, FCoE Uplink Port, Appliance Port, and Monitor Port.
+* Port 36-33 can be configured also as FC Uplink Port or FC Storage Port when configured as unified port.
 
 ### Port Breakout Functionality on Cisco UCS 64108 Fabric Interconnects
 
@@ -553,7 +495,7 @@ Cisco UCS 64108 fabric interconnects support splitting a single 40/100G QSFP por
 
 When you break out a 40G port into 10G ports or a 100G port into 25G ports, the resulting ports are numbered using a 3-tuple naming convention. For example, the breakout ports of the second 40-Gigabit Ethernet port are numbered as 1/99/1, 1/99/2, 1/99/3, 1/99/4. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -568,17 +510,17 @@ Starting with Cisco UCS Manager Release 4.2(3b), configuring the Ethernet breako
 
 The following image shows the rear view of the Cisco UCS 64108 fabric interconnect, and includes the ports that support breakout port functionality: 
 
-Figure 3. Cisco UCS 64108 Fabric Interconnect Rear View ![](/c/dam/en/us/td/i/300001-400000/300001-310000/307001-308000/307644.jpg) 1  |  Ports 1-16. Unified Ports can operate as 10/25 Gbps Ethernet or 8/16/32 Gbps Fibre Channel. FC ports are converted in groups of four.  Unified ports:
+Figure 3. Cisco UCS 64108 Fabric Interconnect Rear View  1  |  Ports 1-16. Unified Ports can operate as 10/25 Gbps Ethernet or 8/16/32 Gbps Fibre Channel. FC ports are converted in groups of four.  Unified ports:
 
-  * 10/25 Gbps Ethernet or FCoE
-  * 8/16/32 Gbps Fibre Channel
+* 10/25 Gbps Ethernet or FCoE
+* 8/16/32 Gbps Fibre Channel
 
 |  2  |  Ports 1-96. Each port can operate as either a 10 Gbps or 25 Gbps Ethernet or FCoE SFP28 port.   
 ---|---|---|---  
 3  |  Uplink Ports 97-108. Each port can operate as either a 40 Gbps or 100 Gbps Ethernet or FCoE port. When using a breakout cable, each of these ports can operate as 4 x 10 Gbps or 4 x 25 Gbps Ethernet or FCoE ports.  Ports 97 - 108 can be used to connect to Ethernet or FCoE uplink ports, and not to UCS server ports. |  4 |  Ports 89-96
 
-  * 10/25 Gbps Ethernet or FCoE
-  * 1 Gbps Ethernet
+* 10/25 Gbps Ethernet or FCoE
+* 1 Gbps Ethernet
 
   
 5 |  System environment (fan fault) LED |  6 |  System status LED  
@@ -588,14 +530,10 @@ Figure 3. Cisco UCS 64108 Fabric Interconnect Rear View ![](/c/dam/en/us/td/i/30
 
 The following are the guidelines for breakout functionality for Cisco UCS 64108 fabric interconnects: 
 
-  * The breakout configurable ports are ports 97-108.
-
-  * You cannot configure the speed for each breakout port. Each breakout port is in auto mode.
-
-  * Breakout ports are not supported as destinations for traffic monitoring.
-
-  * Ports 97-108 at 40/100G can be configured as uplink, FCoE, or appliance port. Ports 97-108 after breakout to 10/25G can be configured as uplink, appliance, FCoE, or for direct-connect rack server connectivity. 
-
+* The breakout configurable ports are ports 97-108.
+* You cannot configure the speed for each breakout port. Each breakout port is in auto mode.
+* Breakout ports are not supported as destinations for traffic monitoring.
+* Ports 97-108 at 40/100G can be configured as uplink, FCoE, or appliance port. Ports 97-108 after breakout to 10/25G can be configured as uplink, appliance, FCoE, or for direct-connect rack server connectivity. 
 
 ### Port Breakout Functionality on Cisco UCS 6454 Fabric Interconnects
 
@@ -609,7 +547,7 @@ Starting with Cisco UCS Manager Release 4.2(3b), Ethernet breakout ports configu
 
 Starting with Cisco UCS Manager Release 4.1(3a), you can connect Cisco UCS Rack servers with VIC 1455 and 1457 adapters, to the uplink ports 49 to 54 (40/100 Gbps Ethernet or FCoE) in Cisco UCS 6454 Fabric Interconnects. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -622,7 +560,7 @@ Cisco UCS Manager does not support connection of FEX, chassis, blade, IOM, or ad
   
 The following image shows the rear view of the Cisco UCS 6454 fabric interconnect, and includes the ports that support breakout port functionality: 
 
-Figure 4. Cisco UCS 6454 Fabric Interconnect Rear View ![](/c/dam/en/us/td/i/300001-400000/300001-310000/306001-307000/306755.jpg) 1  |  Ports 1-16 (Unified Ports 10/25 Gbps Ethernet or FCoE or 8/16/32 Gbps Fibre Channel) |  2  |  Ports 17-44 (10/25 Gbps Ethernet or FCoE)  
+Figure 4. Cisco UCS 6454 Fabric Interconnect Rear View  1  |  Ports 1-16 (Unified Ports 10/25 Gbps Ethernet or FCoE or 8/16/32 Gbps Fibre Channel) |  2  |  Ports 17-44 (10/25 Gbps Ethernet or FCoE)  
 ---|---|---|---  
 3  |  Ports 45-48 (1/10/25 Gbps Ethernet or FCoE)  |  4 |  Uplink Ports 49-54 (40/100 Gbps Ethernet or FCoE)   
   
@@ -630,14 +568,10 @@ Figure 4. Cisco UCS 6454 Fabric Interconnect Rear View ![](/c/dam/en/us/td/i/300
 
 The following are the guidelines for breakout functionality for Cisco UCS 6454 fabric interconnects: 
 
-  * The breakout configurable ports are ports 49-54.
-
-  * You cannot configure the speed for each breakout port. Each breakout port is in auto mode.
-
-  * In Cisco UCS Manager Release 4.0(2), breakout ports are not supported as destinations for traffic monitoring.
-
-  * Ports 49-54 at 40/100G can be configured as uplink, FCoE, or appliance port. Ports 49-54 after breakout to 10/25G can be configured as uplink, appliance, FCoE, or for direct-connect rack server connectivity. 
-
+* The breakout configurable ports are ports 49-54.
+* You cannot configure the speed for each breakout port. Each breakout port is in auto mode.
+* In Cisco UCS Manager Release 4.0(2), breakout ports are not supported as destinations for traffic monitoring.
+* Ports 49-54 at 40/100G can be configured as uplink, FCoE, or appliance port. Ports 49-54 after breakout to 10/25G can be configured as uplink, appliance, FCoE, or for direct-connect rack server connectivity. 
 
 ### Port Breakout Functionality on Cisco UCS 6300 Series Fabric Interconnects 
 
@@ -649,12 +583,12 @@ When you break out a 40G port into 10G ports, the resulting ports are numbered u
 
 The following image shows the front view for the Cisco UCS 6332 series fabric interconnects, and includes the ports that may support breakout port functionality: 
 
-Figure 5. Cisco UCS 6332 Series Fabric Interconnects Front View  ![](/c/dam/en/us/td/i/300001-400000/300001-310000/305001-306000/305235.jpg) 1  |  L1 and L2 high availability ports   
+Figure 5. Cisco UCS 6332 Series Fabric Interconnects Front View  1  |  L1 and L2 high availability ports   
 ---|---  
 2  |  28 X 40G QSFP ports ( 98 X 10G SFP ports)  |  **Note** | 
 
-  * QSA module is required on ports 13–14 
-  * A QSFP to 4XSFP breakout cable is required for 10G support. 
+* QSA module is required on ports 13–14 
+* A QSFP to 4XSFP breakout cable is required for 10G support. 
 
   
 ---|---  
@@ -662,12 +596,12 @@ Figure 5. Cisco UCS 6332 Series Fabric Interconnects Front View  ![](/c/dam/en/u
   
 The following image shows the front view for the Cisco UCS 6332-16UP series fabric interconnects, and includes the ports that may support breakout port functionality: 
 
-Figure 6. Cisco UCS 6332-16UP Series Fabric Interconnects Front View  ![](/c/dam/en/us/td/i/300001-400000/300001-310000/305001-306000/305236.jpg) 1  |  L1 and L2 high availability ports   
+Figure 6. Cisco UCS 6332-16UP Series Fabric Interconnects Front View  1  |  L1 and L2 high availability ports   
 ---|---  
 2  |  16 X 1/10G SFP (16 X 4/8/16G FC ports)   
 3  |  18 X 40G QSFP(72 X 10G SFP+)  |  **Note** | 
 
-  * A QSFP to 4XSFP breakout cable is required for 10G support. 
+* A QSFP to 4XSFP breakout cable is required for 10G support. 
 
   
 ---|---  
@@ -675,7 +609,7 @@ Figure 6. Cisco UCS 6332-16UP Series Fabric Interconnects Front View  ![](/c/dam
   
 The following image shows the rear view of the Cisco UCS 6300 series fabric interconnects. 
 
-Figure 7. Cisco UCS 6300 Series Fabric Interconnects Rear View  ![](/c/dam/en/us/td/i/300001-400000/300001-310000/305001-306000/305237.jpg) 1  |  Power supply   
+Figure 7. Cisco UCS 6300 Series Fabric Interconnects Rear View  1  |  Power supply   
 ---|---  
 2  |  Four fans   
 3  |  Power supply   
@@ -689,17 +623,17 @@ Cisco UCS 6300 Series Fabric Interconnect Series  |  Breakout Configurable Ports
 ---|---|---  
 Cisco UCS 6332  |  1–12, 15–26  |  13–14, 27–32  |  **Note** | 
 
-  * Auto-negotiate behavior is not supported on ports 27–32. 
+* Auto-negotiate behavior is not supported on ports 27–32. 
 
   
 ---|---  
 Cisco UCS 6332-16UP  |  17–34  |  1–16, 35–40  |  **Note** | 
 
-  * Auto-negotiate behavior is not supported on ports 35–40 
+* Auto-negotiate behavior is not supported on ports 35–40 
 
   
 ---|---  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Important** | 
 
 * * *
@@ -734,8 +668,7 @@ Before configuring a breakout port, view the port status using the show port com
 #### Example
 
 The following example creates breakout ports 1/1 through 1/4 on a UCS 6300 Fabric Interconnect and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope cabling** 
     UCS-A /cabling # **scope fabric a**
     UCS-A /cabling/fabric # **create breakout 1 1**
@@ -753,10 +686,10 @@ The following example creates breakout ports 1/1 through 1/4 on a UCS 6300 Fabri
     
     
     
+[/code]
 
 The following example creates breakout ports 1/49 through 1/52 on a UCS 6454 Fabric Interconnect, sets the breakout type, and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope cabling** 
     UCS-A /cabling # **scope fabric a**
     UCS-A /cabling/fabric # **create breakout 1 49**
@@ -772,10 +705,10 @@ The following example creates breakout ports 1/49 through 1/52 on a UCS 6454 Fab
     UCS-A /cabling/fabric/breakout* # **set breakouttype 10g-4x**
     UCS-A /cabling/fabric/breakout* # **commit-buffer**
     
+[/code]
 
 The following example creates breakout ports 1/50 through 1/53 on a UCS 64108 Fabric Interconnect, sets the breakout type, and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope cabling** 
     UCS-A /cabling # **scope fabric a**
     UCS-A /cabling/fabric # **create breakout 1 50**
@@ -791,10 +724,10 @@ The following example creates breakout ports 1/50 through 1/53 on a UCS 64108 Fa
     UCS-A /cabling/fabric/breakout* # **set breakouttype 10g-4x**
     UCS-A /cabling/fabric/breakout* # **commit-buffer**
     
+[/code]
 
 The following example creates breakout ports 1/17 through 1/20 on a UCS 6536 Fabric Interconnect, sets the breakout type, and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope cabling** 
     UCS-A /cabling # **scope fabric a**
     UCS-A /cabling/fabric # **create breakout 1 17**
@@ -810,10 +743,10 @@ The following example creates breakout ports 1/17 through 1/20 on a UCS 6536 Fab
     UCS-A /cabling/fabric/breakout* # **set breakouttype 25g-4x**
     UCS-A /cabling/fabric/breakout* # **commit-buffer**
     
+[/code]
 
 The following example creates breakout ports 1/1 through 1/4 Cisco UCS Fabric Interconnects 9108 100G and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope cabling** 
     UCS-A /cabling # **scope fabric a**
     UCS-A /cabling/fabric # create breakout 1 1
@@ -832,6 +765,7 @@ The following example creates breakout ports 1/1 through 1/4 Cisco UCS Fabric In
     
     
     
+[/code]
 
 #### What to do next
 
@@ -852,8 +786,7 @@ Verify that you created breakout ports on the fabric interconnect and on the NXO
 #### Example
 
 The following example shows how to create an interface for breakout Ethernet uplink port 1 of the aggregate port 21 on slot 1 of fabric A: 
-    
-    
+[code] 
     UCS-A# **scope eth-uplink**
     UCS-A /eth-uplink # **scope fabric a**
     UCS-A /eth-uplink/fabric # **enter aggr-interface 1 21**
@@ -861,10 +794,10 @@ The following example shows how to create an interface for breakout Ethernet upl
     UCS-A /eth-uplink/fabric/aggr-interface/br-interface*# **commit-buffer**
     
     
+[/code]
 
 The following example shows how to create interfaces for breakout Ethernet uplink ports 1-4 of the aggregate port 49 on slot 1 of fabric A on a UCS 6454 fabric interconnect, and commit the transaction: 
-    
-    
+[code] 
     UCS-A# **scope eth-uplink**
     UCS-A /eth-uplink # **scope fabric a**
     UCS-A /eth-uplink/fabric # **create aggr-interface 1 49**
@@ -879,10 +812,10 @@ The following example shows how to create interfaces for breakout Ethernet uplin
     UCS-A /eth-uplink/fabric/aggr-interface* # **commit-buffer**
     UCS-A /eth-uplink/fabric/aggr-interface # 
     
+[/code]
 
 The following example shows the breakout configuration for ports 1/49/1 to 1/49/4 of fabric A on a UCS 6454 fabric interconnect: 
-    
-    
+[code] 
     UCS-A# **scope fabric-interconnect a** 
     UCS-A /fabric-interconnect # **show port**
     Ether Port: 
@@ -893,6 +826,7 @@ The following example shows the breakout configuration for ports 1/49/1 to 1/49/
     1     49         3     Sfp Not Present  8C:60:4F:BC:C4:D6    Unknown N/A 
     1     49         4     Sfp Not Present  8C:60:4F:BC:C4:D7    Unknown N/A 
     
+[/code]
 
 ### Configuring a Breakout Ethernet Uplink Port Channel Member 
 
@@ -910,14 +844,14 @@ The following example shows the breakout configuration for ports 1/49/1 to 1/49/
 #### Example:
 
 The following example creates an Ethernet uplink port channel member for an Ethernet port on port 2, and commits the transaction: 
-    
-    
+[code]
     UCS-A# **scope eth-storage** 
     UCS-A /eth-uplink # **scope fabric a**
     UCS-A /eth-uplink/fabric # **scope fcoe-port-channel 51**
     UCS-A /eth-uplink/fabric/port-channel/member-aggr-port # **create br-member-port 2**
     UCS-A /eth-uplink/fabric/port-channel/member-aggr-port/br-member-port* # **commit-buffer**
     
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -935,14 +869,14 @@ The following example creates an Ethernet uplink port channel member for an Ethe
 #### Example:
 
 The following example sets the pin group target to breakout port 2 of the aggregate port 1 on slot 1, on fabric A , and commits the transaction: 
-    
-    
+[code]
     UCS-A# scope **eth-uplink**
     UCS-A /eth-uplink # **enter pin-group test**
     UCS-A /eth-uplink/pin-group # **set target a breakout-port 1 1 2**
     UCS-A /eth-uplink/pin-group* # **commit-buffer**
      
     
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -963,8 +897,7 @@ You can follow the below steps to configure appliance breakout ports for both Ci
 #### Example:
 
 The following example creates an interface for an appliance port 1 of the aggregate port 20 on slot 1 of fabric B, and commits the transaction: 
-    
-    
+[code]
     UCS-A# **scope eth-storage** 
     UCS-A /eth-storage # **scope fabric a** 
     UCS-A /eth-storage/fabric # **enter aggr-interface 1 20**
@@ -975,6 +908,7 @@ The following example creates an interface for an appliance port 1 of the aggreg
     
     
     
+[/code]
 
 #### Example:
 
@@ -999,8 +933,7 @@ Commits the transaction to the server.
 #### Example:
 
 The following example creates an appliance port channel member for an appliance port 2, and commits the transaction: 
-    
-    
+[code]
     UCS-A# **scope eth-storage** 
     UCS-A /eth-storage # **scope fabric a**
     UCS-A /eth-storage/fabric # **scope port-channel 21**
@@ -1008,6 +941,7 @@ The following example creates an appliance port channel member for an appliance 
     UCS-A /eth-storage/fabric/port-channel/member-aggr-port # **create br-member-port 2**
     UCS-A /eth-storage/fabric/port-channel/member-aggr-port/br-member-port* # **commit-buffer**
     
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -1026,8 +960,7 @@ The following example creates an appliance port channel member for an appliance 
 #### Example:
 
 The following example creates an interface for a breakout Fibre Channel storage port 1 of the aggregate port 21 on slot 1 of fabric a, and commits the transaction: 
-    
-    
+[code]
     UCS-A# **scope fc-storage**
     UCS-A /fc-storage # **scope fabric a**
     UCS-A /fc-storage/fabric # **enter aggr-interface 1 21**
@@ -1035,6 +968,7 @@ The following example creates an interface for a breakout Fibre Channel storage 
     UCS-A /eth-uplink/fabric/aggr-interface/br-interface/br-fcoe **# commit-buffer**
     
     
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -1053,8 +987,7 @@ The following example creates an interface for a breakout Fibre Channel storage 
 #### Example:
 
 The following example shows how to create an interface for breakout FCoE uplink port 1 of the aggregate port 20 on slot 1 of fabric A: 
-    
-    
+[code]
     UCS-A# **scope eth-uplink**
     UCS-A /fc-uplink # **scope fabric a**
     UCS-A /fc-uplink/fabric # **enter aggr-interface 1 20**
@@ -1062,6 +995,7 @@ The following example shows how to create an interface for breakout FCoE uplink 
     UCS-A /fc-uplink/fabric/aggr-interface/br-fcoeinterface**# commit-buffer**
     
     
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -1081,8 +1015,7 @@ The following example shows how to create an interface for breakout FCoE uplink 
 #### Example:
 
 The following example creates a breakout FCoE port channel member port 4 on aggregate port 21, and commits the transaction: 
-    
-    
+[code]
     UCS-A# **scope eth-storage** 
     UCS-A /fc-uplink # **scope fabric a**
     UCS-A /fc-uplink/fabric # **scope port-channel 51**
@@ -1090,6 +1023,7 @@ The following example creates a breakout FCoE port channel member port 4 on aggr
     UCS-A /fc-uplink/fabric/port-channel/member-aggr-port # **create br-member-port 4**
     UCS-A /fc-uplink/fabric/port-channel/member-aggr-port/br-member-port* # **commit-buffer**
     
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -1108,14 +1042,14 @@ The following example creates a breakout FCoE port channel member port 4 on aggr
 #### Example:
 
 The following example creates an interface for a VLAN member on the aggregate port 4 on slot 1 of breakout Ethernet uplink port 1, and commits the transaction: 
-    
-    
+[code]
     USA-A# **scope eth-uplink** 
     USA-A /eth-uplink # **scope vlan id**
     USA-A /eth-uplink/vlan # **enter member-aggr-port a 1 1**
     USA-A /eth-uplink/vlan/member-aggr-port* # **create br-member-port 4**
     USA-A /eth-uplink/vlan/member-aggr-port/br-member-port* # **commit-buffer**  
      
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -1163,8 +1097,7 @@ SPAN (Traffic Monitoring) Destination Port  |  eth-traffic-mon  |  A /eth-traffi
 #### Example:
 
 The following example shows how to modify a Ethernet uplink port as a monitor source in breakout port 1 of the aggregate (main) interface in port 1 with an ID of 21. 
-    
-    
+[code]
     UCS-A# **scope eth-uplink**
     UCS-A /eth-uplink # **scope fabric a**
     UCS-A /eth-uplink/fabric # **scope aggr-interface 1 21**
@@ -1172,24 +1105,25 @@ The following example shows how to modify a Ethernet uplink port as a monitor so
     UCS-A /eth-uplink/fabric/aggr-interface/br-interface # **create** 
     	UCS-A /eth-uplink/fabric/aggr-interface/br-interface # **create mon-src**
     
+[/code]
 
 |  Modifies the interface as a monitoring source.   
   
 #### Modifying the Breakout Ethernet Uplink Port Speed and User Label 
-    
-    
+[code] 
     pranspat-3gfi-A /eth-uplink/fabric/aggr-interface/br-interface # set      
     	eth-link-profile     Ethernet Link Profile name   
     	flow-control-policy  flow control policy   
     	speed                 Speed   
     	user-label           User Label 
     
-    
-    
+[/code]
+[code] 
     pranspat-3gfi-A /eth-uplink/fabric/aggr-interface/br-interface # 
     	disable      Disables services   
     	enable       Enables services
     
+[/code]
 
 ###  Un-configuring Breakout Ports 
 
@@ -1208,8 +1142,7 @@ You can use the  show port  command to list the ports for the Fabric Interconnec
 #### Example:
 
 The following example lists the ports. 
-    
-    
+[code]
     Slot  Aggr Port  Port  Oper State       Mac                  Role    Xcvr
     ----- ---------- ----- ---------------- -------------------- ------- ----
         1          0     1 Link Down        84:B8:02:CA:37:56    Network 1000base T
@@ -1220,6 +1153,7 @@ The following example lists the ports.
         1          0     3 Sfp Not Present  84:B8:02:CA:37:58    Unknown N/A
     
     
+[/code]
 
 |  Displays the ports for the Fabric Interconnect.   
 **Step 2** |  UCS-A#  scope cabling  |  Enters the cabling mode.   
@@ -1263,14 +1197,14 @@ SPAN (Traffic Monitoring) Destination Port  |  eth-traffic-mon  |  UCS-A /eth-tr
 #### Example:
 
 This example deletes an Ethernet Uplink port-channel member in breakout port 1 of the aggregate (main) interface port 1 slot 1. 
-    
-    
+[code]
     UCS-A# **scope eth-uplink** 
     UCS-A /eth-uplink # **scope fabric a**
     UCS-A /eth-uplink/fabric # **scope port-channel 1**
     UCS-A /eth-uplink/fabric/port-channel # **enter aggr-interface 1 1**
     UCS-A /eth-uplink/fabric/port-channel/aggr-interface # **delete br-member-port 1**
     UCS-A /eth-uplink/fabric/port-channel/aggr-interface* # **commit-buffer**
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -1304,8 +1238,7 @@ To configure ports, port channel members or SPAN members on the scalability port
 ##### Example
 
 The following example shows how to create an interface for Ethernet server port 3 on the fabric A scalability port and commit the transaction: 
-    
-    
+[code] 
     UCS-A# **scope eth-server**
     UCS-A /eth-server # **scope fabric a**
     UCS-A /eth-server/fabric # **scope aggr-interface 1 5**
@@ -1323,6 +1256,7 @@ The following example shows how to create an interface for Ethernet server port 
     UCS-A /eth-server/fabric/aggr-interface* # **commit-buffer**
     UCS-A /eth-server/fabric/aggr-interface # 
     
+[/code]
 
 ### Beacon LEDs for Unified Ports 
 
@@ -1330,7 +1264,7 @@ Each port fabric interconnect has a corresponding beacon LED. When the Beacon LE
 
 You can configure the Beacon LED property to show you which ports are grouped in one port mode: either Ethernet or Fibre Channel. By default, the Beacon LED property is set to Off. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1367,14 +1301,14 @@ off
 ##### Example
 
 The following example illuminates all of the beacon lights for Unified Ports in Ethernet port mode and commits the transaction:
-    
-    
+[code] 
     UCS-A# **scope fabric-interconnect a**
     UCS-A /fabric # **scope card 1**
     UCS-A /fabric/card # **scope beacon-led**
     UCS-A /fabric/card/beacon-led # **set admin-state eth**
     UCS-A /fabric/card/beacon-led* # **commit-buffer**
     UCS-A /fabric/card/beacon-led #
+[/code]
 
 ---
 
@@ -1386,7 +1320,7 @@ A VLAN is a switched network that is logically segmented by function, project te
 
 Any switch port can belong to a VLAN. Unicast, broadcast, and multicast packets are forwarded and flooded only to end stations in the VLAN. Each VLAN is considered a logical network, and packets destined for stations that do not belong to the VLAN must be forwarded through a router or bridge. 
 
-VLANs are typically associated with IP subnetworks. For example, all of the end stations in a particular IP subnet belong to the same VLAN. To communicate between VLANs, you must route the traffic. By default, a newly created VLAN is operational. Additionally, you can configure VLANs to be in the active state, which is passing traffic, or in the suspended state, in which the VLANs are not passing packets. By default, the VLANs are in the active state and pass traffic. 
+VLANs are typically associated with IP subnetworks. For example, all of the end stations in a particular IP subnet belong to the same VLAN. To communicate between VLANs, you must route the traffic. By default, a newly created VLAN is operational. Additionally, you can configure VLANs to be in the active state, which is passing traffic, or in the suspended state, in which the VLANs are not passing packets. By default, the VLANs are in the active state and pass traffic.
 
 ---
 
@@ -1398,7 +1332,7 @@ Cisco UCS uses LAN pin groups to pin Ethernet traffic from a vNIC on a server to
 
 To configure pinning for a server, you must include the LAN pin group in a vNIC policy. The vNIC policy is then included in the service profile assigned to that server. All traffic from the vNIC travels through the I/O module to the specified uplink Ethernet port. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1421,7 +1355,7 @@ In a system that implements multitenancy, you can use the organizational hierarc
 
 To assign a MAC address to a server, you must include the MAC pool in a vNIC policy. The vNIC policy is then included in the service profile assigned to that server. 
 
-You can specify your own MAC addresses or use a group of MAC addresses provided by Cisco. 
+You can specify your own MAC addresses or use a group of MAC addresses provided by Cisco.
 
 ---
 
@@ -1431,29 +1365,22 @@ You can specify your own MAC addresses or use a group of MAC addresses provided 
 
 Cisco UCS provides the following methods to implement quality of service: 
 
-  * System classes that specify the global configuration for certain types of traffic across the entire system 
-
-  * QoS policies that assign system classes for individual vNICs 
-
-  * Flow control policies that determine how uplink Ethernet ports handle pause frames 
-
+* System classes that specify the global configuration for certain types of traffic across the entire system 
+* QoS policies that assign system classes for individual vNICs 
+* Flow control policies that determine how uplink Ethernet ports handle pause frames 
 
 Global QoS changes made to the QoS system class may result in brief data-plane interruptions for all traffic. Some examples of such changes are: 
 
-  * Changing the MTU size for an enabled class 
-
-  * Changing packet drop for an enabled class 
-
-  * Changing the CoS value for an enabled class 
-
+* Changing the MTU size for an enabled class 
+* Changing packet drop for an enabled class 
+* Changing the CoS value for an enabled class 
 
 ###  Guidelines and Limitations for Quality of Service on Cisco UCS Fabric Interconnects 9108 100G, Cisco UCS 6536 Fabric Interconnects, Cisco UCS 6400 Series Fabric Interconnects 
 
-  * Multicast optimization is not supported.
+* Multicast optimization is not supported.
+* For all QoS system classes except for Fibre Channel, the default MTU is 1500 bytes. The MTU for Fiber Channel class is not configurable and is set to 2240 bytes internally. All classes (excluding Fibre Channel) allow for MTU configuration up to a maximum of 9216 bytes. 
 
-  * For all QoS system classes except for Fibre Channel, the default MTU is 1500 bytes. The MTU for Fiber Channel class is not configurable and is set to 2240 bytes internally. All classes (excluding Fibre Channel) allow for MTU configuration up to a maximum of 9216 bytes. 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1463,49 +1390,34 @@ The maximum MTU for a QoS class on the Fabric Interconnect is 9216 bytes, while 
 * * *  
   
 ---|---  
-  * The MTU size for fibre channel is always 2240 bytes.
-
-  * Multicast is not supported on any no-drop QoS class.
-
+* The MTU size for fibre channel is always 2240 bytes.
+* Multicast is not supported on any no-drop QoS class.
 
 ###  Guidelines and Limitations for Quality of Service on Cisco UCS 6300 Series Fabric Interconnect
 
-  * Cisco UCS 6300 Series Fabric Interconnect uses a shared buffer for all system classes. 
-
-  * Multicast optimization is not supported. 
-
-  * Multicast is not supported on any no-drop QoS class.
-
-  * When you change the QoS parameters for any class causes traffic disruption to all classes. The following table lists the changes in the QoS system class and the conditions that trigger a system reboot. 
+* Cisco UCS 6300 Series Fabric Interconnect uses a shared buffer for all system classes. 
+* Multicast optimization is not supported. 
+* Multicast is not supported on any no-drop QoS class.
+* When you change the QoS parameters for any class causes traffic disruption to all classes. The following table lists the changes in the QoS system class and the conditions that trigger a system reboot. 
 
 QoS System class status  |  Condition  |  FI Reboot Status   
 ---|---|---  
 Enabled  |  Change between drop and no drop  |  Yes   
 No-drop  |  Change between enable and disable  |  Yes   
 Enable and no-drop  |  Change in MTU size  |  Yes   
-  * The subordinate FI reboots first as a result of the change in the QoS system class. The primary FI reboots only after you acknowledge it in Pending Activities. 
-
+* The subordinate FI reboots first as a result of the change in the QoS system class. The primary FI reboots only after you acknowledge it in Pending Activities. 
 
 ###  Guidelines and Limitations for Quality of Service on Cisco UCS Mini
 
-  * Cisco UCS Mini uses a shared buffer for all system classes. 
-
-  * The bronze class shares the buffer with SPAN. We recommend using either SPAN or the bronze class. 
-
-  * Multicast optimization is not supported. 
-
-  * Multicast is not supported on any no-drop QoS class.
-
-  * Changing the QoS parameters for any class causes traffic disruption to all classes. 
-
-  * When mixing Ethernet and FC or FCoE traffic, the bandwidth distribution is not equal. 
-
-  * Multiple streams of traffic from the same class may not be distributed equally. 
-
-  * Use the same CoS values for all no-drop policies to avoid any FC or FCoE performance issues. 
-
-  * Only the platinum and gold classes support no-drop policies. 
-
+* Cisco UCS Mini uses a shared buffer for all system classes. 
+* The bronze class shares the buffer with SPAN. We recommend using either SPAN or the bronze class. 
+* Multicast optimization is not supported. 
+* Multicast is not supported on any no-drop QoS class.
+* Changing the QoS parameters for any class causes traffic disruption to all classes. 
+* When mixing Ethernet and FC or FCoE traffic, the bandwidth distribution is not equal. 
+* Multiple streams of traffic from the same class may not be distributed equally. 
+* Use the same CoS values for all no-drop policies to avoid any FC or FCoE performance issues. 
+* Only the platinum and gold classes support no-drop policies.
 
 ---
 
@@ -1517,13 +1429,11 @@ The port security feature allows you to restrict input to an interface by limiti
 
 After you have set the maximum number of secure MAC addresses on a port, you can include secure MAC addresses in an address table in one of these ways: 
 
-  * Configure all secure MAC addresses by using the switchport port-security mac-address mac_address interface configuration command. 
+* Configure all secure MAC addresses by using the switchport port-security mac-address mac_address interface configuration command. 
+* Allow the port to dynamically configure secure MAC addresses with the MAC addresses of connected devices.
+* Configure a number of addresses and allow the rest to be dynamically configured.
 
-  * Allow the port to dynamically configure secure MAC addresses with the MAC addresses of connected devices.
-
-  * Configure a number of addresses and allow the rest to be dynamically configured.
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1533,12 +1443,11 @@ If the port shuts down, all dynamically learned addresses are removed.
 * * *  
   
 ---|---  
-  * Configure MAC addresses to be sticky. These can be dynamically learned or manually configured, stored in the address table, and added to the running configuration. If these addresses are saved in the configuration file, the interface does not need to dynamically relearn them when the switch restarts. Although sticky secure addresses can be manually configured, it is not recommended. 
-
+* Configure MAC addresses to be sticky. These can be dynamically learned or manually configured, stored in the address table, and added to the running configuration. If these addresses are saved in the configuration file, the interface does not need to dynamically relearn them when the switch restarts. Although sticky secure addresses can be manually configured, it is not recommended. 
 
 ### MAC Learning
 
-After port security is enabled on an interface and a new MAC address is seen on the interface, a security validation is done for the new MAC address. Based on this validation, the MAC address will be added to the address table - either as a normal entry or a drop entry. 
+After port security is enabled on an interface and a new MAC address is seen on the interface, a security validation is done for the new MAC address. Based on this validation, the MAC address will be added to the address table - either as a normal entry or a drop entry.
 
 ---
 
@@ -1548,12 +1457,10 @@ After port security is enabled on an interface and a new MAC address is seen on 
 
 Upstream disjoint layer-2 networks (disjoint L2 networks) are required if you have two or more Ethernet clouds that never connect, but must be accessed by servers or virtual machines located in the same Cisco UCS domain. For example, you could configure disjoint L2 networks if you require one of the following: 
 
-  * Servers or virtual machines to access a public network and a backup network 
+* Servers or virtual machines to access a public network and a backup network 
+* Servers or virtual machines for more than one customer are located in the same Cisco UCS domain, and that need to access the L2 networks for both customers in a multi-tenant system 
 
-  * Servers or virtual machines for more than one customer are located in the same Cisco UCS domain, and that need to access the L2 networks for both customers in a multi-tenant system 
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1568,7 +1475,7 @@ The configuration for disjoint L2 networks works on a principle of selective exc
 
 In Cisco UCS, the VLAN represents the upstream disjoint L2 network. When you design your network topology for disjoint L2 networks, you must assign uplink interfaces to VLANs not the reverse. 
 
-For information about the maximum number of supported upstream disjoint L2 networks, see the appropriate Cisco UCS Configuration Limits for Cisco UCS Manager Guide. 
+For information about the maximum number of supported upstream disjoint L2 networks, see the appropriate Cisco UCS Configuration Limits for Cisco UCS Manager Guide.
 
 ---
 
@@ -1582,7 +1489,7 @@ Cisco UCS Manager does not automatically create a VM-FEX port profile with the c
 
 You can select VLAN groups in addition to any individual VLAN while creating a vNIC template.
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1605,21 +1512,21 @@ If your server has two Emulex or QLogic NICs (Cisco UCS CNA M71KR-E or Cisco UCS
 **Step 4** |  UCS-A/ # org vnic-templ set descr primaryinredundancypair .  |  Sets the template as the Primary vNIC template.   
 **Step 5** |  UCS-A/ # org vnic-templ set redundancy-type  primary .  |  Sets the redundancy template type as the Primary vNIC template.  Following are descriptions of the Redundancy Types:  Primary—Creates configurations that can be shared with the Secondary vNIC template. Any shared changes on the Primary vNIC template are automatically synchronized to the Secondary vNIC template.  Secondary — All shared configurations are inherited from the Primary template.  No Redundancy— Legacy vNIC template behavior.  Following is a list of shared configurations: 
 
-  * Network Control Policy
-  * QoS Policy 
-  * Stats Threshold Policy 
-  * Template Type
-  * Connection Policies
-  * VLANS
-  * MTU
+* Network Control Policy
+* QoS Policy 
+* Stats Threshold Policy 
+* Template Type
+* Connection Policies
+* VLANS
+* MTU
 
 Following is a list of non-shared configurations: 
 
-  * Fabric ID
-  * CDN Source
-  * MAC Pool 
-  * Description
-  * Pin Group Policy
+* Fabric ID
+* CDN Source
+* MAC Pool 
+* Description
+* Pin Group Policy
 
   
 **Step 6** |  UCS-A/ # org vnic-templ exit .  |  Exits creating the redundancy template pairing.  |  **Note** |  Ensure to commit the transaction after linking the Primary vNIC template to a peer Secondary vNIC template to create the redundancy pair.   
@@ -1635,8 +1542,7 @@ Following is a list of non-shared configurations:
 #### Example
 
 The following example configures a vNIC redundancy template pair and commits the transaction: 
-    
-    
+[code] 
     UCS-A /org* # **create vnic-template vnic-primary**
     UCS-A /org/vnic-templ* # **set type updating-template**
     UCS-A /org/vnic-templ* # **set fabric a**
@@ -1651,6 +1557,7 @@ The following example configures a vNIC redundancy template pair and commits the
     UCS-A /org/vnic-templ* # **commit-buffer**
     UCS-A /org/vnic-templ # 
     
+[/code]
 
 #### What to do next
 
@@ -1671,12 +1578,12 @@ You can undo the vNIC template pair by changing the Peer Redundancy Template so 
 #### Example
 
 The following example shows how to undo a template pairing: 
-    
-    
+[code] 
     UCS-A /org # **scope vnic-templ template1**
     UCS-A /org/vnic-templ # **set redundancy-type no-redundancy**
     UCS-A /org/vnic-templ* # commit buffer
     
+[/code]
 
 ### Configuring a vNIC Template
 
@@ -1687,15 +1594,15 @@ The following example shows how to undo a template pairing:
 **Step 1** |  UCS-A# scope org org-name |  Enters the organization mode for the specified organization. To enter the root organization mode, enter / as the org-name .   
 **Step 2** |  UCS-A /org # create vnic-templ vnic-templ-name [eth-if vlan-name] [fabric {a | b}] [target [adapter | vm]]  |  Creates a vNIC template and enters organization vNIC template mode.  The target you choose determines whether or not Cisco UCS Manager automatically creates a VM-FEX port profile with the appropriate settings for the vNIC template. This can be one of the following: 
 
-  * Adapter—The vNICs apply to all adapters. No VM-FEX port profile is created if you choose this option. 
-  * VM—The vNICs apply to all virtual machines. A VM-FEX port profile is created if you choose this option. 
+* Adapter—The vNICs apply to all adapters. No VM-FEX port profile is created if you choose this option. 
+* VM—The vNICs apply to all virtual machines. A VM-FEX port profile is created if you choose this option. 
 
   
 **Step 3** |  (Optional) UCS-A /org/vnic-templ # set descr description | (Optional)  Provides a description for the vNIC template.   
 **Step 4** |  (Optional) UCS-A /org/vnic-templ # set fabric {a | a-b | b | b-a}  | (Optional)  Specifies the fabric to use for the vNIC. If you did not specify the fabric when creating the vNIC template in Step 2, you have the option to specify it with this command.  If you want this vNIC to be able to access the second fabric interconnect if the default one is unavailable, choose a-b (A is the primary) or b-a (B is the primary) .  |  **Note** |  Do not enable fabric failover for the vNIC under the following circumstances: 
 
-  * If the Cisco UCS domain is running in Ethernet Switch Mode. vNIC fabric failover is not supported in that mode. If all Ethernet uplinks on one fabric interconnect fail, the vNICs do not fail over to the other. 
-  * If you plan to associate this vNIC to a server with an adapter that does not support fabric failover, such as the Cisco UCS 82598KR-CI 10-Gigabit Ethernet Adapter. If you do so, Cisco UCS Manager generates a configuration fault when you associate the service profile with the server. 
+* If the Cisco UCS domain is running in Ethernet Switch Mode. vNIC fabric failover is not supported in that mode. If all Ethernet uplinks on one fabric interconnect fail, the vNICs do not fail over to the other. 
+* If you plan to associate this vNIC to a server with an adapter that does not support fabric failover, such as the Cisco UCS 82598KR-CI 10-Gigabit Ethernet Adapter. If you do so, Cisco UCS Manager generates a configuration fault when you associate the service profile with the server. 
 
   
 ---|---  
@@ -1712,8 +1619,7 @@ The following example shows how to undo a template pairing:
 #### Example
 
 The following example configures a vNIC template and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope org /**
     UCS-A /org* # **create vnic template VnicTempFoo**
     UCS-A /org/vnic-templ* # **set descr "This is a vNIC template example."**
@@ -1728,6 +1634,7 @@ The following example configures a vNIC template and commits the transaction:
     UCS-A /org/vnic-templ* # **commit-buffer**
     UCS-A /org/vnic-templ # 
     
+[/code]
 
 ### Deleting a vNIC Template
 
@@ -1742,13 +1649,13 @@ The following example configures a vNIC template and commits the transaction:
 #### Example
 
 The following example deletes the vNIC template named VnicTemp42 and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope org /**
     UCS-A /org # **delete vnic template VnicTemp42**
     UCS-A /org* # **commit-buffer**
     UCS-A /org # 
     
+[/code]
 
 ---
 
@@ -1762,16 +1669,11 @@ MACsec provides MAC-layer encryption over wired networks by using out-of-band me
 
 MACsec encrypts the entire data except for the Source and Destination MAC addresses of an Ethernet packet. It offers the following capabilities: 
 
-  * Provides line rate encryption.
-
-  * Ensures data confidentiality by providing strong encryption at Layer 2. 
-
-  * Provides integrity checking to help ensure that data cannot be modified in transit. 
-
-  * Key Lifetime and Hitless Key Rollover
-
-  * Fallback Key
-
+* Provides line rate encryption.
+* Ensures data confidentiality by providing strong encryption at Layer 2. 
+* Provides integrity checking to help ensure that data cannot be modified in transit. 
+* Key Lifetime and Hitless Key Rollover
+* Fallback Key
 
 ### Key Lifetime and Hitless Key Rollover
 
@@ -1781,7 +1683,7 @@ To configure a MACsec keychain, see Creating a MACsec Keychain
 
 A key can roll over to a second key within the same keychain by configuring the second key (in the keychain) and configuring a lifetime for the first key. When the lifetime of the first key expires, it automatically rolls over to the next key in the list. If the same key is configured on both sides of the link at the same time, then the key rollover is hitless (that is, the key rolls over without traffic interruption). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1796,7 +1698,7 @@ The lifetime of the keys are overlapped to achieve hitless key rollover.
 
 A MACsec session can fail due to a key/key ID (CKN) mismatch or a finite key duration between the Fabric Interconnect and the peer. If a MACsec session fails, a fallback session can take over if a fallback key is configured. A fallback session prevents downtime due to primary session failure and allows a user time to fix the key issue causing the failure. A fallback key also provides a backup session if the primary session fails to start. This feature is optional. 
 
-For more information, see Creating a MACsec Keychain. 
+For more information, see Creating a MACsec Keychain.
 
 ---
 
@@ -1806,7 +1708,7 @@ For more information, see Creating a MACsec Keychain.
 
 Unified ports are ports on the Cisco UCS 6300 Series Fabric Interconnects that you can configure to carry either Ethernet or Fibre Channel traffic. A Cisco UCS domain cannot use these un-reserved ports until you configure them. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1835,23 +1737,16 @@ Ethernet Port Mode
 
 When you set the port mode to Ethernet, you can configure the following port types: 
 
-  * Server ports 
+* Server ports 
+* Ethernet uplink ports 
+* Ethernet port channel members 
+* FCoE ports 
+* Appliance ports 
+* Appliance port channel members 
+* SPAN destination ports 
+* SPAN source ports 
 
-  * Ethernet uplink ports 
-
-  * Ethernet port channel members 
-
-  * FCoE ports 
-
-  * Appliance ports 
-
-  * Appliance port channel members 
-
-  * SPAN destination ports 
-
-  * SPAN source ports 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1861,21 +1756,17 @@ For SPAN source ports, configure one of the port types and then configure the po
 * * *  
   
 ---|---  
-
 
 Fibre Channel Port Mode
 
 When you set the port mode to Fibre Channel, you can configure the following port types: 
 
-  * Fibre Channel uplink ports 
+* Fibre Channel uplink ports 
+* Fibre Channel port channel members
+* Fibre Channel storage ports 
+* SPAN source ports 
 
-  * Fibre Channel port channel members
-
-  * Fibre Channel storage ports 
-
-  * SPAN source ports 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1886,12 +1777,11 @@ For SPAN source ports, configure one of the port types and then configure the po
   
 ---|---  
 
-
 ### Data Traffic Interruption from Port Mode Changing 
 
 Port mode changes can cause an interruption to the data traffic for the Cisco UCS domain. The length of the interruption and the affected traffic depend upon the configuration of the Cisco UCS domain and the module on which you made the port mode changes. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/tip.gif)  
+  
 **Tip** | 
 
 * * *
@@ -1912,10 +1802,8 @@ A cluster configuration has two fabric interconnects. After you make port change
 
 If you change the port modes on the expansion module of one fabric interconnect and then wait for that to reboot before changing the port modes on the second fabric interconnect, the following occurs: 
 
-  * With server vNIC failover, traffic fails over to the other fabric interconnect and no interruption occurs. 
-
-  * Without server vNIC failover, all data traffic through the fabric interconnect on which you changed the port modes is interrupted for approximately eight minutes while the fabric interconnect reboots. 
-
+* With server vNIC failover, traffic fails over to the other fabric interconnect and no interruption occurs. 
+* Without server vNIC failover, all data traffic through the fabric interconnect on which you changed the port modes is interrupted for approximately eight minutes while the fabric interconnect reboots. 
 
 When you change the port modes on the fixed modules of both fabric interconnects simultaneously, all data traffic through the fabric interconnects are interrupted for approximately eight minutes while the fabric interconnects reboot. 
 
@@ -1931,12 +1819,9 @@ Consider the following guidelines and restrictions when configuring unified port
 
 Because the Cisco UCS Manager GUI interface uses a slider to configure the port mode for unified ports on a fixed or expansion module, it automatically enforces the following restrictions which limits how port modes can be assigned to unified ports. When using the Cisco UCS Manager CLI interface, these restrictions are enforced when you commit the transaction to the system configuration. If the port mode configuration violates any of the following restrictions, the Cisco UCS Manager CLI displays an error: 
 
-  * Ethernet ports must be grouped together in a block. For each module (fixed or expansion), the Ethernet port block must start with the first port and end with an even numbered port. 
-
-  * Fibre Channel ports must be grouped together in a block. For each module (fixed or expansion), the first port in the Fibre Channel port block must follow the last Ethernet port and extend to include the rest of the ports in the module. For configurations that include only Fibre Channel ports, the Fibre Channel block must start with the first port on the fixed or expansion module. 
-
-  * Alternating Ethernet and Fibre Channel ports is not supported. 
-
+* Ethernet ports must be grouped together in a block. For each module (fixed or expansion), the Ethernet port block must start with the first port and end with an even numbered port. 
+* Fibre Channel ports must be grouped together in a block. For each module (fixed or expansion), the first port in the Fibre Channel port block must follow the last Ethernet port and extend to include the rest of the ports in the module. For configurations that include only Fibre Channel ports, the Fibre Channel block must start with the first port on the fixed or expansion module. 
+* Alternating Ethernet and Fibre Channel ports is not supported. 
 
 **Example of a valid configuration** — Might include unified ports 1–16 on the fixed module configured in Ethernet port mode and ports 17–32 in Fibre Channel port mode. On the expansion module you could configure ports 1–4 in Ethernet port mode and then configure ports 5–16 in Fibre Channel mode. The rule about alternating Ethernet and Fibre Channel port types is not violated because this port arrangement complies with the rules on each individual module. 
 
@@ -1954,9 +1839,9 @@ Commiting the buffer before configuring multiple interfaces will result in an er
 
 The following are cautions and guidelines to follow while working with unified uplink ports and unified storage ports: 
 
-  * In an unified uplink port, if you enable one component as a SPAN source, the other component will automatically become a SPAN source. 
+* In an unified uplink port, if you enable one component as a SPAN source, the other component will automatically become a SPAN source. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1966,24 +1851,17 @@ If you create or delete a SPAN source under the Ethernet uplink port, Cisco UCS 
 * * *  
   
 ---|---  
-  * You must configure a non default native VLAN on FCoE and unified uplink ports. This VLAN is not used for any traffic. Cisco UCS Manager will reuse an existing fcoe-storage-native-vlan for this purpose. This fcoe-storage-native-vlan will be used as a native VLAN on FCoE and unified uplinks. 
-
-  * In an unified uplink port, if you do not specify a non default VLAN for the Ethernet uplink port the fcoe-storage-native-vlan will be assigned as the native VLAN on the unified uplink port. If the Ethernet port has a non default native VLAN specified as native VLAN, this will be assigned as the native VLAN for unified uplink port. 
-
-  * When you create or delete a member port under an Ethernet port channel, Cisco UCS Manager automatically creates or deletes the member port under FCoE port channel. The same happens when you create or delete a member port in FCoE port channel. 
-
-  * When you configure an Ethernet port as a standalone port, such as server port, Ethernet uplink, FCoE uplink or FCoE storage and make it a member port for an Ethernet or FCoE port channel, Cisco UCS Manager automatically makes this port a member of both Ethernet and FCoE port channels. 
-
-  * When you remove the membership for a member port from being a member of server uplink, Ethernet uplink, FCoE uplink or FCoE storage, Cisco UCS Manager deletes the corresponding members ports from Ethernet port channel and FCoE port channel and creates a new standalone port. 
-
-  * If you downgrade Cisco UCS Manager from release 2.1 to any of the prior releases, all unified uplink ports and port channels will be converted to Ethernet ports and Ethernet port channels when the downgrade is complete. Similarly, all the unified storage ports will be converted to appliance ports. 
-
-  * For unified uplink ports and unified storage ports, when you create two interfaces, only one license is checked out. As long as either interface is enabled, the license remains checked out. The license will be released only if both the interfaces are disabled for a unified uplink port or a unified storage port. 
-
+* You must configure a non default native VLAN on FCoE and unified uplink ports. This VLAN is not used for any traffic. Cisco UCS Manager will reuse an existing fcoe-storage-native-vlan for this purpose. This fcoe-storage-native-vlan will be used as a native VLAN on FCoE and unified uplinks. 
+* In an unified uplink port, if you do not specify a non default VLAN for the Ethernet uplink port the fcoe-storage-native-vlan will be assigned as the native VLAN on the unified uplink port. If the Ethernet port has a non default native VLAN specified as native VLAN, this will be assigned as the native VLAN for unified uplink port. 
+* When you create or delete a member port under an Ethernet port channel, Cisco UCS Manager automatically creates or deletes the member port under FCoE port channel. The same happens when you create or delete a member port in FCoE port channel. 
+* When you configure an Ethernet port as a standalone port, such as server port, Ethernet uplink, FCoE uplink or FCoE storage and make it a member port for an Ethernet or FCoE port channel, Cisco UCS Manager automatically makes this port a member of both Ethernet and FCoE port channels. 
+* When you remove the membership for a member port from being a member of server uplink, Ethernet uplink, FCoE uplink or FCoE storage, Cisco UCS Manager deletes the corresponding members ports from Ethernet port channel and FCoE port channel and creates a new standalone port. 
+* If you downgrade Cisco UCS Manager from release 2.1 to any of the prior releases, all unified uplink ports and port channels will be converted to Ethernet ports and Ethernet port channels when the downgrade is complete. Similarly, all the unified storage ports will be converted to appliance ports. 
+* For unified uplink ports and unified storage ports, when you create two interfaces, only one license is checked out. As long as either interface is enabled, the license remains checked out. The license will be released only if both the interfaces are disabled for a unified uplink port or a unified storage port. 
 
 ### Configuring the Port Mode 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/caut.gif)  
+  
 **Caution** | 
 
 * * *
@@ -2031,20 +1909,19 @@ fc-uplink
   
 Based on the module for which you configured the port modes, data traffic for the Cisco UCS domain is interrupted as follows: 
 
-  * Fixed module—The fabric interconnect reboots. All data traffic through that fabric interconnect is interrupted. In a cluster configuration that provides high availability and includes servers with vNICs that are configured for failover, traffic fails over to the other fabric interconnect and no interruption occurs. Changing the port mode for both sides at once results in both fabric interconnects rebooting simultaneously and a complete loss of traffic until both fabric interconnects are brought back up.
+* Fixed module—The fabric interconnect reboots. All data traffic through that fabric interconnect is interrupted. In a cluster configuration that provides high availability and includes servers with vNICs that are configured for failover, traffic fails over to the other fabric interconnect and no interruption occurs. Changing the port mode for both sides at once results in both fabric interconnects rebooting simultaneously and a complete loss of traffic until both fabric interconnects are brought back up.
 
 It takes about 8 minutes for the fixed module to reboot. 
 
-  * Expansion module—The module reboots. All data traffic through ports in that module is interrupted. 
+* Expansion module—The module reboots. All data traffic through ports in that module is interrupted. 
 
 It takes about 1 minute for the expansion module to reboot. 
-
 
 #### Example
 
 The following example changes ports 3 and 4 on slot 1 from Ethernet uplink ports in Ethernet port mode to uplink Fibre Channel ports in Fibre Channel port mode: 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -2053,9 +1930,8 @@ This example is not applicable for Cisco UCS 6500 Series Fabric Interconnect.
 
 * * *  
   
----|---  
-      
-    
+---|---
+[code] 
     UCS-A# **scope fc-uplink**
     UCS-A /fc-uplink # **scope fabric a**
     UCS-A /fc-uplink/fabric # **create interface 1 3**
@@ -2066,7 +1942,8 @@ This example is not applicable for Cisco UCS 6500 Series Fabric Interconnect.
     Warning: This operation will change the port mode (from Ethernet to FC or vice-versa). 
     When committed, this change will require the fixed module to restart.
     UCS-A /fc-uplink/fabric/interface* #**commit-buffer**
-
+[/code]  
+  
 Configuring Breakout Ports
 
 ### Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) 
@@ -2082,22 +1959,14 @@ Fibre Channel 1/1 and 1/2 |  4x8G, 4x16G, 4x32G |  Fibre Channel 1/1/1 to Fibre 
 
 Breakout ports are supported as destinations for traffic monitoring. The following are the guidelines for breakout functionality for Cisco UCS Fabric Interconnects 9108 100G: 
 
-  * Breakout Availability: Breakout functionality is available for physical ports 1-8. 
-
-  * Ethernet Breakout: Ethernet breakout ports can be configured on physical ports 1 through 8, resulting in 32 logical ports. 
-
-  * Fibre Channel Breakout: Fibre Channel breakout ports can be configured on unified ports 1/1 and 1/2, resulting in 8 logical ports. 
-
-  * Port Configurations: Physical Ports 1-8 can be configured as Uplink Ports, FCoE Uplink Ports, FCoE Storage Ports, and Appliance Ports. 
-
-  * Port Conversions: All port conversions support up to 8 standard ports or 8 breakout ports. 
-
-  * Server Ports: Configuration as Server Ports is not supported.
-
-  * Fibre Channel Direct Ports: Direct ports for Fibre Channel are not supported. 
-
-  * Traffic Monitoring: Breakout ports can be utilized as destinations for traffic monitoring. 
-
+* Breakout Availability: Breakout functionality is available for physical ports 1-8. 
+* Ethernet Breakout: Ethernet breakout ports can be configured on physical ports 1 through 8, resulting in 32 logical ports. 
+* Fibre Channel Breakout: Fibre Channel breakout ports can be configured on unified ports 1/1 and 1/2, resulting in 8 logical ports. 
+* Port Configurations: Physical Ports 1-8 can be configured as Uplink Ports, FCoE Uplink Ports, FCoE Storage Ports, and Appliance Ports. 
+* Port Conversions: All port conversions support up to 8 standard ports or 8 breakout ports. 
+* Server Ports: Configuration as Server Ports is not supported.
+* Fibre Channel Direct Ports: Direct ports for Fibre Channel are not supported. 
+* Traffic Monitoring: Breakout ports can be utilized as destinations for traffic monitoring. 
 
 ### Port Breakout Functionality on Cisco UCS 6536 Fabric Interconnects
 
@@ -2111,7 +1980,7 @@ When you break out a 40G port into 10G ports or a 100G port into 25G ports, the 
 
 FC breakout is supported on ports 36 through 33 when each port is configured with a four-port breakout cable. For example: Four FC breakout ports on the physical port 33 are numbered as 1/33/1, 1/33/2, 1/33/3, and 1/33/4. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -2124,11 +1993,11 @@ Fibre Channel support is only available through the configuration of the Unified
   
 The following image shows the rear view of the Cisco UCS 6536 fabric interconnect:
 
-Figure 1. Cisco UCS 6536 Fabric Interconnect Rear View  ![](/c/dam/en/us/td/i/500001-600000/540001-550000/540001-541000/540805.jpg)
+Figure 1. Cisco UCS 6536 Fabric Interconnect Rear View 
 
 The following image shows the rear view of the Cisco UCS 6536 fabric interconnect that include Ports and LEDs:
 
-Figure 2. Cisco UCS 6536 Fabric Interconnect Rear View  ![](/c/dam/en/us/td/i/500001-600000/540001-550000/540001-541000/540989.jpg) 1  |  Ports 1-32. Uplink ports are Ethernet port that can operate with the port speed of 10 Gbps/25 Gbps/40 Gbps/100 Gbps. When using a breakout cable, each of these ports can operate as: 4 x 10 Gbps/4x 25 Gbps/1 x 40 Gbps/1 x 100 Gbps Ethernet or FCoE ports.  |  2  |  Ports 33-36. Unified Ports can operate with port speed of 10 Gbps/25 Gbps/ 40 Gbps/100 Gbps Ethernet. or  8 Gbps/16 Gbps/32 Gbps Fibre Channel (FC). When using a breakout cable, each of these ports can operate as 4 x 10 Gbps/4 x 25 Gbps Ethernet or 4x8Gbps/4x16Gbps/4x32Gbps FC ports.   
+Figure 2. Cisco UCS 6536 Fabric Interconnect Rear View  1  |  Ports 1-32. Uplink ports are Ethernet port that can operate with the port speed of 10 Gbps/25 Gbps/40 Gbps/100 Gbps. When using a breakout cable, each of these ports can operate as: 4 x 10 Gbps/4x 25 Gbps/1 x 40 Gbps/1 x 100 Gbps Ethernet or FCoE ports.  |  2  |  Ports 33-36. Unified Ports can operate with port speed of 10 Gbps/25 Gbps/ 40 Gbps/100 Gbps Ethernet. or  8 Gbps/16 Gbps/32 Gbps Fibre Channel (FC). When using a breakout cable, each of these ports can operate as 4 x 10 Gbps/4 x 25 Gbps Ethernet or 4x8Gbps/4x16Gbps/4x32Gbps FC ports.   
 ---|---|---|---  
 3  |  Ports 1-36. Uplink ports and Unified ports that can be configured as Ethernet Breakout Port and can operate with the port speed of 10 Gbps/25 Gbps/40 Gbps/100 Gbps.  When using a breakout cable, each of these ports can operate as: 4 x 10 Gbps/4x 25 Gbps/1 x 40 Gbps/1 x 100 Gbps Ethernet or FCoE ports.  |  4 | System environment (fan fault) LED  
 5 |  System status (STS) LED |  6 |  Beacon (BCN) LED  
@@ -2137,28 +2006,17 @@ Figure 2. Cisco UCS 6536 Fabric Interconnect Rear View  ![](/c/dam/en/us/td/i/50
 
 The following are the guidelines for breakout functionality for Cisco UCS 6536 Fabric Interconnects: 
 
-  * The configurable breakout ports are from port 1-36.
-
-  * You can configure the speed for each breakout port. Each breakout port can be configured at the speed of 4 x 8 Gbps/ 4 x 16 Gbps/ 4 x 32 Gbps for Fibre Channel. 
-
-  * For Fibre Channel breakout, each breakout port can be configured at the speed of 4 x 8 Gbps/ 4 x 16 Gbps/ 4 x 32 Gbps.
-
-  * For Ethernet breakout, each breakout port can be configured at the speed of 4 x 10 Gbps/4 x 25 Gbps.
-
-  * Fibre Channel breakout ports are supported, and Fiber Channel direct ports are not supported.
-
-  * FC breakout port can be configured from 1/36 through 1/33. FC breakout ports (36-33) cannot be configured unless the previous ports are FC breakout ports. Configuration of a single (individual) FC breakout port is also supported. 
-
-  * If the breakout mode for any of the supported Fabric Interconnect ports (1-36) is an Ethernet breakout, the Fabric Interconnect does not lead to a reboot. 
-
-  * If the breakout mode for any of the supported Fabric Interconnect ports (36-33) is a Fibre Channel uplink breakout, the Fabric Interconnect leads to a reboot. 
-
-  * Breakout ports are supported as destinations for traffic monitoring.
-
-  * Ports 1-36 can be configured as Server Port, FCoE Uplink Port, Appliance Port, and Monitor Port.
-
-  * Port 36-33 can be configured also as FC Uplink Port or FC Storage Port when configured as unified port.
-
+* The configurable breakout ports are from port 1-36.
+* You can configure the speed for each breakout port. Each breakout port can be configured at the speed of 4 x 8 Gbps/ 4 x 16 Gbps/ 4 x 32 Gbps for Fibre Channel. 
+* For Fibre Channel breakout, each breakout port can be configured at the speed of 4 x 8 Gbps/ 4 x 16 Gbps/ 4 x 32 Gbps.
+* For Ethernet breakout, each breakout port can be configured at the speed of 4 x 10 Gbps/4 x 25 Gbps.
+* Fibre Channel breakout ports are supported, and Fiber Channel direct ports are not supported.
+* FC breakout port can be configured from 1/36 through 1/33. FC breakout ports (36-33) cannot be configured unless the previous ports are FC breakout ports. Configuration of a single (individual) FC breakout port is also supported. 
+* If the breakout mode for any of the supported Fabric Interconnect ports (1-36) is an Ethernet breakout, the Fabric Interconnect does not lead to a reboot. 
+* If the breakout mode for any of the supported Fabric Interconnect ports (36-33) is a Fibre Channel uplink breakout, the Fabric Interconnect leads to a reboot. 
+* Breakout ports are supported as destinations for traffic monitoring.
+* Ports 1-36 can be configured as Server Port, FCoE Uplink Port, Appliance Port, and Monitor Port.
+* Port 36-33 can be configured also as FC Uplink Port or FC Storage Port when configured as unified port.
 
 ### Port Breakout Functionality on Cisco UCS 64108 Fabric Interconnects
 
@@ -2168,7 +2026,7 @@ Cisco UCS 64108 fabric interconnects support splitting a single 40/100G QSFP por
 
 When you break out a 40G port into 10G ports or a 100G port into 25G ports, the resulting ports are numbered using a 3-tuple naming convention. For example, the breakout ports of the second 40-Gigabit Ethernet port are numbered as 1/99/1, 1/99/2, 1/99/3, 1/99/4. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -2183,17 +2041,17 @@ Starting with Cisco UCS Manager Release 4.2(3b), configuring the Ethernet breako
 
 The following image shows the rear view of the Cisco UCS 64108 fabric interconnect, and includes the ports that support breakout port functionality: 
 
-Figure 3. Cisco UCS 64108 Fabric Interconnect Rear View ![](/c/dam/en/us/td/i/300001-400000/300001-310000/307001-308000/307644.jpg) 1  |  Ports 1-16. Unified Ports can operate as 10/25 Gbps Ethernet or 8/16/32 Gbps Fibre Channel. FC ports are converted in groups of four.  Unified ports:
+Figure 3. Cisco UCS 64108 Fabric Interconnect Rear View  1  |  Ports 1-16. Unified Ports can operate as 10/25 Gbps Ethernet or 8/16/32 Gbps Fibre Channel. FC ports are converted in groups of four.  Unified ports:
 
-  * 10/25 Gbps Ethernet or FCoE
-  * 8/16/32 Gbps Fibre Channel
+* 10/25 Gbps Ethernet or FCoE
+* 8/16/32 Gbps Fibre Channel
 
 |  2  |  Ports 1-96. Each port can operate as either a 10 Gbps or 25 Gbps Ethernet or FCoE SFP28 port.   
 ---|---|---|---  
 3  |  Uplink Ports 97-108. Each port can operate as either a 40 Gbps or 100 Gbps Ethernet or FCoE port. When using a breakout cable, each of these ports can operate as 4 x 10 Gbps or 4 x 25 Gbps Ethernet or FCoE ports.  Ports 97 - 108 can be used to connect to Ethernet or FCoE uplink ports, and not to UCS server ports. |  4 |  Ports 89-96
 
-  * 10/25 Gbps Ethernet or FCoE
-  * 1 Gbps Ethernet
+* 10/25 Gbps Ethernet or FCoE
+* 1 Gbps Ethernet
 
   
 5 |  System environment (fan fault) LED |  6 |  System status LED  
@@ -2203,14 +2061,10 @@ Figure 3. Cisco UCS 64108 Fabric Interconnect Rear View ![](/c/dam/en/us/td/i/30
 
 The following are the guidelines for breakout functionality for Cisco UCS 64108 fabric interconnects: 
 
-  * The breakout configurable ports are ports 97-108.
-
-  * You cannot configure the speed for each breakout port. Each breakout port is in auto mode.
-
-  * Breakout ports are not supported as destinations for traffic monitoring.
-
-  * Ports 97-108 at 40/100G can be configured as uplink, FCoE, or appliance port. Ports 97-108 after breakout to 10/25G can be configured as uplink, appliance, FCoE, or for direct-connect rack server connectivity. 
-
+* The breakout configurable ports are ports 97-108.
+* You cannot configure the speed for each breakout port. Each breakout port is in auto mode.
+* Breakout ports are not supported as destinations for traffic monitoring.
+* Ports 97-108 at 40/100G can be configured as uplink, FCoE, or appliance port. Ports 97-108 after breakout to 10/25G can be configured as uplink, appliance, FCoE, or for direct-connect rack server connectivity. 
 
 ### Port Breakout Functionality on Cisco UCS 6454 Fabric Interconnects
 
@@ -2224,7 +2078,7 @@ Starting with Cisco UCS Manager Release 4.2(3b), Ethernet breakout ports configu
 
 Starting with Cisco UCS Manager Release 4.1(3a), you can connect Cisco UCS Rack servers with VIC 1455 and 1457 adapters, to the uplink ports 49 to 54 (40/100 Gbps Ethernet or FCoE) in Cisco UCS 6454 Fabric Interconnects. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -2237,7 +2091,7 @@ Cisco UCS Manager does not support connection of FEX, chassis, blade, IOM, or ad
   
 The following image shows the rear view of the Cisco UCS 6454 fabric interconnect, and includes the ports that support breakout port functionality: 
 
-Figure 4. Cisco UCS 6454 Fabric Interconnect Rear View ![](/c/dam/en/us/td/i/300001-400000/300001-310000/306001-307000/306755.jpg) 1  |  Ports 1-16 (Unified Ports 10/25 Gbps Ethernet or FCoE or 8/16/32 Gbps Fibre Channel) |  2  |  Ports 17-44 (10/25 Gbps Ethernet or FCoE)  
+Figure 4. Cisco UCS 6454 Fabric Interconnect Rear View  1  |  Ports 1-16 (Unified Ports 10/25 Gbps Ethernet or FCoE or 8/16/32 Gbps Fibre Channel) |  2  |  Ports 17-44 (10/25 Gbps Ethernet or FCoE)  
 ---|---|---|---  
 3  |  Ports 45-48 (1/10/25 Gbps Ethernet or FCoE)  |  4 |  Uplink Ports 49-54 (40/100 Gbps Ethernet or FCoE)   
   
@@ -2245,14 +2099,10 @@ Figure 4. Cisco UCS 6454 Fabric Interconnect Rear View ![](/c/dam/en/us/td/i/300
 
 The following are the guidelines for breakout functionality for Cisco UCS 6454 fabric interconnects: 
 
-  * The breakout configurable ports are ports 49-54.
-
-  * You cannot configure the speed for each breakout port. Each breakout port is in auto mode.
-
-  * In Cisco UCS Manager Release 4.0(2), breakout ports are not supported as destinations for traffic monitoring.
-
-  * Ports 49-54 at 40/100G can be configured as uplink, FCoE, or appliance port. Ports 49-54 after breakout to 10/25G can be configured as uplink, appliance, FCoE, or for direct-connect rack server connectivity. 
-
+* The breakout configurable ports are ports 49-54.
+* You cannot configure the speed for each breakout port. Each breakout port is in auto mode.
+* In Cisco UCS Manager Release 4.0(2), breakout ports are not supported as destinations for traffic monitoring.
+* Ports 49-54 at 40/100G can be configured as uplink, FCoE, or appliance port. Ports 49-54 after breakout to 10/25G can be configured as uplink, appliance, FCoE, or for direct-connect rack server connectivity. 
 
 ### Port Breakout Functionality on Cisco UCS 6300 Series Fabric Interconnects 
 
@@ -2264,12 +2114,12 @@ When you break out a 40G port into 10G ports, the resulting ports are numbered u
 
 The following image shows the front view for the Cisco UCS 6332 series fabric interconnects, and includes the ports that may support breakout port functionality: 
 
-Figure 5. Cisco UCS 6332 Series Fabric Interconnects Front View  ![](/c/dam/en/us/td/i/300001-400000/300001-310000/305001-306000/305235.jpg) 1  |  L1 and L2 high availability ports   
+Figure 5. Cisco UCS 6332 Series Fabric Interconnects Front View  1  |  L1 and L2 high availability ports   
 ---|---  
 2  |  28 X 40G QSFP ports ( 98 X 10G SFP ports)  |  **Note** | 
 
-  * QSA module is required on ports 13–14 
-  * A QSFP to 4XSFP breakout cable is required for 10G support. 
+* QSA module is required on ports 13–14 
+* A QSFP to 4XSFP breakout cable is required for 10G support. 
 
   
 ---|---  
@@ -2277,12 +2127,12 @@ Figure 5. Cisco UCS 6332 Series Fabric Interconnects Front View  ![](/c/dam/en/u
   
 The following image shows the front view for the Cisco UCS 6332-16UP series fabric interconnects, and includes the ports that may support breakout port functionality: 
 
-Figure 6. Cisco UCS 6332-16UP Series Fabric Interconnects Front View  ![](/c/dam/en/us/td/i/300001-400000/300001-310000/305001-306000/305236.jpg) 1  |  L1 and L2 high availability ports   
+Figure 6. Cisco UCS 6332-16UP Series Fabric Interconnects Front View  1  |  L1 and L2 high availability ports   
 ---|---  
 2  |  16 X 1/10G SFP (16 X 4/8/16G FC ports)   
 3  |  18 X 40G QSFP(72 X 10G SFP+)  |  **Note** | 
 
-  * A QSFP to 4XSFP breakout cable is required for 10G support. 
+* A QSFP to 4XSFP breakout cable is required for 10G support. 
 
   
 ---|---  
@@ -2290,7 +2140,7 @@ Figure 6. Cisco UCS 6332-16UP Series Fabric Interconnects Front View  ![](/c/dam
   
 The following image shows the rear view of the Cisco UCS 6300 series fabric interconnects. 
 
-Figure 7. Cisco UCS 6300 Series Fabric Interconnects Rear View  ![](/c/dam/en/us/td/i/300001-400000/300001-310000/305001-306000/305237.jpg) 1  |  Power supply   
+Figure 7. Cisco UCS 6300 Series Fabric Interconnects Rear View  1  |  Power supply   
 ---|---  
 2  |  Four fans   
 3  |  Power supply   
@@ -2304,17 +2154,17 @@ Cisco UCS 6300 Series Fabric Interconnect Series  |  Breakout Configurable Ports
 ---|---|---  
 Cisco UCS 6332  |  1–12, 15–26  |  13–14, 27–32  |  **Note** | 
 
-  * Auto-negotiate behavior is not supported on ports 27–32. 
+* Auto-negotiate behavior is not supported on ports 27–32. 
 
   
 ---|---  
 Cisco UCS 6332-16UP  |  17–34  |  1–16, 35–40  |  **Note** | 
 
-  * Auto-negotiate behavior is not supported on ports 35–40 
+* Auto-negotiate behavior is not supported on ports 35–40 
 
   
 ---|---  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Important** | 
 
 * * *
@@ -2349,8 +2199,7 @@ Before configuring a breakout port, view the port status using the show port com
 #### Example
 
 The following example creates breakout ports 1/1 through 1/4 on a UCS 6300 Fabric Interconnect and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope cabling** 
     UCS-A /cabling # **scope fabric a**
     UCS-A /cabling/fabric # **create breakout 1 1**
@@ -2368,10 +2217,10 @@ The following example creates breakout ports 1/1 through 1/4 on a UCS 6300 Fabri
     
     
     
+[/code]
 
 The following example creates breakout ports 1/49 through 1/52 on a UCS 6454 Fabric Interconnect, sets the breakout type, and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope cabling** 
     UCS-A /cabling # **scope fabric a**
     UCS-A /cabling/fabric # **create breakout 1 49**
@@ -2387,10 +2236,10 @@ The following example creates breakout ports 1/49 through 1/52 on a UCS 6454 Fab
     UCS-A /cabling/fabric/breakout* # **set breakouttype 10g-4x**
     UCS-A /cabling/fabric/breakout* # **commit-buffer**
     
+[/code]
 
 The following example creates breakout ports 1/50 through 1/53 on a UCS 64108 Fabric Interconnect, sets the breakout type, and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope cabling** 
     UCS-A /cabling # **scope fabric a**
     UCS-A /cabling/fabric # **create breakout 1 50**
@@ -2406,10 +2255,10 @@ The following example creates breakout ports 1/50 through 1/53 on a UCS 64108 Fa
     UCS-A /cabling/fabric/breakout* # **set breakouttype 10g-4x**
     UCS-A /cabling/fabric/breakout* # **commit-buffer**
     
+[/code]
 
 The following example creates breakout ports 1/17 through 1/20 on a UCS 6536 Fabric Interconnect, sets the breakout type, and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope cabling** 
     UCS-A /cabling # **scope fabric a**
     UCS-A /cabling/fabric # **create breakout 1 17**
@@ -2425,10 +2274,10 @@ The following example creates breakout ports 1/17 through 1/20 on a UCS 6536 Fab
     UCS-A /cabling/fabric/breakout* # **set breakouttype 25g-4x**
     UCS-A /cabling/fabric/breakout* # **commit-buffer**
     
+[/code]
 
 The following example creates breakout ports 1/1 through 1/4 Cisco UCS Fabric Interconnects 9108 100G and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope cabling** 
     UCS-A /cabling # **scope fabric a**
     UCS-A /cabling/fabric # create breakout 1 1
@@ -2447,6 +2296,7 @@ The following example creates breakout ports 1/1 through 1/4 Cisco UCS Fabric In
     
     
     
+[/code]
 
 #### What to do next
 
@@ -2467,8 +2317,7 @@ Verify that you created breakout ports on the fabric interconnect and on the NXO
 #### Example
 
 The following example shows how to create an interface for breakout Ethernet uplink port 1 of the aggregate port 21 on slot 1 of fabric A: 
-    
-    
+[code] 
     UCS-A# **scope eth-uplink**
     UCS-A /eth-uplink # **scope fabric a**
     UCS-A /eth-uplink/fabric # **enter aggr-interface 1 21**
@@ -2476,10 +2325,10 @@ The following example shows how to create an interface for breakout Ethernet upl
     UCS-A /eth-uplink/fabric/aggr-interface/br-interface*# **commit-buffer**
     
     
+[/code]
 
 The following example shows how to create interfaces for breakout Ethernet uplink ports 1-4 of the aggregate port 49 on slot 1 of fabric A on a UCS 6454 fabric interconnect, and commit the transaction: 
-    
-    
+[code] 
     UCS-A# **scope eth-uplink**
     UCS-A /eth-uplink # **scope fabric a**
     UCS-A /eth-uplink/fabric # **create aggr-interface 1 49**
@@ -2494,10 +2343,10 @@ The following example shows how to create interfaces for breakout Ethernet uplin
     UCS-A /eth-uplink/fabric/aggr-interface* # **commit-buffer**
     UCS-A /eth-uplink/fabric/aggr-interface # 
     
+[/code]
 
 The following example shows the breakout configuration for ports 1/49/1 to 1/49/4 of fabric A on a UCS 6454 fabric interconnect: 
-    
-    
+[code] 
     UCS-A# **scope fabric-interconnect a** 
     UCS-A /fabric-interconnect # **show port**
     Ether Port: 
@@ -2508,6 +2357,7 @@ The following example shows the breakout configuration for ports 1/49/1 to 1/49/
     1     49         3     Sfp Not Present  8C:60:4F:BC:C4:D6    Unknown N/A 
     1     49         4     Sfp Not Present  8C:60:4F:BC:C4:D7    Unknown N/A 
     
+[/code]
 
 ### Configuring a Breakout Ethernet Uplink Port Channel Member 
 
@@ -2525,14 +2375,14 @@ The following example shows the breakout configuration for ports 1/49/1 to 1/49/
 #### Example:
 
 The following example creates an Ethernet uplink port channel member for an Ethernet port on port 2, and commits the transaction: 
-    
-    
+[code]
     UCS-A# **scope eth-storage** 
     UCS-A /eth-uplink # **scope fabric a**
     UCS-A /eth-uplink/fabric # **scope fcoe-port-channel 51**
     UCS-A /eth-uplink/fabric/port-channel/member-aggr-port # **create br-member-port 2**
     UCS-A /eth-uplink/fabric/port-channel/member-aggr-port/br-member-port* # **commit-buffer**
     
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -2550,14 +2400,14 @@ The following example creates an Ethernet uplink port channel member for an Ethe
 #### Example:
 
 The following example sets the pin group target to breakout port 2 of the aggregate port 1 on slot 1, on fabric A , and commits the transaction: 
-    
-    
+[code]
     UCS-A# scope **eth-uplink**
     UCS-A /eth-uplink # **enter pin-group test**
     UCS-A /eth-uplink/pin-group # **set target a breakout-port 1 1 2**
     UCS-A /eth-uplink/pin-group* # **commit-buffer**
      
     
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -2578,8 +2428,7 @@ You can follow the below steps to configure appliance breakout ports for both Ci
 #### Example:
 
 The following example creates an interface for an appliance port 1 of the aggregate port 20 on slot 1 of fabric B, and commits the transaction: 
-    
-    
+[code]
     UCS-A# **scope eth-storage** 
     UCS-A /eth-storage # **scope fabric a** 
     UCS-A /eth-storage/fabric # **enter aggr-interface 1 20**
@@ -2590,6 +2439,7 @@ The following example creates an interface for an appliance port 1 of the aggreg
     
     
     
+[/code]
 
 #### Example:
 
@@ -2614,8 +2464,7 @@ Commits the transaction to the server.
 #### Example:
 
 The following example creates an appliance port channel member for an appliance port 2, and commits the transaction: 
-    
-    
+[code]
     UCS-A# **scope eth-storage** 
     UCS-A /eth-storage # **scope fabric a**
     UCS-A /eth-storage/fabric # **scope port-channel 21**
@@ -2623,6 +2472,7 @@ The following example creates an appliance port channel member for an appliance 
     UCS-A /eth-storage/fabric/port-channel/member-aggr-port # **create br-member-port 2**
     UCS-A /eth-storage/fabric/port-channel/member-aggr-port/br-member-port* # **commit-buffer**
     
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -2641,8 +2491,7 @@ The following example creates an appliance port channel member for an appliance 
 #### Example:
 
 The following example creates an interface for a breakout Fibre Channel storage port 1 of the aggregate port 21 on slot 1 of fabric a, and commits the transaction: 
-    
-    
+[code]
     UCS-A# **scope fc-storage**
     UCS-A /fc-storage # **scope fabric a**
     UCS-A /fc-storage/fabric # **enter aggr-interface 1 21**
@@ -2650,6 +2499,7 @@ The following example creates an interface for a breakout Fibre Channel storage 
     UCS-A /eth-uplink/fabric/aggr-interface/br-interface/br-fcoe **# commit-buffer**
     
     
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -2668,8 +2518,7 @@ The following example creates an interface for a breakout Fibre Channel storage 
 #### Example:
 
 The following example shows how to create an interface for breakout FCoE uplink port 1 of the aggregate port 20 on slot 1 of fabric A: 
-    
-    
+[code]
     UCS-A# **scope eth-uplink**
     UCS-A /fc-uplink # **scope fabric a**
     UCS-A /fc-uplink/fabric # **enter aggr-interface 1 20**
@@ -2677,6 +2526,7 @@ The following example shows how to create an interface for breakout FCoE uplink 
     UCS-A /fc-uplink/fabric/aggr-interface/br-fcoeinterface**# commit-buffer**
     
     
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -2696,8 +2546,7 @@ The following example shows how to create an interface for breakout FCoE uplink 
 #### Example:
 
 The following example creates a breakout FCoE port channel member port 4 on aggregate port 21, and commits the transaction: 
-    
-    
+[code]
     UCS-A# **scope eth-storage** 
     UCS-A /fc-uplink # **scope fabric a**
     UCS-A /fc-uplink/fabric # **scope port-channel 51**
@@ -2705,6 +2554,7 @@ The following example creates a breakout FCoE port channel member port 4 on aggr
     UCS-A /fc-uplink/fabric/port-channel/member-aggr-port # **create br-member-port 4**
     UCS-A /fc-uplink/fabric/port-channel/member-aggr-port/br-member-port* # **commit-buffer**
     
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -2723,14 +2573,14 @@ The following example creates a breakout FCoE port channel member port 4 on aggr
 #### Example:
 
 The following example creates an interface for a VLAN member on the aggregate port 4 on slot 1 of breakout Ethernet uplink port 1, and commits the transaction: 
-    
-    
+[code]
     USA-A# **scope eth-uplink** 
     USA-A /eth-uplink # **scope vlan id**
     USA-A /eth-uplink/vlan # **enter member-aggr-port a 1 1**
     USA-A /eth-uplink/vlan/member-aggr-port* # **create br-member-port 4**
     USA-A /eth-uplink/vlan/member-aggr-port/br-member-port* # **commit-buffer**  
      
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -2778,8 +2628,7 @@ SPAN (Traffic Monitoring) Destination Port  |  eth-traffic-mon  |  A /eth-traffi
 #### Example:
 
 The following example shows how to modify a Ethernet uplink port as a monitor source in breakout port 1 of the aggregate (main) interface in port 1 with an ID of 21. 
-    
-    
+[code]
     UCS-A# **scope eth-uplink**
     UCS-A /eth-uplink # **scope fabric a**
     UCS-A /eth-uplink/fabric # **scope aggr-interface 1 21**
@@ -2787,24 +2636,25 @@ The following example shows how to modify a Ethernet uplink port as a monitor so
     UCS-A /eth-uplink/fabric/aggr-interface/br-interface # **create** 
     	UCS-A /eth-uplink/fabric/aggr-interface/br-interface # **create mon-src**
     
+[/code]
 
 |  Modifies the interface as a monitoring source.   
   
 #### Modifying the Breakout Ethernet Uplink Port Speed and User Label 
-    
-    
+[code] 
     pranspat-3gfi-A /eth-uplink/fabric/aggr-interface/br-interface # set      
     	eth-link-profile     Ethernet Link Profile name   
     	flow-control-policy  flow control policy   
     	speed                 Speed   
     	user-label           User Label 
     
-    
-    
+[/code]
+[code] 
     pranspat-3gfi-A /eth-uplink/fabric/aggr-interface/br-interface # 
     	disable      Disables services   
     	enable       Enables services
     
+[/code]
 
 ###  Un-configuring Breakout Ports 
 
@@ -2823,8 +2673,7 @@ You can use the  show port  command to list the ports for the Fabric Interconnec
 #### Example:
 
 The following example lists the ports. 
-    
-    
+[code]
     Slot  Aggr Port  Port  Oper State       Mac                  Role    Xcvr
     ----- ---------- ----- ---------------- -------------------- ------- ----
         1          0     1 Link Down        84:B8:02:CA:37:56    Network 1000base T
@@ -2835,6 +2684,7 @@ The following example lists the ports.
         1          0     3 Sfp Not Present  84:B8:02:CA:37:58    Unknown N/A
     
     
+[/code]
 
 |  Displays the ports for the Fabric Interconnect.   
 **Step 2** |  UCS-A#  scope cabling  |  Enters the cabling mode.   
@@ -2878,14 +2728,14 @@ SPAN (Traffic Monitoring) Destination Port  |  eth-traffic-mon  |  UCS-A /eth-tr
 #### Example:
 
 This example deletes an Ethernet Uplink port-channel member in breakout port 1 of the aggregate (main) interface port 1 slot 1. 
-    
-    
+[code]
     UCS-A# **scope eth-uplink** 
     UCS-A /eth-uplink # **scope fabric a**
     UCS-A /eth-uplink/fabric # **scope port-channel 1**
     UCS-A /eth-uplink/fabric/port-channel # **enter aggr-interface 1 1**
     UCS-A /eth-uplink/fabric/port-channel/aggr-interface # **delete br-member-port 1**
     UCS-A /eth-uplink/fabric/port-channel/aggr-interface* # **commit-buffer**
+[/code]
 
 |  Commits the transaction to the server.   
   
@@ -2919,8 +2769,7 @@ To configure ports, port channel members or SPAN members on the scalability port
 ##### Example
 
 The following example shows how to create an interface for Ethernet server port 3 on the fabric A scalability port and commit the transaction: 
-    
-    
+[code] 
     UCS-A# **scope eth-server**
     UCS-A /eth-server # **scope fabric a**
     UCS-A /eth-server/fabric # **scope aggr-interface 1 5**
@@ -2938,6 +2787,7 @@ The following example shows how to create an interface for Ethernet server port 
     UCS-A /eth-server/fabric/aggr-interface* # **commit-buffer**
     UCS-A /eth-server/fabric/aggr-interface # 
     
+[/code]
 
 ### Beacon LEDs for Unified Ports 
 
@@ -2945,7 +2795,7 @@ Each port fabric interconnect has a corresponding beacon LED. When the Beacon LE
 
 You can configure the Beacon LED property to show you which ports are grouped in one port mode: either Ethernet or Fibre Channel. By default, the Beacon LED property is set to Off. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -2982,14 +2832,14 @@ off
 ##### Example
 
 The following example illuminates all of the beacon lights for Unified Ports in Ethernet port mode and commits the transaction:
-    
-    
+[code] 
     UCS-A# **scope fabric-interconnect a**
     UCS-A /fabric # **scope card 1**
     UCS-A /fabric/card # **scope beacon-led**
     UCS-A /fabric/card/beacon-led # **set admin-state eth**
     UCS-A /fabric/card/beacon-led* # **commit-buffer**
     UCS-A /fabric/card/beacon-led #
+[/code]
 
 ---
 
@@ -3003,16 +2853,11 @@ MACsec provides MAC-layer encryption over wired networks by using out-of-band me
 
 MACsec encrypts the entire data except for the Source and Destination MAC addresses of an Ethernet packet. It offers the following capabilities: 
 
-  * Provides line rate encryption.
-
-  * Ensures data confidentiality by providing strong encryption at Layer 2. 
-
-  * Provides integrity checking to help ensure that data cannot be modified in transit. 
-
-  * Key Lifetime and Hitless Key Rollover
-
-  * Fallback Key
-
+* Provides line rate encryption.
+* Ensures data confidentiality by providing strong encryption at Layer 2. 
+* Provides integrity checking to help ensure that data cannot be modified in transit. 
+* Key Lifetime and Hitless Key Rollover
+* Fallback Key
 
 ### Key Lifetime and Hitless Key Rollover
 
@@ -3022,7 +2867,7 @@ To configure a MACsec keychain, see Creating a MACsec Keychain
 
 A key can roll over to a second key within the same keychain by configuring the second key (in the keychain) and configuring a lifetime for the first key. When the lifetime of the first key expires, it automatically rolls over to the next key in the list. If the same key is configured on both sides of the link at the same time, then the key rollover is hitless (that is, the key rolls over without traffic interruption). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -3037,7 +2882,7 @@ The lifetime of the keys are overlapped to achieve hitless key rollover.
 
 A MACsec session can fail due to a key/key ID (CKN) mismatch or a finite key duration between the Fabric Interconnect and the peer. If a MACsec session fails, a fallback session can take over if a fallback key is configured. A fallback session prevents downtime due to primary session failure and allows a user time to fix the key issue causing the failure. A fallback key also provides a backup session if the primary session fails to start. This feature is optional. 
 
-For more information, see Creating a MACsec Keychain. 
+For more information, see Creating a MACsec Keychain.
 
 ---
 
@@ -3049,7 +2894,7 @@ The fabric interconnect is the core component of Cisco UCS. The Cisco UCS Fabric
 
 The Cisco UCS FIs provide network connectivity and management for the connected servers. The Cisco UCS Fabric Interconnects run the Cisco UCS Manager control software and consist of expansion modules for the Cisco UCS Manager software. 
 
-For more information about Cisco UCS Fabric Interconnects, see the Cisco UCS Manager Getting Started Guide. 
+For more information about Cisco UCS Fabric Interconnects, see the Cisco UCS Manager Getting Started Guide.
 
 ---
 
@@ -3061,7 +2906,7 @@ A VLAN is a switched network that is logically segmented by function, project te
 
 Any switch port can belong to a VLAN. Unicast, broadcast, and multicast packets are forwarded and flooded only to end stations in the VLAN. Each VLAN is considered a logical network, and packets destined for stations that do not belong to the VLAN must be forwarded through a router or bridge. 
 
-VLANs are typically associated with IP subnetworks. For example, all of the end stations in a particular IP subnet belong to the same VLAN. To communicate between VLANs, you must route the traffic. By default, a newly created VLAN is operational. Additionally, you can configure VLANs to be in the active state, which is passing traffic, or in the suspended state, in which the VLANs are not passing packets. By default, the VLANs are in the active state and pass traffic. 
+VLANs are typically associated with IP subnetworks. For example, all of the end stations in a particular IP subnet belong to the same VLAN. To communicate between VLANs, you must route the traffic. By default, a newly created VLAN is operational. Additionally, you can configure VLANs to be in the active state, which is passing traffic, or in the suspended state, in which the VLANs are not passing packets. By default, the VLANs are in the active state and pass traffic.
 
 ---
 
@@ -3071,29 +2916,22 @@ VLANs are typically associated with IP subnetworks. For example, all of the end 
 
 Cisco UCS provides the following methods to implement quality of service: 
 
-  * System classes that specify the global configuration for certain types of traffic across the entire system 
-
-  * QoS policies that assign system classes for individual vNICs 
-
-  * Flow control policies that determine how uplink Ethernet ports handle pause frames 
-
+* System classes that specify the global configuration for certain types of traffic across the entire system 
+* QoS policies that assign system classes for individual vNICs 
+* Flow control policies that determine how uplink Ethernet ports handle pause frames 
 
 Global QoS changes made to the QoS system class may result in brief data-plane interruptions for all traffic. Some examples of such changes are: 
 
-  * Changing the MTU size for an enabled class 
-
-  * Changing packet drop for an enabled class 
-
-  * Changing the CoS value for an enabled class 
-
+* Changing the MTU size for an enabled class 
+* Changing packet drop for an enabled class 
+* Changing the CoS value for an enabled class 
 
 ###  Guidelines and Limitations for Quality of Service on Cisco UCS Fabric Interconnects 9108 100G, Cisco UCS 6536 Fabric Interconnects, Cisco UCS 6400 Series Fabric Interconnects 
 
-  * Multicast optimization is not supported.
+* Multicast optimization is not supported.
+* For all QoS system classes except for Fibre Channel, the default MTU is 1500 bytes. The MTU for Fiber Channel class is not configurable and is set to 2240 bytes internally. All classes (excluding Fibre Channel) allow for MTU configuration up to a maximum of 9216 bytes. 
 
-  * For all QoS system classes except for Fibre Channel, the default MTU is 1500 bytes. The MTU for Fiber Channel class is not configurable and is set to 2240 bytes internally. All classes (excluding Fibre Channel) allow for MTU configuration up to a maximum of 9216 bytes. 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -3103,49 +2941,34 @@ The maximum MTU for a QoS class on the Fabric Interconnect is 9216 bytes, while 
 * * *  
   
 ---|---  
-  * The MTU size for fibre channel is always 2240 bytes.
-
-  * Multicast is not supported on any no-drop QoS class.
-
+* The MTU size for fibre channel is always 2240 bytes.
+* Multicast is not supported on any no-drop QoS class.
 
 ###  Guidelines and Limitations for Quality of Service on Cisco UCS 6300 Series Fabric Interconnect
 
-  * Cisco UCS 6300 Series Fabric Interconnect uses a shared buffer for all system classes. 
-
-  * Multicast optimization is not supported. 
-
-  * Multicast is not supported on any no-drop QoS class.
-
-  * When you change the QoS parameters for any class causes traffic disruption to all classes. The following table lists the changes in the QoS system class and the conditions that trigger a system reboot. 
+* Cisco UCS 6300 Series Fabric Interconnect uses a shared buffer for all system classes. 
+* Multicast optimization is not supported. 
+* Multicast is not supported on any no-drop QoS class.
+* When you change the QoS parameters for any class causes traffic disruption to all classes. The following table lists the changes in the QoS system class and the conditions that trigger a system reboot. 
 
 QoS System class status  |  Condition  |  FI Reboot Status   
 ---|---|---  
 Enabled  |  Change between drop and no drop  |  Yes   
 No-drop  |  Change between enable and disable  |  Yes   
 Enable and no-drop  |  Change in MTU size  |  Yes   
-  * The subordinate FI reboots first as a result of the change in the QoS system class. The primary FI reboots only after you acknowledge it in Pending Activities. 
-
+* The subordinate FI reboots first as a result of the change in the QoS system class. The primary FI reboots only after you acknowledge it in Pending Activities. 
 
 ###  Guidelines and Limitations for Quality of Service on Cisco UCS Mini
 
-  * Cisco UCS Mini uses a shared buffer for all system classes. 
-
-  * The bronze class shares the buffer with SPAN. We recommend using either SPAN or the bronze class. 
-
-  * Multicast optimization is not supported. 
-
-  * Multicast is not supported on any no-drop QoS class.
-
-  * Changing the QoS parameters for any class causes traffic disruption to all classes. 
-
-  * When mixing Ethernet and FC or FCoE traffic, the bandwidth distribution is not equal. 
-
-  * Multiple streams of traffic from the same class may not be distributed equally. 
-
-  * Use the same CoS values for all no-drop policies to avoid any FC or FCoE performance issues. 
-
-  * Only the platinum and gold classes support no-drop policies. 
-
+* Cisco UCS Mini uses a shared buffer for all system classes. 
+* The bronze class shares the buffer with SPAN. We recommend using either SPAN or the bronze class. 
+* Multicast optimization is not supported. 
+* Multicast is not supported on any no-drop QoS class.
+* Changing the QoS parameters for any class causes traffic disruption to all classes. 
+* When mixing Ethernet and FC or FCoE traffic, the bandwidth distribution is not equal. 
+* Multiple streams of traffic from the same class may not be distributed equally. 
+* Use the same CoS values for all no-drop policies to avoid any FC or FCoE performance issues. 
+* Only the platinum and gold classes support no-drop policies.
 
 ---
 
@@ -3159,7 +2982,7 @@ Cisco UCS Manager does not automatically create a VM-FEX port profile with the c
 
 You can select VLAN groups in addition to any individual VLAN while creating a vNIC template.
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -3182,21 +3005,21 @@ If your server has two Emulex or QLogic NICs (Cisco UCS CNA M71KR-E or Cisco UCS
 **Step 4** |  UCS-A/ # org vnic-templ set descr primaryinredundancypair .  |  Sets the template as the Primary vNIC template.   
 **Step 5** |  UCS-A/ # org vnic-templ set redundancy-type  primary .  |  Sets the redundancy template type as the Primary vNIC template.  Following are descriptions of the Redundancy Types:  Primary—Creates configurations that can be shared with the Secondary vNIC template. Any shared changes on the Primary vNIC template are automatically synchronized to the Secondary vNIC template.  Secondary — All shared configurations are inherited from the Primary template.  No Redundancy— Legacy vNIC template behavior.  Following is a list of shared configurations: 
 
-  * Network Control Policy
-  * QoS Policy 
-  * Stats Threshold Policy 
-  * Template Type
-  * Connection Policies
-  * VLANS
-  * MTU
+* Network Control Policy
+* QoS Policy 
+* Stats Threshold Policy 
+* Template Type
+* Connection Policies
+* VLANS
+* MTU
 
 Following is a list of non-shared configurations: 
 
-  * Fabric ID
-  * CDN Source
-  * MAC Pool 
-  * Description
-  * Pin Group Policy
+* Fabric ID
+* CDN Source
+* MAC Pool 
+* Description
+* Pin Group Policy
 
   
 **Step 6** |  UCS-A/ # org vnic-templ exit .  |  Exits creating the redundancy template pairing.  |  **Note** |  Ensure to commit the transaction after linking the Primary vNIC template to a peer Secondary vNIC template to create the redundancy pair.   
@@ -3212,8 +3035,7 @@ Following is a list of non-shared configurations:
 #### Example
 
 The following example configures a vNIC redundancy template pair and commits the transaction: 
-    
-    
+[code] 
     UCS-A /org* # **create vnic-template vnic-primary**
     UCS-A /org/vnic-templ* # **set type updating-template**
     UCS-A /org/vnic-templ* # **set fabric a**
@@ -3228,6 +3050,7 @@ The following example configures a vNIC redundancy template pair and commits the
     UCS-A /org/vnic-templ* # **commit-buffer**
     UCS-A /org/vnic-templ # 
     
+[/code]
 
 #### What to do next
 
@@ -3248,12 +3071,12 @@ You can undo the vNIC template pair by changing the Peer Redundancy Template so 
 #### Example
 
 The following example shows how to undo a template pairing: 
-    
-    
+[code] 
     UCS-A /org # **scope vnic-templ template1**
     UCS-A /org/vnic-templ # **set redundancy-type no-redundancy**
     UCS-A /org/vnic-templ* # commit buffer
     
+[/code]
 
 ### Configuring a vNIC Template
 
@@ -3264,15 +3087,15 @@ The following example shows how to undo a template pairing:
 **Step 1** |  UCS-A# scope org org-name |  Enters the organization mode for the specified organization. To enter the root organization mode, enter / as the org-name .   
 **Step 2** |  UCS-A /org # create vnic-templ vnic-templ-name [eth-if vlan-name] [fabric {a | b}] [target [adapter | vm]]  |  Creates a vNIC template and enters organization vNIC template mode.  The target you choose determines whether or not Cisco UCS Manager automatically creates a VM-FEX port profile with the appropriate settings for the vNIC template. This can be one of the following: 
 
-  * Adapter—The vNICs apply to all adapters. No VM-FEX port profile is created if you choose this option. 
-  * VM—The vNICs apply to all virtual machines. A VM-FEX port profile is created if you choose this option. 
+* Adapter—The vNICs apply to all adapters. No VM-FEX port profile is created if you choose this option. 
+* VM—The vNICs apply to all virtual machines. A VM-FEX port profile is created if you choose this option. 
 
   
 **Step 3** |  (Optional) UCS-A /org/vnic-templ # set descr description | (Optional)  Provides a description for the vNIC template.   
 **Step 4** |  (Optional) UCS-A /org/vnic-templ # set fabric {a | a-b | b | b-a}  | (Optional)  Specifies the fabric to use for the vNIC. If you did not specify the fabric when creating the vNIC template in Step 2, you have the option to specify it with this command.  If you want this vNIC to be able to access the second fabric interconnect if the default one is unavailable, choose a-b (A is the primary) or b-a (B is the primary) .  |  **Note** |  Do not enable fabric failover for the vNIC under the following circumstances: 
 
-  * If the Cisco UCS domain is running in Ethernet Switch Mode. vNIC fabric failover is not supported in that mode. If all Ethernet uplinks on one fabric interconnect fail, the vNICs do not fail over to the other. 
-  * If you plan to associate this vNIC to a server with an adapter that does not support fabric failover, such as the Cisco UCS 82598KR-CI 10-Gigabit Ethernet Adapter. If you do so, Cisco UCS Manager generates a configuration fault when you associate the service profile with the server. 
+* If the Cisco UCS domain is running in Ethernet Switch Mode. vNIC fabric failover is not supported in that mode. If all Ethernet uplinks on one fabric interconnect fail, the vNICs do not fail over to the other. 
+* If you plan to associate this vNIC to a server with an adapter that does not support fabric failover, such as the Cisco UCS 82598KR-CI 10-Gigabit Ethernet Adapter. If you do so, Cisco UCS Manager generates a configuration fault when you associate the service profile with the server. 
 
   
 ---|---  
@@ -3289,8 +3112,7 @@ The following example shows how to undo a template pairing:
 #### Example
 
 The following example configures a vNIC template and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope org /**
     UCS-A /org* # **create vnic template VnicTempFoo**
     UCS-A /org/vnic-templ* # **set descr "This is a vNIC template example."**
@@ -3305,6 +3127,7 @@ The following example configures a vNIC template and commits the transaction:
     UCS-A /org/vnic-templ* # **commit-buffer**
     UCS-A /org/vnic-templ # 
     
+[/code]
 
 ### Deleting a vNIC Template
 
@@ -3319,13 +3142,13 @@ The following example configures a vNIC template and commits the transaction:
 #### Example
 
 The following example deletes the vNIC template named VnicTemp42 and commits the transaction: 
-    
-    
+[code] 
     UCS-A# **scope org /**
     UCS-A /org # **delete vnic template VnicTemp42**
     UCS-A /org* # **commit-buffer**
     UCS-A /org # 
     
+[/code]
 
 ---
 
@@ -3337,7 +3160,7 @@ Cisco UCS uses LAN pin groups to pin Ethernet traffic from a vNIC on a server to
 
 To configure pinning for a server, you must include the LAN pin group in a vNIC policy. The vNIC policy is then included in the service profile assigned to that server. All traffic from the vNIC travels through the I/O module to the specified uplink Ethernet port. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *

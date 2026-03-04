@@ -8,13 +8,11 @@
 | **HTML Title** | Cisco UCS Manager Storage Management Guide, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_ucsm_gui_storage_management_guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:10:59 |
+| **Fetched on** | 2026-03-04 12:47:56 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3.html
-
-![Clear Contents of Search](/etc/designs/cdc/fw/i/ic_clear_gray.png)
 
 ---
 
@@ -24,14 +22,10 @@
   
 This guide is intended primarily for data center administrators with responsibilities and expertise in one or more of the following: 
 
-  * Server administration 
-
-  * Storage administration 
-
-  * Network administration 
-
-  * Network security 
-
+* Server administration 
+* Storage administration 
+* Network administration 
+* Network security
 
 ---
 
@@ -51,13 +45,13 @@ Table 3. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b)
 ---|---|---  
 Support for Cisco UCS Fabric Interconnects 9108 100G |  Cisco UCS Manager now includes support for Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct).  | 
 
-  * [Cisco UCS Fabric Infrastructure Portfolio](m_overview.html#concept_pmw_z1l_3jb)
-  * [Link-Level Flow Control](m_overview.html#concept_7D5436A5ECF144B787687A2A7CBF10A9)
-  * [Cisco UCS Building Blocks and Connectivity](m_overview.html#concept_uxd_4pl_3jb)
-  * [Overview of Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](m_overview.html#overview-of-cisco-ucs-x-direct)
-  * [Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) Architecture](m_overview.html#cisco-ucs-x-direct-architecture)
-  * [Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](m_overview.html#port-breakout-functionality-on-cisco-ucs-x-direct)
-  * [Configure the Primary Fabric Interconnect Using GUI](m_initial_configuration.html#task_2382994894256504235)
+* [Cisco UCS Fabric Infrastructure Portfolio](m_overview.html#concept_pmw_z1l_3jb)
+* [Link-Level Flow Control](m_overview.html#concept_7D5436A5ECF144B787687A2A7CBF10A9)
+* [Cisco UCS Building Blocks and Connectivity](m_overview.html#concept_uxd_4pl_3jb)
+* [Overview of Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](m_overview.html#overview-of-cisco-ucs-x-direct)
+* [Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) Architecture](m_overview.html#cisco-ucs-x-direct-architecture)
+* [Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](m_overview.html#port-breakout-functionality-on-cisco-ucs-x-direct)
+* [Configure the Primary Fabric Interconnect Using GUI](m_initial_configuration.html#task_2382994894256504235)
 
   
 Table 4. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(2c) Feature |  Description |  Where Documented  
@@ -72,28 +66,17 @@ Deprecated support for Cisco UCS 6200 series Fabric Interconnect. |  Cisco UCS M
   
 This guide describes how to configure the following storage management tasks: 
 
-  * Ports and Port Channels 
-
-  * Named VSANs 
-
-  * SAN Pin Groups 
-
-  * SAN Uplinks 
-
-  * Pools 
-
-  * FC Identity Assignment 
-
-  * Storage-Related Policies 
-
-  * Storage Profiles 
-
-  * FlexFlash SD Card Support 
-
-  * Direct Attached Storage 
-
-  * Storage Inventory 
-
+* Ports and Port Channels 
+* Named VSANs 
+* SAN Pin Groups 
+* SAN Uplinks 
+* Pools 
+* FC Identity Assignment 
+* Storage-Related Policies 
+* Storage Profiles 
+* FlexFlash SD Card Support 
+* Direct Attached Storage 
+* Storage Inventory
 
 ---
 
@@ -103,7 +86,7 @@ This guide describes how to configure the following storage management tasks:
 
 The port mode determines whether a unified port on the fabric interconnect is configured to carry Ethernet or Fibre Channel traffic. You configure the port mode in Cisco UCS Manager. However, the fabric interconnect does not automatically discover the port mode. 
 
-Changing the port mode deletes the existing port configuration and replaces it with a new logical port. Any objects associated with that port configuration, such as VLANs and VSANS, are also removed. There is no restriction on the number of times you can change the port mode for a unified port. 
+Changing the port mode deletes the existing port configuration and replaces it with a new logical port. Any objects associated with that port configuration, such as VLANs and VSANS, are also removed. There is no restriction on the number of times you can change the port mode for a unified port.
 
 ---
 
@@ -115,40 +98,28 @@ Fibre Channel zoning allows you to partition the Fibre Channel fabric into one o
 
 The access and data traffic control provided by zoning does the following:
 
-  * Enhances SAN network security
-
-  * Helps prevent data loss or corruption
-
-  * Reduces performance issues
-
+* Enhances SAN network security
+* Helps prevent data loss or corruption
+* Reduces performance issues
 
 ### Information About Zones
 
 A zone consists of multiple zone members and has the following characteristics:
 
-  * Members in a zone can access each other; members in different zones cannot access each other.
-
-  * Zones can vary in size.
-
-  * Devices can belong to more than one zone.
-
-  * A physical fabric can have a maximum of 8,000 zones.
-
+* Members in a zone can access each other; members in different zones cannot access each other.
+* Zones can vary in size.
+* Devices can belong to more than one zone.
+* A physical fabric can have a maximum of 8,000 zones.
 
 ### Information About Zone Sets 
 
 Each zone set consists of one or more zones. You can use zone sets to enforce access control within the Fibre Channel fabric. In addition, zone sets provide you with the following advantages: 
 
-  * Only one zone set can be active at any time. 
-
-  * All zones in a zone set can be activated or deactivated as a single entity across all switches in the fabric. 
-
-  * Changes to a zone set are not applied until the zone set has been activated. If you make changes to the active zone set, you must reactivate that zone set to apply the changes. 
-
-  * A zone can be a member of more than one zone set. 
-
-  * A switch in a zone can have a maximum of 500 zone sets. 
-
+* Only one zone set can be active at any time. 
+* All zones in a zone set can be activated or deactivated as a single entity across all switches in the fabric. 
+* Changes to a zone set are not applied until the zone set has been activated. If you make changes to the active zone set, you must reactivate that zone set to apply the changes. 
+* A zone can be a member of more than one zone set. 
+* A switch in a zone can have a maximum of 500 zone sets.
 
 ---
 
@@ -172,14 +143,10 @@ For FIP-capable, converged network adapters, such as the Cisco UCS CNA M72KR-Q a
 
 In the following sample configuration, a service profile with a vNIC and vHBA mapped to fabric A is associated with a server that has FIP capable, converged network adapters: 
 
-  * The vNIC is configured to use VLAN 10.
-
-  * VLAN 10 is also designated as the native VLAN for the vNIC.
-
-  * The vHBA is configured to use VSAN 2.
-
-  * Therefore, VSAN 2 cannot be configured with VLAN 10 as the FCoE VLAN ID. VSAN 2 can be mapped to any other VLAN configured on fabric A. 
-
+* The vNIC is configured to use VLAN 10.
+* VLAN 10 is also designated as the native VLAN for the vNIC.
+* The vHBA is configured to use VSAN 2.
+* Therefore, VSAN 2 cannot be configured with VLAN 10 as the FCoE VLAN ID. VSAN 2 can be mapped to any other VLAN configured on fabric A.
 
 ---
 
@@ -187,7 +154,7 @@ In the following sample configuration, a service profile with a vNIC and vHBA ma
 
 ## SAN Pin Groups
 
-Cisco UCS uses SAN pin groups to pin Fibre Channel traffic from a vHBA on a server to an uplink Fibre Channel port on the fabric interconnect. You can use this pinning to manage the distribution of traffic from the servers.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+Cisco UCS uses SAN pin groups to pin Fibre Channel traffic from a vHBA on a server to an uplink Fibre Channel port on the fabric interconnect. You can use this pinning to manage the distribution of traffic from the servers.    
 **Note** | 
 
 * * *
@@ -202,7 +169,7 @@ To configure pinning for a server, you must include the SAN pin group in a vHBA 
 
 You can assign the same pin group to multiple vHBA policies. As a result, you do not need to manually pin the traffic for each vHBA. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Important** | 
 
 * * *
@@ -228,14 +195,14 @@ In a system with two fabric interconnects, you can associate the pin group with 
 **Step 4** |  Enter a unique name and description for the pin group.   
 **Step 5** |  To pin traffic for fabric interconnect A, do the following in the Targets area: 
 
-  1. Check the Fabric A check box. 
-  2. Click the drop-down arrow on the Interface field and navigate through the tree-style browser to select the uplink Fibre Channel port you want to associate with the pin group. 
+1. Check the Fabric A check box. 
+2. Click the drop-down arrow on the Interface field and navigate through the tree-style browser to select the uplink Fibre Channel port you want to associate with the pin group. 
 
   
 **Step 6** |  To pin traffic for fabric interconnect B, do the following in the Targets area: 
 
-  1. Check the Fabric B check box. 
-  2. Click the drop-down arrow on the Interface field and navigate through the tree-style browser to select the uplink Fibre Channel port you want to associate with the pin group. 
+1. Check the Fabric B check box. 
+2. Click the drop-down arrow on the Interface field and navigate through the tree-style browser to select the uplink Fibre Channel port you want to associate with the pin group. 
 
   
 **Step 7** |  Click OK.   
@@ -276,12 +243,9 @@ Each server has a unique WWPN for each port of the HBA. For a SAN switch, the WW
 
 The FC Identity Tab in Cisco UCS Manager displays the FC Identity of the devices in the Cisco UCS domain SAN cloud, including the: 
 
-  * Selected device WWNN or WWPN identifier. 
-
-  * Whether the identifier is assigned ti a vHBA. 
-
-  * vHBA to which the identifier is assigned. 
-
+* Selected device WWNN or WWPN identifier. 
+* Whether the identifier is assigned ti a vHBA. 
+* vHBA to which the identifier is assigned.
 
 ---
 
@@ -291,14 +255,11 @@ The FC Identity Tab in Cisco UCS Manager displays the FC Identity of the devices
 
 A World Wide Name (WWN) pool is a collection of WWNs for use by the Fibre Channel vHBAs in a Cisco UCS domain. You create separate pools for the following: 
 
-  * WW node names assigned to the vHBA 
+* WW node names assigned to the vHBA 
+* WW port names assigned to the vHBA 
+* Both WW node names and WW port names 
 
-  * WW port names assigned to the vHBA 
-
-  * Both WW node names and WW port names 
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Important** | 
 
 * * *
@@ -327,14 +288,12 @@ A WWxN pool is a WWN pool that contains both WW node names and WW port names. Yo
 
 You can use a WWxN pool whenever you select a WWNN or WWPN pool. The WWxN pool must be created before it can be assigned. 
 
-  * For WWNN pools, the WWxN pool is displayed as an option in the WWNN Assignment drop-down list. 
-
-  * For WWPN pools, choose Derived in the WWPN Assignment drop-down list. 
-
+* For WWNN pools, the WWxN pool is displayed as an option in the WWNN Assignment drop-down list. 
+* For WWPN pools, choose Derived in the WWPN Assignment drop-down list. 
 
 ### Creating a WWNN Pool
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Important** | 
 
 * * *
@@ -360,8 +319,8 @@ Name field |  The name of the World Wide Node Name pool.  This name can be betwe
 Description field |  A description of the pool. Enter up to 256 characters. You can use any characters or spaces except ` (accent mark), \ (backslash), ^ (carat), " (double quote), = (equal sign), > (greater than), < (less than), or ' (single quote).   
 Assignment Order field |  This can be one of the following: 
 
-  * Default—Cisco UCS Manager selects a random identity from the pool. 
-  * Sequential—Cisco UCS Manager selects the lowest available identity from the pool. 
+* Default—Cisco UCS Manager selects a random identity from the pool. 
+* Sequential—Cisco UCS Manager selects the lowest available identity from the pool. 
 
   
 **Step 6** |  Click Next.   
@@ -381,7 +340,7 @@ Include the WWNN pool in a service profile and template.
 
 ### Adding a WWN Block to a WWNN Pool
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Important** | 
 
 * * *
@@ -413,12 +372,9 @@ Size field  |  Specify the number of WWNs to include in the block. This number m
 
 If you delete an address block from a pool, Cisco UCS Manager does not reallocate any addresses in that block that were assigned to vNICs or vHBAs. All assigned addresses from a deleted block remain with the vNIC or vHBA to which they are assigned until one of the following occurs: 
 
-  * The associated service profiles are deleted. 
-
-  * The vNIC or vHBA to which the address is assigned is deleted. 
-
-  * The vNIC or vHBA is assigned to a different pool. 
-
+* The associated service profiles are deleted. 
+* The vNIC or vHBA to which the address is assigned is deleted. 
+* The vNIC or vHBA is assigned to a different pool. 
 
 #### Procedure
 
@@ -434,7 +390,7 @@ If you delete an address block from a pool, Cisco UCS Manager does not reallocat
 
 ### Adding a WWNN Initiator to a WWNN Pool
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Important** | 
 
 * * *
@@ -484,12 +440,9 @@ Description field  |  A user-defined description of the WWNN initiator. Enter up
 
 If you delete a pool, Cisco UCS Manager does not reallocate any addresses from that pool that were assigned to vNICs or vHBAs. All assigned addresses from a deleted pool remain with the vNIC or vHBA to which they are assigned until one of the following occurs: 
 
-  * The associated service profiles are deleted. 
-
-  * The vNIC or vHBA to which the address is assigned is deleted. 
-
-  * The vNIC or vHBA is assigned to a different pool. 
-
+* The associated service profiles are deleted. 
+* The vNIC or vHBA to which the address is assigned is deleted. 
+* The vNIC or vHBA is assigned to a different pool. 
 
 #### Procedure
 
@@ -512,7 +465,7 @@ If you delete a pool, Cisco UCS Manager does not reallocate any addresses from t
 
 This template is a policy that defines how a vHBA on a server connects to the SAN. It is also referred to as a vHBA SAN connectivity template. 
 
-You must include this policy in a service profile for it to take effect. 
+You must include this policy in a service profile for it to take effect.
 
 ---
 
@@ -532,20 +485,13 @@ Guidelines
 
 To ensure secure and efficient management of Self-Encrypting Drives (SEDs) in Cisco UCS Manager, remember these guidelines:
 
-  * The deletion of secured Logical Unit Numbers (LUNs) is only possible using a scrub policy.
-
-  * Reconfiguration and deletion of secured LUNs are not allowed on a disassociated server.
-
-  * Data sanitization is not permitted until security is enabled.
-
-  * If incorrect credentials are provided, the Finite State Machine (FSM) completes without any error, but the LUNs become inoperable, and the drives get locked. 
-
-  * A power cycle of the server is triggered if any changes are made to the security settings in the storage profile due to the Enterprise Key Management System (EKMS). 
-
-  * When secured drives are moved between setups, the first association should occur only with security details and no LUN configuration to unlock the drives. 
-
-  * Changes to login details do not trigger a change. A fresh storage profile association or modification along with other properties, is required. 
-
+* The deletion of secured Logical Unit Numbers (LUNs) is only possible using a scrub policy.
+* Reconfiguration and deletion of secured LUNs are not allowed on a disassociated server.
+* Data sanitization is not permitted until security is enabled.
+* If incorrect credentials are provided, the Finite State Machine (FSM) completes without any error, but the LUNs become inoperable, and the drives get locked. 
+* A power cycle of the server is triggered if any changes are made to the security settings in the storage profile due to the Enterprise Key Management System (EKMS). 
+* When secured drives are moved between setups, the first association should occur only with security details and no LUN configuration to unlock the drives. 
+* Changes to login details do not trigger a change. A fresh storage profile association or modification along with other properties, is required.
 
 ---
 
@@ -555,14 +501,11 @@ To ensure secure and efficient management of Self-Encrypting Drives (SEDs) in Ci
 
 To allow flexibility in defining the number of storage disks, roles and usage of these disks, and other storage parameters, you can create and use storage profiles. A storage profile encapsulates the storage requirements for one or more service profiles. LUNs configured in a storage profile can be used as boot LUNs or data LUNs, and can be dedicated to a specific server. You can also specify a local LUN as a boot device. However, LUN resizing is not supported. The introduction of storage profiles allows you to do the following: 
 
-  * Configure multiple virtual drives and select the physical drives that are used by a virtual drive. You can also configure the storage capacity of a virtual drive. 
+* Configure multiple virtual drives and select the physical drives that are used by a virtual drive. You can also configure the storage capacity of a virtual drive. 
+* Configure the number, type and role of disks in a disk group. 
+* Associate a storage profile with a service profile. 
 
-  * Configure the number, type and role of disks in a disk group. 
-
-  * Associate a storage profile with a service profile. 
-
-
-You can create a storage profile both at an org level and at a service-profile level. A service profile can have a dedicated storage profile as well as a storage profile at an org level. 
+You can create a storage profile both at an org level and at a service-profile level. A service profile can have a dedicated storage profile as well as a storage profile at an org level.
 
 ---
 
@@ -572,7 +515,7 @@ You can create a storage profile both at an org level and at a service-profile l
 
 The mini storage slot is a new slot that is present on the Cisco UCS M5 blade and rack servers. This slot can be empty, populated with an SD storage module, or populated with an M.2 SATA module. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -589,7 +532,7 @@ The mini M.2 SATA module consists of two SATA slots. The PCH controller present 
 
 Starting with 4.0(4a), Cisco UCS Manager supports Cisco boot optimized M.2 Raid controller based off Marvell 88SE92xx PCIe to SATA 6Gb/s controller (UCS-M2-HWRAID) for mini storage. 
 
-You can use Cisco UCS Manager to inventory and manage the mini storage modules. 
+You can use Cisco UCS Manager to inventory and manage the mini storage modules.
 
 ---
 
@@ -603,7 +546,7 @@ The SD cards are hosted by the Cisco Flexible Flash storage controller, a PCI-ba
 
 You can populate one or both the SD card slots that are provided. If two SD cards are populated, you can use them in a mirrored mode. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -616,7 +559,7 @@ Do not mix different capacity cards in the same server.
   
 The SD cards can be used to store operating system boot images or other information. The following figure illustrates the SD card slots. 
 
-Figure 1. SD Card Slots  ![](/c/dam/en/us/td/i/300001-400000/300001-310000/309001-310000/309589.jpg)
+Figure 1. SD Card Slots 
 
 FlexFlash is disabled by default. You can enable FlexFlash in a local disk policy used in a service profile. When FlexFlash is enabled in a local disk policy, and the server is capable of supporting SD cards, the FlexFlash controller is enabled during service profile association. If a server is not capable of supporting SD cards or has an older CIMC version, a config failure message is displayed. 
 
@@ -626,14 +569,12 @@ The FlexFlash controller supports RAID-1 for dual SD cards. The FlexFlash scrub 
 
 You can configure new SD cards in a RAID pair and format them using one of the following methods:
 
-  * Format the SD cards. Formatting the SD Cards provides detailed information.
-
-  * For an associated server, create a FlexFlash scrub policy and disassociate the service profile from the server. For an unassociated server, create a FlexFlash scrub policy and reacknowledge the server after modifying the default scrub policy. 
+* Format the SD cards. Formatting the SD Cards provides detailed information.
+* For an associated server, create a FlexFlash scrub policy and disassociate the service profile from the server. For an unassociated server, create a FlexFlash scrub policy and reacknowledge the server after modifying the default scrub policy. 
 
 The Scrub Policy Settings section in the Cisco UCS Manager Server Management Guide provides more details about the usage of the scrub policy. 
 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -652,39 +593,25 @@ The FlexFlash controller firmware is bundled as part of the CIMC image. When you
 
 ### Limitations for the Cisco Flexible Flash Storage Controller: 
 
-  * The Cisco Flexible Flash storage controller only supports 16 GB, 32 GB, and 64 GB SD cards. 
-
-  * We do not recommend using an SD card from a rack server in a blade server, or using an SD card from a blade server in a rack server. Switching SD cards between server types might result in data loss from the SD card. 
-
-  * Some Cisco UCS C-Series rack-mount servers have SD cards with four partitions: HV, HUU, SCU, and Drivers. Only the HV partition is visible in Cisco UCS Manager. You can migrate a four-partition SD card to a single HV partition card with a FlexFlash scrub policy. 
-
-  * The FlexFlash controller does not support RAID-1 sync (mirror rebuild). If the SD cards are in a degraded RAID state, or if any metadata errors are reported by the controller, you must run the FlexFlash scrub policy to pair the cards for RAID. For more information about the FlexFlash scrub policy, see [Server-Related Policies](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/3-1/b_Cisco_UCS_Manager_Server_Mgmt_Guide_3_1/server_related_policies.html). The following conditions might result in degraded RAID or metadata errors: 
-
-  * Inserting a new or used SD card in one slot, when the server already has an SD card populated in the second slot. 
-
-  * Inserting two SD cards from different servers. 
-
-  * The server firmware version must be at 2.2(1a) or higher. 
-
+* The Cisco Flexible Flash storage controller only supports 16 GB, 32 GB, and 64 GB SD cards. 
+* We do not recommend using an SD card from a rack server in a blade server, or using an SD card from a blade server in a rack server. Switching SD cards between server types might result in data loss from the SD card. 
+* Some Cisco UCS C-Series rack-mount servers have SD cards with four partitions: HV, HUU, SCU, and Drivers. Only the HV partition is visible in Cisco UCS Manager. You can migrate a four-partition SD card to a single HV partition card with a FlexFlash scrub policy. 
+* The FlexFlash controller does not support RAID-1 sync (mirror rebuild). If the SD cards are in a degraded RAID state, or if any metadata errors are reported by the controller, you must run the FlexFlash scrub policy to pair the cards for RAID. For more information about the FlexFlash scrub policy, see [Server-Related Policies](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/3-1/b_Cisco_UCS_Manager_Server_Mgmt_Guide_3_1/server_related_policies.html). The following conditions might result in degraded RAID or metadata errors: 
+* Inserting a new or used SD card in one slot, when the server already has an SD card populated in the second slot. 
+* Inserting two SD cards from different servers. 
+* The server firmware version must be at 2.2(1a) or higher. 
 
 ### FlexFlash FX3S Support 
 
 Beginning with Release 2.2(3), Cisco UCS Manager allows additional FlexFlash support with the FX3S controller. The FX3S controller is present on the following servers: 
 
-  * Cisco UCS M5 blade server 
-
-  * Cisco UCS M5 rack server 
-
-  * Cisco UCS M5  rack server 
-
-  * C480 M5 rack server 
-
-  * C480 M5 ML blade server 
-
-  * B480 M5 blade server 
-
-  * Cisco UCS C125 M5 Server
-
+* Cisco UCS M5 blade server 
+* Cisco UCS M5 rack server 
+* Cisco UCS M5  rack server 
+* C480 M5 rack server 
+* C480 M5 ML blade server 
+* B480 M5 blade server 
+* Cisco UCS C125 M5 Server
 
 FlexFlash operations with the FX3S control are similar to those with the Cisco Flexible Flash storage controller. FlexFlash is disabled by default, and is enabled using a local disk policy. You can also reset the controller, format the SD cards, and enable automatic synchronization of your paired SD cards. 
 
@@ -692,14 +619,10 @@ The SD cards for the FX3S controller contain a single partition called Hyperviso
 
 #### Limitations for the Cisco FX3S Controller: 
 
-  * The FX3S controller supports only 32 GB and 64 GB SD cards. 16 GB cards are not supported. 
-
-  * The FX3S controller supports 128 GB cards on M5 blades and above.
-
-  * We do not recommend using an SD card from a rack server in a blade server, or using an SD card from a blade server in a rack server. Switching SD cards between server types might result in data loss from the SD card. 
-
-  * The server firmware version must be at 2.2(3a) or higher. 
-
+* The FX3S controller supports only 32 GB and 64 GB SD cards. 16 GB cards are not supported. 
+* The FX3S controller supports 128 GB cards on M5 blades and above.
+* We do not recommend using an SD card from a rack server in a blade server, or using an SD card from a blade server in a rack server. Switching SD cards between server types might result in data loss from the SD card. 
+* The server firmware version must be at 2.2(3a) or higher. 
 
 ### Enabling FlexFlash SD Card Support
 
@@ -716,8 +639,8 @@ The SD cards for the FX3S controller contain a single partition called Hyperviso
 **Step 6** |  In the FlexFlash State field, click the Enable radio button.   
 **Step 7** |  In the FlexFlash Removable State field, select the removable state. Click the Yes option if you need to define the Flex Flash SD card as removable. Check your hypervisor requirements for the required removable state setting. 
 
-  * No Change(default) - Use this option if the hypervisor does not require a preset state for the SD card. 
-  * No \- Use this option if the hypervisor requires a non-removable state for the SD card. 
+* No Change(default) - Use this option if the hypervisor does not require a preset state for the SD card. 
+* No \- Use this option if the hypervisor requires a non-removable state for the SD card. 
 
   
 **Step 8** |  Click Save Changes.   
@@ -809,7 +732,7 @@ Cisco UCS Manager allows you to have DAS with without the need for a SAN switch 
 
 The DAS configuration described assumes that the physical cables are already connected between the storage array ports and the Fabric Interconnects. 
 
-Cisco UCS 6400 Series Fabric Interconnects do not support 8 Gbps direct-attached FC connectivity (FC uplink ports or FC storage ports) without fill-pattern set to IDLE. 
+Cisco UCS 6400 Series Fabric Interconnects do not support 8 Gbps direct-attached FC connectivity (FC uplink ports or FC storage ports) without fill-pattern set to IDLE.
 
 ---
 
@@ -821,14 +744,11 @@ The local disk locator LED is located on the slot where you insert the local dis
 
 You can successfully turn on or off the local disk locator LED when: 
 
-  * The server is powered on. UCS Manager generates an error if you attempt to turn the locator LED on or off when the server is powered off. 
+* The server is powered on. UCS Manager generates an error if you attempt to turn the locator LED on or off when the server is powered off. 
+* The CIMC version is UCS Manager 3.1 or higher. 
+* The RAID controller supports the out-of-band (OOB) storage interface. 
 
-  * The CIMC version is UCS Manager 3.1 or higher. 
-
-  * The RAID controller supports the out-of-band (OOB) storage interface. 
-
-
-When Intel Volume Management Device (VMD) for NVMe is enabled, you can also configure blinking patterns for the LEDs on NVMe-managed devices to show drive status. VMD-enabled drives identified by a failure ID blink pattern can be hot-plugged without a system shutdown. 
+When Intel Volume Management Device (VMD) for NVMe is enabled, you can also configure blinking patterns for the LEDs on NVMe-managed devices to show drive status. VMD-enabled drives identified by a failure ID blink pattern can be hot-plugged without a system shutdown.
 
 ---
 
@@ -838,7 +758,7 @@ When Intel Volume Management Device (VMD) for NVMe is enabled, you can also conf
 
 Beginning from release 4.2(2a), Drive Diagnostics feature supports running diagnostics on HDD/SSD and SAS/SATA drive types. This feature allows you to determine the device health by obtaining information from the device to determine usage, Operability, etc. 
 
-Cisco UCS Manager does not support on demand diagnostics. This feature checks the drive status automatically and provides a view only status. In case the self test fails, Cisco UCS Manager also raises a major fault. 
+Cisco UCS Manager does not support on demand diagnostics. This feature checks the drive status automatically and provides a view only status. In case the self test fails, Cisco UCS Manager also raises a major fault.
 
 ---
 
@@ -855,39 +775,38 @@ Table 1. Cisco UCS S3260 System Features Feature  |  Description
 Chassis  |  Four rack unit (4RU) chassis   
 Processors  | 
 
-  * Cisco UCS S3260 M5 server nodes: Two Intel Skylake 2S-EP processors inside each server node. 
+* Cisco UCS S3260 M5 server nodes: Two Intel Skylake 2S-EP processors inside each server node. 
 
   
 Memory  |  Up to 16 DIMMs inside each server node.   
 Multi-bit error protection  |  This system supports multi-bit error protection.   
 Storage  |  The system has the following storage options: 
 
-  * Up to 56 top-loading 3.5-inch drives 
-  * Up to four 3.5-inch, rear-loading drives in the optional drive expander module 
-  * Up to four 2.5-inch, rear-loading SAS solid state drives (SSDs) 
-  * Two 7 mm NVMe drive inside the server node  |  **Note** |  This is applicable for S3260 M5 servers only.   
+* Up to 56 top-loading 3.5-inch drives 
+* Up to four 3.5-inch, rear-loading drives in the optional drive expander module 
+* Up to four 2.5-inch, rear-loading SAS solid state drives (SSDs) 
+* Two 7 mm NVMe drive inside the server node  |  **Note** |  This is applicable for S3260 M5 servers only.   
 ---|---  
-  * Two 15 mm NVMe drive supported for IO Expander 
-
+* Two 15 mm NVMe drive supported for IO Expander 
 
   
 Disk Management  |  The system supports up to two storage controllers: 
 
-  * One dedicated mezzanine-style socket for a Cisco storage controller card inside each server node 
+* One dedicated mezzanine-style socket for a Cisco storage controller card inside each server node 
 
   
 RAID Backup  |  The supercap power module (SCPM) mounts to the RAID controller card.   
 PCIe I/O  |  The optional I/O expander provides two 8x Gen 3 PCIe expansion slots. Release 3.2(3) and later supports the following for S3260 M5 servers:
 
-  * Intel X550 dual-port 10GBase-T 
-  * Qlogic QLE2692 dual-port 16G Fiber Channel HBA
-  * N2XX-AIPCI01 Intel X520 Dual Port 10Gb SFP+ Adapter
+* Intel X550 dual-port 10GBase-T 
+* Qlogic QLE2692 dual-port 16G Fiber Channel HBA
+* N2XX-AIPCI01 Intel X520 Dual Port 10Gb SFP+ Adapter
 
   
 Network and Management I/O  |  The system can have one or two system I/O controllers (SIOCs). These provide rear-panel management and data connectivity. 
 
-  * Two SFP+ 40 Gb ports each SIOC. 
-  * One 10/100/1000 Ethernet dedicated management port on each SIOC. 
+* Two SFP+ 40 Gb ports each SIOC. 
+* One 10/100/1000 Ethernet dedicated management port on each SIOC. 
 
 The server nodes each have one rear-panel KVM connector that can be used with a KVM cable, which provides two USB, one VGA DB-15, and one serial DB-9 connector.   
 Power  |  Two or four power supplies, 1050 W each (hot-swappable and redundant as 2+2).   
@@ -898,7 +817,7 @@ Cooling  |  Four internal fan modules that pull front-to-rear cooling, hot-swapp
 The following image shows the front panel features for the Cisco UCS S3260 system: 
 
 Figure 1. Front Panel Features   
-![](/c/dam/en/us/td/i/300001-400000/350001-360000/353001-354000/353375.eps/_jcr_content/renditions/353375.jpg)  
+  
 1  |  Operations panel  |  6  |  Temperature status LED   
 ---|---|---|---  
 2  |  System Power button/LED  |  7  |  Power supply status LED   
@@ -911,29 +830,29 @@ Figure 1. Front Panel Features
 The following image shows the rear panel features for the Cisco UCS S3260 system: 
 
 Figure 2. Front Panel Features   
-![](/c/dam/en/us/td/i/300001-400000/300001-310000/305001-306000/305363.jpg)  
+  
 Disk Slots  1  |  Server bay 1 
 
-  * (Optional) I/O expander, as shown (with Cisco UCS S3260 M5 server node only) 
-  * (Optional) server node 
-  * (Optional) drive expansion module 
+* (Optional) I/O expander, as shown (with Cisco UCS S3260 M5 server node only) 
+* (Optional) server node 
+* (Optional) drive expansion module 
 
 |  8  |  Not used at this time   
 ---|---|---|---  
 2  |  Server bay 2 
 
-  * (Optional) server node (Cisco UCS S3260 M5 shown) (Optional) drive expansion module 
+* (Optional) server node (Cisco UCS S3260 M5 shown) (Optional) drive expansion module 
 
 |  9  |  Not used at this time   
 3  |  System I/O controller (SIOC) 
 
-  * SIOC 1 is required if you have a server node in server bay 1 
-  * SIOC 2 is required if you have server node in server bay 2 
+* SIOC 1 is required if you have a server node in server bay 1 
+* SIOC 2 is required if you have server node in server bay 2 
 
 |  10  |  Solid state drive bays (up to four 2.5-inch SAS SSDs) 
 
-  * SSDs in bays 1 and 2 require a server node in server bay 1 
-  * SSDs in bays 3 and 4 require a server node in server bay 2 
+* SSDs in bays 1 and 2 require a server node in server bay 1 
+* SSDs in bays 3 and 4 require a server node in server bay 2 
 
   
 4  |  Power supplies (four, redundant as 2+2)  |  11  |  |  **Note** |  This label identifies a Cisco UCS S3260 M5 server node.   
@@ -949,27 +868,23 @@ Server Nodes
 
 The Cisco UCS S3260 system consists of one or two server nodes, each with two CPUs, DIMM memory of 128, 256, or 512 GB, and a RAID card up to 4 GB cache or a pass-through controller. The server nodes can be one of the following: 
 
-  * Cisco UCS S3260 M5 Server Node—This node might include an optional I/O expander module that attaches to the top of the server node. 
-
+* Cisco UCS S3260 M5 Server Node—This node might include an optional I/O expander module that attaches to the top of the server node. 
 
 Disk Slots 
 
 The Cisco UCS S3260 chassis has 4 rows of 14 disk slots on the HDD motherboard and 4 additional disk slots on the HDD expansion tray. The following image shows the disk arrangement for the 56 top-accessible, hot swappable 3.5-inch 6 TB or 4 TB 7200 rpm NL-SAS HDD drives. A disk slot has two SAS ports and each is connected a SAS expander in the chassis. 
 
-Figure 3. Cisco UCS S3260 Top View  ![](/c/dam/en/us/td/i/300001-400000/300001-310000/305001-306000/305448.jpg)
+Figure 3. Cisco UCS S3260 Top View 
 
 The following image shows the Cisco UCS S3260 chassis with the 4 additional disk slots on the HDD expansion tray. 
 
 Figure 4. Cisco UCS 3260 with the HDD expansion tray (Rear View)   
-![](/c/dam/en/us/td/i/300001-400000/300001-310000/305001-306000/305447.jpg)  
-
+  
 
 If you have two server nodes with two SIOCs, you will have the following functionality: 
 
-  1. The top server node works with the left SIOC (Server Slot1 with SIOC1). 
-
-  2. The bottom server works with the right SIOC (Sever Slot 2 with SIOC2). 
-
+1. The top server node works with the left SIOC (Server Slot1 with SIOC1). 
+2. The bottom server works with the right SIOC (Sever Slot 2 with SIOC2). 
 
 If you have one server node with two SIOCs, you can enable Server SIOC Connectivity functionality. Beginning with release 3.1(3), Cisco UCS S3260 system supports Server SIOC Connectivity functionality. Using this functionality, you can configure the data path through both the primary and auxiliary SIOCs when the chassis has single server and dual SIOCs set up. 
 
@@ -977,10 +892,8 @@ SAS Expanders
 
 The Cisco UCS S3260 system has two SAS expanders that run in redundant mode and connect the disks at the chassis level to storage controllers on the servers. The SAS expanders provide two paths between a storage controller, and hence enable high availability. They provide the following functionality: 
 
-  * Manage the pool of hard drives. 
-
-  * Disk zone configuration of the hard drives to storage controllers on the servers. 
-
+* Manage the pool of hard drives. 
+* Disk zone configuration of the hard drives to storage controllers on the servers. 
 
 Beginning with release 3.2(3a), Cisco UCS Manager can enable single path access to disk by configuring single DiskPort per disk slot. This ensures that the server discovers only a single device and avoid a multi-path configuration. 
 
@@ -990,7 +903,7 @@ Port range  |  Connectivity
 ---|---  
 1-56  |  Top accessible disks   
 57-60  |  Disks in the HDD expansion tray.   
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1008,11 +921,10 @@ A Cisco UCS S3260 system has the following types of storage enclosures:
 Chassis Level Storage Enclosures 
     
 
-  * HDD motherboard enclosure—The 56 dual port disk slots in the chassis comprise the HDD motherboard enclosure. 
+* HDD motherboard enclosure—The 56 dual port disk slots in the chassis comprise the HDD motherboard enclosure. 
+* HDD expansion tray—The 4 additional dual disk slots in the Cisco UCS S3260 system comprise the HDD expansion tray. 
 
-  * HDD expansion tray—The 4 additional dual disk slots in the Cisco UCS S3260 system comprise the HDD expansion tray. 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1023,18 +935,15 @@ The HDD expansion tray is a field replaceable unit (FRU). The disks will remain 
   
 ---|---  
 
-
 Server level Storage Enclosures 
     
 
 Server level storage enclosures are pre-assigned dedicated enclosures to the server. These can be one of the following: 
 
-  * Rear Boot SSD enclosure—This enclosure contains two 2.5 inch disk slots on the rear panel of the Cisco UCS S3260 system. Each server has two dedicated disk slots. These disk slots support SATA SSDs. 
+* Rear Boot SSD enclosure—This enclosure contains two 2.5 inch disk slots on the rear panel of the Cisco UCS S3260 system. Each server has two dedicated disk slots. These disk slots support SATA SSDs. 
+* Server board NVMe enclosure—This enclosure contains one PCIe NVMe controller. 
 
-  * Server board NVMe enclosure—This enclosure contains one PCIe NVMe controller. 
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+  
 **Note** | 
 
 * * *
@@ -1067,8 +976,7 @@ NVMe Controller—This controller is used by servers in the Cisco UCS S3260 syst
 
 For more details about the storage controllers supported in the various server nodes, see the related service note: 
 
-  * [Cisco UCS S3260 M5 Server Node For Cisco UCS S3260 Storage Server Service Note](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/s/hw/S3260M5/install/S3260M5.html)
-
+* [Cisco UCS S3260 M5 Server Node For Cisco UCS S3260 Storage Server Service Note](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/s/hw/S3260M5/install/S3260M5.html)
 
 ---
 
@@ -1087,7 +995,7 @@ Guide  |  Description
 [Cisco UCS Manager Server Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses the new licenses, registering Cisco UCS domain with Cisco UCS Central, power capping, server boot, server profiles, and server-related policies.   
 [Cisco UCS Manager Storage Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of storage management, such as SAN and VSAN in Cisco UCS Manager.   
 [Cisco UCS Manager Network Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of network management, such as LAN and VLAN connectivity in Cisco UCS Manager.   
-[Cisco UCS Manager System Monitoring Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of system and health monitoring, including system statistics in Cisco UCS Manager. 
+[Cisco UCS Manager System Monitoring Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) |  Discusses all aspects of system and health monitoring, including system statistics in Cisco UCS Manager.
 
 ---
 
@@ -1100,24 +1008,16 @@ Before you get started with Cisco UCS Manager initial configuration, review the 
 The Cisco UCS Manager initial configuration involves the following steps: 
 
 Figure 1. Cisco UCS Manager Initial Configuration Overview   
-![](/c/dam/en/us/td/i/300001-400000/300001-310000/305001-306000/305200.jpg)  
+  
 
-
-  1. Console Setup—This step involves launching Cisco UCS Manager using the serial console. The Fabric Interconnect runs an initial configuration wizard and assigns three IP addresses in the management and administrative subnet: one for each Fabric Interconnect and one for the virtual IP interface that defines the Cisco UCS Manager instance and enables management. For more information on this step, see Console Setup
-
-  2. Configure Administration Policies—This step involves configuration of administration policies, such as DNS Server, NTP, and Time Zone, that are necessary for proper functioning of all components. For more information on this step, see Configure Administration Policies. 
-
-  3. Configure Equipment Policies—This step involves performing chassis discovery by setting the equipment policies in Cisco UCS Manager. The Chassis Discovery Policy specifies the minimum number of connections between the I/O modules and the Fabric Interconnects. This value must be set explicitly. For more information on this step, see Configure Equipment Policies
-
-  4. Configure Unified Ports—This step involves configuring Unified Ports on the primary and subordinate Fabric Interconnects. Configure Unified Ports
-
-  5. Configure Fabric Interconnect Server Ports—This step involves configuring Fabric Interconnect Server Ports. For more information on this step, see Configure Fabric Interconnect Server Ports
-  6. Configure LAN Connectivity—This step involves establishing initial LAN connectivity from Fabric Interconnects. For more information on this step, see Configure LAN Connectivity. 
-
-  7. Configure SAN Connectivity—This step involves establishing initial SAN connectivity from Fabric Interconnects. For more information on this step, see Configure SAN Connectivity
-
-  8. Define Workloads—After completing initial configuration, you can define your workloads. For more information on this step, see Define Workloads. 
-
+1. Console Setup—This step involves launching Cisco UCS Manager using the serial console. The Fabric Interconnect runs an initial configuration wizard and assigns three IP addresses in the management and administrative subnet: one for each Fabric Interconnect and one for the virtual IP interface that defines the Cisco UCS Manager instance and enables management. For more information on this step, see Console Setup
+2. Configure Administration Policies—This step involves configuration of administration policies, such as DNS Server, NTP, and Time Zone, that are necessary for proper functioning of all components. For more information on this step, see Configure Administration Policies. 
+3. Configure Equipment Policies—This step involves performing chassis discovery by setting the equipment policies in Cisco UCS Manager. The Chassis Discovery Policy specifies the minimum number of connections between the I/O modules and the Fabric Interconnects. This value must be set explicitly. For more information on this step, see Configure Equipment Policies
+4. Configure Unified Ports—This step involves configuring Unified Ports on the primary and subordinate Fabric Interconnects. Configure Unified Ports
+5. Configure Fabric Interconnect Server Ports—This step involves configuring Fabric Interconnect Server Ports. For more information on this step, see Configure Fabric Interconnect Server Ports
+6. Configure LAN Connectivity—This step involves establishing initial LAN connectivity from Fabric Interconnects. For more information on this step, see Configure LAN Connectivity. 
+7. Configure SAN Connectivity—This step involves establishing initial SAN connectivity from Fabric Interconnects. For more information on this step, see Configure SAN Connectivity
+8. Define Workloads—After completing initial configuration, you can define your workloads. For more information on this step, see Define Workloads.
 
 ---
 
@@ -1133,7 +1033,7 @@ Cisco UCS Manager allows you to have DAS with without the need for a SAN switch 
 
 The DAS configuration described assumes that the physical cables are already connected between the storage array ports and the Fabric Interconnects. 
 
-Cisco UCS 6400 Series Fabric Interconnects do not support 8 Gbps direct-attached FC connectivity (FC uplink ports or FC storage ports) without fill-pattern set to IDLE. 
+Cisco UCS 6400 Series Fabric Interconnects do not support 8 Gbps direct-attached FC connectivity (FC uplink ports or FC storage ports) without fill-pattern set to IDLE.
 
 ---
 
@@ -1143,7 +1043,7 @@ Cisco UCS 6400 Series Fabric Interconnects do not support 8 Gbps direct-attached
 
 The port mode determines whether a unified port on the fabric interconnect is configured to carry Ethernet or Fibre Channel traffic. You configure the port mode in Cisco UCS Manager. However, the fabric interconnect does not automatically discover the port mode. 
 
-Changing the port mode deletes the existing port configuration and replaces it with a new logical port. Any objects associated with that port configuration, such as VLANs and VSANS, are also removed. There is no restriction on the number of times you can change the port mode for a unified port. 
+Changing the port mode deletes the existing port configuration and replaces it with a new logical port. Any objects associated with that port configuration, such as VLANs and VSANS, are also removed. There is no restriction on the number of times you can change the port mode for a unified port.
 
 ---
 
@@ -1163,19 +1063,12 @@ Guidelines
 
 To ensure secure and efficient management of Self-Encrypting Drives (SEDs) in Cisco UCS Manager, remember these guidelines:
 
-  * The deletion of secured Logical Unit Numbers (LUNs) is only possible using a scrub policy.
-
-  * Reconfiguration and deletion of secured LUNs are not allowed on a disassociated server.
-
-  * Data sanitization is not permitted until security is enabled.
-
-  * If incorrect credentials are provided, the Finite State Machine (FSM) completes without any error, but the LUNs become inoperable, and the drives get locked. 
-
-  * A power cycle of the server is triggered if any changes are made to the security settings in the storage profile due to the Enterprise Key Management System (EKMS). 
-
-  * When secured drives are moved between setups, the first association should occur only with security details and no LUN configuration to unlock the drives. 
-
-  * Changes to login details do not trigger a change. A fresh storage profile association or modification along with other properties, is required. 
-
+* The deletion of secured Logical Unit Numbers (LUNs) is only possible using a scrub policy.
+* Reconfiguration and deletion of secured LUNs are not allowed on a disassociated server.
+* Data sanitization is not permitted until security is enabled.
+* If incorrect credentials are provided, the Finite State Machine (FSM) completes without any error, but the LUNs become inoperable, and the drives get locked. 
+* A power cycle of the server is triggered if any changes are made to the security settings in the storage profile due to the Enterprise Key Management System (EKMS). 
+* When secured drives are moved between setups, the first association should occur only with security details and no LUN configuration to unlock the drives. 
+* Changes to login details do not trigger a change. A fresh storage profile association or modification along with other properties, is required.
 
 ---

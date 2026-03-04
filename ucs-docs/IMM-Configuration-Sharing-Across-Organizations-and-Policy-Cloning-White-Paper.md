@@ -8,16 +8,15 @@
 | **HTML Title** | IMM Configuration Sharing Across Organizations and Policy Cloning White Paper |
 | **Source file** | `ucs-docs-raw/html/imm-con-sharing-across-organization-cloning-wp.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:09 |
+| **Fetched on** | 2026-03-04 12:48:08 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.html
 
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
+* Skip to content
+* Skip to search
+* Skip to footer
 
 # IMM Configuration Sharing Across Organizations and Policy Cloning White Paper
 
@@ -33,12 +32,10 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.pdf) (1.9 MB)   
+* [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.pdf) (1.9 MB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:October 24, 2023
 
@@ -52,26 +49,24 @@ __ __ __ __
 
 Contact Cisco
 
-  * Contact Cisco __
-  * __
-
-  * __
+* Contact Cisco __
+* __
+* __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-  * __
+* __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-  * __
+* __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-  * __
+* __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
 
 Save
 
@@ -83,29 +78,26 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.pdf) (1.9 MB)   
+* [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.pdf) (1.9 MB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:October 24, 2023
 
 #### Table of Contents
 
-  * Introduction
-  * Context – Where we were and where we are now
-  * Explanation – Configuration Sharing Across Organizations
-  * Example – Configuration Sharing Across Organizations
-  * Rules - Configuration Sharing Across Organizations
-  * Migrating considerations - Configuration Sharing Across Organizations
-  * Explanation – Policy Cloning Across Organizations
-  * Example – Policy Cloning Across Organizations
-  * Rules - Policy cloning
-  * Conclusion
-  * Additional resources
-
+* Introduction
+* Context – Where we were and where we are now
+* Explanation – Configuration Sharing Across Organizations
+* Example – Configuration Sharing Across Organizations
+* Rules - Configuration Sharing Across Organizations
+* Migrating considerations - Configuration Sharing Across Organizations
+* Explanation – Policy Cloning Across Organizations
+* Example – Policy Cloning Across Organizations
+* Rules - Policy cloning
+* Conclusion
+* Additional resources
 
 ` `
 
@@ -122,8 +114,6 @@ Before we embark on explaining some exciting new functionalities in IMM, let’s
 With UCSM and UCS Central, there is an organizational (org) hierarchy that has existed with these Cisco UCS management solutions from their inception. While an entire paper could be dedicated to this subject alone, I want to focus and discuss two of the main capabilities in UCSM/UCS Central, namely policy resolution and default policies that have proved at times to be a barrier to IMM adoption for some customers.
 
 Policy resolution is an automatic, built-in capability within UCSM and UCS Central, in that each org level can have nested sub-orgs that are logically connected to one another for name-based policy resolution. If the service profile (SP) is located inside a nested sub-org structure, then the resolution path for each policy lookup will extend from the sub-org where the SP lives, all the way up the hierarchy to the /root level, which is at the top of the UCSM/Central organizational hierarchy. The /root org is system-defined and cannot be altered or deleted.
-
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_0.png)
 
 Figure 1. 
 
@@ -155,8 +145,6 @@ To address the policy sprawl dilemma with the original implementation of IMM, I 
 
 Unlike UCSM and UCS Central, there is no need for built-in policy-resolution mechanisms. In IMM, [server profiles](https://intersight.com/help/saas/features/servers/configure) (SPs) do not have the same mandatory policy requirements to successfully deploy a SP to an endpoint and at no time are server endpoints automatically rebooted because of some policy edit/change for the accompanying SP. IMM server profiles have better change management control and are safer to manage and operate. Consequently, automatic policy resolution has never been a design intent of Cisco Intersight, and with this new CSAO functionality, it is simply not required. Conversely, this feature leverages manually assigned sharing rules to allow or disallow resource sharing across organizations from one “source” organization to other “consumer” organization(s). This offers a simple, well-defined model and offers better control by administrators. This functionality also allows the flexibility to facilitate transitioning from pre-existing siloed policy-model architectures to a more efficient, scalable, shared architecture without server/workload disruption. Just as your business and network topologies are dynamic and changing in real life, so too is Cisco Intersight in being agile and flexible in supporting these required changes. Transitioning will be covered later in this guide.
 
-![A screenshot of a computerDescription automatically generated](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_1.png)
-
 Figure 2. 
 
 Configuration Sharing Across Organizations
@@ -166,8 +154,6 @@ Example – Configuration Sharing Across Organizations
 The best way to explain this feature is to reference an example in IMM. In Figure 2, we have a very simple topology of IMM organizations and their relationships. It is important to understand that, while it appears there is some type of “hierarchy” in the example, with IMM there is in fact no hierarchy between organizations. The graphic is depicted vertically, but this is just a way to show there is a sharing relationship between the organizations. All organizations are equal, and the rules established for sharing (or not), and the related RBACs, are constructs of the IMM org model. Nothing is implicitly shared between organizations; the rules to share between orgs must be established manually.
 
 In our example above, we have 3 x organizations that align with typical disciplines in the UCS ecosystem, namely compute, storage, and network. Each of those organizations will have an appropriately defined RBAC giving network administrators access to the org to create and configure certain policies to be later “consumed” by the consumer organization. This is a use case of higher-level expert administrators creating and editing policies to be used and consumed by adjacent organizations with the SP templates/SPs that are defined and configured in the consumer organizations, with their appropriate users and [roles](https://intersight.com/help/saas/resources/RBAC#roles_and_privileges).
-
-![A screenshot of a computerDescription automatically generated](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_2.png)
 
 Figure 3. 
 
@@ -179,13 +165,9 @@ To keep this guide manageable and brief, we will focus on a compute organization
 
 In the Cisco Intersight System settings, and with organization creation, there is a checkbox to enable you to share configuration resources with adjacent organizations. The next screen allows you to select one or more of the adjacent organizations to share with. This is depicted in figures 4 and 5 below. Currently, you need to have an account administrator role to create and edit these organizations.
 
-![A screenshot of a computerDescription automatically generated](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_3.png)
-
 Figure 4. 
 
 Creating Organization – enable organization sharing
-
-![A screenshot of a computerDescription automatically generated](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_4.png)
 
 Figure 5. 
 
@@ -195,13 +177,9 @@ Using this guidance, and if building from scratch, you may want to consider crea
 
 Looking at Figure 6, we can see the Consumer-Org-Server-Admin Role assigned to the user of the Consumer-Org has server administrator privileges to the Consumer-Org. After all, we want this user to be able to create and craft the SP template/SP for that org. But, as we have stated previously, this user also needs read-only privileges to the Shared-Org-Compute. Referencing back to Figure 2, this user will also need read-only privileges to Shared-Org-Storage and Shared-Org-Network in order to access the pools and policies that are created in those other source orgs.
 
-![A screenshot of a computerDescription automatically generated](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_5.png)
-
 Figure 6. 
 
 Organization and privilege access
-
-![A screenshot of a computerDescription automatically generated](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_6.png)
 
 Figure 7. 
 
@@ -212,13 +190,9 @@ Per Figure 7, when the user for Consumer-Org logs into their account, with serve
 To circle back to the aforementioned “Blast Radius” discussion in the first section, with UCSM/UCS Central, you might be asking, “What about IMM?” With Configuration Sharing Across Organizations, and linking resources between orgs, is there a legitimate concern that a single mistake – a wrong edit, a deleted policy – will take down my workloads in IMM? The simple answer is emphatically “No!” Welcome to the beauty and power of Cisco Intersight! Because of the safer change-controls enjoyed with the IMM architecture, you no longer need to worry about servers accidentally rebooting with a configuration change. All changes made to the SP (desired state) do not pass automatically to the servers (endpoint state). Simply put:
 
 1. You edit the desired policy/SP and save.
-
 2. You receive a change of status on the SP from green (“OK”) to orange (“Inconsistent”) Pending Changes.
-
 3. You then have the means to verify (as a higher-level administrator) what exactly changed in the policy/SP (annotated on the first screen of the SP in yellow).
-
 4. Once the change is verified, you deploy the changed SP with the option of rebooting the server immediately (Activate – if any changes require reboot) or simply stage the disruptive change at the endpoint.
-
 5. Administratively reboot the server when convenient (for example, during a maintenance window, etc.) to resolve any inconsistency between the server endpoint and the SP change.
 
 If you mistakenly delete a policy, or make the wrong configuration edit, then simply do not deploy the SP change, and edit the policy back to its original configuration. This is easy, and the server endpoint will never know the difference.
@@ -263,8 +237,6 @@ Migrating considerations - Configuration Sharing Across Organizations
 
 For existing IMM customers, they have their Org structures siloed due to how Intersight operated at the time of org creation. Now, with Configuration Sharing Across Organizations, they can take steps to redesign their org structures to leverage the sharing capability and reduce some of the policy sprawl they are exhibiting in their Cisco UCS environments. Policy sprawl is simply creating the same policy repeatedly, which, in turn, requires the administrator to edit all those policies when it is time to make a change. Ideally, when the same policy is consumed by many workloads, it is better to create that policy once (or as few times as possible), and then make it available to consumer workloads. It is a matter of efficiency and reduced administrator burden and OpEx.
 
-![A blue rectangular object with white textDescription automatically generated](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_7.png)
-
 Figure 8. 
 
 Siloed organizations in existing IMM org structure
@@ -274,8 +246,6 @@ Unlike UCSM and UCS Central, making changes to an org structure is simpler and m
 Considering a simple example in Figure 8, we have five siloed pre-existing IMM organizations (Org-A, Org-B, Org-C, Org-D, and Org-E), each with its own pools, policies, and SP-templates/SPs. A small part of that policy configuration across all the organizations uses the same IMM server firmware policy: FW-Policy. The administrator had to create that policy five times, once for each organization (in this simple example, and likely many more times in real-world examples). Additionally, the administrator would need to edit each of these policies every time there is a change to the server firmware policy that is being supported or deployed.
 
 By creating a shared source organization, as depicted in Figure 9, and establishing sharing rules to each of the previously mentioned siloed organizations, they now become consumer organizations. The administrator can create a Shared-FW-Policy in the Source-Org, which becomes selectable to the SP-template/SPs in the respective consumer organizations. The administrator can simply change the SP-template/SP reference for each, and reference the new Shared-FW-Policy in the Source-Org. When complete, the orphaned FW-Policies in the separate Consumer-Orgs can then be deleted. The next time the administrator needs to make a FW policy change, that administrator only needs to edit the single Shared-FW-Policy in the Source-Org. The Consumer-Orgs will automatically receive the Shared-FW-Policy change.
-
-![Migrated org structure using source and consumer orgs](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_8.png)
 
 Figure 9. 
 
@@ -325,21 +295,15 @@ Since the LCP is one of the more involved policies with an embedded pool and num
 
 Below, Figure 10 shows an example LCP and its embedded policies. To set some context, we are going to clone the LCP from the Boston organization to the NewYork organization. These two organizations are standalone; nothing is shared. Notice also that most of the polices use “Boston” in the name, since they originally resided in the Boston organization; however, I am purposely being generic with the Ethernet Network Group policy. That is because there are two of those policies with the same name “Eth-Network-Group,” but the organizations are different, one policy is in Boston, and the other policy is in NewYork.
 
-![A screenshot of a computerDescription automatically generated](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_9.png)
-
 Figure 10. 
 
 LCP with embedded policies
 
 Viewing those two Ethernet Network Group policies, we can see that, whereas their names are the same, the configurations are different. The Eth-Network-Group policy in the Boston organization has VLANs 100-105 shown in Figure 11, and the Eth-Network-Group policy in the NewYork organization has VLANs 200-205 shown in Figure 12.
 
-![A screenshot of a computerDescription automatically generated](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_10.png)
-
 Figure 11. 
 
 Eth-Network-Group policy – Boston organization
-
-![A screenshot of a computerDescription automatically generated](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_11.png)
 
 Figure 12. 
 
@@ -347,13 +311,9 @@ Eth-Network-Group policy – NewYork Organization
 
 Now, let’s clone the LAN-CON-Boston LCP, as shown in Figures 13 and 14.
 
-![A screenshot of a computerDescription automatically generated](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_12.png)
-
 Figure 13. 
 
 Cloning LCP policy – Selection
-
-![A screenshot of a computerDescription automatically generated](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_13.png)
 
 Figure 14. 
 
@@ -361,15 +321,11 @@ Cloning LCP policy - Configuration
 
 Upon successfully cloning the LAN-CON-Boston LCP from the Org-Boston to Org-NewYork, we can see that our policy count has doubled. Those embedded policies were cloned to Org-NewYork, as shown in Figure 15.
 
-![A screenshot of a computerDescription automatically generated](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_14.png)
-
 Figure 15. 
 
 Cloned LCP policy and cloned embedded policies
 
 However, we need to explore the newly cloned LAN-CON-Boston_CLONE LCP further. If we edit and view the LAN-CON-Boston_CLONE Policy and specifically edit one of the vNICs (vNIC0), we can see that the Ethernet Network Control Policy (Eth-Network-Group) used the existing Org-NewYork version of the policy since the policy existed with the same name, and we elected to use any embedded policies with the same name (Default Behavior) during the cloning process. See Figure 16.
-
-![A screenshot of a computerDescription automatically generated](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.docx/_jcr_content/renditions/imm-con-sharing-across-organization-cloning-wp_15.png)
 
 Figure 16. 
 
@@ -390,9 +346,7 @@ Rules - Policy cloning
 ● **Deep-clone behavior** – For policies with embedded policies, or pools, (LAN/SAN connectivity policies, for example), the user can choose one of the behaviors listed below to deep clone those policy references.
 
 1. **Use policies and pools in the destination organization with the same name; clone them if not they are not found** – If any policies in the destination org have a name that **exactly matches (case-sensitive)** the embedded policies referenced in the original source org cloned policy, then those embedded policies in the destination org will substitute for the intended embedded policies in the source org (keep in mind that the embedded policies with the same name could have different settings – be aware of this). If there is no policy in the destination organization that matches any embedded policy by name, then the intended source org’s embedded policies will be cloned with the same name. Pool references will always be matched by name. If not found, the pool will be cloned in the destination organization, **but no identifier blocks will be created. (To prevent any unintended ID conflicts, simply add new, unique blocks to the cloned pool reference).**
-
 2. **Clone all policies and pools into the destination organization** – New policies will be created for the source and all attached policies. If a policy of the same name and type already exists in the destination organization or any organization with which it shares policies, a clone will be created with the provided suffix added to the name. Pool references will always be matched by name. If not found, the pool will be cloned in the destination organization, **but no identifier blocks will be created**.
-
 3. **The deep-clone options do not appear in the UX for those policies with no embedded pools or policies. ******
 
 ◦ Each cloned policy results in its own autonomous policy with its own set of configurations.
@@ -425,22 +379,17 @@ Additional resources
 
 ### Our experts recommend
 
-  * [Cisco Intersight At a Glance](/c/en/us/products/collateral/cloud-systems-management/intersight/at-a-glance-c45-739419.html "Cisco Intersight At a Glance")
-
+* [Cisco Intersight At a Glance](/c/en/us/products/collateral/cloud-systems-management/intersight/at-a-glance-c45-739419.html "Cisco Intersight At a Glance")
 
 ### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---
 
 ## Page 2: https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/at-a-glance-c45-739419.html
 
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
+* Skip to content
+* Skip to search
+* Skip to footer
 
 # Cisco Intersight At a Glance
 
@@ -456,12 +405,10 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/at-a-glance-c45-739419.pdf) (371.7 KB)   
+* [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/at-a-glance-c45-739419.pdf) (371.7 KB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:February 10, 2026
 
@@ -475,26 +422,24 @@ __ __ __ __
 
 Contact Cisco
 
-  * Contact Cisco __
-  * __
-
-  * __
+* Contact Cisco __
+* __
+* __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-  * __
+* __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-  * __
+* __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-  * __
+* __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
 
 Save
 
@@ -506,23 +451,20 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/at-a-glance-c45-739419.pdf) (371.7 KB)   
+* [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/at-a-glance-c45-739419.pdf) (371.7 KB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:February 10, 2026
 
 #### Table of Contents
 
-  * Simplify IT operations for the AI era
-  * Benefits
-  * Calm the chaos
-  * Cisco Intersight
-  * Get started today
-
+* Simplify IT operations for the AI era
+* Benefits
+* Calm the chaos
+* Cisco Intersight
+* Get started today
 
 ` `
 
@@ -548,8 +490,6 @@ Benefits
 
 ● Accelerate AI initiatives and drive strategic business value for your organization
 
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/at-a-glance-c45-739419.docx/_jcr_content/renditions/at-a-glance-c45-739419_0.jpg)
-
 Figure 1. 
 
 Cisco Intersight simplifies IT operations, providing unified, intelligent management of all Cisco UCS compute infrastructure across data centers, colocation facilities, and distributed edge environments.
@@ -574,22 +514,17 @@ Explore [Intersight licensing](https://www.cisco.com/site/us/en/products/computi
 
 ### Our experts recommend
 
-  * [Cisco Compute Intersight Hardening Guide White Paper](/c/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.html "Cisco Compute Intersight Hardening Guide White Paper")
-
+* [Cisco Compute Intersight Hardening Guide White Paper](/c/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.html "Cisco Compute Intersight Hardening Guide White Paper")
 
 ### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---
 
 ## Page 3: https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/intersight-ds.html?ccid=cc001268&oid=aagdc015859
 
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
+* Skip to content
+* Skip to search
+* Skip to footer
 
 # Cisco Intersight Data Sheet
 
@@ -607,12 +542,10 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/intersight-ds.pdf) (183.7 KB)   
+* [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/intersight-ds.pdf) (183.7 KB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:February 10, 2026
 
@@ -626,26 +559,24 @@ __ __ __ __
 
 Contact Cisco
 
-  * Contact Cisco __
-  * __
-
-  * __
+* Contact Cisco __
+* __
+* __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-  * __
+* __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-  * __
+* __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-  * __
+* __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
 
 Save
 
@@ -659,29 +590,26 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/intersight-ds.pdf) (183.7 KB)   
+* [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/intersight-ds.pdf) (183.7 KB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:February 10, 2026
 
 #### Table of Contents
 
-  * Product overview
-  * Features and benefits
-  * Unified, holistic management across your entire IT estate
-  * Licensing
-  * Supported software and system requirements
-  * Virtual appliance system requirements
-  * Ordering information
-  * Product sustainability
-  * Cisco and partner services
-  * Cisco Capital
-  * Ready to get started?
-
+* Product overview
+* Features and benefits
+* Unified, holistic management across your entire IT estate
+* Licensing
+* Supported software and system requirements
+* Virtual appliance system requirements
+* Ordering information
+* Product sustainability
+* Cisco and partner services
+* Cisco Capital
+* Ready to get started?
 
 ` `
 
@@ -824,23 +752,18 @@ Start simplifying IT operations for the AI era with Cisco Intersight. [Learn mor
 
 ### Our experts recommend
 
-  * [Cisco Compute Intersight Hardening Guide White Paper](/c/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.html "Cisco Compute Intersight Hardening Guide White Paper")
-  * [CX Services for Intersight Application Onboarding At-a-Glance](/c/en/us/products/collateral/cloud-systems-management/intersight/cx-services-intersight-aag.html "CX Services for Intersight Application Onboarding At-a-Glance")
-
+* [Cisco Compute Intersight Hardening Guide White Paper](/c/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.html "Cisco Compute Intersight Hardening Guide White Paper")
+* [CX Services for Intersight Application Onboarding At-a-Glance](/c/en/us/products/collateral/cloud-systems-management/intersight/cx-services-intersight-aag.html "CX Services for Intersight Application Onboarding At-a-Glance")
 
 ### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---
 
 ## Page 4: https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.html
 
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
+* Skip to content
+* Skip to search
+* Skip to footer
 
 # Cisco Compute Intersight Hardening Guide White Paper
 
@@ -856,12 +779,10 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.pdf) (35.9 MB)   
+* [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.pdf) (35.9 MB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:July 24, 2025
 
@@ -875,26 +796,24 @@ __ __ __ __
 
 Contact Cisco
 
-  * Contact Cisco __
-  * __
-
-  * __
+* Contact Cisco __
+* __
+* __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-  * __
+* __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-  * __
+* __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-  * __
+* __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
 
 Save
 
@@ -906,136 +825,133 @@ Print
 
 ### Available Languages
 
-
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.pdf) (35.9 MB)   
+* [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.pdf) (35.9 MB)   
 View with Adobe Reader on a variety of devices
-
 
 Updated:July 24, 2025
 
 #### Table of Contents
 
-  * Document information
-  * Intended use and audience
-  * Bias statement
-  * Legal notices
-  * Prerequisites
-  * Introduction
-  * The Cisco Secure Development Lifecycle – CSDL
-  * CSDL philosophy
-  * Development milestones
-  * CSDL product adherence methodologies
-  * Cisco Security and Trust Organizations
-  * Supply-chain security
-  * Counterfeit prevention
-  * Consortiums for secure vendors
-  * Advisories, vulnerabilities, and incident responses
-  * CERT advisories
-  * Additional vulnerability testing measures
-  * Running vulnerability scans against PVA/CVA
-  * Incident response
-  * The Intersight solution
-  * Solution components
-  * Cisco Intersight Virtual Appliance
-  * Multi-node intersight virtual appliance
-  * Certifications
-  * SOC 2 Type 2
-  * SOC 3
-  * FIPS
-  * CNSA (Commercial National Security Algorithm)
-  * FIPS 140-3
-  * Other certifications and procedural guidelines
-  * Intersight regions
-  * Intersight point-of-presence replication and attack hardening
-  * Intersight privacy and data retention
-  * What can Cisco TAC access?
-  * Data retention
-  * Data backup for PVA and CVA
-  * Intersight service level objectives and agreements
-  * System-level security
-  * System boot
-  * Component chain of trust
-  * Hardware root of trust – Trust Anchor Module (TAM) and Trusted Platform Module 2.0 (TPM)
-  * Immutable identity
-  * Secure boot logging
-  * Secure boot vendor key updates
-  * Runtime defenses
-  * CPU hardware protections
-  * Intel Boot Guard
-  * AMD Platform Secure Boot (PSB)
-  * Post Quantum Cryptography and UCS
-  * Software priorities
-  * Hardware priorities
-  * Connecting to Intersight
-  * Data encryption and connection security
-  * Timeout
-  * Target connections
-  * Port requirements and ecosystem ports
-  * Cisco services access requirements
-  * Endpoint URLs required to claim targets
-  * Configuring network ACLs in your security devices
-  * Configuring HTTPS proxy
-  * Default passwords
-  * Device connector
-  * Cisco Intersight Assist
-  * Configure fabric interconnects for Cisco Intersight management
-  * Multifactor claim process for fabric interconnects in the Cisco Intersight platform
-  * Cisco Intersight Managed Mode Transition Tool
-  * Access methods to management and configuration interfaces
-  * Multifactor Authentication (MFA)
-  * Single sign-on with Intersight
-  * What management interfaces are available after IMM for FI based systems?
-  * What interfaces are available for Cisco UCS standalone servers claimed by Intersight?
-  * User management
-  * Authentication domains
-  * Resource groups, organizations, roles
-  * Account types and best practices
-  * Role-based access control
-  * Adjusting account details
-  * Management at scale
-  * Through policy we get security enforcement
-  * Server profiles and policies in Cisco UCS with intersight
-  * Firmware upgrades and image downloads
-  * Upgrading fabric-interconnect firmware
-  * Update server firmware
-  * Intersight for API management
-  * API keys
-  * Intersight rediscovery and decommissioning
-  * Securely decommissioning a system
-  * Server secure erase
-  * Scrub
-  * Instant Secure Erase (ISE) drives
-  * Unclaim
-  * Secure application operation
-  * Confidential computing at the hardware level
-  * Secure data delivery and storage
-  * Self-Encrypting Drives (SEDs) and drive-security policy
-  * SED controller and drive states
-  * Tri-mode disk controller behavior
-  * SEDs with encrypted virtual disks (VDs)
-  * Encryption and key management
-  * Remote key
-  * Manual key
-  * Certificate management
-  * Monitoring with Intersight
-  * Endpoint syslog
-  * Audit records, scope, and use cases
-  * Intersight Audit Records Entries
-  * Example use case: identify a record that has been changed
-  * Intersight Virtual Appliance monitoring
-  * Intersight and PVA/CVA syslog settings
-  * Conclusions
-  * For more information
-  * Intersight general security information
-  * Additional Intersight certification information
-  * Additional Intersight security guides
-  * Guidelines for secure policy settings
-  * Appendix A – Common security FAQ
-  * Appendix B – PVA/CVA licensing data details
-  * Appendix C – PQC definitions
-
+* Document information
+* Intended use and audience
+* Bias statement
+* Legal notices
+* Prerequisites
+* Introduction
+* The Cisco Secure Development Lifecycle – CSDL
+* CSDL philosophy
+* Development milestones
+* CSDL product adherence methodologies
+* Cisco Security and Trust Organizations
+* Supply-chain security
+* Counterfeit prevention
+* Consortiums for secure vendors
+* Advisories, vulnerabilities, and incident responses
+* CERT advisories
+* Additional vulnerability testing measures
+* Running vulnerability scans against PVA/CVA
+* Incident response
+* The Intersight solution
+* Solution components
+* Cisco Intersight Virtual Appliance
+* Multi-node intersight virtual appliance
+* Certifications
+* SOC 2 Type 2
+* SOC 3
+* FIPS
+* CNSA (Commercial National Security Algorithm)
+* FIPS 140-3
+* Other certifications and procedural guidelines
+* Intersight regions
+* Intersight point-of-presence replication and attack hardening
+* Intersight privacy and data retention
+* What can Cisco TAC access?
+* Data retention
+* Data backup for PVA and CVA
+* Intersight service level objectives and agreements
+* System-level security
+* System boot
+* Component chain of trust
+* Hardware root of trust – Trust Anchor Module (TAM) and Trusted Platform Module 2.0 (TPM)
+* Immutable identity
+* Secure boot logging
+* Secure boot vendor key updates
+* Runtime defenses
+* CPU hardware protections
+* Intel Boot Guard
+* AMD Platform Secure Boot (PSB)
+* Post Quantum Cryptography and UCS
+* Software priorities
+* Hardware priorities
+* Connecting to Intersight
+* Data encryption and connection security
+* Timeout
+* Target connections
+* Port requirements and ecosystem ports
+* Cisco services access requirements
+* Endpoint URLs required to claim targets
+* Configuring network ACLs in your security devices
+* Configuring HTTPS proxy
+* Default passwords
+* Device connector
+* Cisco Intersight Assist
+* Configure fabric interconnects for Cisco Intersight management
+* Multifactor claim process for fabric interconnects in the Cisco Intersight platform
+* Cisco Intersight Managed Mode Transition Tool
+* Access methods to management and configuration interfaces
+* Multifactor Authentication (MFA)
+* Single sign-on with Intersight
+* What management interfaces are available after IMM for FI based systems?
+* What interfaces are available for Cisco UCS standalone servers claimed by Intersight?
+* User management
+* Authentication domains
+* Resource groups, organizations, roles
+* Account types and best practices
+* Role-based access control
+* Adjusting account details
+* Management at scale
+* Through policy we get security enforcement
+* Server profiles and policies in Cisco UCS with intersight
+* Firmware upgrades and image downloads
+* Upgrading fabric-interconnect firmware
+* Update server firmware
+* Intersight for API management
+* API keys
+* Intersight rediscovery and decommissioning
+* Securely decommissioning a system
+* Server secure erase
+* Scrub
+* Instant Secure Erase (ISE) drives
+* Unclaim
+* Secure application operation
+* Confidential computing at the hardware level
+* Secure data delivery and storage
+* Self-Encrypting Drives (SEDs) and drive-security policy
+* SED controller and drive states
+* Tri-mode disk controller behavior
+* SEDs with encrypted virtual disks (VDs)
+* Encryption and key management
+* Remote key
+* Manual key
+* Certificate management
+* Monitoring with Intersight
+* Endpoint syslog
+* Audit records, scope, and use cases
+* Intersight Audit Records Entries
+* Example use case: identify a record that has been changed
+* Intersight Virtual Appliance monitoring
+* Intersight and PVA/CVA syslog settings
+* Conclusions
+* For more information
+* Intersight general security information
+* Additional Intersight certification information
+* Additional Intersight security guides
+* Guidelines for secure policy settings
+* Appendix A – Common security FAQ
+* Appendix B – PVA/CVA licensing data details
+* Appendix C – PQC definitions
 
 ` `
 
@@ -1091,8 +1007,6 @@ For a general overview of UCS-based security, see the white paper here:
 The Cisco Secure Development Lifecycle – CSDL
 
 Cisco products and components are developed, integrated, and tested using the Cisco Secure Development Lifecycle (CSDL). Secure product development and deployment h several components, ranging from following specified design and development practices, to testing their implementation, to providing customers with a set of recommendations for deployments that maximize the security of their system. 
-
-![The Cisco Secure Product Development Lifecycle](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_0.png)
 
 Figure 1. 
 
@@ -1160,8 +1074,6 @@ Cisco Security and Trust Organizations
 
 Cisco Security and Trust Organization (S&TO) has the core responsibility to implement CSDL. In the effort to accomplish this, S&TO encompasses various groups with core responsibilities to deliver a secure product or respond to security concerns as they arise. 
 
-![The groups within Cisco S&TO](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_1.png)
-
 Figure 2. 
 
 The groups within Cisco S&TO 
@@ -1193,8 +1105,6 @@ The Cisco Value Chain has the following characteristics:
 ◦ Misuse of intellectual property 
 
 This multilayered approach is shown in Figure 3.
-
-![Layers of the Cisco Value Chain](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_2.png)
 
 Figure 3. 
 
@@ -1395,8 +1305,6 @@ A comprehensive list of Cisco FIPS-compliant products is given below, along with
 
 ● Cryptographic Module Validation Program (CMVP) vendor list: [Cryptographic Module Validation Program | CSRC (nist.gov)](https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search?SearchMode=Advanced&Vendor=Cisco&CertificateStatus=Active&ValidationYear=0)
 
-![FIPS vendor listings](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_3.jpg)
-
 Figure 4. 
 
 FIPS vendor listings
@@ -1445,15 +1353,11 @@ Benefits include:
 
 ● **Data sovereignty with the same user experience:** the Intersight EMEA user experience is the same in all regions. Users are automatically redirected to their account’s region to maintain data sovereignty requirements.
 
-![Intersight global regions](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_4.png)
-
 Figure 5. 
 
 Intersight global regions 
 
 The various regions offer global feature parity. All regional customers enjoy all new features at the same time. Creating new Intersight accounts is also as simple as using a drop-down menu, as shown in Figure 6.
-
-![Region selection on account creation](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_5.jpg)
 
 Figure 6. 
 
@@ -1462,8 +1366,6 @@ Region selection on account creation
 The selected region determines which Intersight SaaS regional instance will be used to store customers’ data to help comply with local laws and data residency regulations while achieving low latency. Users can seamlessly switch between accounts in different regions.
 
 The Intersight claiming process is unified for all regions. When a target is claimed, data is stored in the region of the account that claimed the target, and all interactions with Intersight are performed in the local region. In the example multi-region illustration below, targets in Spain, United Kingdom, and India are managed by the EMEA instance while targets in Australia, Africa, and South America are managed by the North American instance. 
-
-![Multi-region Intersight account locations](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_6.png)
 
 Figure 7. 
 
@@ -1589,8 +1491,6 @@ The SUDI credential in the Trust Anchor module can be either RSA- or Elliptic Cu
 
 The SUDI can be used for asymmetric key operations such as encryption, decryption, signing, and verifying that allow passage of the data to be operated upon. This capability makes remote authentication of a device possible. It enables accurate, consistent, and electronic identification of Cisco products for asset management, provisioning, version visibility, service entitlement, quality feedback, and inventory management. 
 
-![TAM functions](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_7.png)
-
 Figure 8. 
 
 TAM functions
@@ -1618,8 +1518,6 @@ Cisco Secure Boot helps to ensure that the code that executes on Cisco hardware 
 Cisco Secure Boot helps ensure that the code that executes on Cisco hardware platforms is genuine and untampered. A typical UEFI-based boot process starts at the UEFI firmware and works up to the boot loader and the operating system. A tampered UEFI firmware can result in the entire boot process being compromised.
 
 Using a hardware-anchored root of trust, digitally signed software images, and a unique device identity, Cisco hardware-anchored secure boot establishes a chain of trust that boots the system securely and validates the integrity of the software. The root of trust (a.k.a. the microloader), which is protected by tamper-resistant hardware, first performs a self-check, and then verifies the UEFI firmware, and thus kicks off the chain of trust leading to integrity verification of the entire operating system.
-
-![Secure Boot process](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_8.png)
 
 Figure 9. 
 
@@ -1992,8 +1890,6 @@ Device connector
 
 Cisco UCS systems are connected to the Intersight SaaS platform or on-premises virtual appliance through a device connector that is embedded in the management controller of each system.
 
-![Connection to Intersight services with the Cisco UCS device connector](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_9.png)
-
 Figure 10. 
 
 Connection to Intersight services with the Cisco UCS device connector 
@@ -2020,8 +1916,6 @@ Cisco Intersight Assist enables Cisco Intersight to communicate with targets tha
 
 You can view the Intersight Assist details by navigating to **Appliance UI > Target**. You can choose to install Cisco Intersight Assist from the installer during the set-up wizard. It can be installed on an ESXi server, a Kernel-Based Virtual Machine (KVM), or a Hyper-V Hypervisor. 
 
-![Managed device and service communications to Intersight](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_10.png)
-
 Figure 11. 
 
 Managed device and service communications to Intersight
@@ -2032,8 +1926,6 @@ During initial configuration of a fabric interconnect–based UCS system, you ar
 
 Here we cover fabric-interconnect configuration for IMM and the appropriate selections for getting the system set up with secure passwords and updating the firmware to remediate any known bugs or CVEs. Depending on the state of each fabric interconnect, this first set of steps may not be necessary. If you see a message “Switch can now be configured from GUI,” as shown in the following image, you must follow these steps:
 
-![IMM configuration from console](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_11.jpg)
-
 Figure 12. 
 
 IMM configuration from console
@@ -2041,8 +1933,6 @@ IMM configuration from console
 Press **CTRL-c** , as instructed on the screen, to halt the GUI configuration process. You can configure Cisco Intersight mode only through the console.
 
 Next, type “**X** ” followed by Enter. Because of screen wrapping, you may not be able to see the “X.”
-
-![IMM configuration from console part 2](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_12.jpg)
 
 Figure 13. 
 
@@ -2088,8 +1978,6 @@ At this point, fabric interconnect B will pull the networking configuration from
 
 Type “yes” to save the configuration and restart the fabric interconnect.
 
-![IMM configuration from console part 3](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_13.jpg)
-
 Figure 14. 
 
 IMM configuration from console part 3
@@ -2100,23 +1988,17 @@ Next, the system needs to be claimed in Intersight. Connect to the device consol
 
 Using a browser, connect the IP address of fabric interconnect. Ensure that HTTPS is used, or you will not be able to connect to the device console. Log in with the credentials you configured earlier during the fabric interconnect setup.
 
-![Device console log in](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_14.jpg)
-
 Figure 15. 
 
 Device console log in
 
 Select the Device Connector tab. If there is an error on this page saying, “Some unknown internal error has occurred,” it is likely because this domain has been claimed in Cisco Intersight already. Click the refresh button in the device connector view. If the problem persists, contact Cisco® Technical Assistance Center (Cisco TAC) to address this problem. If, instead, you see a screen like the one shown below, which shows that the fabric interconnect can connect to Cisco Intersight but is not yet claimed, then proceed to the next step.
 
-![Connect the fabric interconnects to Intersight](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_15.jpg)
-
 Figure 16. 
 
 Connect the fabric interconnects to Intersight
 
 Browse to [intersight.com](https://intersight.com/) from your computer. Use your Cisco Intersight credentials for an account that has at least the “Device Technician” role. The roles “Device Technician” and “Device Administrator” allow you to claim and unclaim devices. Once authenticated, make sure you have selected “System” from the top drop-down menu, as shown below:
-
-![System view when claiming a device](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_16.png)
 
 Figure 17. 
 
@@ -2129,8 +2011,6 @@ System view when claiming a device
 ● Enter the device ID and claim code from the Device Console. 
 
 ● Click the blue “Claim” button after pasting the device ID and claim code. Shortly after the claim succeeds, the fabric interconnect device connector should show a status of “Claimed,” as shown in the following image:
-
-![Device claimed](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_17.jpg)
 
 Figure 18. 
 
@@ -2201,23 +2081,17 @@ What management interfaces are available after IMM for FI based systems?
 
 Once your system is configured for Intersight Managed Mode, the UI for UCSM is not available. If you connect to either fabric interconnect, you will be presented with a UI login screen that gives you access to a device connector control UI. This UI is for recovery purposes only and has no other management capabilities. 
 
-![The FI UI only has a Device Console management capability in IMM and is designed for recovery and troubleshooting only.](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_18.png)
-
 Figure 19. 
 
 The FI UI only has a Device Console management capability in IMM and is designed for recovery and troubleshooting only.
 
 Connecting to the CIMC management IP of the server with a browser using HTTPS will present you with a KVM login screen. This is also for recovery purposes only and has no other management capabilities.
 
-![The CIMC UI in IMM is a vKVM for server recovery and troubleshooting purposes only.](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_19.png)
-
 Figure 20. 
 
 The CIMC UI in IMM is a vKVM for server recovery and troubleshooting purposes only.
 
 The fabric interconnect management IP and addresses have only a rudimentary SSH console for troubleshooting purposes. SSH to the server CIMC IP is not available even though you are prompted for a password. You can view the CIMC firmware debug shell by SSH to the IMM fabric interconnect and typing: connect cimc 1/1 to go to the first system BMC restricted console. See debug shell screen shot in Figure 21 below. 
-
-![A screenshot of a computerAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_20.jpg)
 
 Figure 21. 
 
@@ -2252,8 +2126,6 @@ Resource groups, organizations, roles
 Privileges on endpoints are hierarchical based on user role, from a resource group, to organization, to individual user. The top-level distinction is resource groups, which are collections of managed resources; that is, target endpoints that have been claimed in the Intersight service.
 
 Resource groups are divided between organizations in Intersight. This allows access and control by user domain and enables multitenancy. User roles and privileges are functional within an organization on the assigned resources.
-
-![Resource groups Organizations Roles and Privileges](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_21.png)
 
 Figure 22. 
 
@@ -2303,8 +2175,6 @@ Adjusting account details
 
 Account settings can be adjusted by selecting the user (person) symbol in the top right of the Intersight UI and then selecting the account in the drop-down menu. You will be taken to a settings UI where you can press the “Configure” button in the top right to adjust various account settings to keep in line with your company security policies for idle timeout, maximum sessions per user, etc.
 
-![Adjust account session and other security settings](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_22.jpg)
-
 Figure 23. 
 
 Adjust account session and other security settings
@@ -2332,13 +2202,9 @@ By utilizing these policies within Intersight when creating and managing server 
 To use a policy in a server profile:
 
 1. Create or edit an existing server profile.
-
 2. Click on the “Policies” tab.
-
 3. Select an existing policy from the list or create a new one by clicking “Create Policy.”
-
 4. Configure the policy settings as needed.
-
 5. Apply the policy to the server profile by clicking “Assign Policy.”
 
 Once you have assigned a policy to a server profile, Intersight will automatically apply the configuration settings to the server. You can also use policies to stage changes and then activate them at a later stage.
@@ -2353,15 +2219,11 @@ The benefits of using policies in server profiles include:
 
 When logged into the Intersight UI, select “Infrastructure Service” from the top drop-down menu. In the left navigation pane, you can select “Polices.” Here you get a list of policies that have already been created. You can edit an existing policy by selecting it, or you can select the “Create Policy” button at the top right of the screen (see Figure 23) to create a new one. It is through this wizard that you will select your policy type and create policies as needed.
 
-![Polices in your organization](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_23.png)
-
 Figure 24. 
 
 Policies in your organization
 
 When creating a new policy, select the type and complete the wizard to enter the policy parameters.
-
-![Select policy type](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_24.png)
 
 Figure 25. 
 
@@ -2397,15 +2259,11 @@ You can create server profiles using the server profile wizard, or you can impor
 
 To create a server profile, select “Infrastructure Service” from the top drop-down menu in the Intersight UI. Select “Profiles” from the left menu pane. You are shown a list of existing profiles that you can edit as needed. 
 
-![Profile list](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_25.png)
-
 Figure 26. 
 
 Profile list
 
 You can create a new profile by clicking the “Create UCS Server Profile” button at the top right of the screen (see Figure 27).
-
-![Create a new server profile](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_26.png)
 
 Figure 27. 
 
@@ -2413,23 +2271,17 @@ Create a new server profile
 
 You can assign your profile to an existing server or bypass that step for now. You are then walked through policy categories for your profile, at which time you can assign or create policies.
 
-![Assign or create a policy for compute configuration](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_27.png)
-
 Figure 28. 
 
 Assign or create a policy for compute configuration
 
 Next you can set policies for management.
 
-![Set management policies](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_28.png)
-
 Figure 29. 
 
 Set management policies
 
 Similarly, you will set storage and network policies and then you will be presented with a summary.
-
-![Profile summary](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_29.png)
 
 Figure 30. 
 
@@ -2440,8 +2292,6 @@ The assignment process is immediate. The profiles are **assigned** to the server
 In Intersight, browse to “Configure -> Profiles” and select the “UCS Server Profiles” tab, and you will see that your profile(s) has been assigned to a server but shows a status of “Not Deployed.” You can select multiple profiles in this state, and click the ellipses at the top of the table to deploy them all in bulk. When you deploy a profile, Intersight will create a Request that you can monitor. Every time you make a change to a profile, or a policy associated with that profile, its state will change from “Deployed” to a state indicating changes that have been made within Intersight but have not been pushed to the server. Each time, you will have to come back to this screen and “Deploy” the profile. This behavior is different from that of Cisco UCS Manager. You can read more about the various states at: <https://intersight.com/help/saas/features/servers/configure>.
 
 When ready to deploy the server profiles, click “Deploy” and then click “Deploy” again in the pop-up window:
-
-![Deploy the service profile](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_30.png)
 
 Figure 31. 
 
@@ -2461,23 +2311,17 @@ Upgrading fabric-interconnect firmware
 
 Before discovering what hardware is connected to the fabric interconnects, you should check to see if a recommended firmware upgrade is available for the fabric interconnects. After logging into Intersight, select the drop-down box in the upper left corner of the screen, and select “Infrastructure Service” if it is not currently selected (see Figure 31).
 
-![Selecting fabric interconnects](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_31.png)
-
 Figure 32. 
 
 Selecting fabric interconnects
 
 Select your fabric interconnect(s) from the list, click the three dots in the right column, and then select “Upgrade Firmware” from the drop-down menu.
 
-![Select your fabric interconnect for upgrade](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_32.png)
-
 Figure 33. 
 
 Select your fabric interconnect for upgrade
 
 Click “Next”, then select your desired firmware version.
-
-![Choose your firmware version](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_33.png)
 
 Figure 34. 
 
@@ -2489,8 +2333,6 @@ Update server firmware
 
 Intersight allows for upgrading firmware on multiple servers at once. In Intersight, browse to “Operate -> Servers”. Intersight will display the servers discovered in the domain. 
 
-![Choose your server for firmware upgrade](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_34.png)
-
 Figure 35. 
 
 Choose your server for firmware upgrade 
@@ -2498,8 +2340,6 @@ Choose your server for firmware upgrade
 Select all the discovered servers that are of the same type by clicking the checkbox next to each one. Bulk firmware upgrade operations are supported only on similar servers. You can sort the servers table by “Model” if there is any confusion.
 
 With one or more servers selected, click the ellipses s…) at the top or bottom of the server table and choose “Upgrade Firmware” (see Figure 35).
-
-![Select multiple of the same model to upgrade](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_35.png)
 
 Figure 36. 
 
@@ -2510,8 +2350,6 @@ The first step of the firmware upgrade process introduces the firmware upgrade w
 Next, select the upgrade firmware version. 
 
 You can view firmware details by selecting the “eye” button in the right column of the firmware.
-
-![Firmware details](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_36.png)
 
 Figure 37. 
 
@@ -2544,10 +2382,7 @@ Intersight API clients can be deployed anywhere if they have network connectivit
 You can also view the region-specific target URLs in the API documents:
 
 1. Log into your Intersight account at <https://intersight.com>.
-
 2. Go to “Help > Command palette > API docs”.
-
-![API documents](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_37.png)
 
 Figure 38. 
 
@@ -2559,15 +2394,11 @@ Rediscovery and decommissioning of a chassis or server can be done in IMM-manage
 
 For a server, select the server link from the Infrastructure Services’ left navigation menu, then select your device. Click the ellipses (…), then “System” in the drop-down menu. From here you can choose various options, including “Rediscover” and “Decommission.”
 
-![Rediscover or decommission a server](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_38.png)
-
 Figure 39. 
 
 Rediscover or decommission a server
 
 For a chassis, select the chassis link from the Infrastructure Services’ left navigation menu, then select your device. Click the ellipses (…) in the drop-down menu. From here you can choose various options, including “Rediscover,” “Decommission,” and “Remove.”
-
-![Rediscover, decommission, or remove a chassis](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_39.png)
 
 Figure 40. 
 
@@ -2620,11 +2451,8 @@ Beginning early 2024, UCS firmware supports disk and system sanitization. This c
 The erase process for data sanitization is performed in the following order on the server components:
 
 1. Storage
-
 2. VIC
-
 3. BIOS
-
 4. Cisco IMC
 
 You can choose to either perform data sanitization on all the server components or select only storage and VIC components for data sanitization.
@@ -2643,8 +2471,6 @@ Secure Erase allows you to initiate a workflow to delete all data from the serve
 
 You can initiate the Secure Erase by clicking the ellipsis (…) icon in the Servers Table View of the desired server. Depending on the disk capacity, Secure Erase may take several hours to more than a day to complete. You can monitor the progress of the Secure Erase from the Requests tab.
 
-![Server Secure Erase for full data sanitization](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_40.png)
-
 Figure 41. 
 
 Server Secure Erase for full data sanitization
@@ -2658,8 +2484,6 @@ Insufficient space in the Fabric Interconnect cache can cause execution errors o
 ● This action will permanently delete all data from the server. This data will not be recoverable.
 
 ● If Secure Erase is terminated before it is complete, data or drive corruption may occur.
-
-![The Server Secure Erase warning message.](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_41.png)
 
 Figure 42. 
 
@@ -2707,8 +2531,6 @@ One of the following occurs to the BIOS settings when a service profile containi
 
 ● If disabled (default), preserves the existing BIOS settings on the server.
 
-![The Scrub Policy details showing Disk and BIOS selection options](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_42.png)
-
 Figure 43. 
 
 The Scrub Policy details showing Disk and BIOS selection options
@@ -2716,8 +2538,6 @@ The Scrub Policy details showing Disk and BIOS selection options
 Instant Secure Erase (ISE) drives
 
 [Instant Secure Erase (ISE)](https://www.bing.com/ck/a?!&&p=ec37ccb51bc4b3f5d3ed1e2bfa5c5adade361c7828dc3886e4b4565bf529105bJmltdHM9MTczOTIzMjAwMA&ptn=3&ver=2&hsh=4&fclid=25c4c0c1-844f-6afe-06e9-d35a85626b2c&u=a1aHR0cHM6Ly93d3cucGNtYWcuY29tL2VuY3ljbG9wZWRpYS90ZXJtL2luc3RhbnQtc2VjdXJlLWVyYXNl&ntb=1) is a drive erasure method that provides a fast way to delete all data quickly when required. It encrypts the drive, and when it is time to permanently delete all data, only the encryption key has to be deleted. ISE is a super-set of non-cryptographic secure erase and utilizes encryption to make data unreadable. It contains the commands of non-cryptographic secure erase but also adds a "crypto" erase (CE) command, which can be utilized by both hard disks and solid-state drives if available. This method deletes the drive in a few seconds compared to a non-cryptographic secure erase, which writes over all the sectors and can take many hours. Only specific qualified ISE drives are available for use with Cisco UCS. See your Cisco representative for more information.
-
-![ISE drives securely erase all content on a disk in an unrecoverable, cryptographic manner.](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_43.png)
 
 Figure 44. 
 
@@ -2740,8 +2560,6 @@ Unclaim
 
 Unclaiming will remove a system from Intersight. This is part of a more comprehensive decommissioning process for disposal or repurposing of a system. Log into Intersight with the account administrator, device administrator, or device technician privileges. From the “Service Selector” drop-down list, select “System. Navigate to Admin -> Targets.” Select the target to unclaim. 
 
-![Unclaim a target](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_44.png)
-
 Figure 45. 
 
 Unclaim a target
@@ -2759,8 +2577,6 @@ A confidential computing-secure enclave refers to a protected and isolated envir
 Cisco UCS implements all processor vendor confidential computing capabilities from AMD and Intel. This includes trusted execution environments through secure enclaves as well as the various flavors of memory encryption. Implementation of these features is processor-dependent and chosen at build or purchase time.
 
 You enable these features in Intersight by setting BIOS policies. 
-
-![Create a BIOS policy](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_45.png)
 
 Figure 46. 
 
@@ -2787,8 +2603,6 @@ Self-Encrypting Drives (SEDs) have special hardware that encrypts incoming data 
 SEDs must be locked by providing a security key. The security key, which is also known as a key-encryption key or an authentication passphrase, is used to encrypt the media-encryption key. If the disk is not locked, no key is required to fetch the data.
 
 The encryption and decryption for SEDs is done through the hardware. Thus, it does not affect overall system performance. SEDs reduce disk-retirement and -redeployment costs through instantaneous cryptographic erasure. Cryptographic erasure is done by changing the media-encryption key. When the media-encryption key of a disk is changed, the data on the disk cannot be decrypted and is immediately rendered unusable. With Cisco UCS Manager Release 3.1(3), SEDs offer disk-theft protection for C-Series and S-Series servers.
-
-![SED anatomy](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_46.png)
 
 Figure 47. 
 
@@ -2836,8 +2650,6 @@ A microchip tri-mode disk controller is a drive controller capable of handling S
 
 Tri-mode controllers have a BIOS setting that enables or disables a controller password requirement. Note that the passphrase mentioned in Figure 48 is NOT the passphrase used to generate the local key encryption KEK; is the controller passphrase entered in the BIOS to secure the controller itself. 
 
-![The BIOS screen for entering the tri-mode controller password.](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_47.png)
-
 Figure 48. 
 
 The BIOS screen for entering the tri-mode controller password.
@@ -2865,8 +2677,6 @@ To manage the encryption key for SEDs, you have a remote and a manual option. Th
 
 From the “Infrastructure Services” interface, select “Policies,” and then “Drive Security.”
 
-![Drive-security policy](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_48.png)
-
 Figure 49. 
 
 Drive-security policy
@@ -2875,15 +2685,11 @@ Remote key
 
 Once in the policy wizard, click Start once you have named the policy. Select the Remote Key Management radio button.
 
-![Drive security Key Management selection: Remote or Manual.](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_49.png)
-
 Figure 50. 
 
 Drive security Key Management selection: Remote or Manual.
 
 Here you will enter your KMS information for your primary and secondary KMS server if one is available. You also have the option to change the secure communication port if you have set up your KMS with a custom value. Upload the root CA certificate from your KMS server and proceed to create the policy.
-
-![Enter Remote KMS information.](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_50.png)
 
 Figure 51. 
 
@@ -2894,8 +2700,6 @@ Click “Create” and complete the policy wizard.
 Manual key
 
 A Manual Key policy uses a passphrase, supplied by the user, which is used to generate the Key Encryption Key (KEK). It is vitally important that you back up or otherwise store your passphrase in a safe location; for example, in a secured password manager. If the passphrase is lost it is unretrievable, and you will not be able to unlock or rekey your drives. The passphrase should contain at least 8 characters and at least one each of the following: upper case letter, lower case letter, number, and special character.
-
-![Enter Manual Key \(local\) passphrase for KEK generation](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_51.png)
 
 Figure 52. 
 
@@ -2911,15 +2715,11 @@ From the “Infrastructure Services” interface, select “Policies,” and the
 
 Begin by selecting the certificate you want to update or replace.
 
-![Select the certificate type to upload](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_52.png)
-
 Figure 53. 
 
 Select the certificate type to upload
 
 Add the desired certificates.
-
-![Upload the correct certificate and private key](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_53.png)
 
 Figure 54. 
 
@@ -2930,8 +2730,6 @@ Monitoring with Intersight
 Cisco Intersight provides a dashboard for real-time health and inventory status monitoring. You can create, customize, rename, and manage multiple dashboard views by adding, removing, or rearranging widgets. In the Widget Library, you can select the widget(s) that you want to pin to the dashboard, preview the details for a server or a cluster, search for a widget, and add a custom title to a widget. You can toggle between the detail and list view of the available widgets in the library. You can add multiple instances of a widget to monitor different targets. You can add a maximum of 30 widgets per dashboard.
 
 Intersight Monitoring Services (IMS) provide historical and real-time visibility of resource consumption and inventory health, policies for notifications based on thresholds and anomaly detection, and actions and recommendations for automated infrastructure changes in response to events. IMS help reduce operational costs, prevent SLA violations, and increase system reliability and availability.
-
-![Intersight monitoring dashboard](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_54.png)
 
 Figure 55. 
 
@@ -2967,8 +2765,6 @@ Endpoint syslog
 
 To set up syslog for your servers in Intersight, create a syslog policy. From the “Infrastructure Services” interface, select “Policies,” and then “Syslog.” Name the policy, then select “Next” to enter syslog details, including severity level and remote server information. 
 
-![Syslog policy details](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_55.png)
-
 Figure 56. 
 
 Syslog policy details
@@ -2983,23 +2779,17 @@ Intersight Audit Records Entries
 
 From the “System” interface, select “Audit Logs.” Alternatively, with Intersight’s command palette, press Ctrl+K (Windows/Linux) or Command+K (Mac) to pull up the search and type the word "audit," as shown in Figure 55. Note that you can only view the audit log if you have an account administrator or audit log viewer role.
 
-![Command palette for getting to audit records](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_56.png)
-
 Figure 57. 
 
 Command palette for getting to audit records
 
 Here you will see a list of all events across the account, including the user that initiated the action, when it occurred, what the action was, and what entity was affected.
 
-![List of audit log events](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_57.png)
-
 Figure 58. 
 
 List of audit log events
 
 You can drill down on the event by clicking the ellipses next to it. The figures below show a failed login attempt with the corresponding API JSON output followed by a successful login.
-
-![Failed login attempt](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_58.png)
 
 Figure 59. 
 
@@ -3102,8 +2892,6 @@ Audit JSON from API on failed login attempt:
 "UserIdOrEmail": "admin@local"
 
 },
-
-![Successful administrator login](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_59.png)
 
 Figure 60. 
 
@@ -3219,15 +3007,11 @@ Successful administrator login
 
 Despite the audit logs containing tens of thousands of pages of records, it is still easy to isolate events to a specific user with a simple filter. Directly above the table is a magnifying glass with the words "Add Filter." Clicking on the words "Add Filter" displays a drop-down list of attributes that can be used to filter the table. Multiple filters can be used.
 
-![Audit entries](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_60.png)
-
 Figure 61. 
 
 Audit entries
 
 The table is sorted by most recent events, by default. You can drill down further by clicking the ellipses next to the event of interest.
-
-![Audit entry details](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_61.png)
 
 Figure 62. 
 
@@ -3240,14 +3024,9 @@ You can use the audit record to identify policy objects that have been modified.
 To access the API browser:
 
 1. Browse to [intersight.com/apidocs/apiref](https://intersight.com/apidocs/apiref)
-
 2. Use the search box to look for "audit".
-
 3. Click “aaa/AuditRecords”.
-
 4. Click the first GET method.
-
-![A screenshot of a computerAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_62.jpg)
 
 Figure 63. 
 
@@ -3256,8 +3035,6 @@ API browser
 Apply a filter to reduce the number of records returned. The relevant query parameter called **$filter**. To add a query parameter, click the blue **“+ Query Parameter** ” above the “Send” button. The key is $filter, and a sample MOID value is:
 
 ObjectMoid eq '6425b04062757230016def13'
-
-![REST API query example using API explorer](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_63.png)
 
 Figure 64. 
 
@@ -3308,8 +3085,6 @@ Level |  Component |  Description |  Comments
 Intersight and PVA/CVA syslog settings
 
 Intersight Virtual Appliances offer external syslog configuration from System Settings. This syslog is for external retention of appliance logs, not for end-point logs. You can designate the web server access logs, audit logs, and alarms to be included in the log transport. 
-
-![External syslog policy for Intersight Virtual Appliance](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_64.png)
 
 Figure 65. 
 
@@ -3485,8 +3260,6 @@ Appendix B – PVA/CVA licensing data details
 
 What does the licensing string required for the PVA installation contain? Is it a completely random string, or does it contain obscured information? The figure below shows a sample of this license.
 
-![PVA license codes](/c/dam/en/us/products/collateral/cloud-systems-management/intersight/compute-intersight-hardening-guide-wp.docx/_jcr_content/renditions/compute-intersight-hardening-guide-wp_65.png)
-
 Figure 66. 
 
 PVA license codes
@@ -3579,24 +3352,17 @@ An attestation identity key is used to provide such cryptographic proof by signi
 
 ### Our experts recommend
 
-  * [Cisco Intersight At a Glance](/c/en/us/products/collateral/cloud-systems-management/intersight/at-a-glance-c45-739419.html "Cisco Intersight At a Glance")
-
+* [Cisco Intersight At a Glance](/c/en/us/products/collateral/cloud-systems-management/intersight/at-a-glance-c45-739419.html "Cisco Intersight At a Glance")
 
 ### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---
 
 ## Page 5: https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/cx-services-intersight-aag.html
 
-  * Skip to main content
-  * Skip to search
-  * Skip to footer
-
-
-![](/content/dam/cisco-cdc/site/images/heroes/services/personalized-proactive-2400x572.jpg)
+* Skip to main content
+* Skip to search
+* Skip to footer
 
 # Cisco Services
 
@@ -3610,23 +3376,17 @@ Overview [Resources](/site/us/en/services/resources.html)
 
 ## Real results from a partner you can trust
 
-![](/content/dam/cisco-cdc/site/images/illustrations/services/resilience-320x320-light-blue.jpg)
-
 Resiliency
 
 98% 
 
 Crush the configuration chaos with 98%+ change success
 
-![](/content/dam/cisco-cdc/site/images/illustrations/services/simplify-320x320-light-blue.jpg)
-
 Simplicity
 
 88% 
 
 88% attempting self-service are successful
-
-![](/content/dam/cisco-cdc/site/images/illustrations/services/timetovalue-320x320-light-blue.jpg)
 
 Time to value
 
@@ -3643,8 +3403,6 @@ Show more
 ## Services and support designed for a world that doesn’t stop
 
 Watch the video to see how Cisco IQ brings together AI and human expertise to elevate support and professional services from reactive fixes to strategic, predictive powerhouses, giving you zero surprises.
-
-![](/content/dam/cisco-cdc/site/images/photography/Cisco%20IQ%20Site%20NC%201920x1080%20-%204.jpg)
 
 ##  Support and Professional Services powered by Cisco IQ and expertise 
 
@@ -3688,23 +3446,21 @@ Empower your people with richer, more secure interactions wherever they gather a
 
 ## Technology
 
-[ ![](/content/dam/cisco-cdc/site/images/photography/collaboration-320x320.jpg) Collaboration ](https://www.cisco.com/c/en_ca/solutions/collaboration/index.html)
+[ Collaboration ](https://www.cisco.com/c/en_ca/solutions/collaboration/index.html)
 
-[ ![](/content/dam/cisco-cdc/site/images/photography/security-320x320.jpg) Security ](/site/us/en/products/security/services/index.html)
+[ Security ](/site/us/en/products/security/services/index.html)
 
-[ ![](/content/dam/cisco-cdc/site/images/photography/obsverability-320x320.jpg) Observability ](https://www.splunk.com/en_us/products/observability.html)
+[ Observability ](https://www.splunk.com/en_us/products/observability.html)
 
-[ ![](/content/dam/cisco-cdc/site/images/photography/operations-320x320.jpg) Service provider ](/site/us/en/solutions/service-provider/index.html)
+[ Service provider ](/site/us/en/solutions/service-provider/index.html)
 
-[ ![](/content/dam/cisco-cdc/site/images/photography/data-center-320x320.jpg) Computing ](/site/us/en/products/computing/index.html)
+[ Computing ](/site/us/en/products/computing/index.html)
 
-[ ![](/content/dam/cisco-cdc/site/images/photography/networking-320x320.jpg) Enterprise networking ](/site/us/en/products/networking/index.html)
+[ Enterprise networking ](/site/us/en/products/networking/index.html)
 
 ## Four stories, one trusted partner
 
 Leaders across industries rely on Cisco services to cut through complexity and achieve stronger, smarter outcomes.
-
-![](/content/dam/cisco-cdc/site/images/photography/nyc-health-544x306.png)
 
 ###  Simplifying complexity for better care 
 
@@ -3712,23 +3468,17 @@ NYC Health + Hospitals was able to enhance visibility and security across its IT
 
 [See NYC Health + Hospitals’ story](https://www.cisco.com/c/m/en_us/customer-experience/success-stories/customer/nyc-health-hospitals.html)
 
-![](/content/dam/cisco-cdc/site/images/photography/workday-544x306.png)
-
 ###  Minimizing manual tasks with automation 
 
 Workday improved its security and resilience by implementing standardized configurations with the support of a more robust network.
 
 [See Workday’s story](https://www.cisco.com/c/m/en_us/customer-experience/success-stories/customer/workday.html)
 
-![](/content/dam/cisco-cdc/site/images/photography/united-airlines-544x306.png)
-
 ###  Streamlining travel through real-time support 
 
 United Airlines transformed its customer service operations, resulting in substantially improved efficiency and accessibility for customers seeking assistance.
 
 [See United Airlines’ story](https://www.cisco.com/c/m/en_us/customer-experience/customer-stories/united-airlines-customer-story.html)
-
-![](/content/dam/cisco-cdc/site/images/photography/elevating-connection-544x306.png)
 
 ###  Elevating connections across a country 
 

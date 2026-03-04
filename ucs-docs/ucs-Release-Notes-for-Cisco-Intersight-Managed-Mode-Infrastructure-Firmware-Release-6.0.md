@@ -8,13 +8,11 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 6.0 |
 | **Source file** | `ucs-docs-raw/html/b-intersight-infrastructure-fw-rn-6-0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:07 |
+| **Fetched on** | 2026-03-04 12:48:04 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0.html
-
-![Clear Contents of Search](/etc/designs/cdc/fw/i/ic_clear_gray.png)
 
 ---
 
@@ -24,19 +22,19 @@
   
 Firmware upgrades in Intersight include server firmware upgrades and infrastructure firmware upgrades. Infrastructure firmware upgrades in Intersight Managed mode is supported on Cisco Unified Edge Edge Chassis Management Controller (eCMC). To manage the eCMC infrastructure firmware, see [Upgrading Firmware for Unified Edge Chassis](https://intersight.com/help/saas/resources/fw_mgmnt_ue#upgrading_firmware_for_unified_edge_chassis). This feature is available with a Cisco Intersight Essentials or Advanced license tier. 
 
-In Intersight, infrastructure and server firmware upgrades can be done independently. That is, you do not always need to upgrade infrastructure firmware to use the latest server firmware and vice versa. For more information on Unified Edge server firmware updates, see [Release Notes for Cisco Intersight Managed Mode Server Firmware](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html). 
+In Intersight, infrastructure and server firmware upgrades can be done independently. That is, you do not always need to upgrade infrastructure firmware to use the latest server firmware and vice versa. For more information on Unified Edge server firmware updates, see [Release Notes for Cisco Intersight Managed Mode Server Firmware](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html).
 
 ---
 
 ## Page 3: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0/m-new-hardware-features.html
 
-## New Hardware Features in Infrastructure Firmware Release 6.0(1.251006) — None 
+## New Hardware Features in Infrastructure Firmware Release 6.0(1.251006) — None
 
 ---
 
 ## Page 4: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0/m-security-fixes.html
 
-## Security fixes in Release 6.0(1.251006) — None 
+## Security fixes in Release 6.0(1.251006) — None
 
 ---
 
@@ -54,7 +52,7 @@ CSCws30566 |  Unified Edge Chassis Management Controllers may experience unexpec
 
 ## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0/m-open-issues.html
 
-## Open issues in Release 6.0(1.251006) — None 
+## Open issues in Release 6.0(1.251006) — None
 
 ---
 
@@ -113,14 +111,10 @@ B-Series Server Firmware Version |  Infrastructure Firmware Version
 
 ## Related resources  
   
-  * [Release Notes for Cisco Intersight Unified Edge Server Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html)
-
-  * [Release Notes for Cisco Intersight Unified Edge eCMC Infrastructure Firmware Release, 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html)
-
-  * [Release Notes and Release Bundles for Unified Edge](https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html)
-
-  * [Managing Firmware in Unified Edge](/help/resources/fw_mgmnt_ue)
-
+* [Release Notes for Cisco Intersight Unified Edge Server Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html)
+* [Release Notes for Cisco Intersight Unified Edge eCMC Infrastructure Firmware Release, 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html)
+* [Release Notes and Release Bundles for Unified Edge](https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html)
+* [Managing Firmware in Unified Edge](/help/resources/fw_mgmnt_ue)
 
 ---
 
@@ -138,12 +132,12 @@ CSCws30566 |  Unified Edge Chassis Management Controllers may experience unexpec
 
 ## Page 10: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/m-new-hardware-features.html
 
-## New Hardware Features in Infrastructure Firmware Release 6.0(1.251006) — None 
+## New Hardware Features in Infrastructure Firmware Release 6.0(1.251006) — None
 
 ---
 
 ## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/m-open-issues.html
 
-## Open issues in Release 6.0(1.251006) — None 
+## Open issues in Release 6.0(1.251006) — None
 
 ---

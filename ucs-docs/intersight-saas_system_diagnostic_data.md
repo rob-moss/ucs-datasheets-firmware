@@ -8,7 +8,7 @@
 | **HTML Title** | Diagnostic Data |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_system_diagnostic_data.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 11:11:09 |
+| **Fetched on** | 2026-03-04 12:48:06 |
 
 ---
 
@@ -22,25 +22,18 @@ Cisco Intersight enables Cisco TAC to automatically generate and upload Tech Sup
 
 To submit a tech support bundle collection request:
 
-  1. Log in to Cisco Intersight with Account Administrator role.
-
-  2. Navigate to System > Diagnostic Data > Tech Support Bundle page.
-
-  3. Click Add Tech Support Bundle.
-
-  4. Enter device’s PID, Platform Type, and Serial.
-
-  5. Click Save.
-
+1. Log in to Cisco Intersight with Account Administrator role.
+2. Navigate to System > Diagnostic Data > Tech Support Bundle page.
+3. Click Add Tech Support Bundle.
+4. Enter device’s PID, Platform Type, and Serial.
+5. Click Save.
 
 Once the file is available, it can be downloaded by clicking the download icon located before the relevant file record.
 
 For more information on Configuring Tech Support Bundle Collection, refer the following:
 
-  * For SaaS, see [Configuring Tech Support Bundle Collection](../../../../../../../../../../help/saas/settings#configuring_tech_support_bundle_collection).
-
-  * For Appliance, see [Configuring Tech Support Bundle Collection](../../../../../../../../../../help/appliance/system/settings#configuring_tech_support_bundle_collection).
-
+* For SaaS, see [Configuring Tech Support Bundle Collection](../../../../../../../../../../help/saas/settings#configuring_tech_support_bundle_collection).
+* For Appliance, see [Configuring Tech Support Bundle Collection](../../../../../../../../../../help/appliance/system/settings#configuring_tech_support_bundle_collection).
 
 ## Core Files
 
@@ -48,12 +41,9 @@ Cisco Intersight enables you to manage the core diagnostic files generated in th
 
 To access and download core files:
 
-  1. Log in to Cisco Intersight with your Cisco ID and select admin role.
-
-  2. Navigate to System > Diagnostic Data > Core Files page.
-
-  3. Click the download icon located before the relevant file record.
-
+1. Log in to Cisco Intersight with your Cisco ID and select admin role.
+2. Navigate to System > Diagnostic Data > Core Files page.
+3. Click the download icon located before the relevant file record.
 
 Core Files Deletion
 
@@ -65,12 +55,9 @@ Auto Deletion
 
 The system automatically deletes core files under the following conditions:
 
-  * If the retention period of the core files has exceeded 30 days.
-
-  * If the disk space usage on the Fabric Interconnects exceeds 82%, the oldest files are deleted first until sufficient disk space is freed.
-
-  * When the Fabric Interconnect is unclaimed, all core files get cleaned up from the core directory.
-
+* If the retention period of the core files has exceeded 30 days.
+* If the disk space usage on the Fabric Interconnects exceeds 82%, the oldest files are deleted first until sufficient disk space is freed.
+* When the Fabric Interconnect is unclaimed, all core files get cleaned up from the core directory.
 
 Note:
 
