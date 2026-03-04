@@ -41,7 +41,7 @@
 - [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/imm_infra_fw_rn_4_3/b_imm_infra_fw_rn_lb.html)
 - [Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html)
 - [Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 4.3, 5.2, 5.3, and 5.4](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/4_3/b_intersight_server_fw_rn_4_3.html)
-
+- [IMM UCS Server BIOS tokens](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/b_UCS_BIOS_Tokens_Guide_chapter_01.html)
 
 
 
@@ -89,6 +89,8 @@
 - [Intersight SaaS Resources Using Organizations with Policies and Profiles](https://intersight.com/help/saas/resources/Using_Organizations_with_Policies_and_Profiles)
 - [Intersight SaaS Device Console](https://intersight.com/help/saas/device_console)
 - [Intersight SaaS Glossary](https://intersight.com/help/saas/glossary)
+- [Intersight SaaS Supported Systems](https://intersight.com/help/saas/supported_systems)
+- [Intersight SaaS Whats new](https://intersight.com/help/saas/whats_new/)
 
 
 ### Appliance (CVA / PVA) guides
@@ -99,7 +101,7 @@
 - [Intersight Appliance Device Console](https://intersight.com/help/appliance/device_console)
 - [Intersight Appliance CVA Whats New](https://intersight.com/help/appliance/whats_new/connected_appliance/)
 - [Intersight Appliance PVA Whats New](https://intersight.com/help/appliance/whats_new/private_appliance/)
-
+- [Intersight Appliance Supported Systems](https://intersight.com/help/appliance/supported_systems)
 
 
 # Whitepapers

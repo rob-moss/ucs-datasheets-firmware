@@ -2,6 +2,13 @@
 getrecommended-creds.sh
 
 wip/*
+archive
 archive/*
-archive-new
-archive.new
+__pycache__/
+.playwright-mcp/
+
+ucs-docs-raw/json/*
+ucs-docs-raw/html/*
+ucs-docs-raw/pdf/*
+ucs-docs-raw/other/*
+
