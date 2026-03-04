@@ -1,0 +1,2278 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="en" xml:lang="en"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="en/us";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.cpe === undefined) {
+        window.cpe = {};
+    }
+
+    cpe.accountName = "prod";
+    cpe.config = ["cinf","dsc","pps"];
+    cpe.hideMethod = "elements";
+
+    window.targetGlobalSettings = JSON.parse('{\x22timeout\x22:4000}');
+    window.targetPageParamsAll = () => JSON.parse('{\x22entity\x22:\x22{\\\x22id\\\x22:\\\x221692161472153279\\\x22,\\\x22categoryId\\\x22:\\\x22\\\x22}\x22}');
+
+    
+    const bullseyeLibrary = `/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/external/bullseye.js`;
+
+    import(bullseyeLibrary);
+</script>
+<script src="/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/regional-mbox/regional-mbox.js"></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <title>Migration Guide for Cisco UCS Fabric Interconnects, Release 4.3 - Migrating to UCS 6400 Series Fabric Interconnects [Cisco UCS Manager] - Cisco</title>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="Migrating to UCS 6400 Series Fabric Interconnects"  />
+    <meta name="title" content="Migration Guide for Cisco UCS Fabric Interconnects, Release 4.3 - Migrating to UCS 6400 Series Fabric Interconnects [Cisco UCS Manager]"  />
+    <meta name="documentId" content="1692161472138278"  />
+    <meta name="templateName" content="book"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="WEM"  />
+    <meta name="docType" content="TSD Products Configuration Guide Chapter"  />
+    <meta name="concept" content="Cisco UCS Manager"  />
+    <meta name="iaPath" content="cisco.com#Products#Cisco Products#Servers - Unified Computing#Cisco UCS Manager"  />
+    <meta name="contentType" content="cisco.com#US#preSales"  />
+    <meta name="locale" content="US"  />
+    <meta name="language" content="en"  />
+    <meta name="country" content="US"  />
+    <meta name="CCID_Page" content="cc001777"  />
+    <meta name="date" content="Wed May 28 23:58:05 PDT 2025"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="Migration Guide for Cisco UCS Fabric Interconnects, Release 4.3 - Migrating to UCS 6400 Series Fabric Interconnects [Cisco UCS Manager]"  />
+    <meta property="og:description" content="Migrating to UCS 6400 Series Fabric Interconnects"  />
+    <meta property="og:url" content="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3/m_migrating_from_6200_to_64108.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3/m_migrating_from_6200_to_64108.html"/>
+	
+
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/en\/us\/td\/docs\/unified_computing\/ucs\/ucs\u002Dmanager\/GUI\u002DUser\u002DGuides\/Fabric\u002DInterconnect\u002DMigration\/4\u002D3_1\/b_migration_guide_for_cisco_ucs_fabric_interconnects_4\u002D3\/m_migrating_from_6200_to_64108");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/cisco-sans.min.css" type="text/css">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/books.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", 'You are being logged out.');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "Migrating to UCS 6400 Series Fabric Interconnects",  		  
+          "url": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3/m_migrating_from_6200_to_64108.html",
+          "description": "Migrating to UCS 6400 Series Fabric Interconnects",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="psknnkyxelwrg2nhnzna-f-29840fd0d-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":24,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"e0678d6","ak.r":37441,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"124.148.214.0","ak.cport":60110,"ak.gh":"23.199.68.167","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772580442","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==aBvI4u1tAHMF3tanMhA3SatFt8eTIFk5+ETh6rbV4nWi3I4/ED9cf+VEKGz4S+xQi1brhd0uiBHJzKdQGiohKuMSMU/C8+qGDGND27Kzx1huP1z5i/2+U6RtCUmv42I4mhVbOLuV/IGtKRhhFJfC2wpmOsFLcnwBuWqOIVII6qOTPNVs0NnfSf/riu73lvcFCOEIsziYevCPqQ9q64zLH6HXUWwHiqMyG4tVKD0IeLvrORMmBpPxsMaiyPHokseEdpZsWx23ii6/bD39ynmf6pZUYKVq91Iu6oXiPXf+Xzhatk822Cls3JZuneBpJZiBY7C50c69A7dl86OE0KCpL/FKKsEfX7C2kmqbFfQPgEgd24PQMhji5z15sUobAllikSKo7BEEDNu4/XyMwmF7hyadSaxhgFXhT0n91o4fboI=","ak.pv":"540","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body id="wcq" class="fw-res cdc-support cdc-books cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">Skip to content</a></li>
+        <li><a id="skiplink-search" href="#">Skip to search</a></li>
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">Skip to footer</a></li>
+    </ul>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/us/en/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/index.html">Cisco.com Worldwide</a></li>
+            <li><a tabindex="-1" href="/c/en/us/products/index.html">Products and Services</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/solutions/index.html">Solutions</a></li>
+            <li><a tabindex="-1" href="/c/en/us/support/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/c/en/us/training-events.html">Learn</a></li>
+            <li><a tabindex="-1" href="//www.cisco.com/c/en/us/about/sitemap.html">Explore Cisco</a></li>
+            <li><a tabindex="-1" href="/c/en/us/buy.html">How to Buy</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Partners Home</a></li>                
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/cisco-partner-program/index.html?ccid=cc000864&dtid=odiprc001129">Partner Program</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/support-help/index.html">Support</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/tools/index.html?dtid=odiprc001129">Tools</a></li>
+            <li><a tabindex="-1" href="https://locatr.cloudapps.cisco.com/WWChannels/LOCATR/pf/index.jsp#/">Find a Cisco Partner</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/connect-with-a-partner/index.html?ccid=cc000864&dtid=odiprc001129">Meet our Partners</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Become a Cisco Partner</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based user-driven-nav" aria-label="breadcrumbs" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/index.html'><span itemprop='name'>Home</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/index.html'><span itemprop='name'>Support</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/all-products.html'><span itemprop='name'>Product Support</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/category.html'><span itemprop='name'>Servers - Unified Computing</span><meta itemprop='position' content='4' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/series.html'><span itemprop='name'>Cisco UCS Manager</span><meta itemprop='position' content='5' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html'><span itemprop='name'>Configuration Guides</span><meta itemprop='position' content='6' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+        
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">Migration Guide for Cisco UCS Fabric Interconnects, Release 4.3</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   <!-- have to do this for _g.I18n to be defined in preview and publish modes -->
+  
+  <script type="text/javascript">
+      // initialize dictionary for i18n
+      cdc.util.ensureNamespace("cdc.rc");
+    cdc.rc.eotkeys = {
+        showOnly5Products : "Show Only 5 Products",       
+        showAllRowsProducts : "Show All nRows Products",
+        supportCommunityUrl : "https://community.cisco.com/t5/technology-and-support/ct-p/technology-support",
+        supportCommunity : "Cisco Community",
+        thankYou : "Thank You",
+        viewersAlso : "Customers Also Viewed", 
+        show : "Show", 
+        more : "More", 
+        showOnly3Documents: "Show Only 3 Documents"
+      };
+  </script>
+
+
+
+<div class="row blowout full visitedlinks">
+    <div class="col full">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers techdocs">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button aria-expanded="false" >Bias-Free Language</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>Bias-Free Language</h3>
+            <p>The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. <a href="https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html">Learn more</a> about how Cisco is using Inclusive Language.</p>
+        </div>
+        
+    </div><!-- disclaimers -->
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* this is needed for the translation selector */
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+    var bookTitle = 'Book Title Page';
+</script>
+
+<span id="actionBar-top"></span>
+<section id="actionBar" class="noprint base-blowout">
+    <span class="icons">
+        
+        <button class="bookToc simpleOverlay-trigger" id="onlyforTrigger"> <!--US140575-->
+            Book Contents
+        </button>
+            <div class="bookToc simpleOverlay-content">
+               <div role="heading" class="title">Book Contents</div>
+               <!--googleoff: index--><!--googleoff: snippet-->  
+               <div class="content">
+                  
+
+
+
+<ul id="bookToc">
+    <li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3/m-new-and-changed-information.html">New and Changed Information</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3/m_overview-4-1.html">Overview of Cisco UCS Fabric Interconnects</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3/m-migrating-and-upgrading-cisco-ucs-hardware-components-for-6500-series-fabric-interconnect_4_3.html">Migrating to Cisco UCS 6500 Series Fabric Interconnects</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3/m_migrating_from_6200_to_64108.html">Migrating to UCS 6400 Series Fabric Interconnects</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3/m-appendix.html">Appendix</a></li>
+
+</ul>
+
+
+               </div>
+               <!--googleon: index--><!--googleon: snippet-->               
+            </div>
+
+        
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='versionddcontainer chapter'></div>
+<script type="text/html" class="versionstemp">
+            <div class="versionsdd">
+                <button class="versionbutton" aria-haspopup="true" aria-expanded="false" aria-labelledby="other versions" class="version"><label></label></button>
+                <ul class="versionlist" aria-labelledby="other versions">
+                <%
+                    let pageUrl = window.location.pathname.replace("/content/","/c/").toLowerCase();
+                    if (true) pageUrl = pageUrl.substring(0,pageUrl.lastIndexOf("/"))+".html";
+                    for(let i=0; i< data.length; i++) {
+                        let item = data[i],
+                            myurl = item.linkUrl,
+                            urlm = myurl.replace("/content/","/c/");;
+                            mytitle = item.linkTitle;
+                            myclass= urlm.toLowerCase() == pageUrl ? "class=\"selected\"":""; 
+%>
+                    <li><a href="${myurl}" ${myclass}>${mytitle}</a></li>
+<%
+                  }   %>
+                </ul>
+             </div>
+</script>
+    
+        <span class="utilities">
+          <button title="Search in this Book" class="mobileSearch simpleOverlay-trigger">
+            Search
+          </button>
+          <div class="mobileSearch simpleOverlay-content">
+            <div class="title">Find Matches in This Book</div>
+              <!--googleoff: index--><!--googleoff: snippet-->  
+              <div class="content">
+                <form id="mobileBooksearch" class="chapter">
+                   <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit"></button>
+                   <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+                </form>
+                <div id="overlayResults" role="region" aria-live="polite" >
+                   <!-- important, keep this results div begin end on same line in here -->
+                   <div class="results"></div>
+                </div>
+              </div>
+              <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "Save";
+    cdc.rc.savedoc.saved = "Saved";
+</script>
+
+    <button class="save" aria-expanded="false" aria-label="Save">
+        <label>Save</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3/m_migrating_from_6200_to_64108.html">Log in</a> to Save Content
+    </div>
+
+
+          <!-- Translation Selctor -->
+          <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+ 
+
+
+ 
+          <div class="translations simpleOverlay-content" role="dialog" id="dialogt" aria-labelledby="onlyForNonEN" aria-modal="true">
+            <div role="heading" class="title">Available Languages</div>
+               <!--googleoff: index--><!--googleoff: snippet--> 
+            <script language="javascript">                    
+                cdc.translations.map = "{en-us=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3/m_migrating_from_6200_to_64108.html, x-default=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3/m_migrating_from_6200_to_64108.html}";//storing the map for use in the JS
+                cdc.translations.locale="en_us";
+            </script>
+            <div class="content">
+              <div class="availableLanguagesList">
+                  <ul id="translationsList">
+                  </ul> 
+              </div>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+          
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // stored value for overlay label to use in js
+    var downloadOPtionLabel = 'Download Options',
+    	bookSearchlabel = 'Find Matches in This Book',
+    	translationsLabel = 'Translations',
+    	bookConentLabel= 'Book Contents';
+</script>
+
+
+        
+
+
+
+        <button title="Document Download Options" id="dwnld-button" class="downloadOptions simpleOverlay-trigger" aria-expanded="false">
+            Download
+        </button>
+        <div class="downloadOptions simpleOverlay-content" role="dialog" id="dialogd" aria-labelledby="dwnld-button" aria-modal="true" class="default_dialog">
+            <div role="heading" class="title">Download Options</div>
+            <!--googleoff: index--><!--googleoff: snippet-->  
+            <div class="content">
+                <header>
+
+                    <h3 class="h4"> Book Title</p>
+                    <p>Migration Guide for Cisco UCS Fabric Interconnects, Release 4.3</p>
+                    <p class="h4"> Chapter Title</p>
+                    <h3>Migrating to UCS 6400 Series Fabric Interconnects</p>
+
+                </header>
+                <ul>
+
+                        <li >    
+                            <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3.pdf" class="pdfIcon">PDF - Complete Book 
+                            <span>(3.02 MB)</span></a>
+
+                                   <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/4-3_1/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3/m_migrating_from_6200_to_64108.pdf" class="chapter">PDF - This Chapter <span>(1.14 MB)</span></a>
+                                                            
+                            <p>View with Adobe Reader on a variety of devices</p>
+                        </li>                                  
+              </ul>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+        </div>
+
+          <button title="Print Friendly Page" class="print simpleOverlay-trigger">
+              Print
+          </button>
+        </span> 
+    </span>
+    <form id="booksearch" tabindex="0" class="chapter">
+       <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+       <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+    </form>
+      <div id="searchresult" role="region" aria-live="polite"><button class="close" title="Close Panel"><span></span><span></span></button>
+         <span class="headArrow"></span>
+         <h2>Results</h2>
+         <div class="matches">
+         </div>
+         <div class="results" tabindex="0">
+         </div>
+      </div>
+      <div id="searchResultChapterTitle"></div>
+</section>
+<script type="text/html" id="navigateMatchesTemplate">
+   <div>
+      <button class="up on" title="Previous Match"><span></span></button>
+      <button class="up off" title="Previous Match Not Available"><span></span></button>
+      <span class="matchlabel">Matches</span>
+      <button class="down on" title="Next Match"><span></span></button>
+      <button class="down off" title="Next Match Not Available"><span></span></button>
+   </div>
+</script>
+<script type="text/html" id="noChapterMatchTemplate">
+   <p>There are no Matches in this chapter.</p>
+</script>
+<script type="text/html" id="searchResultsListTemplate">
+   <p class="h3">Chapters with Matches</p>
+   <ul>
+<% var i = 0;
+    while ( modelData.links[i] ) {  %>
+      <li>
+<%     curpage = (window.location.pathname.indexOf(modelData.links[i].href) > -1 )?true:false;
+        if ( i === modelData.curpage ) {
+            if ( ! jQuery('.mobileSearch').css("display") == "block") { %>
+               <span class="currentIndicator"></span>${modelData.links[i].title}
+<%         } else {                %>
+               <span class="currentIndicator"></span><button class="curpage" data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%         }
+        } else {  %>
+            <button data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%     }  %>            
+      </li> 
+<% i++;
+    } %>
+   </ul> 
+</script>      
+<script type="text/html" id="noBookMatchTemplate">
+   <p class="head">No matches found in this book</p>
+   <p>This feature looks for an exact match of what you entered in the box.</p>
+   <p>If you entered several words, try reducing the entry to one or two and search again.</p>
+</script>
+<script type="text/html" id="errorTemplate">
+   <p>Search is currently unavailable due to technical issues. We are working to resolve the problem as quickly as possible.</p>
+</script>
+<script type="text/html" id="mobileSearchFooterTemplate">
+   <div id="mobileSearchFooter">
+      <button class="mobileSearch" title="Search in this Book"></button>
+      <button class="closeFooter"><span></span><span></span></button>
+      <div class="matches"> 
+      </div>
+   </div>   
+</script>
+ 
+    </div>
+</div>
+<div class="row blowout narrow-wide-v2 flip visitedlinks">
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div id="documentInfo">
+                  <dl>
+                     
+                      <dt>Updated:</dt><dd> October 22, 2024</dd>
+                     
+                  </dl>
+                    
+              </div>
+
+ 
+    </div>
+    <div id="chapterTitleDiv" class="col wide-v2 indent-at-xlarge">
+        <!-- this will be chapter title for chapters or header for TOC for books -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="chapter-title">Chapter: Migrating to UCS 6400 Series Fabric Interconnects </h2>  
+    
+
+    </div>
+</div>
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <div id="pageContentDiv" class="col wide-v2 indent-at-xlarge" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
+
+    
+ 
+ 
+
+<div id="chapterToc" class="base-blowout">
+    <button><span></span>Chapter Contents</button>
+    <div>
+    
+<ul>
+<li><a href="#migrating-to-ucs-6400-series-fabric-interconnects">Migrating to UCS 6400 Series Fabric Interconnects</a></li>
+<li><a href="#d10098e16a1635">Cisco UCS 6454 Fabric Interconnect to Cisco UCS 64108 Fabric Interconnect Migration</a>
+<ul>
+<li><a href="#concept_vxm_lxc_zdb">Cisco UCS 6400 Series Fabric Interconnect Migration Considerations</a>
+<ul>
+<li><a href="#Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d">Validating Feature Configurations for Cisco UCS 64108 Fabric Interconnect before Upgrade</a></li>
+<li><a href="#considerations-for-6454-fi-to-64108-fi-migration-with-ucs-central">Considerations for migrating Cisco UCS 6454 Fabric Interconnects to Cisco UCS 64108 Fabric Interconnects with Cisco UCS Central</a></li>
+</ul></li>
+<li><a href="#task_i25_zkc_zdb">Migrating from UCS 6454 Fabric Interconnects to UCS 64108 Fabric Interconnects</a></li></ul></li></ul>
+    <button id="chapterToc-close">Close<span></span></button>
+    </div>
+</div>
+
+ 
+    <div id="chapterContent">
+    
+                  <h1 class="title topictitle1" id="ariaid-title1">Migrating to UCS 6400 Series Fabric Interconnects</h1>
+                  <!-- minitoc start -->
+                  <nav role="navigation" class="related-links"></nav>
+                  <!-- minitoc end -->
+                  <p class="topictitle1" id="d10098e16a1635">Cisco UCS 6454 Fabric Interconnect to Cisco UCS 64108 Fabric Interconnect Migration</p>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title2" lang="en-US" id="concept_vxm_lxc_zdb">
+                     <h2 class="title topictitle2" id="ariaid-title2">Cisco UCS 6400 Series Fabric Interconnect Migration Considerations</h2>
+                     <section class="body conbody">
+                        
+                        <p class="p"><span class="ph">Cisco UCS Manager</span> provides support for migrating Cisco UCS 6454 Fabric Interconnect to Cisco UCS 64108 Fabric Interconnect with B-Series servers,
+                           C-Series, or S-Series servers. 
+                        </p>
+                        
+                        <p class="p">To migrate from <span class="ph">Cisco UCS</span> 6454 Fabric Interconnect to Cisco UCS 64108 Fabric Interconnect, both the Fabric Interconnect must be loaded with the same
+                           Infrastructure Firmware version.
+                        </p>
+                        
+                        <p class="p"><span class="ph uicontrol">Prerequisites</span></p>
+                        
+                        <p class="p">Before performing the migration from <span class="ph">Cisco UCS</span> 6454 Fabric Interconnects to Cisco UCS 64108 Fabric Interconnect, ensure that the following prerequisites are met for a successful
+                           migration:
+                        </p>
+                        
+                        <ul class="ul">
+                           
+                           <li class="li">
+                              
+                              <p class="p">Back up and export Cisco UCS Manager configuration before initiating the upgrade.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Take an inventory of the Cisco UCS domain and remove any unsupported hardware.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Ensure to enable the cluster failover.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Do not attempt to implement new software features from the new <span class="ph">Cisco UCS</span> software version until all required hardware is installed.
+                              </p>
+                              
+                           </li>
+                           
+                           
+                           <li class="li">
+                              
+                              <p class="p">Make sure both Cisco UCS 6400 series Fabric Interconnects are on the same UCSM build before migration.</p>
+                              
+                           </li>
+                           
+                           
+                           <li class="li" id="concept_vxm_lxc_zdb__li_F06C476128924CEAA2644DAAA737AEF9">
+                              
+                              <p class="p">Standalone installations should expect down time. In a cluster configuration, migrating the Fabric Interconnects can result
+                                 in a small traffic disruption when the traffic fails over from one Fabric Interconnect to another. To avoid that there is
+                                 no permanent traffic loss during migration, ensure that there is redundancy in the UCS domain on both Fabric Interconnects
+                                 before migration and test the redundancy before starting the migration.
+                              </p>
+                              
+                              
+                              
+                              
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Ensure the latest firmware bundle is downloaded and upgraded through GUI or CLI. Incase of attempting to upgrade the firmware
+                                 bundle using other methods (loader prompt/erase configuration) can result in missing package version.
+                              </p>
+                              
+                           </li>
+                           
+                           
+                           <li class="li">
+                              
+                              <p class="p">Before migration, make sure that the FC Speed is 8Gbps on Cisco UCS 6454 Fabric Interconnects or the connected switch supports
+                                 8Gbps speed.
+                              </p>
+                              
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr>
+                                          
+                                          <p class="p">Post migration, you can configure the FC Port (Scalability Port) speed on Cisco UCS 64108 Fabric Interconnects.</p>
+                                          
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Migrating to different IOM models can result in peer communication issue between IOMs of the Primary and Secondary Fabric
+                                 Interconnects.
+                              </p>
+                              
+                              
+                           </li>
+                           
+                           <li class="li" id="concept_vxm_lxc_zdb__li_AB2D183AB3B3449A8DF2D954F343E5EA">
+                              
+                              <p class="p">Make a detailed record of the cabling between FEX and fabric interconnects. You must preserve the physical port mapping to
+                                 maintain the server pinning already configured and minimize down time.
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li" id="concept_vxm_lxc_zdb__li_A3B64BCB7F6B48C5997EDB0185B7E618">
+                              
+                              <p class="p">For a cluster configuration, both fabric interconnects must have symmetrical connection topologies between fabric interconnect
+                                 and FEX.
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Use the same speed cables on all the adapter ports that are connected to same Fabric Interconnect. Cisco UCS VIC adapter ports
+                                 connected to Cisco UCS 64108 fabric interconnect through a mix of 10G and 25G cables can result in UCS rack-mount server discovery
+                                 failure and ports moving to suspended state.
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">A WWN pool can include only WWNNs or WWPNs in the ranges from 20:00:00:00:00:00:00:00 to 20:FF:00:FF:FF:FF:FF:FF or from 50:00:00:00:00:00:00:00
+                                 to 5F:FF:00:FF:FF:FF:FF:FF. All other WWN ranges are reserved. When fibre channel traffic is sent through the UCS infrastructure
+                                 the source WWPN is converted to a MAC address. You cannot use WWPN pool which can translate to source multicast MAC addresses.
+                                 To ensure the uniqueness of the <span class="ph">Cisco UCS</span> WWNNs and WWPNs in the SAN fabric, Cisco recommends using the following WWN prefix for all blocks in a pool: 20:00:00:25:B5:XX:XX:XX
+                                 
+                              </p>
+                              
+                           </li>
+                           
+                           
+                        </ul>
+                        
+                        <p class="p"><span class="ph uicontrol">Recommendations</span></p>
+                        
+                        <p class="p">Following are the best practices for a successful migration:</p>
+                        
+                        <ul class="ul">
+                           
+                           <li class="li">
+                              
+                              <p class="p">For minimal disruption during migration, ensure that there is redundancy for Ethernet and FC traffic from the servers in the
+                                 UCS domain across both 6454 Fabric Interconnects before migration.
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li" id="concept_vxm_lxc_zdb__li_71E676BF5D8F4DB7BEF28D9161A924B6">
+                              
+                              <p class="p">Changes to the topology, such as the number of servers or uplink connections, should be performed after the fabric interconnect
+                                 migration is complete.
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">During the migration of Fabric Interconnects, ensure the Cluster ID is not changed.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">During the migration, image synchronization between fabric interconnects is not allowed. This is done to prevent incompatible
+                                 images from getting synchronized. It is necessary to download B-Series, C-Series, and S-Series server software bundles again
+                                 after migration is complete.
+                              </p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Unconfigure the fibre channel ports on the migrating subordinate Cisco UCS 6454 Fabric Interconnect and reconfigure on the
+                                 Cisco UCS 64108 Fabric Interconnect.
+                              </p>
+                              
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr>
+                                          
+                                          <p class="p">For more information on migrating Cisco UCS 6454 Fabric Interconnect to Cisco UCS 64108 Fabric Interconnect with UCS Central,
+                                             see <a class="xref" href="#considerations-for-6454-fi-to-64108-fi-migration-with-ucs-central">Considerations for migrating Cisco UCS 6454 Fabric Interconnects to Cisco UCS 64108 Fabric Interconnects with Cisco UCS Central</a>.
+                                          </p>
+                                          
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table>
+                              
+                           </li>
+                           
+                           
+                        </ul>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links">
+                        <ul class="ullinks">
+                           <li class="link ulchildlink"><a href="#Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d">Validating Feature Configurations for Cisco UCS 64108 Fabric Interconnect before Upgrade</a></li>
+                           <li class="link ulchildlink"><a href="#considerations-for-6454-fi-to-64108-fi-migration-with-ucs-central">Considerations for migrating Cisco UCS 6454 Fabric Interconnects to Cisco UCS 64108 Fabric Interconnects with Cisco UCS Central</a></li>
+                        </ul>
+                     </nav>
+                     <!-- minitoc end -->
+                     <article class="topic concept nested2" aria-labelledby="ariaid-title3" lang="en-US" id="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d">
+                        <h3 class="title topictitle3" id="ariaid-title3">Validating Feature Configurations for Cisco UCS 64108 Fabric Interconnect before Upgrade</h3>
+                        <section class="body conbody">
+                           
+                           
+                           
+                           
+                           <table width="100%" border="1" class="table frame-all">
+                              <caption><span class="table--title-label tabletitle">Table 1. </span><span class="tabletitle">Features that needs special attention prior to upgrading</span></caption>
+                              <colgroup>
+                                 <col style="width:50%">
+                                 <col style="width:50%">
+                              </colgroup>
+                              <thead class="thead">
+                                 
+                                 <tr>
+                                    
+                                    <th font-weight="bold" class="entry colsep-1 rowsep-1" id="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__1">
+                                       
+                                       <p class="p">Feature</p>
+                                       
+                                    </th>
+                                    
+                                    <th font-weight="bold" class="entry colsep-1 rowsep-1" id="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__2">
+                                       
+                                       <p class="p">Remediation</p>
+                                       
+                                    </th>
+                                    
+                                 </tr>
+                                 
+                              </thead>
+                              <tbody class="tbody">
+                                 
+                                 <tr>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__1 ">
+                                       
+                                       <p class="p">Chassis and fabric extender I/O port channel</p>
+                                       
+                                    </td>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__2 ">
+                                       
+                                       <p class="p">Select a port channel to the I/O module (IOM).</p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                                 <tr>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__1 ">
+                                       
+                                       <p class="p">Multicast optimization</p>
+                                       
+                                    </td>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__2 ">
+                                       
+                                       <p class="p">Verify that multicast optimization is not enabled under the LAN quality-of-service (QoS) system classes</p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                                 <tr>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__1 ">
+                                       
+                                       <p class="p">Fabric forwarding mode for Ethernet</p>
+                                       
+                                    </td>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__2 ">
+                                       
+                                       <p class="p">Verify that the Ethernet forwarding mode is set to <span class="ph uicontrol">End Host Mode Only</span>.
+                                       </p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                                 <tr>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__1 ">
+                                       
+                                       <p class="p">Fabric forwarding mode for Fibre Channel</p>
+                                       
+                                    </td>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__2 ">
+                                       
+                                       <p class="p">Verify that Fibre Channel forwarding mode is set to <span class="ph uicontrol">End Host Mode or FC Switching Mode</span>.
+                                       </p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                                 <tr>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__1 ">
+                                       
+                                       <p class="p">Cisco NetFlow</p>
+                                       
+                                    </td>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__2 ">
+                                       
+                                       <p class="p">Unconfigure NetFlow.</p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                                 <tr>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__1 ">
+                                       
+                                       <p class="p">MAC Security </p>
+                                       
+                                    </td>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__2 ">
+                                       
+                                       <p class="p">Select <span class="ph uicontrol">Allow</span> for MAC security. 
+                                       </p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                                 <tr>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__1 ">
+                                       
+                                       <p class="p">VM-FEX</p>
+                                       
+                                    </td>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__2 ">
+                                       
+                                       <p class="p">Remove port profiles and Cisco UCS Manager ESXi or SCVMM related configurations.</p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                                 <tr>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__1 ">
+                                       
+                                       <p class="p">Dynamic vNIC connection policies</p>
+                                       
+                                    </td>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__2 ">
+                                       
+                                       <p class="p">Set the dynamic vNIC connection policy in the vNIC profile to <span class="ph uicontrol">Not set</span>.
+                                       </p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                                 <tr>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__1 ">
+                                       
+                                       <p class="p">Cisco Switched Port Analyzer (SPAN)</p>
+                                       
+                                    </td>
+                                    
+                                    <td class="entry colsep-1 rowsep-1" headers="Cisco_Concept.dita_b1378d74-eba6-45d0-86c5-e5013b19d78d__entry__2 ">
+                                       
+                                       <p class="p">Use receive (RX) direction only. The installer will change SPAN to the RX direction and send an alert indicating that this
+                                          setting is being changed.
+                                       </p>
+                                       
+                                    </td>
+                                    
+                                 </tr>
+                                 
+                              </tbody>
+                           </table>
+                           
+                           <p class="p">Failure to comply with these remediation steps will result in a migration warning alert during the migration process and prevent
+                              the fabric interconnects from synchronizing.
+                           </p>
+                           
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic concept nested2" aria-labelledby="ariaid-title4" lang="en-US" id="considerations-for-6454-fi-to-64108-fi-migration-with-ucs-central">
+                        <h3 class="title topictitle3" id="ariaid-title4">Considerations for migrating Cisco UCS 6454 Fabric Interconnects to Cisco UCS 64108 Fabric Interconnects with Cisco UCS Central</h3>
+                        <section class="body conbody">
+                           
+                           <p class="p">In addition to <a class="xref" href="#concept_vxm_lxc_zdb">Cisco UCS 6400 Series Fabric Interconnect Migration Considerations</a>, consider the following prerequisites when migrating with Cisco UCS Central:
+                           </p>
+                           
+                           <ul class="ul">
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">Before initiating the migration, ensure to have a complete backup of Cisco UCS Manager and UCS Central configurations.</p>
+                                 
+                              </li>
+                              
+                              <li class="li">
+                                 
+                                 <p class="p">To avoid any configuration issues during migration, make sure the following policies on Policy Resolution Control is set to
+                                    Local in Cisco UCS Manager:
+                                 </p>
+                                 
+                                 <ul class="ul">
+                                    
+                                    <li class="li">
+                                       
+                                       <p class="p">Infrastructure and Catalog Firmware Policy</p>
+                                       
+                                    </li>
+                                    
+                                    <li class="li">
+                                       
+                                       <p class="p">Equipment Policy</p>
+                                       
+                                    </li>
+                                    
+                                    <li class="li">
+                                       
+                                       <p class="p">Port Configuration Policy</p>
+                                       
+                                    </li>
+                                    
+                                 </ul>
+                                 
+                              </li>
+                              
+                           </ul>
+                           
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title5" lang="en-US" id="task_i25_zkc_zdb">
+                     <h2 class="title topictitle2" id="ariaid-title5">Migrating from UCS 6454 Fabric Interconnects to UCS 64108 Fabric Interconnects</h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_i25_zkc_zdb__context_CB198FB1E3E04D25B7C47610FC22026F">
+                           			
+                           <p class="p">Beginning with Cisco UCS Manager Release 4.1, you can migrate from Cisco UCS 6454 Fabric Interconnect to Cisco UCS 64108 Fabric
+                              Interconnect.
+                           </p>
+                           			
+                           <p class="p">To acknowledge the chassis in Cisco UCS Manager, do the following:</p>
+                           			
+                           <ol class="ol">
+                              				
+                              <li class="li">
+                                 					
+                                 <p class="p">In the Navigation pane of Cisco UCS Manager, click <span class="ph uicontrol">Equipment</span>.
+                                 </p>
+                                 				
+                              </li>
+                              				
+                              <li class="li">
+                                 					
+                                 <p class="p">Click the <span class="ph uicontrol">Equipment</span> node.
+                                 </p>
+                                 				
+                              </li>
+                              				
+                              <li class="li">
+                                 					
+                                 <p class="p">In the Work pane, click the <span class="ph uicontrol">Policies</span> tab.
+                                 </p>
+                                 				
+                              </li>
+                              				
+                              <li class="li">
+                                 					
+                                 <p class="p">Click the <span class="ph uicontrol">Global Policies</span> subtab.
+                                 </p>
+                                 				
+                              </li>
+                              				
+                              <li class="li">
+                                 					
+                                 <p class="p">In the <span class="ph uicontrol">Chassis/FEX Discovery Policy</span> area, set the <span class="ph uicontrol">Link Grouping Preference</span> field to <span class="ph uicontrol">Port Channel</span>.
+                                 </p>
+                                 				
+                              </li>
+                              				
+                              <li class="li">
+                                 					
+                                 <p class="p">Expand <span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Chassis</span>, and choose the chassis that you want to acknowledge.
+                                 </p>
+                                 				
+                              </li>
+                              				
+                              <li class="li">
+                                 					
+                                 <p class="p">In the Work pane, click the <span class="ph uicontrol">General</span> tab.
+                                 </p>
+                                 				
+                              </li>
+                              				
+                              <li class="li">
+                                 					
+                                 <p class="p">In the <span class="ph uicontrol">Actions</span> area, click <span class="ph uicontrol">Acknowledge Chassis</span>.
+                                 </p>
+                                 				
+                              </li>
+                              			
+                           </ol>
+                           			
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr>
+                                       				
+                                       <p class="p">For more information about how to perform configuration procedures in <span class="ph">Cisco UCS Manager</span>, see the appropriate <a class="xref" href="http://www.cisco.com/en/US/products/ps10281/products_installation_and_configuration_guides_list.html" target="_blank">Cisco UCS Manager Configuration Guide</a>.
+                                       </p>
+                                       			
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table>
+                           		
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Move the traffic to the primary fabric interconnect (Cisco UCS 6454). This can be performed in two ways: fabric evacuation
+                                       and uplink disablement. Use the below flowchart to choose between the two based on your Cisco UCS domain server and connectivity.
+                                    </p>
+                                    <section class="itemgroup info"><img class="image" src="/c/dam/en/us/td/i/400001-500000/470001-480000/472001-473000/472394.png"></section>
+                                    <section class="itemgroup info">
+                                       					
+                                       <table class="olh_note" border="0" role="note">
+                                          <tr>
+                                             <td width="1%" class="td_faq" role="heading" border="0">
+                                                <p><b>Note</b></p>&nbsp;
+                                             </td>
+                                             <td border="0" class="td_faq">
+                                                <section class="note__content">
+                                                   						
+                                                   <p class="p">For direct-attached rack servers, only uplink disablement is supported.</p>
+                                                   					
+                                                </section>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Verify that all traffic has failed over to the primary fabric interconnect. Unconfigure all the server ports or fibre channel
+                                       ports on the subordinate fabric interconnect.
+                                    </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <table class="olh_note" border="0" role="note">
+                                          <tr>
+                                             <td width="1%" class="td_faq" role="heading" border="0">
+                                                <p><b>Note</b></p>&nbsp;
+                                             </td>
+                                             <td border="0" class="td_faq">
+                                                <section class="note__content">
+                                                   						
+                                                   <p class="p">For more information, see the <em class="ph i">Fabric Interconnect Traffic Evacuation</em> section in the <em class="ph i">Guidelines and Prerequisites</em> chapter of the <a class="xref" href="https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html" target="_blank">Cisco UCS Manager Firmware Management Guide</a>. 
+                                                   </p>
+                                                   					
+                                                </section>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Power down the UCS 6454 subordinate fabric interconnect and disconnect the power and the L1/L2 cables.</p>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Mount the replacement UCS 64108 Fabric Interconnect into either the same rack or an adjacent rack.</p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <table class="olh_note" border="0" role="note">
+                                          <tr>
+                                             <td width="1%" class="td_faq" role="heading" border="0">
+                                                <p><b>Note</b></p>&nbsp;
+                                             </td>
+                                             <td border="0" class="td_faq">
+                                                <section class="note__content">
+                                                   						
+                                                   <p class="p">As a best practice, you should label the cables.</p>
+                                                   					
+                                                </section>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Connect the L1/L2 cables and the server ports according to your port mapping plan.</p>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Power up the new fabric interconnect. If it is connected correctly, the new subordinate fabric interconnect will detect that
+                                       it is being added to an existing cluster.
+                                    </p>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Enter the IP address information for the new subordinate fabric interconnect. </p>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;8</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Unified ports on the UCS 6454 fabric interconnect are similar to the unified port ordering on the 64108 fabric interconnect.</p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <table class="olh_note" border="0" role="note">
+                                          <tr>
+                                             <td width="1%" class="td_faq" role="heading" border="0">
+                                                <p><b>Note</b></p>&nbsp;
+                                             </td>
+                                             <td border="0" class="td_faq">
+                                                <section class="note__content">
+                                                   						
+                                                   <ul class="ul">
+                                                      							
+                                                      <li class="li">
+                                                         								
+                                                         <p class="p">When you convert from ethernet ports to fibre channel ports, a reboot is required.</p>
+                                                         							
+                                                      </li>
+                                                      							
+                                                      <li class="li">
+                                                         								
+                                                         <p class="p">For more information on <em class="ph i">Configuring FC Uplink port</em> or <em class="ph i">Converting FC Storage Port to FC Uplink port</em>, refer the <em class="ph i">LAN Ports and Port Channels</em> chapter in <a class="xref" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-2/b_UCSM_Network_Mgmt_Guide_4_2/b_UCSM_Network_Mgmt_Guide_chapter_0100.html#task_A7ED517EE3C9482FA063827E4CBD25AE" target="_blank">Cisco UCS Manager Network Management Guide</a>.
+                                                         </p>
+                                                         							
+                                                      </li>
+                                                      						
+                                                   </ul>
+                                                   					
+                                                </section>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;9</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Configure the network uplink ports on the new Cisco UCS 64108 fabric interconnect.</p>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;10</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Match the old configuration from 6454 for the port-channel. Add uplink ports to the necessary port-channel or any other previous
+                                       configuration required for the port-channel. Wait for configuration to complete before proceeding to the next step.
+                                    </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <table class="olh_note" border="0" role="note">
+                                          <tr>
+                                             <td width="1%" class="td_faq" role="heading" border="0">
+                                                <p><b>Note</b></p>&nbsp;
+                                             </td>
+                                             <td border="0" class="td_faq">
+                                                <section class="note__content">
+                                                   						
+                                                   <p class="p">Waiting to enable the server ports prevents the svc_sam_bladeAG service from communicating with chassis and servers. In previous
+                                                      migrations, when enabling server ports at the same time as the uplink ports, it would cause topping out (pinning) the CPU
+                                                      to near 100% on the primary fabric interconnect. When there is high CPU usage, the user interface becomes unresponsive and
+                                                      the svc_sam_bladeAG service must be restarted to recover.
+                                                   </p>
+                                                   					
+                                                </section>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step" id="task_i25_zkc_zdb__step_27E25643B6F442FBBF1ACE3D80024422">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;11</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Reconfigure the server ports or fibre channel ports.</p>
+                                    <ol type="a" class="ol substeps">
+                                       					
+                                       <li class="li substep" id="task_i25_zkc_zdb__substep_74A09458B0264E78A26DBE54F583AA2D">
+                                          						
+                                          <p class="ph cmd">If you have changed port mappings, you may need to reacknowledge the IOM, FEX, or direct-connect rack server connected to
+                                             the subordinate fabric interconnect.
+                                          </p>
+                                          					
+                                       </li>
+                                       					
+                                       <li class="li substep" id="task_i25_zkc_zdb__substep_3EC4F5FE391A4895AA213D7F852ACD59">
+                                          						
+                                          <p class="ph cmd">Verify and if necessary, you can reconfigure ethernet ports as server ports.</p>
+                                          					
+                                       </li>
+                                       				
+                                    </ol>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step" id="task_i25_zkc_zdb__step_1811E66258F2437A8EB89BF1112269D2">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;12</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">The 64108 subordinate fabric interconnect will automatically synchronize the configuration and database/state information
+                                       from the primary UCS 6454 fabric interconnect. 
+                                    </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">Synchronization between primary and subordinate fabric interconnects can take several minutes. You may see an error message
+                                          that will persist until the server ports are enabled.
+                                       </p>
+                                       				
+                                    </section>
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">The port configuration is copied from the subordinate fabric interconnect to the new fabric interconnect.</p>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;13</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Reconfigure the Ethernet ports, Fibre Channel ports, or unified ports.</p>
+                                    <ol type="a" class="ol substeps">
+                                       					
+                                       <li class="li substep" id="task_i25_zkc_zdb__substep_010F48A067EF411FB26F9C9B3703B30E">
+                                          						
+                                          <p class="ph cmd">If you have changed port mappings for direct-attach rack server, reacknowledge the server.</p>
+                                          					
+                                       </li>
+                                       					
+                                       <li class="li substep" id="task_i25_zkc_zdb__substep_603D21A2DBD84288AAE61FCA339A4FE8">
+                                          						
+                                          <p class="ph cmd">It is recommended to reacknowledge the IOM or FEX.</p>
+                                          					
+                                       </li>
+                                       				
+                                    </ol>
+                                    <section class="itemgroup info">
+                                       					
+                                       <table class="olh_note" border="0" role="note">
+                                          <tr>
+                                             <td width="1%" class="td_faq" role="heading" border="0">
+                                                <p><b>Note</b></p>&nbsp;
+                                             </td>
+                                             <td border="0" class="td_faq">
+                                                <section class="note__content">
+                                                   						
+                                                   <p class="p">You should login directly to the new Cisco UCS 6454 Fabric Interconnect GUI to configure the unified ports during the migration.</p>
+                                                   					
+                                                </section>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step" id="task_i25_zkc_zdb__step_52C304BD3A5B414DB1639A928D32872F">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;14</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Verify that the data path is ready.</p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">For more information, see the <em class="ph i">Verifying that Dynamic vNICs Are Up and Running</em> section in the <em class="ph i">Guidelines and Prerequisites</em> chapter of the <a class="xref" href="https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html" target="_blank">Cisco UCS Manager Firmware Management Guide</a>. 
+                                       </p>
+                                       					
+                                       <p class="p">Ensure that all faults are resolved before proceeding with next step.</p>
+                                       				
+                                    </section>
+                                    <ol type="a" class="ol substeps">
+                                       					
+                                       <li class="li substep" id="task_i25_zkc_zdb__substep_010F48A067EF411FB26F9C9B3703B30E_d35e369a1310">
+                                          						
+                                          <p class="ph cmd">Verify, and if necessary, reconfigure the SAN pin group for Fibre Channel ports in the associated service profile.</p>
+                                          					
+                                       </li>
+                                       					
+                                       <li class="li substep" id="task_i25_zkc_zdb__substep_603D21A2DBD84288AAE61FCA339A4FE8_d35e375a1310">
+                                          						
+                                          <p class="ph cmd">Verify, and if necessary, reconfigure the LAN pin group for Ethernet ports in the associated service profile.</p>
+                                          					
+                                       </li>
+                                       					
+                                       <li class="li substep" id="task_i25_zkc_zdb__substep_77EB0E4CCE4549EDBE0FB388D351E041">
+                                          						
+                                          <p class="ph cmd">Verify, and if necessary, reconfigure the port channel for uplink Ethernet ports.</p>
+                                          					
+                                       </li>
+                                       				
+                                    </ol>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;15</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Move the traffic back to the new subordinate fabric interconnect. If you used the fabric evacuation method, then deselect
+                                       fabric evacuation. If you disabled the uplinks (Ethernet and Fibre Channel), then reenable the uplinks. Verify that traffic
+                                       is flowing correctly on the new subordinate fabric interconnect.
+                                    </p>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;16</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">After verifying that traffic is flowing on the subordinate fabric interconnect, promote the subordinate fabric interconnect
+                                       to primary using the below commands:
+                                    </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <ul class="ul">
+                                          						
+                                          <li class="li">
+                                             							
+                                             <p class="p">UCS-A #connect local-mgmt: This command connects to the local management interface of the cluster.</p>
+                                             						
+                                          </li>
+                                          						
+                                          <li class="li">
+                                             							
+                                             <p class="p">UCS-A (local-mgmt) #cluster{lead {a|b}} or UCS-A (local-mgmt) #cluster{force primary{a|b}}: The cluster lead command and cluster
+                                                force primary command are two separate commands that can be used for promoting the fabric interconnect.
+                                             </p>
+                                             						
+                                          </li>
+                                          					
+                                       </ul>
+                                       					
+                                       <table class="olh_note" border="0" role="note">
+                                          <tr>
+                                             <td width="1%" class="td_faq" role="heading" border="0">
+                                                <p><b>Note</b></p>&nbsp;
+                                             </td>
+                                             <td border="0" class="td_faq">
+                                                <section class="note__content">
+                                                   						
+                                                   <p class="p">Ensure that the primary fabric interconnect is Cisco UCS 64108 fabric interconnect.</p>
+                                                   					
+                                                </section>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step" id="task_i25_zkc_zdb__step_DDBDC801EAB14D7B84F162F77482D056">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;17</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Cable the second new fabric interconnect identically to the first and repeat the steps for the other fabric interconnect replacement
+                                       to complete the migration.
+                                    </p>
+                                 </td>
+                              </tr>
+                              		
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+               </article>
+            </article>
+         </main>
+      
+
+</div> 
+ 
+    </div>
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent noprint base-blowout">
+    <div class="eotPersonalization">
+        <section id="eotTDCampaign"></section>
+    </div>    
+    <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>Was this Document Helpful?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes" aria-label="Was this Document Helpful?? Yes">Yes</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no" aria-label="Was this Document Helpful?? No">No</button>
+  </span>
+  <span lang="en" class="eot-feedback-olwrap">
+    
+      <a href="javascript: void(0);" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">Feedback</a>
+    
+  </span>
+</div>
+
+
+</div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+    </div>
+			
+    <div class="letUsHelp">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eotLetUsHelp">
+    <h3>Contact Cisco</h3>
+    <ul>
+         <li><a id="eotLetUsHelpProdDocUrl" href="https://mycase.cloudapps.cisco.com/start?prodDocUrl=">Open a Support Case</a><img src="/etc/designs/cdc/fw/i/icon_lock_small.png" alt="login required"/></li>
+        <li>(Requires a <a href="//www.cisco.com/c/en/us/services/order-services.html">Cisco Service Contract</a>)</li>
+    </ul>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        var getURL=jQuery("#eotLetUsHelpProdDocUrl").attr("href"), 
+            domInd = location.href.indexOf('cisco.com') ;
+        if ( domInd > -1 && domInd < location.href.search(/\w\/\w/) ) {
+            getURL += encodeURI(location.href);
+        }
+		jQuery("#eotLetUsHelpProdDocUrl").attr("href",getURL);
+    });
+</script>
+
+
+    </div>
+
+    <div id="eotRightRailMBox"><!--MBox-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IT:components/mbox/banner-mbox:V0.0.0 -->
+
+
+
+<div>
+    <div class="mboxDefault"></div>   
+    <script type="text/javascript">
+        var test="";
+        if(test!=undefined && test.trim().length>0){
+           mboxCreate('en-us_dg_support_bookchapters','type=default','');
+        }else{
+           mboxCreate('en-us_dg_support_bookchapters','type=default');
+        }
+       
+    </script>
+</div>
+<!--MBox--></div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+	<script type="text/javascript">
+			    var eottdatp = document.getElementsByClassName('eot-tdatp');
+			    if (eottdatp && eottdatp.style) {
+        			eottdatp.style.display="none";
+			    }
+        		  </script>
+  	
+
+
+    </div>
+			
+    <div></div>
+
+</div>
+
+
+    </div>
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/us/en/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/clientlibs/responsive/js/books.min.js"></script>
+
+<script src="/etc/designs/cdc/fw/m/books_metricsrule.js" type="text/javascript" async></script>
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>

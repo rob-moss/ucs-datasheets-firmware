@@ -1,0 +1,2421 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="en" xml:lang="en"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="en/us";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.cpe === undefined) {
+        window.cpe = {};
+    }
+
+    cpe.accountName = "prod";
+    cpe.config = ["cinf","dsc","pps"];
+    cpe.hideMethod = "elements";
+
+    window.targetGlobalSettings = JSON.parse('{\x22timeout\x22:4000}');
+    window.targetPageParamsAll = () => JSON.parse('{\x22entity\x22:\x22{\\\x22id\\\x22:\\\x221692162133858383\\\x22,\\\x22categoryId\\\x22:\\\x22\\\x22}\x22}');
+
+    
+    const bullseyeLibrary = `/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/external/bullseye.js`;
+
+    import(bullseyeLibrary);
+</script>
+<script src="/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/regional-mbox/regional-mbox.js"></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <title>  Cisco UCS S3260 Server Integration with Cisco UCS Manager Using the CLI, Release 4.3 - Cisco UCS S3260 System Storage Management [Cisco UCS Manager] - Cisco</title>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="Cisco UCS S3260 System Storage Management"  />
+    <meta name="title" content="  Cisco UCS S3260 Server Integration with Cisco UCS Manager Using the CLI, Release 4.3 - Cisco UCS S3260 System Storage Management [Cisco UCS Manager]"  />
+    <meta name="documentId" content="1657296235533919"  />
+    <meta name="templateName" content="book"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="WEM"  />
+    <meta name="docType" content="TSD Products Configuration Guide Chapter"  />
+    <meta name="concept" content="Cisco UCS Manager"  />
+    <meta name="iaPath" content="cisco.com#Products#Cisco Products#Servers - Unified Computing#Cisco UCS Manager"  />
+    <meta name="contentType" content="cisco.com#US#preSales"  />
+    <meta name="locale" content="US"  />
+    <meta name="language" content="en"  />
+    <meta name="country" content="US"  />
+    <meta name="CCID_Page" content="cc001777"  />
+    <meta name="date" content="Mon Nov 13 21:59:54 PST 2023"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="  Cisco UCS S3260 Server Integration with Cisco UCS Manager Using the CLI, Release 4.3 - Cisco UCS S3260 System Storage Management [Cisco UCS Manager]"  />
+    <meta property="og:description" content="Cisco UCS S3260 System Storage Management"  />
+    <meta property="og:url" content="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_011.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_011.html"/>
+	
+
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/en\/us\/td\/docs\/unified_computing\/ucs\/ucs\u002Dmanager\/CLI\u002DUser\u002DGuides\/Dense\u002DStorage\u002DServer\u002DInteg\u002DMgmt\/4\u002D2\/b_CLI_UCSM_3260_Integration_Guide_4_3\/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_011");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/cisco-sans.min.css" type="text/css">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/books.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", 'You are being logged out.');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "Cisco UCS S3260 System Storage Management",  		  
+          "url": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_011.html",
+          "description": "Cisco UCS S3260 System Storage Management",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="psknnkyxelwrg2nhn2ka-f-2b1925441-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":21,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"e078558","ak.r":37441,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"124.148.214.0","ak.cport":60110,"ak.gh":"23.199.68.167","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772580500","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==5QNQipzRuuJgBboDJq/VQ9NEucPbMefARP7peuE4Yy7wdm9diw9uQbwkt3UVfGP5uFMuomTFKGrx23fWgAemcNEGLgDTTJD4OIA2MFC5hTIcCCtVwcS/OYLv63XlIlr5phO1wFPNIpWfWVOT9gAwLxmsUGEAsg/JqGr1qYaBfYnZl34WW8+saIFijwsj9ka/TBK60mxt9/Y9pVtRX1Z0CB0/Ald955QtYZcFxCdm61U8FAtcBZDfSfM+yLE75oIt6vLhi8F2bf2XjD9gcny0HppH2fY0XhWF+AyoNWo78NgBFd89O6LSTkl35AmgMn2saSFthoA1XuXXVMdUZRSe4n0HOyV6OCUxN8kf+cHDCX1cF5Iylhiw/QrgdedkP7ROLWlDjjvmHFlVKN1vlDfyY3tFzfUcxehhdfrsjGKLc0E=","ak.pv":"540","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body id="wcq" class="fw-res cdc-support cdc-books cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">Skip to content</a></li>
+        <li><a id="skiplink-search" href="#">Skip to search</a></li>
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">Skip to footer</a></li>
+    </ul>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/us/en/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/index.html">Cisco.com Worldwide</a></li>
+            <li><a tabindex="-1" href="/c/en/us/products/index.html">Products and Services</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/solutions/index.html">Solutions</a></li>
+            <li><a tabindex="-1" href="/c/en/us/support/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/c/en/us/training-events.html">Learn</a></li>
+            <li><a tabindex="-1" href="//www.cisco.com/c/en/us/about/sitemap.html">Explore Cisco</a></li>
+            <li><a tabindex="-1" href="/c/en/us/buy.html">How to Buy</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Partners Home</a></li>                
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/cisco-partner-program/index.html?ccid=cc000864&dtid=odiprc001129">Partner Program</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/support-help/index.html">Support</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/tools/index.html?dtid=odiprc001129">Tools</a></li>
+            <li><a tabindex="-1" href="https://locatr.cloudapps.cisco.com/WWChannels/LOCATR/pf/index.jsp#/">Find a Cisco Partner</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/connect-with-a-partner/index.html?ccid=cc000864&dtid=odiprc001129">Meet our Partners</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Become a Cisco Partner</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based user-driven-nav" aria-label="breadcrumbs" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/index.html'><span itemprop='name'>Home</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/index.html'><span itemprop='name'>Support</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/all-products.html'><span itemprop='name'>Product Support</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/category.html'><span itemprop='name'>Servers - Unified Computing</span><meta itemprop='position' content='4' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/series.html'><span itemprop='name'>Cisco UCS Manager</span><meta itemprop='position' content='5' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html'><span itemprop='name'>Configuration Guides</span><meta itemprop='position' content='6' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+        
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">  Cisco UCS S3260 Server Integration with Cisco UCS Manager Using the CLI, Release 4.3</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   <!-- have to do this for _g.I18n to be defined in preview and publish modes -->
+  
+  <script type="text/javascript">
+      // initialize dictionary for i18n
+      cdc.util.ensureNamespace("cdc.rc");
+    cdc.rc.eotkeys = {
+        showOnly5Products : "Show Only 5 Products",       
+        showAllRowsProducts : "Show All nRows Products",
+        supportCommunityUrl : "https://community.cisco.com/t5/technology-and-support/ct-p/technology-support",
+        supportCommunity : "Cisco Community",
+        thankYou : "Thank You",
+        viewersAlso : "Customers Also Viewed", 
+        show : "Show", 
+        more : "More", 
+        showOnly3Documents: "Show Only 3 Documents"
+      };
+  </script>
+
+
+
+<div class="row blowout full visitedlinks">
+    <div class="col full">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers techdocs">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button aria-expanded="false" >Bias-Free Language</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>Bias-Free Language</h3>
+            <p>The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. <a href="https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html">Learn more</a> about how Cisco is using Inclusive Language.</p>
+        </div>
+        
+    </div><!-- disclaimers -->
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* this is needed for the translation selector */
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+    var bookTitle = 'Book Title Page';
+</script>
+
+<span id="actionBar-top"></span>
+<section id="actionBar" class="noprint base-blowout">
+    <span class="icons">
+        
+        <button class="bookToc simpleOverlay-trigger" id="onlyforTrigger"> <!--US140575-->
+            Book Contents
+        </button>
+            <div class="bookToc simpleOverlay-content">
+               <div role="heading" class="title">Book Contents</div>
+               <!--googleoff: index--><!--googleoff: snippet-->  
+               <div class="content">
+                  
+
+
+
+<ul id="bookToc">
+    <li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_preface_00.html">Preface</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_01.html">New and Changed Information</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_010.html">Overview</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_011.html">Cisco UCS S3260 System Storage Management</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_0100.html">Equipment Related Policies</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_0101.html">Chassis Profiles</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_0110.html">About the Cisco UCS S3260 System</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_0111.html">Firmware Management</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_01000.html">Chassis Management</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_01001.html">Server Management</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_01010.html">SIOC Management</a></li>
+
+</ul>
+
+
+               </div>
+               <!--googleon: index--><!--googleon: snippet-->               
+            </div>
+
+        
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='versionddcontainer chapter'></div>
+<script type="text/html" class="versionstemp">
+            <div class="versionsdd">
+                <button class="versionbutton" aria-haspopup="true" aria-expanded="false" aria-labelledby="other versions" class="version"><label></label></button>
+                <ul class="versionlist" aria-labelledby="other versions">
+                <%
+                    let pageUrl = window.location.pathname.replace("/content/","/c/").toLowerCase();
+                    if (true) pageUrl = pageUrl.substring(0,pageUrl.lastIndexOf("/"))+".html";
+                    for(let i=0; i< data.length; i++) {
+                        let item = data[i],
+                            myurl = item.linkUrl,
+                            urlm = myurl.replace("/content/","/c/");;
+                            mytitle = item.linkTitle;
+                            myclass= urlm.toLowerCase() == pageUrl ? "class=\"selected\"":""; 
+%>
+                    <li><a href="${myurl}" ${myclass}>${mytitle}</a></li>
+<%
+                  }   %>
+                </ul>
+             </div>
+</script>
+    
+        <span class="utilities">
+          <button title="Search in this Book" class="mobileSearch simpleOverlay-trigger">
+            Search
+          </button>
+          <div class="mobileSearch simpleOverlay-content">
+            <div class="title">Find Matches in This Book</div>
+              <!--googleoff: index--><!--googleoff: snippet-->  
+              <div class="content">
+                <form id="mobileBooksearch" class="chapter">
+                   <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit"></button>
+                   <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+                </form>
+                <div id="overlayResults" role="region" aria-live="polite" >
+                   <!-- important, keep this results div begin end on same line in here -->
+                   <div class="results"></div>
+                </div>
+              </div>
+              <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "Save";
+    cdc.rc.savedoc.saved = "Saved";
+</script>
+
+    <button class="save" aria-expanded="false" aria-label="Save">
+        <label>Save</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_011.html">Log in</a> to Save Content
+    </div>
+
+
+          <!-- Translation Selctor -->
+          <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+ 
+
+
+ 
+          <div class="translations simpleOverlay-content" role="dialog" id="dialogt" aria-labelledby="onlyForNonEN" aria-modal="true">
+            <div role="heading" class="title">Available Languages</div>
+               <!--googleoff: index--><!--googleoff: snippet--> 
+            <script language="javascript">                    
+                cdc.translations.map = "{en-us=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_011.html, x-default=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_011.html}";//storing the map for use in the JS
+                cdc.translations.locale="en_us";
+            </script>
+            <div class="content">
+              <div class="availableLanguagesList">
+                  <ul id="translationsList">
+                  </ul> 
+              </div>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+          
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // stored value for overlay label to use in js
+    var downloadOPtionLabel = 'Download Options',
+    	bookSearchlabel = 'Find Matches in This Book',
+    	translationsLabel = 'Translations',
+    	bookConentLabel= 'Book Contents';
+</script>
+
+
+        
+
+
+
+        <button title="Document Download Options" id="dwnld-button" class="downloadOptions simpleOverlay-trigger" aria-expanded="false">
+            Download
+        </button>
+        <div class="downloadOptions simpleOverlay-content" role="dialog" id="dialogd" aria-labelledby="dwnld-button" aria-modal="true" class="default_dialog">
+            <div role="heading" class="title">Download Options</div>
+            <!--googleoff: index--><!--googleoff: snippet-->  
+            <div class="content">
+                <header>
+
+                    <h3 class="h4"> Book Title</p>
+                    <p>  Cisco UCS S3260 Server Integration with Cisco UCS Manager Using the CLI, Release 4.3</p>
+                    <p class="h4"> Chapter Title</p>
+                    <h3>Cisco UCS S3260 System Storage Management</p>
+
+                </header>
+                <ul>
+
+                        <li >    
+                            <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3.pdf" class="pdfIcon">PDF - Complete Book 
+                            <span>(4.27 MB)</span></a>
+
+                                   <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Dense-Storage-Server-Integ-Mgmt/4-2/b_CLI_UCSM_3260_Integration_Guide_4_3/b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_011.pdf" class="chapter">PDF - This Chapter <span>(1.02 MB)</span></a>
+                                                            
+                            <p>View with Adobe Reader on a variety of devices</p>
+                        </li>                                  
+              </ul>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+        </div>
+
+          <button title="Print Friendly Page" class="print simpleOverlay-trigger">
+              Print
+          </button>
+        </span> 
+    </span>
+    <form id="booksearch" tabindex="0" class="chapter">
+       <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+       <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+    </form>
+      <div id="searchresult" role="region" aria-live="polite"><button class="close" title="Close Panel"><span></span><span></span></button>
+         <span class="headArrow"></span>
+         <h2>Results</h2>
+         <div class="matches">
+         </div>
+         <div class="results" tabindex="0">
+         </div>
+      </div>
+      <div id="searchResultChapterTitle"></div>
+</section>
+<script type="text/html" id="navigateMatchesTemplate">
+   <div>
+      <button class="up on" title="Previous Match"><span></span></button>
+      <button class="up off" title="Previous Match Not Available"><span></span></button>
+      <span class="matchlabel">Matches</span>
+      <button class="down on" title="Next Match"><span></span></button>
+      <button class="down off" title="Next Match Not Available"><span></span></button>
+   </div>
+</script>
+<script type="text/html" id="noChapterMatchTemplate">
+   <p>There are no Matches in this chapter.</p>
+</script>
+<script type="text/html" id="searchResultsListTemplate">
+   <p class="h3">Chapters with Matches</p>
+   <ul>
+<% var i = 0;
+    while ( modelData.links[i] ) {  %>
+      <li>
+<%     curpage = (window.location.pathname.indexOf(modelData.links[i].href) > -1 )?true:false;
+        if ( i === modelData.curpage ) {
+            if ( ! jQuery('.mobileSearch').css("display") == "block") { %>
+               <span class="currentIndicator"></span>${modelData.links[i].title}
+<%         } else {                %>
+               <span class="currentIndicator"></span><button class="curpage" data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%         }
+        } else {  %>
+            <button data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%     }  %>            
+      </li> 
+<% i++;
+    } %>
+   </ul> 
+</script>      
+<script type="text/html" id="noBookMatchTemplate">
+   <p class="head">No matches found in this book</p>
+   <p>This feature looks for an exact match of what you entered in the box.</p>
+   <p>If you entered several words, try reducing the entry to one or two and search again.</p>
+</script>
+<script type="text/html" id="errorTemplate">
+   <p>Search is currently unavailable due to technical issues. We are working to resolve the problem as quickly as possible.</p>
+</script>
+<script type="text/html" id="mobileSearchFooterTemplate">
+   <div id="mobileSearchFooter">
+      <button class="mobileSearch" title="Search in this Book"></button>
+      <button class="closeFooter"><span></span><span></span></button>
+      <div class="matches"> 
+      </div>
+   </div>   
+</script>
+ 
+    </div>
+</div>
+<div class="row blowout narrow-wide-v2 flip visitedlinks">
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div id="documentInfo">
+                  <dl>
+                     
+                      <dt>Updated:</dt><dd> November 14, 2023</dd>
+                     
+                  </dl>
+                    
+              </div>
+
+ 
+    </div>
+    <div id="chapterTitleDiv" class="col wide-v2 indent-at-xlarge">
+        <!-- this will be chapter title for chapters or header for TOC for books -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="chapter-title">Chapter: Cisco UCS S3260 System Storage Management </h2>  
+    
+
+    </div>
+</div>
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <div id="pageContentDiv" class="col wide-v2 indent-at-xlarge" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
+
+    
+ 
+ 
+
+<div id="chapterToc" class="base-blowout">
+    <button><span></span>Chapter Contents</button>
+    <div>
+    
+<ul>
+<li><a href="#cisco-ucs-s3260-system-storage-management">Cisco UCS S3260 System Storage Management</a></li>
+<li><a href="#id_26742">Migration to UCSM Managed Cisco UCS S3260</a></li>
+<li><a href="#d10282e166a1635">Migrating Standalone 3260 to UCSM Managed 3260</a>
+<ul>
+<li><a href="#reference_1FAF51DE1C1245E29725C17C07195E54">Prerequisites for Migrating Standalone Cisco UCS S3260 to UCSM Managed Cisco UCS S3260</a></li>
+<li><a href="#task_E34318C96C2F4A4690D86737CB687B58">Booting From Chassis                              	 HDD</a></li>
+<li><a href="#task_EB01B2AA6AEB4BCF832FC1E84990D4C9">Migrating from Standalone Cisco UCS S3260 to UCSM Managed Cisco UCS S3260</a>
+<ul>
+<li><a href="#task_2A51DC7B43EB420E8DA7FF0731D18994">Migrating from Standalone Cisco UCS S3260 to UCSM Managed Cisco UCS S3260 [2.0(13) or later version]</a></li>
+</ul></li>
+<li><a href="#id_27209">System IP                              	 Addresses</a></li>
+<li><a href="#id_35759">Configuring Server                              	 Ports Using Cisco UCS Manager</a></li>
+</ul></li>
+<li><a href="#task_2AC22032E53E47C6AF31ABDD82C96AFC">Migrating from UCSM Managed Cisco UCS S3260 to Standalone Cisco UCS S3260</a></li></ul>
+    <button id="chapterToc-close">Close<span></span></button>
+    </div>
+</div>
+
+ 
+    <div id="chapterContent">
+    
+                  <h1 class="title topictitle1" id="ariaid-title1">Cisco UCS S3260 System Storage Management</h1>
+                  <!-- minitoc start -->
+                  <nav role="navigation" class="related-links">
+                     <ul class="ullinks">
+                        <li class="link ulchildlink"><a href="#id_26742">Migration to UCSM Managed Cisco UCS S3260</a></li>
+                        <li class="link ulchildlink"><a href="#task_2AC22032E53E47C6AF31ABDD82C96AFC">Migrating from UCSM Managed Cisco UCS S3260 to Standalone Cisco UCS S3260</a></li>
+                     </ul>
+                  </nav>
+                  <!-- minitoc end -->
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title2" lang="en-US" id="id_26742">
+                     <h2 class="title topictitle2" id="ariaid-title2">Migration to UCSM Managed <span class="ph">Cisco UCS S3260</span></h2>
+                     <section class="body conbody">
+                        <section class="p"> 
+                           		
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr> 
+                                       		  
+                                       <p class="p">Direct migration of Cisco UCS C3160 to UCSM managed <span class="ph">Cisco UCS S3260</span> is not supported. First migrate standalone Cisco UCS C3160 to standalone <span class="ph">Cisco UCS S3260</span> and then to UCSM managed <span class="ph">Cisco UCS S3260</span>. 
+                                       </p> 
+                                       		
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table> 
+                           	 
+                        </section>
+                        <section class="section" id="id_26742__section_6F83A6FD16094B8293764F51B6CE73A4">
+                           <h3 class="title sectiontitle">Migrating Standalone Cisco UCS C3160 to UCSM Managed <span class="ph">Cisco UCS S3260</span></h3> 
+                           		 
+                           		
+                           <p class="p"> To migrate standalone Cisco UCS C3160 to UCSM Managed <span class="ph">Cisco UCS S3260</span>: 
+                           </p> 
+                           		
+                           <ol class="ol">
+                              <li class="li" id="id_26742__li_46FE2FB251EF4A918DC28945ABFB673F"> 
+                                 			 
+                                 <p class="p">Standalone Cisco UCS C3160 to Standalone Cisco UCS <span class="ph">Cisco UCS S3260</span>
+                                    					
+                                 </p> 
+                                 		  
+                              </li>
+                              <li class="li" id="id_26742__li_1F4A4C0873EB42F3956898AECD187D53"> 
+                                 			 
+                                 <p class="p">Standalone Cisco UCS <span class="ph">Cisco UCS S3260</span> to UCSM managed <span class="ph">Cisco UCS S3260</span>
+                                    					
+                                 </p> 
+                                 		  
+                              </li>
+                              <li class="li" id="id_26742__li_4DECFD6CD8094B7B9E1DEEEAAC789BE9"> 
+                                 			 
+                                 <p class="p">Configure Server
+                                    				Ports Using Cisco UCS Manager
+                                    			 
+                                 </p> 
+                                 		  
+                              </li>
+                           </ol>
+                           	 
+                        </section>
+                        <section class="section" id="id_26742__section_3AAE7E6140F54982B5A1675C0698235A">
+                           <h3 class="title sectiontitle">Migrating Standalone Cisco UCS <span class="ph">Cisco UCS S3260</span> to UCSM Managed <span class="ph">Cisco UCS S3260</span></h3> 
+                           		
+                           		
+                           		
+                           <p class="p"> To migrate standalone Cisco UCS <span class="ph">Cisco UCS S3260</span> to UCSM Managed <span class="ph">Cisco UCS S3260</span>: 
+                           </p> 
+                           		
+                           <ol class="ol">
+                              <li class="li" id="id_26742__li_D5A9FED342584F5C9BB4A9938A9351F7"> 
+                                 			 
+                                 <p class="p">Standalone Cisco UCS <span class="ph">Cisco UCS S3260</span> to UCSM managed <span class="ph">Cisco UCS S3260</span>
+                                    					
+                                 </p> 
+                                 		  
+                              </li>
+                              <li class="li" id="id_26742__li_9D3615A397A143E8A8F558307C54E37C"> 
+                                 			 
+                                 <p class="p">Configure Server Ports Using Cisco UCS Manager
+                                    			 
+                                 </p> 
+                                 		  
+                              </li>
+                           </ol>
+                           	 
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <p class="topictitle1" id="d10282e166a1635">Migrating Standalone 3260 to UCSM Managed 3260</p>
+                  <article class="topic reference nested1" aria-labelledby="ariaid-title3" lang="en-US" id="reference_1FAF51DE1C1245E29725C17C07195E54">
+                     <h2 class="title topictitle2" id="ariaid-title3">Prerequisites for Migrating Standalone <span class="ph">Cisco UCS S3260</span> to UCSM Managed <span class="ph">Cisco UCS S3260</span></h2>
+                     <section class="body refbody">
+                        <section class="section" id="reference_1FAF51DE1C1245E29725C17C07195E54__section_8073BEDBB6A440F084D66DA7F9E049CC"> 
+                           		
+                           <p class="p">Ensure that the
+                              		  following conditions are met before starting the migrating procedure: 
+                              		
+                           </p> 
+                           		
+                           <ul class="ul">
+                              <li class="li">
+                                 					
+                                 <p class="p">For M5 server, download and run the <span class="ph">Cisco UCS S3260</span> Host Upgrade Utility (HUU) for release 3.2(3) or later. Use the Host Upgrade Utility User Guide for release 3.2(3) or later
+                                    for instructions on downloading and using the utility, see the instructions in the guide for your release: <a class="xref" href="http://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-c-series-rack-servers/products-user-guide-list.html" target="_blank">HUU Guides</a>. 
+                                 </p>
+                                 				
+                              </li>
+                              <li class="li" id="reference_1FAF51DE1C1245E29725C17C07195E54__li_7F3C89FEBE30495A95D0FC2B38D39DFC"> 
+                                 			 
+                                 <p class="p">Up to five IP
+                                    				addresses, either configured in your DHCP server or manually entered for static
+                                    				IP addresses. See 
+                                    				<a class="xref" href="#id_27209">System IP Addresses</a>
+                                    				for more information. 
+                                    			 
+                                 </p> 
+                                 		  
+                              </li>
+                              <li class="li" id="reference_1FAF51DE1C1245E29725C17C07195E54__li_D888E6FEA8C04C32AF6893E33A2A5065"> 
+                                 			 
+                                 <p class="p">It is recommended to make a note of the existing system configurations before migrating to UCSM managed <span class="ph">Cisco UCS S3260</span>. These configurations can include the following: 
+                                 </p> 
+                                 			 
+                                 <ul class="ul">
+                                    <li class="li" id="reference_1FAF51DE1C1245E29725C17C07195E54__li_909000D249004187B6BB1E420B632CB6"> 
+                                       				  
+                                       <p class="p">Server UUID 
+                                          				  
+                                       </p> 
+                                       				
+                                    </li>
+                                    <li class="li" id="reference_1FAF51DE1C1245E29725C17C07195E54__li_D4C3ADB86F544DAB9FD76C5B4784B261"> 
+                                       				  
+                                       <p class="p">Storage
+                                          					 configuration 
+                                          				  
+                                       </p> 
+                                       				
+                                    </li>
+                                    <li class="li" id="reference_1FAF51DE1C1245E29725C17C07195E54__li_308D8BF00D4B47F383E7D087F948D3CD"> 
+                                       				  
+                                       <p class="p">Network
+                                          					 configuration 
+                                          				  
+                                       </p> 
+                                       				
+                                    </li>
+                                    <li class="li" id="reference_1FAF51DE1C1245E29725C17C07195E54__li_E7B4FFCB16644DF489BEA12045B99930"> 
+                                       				  
+                                       <p class="p">Boot policy 
+                                          				  
+                                       </p> 
+                                       				
+                                    </li>
+                                    <li class="li" id="reference_1FAF51DE1C1245E29725C17C07195E54__li_D4B20367F34F41B9A0460096F5C69EA2">
+                                       				  
+                                       <p class="p">Number of vNICs
+                                          				  
+                                       </p>
+                                       				
+                                    </li>
+                                    <li class="li" id="reference_1FAF51DE1C1245E29725C17C07195E54__li_8A87507806BC46A89A524FC6E264A124">
+                                       				  
+                                       <p class="p">vNIC placements
+                                          				  
+                                       </p>
+                                       				
+                                    </li>
+                                    <li class="li" id="reference_1FAF51DE1C1245E29725C17C07195E54__li_961754CF8FBE40A0A2517AA8C6C10701">
+                                       				  
+                                       <p class="p">MAC addresses
+                                          				  
+                                       </p>
+                                       				
+                                    </li>
+                                    <li class="li" id="reference_1FAF51DE1C1245E29725C17C07195E54__li_FE3941E15CAD4A759F2848A0D2EF02C8">
+                                       				  
+                                       <p class="p">MTU
+                                          				  
+                                       </p>
+                                       				
+                                    </li>
+                                 </ul> 
+                                 			 
+                                 <p class="p">You can create
+                                    				these configurations again using 
+                                    				<span class="ph">Cisco UCS Manager</span>
+                                    				after the migration. 
+                                    			 
+                                 </p> 
+                                 		  
+                              </li>
+                              <li class="li" id="reference_1FAF51DE1C1245E29725C17C07195E54__li_22C4576E829542369C0135E68C99FC80"> 
+                                 			 
+                                 <p class="p"> If the system
+                                    				boot volume is created out of chassis HDD, then perform 
+                                    				<a class="xref" href="#task_E34318C96C2F4A4690D86737CB687B58">Booting From Chassis HDD</a>.
+                                    				
+                                    			 
+                                 </p> 
+                                 		  
+                              </li>
+                           </ul> 
+                           	 
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title4" lang="en-US" id="task_E34318C96C2F4A4690D86737CB687B58">
+                     <h2 class="title topictitle2" id="ariaid-title4">Booting From Chassis
+                        	 HDD
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section prereq p" id="task_E34318C96C2F4A4690D86737CB687B58__prereq_A07FB34DE6544D49A1036DBEA2B4B2E7">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section> 
+                           		
+                           <p class="p"> Before migrating to UCSM Managed <span class="ph">Cisco UCS S3260</span>, perform this procedure only if the system boot volume is created out of chassis HDD. 
+                           </p> 
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              <tr class="li step" id="task_E34318C96C2F4A4690D86737CB687B58__step_C40110D4CB874AB9A4DB1B390594FD35">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Associate the
+                                       			 chassis with a chassis profile in which 
+                                       			 <span class="ph uicontrol">Disk
+                                          				Zoning Policy</span> is set to 
+                                       			 <span class="ph uicontrol">Preserve
+                                          				Config</span>. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">For more
+                                          				information, see 
+                                          				<cite class="cite">Creating a
+                                             				  Chassis Profile with the Wizard</cite> for GUI procedure or 
+                                          				<cite class="cite">Creating a
+                                             				  Chassis Profile</cite> for CLI procedure. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_E34318C96C2F4A4690D86737CB687B58__step_913F85486F754E59AF79326F7D834839">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Within the
+                                       			 service profile for the server, create a storage profile with a LUN using the 
+                                       			 <span class="ph uicontrol">Prepare
+                                          				Claim Local LUN</span> option. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Note the name of
+                                          				the LUN. For more information on storage profiles, see 
+                                          				<a class="xref" href="#http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/3-1/b_UCSM_GUI_Storage_Management_Guide_3_1/b_UCSM_GUI_Storage_Management_Guide_3_1_chapter_010000.html#d1049e1627a1635">#http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/3-1/b_UCSM_GUI_Storage_Management_Guide_3_1/b_UCSM_GUI_Storage_Management_Guide_3_1_chapter_010000.html#d1049e1627a1635</a>. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_E34318C96C2F4A4690D86737CB687B58__step_B3897CA40B954F3B8423969BC62B7BF4">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> After
+                                       			 associating the service profile, go to the storage profile on the service
+                                       			 profile and select 
+                                       			 <span class="ph uicontrol">Reclaim
+                                          				orphaned LUN</span> and choose the LUN (LUN on the chassis HDDs) for
+                                       			 reclaim. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_E34318C96C2F4A4690D86737CB687B58__step_123DC4614D634507ADBB770B0A7DFBCB">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> In the boot
+                                       			 policy, define the local LUN with the same name as noted in step 2. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                        <section class="section postreq" id="task_E34318C96C2F4A4690D86737CB687B58__postreq_CA06E0E56B2543CAB205C6C13DCC878D">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">What to do next</h3>
+                           </section>
+                           
+                           		
+                           <p class="p">Proceed to 
+                              		  <a class="xref" href="#task_EB01B2AA6AEB4BCF832FC1E84990D4C9" title="A standalone Cisco UCS S3260 system can be migrated to a UCSM managed Cisco UCS S3260 system.">Migrating from Standalone Cisco UCS S3260 to UCSM Managed Cisco UCS S3260</a>.
+                              		  
+                              		
+                           </p> 
+                           	 
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title5" lang="en-US" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9">
+                     <h2 class="title topictitle2" id="ariaid-title5">Migrating from Standalone <span class="ph">Cisco UCS S3260</span> to UCSM Managed <span class="ph">Cisco UCS S3260</span></h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__context_481D75B7406344869E28619A1409993D"> 
+                           		
+                           <section class="p"> 
+                              		  
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Important</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr> 
+                                          			 
+                                          <p class="p">If the system is running an earlier version than 2.0(13), perform the following procedure to migrate standalone <span class="ph">Cisco UCS S3260</span> to UCSM managed <span class="ph">Cisco UCS S3260</span>. 
+                                          </p> 
+                                          		  
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table> 
+                              		
+                           </section> 
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              <tr class="li step" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__step_5D0AE0B7A85A407F9CC52BCF37C8C964">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Use the <span class="ph">Cisco UCS S3260</span> HUU for 2.0(13) to upgrade the entire system to Cisco IMC release 2.0(13). Run the HUU for all the server nodes in <span class="ph">Cisco UCS S3260</span> system.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__shutdownAndRemovePower">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Shut down and
+                                       			 remove power from the entire chassis. You must disconnect all power cords to
+                                       			 completely remove power. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__ConnectKeyboard">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Connect a
+                                       			 keyboard and monitor to the system: 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <section class="p"> 
+                                          			 
+                                          <ol class="ol" type="a">
+                                             <li class="li" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__li_B553D346BA104673ACCB430B04DE85CC">Connect a KVM cable (Cisco
+                                                				  PID N20-BKVM) to the external KVM connector on the server node at the rear of
+                                                				  the system. 
+                                                				
+                                             </li>
+                                             <li class="li" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__li_4411E2CB014D447CABF44BA270AC3218"> 
+                                                				  
+                                                <p class="p">Connect a
+                                                   					 VGA monitor and a USB keyboard to the connectors on the KVM cable. 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                          </ol> 
+                                          			 
+                                       </section> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__ConnectPowerCords">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Connect power
+                                       			 cords and then power on the system. Watch for the prompt to press F8. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__PressF8">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">When prompted,
+                                       			 press 
+                                       			 <span class="ph uicontrol">F8</span> to enter the Cisco IMC Configuration Utility. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__step_DB4938062DB54B679186268BF358135D">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Configure the
+                                       			 networking properties for your desired IP addresses, NIC mode, and NIC
+                                       			 redundancy. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <section class="p"> 
+                                          			 
+                                          <ol class="ol" type="a">
+                                             <li class="li" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__li_2762CB59B46648AF9C9B8EC95910D91C"> 
+                                                				  
+                                                <section class="p">Be aware of the <span class="ph">Cisco UCS S3260</span> system requirement to set as many as five IP addresses. See <a class="xref" href="#id_27209">System IP Addresses</a> for more information. At this point in the procedure, the system requires three addresses: 
+                                                   <ul class="ul">
+                                                      <li class="li" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__li_5B9D102D675F412C92B2452D6BC9DEB9">
+                                                         											
+                                                         <p class="p">One management IP address </p>
+                                                         										
+                                                      </li>
+                                                      <li class="li" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__li_3F1F43FF825B422A84EEAD14A058B549">
+                                                         											
+                                                         <p class="p">One CMC address for the each SIOC </p>
+                                                         										
+                                                      </li>
+                                                      <li class="li" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__li_80E6FCE855C941EF9BF3A4F01F4F4D1E">
+                                                         											
+                                                         <section class="p">One BMC address for each server nodes 
+                                                            <table class="olh_note" border="0" role="note">
+                                                               <tr>
+                                                                  <td width="1%" class="td_faq" role="heading" border="0">
+                                                                     <p><b>Note</b></p>&nbsp;
+                                                                  </td>
+                                                                  <td border="0" class="td_faq">
+                                                                     <section class="note__content">
+                                                                        													
+                                                                        <p class="p">If you use a DHCP server, the addresses are defined by the DHCP server. If you disable DHCP, you must set your own static
+                                                                           management IP addresses and network settings. 
+                                                                        </p>
+                                                                        												
+                                                                     </section>
+                                                                  </td>
+                                                               </tr>
+                                                            </table>
+                                                            											
+                                                         </section>
+                                                         										
+                                                      </li>
+                                                   </ul>
+                                                   								
+                                                </section> 
+                                                				
+                                             </li>
+                                             <li class="li" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__li_A49531025EC248C1B083D5436AC79D68"> 
+                                                				  
+                                                <p class="p">Make networking settings using the Cisco IMC Configuration Utility, which you opened by pressing F8 during boot. See <cite class="cite">Setting Up the System Using the Cisco IMC Configuration Utility</cite> at <a class="xref" href="http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/s/hw/S3260/install/S3260.html" target="_blank">http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/s/hw/S3260/install/S3260.html</a>. 
+                                                </p> 
+                                                				
+                                             </li>
+                                             <li class="li" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__li_08A60453A8EB4A7FB92E16905CFDCCC1"> 
+                                                				  
+                                                <p class="p">If you want to set static IP addresses for the CMC and BMC controllers, you will be directed to use the Cisco IMC management
+                                                   interface. See <cite class="cite">Setting Static CMC and BMC Internal IP Addresses</cite> at <a class="xref" href="http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/s/hw/S3260/install/S3260.html" target="_blank">http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/s/hw/S3260/install/S3260.html</a>. 
+                                                </p> 
+                                                				
+                                             </li>
+                                          </ol> 
+                                          			 
+                                       </section> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__step_B4936F44F9064B5FBC43883A10E6E607">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Upgrade the
+                                       			 remaining system components to Cisco IMC release 2.0(13) or later by using the
+                                       			 Cisco UCS Host Upgrade Utility. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Use the Host
+                                          				Upgrade Utility User Guide for release 2.0(13) or later for instructions on
+                                          				downloading and using the utility: 
+                                          				<a class="xref" href="http://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-c-series-rack-servers/products-user-guide-list.html" target="_blank">HUU Guides</a> 
+                                          			 
+                                       </p> 
+                                       			 
+                                       <p class="p">After the upgrade completes, <span class="ph">Cisco UCS S3260</span> system is ready for UCSM integration. 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__step_3C0BC9A6337E4D42A5C6B83C245C3084">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;8</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Watch for the
+                                       			 prompt to press F8 and when prompted, press 
+                                       			 <span class="ph uicontrol">F8</span> to enter the Cisco IMC Configuration Utility. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__ResetFactoryDefault">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;9</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Refer 
+                                       			 <a class="xref" href="http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/sw/gui/config/guide/2-0/b_Cisco_UCS_C-series_GUI_Configuration_Guide_201/b_Cisco_UCS_C-series_GUI_Configuration_Guide_201_chapter_01111.html#task_E77EDDCD3A8642D68042C6C6B08415D4" target="_blank">Resetting Cisco IMC to Factory
+                                          				Defaults</a> to set the server to factory defaults or perform the following
+                                       			 steps to use the utility to set the server controller to factory defaults: 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <section class="p"> 
+                                          			 
+                                          <ol class="ol" type="a">
+                                             <li class="li" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__li_70C090A46CD7436B95417F24B28E8D91">Press 
+                                                				  <span class="ph uicontrol">F1</span> to go to the second screen of the utility. 
+                                                				
+                                             </li>
+                                             <li class="li" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__li_004F9488F7B5449383AE8006199BCDAF"> 
+                                                				  
+                                                <p class="p">Select the
+                                                   					 
+                                                   					 <span class="ph uicontrol">Chassis Controller Configuration 
+                                                      					 </span> option under Factory Default. 
+                                                   					 <strong class="ph b">Do not</strong> select 
+                                                   					 <span class="ph uicontrol">Server Controller Configuration</span>. 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                             <li class="li" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__li_0C2B837EC4C24B27AC3CA16377EF1D1A"> 
+                                                				  
+                                                <p class="p">Press 
+                                                   					 <span class="ph uicontrol">F10</span> to save changes and reboot the BMC. 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                             <li class="li" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__li_3836F7B8D6F84958AB1ECF2681EEE005"> 
+                                                				  
+                                                <p class="p">Wait for
+                                                   					 the reboot to complete (approximately five minutes). 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                          </ol> 
+                                          			 
+                                       </section> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__Connect40G">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;10</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Connect the
+                                       			 40G ports on the SIOCs to either a fabric Interconnect or a FEX module. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">On each SIOC,
+                                          				one port is attached to FI-A/FEX-A and the other port is attached to
+                                          				FI-B/FEX-B. Traffic from each SIOC can reach both FIs/FEXs. Refer 
+                                          				<a class="xref" href="b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_010.html#id_20266">Cisco UCS S3260 System Architectural Overview</a>.
+                                          				
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                        <section class="section postreq" id="task_EB01B2AA6AEB4BCF832FC1E84990D4C9__postreq_9A7416DC453043E7A11F482B492DE2FD">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">What to do next</h3>
+                           </section>
+                           
+                           		
+                           <p class="p">Configure the
+                              		  server ports. Refer 
+                              		  <a class="xref" href="#id_35759">Configuring Server Ports Using Cisco UCS Manager</a>.
+                              		  
+                              		
+                           </p> 
+                           	 
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                     <article class="topic task nested2" aria-labelledby="ariaid-title6" id="task_2A51DC7B43EB420E8DA7FF0731D18994">
+                        <h3 class="title topictitle3" id="ariaid-title6"><strong class="ph b">Migrating from Standalone <span class="ph">Cisco UCS S3260</span> to UCSM Managed <span class="ph">Cisco UCS S3260</span> [2.0(13) or later version]</strong></h3>
+                        <section class="body taskbody">
+                           <section class="section context" id="task_2A51DC7B43EB420E8DA7FF0731D18994__context_9EF47CB5D6364C00A05489EB855658BF"> 
+                              		  
+                              <section class="p"> 
+                                 			 
+                                 <table class="olh_note" border="0" role="note">
+                                    <tr>
+                                       <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Important</b></p>
+                                       </td>
+                                       <td border="0" class="olh_note">
+                                          <section class="note__content">
+                                             <hr> 
+                                             				
+                                             <p class="p">If the system is already running 2.0(13) or later version, perform the following procedure to migrate standalone <span class="ph">Cisco UCS S3260</span> to UCSM managed <span class="ph">Cisco UCS S3260</span>. 
+                                             </p> 
+                                             			 
+                                             <hr>
+                                          </section>
+                                       </td>
+                                    </tr>
+                                 </table> 
+                                 		  
+                              </section> 
+                              		
+                           </section>
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0">
+                              <tbody>
+                                 <tr class="li step" id="task_2A51DC7B43EB420E8DA7FF0731D18994__step_6FBD4F628F8042CD94BEAB1CCF4B4447">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Shut down and
+                                          			 remove power from the entire chassis. You must disconnect all power cords to
+                                          			 completely remove power. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_2A51DC7B43EB420E8DA7FF0731D18994__step_5C9AE2CD861248398731BA2680E2BA69">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Connect a
+                                          			 keyboard and monitor to the system: 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <section class="p"> 
+                                             			 
+                                             <ol class="ol" type="a">
+                                                <li class="li" id="task_2A51DC7B43EB420E8DA7FF0731D18994__d15e65">Connect a KVM cable (Cisco
+                                                   				  PID N20-BKVM) to the external KVM connector on the server node at the rear of
+                                                   				  the system. 
+                                                   				
+                                                </li>
+                                                <li class="li" id="task_2A51DC7B43EB420E8DA7FF0731D18994__d15e67"> 
+                                                   				  
+                                                   <p class="p">Connect a
+                                                      					 VGA monitor and a USB keyboard to the connectors on the KVM cable. 
+                                                      				  
+                                                   </p> 
+                                                   				
+                                                </li>
+                                             </ol> 
+                                             			 
+                                          </section> 
+                                          		  
+                                       </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_2A51DC7B43EB420E8DA7FF0731D18994__step_FC4C11A0EEF743B3B0455EE0E085BB22">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Connect power
+                                          			 cords and then power on the system. Watch for the prompt to press F8. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_2A51DC7B43EB420E8DA7FF0731D18994__step_7477A091FE2D472FAD9D7DC0F830E581">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">When prompted,
+                                          			 press 
+                                          			 <span class="ph uicontrol">F8</span> to enter the Cisco IMC Configuration Utility. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;5</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Refer 
+                                          			 <a class="xref" href="http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/sw/gui/config/guide/2-0/b_Cisco_UCS_C-series_GUI_Configuration_Guide_201/b_Cisco_UCS_C-series_GUI_Configuration_Guide_201_chapter_01111.html#task_E77EDDCD3A8642D68042C6C6B08415D4" target="_blank">Resetting Cisco IMC to Factory
+                                             				Defaults</a> to set the server to factory defaults or perform the following
+                                          			 steps to use the utility to set the server controller to factory defaults: 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <section class="p"> 
+                                             			 
+                                             <ol class="ol" type="a">
+                                                <li class="li" id="task_2A51DC7B43EB420E8DA7FF0731D18994__d15e180">Press 
+                                                   				  <span class="ph uicontrol">F1</span> to go to the second screen of the utility. 
+                                                   				
+                                                </li>
+                                                <li class="li" id="task_2A51DC7B43EB420E8DA7FF0731D18994__d15e185"> 
+                                                   				  
+                                                   <p class="p">Select the
+                                                      					 
+                                                      					 <span class="ph uicontrol">Chassis Controller Configuration 
+                                                         					 </span> option under Factory Default. 
+                                                      					 <strong class="ph b">Do not</strong> select 
+                                                      					 <span class="ph uicontrol">Server Controller Configuration</span>. 
+                                                      				  
+                                                   </p> 
+                                                   				
+                                                </li>
+                                                <li class="li" id="task_2A51DC7B43EB420E8DA7FF0731D18994__d15e199"> 
+                                                   				  
+                                                   <p class="p">Press 
+                                                      					 <span class="ph uicontrol">F10</span> to save changes and reboot the BMC. 
+                                                      				  
+                                                   </p> 
+                                                   				
+                                                </li>
+                                                <li class="li" id="task_2A51DC7B43EB420E8DA7FF0731D18994__d15e207"> 
+                                                   				  
+                                                   <p class="p">Wait for
+                                                      					 the reboot to complete (approximately five minutes). 
+                                                      				  
+                                                   </p> 
+                                                   				
+                                                </li>
+                                             </ol> 
+                                             			 
+                                          </section> 
+                                          		  
+                                       </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;6</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Connect the
+                                          			 40G ports on the SIOCs to either a fabric Interconnect or a FEX module. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <p class="p">On each SIOC,
+                                             				one port is attached to FI-A/FEX-A and the other port is attached to
+                                             				FI-B/FEX-B. Traffic from each SIOC can reach both FIs/FEXs. Refer 
+                                             				<a class="xref" href="b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_010.html#id_20266">Cisco UCS S3260 System Architectural Overview</a>.
+                                             				
+                                             			 
+                                          </p> 
+                                          		  
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                           <section class="section postreq" id="task_2A51DC7B43EB420E8DA7FF0731D18994__postreq_53A9830F048E4403A463F8105489CE1D">
+                              <section class="tasklabel">
+                                 <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">What to do next</h4>
+                              </section>
+                              
+                              		  
+                              <p class="p">Configure the
+                                 			 server ports. Refer 
+                                 			 <a class="xref" href="#id_35759">Configuring Server Ports Using Cisco UCS Manager</a>.
+                                 			 
+                                 		  
+                              </p> 
+                              		
+                           </section>
+                        </section>
+                     </article>
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title7" lang="en-US" id="id_27209">
+                     <h2 class="title topictitle2" id="ariaid-title7">System IP
+                        	 Addresses
+                     </h2>
+                     <section class="body conbody">
+                        <p class="p">A Cisco UCS <span class="ph">S3260 system</span> can have up to five IP addresses:  
+                        </p>
+                        <table class="olh_note" border="0" role="note">
+                           <tr>
+                              <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                              </td>
+                              <td border="0" class="olh_note">
+                                 <section class="note__content">
+                                    <hr>
+                                    			
+                                    <p class="p">All controllers present in the system must have IP addresses assigned in order to communicate with each other. All IP addresses
+                                       can be assigned by your DHCP server, or you can assign static IP addresses. 
+                                    </p>
+                                    		
+                                    <hr>
+                                 </section>
+                              </td>
+                           </tr>
+                        </table>
+                        <ul class="ul">
+                           <li class="li" id="id_27209__li_32DC154E07074CB29A3B0F9FE207BFC8"> 
+                              		  
+                              <p class="p">Management IP—This
+                                 			 is the overall system virtual IP address. You log into this address when you
+                                 			 access the system’s Cisco IMC interface through your LAN connection to the
+                                 			 active chassis management controller in SIOC 1 or SIOC 2. 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="id_27209__li_63E11C5B2F444E6C9E9CFCE14FC408F3"> 
+                              		  
+                              <p class="p">SIOC 1 CMC IP—This
+                                 			 is the internal address for the chassis management controller (CMC) in SIOC 1.
+                                 			 This address can be assigned by your DHCP server or you can set a static
+                                 			 address by using the Cisco IMC interface. 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="id_27209__li_9274D9F9A5204EBF937D7D2268E64BB1"> 
+                              		  
+                              <p class="p">SIOC 2 CMC IP—This
+                                 			 is the internal address for the CMC in SIOC 2 (if installed). This address can
+                                 			 be assigned by your DHCP server or you can set a static address by using the
+                                 			 Cisco IMC interface. 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="id_27209__li_92C39B589DE3439EB2AF7A3A5D5271CB"> 
+                              		  
+                              <p class="p">Server 1 BMC
+                                 			 IP—This is the internal address for the board management controller (BMC) in
+                                 			 server node 1. This address can be assigned by your DHCP server or you can set
+                                 			 a static address by using the Cisco IMC interface. 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="id_27209__li_DBC7EC9620124A29B9DCD7717FF24990"> 
+                              		  
+                              <p class="p">Server 2 BMC
+                                 			 IP—This is the internal address for the BMC in server node 2 (if installed).
+                                 			 This address can be assigned by your DHCP server or you can set a static
+                                 			 address by using the Cisco IMC interface. 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                        </ul>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title8" lang="en-US" id="id_35759">
+                     <h2 class="title topictitle2" id="ariaid-title8">Configuring Server
+                        	 Ports Using Cisco UCS Manager
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="id_35759__context_CA17405631304DA6B1E985C697B275C7"> 
+                           		
+                           <p class="p"> Perform the
+                              		  following procedure to configure Ethernet ports as server ports. After the
+                              		  ports are configured as server ports, the migration process is complete. 
+                              		
+                           </p> 
+                           		
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr> 
+                                       		  
+                                       <p class="p">If the Ethernet ports connected to standalone <span class="ph">Cisco UCS S3260</span> were already configured as appliance ports, then re-configure them as server ports. 
+                                       </p> 
+                                       		
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table> 
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              <tr class="li step" id="id_35759__step_4EB835AC7D7344B39E16477ACF11A4F8">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">Equipment</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="id_35759__d43e50">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Expand 
+                                       			 <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Fabric
+                                             				  Interconnects</span> &gt; <span class="ph uicontrol"><var class="keyword varname">Fabric_Interconnect_Name</var></span> &gt; <span class="ph uicontrol">Fixed
+                                             				  Module</span> &gt; <span class="ph uicontrol">Ethernet Ports</span></span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="id_35759__d43e66">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click a port
+                                       			 under the 
+                                       			 <span class="ph uicontrol">Ethernet
+                                          				Ports</span> node. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="id_35759__d43e72">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="ph uicontrol">Work</span> pane, click the 
+                                       			 <span class="ph uicontrol">General</span> tab. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="id_35759__d43e81">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="ph uicontrol">Actions</span> area, click 
+                                       			 <span class="ph uicontrol">Reconfigure</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="id_35759__d43e90">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">From the
+                                       			 drop-down list, choose 
+                                       			 <span class="ph uicontrol">Configure as Server Port</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                        <section class="section postreq" id="id_35759__postreq_BF7E76FE247B4F758EE38E03C8DA200F">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">What to do next</h3>
+                           </section>
+                           
+                           		
+                           <p class="p">This completes the migration process. <span class="ph">Cisco UCS Manager</span> automatically discovers the <span class="ph">S3260 Chassis</span>. <a class="xref" href="b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_0100.html#concept_61380152EFDF4BB2B734C703514DE4C8">Chassis Discovery Policy</a> provides more information about chassis discovery. <a class="xref" href="aem://wemapp-author-prod1a.cisco.com/content/dam/td-xml/en_us/ucs/ucs/granada-ucsm-3-1-and-onwards/ucs-3260-integration-guide/cli_guide/maps/m_cli_3260_server_management.ditamap" target="_blank">Server Management</a> provides more information how to use the <span class="ph">Cisco UCS Manager</span> to manage the server. 
+                           </p> 
+                           		
+                           <p class="p">You can recreate configurations that existed in the standalone <span class="ph">Cisco UCS S3260</span> by using <span class="ph">Cisco UCS Manager</span>. <span class="ph">Cisco UCS Manager</span> configuration guides listed under <a class="xref" href="b_CLI_UCSM_3260_Integration_Guide_4_1_chapter_010.html#concept_oph_k35_m1b">How to Use This Guide</a> provide detailed information. 
+                           </p> 
+                           	 
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title9" lang="en-US" id="task_2AC22032E53E47C6AF31ABDD82C96AFC">
+                     <h2 class="title topictitle2" id="ariaid-title9">Migrating from UCSM Managed <span class="ph">Cisco UCS S3260</span> to Standalone <span class="ph">Cisco UCS S3260</span></h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              <tr class="li step" id="task_2AC22032E53E47C6AF31ABDD82C96AFC__step_5D0AE0B7A85A407F9CC52BCF37C8C964">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Decommission the
+                                       			 chassis. See 
+                                       			 <cite class="cite">Decommissioning a Chassis 
+                                          			 </cite> procedure in 
+                                       			 <cite class="cite">Chassis
+                                          				Management</cite> chapter. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_2AC22032E53E47C6AF31ABDD82C96AFC__shutdownAndRemovePower">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Disconnect the SIOC cables.</p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                        <section class="section postreq" id="task_2AC22032E53E47C6AF31ABDD82C96AFC__postreq_9A7416DC453043E7A11F482B492DE2FD">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">What to do next</h3>
+                           </section>
+                           
+                           		
+                           <p class="p">This completes the migration process. The chassis can now be used in standalone mode. For further configuration, see the Configuration
+                              guides for Cisco UCS <span class="ph">S3260 system</span> to manage the server. Cisco UCS <span class="ph">S3260 system</span> configuration guides are located at: <a class="xref" href="http://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-c-series-integrated-management-controller/products-installation-and-configuration-guides-list.html">http://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-c-series-integrated-management-controller/products-installation-and-configuration-guides-list.html</a>. 
+                           </p> 
+                           	 
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+               </article>
+            </article>
+         </main>
+      
+
+</div> 
+ 
+    </div>
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent noprint base-blowout">
+    <div class="eotPersonalization">
+        <section id="eotTDCampaign"></section>
+    </div>    
+    <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>Was this Document Helpful?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes" aria-label="Was this Document Helpful?? Yes">Yes</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no" aria-label="Was this Document Helpful?? No">No</button>
+  </span>
+  <span lang="en" class="eot-feedback-olwrap">
+    
+      <a href="javascript: void(0);" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">Feedback</a>
+    
+  </span>
+</div>
+
+
+</div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+    </div>
+			
+    <div class="letUsHelp">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eotLetUsHelp">
+    <h3>Contact Cisco</h3>
+    <ul>
+         <li><a id="eotLetUsHelpProdDocUrl" href="https://mycase.cloudapps.cisco.com/start?prodDocUrl=">Open a Support Case</a><img src="/etc/designs/cdc/fw/i/icon_lock_small.png" alt="login required"/></li>
+        <li>(Requires a <a href="//www.cisco.com/c/en/us/services/order-services.html">Cisco Service Contract</a>)</li>
+    </ul>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        var getURL=jQuery("#eotLetUsHelpProdDocUrl").attr("href"), 
+            domInd = location.href.indexOf('cisco.com') ;
+        if ( domInd > -1 && domInd < location.href.search(/\w\/\w/) ) {
+            getURL += encodeURI(location.href);
+        }
+		jQuery("#eotLetUsHelpProdDocUrl").attr("href",getURL);
+    });
+</script>
+
+
+    </div>
+
+    <div id="eotRightRailMBox"><!--MBox-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IT:components/mbox/banner-mbox:V0.0.0 -->
+
+
+
+<div>
+    <div class="mboxDefault"></div>   
+    <script type="text/javascript">
+        var test="";
+        if(test!=undefined && test.trim().length>0){
+           mboxCreate('en-us_dg_support_bookchapters','type=default','');
+        }else{
+           mboxCreate('en-us_dg_support_bookchapters','type=default');
+        }
+       
+    </script>
+</div>
+<!--MBox--></div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+	<script type="text/javascript">
+			    var eottdatp = document.getElementsByClassName('eot-tdatp');
+			    if (eottdatp && eottdatp.style) {
+        			eottdatp.style.display="none";
+			    }
+        		  </script>
+  	
+
+
+    </div>
+			
+    <div></div>
+
+</div>
+
+
+    </div>
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/us/en/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/clientlibs/responsive/js/books.min.js"></script>
+
+<script src="/etc/designs/cdc/fw/m/books_metricsrule.js" type="text/javascript" async></script>
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>

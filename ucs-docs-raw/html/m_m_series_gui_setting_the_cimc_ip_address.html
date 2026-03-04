@@ -1,0 +1,3268 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="en" xml:lang="en"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="en/us";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.cpe === undefined) {
+        window.cpe = {};
+    }
+
+    cpe.accountName = "prod";
+    cpe.config = ["cinf","dsc","pps"];
+    cpe.hideMethod = "elements";
+
+    window.targetGlobalSettings = JSON.parse('{\x22timeout\x22:4000}');
+    window.targetPageParamsAll = () => JSON.parse('{\x22entity\x22:\x22{\\\x22id\\\x22:\\\x221692160540890177\\\x22,\\\x22categoryId\\\x22:\\\x22\\\x22}\x22}');
+
+    
+    const bullseyeLibrary = `/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/external/bullseye.js`;
+
+    import(bullseyeLibrary);
+</script>
+<script src="/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/regional-mbox/regional-mbox.js"></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <title>Cisco UCS Manager Administration Management Guide 4.3 - Setting the
+	 Management IP Address [Cisco UCS Manager] - Cisco</title>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="Setting the Management IP Address"  />
+    <meta name="title" content="Cisco UCS Manager Administration Management Guide 4.3 - Setting the
+	 Management IP Address [Cisco UCS Manager]"  />
+    <meta name="documentId" content="1692160540875176"  />
+    <meta name="templateName" content="book"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="WEM"  />
+    <meta name="docType" content="TSD Products Configuration Guide Chapter"  />
+    <meta name="concept" content="Cisco UCS Manager"  />
+    <meta name="iaPath" content="cisco.com#Products#Cisco Products#Servers - Unified Computing#Cisco UCS Manager"  />
+    <meta name="contentType" content="cisco.com#US#preSales"  />
+    <meta name="locale" content="US"  />
+    <meta name="language" content="en"  />
+    <meta name="country" content="US"  />
+    <meta name="CCID_Page" content="cc001777"  />
+    <meta name="date" content="Sun Aug 10 22:40:44 PDT 2025"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="Cisco UCS Manager Administration Management Guide 4.3 - Setting the
+	 Management IP Address [Cisco UCS Manager]"  />
+    <meta property="og:description" content="Setting the Management IP Address"  />
+    <meta property="og:url" content="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_m_series_gui_setting_the_cimc_ip_address.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_m_series_gui_setting_the_cimc_ip_address.html"/>
+	<link rel="alternate" hreflang="x-default" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_m_series_gui_setting_the_cimc_ip_address.html"/>
+<link rel="alternate" hreflang="ja-jp" href="https://www.cisco.com/c/ja_jp/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_m_series_gui_setting_the_cimc_ip_address.html"/>
+<link rel="alternate" hreflang="en-us" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_m_series_gui_setting_the_cimc_ip_address.html"/>
+
+
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/en\/us\/td\/docs\/unified_computing\/ucs\/ucs\u002Dmanager\/GUI\u002DUser\u002DGuides\/Admin\u002DManagement\/4\u002D3\/b_cisco_ucs_admin_mgmt_guide_4\u002D3\/m_m_series_gui_setting_the_cimc_ip_address");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/cisco-sans.min.css" type="text/css">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/books.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", 'You are being logged out.');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "Setting the
+	 Management IP Address",  		  
+          "url": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_m_series_gui_setting_the_cimc_ip_address.html",
+          "description": "Setting the Management IP Address",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="psknnkyxelwrg2nhnopq-f-adca7c66c-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":52,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"dfab2da","ak.r":37441,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"124.148.214.0","ak.cport":59285,"ak.gh":"23.199.68.167","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772579743","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==Co4KNI3E4ViSKa3rZeV2ZOlIUZcwhVlFYrKbVM6trqNyfIselUVmQu1TVL+GQs8qCFWXdStdu62O19wbD2IROJxuE2eNfDCIJDuCGxWwiGXl3At7+Nv6/njfo/YdjO0Yp4utrjt1T4mRpRRysI9VjP/H0nCYM9frdH6LFu0VXU5FaAzmcA2R//5SlY97DJGJj8Nvao2XYzn7VNMiToee2tmmDK+J5cFYvUPKmnM2glbaNPv203zA4QBt9kNy9ocPcjSgET+vJi68mJpf1421JWxWZpz/3AKrqR4DY32UJak6ajr4p34Pextt5oCH2iu1NKbqxYdahchi4MlTtehp13GDPhPJt8Ab8rvajw75lTUaohIK/ga8iy+hxwxrrWGtlcYiyubDGrVfxjA4qrRY4uBxYgufQEEwkpje4URRN/Q=","ak.pv":"540","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body id="wcq" class="fw-res cdc-support cdc-books cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">Skip to content</a></li>
+        <li><a id="skiplink-search" href="#">Skip to search</a></li>
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">Skip to footer</a></li>
+    </ul>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/us/en/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/index.html">Cisco.com Worldwide</a></li>
+            <li><a tabindex="-1" href="/c/en/us/products/index.html">Products and Services</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/solutions/index.html">Solutions</a></li>
+            <li><a tabindex="-1" href="/c/en/us/support/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/c/en/us/training-events.html">Learn</a></li>
+            <li><a tabindex="-1" href="//www.cisco.com/c/en/us/about/sitemap.html">Explore Cisco</a></li>
+            <li><a tabindex="-1" href="/c/en/us/buy.html">How to Buy</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Partners Home</a></li>                
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/cisco-partner-program/index.html?ccid=cc000864&dtid=odiprc001129">Partner Program</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/support-help/index.html">Support</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/tools/index.html?dtid=odiprc001129">Tools</a></li>
+            <li><a tabindex="-1" href="https://locatr.cloudapps.cisco.com/WWChannels/LOCATR/pf/index.jsp#/">Find a Cisco Partner</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/connect-with-a-partner/index.html?ccid=cc000864&dtid=odiprc001129">Meet our Partners</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Become a Cisco Partner</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based user-driven-nav" aria-label="breadcrumbs" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/index.html'><span itemprop='name'>Home</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/index.html'><span itemprop='name'>Support</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/all-products.html'><span itemprop='name'>Product Support</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/category.html'><span itemprop='name'>Servers - Unified Computing</span><meta itemprop='position' content='4' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/series.html'><span itemprop='name'>Cisco UCS Manager</span><meta itemprop='position' content='5' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html'><span itemprop='name'>Configuration Guides</span><meta itemprop='position' content='6' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+        
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">Cisco UCS Manager Administration Management Guide 4.3</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   <!-- have to do this for _g.I18n to be defined in preview and publish modes -->
+  
+  <script type="text/javascript">
+      // initialize dictionary for i18n
+      cdc.util.ensureNamespace("cdc.rc");
+    cdc.rc.eotkeys = {
+        showOnly5Products : "Show Only 5 Products",       
+        showAllRowsProducts : "Show All nRows Products",
+        supportCommunityUrl : "https://community.cisco.com/t5/technology-and-support/ct-p/technology-support",
+        supportCommunity : "Cisco Community",
+        thankYou : "Thank You",
+        viewersAlso : "Customers Also Viewed", 
+        show : "Show", 
+        more : "More", 
+        showOnly3Documents: "Show Only 3 Documents"
+      };
+  </script>
+
+
+
+<div class="row blowout full visitedlinks">
+    <div class="col full">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers techdocs">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button aria-expanded="false" >Bias-Free Language</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>Bias-Free Language</h3>
+            <p>The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. <a href="https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html">Learn more</a> about how Cisco is using Inclusive Language.</p>
+        </div>
+        
+    </div><!-- disclaimers -->
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* this is needed for the translation selector */
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+    var bookTitle = 'Book Title Page';
+</script>
+
+<span id="actionBar-top"></span>
+<section id="actionBar" class="noprint base-blowout">
+    <span class="icons">
+        
+        <button class="bookToc simpleOverlay-trigger" id="onlyforTrigger"> <!--US140575-->
+            Book Contents
+        </button>
+            <div class="bookToc simpleOverlay-content">
+               <div role="heading" class="title">Book Contents</div>
+               <!--googleoff: index--><!--googleoff: snippet-->  
+               <div class="content">
+                  
+
+
+
+<ul id="bookToc">
+    <li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/b_Cisco_UCS_Admin_Mgmt_Guide_4-1_preface_00.html">Preface</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m-new-and-changed-information-gui.html">New and Changed
+	 Information for This Release</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_administration_management_overview-3_2.html">Administration
+	 Management Overview</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_password_management.html">Password
+	 Management</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m-security-management.html">Security Management</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_role-based_access_control_conflguration.html">Role-Based Access
+	 Configuration</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_remote_authentication_configuration.html">Remote
+	 Authentication</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_how_to_enable_anddisable_the_call_home_feature.html">How to Enable and
+	 Disable the Call Home Feature</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_ucs_manager_communication_services.html">UCS Manager
+	 Communication Services </a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_cimc_sessions_management.html">CIMC Sessions
+	 Management</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_m_series_gui_setting_the_cimc_ip_address.html">Setting the
+	 Management IP Address</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_organizations_in_ucs_manager.html"> Organizations in
+	 UCS Manager</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_backup_and_restore_configuration.html">Backup and Restore
+	 </a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_scheduling_options.html">Scheduling
+	 Options</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_gui_deferred_deployments_of_service_profile_updates.html">Deferred Deployments
+	 of Service Profile Updates</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_ucs_fault_suppression.html">UCS Fault
+	 Suppression</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_gui_kvm_console_4-0.html">KVM Console</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_gui_cisco_intersight_management.html">Cisco Intersight Management</a></li>
+
+</ul>
+
+
+               </div>
+               <!--googleon: index--><!--googleon: snippet-->               
+            </div>
+
+        
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='versionddcontainer chapter'></div>
+<script type="text/html" class="versionstemp">
+            <div class="versionsdd">
+                <button class="versionbutton" aria-haspopup="true" aria-expanded="false" aria-labelledby="other versions" class="version"><label></label></button>
+                <ul class="versionlist" aria-labelledby="other versions">
+                <%
+                    let pageUrl = window.location.pathname.replace("/content/","/c/").toLowerCase();
+                    if (true) pageUrl = pageUrl.substring(0,pageUrl.lastIndexOf("/"))+".html";
+                    for(let i=0; i< data.length; i++) {
+                        let item = data[i],
+                            myurl = item.linkUrl,
+                            urlm = myurl.replace("/content/","/c/");;
+                            mytitle = item.linkTitle;
+                            myclass= urlm.toLowerCase() == pageUrl ? "class=\"selected\"":""; 
+%>
+                    <li><a href="${myurl}" ${myclass}>${mytitle}</a></li>
+<%
+                  }   %>
+                </ul>
+             </div>
+</script>
+    
+        <span class="utilities">
+          <button title="Search in this Book" class="mobileSearch simpleOverlay-trigger">
+            Search
+          </button>
+          <div class="mobileSearch simpleOverlay-content">
+            <div class="title">Find Matches in This Book</div>
+              <!--googleoff: index--><!--googleoff: snippet-->  
+              <div class="content">
+                <form id="mobileBooksearch" class="chapter">
+                   <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit"></button>
+                   <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+                </form>
+                <div id="overlayResults" role="region" aria-live="polite" >
+                   <!-- important, keep this results div begin end on same line in here -->
+                   <div class="results"></div>
+                </div>
+              </div>
+              <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "Save";
+    cdc.rc.savedoc.saved = "Saved";
+</script>
+
+    <button class="save" aria-expanded="false" aria-label="Save">
+        <label>Save</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_m_series_gui_setting_the_cimc_ip_address.html">Log in</a> to Save Content
+    </div>
+
+
+          <!-- Translation Selctor -->
+          <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+
+                                <div class="noprint translations">
+                                        <a href="#" tabindex="-1">
+                                                <button type="button" class="translations translations-link anchor translationOptions simpleOverlay-trigger">
+                                                        <div class="toolbarIcon translationsIcon"></div><label class="iconLabel" id="onlyForNonEn">Translations</label>
+                                                </button>
+                                        </a>
+                                </div>
+           
+
+
+ 
+          <div class="translations simpleOverlay-content" role="dialog" id="dialogt" aria-labelledby="onlyForNonEN" aria-modal="true">
+            <div role="heading" class="title">Available Languages</div>
+               <!--googleoff: index--><!--googleoff: snippet--> 
+            <script language="javascript">                    
+                cdc.translations.map = "{ja-jp=https://www.cisco.com/c/ja_jp/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_m_series_gui_setting_the_cimc_ip_address.html, en-us=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_m_series_gui_setting_the_cimc_ip_address.html, x-default=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_m_series_gui_setting_the_cimc_ip_address.html}";//storing the map for use in the JS
+                cdc.translations.locale="en_us";
+            </script>
+            <div class="content">
+              <div class="availableLanguagesList">
+                  <ul id="translationsList">
+                  </ul> 
+              </div>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+          
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // stored value for overlay label to use in js
+    var downloadOPtionLabel = 'Download Options',
+    	bookSearchlabel = 'Find Matches in This Book',
+    	translationsLabel = 'Translations',
+    	bookConentLabel= 'Book Contents';
+</script>
+
+
+        
+
+
+
+        <button title="Document Download Options" id="dwnld-button" class="downloadOptions simpleOverlay-trigger" aria-expanded="false">
+            Download
+        </button>
+        <div class="downloadOptions simpleOverlay-content" role="dialog" id="dialogd" aria-labelledby="dwnld-button" aria-modal="true" class="default_dialog">
+            <div role="heading" class="title">Download Options</div>
+            <!--googleoff: index--><!--googleoff: snippet-->  
+            <div class="content">
+                <header>
+
+                    <h3 class="h4"> Book Title</p>
+                    <p>Cisco UCS Manager Administration Management Guide 4.3</p>
+                    <p class="h4"> Chapter Title</p>
+                    <h3>Setting the
+	 Management IP Address</p>
+
+                </header>
+                <ul>
+
+                        <li >    
+                            <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3.pdf" class="pdfIcon">PDF - Complete Book 
+                            <span>(3.57 MB)</span></a>
+
+                                   <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-3/b_cisco_ucs_admin_mgmt_guide_4-3/m_m_series_gui_setting_the_cimc_ip_address.pdf" class="chapter">PDF - This Chapter <span>(1.03 MB)</span></a>
+                                                            
+                            <p>View with Adobe Reader on a variety of devices</p>
+                        </li>                                  
+              </ul>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+        </div>
+
+          <button title="Print Friendly Page" class="print simpleOverlay-trigger">
+              Print
+          </button>
+        </span> 
+    </span>
+    <form id="booksearch" tabindex="0" class="chapter">
+       <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+       <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+    </form>
+      <div id="searchresult" role="region" aria-live="polite"><button class="close" title="Close Panel"><span></span><span></span></button>
+         <span class="headArrow"></span>
+         <h2>Results</h2>
+         <div class="matches">
+         </div>
+         <div class="results" tabindex="0">
+         </div>
+      </div>
+      <div id="searchResultChapterTitle"></div>
+</section>
+<script type="text/html" id="navigateMatchesTemplate">
+   <div>
+      <button class="up on" title="Previous Match"><span></span></button>
+      <button class="up off" title="Previous Match Not Available"><span></span></button>
+      <span class="matchlabel">Matches</span>
+      <button class="down on" title="Next Match"><span></span></button>
+      <button class="down off" title="Next Match Not Available"><span></span></button>
+   </div>
+</script>
+<script type="text/html" id="noChapterMatchTemplate">
+   <p>There are no Matches in this chapter.</p>
+</script>
+<script type="text/html" id="searchResultsListTemplate">
+   <p class="h3">Chapters with Matches</p>
+   <ul>
+<% var i = 0;
+    while ( modelData.links[i] ) {  %>
+      <li>
+<%     curpage = (window.location.pathname.indexOf(modelData.links[i].href) > -1 )?true:false;
+        if ( i === modelData.curpage ) {
+            if ( ! jQuery('.mobileSearch').css("display") == "block") { %>
+               <span class="currentIndicator"></span>${modelData.links[i].title}
+<%         } else {                %>
+               <span class="currentIndicator"></span><button class="curpage" data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%         }
+        } else {  %>
+            <button data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%     }  %>            
+      </li> 
+<% i++;
+    } %>
+   </ul> 
+</script>      
+<script type="text/html" id="noBookMatchTemplate">
+   <p class="head">No matches found in this book</p>
+   <p>This feature looks for an exact match of what you entered in the box.</p>
+   <p>If you entered several words, try reducing the entry to one or two and search again.</p>
+</script>
+<script type="text/html" id="errorTemplate">
+   <p>Search is currently unavailable due to technical issues. We are working to resolve the problem as quickly as possible.</p>
+</script>
+<script type="text/html" id="mobileSearchFooterTemplate">
+   <div id="mobileSearchFooter">
+      <button class="mobileSearch" title="Search in this Book"></button>
+      <button class="closeFooter"><span></span><span></span></button>
+      <div class="matches"> 
+      </div>
+   </div>   
+</script>
+ 
+    </div>
+</div>
+<div class="row blowout narrow-wide-v2 flip visitedlinks">
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div id="documentInfo">
+                  <dl>
+                     
+                      <dt>Updated:</dt><dd> April 30, 2025</dd>
+                     
+                  </dl>
+                    
+              </div>
+
+ 
+    </div>
+    <div id="chapterTitleDiv" class="col wide-v2 indent-at-xlarge">
+        <!-- this will be chapter title for chapters or header for TOC for books -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="chapter-title">Chapter: Setting the
+	 Management IP Address </h2>  
+    
+
+    </div>
+</div>
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <div id="pageContentDiv" class="col wide-v2 indent-at-xlarge" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
+
+    
+ 
+ 
+
+<div id="chapterToc" class="base-blowout">
+    <button><span></span>Chapter Contents</button>
+    <div>
+    
+<ul>
+<li><a href="#topic_47909C3AE69840AB869BC09C811FCB49">Setting the                              	 Management IP Address</a></li>
+<li><a href="#concept_8D1CF1E427424A8AA1ED7E26B31B9227">Management IP                              	 Address</a></li>
+<li><a href="#d15981e173a1635">Configuring the Management IP Address on a Server</a>
+<ul>
+<li><a href="#task_0ECF25D3145C48BDB752C1940457984C">Configuring a Server                              	 to Use a Static IP Address</a></li>
+<li><a href="#task_A92624A4C47B4A9BBDC48D7D41EF5B8E">Configuring a Server                              	 to Use a Management IP Pool</a></li>
+<li><a href="#task_CF5381D67FFB435A82094C8135A8C6B0">Deleting the Inband                              	 Configuration from a Server</a></li>
+</ul></li>
+<li><a href="#task_4F8D0DB929D748C3BB601C413F1F7C1D">Setting the Management IP Address on a Service Profile Template</a></li>
+<li><a href="#concept_BE0E6A32522F4B2791FA64E012718E6C">Management IP                              	 Pools</a></li>
+<li><a href="#task_5B979F23A7FD46F19A3AE98936406FB4">Creating an IPv6                              	 Address Block in the Management IP Pool</a></li>
+<li><a href="#task_A74B047BE4B6468784EE2C9EF4E05EC0">Deleting an IP Address Block from the Management IP Pool</a></li>
+<li><a href="#task_8317DEA278FE44FCAA85D0AE81FEEE6D">Creating an IPv4 Address Block in the Management IP Pool</a></li></ul>
+    <button id="chapterToc-close">Close<span></span></button>
+    </div>
+</div>
+
+ 
+    <div id="chapterContent">
+    
+                  <h1 class="title topictitle1" id="ariaid-title1">Setting the
+                     	 Management IP Address
+                  </h1>
+                  <!-- minitoc start -->
+                  <nav role="navigation" class="related-links">
+                     <ul class="ullinks">
+                        <li class="link ulchildlink"><a href="#concept_8D1CF1E427424A8AA1ED7E26B31B9227">Management IP Address</a></li>
+                        <li class="link ulchildlink"><a href="#task_4F8D0DB929D748C3BB601C413F1F7C1D">Setting the Management IP Address on a Service Profile Template</a></li>
+                        <li class="link ulchildlink"><a href="#concept_BE0E6A32522F4B2791FA64E012718E6C">Management IP Pools</a></li>
+                        <li class="link ulchildlink"><a href="#task_5B979F23A7FD46F19A3AE98936406FB4">Creating an IPv6 Address Block in the Management IP Pool</a></li>
+                        <li class="link ulchildlink"><a href="#task_A74B047BE4B6468784EE2C9EF4E05EC0">Deleting an IP Address Block from the Management IP Pool</a></li>
+                        <li class="link ulchildlink"><a href="#task_8317DEA278FE44FCAA85D0AE81FEEE6D">Creating an IPv4 Address Block in the Management IP Pool</a></li>
+                     </ul>
+                  </nav>
+                  <!-- minitoc end -->
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title2" lang="en-US" id="concept_8D1CF1E427424A8AA1ED7E26B31B9227">
+                     <h2 class="title topictitle2" id="ariaid-title2">Management IP
+                        	 Address
+                     </h2>
+                     <section class="body conbody">
+                        <p class="p">Each server in a 
+                           		<span class="ph">Cisco UCS domain</span> must have a one or more management IP addresses assigned to its
+                           		Cisco Integrated Management Controller (CIMC) or to the service profile
+                           		associated with the server. 
+                           		<span class="ph">Cisco UCS Manager</span> uses these IP addresses for external access that terminates in the
+                           		CIMC. This external access can be through one of the following services: 
+                           	 
+                        </p>
+                        <ul class="ul" id="concept_8D1CF1E427424A8AA1ED7E26B31B9227__ul_99F5C7A5734B4D8D85EB223E38BD0B50">
+                           <li class="li" id="concept_8D1CF1E427424A8AA1ED7E26B31B9227__li_75DDA1C5343C46F98BD43A485F551960"> 
+                              		  
+                              <p class="p">KVM console 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_8D1CF1E427424A8AA1ED7E26B31B9227__li_E78F5EDC46AB47B784D49262ED7EEAB3"> 
+                              		  
+                              <p class="p">Serial over LAN 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_8D1CF1E427424A8AA1ED7E26B31B9227__li_AF87A04ED840434DB1D5334B20434CE8"> 
+                              		  
+                              <p class="p"> An IPMI tool 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                        </ul>
+                        		
+                        <p class="p">The management IP
+                           		addresses used to access the CIMC on a server can be out-of-band (OOB)
+                           		addresses, through which traffic traverses the fabric interconnect via the
+                           		management port, or inband addresses, through which traffic traverses the
+                           		fabric interconnect via the fabric uplink port. Up to six IP addresses can be
+                           		configured to access the CIMC on a server, two out-of-band (OOB) and four
+                           		inband. 
+                           	 
+                        </p>
+                        		
+                        <p class="p">You can configure the
+                           		following management IP addresses: 
+                           	 
+                        </p>
+                        <ul class="ul" id="concept_8D1CF1E427424A8AA1ED7E26B31B9227__ul_D3C02B34127144C88AEE0CA6CE3EA570">
+                           <li class="li" id="concept_8D1CF1E427424A8AA1ED7E26B31B9227__li_EA767CD8037941668BDB7C2BF94C07D0"> 
+                              		  
+                              <p class="p">A static OOB IPv4
+                                 			 address assigned directly to the server 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_8D1CF1E427424A8AA1ED7E26B31B9227__li_B94EA5270CC44A15ABBD44609248D3F7"> 
+                              		  
+                              <p class="p">An OOB IPv4
+                                 			 address assigned to the server from a global ext-mgmt pool 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_8D1CF1E427424A8AA1ED7E26B31B9227__li_A39CC5EA09BC40E19F334163B760F3F8"> 
+                              		  
+                              <p class="p">An inband IPv4
+                                 			 address derived from a service profile associated with the server 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_8D1CF1E427424A8AA1ED7E26B31B9227__li_7395FF959BEA4E558A14BA068D07B6E7"> 
+                              		  
+                              <p class="p">An inband IPv4
+                                 			 address drawn from a management IP pool and assigned to a service profile or
+                                 			 service profile template 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_8D1CF1E427424A8AA1ED7E26B31B9227__li_E894BDB84FEA44C585A9728BC00CD544"> 
+                              		  
+                              <p class="p">An static inband
+                                 			 IPv6 address assigned directly to the server 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_8D1CF1E427424A8AA1ED7E26B31B9227__li_036D5EC69F5347CC8EAAE85ECE2F06BE"> 
+                              		  
+                              <p class="p">An inband IPv6
+                                 			 address derived from a service profile associated with the server 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                        </ul>
+                        <p class="p">You can assign
+                           		multiple management IP addresses to each CIMC on the server and to the service
+                           		profile associated with the server. If you do so, you must use different IP
+                           		addresses for each of them. 
+                           	 
+                        </p>
+                        <p class="p">A management IP
+                           		address that is assigned to a service profile moves with that service profile.
+                           		If KVM or SoL sessions are active when you migrate the service profile to
+                           		another server, 
+                           		<span class="ph">Cisco UCS Manager</span> terminates the sessions and does not restart them after the
+                           		migration is completed. You configure the IP address when you create or modify
+                           		a service profile. 
+                           	 
+                        </p>
+                        <table class="olh_note" border="0" role="note">
+                           <tr>
+                              <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                              </td>
+                              <td border="0" class="olh_note">
+                                 <section class="note__content">
+                                    <hr> 
+                                    		
+                                    <p class="p">You cannot assign a
+                                       		  static IP address to a server or service profile if that IP address has already
+                                       		  been assigned to a server or service profile in the 
+                                       		  <span class="ph">Cisco UCS domain</span>. If you attempt to do so, 
+                                       		  <span class="ph">Cisco UCS Manager</span> warns you that the IP address is already in use and rejects the
+                                       		  configuration. 
+                                       		
+                                    </p> 
+                                    	 
+                                    <hr>
+                                 </section>
+                              </td>
+                           </tr>
+                        </table>
+                        		
+                        		
+                        		
+                        		
+                        <p class="p">A unicast Internet Control Message Protocol (ICMP) request will be sent to the gateway IP address every second from each server
+                           that is configured with an inband IP address. This request is to check if connectivity for the inband traffic through the
+                           current Fabric Interconnect (FI) is up, and to initiate a failover to the other FI if it is down. The path selected for inband
+                           and the failover operations are completely independent of the server data traffic. The default polling interval is 1 second
+                           and the polling interval is configurable to a maximum of 5 seconds. After three failed polls, the CIMC will failover to the
+                           other FI. During failover, the CIMC will issue a Gratuitous Address Resolution Protocol (GARP) on the newly selected uplinks
+                           to notify the network that the MAC has been moved to a new location.
+                        </p>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <p class="topictitle1" id="d15981e173a1635">Configuring the Management IP Address on a Server</p>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title3" lang="en-US" id="task_0ECF25D3145C48BDB752C1940457984C">
+                     <h2 class="title topictitle2" id="ariaid-title3">Configuring a Server
+                        	 to Use a Static IP Address
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_0ECF25D3145C48BDB752C1940457984C__context_348D5AA2E3674F549DEF335CDD03070C">
+                           		
+                           <p class="p">If this action is
+                              		  greyed out, the server has already been assigned a static IP address. 
+                              		
+                           </p>
+                           		
+                           <p class="p">You can configure a
+                              		  total of three static management addresses per server: 
+                              		
+                           </p> 
+                           		
+                           <ul class="ul">
+                              <li class="li" id="task_0ECF25D3145C48BDB752C1940457984C__li_4FAB04F9B51A4066AE84ADA23A9E8D18">Outband IPv4 
+                                 		  
+                              </li>
+                              <li class="li" id="task_0ECF25D3145C48BDB752C1940457984C__li_29A82A7FC20C427DAC163175635136EC">Inband IPv4 
+                                 		  
+                              </li>
+                              <li class="li" id="task_0ECF25D3145C48BDB752C1940457984C__li_7DE1E13FC4834F3592A8F6B812A145EE">Inband IPv6 
+                                 		  
+                              </li>
+                           </ul> 
+                           		
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr> 
+                                       		  
+                                       <p class="p">You are not
+                                          			 required to configure all three. 
+                                          		  
+                                       </p> 
+                                       		
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table> 
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_0ECF25D3145C48BDB752C1940457984C__steps_21BB7594E68C4E9EBC32AECF30733DDF">
+                           <tbody>
+                              <tr class="li step" id="task_0ECF25D3145C48BDB752C1940457984C__step_A8B69B607E044AD88D0E47A5E5F7DD5C">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">Equipment</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_0ECF25D3145C48BDB752C1940457984C__step_23A22EBC766C4DA8AA038EA534E94A92">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Expand 
+                                       			 <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Chassis</span> &gt; <span class="ph uicontrol">Chassis 
+                                             				  <var class="keyword varname">Number</var></span> &gt; <span class="ph uicontrol">Cartridges</span> &gt; <span class="ph uicontrol">Cartridge 
+                                             				  <var class="keyword varname">Number</var></span> &gt; <span class="ph uicontrol">Servers</span></span> 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_0ECF25D3145C48BDB752C1940457984C__step_FF334B1018054CC1B5A2F2CCD86AE0B1">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> Click the
+                                       			 server for which you want to configure IP addresses. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_0ECF25D3145C48BDB752C1940457984C__step_A96491E15E9F432DA8FF4C98420A0B40">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Work</span> pane, click the 
+                                       			 <span class="ph uicontrol">Inventory</span> tab. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_0ECF25D3145C48BDB752C1940457984C__step_D0F7CC2A22E34B248311C609E624F6CC">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click the 
+                                       			 <span class="ph uicontrol">CIMC</span> subtab. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info">In the 
+                                       			 <span class="ph uicontrol">Actions</span> area, two choices are available for
+                                       			 management IP addresses: 
+                                       		  
+                                    </section>
+                                    <ul class="ul choices">
+                                       <li class="li choice" id="task_0ECF25D3145C48BDB752C1940457984C__choice_A7CADF70E4BF4C31B3DA968402CD2DA8"><span class="ph uicontrol">Modify Outband Static
+                                             				  Management IP</span> 
+                                          			 
+                                       </li>
+                                       <li class="li choice" id="task_0ECF25D3145C48BDB752C1940457984C__choice_54A66D5A30BC4B20AD97E986D816D510"><span class="ph uicontrol">Change Inband Management
+                                             				  IP</span> 
+                                          			 
+                                       </li>
+                                    </ul>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_0ECF25D3145C48BDB752C1940457984C__step_B3F6916EC5EA4811A4CCF894C9E9FD69">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">To modify the
+                                       			 outband static management IP address, in the 
+                                       			 <span class="ph uicontrol">Actions</span> area, click 
+                                       			 <span class="ph uicontrol">Modify
+                                          				Outband Static Management IP</span>: 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_0ECF25D3145C48BDB752C1940457984C__step_06DD2A1263E740FEA37EC2FF78C875BB">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Modify
+                                          				Outband Static Management IP</span> dialog box, complete the following
+                                       			 fields: 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <table width="100%" border="1" class="table" id="task_0ECF25D3145C48BDB752C1940457984C__table_03C0DD6A82CA43668F63F9B1AF227B42">
+                                          <caption></caption>
+                                          <colgroup>
+                                             <col style="width:50%">
+                                             <col style="width:50%">
+                                          </colgroup>
+                                          <thead class="thead">
+                                             <tr>
+                                                <th font-weight="bold" class="entry" id="task_0ECF25D3145C48BDB752C1940457984C__table_03C0DD6A82CA43668F63F9B1AF227B42__entry__1">Field 
+                                                   						
+                                                </th>
+                                                <th font-weight="bold" class="entry" id="task_0ECF25D3145C48BDB752C1940457984C__table_03C0DD6A82CA43668F63F9B1AF227B42__entry__2">Description 
+                                                   						
+                                                </th>
+                                             </tr>
+                                          </thead>
+                                          <tbody class="tbody">
+                                             <tr>
+                                                <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_03C0DD6A82CA43668F63F9B1AF227B42__entry__1 "> 
+                                                   						  
+                                                   <p class="p"> 
+                                                      							 <span class="ph uicontrol">IP Address</span> 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                                <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_03C0DD6A82CA43668F63F9B1AF227B42__entry__2 "> 
+                                                   						  
+                                                   <p class="p">The
+                                                      							 static IPv4 address to be assigned to the server. 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_03C0DD6A82CA43668F63F9B1AF227B42__entry__1 "> 
+                                                   						  
+                                                   <p class="p"> 
+                                                      							 <span class="ph uicontrol">Subnet Mask</span> 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                                <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_03C0DD6A82CA43668F63F9B1AF227B42__entry__2 "> 
+                                                   						  
+                                                   <p class="p">The
+                                                      							 subnet mask for the IP address. 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_03C0DD6A82CA43668F63F9B1AF227B42__entry__1 "> 
+                                                   						  
+                                                   <p class="p"> 
+                                                      							 <span class="ph uicontrol">Default Gateway</span> 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                                <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_03C0DD6A82CA43668F63F9B1AF227B42__entry__2 "> 
+                                                   						  
+                                                   <p class="p">The
+                                                      							 default gateway that the IP address should use. 
+                                                      						  
+                                                   </p> 
+                                                   						
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_0ECF25D3145C48BDB752C1940457984C__step_7563E44D84084A889F4B7DC88C448348">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;8</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click 
+                                       			 <span class="ph uicontrol">OK</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_0ECF25D3145C48BDB752C1940457984C__step_82EFD8DA7E1541CDB6E7E2DE89EB3EF6">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;9</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">To modify the
+                                       			 inband management IP address, click 
+                                       			 <span class="ph uicontrol">Change
+                                          				Inband Management IP</span>. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info">In the 
+                                       			 <span class="keyword wintitle">Change
+                                          				Management IP Address</span> dialog box, there are two tabs: 
+                                       		  
+                                    </section>
+                                    <ul class="ul choices">
+                                       <li class="li choice" id="task_0ECF25D3145C48BDB752C1940457984C__choice_5A7D4F186E5F4511A17E08F8B0844C26"><span class="ph uicontrol">Inband IPv4</span> 
+                                          			 
+                                       </li>
+                                       <li class="li choice" id="task_0ECF25D3145C48BDB752C1940457984C__choice_A57133EFFFC841F9A538A23FEE62EC8B"><span class="ph uicontrol">Inband IPv6</span> 
+                                          			 
+                                       </li>
+                                    </ul>
+                                    <ol type="a" class="ol substeps">
+                                       <li class="li substep substepexpand" id="task_0ECF25D3145C48BDB752C1940457984C__substep_299795C197D846CF82FF593D794D01C3">
+                                          <p class="ph cmd">To change
+                                             				  the static inband IPv4 management address, click the 
+                                             				  <span class="ph uicontrol">Inband IPv4</span> subtab. 
+                                             				
+                                          </p>
+                                       </li>
+                                       <li class="li substep substepexpand" id="task_0ECF25D3145C48BDB752C1940457984C__substep_F59DA84511E3488D9325BDE4C9FCA05B">
+                                          <p class="ph cmd">In the 
+                                             				  <span class="keyword wintitle">Change Management IP Address</span> dialog box, complete the
+                                             				  following fields: 
+                                             				
+                                          </p>
+                                          <section class="itemgroup info"> 
+                                             				  
+                                             <table width="100%" border="1" class="table" id="task_0ECF25D3145C48BDB752C1940457984C__table_770CE57FBACA4ABC90F7FA3EC4B2C387">
+                                                <caption></caption>
+                                                <colgroup>
+                                                   <col style="width:50%">
+                                                   <col style="width:50%">
+                                                </colgroup>
+                                                <thead class="thead">
+                                                   <tr>
+                                                      <th font-weight="bold" class="entry" id="task_0ECF25D3145C48BDB752C1940457984C__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__1">Field 
+                                                         							 
+                                                      </th>
+                                                      <th font-weight="bold" class="entry" id="task_0ECF25D3145C48BDB752C1940457984C__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__2">Description 
+                                                         							 
+                                                      </th>
+                                                   </tr>
+                                                </thead>
+                                                <tbody class="tbody">
+                                                   <tr>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__1 ">
+                                                         								
+                                                         								
+                                                         <p class="p"> 
+                                                            								  <span class="ph uicontrol">Management IP Address Policy</span> drop-down 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__2 ">
+                                                         								
+                                                         								
+                                                         <p class="p">Click 
+                                                            								  <span class="ph uicontrol">Static</span>. 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__1 ">
+                                                         								
+                                                         								
+                                                         <p class="p"> 
+                                                            								  <span class="ph uicontrol">IP Address 
+                                                               								  </span> 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__2 "> 
+                                                         								
+                                                         <p class="p">The static IPv4 address to be assigned to the server. 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__1 "> 
+                                                         								
+                                                         <p class="p"> 
+                                                            								  <span class="ph uicontrol">Subnet Mask</span> 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__2 "> 
+                                                         								
+                                                         <p class="p">The subnet mask for the IP address. 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__1 "> 
+                                                         								
+                                                         <p class="p"> 
+                                                            								  <span class="ph uicontrol">Default Gateway</span> 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__2 "> 
+                                                         								
+                                                         <p class="p">The default gateway that the IP address should use. 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table> 
+                                             				
+                                          </section>
+                                       </li>
+                                       <li class="li substep substepexpand" id="task_0ECF25D3145C48BDB752C1940457984C__substep_156732B158C94A3CAB1B320B5A40D52B">
+                                          <p class="ph cmd">Click 
+                                             				  <span class="ph uicontrol">OK</span>. 
+                                             				
+                                          </p>
+                                       </li>
+                                       <li class="li substep substepexpand" id="task_0ECF25D3145C48BDB752C1940457984C__substep_36A97EEFABB0416C8EB85B9BC51BBF52">
+                                          <p class="ph cmd">To change
+                                             				  the static inband management IPv6 address, click the 
+                                             				  <span class="ph uicontrol">Inband IPv6</span> subtab. 
+                                             				
+                                          </p>
+                                       </li>
+                                       <li class="li substep substepexpand" id="task_0ECF25D3145C48BDB752C1940457984C__substep_B2B00DCDF7084B09BF02827C4DC565CD">
+                                          <p class="ph cmd">In the 
+                                             				  <span class="keyword wintitle">Change Management IP Address</span> dialog box, complete the
+                                             				  following fields: 
+                                             				
+                                          </p>
+                                          <section class="itemgroup info"> 
+                                             				  
+                                             <table width="100%" border="1" class="table" id="task_0ECF25D3145C48BDB752C1940457984C__table_8AB6197BF155496A8EC7D888BF32561F">
+                                                <caption></caption>
+                                                <colgroup>
+                                                   <col style="width:50%">
+                                                   <col style="width:50%">
+                                                </colgroup>
+                                                <thead class="thead">
+                                                   <tr>
+                                                      <th font-weight="bold" class="entry" id="task_0ECF25D3145C48BDB752C1940457984C__table_8AB6197BF155496A8EC7D888BF32561F__entry__1">Field 
+                                                         							 
+                                                      </th>
+                                                      <th font-weight="bold" class="entry" id="task_0ECF25D3145C48BDB752C1940457984C__table_8AB6197BF155496A8EC7D888BF32561F__entry__2">Description 
+                                                         							 
+                                                      </th>
+                                                   </tr>
+                                                </thead>
+                                                <tbody class="tbody">
+                                                   <tr>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_8AB6197BF155496A8EC7D888BF32561F__entry__1 "> 
+                                                         								
+                                                         <p class="p">
+                                                            								  
+                                                            								  <span class="ph uicontrol">Management IP Address Policy</span> drop-down 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_8AB6197BF155496A8EC7D888BF32561F__entry__2 "> 
+                                                         								
+                                                         <p class="p">Click 
+                                                            								  <span class="ph uicontrol">Static</span>. 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_8AB6197BF155496A8EC7D888BF32561F__entry__1 "> 
+                                                         								
+                                                         <p class="p"> 
+                                                            								  <span class="ph uicontrol">IP Address 
+                                                               								  </span> 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_8AB6197BF155496A8EC7D888BF32561F__entry__2 "> 
+                                                         								
+                                                         <p class="p">The static IPv6 address to be assigned to the server. 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_8AB6197BF155496A8EC7D888BF32561F__entry__1 "> 
+                                                         								
+                                                         <p class="p"> 
+                                                            								  <span class="ph uicontrol">Prefix</span> 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_8AB6197BF155496A8EC7D888BF32561F__entry__2 "> 
+                                                         								
+                                                         <p class="p">The network prefix for the IP address. 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_8AB6197BF155496A8EC7D888BF32561F__entry__1 "> 
+                                                         								
+                                                         <p class="p"> 
+                                                            								  <span class="ph uicontrol">Default Gateway</span> 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                      <td class="entry" headers="task_0ECF25D3145C48BDB752C1940457984C__table_8AB6197BF155496A8EC7D888BF32561F__entry__2 "> 
+                                                         								
+                                                         <p class="p">The default gateway that the IP address should use. 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table> 
+                                             				
+                                          </section>
+                                       </li>
+                                    </ol>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_0ECF25D3145C48BDB752C1940457984C__step_CDE9C05A005249409E660A7954FB4533">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;10</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click 
+                                       			 <span class="ph uicontrol">OK</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_0ECF25D3145C48BDB752C1940457984C__step_746293D26DAB44F5BB82FC7236B7A982">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;11</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">If a
+                                       			 confirmation dialog box displays, click 
+                                       			 <span class="ph uicontrol">Yes</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title4" lang="en-US" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E">
+                     <h2 class="title topictitle2" id="ariaid-title4">Configuring a Server
+                        	 to Use a Management IP Pool
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__context_348D5AA2E3674F549DEF335CDD03070C"> 
+                           		
+                           <p class="p">If any action is specified in this procedure is greyed out, it means that the configuration has already been completed. You
+                              can configure a total of three management IP pools per server: 
+                           </p>
+                           			
+                           <ul class="ul" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__ul_uwq_4rc_yy">
+                              <li class="li" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__li_4FAB04F9B51A4066AE84ADA23A9E8D18">
+                                 					
+                                 <p class="p">Outband IPv4 </p>
+                                 				
+                              </li>
+                              <li class="li" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__li_29A82A7FC20C427DAC163175635136EC">
+                                 					
+                                 <p class="p">Inband IPv4 </p>
+                                 				
+                              </li>
+                              <li class="li" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__li_7DE1E13FC4834F3592A8F6B812A145EE">
+                                 					
+                                 <p class="p">Inband IPv6 </p>
+                                 				
+                              </li>
+                           </ul> 
+                           		
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr> 
+                                       		  
+                                       <p class="p">You are not
+                                          			 required to configure all three. 
+                                          		  
+                                       </p> 
+                                       		
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table> 
+                           	 
+                        </section>
+                        <section class="section prereq p" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__prereq_33CA72A673124416A58B982030C70979">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section> 
+                           		
+                           <p class="p">Configure management
+                              		  IP pools before configuring servers to use management IP pools. 
+                              		
+                           </p> 
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__steps_21BB7594E68C4E9EBC32AECF30733DDF">
+                           <tbody>
+                              <tr class="li step" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__step_A8B69B607E044AD88D0E47A5E5F7DD5C">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">Equipment</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__step_23A22EBC766C4DA8AA038EA534E94A92">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Expand 
+                                       			 <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Chassis</span> &gt; <span class="ph uicontrol">Chassis 
+                                             				  <var class="keyword varname">Number</var></span> &gt; <span class="ph uicontrol">Cartridges</span> &gt; <span class="ph uicontrol">Cartridge 
+                                             				  <var class="keyword varname">Number</var></span> &gt; <span class="ph uicontrol">Servers</span></span> 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__step_FF334B1018054CC1B5A2F2CCD86AE0B1">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> Click the
+                                       			 server that you want to configure to use the management IP pool. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__step_A96491E15E9F432DA8FF4C98420A0B40">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Work</span> pane, click the 
+                                       			 <span class="ph uicontrol">Inventory</span> tab. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__step_D0F7CC2A22E34B248311C609E624F6CC">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click the 
+                                       			 <span class="ph uicontrol">CIMC</span> subtab. 
+                                       		  
+                                    </p>
+                                    <ul class="ul choices">
+                                       <li class="li choice" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__choice_E21F28FAC8E34777A9C0C6F72D82D9D3">To configure an outband IP
+                                          				pooled management IP address policy, proceed with Step 6. 
+                                          			 
+                                       </li>
+                                       <li class="li choice" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__choice_0C751442254E4C44BEBA427036F7D328">To configure inband IPv4
+                                          				and/or IPv6 management IP address policies, proceed to Step 8. 
+                                          			 
+                                       </li>
+                                    </ul>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__step_F874F2EAEC9C44F4BF132A30085A6594">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Actions</span> area, click 
+                                       			 <span class="ph uicontrol">Use
+                                          				Outband Pooled Management IP</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__step_9A6AC5FB48D746AEB5EBBC34D9A639CC">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click 
+                                       			 <span class="ph uicontrol">Yes</span> in the 
+                                       			 <span class="ph uicontrol">Use
+                                          				Outband Pooled Management IP</span> confirmation dialog box, then click 
+                                       			 <span class="ph uicontrol">OK</span>. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup stepresult">The
+                                       			 management IP address policy is now switched to using an OOB IP address from
+                                       			 the outband management IP pool. 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__step_B3F6916EC5EA4811A4CCF894C9E9FD69">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;8</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Actions</span> area, click 
+                                       			 <span class="ph uicontrol">Change
+                                          				Inband Management IP</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__step_F2FFE481D07B4A72B1FB8E6C9F43515F">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;9</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="ph uicontrol">Change
+                                          				Management IP Dialog</span> box, there are two tabs: 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <ul class="ul">
+                                          <li class="li" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__li_4A4D4A6384F8441282690D18BC483074"> 
+                                             				  
+                                             <p class="p"><span class="ph uicontrol">Inband IPv4</span> 
+                                                				  
+                                             </p> 
+                                             				
+                                          </li>
+                                          <li class="li" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__li_DADCA26E112C4815BF646C3CD082F621"> 
+                                             				  
+                                             <p class="p"><span class="ph uicontrol">Inband IPv6</span> 
+                                                				  
+                                             </p> 
+                                             				
+                                          </li>
+                                       </ul> 
+                                       		  
+                                    </section>
+                                    <ol type="a" class="ol substeps">
+                                       <li class="li substep substepexpand" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__substep_1B6EF319175E47ED95F16E66C00E1271">
+                                          <p class="ph cmd">To change
+                                             				  the inband IPv4 management IP pool, click the 
+                                             				  <span class="ph uicontrol">Inband IPv4</span> tab, and complete the following fields: 
+                                             				
+                                          </p>
+                                          <section class="itemgroup info"> 
+                                             				  
+                                             <table width="100%" border="1" class="table" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__table_770CE57FBACA4ABC90F7FA3EC4B2C387">
+                                                <caption></caption>
+                                                <colgroup>
+                                                   <col style="width:50%">
+                                                   <col style="width:50%">
+                                                </colgroup>
+                                                <thead class="thead">
+                                                   <tr>
+                                                      <th font-weight="bold" class="entry" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__1">Field 
+                                                         							 
+                                                      </th>
+                                                      <th font-weight="bold" class="entry" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__2">Description 
+                                                         							 
+                                                      </th>
+                                                   </tr>
+                                                </thead>
+                                                <tbody class="tbody">
+                                                   <tr>
+                                                      <td class="entry" headers="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__1 ">
+                                                         								
+                                                         								
+                                                         <p class="p"> 
+                                                            								  <span class="ph uicontrol">Network</span> drop-down list 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                      <td class="entry" headers="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__2 ">
+                                                         								
+                                                         								
+                                                         <p class="p">A
+                                                            								  VLAN selected from the associated VLAN group. 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td class="entry" headers="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__1 ">
+                                                         								
+                                                         								
+                                                         <p class="p"> 
+                                                            								  <span class="ph uicontrol">Management IP Address Policy</span> drop-down list 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                      <td class="entry" headers="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__table_770CE57FBACA4ABC90F7FA3EC4B2C387__entry__2 ">
+                                                         								
+                                                         								
+                                                         <p class="p">The management IP pool you want to assign to the server. There
+                                                            								  are two types of pools available: 
+                                                            								
+                                                         </p> 
+                                                         								
+                                                         <ul class="ul">
+                                                            <li class="li" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__li_8B4933D100044A2D9D91FB7613DE4628"> 
+                                                               									 
+                                                               <p class="p"><span class="ph uicontrol">Domain Pools</span> 
+                                                                  									 
+                                                               </p> 
+                                                               								  
+                                                            </li>
+                                                            <li class="li" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__li_1449A5E535CA4A1182D2E3D9392A69BE"> 
+                                                               									 
+                                                               <p class="p"><span class="ph uicontrol">Global Pools</span> 
+                                                                  									 
+                                                               </p> 
+                                                               								  
+                                                            </li>
+                                                         </ul> 
+                                                         								
+                                                         <p class="p">Select one of the pools available from either the 
+                                                            								  <span class="ph uicontrol">Domain Pools</span> entries or the 
+                                                            								  <span class="ph uicontrol">Global Pools</span> entries. 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table> 
+                                             				
+                                          </section>
+                                       </li>
+                                       <li class="li substep substepexpand" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__substep_B760F0CA9A174B82B90BB4F49161B6D8">
+                                          <p class="ph cmd">To change
+                                             				  the inband IPv6 management IP pool, click the 
+                                             				  <span class="ph uicontrol">Inband IPv6</span> tab, and complete the following fields: 
+                                             				
+                                          </p>
+                                          <section class="itemgroup info"> 
+                                             				  
+                                             <table width="100%" border="1" class="table" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__table_CE399363E9864FC4AF1DE2CA02003861">
+                                                <caption></caption>
+                                                <colgroup>
+                                                   <col style="width:50%">
+                                                   <col style="width:50%">
+                                                </colgroup>
+                                                <thead class="thead">
+                                                   <tr>
+                                                      <th font-weight="bold" class="entry" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__table_CE399363E9864FC4AF1DE2CA02003861__entry__1">Field 
+                                                         							 
+                                                      </th>
+                                                      <th font-weight="bold" class="entry" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__table_CE399363E9864FC4AF1DE2CA02003861__entry__2">Description 
+                                                         							 
+                                                      </th>
+                                                   </tr>
+                                                </thead>
+                                                <tbody class="tbody">
+                                                   <tr>
+                                                      <td class="entry" headers="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__table_CE399363E9864FC4AF1DE2CA02003861__entry__1 "> 
+                                                         								
+                                                         <p class="p">
+                                                            								  
+                                                            								  <span class="ph uicontrol">Network</span> drop-down list 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                      <td class="entry" headers="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__table_CE399363E9864FC4AF1DE2CA02003861__entry__2 "> 
+                                                         								
+                                                         <p class="p">A VLAN selected from the associated VLAN group. 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td class="entry" headers="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__table_CE399363E9864FC4AF1DE2CA02003861__entry__1 "> 
+                                                         								
+                                                         <p class="p">
+                                                            								  
+                                                            								  <span class="ph uicontrol">Management IP Address Policy</span> drop-down list 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                      <td class="entry" headers="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__table_CE399363E9864FC4AF1DE2CA02003861__entry__2 "> 
+                                                         								
+                                                         <p class="p">The management IP pool you want to assign to the server. There
+                                                            								  are two types of pools available: 
+                                                            								
+                                                         </p> 
+                                                         								
+                                                         <ul class="ul">
+                                                            <li class="li" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__li_FD2CF9C0EDA54F2287BB9816A0ABA336"> 
+                                                               									 
+                                                               <p class="p"><span class="ph uicontrol">Domain Pools</span> 
+                                                                  									 
+                                                               </p> 
+                                                               								  
+                                                            </li>
+                                                            <li class="li" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__li_4006B6FBB88A42CBAA1E9A8466FCA401"> 
+                                                               									 
+                                                               <p class="p"><span class="ph uicontrol">Global Pools</span> 
+                                                                  									 
+                                                               </p> 
+                                                               								  
+                                                            </li>
+                                                         </ul> 
+                                                         								
+                                                         <p class="p">Select one of the pools available from either the 
+                                                            								  <span class="ph uicontrol">Domain Pools</span> entries or the 
+                                                            								  <span class="ph uicontrol">Global Pools</span> entries. 
+                                                            								
+                                                         </p> 
+                                                         							 
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table> 
+                                             				
+                                          </section>
+                                       </li>
+                                    </ol>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__step_3196B94DD1324FFC9B915D08FB70D906">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;10</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click 
+                                       			 <span class="ph uicontrol">OK</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A92624A4C47B4A9BBDC48D7D41EF5B8E__step_746293D26DAB44F5BB82FC7236B7A982">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;11</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">If a
+                                       			 confirmation dialog box displays, click 
+                                       			 <span class="ph uicontrol">Yes</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title5" lang="en-US" id="task_CF5381D67FFB435A82094C8135A8C6B0">
+                     <h2 class="title topictitle2" id="ariaid-title5">Deleting the Inband
+                        	 Configuration from a Server
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_CF5381D67FFB435A82094C8135A8C6B0__context_1BF840DF50B94F0FB816052B61E87850">
+                           		
+                           <p class="p">This procedure
+                              		  removes the inband management IP address configuration from a server. If this
+                              		  action is greyed out, no inband configuration was completed. 
+                              		
+                           </p> 
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              <tr class="li step" id="task_CF5381D67FFB435A82094C8135A8C6B0__step_0CED3CF3F7B849EF99F216399EE16329">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">Equipment</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_CF5381D67FFB435A82094C8135A8C6B0__step_ExpandEquipChassisServers">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Expand 
+                                       			 <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Chassis</span> &gt; <span class="ph uicontrol">Chassis 
+                                             				  <var class="keyword varname">Number</var></span> &gt; <span class="ph uicontrol">Cartridges</span> &gt; <span class="ph uicontrol">Cartridge 
+                                             				  <var class="keyword varname">Number</var></span> &gt; <span class="ph uicontrol">Servers</span></span> 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_CF5381D67FFB435A82094C8135A8C6B0__step_71F740F415C949BAB3E96B7B60553717">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Choose the
+                                       			 server for which you want to delete the inband management IP configuration. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_CF5381D67FFB435A82094C8135A8C6B0__step_B3AF0EE309B74D28BB75EEE964A8083B">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Work</span> area, click the 
+                                       			 <span class="ph uicontrol">Inventory</span> tab. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_CF5381D67FFB435A82094C8135A8C6B0__step_D0079CAA542C4233A3E03A2B807F383C">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click the 
+                                       			 <span class="ph uicontrol">CIMC 
+                                          			 </span> subtab. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_CF5381D67FFB435A82094C8135A8C6B0__step_52FEC25CEBC9415A93F87124FFB2759C">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Actions</span> area, click 
+                                       			 <span class="ph uicontrol">Delete
+                                          				Inband Configuration</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_CF5381D67FFB435A82094C8135A8C6B0__step_0070FEEBF0EB48E5A104346C00B533E2">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click 
+                                       			 <span class="ph uicontrol">Yes</span> in the 
+                                       			 <span class="ph uicontrol">Delete</span> confirmation dialog box. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup stepresult"> 
+                                       			 
+                                       <p class="p">The inband
+                                          				configuration for the server is deleted. 
+                                          			 
+                                       </p> 
+                                       			 
+                                       <table class="olh_note" border="0" role="note">
+                                          <tr>
+                                             <td width="1%" class="td_faq" role="heading" border="0">
+                                                <p><b>Note</b></p>&nbsp;
+                                             </td>
+                                             <td border="0" class="td_faq">
+                                                <section class="note__content"> 
+                                                   				
+                                                   <p class="p">If an inband
+                                                      				  service profile is configured in 
+                                                      				  <span class="ph">Cisco UCS Manager</span>
+                                                      				  with a default VLAN and pool name, the server CIMC will automatically get an
+                                                      				  inband configuration from the inband profile approximate one minute after
+                                                      				  deleting the inband configuration here. 
+                                                      				
+                                                   </p> 
+                                                   			 
+                                                </section>
+                                             </td>
+                                          </tr>
+                                       </table> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title6" lang="en-US" id="task_4F8D0DB929D748C3BB601C413F1F7C1D">
+                     <h2 class="title topictitle2" id="ariaid-title6">Setting the Management IP Address on a Service Profile Template</h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_4F8D0DB929D748C3BB601C413F1F7C1D__steps_D670656B09E3400996B5E522BE4370FD">
+                           <tbody>
+                              <tr class="li step" id="task_4F8D0DB929D748C3BB601C413F1F7C1D__step_AD6E92F8B296400DA430147EE036EA89">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">Servers</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_4F8D0DB929D748C3BB601C413F1F7C1D__step_B782D1D597264C939BE7ADF55FAE50ED">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Expand 
+                                       			 <span class="ph menucascade"><span class="ph uicontrol">Servers</span> &gt; <span class="ph uicontrol">Service Profile
+                                             				  Templates</span></span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_4F8D0DB929D748C3BB601C413F1F7C1D__step_C4DF594D83554D3495EA372BC8BA5C33">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">
+                                       Expand the node for the organization that contains the service profile  template for which you want to set the management
+                                       IP address.
+                                    </p>
+                                    <section class="itemgroup info">
+                                       
+                                       <p class="p">If the system does not include multi tenancy, expand the <span class="ph uicontrol">root</span> node. 
+                                       </p>
+                                       
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_4F8D0DB929D748C3BB601C413F1F7C1D__step_A2D08975DEBA447EBC97ED021FA2A8FD">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">
+                                       Click the service profile template for which you want to set the management IP address.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_4F8D0DB929D748C3BB601C413F1F7C1D__step_F8380C329C11413A8CC8C42C5D805C51">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Work</span> pane, click the 
+                                       			 <span class="ph uicontrol">General</span> tab. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_4F8D0DB929D748C3BB601C413F1F7C1D__step_7E170E4AA45B442F9D7D38CB7C1046AC">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Expand the <span class="ph uicontrol">Management IP Address</span> area.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_4F8D0DB929D748C3BB601C413F1F7C1D__step_814A0A9FF084446DB56617124CA6DA5C">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the <span class="ph uicontrol">Actions</span> area, click <span class="ph uicontrol">Change Management IP Address</span>.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_4F8D0DB929D748C3BB601C413F1F7C1D__step_BBE49C18FF4E42D39382CBD8544DE5DA">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;8</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Complete the fields in the <span class="keyword wintitle">Change Management IP Address</span> dialog box.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_4F8D0DB929D748C3BB601C413F1F7C1D__step_10095DEF3C1F44B180F8B7096DE1A496">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;9</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click 
+                                       			 <span class="ph uicontrol">Save
+                                          				Changes</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title7" lang="en-US" id="concept_BE0E6A32522F4B2791FA64E012718E6C">
+                     <h2 class="title topictitle2" id="ariaid-title7">Management IP
+                        	 Pools
+                     </h2>
+                     <section class="body conbody">
+                        <p class="p">The default management
+                           		IP pool, 
+                           		<span class="ph uicontrol">IP Pool
+                              		  ext-mgmt</span> is a collection of external IPv4 and IPv6 addresses. 
+                           		<span class="ph">Cisco UCS Manager</span> reserves each block of IP addresses in the management IP pool for
+                           		external access that terminates in the CIMC on a server. 
+                           	 
+                        </p>
+                        <p class="p">By default, the 
+                           		<span class="ph uicontrol">IP Pool
+                              		  ext-mgmt</span> is used to configure the CIMC outbound management IP
+                           		address. You cannot change this IP pool if already a static IP address is
+                           		assigned to the server from this pool. If you want to configure the outbound
+                           		management IP address for CIMC from a static IP address, then you can delete
+                           		the IP addresses from the default management IP pool. 
+                           	 
+                        </p>
+                        <p class="p">You can configure
+                           		separate out-of-band IPv4 address pools, and in-band IPv4 or IPv6 address
+                           		pools. You can configure in-band pools that contain both IPv4 and IPv6 address
+                           		blocks. 
+                           	 
+                        </p>
+                        <table class="olh_note" border="0" role="note">
+                           <tr>
+                              <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/tip.gif"><br><p><b>Tip</b></p>
+                              </td>
+                              <td border="0" class="olh_note">
+                                 <section class="note__content">
+                                    <hr> 
+                                    		
+                                    <p class="p">To avoid assigning
+                                       		  an IP pool that contains only IPv4 addresses as the in-band IPv6 policy, or
+                                       		  assigning an IP pool that contains only IPv6 addresses as the in-band IPv4
+                                       		  policy to a server CIMC, it is suggested that you configure separate in-band
+                                       		  address pools, each with only IPv4 or IPv6 addresses. 
+                                       		
+                                    </p> 
+                                    	 
+                                    <hr>
+                                 </section>
+                              </td>
+                           </tr>
+                        </table>
+                        <p class="p">You can configure
+                           		service profiles and service profile templates to use IP addresses from the
+                           		management IP pools. You cannot configure servers to use the management IP
+                           		pool. 
+                           	 
+                        </p>
+                        <p class="p">All IP addresses in the
+                           		  management IP pool must be in the same IPv4 subnet, or have the same IPv6
+                           		  network prefix as the IP address of the fabric interconnect. 
+                           		
+                        </p>
+                        <table class="olh_note" border="0" role="note">
+                           <tr>
+                              <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                              </td>
+                              <td border="0" class="olh_note">
+                                 <section class="note__content">
+                                    <hr> 
+                                    		
+                                    <p class="p">The management IP pool must not contain any IP addresses that
+                                       		  were assigned as static IP addresses for a server or service profile. 
+                                       		
+                                    </p> 
+                                    	 
+                                    <hr>
+                                 </section>
+                              </td>
+                           </tr>
+                        </table>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title8" lang="en-US" id="task_5B979F23A7FD46F19A3AE98936406FB4">
+                     <h2 class="title topictitle2" id="ariaid-title8">Creating an IPv6
+                        	 Address Block in the Management IP Pool
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_5B979F23A7FD46F19A3AE98936406FB4__context_7A7E9AAEFFD54BC38BDF3052A5791547"> 
+                           	 	
+                           <p class="p">The management IP pool must not contain any IP addresses that
+                              		  were assigned as static IP addresses for a server or service profile. 
+                              		
+                           </p> 
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              <tr class="li step" id="task_5B979F23A7FD46F19A3AE98936406FB4__step_E5E029B25F684434A885979D3CC8B779">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">LAN</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_5B979F23A7FD46F19A3AE98936406FB4__step_BD1D2F7571504BFA9094D067FE3DC7A2">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="ph uicontrol">LAN</span> tab, expand 
+                                       			 <span class="ph menucascade"><span class="ph uicontrol">LAN</span> &gt; <span class="ph uicontrol">Pools</span> &gt; <span class="ph uicontrol"> 
+                                             				  <var class="keyword varname">Organization_Name</var> 
+                                             				</span></span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_5B979F23A7FD46F19A3AE98936406FB4__step_60BA2981408C4085AA3E115FDC30EB4A">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Expand the 
+                                       			 <span class="ph uicontrol">IP
+                                          				Pools</span> node. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_5B979F23A7FD46F19A3AE98936406FB4__step_E87097238F3E476D910BF57B1EEAE38A">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Right-click 
+                                       			 <span class="ph uicontrol">IP Pool
+                                          				ext-mgmt</span> and select 
+                                       			 <span class="ph uicontrol">Create
+                                          				Block of IP Addresses</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_5B979F23A7FD46F19A3AE98936406FB4__step_3DFEB0ACA268480E97E9114D40DC773F">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Create a
+                                          				Block of IPv6 Addresses</span> dialog box, specify the required
+                                       			 information. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_5B979F23A7FD46F19A3AE98936406FB4__step_87A1A1F2C3A44A638B411AF06BB2F093">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click 
+                                       			 <span class="ph uicontrol">OK</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                        <section class="section postreq" id="task_5B979F23A7FD46F19A3AE98936406FB4__postreq_C5B9B8850E504991A4A9FD6AE7A47562">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">What to do next</h3>
+                           </section>
+                           
+                           		  	
+                           <p class="p">Configure one or more service profiles or service profile
+                              		  templates to obtain the CIMC IP address from the management IP pool. 
+                              		
+                           </p> 
+                           	 
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title9" lang="en-US" id="task_A74B047BE4B6468784EE2C9EF4E05EC0">
+                     <h2 class="title topictitle2" id="ariaid-title9">Deleting an IP Address Block from the Management IP Pool</h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_A74B047BE4B6468784EE2C9EF4E05EC0__steps_1925AC39041248D88ECDC920B822DAF4">
+                           <tbody>
+                              <tr class="li step" id="task_A74B047BE4B6468784EE2C9EF4E05EC0__step_E5E029B25F684434A885979D3CC8B779">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">LAN</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A74B047BE4B6468784EE2C9EF4E05EC0__step_BD1D2F7571504BFA9094D067FE3DC7A2">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="ph uicontrol">LAN</span> tab, expand 
+                                       			 <span class="ph menucascade"><span class="ph uicontrol">LAN</span> &gt; <span class="ph uicontrol">Pools</span> &gt; <span class="ph uicontrol">
+                                             				  <var class="keyword varname">Organization_Name</var>
+                                             				</span></span>.
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A74B047BE4B6468784EE2C9EF4E05EC0__step_60BA2981408C4085AA3E115FDC30EB4A">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Expand the 
+                                       			 <span class="ph uicontrol">IP Pools</span> node.
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A74B047BE4B6468784EE2C9EF4E05EC0__step_46C39DFCB8B14AA88F0C019CDFB37D98">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Select <span class="ph uicontrol">IP Pool ext-mgmt</span>.
+                                       			 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A74B047BE4B6468784EE2C9EF4E05EC0__step_E87097238F3E476D910BF57B1EEAE38A">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Right-click the IP address block that you want to delete and
+                                       			 select 
+                                       			 <span class="ph uicontrol">Delete</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_A74B047BE4B6468784EE2C9EF4E05EC0__step_74D02D30A0734872AFE15E5B8B29978E">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">If a
+                                       			 confirmation dialog box displays, click 
+                                       			 <span class="ph uicontrol">Yes</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title10" lang="en-US" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D">
+                     <h2 class="title topictitle2" id="ariaid-title10">Creating an IPv4 Address Block in the Management IP Pool</h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__context_7A7E9AAEFFD54BC38BDF3052A5791547">
+                           
+                           <p class="p">The management IP pool must not contain any IP addresses that
+                              		  were assigned as static IP addresses for a server or service profile. 
+                              		
+                           </p>
+                           
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__steps_AC708E90E1AA4017A509086265F92E68">
+                           <tbody>
+                              <tr class="li step" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__step_E5E029B25F684434A885979D3CC8B779">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">LAN</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__step_BD1D2F7571504BFA9094D067FE3DC7A2">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="ph uicontrol">LAN</span> tab, expand 
+                                       			 <span class="ph menucascade"><span class="ph uicontrol">LAN</span> &gt; <span class="ph uicontrol">Pools</span> &gt; <span class="ph uicontrol">
+                                             				  <var class="keyword varname">Organization_Name</var>
+                                             				</span></span>.
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__step_60BA2981408C4085AA3E115FDC30EB4A">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Expand the 
+                                       			 <span class="ph uicontrol">IP Pools</span> node.
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__step_E87097238F3E476D910BF57B1EEAE38A">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Right-click <span class="ph uicontrol">IP Pool ext-mgmt</span> and select 
+                                       			 <span class="ph uicontrol">Create Block of IP Addresses</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__step_7153BBA00B2E47688B66AD08A94BA660">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">In the 
+                                       			 <span class="keyword wintitle">Create a Block of IPv4 Addresses</span> dialog box,
+                                       			 complete the following fields: 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <table width="100%" border="1" class="table" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields">
+                                          <caption></caption>
+                                          <colgroup>
+                                             <col style="width:33.33333333333333%">
+                                             <col style="width:66.66666666666666%">
+                                          </colgroup>
+                                          <thead class="thead">
+                                             <tr>
+                                                <th font-weight="bold" class="entry" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__1">Name 
+                                                   				  
+                                                </th>
+                                                <th font-weight="bold" class="entry" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__2">Description 
+                                                   				  
+                                                </th>
+                                             </tr>
+                                          </thead>
+                                          <tbody class="tbody">
+                                             <tr>
+                                                <td class="entry" headers="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph"><span class="ph uicontrol">Name</span> column</span> 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__2 "> 
+                                                   					 
+                                                   <p class="p">The range
+                                                      						of IPv4 addresses assigned to the block. 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph uicontrol">From</span> column 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__2 "> 
+                                                   					 
+                                                   <p class="p" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__FromFieldDesc">The first IPv4 address in the block. 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph uicontrol">To</span> column 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__2 "> 
+                                                   					 
+                                                   <p class="p" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__ToFieldDesc">The last IPv4 address in the
+                                                      						block. 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph uicontrol">Subnet</span> column 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__2 "> 
+                                                   					 
+                                                   <p class="p" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__SubnetMaskFieldDesc">The subnet mask associated with the IPv4 addresses in the block. 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph uicontrol">Default Gateway</span> column 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__2 "> 
+                                                   					 
+                                                   <p class="p" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__GatewayFieldDesc">The default gateway associated with the IPv4 addresses in the
+                                                      						block. 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph uicontrol">Primary DNS</span> column 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__2 "> 
+                                                   					 
+                                                   <p class="p" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__PrimaryDNSColDesc">The primary DNS server that this block of IPv4 addresses should
+                                                      						access. 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__1 "> 
+                                                   					 
+                                                   <p class="p"> 
+                                                      						<span class="ph uicontrol">Secondary DNS</span> column 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_8317DEA278FE44FCAA85D0AE81FEEE6D__IPBlocksTabFields__entry__2 "> 
+                                                   					 
+                                                   <p class="p" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__SecondaryDNSColDesc">The secondary DNS server that this block of IPv4 addresses should
+                                                      						access. 
+                                                      					 
+                                                   </p> 
+                                                   				  
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__step_87A1A1F2C3A44A638B411AF06BB2F093">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click 
+                                       			 <span class="ph uicontrol">OK</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                        <section class="section postreq" id="task_8317DEA278FE44FCAA85D0AE81FEEE6D__postreq_C5B9B8850E504991A4A9FD6AE7A47562">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">What to do next</h3>
+                           </section>
+                           
+                           <p class="p">Configure one or more service profiles or service profile
+                              		  templates to obtain the CIMC IP address from the management IP pool. 
+                              		
+                           </p>
+                           
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+               </article>
+            </article>
+         </main>
+      
+
+</div> 
+ 
+    </div>
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent noprint base-blowout">
+    <div class="eotPersonalization">
+        <section id="eotTDCampaign"></section>
+    </div>    
+    <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>Was this Document Helpful?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes" aria-label="Was this Document Helpful?? Yes">Yes</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no" aria-label="Was this Document Helpful?? No">No</button>
+  </span>
+  <span lang="en" class="eot-feedback-olwrap">
+    
+      <a href="javascript: void(0);" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">Feedback</a>
+    
+  </span>
+</div>
+
+
+</div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+    </div>
+			
+    <div class="letUsHelp">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eotLetUsHelp">
+    <h3>Contact Cisco</h3>
+    <ul>
+         <li><a id="eotLetUsHelpProdDocUrl" href="https://mycase.cloudapps.cisco.com/start?prodDocUrl=">Open a Support Case</a><img src="/etc/designs/cdc/fw/i/icon_lock_small.png" alt="login required"/></li>
+        <li>(Requires a <a href="//www.cisco.com/c/en/us/services/order-services.html">Cisco Service Contract</a>)</li>
+    </ul>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        var getURL=jQuery("#eotLetUsHelpProdDocUrl").attr("href"), 
+            domInd = location.href.indexOf('cisco.com') ;
+        if ( domInd > -1 && domInd < location.href.search(/\w\/\w/) ) {
+            getURL += encodeURI(location.href);
+        }
+		jQuery("#eotLetUsHelpProdDocUrl").attr("href",getURL);
+    });
+</script>
+
+
+    </div>
+
+    <div id="eotRightRailMBox"><!--MBox-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IT:components/mbox/banner-mbox:V0.0.0 -->
+
+
+
+<div>
+    <div class="mboxDefault"></div>   
+    <script type="text/javascript">
+        var test="";
+        if(test!=undefined && test.trim().length>0){
+           mboxCreate('en-us_dg_support_bookchapters','type=default','');
+        }else{
+           mboxCreate('en-us_dg_support_bookchapters','type=default');
+        }
+       
+    </script>
+</div>
+<!--MBox--></div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+	<script type="text/javascript">
+			    var eottdatp = document.getElementsByClassName('eot-tdatp');
+			    if (eottdatp && eottdatp.style) {
+        			eottdatp.style.display="none";
+			    }
+        		  </script>
+  	
+
+
+    </div>
+			
+    <div></div>
+
+</div>
+
+
+    </div>
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/us/en/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/clientlibs/responsive/js/books.min.js"></script>
+
+<script src="/etc/designs/cdc/fw/m/books_metricsrule.js" type="text/javascript" async></script>
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>

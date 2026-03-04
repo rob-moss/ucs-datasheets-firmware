@@ -1,0 +1,1965 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="en" xml:lang="en"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="en/us";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.cpe === undefined) {
+        window.cpe = {};
+    }
+
+    cpe.accountName = "prod";
+    cpe.config = ["cinf","dsc","pps"];
+    cpe.hideMethod = "elements";
+
+    window.targetGlobalSettings = JSON.parse('{\x22timeout\x22:4000}');
+    window.targetPageParamsAll = () => JSON.parse('{\x22entity\x22:\x22{\\\x22id\\\x22:\\\x221549301687645443\\\x22,\\\x22categoryId\\\x22:\\\x22Products,Servers \u002D Unified Computing,Products White Paper\\\x22}\x22}');
+
+    
+    const bullseyeLibrary = `/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/external/bullseye.js`;
+
+    import(bullseyeLibrary);
+</script>
+<script src="/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/regional-mbox/regional-mbox.js"></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <title>Migrate to 40 Gbps with Cisco UCS Fabric Interconnects - Cisco</title>
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="format-detection" content="telephone=no">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="Third-generation Cisco UCS 6332 platform unified fabric interconnects make the transition to 40 Gigabit Ethernet and 16-Gbps Fibre Channel smooth and cost effective."  />
+    <meta name="title" content="Migrate to 40 Gbps with Cisco UCS Fabric Interconnects"  />
+    <meta name="documentId" content="1461021019269464"  />
+    <meta name="templateName" content="eot"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="WEM"  />
+    <meta name="concept" content="Cisco UCS 6300 Series Fabric Interconnects"  />
+    <meta name="docType" content="Products White Paper"  />
+    <meta name="iaPath" content="cisco.com#Products#Cisco Products#Servers - Unified Computing#Cisco UCS 6300 Series Fabric Interconnects"  />
+    <meta name="contentType" content="cisco.com#US#preSales"  />
+    <meta name="locale" content="US"  />
+    <meta name="language" content="en"  />
+    <meta name="country" content="US"  />
+    <meta name="hub" content="Data Center and Virtualization"  />
+    <meta name="CCID_Page" content="cc001777"  />
+    <meta name="date" content="Thu Apr 15 11:29:53 PDT 2021"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="Migrate to 40 Gbps with Cisco UCS Fabric Interconnects"  />
+    <meta property="og:description" content="Third-generation Cisco UCS 6332 platform unified fabric interconnects make the transition to 40 Gigabit Ethernet and 16-Gbps Fibre Channel smooth and cost effective."  />
+    <meta property="og:image" content="https://www.cisco.com/web/fw/i/logo-open-graph.gif"  />
+    <meta property="og:url" content="https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.html"/>
+	
+
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/en\/us\/products\/collateral\/servers\u002Dunified\u002Dcomputing\/ucs\u002D6300\u002Dseries\u002Dfabric\u002Dinterconnects\/whitepaper\u002Dc11\u002D736918");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/cisco-sans.min.css" type="text/css">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/fw/b/responsive/css/eot.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", 'You are being logged out.');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "Migrate to 40 Gbps with Cisco UCS Fabric Interconnects",  		  
+          "url": "https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.html",
+          "description": "Third-generation Cisco UCS 6332 platform unified fabric interconnects make the transition to 40 Gigabit Ethernet and 16-Gbps Fibre Channel smooth and cost effective.",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="psknnkyxelwrg2nhn3ba-f-b2cecf8af-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":21,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"e085c38","ak.r":37441,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"124.148.214.0","ak.cport":60110,"ak.gh":"23.199.68.167","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772580546","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==rZNTHvvUw5ou1ohi5v4OdX9v2qaOH42ifZi68iRvGQhqw94iBSq3WzSCxZZDNM9ThLHzRjyw396+mTWJIhfXQSEoVmAEMMCaCdg65QYVOERXWK3jZoodRnPAmmCIVXMZ2WV2SMPcbz1zxPNip56JNwusveYfljviM8OVbpy/nkioFubvFFz3vPTGJlbndj508WRg4wXOWOU2I0sTPnWxLUtAyEVF3X6Rn4I47i02NUU+Idh6Clbtxf9yWe3xlWxZ0VzHv9u07YoMm88bevNZmty4Mb3wZ5SL2THNDA/Fw9dbCjVcEavS5+FZgRaGtnmwOjwhl8D7gZdvjJxt82cD11s/8ygnW2OGQSTAfUySPV863OgxFPxNEEDlCDJ7smCdT1NOxOvtlpmrbPuk8xwbJEef3SDKqCAgfz9XQKkcqCs=","ak.pv":"540","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body id="wcq" class="fw-res cdc-support cdc-eot cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">Skip to content</a></li>
+        <li><a id="skiplink-search" href="#">Skip to search</a></li>
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">Skip to footer</a></li>
+    </ul>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/us/en/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/index.html">Cisco.com Worldwide</a></li>
+            <li><a tabindex="-1" href="/c/en/us/products/index.html">Products and Services</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/solutions/index.html">Solutions</a></li>
+            <li><a tabindex="-1" href="/c/en/us/support/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/c/en/us/training-events.html">Learn</a></li>
+            <li><a tabindex="-1" href="//www.cisco.com/c/en/us/about/sitemap.html">Explore Cisco</a></li>
+            <li><a tabindex="-1" href="/c/en/us/buy.html">How to Buy</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Partners Home</a></li>                
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/cisco-partner-program/index.html?ccid=cc000864&dtid=odiprc001129">Partner Program</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/support-help/index.html">Support</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/tools/index.html?dtid=odiprc001129">Tools</a></li>
+            <li><a tabindex="-1" href="https://locatr.cloudapps.cisco.com/WWChannels/LOCATR/pf/index.jsp#/">Find a Cisco Partner</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/connect-with-a-partner/index.html?ccid=cc000864&dtid=odiprc001129">Meet our Partners</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Become a Cisco Partner</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based" aria-label="breadcrumbs" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/products/index.html'><span itemprop='name'>Products & Services</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/products/servers-unified-computing/index.html'><span itemprop='name'>Servers - Unified Computing</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/products/servers-unified-computing/ucs-6300-series-fabric-interconnects/index.html'><span itemprop='name'>Cisco UCS 6300 Series Fabric Interconnects</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+        
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">Migrate to 40 Gbps with Cisco UCS Fabric Interconnects</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <div class="col wide-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+
+</script>
+
+        <div class="docHeaderComponent base-blowout">
+        <div class="linksRow">
+            
+            
+            <div class="toolbar">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "Save";
+    cdc.rc.savedoc.saved = "Saved";
+</script>
+
+    <button class="save" aria-expanded="false" aria-label="Save">
+        <label>Save</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.html">Log in</a> to Save Content
+    </div>
+
+
+            <!-- Translation Selctor -->
+            <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+ 
+
+
+
+            
+                <div class="noprint downloadDocument"><button type="button" class="view-download-list-link anchor" aria-expanded="false"><div class="toolbarIcon downloadIcon"></div><label class="iconLabel">Download</label></button></div>
+            
+            
+                <div class="noprint printDocument js-only"><button type="button" class="anchor printPage" aria-label="Print"><div class="toolbarIcon printIcon"></div><label class="iconLabel">Print</label></button></div>
+            
+            </div>
+
+        </div>
+            <!-- Where translation selector list of available languages is set up for EOT pages, for the javascript to work must have <ul id="translationsList"> </ul> -->
+            
+                    <script language="javascript">
+                        cdc.translations.map = "{en-us=https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.html, x-default=https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.html}";//storing the map for use in the JS
+                        cdc.translations.locale="en_us";
+                    </script>
+                    <div class="availableLanguagesList">
+                        <h3>Available Languages</h3>
+                        <ul id="translationsList">
+                
+                          </ul>
+                </div>
+           
+            
+            <div id="download-list-container" class="noprint panelRow"  role="region" aria-live="polite">
+                <div class='download-list' aria-label="Download Options">
+                    <h3>Download Options</h3>
+                    <ul>
+                    
+                        <li>
+                            <div class="fileText">
+                                <a href="/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.pdf" class="download-pdf"><div class="fileIcon pdfIcon"></div>PDF</a>
+                                
+                                <span class="docSize">(1.1 MB)</span>
+                                
+                                <br />
+                                <span class="description">View with Adobe Reader on a variety of devices</span>
+                            </div>
+                        </li>
+                    
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="infobarClearFix">
+            <div class="infobar">
+				
+                    <div class="updatedDate"><span>Updated:</span>June 30, 2016</div>
+                                
+                
+                            <div class="documentId"><span>Document ID:</span>1461021019269464</div>
+                      
+
+                  </div> 
+
+                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers marketing">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button aria-expanded="false" >Bias-Free Language</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>Bias-Free Language</h3>
+            <p>The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. <a href="https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html">Learn more</a> about how Cisco is using Inclusive Language.</p>
+        </div>
+        
+    </div><!-- disclaimers -->
+
+                  
+        </div>
+    </div>
+
+
+<script>
+jQuery(document).ready(function(){
+    if(jQuery("body").hasClass("cdc-eot-toc") && jQuery(".cdc-eot-toc").find(".DocumentHistory").length > 0){
+        jQuery(".cdc-eot-toc .seeRevisions").show();
+        if(jQuery(window).width() >= 768){
+            jQuery(".cdc-eot-toc .updatedDate").nextAll(".bullet").show();
+        }
+    }else{
+      jQuery(".cdc-eot-toc .infobar .bullet").hide();
+      jQuery(".cdc-eot-toc .seeRevisions");
+      jQuery(".cdc-eot-toc .updatedDate");
+    }
+
+
+})
+</script>
+<script src="/etc/designs/cdc/fw/clientlibs/granite-utils.min.js"></script>
+
+
+
+    <script>
+        if (window.cdc === "undefined") window.cdc={};
+        if (typeof cdc.rc  === "undefined") cdc.rc={};
+        // initialize dictionary for i18n
+        cdc.util.ensureNamespace("cdc.rc");
+        cdc.rc.eotkeys = {
+            showOnly5Products : "Show Only 5 Products",       
+            showAllRowsProducts : "Show All nRows Products",
+            supportCommunityUrl : "https://community.cisco.com/t5/technology-and-support/ct-p/technology-support",
+            supportCommunity : "Cisco Community",
+            thankYou : "Thank You",
+            viewersAlso : "Customers Also Viewed", 
+            show : "Show", 
+            more : "More", 
+            showOnly3Documents: "Show Only 3 Documents"
+        };
+    </script>
+
+	
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="eot-doc-wrapper">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+<html>
+ <head>
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="psknnkyxelwrg2nhn3ba-f-b2cecf8af-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":21,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"e085c38","ak.r":37441,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"124.148.214.0","ak.cport":60110,"ak.gh":"23.199.68.167","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772580546","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==rZNTHvvUw5ou1ohi5v4OdX9v2qaOH42ifZi68iRvGQhqw94iBSq3WzSCxZZDNM9ThLHzRjyw396+mTWJIhfXQSEoVmAEMMCaCdg65QYVOERXWK3jZoodRnPAmmCIVXMZ2WV2SMPcbz1zxPNip56JNwusveYfljviM8OVbpy/nkioFubvFFz3vPTGJlbndj508WRg4wXOWOU2I0sTPnWxLUtAyEVF3X6Rn4I47i02NUU+Idh6Clbtxf9yWe3xlWxZ0VzHv9u07YoMm88bevNZmty4Mb3wZ5SL2THNDA/Fw9dbCjVcEavS5+FZgRaGtnmwOjwhl8D7gZdvjJxt82cD11s/8ygnW2OGQSTAfUySPV863OgxFPxNEEDlCDJ7smCdT1NOxOvtlpmrbPuk8xwbJEef3SDKqCAgfz9XQKkcqCs=","ak.pv":"540","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+ <body>
+  <code><script type="text/javascript"></script> 
+   <link rel="stylesheet" href="wemdcmt.css"> 
+   <link rel="stylesheet" href="/etc/designs/cdc/transformation/wemdcmt.css"></code> 
+  <div class="WordSection1"> 
+   <p class="pIntroCMT">The third-generation Cisco<sup>®</sup> Unified Fabric for the Cisco Unified Computing System<sup>™</sup> (Cisco UCS<sup>®</sup>) delivers higher speeds for both Ethernet and Fibre Channel connectivity. It provides high performance, consistent latency, and a lossless fabric to address the needs of our customers deploying high-capacity data centers.</p> 
+   <p class="pBody">The Cisco UCS fabric interconnect is one of the main components of Cisco UCS. It provides the communication backbone for Cisco UCS B-Series Blade Servers and C-Series Rack Servers. All the servers that are attached to the interconnect are part of a single, highly available management domain. By supporting unified fabric, it provides uniform access to both network and storage connectivity for all the servers within its domain. This architecture provides simlified management and greater orchestration for lower total cost of ownership (TCO). The following are the main features that help reduce TCO:</p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><b>Centralized management:</b> Cisco UCS Manager provides open and extensible embedded management of all software and hardware components of Cisco UCS across multiple chassis, rack servers, composable infrastructure, and virtulal machines through policy- and model-based management.</p> 
+   <p class="pBullet2CMT" style="text-indent:0in"><span style="font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">◦<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Because the solution has only a few management touch points, deployment and provisioning processes are faster.</p> 
+   <p class="pBullet2CMT" style="text-indent:0in"><span style="font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">◦<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span>The solution offers stateless computing that allows the use of any resource at any time.</p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><b>Converged infrastructure:</b> The lossless fabric can support both Ethernet and storage traffic through flexible port configuration. </p> 
+   <p class="pBullet2CMT" style="text-indent:0in"><span style="font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">◦<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span>The use of less cabling allows more efficient use of power and cooling resources.</p> 
+   <p class="pBullet2CMT" style="text-indent:0in"><span style="font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">◦<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span>The solution supports both Fibre Channel and Ethernet uplink connectivity.</p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><b>High performance and scale:</b> Cisco Fabric Extender Technology (FEX Technology) enables organizations to scale up to 160 servers in a single unified system, and Cisco Data Center Virtual Machine FEX (VM-FEX) helps provide a consistent operational model and visiblity between the physical and virtual environments.</p> 
+   <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> 
+   <p class="pBody">The third-generation unified fabric interconnects—Cisco UCS 6332 and 6332-16UP Fabric Interconnects—make the transition to 40 Gigabit Ethernet and 16-Gbps Fibre Channel smooth and cost effective. The new components provide investment protection; they are backward compatible with second-generation components, so they can be swapped into exisiting systems or provisioned with newer infrastructure instances.</p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span>Cisco UCS 6300 Series Fabric Interconnects provide 40 Gigabit Ethernet connectivity upstream to access-layer switches and downstream to Cisco UCS servers.</p> 
+   <p class="pBullet2CMT" style="text-indent:0in"><span style="font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">◦<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span>The Cisco 6332 is a 32-port 40-Gbps fabric interconnect in a 1-rack-unit (1RU) that supports both Ethernet and Fibre Channel over Ethernet (FCoE). The 40-Gbps port can also be converted to 10 Gigabit Ethernet ports through either a breakout cable that converts a Quad Small Form-Factor Pluggable (QSFP) port to four SFP ports (called a QSFP-to-4xSFP breakout cable) or a QSFP-to-SFP adapter (QSA), which converts a 40-Gbps port into a single 10-Gbps port.</p> 
+   <p class="pBullet2CMT" style="text-indent:0in"><span style="font-size:10.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">◦<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span>The Cisco 6332-16UP is 24-port 40-Gbps fabric interconnect with 16 fixed unified ports (UPs) supporting 1 and 10 Gigabit Ethernet or 4-, 8-, or 16-Gbps Fibre Channel connections in a 1RU form factor. The 40-Gbps port can also be converted to 10-Gbps ports through either a QSFP to 4xSFP breakout cable or a QSA, which converts a 40-Gbps port into a single 10-Gbps port.</p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span>The Cisco UCS 2304 Fabric Extender is a third-generation I/O module (IOM) that brings 40-Gbps fabric to the blade server chassis. It provides four 40-Gbps connections to the fabric interconnet and eight 40-Gbps connections to the server through either a native 40-Gbps link or a port channel consisting of four 10-Gbps links. The Cisco UCS 2304 can be inserted into an existing blade chassis.</p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span>The Cisco Nexus<sup>®</sup> 2348UPQ 40GE Fabric Extender connects up to 40 Gigabit Ethernet links to the fabric interconnects and supports 1 and 10 Gigabit Ethernet connections downstream to the rack servers.</p> 
+   <p class="pSubhead1CMT">Audience</p> 
+   <p class="pBody">The target audience for this document consists of system architects, system engineers, and any other technical personnel who are responsible for planning or upgrading fabric interconnects. Although every effort has been made to make this document appeal to the widest possible audience, it assumes that the audience has an understanding of Cisco UCS hardware, terminology, and configuration.</p> 
+   <p class="pSubhead1CMT">Objective</p> 
+   <p class="pBody">This document describes the process of upgrading from Cisco UCS 6200 Series Fabric Interconnects to fabric interconnects based on the Cisco UCS 6332. After reading this document, the reader should have a complete understanding of the upgrade process and any factors that need to be taken into consideration. Table 1 summarizes the various upgrade paths between fabric interconnects, fabric extenders and IOMs, and Cisco Nexus 2000 Series Fabric Extenders. The Cisco UCS C-Series servers are connected in a single-wire managemet configuration. Direct-connect disruption varies depending on the number of adapters that are connected to the fabric interconnect. A single-adapter configuration is less disruptive than a dual-adapter configuration. A single-adapter configuration does not require a server reacknowledgment, whereas a dual-adapter configuration does. A server reacknowledgment is also required for a direct server connection when the new port connection is different from the original.</p> 
+   <p class="pBody">For a Cisco UCS C-Series server located behind a Cisco Nexus 2000 Series Fabric Extender, in most cases a FEX acknowledgment is all that is required to reestablish the link. In some cases, however, a server reacknowledgment is required. </p> 
+   <p class="pNoteCMT" style="margin-left:0in;text-indent:0in"><span style="font-family:
+&quot;Arial Black&quot;,&quot;sans-serif&quot;">Note:&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span>Two server acknowledgments will be required: one for each fabric interconnect exchanged. To reduce the number of server acknowledgments, the acknowledgment process can be performed after tha last fabric interconnect has been upgraded to the Cisco UCS 6332 platform.</p> 
+   <p class="pBody">For Cisco UCS B-Series servers, a server acknowledgment is not required for any extraneous connection cases for either a fabric interconnect upgrade or a fabric interconnect upgrade plus IOM upgrade from the Cisco UCS 2200 Series to the Cisco UCS 2304.</p> 
+   <p class="pTableCaptionCMT"><b>Table 1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b>Migration Support Matrix for Infrastructure Hardware</p> 
+   <div> 
+    <table bordercolor="#ADADAD" width="100%" cellpadding="6" border="1" cellspacing="0"> 
+     <tbody> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">From</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">To</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">State</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 6100 Series and 2100XP platform</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 6332 platform and 2300 Series</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Online upgrade not supported; export and import configuration Cisco UCS Manger is possible</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 6200 Series and 2200XP platform</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 6332 platform and 2200 Series</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Little disruption</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 6200 Series and 2200XP platform</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 6332 platform and 2300 Series</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Little disruption</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td colspan="3"> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">Cisco UCS C-Series</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 6200 Series: direct connect</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 6332 platform: direct-connect</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Variable disruption</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 6200 Series and Cisco Nexus 2232</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 6332 platform and Cisco Nexus 2232</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Variable disruption</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 6200 Series and Cisco Nexus 2232</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 6332 platform and Cisco Nexus 2348UPQ</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Major disruption</p> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> 
+   <p class="pBody">The minimum Cisco UCS software release required for Cisco UCS 6332 platform fabric interconnects and Cisco UCS 2304 IOMs is Release 3.1(1). Therefore, you must update the Cisco UCS 6200 Series fabric interconnects and the IOMs, fabric extenders, and servers to Release 3.1(1) before you can start the upgrade process (Table 2).</p> 
+   <p class="pTableCaptionCMT"><b>Table 2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b>Software Migration from Cisco UCS 6200 Series Fabric Interconnect to Cisco UCS 6332 Platform Support Matrix for Host Firmware</p> 
+   <div> 
+    <table bordercolor="#ADADAD" width="100%" cellpadding="6" border="1" cellspacing="0"> 
+     <tbody> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">Host Firmware</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">Support</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">Notes</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Release 2.2 or earlier</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">No</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Release 3.1 or later</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">A Cisco UCS M4 server with a Cisco UCS Virtual Interface Card (VIC) 1340 and port expander that is migrated to a Cisco UCS 2304 IOM will appear as a native 40-Gbps port. All other connections will appear as port channels.</p> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> 
+   <p class="pSubhead1CMT">Preplanning</p> 
+   <p class="pBody">Before beginning the migration process, be sure that your system is ready.</p> 
+   <p class="pSubhead2CMT">Inventory Check</p> 
+   <p class="pBody">Because the Cisco UCS 6332 platform fabric interconnects are first supported in Cisco UCS Release 3.1(1), the existing Cisco UCS domain needs to be upgraded to Release 3.1(1) before you can start the upgrade process. However, before you upgrade the existing Cisco UCS domain to Release 3.1(1), you should inventory the system. Cisco UCS Release 3.1(1) deprecates older hardware: specifically, generation-one hardware. Tables 3 and 4 list the hardware supported in Release 3.1(1). If the hardware is not listed, then it will be not recognized when you upgrade to Release 3.1(1), thus preventing successful migration to the Cisco UCS 6332 platform.</p> 
+   <p class="pTableCaptionCMT"><b>Table 3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b>Server Support for Cisco UCS Release 3.1(1)</p> 
+   <div> 
+    <table bordercolor="#ADADAD" width="100%" cellpadding="6" border="1" cellspacing="0"> 
+     <tbody> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">Cisco UCS B-Series Blade Server</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">M2</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">M3</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">M4</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">Cisco UCS C-Series Rack Server</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">M2</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">M3</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">M4</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS B22 </p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS C22 </p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS B200 </p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS C24</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS B230</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes.</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS C220</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS B250</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS C240</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS B260 </p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS C260</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS B420</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS C420</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS B440</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS C460</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS B460</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Yes</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <p class="pTableCaptionCMT"><b>Table 4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b>I/O and Fabric Extender Support for Cisco UCS Release 3.1(1)</p> 
+   <div> 
+    <table bordercolor="#ADADAD" width="100%" cellpadding="6" border="1" cellspacing="0"> 
+     <tbody> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">Cisco UCS B-Series Server Adapter</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">IOM</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">Cisco UCS C-Series Server</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">Fabric Extender</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS VIC 1240 </p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 2204</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS VIC 1225 and 1225T</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco Nexus 2232PP</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS VIC 1280</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 2208</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS VIC 1227 and 1227T</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco Nexus 2232TM-E</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS VIC 1340</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 2304</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS VIC 1385</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco Nexus 2348UPQ</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS VIC 1380</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS VIC 1387</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" align="center" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Broadcom BCM5709, BCM57712, and BCM57810</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">QLogic QLE8442 and QLE8362</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">QLogic 8- and 16-Gbps Fibre Channel</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Intel i350, x520, and x540</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Emulex OCe14012</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Emulex 8- and 16-Gbps Fibre Channel</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> 
+   <p class="pSubhead2CMT">Port and Cabling Planning</p> 
+   <p class="pBody">Port schemes for the two different generations are vastly different. Thus, port mapping is an important step in the preplanning process to help ensure a smooth transition from a fabric based on the Cisco UCS 6200 Series to a fabric based on the Cisco UCS 6332 platform. The first step in port planning is to map the Fibre Channel ports, first asking:</p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span>Will Fibre Channel be used, or are you moving to FCoE?</p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span>How many Fibre Channel ports are needed?</p> 
+   <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> 
+   <p class="pBody">Figures 1, 2, and 3 show the port numbering schemes.</p> 
+   <div class=" pDefault"> 
+    <b>Figure 1.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></b>Cisco UCS 6332 Port Numbering Scheme 
+   </div> 
+   <p class="pBody"><img width="541" height="96" id="Picture 4" src="/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.doc/_jcr_content/renditions/whitepaper-c11-736918_0.jpg" alt="whitepaper-c11-736918_0.jpg"></p> 
+   <div class=" pDefault"> 
+    <b>Figure 2.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></b>Cisco UCS 6332-16UP Port Numbering Scheme 
+   </div> 
+   <p class="pBody"><img width="542" height="91" id="Picture 5" src="/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.doc/_jcr_content/renditions/whitepaper-c11-736918_1.jpg" alt="whitepaper-c11-736918_1.jpg"></p> 
+   <p class="pNoteCMT" style="margin-left:0in;text-indent:0in"><span style="font-family:
+&quot;Arial Black&quot;,&quot;sans-serif&quot;">Note:&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span>Fibre Channel ports are available only on the Cisco UCS 6332-16UP. On the 16UP, the ports can be converted from left to right from Ethernet to Fibre Channel. The first block is ports 1 to 6, the second block is ports 1 to 12, and the third block is ports 1 to 16.</p> 
+   <div class=" pDefault"> 
+    <b>Figure 3.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></b>Fibre Channel and Ethernet Port Schemes for the 16 Unified Ports in the Cisco UCS 6332-16UP Model 
+   </div> 
+   <p class="pBody"><img width="387" height="167" id="Picture 6" src="/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.doc/_jcr_content/renditions/whitepaper-c11-736918_2.jpg" alt="whitepaper-c11-736918_2.jpg"></p> 
+   <p class="pBody">After the Fibre Channel ports are set, you need to map the Ethernet connections. If you need 10 Gigabit Ethernet connections, whether for appliance ports, direct connections, or Cisco UCS 2200XP IOMs, then you need to consider additional factors. All the 40-Gbps ports can be converted to 10-Gbps ports through either a QSFP-to-4xSFP 40-Gbps breakout cable or a QSA module that converts the 40-Gbps port to a single 10-Gbps port. Table 5 provides a support matrix for conversion from 40-Gbps to 10-Gbps ports.</p> 
+   <p class="pTableCaptionCMT"><b>Table 5.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b>Support Matrix for Conversion from 40-Gbps to 10-Gbps Ports </p> 
+   <div> 
+    <table bordercolor="#ADADAD" width="100%" cellpadding="6" border="1" cellspacing="0"> 
+     <tbody> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">FI Model</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">40-Gbps Breakout Cable</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">QSA</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_subheadCMT" style="font-style: normal; font-variant: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 6332</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Ports 1 to 12 and 15 to 26</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Ports 1 to 12 and 15 to 26</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_subheadCMT" style="font-style: normal; font-variant: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Cisco UCS 6332-16UP</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;Ports 17 to 34</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Ports 17 to 34</p> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> 
+   <p class="pNoteCMT" style="margin-left:0in;text-indent:0in"><span style="font-family:
+&quot;Arial Black&quot;,&quot;sans-serif&quot;">Note:&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span>The maximum number of 40-Gbps ports that break out to four 10-Gbps ports with a second no-drop class and jumbo maximum transmission unit (MTU) configuration is four. Otherwise, there is no limit on the number of ports that can be broken out to four 10-Gbps ports.</p> 
+   <p class="pSubhead2CMT">VSAN Considerations</p> 
+   <p class="pBody">Depending on the type of Cisco UCS 6332 platform fabric interconnect to which you are upgrading, the number of VSANs may need to be taken into consideration. The Cisco UCS 6332-16UP model supports only 15 VSANs, and if the current environment has more than 15, then VSAN reduction is required. The Cisco UCS 6332 model supports 32 VSANs, and thus no action is required. </p> 
+   <p class="pSubhead1CMT">Migration Procedure</p> 
+   <p class="pBody">After taking the appropriate steps to move workloads and decommission any old hardware, use the steps presented here to perform the upgrade process.</p> 
+   <p class="pNoteCMT" style="margin-left:0in;text-indent:0in"><span style="font-family:
+&quot;Arial Black&quot;,&quot;sans-serif&quot;">Note:&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span>Although the upgrade can be performed while the system is active, Cisco recommends that you perform the upgrade during a maintenance window.</p> 
+   <p class="pStep1CMT">Step 1.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span>If you are upgrading to the Cisco UCS 6332-16UP, verify that the environment does not exceed 15 VSANs.</p> 
+   <p class="pStep1CMT">Step 2.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span>Download Cisco UCS Release 3.1(1) from the Cisco Support site at <a href="https://software.cisco.com/download/navigator.html">https://software.cisco.com/download/navigator.html</a> and upgrade the existing Cisco UCS 6200 Series domain to Release 3.1(1).</p> 
+   <p class="pStep1CMT">Step 3.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span>Fail over traffic from the subordinate server to the primary server. You can do this in several ways, as listed in Table 6.</p> 
+   <p class="pTableCaptionCMT"><b>Table 6.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b>Traffic Failover Method</p> 
+   <div> 
+    <table bordercolor="#ADADAD" width="100%" cellpadding="6" border="1" cellspacing="0"> 
+     <tbody> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">Failover Method</p> </td> 
+       <td> <p class="pChart_headCMT" style="font-style: normal; font-variant: normal; font-weight: bold; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-indent: 0pt; text-transform: none">Considerations</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_subheadCMT" style="font-style: normal; font-variant: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Disable uplink</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Individually disable the uplink ports for Ethernet, Fibre Channel, and FCoE connections.</p> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Ethernet only: A virtual network interface card (vNIC) with network control policy with a warning on “Action on Uplink Fail” will not be disabled. Thus, the NIC needs to be disabled manually for failover.</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_subheadCMT" style="font-style: normal; font-variant: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Disable all uplink interfaces</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;With a single click, this method disables all uplinks that are not in a port channel. This method needs to be implemented on Ethernet, Fibre Channel, and FCoE connections.</p> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Ethernet only: As with the disable uplink method, vNICs with network control policy with a warning on “Action on Uplink Fail” are not disabled. Manual intervention is required.</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_subheadCMT" style="font-style: normal; font-variant: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Disable all port channels</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">With a single click, this method disables all uplinks that are in a port channel, links that are not in a port channel are excluded. This method needs to be implemented on Ethernet, Fibre Channel, and FCoE connections.</p> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Ethernet only: As with the disable uplink method, vNICs with network control policy with a warning on “Action on Uplink Fail” are not disabled. Manual intervention is required.</p> </td> 
+      </tr> 
+      <tr valign="top" align="left"> 
+       <td> <p class="pChart_subheadCMT" style="font-style: normal; font-variant: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">Fabric evacuation</p> </td> 
+       <td> <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">This method disables all the server ports, which disables both the vNIC and virtual host bus adapter (vHBA) for the host. This method does not disable the virtual interface (VIF) on Cisco UCS C-Series servers that are directly connected to the fabric interconnect. For those connections, you need to disable the ports manually. Figure 4 shows this method.</p> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> 
+   <p class="pNoteCMT" style="margin-left:0in;text-indent:0in"><span style="font-family:
+&quot;Arial Black&quot;,&quot;sans-serif&quot;">Note:&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span>For Cisco UCS domains that use blades only, Cisco recommends the fabric evacuation method. This approach provides the fastest way to validate proper traffic failover. It also lets you back out the failover simply by turning the fabric evacuation off.</p> 
+   <p class="pNumListBodyCMT">a.&nbsp;&nbsp;&nbsp;&nbsp; If Cisco UCS C-Series servers are directly attached to the fabric interconnect, then manually disable either the port or the uplink for Ethernet, Fibre Channel, and FCoE.</p> 
+   <div class=" pDefault"> 
+    <b>Figure 4.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></b>Procedures and Validation for Fabric Evacuation 
+   </div> 
+   <p class="pBody"><img border="0" width="573" height="172" id="Picture 11" src="/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.doc/_jcr_content/renditions/whitepaper-c11-736918_3.jpg" alt="whitepaper-c11-736918_3.jpg"></p> 
+   <p class="pStep1CMT">Step 4.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span>Verify that traffic is flowing over the primary fabric interconnect.</p> 
+   <p class="pNumListBodyCMT">a.&nbsp;&nbsp;&nbsp;&nbsp; If the Cisco Nexus 2232PP 10GE is being retired and replaced by Cisco Nexus 2348UPQ 10GE, then decommission and remove old fabric extender from Cisco UCS Manager.</p> 
+   <p class="pStep1CMT">Step 5.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span>As mentioned in the “Port and Cabling Planning” section, port schemes are vastly different, so you should unconfigure all the ports on the subordinate interconnect and reconfigure the ports on the new fabric interconnect after it joins the cluster.</p> 
+   <p class="pNoteCMT" style="margin-left:0in;text-indent:0in"><span style="font-family:
+&quot;Arial Black&quot;,&quot;sans-serif&quot;">Note:&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span>You do not need to delete the port-channel groups because they can be reused, but you should verify that the individual ports are removed from LAN and SAN port channels, VLAN groups, etc.</p> 
+   <p class="pStep1CMT">Step 6.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span>Remove the cable from the downed subordinate fabric interconnect.</p> 
+   <p class="pNumListBodyCMT">a.&nbsp;&nbsp;&nbsp;&nbsp; If you are replacing the IOM and Cisco Nexus 2232 with the Cisco UCS 2304 and Cisco Nexus 2348-UPQ, then this is the time to make the replacement.</p> 
+   <p class="pStep1CMT">Step 7.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span>Replace with the new Cisco UCS 6332 platform fabric interconnect and connect the L1 to L2 connections between the Cisco UCS 6200 Series primary interconnect to the Cisco UCS 6332 platform subordinate interconnect.</p> 
+   <p class="pStep1CMT">Step 8.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span>Reconnect the components (IOM, Cisco Nexus 2200 and 2300 Series, and Cisco UCS C-Series servers) to the Cisco UCS 6332 platform subordinate interconnect according to the port planning table.</p> 
+   <p class="pStep1CMT">Step 9.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span>Power up the Cisco UCS 6332 platform subordinate interconnect. If it is properly cabled with the correct software version, then the subordinate interconnect will recognize that it is connecting to an existing cluster (Figure 5).</p> 
+   <div class=" pDefault"> 
+    <b>Figure 5.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></b>Startup Screen and Topology Screen of the Cisco UCS 6332 Platform Subordinate Interconnect After Connection to the Cluster 
+   </div> 
+   <p class="pBody"><img border="0" width="606" height="192" id="Picture 18" src="/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.doc/_jcr_content/renditions/whitepaper-c11-736918_4.jpg" alt="whitepaper-c11-736918_4.jpg"></p> 
+   <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> 
+   <p class="pStep1CMT">Step 10.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span>Enter <b>show cluster extended-state</b> to verify the cluster state.</p> 
+   <p class="MsoBodyTextIndent">B26-A# show cluster extended-state</p> 
+   <p class="MsoBodyTextIndent">Cluster Id: 0xac919450846211e5-0x833f002a6a923061</p> 
+   <p class="MsoBodyTextIndent">&nbsp;</p> 
+   <p class="MsoBodyTextIndent">Start time: Wed Jan 27 22:43:01 2016</p> 
+   <p class="MsoBodyTextIndent">Last election time: Thu Jan 28 03:40:02 2016</p> 
+   <p class="MsoBodyTextIndent">&nbsp;</p> 
+   <p class="MsoBodyTextIndent">A: UP, PRIMARY</p> 
+   <p class="MsoBodyTextIndent">B: UP, SUBORDINATE</p> 
+   <p class="MsoBodyTextIndent">&nbsp;</p> 
+   <p class="MsoBodyTextIndent">A: memb state UP, lead state PRIMARY, mgmt services state: UP</p> 
+   <p class="MsoBodyTextIndent">B: memb state UP, lead state SUBORDINATE, mgmt services state: UP</p> 
+   <p class="MsoBodyTextIndent">&nbsp;&nbsp; heartbeat state PRIMARY_OK</p> 
+   <p class="MsoBodyTextIndent">&nbsp;</p> 
+   <p class="MsoBodyTextIndent">INTERNAL NETWORK INTERFACES:</p> 
+   <p class="MsoBodyTextIndent">eth1, UP</p> 
+   <p class="MsoBodyTextIndent">eth2, UP</p> 
+   <p class="MsoBodyTextIndent">&nbsp;</p> 
+   <p class="MsoBodyTextIndent">HA READY</p> 
+   <p class="MsoBodyTextIndent">Detailed state of the device selected for HA storage:</p> 
+   <p class="MsoBodyTextIndent">Chassis 1, serial: FOX1734GXB3, state: active</p> 
+   <p class="MsoBodyTextIndent">Server 1, serial: FCH1735V06K, state: active</p> 
+   <p class="pStep1CMT">Step 11.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span>Configure the ports (Fibre Channel ports, server ports, appliance ports, breakout ports, uplink ports, etc.) on the Cisco UCS 6332 platform subordinate fabric interconnect (Figure 6). </p> 
+   <p class="pStepBodyCMT">The system will reboot when you change ports from Ethernet to Fibre Channel or from 40-Gbps to 10-Gbps or vice versa. To reduce the number of reboots, apply changes to multiple ports instead of one by one.</p> 
+   <div class=" pDefault"> 
+    <b>Figure 6.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></b>Multiple Port Configurations Applied Through Unified Ports for Fibre Channel and Internal Fabric Manager for Breakout Ports 
+   </div> 
+   <p class="pBody"><img border="0" width="608" height="207" id="Picture 2" src="/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.doc/_jcr_content/renditions/whitepaper-c11-736918_5.jpg" alt="whitepaper-c11-736918_5.jpg"></p> 
+   <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> 
+   <p class="pCMTBody"><span style="font-size:7.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:black">&nbsp;</span></p> 
+   <p class="pStep1CMT">Step 12.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span>Verify server discovery. The IOM discovery process on the Cisco UCS 6332 platform subordinate interconnect may take a few minutes to complete and become operational. In certain situations, you may need to acknowledge the IOM (choose Equipment &gt; Chassis &gt; Chassis X &gt; IO Modules &gt; IO Module X), as shown in Figure 7.</p> 
+   <div class=" pDefault"> 
+    <b>Figure 7.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></b>If Necessary, Acknowledge the IOM 
+   </div> 
+   <p class="pBody"><img border="0" width="576" height="297" id="Picture 3" src="/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.doc/_jcr_content/renditions/whitepaper-c11-736918_6.jpg" alt="whitepaper-c11-736918_6.jpg"></p> 
+   <p class="pNumListBodyCMT">a.&nbsp;&nbsp;&nbsp;&nbsp; Cisco UCS C-Series servers that are directly connected with dual adapters or are connected to a different port require server acknowledgment to properly update the port mapping. To reduce the number of server reboots to one, you can perform this step after the other fabric interconnect has been replaced.</p> 
+   <p class="pNumListBodyCMT">b.&nbsp;&nbsp;&nbsp;&nbsp; For servers connected to the Cisco Nexus 2200 platform fabric extenders, in most cases a fabric extender reacknowledgment will reestablish a connection. Otherwise, a server reacknowledgment is needed. To verify the connection, use the command shown here.</p> 
+   <p class="MsoBodyTextIndent">B26-A# connect adapter 2/1</p> 
+   <p class="MsoBodyTextIndent">adapter 0/2/1 # connect</p> 
+   <p class="MsoBodyTextIndent">&lt;output truncated&gt;</p> 
+   <p class="MsoBodyTextIndent">adapter 0/2/1 (top):1# attach-mcp</p> 
+   <p class="MsoBodyTextIndent">&lt;output truncated&gt;</p> 
+   <p class="MsoBodyTextIndent">adapter 0/2/1 (mcp):1# vnic</p> 
+   <p class="MsoBodyTextIndent">&lt;output truncated&gt;</p> 
+   <p class="MsoBodyTextIndent">------------------------------------------ --------- --------------------------</p> 
+   <p class="MsoBodyTextIndent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; v n i c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; l i f&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; v i f</p> 
+   <p class="MsoBodyTextIndent">id&nbsp; name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type&nbsp;&nbsp;&nbsp; h:bb:dd.f state lif state uif&nbsp; ucsm&nbsp;&nbsp; idx vlan state</p> 
+   <p class="MsoBodyTextIndent">--- -------------- ------- --------- ----- --- ----- --- ----- ----- ---- -----</p> 
+   <p class="MsoBodyTextIndent">15 vnic_1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; enet&nbsp;&nbsp;&nbsp; 0:05:00.0 UP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3 UP&nbsp;&nbsp;&nbsp; - 0&nbsp;&nbsp; 790&nbsp;&nbsp; 110&nbsp; 180 UP</p> 
+   <p class="MsoBodyTextIndent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&gt;1&nbsp;&nbsp; 789&nbsp;&nbsp;&nbsp; 21&nbsp; 180 UP</p> 
+   <p class="pStep1CMT">Step 13.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span>After all port configuration processes are complete, including the process of adding ports back into LAN and SAN port channels and VLAN groups, you need to validate LAN and SAN connectivity. Use the appropriate show commands, such as the following:</p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><b>show interface status</b></p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><b>show port-channel summary</b></p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><b>show interface trunk</b></p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><b>show flogi database</b></p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><b>show fcns database</b></p> 
+   <p class="pBody">&nbsp;</p> 
+   <p class="pStepBodyCMT">Note that a Cisco UCS M4 server with a Cisco UCS VIC 1340 and a port expander that is connected to a Cisco UCS 2304 IOM will be connected as a native 40-Gbps port. You can verify this connection by entering the show interface status command in the Cisco NX-OS Software shell:</p> 
+   <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> 
+   <p class="MsoBodyTextIndent">B26-B(nxos)# show interface status</p> 
+   <p class="MsoBodyTextIndent">&lt;output truncated&gt;</p> 
+   <p class="MsoBodyTextIndent">--------------------------------------------------------------------------------</p> 
+   <p class="MsoBodyTextIndent">Ethernet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VLAN&nbsp;&nbsp; Type Mode&nbsp;&nbsp; Status&nbsp; Reason&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Speed&nbsp;&nbsp;&nbsp;&nbsp; Port</p> 
+   <p class="MsoBodyTextIndent">Interface&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ch #</p> 
+   <p class="MsoBodyTextIndent">--------------------------------------------------------------------------------</p> 
+   <p class="MsoBodyTextIndent">Eth1/1/1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eth&nbsp; access down&nbsp;&nbsp;&nbsp; Member port of 40G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10G(D) --</p> 
+   <p class="MsoBodyTextIndent">Eth1/1/2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eth&nbsp; access down&nbsp;&nbsp;&nbsp; Member port of 40G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10G(D) --</p> 
+   <p class="MsoBodyTextIndent">Eth1/1/3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eth&nbsp; access down&nbsp;&nbsp;&nbsp; Member port of 40G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10G(D) --</p> 
+   <p class="MsoBodyTextIndent">Eth1/1/4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eth&nbsp; vntag&nbsp; up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; none&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 40G(D) –</p> 
+   <p class="MsoBodyTextIndent">&lt;output truncated&gt;</p> 
+   <p class="pChart_bodyCMT" style="font-style: normal; font-variant: normal; font-weight: normal; margin-bottom: 3pt; margin-left: 3pt; margin-right: 3pt; margin-top: 3pt; text-align: left; text-decoration: none; text-indent: 0pt; text-transform: none">&nbsp;</p> 
+   <p class="pStep1CMT">Step 14.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span>Reestablish flow on the subordinate fabric interconnect, the Cisco UCS 6332 platform. In the case shown here, fabric evacuation will be turned off (Figure 8).</p> 
+   <p class="pStepBodyCMT">a. If other method used other than fabric evacuation, then enable uplinks for Ethernet, Fibre Channel, and FCoE.</p> 
+   <div class=" pDefault"> 
+    <b>Figure 8.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></b>Reestablishing Traffic Flow on Cisco UCS 6332 Platform Subordinate Interconnect by Turning Off Fabric Evacuation and Validating Port Connectivity 
+   </div> 
+   <p class="pBody"><img border="0" width="604" height="285" id="Picture 16" src="/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.doc/_jcr_content/renditions/whitepaper-c11-736918_7.jpg" alt="whitepaper-c11-736918_7.jpg"></p> 
+   <p class="pNoteCMT" style="margin-left:0in;text-indent:0in"><span style="font-family:
+&quot;Arial Black&quot;,&quot;sans-serif&quot;">Note:&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span>Some backplane ports may report link down because no service profile is associated with that server or the host is powered off.</p> 
+   <p class="pStep1CMT">Step 15.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span>Verify that traffic is flowing normally on the Cisco UCS 6332 platform subordinate interconnect.</p> 
+   <p class="pStep1CMT">Step 16.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span>After verifying traffic flow, promote the Cisco UCS 6332 platform subordinate interconnect to primary status by entering the <b>cluster lead b</b> command in the local-mgmt shell on the primary fabric interconnect:</p> 
+   <p class="MsoBodyTextIndent">B26-A(local-mgmt)# cluster lead b</p> 
+   <p class="MsoBodyTextIndent">If the system is at 'infrastructure firmware' auto-install 'pending user Ack' stage, please check the outstanding faults (scope monitoring &lt;enter&gt; show new-faults) and make sure the data-paths on FI-B are established properly before making it primary to ensure there is no data outage.</p> 
+   <p class="MsoBodyTextIndent">Do you want to continue? (yes/no):yes</p> 
+   <p class="MsoBodyTextIndent">Cluster Id: 0xac919450846211e5-0x833f002a6a923061</p> 
+   <p class="pStep1CMT">Step 17.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span>Enter the <b>show cluster extended-state</b> command to verify that the primary role has switched to the Cisco UCS 6332 platform and that high availability (HA) is in the ready state. Figure 9 shows the results in Cisco UCS Manager.</p> 
+   <p class="MsoBodyTextIndent">B26-A(local-mgmt)# show cluster extended-state</p> 
+   <p class="MsoBodyTextIndent">Cluster Id: 0xac919450846211e5-0x833f002a6a923061</p> 
+   <p class="MsoBodyTextIndent">&nbsp;</p> 
+   <p class="MsoBodyTextIndent">Start time: Wed Jan 27 22:43:01 2016</p> 
+   <p class="MsoBodyTextIndent">Last election time: Thu Jan 28 06:59:27 2016</p> 
+   <p class="MsoBodyTextIndent">&nbsp;</p> 
+   <p class="MsoBodyTextIndent">A: UP, SUBORDINATE</p> 
+   <p class="MsoBodyTextIndent">B: UP, PRIMARY</p> 
+   <p class="MsoBodyTextIndent">&nbsp;</p> 
+   <p class="MsoBodyTextIndent">A: memb state UP, lead state SUBORDINATE, mgmt services state: UP</p> 
+   <p class="MsoBodyTextIndent">B: memb state UP, lead state PRIMARY, mgmt services state: UP</p> 
+   <p class="MsoBodyTextIndent">&nbsp;&nbsp; heartbeat state PRIMARY_OK</p> 
+   <p class="MsoBodyTextIndent">&nbsp;</p> 
+   <p class="MsoBodyTextIndent">INTERNAL NETWORK INTERFACES:</p> 
+   <p class="MsoBodyTextIndent">eth1, UP</p> 
+   <p class="MsoBodyTextIndent">eth2, UP</p> 
+   <p class="MsoBodyTextIndent">&nbsp;</p> 
+   <p class="MsoBodyTextIndent">HA READY</p> 
+   <p class="MsoBodyTextIndent">Detailed state of the device selected for HA storage:</p> 
+   <p class="MsoBodyTextIndent">Chassis 1, serial: FOX1734GXB3, state: active</p> 
+   <p class="MsoBodyTextIndent">Server 1, serial: FCH1735V06K, state: active</p> 
+   <div class=" pDefault"> 
+    <b>Figure 9.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></b>All Servers Are Connected Correctly to the New Cisco UCS 6332 Platform Subordinate Fabric Interconnect 
+   </div> 
+   <p class="pBody"><img border="0" width="577" height="406" id="Picture 8" src="/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.doc/_jcr_content/renditions/whitepaper-c11-736918_8.jpg" alt="whitepaper-c11-736918_8.jpg"></p> 
+   <span style="font-size:12.0pt;font-family:&quot;Times&quot;,&quot;serif&quot;"><br clear="all" style="page-break-before:always"> </span> 
+   <p class="pCMTBody"><span style="font-size:9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:black">&nbsp;</span></p> 
+   <p class="pStep1CMT">Step 18.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span>Repeat the steps 3 through 14 to replace the other Cisco UCS 6200 Series Fabric Interconnect. Figure 10 shows the results.</p> 
+   <div class=" pDefault"> 
+    <b>Figure 10.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></b>Final Topology After Completing the Fabric Interconnect Migration 
+   </div> 
+   <p class="pBody"><img border="0" width="576" height="406" id="Picture 9" src="/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.doc/_jcr_content/renditions/whitepaper-c11-736918_9.jpg" alt="whitepaper-c11-736918_9.jpg"></p> 
+   <p class="pStep1CMT">Step 19.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span>(Optional) Promote fabric interconnect A to the primary role with the command cluster lead a in the local-mgmt shell of the primary fabric interconnect (B).</p> 
+   <p class="pStep1CMT">Step 20.&nbsp; <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span>Check for faults from old configurations, policies, software packages, etc. Remove any noncompliant configurations, policies, and software packages to clear faults.</p> 
+   <p class="pSubhead1CMT">Transitioning from Cisco UCS 6100 Series Fabric Interconnect to Cisco UCS 6332 Platform </p> 
+   <p class="pBody">In-service upgrade from the Cisco UCS 6100 Series to Cisco UCS 6332 platform fabric interconnects is not supported. The upgrade path requires the existing Cisco UCS instance to use Cisco UCS Software Release 3.1(1), which does not support first-generation hardware. Thus, the better approach is to set up a new pod with the current hardware and migrate the workload to that. </p> 
+   <p class="pBody">You can export and import the configuration from the Cisco UCS 6100 Series to the 6300 Series, maintain the pools, policies, and service profiles. Any irrelevant or dated policies and configurations will be ignored by Cisco UCS Manager with Release 3.1(1).</p> 
+   <p class="pBody">If you want to perform in-service migration, this will require a multiple-upgrade path: from the Cisco UCS 6100 and 2100 Series to the Cisco UCS 6200 and 2200 Series, and then to the Cisco UCS 6332 platform and 2200 Series or the Cisco UCS 6332 and 2300 Series, with the assumption that the server hardware has been verified to support this migration.</p> 
+   <p class="pSubhead1CMT">For More Information</p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span>Read more about Cisco UCS products at <br> <a href="http://www.cisco.com/c/en/us/products/servers-unified-computing/index.html">http://www.cisco.com/c/en/us/products/servers-unified-computing/index.html</a>.</p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span>Read more about Cisco UCS 6332 platform fabric interconnects at <a href="http://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-6300-series-fabric-interconnects/index.html">http://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-6300-series-fabric-interconnects/index.html</a>.</p> 
+   <p class="pBulletCMT" style="font-style: normal; font-variant: normal; font-weight: normal;margin-bottom: 3pt; margin-right: 0pt; margin-top: 0pt; text-decoration: none; text-transform: none"><span style="font-size:7.0pt;position:relative;top:-.5pt">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span>Read more about the Cisco UCS 2304 Fabric Extender at <a href="http://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/data_sheet_c78-675243.html?cachemode=refresh">http://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/data_sheet_c78-675243.html?cachemode=refresh</a>.</p> 
+   <p class="pBody">&nbsp;</p> 
+   <p class="pBody">&nbsp;</p> 
+   <p class="pBody">&nbsp;</p> 
+   <p class="pBody">&nbsp;</p> 
+   <p class="pBody">&nbsp;</p> 
+   <p class="pBody">&nbsp;</p> 
+   <p class="pBody">&nbsp;</p> 
+   <p class="pBody">&nbsp;</p> 
+  </div> 
+ </body>
+</html>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<cdc:do action="com.cisco.wem.framework.service.command.eotcontent.EOTResponsiveContent@6b089ea2" returnTypedAs="eotResponsiveContainerVo" id="eotResponsiveContainerVo" />
+
+
+<div class="row full visitedlinks" style="padding: 0px; margin:0px">
+     <div class="col full" >
+     
+    
+    </div>
+</div>
+
+</div>
+<script>
+    if (window.cdc === undefined) {
+        cdc = {};
+    }
+
+    if (cdc.eot === undefined) {
+        cdc.eot = {};
+    }
+
+    cdc.eot.isEot = true;
+    cdc.eot.isToc = false;
+
+    jQuery(document).ready(function () {
+        if (jQuery('.unpublished').length > 0) {
+            let lastRel = "1.0";
+            if (jQuery('.published').length > 0) {
+                lastRel = Number(jQuery('.published td')[0].innerText) + 1 + ".0";
+            }
+            jQuery('.preview_revision').text(lastRel);
+        }
+
+        const linkItemsLen = jQuery("#eot-doc-wrapper link[rel='stylesheet']").length;
+
+        function addNewTocStyleSheet() {
+            let fileName="/etc/designs/cdc/transformation/wemdcmt_responsive.css",
+              $head = jQuery("head"),
+              linkElement = "<link rel='stylesheet' href='"+fileName+"' type='text/css' >";
+            $head.append(linkElement);
+        }
+
+        if (cdc.eot.isToc && !linkItemsLen) {
+            addNewTocStyleSheet();
+        } else if (cdc.eot.isEot) {
+            jQuery("#eot-doc-wrapper link[rel='stylesheet']").each(function () {
+                const linkTag = jQuery(this),
+                    hrefVal = jQuery(linkTag).attr("href");
+
+                if (hrefVal != undefined && hrefVal.indexOf("support-responsive.css") == -1 && hrefVal.indexOf("_responsive.css") == -1) {
+                    let fileName = hrefVal.substr(hrefVal.lastIndexOf("/") + 1, hrefVal.length).split(".css")[0];
+                    const filePath = "/etc/designs/cdc/transformation/";
+
+                    if (fileName == "ccimr") {
+                        fileName = "techdocs_responsive";
+                    } else if (fileName == "support-docs") {
+                        fileName = "support-responsive";
+                    } else if (fileName == "framework") {
+                        fileName = "responsiveframework";
+                    } else if (fileName == "dcmt") {
+                        fileName = "wemdcmt_responsive";
+                    } else if (fileName == "techdocs_85_11_word") {
+                        fileName = "techdocs_85_11_word";
+                        
+                        if (cdc.eot.isToc) {
+                            addNewTocStyleSheet();
+                        }
+                    } else {
+                        fileName += "_responsive";
+                    }
+                    jQuery(linkTag).attr("href", filePath + fileName + ".css");
+                }
+
+                if (hrefVal.indexOf("support-responsive.css") > -1) {
+                    jQuery(linkTag).attr("href", "/etc/designs/cdc/transformation/support-responsive.css");
+                }
+            });
+
+            jQuery("#eot-doc-wrapper > table").wrap("<div></div>");
+            jQuery("#eot-doc-wrapper table:not('.olh_note')").parent().css({
+                overflowX: "auto"
+            });
+        }
+    });
+</script>
+
+	
+
+
+
+
+    </div>
+
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent base-blowout">
+    
+
+    <div class="eotPersonalization">
+        <section id="eotSupportCampaign"></section>
+    </div>
+    
+    <!-- condition for support RR components -->
+    
+     <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row full" data-owner="ID">
+    <div class="col full">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/etc/designs/cdc/dmr/mbox/mbox.min.css" type="text/css">
+
+
+<div class="dmc-mbox compact" data-version="DM:components/target/mbox:V1.5.1">
+        <div class="mboxDefault">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+				<link rel="stylesheet" href="/etc/designs/cdc/dmr/text/base-v2.min.css" type="text/css">
+
+        
+
+
+
+<link rel="stylesheet" href="/etc/designs/cdc/dmr/letushelp/clientLib-v2.min.css" type="text/css">
+
+
+
+<!-- DM:components/letushelp/letushelp-eot:V4.1.4 -->
+
+<div class="dm0 dmc-letushelp-eot  " data-config-metrics-group="sm_luh" data-config-metrics-title="right rail">
+
+    <h3>Contact Cisco</h3>
+
+    <ul class="no-bullets" >
+    
+        <li class="c2c-no-margin">
+        
+            <script>
+               var cocoaBotTranslateObject={"Cisco_Proactive_Chat_Intro":"Welcome to Cisco!","Cisco_Chat_Now":"Chat with Sales","Cisco_Proactive_Chat_Content":"How can I help you?","Cisco_Proactive_Chat_Decline_Title":"Decline the chat invitation","Cisco_Proactive_Chat_Metrics_Group":"pop up chat","Cisco_Proactive_Chat_Decline":"No Thanks","Cisco_Proactive_Chat_Intro_Title":"Cisco:","Cisco_Proactive_Chat_Accept_Metrics_Item":"accept the chat invitation","Cisco_Proactive_Chat_Decline_Metrics_Item":"decline the chat invitation","Cisco_Proactive_Chat_Title":"Chat live with a Cisco representative","Cisco_Proactive_Chat_Accept_Title":"Accept the chat invitation","Cisco_Proactive_Chat_Accept":"Chat Now"};
+            </script>
+            <script type="text/javascript" src="/c/dam/cdc/j/chatbot/chatbot.js"></script>
+            
+            <div class="ancr">
+                <div id="nhbtn" data-metrics-title="right rail" class="c2c-component">
+                </div>
+            </div>
+        </li>
+    
+        
+            <li class="lnk1">
+            
+                <div class="ancr">
+                    <a href="https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus">Get a call from Sales</a>
+                </div>
+            </li>
+        
+        
+        
+        
+         
+        
+        
+    
+        
+            <li class="sub-title">
+                <h5>Call Sales:</h5>
+            </li>
+        
+
+        
+            <li class="luh-num">
+                
+                
+                    
+                        <a href="tel:18005536387">
+                            
+                            1-800-553-6387
+                            
+                        </a>
+                    
+                    
+                
+                
+            </li>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <li class="time-locale">US/CAN | 5am-5pm PT</li>
+        
+    
+
+
+        
+            <li class="lastlnk1">
+            
+                <div class="ancr">
+                    <a href="//www.cisco.com/c/en/us/support/index.html">Product / Technical Support</a>
+                </div>
+            </li>
+        
+
+        
+            <li class="lastlnk2">
+            
+                <div class="ancr">
+                    <a href="https://www.cisco.com/site/us/en/learn/training-certifications/index.html">Training & Certification</a>
+                </div>
+            </li>
+        
+
+          
+
+
+
+    </ul>
+</div>
+
+
+
+        </div>
+        
+            <script type="text/javascript">
+                // Use the additional parameters, if provided.
+                   mboxCreate('us_luhrr','type=default');
+            </script>
+        
+    </div>
+    
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+ 
+</div>
+
+     <div class="showComponent">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+     </div>
+
+    <!-- mandatory -->
+    <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>Was this Document Helpful?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes" aria-label="Was this Document Helpful?? Yes">Yes</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no" aria-label="Was this Document Helpful?? No">No</button>
+  </span>
+  <span lang="en" class="eot-feedback-olwrap">
+    
+      <a href="javascript: void(0);" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_0Tcp9VU8pUm4lBY?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">Feedback</a>
+    
+  </span>
+</div>
+
+
+</div>
+
+    <!-- rating component should come here. Under development now -->
+
+    
+       <div class="showClass">
+            
+       </div>
+
+    
+
+    
+
+</div>
+
+
+ 
+
+    </div>
+
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/us/en/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/fw/b/responsive/js/eot.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm.js" type="text/javascript"></script>
+
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>

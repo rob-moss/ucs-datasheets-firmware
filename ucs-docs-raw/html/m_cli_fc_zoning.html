@@ -1,0 +1,3045 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="en" xml:lang="en"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="en/us";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.cpe === undefined) {
+        window.cpe = {};
+    }
+
+    cpe.accountName = "prod";
+    cpe.config = ["cinf","dsc","pps"];
+    cpe.hideMethod = "elements";
+
+    window.targetGlobalSettings = JSON.parse('{\x22timeout\x22:4000}');
+    window.targetPageParamsAll = () => JSON.parse('{\x22entity\x22:\x22{\\\x22id\\\x22:\\\x221692165042339490\\\x22,\\\x22categoryId\\\x22:\\\x22\\\x22}\x22}');
+
+    
+    const bullseyeLibrary = `/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/external/bullseye.js`;
+
+    import(bullseyeLibrary);
+</script>
+<script src="/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/regional-mbox/regional-mbox.js"></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <title>Cisco UCS Manager Storage Management Guide using the CLI, Release 4.3 - Fibre Channel
+	 Zoning [Cisco UCS Manager] - Cisco</title>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="Fibre Channel Zoning"  />
+    <meta name="title" content="Cisco UCS Manager Storage Management Guide using the CLI, Release 4.3 - Fibre Channel
+	 Zoning [Cisco UCS Manager]"  />
+    <meta name="documentId" content="1692165042322489"  />
+    <meta name="templateName" content="book"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="WEM"  />
+    <meta name="docType" content="TSD Products Configuration Guide Chapter"  />
+    <meta name="concept" content="Cisco UCS Manager"  />
+    <meta name="iaPath" content="cisco.com#Products#Cisco Products#Servers - Unified Computing#Cisco UCS Manager"  />
+    <meta name="contentType" content="cisco.com#US#preSales"  />
+    <meta name="locale" content="US"  />
+    <meta name="language" content="en"  />
+    <meta name="country" content="US"  />
+    <meta name="CCID_Page" content="cc001777"  />
+    <meta name="date" content="Wed Apr 30 03:01:18 PDT 2025"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="Cisco UCS Manager Storage Management Guide using the CLI, Release 4.3 - Fibre Channel
+	 Zoning [Cisco UCS Manager]"  />
+    <meta property="og:description" content="Fibre Channel Zoning"  />
+    <meta property="og:url" content="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_fc_zoning.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_fc_zoning.html"/>
+	
+
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/en\/us\/td\/docs\/unified_computing\/ucs\/ucs\u002Dmanager\/CLI\u002DUser\u002DGuides\/Storage\u002DMgmt\/4\u002D3\/b_cli_ucsm_storage_management_guide_4_3\/m_cli_fc_zoning");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/cisco-sans.min.css" type="text/css">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/books.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", 'You are being logged out.');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "Fibre Channel
+	 Zoning",  		  
+          "url": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_fc_zoning.html",
+          "description": "Fibre Channel Zoning",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="psknnkyxelwrg2nhn2ga-f-2a47ccb75-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":24,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"e0767de","ak.r":37441,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"124.148.214.0","ak.cport":60110,"ak.gh":"23.199.68.167","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772580492","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==Q2H+1sdjGPKw6ROYN9Zw6nsgjWzkTXhUuhmlKre5kMaQo4Pp8zYI9PeaFXGIPNPlLfv7TAisNYNF5z5lX6nXCU2kDc8ni5U6zgYpS22vQ1tpwrHTlxgq4+GIQ+lDXDXzT22OkOCRTEhfX3fVMcR3RvAJ6w3H/AdQ4V5tYodT9dnJusDX5YFYDhbz6pEBxGRcWEjQzP/Ib0hli9U7Zpr+jjBjU8Z33IeA43/5tlPZldfrI4HZUOes08KQfcFmJFdasoJIV5b7xRxtvsVWrzYYcW21rhLXnjTflyvUwYWdkLOzAmxXGE4jHCUoTjfJpAVc+QK5QRWBAYA4T/i1q+doY7wiWRL57sUD6fT6HU+vtoGVzXtNhOIVCJAXSj0UPesGmCPtLD9lj5BS6j5B/VDhAYo724+19JUADt1ZxtySVGE=","ak.pv":"540","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body id="wcq" class="fw-res cdc-support cdc-books cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">Skip to content</a></li>
+        <li><a id="skiplink-search" href="#">Skip to search</a></li>
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">Skip to footer</a></li>
+    </ul>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/us/en/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/index.html">Cisco.com Worldwide</a></li>
+            <li><a tabindex="-1" href="/c/en/us/products/index.html">Products and Services</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/solutions/index.html">Solutions</a></li>
+            <li><a tabindex="-1" href="/c/en/us/support/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/c/en/us/training-events.html">Learn</a></li>
+            <li><a tabindex="-1" href="//www.cisco.com/c/en/us/about/sitemap.html">Explore Cisco</a></li>
+            <li><a tabindex="-1" href="/c/en/us/buy.html">How to Buy</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Partners Home</a></li>                
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/cisco-partner-program/index.html?ccid=cc000864&dtid=odiprc001129">Partner Program</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/support-help/index.html">Support</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/tools/index.html?dtid=odiprc001129">Tools</a></li>
+            <li><a tabindex="-1" href="https://locatr.cloudapps.cisco.com/WWChannels/LOCATR/pf/index.jsp#/">Find a Cisco Partner</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/connect-with-a-partner/index.html?ccid=cc000864&dtid=odiprc001129">Meet our Partners</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Become a Cisco Partner</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based user-driven-nav" aria-label="breadcrumbs" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/index.html'><span itemprop='name'>Home</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/index.html'><span itemprop='name'>Support</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/all-products.html'><span itemprop='name'>Product Support</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/category.html'><span itemprop='name'>Servers - Unified Computing</span><meta itemprop='position' content='4' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/series.html'><span itemprop='name'>Cisco UCS Manager</span><meta itemprop='position' content='5' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html'><span itemprop='name'>Configuration Guides</span><meta itemprop='position' content='6' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+        
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">Cisco UCS Manager Storage Management Guide using the CLI, Release 4.3</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   <!-- have to do this for _g.I18n to be defined in preview and publish modes -->
+  
+  <script type="text/javascript">
+      // initialize dictionary for i18n
+      cdc.util.ensureNamespace("cdc.rc");
+    cdc.rc.eotkeys = {
+        showOnly5Products : "Show Only 5 Products",       
+        showAllRowsProducts : "Show All nRows Products",
+        supportCommunityUrl : "https://community.cisco.com/t5/technology-and-support/ct-p/technology-support",
+        supportCommunity : "Cisco Community",
+        thankYou : "Thank You",
+        viewersAlso : "Customers Also Viewed", 
+        show : "Show", 
+        more : "More", 
+        showOnly3Documents: "Show Only 3 Documents"
+      };
+  </script>
+
+
+
+<div class="row blowout full visitedlinks">
+    <div class="col full">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers techdocs">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button aria-expanded="false" >Bias-Free Language</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>Bias-Free Language</h3>
+            <p>The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. <a href="https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html">Learn more</a> about how Cisco is using Inclusive Language.</p>
+        </div>
+        
+    </div><!-- disclaimers -->
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* this is needed for the translation selector */
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+    var bookTitle = 'Book Title Page';
+</script>
+
+<span id="actionBar-top"></span>
+<section id="actionBar" class="noprint base-blowout">
+    <span class="icons">
+        
+        <button class="bookToc simpleOverlay-trigger" id="onlyforTrigger"> <!--US140575-->
+            Book Contents
+        </button>
+            <div class="bookToc simpleOverlay-content">
+               <div role="heading" class="title">Book Contents</div>
+               <!--googleoff: index--><!--googleoff: snippet-->  
+               <div class="content">
+                  
+
+
+
+<ul id="bookToc">
+    <li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/b_CLI_UCSM_Storage_Management_Guide_preface_00.html">Preface</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m-cli-new-and-changed-4-3.html">New and Changed
+	 Information</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_storage_management_overview-3_2.html">Overview</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_san_ports_and_port_channels.html">SAN Ports and Port
+	 Channels</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_fc_zoning.html">Fibre Channel
+	 Zoning</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_named_vsans.html">Named VSANs</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_san_pin_groups.html">SAN Pin
+	 Groups</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_fc_identity_assignment.html">FC Identity
+	 Assignment</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_wwn_pools.html">WWN Pools</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_storage-related_policies.html">Storage-Related
+	 Policies</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_series_cli_configuring_storage_profiles_4_0.html">Storage
+	 Profiles</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_flex_flash_sd_card_support.html">Configuring SD Card Support</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_mini_storage.html">Mini Storage</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_sed_management_cli.html">SED Security Policies</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_storage_inventory1.html">Storage
+	 Inventory</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_drive-diagnostics.html">Drive Diagnostics</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_3260_storage_management.html">Cisco UCS S3260 System Storage Management</a></li>
+
+</ul>
+
+
+               </div>
+               <!--googleon: index--><!--googleon: snippet-->               
+            </div>
+
+        
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='versionddcontainer chapter'></div>
+<script type="text/html" class="versionstemp">
+            <div class="versionsdd">
+                <button class="versionbutton" aria-haspopup="true" aria-expanded="false" aria-labelledby="other versions" class="version"><label></label></button>
+                <ul class="versionlist" aria-labelledby="other versions">
+                <%
+                    let pageUrl = window.location.pathname.replace("/content/","/c/").toLowerCase();
+                    if (true) pageUrl = pageUrl.substring(0,pageUrl.lastIndexOf("/"))+".html";
+                    for(let i=0; i< data.length; i++) {
+                        let item = data[i],
+                            myurl = item.linkUrl,
+                            urlm = myurl.replace("/content/","/c/");;
+                            mytitle = item.linkTitle;
+                            myclass= urlm.toLowerCase() == pageUrl ? "class=\"selected\"":""; 
+%>
+                    <li><a href="${myurl}" ${myclass}>${mytitle}</a></li>
+<%
+                  }   %>
+                </ul>
+             </div>
+</script>
+    
+        <span class="utilities">
+          <button title="Search in this Book" class="mobileSearch simpleOverlay-trigger">
+            Search
+          </button>
+          <div class="mobileSearch simpleOverlay-content">
+            <div class="title">Find Matches in This Book</div>
+              <!--googleoff: index--><!--googleoff: snippet-->  
+              <div class="content">
+                <form id="mobileBooksearch" class="chapter">
+                   <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit"></button>
+                   <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+                </form>
+                <div id="overlayResults" role="region" aria-live="polite" >
+                   <!-- important, keep this results div begin end on same line in here -->
+                   <div class="results"></div>
+                </div>
+              </div>
+              <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "Save";
+    cdc.rc.savedoc.saved = "Saved";
+</script>
+
+    <button class="save" aria-expanded="false" aria-label="Save">
+        <label>Save</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_fc_zoning.html">Log in</a> to Save Content
+    </div>
+
+
+          <!-- Translation Selctor -->
+          <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+ 
+
+
+ 
+          <div class="translations simpleOverlay-content" role="dialog" id="dialogt" aria-labelledby="onlyForNonEN" aria-modal="true">
+            <div role="heading" class="title">Available Languages</div>
+               <!--googleoff: index--><!--googleoff: snippet--> 
+            <script language="javascript">                    
+                cdc.translations.map = "{en-us=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_fc_zoning.html, x-default=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_fc_zoning.html}";//storing the map for use in the JS
+                cdc.translations.locale="en_us";
+            </script>
+            <div class="content">
+              <div class="availableLanguagesList">
+                  <ul id="translationsList">
+                  </ul> 
+              </div>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+          
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // stored value for overlay label to use in js
+    var downloadOPtionLabel = 'Download Options',
+    	bookSearchlabel = 'Find Matches in This Book',
+    	translationsLabel = 'Translations',
+    	bookConentLabel= 'Book Contents';
+</script>
+
+
+        
+
+
+
+        <button title="Document Download Options" id="dwnld-button" class="downloadOptions simpleOverlay-trigger" aria-expanded="false">
+            Download
+        </button>
+        <div class="downloadOptions simpleOverlay-content" role="dialog" id="dialogd" aria-labelledby="dwnld-button" aria-modal="true" class="default_dialog">
+            <div role="heading" class="title">Download Options</div>
+            <!--googleoff: index--><!--googleoff: snippet-->  
+            <div class="content">
+                <header>
+
+                    <h3 class="h4"> Book Title</p>
+                    <p>Cisco UCS Manager Storage Management Guide using the CLI, Release 4.3</p>
+                    <p class="h4"> Chapter Title</p>
+                    <h3>Fibre Channel
+	 Zoning</p>
+
+                </header>
+                <ul>
+
+                        <li >    
+                            <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3.pdf" class="pdfIcon">PDF - Complete Book 
+                            <span>(4.9 MB)</span></a>
+
+                                   <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_fc_zoning.pdf" class="chapter">PDF - This Chapter <span>(1.14 MB)</span></a>
+                                                            
+                            <p>View with Adobe Reader on a variety of devices</p>
+                        </li>                                  
+              </ul>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+        </div>
+
+          <button title="Print Friendly Page" class="print simpleOverlay-trigger">
+              Print
+          </button>
+        </span> 
+    </span>
+    <form id="booksearch" tabindex="0" class="chapter">
+       <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+       <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+    </form>
+      <div id="searchresult" role="region" aria-live="polite"><button class="close" title="Close Panel"><span></span><span></span></button>
+         <span class="headArrow"></span>
+         <h2>Results</h2>
+         <div class="matches">
+         </div>
+         <div class="results" tabindex="0">
+         </div>
+      </div>
+      <div id="searchResultChapterTitle"></div>
+</section>
+<script type="text/html" id="navigateMatchesTemplate">
+   <div>
+      <button class="up on" title="Previous Match"><span></span></button>
+      <button class="up off" title="Previous Match Not Available"><span></span></button>
+      <span class="matchlabel">Matches</span>
+      <button class="down on" title="Next Match"><span></span></button>
+      <button class="down off" title="Next Match Not Available"><span></span></button>
+   </div>
+</script>
+<script type="text/html" id="noChapterMatchTemplate">
+   <p>There are no Matches in this chapter.</p>
+</script>
+<script type="text/html" id="searchResultsListTemplate">
+   <p class="h3">Chapters with Matches</p>
+   <ul>
+<% var i = 0;
+    while ( modelData.links[i] ) {  %>
+      <li>
+<%     curpage = (window.location.pathname.indexOf(modelData.links[i].href) > -1 )?true:false;
+        if ( i === modelData.curpage ) {
+            if ( ! jQuery('.mobileSearch').css("display") == "block") { %>
+               <span class="currentIndicator"></span>${modelData.links[i].title}
+<%         } else {                %>
+               <span class="currentIndicator"></span><button class="curpage" data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%         }
+        } else {  %>
+            <button data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%     }  %>            
+      </li> 
+<% i++;
+    } %>
+   </ul> 
+</script>      
+<script type="text/html" id="noBookMatchTemplate">
+   <p class="head">No matches found in this book</p>
+   <p>This feature looks for an exact match of what you entered in the box.</p>
+   <p>If you entered several words, try reducing the entry to one or two and search again.</p>
+</script>
+<script type="text/html" id="errorTemplate">
+   <p>Search is currently unavailable due to technical issues. We are working to resolve the problem as quickly as possible.</p>
+</script>
+<script type="text/html" id="mobileSearchFooterTemplate">
+   <div id="mobileSearchFooter">
+      <button class="mobileSearch" title="Search in this Book"></button>
+      <button class="closeFooter"><span></span><span></span></button>
+      <div class="matches"> 
+      </div>
+   </div>   
+</script>
+ 
+    </div>
+</div>
+<div class="row blowout narrow-wide-v2 flip visitedlinks">
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div id="documentInfo">
+                  <dl>
+                     
+                      <dt>Updated:</dt><dd> April 30, 2025</dd>
+                     
+                  </dl>
+                    
+              </div>
+
+ 
+    </div>
+    <div id="chapterTitleDiv" class="col wide-v2 indent-at-xlarge">
+        <!-- this will be chapter title for chapters or header for TOC for books -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="chapter-title">Chapter: Fibre Channel
+	 Zoning </h2>  
+    
+
+    </div>
+</div>
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <div id="pageContentDiv" class="col wide-v2 indent-at-xlarge" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
+
+    
+ 
+ 
+
+<div id="chapterToc" class="base-blowout">
+    <button><span></span>Chapter Contents</button>
+    <div>
+    
+<ul>
+<li><a href="#id_10512">Fibre Channel                              	 Zoning</a></li>
+<li><a href="#concept_3E1E752359B843C69488357F6400E9A6">Information About Fibre Channel Zoning</a>
+<ul>
+<li><a href="#concept_09D087534EB649F5B3181A12C858042D">Information About Zones</a></li>
+<li><a href="#concept_A6867CE8A7AC45B68A0B450AEA3B5C2B">Information About                              	 Zone Sets</a></li>
+</ul></li>
+<li><a href="#concept_7156BDFE58844C10A9F931C0E2112A38">Support for Fibre                              	 Channel Zoning in                               	 Cisco UCS Manager</a>
+<ul>
+<li><a href="#concept_11FECC7937E243E89B4F1A357BB853BC">Cisco UCS Manager-Based Fibre Channel Zoning</a>
+<ul>
+<li><a href="#concept_8FBC34C6485A40B2B8DDDC6DCE9009DA">vHBA Initiator Groups</a></li>
+<li><a href="#concept_26CCFE994BC5478397E8ABF656758395">Fibre Channel                              	 Storage Connection Policy</a></li>
+<li><a href="#concept_B35B473D09094EDB9C8B779266DD8F1A">Fibre Channel Active Zone Set Configuration</a></li>
+</ul></li>
+<li><a href="#concept_58B0D8A39AE94804ABD2BB8E4195BDF1">Switch-Based Fibre Channel Zoning</a></li>
+</ul></li>
+<li><a href="#concept_E9B158B2715749E38082253C0E0BF0BC">Guidelines and recommendations for Cisco UCS Manager-Based Fibre Channel Zoning</a></li>
+<li><a href="#task_DE14E1F55C004D1AB682C64D9D8BAF54">Configuring Cisco UCS Manager Fibre Channel Zoning</a></li>
+<li><a href="#task_0368FED526F244269E5ACA80A2555FFE">Creating a VSAN for Fibre Channel Zoning</a></li>
+<li><a href="#id_28612">Creating a New Fibre                              	 Channel Zone Profile</a></li>
+<li><a href="#id_28621">Deleting a Fibre                              	 Channel Zone Profile</a></li>
+<li><a href="#task_0CA6855ADA7E4A84AA45A7CD8417CAA8">Deleting a Fibre Channel User Zone</a></li>
+<li><a href="#task_487C0D5A3D3A4AFB978F4E727F2899AF">Removing Unmanaged Zones from a VSAN Accessible to Both Fabric Interconnects</a></li>
+<li><a href="#task_D349E9DF9CCD437ABA9217589E3E7605">Removing Unmanaged Zones from a VSAN Accessible to One Fabric Interconnect</a></li>
+<li><a href="#d4589e1620a1635">Configuring Fibre Channel Storage Connection Policies</a>
+<ul>
+<li><a href="#task_DC1C9FCE84DC4AFFB4781BCE768098F8">Creating a Fibre Channel Storage Connection Policy</a></li>
+<li><a href="#task_9B090CD9F2DA4FCC83D2E8F46C04A423">Deleting a Fibre Channel Storage Connection Policy</a></li></ul></li></ul>
+    <button id="chapterToc-close">Close<span></span></button>
+    </div>
+</div>
+
+ 
+    <div id="chapterContent">
+    
+                  <h1 class="title topictitle1" id="ariaid-title1">Fibre Channel
+                     	 Zoning
+                  </h1>
+                  <!-- minitoc start -->
+                  <nav role="navigation" class="related-links">
+                     <ul class="ullinks">
+                        <li class="link ulchildlink"><a href="#concept_3E1E752359B843C69488357F6400E9A6">Information About Fibre Channel Zoning</a></li>
+                        <li class="link ulchildlink"><a href="#concept_7156BDFE58844C10A9F931C0E2112A38">Support for Fibre Channel Zoning in Cisco UCS Manager</a></li>
+                        <li class="link ulchildlink"><a href="#concept_E9B158B2715749E38082253C0E0BF0BC">Guidelines and recommendations for Cisco UCS Manager-Based Fibre Channel Zoning</a></li>
+                        <li class="link ulchildlink"><a href="#task_DE14E1F55C004D1AB682C64D9D8BAF54">Configuring Cisco UCS Manager Fibre Channel Zoning</a></li>
+                        <li class="link ulchildlink"><a href="#task_0368FED526F244269E5ACA80A2555FFE">Creating a VSAN for Fibre Channel Zoning</a></li>
+                        <li class="link ulchildlink"><a href="#id_28612">Creating a New Fibre Channel Zone Profile</a></li>
+                        <li class="link ulchildlink"><a href="#id_28621">Deleting a Fibre Channel Zone Profile</a></li>
+                        <li class="link ulchildlink"><a href="#task_0CA6855ADA7E4A84AA45A7CD8417CAA8">Deleting a Fibre Channel User Zone</a></li>
+                        <li class="link ulchildlink"><a href="#task_487C0D5A3D3A4AFB978F4E727F2899AF">Removing Unmanaged Zones from a VSAN Accessible to Both Fabric Interconnects</a></li>
+                        <li class="link ulchildlink"><a href="#task_D349E9DF9CCD437ABA9217589E3E7605">Removing Unmanaged Zones from a VSAN Accessible to One Fabric Interconnect</a></li>
+                     </ul>
+                  </nav>
+                  <!-- minitoc end -->
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title2" lang="en-US" id="concept_3E1E752359B843C69488357F6400E9A6">
+                     <h2 class="title topictitle2" id="ariaid-title2">Information About Fibre Channel Zoning</h2>
+                     <section class="body conbody">
+                        <p class="p">Fibre Channel zoning allows you to partition the  Fibre Channel fabric into one or more  zones. Each zone defines the set
+                           of Fibre Channel initiators and Fibre Channel targets that can communicate with each other in a VSAN. Zoning also enables
+                           you to set up access control between hosts and storage devices or user groups.
+                        </p>
+                        <table class="olh_note" border="0" role="note">
+                           <tr>
+                              <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                              </td>
+                              <td border="0" class="olh_note">
+                                 <section class="note__content">
+                                    <hr>
+                                    
+                                    <p class="p">Fibre Channel Zoning is not supported on <span class="ph">Cisco UCS 6454 Fabric Interconnect</span></p>
+                                    
+                                    <hr>
+                                 </section>
+                              </td>
+                           </tr>
+                        </table>
+                        <p class="p">The access and data traffic control provided by zoning does the following:</p>
+                        <ul class="ul">
+                           <li class="li" id="concept_3E1E752359B843C69488357F6400E9A6__li_A5A67C98076349D7A81D01CC37DD4AA8">
+                              <p class="p">Enhances SAN network security</p>
+                           </li>
+                           <li class="li" id="concept_3E1E752359B843C69488357F6400E9A6__li_2D62022D2DFB442A97F79948C2B1F236">
+                              <p class="p">Helps prevent data loss or corruption</p>
+                           </li>
+                           <li class="li" id="concept_3E1E752359B843C69488357F6400E9A6__li_EC2B3663DD064CAF8A3E222CE976D073">
+                              <p class="p">Reduces performance issues</p>
+                           </li>
+                        </ul>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links">
+                        <ul class="ullinks">
+                           <li class="link ulchildlink"><a href="#concept_09D087534EB649F5B3181A12C858042D">Information About Zones</a></li>
+                           <li class="link ulchildlink"><a href="#concept_A6867CE8A7AC45B68A0B450AEA3B5C2B">Information About Zone Sets</a></li>
+                        </ul>
+                     </nav>
+                     <!-- minitoc end -->
+                     <article class="topic concept nested2" aria-labelledby="ariaid-title3" lang="en-US" id="concept_09D087534EB649F5B3181A12C858042D">
+                        <h3 class="title topictitle3" id="ariaid-title3">Information About Zones</h3>
+                        <section class="body conbody">
+                           <p class="p">A zone consists of multiple zone members and has the following characteristics:</p>
+                           <ul class="ul">
+                              <li class="li" id="concept_09D087534EB649F5B3181A12C858042D__li_5FC2E0F70B4E4E0C9EC27BBD453AF8D1">
+                                 
+                                 
+                                 
+                                 <p class="p">Members in a zone can access each other; members in different zones cannot access each other.</p>
+                                 
+                                 
+                                 
+                              </li>
+                              <li class="li" id="concept_09D087534EB649F5B3181A12C858042D__li_0145C740D4B7464BA8F4FCAA988041E9">
+                                 
+                                 
+                                 
+                                 <p class="p">Zones can vary in size.</p>
+                                 
+                                 
+                                 
+                              </li>
+                              <li class="li" id="concept_09D087534EB649F5B3181A12C858042D__li_89DFD5ACD4FA437BA5B36A5CA29D698B">
+                                 
+                                 
+                                 
+                                 <p class="p">Devices can belong to more than one zone.</p>
+                                 
+                                 
+                                 
+                              </li>
+                              <li class="li" id="concept_09D087534EB649F5B3181A12C858042D__li_164F8A0090EC41E9A141B5F3E850EDF8">
+                                 
+                                 
+                                 
+                                 <p class="p">A physical fabric can have a maximum of 8,000 zones.</p>
+                                 
+                                 
+                                 
+                              </li>
+                           </ul>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic concept nested2" aria-labelledby="ariaid-title4" lang="en-US" id="concept_A6867CE8A7AC45B68A0B450AEA3B5C2B">
+                        <h3 class="title topictitle3" id="ariaid-title4">Information About
+                           	 Zone Sets
+                        </h3>
+                        <section class="body conbody">
+                           <p class="p"> Each zone set
+                              		consists of one or more zones. You can use zone sets to enforce access control
+                              		within the Fibre Channel fabric. In addition, zone sets provide you with the
+                              		following advantages:
+                              	 
+                           </p>
+                           <ul class="ul" id="concept_A6867CE8A7AC45B68A0B450AEA3B5C2B__ul_9AABFB2F68E44122985CDFC6C2988DB7">
+                              <li class="li" id="concept_A6867CE8A7AC45B68A0B450AEA3B5C2B__li_AE8100CB72FE4B47990A17EC9D7240AA"> 
+                                 		  
+                                 <p class="p">Only one zone set
+                                    			 can be active at any time.
+                                    		  
+                                 </p> 
+                                 		
+                              </li>
+                              <li class="li" id="concept_A6867CE8A7AC45B68A0B450AEA3B5C2B__li_E416DC2E760547BB812A1894E424C16F"> 
+                                 		  
+                                 <p class="p">All zones in a
+                                    			 zone set can be activated or deactivated as a single entity across all switches
+                                    			 in the fabric.
+                                    		  
+                                 </p> 
+                                 		
+                              </li>
+                              <li class="li" id="concept_A6867CE8A7AC45B68A0B450AEA3B5C2B__li_14EF9DBCF4524760830C98C52D44E5A9">
+                                 		  
+                                 <p class="p">Changes to a zone
+                                    			 set are not applied until the zone set has been activated. If you make changes
+                                    			 to the active zone set, you must reactivate that zone set to apply the changes.
+                                    		  
+                                 </p>
+                                 		
+                              </li>
+                              <li class="li" id="concept_A6867CE8A7AC45B68A0B450AEA3B5C2B__li_0DF06C339EB24398B927DCD9A6A45DAD"> 
+                                 		  
+                                 <p class="p">A zone can be a
+                                    			 member of more than one zone set.
+                                    		  
+                                 </p> 
+                                 		
+                              </li>
+                              <li class="li" id="concept_A6867CE8A7AC45B68A0B450AEA3B5C2B__li_C3B25FBB6844417DA5318DCF7A52FE50"> 
+                                 		  
+                                 <p class="p">A switch in a zone
+                                    			 can have a maximum of 500 zone sets.
+                                    		  
+                                 </p> 
+                                 		
+                              </li>
+                           </ul>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title5" lang="en-US" id="concept_7156BDFE58844C10A9F931C0E2112A38">
+                     <h2 class="title topictitle2" id="ariaid-title5">Support for Fibre
+                        	 Channel Zoning in 
+                        	 <span class="ph">Cisco UCS Manager</span></h2>
+                     <section class="body conbody">
+                        <section class="section" id="concept_7156BDFE58844C10A9F931C0E2112A38__section_B529574EE0FF41AFAF0A7A8B26B92BB2">
+                           		
+                           <p class="p"><span class="ph">Cisco UCS Manager</span>
+                              		  supports switch-based Fibre Channel zoning and 
+                              		  <span class="ph">Cisco UCS Manager</span>-based
+                              		  Fibre Channel zoning. You cannot configure a combination of zoning types in the
+                              		  same 
+                              		  <span class="ph">Cisco UCS domain</span>.
+                              		  You can configure a 
+                              		  <span class="ph">Cisco UCS domain</span>
+                              		  with one of the following types of zoning:
+                              		
+                           </p>
+                           		
+                           <ul class="ul">
+                              <li class="li" id="concept_7156BDFE58844C10A9F931C0E2112A38__li_9804B988E289436D88F3BF9F738F512F">
+                                 			 
+                                 <p class="p"><span class="ph">Cisco UCS Manager</span>-based
+                                    				Fibre Channel zoning—This configuration combines direct attach storage with
+                                    				local zoning. Fibre Channel or FCoE storage is directly connected to the fabric
+                                    				interconnects and zoning is performed in 
+                                    				<span class="ph">Cisco UCS Manager</span>,
+                                    				using 
+                                    				<span class="ph">Cisco UCS</span>
+                                    				local zoning. Any existing Fibre Channel or FCoE uplink connections need to be
+                                    				disabled. 
+                                    				<span class="ph">Cisco UCS</span>
+                                    				does not currently support active Fibre Channel or FCoE uplink connections
+                                    				coexisting with the utilization of the UCS Local Zoning feature.
+                                    			 
+                                 </p>
+                                 		  
+                              </li>
+                              <li class="li" id="concept_7156BDFE58844C10A9F931C0E2112A38__li_BA90190766F2461F974A0F6EEBE20F67">
+                                 			 
+                                 <p class="p">Switch-based
+                                    				Fibre Channel zoning—This configuration combines direct attach storage with
+                                    				uplink zoning. The Fibre Channel or FCoE storage is directly connected to the
+                                    				fabric interconnects and zoning is performed externally to the 
+                                    				<span class="ph">Cisco UCS domain</span>
+                                    				through an MDS or Nexus 5000 switch. This configuration does not support local
+                                    				zoning in the 
+                                    				<span class="ph">Cisco UCS domain</span>.
+                                    			 
+                                 </p>
+                                 		  
+                              </li>
+                           </ul>
+                           		
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr>
+                                       		  
+                                       <p class="p">Zoning is
+                                          			 configured on a per-VSAN basis. You cannot enable zoning at the fabric level.
+                                          		  
+                                       </p>
+                                       		
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table>
+                           	 
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links">
+                        <ul class="ullinks">
+                           <li class="link ulchildlink"><a href="#concept_11FECC7937E243E89B4F1A357BB853BC">Cisco UCS Manager-Based Fibre Channel Zoning</a></li>
+                           <li class="link ulchildlink"><a href="#concept_58B0D8A39AE94804ABD2BB8E4195BDF1">Switch-Based Fibre Channel Zoning</a></li>
+                        </ul>
+                     </nav>
+                     <!-- minitoc end -->
+                     <article class="topic concept nested2" aria-labelledby="ariaid-title6" lang="en-US" id="concept_11FECC7937E243E89B4F1A357BB853BC">
+                        <h3 class="title topictitle3" id="ariaid-title6"><span class="ph">Cisco UCS Manager</span>-Based Fibre Channel Zoning
+                        </h3>
+                        <section class="body conbody">
+                           <p class="p">With <span class="ph">Cisco UCS Manager</span>-based zoning, <span class="ph">Cisco UCS Manager</span> controls the Fibre Channel zoning configuration for the  <span class="ph">Cisco UCS domain</span>, including creating and activating zones for all VSANs that you set up with this type of zoning. This type of zoning is also
+                              know as local zoning or direct attach storage with local zoning. 
+                           </p>
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr>
+                                       <p class="p">You cannot implement <span class="ph">Cisco UCS Manager</span>-based zoning if the VSAN is also configured to communicate with a VSAN on  an upstream switch and includes Fibre Channel
+                                          or FCoE uplink ports.
+                                       </p>
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table>
+                           <section class="section" id="concept_11FECC7937E243E89B4F1A357BB853BC__section_C09D5D7F9B3647E28CA4E83FA9E86380">
+                              <h4 class="title sectiontitle">Supported Fibre Channel Zoning Modes</h4>
+                              <p class="p"><span class="ph">Cisco UCS Manager</span>-based zoning supports the following types of zoning:
+                              </p>
+                              <ul class="ul">
+                                 <li class="li" id="concept_11FECC7937E243E89B4F1A357BB853BC__li_777B72DDA4A24FC680C2BA921D6E87DB">
+                                    <p class="p">Single initiator single target—<span class="ph" id="concept_11FECC7937E243E89B4F1A357BB853BC__ph_SingleInitiatorSingleTarget"><span class="ph">Cisco UCS Manager</span> automatically creates one zone for each vHBA and storage port pair. Each zone has two members. We recommend that you configure
+                                          this type of zoning unless you expect the number of zones to exceed the maximum supported.</span></p>
+                                 </li>
+                                 <li class="li" id="concept_11FECC7937E243E89B4F1A357BB853BC__li_FDF2D225EC664EF7B9D9441E2A195476">
+                                    <p class="p">Single initiator multiple targets—<span class="ph" id="concept_11FECC7937E243E89B4F1A357BB853BC__ph_SingleInitiatorMultipleTargets"><span class="ph">Cisco UCS Manager</span> automatically creates one zone for each vHBA. We recommend that you configure this type of zoning if you expect the number
+                                          of zones to reach or exceed the maximum supported.</span></p>
+                                 </li>
+                              </ul>
+                           </section>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links">
+                           <ul class="ullinks">
+                              <li class="link ulchildlink"><a href="#concept_8FBC34C6485A40B2B8DDDC6DCE9009DA">vHBA Initiator Groups</a></li>
+                              <li class="link ulchildlink"><a href="#concept_26CCFE994BC5478397E8ABF656758395">Fibre Channel Storage Connection Policy</a></li>
+                              <li class="link ulchildlink"><a href="#concept_B35B473D09094EDB9C8B779266DD8F1A">Fibre Channel Active Zone Set Configuration</a></li>
+                           </ul>
+                        </nav>
+                        <!-- minitoc end -->
+                        <article class="topic concept nested3" aria-labelledby="ariaid-title7" lang="en-US" id="concept_8FBC34C6485A40B2B8DDDC6DCE9009DA">
+                           <h4 class="title topictitle4" id="ariaid-title7">vHBA Initiator Groups</h4>
+                           <section class="body conbody">
+                              <p class="p">vHBA initiator groups determine the Fibre Channel zoning configuration for all vHBAs in a service profile.  <span class="ph">Cisco UCS Manager</span> does not include any default vHBA initiator groups. You must  create vHBA initiator groups in any service profile that is
+                                 to be assigned to servers included in a zone. 
+                              </p>
+                              <p class="p">The configuration in a vHBA initiator group determines  the following:</p>
+                              <ul class="ul">
+                                 <li class="li" id="concept_8FBC34C6485A40B2B8DDDC6DCE9009DA__li_115D07319BE2403C92C214C49EA92822">
+                                    <p class="p">The vHBAs included in the initiator group, which are sometimes  referred to as vHBA initiators.</p>
+                                 </li>
+                                 <li class="li" id="concept_8FBC34C6485A40B2B8DDDC6DCE9009DA__li_6DA2A0988F07437CB19C9476BCC0D2BB">
+                                    <p class="p">A Fibre Channel storage connection policy, which includes the associated VSAN and the Fibre Channel target ports on the storage
+                                       array.
+                                    </p>
+                                 </li>
+                                 <li class="li" id="concept_8FBC34C6485A40B2B8DDDC6DCE9009DA__li_05CABFF0DFEE4FC0A5F030E101618AAD">
+                                    <p class="p">The type of Fibre Channel zoning to be configured for the vHBAs included in the group.</p>
+                                 </li>
+                              </ul>
+                           </section>
+                           <!-- minitoc start -->
+                           <nav role="navigation" class="related-links"></nav>
+                           <!-- minitoc end -->
+                        </article>
+                        <article class="topic concept nested3" aria-labelledby="ariaid-title8" lang="en-US" id="concept_26CCFE994BC5478397E8ABF656758395">
+                           <h4 class="title topictitle4" id="ariaid-title8">Fibre Channel
+                              	 Storage Connection Policy
+                           </h4>
+                           <section class="body conbody">
+                              <p class="p">The Fibre Channel
+                                 		storage connection policy contains a collection of target storage ports on
+                                 		storage arrays that you use to configure 
+                                 		<span class="ph">Cisco UCS Manager</span>-based
+                                 		Fibre Channel zoning. You can create this policy under an organization or an
+                                 		initiator group.
+                                 	 
+                              </p>
+                              <p class="p">The storage arrays in
+                                 		these zones must be directly connected to the fabric interconnects. The target
+                                 		storage ports on these arrays that you include in the Fibre Channel storage
+                                 		connection policy can be either Fibre Channel storage ports or FCoE storage
+                                 		ports. You use the WWN of a port to add it to the policy and to identify the
+                                 		port for the Fibre Channel zone.
+                                 	 
+                              </p>
+                              <table class="olh_note" border="0" role="note">
+                                 <tr>
+                                    <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                    </td>
+                                    <td border="0" class="olh_note">
+                                       <section class="note__content">
+                                          <hr>
+                                          		
+                                          <p class="p"><span class="ph">Cisco UCS Manager</span>
+                                             		  does not create default Fibre Channel storage.
+                                             		
+                                          </p>
+                                          	 
+                                          <hr>
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </section>
+                           <!-- minitoc start -->
+                           <nav role="navigation" class="related-links"></nav>
+                           <!-- minitoc end -->
+                        </article>
+                        <article class="topic concept nested3" aria-labelledby="ariaid-title9" lang="en-US" id="concept_B35B473D09094EDB9C8B779266DD8F1A">
+                           <h4 class="title topictitle4" id="ariaid-title9">Fibre Channel Active Zone Set Configuration</h4>
+                           <section class="body conbody">
+                              <p class="p">In each VSAN that has been enabled for Fibre Channel zoning, <span class="ph">Cisco UCS Manager</span> automatically configures one zone set and multiple zones. The zone membership specifies the set of initiators and targets
+                                 that are allowed to communicate with each other. <span class="ph">Cisco UCS Manager</span> automatically activates that zone set.
+                              </p>
+                              <p class="p"><span class="ph">Cisco UCS Manager</span> processes the user-configured vHBA initiator groups and their associated Fibre Channel storage connection policy to determine
+                                 the desired connectivity between Fibre Channel initiators and targets. <span class="ph">Cisco UCS Manager</span> uses the following information to build pair-wise zone membership between initiators and targets:
+                              </p>
+                              <ul class="ul">
+                                 <li class="li" id="concept_B35B473D09094EDB9C8B779266DD8F1A__li_06E3538C1C5B4B1EB0419D70D25121C0">
+                                    <p class="p">The port WWNs of the vHBA initiators derived from  the vHBA initiator groups.</p>
+                                 </li>
+                                 <li class="li" id="concept_B35B473D09094EDB9C8B779266DD8F1A__li_D479FFC20786450BA46ADA5D1002A9D2">
+                                    <p class="p">The port WWNs of the storage array derived from the storage connection policy.</p>
+                                 </li>
+                              </ul>
+                           </section>
+                           <!-- minitoc start -->
+                           <nav role="navigation" class="related-links"></nav>
+                           <!-- minitoc end -->
+                        </article>
+                     </article>
+                     <article class="topic concept nested2" aria-labelledby="ariaid-title10" lang="en-US" id="concept_58B0D8A39AE94804ABD2BB8E4195BDF1">
+                        <h3 class="title topictitle3" id="ariaid-title10">Switch-Based Fibre Channel Zoning</h3>
+                        <section class="body conbody">
+                           <p class="p">With switch-based zoning, a  <span class="ph">Cisco UCS domain</span> inherits the zoning configuration from the upstream switch. You cannot configure or view information about your zoning configuration
+                              in  <span class="ph">Cisco UCS Manager</span>. You have to disable zoning on a VSAN in <span class="ph">Cisco UCS Manager</span> to use switch-based zoning for that VSAN.
+                           </p>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title11" lang="en-US" id="concept_E9B158B2715749E38082253C0E0BF0BC">
+                     <h2 class="title topictitle2" id="ariaid-title11">Guidelines and recommendations for <span class="ph">Cisco UCS Manager</span>-Based Fibre Channel Zoning
+                     </h2>
+                     <section class="body conbody">
+                        <p class="p">When you plan your configuration for Fibre Channel zoning, consider the following guidelines and recommendations:</p>
+                        <section class="section" id="concept_E9B158B2715749E38082253C0E0BF0BC__section_6214D431F142413B8FE3FB24FFD22B2C">
+                           <h3 class="title sectiontitle">Fibre Channel Switching Mode Must Be Switch Mode for <span class="ph">Cisco UCS Manager</span> Configurations
+                           </h3>
+                           <p class="p">If you want <span class="ph">Cisco UCS Manager</span> to handle Fibre Channel zoning, the fabric interconnects must be in Fibre Channel Switch mode. You cannot configure Fibre
+                              Channel zoning in End-Host mode.
+                           </p>
+                        </section>
+                        <section class="section" id="concept_E9B158B2715749E38082253C0E0BF0BC__section_FB70A5B870794A6B97A45465B5586823">
+                           <h3 class="title sectiontitle">Symmetrical Configuration Is Recommended for High Availability</h3>
+                           <p class="p">If a <span class="ph">Cisco UCS domain</span>  is configured for high availability with two fabric interconnects, we recommend that both fabric interconnects are configured
+                              with the same set of VSANs.
+                           </p>
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title12" lang="en-US" id="task_DE14E1F55C004D1AB682C64D9D8BAF54">
+                     <h2 class="title topictitle2" id="ariaid-title12">Configuring <span class="ph" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__CalManager">Cisco UCS Manager</span> Fibre Channel Zoning
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__context_D2B85C19D5D14FA491309A2E9E8CAE32">
+                           			
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr>
+                                       				
+                                       <p class="p">This procedure provides a high level overview of the steps required to configure a <span class="ph">Cisco UCS domain</span> for Fibre Channel zoning that is controlled by <span class="ph">Cisco UCS Manager</span>. You must ensure that you complete all of the following steps. 
+                                       </p>
+                                       			
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table>
+                           		
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              			
+                              <tr class="li step" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__step_E071521060484D65AC3E0E84E800CA8C">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">If you have not already done so, disconnect the fabric interconnects in the <span class="ph">Cisco UCS domain</span> from any external Fibre Channel switches, such as an MDS. 
+                                    </p>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__step_01CF4AB15CC04D30B591681C8851F623">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">If the <span class="ph">Cisco UCS domain</span> still includes zones that were managed by the external Fibre Channel switch, run the <span><span class="keyword kwd">clear-unmanaged-fc-zone-all</span> </span> command on every affected VSAN to remove those zones. 
+                                    </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">This functionality is not currently available in the <span class="ph">Cisco UCS Manager GUI</span>. You must perform this step in the <span class="ph">Cisco UCS Manager CLI</span>. 
+                                       </p>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__step_A52F61322D8A429F8A5D39FDA51FE987">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Configure the Fibre Channel switching mode for both fabric interconnects in Fibre Channel Switch mode. </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">You cannot configure Fibre Channel zoning in End-Host mode. </p>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__step_6033F75326DD49ACB314D102762E472F">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Configure the Fibre Channel and FCoE storage ports that you require to carry traffic for the Fibre Channel zones. </p>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__step_40CE646057A54834A01CB9472D46AE75">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Create one or more VSANs and enable Fibre Channel zoning on all VSANs that you require to carry traffic for the Fibre Channel
+                                       zones. 
+                                    </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">For a cluster configuration, we recommend that you create the VSANs that you intend to include in a Fibre Channel zone in
+                                          Fibre Channel storage mode and accessible to both fabric interconnects. 
+                                       </p>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__step_BE1E25519516448798696A721676C7C4">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Create one or more Fibre Channel storage connection policies. </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">You can perform this step when you configure Fibre Channel zoning in the service profiles, if you prefer. </p>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__step_9E575F39DFFA48ED8FF6E23F521BE348">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Configure zoning in service profiles or service profile templates for servers that need to communicate through Fibre Channel
+                                       zones. 
+                                    </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">Complete the following steps to complete this configuration: </p>
+                                       					
+                                       <ul class="ul">
+                                          						
+                                          <li class="li" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__li_8399F2B5868145D1A51A1647E35372FB">
+                                             							
+                                             <p class="p">Enable zoning in the VSAN or VSANs assigned to the VHBAs. </p>
+                                             						
+                                          </li>
+                                          						
+                                          <li class="li" id="task_DE14E1F55C004D1AB682C64D9D8BAF54__li_5B586367D612453994E042F8E0EC1024">
+                                             							
+                                             <p class="p">Configure one or more vHBA initiator groups. </p>
+                                             						
+                                          </li>
+                                          					
+                                       </ul>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              		
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title13" lang="en-US" id="task_0368FED526F244269E5ACA80A2555FFE">
+                     <h2 class="title topictitle2" id="ariaid-title13">Creating a VSAN for Fibre Channel Zoning</h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              			
+                              <tr class="li step" id="task_0368FED526F244269E5ACA80A2555FFE__step_26D34E91FFEF47FBB1B2204E9BDC00A9">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"><span>UCS-A# <span class="keyword kwd">scope fc-uplink</span> </span>
+                                       				
+                                    </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">Enters Fibre Channel uplink mode. </p>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step" id="task_0368FED526F244269E5ACA80A2555FFE__step_EBD050F2CE2844F1982C415B2C4DF4A6">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"><span>UCS-A /fc-uplink #<span class="keyword kwd">create vsan</span> {<var>VSAN_Name</var>} {<var>VSAN_ID</var>} {<var>FCoE_VLAN_ID</var>} </span>
+                                       				
+                                    </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <section class="p">Enter the following: 
+                                          <ul class="ul">
+                                             							
+                                             <li class="li" id="task_0368FED526F244269E5ACA80A2555FFE__li_7F0C7A9B47CF4F2F912D175889CE4B0F">
+                                                								
+                                                <p class="p">VSAN_Name- The name assigned to the network. This name can be between 1 and 32 alphanumeric characters. You cannot use spaces
+                                                   or any special characters other than - (hyphen), _ (underscore), : (colon), and . (period), and you cannot change this name
+                                                   after the object is saved. 
+                                                </p>
+                                                							
+                                             </li>
+                                             							
+                                             <li class="li" id="task_0368FED526F244269E5ACA80A2555FFE__li_C1534085C910484D8D3065AF5F182C52">
+                                                								
+                                                <p class="p">VSAN_ID- The unique identifier assigned to the network. The ID can be between 1 and 4078, or between 4080 and 4093. 4079 is
+                                                   a reserved VSAN ID. 
+                                                </p>
+                                                							
+                                             </li>
+                                             							
+                                             <li class="li" id="task_0368FED526F244269E5ACA80A2555FFE__li_6C2F8691825F4A0389DDE1772E9ADB21">
+                                                								
+                                                <section class="p">FCoE_VLAN_ID- The unique identifier assigned to the VLAN used for Fibre Channel connections. The ID can be between 1 and 4029,
+                                                   or between 4048 and 4093. VLAN 4048 is user configurable. However, Cisco UCS Manager uses VLAN 4048 for the following default
+                                                   values. If you want to assign 4048 to a VLAN, you must reconfigure these values: 
+                                                   <ul class="ul">
+                                                      										
+                                                      <li class="li" id="task_0368FED526F244269E5ACA80A2555FFE__li_FC20F11AEE004A16ABC2234C65E7CCB5">
+                                                         											
+                                                         <p class="p">After an upgrade to Cisco UCS, Release 2.0—The FCoE storage port native VLAN uses VLAN 4048 by default. If the default FCoE
+                                                            VSAN was set to use VLAN 1 before the upgrade, you must change it to a VLAN ID that is not used or reserved. For example,
+                                                            consider changing the default to 4049 if that VLAN ID is not in use. 
+                                                         </p>
+                                                         										
+                                                      </li>
+                                                      										
+                                                      <li class="li" id="task_0368FED526F244269E5ACA80A2555FFE__li_FED0EEE8E5DB49F6A02AD18B69099C9B">
+                                                         											
+                                                         <p class="p">After a fresh install of Cisco UCS, Release 2.0—The FCoE VLANfor the default VSAN uses VLAN 4048 by default. The FCoEstorage
+                                                            port native VLAN uses VLAN 4049. 
+                                                         </p>
+                                                         										
+                                                      </li>
+                                                      									
+                                                   </ul>
+                                                   								
+                                                </section>
+                                                							
+                                             </li>
+                                             						
+                                          </ul>
+                                          					
+                                       </section>
+                                       					
+                                       <p class="p">For FIP-capable, converged network adapters, such as the Cisco UCSCNA M72KR-Q and the Cisco UCS CNA M72KR-E, the named VSANmust
+                                          be configured with a named VLAN that is not the native VLANfor the FCoE VLAN ID. This configuration ensures that FCoE trafficcan
+                                          pass through these adapters. 
+                                       </p>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step" id="task_0368FED526F244269E5ACA80A2555FFE__step_83E191BCB76143BE8DED2FC93344EBD4">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"><span>UCS-A /fc-uplink #<span class="keyword kwd">commit-buffer</span> </span>
+                                       				
+                                    </p>
+                                 </td>
+                              </tr>
+                              		
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                        <section class="example" id="task_0368FED526F244269E5ACA80A2555FFE__example_4160D95DCB2B459E9DAF01B7D8E48370">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section>
+                           			
+                           <p class="p">The following examples creates a VSAN named TestVsan and commits the changes in the system: </p>
+                           			<pre class="pre codeblock"><code>UCS-A # scope fc-uplink
+UCS-A /fc-uplink # create vsan TestVsan 2 30
+UCS-A /fc-uplink/vsan* # commit-buffer
+UCS-A /fc-uplink/vsan #</code></pre>
+                           		</section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title14" lang="en-US" id="id_28612">
+                     <h2 class="title topictitle2" id="ariaid-title14">Creating a New Fibre
+                        	 Channel Zone Profile
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="id_28612__context_D81B3DE8B18D4563AA03BA3E44C16FDA"> Perform the
+                           		following procedure to create a new Fibre Channel Zone Profile.
+                           	 
+                        </section>
+                        <section class="section prereq p" id="id_28612__prereq_BC944DE8A34D43B6A7B0642E3CCF3E85">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section>
+                           		
+                           <p class="p">Ensure that the VSAN is created for the Fiber Channel Zoning.
+                              		
+                           </p>
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="id_28612__step_782437E3FC7344819DDDF9436CC71763">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A # 
+                                       			 <span><span class="keyword kwd">scope fc-storage</span> </span>
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Enters Fibre Channel storage mode.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="id_28612__step_9C4CC317D861493AADA155767F3DB4C1">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /fc-storage # 
+                                       			 <span><span class="keyword kwd">create fc-zone-profile</span> 
+                                          				<var>Profile_Name</var> </span>
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Creates a Fibre Channel profile with the specified name.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="id_28612__step_515255935ECF4DB7BAF95C7F9B34E1E2">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /fc-storage/fc-zone-profile * # 
+                                       			 <span><span class="keyword kwd">create fc-user-zone</span> 
+                                          				<var>Zone_Name</var> </span>
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Enters Fibre Channel zone profile mode and creates the specified
+                                          				Fibre Channel zone.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="id_28612__step_E7743EA77D61499793729684F16CC7EE">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /fc-storage/fc-zone-profile/fc-user-zone* # 
+                                       			 <span><span class="keyword kwd">set path</span> {<span class="keyword kwd">A</span> | 
+                                          				<span class="keyword kwd">B</span>} </span>
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Sets the Fibre Channel zone path.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="id_28612__step_750EA0FE80864A7CBE5264F4AFDFAAF2">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /fc-storage/fc-zone-profile/fc-user-zone* # 
+                                       			 <span><span class="keyword kwd">set vsan</span> 
+                                          				<var>VSAN_Name</var> </span>
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Sets the Fibre Channel zone to the named VSAN.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="id_28612__step_59448A20B5F84492B35968BC61F7662A">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /fc-storage/fc-zone-profile/fc-user-zone* # 
+                                       			 <span><span class="keyword kwd">create member</span> 
+                                          				<var>wwpn</var> </span>
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Creates the WWPN for the Fibre Channel zone profile.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="id_28612__step_F35F9EFD7F1546A99FEBF04589FB54A5">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /fc-storage/fc-zone-profile/fc-user-zone* # 
+                                       			 <span><span class="keyword kwd">commit-buffer</span> 
+                                          			  </span>
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Commits the transaction to the system configuration.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="id_28612__example_3B661E0AA7474923A26F49E0DF490FEB">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section>
+                           		
+                           <p class="p">The following example shows how to create FC Zoning Policy named
+                              		  myProfilie:
+                              		
+                           </p>
+                           		<pre class="pre codeblock"><code>UCS-A# scope fc-storage
+UCS-A /fc-storage # create fc-zone-profile myProfile
+UCS-A /fc-storage/fc-zone-profile* # create fc-user-zone myZone
+UCS-A /fc-storage/fc-zone-profile/fc-user-zone* # set path A
+UCS-A /fc-storage/fc-zone-profile/fc-user-zone* # set vsan test
+UCS-A /fc-storage/fc-zone-profile/fc-user-zone* # create member 20:c2:11:25:b5:00:00:7f
+UCS-A /fc-storage/fc-zone-profile/fc-user-zone/member* # commit-buffer</code></pre>
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title15" lang="en-US" id="id_28621">
+                     <h2 class="title topictitle2" id="ariaid-title15">Deleting a Fibre
+                        	 Channel Zone Profile
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="id_28621__context_C78E1852282941D48330E730BAE8E9E0"> 
+                           		
+                           <p class="p">Perform the following procedure to delete a Fibre Channel Zone
+                              		  Profile.
+                              		
+                           </p> 
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="id_28621__step_782437E3FC7344819DDDF9436CC71763">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A # 
+                                       			 <span><span class="keyword kwd">scope fc-storage</span> </span>
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Enters Fibre Channel storage mode.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="id_28621__step_9C4CC317D861493AADA155767F3DB4C1">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /fc-storage # 
+                                       			 <span><span class="keyword kwd">delete fc-zone-profile</span> 
+                                          				<var>Profile_Name</var> </span>
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Deletes a Fibre Channel profile with the specified name.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="id_28621__step_F35F9EFD7F1546A99FEBF04589FB54A5">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /fc-storage* # 
+                                       			 <span><span class="keyword kwd">commit-buffer</span> 
+                                          			  </span>
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Commits the transaction to the system configuration.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="id_28621__example_AED6AF2F6A7B4713BAF43A5AA3E171ED">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section>
+                           		
+                           <p class="p">The following example shows how to delete an FC Zone Profile named
+                              		  myProfile:
+                              		
+                           </p>
+                           		<pre class="pre codeblock"><code>UCS-A # scope fc-storage
+UCS-A /fc-storage # delete fc-zone-profile myProfile
+UCS-A /fc-storage* # commit-buffer
+UCS-A /fc-storage #</code></pre>
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title16" lang="en-US" id="task_0CA6855ADA7E4A84AA45A7CD8417CAA8">
+                     <h2 class="title topictitle2" id="ariaid-title16">Deleting a Fibre Channel User Zone</h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_0CA6855ADA7E4A84AA45A7CD8417CAA8__context_C78E1852282941D48330E730BAE8E9E0">
+                           			
+                           <p class="p">Perform the following procedure to delete a Fibre Channel User Zone. </p>
+                           		
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              			
+                              <tr class="li step" id="task_0CA6855ADA7E4A84AA45A7CD8417CAA8__step_782437E3FC7344819DDDF9436CC71763">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">UCS-A # <span><span class="keyword kwd">scope fc-storage</span> </span>
+                                       				
+                                    </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">Enters Fibre Channel storage mode. </p>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step" id="task_0CA6855ADA7E4A84AA45A7CD8417CAA8__step_9C4CC317D861493AADA155767F3DB4C1">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">UCS-A /fc-storage # <span><span class="keyword kwd"> scope fc-zone-profile</span>
+                                          						<var>Profile_Name</var> </span>
+                                       				
+                                    </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">Enters the specified Fibre Channel profile. </p>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step" id="task_0CA6855ADA7E4A84AA45A7CD8417CAA8__step_28E2A4D2372E494B86C0713F25347298">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">UCS-A /fc-storage/fc-zone-profile # <span><span class="keyword kwd">delete fc-user-zone</span>
+                                          						<var>Userzone_Name</var> </span>
+                                       				
+                                    </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">Deletes the specified Fibre Channel User Zone. </p>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              			
+                              <tr class="li step" id="task_0CA6855ADA7E4A84AA45A7CD8417CAA8__step_F35F9EFD7F1546A99FEBF04589FB54A5">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">UCS-A /fc-storage/fc-zone-profile* # <span><span class="keyword kwd">commit-buffer</span>
+                                          					 </span>
+                                       				
+                                    </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">Commits the transaction to the system configuration. </p>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              		
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                        <section class="example" id="task_0CA6855ADA7E4A84AA45A7CD8417CAA8__example_AED6AF2F6A7B4713BAF43A5AA3E171ED">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section>
+                           			
+                           <p class="p">The following example shows how to delete an FC User Zone Profile named myZone: </p>
+                           			<pre class="pre codeblock"><code>UCS-A # scope fc-storage
+UCS-A /fc-storage # scope fc-zone-profile myProfile
+UCS-A /fc-storage/fc-zone-profile # delete fc-user-zone myZone
+UCS-A /fc-storage/fc-zone-profile* # commit-buffer
+UCS-A /fc-storage #</code></pre>
+                           		</section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title17" lang="en-US" id="task_487C0D5A3D3A4AFB978F4E727F2899AF">
+                     <h2 class="title topictitle2" id="ariaid-title17">Removing Unmanaged Zones from a VSAN Accessible to Both Fabric Interconnects</h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_487C0D5A3D3A4AFB978F4E727F2899AF__context_DC522C8F21FF4156A183D9D321B207A5">
+                           
+                           <p class="p">After you disconnect the external Fibre Channel switch, the Fibre Channel zones that were managed by that switch might not
+                              been cleared from the  <span class="ph">Cisco UCS domain</span>. This procedure removes those zones from each VSAN in the <span class="ph">Cisco UCS domain</span> so that you can configure Fibre Channel zoning in <span class="ph">Cisco UCS</span>.
+                           </p>
+                           
+                           
+                        </section>
+                        <section class="section prereq p" id="task_487C0D5A3D3A4AFB978F4E727F2899AF__prereq_04572D783D194CA18D5E530F228FC7A1">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section>
+                           
+                           <p class="p">If you have not already done so, disconnect the fabric interconnects in the <span class="ph">Cisco UCS domain</span> from any external Fibre Channel switches, such as an MDS.
+                           </p>
+                           
+                           
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_487C0D5A3D3A4AFB978F4E727F2899AF__step_088C8784AE404A3F9E76D7DDD8D0C56E">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">
+                                       
+                                       UCS-A# <span><span class="keyword kwd">scope fc-uplink</span> </span></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       
+                                       <p class="p">Enters Fibre Channel uplink mode.</p>
+                                       
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_487C0D5A3D3A4AFB978F4E727F2899AF__step_E089968C9087476198D7DA244E72483B">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">                    UCS-A /fc-uplink #<span>
+                                          <span class="keyword kwd">scope fabric</span> {<span class="keyword kwd">a</span> | <span class="keyword kwd">b</span>} </span>
+                                       
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       
+                                       <p class="p">Enters Fibre Channel uplink mode for the specified fabric interconnect.</p>
+                                       
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_487C0D5A3D3A4AFB978F4E727F2899AF__step_3B0FE71A036B4A75BA9F23D8E19A38FE">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">                    
+                                       UCS-A /fc-uplink/fabric # <span><span class="keyword kwd">scope vsan</span> <var>vsan-name</var> </span></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Enters VSAN mode for the specified named VSAN.</p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_487C0D5A3D3A4AFB978F4E727F2899AF__step_B281F8C43F6F4EF99C205FF586A2C4C2">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /fc-uplink/fabric/vsan # <span><span class="keyword kwd">clear-unmanaged-fc-zones-all</span> </span></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Clears all unmanaged Fibre Channel zones from the specified named VSAN.</p>
+                                       <p class="p">If desired, you can repeat Steps 2 through 4 to remove unmanaged zones from all VSANs that are accessible to the specified
+                                          fabric interconnect before you commit the buffer.
+                                       </p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_487C0D5A3D3A4AFB978F4E727F2899AF__step_14619AA8803C423882475172E6135728">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /fc-uplink/fabric/vsan # 
+                                       			 <span>
+                                          				<span class="keyword kwd">commit-buffer</span>
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Commits the transaction to the system configuration.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="task_487C0D5A3D3A4AFB978F4E727F2899AF__example_24EA1E6D6DF04DC2A7A7308779660F0B">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section> 
+                           		
+                           <p class="p">The following example shows how to remove unmanaged zones from  a named VSAN accessible to fabric interconnect A and commit
+                              the
+                              		  transaction:
+                              		
+                           </p> 
+                           		<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope fc-uplink</b></kbd>
+UCS-A /fc-uplink # <kbd class="userinput"><b class="ph userinput">scope fabric a</b></kbd>
+UCS-A /fc-uplink/fabric # <kbd class="userinput"><b class="ph userinput">scope vsan finance</b></kbd>
+UCS-A /fc-uplink/fabric/vsan # <kbd class="userinput"><b class="ph userinput">clear-unmanaged-fc-zones-all</b></kbd>
+UCS-A /fc-uplink/fabric/vsan* # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+UCS-A /fc-uplink # 
+</code></pre>
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title18" lang="en-US" id="task_D349E9DF9CCD437ABA9217589E3E7605">
+                     <h2 class="title topictitle2" id="ariaid-title18">Removing Unmanaged Zones from a VSAN Accessible to One Fabric Interconnect</h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_D349E9DF9CCD437ABA9217589E3E7605__context_DC522C8F21FF4156A183D9D321B207A5">
+                           
+                           <p class="p">After you disconnect the external Fibre Channel switch, the Fibre Channel zones that were managed by that switch might not
+                              been cleared from the  <span class="ph">Cisco UCS domain</span>. This procedure removes those zones from each VSAN in the <span class="ph">Cisco UCS domain</span> so that you can configure Fibre Channel zoning in <span class="ph">Cisco UCS</span>.
+                           </p>
+                           
+                           
+                        </section>
+                        <section class="section prereq p" id="task_D349E9DF9CCD437ABA9217589E3E7605__prereq_04572D783D194CA18D5E530F228FC7A1">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section>
+                           
+                           <p class="p">If you have not already done so, disconnect the fabric interconnects in the <span class="ph">Cisco UCS domain</span> from any external Fibre Channel switches, such as an MDS.
+                           </p>
+                           
+                           
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D349E9DF9CCD437ABA9217589E3E7605__step_088C8784AE404A3F9E76D7DDD8D0C56E">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">
+                                       
+                                       UCS-A# <span><span class="keyword kwd">scope fc-uplink</span> </span></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       
+                                       <p class="p">Enters Fibre Channel uplink mode.</p>
+                                       
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D349E9DF9CCD437ABA9217589E3E7605__step_3B0FE71A036B4A75BA9F23D8E19A38FE">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">                    
+                                       UCS-A /fc-uplink # <span><span class="keyword kwd">scope vsan</span> <var>vsan-name</var> </span></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Enters VSAN mode for the specified named VSAN.</p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D349E9DF9CCD437ABA9217589E3E7605__step_B281F8C43F6F4EF99C205FF586A2C4C2">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /fc-uplink/vsan # <span><span class="keyword kwd">clear-unmanaged-fc-zones-all</span> </span></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Clears all unmanaged Fibre Channel zones from the specified named VSAN.</p>
+                                       <p class="p">If desired, you can repeat steps 2 and 3 to remove unmanaged zones from all VSANs that are accessible to both fabric interconnects
+                                          before you commit the buffer.
+                                       </p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_D349E9DF9CCD437ABA9217589E3E7605__step_14619AA8803C423882475172E6135728">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /fc-uplink/vsan # 
+                                       			 <span>
+                                          				<span class="keyword kwd">commit-buffer</span>
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Commits the transaction to the system configuration.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="task_D349E9DF9CCD437ABA9217589E3E7605__example_24EA1E6D6DF04DC2A7A7308779660F0B">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section> 
+                           		
+                           <p class="p">The following example shows how to remove unmanaged zones from  a named VSAN and commit the
+                              		  transaction:
+                              		
+                           </p> 
+                           		<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope fc-uplink</b></kbd>
+UCS-A /fc-uplink # <kbd class="userinput"><b class="ph userinput">scope vsan finance</b></kbd>
+UCS-A /fc-uplink/vsan # <kbd class="userinput"><b class="ph userinput">clear-unmanaged-fc-zones-all</b></kbd>
+UCS-A /fc-uplink/vsan* # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+UCS-A /fc-uplink # 
+</code></pre>
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <p class="topictitle1" id="d4589e1620a1635">Configuring Fibre Channel Storage Connection Policies</p>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title19" lang="en-US" id="task_DC1C9FCE84DC4AFFB4781BCE768098F8">
+                     <h2 class="title topictitle2" id="ariaid-title19">Creating a Fibre Channel Storage Connection Policy</h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DC1C9FCE84DC4AFFB4781BCE768098F8__step_C58A3F3AB19E48E3AB3B10FD6152CA0C">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A# 
+                                       			 <span><span class="keyword kwd">scope org</span> 
+                                          				<var>org-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the
+                                          				organization mode for the specified organization. To enter the root
+                                          				organization mode, enter 
+                                          				<span><span class="keyword kwd">/</span> </span> as the 
+                                          				<span><var>org-name</var> </span>. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DC1C9FCE84DC4AFFB4781BCE768098F8__step_AB2CD3920DAA41E687A1B98C819408E8">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /org # 
+                                       			 <span>
+                                          				<span class="keyword kwd">create storage-connection-policy</span> <var>policy-name</var>
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Creates a storage connection policy with the specified policy name, and enters
+                                          				organization storage connection policy mode.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DC1C9FCE84DC4AFFB4781BCE768098F8__step_E28D29338D7B4F0C83CBA960BA410BB1">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /org # 
+                                       			 <span><span class="keyword kwd">set zoning-type</span> {<span class="keyword kwd">none</span> | <span class="keyword kwd">simt</span> | <span class="keyword kwd">sist</span>} </span></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <ul class="ul">
+                                          <li class="li" id="task_DC1C9FCE84DC4AFFB4781BCE768098F8__d65e76">
+                                             <p class="p"><span class="ph uicontrol">None</span>—<span class="ph">Cisco UCS Manager</span> does not configure  Fibre Channel zoning.
+                                             </p>
+                                          </li>
+                                          <li class="li" id="task_DC1C9FCE84DC4AFFB4781BCE768098F8__d65e84">
+                                             <p class="p"><span class="ph uicontrol">Single Initiator Single Target</span>—<span class="ph"><span class="ph">Cisco UCS Manager</span> automatically creates one zone for each vHBA and storage port pair. Each zone has two members. We recommend that you configure
+                                                   this type of zoning unless you expect the number of zones to exceed the maximum supported.</span></p>
+                                          </li>
+                                          <li class="li" id="task_DC1C9FCE84DC4AFFB4781BCE768098F8__d65e91">
+                                             <p class="p"><span class="ph uicontrol">Single Initiator Multiple Targets</span>—<span class="ph"><span class="ph">Cisco UCS Manager</span> automatically creates one zone for each vHBA. We recommend that you configure this type of zoning if you expect the number
+                                                   of zones to reach or exceed the maximum supported.</span></p>
+                                          </li>
+                                       </ul>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DC1C9FCE84DC4AFFB4781BCE768098F8__step_A8120172BDE841C78D3B50A2594ACF32">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /org/storage-connection-policy # 
+                                       			 <span>
+                                          				<span class="keyword kwd">create storage-target</span>
+                                          				<kbd class="ph sep"> </kbd>
+                                          				<var>wwpn</var>
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Creates a storage target endpoint with the specified WWPN, and enters
+                                          				storage target mode.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DC1C9FCE84DC4AFFB4781BCE768098F8__step_90C49CCE81D74EEC9EEFFEB9A7D29427">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /org/storage-connection-policy/storage-target # 
+                                       			 <span>
+                                          				<span class="keyword kwd">set target-path</span>
+                                          				<kbd class="ph sep"> </kbd>
+                                          				 {<span class="keyword kwd">a</span> 
+                                          				 | 
+                                          				<span class="keyword kwd">b</span>}
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Specifies which fabric interconnect is used for communications with the target endpoint.</p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DC1C9FCE84DC4AFFB4781BCE768098F8__step_CFC775E1A7F44E6DB1869E76A6DE06D8">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /org/storage-connection-policy/storage-target # 
+                                       			 <span>
+                                          				<span class="keyword kwd">set target-vsan</span>
+                                          				<kbd class="ph sep"> </kbd>
+                                          				<var>vsan</var>
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Specifies which VSAN is used for communications with the target endpoint.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_DC1C9FCE84DC4AFFB4781BCE768098F8__step_2E70FE00B967463788C3CE1971F434EE">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /org/storage-connection-policy # 
+                                       			 <span>
+                                          				<span class="keyword kwd">commit-buffer</span>
+                                          			  </span>
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       			 
+                                       <p class="p">Commits the transaction to the system configuration.
+                                          			 
+                                       </p>
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="task_DC1C9FCE84DC4AFFB4781BCE768098F8__example_F42AEE80FF184A4EB78FAA831BBEE24A">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section>
+                           
+                           <p class="p">The following example configures a Fibre Channel storage connection policy in the root organization named scPolicyZone1, using
+                              fabric interconnect A and the default VSAN, and commits the transaction: 
+                              		
+                           </p> 
+                           		<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope org /</b></kbd>
+UCS-A /org* # <kbd class="userinput"><b class="ph userinput">create storage-connection-policy scPolicyZone1</b></kbd>
+UCS-A /org/storage-connection-policy* <kbd class="userinput"><b class="ph userinput">set zoning-type sist</b></kbd>
+UCS-A /org/storage-connection-policy* # <kbd class="userinput"><b class="ph userinput">create storage-target 20:10:20:30:40:50:60:70</b></kbd>
+UCS-A /org/storage-connection-policy/storage-target* # <kbd class="userinput"><b class="ph userinput">set target-path a</b></kbd>
+UCS-A /org/storage-connection-policy/storage-target* # <kbd class="userinput"><b class="ph userinput">set target-vsan default</b></kbd>
+UCS-A /org/storage-connection-policy* # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+UCS-A /org/storage-connection-policy # 
+</code></pre></section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title20" lang="en-US" id="task_9B090CD9F2DA4FCC83D2E8F46C04A423">
+                     <h2 class="title topictitle2" id="ariaid-title20">Deleting a Fibre Channel Storage Connection Policy</h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <table class="ol steps detailed_steps">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_9B090CD9F2DA4FCC83D2E8F46C04A423__step_C58A3F3AB19E48E3AB3B10FD6152CA0C">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A# 
+                                       			 <span><span class="keyword kwd">scope org</span> 
+                                          				<var>org-name</var> </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters the
+                                          				organization mode for the specified organization. To enter the root
+                                          				organization mode, enter 
+                                          				<span><span class="keyword kwd">/</span> </span> as the 
+                                          				<span><var>org-name</var> </span>. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_9B090CD9F2DA4FCC83D2E8F46C04A423__step_36B1433B65C44395A71D6E90631A7D8A">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /org # 
+                                       			 <span>
+                                          <span class="keyword kwd">delete storage-connection-policy</span>
+                                          <kbd class="ph sep"> </kbd>
+                                          <var>policy-name</var>
+                                           </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Deletes the specified storage connection policy. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_9B090CD9F2DA4FCC83D2E8F46C04A423__step_715E16D5C4F34F5ABDC8088D6AEA1C2B">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd">UCS-A /org # 
+                                       			 <span> 
+                                          				<span class="keyword kwd">commit-buffer</span> 
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Commits the
+                                          				transaction to the system configuration. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <section class="example" id="task_9B090CD9F2DA4FCC83D2E8F46C04A423__example_45D11131931649518E6F9A113153F471">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example</h3>
+                           </section>
+                           
+                           <p class="p">The following example deletes the storage connection policy named scPolicyZone1 from the root organization and
+                              		  commits the transaction: 
+                              		
+                           </p> 
+                           		<pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope org /</b></kbd>
+UCS-A /org # <kbd class="userinput"><b class="ph userinput">delete san-connectivity-policy scPolicyZone1</b></kbd>
+UCS-A /org* # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+UCS-A /org # 
+</code></pre>
+                           </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+               </article>
+            </article>
+         </main>
+      
+
+</div> 
+ 
+    </div>
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent noprint base-blowout">
+    <div class="eotPersonalization">
+        <section id="eotTDCampaign"></section>
+    </div>    
+    <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>Was this Document Helpful?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes" aria-label="Was this Document Helpful?? Yes">Yes</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no" aria-label="Was this Document Helpful?? No">No</button>
+  </span>
+  <span lang="en" class="eot-feedback-olwrap">
+    
+      <a href="javascript: void(0);" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">Feedback</a>
+    
+  </span>
+</div>
+
+
+</div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+    </div>
+			
+    <div class="letUsHelp">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eotLetUsHelp">
+    <h3>Contact Cisco</h3>
+    <ul>
+         <li><a id="eotLetUsHelpProdDocUrl" href="https://mycase.cloudapps.cisco.com/start?prodDocUrl=">Open a Support Case</a><img src="/etc/designs/cdc/fw/i/icon_lock_small.png" alt="login required"/></li>
+        <li>(Requires a <a href="//www.cisco.com/c/en/us/services/order-services.html">Cisco Service Contract</a>)</li>
+    </ul>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        var getURL=jQuery("#eotLetUsHelpProdDocUrl").attr("href"), 
+            domInd = location.href.indexOf('cisco.com') ;
+        if ( domInd > -1 && domInd < location.href.search(/\w\/\w/) ) {
+            getURL += encodeURI(location.href);
+        }
+		jQuery("#eotLetUsHelpProdDocUrl").attr("href",getURL);
+    });
+</script>
+
+
+    </div>
+
+    <div id="eotRightRailMBox"><!--MBox-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IT:components/mbox/banner-mbox:V0.0.0 -->
+
+
+
+<div>
+    <div class="mboxDefault"></div>   
+    <script type="text/javascript">
+        var test="";
+        if(test!=undefined && test.trim().length>0){
+           mboxCreate('en-us_dg_support_bookchapters','type=default','');
+        }else{
+           mboxCreate('en-us_dg_support_bookchapters','type=default');
+        }
+       
+    </script>
+</div>
+<!--MBox--></div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+	<script type="text/javascript">
+			    var eottdatp = document.getElementsByClassName('eot-tdatp');
+			    if (eottdatp && eottdatp.style) {
+        			eottdatp.style.display="none";
+			    }
+        		  </script>
+  	
+
+
+    </div>
+			
+    <div></div>
+
+</div>
+
+
+    </div>
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/us/en/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/clientlibs/responsive/js/books.min.js"></script>
+
+<script src="/etc/designs/cdc/fw/m/books_metricsrule.js" type="text/javascript" async></script>
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>

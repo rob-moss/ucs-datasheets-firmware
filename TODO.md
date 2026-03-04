@@ -1,32 +1,26 @@
-
-# Directories
-DEFAULT_URLDATA_FILE = 'urls.md''
-DEFAULT_HTML_DIR = './ucs-docs-raw/html'
-DEFAULT_PDF_DIR = './ucs-docs-raw/pdf'
-DEFAULT_JSON_DIR = './ucs-docs-raw/json'
-DEFAULT_MARKDOWN_DIR = './ucs-docs' # Markdown output directory: `./ucs-docs`
-
-
-# TODO
+# TODO list
 
 * Clean up headings, navigation, and irrelevant content during HTML to Markdown conversion
-* Add metadata to Markdown files
-  * source URL
-  * fetch date, etc.
-* Implement error handling and logging in data fetching and conversion processes
-* Create MCP server to expose the Markdown files to AI assistants, and update the README with instructions for use
+  * Make Markdown files more concise and focused on the relevant information for firmware versions and datasheets
+  * Deduplicate content across multiple sources to avoid redundancy in the Markdown files
+  * Remove boilerplate content that is not relevant to the firmware information, such as navigation menus, footers, and unrelated sections of the documentation
 
 
 
+# Recommended Firmware Versions
 
-### Recommended Firmware Versions
-* UCS Manager - Consistently fetch the Recommended Firmware versions for both infrastructure and servers, and update the report [ucs-recommended-firmware](ucs-firmware-reports/ucsm-recommended-firmware.md) accordingly
-* Intersight Managed Mode - Fetch the latest recommended firmware versions for Intersight Managed Mode and update the report [imm-recommended-firmware](ucs-firmware-reports/imm-recommended-firmware.md) accordingly
+### UCS Manager
+- Consistently fetch the Recommended Firmware versions for both infrastructure and servers, and update the report [ucs-recommended-firmware](ucs-firmware-reports/ucsm-recommended-firmware.md) accordingly
 
 
-### Merge
+### Intersight Managed Mode
+- Fetch the latest recommended firmware versions for Intersight Managed Mode and update the report [imm-recommended-firmware](ucs-firmware-reports/imm-recommended-firmware.md) accordingly
+* May need to fetch from Intersight API or parse from Intersight documentation, depending on where the information is available
+* Intersight API path
+* Inersitght documentation path
 
-* Implement checks to avoid re-downloading files that haven't changed since the last fetch (using timestamps or checksums)
+* If there are discrepancies between Intersight documentation and API data, use Intersight API first, and write a warning in the report about the discrepancy and the source of the data
+
 
 
 
@@ -41,3 +35,9 @@ DEFAULT_MARKDOWN_DIR = './ucs-docs' # Markdown output directory: `./ucs-docs`
 * Merge ucs-firmware-reports and ucs-guides-help-query into a single repository for better organization and maintenance
 * Update ucs-guides-help-query/fetch_cisco_guides.py to fetch HTML files and place them in ucs-docs-raw, and then convert to Markdown in ucs-docs
 
+* Add metadata to Markdown files
+  * source URL
+  * fetch date, etc.
+* Create MCP server to expose the Markdown files to AI assistants, and update the README with instructions for use
+* Implement checks to avoid re-downloading files that haven't changed since the last fetch (using timestamps or checksums)
+* Implement error handling and logging in data fetching and conversion processes

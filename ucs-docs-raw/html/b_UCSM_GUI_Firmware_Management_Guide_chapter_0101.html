@@ -1,0 +1,2602 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="en" xml:lang="en"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="en/us";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.cpe === undefined) {
+        window.cpe = {};
+    }
+
+    cpe.accountName = "prod";
+    cpe.config = ["cinf","dsc","pps"];
+    cpe.hideMethod = "elements";
+
+    window.targetGlobalSettings = JSON.parse('{\x22timeout\x22:4000}');
+    window.targetPageParamsAll = () => JSON.parse('{\x22entity\x22:\x22{\\\x22id\\\x22:\\\x221692158436976949\\\x22,\\\x22categoryId\\\x22:\\\x22\\\x22}\x22}');
+
+    
+    const bullseyeLibrary = `/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/external/bullseye.js`;
+
+    import(bullseyeLibrary);
+</script>
+<script src="/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/regional-mbox/regional-mbox.js"></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <title>Cisco UCS Manager Firmware Management Guide, Release 4.3 - Troubleshoot Firmware [Cisco UCS Manager] - Cisco</title>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="Troubleshoot Firmware"  />
+    <meta name="title" content="Cisco UCS Manager Firmware Management Guide, Release 4.3 - Troubleshoot Firmware [Cisco UCS Manager]"  />
+    <meta name="documentId" content="1692158436962948"  />
+    <meta name="templateName" content="book"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="WEM"  />
+    <meta name="docType" content="TSD Products Configuration Guide Chapter"  />
+    <meta name="concept" content="Cisco UCS Manager"  />
+    <meta name="iaPath" content="cisco.com#Products#Cisco Products#Servers - Unified Computing#Cisco UCS Manager"  />
+    <meta name="contentType" content="cisco.com#US#preSales"  />
+    <meta name="locale" content="US"  />
+    <meta name="language" content="en"  />
+    <meta name="country" content="US"  />
+    <meta name="CCID_Page" content="cc001777"  />
+    <meta name="date" content="Mon Nov 24 23:50:36 PST 2025"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="Cisco UCS Manager Firmware Management Guide, Release 4.3 - Troubleshoot Firmware [Cisco UCS Manager]"  />
+    <meta property="og:description" content="Troubleshoot Firmware"  />
+    <meta property="og:url" content="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_chapter_0101.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_chapter_0101.html"/>
+	
+
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/en\/us\/td\/docs\/unified_computing\/ucs\/ucs\u002Dmanager\/GUI\u002DUser\u002DGuides\/Firmware\u002DMgmt\/4\u002D3\/b_UCSM_GUI_Firmware_Management_Guide_4\u002D3\/b_UCSM_GUI_Firmware_Management_Guide_chapter_0101");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/cisco-sans.min.css" type="text/css">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/books.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", 'You are being logged out.');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "Troubleshoot Firmware",  		  
+          "url": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_chapter_0101.html",
+          "description": "Troubleshoot Firmware",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="psknnkyxelwrg2nhnota-f-478062057-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":18,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"dfacefc","ak.r":37441,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"124.148.214.0","ak.cport":59285,"ak.gh":"23.199.68.167","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772579750","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==PtKYw9edcO0bUBA8smHeXZd25FDuR/u3tr33ZJldIs7VU0zNsXZw952F17WHx/ZwJLm4ZH+ajesEpWeUJkJqdp3N7ZHegjpJZrO7nMEyvRHBI5EuQva9tJilBa43yCZom5jN6Hq5RJOKP2Eeo4gRhXE4qjuEUGmGSaDZafUHjR8XwpL9voEzF0HJzTCxqkIdlbDPDBePbuwiIoMLAxj71WJs4D+3cahj0mDzpUDTvxzd6zOX/Y7wFZeJK0dRdQuZxVtfsCmA8WTcO89OIsdQbkN6XWA9sGg18qqSXgEeDbctVHCftqUP4LcyWoPGSDfLSBMWanN0cKr1U0COT5pYp659m/vQ+uITWsA0RPk10caT7bDVbxqnla8g6S+Cbh9+3rHyjlSz5TA0isf35pg7g9QHy47oY0G18Ltw6Fwv4zM=","ak.pv":"540","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body id="wcq" class="fw-res cdc-support cdc-books cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">Skip to content</a></li>
+        <li><a id="skiplink-search" href="#">Skip to search</a></li>
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">Skip to footer</a></li>
+    </ul>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/us/en/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/index.html">Cisco.com Worldwide</a></li>
+            <li><a tabindex="-1" href="/c/en/us/products/index.html">Products and Services</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/solutions/index.html">Solutions</a></li>
+            <li><a tabindex="-1" href="/c/en/us/support/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/c/en/us/training-events.html">Learn</a></li>
+            <li><a tabindex="-1" href="www.cisco.com/c/en/us/about/sitemap.html">Explore Cisco</a></li>
+            <li><a tabindex="-1" href="/c/en/us/buy.html">How to Buy</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Partners Home</a></li>                
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/cisco-partner-program/index.html?ccid=cc000864&dtid=odiprc001129">Partner Program</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/support-help/index.html">Support</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/tools/index.html?dtid=odiprc001129">Tools</a></li>
+            <li><a tabindex="-1" href="https://locatr.cloudapps.cisco.com/WWChannels/LOCATR/pf/index.jsp#/">Find a Cisco Partner</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/connect-with-a-partner/index.html?ccid=cc000864&dtid=odiprc001129">Meet our Partners</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Become a Cisco Partner</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based user-driven-nav" aria-label="breadcrumbs" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/index.html'><span itemprop='name'>Home</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/index.html'><span itemprop='name'>Support</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/all-products.html'><span itemprop='name'>Product Support</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/category.html'><span itemprop='name'>Servers - Unified Computing</span><meta itemprop='position' content='4' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/series.html'><span itemprop='name'>Cisco UCS Manager</span><meta itemprop='position' content='5' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html'><span itemprop='name'>Configuration Guides</span><meta itemprop='position' content='6' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+        
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">Cisco UCS Manager Firmware Management Guide, Release 4.3</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   <!-- have to do this for _g.I18n to be defined in preview and publish modes -->
+  
+  <script type="text/javascript">
+      // initialize dictionary for i18n
+      cdc.util.ensureNamespace("cdc.rc");
+    cdc.rc.eotkeys = {
+        showOnly5Products : "Show Only 5 Products",       
+        showAllRowsProducts : "Show All nRows Products",
+        supportCommunityUrl : "https://community.cisco.com/t5/technology-and-support/ct-p/technology-support",
+        supportCommunity : "Cisco Community",
+        thankYou : "Thank You",
+        viewersAlso : "Customers Also Viewed", 
+        show : "Show", 
+        more : "More", 
+        showOnly3Documents: "Show Only 3 Documents"
+      };
+  </script>
+
+
+
+<div class="row blowout full visitedlinks">
+    <div class="col full">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers techdocs">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button aria-expanded="false" >Bias-Free Language</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>Bias-Free Language</h3>
+            <p>The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. <a href="https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html">Learn more</a> about how Cisco is using Inclusive Language.</p>
+        </div>
+        
+    </div><!-- disclaimers -->
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* this is needed for the translation selector */
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+    var bookTitle = 'Book Title Page';
+</script>
+
+<span id="actionBar-top"></span>
+<section id="actionBar" class="noprint base-blowout">
+    <span class="icons">
+        
+        <button class="bookToc simpleOverlay-trigger" id="onlyforTrigger"> <!--US140575-->
+            Book Contents
+        </button>
+            <div class="bookToc simpleOverlay-content">
+               <div role="heading" class="title">Book Contents</div>
+               <!--googleoff: index--><!--googleoff: snippet-->  
+               <div class="content">
+                  
+
+
+
+<ul id="bookToc">
+    <li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_preface_00.html">Preface</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/chapter.html">New and Changed Information</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_chapter_01.html">Overview</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/m_prerequisites_guidelines.html">Guidelines and Prerequisites</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_chapter_011.html">Managing Firmware through UCSM</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_chapter_0100.html">Managing the Capability</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_chapter_0101.html">Troubleshoot Firmware</a></li>
+
+</ul>
+
+
+               </div>
+               <!--googleon: index--><!--googleon: snippet-->               
+            </div>
+
+        
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='versionddcontainer chapter'></div>
+<script type="text/html" class="versionstemp">
+            <div class="versionsdd">
+                <button class="versionbutton" aria-haspopup="true" aria-expanded="false" aria-labelledby="other versions" class="version"><label></label></button>
+                <ul class="versionlist" aria-labelledby="other versions">
+                <%
+                    let pageUrl = window.location.pathname.replace("/content/","/c/").toLowerCase();
+                    if (true) pageUrl = pageUrl.substring(0,pageUrl.lastIndexOf("/"))+".html";
+                    for(let i=0; i< data.length; i++) {
+                        let item = data[i],
+                            myurl = item.linkUrl,
+                            urlm = myurl.replace("/content/","/c/");;
+                            mytitle = item.linkTitle;
+                            myclass= urlm.toLowerCase() == pageUrl ? "class=\"selected\"":""; 
+%>
+                    <li><a href="${myurl}" ${myclass}>${mytitle}</a></li>
+<%
+                  }   %>
+                </ul>
+             </div>
+</script>
+    
+        <span class="utilities">
+          <button title="Search in this Book" class="mobileSearch simpleOverlay-trigger">
+            Search
+          </button>
+          <div class="mobileSearch simpleOverlay-content">
+            <div class="title">Find Matches in This Book</div>
+              <!--googleoff: index--><!--googleoff: snippet-->  
+              <div class="content">
+                <form id="mobileBooksearch" class="chapter">
+                   <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit"></button>
+                   <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+                </form>
+                <div id="overlayResults" role="region" aria-live="polite" >
+                   <!-- important, keep this results div begin end on same line in here -->
+                   <div class="results"></div>
+                </div>
+              </div>
+              <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "Save";
+    cdc.rc.savedoc.saved = "Saved";
+</script>
+
+    <button class="save" aria-expanded="false" aria-label="Save">
+        <label>Save</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_chapter_0101.html">Log in</a> to Save Content
+    </div>
+
+
+          <!-- Translation Selctor -->
+          <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+ 
+
+
+ 
+          <div class="translations simpleOverlay-content" role="dialog" id="dialogt" aria-labelledby="onlyForNonEN" aria-modal="true">
+            <div role="heading" class="title">Available Languages</div>
+               <!--googleoff: index--><!--googleoff: snippet--> 
+            <script language="javascript">                    
+                cdc.translations.map = "{en-us=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_chapter_0101.html, x-default=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_chapter_0101.html}";//storing the map for use in the JS
+                cdc.translations.locale="en_us";
+            </script>
+            <div class="content">
+              <div class="availableLanguagesList">
+                  <ul id="translationsList">
+                  </ul> 
+              </div>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+          
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // stored value for overlay label to use in js
+    var downloadOPtionLabel = 'Download Options',
+    	bookSearchlabel = 'Find Matches in This Book',
+    	translationsLabel = 'Translations',
+    	bookConentLabel= 'Book Contents';
+</script>
+
+
+        
+
+
+
+        <button title="Document Download Options" id="dwnld-button" class="downloadOptions simpleOverlay-trigger" aria-expanded="false">
+            Download
+        </button>
+        <div class="downloadOptions simpleOverlay-content" role="dialog" id="dialogd" aria-labelledby="dwnld-button" aria-modal="true" class="default_dialog">
+            <div role="heading" class="title">Download Options</div>
+            <!--googleoff: index--><!--googleoff: snippet-->  
+            <div class="content">
+                <header>
+
+                    <h3 class="h4"> Book Title</p>
+                    <p>Cisco UCS Manager Firmware Management Guide, Release 4.3</p>
+                    <p class="h4"> Chapter Title</p>
+                    <h3>Troubleshoot Firmware</p>
+
+                </header>
+                <ul>
+
+                        <li >    
+                            <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3.pdf" class="pdfIcon">PDF - Complete Book 
+                            <span>(3.78 MB)</span></a>
+
+                                   <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-3/b_UCSM_GUI_Firmware_Management_Guide_4-3/b_UCSM_GUI_Firmware_Management_Guide_chapter_0101.pdf" class="chapter">PDF - This Chapter <span>(1.1 MB)</span></a>
+                                                            
+                            <p>View with Adobe Reader on a variety of devices</p>
+                        </li>                                  
+              </ul>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+        </div>
+
+          <button title="Print Friendly Page" class="print simpleOverlay-trigger">
+              Print
+          </button>
+        </span> 
+    </span>
+    <form id="booksearch" tabindex="0" class="chapter">
+       <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+       <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+    </form>
+      <div id="searchresult" role="region" aria-live="polite"><button class="close" title="Close Panel"><span></span><span></span></button>
+         <span class="headArrow"></span>
+         <h2>Results</h2>
+         <div class="matches">
+         </div>
+         <div class="results" tabindex="0">
+         </div>
+      </div>
+      <div id="searchResultChapterTitle"></div>
+</section>
+<script type="text/html" id="navigateMatchesTemplate">
+   <div>
+      <button class="up on" title="Previous Match"><span></span></button>
+      <button class="up off" title="Previous Match Not Available"><span></span></button>
+      <span class="matchlabel">Matches</span>
+      <button class="down on" title="Next Match"><span></span></button>
+      <button class="down off" title="Next Match Not Available"><span></span></button>
+   </div>
+</script>
+<script type="text/html" id="noChapterMatchTemplate">
+   <p>There are no Matches in this chapter.</p>
+</script>
+<script type="text/html" id="searchResultsListTemplate">
+   <p class="h3">Chapters with Matches</p>
+   <ul>
+<% var i = 0;
+    while ( modelData.links[i] ) {  %>
+      <li>
+<%     curpage = (window.location.pathname.indexOf(modelData.links[i].href) > -1 )?true:false;
+        if ( i === modelData.curpage ) {
+            if ( ! jQuery('.mobileSearch').css("display") == "block") { %>
+               <span class="currentIndicator"></span>${modelData.links[i].title}
+<%         } else {                %>
+               <span class="currentIndicator"></span><button class="curpage" data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%         }
+        } else {  %>
+            <button data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%     }  %>            
+      </li> 
+<% i++;
+    } %>
+   </ul> 
+</script>      
+<script type="text/html" id="noBookMatchTemplate">
+   <p class="head">No matches found in this book</p>
+   <p>This feature looks for an exact match of what you entered in the box.</p>
+   <p>If you entered several words, try reducing the entry to one or two and search again.</p>
+</script>
+<script type="text/html" id="errorTemplate">
+   <p>Search is currently unavailable due to technical issues. We are working to resolve the problem as quickly as possible.</p>
+</script>
+<script type="text/html" id="mobileSearchFooterTemplate">
+   <div id="mobileSearchFooter">
+      <button class="mobileSearch" title="Search in this Book"></button>
+      <button class="closeFooter"><span></span><span></span></button>
+      <div class="matches"> 
+      </div>
+   </div>   
+</script>
+ 
+    </div>
+</div>
+<div class="row blowout narrow-wide-v2 flip visitedlinks">
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div id="documentInfo">
+                  <dl>
+                     
+                      <dt>Updated:</dt><dd> April 30, 2025</dd>
+                     
+                  </dl>
+                    
+              </div>
+
+ 
+    </div>
+    <div id="chapterTitleDiv" class="col wide-v2 indent-at-xlarge">
+        <!-- this will be chapter title for chapters or header for TOC for books -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="chapter-title">Chapter: Troubleshoot Firmware </h2>  
+    
+
+    </div>
+</div>
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <div id="pageContentDiv" class="col wide-v2 indent-at-xlarge" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
+
+    
+ 
+ 
+
+<div id="chapterToc" class="base-blowout">
+    <button><span></span>Chapter Contents</button>
+    <div>
+    
+<ul>
+<li><a href="#troubleshoot-firmware">Troubleshoot Firmware</a></li>
+<li><a href="#concept_08286575A3D8490A91068958164CB7F0">Recovering Fabric                              	 Interconnect During Upgrade</a>
+<ul>
+<li><a href="#task_D739CF0464104D1D835106992DECE0F2">Recovering Fabric Interconnects When You Do Not Have Working Images on the Fabric Interconnect or the Bootflash</a></li>
+<li><a href="#task_50DAB2657594475ABA7E8BD936187243">Recovering Fabric                              	 Interconnect During Upgrade When You have Working Images on the                              	 Bootflash</a></li>
+<li><a href="#task_83CE4A431D934EB8939DB7FCCCAC2BE3">Recovering                              	 Unresponsive Fabric Interconnects During Upgrade or Failover</a></li>
+<li><a href="#task_0159C1BFCEC84AE9B5E02D183C1E3D42">Recovering Fabric                              	 Interconnects From a Failed FSM During Upgrade With                               	 Auto Install</a></li>
+</ul></li>
+<li><a href="#task_DF818596A22A46188BD058C380968653">Recovering IO                              	 Modules During Firmware Upgrade</a>
+<ul>
+<li><a href="#task_F7A37978AB7A4DF19AF049E9A8FE8038">Resetting an I/O                              	 Module from a Peer I/O Module</a></li></ul></li></ul>
+    <button id="chapterToc-close">Close<span></span></button>
+    </div>
+</div>
+
+ 
+    <div id="chapterContent">
+    
+                  <h1 class="title topictitle1" id="ariaid-title1">Troubleshoot Firmware</h1>
+                  <!-- minitoc start -->
+                  <nav role="navigation" class="related-links">
+                     <ul class="ullinks">
+                        <li class="link ulchildlink"><a href="#concept_08286575A3D8490A91068958164CB7F0">Recovering Fabric Interconnect During Upgrade</a></li>
+                        <li class="link ulchildlink"><a href="#task_DF818596A22A46188BD058C380968653">Recovering IO Modules During Firmware Upgrade</a></li>
+                     </ul>
+                  </nav>
+                  <!-- minitoc end -->
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title2" lang="en-US" id="concept_08286575A3D8490A91068958164CB7F0">
+                     <h2 class="title topictitle2" id="ariaid-title2">Recovering Fabric
+                        	 Interconnect During Upgrade
+                     </h2>
+                     <section class="body conbody">
+                        <p class="p">If one or both fabric
+                           		interconnects fail during failover or firmware upgrade, you can recover them by
+                           		using one of the following approaches: 
+                           	 
+                        </p>
+                        <ul class="ul">
+                           <li class="li" id="concept_08286575A3D8490A91068958164CB7F0__li_31531CA1F7FA4D66913F9D9F53FB2E38"> 
+                              		  
+                              <p class="p">Recover a fabric
+                                 			 interconnect when you do not have a working image on the fabric interconnect 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_08286575A3D8490A91068958164CB7F0__li_C481D2072C98429493E4A128BE6E6D64"> 
+                              		  
+                              <p class="p">Recover a fabric
+                                 			 interconnect when you have a working image on the fabric interconnect 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_08286575A3D8490A91068958164CB7F0__li_8E29D8415F724E06A841AFE71B832D55"> 
+                              		  
+                              <p class="p">Recover an
+                                 			 unresponsive fabric interconnect during upgrade or failover 
+                                 		  
+                              </p> 
+                              		
+                           </li>
+                           <li class="li" id="concept_08286575A3D8490A91068958164CB7F0__li_E509B52FD2104D8F83C1EF654B73B372">
+                              		  
+                              <p class="p">Recover fabric interconnects from a failed FSM during upgrade with 
+                                 			 <span class="ph">Auto Install</span>
+                                 		  
+                              </p>
+                              		
+                           </li>
+                        </ul>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links">
+                        <ul class="ullinks">
+                           <li class="link ulchildlink"><a href="#task_D739CF0464104D1D835106992DECE0F2">Recovering Fabric Interconnects When You Do Not Have Working Images on the Fabric Interconnect or the Bootflash</a></li>
+                           <li class="link ulchildlink"><a href="#task_50DAB2657594475ABA7E8BD936187243">Recovering Fabric Interconnect During Upgrade When You have Working Images on the Bootflash</a></li>
+                           <li class="link ulchildlink"><a href="#task_83CE4A431D934EB8939DB7FCCCAC2BE3">Recovering Unresponsive Fabric Interconnects During Upgrade or Failover</a></li>
+                           <li class="link ulchildlink"><a href="#task_0159C1BFCEC84AE9B5E02D183C1E3D42">Recovering Fabric Interconnects From a Failed FSM During Upgrade With Auto Install</a></li>
+                        </ul>
+                     </nav>
+                     <!-- minitoc end -->
+                     <article class="topic task nested2" aria-labelledby="ariaid-title3" lang="en-US" id="task_D739CF0464104D1D835106992DECE0F2">
+                        <h3 class="title topictitle3" id="ariaid-title3">Recovering Fabric Interconnects When You Do Not Have Working Images on the Fabric Interconnect or the Bootflash</h3>
+                        <section class="body taskbody">
+                           <section class="section context" id="task_D739CF0464104D1D835106992DECE0F2__context_DA8058D540FA4FD79CB76E54D3A6E702"> 
+                              		
+                              <p class="p">You can perform
+                                 		  these steps when both or any fabric interconnect goes down during firmware
+                                 		  upgrade, gets rebooted, and is stuck at the loader prompt, and you do not have
+                                 		  working images on the fabric interconnect. 
+                                 		
+                              </p> 
+                              	 
+                           </section>
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0">
+                              <tbody>
+                                 <tr class="li step" id="task_D739CF0464104D1D835106992DECE0F2__step_CEF9E02900314AA5BC4616AEEA09FFFA">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> 
+                                          			 <span>Reboot the
+                                             				switch, and in the console, press 
+                                             				<span class="keyword kwd">Ctrl+L</span>
+                                             				as it boots to get the loader prompt. 
+                                             			  </span> 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <table class="olh_note" border="0" role="note">
+                                             <tr>
+                                                <td width="1%" class="td_faq" role="heading" border="0">
+                                                   <p><b>Note</b></p>&nbsp;
+                                                </td>
+                                                <td border="0" class="td_faq">
+                                                   <section class="note__content"> 
+                                                      				
+                                                      <p class="p">You may need
+                                                         				  to press the selected key combination multiple times before your screen
+                                                         				  displays the loader prompt. 
+                                                         				
+                                                      </p> 
+                                                      			 
+                                                   </section>
+                                                </td>
+                                             </tr>
+                                          </table> 
+                                          		  
+                                       </section>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section> 
+                                          			 <pre class="pre codeblock"><code>loader&gt;
+
+</code></pre> 
+                                          		  </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_D739CF0464104D1D835106992DECE0F2__step_A24B08D8AC4542249EE09FAFD23CB109">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> Configure the
+                                          			 interface to receive the kickstart image through TFTP. 
+                                          		  
+                                       </p>
+                                       <ol type="a" class="ol substeps">
+                                          <li class="li substep substepexpand" id="task_D739CF0464104D1D835106992DECE0F2__substep_6D010F1C659742D39C0AD2F97B784208">
+                                             <p class="ph cmd"><span>Enter the local IP address
+                                                   					 and subnet mask for the system at the loader&gt; prompt, and press 
+                                                   					 <span class="keyword kwd">Enter</span>. 
+                                                   				   </span> 
+                                                				
+                                             </p>
+                                             <section class="itemgroup stepxmp">
+                                                <section class="tasklabel">
+                                                   <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                                </section> 
+                                                				  <pre class="pre codeblock"><code>loader&gt; <kbd class="userinput"><b class="ph userinput">set ip 10.104.105.136 255.255.255.0</b></kbd>
+
+</code></pre> 
+                                                				</section>
+                                          </li>
+                                          <li class="li substep substepexpand" id="task_D739CF0464104D1D835106992DECE0F2__substep_3A26BB2B0C5947BEABF9D01B80D8FC17">
+                                             <p class="ph cmd"><span>Specify the IP address of the
+                                                   					 default gateway. 
+                                                   				   </span> 
+                                                				
+                                             </p>
+                                             <section class="itemgroup stepxmp">
+                                                <section class="tasklabel">
+                                                   <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                                </section> 
+                                                				  <pre class="pre codeblock"><code>loader&gt; <kbd class="userinput"><b class="ph userinput">set gw 10.104.105.1</b></kbd>
+
+</code></pre> 
+                                                				</section>
+                                          </li>
+                                          <li class="li substep substepexpand" id="task_D739CF0464104D1D835106992DECE0F2__substep_42BAF0F040C34772AAB55B2DC58372ED">
+                                             <p class="ph cmd"><span>Boot the kickstart image file
+                                                   					 from the required server. </span> 
+                                                				
+                                             </p>
+                                             <section class="itemgroup stepxmp">
+                                                <section class="tasklabel">
+                                                   <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                                </section>
+                                                							<pre class="pre codeblock"><code>loader&gt; <kbd class="userinput"><b class="ph userinput">boot tftp://10.104.105.22/tftpboot/Images.3.0.2/ucs-6300-k9-kickstart.5.0.2.N1.3.02d56.bin</b></kbd>
+switch(boot)#
+
+</code></pre>
+                                                						</section>
+                                             						
+                                          </li>
+                                       </ol>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <table class="olh_note" border="0" role="note">
+                                             <tr>
+                                                <td width="1%" class="td_faq" role="heading" border="0">
+                                                   <p><b>Note</b></p>&nbsp;
+                                                </td>
+                                                <td border="0" class="td_faq">
+                                                   <section class="note__content"> 
+                                                      				
+                                                      <p class="p"> You do not
+                                                         				  need to do this step if you already have a kickstart image in the bootflash. 
+                                                         				
+                                                      </p> 
+                                                      			 
+                                                   </section>
+                                                </td>
+                                             </tr>
+                                          </table> 
+                                          		  
+                                       </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_D739CF0464104D1D835106992DECE0F2__step_712EB297A6A94ACFB1DBBCFDCCB7346A">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"><span>Enter the 
+                                             				<span class="keyword kwd">init
+                                                				  system</span> command at the switch(boot)# prompt. 
+                                             			  </span> 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <p class="p">This will
+                                             				reformat the fabric interconnect. 
+                                             			 
+                                          </p> 
+                                          		  
+                                       </section>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section> 
+                                          			 <pre class="pre codeblock"><code>switch(boot)# <kbd class="userinput"><b class="ph userinput">init system</b></kbd>
+
+</code></pre> 
+                                          		  </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_D739CF0464104D1D835106992DECE0F2__step_17CEC5EB840B419283273DA8FA351B7E">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> Configure the
+                                          			 management interface. 
+                                          		  
+                                       </p>
+                                       <ol type="a" class="ol substeps">
+                                          <li class="li substep substepexpand" id="task_D739CF0464104D1D835106992DECE0F2__substep_CD90C7C4D0BC4B0E99E8C2A2C1B42965">
+                                             <p class="ph cmd"><span>Change to configuration mode
+                                                   					 and configure the IP address of the mgmt0 interface </span>. 
+                                                				
+                                             </p>
+                                             <section class="itemgroup stepxmp">
+                                                <section class="tasklabel">
+                                                   <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                                </section> 
+                                                				  <pre class="pre codeblock"><code>switch(boot)# <kbd class="userinput"><b class="ph userinput">config t</b></kbd>
+switch(boot)(config)# <kbd class="userinput"><b class="ph userinput">interface mgmt0</b></kbd>
+
+</code></pre> 
+                                                				</section>
+                                          </li>
+                                          <li class="li substep substepexpand" id="task_D739CF0464104D1D835106992DECE0F2__substep_D1C583D50ACD40C0A038AC9C3B6B3AA0">
+                                             <p class="ph cmd"><span>Enter the 
+                                                   					 <span class="keyword kwd">ip
+                                                      						address</span> command to configure the local IP address and the subnet mask for
+                                                   					 the system. 
+                                                   				   </span> 
+                                                				
+                                             </p>
+                                             <section class="itemgroup stepxmp">
+                                                <section class="tasklabel">
+                                                   <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                                </section> 
+                                                				  <pre class="pre codeblock"><code>switch(boot)(config-if)# <kbd class="userinput"><b class="ph userinput">ip address 10.104.105.136 255.255.255.0</b></kbd>
+
+</code></pre> 
+                                                				</section>
+                                          </li>
+                                          <li class="li substep substepexpand" id="task_D739CF0464104D1D835106992DECE0F2__substep_85C29ACA47A847F185A92F87F6945A34">
+                                             <p class="ph cmd"><span>Enter the 
+                                                   					 <span class="keyword kwd">no
+                                                      						shutdown</span> command to enable the mgmt0 interface on the system. 
+                                                   				   </span> 
+                                                				
+                                             </p>
+                                             <section class="itemgroup stepxmp">
+                                                <section class="tasklabel">
+                                                   <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                                </section> 
+                                                				  <pre class="pre codeblock"><code>switch(boot)(config-if)# <kbd class="userinput"><b class="ph userinput">no shutdown</b></kbd>
+
+</code></pre> 
+                                                				</section>
+                                          </li>
+                                          <li class="li substep substepexpand" id="task_D739CF0464104D1D835106992DECE0F2__substep_E7322D06F42A485F965342D364FB6EC6">
+                                             <p class="ph cmd"><span>Enter the 
+                                                   					 <span class="keyword kwd">ip
+                                                      						default-gateway</span> command to configure the IP address of the default
+                                                   					 gateway. 
+                                                   				   </span> 
+                                                				
+                                             </p>
+                                             <section class="itemgroup stepxmp">
+                                                <section class="tasklabel">
+                                                   <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                                </section> 
+                                                				  <pre class="pre codeblock"><code>switch(boot)(config-if)# <kbd class="userinput"><b class="ph userinput">exit</b></kbd>
+switch(boot)(config)# <kbd class="userinput"><b class="ph userinput">ip default-gateway 10.104.105.1</b></kbd>
+
+</code></pre> 
+                                                				</section>
+                                          </li>
+                                          <li class="li substep substepexpand" id="task_D739CF0464104D1D835106992DECE0F2__substep_89F7732AB84A4218A57E465087EB3A6D">
+                                             <p class="ph cmd"><span>Enter 
+                                                   					 <span class="keyword kwd">exit</span> to exit to EXEC mode. 
+                                                   				   </span> 
+                                                				
+                                             </p>
+                                             <section class="itemgroup stepxmp">
+                                                <section class="tasklabel">
+                                                   <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                                </section> 
+                                                				  <pre class="pre codeblock"><code>switch(boot)(config)# <kbd class="userinput"><b class="ph userinput">exit</b></kbd>
+
+</code></pre> 
+                                                				</section>
+                                          </li>
+                                       </ol>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_D739CF0464104D1D835106992DECE0F2__step_7765D8E268594958B1A0A431B355CC84">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;5</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> Copy the
+                                          			 kickstart, system, and 
+                                          			 <span class="ph">Cisco UCS Manager</span>
+                                          			 management images from the TFTP server to the bootflash. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section>
+                                          					<pre class="pre codeblock"><code>switch(boot)# <kbd class="userinput"><b class="ph userinput">copy scp://&lt;username&gt;@10.104.105.22/tftpboot/Images.3.0.2/ucs-6300-k9-kickstart.5.0.2.N1.3.02d56.bin bootflash://</b></kbd>
+switch(boot)# <kbd class="userinput"><b class="ph userinput">copy scp://&lt;username&gt;@10.104.105.22/tftpboot/Images.3.0.2/ucs-6300-k9-system.5.0.2.N1.3.02d56.bin bootflash://</b></kbd>
+switch(boot)# <kbd class="userinput"><b class="ph userinput">copy scp://&lt;username&gt;@10.104.105.22/tftpboot/Images.3.0.2/ucs-manager-k9.3.0.2d56.bin bootflash:// </b></kbd>
+</code></pre>
+                                          				</section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_D739CF0464104D1D835106992DECE0F2__step_000B20AAF7D444908AF5BAC80C66A232">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;6</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"><span>Create separate directories
+                                             				for installables and installables/switch in the bootflash. </span> 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section> 
+                                          			 <pre class="pre codeblock"><code>switch(boot)# <kbd class="userinput"><b class="ph userinput">mkdir bootflash:installables</b></kbd>
+switch(boot)# <kbd class="userinput"><b class="ph userinput">mkdir bootflash:installables/switch</b></kbd>
+
+</code></pre> 
+                                          		  </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_D739CF0464104D1D835106992DECE0F2__step_08BBAE03DA384B4AA34A3D6194C1F829">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;7</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Copy the
+                                          			 kickstart, system, and 
+                                          			 <span class="ph">Cisco UCS Manager</span>
+                                          			 images to the installables/switch directory. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section>
+                                          					<pre class="pre codeblock"><code>switch(boot)# <kbd class="userinput"><b class="ph userinput">copy ucs-6300-k9-kickstart.5.0.2.N1.3.02d56.bin bootflash:installables/switch/</b></kbd>
+switch(boot)# <kbd class="userinput"><b class="ph userinput">copy ucs-6300-k9-system.5.0.2.N1.3.02d56.bin bootflash:installables/switch/</b></kbd>
+switch(boot)# <kbd class="userinput"><b class="ph userinput">copy ucs-manager-k9.3.02d56.bin bootflash:installables/switch/</b></kbd>
+
+</code></pre>
+                                          				</section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_D739CF0464104D1D835106992DECE0F2__step_44B710E0C0D747879D6E9446B144DE9E">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;8</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Ensure that
+                                          			 the management image is linked to 
+                                          			 <span class="keyword">nuova-sim-mgmt-nsg.0.1.0.001.bin</span>. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <p class="p"><span class="keyword">nuova-sim-mgmt-nsg.0.1.0.001.bin</span> is the name that the
+                                             				reserved system image uses, and it makes the management image Cisco UCS
+                                             				Manager-compliant. 
+                                             			 
+                                          </p> 
+                                          		  
+                                       </section>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section> 
+                                          			 <pre class="pre codeblock"><code>switch(boot)# <kbd class="userinput"><b class="ph userinput">copy bootflash:installables/switch/ucs-manager-k9.3.02d56.bin nuova-sim-mgmt-nsg.0.1.0.001.bin</b></kbd>
+
+</code></pre> 
+                                          		  </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_D739CF0464104D1D835106992DECE0F2__step_0550B289B67349DF84B77B6C01FC6410">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;9</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"><span>Reload the switch. </span> 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section> 
+                                          			 <pre class="pre codeblock"><code>switch(boot)# <kbd class="userinput"><b class="ph userinput">reload</b></kbd>
+This command will reboot this supervisor module. (y/n) ? <kbd class="userinput"><b class="ph userinput">y</b></kbd>
+
+</code></pre> 
+                                          		  </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_D739CF0464104D1D835106992DECE0F2__step_1CB6A82D54764E2395B17C5BDB8CF61C">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;10</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Boot from the
+                                          			 kickstart image. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section>
+                                          					<pre class="pre codeblock"><code>loader&gt; <kbd class="userinput"><b class="ph userinput">dir</b></kbd>
+nuova-sim-mgmt-nsg.0.1.0.001.bin
+ucs-6300-k9-kickstart.5.0.2.N1.3.02d56.bin
+ucs-6300-k9-system.5.0.2.N1.3.02d56.bin
+ucs-manager-k9.3.02d56.bin
+loader&gt; <kbd class="userinput"><b class="ph userinput">boot ucs-6300-k9-kickstart.5.0.2.N1.3.02d56.bin</b></kbd>
+switch(boot)#
+
+</code></pre>
+                                          				</section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_D739CF0464104D1D835106992DECE0F2__step_8375ED9DE8334D7DA786BF5D85E78BD0">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;11</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"><span> Load the system
+                                             				image. </span> 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <p class="p"> The 
+                                             				<span class="ph uicontrol">Basic System Configuration Dialog</span> wizard appears
+                                             				after the system image is completely loaded. Use this wizard to configure the
+                                             				fabric interconnect. 
+                                             			 
+                                          </p> 
+                                          		  
+                                       </section>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section>
+                                          					<pre class="pre codeblock"><code>switch(boot)# <kbd class="userinput"><b class="ph userinput">load ucs-6300-k9-system.5.0.2.N1.3.02d56.bin</b></kbd>
+Uncompressing system image: bootflash:/ucs-6300-k9-system.5.0.2.N1.3.02d56.bin
+
+...
+
+---- Basic System Configuration Dialog ----
+
+  This setup utility will guide you through the basic configuration of
+  the system. Only minimal configuration including IP connectivity to
+  the Fabric interconnect and its clustering mode is performed through these steps.
+
+...
+
+Apply and save the configuration (select 'no' if you want to re-enter)? (yes/no): <kbd class="userinput"><b class="ph userinput">yes</b></kbd>
+Applying configuration. Please wait.
+
+Configuration file - Ok
+
+</code></pre>
+                                          				</section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_D739CF0464104D1D835106992DECE0F2__step_4823E52365EC469A965F13426F35205B">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;12</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> Log in to 
+                                          			 <span class="ph">Cisco UCS Manager</span>
+                                          			 and download the firmware. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section> 
+                                          			 <pre class="pre codeblock"><code>
+UCS-A# <kbd class="userinput"><b class="ph userinput">scope firmware</b></kbd>
+UCS-A /firmware # <kbd class="userinput"><b class="ph userinput">download image scp://&lt;username&gt;@&lt;server ip&gt;//&lt;downloaded image location&gt;/&lt;infra bundle name&gt;</b></kbd>
+Password:
+UCS-A /firmware # <kbd class="userinput"><b class="ph userinput">download image scp://&lt;username&gt;@&lt;server ip&gt;//&lt;downloaded image location&gt;/&lt;b-series bundle name&gt;</b></kbd>
+Password:
+UCS-A /firmware # <kbd class="userinput"><b class="ph userinput">download image scp://&lt;username&gt;@&lt;server ip&gt;//&lt;downloaded image location&gt;/&lt;c-series bundle name&gt;</b></kbd>
+Password:
+UCS-A /firmware # <kbd class="userinput"><b class="ph userinput">show download-task</b></kbd>
+Download task:
+    File Name Protocol Server          Userid          State
+    --------- -------- --------------- --------------- -----
+    ucs-k9-bundle-b-series.3.0.2.B.bin
+       	      Scp      10.104.105.22   abcdefgh        Downloading
+    ucs-k9-bundle-c-series.3.0.2.C.bin
+       	      Scp      10.104.105.22   abcdefgh        Downloading
+    ucs-k9-bundle-infra.3.0.2.A.bin
+       	      Scp      10.104.105.22   abcdefgh        Downloading
+UCS-A /firmware # 
+</code></pre> 
+                                          		  </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_D739CF0464104D1D835106992DECE0F2__step_09878110175446E5B1361AECFE528958">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;13</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> After the
+                                          			 firmware download is complete, activate the fabric interconnect firmware and 
+                                          			 <span class="ph">Cisco UCS Manager</span>
+                                          			 firmware. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <p class="p">This step
+                                             				updates 
+                                             				<span class="ph">Cisco UCS Manager</span>
+                                             				and the fabric interconnects to the version you want, and then reboots them. 
+                                             			 
+                                          </p> 
+                                          		  
+                                       </section>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section> 
+                                          			 <pre class="pre codeblock"><code>UCS-A# <kbd class="userinput"><b class="ph userinput">scope fabric-interconnect a</b></kbd>
+UCS-A /fabric-interconnect* # <kbd class="userinput"><b class="ph userinput">activate firmware kernel-version 5.0(2)N1(3.02d56) ignorecompcheck </b></kbd>
+Warning: When committed this command will reset the end-point
+UCS-A /fabric-interconnect* # <kbd class="userinput"><b class="ph userinput">activate firmware system-version 5.0(2)N1(3.02d56) ignorecompcheck</b></kbd>
+Warning: When committed this command will reset the end-point
+UCS-A /fabric-interconnect* # <kbd class="userinput"><b class="ph userinput">commit-buffer </b></kbd>
+UCS-A /fabric-interconnect # <kbd class="userinput"><b class="ph userinput">exit</b></kbd>
+
+UCS-A# <kbd class="userinput"><b class="ph userinput">scope system </b></kbd>
+UCS-A /system # <kbd class="userinput"><b class="ph userinput">show image </b></kbd>
+
+Name                                          Type                 Version
+--------------------------------------------- -------------------- -------
+ucs-manager-k9.3.02d56.bin                    System               3.0(2d)
+UCS-A /system # <kbd class="userinput"><b class="ph userinput">activate firmware 3.0(2d) ignorecompcheck </b></kbd>
+The version specified is the same as the running version
+UCS-A /system # <kbd class="userinput"><b class="ph userinput">activate firmware 3.0(2d) ignorecompcheck </b></kbd>
+The version specified is the same as the running version
+UCS-A /system # 
+
+</code></pre> 
+                                          		  </section>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic task nested2" aria-labelledby="ariaid-title4" lang="en-US" id="task_50DAB2657594475ABA7E8BD936187243">
+                        <h3 class="title topictitle3" id="ariaid-title4">Recovering Fabric
+                           	 Interconnect During Upgrade When You have Working Images on the
+                           	 Bootflash
+                        </h3>
+                        <section class="body taskbody">
+                           <section class="section context" id="task_50DAB2657594475ABA7E8BD936187243__context_982282AB692A4C11A245D40610E7ACF6"> 
+                              		
+                              <p class="p">You can perform
+                                 		  these steps when both or any fabric interconnect goes down during firmware
+                                 		  upgrade, gets rebooted, and is stuck at the loader prompt. 
+                                 		
+                              </p> 
+                              	 
+                           </section>
+                           <section class="section prereq p" id="task_50DAB2657594475ABA7E8BD936187243__prereq_C0D4C6C2B845445596AAFDCDFBE342E9">
+                              <section class="tasklabel">
+                                 <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h4>
+                              </section> 
+                              		
+                              <p class="p"> You must have
+                                 		  working images on the bootflash to perform these steps. 
+                                 		
+                              </p> 
+                              	 
+                           </section>
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0">
+                              <tbody>
+                                 <tr class="li step" id="task_50DAB2657594475ABA7E8BD936187243__step_F0EBB760C5EB4D4796AA31C14A33F167">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> Reboot the
+                                          			 switch, and in the console, press Ctrl+L as it boots to get the loader prompt. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <table class="olh_note" border="0" role="note">
+                                             <tr>
+                                                <td width="1%" class="td_faq" role="heading" border="0">
+                                                   <p><b>Note</b></p>&nbsp;
+                                                </td>
+                                                <td border="0" class="td_faq">
+                                                   <section class="note__content"> 
+                                                      				
+                                                      <p class="p"> You may need
+                                                         				  to press the selected key combination multiple times before your screen
+                                                         				  displays the loader prompt. 
+                                                         				
+                                                      </p> 
+                                                      			 
+                                                   </section>
+                                                </td>
+                                             </tr>
+                                          </table> 
+                                          		  
+                                       </section>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section> 
+                                          			 <pre class="pre codeblock"><code>loader&gt;
+
+</code></pre> 
+                                          		  </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_50DAB2657594475ABA7E8BD936187243__step_C74946BF84F64706A4E8CB4427DC0F15">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> Run the <span class="keyword cmdname">dir</span> command. 
+                                       </p>
+                                       <section class="itemgroup info">
+                                          					
+                                          <p class="p">The list of available kernel, system, and <span class="ph">Cisco UCS Manager</span> images in the bootflash appears. 
+                                          </p>
+                                          				
+                                       </section>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section>
+                                          					<pre class="pre codeblock"><code>loader&gt; <kbd class="userinput"><b class="ph userinput">dir</b></kbd>
+nuova-sim-mgmt-nsg.0.1.0.001.bin
+ucs-6400-k9-kickstart.5.0.2.N1.3.02d56.bin
+ucs-6400-k9-system.5.0.2.N1.3.02d56.bin
+ucs-manager-k9.3.02d56.bin
+
+</code></pre>
+                                          					
+                                          					
+                                          				</section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_50DAB2657594475ABA7E8BD936187243__step_E18954CD5E684F759D7588FFAAD47FBF">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> Boot the kernel firmware version from the bootflash. </p>
+                                       <section class="itemgroup info">
+                                          					
+                                          <table class="olh_note" border="0" role="note">
+                                             <tr>
+                                                <td width="1%" class="td_faq" role="heading" border="0">
+                                                   <p><b>Note</b></p>&nbsp;
+                                                </td>
+                                                <td border="0" class="td_faq">
+                                                   <section class="note__content">
+                                                      						
+                                                      <p class="p"> Any kernel image available here will be a working image from which you can boot. </p>
+                                                      					
+                                                   </section>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                          				
+                                       </section>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section>
+                                          					<pre class="pre codeblock"><code>loader&gt; <kbd class="userinput"><b class="ph userinput">boot ucs-6400-k9-kickstart.5.0.2.N1.3.02d56.bin</b></kbd>
+
+</code></pre>
+                                          				</section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_50DAB2657594475ABA7E8BD936187243__step_3ADEA285415F40E880D72A724C2B681C">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Ensure that the
+                                          			 management image is linked to 
+                                          			 <span class="keyword">nuova-sim-mgmt-nsg.0.1.0.001.bin</span>. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <p class="p"><span class="keyword">nuova-sim-mgmt-nsg.0.1.0.001.bin</span> is the name that the
+                                             				reserved system image uses, and it makes the management image 
+                                             				<span class="ph">Cisco UCS Manager</span>-compliant.
+                                             				
+                                             			 
+                                          </p> 
+                                          		  
+                                       </section>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section> 
+                                          			 <pre class="pre codeblock"><code>switch(boot)# <kbd class="userinput"><b class="ph userinput">copy ucs-manager-k9.1.4.1k.bin nuova-sim-mgmt-nsg.0.1.0.001.bin</b></kbd>
+
+</code></pre> 
+                                          		  </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_50DAB2657594475ABA7E8BD936187243__step_A45996FA346048038DE65C28F3E3BB9A">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;5</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> Load the system image. </p>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section>
+                                          					<pre class="pre codeblock"><code>switch(boot)# <kbd class="userinput"><b class="ph userinput">load ucs-6400-k9-system.5.0.2.N1.3.02d56.bin</b></kbd>
+
+</code></pre>
+                                          				</section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_50DAB2657594475ABA7E8BD936187243__step_F0FE7458CA5F47B98B4460ABADD33915">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;6</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> Log in to 
+                                          			 <span class="ph">Cisco UCS Manager</span>
+                                          			 and update your fabric interconnect and 
+                                          			 <span class="ph">Cisco UCS Manager</span>
+                                          			 software to the version that you want. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic task nested2" aria-labelledby="ariaid-title5" lang="en-US" id="task_83CE4A431D934EB8939DB7FCCCAC2BE3">
+                        <h3 class="title topictitle3" id="ariaid-title5">Recovering
+                           	 Unresponsive Fabric Interconnects During Upgrade or Failover
+                        </h3>
+                        <section class="body taskbody">
+                           <section class="section context" id="task_83CE4A431D934EB8939DB7FCCCAC2BE3__context_2ADEBF535D9E46378B01BC43C1642FE6"> 
+                              		
+                              <p class="p">During upgrade or
+                                 		  failover, avoid performing the following tasks because they introduce
+                                 		  additional risk: 
+                                 		
+                              </p> 
+                              		
+                              <ul class="ul">
+                                 <li class="li" id="task_83CE4A431D934EB8939DB7FCCCAC2BE3__li_9D0220608F4440B584C34191FFAFFE2D"> 
+                                    			 
+                                    <p class="p">Pmon stop/start 
+                                       			 
+                                    </p> 
+                                    		  
+                                 </li>
+                                 <li class="li" id="task_83CE4A431D934EB8939DB7FCCCAC2BE3__li_167C1933C4AD42D99E4B1EC937375521"> 
+                                    			 
+                                    <p class="p">FI reboots –
+                                       				power cycle or CLI 
+                                       			 
+                                    </p> 
+                                    		  
+                                 </li>
+                                 <li class="li" id="task_83CE4A431D934EB8939DB7FCCCAC2BE3__li_7A9D45B9086746D8961021FEAE6AE990"> 
+                                    			 
+                                    <p class="p">HA failover 
+                                       			 
+                                    </p> 
+                                    		  
+                                 </li>
+                              </ul> 
+                              	 
+                           </section>
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0">
+                              <tbody>
+                                 <tr class="li step" id="task_83CE4A431D934EB8939DB7FCCCAC2BE3__step_E6EFE920B79B4C7DB53960ACDA8341B5">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd"> If the 
+                                          			 <span class="keyword cmdname">httpd_cimc.sh</span> process is lost, as documented in
+                                          			 CSCup70756, you lose access to the KVM. Continue with the failover or contact
+                                          			 Cisco Technical Assistance. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_83CE4A431D934EB8939DB7FCCCAC2BE3__step_F675CCF5FB03434AB2967D1090CE3B29">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">If you lose
+                                          			 access to the KVM on the primary side, continue with the failover to resolve
+                                          			 the issue. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_83CE4A431D934EB8939DB7FCCCAC2BE3__step_D7B3DB8E19E648218057B6C2EE9CF14F">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">If KVM is needed
+                                          			 or is down on the subordinate side, start only that service using the debug
+                                          			 plugin. Contact TAC to run the debug image. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_83CE4A431D934EB8939DB7FCCCAC2BE3__step_B9150A58F376421ABA2F125131F4696B">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">If the /dev/null
+                                          			 issue is encountered, as documented in CSCuo50049, fix the rights to 666 with
+                                          			 the debug-plugin at both steps if required. Contact Cisco Technical Assistance
+                                          			 to run debug commands. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_83CE4A431D934EB8939DB7FCCCAC2BE3__step_F2BAC2F25A254EF886CA0ADBE89F5329">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;5</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">If both
+                                          			 CSCup70756 and CSCuo50049 are encountered, it can cause VIP loss. If the VIP is
+                                          			 lost, do the following: 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          			 
+                                          <ol class="ol" type="a">
+                                             <li class="li" id="task_83CE4A431D934EB8939DB7FCCCAC2BE3__li_9DEA7328BA6D41EDBB5A5B61CE0CC358"> 
+                                                				  
+                                                <p class="p">Access the
+                                                   					 primary physical address through the GUI and use the GUI to verify all IO
+                                                   					 Module backplane ports recovered. 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                             <li class="li" id="task_83CE4A431D934EB8939DB7FCCCAC2BE3__li_1328A77D73464303BF5CD2B149D8F01E"> 
+                                                				  
+                                                <p class="p">If the GUI
+                                                   					 is down, verify IO Module backplane ports with the NXOS 
+                                                   					 <span class="keyword cmdname">show
+                                                      						fex detail</span> command. 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                             <li class="li" id="task_83CE4A431D934EB8939DB7FCCCAC2BE3__li_CD78F07C52D44ABD8DBC29A69C41A01F"> 
+                                                				  
+                                                <p class="p">Perform the
+                                                   					 workaround and verify that the cluster state is 
+                                                   					 <span class="keyword">UP</span> on both fabric interconnects. 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                             <li class="li" id="task_83CE4A431D934EB8939DB7FCCCAC2BE3__li_44258797C37F4021BF3D09E054618D03"> 
+                                                				  
+                                                <p class="p">If the
+                                                   					 cluster state is 
+                                                   					 <span class="keyword">UP</span> on both fabric interconnects, continue the upgrade
+                                                   					 by reacknowledging the primary fabric interconnect reboot using the SSH CLI
+                                                   					 syntax: 
+                                                   				  
+                                                </p> 
+                                                				  <pre class="pre codeblock"><code>
+UCS-A# <kbd class="userinput"><b class="ph userinput">scope firmware</b></kbd>
+UCS-A /firmware # <kbd class="userinput"><b class="ph userinput">scope auto-install</b></kbd>
+UCS-A /firmware/auto-install # <kbd class="userinput"><b class="ph userinput">acknowledge primary fabric-interconnect reboot </b></kbd>
+UCS-A /firmware/auto-install* # <kbd class="userinput"><b class="ph userinput">commit-buffer</b></kbd>
+UCS-A /firmware/auto-install #
+
+</code></pre> 
+                                                				</li>
+                                          </ol> 
+                                          		  
+                                       </section>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                     <article class="topic task nested2" aria-labelledby="ariaid-title6" lang="en-US" id="task_0159C1BFCEC84AE9B5E02D183C1E3D42">
+                        <h3 class="title topictitle3" id="ariaid-title6">Recovering Fabric
+                           	 Interconnects From a Failed FSM During Upgrade With 
+                           	 <span class="ph">Auto Install</span></h3>
+                        <section class="body taskbody">
+                           <section class="section context" id="task_0159C1BFCEC84AE9B5E02D183C1E3D42__context_982282AB692A4C11A245D40610E7ACF6"> 
+                              		
+                              <p class="p">You can perform
+                                 		  these steps when all the following occur: 
+                                 		
+                              </p> 
+                              		
+                              <ul class="ul">
+                                 <li class="li" id="task_0159C1BFCEC84AE9B5E02D183C1E3D42__li_39C5561676A649DB8300AD2EAB3E624F"> 
+                                    			 
+                                    <p class="p">You are
+                                       				upgrading or downgrading firmware using 
+                                       				<span class="ph">Auto Install</span>
+                                       				between 
+                                       				<span class="ph">Cisco UCS Manager</span>
+                                       				Release 3.1(2) and Release 3.1(3) while a service pack is installed on the
+                                       				fabric interconnects. 
+                                       			 
+                                    </p> 
+                                    		  
+                                 </li>
+                                 <li class="li" id="task_0159C1BFCEC84AE9B5E02D183C1E3D42__li_0863DE5E68C148DE9395C562DCEF4818"> 
+                                    			 
+                                    <p class="p">Both or any
+                                       				fabric interconnect goes down because of an FSM failure or multiple retries in
+                                       				the DeployPollActivate stage of the FSM 
+                                       			 
+                                    </p> 
+                                    		  
+                                 </li>
+                              </ul> 
+                              	 
+                           </section>
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0">
+                              <tbody>
+                                 <tr class="li step" id="task_0159C1BFCEC84AE9B5E02D183C1E3D42__step_8070A43C15224C46AED4B84BA84496BF">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">When the FSM
+                                          			 fails, or when multiple retries are observed in the DeployPollActivate stage of
+                                          			 the FSM on the subordinate fabric interconnect, do the following: 
+                                          		  
+                                       </p>
+                                       <ol type="a" class="ol substeps">
+                                          <li class="li substep substepexpand" id="task_0159C1BFCEC84AE9B5E02D183C1E3D42__substep_FCB338F53AAF463FB6BA6604FD76754C">
+                                             <p class="ph cmd">Clear the
+                                                				  startup version of the default infrastructure pack and the service pack. 
+                                                				
+                                             </p>
+                                             <section class="itemgroup stepxmp">
+                                                <section class="tasklabel">
+                                                   <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                                </section> 
+                                                				  <pre class="pre codeblock"><code>UCS-A# scope org
+UCS-A /org # scope fw-infra-pack default
+UCS-A /org/fw-infra-pack # set infra-bundle-version ""
+UCS-A /org/fw-infra-pack* # commit-buffer</code></pre> 
+                                                				</section>
+                                          </li>
+                                          <li class="li substep substepexpand" id="task_0159C1BFCEC84AE9B5E02D183C1E3D42__substep_63B00547F5624E579FD70DEC2A09B0FD">
+                                             <p class="ph cmd">Remove the
+                                                				  service pack from the subordinate fabric interconnect. 
+                                                				
+                                             </p>
+                                             <section class="itemgroup info"> 
+                                                				   
+                                                				
+                                             </section>
+                                             <section class="itemgroup stepxmp">
+                                                <section class="tasklabel">
+                                                   <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                                </section> 
+                                                				  <pre class="pre codeblock"><code>UCS-A# scope fabric-interconnect b
+UCS-A# /fabric-interconnect # remove service-pack security
+UCS-A# /fabric-interconnect* # commit-buffer</code></pre> 
+                                                				</section>
+                                          </li>
+                                       </ol>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_0159C1BFCEC84AE9B5E02D183C1E3D42__step_82C4A30FF0714FB699CD47723CBA7AE1">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Upgrade the
+                                          			 infrastructure firmware using the force option through 
+                                          			 <span class="ph">Auto Install</span>.
+                                          			 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          		  
+                                       </section>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section> 
+                                          			 <pre class="pre codeblock"><code>UCS-A# scope firmware
+UCS-A /firmware # scope auto-install
+UCS-A /firmware/auto-install # install infra infra-vers 3.1(3a)A force
+This operation upgrades firmware on UCS Infrastructure Components
+(UCS manager, Fabric Interconnects and IOMs).
+Here is the checklist of things that are recommended before starting Auto-Install
+(1) Review current critical/major faults
+(2) Initiate a configuration backup
+(3) Check if Management Interface Monitoring Policy is enabled
+(4) Check if there is a pending Fabric Interconnect Reboot activitiy
+(5) Ensure NTP is configured
+(6) Check if any hardware (fabric interconnects, io-modules, servers or adapters) is
+unsupported in the target release
+Do you want to proceed? (yes/no): yes
+Triggering Install-Infra with:
+Infrastructure Pack Version: 3.1(3a)A</code></pre> 
+                                          		  </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_0159C1BFCEC84AE9B5E02D183C1E3D42__step_91EC7CDA59F44CC1832FB4852F652D63">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Acknowledge the
+                                          			 reboot of the primary fabric interconnect. 
+                                          		  
+                                       </p>
+                                       <section class="itemgroup info"> 
+                                          		  
+                                       </section>
+                                       <section class="itemgroup stepxmp">
+                                          <section class="tasklabel">
+                                             <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                          </section> 
+                                          			 <pre class="pre codeblock"><code>UCS-A /firmware/auto-install # acknowledge primary fabric-interconnect reboot
+UCS-A /firmware/auto-install* # commit-buffer
+UCS-A /firmware/auto-install #</code></pre> 
+                                          		  </section>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_0159C1BFCEC84AE9B5E02D183C1E3D42__step_949A4E2E8E9A4955941739C05531D23C">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">When the FSM
+                                          			 fails, or when multiple retries are observed in the DeployPollActivate stage of
+                                          			 the FSM on the current subordinate fabric interconnect, do the following: 
+                                          		  
+                                       </p>
+                                       <ol type="a" class="ol substeps">
+                                          <li class="li substep substepexpand" id="task_0159C1BFCEC84AE9B5E02D183C1E3D42__substep_9059C464EEFE4E4CA7061EDFF177765A">
+                                             <p class="ph cmd">Clear the
+                                                				  startup version of the default infrastructure pack and the service pack. 
+                                                				
+                                             </p>
+                                             <section class="itemgroup stepxmp">
+                                                <section class="tasklabel">
+                                                   <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                                </section> 
+                                                				  <pre class="pre codeblock"><code>UCS-A# scope org
+UCS-A /org # scope fw-infra-pack default
+UCS-A /org/fw-infra-pack # set infra-bundle-version ""
+UCS-A /org/fw-infra-pack* # commit-buffer</code></pre> 
+                                                				</section>
+                                          </li>
+                                          <li class="li substep substepexpand" id="task_0159C1BFCEC84AE9B5E02D183C1E3D42__substep_144EF65BCD5A401EBB83096687763BBB">
+                                             <p class="ph cmd">Remove the
+                                                				  service pack from the current subordinate fabric interconnect. 
+                                                				
+                                             </p>
+                                             <section class="itemgroup stepxmp">
+                                                <section class="tasklabel">
+                                                   <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h4>
+                                                </section> 
+                                                				  <pre class="pre codeblock"><code>UCS-A# scope fabric-interconnect a
+UCS-A# /fabric-interconnect # remove service-pack security
+UCS-A# /fabric-interconnect* # commit-buffer</code></pre> 
+                                                				</section>
+                                          </li>
+                                       </ol>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                           <section class="section result" id="task_0159C1BFCEC84AE9B5E02D183C1E3D42__result_D203F24C6B7B4577991D97355B6BDB77">Both fabric interconnects
+                              		will now reflect Release 3.1(3) firmware and the default service pack for
+                              		Running and Startup versions. 
+                              	 
+                           </section>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title7" lang="en-US" id="task_DF818596A22A46188BD058C380968653">
+                     <h2 class="title topictitle2" id="ariaid-title7">Recovering IO
+                        	 Modules During Firmware Upgrade
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_DF818596A22A46188BD058C380968653__context_9992886CDD6A407FB1924C6CC25A9650"> 
+                           		
+                           <p class="p">You can recover an
+                              		  IO Module during firmware upgrade by resetting it from a peer IO Module. After
+                              		  it is reset, it can derive the configuration from the fabric interconnect. 
+                              		
+                           </p> 
+                           	 
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links">
+                        <ul class="ullinks">
+                           <li class="link ulchildlink"><a href="#task_F7A37978AB7A4DF19AF049E9A8FE8038">Resetting an I/O Module from a Peer I/O Module</a></li>
+                        </ul>
+                     </nav>
+                     <!-- minitoc end -->
+                     <article class="topic task nested2" aria-labelledby="ariaid-title8" lang="en-US" id="task_F7A37978AB7A4DF19AF049E9A8FE8038">
+                        <h3 class="title topictitle3" id="ariaid-title8">Resetting an I/O
+                           	 Module from a Peer I/O Module
+                        </h3>
+                        <section class="body taskbody">
+                           <section class="section context" id="task_F7A37978AB7A4DF19AF049E9A8FE8038__context_DC7EC62D87D94DBF834A8920BEA2D1E6"> 
+                              		
+                              <p class="p">Sometimes, I/O
+                                 		  module upgrades can result in failures or I/O modules can become unreachable
+                                 		  from 
+                                 		  <span class="ph">Cisco UCS Manager</span>
+                                 		  due to memory leaks. You can reboot an I/O module that is unreachable through
+                                 		  its peer I/O module. 
+                                 		
+                              </p> 
+                              		
+                              <p class="p">Resetting the I/O
+                                 		  module restores the I/O module to factory default settings, deletes all cache
+                                 		  files and temporary files, but retains the size-limited OBFL file. 
+                                 		
+                              </p> 
+                              	 
+                           </section>
+                           <section class="tasklabel">
+                              <h4 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h4>
+                           </section>
+                           <hr noshade>
+                           <table class="stepTable" border="0">
+                              <tbody>
+                                 <tr class="li step">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;1</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Navigation</span> pane, click 
+                                          			 <span class="ph uicontrol">Equipment</span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;2</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Expand 
+                                          			 <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Chassis</span> &gt; <span class="ph uicontrol"> 
+                                                				  <var class="keyword varname">Chassis Number</var></span> &gt; <span class="ph uicontrol">IO
+                                                				  Modules</span></span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_F7A37978AB7A4DF19AF049E9A8FE8038__step_EC681C35C8A74B81975616516E004153">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;3</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">Choose the peer
+                                          			 I/O module of the I/O module that you want to reset. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_F7A37978AB7A4DF19AF049E9A8FE8038__step_CAF7C2DE2E354A6A904B2E56CAB2087D">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;4</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the 
+                                          			 <span class="keyword wintitle">Work</span> pane, click the 
+                                          			 <span class="ph uicontrol">General</span> tab. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr class="li step" id="task_F7A37978AB7A4DF19AF049E9A8FE8038__step_D7040FA28B6642EFA508A4AA5CF8872C">
+                                    <td align="left" valign="top" border="0" width="10%">
+                                       <p><b>Step&nbsp;5</b></p>
+                                    </td>
+                                    <td align="left" valign="top" border="0">
+                                       <p class="ph cmd">In the Actions
+                                          			 area, click 
+                                          			 <span class="ph uicontrol">Reset
+                                             				Peer IO Module</span>. 
+                                          		  
+                                       </p>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <hr noshade>
+                        </section>
+                        <!-- minitoc start -->
+                        <nav role="navigation" class="related-links"></nav>
+                        <!-- minitoc end -->
+                     </article>
+                  </article>
+               </article>
+            </article>
+         </main>
+      
+
+</div> 
+ 
+    </div>
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent noprint base-blowout">
+    <div class="eotPersonalization">
+        <section id="eotTDCampaign"></section>
+    </div>    
+    <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>Was this Document Helpful?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes" aria-label="Was this Document Helpful?? Yes">Yes</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no" aria-label="Was this Document Helpful?? No">No</button>
+  </span>
+  <span lang="en" class="eot-feedback-olwrap">
+    
+      <a href="javascript: void(0);" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">Feedback</a>
+    
+  </span>
+</div>
+
+
+</div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+    </div>
+			
+    <div class="letUsHelp">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eotLetUsHelp">
+    <h3>Contact Cisco</h3>
+    <ul>
+         <li><a id="eotLetUsHelpProdDocUrl" href="https://mycase.cloudapps.cisco.com/start?prodDocUrl=">Open a Support Case</a><img src="/etc/designs/cdc/fw/i/icon_lock_small.png" alt="login required"/></li>
+        <li>(Requires a <a href="//www.cisco.com/c/en/us/services/order-services.html">Cisco Service Contract</a>)</li>
+    </ul>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        var getURL=jQuery("#eotLetUsHelpProdDocUrl").attr("href"), 
+            domInd = location.href.indexOf('cisco.com') ;
+        if ( domInd > -1 && domInd < location.href.search(/\w\/\w/) ) {
+            getURL += encodeURI(location.href);
+        }
+		jQuery("#eotLetUsHelpProdDocUrl").attr("href",getURL);
+    });
+</script>
+
+
+    </div>
+
+    <div id="eotRightRailMBox"><!--MBox-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IT:components/mbox/banner-mbox:V0.0.0 -->
+
+
+
+<div>
+    <div class="mboxDefault"></div>   
+    <script type="text/javascript">
+        var test="";
+        if(test!=undefined && test.trim().length>0){
+           mboxCreate('en-us_dg_support_bookchapters','type=default','');
+        }else{
+           mboxCreate('en-us_dg_support_bookchapters','type=default');
+        }
+       
+    </script>
+</div>
+<!--MBox--></div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+	<script type="text/javascript">
+			    var eottdatp = document.getElementsByClassName('eot-tdatp');
+			    if (eottdatp && eottdatp.style) {
+        			eottdatp.style.display="none";
+			    }
+        		  </script>
+  	
+
+
+    </div>
+			
+    <div></div>
+
+</div>
+
+
+    </div>
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/us/en/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/clientlibs/responsive/js/books.min.js"></script>
+
+<script src="/etc/designs/cdc/fw/m/books_metricsrule.js" type="text/javascript" async></script>
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>

@@ -1,0 +1,2349 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="en" xml:lang="en"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="en/us";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.cpe === undefined) {
+        window.cpe = {};
+    }
+
+    cpe.accountName = "prod";
+    cpe.config = ["cinf","dsc","pps"];
+    cpe.hideMethod = "elements";
+
+    window.targetGlobalSettings = JSON.parse('{\x22timeout\x22:4000}');
+    window.targetPageParamsAll = () => JSON.parse('{\x22entity\x22:\x22{\\\x22id\\\x22:\\\x221692165285665563\\\x22,\\\x22categoryId\\\x22:\\\x22\\\x22}\x22}');
+
+    
+    const bullseyeLibrary = `/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/external/bullseye.js`;
+
+    import(bullseyeLibrary);
+</script>
+<script src="/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/regional-mbox/regional-mbox.js"></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <title>Cisco UCS Manager Server Management Guide, Release 4.3 - Diagnostics Configuration [Cisco UCS Manager] - Cisco</title>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="Diagnostics Configuration"  />
+    <meta name="title" content="Cisco UCS Manager Server Management Guide, Release 4.3 - Diagnostics Configuration [Cisco UCS Manager]"  />
+    <meta name="documentId" content="1692165285637562"  />
+    <meta name="templateName" content="book"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="WEM"  />
+    <meta name="docType" content="TSD Products Configuration Guide Chapter"  />
+    <meta name="concept" content="Cisco UCS Manager"  />
+    <meta name="iaPath" content="cisco.com#Products#Cisco Products#Servers - Unified Computing#Cisco UCS Manager"  />
+    <meta name="contentType" content="cisco.com#US#preSales"  />
+    <meta name="locale" content="US"  />
+    <meta name="language" content="en"  />
+    <meta name="country" content="US"  />
+    <meta name="CCID_Page" content="cc001777"  />
+    <meta name="date" content="Mon Jul 07 04:27:09 PDT 2025"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="Cisco UCS Manager Server Management Guide, Release 4.3 - Diagnostics Configuration [Cisco UCS Manager]"  />
+    <meta property="og:description" content="Diagnostics Configuration"  />
+    <meta property="og:url" content="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_managing_diagnostics.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_managing_diagnostics.html"/>
+	<link rel="alternate" hreflang="x-default" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_managing_diagnostics.html"/>
+<link rel="alternate" hreflang="ja-jp" href="https://www.cisco.com/c/ja_jp/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_managing_diagnostics.html"/>
+<link rel="alternate" hreflang="en-us" href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_managing_diagnostics.html"/>
+
+
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/en\/us\/td\/docs\/unified_computing\/ucs\/ucs\u002Dmanager\/GUI\u002DUser\u002DGuides\/Server\u002DMgmt\/4\u002D3\/b_cisco_ucs_manager_server_mgmt_guide_4_3\/m_gui_managing_diagnostics");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/cisco-sans.min.css" type="text/css">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/books.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", 'You are being logged out.');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "Diagnostics Configuration",  		  
+          "url": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_managing_diagnostics.html",
+          "description": "Diagnostics Configuration",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="psknnkyxelwrg2nhnokq-f-7c5bea721-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":53,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"dfa8e60","ak.r":37441,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"124.148.214.0","ak.cport":59285,"ak.gh":"23.199.68.167","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1772579733","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==PE3VlmKZa6u3+opuYFgVrO2RSARqA6jPCfKTaH96ZHbdsLceNBGzdMBOMXxPKr5AzkIzRVY0g59WHpt5Pb18yCf4qKKoiTmEFfWPf1gnqdKPC4slUv2h3LUfvA92vlfydPavATTYGd9a1Ktz0ju2IC+SrfmrfzGRbJ0Ie+DZYQD82a3yMSXubnPgJodqdfvvX7h3xHscGnGpB5/zWwid/fFH+5D6eh1qadLAE0z141I70ieVJKCU/JFnhvMd3EFpwDhUScYB3M3kPqimDOoz7tEpJk1Zm4rc4nQKgBNlMtnyXTWT9UJif5AG+yXTJ2PNqDY+JF2ZE8gOkvwlXjhK4juiEEe0yqeolUQ01yacvK3iTKdxxTjREnhoe3F9vhbA4hFsJ710n3idJB21FhFbRreh9QD8kIR6e3c/Z7pny88=","ak.pv":"540","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body id="wcq" class="fw-res cdc-support cdc-books cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">Skip to content</a></li>
+        <li><a id="skiplink-search" href="#">Skip to search</a></li>
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">Skip to footer</a></li>
+    </ul>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/us/en/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/index.html">Cisco.com Worldwide</a></li>
+            <li><a tabindex="-1" href="/c/en/us/products/index.html">Products and Services</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/solutions/index.html">Solutions</a></li>
+            <li><a tabindex="-1" href="/c/en/us/support/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/c/en/us/training-events.html">Learn</a></li>
+            <li><a tabindex="-1" href="//www.cisco.com/c/en/us/about/sitemap.html">Explore Cisco</a></li>
+            <li><a tabindex="-1" href="/c/en/us/buy.html">How to Buy</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Partners Home</a></li>                
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/cisco-partner-program/index.html?ccid=cc000864&dtid=odiprc001129">Partner Program</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/support-help/index.html">Support</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/tools/index.html?dtid=odiprc001129">Tools</a></li>
+            <li><a tabindex="-1" href="https://locatr.cloudapps.cisco.com/WWChannels/LOCATR/pf/index.jsp#/">Find a Cisco Partner</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/connect-with-a-partner/index.html?ccid=cc000864&dtid=odiprc001129">Meet our Partners</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html?dtid=odicdc001129">Become a Cisco Partner</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based user-driven-nav" aria-label="breadcrumbs" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/index.html'><span itemprop='name'>Home</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/index.html'><span itemprop='name'>Support</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/all-products.html'><span itemprop='name'>Product Support</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/category.html'><span itemprop='name'>Servers - Unified Computing</span><meta itemprop='position' content='4' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/series.html'><span itemprop='name'>Cisco UCS Manager</span><meta itemprop='position' content='5' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html'><span itemprop='name'>Configuration Guides</span><meta itemprop='position' content='6' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+        
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">Cisco UCS Manager Server Management Guide, Release 4.3</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   <!-- have to do this for _g.I18n to be defined in preview and publish modes -->
+  
+  <script type="text/javascript">
+      // initialize dictionary for i18n
+      cdc.util.ensureNamespace("cdc.rc");
+    cdc.rc.eotkeys = {
+        showOnly5Products : "Show Only 5 Products",       
+        showAllRowsProducts : "Show All nRows Products",
+        supportCommunityUrl : "https://community.cisco.com/t5/technology-and-support/ct-p/technology-support",
+        supportCommunity : "Cisco Community",
+        thankYou : "Thank You",
+        viewersAlso : "Customers Also Viewed", 
+        show : "Show", 
+        more : "More", 
+        showOnly3Documents: "Show Only 3 Documents"
+      };
+  </script>
+
+
+
+<div class="row blowout full visitedlinks">
+    <div class="col full">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers techdocs">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button aria-expanded="false" >Bias-Free Language</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>Bias-Free Language</h3>
+            <p>The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. <a href="https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html">Learn more</a> about how Cisco is using Inclusive Language.</p>
+        </div>
+        
+    </div><!-- disclaimers -->
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* this is needed for the translation selector */
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+    var bookTitle = 'Book Title Page';
+</script>
+
+<span id="actionBar-top"></span>
+<section id="actionBar" class="noprint base-blowout">
+    <span class="icons">
+        
+        <button class="bookToc simpleOverlay-trigger" id="onlyforTrigger"> <!--US140575-->
+            Book Contents
+        </button>
+            <div class="bookToc simpleOverlay-content">
+               <div role="heading" class="title">Book Contents</div>
+               <!--googleoff: index--><!--googleoff: snippet-->  
+               <div class="content">
+                  
+
+
+
+<ul id="bookToc">
+    <li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_preface.html">Preface</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_new-and-changed-information.html">New and Changed
+	 Information</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_server_management_overview-4_3.html">Server Management
+	 Overview</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_server_license_management_4_3.html">Server License
+	 Management</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_registering_ucs_domains_with_ucsc_4_3.html">Registering 
+	 Cisco UCS Domains with 
+	 Cisco UCS Central</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_power_capping_in_cisco_ucs.html">Power Capping and
+	 Power Management in Cisco UCS</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_managing_blade_servers.html"> Blade Server
+	 Hardware Management</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_rack-mount_server_management.html">Rack-Mount Server
+	 Hardware Management</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_dense_storage_rack_server_management.html">S3X60
+						  Server Node
+	 Hardware Management</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_server_pools_configuration.html">Server Pools</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_server_boot_configuration.html">Server Boot</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_service_profile_configuraiton.html">Service
+	 Profiles</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_server-related_policy_configuration.html">Server-Related
+	 Policies</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_firmware_upgrades.html">Firmware
+	 Upgrades</a></li>
+<li><a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_managing_diagnostics.html">Diagnostics Configuration</a></li>
+
+</ul>
+
+
+               </div>
+               <!--googleon: index--><!--googleon: snippet-->               
+            </div>
+
+        
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='versionddcontainer chapter'></div>
+<script type="text/html" class="versionstemp">
+            <div class="versionsdd">
+                <button class="versionbutton" aria-haspopup="true" aria-expanded="false" aria-labelledby="other versions" class="version"><label></label></button>
+                <ul class="versionlist" aria-labelledby="other versions">
+                <%
+                    let pageUrl = window.location.pathname.replace("/content/","/c/").toLowerCase();
+                    if (true) pageUrl = pageUrl.substring(0,pageUrl.lastIndexOf("/"))+".html";
+                    for(let i=0; i< data.length; i++) {
+                        let item = data[i],
+                            myurl = item.linkUrl,
+                            urlm = myurl.replace("/content/","/c/");;
+                            mytitle = item.linkTitle;
+                            myclass= urlm.toLowerCase() == pageUrl ? "class=\"selected\"":""; 
+%>
+                    <li><a href="${myurl}" ${myclass}>${mytitle}</a></li>
+<%
+                  }   %>
+                </ul>
+             </div>
+</script>
+    
+        <span class="utilities">
+          <button title="Search in this Book" class="mobileSearch simpleOverlay-trigger">
+            Search
+          </button>
+          <div class="mobileSearch simpleOverlay-content">
+            <div class="title">Find Matches in This Book</div>
+              <!--googleoff: index--><!--googleoff: snippet-->  
+              <div class="content">
+                <form id="mobileBooksearch" class="chapter">
+                   <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit"></button>
+                   <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+                </form>
+                <div id="overlayResults" role="region" aria-live="polite" >
+                   <!-- important, keep this results div begin end on same line in here -->
+                   <div class="results"></div>
+                </div>
+              </div>
+              <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "Save";
+    cdc.rc.savedoc.saved = "Saved";
+</script>
+
+    <button class="save" aria-expanded="false" aria-label="Save">
+        <label>Save</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_managing_diagnostics.html">Log in</a> to Save Content
+    </div>
+
+
+          <!-- Translation Selctor -->
+          <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+
+                                <div class="noprint translations">
+                                        <a href="#" tabindex="-1">
+                                                <button type="button" class="translations translations-link anchor translationOptions simpleOverlay-trigger">
+                                                        <div class="toolbarIcon translationsIcon"></div><label class="iconLabel" id="onlyForNonEn">Translations</label>
+                                                </button>
+                                        </a>
+                                </div>
+           
+
+
+ 
+          <div class="translations simpleOverlay-content" role="dialog" id="dialogt" aria-labelledby="onlyForNonEN" aria-modal="true">
+            <div role="heading" class="title">Available Languages</div>
+               <!--googleoff: index--><!--googleoff: snippet--> 
+            <script language="javascript">                    
+                cdc.translations.map = "{ja-jp=https://www.cisco.com/c/ja_jp/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_managing_diagnostics.html, en-us=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_managing_diagnostics.html, x-default=https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_managing_diagnostics.html}";//storing the map for use in the JS
+                cdc.translations.locale="en_us";
+            </script>
+            <div class="content">
+              <div class="availableLanguagesList">
+                  <ul id="translationsList">
+                  </ul> 
+              </div>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+          
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // stored value for overlay label to use in js
+    var downloadOPtionLabel = 'Download Options',
+    	bookSearchlabel = 'Find Matches in This Book',
+    	translationsLabel = 'Translations',
+    	bookConentLabel= 'Book Contents';
+</script>
+
+
+        
+
+
+
+        <button title="Document Download Options" id="dwnld-button" class="downloadOptions simpleOverlay-trigger" aria-expanded="false">
+            Download
+        </button>
+        <div class="downloadOptions simpleOverlay-content" role="dialog" id="dialogd" aria-labelledby="dwnld-button" aria-modal="true" class="default_dialog">
+            <div role="heading" class="title">Download Options</div>
+            <!--googleoff: index--><!--googleoff: snippet-->  
+            <div class="content">
+                <header>
+
+                    <h3 class="h4"> Book Title</p>
+                    <p>Cisco UCS Manager Server Management Guide, Release 4.3</p>
+                    <p class="h4"> Chapter Title</p>
+                    <h3>Diagnostics Configuration</p>
+
+                </header>
+                <ul>
+
+                        <li >    
+                            <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3.pdf" class="pdfIcon">PDF - Complete Book 
+                            <span>(5.24 MB)</span></a>
+
+                                   <a href="/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_guide_4_3/m_gui_managing_diagnostics.pdf" class="chapter">PDF - This Chapter <span>(1.04 MB)</span></a>
+                                                            
+                            <p>View with Adobe Reader on a variety of devices</p>
+                        </li>                                  
+              </ul>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+        </div>
+
+          <button title="Print Friendly Page" class="print simpleOverlay-trigger">
+              Print
+          </button>
+        </span> 
+    </span>
+    <form id="booksearch" tabindex="0" class="chapter">
+       <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+       <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+    </form>
+      <div id="searchresult" role="region" aria-live="polite"><button class="close" title="Close Panel"><span></span><span></span></button>
+         <span class="headArrow"></span>
+         <h2>Results</h2>
+         <div class="matches">
+         </div>
+         <div class="results" tabindex="0">
+         </div>
+      </div>
+      <div id="searchResultChapterTitle"></div>
+</section>
+<script type="text/html" id="navigateMatchesTemplate">
+   <div>
+      <button class="up on" title="Previous Match"><span></span></button>
+      <button class="up off" title="Previous Match Not Available"><span></span></button>
+      <span class="matchlabel">Matches</span>
+      <button class="down on" title="Next Match"><span></span></button>
+      <button class="down off" title="Next Match Not Available"><span></span></button>
+   </div>
+</script>
+<script type="text/html" id="noChapterMatchTemplate">
+   <p>There are no Matches in this chapter.</p>
+</script>
+<script type="text/html" id="searchResultsListTemplate">
+   <p class="h3">Chapters with Matches</p>
+   <ul>
+<% var i = 0;
+    while ( modelData.links[i] ) {  %>
+      <li>
+<%     curpage = (window.location.pathname.indexOf(modelData.links[i].href) > -1 )?true:false;
+        if ( i === modelData.curpage ) {
+            if ( ! jQuery('.mobileSearch').css("display") == "block") { %>
+               <span class="currentIndicator"></span>${modelData.links[i].title}
+<%         } else {                %>
+               <span class="currentIndicator"></span><button class="curpage" data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%         }
+        } else {  %>
+            <button data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%     }  %>            
+      </li> 
+<% i++;
+    } %>
+   </ul> 
+</script>      
+<script type="text/html" id="noBookMatchTemplate">
+   <p class="head">No matches found in this book</p>
+   <p>This feature looks for an exact match of what you entered in the box.</p>
+   <p>If you entered several words, try reducing the entry to one or two and search again.</p>
+</script>
+<script type="text/html" id="errorTemplate">
+   <p>Search is currently unavailable due to technical issues. We are working to resolve the problem as quickly as possible.</p>
+</script>
+<script type="text/html" id="mobileSearchFooterTemplate">
+   <div id="mobileSearchFooter">
+      <button class="mobileSearch" title="Search in this Book"></button>
+      <button class="closeFooter"><span></span><span></span></button>
+      <div class="matches"> 
+      </div>
+   </div>   
+</script>
+ 
+    </div>
+</div>
+<div class="row blowout narrow-wide-v2 flip visitedlinks">
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div id="documentInfo">
+                  <dl>
+                     
+                      <dt>Updated:</dt><dd> July 7, 2025</dd>
+                     
+                  </dl>
+                    
+              </div>
+
+ 
+    </div>
+    <div id="chapterTitleDiv" class="col wide-v2 indent-at-xlarge">
+        <!-- this will be chapter title for chapters or header for TOC for books -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="chapter-title">Chapter: Diagnostics Configuration </h2>  
+    
+
+    </div>
+</div>
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <div id="pageContentDiv" class="col wide-v2 indent-at-xlarge" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
+
+    
+ 
+ 
+
+<div id="chapterToc" class="base-blowout">
+    <button><span></span>Chapter Contents</button>
+    <div>
+    
+<ul>
+<li><a href="#topic_zvc_x1d_qz">Diagnostics Configuration</a></li>
+<li><a href="#concept_768644328C2447D9855718AECD6C0F1C">Overview of Cisco UCS Manager Diagnostics</a></li>
+<li><a href="#task_xl3_vft_dz">Creating a Diagnostics Policy</a></li>
+<li><a href="#d7594e272a1635">Diagnostics Test on a Blade Server</a>
+<ul>
+<li><a href="#task_2A399E1CF06041B2B4A872E4D92EB543">Starting a Diagnostics Test on a Blade Server</a></li>
+<li><a href="#task_DC7A6C3B064D44A9A59DCA741701B874">Stopping a Diagnostics Test on a Blade Server</a></li>
+</ul></li>
+<li><a href="#d7594e403a1635">Diagnostics Test on a Rack Server</a>
+<ul>
+<li><a href="#task_cnq_slg_1cb">Starting a Diagnostics Test on a Rack Server</a></li>
+<li><a href="#task_fhf_zlg_1cb">Stopping a Diagnostics Test on a Rack Server</a></li>
+</ul></li>
+<li><a href="#task_ylj_yhq_cz">Starting a Diagnostics Tests on All Servers</a></li>
+<li><a href="#task_krr_xhq_cz">Stopping a Diagnostics Tests on All Servers</a></li>
+<li><a href="#task_2A0AD034EEAE48D8B219CE7DF7C62A78">Viewing the Server Diagnostics Status/Result</a></li>
+<li><a href="#reference_vlv_rg4_jz">Diagnostics Troubleshooting</a></li></ul>
+    <button id="chapterToc-close">Close<span></span></button>
+    </div>
+</div>
+
+ 
+    <div id="chapterContent">
+    
+                  <h1 class="title topictitle1" id="ariaid-title1">Diagnostics Configuration</h1>
+                  <!-- minitoc start -->
+                  <nav role="navigation" class="related-links">
+                     <ul class="ullinks">
+                        <li class="link ulchildlink"><a href="#concept_768644328C2447D9855718AECD6C0F1C">Overview of Cisco UCS Manager Diagnostics</a></li>
+                        <li class="link ulchildlink"><a href="#task_xl3_vft_dz">Creating a Diagnostics Policy</a></li>
+                        <li class="link ulchildlink"><a href="#task_ylj_yhq_cz">Starting a Diagnostics Tests on All Servers</a></li>
+                        <li class="link ulchildlink"><a href="#task_krr_xhq_cz">Stopping a Diagnostics Tests on All Servers</a></li>
+                        <li class="link ulchildlink"><a href="#task_2A0AD034EEAE48D8B219CE7DF7C62A78">Viewing the Server Diagnostics Status/Result</a></li>
+                        <li class="link ulchildlink"><a href="#reference_vlv_rg4_jz">Diagnostics Troubleshooting</a></li>
+                     </ul>
+                  </nav>
+                  <!-- minitoc end -->
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title2" lang="en-US" id="concept_768644328C2447D9855718AECD6C0F1C">
+                     <h2 class="title topictitle2" id="ariaid-title2">Overview of Cisco UCS Manager Diagnostics</h2>
+                     <section class="body conbody">
+                        <p class="p">The <span class="ph" id="concept_768644328C2447D9855718AECD6C0F1C__CalManager">Cisco UCS Manager</span> diagnostics tool enables you to verify the health of the hardware components on your servers. The diagnostics tool provides
+                           a variety of tests to exercise and stress the various hardware subsystems on the servers, such as memory and CPU. You can
+                           use the tool to run a sanity check on the state of your servers after you fix or replace a hardware component. You can also
+                           use this tool to run comprehensive burn-in tests before you deploy a new server in your production environment. 
+                        </p>
+                        <p class="p">When a system is new, a default diagnostics policy is created in org scope. This default policy is named default and it cannot
+                           be deleted. The user will receive an error message if they try to delete it. The default diagnostic policy is the preferred
+                           way to execute the same set of tests across all servers. Any diagnostic policy, including the default can be customized. 
+                        </p>
+                        <p class="p">The default policy only has one memory test. The default parameters of the memory test can be modified. In addition, the memory
+                           test within the default diagnostics policy can be deleted. If it does not have a memory test, the diagnostic policy will not
+                           run.
+                        </p>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title3" lang="en-US" id="task_xl3_vft_dz">
+                     <h2 class="title topictitle2" id="ariaid-title3">Creating a Diagnostics Policy</h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_xl3_vft_dz__d7594e96">
+                           
+                           
+                        </section>
+                        <section class="section prereq p" id="task_xl3_vft_dz__d7594e91">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section>
+                           
+                           <p class="p">You must have admin privileges to perform this task.</p>
+                           
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_xl3_vft_dz__steps_tyw_tky_ty">
+                           <tbody>
+                              <tr class="li step" id="task_xl3_vft_dz__step_B1688E401A494AC187792E655BAC15BC">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Navigate to <span class="ph menucascade"><span class="ph uicontrol">Servers</span> &gt; <span class="ph uicontrol">Policies</span> &gt; <span class="ph uicontrol">Diagnostics Policies</span></span>. 
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_xl3_vft_dz__step_842ACE8253C84782B4BB23299D85665D">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> Click <span class="ph uicontrol">Add</span>. 
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Complete the following fields: </p>
+                                    <section class="itemgroup info">
+                                       
+                                       <table width="100%" border="1" class="table" id="task_xl3_vft_dz__table_cd4_5lt_dz">
+                                          <caption></caption>
+                                          <colgroup>
+                                             <col style="width:50%">
+                                             <col style="width:50%">
+                                          </colgroup>
+                                          <tbody class="tbody">
+                                             <tr>
+                                                <td class="entry">
+                                                   
+                                                   <p class="p"><strong class="ph b">Field</strong></p>
+                                                   
+                                                </td>
+                                                <td class="entry">
+                                                   
+                                                   <p class="p"><strong class="ph b">Description</strong></p>
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry"><span class="ph uicontrol">Name</span></td>
+                                                <td class="entry">
+                                                   
+                                                   <p class="p">Name of the diagnostics policy. The character limit is 16.</p>
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry"><span class="ph uicontrol">Description</span></td>
+                                                <td class="entry">
+                                                   
+                                                   <p class="p">Description of the diagnostics policy. This is optional.</p>
+                                                   
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click <span class="ph uicontrol">Next</span>.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click <span class="ph uicontrol">Add</span>.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Complete the following fields:</p>
+                                    <section class="itemgroup info">
+                                       
+                                       <table width="100%" border="1" class="table" id="task_xl3_vft_dz__table_hmg_h5c_1z">
+                                          <caption></caption>
+                                          <colgroup>
+                                             <col style="width:33.33333333333333%">
+                                             <col style="width:66.66666666666666%">
+                                          </colgroup>
+                                          <thead class="thead">
+                                             <tr>
+                                                <th font-weight="bold" class="entry" id="task_xl3_vft_dz__table_hmg_h5c_1z__entry__1">Name </th>
+                                                <th font-weight="bold" class="entry" id="task_xl3_vft_dz__table_hmg_h5c_1z__entry__2">Description </th>
+                                             </tr>
+                                          </thead>
+                                          <tbody class="tbody">
+                                             <tr>
+                                                <td class="entry" headers="task_xl3_vft_dz__table_hmg_h5c_1z__entry__1 ">
+                                                   
+                                                   <p class="p">
+                                                      <span class="ph uicontrol">Order</span>
+                                                      
+                                                   </p>
+                                                   
+                                                </td>
+                                                <td class="entry" headers="task_xl3_vft_dz__table_hmg_h5c_1z__entry__2 ">
+                                                   
+                                                   <p class="p">The order in which the tests will be executed.</p>
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_xl3_vft_dz__table_hmg_h5c_1z__entry__1 "><span class="ph uicontrol">CPU Filter</span></td>
+                                                <td class="entry" headers="task_xl3_vft_dz__table_hmg_h5c_1z__entry__2 ">
+                                                   
+                                                   <p class="p"> Sets the CPU filter to all CPUs or to a specified CPU.</p>
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_xl3_vft_dz__table_hmg_h5c_1z__entry__1 ">
+                                                   
+                                                   <p class="p">
+                                                      <span class="ph uicontrol">Loop Count</span>
+                                                      
+                                                   </p>
+                                                   
+                                                </td>
+                                                <td class="entry" headers="task_xl3_vft_dz__table_hmg_h5c_1z__entry__2 ">
+                                                   
+                                                   <p class="p">Sets the loop count to the specified iterations. The range is from 1-1000.</p>
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_xl3_vft_dz__table_hmg_h5c_1z__entry__1 "><span class="ph uicontrol">Memory Chunk Size</span>
+                                                   
+                                                </td>
+                                                <td class="entry" headers="task_xl3_vft_dz__table_hmg_h5c_1z__entry__2 ">
+                                                   
+                                                   <p class="p">Sets the memory chunk to 5mb-chunk or big-chunk.</p>
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_xl3_vft_dz__table_hmg_h5c_1z__entry__1 "><span class="ph uicontrol">Memory Size</span>
+                                                   
+                                                </td>
+                                                <td class="entry" headers="task_xl3_vft_dz__table_hmg_h5c_1z__entry__2 ">
+                                                   
+                                                   <p class="p">Sets the memory size to a specific value.</p>
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_xl3_vft_dz__table_hmg_h5c_1z__entry__1 "><span class="ph uicontrol">Pattern</span></td>
+                                                <td class="entry" headers="task_xl3_vft_dz__table_hmg_h5c_1z__entry__2 ">
+                                                   
+                                                   <p class="p">Sets the memory test to butterfly, killer, prbs, prbs-addr, or prbs-killer.</p>
+                                                   
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click <span class="ph uicontrol">OK</span>.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;8</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click <span class="ph uicontrol">Finish</span>.
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <p class="topictitle1" id="d7594e272a1635">Diagnostics Test on a Blade Server</p>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title4" lang="en-US" id="task_2A399E1CF06041B2B4A872E4D92EB543">
+                     <h2 class="title topictitle2" id="ariaid-title4">Starting a Diagnostics Test on a Blade Server</h2>
+                     <section class="body taskbody">
+                        <section class="section prereq p" id="task_2A399E1CF06041B2B4A872E4D92EB543__prereq_tgw_4ft_dz">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section> You must have admin privileges to perform this task.
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_2A399E1CF06041B2B4A872E4D92EB543__steps_tyw_tky_ty">
+                           <tbody>
+                              <tr class="li step" id="task_2A399E1CF06041B2B4A872E4D92EB543__step_B1688E401A494AC187792E655BAC15BC">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Navigate to <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Chassis</span> &gt; <span class="ph uicontrol">Server</span></span>. 
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_2A399E1CF06041B2B4A872E4D92EB543__step_92F5992B68A14E2B9689D24B648AC30C">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Choose the server for which you want to start the diagnostics test. </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_2A399E1CF06041B2B4A872E4D92EB543__step_842ACE8253C84782B4BB23299D85665D">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> Click on the <span class="ph uicontrol">Diagnostics</span> tab. 
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click <span class="ph uicontrol">Start</span>. Once the diagnostics test has started, the button will be grayed out.
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title5" lang="en-US" id="task_DC7A6C3B064D44A9A59DCA741701B874">
+                     <h2 class="title topictitle2" id="ariaid-title5">Stopping a Diagnostics Test on a Blade Server</h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              <tr class="li step" id="task_DC7A6C3B064D44A9A59DCA741701B874__step_B1688E401A494AC187792E655BAC15BC">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Navigate to <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Chassis</span> &gt; <span class="ph uicontrol">Server</span></span>. 
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_DC7A6C3B064D44A9A59DCA741701B874__step_92F5992B68A14E2B9689D24B648AC30C">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Choose the server for which you want to stop the diagnostics test. </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_DC7A6C3B064D44A9A59DCA741701B874__step_842ACE8253C84782B4BB23299D85665D">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> Click on the <span class="ph uicontrol">Diagnostics</span> tab. 
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click <span class="ph uicontrol">Stop</span>. Once the diagnostic text has stopped, the button will be grayed out.
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <p class="topictitle1" id="d7594e403a1635">Diagnostics Test on a Rack Server</p>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title6" lang="en-US" id="task_cnq_slg_1cb">
+                     <h2 class="title topictitle2" id="ariaid-title6">Starting a Diagnostics Test on a Rack Server</h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_cnq_slg_1cb__d7594e420">Diagnostics Test is available for <span class="ph">C220 M5</span>, <span class="ph">C240 M5</span><span class="ph">, <span class="ph">C220 M6</span>, <span class="ph">C240 M6</span></span>, <span class="ph">, C220 M7 and C240 M7</span> and <span class="ph">C480 M5</span><span class="ph">/<span class="ph">C480 M5 ML</span></span> rack servers.
+                        </section>
+                        <section class="section prereq p" id="task_cnq_slg_1cb__prereq_tgw_4ft_dz">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section> You must have admin privileges to perform this task.
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_cnq_slg_1cb__steps_tyw_tky_ty">
+                           <tbody>
+                              <tr class="li step" id="task_cnq_slg_1cb__step_B1688E401A494AC187792E655BAC15BC">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Navigate to <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Rack Mounts</span> &gt; <span class="ph uicontrol">Server</span></span>. 
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_cnq_slg_1cb__step_92F5992B68A14E2B9689D24B648AC30C">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Choose the server for which you want to start the diagnostics test. </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_cnq_slg_1cb__step_842ACE8253C84782B4BB23299D85665D">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> Click on the <span class="ph uicontrol">Diagnostics</span> tab. 
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click <span class="ph uicontrol">Start</span>. Once the diagnostics test has started, the button will be grayed out.
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title7" lang="en-US" id="task_fhf_zlg_1cb">
+                     <h2 class="title topictitle2" id="ariaid-title7">Stopping a Diagnostics Test on a Rack Server</h2>
+                     <section class="body taskbody">
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              <tr class="li step" id="task_fhf_zlg_1cb__step_B1688E401A494AC187792E655BAC15BC">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Navigate to <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Rack Mounts</span> &gt; <span class="ph uicontrol">Server</span></span>. 
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_fhf_zlg_1cb__step_92F5992B68A14E2B9689D24B648AC30C">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Choose the server for which you want to stop the diagnostics test. </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_fhf_zlg_1cb__step_842ACE8253C84782B4BB23299D85665D">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> Click on the <span class="ph uicontrol">Diagnostics</span> tab. 
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click <span class="ph uicontrol">Stop</span>. Once the diagnostic text has stopped, the button will be grayed out.
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title8" lang="en-US" id="task_ylj_yhq_cz">
+                     <h2 class="title topictitle2" id="ariaid-title8">Starting a Diagnostics Tests on All Servers</h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_ylj_yhq_cz__d7594e561">
+                           
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr>
+                                       
+                                       <p class="p">Starting diagnostics testing all servers will cause a reboot of each individual server.</p>
+                                       
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table>
+                           
+                        </section>
+                        <section class="section prereq p" id="task_ylj_yhq_cz__prereq_tgw_4ft_dz">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section> You must have admin privileges to perform this task.
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_ylj_yhq_cz__steps_tyw_tky_ty">
+                           <tbody>
+                              <tr class="li step" id="task_ylj_yhq_cz__step_B1688E401A494AC187792E655BAC15BC">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Navigate to <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Diagnostics</span></span>. 
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click <span class="ph uicontrol">Start</span>. Once the diagnostics test has started, the link will be grayed out.
+                                    </p>
+                                    <section class="itemgroup stepresult">In the <span class="ph uicontrol">Diagnostic Result</span> table, you can view the following information:
+                                       <table width="100%" border="1" class="table" id="task_ylj_yhq_cz__table_cd4_5lt_dz">
+                                          <caption></caption>
+                                          <colgroup>
+                                             <col style="width:50%">
+                                             <col style="width:50%">
+                                          </colgroup>
+                                          <tbody class="tbody">
+                                             <tr>
+                                                <td class="entry">
+                                                   
+                                                   <p class="p"><strong class="ph b">Field</strong></p>
+                                                   
+                                                </td>
+                                                <td class="entry">
+                                                   
+                                                   <p class="p"><strong class="ph b">Description</strong></p>
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry"><span class="ph uicontrol">Name</span></td>
+                                                <td class="entry">
+                                                   
+                                                   <p class="p">The system-defined server name.</p>
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry"><span class="ph uicontrol">Chassis ID</span></td>
+                                                <td class="entry">
+                                                   
+                                                   <p class="p">The unique identifier for the chassis. This numeric identifier is assigned based on the location of the chassis within the
+                                                      system.
+                                                   </p>
+                                                   
+                                                   <table class="olh_note" border="0" role="note">
+                                                      <tr>
+                                                         <td width="1%" class="td_faq" role="heading" border="0">
+                                                            <p><b>Note</b></p>&nbsp;
+                                                         </td>
+                                                         <td border="0" class="td_faq">
+                                                            <section class="note__content">
+                                                               
+                                                               <p class="p">Not applicable for rack servers.</p>
+                                                               
+                                                            </section>
+                                                         </td>
+                                                      </tr>
+                                                   </table>
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry"><span class="ph uicontrol">PID</span></td>
+                                                <td class="entry">
+                                                   
+                                                   <p class="p">The server model PID.</p>
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry"><span class="ph uicontrol">Overall Progress Percentage</span></td>
+                                                <td class="entry">
+                                                   
+                                                   <p class="p">A description of the overall progress percentage of the diagnostics test on the server.</p>
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry"><span class="ph uicontrol">Operation Status</span></td>
+                                                <td class="entry">
+                                                   
+                                                   <p class="p">A description of the diagnostics operation status of the server.</p>
+                                                   
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <table class="olh_note" border="0" role="note">
+                                          <tr>
+                                             <td width="1%" class="td_faq" role="heading" border="0">
+                                                <p><b>Note</b></p>&nbsp;
+                                             </td>
+                                             <td border="0" class="td_faq">
+                                                <section class="note__content">
+                                                   
+                                                   <p class="p">If a server fails to run the diagnostic test, click on the server link and to view the error description under the <span class="ph uicontrol">Diagnostics</span> tab. You can also view the faults generated in the <span class="ph uicontrol">Faults</span> tab.
+                                                   </p>
+                                                   
+                                                </section>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title9" lang="en-US" id="task_krr_xhq_cz">
+                     <h2 class="title topictitle2" id="ariaid-title9">Stopping a Diagnostics Tests on All Servers</h2>
+                     <section class="body taskbody">
+                        <section class="section prereq p" id="task_krr_xhq_cz__prereq_tgw_4ft_dz">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section> You must have admin privileges to perform this task.
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0" id="task_krr_xhq_cz__steps_tyw_tky_ty">
+                           <tbody>
+                              <tr class="li step" id="task_krr_xhq_cz__step_B1688E401A494AC187792E655BAC15BC">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Navigate to <span class="ph menucascade"><span class="ph uicontrol">Equipment</span> &gt; <span class="ph uicontrol">Diagnostics</span></span>. 
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Click <span class="ph uicontrol">Stop</span>. Once the diagnostics test has stopped, the link will be grayed out.
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1 no_summary_steps" aria-labelledby="ariaid-title10" lang="en-US" id="task_2A0AD034EEAE48D8B219CE7DF7C62A78">
+                     <h2 class="title topictitle2" id="ariaid-title10">Viewing the Server Diagnostics Status/Result</h2>
+                     <section class="body taskbody">
+                        <section class="section prereq p" id="task_2A0AD034EEAE48D8B219CE7DF7C62A78__prereq_BE918DC097C44D749AE3FE2C6FEA1AB1">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section> 
+                           		
+                           <p class="p">You can run the
+                              		  diagnostic test on individual servers through CLI and view the status on this
+                              		  page. 
+                              		
+                           </p> 
+                           	 
+                        </section>
+                        <section class="tasklabel">
+                           <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Procedure</h3>
+                        </section>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              <tr class="li step" id="task_2A0AD034EEAE48D8B219CE7DF7C62A78__step_BA1F9AEA0D354986B43699E264211BDC">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> In the 
+                                       			 <span class="ph uicontrol">Navigation</span> pane, click 
+                                       			 <span class="ph uicontrol">Equipment</span>. 
+                                       		  
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_2A0AD034EEAE48D8B219CE7DF7C62A78__step_8348B65EB7B64E9EAE3FAF9C5CEBED03">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd">Expand <span class="ph uicontrol">Equipment &gt;</span>
+                                       					<span class="ph uicontrol">Chassis &gt; </span><span class="ph uicontrol">Servers</span>. 
+                                    </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">or for rack servers, Expand <span class="ph uicontrol">Equipment &gt;</span>
+                                          						<span class="ph uicontrol">Rack Mounts &gt; </span><span class="ph uicontrol">Server</span></p>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_2A0AD034EEAE48D8B219CE7DF7C62A78__step_A2E91FB5A0C2482BA0FB2BA62D687E62">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> Choose the
+                                       			 server for which you want to view the diagnostic status and then click the 
+                                       			 <span class="ph uicontrol">Diagnostics</span> tab. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info">
+                                       					
+                                       <p class="p">You can view the following information:</p>
+                                       					
+                                       <table width="100%" border="1" class="table" id="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B">
+                                          <caption></caption>
+                                          <colgroup>
+                                             <col style="width:33.33333333333333%">
+                                             <col style="width:66.66666666666666%">
+                                          </colgroup>
+                                          <thead class="thead">
+                                             <tr>
+                                                <th font-weight="bold" class="entry" id="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__1">Name 
+                                                   				  
+                                                </th>
+                                                <th font-weight="bold" class="entry" id="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__2">Description 
+                                                   				  
+                                                </th>
+                                             </tr>
+                                          </thead>
+                                          <tbody class="tbody">
+                                             <tr>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__1 ">
+                                                   								
+                                                   <p class="p"><span class="ph uicontrol">Diagnostic Policies</span></p>
+                                                   							
+                                                </td>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__2 ">
+                                                   								
+                                                   <p class="p">Enables the user to select a diagnostics policy and apply it to a specific server.</p>
+                                                   							
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__1 ">
+                                                   								
+                                                   <p class="p"><span class="ph uicontrol">Start/Stop</span></p>
+                                                   							
+                                                </td>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__2 ">
+                                                   								
+                                                   <p class="p">Enables the user to start or stop a diagnostics test on a specific server</p>
+                                                   							
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__1 ">
+                                                   								<span class="ph uicontrol">Operation State</span>
+                                                   							
+                                                </td>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__2 ">The server's diagnostics operation status. Possible values are Idle, In-Progress, Completed, Failed, and Cancelled.</td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__1 "><span class="ph uicontrol">FSM Status Descr</span>
+                                                   							
+                                                </td>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__2 ">A brief description of the current task in the server's diagnostics operation.</td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__1 "><span class="ph uicontrol">FSM Progress</span> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__2 ">The overall progress of the diagnostics operation being executed on the server. </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__1 "><span class="ph uicontrol">Test Overall
+                                                      						Progress</span> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__2 ">The overall progress of the diagnostics test. </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__1 "><span class="ph uicontrol">Error Description</span> 
+                                                   				  
+                                                </td>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_BBBA8D657C764FBE8C5F8EDC38DED33B__entry__2 ">A description of the error returned from the diagnostics operation. </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       					
+                                       <table width="100%" border="1" class="table" id="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_639F78A734334408B120CE43863C6F24">
+                                          <caption><span class="table--title-label tabletitle">Table 1. </span><span class="tabletitle">Diagnostic Result</span></caption>
+                                          <colgroup>
+                                             <col style="width:33.33333333333333%">
+                                             <col style="width:66.66666666666666%">
+                                          </colgroup>
+                                          <thead class="thead">
+                                             <tr>
+                                                <th font-weight="bold" class="entry" id="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_639F78A734334408B120CE43863C6F24__entry__1">Name </th>
+                                                <th font-weight="bold" class="entry" id="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_639F78A734334408B120CE43863C6F24__entry__2">Description </th>
+                                             </tr>
+                                          </thead>
+                                          <tbody class="tbody">
+                                             <tr>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_639F78A734334408B120CE43863C6F24__entry__1 "><span class="ph uicontrol">ID </span></td>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_639F78A734334408B120CE43863C6F24__entry__2 "> The unique identifier associated with the test. </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_639F78A734334408B120CE43863C6F24__entry__1 ">
+                                                   										
+                                                   <p class="p"><span class="ph uicontrol">Test Type</span></p>
+                                                   									
+                                                </td>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_639F78A734334408B120CE43863C6F24__entry__2 ">
+                                                   										
+                                                   <p class="p">The type of diagnostics test. </p>
+                                                   									
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_639F78A734334408B120CE43863C6F24__entry__1 "><span class="ph uicontrol">Status </span></td>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_639F78A734334408B120CE43863C6F24__entry__2 ">The status of the test execution. Values are: Idle, In Progress, Completed, or Failed. </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_639F78A734334408B120CE43863C6F24__entry__1 "><span class="ph uicontrol">Description</span>
+                                                   									
+                                                </td>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_639F78A734334408B120CE43863C6F24__entry__2 ">The description of the diagnostics test run. Once the test is complete, it provides detailed descriptions of the result.</td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_639F78A734334408B120CE43863C6F24__entry__1 "><span class="ph uicontrol">Result </span></td>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_639F78A734334408B120CE43863C6F24__entry__2 ">The result of the diagnostics test. Values are Pass, Fail, or NA.</td>
+                                             </tr>
+                                             <tr>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_639F78A734334408B120CE43863C6F24__entry__1 "><span class="ph uicontrol">Progress Percentage</span></td>
+                                                <td class="entry" headers="task_2A0AD034EEAE48D8B219CE7DF7C62A78__table_639F78A734334408B120CE43863C6F24__entry__2 ">The progress percentage of the diagnostics test. </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       				
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic reference nested1" aria-labelledby="ariaid-title11" lang="en-US" id="reference_vlv_rg4_jz">
+                     <h2 class="title topictitle2" id="ariaid-title11">Diagnostics Troubleshooting</h2>
+                     <section class="body refbody">
+                        <section class="section" id="reference_vlv_rg4_jz__d7594e934">
+                           
+                           <table width="100%" border="1" class="table" id="reference_vlv_rg4_jz__table_uth_qh4_jz">
+                              <caption></caption>
+                              <colgroup>
+                                 <col>
+                                 <col>
+                              </colgroup>
+                              <tbody class="tbody">
+                                 <tr>
+                                    <td class="entry">
+                                       
+                                       <p class="p"><strong class="ph b">Issue</strong></p>
+                                       
+                                    </td>
+                                    <td class="entry">
+                                       
+                                       <p class="p"><strong class="ph b">Steps to Debug</strong></p>
+                                       
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry">
+                                       
+                                       <p class="p">If the BIOS detects a bad DIMM, the DIMM is disabled and is not visible to the Diagnostics operation.</p>
+                                       
+                                    </td>
+                                    <td class="entry">
+                                       
+                                       <p class="p">Refer to memory-related faults in addition to the diagnostics operation results.</p>
+                                       
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry">
+                                       
+                                       <p class="p">If the DIMM blacklisting feature is enabled and a DIMM is blacklisted, it is not visible to the Diagnostics operation.</p>
+                                       
+                                    </td>
+                                    <td class="entry">
+                                       
+                                       <p class="p">Refer to memory-related faults in addition to the diagnostics operation results.</p>
+                                       
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry">
+                                       
+                                       <p class="p">The Diagnostics operation may not execute successfully, if the server has bad DIMMs which prevent the server from booting.</p>
+                                       
+                                    </td>
+                                    <td class="entry">
+                                       
+                                       <p class="p">NA</p>
+                                       
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry">
+                                       
+                                       <p class="p">The Diagnostics operation can fail, if an uncorrectable error causes a server reboot.</p>
+                                       
+                                    </td>
+                                    <td class="entry">
+                                       
+                                       <p class="p">NA</p>
+                                       
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry">
+                                       
+                                       <p class="p">A Diagnostics operation failure can occur if there are memory errors that cause the Diagnostics operation to hang.</p>
+                                       
+                                    </td>
+                                    <td class="entry">
+                                       
+                                       <p class="p">NA</p>
+                                       
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry">
+                                       
+                                       <p class="p">The Diagnostics operation can be interrupted by external events, such as a managed endpoint failover or a critical UCSM process
+                                          restart. In these cases, the Diagnostics operation is cancelled and the Memory Tests are marked as failed.
+                                       </p>
+                                       
+                                    </td>
+                                    <td class="entry">
+                                       
+                                       <p class="p">The failure is triggered by external events. Retry the Diagnostics operation.</p>
+                                       
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry">
+                                       
+                                       <p class="p">A Memory test fails with the error: Uncorrectable errors detected.</p>
+                                       
+                                    </td>
+                                    <td class="entry">
+                                       
+                                       <p class="p">Check for server faults under the  <span class="ph filepath">Chassis/Server/Faults</span> tab.
+                                       </p>
+                                       
+                                       <p class="p">See the SEL logs for the DIMM errors under the <span class="ph filepath">Chassis/Server/SEL Logs</span> tab.
+                                       </p>
+                                       
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry">
+                                       
+                                       <p class="p">A Memory test failure needs further analysis.</p>
+                                       
+                                    </td>
+                                    <td class="entry">
+                                       
+                                       <p class="p">See the diagnostics operation logs in following log file archive on the primary FI in the /workspace partition: <span class="ph filepath">diagnostics/diag_log_&lt;system-name&gt;_&lt;timestamp&gt;_&lt;chassis-id&gt;_&lt;blade-id&gt;.tgz</span></p>
+                                       
+                                       <p class="p">See the analysis file:<span class="ph filepath"> tmp/ServerDiags/MemoryPmem2.&lt;id&gt;/MemoryPmem2.analysis</span> in the previously mentioned log file archive.
+                                       </p>
+                                       
+                                       <p class="p">Use the following command to find the diagnostics logs with the analysis files:</p>
+                                       
+                                       <p class="p"><span class="ph filepath"># for file in `ls /workspace/diagnostics/*diag*`; do tar -tzvf $file | grep analysis &amp;&amp; echo "IN " $file; done</span></p>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+               </article>
+            </article>
+         </main>
+      
+
+</div> 
+ 
+    </div>
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent noprint base-blowout">
+    <div class="eotPersonalization">
+        <section id="eotTDCampaign"></section>
+    </div>    
+    <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>Was this Document Helpful?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes" aria-label="Was this Document Helpful?? Yes">Yes</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no" aria-label="Was this Document Helpful?? No">No</button>
+  </span>
+  <span lang="en" class="eot-feedback-olwrap">
+    
+      <a href="javascript: void(0);" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">Feedback</a>
+    
+  </span>
+</div>
+
+
+</div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+    </div>
+			
+    <div class="letUsHelp">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eotLetUsHelp">
+    <h3>Contact Cisco</h3>
+    <ul>
+         <li><a id="eotLetUsHelpProdDocUrl" href="https://mycase.cloudapps.cisco.com/start?prodDocUrl=">Open a Support Case</a><img src="/etc/designs/cdc/fw/i/icon_lock_small.png" alt="login required"/></li>
+        <li>(Requires a <a href="//www.cisco.com/c/en/us/services/order-services.html">Cisco Service Contract</a>)</li>
+    </ul>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        var getURL=jQuery("#eotLetUsHelpProdDocUrl").attr("href"), 
+            domInd = location.href.indexOf('cisco.com') ;
+        if ( domInd > -1 && domInd < location.href.search(/\w\/\w/) ) {
+            getURL += encodeURI(location.href);
+        }
+		jQuery("#eotLetUsHelpProdDocUrl").attr("href",getURL);
+    });
+</script>
+
+
+    </div>
+
+    <div id="eotRightRailMBox"><!--MBox-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IT:components/mbox/banner-mbox:V0.0.0 -->
+
+
+
+<div>
+    <div class="mboxDefault"></div>   
+    <script type="text/javascript">
+        var test="";
+        if(test!=undefined && test.trim().length>0){
+           mboxCreate('en-us_dg_support_bookchapters','type=default','');
+        }else{
+           mboxCreate('en-us_dg_support_bookchapters','type=default');
+        }
+       
+    </script>
+</div>
+<!--MBox--></div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+	<script type="text/javascript">
+			    var eottdatp = document.getElementsByClassName('eot-tdatp');
+			    if (eottdatp && eottdatp.style) {
+        			eottdatp.style.display="none";
+			    }
+        		  </script>
+  	
+
+
+    </div>
+			
+    <div></div>
+
+</div>
+
+
+    </div>
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/us/en/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/clientlibs/responsive/js/books.min.js"></script>
+
+<script src="/etc/designs/cdc/fw/m/books_metricsrule.js" type="text/javascript" async></script>
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>
