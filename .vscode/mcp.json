@@ -5,10 +5,10 @@
       "args": ["@playwright/mcp@latest"]
     },
     "ucs-docs": {
-      "command": "/Users/romoss/Git/github.com/romoss_cisco/ucs-datasheets-firmware/.venv/bin/python",
+      "command": ".venv/bin/python",
       "args": [
-        "/Users/romoss/Git/github.com/romoss_cisco/ucs-datasheets-firmware/mcp/server.py"
-      ]
+        "mcp/mcp-server.py"
+    ]
     }
   }
 }
