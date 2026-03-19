@@ -15,3 +15,7 @@ ucs-docs-raw/pdf/*
 ucs-docs-raw/other/*
 
 .apikey
+
+recommended-firmware/htmlfiles/*
+recommended-firmware/jsonfiles/*
+

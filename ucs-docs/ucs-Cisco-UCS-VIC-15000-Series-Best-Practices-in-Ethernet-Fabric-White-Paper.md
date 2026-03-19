@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS VIC 15000 Series Best Practices in Ethernet Fabric White Paper |
 | **Source file** | `ucs-docs-raw/html/ucs-vic-15000-series-ether-fabric-wp.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 15:37:00 |
+| **Fetched on** | 2026-03-19 16:13:39 |
 
 ---
 
