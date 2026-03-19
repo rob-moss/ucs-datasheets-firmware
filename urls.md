@@ -48,7 +48,7 @@
 ## Intersight help guides
 > Note: fetched from intersight.com/help/saas and intersight.com/help/appliance
 
-### SaaS guides
+### Intersight SaaS guides
 - [Intersight SaaS Upgrading Firmware guide](https://intersight.com/help/saas/resources/upgrading_server_firmware_using_firmware_policy)
 - [Intersight SaaS guide](https://intersight.com/help/saas)
 - [Intersight SaaS Servers guide](https://intersight.com/help/saas/operate/servers)
@@ -93,7 +93,7 @@
 - [Intersight SaaS Whats new](https://intersight.com/help/saas/whats_new/)
 
 
-### Appliance (CVA / PVA) guides
+### Intersight Appliance (CVA / PVA) guides
 > Note: Intersight Appliance documentation is generally similar to the SaaS documentation, but with some differences in some local features and settings.
 - [Intersight Appliance Servers guide](https://intersight.com/help/appliance/operate/servers)
 - [Intersight Appliance System Settings](https://intersight.com/help/appliance/system/settings)
@@ -129,7 +129,7 @@
 - [Cisco UCS Faults and Error Messages Reference Guide 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/6-0/b_cisco_ucs_faults_and_error_messages_reference-6-0.html)
 
 
-# JSON Data Files
+# UCS JSON Data Files
 - [UCS Equivalency Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/c/sw/UCS-Equivalency-Matrix/custom_excel_data.json)
 - [UCSM Upgrade/Downgrade Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/ucs-manager/UCSM-upgrade-downgrade-matrix/ReleaseMatrix.json)
 - [UCSM Cross-Version Firmware Matrix (6.0 onwards)](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/ucs-manager/cross_version_firmware_matrix_6_0_onwards/custom_excel_data.json)
@@ -191,3 +191,13 @@
 ## UCS Managed Mode - B200 M6
 - [UCS Managed Mode B200 M6 CPU v1 / ESXi 7u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=331&processor_ID=254&osVendor_ID=5&osVersion_ID=936&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
 - [UCS Managed Mode B200 M6 CPU v1 / ESXi 8u3](https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=331&processor_ID=254&osVendor_ID=5&osVersion_ID=1025&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined)
+
+# End of Life (EOL) and End of Sale (EOS) announcements
+### Hyperflex
+- [End-of-Sale and End-of-Life Announcement for the Cisco HyperFlex Compute M5 (HX B200 M5, HX C220 M5, HX C240 M5, HX C480 M5) - Cisco](https://www.cisco.com/c/en/us/products/collateral/hyperconverged-infrastructure/hyperflex-hx-series/hyperflex-compute-m5-eol.html)
+- [End-of-Sale and End-of-Life Announcement for the Cisco HyperFlex Data Platform (HXDP) Software - Cisco](https://www.cisco.com/c/en/us/products/collateral/hyperconverged-infrastructure/hyperflex-hx-series/hyperflex-data-platform-eol.html)
+
+
+
+# New URLs
+
