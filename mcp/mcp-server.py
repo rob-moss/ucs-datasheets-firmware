@@ -30,6 +30,7 @@ from mcp.server.fastmcp import FastMCP
 _HERE = Path(__file__).parent.resolve()
 DOCS_DIRS: list[Path] = [
     _HERE.parent / "ucs-docs",
+    _HERE.parent / "help-kb"
 #     _HERE.parent / "ucs-guides-help-query",
 #     _HERE.parent / "ucs-firmware-docs",
 #     _HERE.parent / "ucs-docs-raw",
@@ -56,6 +57,7 @@ _STOP_WORDS = frozenset({
     "what", "which", "who", "how", "when", "where", "why",
     "i", "me", "my", "we", "our", "you", "your",
     "he", "she", "they", "them", "their",
+    "cisco", "Cisco", "documentation", "document", "guide", "manual",
 })
 
 # ---------------------------------------------------------------------------
