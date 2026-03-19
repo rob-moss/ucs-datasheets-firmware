@@ -8,11 +8,13 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 6.0 |
 | **Source file** | `ucs-docs-raw/html/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:05 |
+| **Fetched on** | 2026-03-19 15:36:02 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html
+
+![Clear Contents of Search](/etc/designs/cdc/fw/i/ic_clear_gray.png)
 
 ---
 
@@ -22,7 +24,7 @@
 
 Firmware upgrades in Intersight include server firmware upgrades and infrastructure firmware upgrades. Infrastructure firmware upgrades in Intersight Managed mode is supported on Cisco Unified Edge Edge Chassis Management Controller (eCMC). To manage the eCMC infrastructure firmware, see [Upgrading Firmware for Unified Edge Chassis](https://intersight.com/help/saas/resources/fw_mgmnt_ue#upgrading_firmware_for_unified_edge_chassis). This feature is available with a Cisco Intersight Essentials or Advanced license tier. 
 
-In Intersight, infrastructure and server firmware upgrades can be done independently. That is, you do not always need to upgrade infrastructure firmware to use the latest server firmware and vice versa. For more information on Unified Edge server firmware updates, see [Release Notes for Cisco Intersight Managed Mode Server Firmware](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html).
+In Intersight, infrastructure and server firmware upgrades can be done independently. That is, you do not always need to upgrade infrastructure firmware to use the latest server firmware and vice versa. For more information on Unified Edge server firmware updates, see [Release Notes for Cisco Intersight Managed Mode Server Firmware](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html). 
 
 ---
 
@@ -30,19 +32,19 @@ In Intersight, infrastructure and server firmware upgrades can be done independe
 
 ## New software features
 
-Intersight software features may not align with the Intersight firmware release schedule. To know more about the latest software features, see the [What's New](https://intersight.com/help/saas/whats_new) section in Intersight Help Center.
+Intersight software features may not align with the Intersight firmware release schedule. To know more about the latest software features, see the [What's New](https://intersight.com/help/saas/whats_new) section in Intersight Help Center. 
 
 ---
 
 ## Page 4: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0/m-new-hardware-features.html
 
-## New Hardware Features in Infrastructure Firmware Release 6.0(1.251006) — None
+## New Hardware Features in Infrastructure Firmware Release 6.0(1.251006) — None 
 
 ---
 
 ## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0/m-security-fixes.html
 
-## Security fixes in Release 6.0(1.251006) — None
+## Security fixes in Release 6.0(1.251006) — None 
 
 ---
 
@@ -60,13 +62,25 @@ CSCws30566 |  Unified Edge Chassis Management Controllers may experience unexpec
 
 ## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0/m-open-issues.html
 
-## Open issues in Release 6.0(1.251006) — None
+## Open issues in Release 6.0(2.260026)  
+  
+This section provides a brief description of the open issues.
+
+Defect ID |  Description | Workaround |  First Version Affected  
+---|---|---|---  
+[CSCws97818](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCws97818) |  On Unified Edge eCMC chassis running CMC version 6.0(2.260026), a critical alarm `EquipmentChassisTempSensorReadFailure` is reported for each installed sled. Attempts to connect to MTS/ECMC debug shell fail, and CLI commands such as `connect ecmc`, `connect switch`, and `show firmware-version ecmc <local-eCMC-ID>` also fail. The issue can occur at any time with no known external trigger, though it is not expected to be frequent. Cisco Intersight consistently reports the critical alarm during this failure state.  |  Reboot the affected eCMC to clear the critical alarms and restore command functionality. |  6.0(2.260026)
 
 ---
 
 ## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0/m-known-issues.html
 
-## Known issues in Cisco UCS XE-Series M8 Server Firmware Release, 6.0(1.260001) — None
+## Known issues in Release 6.0(2.260045)  
+  
+This section provides a brief description of the known issues.
+
+Defect ID |  Description | Workaround |  First Version Affected  
+---|---|---|---  
+[CSCwr50750](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwr50750) |  On Cisco UCS Fabric Interconnects Series 6600, 6500, 6400, and X-Series Direct Fabric Interconnects, when the management interface is configured with IPv6, a syslog message is displayed if the device receives a Router Advertisement (RA) packet containing an ICMPv6 MTU option greater than 1500 bytes. This message indicates an MTU mismatch but does not impact functionality.  |  No workaround is required; the syslog message can be safely ignored. |  6.0(1.250223)
 
 ---
 
@@ -76,48 +90,51 @@ CSCws30566 |  Unified Edge Chassis Management Controllers may experience unexpec
   
 X-Series Server Firmware Version |  Infrastructure Firmware Version  
 ---|---  
-4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1)  
-6.0(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.4(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.3(0)  |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(2) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.1(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.1(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.0(4) |  N/A |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.0(2) |  N/A |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
-5.0(1) |  N/A |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
+4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1) |  6.0(2)  
+6.0(2) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+6.0(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.4(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.3(0)  |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(2) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.1(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.1(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.0(4) |  N/A |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.0(2) |  N/A |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
+5.0(1) |  N/A |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
 C-Series Server Firmware Version |  Infrastructure Firmware Version  
 ---|---  
-4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1)  
-6.0(1) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(6) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(5)  |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(4) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(1) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.2(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.2(2) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
-4.2(1) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
-4.1(3) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
+4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1) |  6.0(2)  
+6.0(2) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+6.0(1) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(6) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(5)  |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(4) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(1) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.2(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.2(2) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
+4.2(1) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
+4.1(3) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
 B-Series Server Firmware Version |  Infrastructure Firmware Version  
 ---|---  
-4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1)  
-6.0(1) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.4(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.3(0)  |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(1) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.1(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.2(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.2(2) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
-4.2(1) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
-4.1(3) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No
+4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1) |  6.0(2)  
+6.0(2) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+6.0(1) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.4(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.3(0)  |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(1) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.1(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.2(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.2(2) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
+4.2(1) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
+4.1(3) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No
 
 ---
 
@@ -125,17 +142,33 @@ B-Series Server Firmware Version |  Infrastructure Firmware Version
 
 ## Related resources  
   
-* [Release Notes for Cisco Intersight Unified Edge Server Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html)
-* [Release Notes for Cisco Intersight Unified Edge eCMC Infrastructure Firmware Release, 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html)
-* [Release Notes and Release Bundles for Unified Edge](https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html)
-* [Managing Firmware in Unified Edge](/help/resources/fw_mgmnt_ue)
+  * [Release Notes for Cisco Intersight Unified Edge Server Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html)
+
+  * [Release Notes for Cisco Intersight Unified Edge eCMC Infrastructure Firmware Release, 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html)
+
+  * [Release Notes and Release Bundles for Unified Edge](https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html)
+
+  * [Managing Firmware in Unified Edge](/help/resources/fw_mgmnt_ue)
+
 
 ---
 
-## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/m-resolved-issues.html
+## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/m-open-issues.html
 
-## Resolved issues in Release 6.0(1.251006)
+## Open issues in Release 6.0(2.260026)
 
+This section provides a brief description of the open issues.
+
+Defect ID |  Description | Workaround |  First Version Affected  
+---|---|---|---  
+[CSCws97818](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCws97818) |  On Unified Edge eCMC chassis running CMC version 6.0(2.260026), a critical alarm `EquipmentChassisTempSensorReadFailure` is reported for each installed sled. Attempts to connect to MTS/ECMC debug shell fail, and CLI commands such as `connect ecmc`, `connect switch`, and `show firmware-version ecmc <local-eCMC-ID>` also fail. The issue can occur at any time with no known external trigger, though it is not expected to be frequent. Cisco Intersight consistently reports the critical alarm during this failure state.  |  Reboot the affected eCMC to clear the critical alarms and restore command functionality. |  6.0(2.260026)
+
+---
+
+## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/m-resolved-issues.html
+
+## Resolved issues in Release 6.0(1.251006)  
+  
 This section provides a brief description of the resolved issues.
 
 Defect ID |  Description |  First Version Affected |  Resolved in Release  
@@ -144,14 +177,8 @@ CSCws30566 |  Unified Edge Chassis Management Controllers may experience unexpec
 
 ---
 
-## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/m-new-hardware-features.html
+## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/m-new-hardware-features.html
 
-## New Hardware Features in Infrastructure Firmware Release 6.0(1.251006) — None
-
----
-
-## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/m-open-issues.html
-
-## Open issues in Release 6.0(1.251006) — None
+## New Hardware Features in Infrastructure Firmware Release 6.0(1.251006) — None 
 
 ---

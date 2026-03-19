@@ -8,11 +8,13 @@
 | **HTML Title** | Release Notes for Cisco Intersight Unified Edge eCMC Firmware Release, 6.0 |
 | **Source file** | `ucs-docs-raw/html/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:04 |
+| **Fetched on** | 2026-03-19 15:35:59 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html
+
+![Clear Contents of Search](/etc/designs/cdc/fw/i/ic_clear_gray.png)
 
 ---
 
@@ -22,19 +24,19 @@
 
 Firmware upgrades in Intersight include server firmware upgrades and infrastructure firmware upgrades. Infrastructure firmware upgrades in Intersight Managed mode is supported on Cisco Unified Edge Edge Chassis Management Controller (eCMC). To manage the eCMC infrastructure firmware, see [Upgrading Firmware for Unified Edge Chassis](https://intersight.com/help/saas/resources/fw_mgmnt_ue#upgrading_firmware_for_unified_edge_chassis). This feature is available with a Cisco Intersight Essentials or Advanced license tier. 
 
-In Intersight, infrastructure and server firmware upgrades can be done independently. That is, you do not always need to upgrade infrastructure firmware to use the latest server firmware and vice versa. For more information on Unified Edge server firmware updates, see [Release Notes for Cisco Intersight Managed Mode Server Firmware](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html).
+In Intersight, infrastructure and server firmware upgrades can be done independently. That is, you do not always need to upgrade infrastructure firmware to use the latest server firmware and vice versa. For more information on Unified Edge server firmware updates, see [Release Notes for Cisco Intersight Managed Mode Server Firmware](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html). 
 
 ---
 
 ## Page 3: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0/m-new-hardware-features.html
 
-## New Hardware Features in Infrastructure Firmware Release 6.0(1.251006) — None
+## New Hardware Features in Infrastructure Firmware Release 6.0(1.251006) — None 
 
 ---
 
 ## Page 4: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0/m-security-fixes.html
 
-## Security fixes in Release 6.0(1.251006) — None
+## Security fixes in Release 6.0(1.251006) — None 
 
 ---
 
@@ -52,7 +54,13 @@ CSCws30566 |  Unified Edge Chassis Management Controllers may experience unexpec
 
 ## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0/m-open-issues.html
 
-## Open issues in Release 6.0(1.251006) — None
+## Open issues in Release 6.0(2.260026)  
+  
+This section provides a brief description of the open issues.
+
+Defect ID |  Description | Workaround |  First Version Affected  
+---|---|---|---  
+[CSCws97818](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCws97818) |  On Unified Edge eCMC chassis running CMC version 6.0(2.260026), a critical alarm `EquipmentChassisTempSensorReadFailure` is reported for each installed sled. Attempts to connect to MTS/ECMC debug shell fail, and CLI commands such as `connect ecmc`, `connect switch`, and `show firmware-version ecmc <local-eCMC-ID>` also fail. The issue can occur at any time with no known external trigger, though it is not expected to be frequent. Cisco Intersight consistently reports the critical alarm during this failure state.  |  Reboot the affected eCMC to clear the critical alarms and restore command functionality. |  6.0(2.260026)
 
 ---
 
@@ -115,17 +123,33 @@ B-Series Server Firmware Version |  Infrastructure Firmware Version
 
 ## Related resources  
   
-* [Release Notes for Cisco Intersight Unified Edge Server Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html)
-* [Release Notes for Cisco Intersight Unified Edge eCMC Infrastructure Firmware Release, 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html)
-* [Release Notes and Release Bundles for Unified Edge](https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html)
-* [Managing Firmware in Unified Edge](/help/resources/fw_mgmnt_ue)
+  * [Release Notes for Cisco Intersight Unified Edge Server Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html)
+
+  * [Release Notes for Cisco Intersight Unified Edge eCMC Infrastructure Firmware Release, 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html)
+
+  * [Release Notes and Release Bundles for Unified Edge](https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html)
+
+  * [Managing Firmware in Unified Edge](/help/resources/fw_mgmnt_ue)
+
 
 ---
 
-## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/m-resolved-issues.html
+## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/m-open-issues.html
 
-## Resolved issues in Release 6.0(1.251006)
+## Open issues in Release 6.0(2.260026)
 
+This section provides a brief description of the open issues.
+
+Defect ID |  Description | Workaround |  First Version Affected  
+---|---|---|---  
+[CSCws97818](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCws97818) |  On Unified Edge eCMC chassis running CMC version 6.0(2.260026), a critical alarm `EquipmentChassisTempSensorReadFailure` is reported for each installed sled. Attempts to connect to MTS/ECMC debug shell fail, and CLI commands such as `connect ecmc`, `connect switch`, and `show firmware-version ecmc <local-eCMC-ID>` also fail. The issue can occur at any time with no known external trigger, though it is not expected to be frequent. Cisco Intersight consistently reports the critical alarm during this failure state.  |  Reboot the affected eCMC to clear the critical alarms and restore command functionality. |  6.0(2.260026)
+
+---
+
+## Page 10: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/m-resolved-issues.html
+
+## Resolved issues in Release 6.0(1.251006)  
+  
 This section provides a brief description of the resolved issues.
 
 Defect ID |  Description |  First Version Affected |  Resolved in Release  
@@ -134,14 +158,8 @@ CSCws30566 |  Unified Edge Chassis Management Controllers may experience unexpec
 
 ---
 
-## Page 10: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/m-new-hardware-features.html
+## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/m-new-hardware-features.html
 
-## New Hardware Features in Infrastructure Firmware Release 6.0(1.251006) — None
-
----
-
-## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/m-open-issues.html
-
-## Open issues in Release 6.0(1.251006) — None
+## New Hardware Features in Infrastructure Firmware Release 6.0(1.251006) — None 
 
 ---

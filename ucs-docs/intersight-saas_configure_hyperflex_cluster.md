@@ -4,19 +4,22 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure HyperFlex Cluster guide |
 | **URL** | https://intersight.com/help/saas/configure/hyperflex_cluster |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260225095216527/docs/cloud/data/articles/features/hyperflex/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/cloud/data/articles/features/hyperflex/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_hyperflex_cluster.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:05 |
+| **Fetched on** | 2026-03-19 15:36:18 |
 
 ---
 
 Cisco Intersight provides an installation wizard to install, configure, and deploy Cisco HyperFlex clusters — HyperFlex Edge, FI-attached, and HyperFlex Datacenter without Fabric Interconnect. The wizard constructs a pre-configuration definition of your cluster called an HyperFlex Cluster Profile. This definition is a logical representation of the HyperFlex nodes in your HyperFlex cluster and includes:
 
-* Security—credentials for HyperFlex cluster such as controller VM password, Hypervisor username, and password.
-* Configuration—server requirements, firmware, etc.
-* Connectivity—upstream network, virtual network, etc.
+  * Security—credentials for HyperFlex cluster such as controller VM password, Hypervisor username, and password.
+
+  * Configuration—server requirements, firmware, etc.
+
+  * Connectivity—upstream network, virtual network, etc.
+
 
 HyperFlex Cluster Profiles are built on policies which administrator defined sets of rules and operating characteristics such as the node identity, interfaces, and network connectivity. Every active node in your HyperFlex cluster must be associated with an HyperFlex Cluster Profile.
 

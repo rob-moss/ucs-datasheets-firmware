@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Supported Systems |
 | **URL** | https://intersight.com/help/saas/supported_systems |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260225095216527/docs/cloud/data/articles/supported_systems/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/cloud/data/articles/supported_systems/en/index.html |
 | **HTML Title** | Supported Systems |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_supported_systems.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:06 |
+| **Fetched on** | 2026-03-19 15:36:40 |
 
 ---
 
@@ -32,8 +32,10 @@ Table 4 shows the supported combination of components.
 
 **Documentation Resources** :
 
-* Refer to the [X-Series Compute Nodes Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor722), [C-Series Servers Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor969), and [B-Series Servers Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/datasheet-listing.html) for supported hardware and configuration rules.
-* Check the [Firmware Release Notes](https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html) for new hardware compatibility with specific firmware versions.
+  * Refer to the [X-Series Compute Nodes Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor722), [C-Series Servers Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor969), and [B-Series Servers Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/datasheet-listing.html) for supported hardware and configuration rules.
+
+  * Check the [Firmware Release Notes](https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html) for new hardware compatibility with specific firmware versions.
+
 
 Table 1. Supported Hardware Components with Required Minimum Infrastructure VersionsFabric Components  
 ---  
@@ -59,13 +61,16 @@ UCSX-440P-U|  |  | 4.2(2b)
   
 Note:
 
-* Intersight Managed Mode can manage up to 20 chassis and 160 servers connected within a single Fabric Interconnect domain.
-* Cisco UCS 6454 and 64108 Fabric Interconnects, require the port-based licensing in IMM but will not be enforced until further notice.
+  * Intersight Managed Mode can manage up to 20 chassis and 160 servers connected within a single Fabric Interconnect domain.
+
+  * Cisco UCS 6454 and 64108 Fabric Interconnects, require the port-based licensing in IMM but will not be enforced until further notice.
 
 Beginning with UCS software release version 4.2(3), Cisco UCS 6536, Cisco UCS 6664, and UCS X-Direct Fabric Interconnects support a perpetual software license, activating all ports and features.
 
-* Swapping or moving cable connections on rack network adapters, whether between VIC ports on the same Fabric Interconnect or between different Fabric Interconnects, is not supported while the server is powered on after server discovery. Such actions are only permitted when the server is powered off through a soft shutdown.
-* The minimum supported Infrastructure firmware version for Intersight Managed Mode is 4.1(3).
+  * Swapping or moving cable connections on rack network adapters, whether between VIC ports on the same Fabric Interconnect or between different Fabric Interconnects, is not supported while the server is powered on after server discovery. Such actions are only permitted when the server is powered off through a soft shutdown.
+
+  * The minimum supported Infrastructure firmware version for Intersight Managed Mode is 4.1(3).
+
 
 Supported Servers
 
@@ -92,8 +97,8 @@ Cisco UCS C225 M6 Server
 Cisco UCS C245 M6 Server  
 M5Note:
 
-* End-of-Life (EOL) for M5 servers has been announced. For more information, see [End-of-Life and End-of-Sale Notices for C-Series Servers](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/eos-eol-notice-listing.html) and [End-of-Life and End-of-Sale Notices for B-Series Servers](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/eos-eol-notice-listing.html).
-* Cisco UCS C480 ML M5, Cisco UCS C125 M5, and Cisco UCS S3260 M5 servers are not supported in Intersight Managed Mode.
+  * End-of-Life (EOL) for M5 servers has been announced. For more information, see [End-of-Life and End-of-Sale Notices for C-Series Servers](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/eos-eol-notice-listing.html) and [End-of-Life and End-of-Sale Notices for B-Series Servers](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/eos-eol-notice-listing.html).
+  * Cisco UCS C480 ML M5, Cisco UCS C125 M5, and Cisco UCS S3260 M5 servers are not supported in Intersight Managed Mode.
 
 | Cisco UCS B200 M5 Server  
 Cisco UCS B480 M5 Server  
@@ -107,45 +112,45 @@ Component| Model| Sub-Component| Sub-Component Model| Minimum Infrastructure Fir
 XE-Series Intel M8 Compute Node| Cisco UCS XE130c M8 Compute Node| See [Cisco UCS XE130c M8 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| XE9305 Unified Edge chassis: 6.0(1.251005)| 6.0(1.251030)  
 X-Series Intel M8 Compute Node| Cisco UCS X210c M8 Compute Node| See [Cisco UCS X210c M8 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
 
-* 6664 FI: 6.0(1.250198)
-* X-Direct FI: 4.3(6.250094)
-* 6400 Series and 6536 FI: 4.3(6.250048)
+  * 6664 FI: 6.0(1.250198)
+  * X-Direct FI: 4.3(6.250094)
+  * 6400 Series and 6536 FI: 4.3(6.250048)
 
 | 5.4(0.250037)  
 X-Series AMD M8 Compute Node| Cisco UCS X215c M8 Compute Node| See [Cisco UCS X215c M8 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
 
-* 6664 FI: 6.0(1.250198)
-* X-Direct FI: 4.3(5.240162)
-* 6400 Series and 6536 FI: 4.3(2.230117)
+  * 6664 FI: 6.0(1.250198)
+  * X-Direct FI: 4.3(5.240162)
+  * 6400 Series and 6536 FI: 4.3(2.230117)
 
 | 5.3(0.240016)  
 New Hardware Supported Since Initial Release  
 CPU| 5th Generation AMD EPYC CPU:
 
-* UCSX-CPU-A9655
-* UCSX-CPU-A9555
-* UCSX-CPU-A9355
-* UCSX-CPU-A9135
-* UCSX-CPU-A95755
+  * UCSX-CPU-A9655
+  * UCSX-CPU-A9555
+  * UCSX-CPU-A9355
+  * UCSX-CPU-A9135
+  * UCSX-CPU-A95755
 
 | Not Applicable| 5.3(0.250001)  
 GPU| UCSC-GPU-MI210| Not Applicable| 5.3(0.250001)  
 DIMMs| DDR5-5600 MT/s:
 
-* UCSX-MR128G2RG3
+  * UCSX-MR128G2RG3
 
 DDR5-6400 MT/s:
 
-* UCS-MRX32G1RE5
-* UCS-MRX64G2RE5
+  * UCS-MRX32G1RE5
+  * UCS-MRX64G2RE5
 
 | Not Applicable| 5.3(0.250001)  
 Storage Controller| UCSX-X10C-GPUFM| Not Applicable| 5.3(0.240016)  
 X-Series M7 Compute Node| Cisco UCS X410c M7 Compute Node| See [Cisco UCS X410c M7 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
 
-* 6664 FI: 6.0(1.250198)
-* X-Direct FI - 4.3(4.240078)
-* 6400 Series and 6536 FI: 4.2(3e)
+  * 6664 FI: 6.0(1.250198)
+  * X-Direct FI - 4.3(4.240078)
+  * 6400 Series and 6536 FI: 4.2(3e)
 
 | 5.1(1.230052)  
 CPU| 4th Generation Intel® Xeon® Scalable Processors| Not Applicable| 5.1(1.230052)  
@@ -163,39 +168,39 @@ UCSX-M2-PT-FPN| Not Applicable| 5.2(0.230127)
 UCSX-X10C-GPUFM| Not Applicable| 5.2(0.230041)  
 X-Series M7 Compute Node| Cisco UCS X210c M7 Compute Node| See [Cisco UCS X210c M7 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
 
-* 6664 FI: 6.0(1.250198)
-* X-Direct FI - 4.3(4.240078)
-* 6400 Series and 6536 FI: 4.2(3b)
+  * 6664 FI: 6.0(1.250198)
+  * X-Direct FI - 4.3(4.240078)
+  * 6400 Series and 6536 FI: 4.2(3b)
 
 | 5.1(0.230096)  
 CPU| 4th Generation Intel® Xeon® Scalable Processors.| Not Applicable| 5.1(0.230096)  
 5th Generation Intel® Xeon® Scalable Processors| Not Applicable| 5.2(1.240010)  
 Additional 5th Generation Intel® Xeon® Scalable Processors:
 
-* UCSX-CPU-I4510T
-* UCSX-CPU-I4510
-* UCSX-CPU-I4509Y
-* UCSX-CPU-I3508U
+  * UCSX-CPU-I4510T
+  * UCSX-CPU-I4510
+  * UCSX-CPU-I4509Y
+  * UCSX-CPU-I3508U
 
 | Not Applicable| 5.2(2.240053)  
 DIMMs| DDR5-4800MT/s:
 
-* UCSX-MRX16G1RE1
-* UCSX-MRX32G1RE1
-* UCSX-MRX64G2RE1
-* UCSX-MR128G4RE1
-* UCSX-MR256G8RE1
+  * UCSX-MRX16G1RE1
+  * UCSX-MRX32G1RE1
+  * UCSX-MRX64G2RE1
+  * UCSX-MR128G4RE1
+  * UCSX-MR256G8RE1
 
 | Not Applicable| 5.2(1.240010)  
 DDR5-5600MT/s:
 
-* UCSX-MRX16G1RE3
-* UCSX-MRX32G1RE3
-* UCSX-MRX48G1RF3
-* UCSX-MRX64G2RE3
-* UCSX-MRX96G2RF3
-* UCSX-MR128G4RE3
-* UCSX-MR256G8RE3
+  * UCSX-MRX16G1RE3
+  * UCSX-MRX32G1RE3
+  * UCSX-MRX48G1RF3
+  * UCSX-MRX64G2RE3
+  * UCSX-MRX96G2RF3
+  * UCSX-MR128G4RE3
+  * UCSX-MR256G8RE3
 
 | Not Applicable| 5.2(1.240010)  
 Adapters| UCSX-ML-V5Q50G (Secure Boot)UCSX-ME-V5Q50G (Secure Boot)UCSX-ML-V5D200G| Not Applicable| 5.1(0.230096)  
@@ -214,8 +219,8 @@ UCSX-M2-PT-FPN| Not Applicable| 5.2(0.230041)
 UCSX-X10C-GPUFM| Not Applicable| 5.3(0.250021)  
 X-Series M6 Compute Node| Cisco UCS X210c M6 Compute Node| See [Cisco UCS X210c M6 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x210c-specsheet.pdf).| 
 
-* X-Direct FI - 4.3(4.240078)
-* 6400 Series and 6536 FI: 4.2(1a)
+  * X-Direct FI - 4.3(4.240078)
+  * 6400 Series and 6536 FI: 4.2(1a)
 
 | 5.0(1b)  
 Adapters| UCSX-V4-Q25GMLUCSX-V4-Q25GME| Not Applicable| 5.0(1b)  
@@ -243,53 +248,53 @@ Trusted Platform Module (TPM)| UCSX-TPM2-001UCSX-TPM2-002| Not Applicable| 4.1(3
 Storage Controller| UCS-M2-HWRAIDUCSB-MRAID12GUCSB-MRAID12G-HEUCSB-LSTOR-PT| Not Applicable| 4.1(3c)  
 C-Series Intel M8 Server| Cisco UCS C220 M8 Server| See [Cisco UCS C220 M8 Rack Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
-* 6664 and X-Direct FI: 6.0(1.250198)
-* 6400 Series and 6536 FI: 4.3(6.250048)
+  * 6664 and X-Direct FI: 6.0(1.250198)
+  * 6400 Series and 6536 FI: 4.3(6.250048)
 
 | 4.3(6.250039)  
 Cisco UCS C240 M8 Server| See [Cisco UCS C240 M8 Rack Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
-* 6664 and X-Direct FI: 6.0(1.250198)
-* 6400 Series and 6536 FI: 4.3(6.250048)
+  * 6664 and X-Direct FI: 6.0(1.250198)
+  * 6400 Series and 6536 FI: 4.3(6.250048)
 
 | 4.3(6.250039)  
 Storage Controller| UCSC-RAID-M1L16| 
 
-* 6400 Series, 6536, 6664, and X-Direct FI: 6.0(1.250198)
+  * 6400 Series, 6536, 6664, and X-Direct FI: 6.0(1.250198)
 
 | 6.0(1.250127)  
 C-Series AMD M8 Server| Cisco UCS C225 M8 Server| See [Cisco UCS C225 M8 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
-* 6664 and X-Direct FI: 6.0(1.250198)
-* 6400 Series and 6536 FI: 4.2(3b)
+  * 6664 and X-Direct FI: 6.0(1.250198)
+  * 6400 Series and 6536 FI: 4.2(3b)
 
 | 4.3(5.240021)  
 New Hardware Supported Since Initial Release  
 CPU| 5th Generation AMD EPYC CPU:
 
-* UCS-CPU-A9655P
-* UCS-CPU-A9555P
-* UCS-CPU-A9355
-* UCS-CPU-A9135
-* UCS-CPU-A9575F
+  * UCS-CPU-A9655P
+  * UCS-CPU-A9555P
+  * UCS-CPU-A9355
+  * UCS-CPU-A9135
+  * UCS-CPU-A9575F
 
 | Not Applicable| 4.3(5.250001)  
 Storage Controller| UCSC-RAID-M1L16UCSC-RAID-MP1L32| 4.2(3b)| 4.3(5.250001)  
 UCSC-HBA-M1L16| 4.2(3b)| 4.3(5.250001)  
 DIMMs| DDR5-5600 MT/s:
 
-* UCS-MR128G2RG3
+  * UCS-MR128G2RG3
 
 DDR5-6400 MT/s
 
-* UCS-MRX32G1RE5
-* UCS-MRX64G2RE5
+  * UCS-MRX32G1RE5
+  * UCS-MRX64G2RE5
 
 | Not Applicable| 4.3(5.250001)  
 Cisco UCS C245 M8 Server| See [Cisco UCS C245 M8 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
-* 6664 and X-Direct FI: 6.0(1.250198)
-* 6400 Series and 6536 FI: 4.2(3b)
+  * 6664 and X-Direct FI: 6.0(1.250198)
+  * 6400 Series and 6536 FI: 4.2(3b)
 
 | 4.3(4.241014)  
 New Hardware Supported Since Initial Release  
@@ -297,58 +302,58 @@ Graphics processing unit (GPU)| UCSC-GPU-H100-NVL| Not Applicable| 4.3(5.240021)
 UCSC-GPU-MI210| Not Applicable| 4.3(5.250001)  
 CPU| 5th Generation AMD EPYC CPU:
 
-* UCS-CPU-A9655
-* UCS-CPU-A9555
-* UCS-CPU-A9355
-* UCS-CPU-A9135
-* UCS-CPU-A9575F
+  * UCS-CPU-A9655
+  * UCS-CPU-A9555
+  * UCS-CPU-A9355
+  * UCS-CPU-A9135
+  * UCS-CPU-A9575F
 
 | Not Applicable| 4.3(5.250001)  
 Storage Controller| UCSC-RAID-M1L16UCSC-RAID-MP1L32| 4.2(3b)| 4.3(5.250001)  
 UCSC-HBA-M1L16| 4.2(3b)| 4.3(5.250001)  
 DIMMs| DDR5-5600 MT/s:
 
-* UCS-MR128G2RG
+  * UCS-MR128G2RG
 
 DDR5-6400 MT/s:
 
-* UCS-MRX32G1RE5
-* UCS-MRX64G2RE5
-* UCS-MRX96G2RF5
+  * UCS-MRX32G1RE5
+  * UCS-MRX64G2RE5
+  * UCS-MRX96G2RF5
 
 | Not Applicable| 4.3(5.250001)  
 C-Series M7 Server| Cisco UCS C220 M7 Server| See [Cisco UCS C220 M7 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
-* 6664 and X-Direct FI: 6.0(1.250198)
-* 6400 Series and 6536 FI: 4.2(3b)
+  * 6664 and X-Direct FI: 6.0(1.250198)
+  * 6400 Series and 6536 FI: 4.2(3b)
 
 | 4.3(1.230097)  
 CPU| 4th Generation Intel® Xeon® Scalable Processors.| Not Applicable| 4.3(1.230097)  
 5th Generation Intel® Xeon® Scalable Processors| Not Applicable| 4.3(3.240022)  
 Additional 5th Generation Intel® Xeon® Scalable Processors:
 
-* UCS-CPU-I4510T
-* UCS-CPU-I4510
-* UCS-CPU-I4509Y
-* UCS-CPU-I3508U
+  * UCS-CPU-I4510T
+  * UCS-CPU-I4510
+  * UCS-CPU-I4509Y
+  * UCS-CPU-I3508U
 
 | Not Applicable| 4.3(4.240152)  
 DIMMs| DDR5-4800MT/s:
 
-* UCS-MRX16G1RE1
-* UCS-MRX32G1RE1
-* UCS-MRX64G2RE1
-* UCS-MR128G4RE1
+  * UCS-MRX16G1RE1
+  * UCS-MRX32G1RE1
+  * UCS-MRX64G2RE1
+  * UCS-MR128G4RE1
 
 | Not Applicable| 4.3(3.240022)  
 DDR5-5600MT/s:
 
-* UCS-MRX16G1RE3
-* UCS-MRX32G1RE3
-* UCS-MRX48G1RF3
-* UCS-MRX64G2RE3
-* UCS-MRX96G2RF3
-* UCS-MR128G4RE3
+  * UCS-MRX16G1RE3
+  * UCS-MRX32G1RE3
+  * UCS-MRX48G1RF3
+  * UCS-MRX64G2RE3
+  * UCS-MRX96G2RF3
+  * UCS-MR128G4RE3
 
 Note:48GB and 96GB memory DIMMs are not supported on UCS-CPU-I3508U, UCS-CPU-I4509Y, UCS-CPU-I4510, UCS-CPU-I4510T| Not Applicable| 4.3(3.240022)  
 Adapters| UCSC-M-V5Q50GUCSC-M-V5D200G| Not Applicable| 4.3(1.230097)  
@@ -364,38 +369,38 @@ UCSC-HBA-M1L16| 4.3(2.230117)| 4.3(4.242038)
 Virtual Drives| UCS-SD16TKA3X-EPUCS-SD32TKA3X-EPUCS-SD16TBKANK9UCS-SD19TKA1X-EVUCS-SD38TKA1X-EVUCS-SD76TKA1X-EVUCS-SD15TKA1X-EVUCS-SD38TBKANK9UCS-SD76TBKANK9| 4.3(2.230117)| 4.3(2.230207)  
 Cisco UCS C240 M7 Server| See [Cisco UCS C240 M7 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
-* 6664 and X-Direct FI: 6.0(1.250198)
-* 6400 Series and 6536 FI: 4.2(3b)
+  * 6664 and X-Direct FI: 6.0(1.250198)
+  * 6400 Series and 6536 FI: 4.2(3b)
 
 | 4.3(1.230097)  
 CPU| 4th Generation Intel® Xeon® Scalable Processors.| Not Applicable| 4.3(1.230097)  
 5th Generation Intel® Xeon® Scalable Processors| Not Applicable| 4.3(3.240022)  
 Additional 5th Generation Intel® Xeon® Scalable Processors:
 
-* UCS-CPU-I4510T
-* UCS-CPU-I4510
-* UCS-CPU-I4509Y
-* UCS-CPU-I3508U
+  * UCS-CPU-I4510T
+  * UCS-CPU-I4510
+  * UCS-CPU-I4509Y
+  * UCS-CPU-I3508U
 
 | Not Applicable| 4.3(4.240152)  
 DIMMs| DDR5-4800MT/s:
 
-* UCS-MRX16G1RE1
-* UCS-MRX32G1RE1
-* UCS-MRX64G2RE1
-* UCS-MR128G4RE1
-* UCS-MR256G8RE1
+  * UCS-MRX16G1RE1
+  * UCS-MRX32G1RE1
+  * UCS-MRX64G2RE1
+  * UCS-MR128G4RE1
+  * UCS-MR256G8RE1
 
 | Not Applicable| 4.3(3.240022)  
 DDR5-5600MT/s:
 
-* UCS-MRX16G1RE3
-* UCS-MRX32G1RE3
-* UCS-MRX48G1RF3
-* UCS-MRX64G2RE3
-* UCS-MRX96G2RF3
-* UCS-MR128G4RE3
-* UCS-MR256G8RE3
+  * UCS-MRX16G1RE3
+  * UCS-MRX32G1RE3
+  * UCS-MRX48G1RF3
+  * UCS-MRX64G2RE3
+  * UCS-MRX96G2RF3
+  * UCS-MR128G4RE3
+  * UCS-MR256G8RE3
 
 | Not Applicable| 4.3(3.240022)  
 Trusted Platform Module (TPM)| UCSX-TPM-002C| Not Applicable| 4.3(1.230097)  
@@ -443,14 +448,20 @@ Storage Controller| UCS-M2-HWRAIDUCSC-RAID-M5HDUCSC-RAID-M5UCSC-SAS-M5,UCSC-SAS-
   
 Note:
 
-* Servers equipped with third-party adapters, AHCI, or PCH storage controllers are not supported in Intersight Managed Mode.
-* **Change in Firmware Version Schema** :
-* **X-Series M6 Server Firmware Bundle** : Post server firmware release 5.0(4g), the version number is in a number format instead of a letter format.
-* **C-Series M5 and M6 Server Firmware Bundle** : Post server firmware release 4.2(3m), the version number is in a number format instead of a letter format.
-* **B-Series M5 and M6 Server Firmware Bundle** : Post server firmware release 4.2(3j), the version number is in the 5.x series and in a number format instead of a letter format.
-* **Infrastructure Firmware Bundle** : With infra firmware release 4.3(2) and later, the version number is in a number format instead of a letter format.
+  * Servers equipped with third-party adapters, AHCI, or PCH storage controllers are not supported in Intersight Managed Mode.
+
+  * **Change in Firmware Version Schema** :
+
+  * **X-Series M6 Server Firmware Bundle** : Post server firmware release 5.0(4g), the version number is in a number format instead of a letter format.
+
+  * **C-Series M5 and M6 Server Firmware Bundle** : Post server firmware release 4.2(3m), the version number is in a number format instead of a letter format.
+
+  * **B-Series M5 and M6 Server Firmware Bundle** : Post server firmware release 4.2(3j), the version number is in the 5.x series and in a number format instead of a letter format.
+
+  * **Infrastructure Firmware Bundle** : With infra firmware release 4.3(2) and later, the version number is in a number format instead of a letter format.
 
 For example: 4.3(2.230117) , where 23 represents year, 0117 shows the incremental build number.​
+
 
 For more information on Cisco Intersight Infrastructure Firmware release notes, Server Firmware release notes, and Release Bundle Content document see [Release Notes](https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html).
 
@@ -458,81 +469,81 @@ Table 4. Compatibility Status of Hardware Components in IMMComponent| Supported/
 ---|---  
 Cisco UCS X-Series Direct| 
 
-* Integrated FI: UCSX-S9108-100G
-* Cisco UCS X-Series Direct supports all components that are compatible with Cisco UCS X-Series modular system.
-* Starting with Infrastructure firmware release 6.0(1.250198):
-* Secondary chassis is supported.
-* Rack servers are supported.
-* UCS X-Series Direct currently does not support Fabric Extender.
+  * Integrated FI: UCSX-S9108-100G
+  * Cisco UCS X-Series Direct supports all components that are compatible with Cisco UCS X-Series modular system.
+  * Starting with Infrastructure firmware release 6.0(1.250198):
+  * Secondary chassis is supported.
+  * Rack servers are supported.
+  * UCS X-Series Direct currently does not support Fabric Extender.
 
   
 Topologies| Direct-attached Racks through 10G/25G/100G connectionsBreak-out port configuration through 10G/25G connectionsFEX-attached Racks through 10GE connectionsChassis through 10G/25G/100G connectionsN9K-C93108YC-FX3 FEX through 10G/25G connections  
 Fabric Interconnects| 
 
-* UCS-FI-6536 and direct-attached rack server are supported at 40G and 100G on Cisco UCS 1400 and 15000 series VIC adapters.
-* Cisco UCS 6664 FI is supported with the UCSX-9508 chassis using UCSX-I-9108-25G and UCSX-I-9108-100G IFMs.
+  * UCS-FI-6536 and direct-attached rack server are supported at 40G and 100G on Cisco UCS 1400 and 15000 series VIC adapters.
+  * Cisco UCS 6664 FI is supported with the UCSX-9508 chassis using UCSX-I-9108-25G and UCSX-I-9108-100G IFMs.
 
   
 Input/Output Module (IOM)| 
 
-* UCS-IOM-2204XP and UCS-IOM-2208XP are not supported on Cisco UCS 6500 Series Fabric Interconnects.
-* UCS-IOM-2304 and UCS-IOM-2304V2 are supported only with Cisco UCS 6500 series Fabric Interconnect.
-* When there is a mixed IOM configuration, Access Policy deployment can fail resulting in Server Profile deployment failure. It will recover once both the IOMs are replaced.
+  * UCS-IOM-2204XP and UCS-IOM-2208XP are not supported on Cisco UCS 6500 Series Fabric Interconnects.
+  * UCS-IOM-2304 and UCS-IOM-2304V2 are supported only with Cisco UCS 6500 series Fabric Interconnect.
+  * When there is a mixed IOM configuration, Access Policy deployment can fail resulting in Server Profile deployment failure. It will recover once both the IOMs are replaced.
 
   
 X-Fabric Modules (XFM)| 
 
-* Cisco UCS X9516 X-Fabric module is supported only on the UCSX-9508 chassis and can be configured only with Cisco UCS X580p PCIe nodes.
-* Cisco UCS X9416 X-Fabric module is supported only on the UCSX-9508 chassis and can be configured only with Cisco UCS X440p PCIe nodes.
+  * Cisco UCS X9516 X-Fabric module is supported only on the UCSX-9508 chassis and can be configured only with Cisco UCS X580p PCIe nodes.
+  * Cisco UCS X9416 X-Fabric module is supported only on the UCSX-9508 chassis and can be configured only with Cisco UCS X440p PCIe nodes.
 
   
 Peripheral Component Interconnect Express (PCIe) node| 
 
-* The Cisco UCS X580p PCIe node is supported only on the UCSX-9508 chassis and can be configured with the Cisco UCS X9516 X-Fabric module and Cisco UCS X210c or X215c M8 servers.
-* Cisco UCS X440p PCIe node is supported only on the UCSX-9508 chassis and can be configured only with Cisco UCS X9416 X-Fabric module.
+  * The Cisco UCS X580p PCIe node is supported only on the UCSX-9508 chassis and can be configured with the Cisco UCS X9516 X-Fabric module and Cisco UCS X210c or X215c M8 servers.
+  * Cisco UCS X440p PCIe node is supported only on the UCSX-9508 chassis and can be configured only with Cisco UCS X9416 X-Fabric module.
 
   
 Fabric Extender (FEX)| Cisco Nexus 2232PP is not supported on Cisco UCS 6500 Series Fabric Interconnects.  
 Rear Mezzanine Adapters| 
 
-* UCS PCI mezz card for X‐Fabric connectivity.
-* The UCSX-210C Compute Node must include a UCSX-V4-PCIME or a supported mezz card when paired with a X440p PCIe node.
+  * UCS PCI mezz card for X‐Fabric connectivity.
+  * The UCSX-210C Compute Node must include a UCSX-V4-PCIME or a supported mezz card when paired with a X440p PCIe node.
 
   
 Adapters| 
 
-* UCSX-X10C-GPUFM is an adapter that supports the GPU, UCSX-GPU-T4-MEZZ. For more information, see [Cisco UCS X10c Front Mezzanine GPU Module Installation and Service Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-x-series-modular-system/products-installation-guides-list.html).
-* UCSX-V4-Q25GME is a mezz card requires UCS VIC 14000 bridge connector (UCSX-V4-BRIDGE) and UCSX-V4-Q25GML mLOM support in the X210c Compute Node. For more information, see [Cisco UCS X210c M6 Compute Node](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-x-series-modular-system/products-installation-guides-list.html).
-* The UCSX-210C Compute Node must include a UCSX-V4-PCIME or a supported mezz card when paired with a X440p PCIe node.
-* UCSX-ML-V5D200G adapter is supported on Cisco UCS 6500 series Fabric Interconnect at 40G and 100G speed, as well as on Cisco UCS 6400 series Fabric Interconnect at 25G speed.
-* Cisco UCS C-Series and X-Series M7 servers support only Cisco UCS 15000 series VIC adapters.
-* UCSX-ME-V5Q50G is a mezz card that requires UCS VIC 15000 bridge connector (UCSX-V5-BRIDGE) and UCSX-ML-V5Q50G mLOM support in the X210c Compute Node. However, this mezz adapter is not supported with UCSX-ML-V5D200G mLOM.
-* On a B-series server, installing a combination of Cisco UCS 1400 and UCS 15000 series VIC adapters is not supported.
-* Cisco UCS VIC 1300 Series adapters are supported on B-Series and C-Series M5 servers with the following combination.
-* UCS-FI-6454 and UCS-IOM-2408
-* UCS-FI-6536 and UCS-IOM-2408
-* UCS-FI-6454 and UCS-IOM-2204XP
-* UCS-FI-6454 and UCS-IOM-2208XP
-* UCS-FI-6536 and direct-attached rack server at 40G
-* UCS-FI-6454 and rack server connected through FEX
-* UCS-FI-6454 and direct-attached rack server with 10G QSA
-* UCS-FI-6536 and UCS-IOM-2304 or UCS-IOM-2304V2
-* UCS-FI-64108 and UCS-IOM-2408
-* UCS-FI-64108 and UCS-IOM-2204XP
-* UCS-FI-64108 and UCS-IOM-2208XP
-* UCS-FI-64108 and direct-attached rack server
-* UCS-FI-64108 and rack server connected through FEX
-* UCSC-M-V100-04, UCSC-PCIE-C100-04, UCSC-MLOM-C100-04 are supported only on Cisco UCS 6500 Series Fabric Interconnects.
-* The following combinations are not supported on UCS C-Series M6 servers:
-* 1400 Series MLOM adapters with 15000 Series PCIE adapters
-* UCSC-M-V5Q50GV2 and UCSC-M-V5D200GV2 are not supported with 14xx PCIE adapters
-* Ensure that you have upgraded servers to the VIC supported release versions before installing the VIC adapters into the server. If you install VIC adapters on servers running an earlier release and later decide to upgrade the servers to the supported version, you need to perform A/C power cycle for the servers to enable the adapters.
+  * UCSX-X10C-GPUFM is an adapter that supports the GPU, UCSX-GPU-T4-MEZZ. For more information, see [Cisco UCS X10c Front Mezzanine GPU Module Installation and Service Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-x-series-modular-system/products-installation-guides-list.html).
+  * UCSX-V4-Q25GME is a mezz card requires UCS VIC 14000 bridge connector (UCSX-V4-BRIDGE) and UCSX-V4-Q25GML mLOM support in the X210c Compute Node. For more information, see [Cisco UCS X210c M6 Compute Node](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-x-series-modular-system/products-installation-guides-list.html).
+  * The UCSX-210C Compute Node must include a UCSX-V4-PCIME or a supported mezz card when paired with a X440p PCIe node.
+  * UCSX-ML-V5D200G adapter is supported on Cisco UCS 6500 series Fabric Interconnect at 40G and 100G speed, as well as on Cisco UCS 6400 series Fabric Interconnect at 25G speed.
+  * Cisco UCS C-Series and X-Series M7 servers support only Cisco UCS 15000 series VIC adapters.
+  * UCSX-ME-V5Q50G is a mezz card that requires UCS VIC 15000 bridge connector (UCSX-V5-BRIDGE) and UCSX-ML-V5Q50G mLOM support in the X210c Compute Node. However, this mezz adapter is not supported with UCSX-ML-V5D200G mLOM.
+  * On a B-series server, installing a combination of Cisco UCS 1400 and UCS 15000 series VIC adapters is not supported.
+  * Cisco UCS VIC 1300 Series adapters are supported on B-Series and C-Series M5 servers with the following combination.
+  * UCS-FI-6454 and UCS-IOM-2408
+  * UCS-FI-6536 and UCS-IOM-2408
+  * UCS-FI-6454 and UCS-IOM-2204XP
+  * UCS-FI-6454 and UCS-IOM-2208XP
+  * UCS-FI-6536 and direct-attached rack server at 40G
+  * UCS-FI-6454 and rack server connected through FEX
+  * UCS-FI-6454 and direct-attached rack server with 10G QSA
+  * UCS-FI-6536 and UCS-IOM-2304 or UCS-IOM-2304V2
+  * UCS-FI-64108 and UCS-IOM-2408
+  * UCS-FI-64108 and UCS-IOM-2204XP
+  * UCS-FI-64108 and UCS-IOM-2208XP
+  * UCS-FI-64108 and direct-attached rack server
+  * UCS-FI-64108 and rack server connected through FEX
+  * UCSC-M-V100-04, UCSC-PCIE-C100-04, UCSC-MLOM-C100-04 are supported only on Cisco UCS 6500 Series Fabric Interconnects.
+  * The following combinations are not supported on UCS C-Series M6 servers:
+  * 1400 Series MLOM adapters with 15000 Series PCIE adapters
+  * UCSC-M-V5Q50GV2 and UCSC-M-V5D200GV2 are not supported with 14xx PCIE adapters
+  * Ensure that you have upgraded servers to the VIC supported release versions before installing the VIC adapters into the server. If you install VIC adapters on servers running an earlier release and later decide to upgrade the servers to the supported version, you need to perform A/C power cycle for the servers to enable the adapters.
 
   
 Graphics processing unit (GPU)| 
 
-* Mixing of GPU models is not supported in the server. For more information, see [Cisco UCS X440p PCIe Node Installation and Service Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-x-series-modular-system/products-installation-guides-list.html).
-* Specific GPUs are also supported on the X210c Compute Nodes. They require the UCSX-X10C-GPUFM adapter to support a GPU in the Front Mezz.Note:Contact NVIDIA directly for software support related to NVIDIA products used with GPUs. The Cisco Technical Assistance Center (TAC) does not provide support for NVIDIA software. For more information, see [Engage Support for Cisco AI UCS Servers Containing Nvidia GPUs](https://www.cisco.com/c/en/us/support/docs/servers-unified-computing/unified-computing-system/225449-engage-support-for-cisco-ai-ucs-servers.html).
+  * Mixing of GPU models is not supported in the server. For more information, see [Cisco UCS X440p PCIe Node Installation and Service Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-x-series-modular-system/products-installation-guides-list.html).
+  * Specific GPUs are also supported on the X210c Compute Nodes. They require the UCSX-X10C-GPUFM adapter to support a GPU in the Front Mezz.Note:Contact NVIDIA directly for software support related to NVIDIA products used with GPUs. The Cisco Technical Assistance Center (TAC) does not provide support for NVIDIA software. For more information, see [Engage Support for Cisco AI UCS Servers Containing Nvidia GPUs](https://www.cisco.com/c/en/us/support/docs/servers-unified-computing/unified-computing-system/225449-engage-support-for-cisco-ai-ucs-servers.html).
 
   
   
@@ -555,8 +566,8 @@ NetApp AFF-Series, FAS-Series, All SAN Arrays| ONTAP version 9.8 and later versi
 NetApp Active IQ Unified Manager| Latest version of AIQUM is required (9.14RC1).  
 Pure Storage FlashArray| 
 
-* Purity version FA 4.8 to FA 6.0.2 (REST API 1.x only)
-* Purity version FA 6.0.3 or later (REST API 1.x and REST API 2.x)
+  * Purity version FA 4.8 to FA 6.0.2 (REST API 1.x only)
+  * Purity version FA 6.0.3 or later (REST API 1.x and REST API 2.x)
 
   
 VMware vCenter| 7.0 and 8.0  
@@ -579,72 +590,76 @@ System| Minimum Supported Version
 ---|---  
 Cisco Nexus Switch| The list of supported devices when the Claim Target option is used to claim the targets:
 
-* Cisco Nexus 9200 Series
-* Cisco Nexus 9300 Series
-* Cisco Nexus 9400 Series
-* Cisco Nexus 9500 Series
-* Cisco Nexus 9800 Series
+  * Cisco Nexus 9200 Series
+  * Cisco Nexus 9300 Series
+  * Cisco Nexus 9400 Series
+  * Cisco Nexus 9500 Series
+  * Cisco Nexus 9800 Series
 
 Requires NX-OS Release 10.2(3)F or later. For more information, see [Recommended Cisco NX-OS Releases for Cisco Nexus 9000 Series Switches](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/recommended_release/b_Minimum_and_Recommended_Cisco_NX-OS_Releases_for_Cisco_Nexus_9000_Series_Switches.html).The list of supported devices when the Claim Target with Assist option is used to the claim the targets:
 
-* Cisco Nexus 9200 Series
-* Cisco Nexus 9300 Series
-* Cisco Nexus 9400 Series
-* Cisco Nexus 9500 Series
-* Cisco Nexus 9800 Series
+  * Cisco Nexus 9200 Series
+  * Cisco Nexus 9300 Series
+  * Cisco Nexus 9400 Series
+  * Cisco Nexus 9500 Series
+  * Cisco Nexus 9800 Series
 
 The list of certified devices when the Claim Target with Assist option is used to the claim the targets:
 
-* N9K-C9332PQ
-* N9K-C9336C-FX2
-* N9K-C9372PX
-* N9K-C9396TX
-* N9K-C93108TC-EX
-* N9K-C93120TX
-* N9K-C93128TX
-* N9K-93180YC-EX
-* N9K-C93180YC-FX
-* N9K-C93600CD-GX
-* N9K-C93360YC-FX2
-* N9K-C9316D-GX
-* N9K-C9516
-* N9K-C9504
+  * N9K-C9332PQ
+  * N9K-C9336C-FX2
+  * N9K-C9372PX
+  * N9K-C9396TX
+  * N9K-C93108TC-EX
+  * N9K-C93120TX
+  * N9K-C93128TX
+  * N9K-93180YC-EX
+  * N9K-C93180YC-FX
+  * N9K-C93600CD-GX
+  * N9K-C93360YC-FX2
+  * N9K-C9316D-GX
+  * N9K-C9516
+  * N9K-C9504
 
 Requires NX-OS Release 9.3(9) or later. For more information, see [Recommended Cisco NX-OS Releases for Cisco Nexus 9000 Series Switches](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/recommended_release/b_Minimum_and_Recommended_Cisco_NX-OS_Releases_for_Cisco_Nexus_9000_Series_Switches.html).For the recommended release of Nexus Switches for the Fabric Interconnects, see [Fabric Interconnect and Nexus Switch Support Matrix](/help/supported_systems#fabric_interconnect_and_nexus_switch_support_matrix).  
 Cisco MDS Switch| The list of supported devices when the Claim Target option is used to the claim the targets:
 
-* Cisco MDS 9100 Series
-* Cisco MDS 9200 Series
-* Cisco MDS 9300 Series
-* Cisco MDS 9700 Series
+  * Cisco MDS 9100 Series
+  * Cisco MDS 9200 Series
+  * Cisco MDS 9300 Series
+  * Cisco MDS 9700 Series
 
 Requires NX-OS Release 9.3(2) or later. For more information, see [Recommended Releases for Cisco MDS 9000 Series Switches](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/b_MDS_NX-OS_Recommended_Releases.html).The list of supported devices when the Claim Target with Assist option is used to the claim the targets:
 
-* Cisco MDS 9100 Series
-* Cisco MDS 9200 Series
-* Cisco MDS 9300 Series
-* Cisco MDS 9700 Series
+  * Cisco MDS 9100 Series
+  * Cisco MDS 9200 Series
+  * Cisco MDS 9300 Series
+  * Cisco MDS 9700 Series
 
 The list of certified devices when the Claim Target with Assist option is used to the claim the targets:
 
-* DS-C9132T-MEK9
-* DS-C9132T-MIK9
-* DS-C9148S-K9
-* DS-C9148T-K9
-* DS-C9396S-K9
-* DS-C9396T-K9
+  * DS-C9132T-MEK9
+  * DS-C9132T-MIK9
+  * DS-C9148S-K9
+  * DS-C9148T-K9
+  * DS-C9396S-K9
+  * DS-C9396T-K9
 
 Requires NX-OS Release 8.4(2a) or later. For more information, see [Recommended Releases for Cisco MDS 9000 Series Switches](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/b_MDS_NX-OS_Recommended_Releases.html).For the recommended release of MDS for the Fabric Interconnects, see [Fabric Interconnect and MDS Switch Support Matrix](/help/supported_systems#fabric_interconnect_and_mds_switch_support_matrix).  
   
 ## Fabric Interconnect and Nexus Switch Support Matrix
 
-* For information on the support matrix for FI and Nexus switches in Cisco Intersight Infrastructure firmware release 6.0, see [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0/m-compatibility.html#r_fi_mds_support_matrix).
-* For information on the support matrix for FI and Nexus switches in Cisco Intersight Infrastructure firmware release 4.3, see [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/imm_infra_fw_rn_4_3/b_imm_infra_fw_rn_lb.html#r_fi_mds_support_matrix).
+  * For information on the support matrix for FI and Nexus switches in Cisco Intersight Infrastructure firmware release 6.0, see [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0/m-compatibility.html#r_fi_mds_support_matrix).
+
+  * For information on the support matrix for FI and Nexus switches in Cisco Intersight Infrastructure firmware release 4.3, see [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/imm_infra_fw_rn_4_3/b_imm_infra_fw_rn_lb.html#r_fi_mds_support_matrix).
+
 
 ## Fabric Interconnect and MDS Switch Support Matrix
 
-* For information on the support matrix for FI and MDS switches in release 6.0, see [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0/m-compatibility.html#r_fi_mds_support_matrix).
-* For information on the support matrix for FI and MDS switches in release 4.3, see [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/imm_infra_fw_rn_4_3/b_imm_infra_fw_rn_lb.html#r_fi_mds_support_matrix).
+  * For information on the support matrix for FI and MDS switches in release 6.0, see [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0/m-compatibility.html#r_fi_mds_support_matrix).
+
+  * For information on the support matrix for FI and MDS switches in release 4.3, see [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/imm_infra_fw_rn_4_3/b_imm_infra_fw_rn_lb.html#r_fi_mds_support_matrix).
+
 
 Note:
 
@@ -656,30 +671,44 @@ Cisco Intersight Essentials license tier includes all the features listed below:
 
 table_essentials.html
 
-* * For the details on the list of server sctions, see [Server Actions](/help/operate/servers#server_actions).
-* ** When you navigate to the individual Server Details page from the Servers table view, you can view additional details including full inventory, HCL status, status of the server profiles, and a graphical view of the server. You can also view details of the alarms on a particular server.
-* *** Chassis storage disk images for the Cisco UCS S-Series M4/M5 Servers are not displayed in the Images panel on the **Server Details** page, but the **Inventory** tab displays the disks when they are assigned to a server.
-* *b Supports HyperFlex Data Platform versions:
-* 6.0(1b)
-* 5.5(1a), 5.5(2a)
-* 5.0(2e), 5.0(2g)
+  * * For the details on the list of server sctions, see [Server Actions](/help/operate/servers#server_actions).
+
+  * ** When you navigate to the individual Server Details page from the Servers table view, you can view additional details including full inventory, HCL status, status of the server profiles, and a graphical view of the server. You can also view details of the alarms on a particular server.
+
+  * *** Chassis storage disk images for the Cisco UCS S-Series M4/M5 Servers are not displayed in the Images panel on the **Server Details** page, but the **Inventory** tab displays the disks when they are assigned to a server.
+
+  * *b Supports HyperFlex Data Platform versions:
+
+  * 6.0(1b)
+
+  * 5.5(1a), 5.5(2a)
+
+  * 5.0(2e), 5.0(2g)
 
 HXDP versions 5.0(2d), 5.0(2c), 5.0(2b), 5.0(2a), 4.5(2a), 4.5(2b), 4.5(2c), 4.5(2d), and 4.5(2e) are supported for cluster expansion only.
 
 Upgrades from HXDP 4.0.2x are supported provided the ESXi version is compatible with 4.5(2x). You can upgrade both at the same time. For example, upgrade HXDP 4.0.2x + ESXi 6.0 to HXDP 4.5 + ESXi 6.5.
 
-* *1 Cisco UCS Manager 3.1(2c) and later on all platforms.
-* *2 Enabled by the **OS Discovery Tool**.
-* *3 Requires HyperFlex Data Platform 4.0(1a) and later for HyperFlex cluster upgrade.
-* *4 Cisco UCS C220 M6, C240 M6, C225 M6, and C245 M6 servers are supported in all modes.
-* *5 Cisco UCS B200 M6 servers are supported.
-* *6M2 servers are supported till Cisco UCS Manager Release 3.2(3).
-* *7 M3 servers are supported till Cisco UCS Manager Release 4.1(3)
+  * *1 Cisco UCS Manager 3.1(2c) and later on all platforms.
+
+  * *2 Enabled by the **OS Discovery Tool**.
+
+  * *3 Requires HyperFlex Data Platform 4.0(1a) and later for HyperFlex cluster upgrade.
+
+  * *4 Cisco UCS C220 M6, C240 M6, C225 M6, and C245 M6 servers are supported in all modes.
+
+  * *5 Cisco UCS B200 M6 servers are supported.
+
+  * *6M2 servers are supported till Cisco UCS Manager Release 3.2(3).
+
+  * *7 M3 servers are supported till Cisco UCS Manager Release 4.1(3)
 
 M4 servers running in UCS Manager Mode are supported until Cisco UCS Manager Release 4.2(3).
 
-* *8 Server firmware upgrade is supported as part of HyperFlex cluster upgrade operation
-* *9 Cisco UCS C480 ML M5 server, Cisco UCS C125 M5, and S3260 M5 servers are not supported in Intersight Managed Mode.
+  * *8 Server firmware upgrade is supported as part of HyperFlex cluster upgrade operation
+
+  * *9 Cisco UCS C480 ML M5 server, Cisco UCS C125 M5, and S3260 M5 servers are not supported in Intersight Managed Mode.
+
 
 For more information about features that do not require extra licensing, see [Cisco UCS Servers | License Lifecycle](/help/getting_started/licensing_requirements/lic_infra#cisco_ucs_servers_%7C_license_lifecycle).
 
@@ -693,13 +722,16 @@ Cisco Intersight Advantage license tier includes all the features of the Essenti
 
 table_advantage.html
 
-* *1 Requires a minimum of one UCS target with Advantage tier license.
-* *2 M2 servers are supported till Cisco UCS Manager Release 3.2(3).
-* *3 M3 servers are supported till Cisco UCS Manager Release 4.1(3).
+  * *1 Requires a minimum of one UCS target with Advantage tier license.
+
+  * *2 M2 servers are supported till Cisco UCS Manager Release 3.2(3).
+
+  * *3 M3 servers are supported till Cisco UCS Manager Release 4.1(3).
 
 M4 servers running in UCS Manager Managed Mode are supported until Cisco UCS Manager Release 4.2(3).
 
-* *4 Cisco UCS C480 ML M5 server and Cisco UCS C125 M5 server are not supported in Intersight Managed Mode.
+  * *4 Cisco UCS C480 ML M5 server and Cisco UCS C125 M5 server are not supported in Intersight Managed Mode.
+
 
 For more information about features that do not require extra licensing, see [Cisco UCS Servers | License Lifecycle](/help/getting_started/licensing_requirements/lic_infra#cisco_ucs_servers_%7C_license_lifecycle).
 
@@ -728,14 +760,22 @@ Maximum number of concurrent OS Install requests per account| 75
 
 Cisco Intersight has validated the following IdPs:
 
-* Okta
-* Microsoft Azure AD
-* AD FS
-* OneLogin
-* SimpleSAMLphp
-* Shibboleth
-* WSO2
-* PingFederate
+  * Okta
+
+  * Microsoft Azure AD
+
+  * AD FS
+
+  * OneLogin
+
+  * SimpleSAMLphp
+
+  * Shibboleth
+
+  * WSO2
+
+  * PingFederate
+
 
 For more information about IdPs, see [Single Sign-On with Intersight](/help/resources/sso_in_intersight_overview).
 
@@ -753,33 +793,45 @@ For more information, see [Firmware Requirements for Chassis and Server–Limit 
 
 ## Supported Hardware and Software Versions For Third-Party Targets
 
-* Hitachi Virtual Storage Platform
-* VSP One Block High End: A0-05-21-00/00 and later*1
+  * Hitachi Virtual Storage Platform
+
+  * VSP One Block High End: A0-05-21-00/00 and later*1
 
 *1 Some Intersight functions will require higher minimum versions.
 
-* VSP One Block (B20): A3-02-21-x0/01 and later
-* VSP 5000 series: 90-03-01-00/00 and later
-* VSP G1000, G1500 and F1500: 80-06-75-00/00 and later
-* VSP G/F 350,370,700,900: 88-05-01-x0/00 and later
-* VSP E Series: 93-02-02-60/00 and later
-* Hitachi Ops Center API Configuration Manager
-* 10.1.0-00 and later*2
+  * VSP One Block (B20): A3-02-21-x0/01 and later
+
+  * VSP 5000 series: 90-03-01-00/00 and later
+
+  * VSP G1000, G1500 and F1500: 80-06-75-00/00 and later
+
+  * VSP G/F 350,370,700,900: 88-05-01-x0/00 and later
+
+  * VSP E Series: 93-02-02-60/00 and later
+
+  * Hitachi Ops Center API Configuration Manager
+
+  * 10.1.0-00 and later*2
 
 *2 Some Hitachi Virtual Storage Platform models require higher minimum versions.
 
-* Pure Storage FlashArray with Purity version 4.8 (API version 1.7) and later
-* NetApp Storage Systems with NetApp ONTAP version 9.7P1 and later, and the latest version of NetApp Active IQ Unified Manager is required.
-* VMware vCenter versions 7.0 and 8.0
+  * Pure Storage FlashArray with Purity version 4.8 (API version 1.7) and later
+
+  * NetApp Storage Systems with NetApp ONTAP version 9.7P1 and later, and the latest version of NetApp Active IQ Unified Manager is required.
+
+  * VMware vCenter versions 7.0 and 8.0
 
 Important: To use vCenter 7.0, you must update to the latest version for Intersight Assist. For more information, see [Updating the Intersight Connected Virtual Appliance Software](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_updating_the_intersight_virtual_appliance_software.html#Cisco_Task_in_List_GUI.dita_43af1cc4-8230-4d44-a643-5c5baabf78d0).
 
-* Dell PowerEdge and HPE ProLiant servers which support Redfish APIs
+  * Dell PowerEdge and HPE ProLiant servers which support Redfish APIs
+
 
 ## Cisco UCS NVMeoF Support Matrix for Third-Party Storage Vendors
 
-* For information on Cisco UCS NVMeoF Support Matrix for Third-Party Storage Vendors in Cisco Intersight Infrastructure firmware release 6.0, see [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0/m-compatibility.html#r_third_party_storage_6_0).
-* For information on Cisco UCS NVMeoF Support Matrix for Third-Party Storage Vendors in Cisco Intersight Infrastructure firmware release 4.3, see [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/imm_infra_fw_rn_4_3/b_imm_infra_fw_rn_lb.html#r_third_party_storage_matrix).
+  * For information on Cisco UCS NVMeoF Support Matrix for Third-Party Storage Vendors in Cisco Intersight Infrastructure firmware release 6.0, see [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0/m-compatibility.html#r_third_party_storage_6_0).
+
+  * For information on Cisco UCS NVMeoF Support Matrix for Third-Party Storage Vendors in Cisco Intersight Infrastructure firmware release 4.3, see [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/imm_infra_fw_rn_4_3/b_imm_infra_fw_rn_lb.html#r_third_party_storage_matrix).
+
 
 ## Internet Protocol Version Support
 
@@ -787,6 +839,9 @@ Cisco Intersight supports Internet Protocol Version 4 (IPv4) and Internet Protoc
 
 The following features do not support IPv6:
 
-* Cisco Intersight Assist—Claiming third-party targets including Pure Storage, NetApp Active IQ Unified Manager, and VMware vCenter in Intersight
-* HyperFlex Target claim, installation, and upgrade—IPv6 is not supported on HyperFlex Data Platform
-* Intersight Cloud Orchestration—Workflow Designer
+  * Cisco Intersight Assist—Claiming third-party targets including Pure Storage, NetApp Active IQ Unified Manager, and VMware vCenter in Intersight
+
+  * HyperFlex Target claim, installation, and upgrade—IPv6 is not supported on HyperFlex Data Platform
+
+  * Intersight Cloud Orchestration—Workflow Designer
+

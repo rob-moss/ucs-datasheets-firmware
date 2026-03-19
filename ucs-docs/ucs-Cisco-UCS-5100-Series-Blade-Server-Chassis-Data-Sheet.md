@@ -8,15 +8,16 @@
 | **HTML Title** | Cisco UCS 5100 Series Blade Server Chassis Data Sheet |
 | **Source file** | `ucs-docs-raw/html/data_sheet_c78-526830.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:15 |
+| **Fetched on** | 2026-03-19 15:37:33 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.html
 
-* Skip to content
-* Skip to search
-* Skip to footer
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
 
 # Cisco UCS 5100 Series Blade Server Chassis Data Sheet
 
@@ -36,10 +37,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.pdf) (1.1 MB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.pdf) (1.1 MB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:January 27, 2021
 
@@ -53,24 +56,26 @@ __ __ __ __
 
 Contact Cisco
 
-* Contact Cisco __
-* __
-* __
+  * Contact Cisco __
+  * __
+
+  * __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-* __
+  * __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-* __
+  * __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-* __
+  * __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
 
 Save
 
@@ -84,31 +89,38 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.pdf) (1.1 MB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.pdf) (1.1 MB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:January 27, 2021
 
 #### Table of Contents
 
-* Cisco unified computing system overview
-* Product overview
-* Features and benefits
-* Specifications
-* Warranty information
-* Cisco environmental sustainability
-* Cisco unified computing services
-* Why Cisco?
-* Cisco Capital
-* For more information
+  * Cisco unified computing system overview
+  * Product overview
+  * Features and benefits
+  * Specifications
+  * Warranty information
+  * Cisco environmental sustainability
+  * Cisco unified computing services
+  * Why Cisco?
+  * Cisco Capital
+  * For more information
+
 
 ` `
+
+![Cisco UCS 5100 Series Blade Server Chassis](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.docx/_jcr_content/renditions/data_sheet_c78-526830_0.png)
 
 Cisco unified computing system overview
 
 The Cisco Unified Computing System™ (Cisco UCS®) is a next-generation data center platform that unites computing, networking, storage access, and virtualization resources into a cohesive system designed to reduce Total Cost of Ownership (TCO) and increase business agility. The system integrates a low-latency, lossless 10/40 Gigabit Ethernet unified network fabric with enterprise-class, x86-architecture servers. The system is an integrated, scalable, multichassis platform in which all resources participate in a unified management domain (Figure 1).
+
+![The Cisco Unified Computing System Is a Highly Available Cohesive Architecture](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.docx/_jcr_content/renditions/data_sheet_c78-526830_1.png)
 
 Figure 1. 
 
@@ -123,6 +135,8 @@ The Cisco UCS 5100 Series Blade Server Chassis is a crucial building block of th
 The Cisco UCS 5108 Blade Server Chassis (Figure 2) is six Rack Units (6RU) high and can mount in an industry-standard 19-inch rack. A chassis can house up to eight half-width Cisco UCS B-Series Blade Servers and can accommodate both half-width and full-width blade form factors.
 
 Four hot-swappable power supplies are accessible from the front of the chassis, and single-phase 2500 W AC, 2500 W –48 VDC, and 2500 W 200 - 380 VDC power supplies and chassis are available. These power supplies are up to 94 percent efficient and meet the requirements for the 80 Plus Platinum rating. The power subsystem can be configured to support nonredundant, N+1 redundant, and grid-redundant configurations. The rear of the chassis contains eight hot-swappable fans, four power connectors (one per power supply), and two I/O bays that can support either Cisco UCS 2000 Series Fabric Extenders or the Cisco UCS 6324 Fabric Interconnect. A passive midplane provides up to 80 Gbps of I/O bandwidth per server slot and up to 160 Gbps of I/O bandwidth for two slots. The chassis support 40 Gigabit Ethernet standards with the 2304 Fabric Extender and 25 Gigabit Ethernet standards with the Cisco UCS 2408 Fabric Extender.
+
+![Cisco UCS 5108 Blade Server Chassis with Blade Servers Front and Back](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.docx/_jcr_content/renditions/data_sheet_c78-526830_2.png)
 
 Figure 2. 
 
@@ -231,5 +245,8 @@ For more information
 For more information about the Cisco UCS 5100 Series Blade Server Chassis, visit <https://www.cisco.com/en/US/products/ps10279/index.html> or contact your local Cisco representative.
 
 ### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

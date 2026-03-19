@@ -8,11 +8,13 @@
 | **HTML Title** | Cisco UCS Manager System Monitoring Guide, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b-ucsm-gui-system-monitoring-guide-4-3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:47:55 |
+| **Fetched on** | 2026-03-19 15:34:48 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/4-3/b-ucsm-gui-system-monitoring-guide-4-3.html
+
+![Clear Contents of Search](/etc/designs/cdc/fw/i/ic_clear_gray.png)
 
 ---
 
@@ -22,10 +24,14 @@
 
 This guide is intended primarily for data center administrators with responsibilities and expertise in one or more of the following: 
 
-* Server administration 
-* Storage administration 
-* Network administration 
-* Network security
+  * Server administration 
+
+  * Storage administration 
+
+  * Network administration 
+
+  * Network security 
+
 
 ---
 
@@ -39,41 +45,41 @@ Table 1. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(6a)
 ---|---|---  
 Support for X-Series M8 and C-Series M8 servers |  Cisco UCS Manager now supports Cisco UCS X210c M8 Compute Node, Cisco UCS C240 M8 Server, and Cisco UCS C220 M8 Server | 
 
-* [Support for Local Storage Monitoring](m_hardware_monitoring.html#reference_s5w_2fy_ndb)
-* [Graphics Card Server Support](m_hardware_monitoring.html#concept_B6CBDE8AAEE041B9A3E5165193A53B36)
-* [TFM and Supercap Guidelines and Limitations](m_hardware_monitoring.html#concept_ED653EA1CAA349739E8BF2616A29C645)
+  * [Support for Local Storage Monitoring](m_hardware_monitoring.html#reference_s5w_2fy_ndb)
+  * [Graphics Card Server Support](m_hardware_monitoring.html#concept_B6CBDE8AAEE041B9A3E5165193A53B36)
+  * [TFM and Supercap Guidelines and Limitations](m_hardware_monitoring.html#concept_ED653EA1CAA349739E8BF2616A29C645)
 
   
 Table 2. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(5a) Feature |  Description |  Where Documented  
 ---|---|---  
 Support for Cisco UCS X215c M8 Compute Node |  Cisco UCS Manager now supports Cisco UCS X215c M8 Compute Node.  | 
 
-* [Graphics Card Server Support](m_hardware_monitoring.html#concept_B6CBDE8AAEE041B9A3E5165193A53B36)
-* [TFM and Supercap Guidelines and Limitations](m_hardware_monitoring.html#concept_ED653EA1CAA349739E8BF2616A29C645)
+  * [Graphics Card Server Support](m_hardware_monitoring.html#concept_B6CBDE8AAEE041B9A3E5165193A53B36)
+  * [TFM and Supercap Guidelines and Limitations](m_hardware_monitoring.html#concept_ED653EA1CAA349739E8BF2616A29C645)
 
   
 Support for Cisco UCS C225 M8 Server |  Cisco UCS Manager now supports Cisco UCS C225 M8 Server | 
 
-* [Graphics Card Server Support](m_hardware_monitoring.html#concept_B6CBDE8AAEE041B9A3E5165193A53B36)
-* [TFM and Supercap Guidelines and Limitations](m_hardware_monitoring.html#concept_ED653EA1CAA349739E8BF2616A29C645)
+  * [Graphics Card Server Support](m_hardware_monitoring.html#concept_B6CBDE8AAEE041B9A3E5165193A53B36)
+  * [TFM and Supercap Guidelines and Limitations](m_hardware_monitoring.html#concept_ED653EA1CAA349739E8BF2616A29C645)
 
   
 Table 3. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b) Feature |  Description |  Where Documented  
 ---|---|---  
 Support for Cisco UCS Fabric Interconnects 9108 100G |  Cisco UCS Manager now supports Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct).  | 
 
-* [Configuring the Syslog Using Cisco UCS Manager GUI](m_syslog.html#task_6BC3B5C19B1B439A9A5CBB8445740400)
-* [Configuring Smart Call Home](m_call_home_and_smart_call_home_monitoring.html#task_8C24D00D7DF74266B508C0AC1CCDD84C)
-* [NetFlow Monitoring](m_netflow_monitoring.html#concept_k2x_dxz_22b)
-* [NetFlow Limitations](m_netflow_monitoring.html#netflow-limitations)
+  * [Configuring the Syslog Using Cisco UCS Manager GUI](m_syslog.html#task_6BC3B5C19B1B439A9A5CBB8445740400)
+  * [Configuring Smart Call Home](m_call_home_and_smart_call_home_monitoring.html#task_8C24D00D7DF74266B508C0AC1CCDD84C)
+  * [NetFlow Monitoring](m_netflow_monitoring.html#concept_k2x_dxz_22b)
+  * [NetFlow Limitations](m_netflow_monitoring.html#netflow-limitations)
 
   
 Table 4. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b) Feature |  Description |  Where Documented  
 ---|---|---  
 Support for Cisco UCS C-Series M8 servers |  Cisco UCS Manager now supports Cisco UCS C245 M8 Servers.  | 
 
-* [Support for Local Storage Monitoring](m_hardware_monitoring.html#reference_s5w_2fy_ndb)
-* [TFM and Supercap Guidelines and Limitations](m_hardware_monitoring.html#concept_ED653EA1CAA349739E8BF2616A29C645)
+  * [Support for Local Storage Monitoring](m_hardware_monitoring.html#reference_s5w_2fy_ndb)
+  * [TFM and Supercap Guidelines and Limitations](m_hardware_monitoring.html#concept_ED653EA1CAA349739E8BF2616A29C645)
 
   
 Table 5. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4a) Feature |  Description |  Where Documented  
@@ -105,24 +111,38 @@ You can deploy the Cisco UCS C-Series rack servers as part of the Cisco Unified 
 
 The Cisco UCS C245 M8 Server brings many innovations to the UCS AMD® rack server line. With the introduction of PCIe Gen 5.0 expansion slots for high-speed I/O, a DDR5 memory bus, and expanded storage capabilities, the server delivers significant performance and efficiency gains that will greatly enhance application performance. Features include: 
 
-* Support for up to two 4th Gen AMD EPYC™ CPUs in a server designed to drive as much as 256 CPU cores (128 cores per socket) 
-* Up to 24 DDR5 DIMM slots
-* Up to 4800 MT/s DDR5 memory
-* Up to 8 x PCIe Gen 4.0 slots or up to 4 x PCIe Gen 5.0 slots, plus a hybrid modular LAN on motherboard (mLOM) /OCP 3.0 slot (details below) 
-* Support for Cisco UCS VIC 15000 Series adapters as well as a host of third-party NIC options
-* Up to 28 hot-swappable small-form-factor (SFF) SAS/SATA or NVMe drives (with up to 8 direct-attach NVMe drives) and New tri-mode RAID controller supports SAS4 plus NVMe hardware RAID. 
-* M.2 boot options
-* Up to two 960GB SATA M.2 drives with hardware RAID support
-* Up to two 960GB NVMe M.2 drives with NVMe hardware RAID
-* Support for up to Eight GPUs
-* Modular LOM / OCP 3.0
-* One dedicated PCIe Gen4x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
-* mLOM slot that can be used to install a Cisco UCS Virtual Interface Card (VIC) without consuming a PCIe slot, supporting quad-port 10/25/50 Gbps or dual-port 40/100/200 Gbps network connectivity 
-* OCP 3.0 slot that features full out-of-band management for select adapters
+  * Support for up to two 4th Gen AMD EPYC™ CPUs in a server designed to drive as much as 256 CPU cores (128 cores per socket) 
+
+  * Up to 24 DDR5 DIMM slots
+
+  * Up to 4800 MT/s DDR5 memory
+
+  * Up to 8 x PCIe Gen 4.0 slots or up to 4 x PCIe Gen 5.0 slots, plus a hybrid modular LAN on motherboard (mLOM) /OCP 3.0 slot (details below) 
+
+  * Support for Cisco UCS VIC 15000 Series adapters as well as a host of third-party NIC options
+
+  * Up to 28 hot-swappable small-form-factor (SFF) SAS/SATA or NVMe drives (with up to 8 direct-attach NVMe drives) and New tri-mode RAID controller supports SAS4 plus NVMe hardware RAID. 
+
+  * M.2 boot options
+
+  * Up to two 960GB SATA M.2 drives with hardware RAID support
+
+  * Up to two 960GB NVMe M.2 drives with NVMe hardware RAID
+
+  * Support for up to Eight GPUs
+
+  * Modular LOM / OCP 3.0
+
+  * One dedicated PCIe Gen4x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
+
+  * mLOM slot that can be used to install a Cisco UCS Virtual Interface Card (VIC) without consuming a PCIe slot, supporting quad-port 10/25/50 Gbps or dual-port 40/100/200 Gbps network connectivity 
+
+  * OCP 3.0 slot that features full out-of-band management for select adapters
+
 
 Cisco UCS Manager supports all the peripherals supported by Cisco UCS C245 M8 Server. For complete list of supported peripherals for Cisco UCS C245 M8 Server, see [Cisco UCS C245 M8 SFF Rack Server Spec Sheet](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c245-m8-sff-rack-server.pdf&ved=2ahUKEwjDqcbvxdiGAxXuzzgGHUbnAy0QFnoECBUQAQ&usg=AOvVaw0MzOh0jzcaa9bNdqgl3iaT). 
 
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -141,26 +161,41 @@ The Cisco UCS X410c M7 Compute Node is the first 4-socket 4th Gen Intel® Xeon®
 
 The Cisco UCS X410c M7 Compute Node provides these main features: 
 
-* CPU: Four 4th Gen Intel Xeon Scalable Processors with up to 60 cores per processor
-* Memory: Up to 16TB of main memory with 64x 256 GB DDR5-4800 Memory DIMMs
-* Storage: Up to six hot-pluggable solid-state drives (SSDs), or non-volatile memory express (NVMe) 2.5-inch drives with a choice of enterprise-class RAID or passthrough controllers, up to two M.2 SATA drives with optional hardware RAID 
-* mLOM virtual interface cards:
-* Cisco UCS VIC 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps of unified fabric connectivity to each of the chassis’s intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-* Cisco UCS VIC 15231 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis’s intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-* Cisco UCS VIC 15230 (with secure boot feature) occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis’s intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-* Optional mezzanine card:
-* Cisco UCS 5th Gen VIC 15422 can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
-* Cisco UCS PCI Mezz card for Cisco UCS X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the Cisco UCS X440p PCIe Node. 
-* All VIC mezzanine cards also provide I/O connections from the X410c M7 compute node to the X440p PCIe node.
-* Security: The server supports an optional trusted platform module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions. 
+  * CPU: Four 4th Gen Intel Xeon Scalable Processors with up to 60 cores per processor
+
+  * Memory: Up to 16TB of main memory with 64x 256 GB DDR5-4800 Memory DIMMs
+
+  * Storage: Up to six hot-pluggable solid-state drives (SSDs), or non-volatile memory express (NVMe) 2.5-inch drives with a choice of enterprise-class RAID or passthrough controllers, up to two M.2 SATA drives with optional hardware RAID 
+
+  * mLOM virtual interface cards:
+
+  * Cisco UCS VIC 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps of unified fabric connectivity to each of the chassis’s intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+
+  * Cisco UCS VIC 15231 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis’s intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+
+  * Cisco UCS VIC 15230 (with secure boot feature) occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis’s intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+
+  * Optional mezzanine card:
+
+  * Cisco UCS 5th Gen VIC 15422 can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
+
+  * Cisco UCS PCI Mezz card for Cisco UCS X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the Cisco UCS X440p PCIe Node. 
+
+  * All VIC mezzanine cards also provide I/O connections from the X410c M7 compute node to the X440p PCIe node.
+
+  * Security: The server supports an optional trusted platform module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions. 
+
 
 ### Cisco UCS VIC Cards
 
 Following Cisco UCS VIC Cards are supported from release 4.3(2c) onwards: 
 
-* Cisco UCS VIC 15427—The Cisco UCS VIC 15427 is a Quad Port CNA MLOM, 4 x 10/25/50G with Secure Boot for Cisco UCS C-Series M6 and M7 servers. 
-* Cisco UCS VIC 15230—The Cisco UCS VIC 15230 is a MLOM with Secure Boot for Cisco UCS X210c M6, X210c M7, and X410c M7 servers. 
-* Cisco UCS VIC 15237 mLOM—The Cisco UCS VIC 15237 mLOM is a MLOM, 2x40/100/200G with Secure Boot for Cisco UCS C-Series M6 and M7 servers. 
+  * Cisco UCS VIC 15427—The Cisco UCS VIC 15427 is a Quad Port CNA MLOM, 4 x 10/25/50G with Secure Boot for Cisco UCS C-Series M6 and M7 servers. 
+
+  * Cisco UCS VIC 15230—The Cisco UCS VIC 15230 is a MLOM with Secure Boot for Cisco UCS X210c M6, X210c M7, and X410c M7 servers. 
+
+  * Cisco UCS VIC 15237 mLOM—The Cisco UCS VIC 15237 mLOM is a MLOM, 2x40/100/200G with Secure Boot for Cisco UCS C-Series M6 and M7 servers. 
+
 
 ### New in Release 4.3(2b)
 
@@ -170,18 +205,30 @@ The Cisco UCS X210c M7 Compute Node is the second generation of compute node to 
 
 The Cisco UCS X210c M7 Compute Node provides these main features: 
 
-* CPU: Up to 2x 4th Gen Intel® Xeon® Scalable Processors with up to 60 cores per processor and up to 2.625 MB Level 3 cache per core and up to 112.5 MB per CPU. 
-* Memory: Up to 8TB of main memory with 32x 256 GB DDR5-4800 DIMMs.
-* Storage: Up to six hot-pluggable, solid-state drives (SSDs), or non-volatile memory express (NVMe) 2.5-inch drives with a choice of enterprise-class redundant array of independent disks (RAIDs) or passthrough controllers, up to two M.2 SATA and M.2 NVMe drives with optional hardware RAID. 
-* Optional front mezzanine GPU module: The Cisco UCS front mezzanine GPU module is a passive PCIe Gen 4.0 front mezzanine option with support for up to two U.2 NVMe drives and two HHHL GPUs. 
-* mLOM virtual interface cards:
-* Cisco UCS Virtual Interface Card (VIC) 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-* ◦ Cisco UCS Virtual Interface Card (VIC) 15231 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-* Optional mezzanine card:
-* Cisco UCS 5th Gen Virtual Interface Card (VIC) 15422 can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
-* Cisco UCS PCI Mezz card for X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the Cisco UCS X440p PCIe Node. 
-* All VIC mezzanine cards also provide I/O connections from the X210c M7 compute node to the X440p PCIe Node.
-* Security: The server supports an optional trusted platform module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions. 
+  * CPU: Up to 2x 4th Gen Intel® Xeon® Scalable Processors with up to 60 cores per processor and up to 2.625 MB Level 3 cache per core and up to 112.5 MB per CPU. 
+
+  * Memory: Up to 8TB of main memory with 32x 256 GB DDR5-4800 DIMMs.
+
+  * Storage: Up to six hot-pluggable, solid-state drives (SSDs), or non-volatile memory express (NVMe) 2.5-inch drives with a choice of enterprise-class redundant array of independent disks (RAIDs) or passthrough controllers, up to two M.2 SATA and M.2 NVMe drives with optional hardware RAID. 
+
+  * Optional front mezzanine GPU module: The Cisco UCS front mezzanine GPU module is a passive PCIe Gen 4.0 front mezzanine option with support for up to two U.2 NVMe drives and two HHHL GPUs. 
+
+  * mLOM virtual interface cards:
+
+  * Cisco UCS Virtual Interface Card (VIC) 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+
+  * ◦ Cisco UCS Virtual Interface Card (VIC) 15231 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+
+  * Optional mezzanine card:
+
+  * Cisco UCS 5th Gen Virtual Interface Card (VIC) 15422 can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
+
+  * Cisco UCS PCI Mezz card for X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the Cisco UCS X440p PCIe Node. 
+
+  * All VIC mezzanine cards also provide I/O connections from the X210c M7 compute node to the X440p PCIe Node.
+
+  * Security: The server supports an optional trusted platform module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions. 
+
 
 ### Cisco UCS X210c M6 Compute Node
 
@@ -189,19 +236,32 @@ The Cisco UCS X210c M6 Compute Node is the first computing device to integrate i
 
 The Cisco UCS X210c M6 Compute Node provides these main features: 
 
-* CPU: Up to 2x 3rd Gen Intel® Xeon® Scalable Processors with up to 40 cores per processor and 1.5 MB Level 3 cache per core 
-* Memory: Up to 32x 256 GB DDR4-3200 DIMMs for up to 8 TB of main memory. Configuring up to 16x 512-GB Intel Optane™ persistent memory DIMMs can yield up to 12 TB of memory. 
-* Storage: Up to 6 hot-pluggable, solid-state drives (SSDs), or non-volatile memory express (NVMe) 2.5-inch drives with a choice of enterprise-class redundant array of independent disks (RAIDs) or pass-through controllers with four lanes each of PCIe Gen 4 connectivity and up to 2 M.2 SATA drives for flexible boot and local storage capabilities 
-* Optional front mezzanine GPU module: The Cisco UCS Front Mezzanine GPU module is a passive PCIe Gen 4 front mezzanine option with support for up to two U.2 NVMe drives and two GPUs. 
-* mLOM virtual interface cards:
-* Cisco UCS Virtual Interface Card (VIC) 14425 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-* Cisco UCS VIC 15231 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-* Cisco UCS VIC 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
-* Optional mezzanine card:
-* Cisco UCS VIC 14825 can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
-* Cisco UCS VIC 15422 X-Series mezz (UCSX-ME-V5Q50G) 4x25G can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
-* Cisco UCS PCI Mezz card for X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the X440p PCIe Node. 
-* Security: The server supports an optional trusted platform module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions 
+  * CPU: Up to 2x 3rd Gen Intel® Xeon® Scalable Processors with up to 40 cores per processor and 1.5 MB Level 3 cache per core 
+
+  * Memory: Up to 32x 256 GB DDR4-3200 DIMMs for up to 8 TB of main memory. Configuring up to 16x 512-GB Intel Optane™ persistent memory DIMMs can yield up to 12 TB of memory. 
+
+  * Storage: Up to 6 hot-pluggable, solid-state drives (SSDs), or non-volatile memory express (NVMe) 2.5-inch drives with a choice of enterprise-class redundant array of independent disks (RAIDs) or pass-through controllers with four lanes each of PCIe Gen 4 connectivity and up to 2 M.2 SATA drives for flexible boot and local storage capabilities 
+
+  * Optional front mezzanine GPU module: The Cisco UCS Front Mezzanine GPU module is a passive PCIe Gen 4 front mezzanine option with support for up to two U.2 NVMe drives and two GPUs. 
+
+  * mLOM virtual interface cards:
+
+  * Cisco UCS Virtual Interface Card (VIC) 14425 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+
+  * Cisco UCS VIC 15231 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+
+  * Cisco UCS VIC 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis intelligent fabric modules (IFMs) for 100 Gbps connectivity per server. 
+
+  * Optional mezzanine card:
+
+  * Cisco UCS VIC 14825 can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
+
+  * Cisco UCS VIC 15422 X-Series mezz (UCSX-ME-V5Q50G) 4x25G can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server). 
+
+  * Cisco UCS PCI Mezz card for X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the X440p PCIe Node. 
+
+  * Security: The server supports an optional trusted platform module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions 
+
 
 ### Cisco UCS 245 M8 Server
 
@@ -233,13 +293,20 @@ Beginning with release 4.3(2a), Cisco UCS Manager supports Cisco UCS X9508 serve
 
 Following new Cisco VIC cards are supported in this release:
 
-* Cisco UCS VIC 15425
-* Cisco UCS VIC 15235
-* Cisco UCS VIC 15420
-* Cisco UCS VIC 15231
-* Cisco UCS VIC 14425
-* Cisco UCS VIC 15422
-* Cisco UCS VIC 14825
+  * Cisco UCS VIC 15425
+
+  * Cisco UCS VIC 15235
+
+  * Cisco UCS VIC 15420
+
+  * Cisco UCS VIC 15231
+
+  * Cisco UCS VIC 14425
+
+  * Cisco UCS VIC 15422
+
+  * Cisco UCS VIC 14825
+
 
 ---
 
@@ -251,27 +318,46 @@ This guide describes how to configure and use system monitoring to manage a Cisc
 
 Cisco UCS Manager can detect system faults: critical, major, minor, and warnings. We recommend that: 
 
-* You monitor all faults of either critical or major severity status, as immediate action is not required for minor faults and warnings. 
-* You monitor faults that are not of type Finite State Machine (FSM), as FSM faults will transition over time and resolve. 
+  * You monitor all faults of either critical or major severity status, as immediate action is not required for minor faults and warnings. 
+
+  * You monitor faults that are not of type Finite State Machine (FSM), as FSM faults will transition over time and resolve. 
+
 
 This guide covers the following information: 
 
-* System Log 
-* System logs including faults, failures, and alarm thresholds (Syslog) 
-* The three types of Syslogs: Fault, Event, and Audit logs 
-* The Global Fault Policy and settings that control Syslogs 
-* System Event Log 
-* System hardware events for servers and chassis components and their internal components (System Event Log [SEL] logs) 
-* The SEL policy that controls SEL logs 
-* Simple Network Management Protocol 
-* SNMP for monitoring devices from a central network management station and the host and user settings 
-* Fault suppression policies for SNMP traps, Call Home notifications, and specific devices 
-* Core File Exporter and logs, such as Syslog, Audit Log, and the System Event Log 
-* Statistics Collection and Threshold Policies for adapters, chassis, host, ports, and servers 
-* Call Home and Smart Call Home Cisco embedded device support 
-* Hardware monitoring using the Cisco UCS Manager user interface 
-* Traffic Monitoring sessions for analysis by a network analyzer 
-* Cisco Netflow Monitor for IP network traffic accounting, usage-based network billing, network planning, security, Denial of Service monitoring capabilities, and network monitoring
+  * System Log 
+
+  * System logs including faults, failures, and alarm thresholds (Syslog) 
+
+  * The three types of Syslogs: Fault, Event, and Audit logs 
+
+  * The Global Fault Policy and settings that control Syslogs 
+
+
+  * System Event Log 
+
+  * System hardware events for servers and chassis components and their internal components (System Event Log [SEL] logs) 
+
+  * The SEL policy that controls SEL logs 
+
+  * Simple Network Management Protocol 
+
+  * SNMP for monitoring devices from a central network management station and the host and user settings 
+
+  * Fault suppression policies for SNMP traps, Call Home notifications, and specific devices 
+
+  * Core File Exporter and logs, such as Syslog, Audit Log, and the System Event Log 
+
+  * Statistics Collection and Threshold Policies for adapters, chassis, host, ports, and servers 
+
+  * Call Home and Smart Call Home Cisco embedded device support 
+
+  * Hardware monitoring using the Cisco UCS Manager user interface 
+
+  * Traffic Monitoring sessions for analysis by a network analyzer 
+
+  * Cisco Netflow Monitor for IP network traffic accounting, usage-based network billing, network planning, security, Denial of Service monitoring capabilities, and network monitoring 
+
 
 ---
 
@@ -281,9 +367,12 @@ This guide covers the following information:
 
 Cisco UCS Manager generates system log, or syslog messages to record the following incidents that take place in the Cisco UCS Manager system: 
 
-* Routine system operations 
-* Failures and errors 
-* Critical and emergency conditions 
+  * Routine system operations 
+
+  * Failures and errors 
+
+  * Critical and emergency conditions 
+
 
 There are three kinds of syslog entries: Fault, Event, and Audit. 
 
@@ -291,7 +380,7 @@ Each syslog message identifies the Cisco UCS Manager process that generated the 
 
 Cisco UCS Manager collects and logs syslog messages internally. You can send them to external syslog servers running a syslog daemon. Logging to a central syslog server helps in aggregation of logs and alerts. Some syslog messages to monitor include, DIMM problems, equipment failures, thermal problems, voltage problems, power problems, high availability (HA) cluster problems, and link failures. 
 
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -304,10 +393,12 @@ The FSM faults, threshold faults, and unresolved policy events are not sent to s
   
 Syslog messages contain an event code and fault code. To monitor syslog messages, you can define syslog message filters. These filters can parse the syslog messages based on the criteria you choose. You can use the following criteria to define a filter: 
 
-* By event or fault codes: Define a filter with a parsing rule to include only the specific codes that you intend to monitor. Messages that do not match these criteria are discarded. 
-* By severity level: Define a filter with a parsing rule to monitor syslog messages with specific severity levels. You can set syslog severity levels individually for OS functions, to facilitate logging and display of messages ranging from brief summaries to detailed information for debugging. 
+  * By event or fault codes: Define a filter with a parsing rule to include only the specific codes that you intend to monitor. Messages that do not match these criteria are discarded. 
 
-Cisco devices can send their log messages to a Unix-style syslog service. A syslog service simply accepts messages, then stores them in files or prints them according to a simple configuration file. This form of logging is the best available for Cisco devices because it can provide protected long-term storage of logs.
+  * By severity level: Define a filter with a parsing rule to monitor syslog messages with specific severity levels. You can set syslog severity levels individually for OS functions, to facilitate logging and display of messages ranging from brief summaries to detailed information for debugging. 
+
+
+Cisco devices can send their log messages to a Unix-style syslog service. A syslog service simply accepts messages, then stores them in files or prints them according to a simple configuration file. This form of logging is the best available for Cisco devices because it can provide protected long-term storage of logs. 
 
 ---
 
@@ -323,7 +414,7 @@ You can use the SEL policy to back up the SEL to a remote server, and optionally
 
 The backup file is automatically generated. The filename format is sel-SystemName-ChassisID-ServerID-ServerSerialNumber-Timestamp. 
 
-For example, sel-UCS-A-ch01-serv01-QCI12522939-20091121160736.
+For example, sel-UCS-A-ch01-serv01-QCI12522939-20091121160736. 
 
 ---
 
@@ -331,7 +422,7 @@ For example, sel-UCS-A-ch01-serv01-QCI12522939-20091121160736.
 
 ## Core File Exporter 
 
-Critical failures in the Cisco UCS components, such as a fabric interconnect or an I/O module, can cause the system to create a core dump file. Cisco UCS Manager uses the Core File Exporter to immediately export the core dump files to a specified location on the network through TFTP. This functionality allows you to export the tar file with the contents of the core dump file. The Core File Exporter provides system monitoring and automatic export of core dump files that need to be included in TAC cases.
+Critical failures in the Cisco UCS components, such as a fabric interconnect or an I/O module, can cause the system to create a core dump file. Cisco UCS Manager uses the Core File Exporter to immediately export the core dump files to a specified location on the network through TFTP. This functionality allows you to export the tar file with the contents of the core dump file. The Core File Exporter provides system monitoring and automatic export of core dump files that need to be included in TAC cases. 
 
 ---
 
@@ -339,7 +430,7 @@ Critical failures in the Cisco UCS components, such as a fabric interconnect or 
 
 ## Audit Logs
 
-Audit Logs record system events that occurred, where they occurred, and which users initiated them.
+Audit Logs record system events that occurred, where they occurred, and which users initiated them. 
 
 ---
 
@@ -351,11 +442,16 @@ The global fault policy controls the lifecycle of a fault in a Cisco UCS domain,
 
 A fault in Cisco UCS has the following lifecycle: 
 
-1. A condition occurs in the system and Cisco UCS Manager raises a fault. This is the active state. 
-2. When the fault is alleviated, it enters a flapping or soaking interval that is designed to prevent flapping. Flapping occurs when a fault is raised and cleared several times in rapid succession. During the flapping interval, the fault retains its severity for the length of time specified in the global fault policy. 
-3. If the condition reoccurs during the flapping interval, the fault returns to the active state. If the condition does not reoccur during the flapping interval, the fault is cleared. 
-4. The cleared fault enters the retention interval. This interval ensures that the fault reaches the attention of an administrator even if the condition that caused the fault has been alleviated and the fault has not been deleted prematurely. The retention interval retains the cleared fault for the length of time specified in the global fault policy. 
-5. If the condition reoccurs during the retention interval, the fault returns to the active state. If the condition does not reoccur, the fault is deleted.
+  1. A condition occurs in the system and Cisco UCS Manager raises a fault. This is the active state. 
+
+  2. When the fault is alleviated, it enters a flapping or soaking interval that is designed to prevent flapping. Flapping occurs when a fault is raised and cleared several times in rapid succession. During the flapping interval, the fault retains its severity for the length of time specified in the global fault policy. 
+
+  3. If the condition reoccurs during the flapping interval, the fault returns to the active state. If the condition does not reoccur during the flapping interval, the fault is cleared. 
+
+  4. The cleared fault enters the retention interval. This interval ensures that the fault reaches the attention of an administrator even if the condition that caused the fault has been alleviated and the fault has not been deleted prematurely. The retention interval retains the cleared fault for the length of time specified in the global fault policy. 
+
+  5. If the condition reoccurs during the retention interval, the fault returns to the active state. If the condition does not reoccur, the fault is deleted. 
+
 
 ---
 
@@ -369,22 +465,35 @@ The Simple Network Management Protocol (SNMP) is an application-layer protocol t
 
 The SNMP framework consists of three parts: 
 
-* An SNMP manager—The system used to control and monitor the activities of network devices using SNMP. 
-* An SNMP agent—The software component within Cisco UCS, the managed device that maintains the data for Cisco UCS, and reports the data as needed to the SNMP manager. Cisco UCS includes the agent and a collection of MIBs. To enable the SNMP agent and create the relationship between the manager and agent, enable and configure SNMP in Cisco UCS Manager. 
-* A managed information base (MIB)—The collection of managed objects on the SNMP agent. Cisco UCS release 1.4(1) and higher supports a larger number of MIBs than earlier releases. 
+  * An SNMP manager—The system used to control and monitor the activities of network devices using SNMP. 
+
+  * An SNMP agent—The software component within Cisco UCS, the managed device that maintains the data for Cisco UCS, and reports the data as needed to the SNMP manager. Cisco UCS includes the agent and a collection of MIBs. To enable the SNMP agent and create the relationship between the manager and agent, enable and configure SNMP in Cisco UCS Manager. 
+
+  * A managed information base (MIB)—The collection of managed objects on the SNMP agent. Cisco UCS release 1.4(1) and higher supports a larger number of MIBs than earlier releases. 
+
 
 Cisco UCS supports SNMPv1, SNMPv2c and SNMPv3. Both SNMPv1 and SNMPv2c use a community-based form of security. SNMP is defined in the following: 
 
-* RFC 3410 (<http://tools.ietf.org/html/rfc3410>) 
-* RFC 3411 (<http://tools.ietf.org/html/rfc3411>) 
-* RFC 3412 (<http://tools.ietf.org/html/rfc3412>) 
-* RFC 3413 (<http://tools.ietf.org/html/rfc3413>) 
-* RFC 3414 (<http://tools.ietf.org/html/rfc3414>) 
-* RFC 3415 (<http://tools.ietf.org/html/rfc3415>) 
-* RFC 3416 (<http://tools.ietf.org/html/rfc3416>) 
-* RFC 3417 (<http://tools.ietf.org/html/rfc3417>) 
-* RFC 3418 (<http://tools.ietf.org/html/rfc3418>) 
-* RFC 3584 (<http://tools.ietf.org/html/rfc3584>) 
+  * RFC 3410 (<http://tools.ietf.org/html/rfc3410>) 
+
+  * RFC 3411 (<http://tools.ietf.org/html/rfc3411>) 
+
+  * RFC 3412 (<http://tools.ietf.org/html/rfc3412>) 
+
+  * RFC 3413 (<http://tools.ietf.org/html/rfc3413>) 
+
+  * RFC 3414 (<http://tools.ietf.org/html/rfc3414>) 
+
+  * RFC 3415 (<http://tools.ietf.org/html/rfc3415>) 
+
+  * RFC 3416 (<http://tools.ietf.org/html/rfc3416>) 
+
+  * RFC 3417 (<http://tools.ietf.org/html/rfc3417>) 
+
+  * RFC 3418 (<http://tools.ietf.org/html/rfc3418>) 
+
+  * RFC 3584 (<http://tools.ietf.org/html/rfc3584>) 
+
 
 ### SNMP Notifications 
 
@@ -398,9 +507,12 @@ SNMPv1, SNMPv2c, and SNMPv3 each represent a different security model. The secur
 
 The security level determines the privileges required to view the message associated with an SNMP trap. The privilege level determines whether the message requires protection from disclosure or whether the message is authenticated. The supported security level depends on which security model is implemented. SNMP security levels support one or more of the following privileges: 
 
-* noAuthNoPriv—No authentication or encryption 
-* authNoPriv—Authentication but no encryption 
-* authPriv—Authentication and encryption 
+  * noAuthNoPriv—No authentication or encryption 
+
+  * authNoPriv—Authentication but no encryption 
+
+  * authPriv—Authentication and encryption 
+
 
 SNMPv3 provides for both security models and security levels. A security model is an authentication strategy that is set up for a user and the role in which the user resides. A security level is the permitted level of security within a security model. A combination of a security model and a security level determines which security mechanism is employed when handling an SNMP packet. 
 
@@ -420,9 +532,12 @@ v3  |  authPriv  |  HMAC-MD5 or HMAC-SHA  |  DES  |  Provides authentication bas
 
 SNMPv3 provides secure access to devices through a combination of authenticating and encrypting frames over the network. SNMPv3 authorizes only configured users to perform management operations and encrypts SNMP messages. The SNMPv3 User-Based Security Model (USM) refers to SNMP message-level security and offers the following services: 
 
-* Message integrity—Ensures that messages are not altered or destroyed in an unauthorized manner, and that data sequences are not altered beyond what can occur non-maliciously. 
-* Message origin authentication—Ensures that the identity of a message originator is verifiable. 
-* Message confidentiality and encryption—Ensures that information is not made available or disclosed to unauthorized individuals, entities, or processes. 
+  * Message integrity—Ensures that messages are not altered or destroyed in an unauthorized manner, and that data sequences are not altered beyond what can occur non-maliciously. 
+
+  * Message origin authentication—Ensures that the identity of a message originator is verifiable. 
+
+  * Message confidentiality and encryption—Ensures that information is not made available or disclosed to unauthorized individuals, entities, or processes. 
+
 
 ### SNMP Support in Cisco UCS
 
@@ -438,8 +553,10 @@ For information about the specific MIBs available for Cisco UCS and where you ca
 
 Cisco UCS supports the following authentication protocols for SNMPv3 users: 
 
-* HMAC-MD5-96 (MD5) 
-* HMAC-SHA-96 (SHA) 
+  * HMAC-MD5-96 (MD5) 
+
+  * HMAC-SHA-96 (SHA) 
+
 
 #### AES Privacy Protocol for SNMPv3 Users 
 
@@ -447,7 +564,7 @@ Cisco UCS uses Advanced Encryption Standard (AES) as one of the privacy protocol
 
 The privacy password, or priv option, offers a choice of DES or 128-bit AES encryption for SNMP security encryption. If you enable AES-128 configuration and include a privacy password for an SNMPv3 user, Cisco UCS Manager uses the privacy password to generate a 128-bit AES key. The AES privacy password can have a minimum of eight characters. If the passphrases are specified in clear text, you can specify a maximum of 64 characters. 
 
-To deploy such a user, enable AES-128 encryption.
+To deploy such a user, enable AES-128 encryption. 
 
 ---
 
@@ -463,21 +580,22 @@ The UCS Manager optionally allows uploads of external security certificates to B
 
 A SPDM security policy allows you to specify one of three Security level settings. Security can be set at one of the three levels listed below: 
 
-* Full Security:
+  * Full Security:
 
 This is the highest MCTP security setting. When you select this setting, a fault is generated when any endpoint authentication failure or firmware measurement failure is detected. A fault will also be generated if any of the endpoints do not support either endpoint authentication or firmware measurements. 
 
-* Partial Security (default):
+  * Partial Security (default):
 
 When you select this setting, a fault is generated when any endpoint authentication failure or firmware measurement failure is detected. There will NOT be a fault generated when the endpoint doesn’t support endpoint authentication or firmware measurements. 
 
-* No Security
+  * No Security
 
 When you select this setting, there will NOT be a fault generated for any failure (either endpoint measurement or firmware measurement failures). 
 
+
 You can also upload the content of one or more external/device certificates into BMC. Using a SPDM policy allows you to change or delete security certificates or settings as desired. Certificates can be deleted or replaced when no longer needed. 
 
-Certificates are listed in all user interfaces on a system.
+Certificates are listed in all user interfaces on a system. 
 
 ---
 
@@ -491,13 +609,18 @@ For NIC statistics, Cisco UCS Manager displays the average, minimum, and maximum
 
 Statistics can be collected and reported for the following five functional areas of the Cisco UCS system: 
 
-* Adapter — Statistics related to the adapters 
-* Chassis — Statistics related to the chassis 
-* Host — This policy is a placeholder for future support 
-* Port — Statistics related to the ports, including server ports, uplink Ethernet ports, and uplink Fibre Channel ports 
-* Server — Statistics related to servers 
+  * Adapter — Statistics related to the adapters 
 
-  
+  * Chassis — Statistics related to the chassis 
+
+  * Host — This policy is a placeholder for future support 
+
+  * Port — Statistics related to the ports, including server ports, uplink Ethernet ports, and uplink Fibre Channel ports 
+
+  * Server — Statistics related to servers 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -524,15 +647,18 @@ When you configure Call Home to send messages, Cisco UCS Manager executes the ap
 
 Cisco UCS delivers Call Home messages in the following formats: 
 
-* Short text format which provides a one or two line description of the fault that is suitable for pagers or printed reports. 
-* Full text format which provides fully formatted message with detailed information that is suitable for human reading. 
-* XML machine-readable format that uses Extensible Markup Language (XML) and Adaptive Messaging Language (AML) XML Schema Definition (XSD). The AML XSD is published on the [Cisco.com website](http://www.cisco.com). The XML format enables communication with the Cisco Systems Technical Assistance Center. 
+  * Short text format which provides a one or two line description of the fault that is suitable for pagers or printed reports. 
+
+  * Full text format which provides fully formatted message with detailed information that is suitable for human reading. 
+
+  * XML machine-readable format that uses Extensible Markup Language (XML) and Adaptive Messaging Language (AML) XML Schema Definition (XSD). The AML XSD is published on the [Cisco.com website](http://www.cisco.com). The XML format enables communication with the Cisco Systems Technical Assistance Center. 
+
 
 For information about the faults that can trigger Call Home email alerts, see the Cisco UCS Faults and Error Messages Reference. 
 
 The following figure shows the flow of events after a Cisco UCS fault is triggered in a system with Call Home configured: 
 
-Figure 1. Flow of Events after a Fault is Triggered 
+Figure 1. Flow of Events after a Fault is Triggered  ![Flowchart showing events that can occur after a fault is triggered in a Cisco UCS domain](/c/dam/en/us/td/i/100001-200000/190001-200000/196001-197000/196367.jpg)
 
 ### SMTP Authentication
 
@@ -540,10 +666,12 @@ Beginning with release 4.2(3b), UCS Manager supports secured authentication for 
 
 You can toggle SMTP Authentication between 
 
-* Off—SMTP Authentication is not used for this Cisco UCS domain. 
-* On—SMTP Authentication is used for this Cisco UCS domain. 
+  * Off—SMTP Authentication is not used for this Cisco UCS domain. 
 
-  
+  * On—SMTP Authentication is used for this Cisco UCS domain. 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -573,8 +701,8 @@ SMTP server should be capable of supporting STARTTLS, SSL based SMTP communicati
 General tab  |  Provides an overview of the status of the fabric interconnect, including a summary of any faults, a summary of the fabric interconnect properties, and a physical display of the fabric interconnect and its components.   
 Physical Ports tab  |  Displays the status of all ports on the fabric interconnect. This tab includes the following subtabs: 
 
-* Ethernet Ports tab 
-* FC Ports tab 
+  * Ethernet Ports tab 
+  * FC Ports tab 
 
   
 Fans tab  |  Displays the status of all fan modules in the fabric interconnect.   
@@ -607,12 +735,14 @@ ERSPAN is used to transport mirrored traffic in an IP network. An origin interfa
 
 There are two types of monitoring sessions: 
 
-* Ethernet
-* Fibre Channel
+  * Ethernet
+
+  * Fibre Channel
+
 
 The type of destination port determines what kind of monitoring session you need. For an Ethernet traffic monitoring session, the destination port must be an unconfigured physical port. For a Fibre Channel traffic monitoring session, the destination port must be a Fibre Channel uplink port except when you are using Cisco UCS 6536 Fabric Interconnect, Cisco UCS 6454 Fabric Interconnect, Cisco UCS 6400 Series Fabric Interconnect and 6300 Series Fabric Interconnects. 
 
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -630,18 +760,18 @@ An Ethernet traffic monitoring session can monitor any of the following traffic 
 Source Ports  |  Destination Ports   
 ---|---  
   
-* Uplink Ethernet port 
-* Ethernet port channel 
-* VLAN 
-* Service profile vNIC 
-* Service profile vHBA 
-* FCoE port 
-* Port channels 
-* Unified uplink port 
-* VSAN 
+  * Uplink Ethernet port 
+  * Ethernet port channel 
+  * VLAN 
+  * Service profile vNIC 
+  * Service profile vHBA 
+  * FCoE port 
+  * Port channels 
+  * Unified uplink port 
+  * VSAN 
 
 |  Unconfigured Ethernet Port   
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -656,18 +786,27 @@ A server port can be a source, only if it is a non-virtualized rack server adapt
 
 ### Traffic Monitoring for Cisco UCS 6500,6400 Series Fabric Interconnects 
 
-* Cisco UCS 6500, 6400 Series Fabric Interconnects do not support a Fibre Channel port as a destination port. Therefore, an Ethernet port is the only option for configuring any traffic monitoring session on this Fabric Interconnect. 
-* Cisco UCS 6500, 6400 Series Fabric Interconnects support monitoring traffic in the transmit direction for more than two sources per Fabric Interconnect. 
-* You can monitor or use SPAN on port channels sources for traffic in the transmit and receive directions.
-* You can configure a port as a destination port for only one monitor session.
-* You can monitoring Port-Channel as a source in the transmit direction.
-* You cannot monitor vEth as a source in the transmit direction.
+  * Cisco UCS 6500, 6400 Series Fabric Interconnects do not support a Fibre Channel port as a destination port. Therefore, an Ethernet port is the only option for configuring any traffic monitoring session on this Fabric Interconnect. 
+
+  * Cisco UCS 6500, 6400 Series Fabric Interconnects support monitoring traffic in the transmit direction for more than two sources per Fabric Interconnect. 
+
+  * You can monitor or use SPAN on port channels sources for traffic in the transmit and receive directions.
+
+  * You can configure a port as a destination port for only one monitor session.
+
+  * You can monitoring Port-Channel as a source in the transmit direction.
+
+  * You cannot monitor vEth as a source in the transmit direction.
+
 
 ### Traffic Monitoring for Cisco UCS 6300 Fabric Interconnects
 
-* Cisco UCS 6300 Fabric Interconnect supports port-based mirroring.
-* Cisco UCS 6300 Fabric Interconnects support VLAN SPAN only in the receive direction. 
-* Ethernet SPAN is port based on the Cisco UCS 6300 Fabric Interconnect. 
+  * Cisco UCS 6300 Fabric Interconnect supports port-based mirroring.
+
+  * Cisco UCS 6300 Fabric Interconnects support VLAN SPAN only in the receive direction. 
+
+  * Ethernet SPAN is port based on the Cisco UCS 6300 Fabric Interconnect. 
+
 
 ### Traffic Monitoring Across Fibre Channel
 
@@ -678,18 +817,19 @@ A Fibre Channel traffic monitoring session can monitor any of the following traf
 Source Ports  |  Destination Ports   
 ---|---  
   
-* FC Port 
-* FC Port Channel 
-* Uplink Fibre Channel port 
-* SAN port channel 
-* VSAN 
-* Service profile vHBA 
-* Fibre Channel storage port 
+  * FC Port 
+  * FC Port Channel 
+  * Uplink Fibre Channel port 
+  * SAN port channel 
+  * VSAN 
+  * Service profile vHBA 
+  * Fibre Channel storage port 
 
 | 
 
-* Fibre Channel uplink port 
-* Unconfigured Ethernet Port (Cisco UCS 6536, 64108, 6454, 6332, and 6332-16UP Fabric Interconnects)
+  * Fibre Channel uplink port 
+  * Unconfigured Ethernet Port (Cisco UCS 6536, 64108, 6454, 6332, and 6332-16UP Fabric Interconnects) 
+
 
 ---
 
@@ -715,14 +855,16 @@ A flow record definition contains information about the properties used to defin
 
 A flow record definition is a specific combination of flow keys and flow values. The two types of flow record definitions are: 
 
-* System-defined—Default flow record definitions supplied by Cisco UCS Manager. 
-* User-defined—Flow record definitions that you can create yourself. 
+  * System-defined—Default flow record definitions supplied by Cisco UCS Manager. 
+
+  * User-defined—Flow record definitions that you can create yourself. 
+
 
 ### Flow Exporters, Flow Exporter Profiles, and Flow Collectors
 
 Flow exporters transfer the flows to the flow connector based on the information in a flow exporter profile. The flow exporter profile contains the networking properties used to export NetFlow packets. The networking properties include a VLAN, the source IP address, and the subnet mask for each fabric interconnect. 
 
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -739,7 +881,7 @@ Flow collectors receive the flows from the flow exporter. Each flow collector co
 
 A flow monitor consists of a flow definition, one or two flow exporters, and a timeout policy. You can use a flow monitor to specify which flow information you want to gather, and where you want to collect it from. Each flow monitor operates in either the egress or ingress direction. 
 
-A flow monitor session contains up to four flow monitors: two flow monitors in the ingress direction and two flow monitors in the egress direction. A flow monitor session can also be associated with a vNIC.
+A flow monitor session contains up to four flow monitors: two flow monitors in the ingress direction and two flow monitors in the egress direction. A flow monitor session can also be associated with a vNIC. 
 
 ---
 
@@ -760,8 +902,8 @@ A flow monitor session contains up to four flow monitors: two flow monitors in t
 General tab  |  Provides an overview of the status of the fabric interconnect, including a summary of any faults, a summary of the fabric interconnect properties, and a physical display of the fabric interconnect and its components.   
 Physical Ports tab  |  Displays the status of all ports on the fabric interconnect. This tab includes the following subtabs: 
 
-* Ethernet Ports tab 
-* FC Ports tab 
+  * Ethernet Ports tab 
+  * FC Ports tab 
 
   
 Fans tab  |  Displays the status of all fan modules in the fabric interconnect.   
@@ -784,9 +926,12 @@ Statistics tab  |  Provides statistics about the fabric interconnect and its com
 
 Cisco UCS Manager generates system log, or syslog messages to record the following incidents that take place in the Cisco UCS Manager system: 
 
-* Routine system operations 
-* Failures and errors 
-* Critical and emergency conditions 
+  * Routine system operations 
+
+  * Failures and errors 
+
+  * Critical and emergency conditions 
+
 
 There are three kinds of syslog entries: Fault, Event, and Audit. 
 
@@ -794,7 +939,7 @@ Each syslog message identifies the Cisco UCS Manager process that generated the 
 
 Cisco UCS Manager collects and logs syslog messages internally. You can send them to external syslog servers running a syslog daemon. Logging to a central syslog server helps in aggregation of logs and alerts. Some syslog messages to monitor include, DIMM problems, equipment failures, thermal problems, voltage problems, power problems, high availability (HA) cluster problems, and link failures. 
 
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -807,10 +952,12 @@ The FSM faults, threshold faults, and unresolved policy events are not sent to s
   
 Syslog messages contain an event code and fault code. To monitor syslog messages, you can define syslog message filters. These filters can parse the syslog messages based on the criteria you choose. You can use the following criteria to define a filter: 
 
-* By event or fault codes: Define a filter with a parsing rule to include only the specific codes that you intend to monitor. Messages that do not match these criteria are discarded. 
-* By severity level: Define a filter with a parsing rule to monitor syslog messages with specific severity levels. You can set syslog severity levels individually for OS functions, to facilitate logging and display of messages ranging from brief summaries to detailed information for debugging. 
+  * By event or fault codes: Define a filter with a parsing rule to include only the specific codes that you intend to monitor. Messages that do not match these criteria are discarded. 
 
-Cisco devices can send their log messages to a Unix-style syslog service. A syslog service simply accepts messages, then stores them in files or prints them according to a simple configuration file. This form of logging is the best available for Cisco devices because it can provide protected long-term storage of logs.
+  * By severity level: Define a filter with a parsing rule to monitor syslog messages with specific severity levels. You can set syslog severity levels individually for OS functions, to facilitate logging and display of messages ranging from brief summaries to detailed information for debugging. 
+
+
+Cisco devices can send their log messages to a Unix-style syslog service. A syslog service simply accepts messages, then stores them in files or prints them according to a simple configuration file. This form of logging is the best available for Cisco devices because it can provide protected long-term storage of logs. 
 
 ---
 
@@ -828,15 +975,18 @@ When you configure Call Home to send messages, Cisco UCS Manager executes the ap
 
 Cisco UCS delivers Call Home messages in the following formats: 
 
-* Short text format which provides a one or two line description of the fault that is suitable for pagers or printed reports. 
-* Full text format which provides fully formatted message with detailed information that is suitable for human reading. 
-* XML machine-readable format that uses Extensible Markup Language (XML) and Adaptive Messaging Language (AML) XML Schema Definition (XSD). The AML XSD is published on the [Cisco.com website](http://www.cisco.com). The XML format enables communication with the Cisco Systems Technical Assistance Center. 
+  * Short text format which provides a one or two line description of the fault that is suitable for pagers or printed reports. 
+
+  * Full text format which provides fully formatted message with detailed information that is suitable for human reading. 
+
+  * XML machine-readable format that uses Extensible Markup Language (XML) and Adaptive Messaging Language (AML) XML Schema Definition (XSD). The AML XSD is published on the [Cisco.com website](http://www.cisco.com). The XML format enables communication with the Cisco Systems Technical Assistance Center. 
+
 
 For information about the faults that can trigger Call Home email alerts, see the Cisco UCS Faults and Error Messages Reference. 
 
 The following figure shows the flow of events after a Cisco UCS fault is triggered in a system with Call Home configured: 
 
-Figure 1. Flow of Events after a Fault is Triggered 
+Figure 1. Flow of Events after a Fault is Triggered  ![Flowchart showing events that can occur after a fault is triggered in a Cisco UCS domain](/c/dam/en/us/td/i/100001-200000/190001-200000/196001-197000/196367.jpg)
 
 ### SMTP Authentication
 
@@ -844,10 +994,12 @@ Beginning with release 4.2(3b), UCS Manager supports secured authentication for 
 
 You can toggle SMTP Authentication between 
 
-* Off—SMTP Authentication is not used for this Cisco UCS domain. 
-* On—SMTP Authentication is used for this Cisco UCS domain. 
+  * Off—SMTP Authentication is not used for this Cisco UCS domain. 
 
-  
+  * On—SMTP Authentication is used for this Cisco UCS domain. 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -882,14 +1034,16 @@ A flow record definition contains information about the properties used to defin
 
 A flow record definition is a specific combination of flow keys and flow values. The two types of flow record definitions are: 
 
-* System-defined—Default flow record definitions supplied by Cisco UCS Manager. 
-* User-defined—Flow record definitions that you can create yourself. 
+  * System-defined—Default flow record definitions supplied by Cisco UCS Manager. 
+
+  * User-defined—Flow record definitions that you can create yourself. 
+
 
 ### Flow Exporters, Flow Exporter Profiles, and Flow Collectors
 
 Flow exporters transfer the flows to the flow connector based on the information in a flow exporter profile. The flow exporter profile contains the networking properties used to export NetFlow packets. The networking properties include a VLAN, the source IP address, and the subnet mask for each fabric interconnect. 
 
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -906,7 +1060,7 @@ Flow collectors receive the flows from the flow exporter. Each flow collector co
 
 A flow monitor consists of a flow definition, one or two flow exporters, and a timeout policy. You can use a flow monitor to specify which flow information you want to gather, and where you want to collect it from. Each flow monitor operates in either the egress or ingress direction. 
 
-A flow monitor session contains up to four flow monitors: two flow monitors in the ingress direction and two flow monitors in the egress direction. A flow monitor session can also be associated with a vNIC.
+A flow monitor session contains up to four flow monitors: two flow monitors in the ingress direction and two flow monitors in the egress direction. A flow monitor session can also be associated with a vNIC. 
 
 ---
 
@@ -926,12 +1080,14 @@ ERSPAN is used to transport mirrored traffic in an IP network. An origin interfa
 
 There are two types of monitoring sessions: 
 
-* Ethernet
-* Fibre Channel
+  * Ethernet
+
+  * Fibre Channel
+
 
 The type of destination port determines what kind of monitoring session you need. For an Ethernet traffic monitoring session, the destination port must be an unconfigured physical port. For a Fibre Channel traffic monitoring session, the destination port must be a Fibre Channel uplink port except when you are using Cisco UCS 6536 Fabric Interconnect, Cisco UCS 6454 Fabric Interconnect, Cisco UCS 6400 Series Fabric Interconnect and 6300 Series Fabric Interconnects. 
 
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -949,18 +1105,18 @@ An Ethernet traffic monitoring session can monitor any of the following traffic 
 Source Ports  |  Destination Ports   
 ---|---  
   
-* Uplink Ethernet port 
-* Ethernet port channel 
-* VLAN 
-* Service profile vNIC 
-* Service profile vHBA 
-* FCoE port 
-* Port channels 
-* Unified uplink port 
-* VSAN 
+  * Uplink Ethernet port 
+  * Ethernet port channel 
+  * VLAN 
+  * Service profile vNIC 
+  * Service profile vHBA 
+  * FCoE port 
+  * Port channels 
+  * Unified uplink port 
+  * VSAN 
 
 |  Unconfigured Ethernet Port   
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -975,18 +1131,27 @@ A server port can be a source, only if it is a non-virtualized rack server adapt
 
 ### Traffic Monitoring for Cisco UCS 6500,6400 Series Fabric Interconnects 
 
-* Cisco UCS 6500, 6400 Series Fabric Interconnects do not support a Fibre Channel port as a destination port. Therefore, an Ethernet port is the only option for configuring any traffic monitoring session on this Fabric Interconnect. 
-* Cisco UCS 6500, 6400 Series Fabric Interconnects support monitoring traffic in the transmit direction for more than two sources per Fabric Interconnect. 
-* You can monitor or use SPAN on port channels sources for traffic in the transmit and receive directions.
-* You can configure a port as a destination port for only one monitor session.
-* You can monitoring Port-Channel as a source in the transmit direction.
-* You cannot monitor vEth as a source in the transmit direction.
+  * Cisco UCS 6500, 6400 Series Fabric Interconnects do not support a Fibre Channel port as a destination port. Therefore, an Ethernet port is the only option for configuring any traffic monitoring session on this Fabric Interconnect. 
+
+  * Cisco UCS 6500, 6400 Series Fabric Interconnects support monitoring traffic in the transmit direction for more than two sources per Fabric Interconnect. 
+
+  * You can monitor or use SPAN on port channels sources for traffic in the transmit and receive directions.
+
+  * You can configure a port as a destination port for only one monitor session.
+
+  * You can monitoring Port-Channel as a source in the transmit direction.
+
+  * You cannot monitor vEth as a source in the transmit direction.
+
 
 ### Traffic Monitoring for Cisco UCS 6300 Fabric Interconnects
 
-* Cisco UCS 6300 Fabric Interconnect supports port-based mirroring.
-* Cisco UCS 6300 Fabric Interconnects support VLAN SPAN only in the receive direction. 
-* Ethernet SPAN is port based on the Cisco UCS 6300 Fabric Interconnect. 
+  * Cisco UCS 6300 Fabric Interconnect supports port-based mirroring.
+
+  * Cisco UCS 6300 Fabric Interconnects support VLAN SPAN only in the receive direction. 
+
+  * Ethernet SPAN is port based on the Cisco UCS 6300 Fabric Interconnect. 
+
 
 ### Traffic Monitoring Across Fibre Channel
 
@@ -997,17 +1162,18 @@ A Fibre Channel traffic monitoring session can monitor any of the following traf
 Source Ports  |  Destination Ports   
 ---|---  
   
-* FC Port 
-* FC Port Channel 
-* Uplink Fibre Channel port 
-* SAN port channel 
-* VSAN 
-* Service profile vHBA 
-* Fibre Channel storage port 
+  * FC Port 
+  * FC Port Channel 
+  * Uplink Fibre Channel port 
+  * SAN port channel 
+  * VSAN 
+  * Service profile vHBA 
+  * Fibre Channel storage port 
 
 | 
 
-* Fibre Channel uplink port 
-* Unconfigured Ethernet Port (Cisco UCS 6536, 64108, 6454, 6332, and 6332-16UP Fabric Interconnects)
+  * Fibre Channel uplink port 
+  * Unconfigured Ethernet Port (Cisco UCS 6536, 64108, 6454, 6332, and 6332-16UP Fabric Interconnects) 
+
 
 ---

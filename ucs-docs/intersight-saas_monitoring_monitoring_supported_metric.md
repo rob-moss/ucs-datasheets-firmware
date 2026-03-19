@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Supported Metrics for Monitoring |
 | **URL** | https://intersight.com/help/saas/monitoring/monitoring_supported_metric |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260225095216527/docs/cloud/data/resources/monitoring/en/Supported_Metrices.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/cloud/data/resources/monitoring/en/Supported_Metrices.html |
 | **HTML Title** | Data Export |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_monitoring_supported_metric.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:06 |
+| **Fetched on** | 2026-03-19 15:36:30 |
 
 ---
 

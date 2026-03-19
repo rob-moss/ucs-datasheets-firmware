@@ -8,11 +8,13 @@
 | **HTML Title** | Cisco UCS Manager Administration Management Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_cisco_ucs_manager_cli_administration_mgmt_guide_4-3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:47:57 |
+| **Fetched on** | 2026-03-19 15:35:08 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Admin-Management/4-3/b_cisco_ucs_manager_cli_administration_mgmt_guide_4-3.html
+
+![Clear Contents of Search](/etc/designs/cdc/fw/i/ic_clear_gray.png)
 
 ---
 
@@ -22,10 +24,14 @@
 
 This guide is intended primarily for data center administrators with responsibilities and expertise in one or more of the following: 
 
-* Server administration 
-* Storage administration 
-* Network administration 
-* Network security
+  * Server administration 
+
+  * Storage administration 
+
+  * Network administration 
+
+  * Network security 
+
 
 ---
 
@@ -42,9 +48,9 @@ Table 2. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(5a)
 ---|---|---  
 Support for Security Management |  Cisco UCS Manager introduces security management and supports AES encryption for enhanced security. | 
 
-* [Security Management](m-security-management.html#security-management)
-* [Encryption Management](m-security-management.html#security-manamgent)
-* [AES Encryption Management](m-security-management.html#security-management)
+  * [Security Management](m-security-management.html#security-management)
+  * [Encryption Management](m-security-management.html#security-manamgent)
+  * [AES Encryption Management](m-security-management.html#security-management)
 
   
 Support for Cisco UCS C-Series M8 servers |  Cisco UCS Manager now supports Cisco UCS C225 M8 Server.  |  [Intersight Management Mode](m_cli_device_connector.html#Cisco_Concept.dita_f855267a-6ca0-4bb9-a5fd-30d7734a374c)  
@@ -53,11 +59,11 @@ Table 3. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b)
 ---|---|---  
 Support for Cisco UCS X-Series Direct |  Cisco UCS Manager now supports Cisco UCS X-Series Direct.  | 
 
-* [Administration Management Overview](m_administration_management_overview-3_2.html#concept_A90BF0B92ED24B61A3F1832BDD1F50D0)
-* [Password Recovery for the Admin Account](m-cli-password-management.html#concept_g4x_hh5_42b)
-* [Recovering the Admin Account Password in a Non-Cluster Configuration for Cisco UCS Fabric Interconnects 9108 100G](m-cli-password-management.html#recovering-the-admin-account-password-in-a-cluster-configuration-for-cisco-ucs-6400-series-fabric-interconnects)
-* [Recovering the Admin Account Password in a Standalone Configuration for Cisco UCS Fabric Interconnects 9108 100G](m-cli-password-management.html#recovering-the-admin-account-password-in-a-standalone-configuration-for-cisco-ucs-x-series-direct-fabric-interconnect)
-* [Recovering the Admin Account Password in a Cluster Configuration for Cisco UCS Fabric Interconnects 9108 100G](m-cli-password-management.html#recovering-the-admin-account-password-in-a-cluster-configuration-for-cisco-ucs-x-series-direct-fabric-interconnect)
+  * [Administration Management Overview](m_administration_management_overview-3_2.html#concept_A90BF0B92ED24B61A3F1832BDD1F50D0)
+  * [Password Recovery for the Admin Account](m-cli-password-management.html#concept_g4x_hh5_42b)
+  * [Recovering the Admin Account Password in a Non-Cluster Configuration for Cisco UCS Fabric Interconnects 9108 100G](m-cli-password-management.html#recovering-the-admin-account-password-in-a-cluster-configuration-for-cisco-ucs-6400-series-fabric-interconnects)
+  * [Recovering the Admin Account Password in a Standalone Configuration for Cisco UCS Fabric Interconnects 9108 100G](m-cli-password-management.html#recovering-the-admin-account-password-in-a-standalone-configuration-for-cisco-ucs-x-series-direct-fabric-interconnect)
+  * [Recovering the Admin Account Password in a Cluster Configuration for Cisco UCS Fabric Interconnects 9108 100G](m-cli-password-management.html#recovering-the-admin-account-password-in-a-cluster-configuration-for-cisco-ucs-x-series-direct-fabric-interconnect)
 
   
 Table 4. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b) Feature |  Description |  Where Documented  
@@ -91,17 +97,28 @@ If your environment is using a UCS 6324 40 GB Mini, you can also manage the user
 
 You can configure the following basic administration configurations to manage user access in your environment: 
 
-* Passwords—Choose a password during the initial setup for the default admin user account, and create a unique username and password for each user account to access the system. 
-* RBAC—Delegate and control user access privileges according to the role and restrict user access within an organization boundary defined for the tenant, such as multi-tenancy. 
-* Authentication—Create UCS Manager local user accounts, and remote user accounts using the LDAP, RADIUS, and TACACS+ protocols. 
-* Communication Services—Configure CIM XML, HTTP, HTTPS, SMASH CLP, SNMP, SSH, and Telnet to interface third-party applications with Cisco UCS. 
-* Organizations—Create organizations for policies, pools, and service profiles. You can create multiple sub-organizations under the default Root organization, and nest sub-organization under a different sub-organization. 
-* CIMC—Close the KVM, vMedia, and SOL sessions of any user. When UCS Manager receives an event from CIMC, it updates its session table and displays the information to all users. 
-* Backup and Restore —Take a snapshot of all or part of the system configuration and export the file to a location on your network. You can configure a full state, all configuration, system configuration, and logical configuration backup. 
-* Call Home—Configure e-mail alert notifications for UCS errors and faults. You can configure the e-mail notifications for Cisco TAC (predefined) or any other recipient. 
-* Deferred Deployments—Configure deployments for a service profile to deploy immediately or during a specified maintenance window. Use this to control when disruptive configuration changes to a service profile or a service profile template are implemented. 
-* Scheduling—Schedule a one time occurrence for a schedule, a recurring occurrence for a schedule, and delete schedules. 
-* Fault Suppression—Enable fault suppression to suppress SNMP trap and Call Home notifications during a planned maintenance time.
+  * Passwords—Choose a password during the initial setup for the default admin user account, and create a unique username and password for each user account to access the system. 
+
+  * RBAC—Delegate and control user access privileges according to the role and restrict user access within an organization boundary defined for the tenant, such as multi-tenancy. 
+
+  * Authentication—Create UCS Manager local user accounts, and remote user accounts using the LDAP, RADIUS, and TACACS+ protocols. 
+
+  * Communication Services—Configure CIM XML, HTTP, HTTPS, SMASH CLP, SNMP, SSH, and Telnet to interface third-party applications with Cisco UCS. 
+
+  * Organizations—Create organizations for policies, pools, and service profiles. You can create multiple sub-organizations under the default Root organization, and nest sub-organization under a different sub-organization. 
+
+  * CIMC—Close the KVM, vMedia, and SOL sessions of any user. When UCS Manager receives an event from CIMC, it updates its session table and displays the information to all users. 
+
+  * Backup and Restore —Take a snapshot of all or part of the system configuration and export the file to a location on your network. You can configure a full state, all configuration, system configuration, and logical configuration backup. 
+
+  * Call Home—Configure e-mail alert notifications for UCS errors and faults. You can configure the e-mail notifications for Cisco TAC (predefined) or any other recipient. 
+
+  * Deferred Deployments—Configure deployments for a service profile to deploy immediately or during a specified maintenance window. Use this to control when disruptive configuration changes to a service profile or a service profile template are implemented. 
+
+  * Scheduling—Schedule a one time occurrence for a schedule, a recurring occurrence for a schedule, and delete schedules. 
+
+  * Fault Suppression—Enable fault suppression to suppress SNMP trap and Call Home notifications during a planned maintenance time. 
+
 
 ---
 
@@ -148,18 +165,30 @@ _ |  underscore
   
 Cisco recommends using a strong password; otherwise, the password strength check for locally authenticated users, Cisco UCS Manager rejects any password that does not meet the following requirements: 
 
-* If the Password Strength Check option is checked, passwords must be between 8 to 127 characters. 
-* If the Password Strength Check option is unchecked, administrators can create user accounts without a password as a placeholder, but a password containing 1 to 127 characters is required for successful authentication. 
-* Must contain at least three of the following: 
-* Lower case letters 
-* Upper case letters 
-* Digits 
-* Special characters 
-* Must not contain a character that is repeated more than three times consecutively, such as aaabbb. 
-* Must not be identical to the username or the reverse of the username. 
-* Must pass a password dictionary check. For example, the password must not be based on a standard dictionary word. 
-* Must not contain the following symbols: $ (dollar sign), ? (question mark), and = (equals sign). 
-* Should not be blank for local user and admin accounts.
+  * If the Password Strength Check option is checked, passwords must be between 8 to 127 characters. 
+
+  * If the Password Strength Check option is unchecked, administrators can create user accounts without a password as a placeholder, but a password containing 1 to 127 characters is required for successful authentication. 
+
+  * Must contain at least three of the following: 
+
+  * Lower case letters 
+
+  * Upper case letters 
+
+  * Digits 
+
+  * Special characters 
+
+  * Must not contain a character that is repeated more than three times consecutively, such as aaabbb. 
+
+  * Must not be identical to the username or the reverse of the username. 
+
+  * Must pass a password dictionary check. For example, the password must not be based on a standard dictionary word. 
+
+  * Must not contain the following symbols: $ (dollar sign), ? (question mark), and = (equals sign). 
+
+  * Should not be blank for local user and admin accounts. 
+
 
 ---
 
@@ -167,7 +196,7 @@ Cisco recommends using a strong password; otherwise, the password strength check
 
 ## Security Management
 
-The Cisco UCS Manager 4.3(5a) release introduces the Security Management tab in the Admin section. This section aims to offer multiple security management options to protect sensitive data and ensure network integrity. The tab currently includes Encryption Management and assists administrators in effectively managing security settings.
+The Cisco UCS Manager 4.3(5a) release introduces the Security Management tab in the Admin section. This section aims to offer multiple security management options to protect sensitive data and ensure network integrity. The tab currently includes Encryption Management and assists administrators in effectively managing security settings. 
 
 ---
 
@@ -177,7 +206,7 @@ The Cisco UCS Manager 4.3(5a) release introduces the Security Management tab in 
 
 Role-Based Access Control (RBAC) is a method of restricting or authorizing system access for users based on user roles and locales. A role defines the privileges of a user in the system and a locale defines the organizations (domains) that a user is allowed access. Because users are not directly assigned privileges, you can manage individual user privileges by assigning the appropriate roles and locales. 
 
-A user is granted write access to the required system resources only if the assigned role grants the access privileges and the assigned locale allows access. For example, a user with the Server Administrator role in the engineering organization can update server configurations in the Engineering organization. They cannot, however, update server configurations in the Finance organization, unless the locales assigned to the user include the Finance organization.
+A user is granted write access to the required system resources only if the assigned role grants the access privileges and the assigned locale allows access. For example, a user with the Server Administrator role in the engineering organization can update server configurations in the Engineering organization. They cannot, however, update server configurations in the Finance organization, unless the locales assigned to the user include the Finance organization. 
 
 ---
 
@@ -187,11 +216,16 @@ A user is granted write access to the required system resources only if the assi
 
 Cisco UCS supports the following two methods to authenticate user logins: 
 
-* Local user authentication - uses user accounts that exist locally in the Cisco UCS Manager
-* Remote user authentication - uses one of the following protocols: 
-* LDAP 
-* RADIUS 
-* TACACS+
+  * Local user authentication - uses user accounts that exist locally in the Cisco UCS Manager
+
+  * Remote user authentication - uses one of the following protocols: 
+
+  * LDAP 
+
+  * RADIUS 
+
+  * TACACS+ 
+
 
 ---
 
@@ -209,15 +243,18 @@ When you configure Call Home to send messages, Cisco UCS Manager executes the ap
 
 Cisco UCS delivers Call Home messages in the following formats: 
 
-* Short text format which provides a one or two line description of the fault that is suitable for pagers or printed reports. 
-* Full text format which provides fully formatted message with detailed information that is suitable for human reading. 
-* XML machine-readable format that uses Extensible Markup Language (XML) and Adaptive Messaging Language (AML) XML Schema Definition (XSD). The AML XSD is published on the [Cisco.com website](http://www.cisco.com). The XML format enables communication with the Cisco Systems Technical Assistance Center. 
+  * Short text format which provides a one or two line description of the fault that is suitable for pagers or printed reports. 
+
+  * Full text format which provides fully formatted message with detailed information that is suitable for human reading. 
+
+  * XML machine-readable format that uses Extensible Markup Language (XML) and Adaptive Messaging Language (AML) XML Schema Definition (XSD). The AML XSD is published on the [Cisco.com website](http://www.cisco.com). The XML format enables communication with the Cisco Systems Technical Assistance Center. 
+
 
 For information about the faults that can trigger Call Home email alerts, see the Cisco UCS Faults and Error Messages Reference. 
 
 The following figure shows the flow of events after a Cisco UCS fault is triggered in a system with Call Home configured: 
 
-Figure 1. Flow of Events after a Fault is Triggered 
+Figure 1. Flow of Events after a Fault is Triggered  ![Flowchart showing events that can occur after a fault is triggered in a Cisco UCS domain](/c/dam/en/us/td/i/100001-200000/190001-200000/196001-197000/196367.jpg)
 
 ### SMTP Authentication
 
@@ -225,10 +262,12 @@ Beginning with release 4.2(3b), UCS Manager supports secured authentication for 
 
 You can toggle SMTP Authentication between 
 
-* Off—SMTP Authentication is not used for this Cisco UCS domain. 
-* On—SMTP Authentication is used for this Cisco UCS domain. 
+  * Off—SMTP Authentication is not used for this Cisco UCS domain. 
 
-  
+  * On—SMTP Authentication is used for this Cisco UCS domain. 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -249,16 +288,22 @@ You can use the communication services defined below to interface third-party ap
 
 Cisco UCS Manager supports IPv4 and IPv6 address access for the following services: 
 
-* CIM XML 
-* HTTP 
-* HTTPS 
-* SNMP 
-* SSH 
-* Telnet 
+  * CIM XML 
+
+  * HTTP 
+
+  * HTTPS 
+
+  * SNMP 
+
+  * SSH 
+
+  * Telnet 
+
 
 Cisco UCS Manager supports out-of-band IPv4 address access to the Cisco UCS KVM Direct launch page from a web browser. To provide this access, you must enable the following service: 
 
-* CIMC Web Service 
+  * CIMC Web Service 
 
 Communication Service  |  Description   
 ---|---  
@@ -271,7 +316,7 @@ HTTPS  |  By default, HTTPS is enabled on port. With HTTPS, all data is exchange
 SMASH CLP  |  This service is enabled for read-only access and supports a limited subset of the protocols, such as the show command. You cannot disable it.  This shell service is one of the standards that the Distributed Management Task Force defines.   
 SNMP  |  By default, this service is disabled. If enabled, the default port is 161. You must configure the community and at least one SNMP trap.  Enable this service only if your system includes integration with an SNMP server.   
 SSH  |  This service is enabled on port 22. You cannot disable it, and you cannot change the default port.  This service provides access to the Cisco UCS Manager CLI.   
-Telnet  |  By default, this service is disabled.  This service provides access to the Cisco UCS Manager CLI.
+Telnet  |  By default, this service is disabled.  This service provides access to the Cisco UCS Manager CLI. 
 
 ---
 
@@ -283,22 +328,32 @@ You can view and close any KVM, vMedia, and SOL sessions in Cisco UCS Manager. I
 
 The session information consists of the following information: 
 
-* Name—The name of the user who launched the session. 
-* Session ID—The ID associated with the session. The format of the session ID for blades is [unique identifier] _ [chassis id] _ [Blade id]. The format of the session ID for racks is [unique identifier] _ 0 _ [Rack id]. 
-* Type of session—KVM, vMedia, or SoL. 
-* Privilege level of the user—Read-Write, Read Only, or Granted. 
-* Administrative state—Active or Inactive. The value is active if the session is active. The value is inactive if the session terminate command has been issued but the session has not been terminated. This situation occurs when FSM of the server is in progress with another operation or when the connectivity to CIMC is lost. 
-* Source Address—The IP address of the computer from which the session was opened. 
-* Service Profile—The service profile associated with the session. The service profile attribute value for a CIMC session is displayed only if the session is opened on an IP address that is provided from the service profile. 
-* Server—The name of the server associated with the session. 
-* Login time—The date and time the session started. 
-* Last Update Time—The last time the session information was updated by CIMC. 
+  * Name—The name of the user who launched the session. 
+
+  * Session ID—The ID associated with the session. The format of the session ID for blades is [unique identifier] _ [chassis id] _ [Blade id]. The format of the session ID for racks is [unique identifier] _ 0 _ [Rack id]. 
+
+  * Type of session—KVM, vMedia, or SoL. 
+
+  * Privilege level of the user—Read-Write, Read Only, or Granted. 
+
+  * Administrative state—Active or Inactive. The value is active if the session is active. The value is inactive if the session terminate command has been issued but the session has not been terminated. This situation occurs when FSM of the server is in progress with another operation or when the connectivity to CIMC is lost. 
+
+  * Source Address—The IP address of the computer from which the session was opened. 
+
+  * Service Profile—The service profile associated with the session. The service profile attribute value for a CIMC session is displayed only if the session is opened on an IP address that is provided from the service profile. 
+
+  * Server—The name of the server associated with the session. 
+
+  * Login time—The date and time the session started. 
+
+  * Last Update Time—The last time the session information was updated by CIMC. 
+
 
 A new session is generally added when a user connects to KVM, vMedia, or SOL. A Pnuos vMedia session will be displayed in the session table during the server discovery with the user name __vmediausr__. 
 
 The CIMC session data is available under the CIMC Sessions tab in Cisco UCS Manager GUI. Any CIMC session terminated by the user is audit logged with proper details. 
 
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -311,7 +366,7 @@ To perform the GUI and CLI tasks that are described in this guide, a CIMC image 
   
 ### Viewing the CIMC Sessions Opened by the Local Users
 
-Follow this task to view all the CIMC sessions opened by the local users or the CIMC sessions opened by a specific local user.    
+Follow this task to view all the CIMC sessions opened by the local users or the CIMC sessions opened by a specific local user.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -334,11 +389,15 @@ Viewing CIMC sessions of a specific server or a service-profile option is not pr
 
 The following examples show how to view:
 
-* All CIMC sessions opened by local users 
-* CIMC session opened by a specific local user
-* Details of the CIMC session opened by a specific local user.
+  * All CIMC sessions opened by local users 
 
-[code]
+  * CIMC session opened by a specific local user
+
+  * Details of the CIMC session opened by a specific local user.
+
+
+    
+    
     **All sessions opened by local users** :
     UCS-A # **scope security**
     UCS-A /security # **show cimc-sessions local**
@@ -369,7 +428,6 @@ The following examples show how to view:
     			Service Profile: 
     
     
-[/code]
 
 ### Viewing the CIMC Sessions Opened by the Remote Users
 
@@ -387,11 +445,15 @@ Follow this task to view all the CIMC sessions opened by the remote users or the
 
 The following examples show how to view:
 
-* All CIMC sessions opened by remote users 
-* CIMC session opened by a specific remote user
-* Details of the CIMC session opened by a specific remote user.
+  * All CIMC sessions opened by remote users 
 
-[code]
+  * CIMC session opened by a specific remote user
+
+  * Details of the CIMC session opened by a specific remote user.
+
+
+    
+    
     **All sessions opened by remote users** :
     UCS-A # **scope security**
     UCS-A /security # **show cimc-sessions remote**
@@ -423,7 +485,6 @@ The following examples show how to view:
     			Service Profile: 
     
     
-[/code]
 
 ### Viewing the CIMC Sessions Opened by an IPMI User
 
@@ -441,7 +502,8 @@ To view the CIMC sessions opened by an IPMI user, complete the following steps:
 #### Example
 
 The following example shows how to view all the CIMC sessions opened by an IPMI user:
-[code]
+    
+    
     UCS-A # **scope org Finance**
     UCS-A /org* # **scope ipmi-access-profile ReadOnly**
     UCS-A /org/ipmi-access-profile* # **scope ipmi-user alice**
@@ -452,7 +514,6 @@ The following example shows how to view all the CIMC sessions opened by an IPMI 
     45_1_1        sol     alice       10.106.22.117     Active
     
     
-[/code]
 
 ### Clearing the CIMC Sessions of a Server
 
@@ -471,7 +532,8 @@ This task shows how to clear all CIMC sessions opened on a server. You can also 
 #### Example
 
 The first example shows how to clear all CIMC sessions on a server. The second example shows how to clear the CIMC sessions of a specific type on a server. The third example shows how to clear the CIMC sessions of a specific user on a server: 
-[code]
+    
+    
     UCS-A /security # **scope security**
     UCS-A /security # **terminate cimc-sessions server 2/1**
     This will close KVM sessions. Are you sure? (yes/no):**yes**
@@ -485,7 +547,6 @@ The first example shows how to clear all CIMC sessions on a server. The second e
     UCS-A /security # **terminate cimc-sessions server 2/1 user-name test-user**
     This will close KVM sessions. Are you sure? (yes/no):**yes**
     
-[/code]
 
 ### Clearing the CIMC Sessions of a Modular Server 
 
@@ -503,7 +564,8 @@ This task shows how to clear all CIMC sessions opened on a server. You can also 
 #### Example
 
 The first example shows how to clear all CIMC sessions on a server. The second example shows how to clear the CIMC sessions of a specific type on a server. The third example shows how to clear the CIMC sessions of a specific user on a server: 
-[code] 
+    
+    
     UCS-A /security # **scope security**
     UCS-A /security # **terminate cimc-sessions server 1/2/1**
     This will close cimc sessions. Are you sure? (yes/no):**yes**
@@ -517,7 +579,6 @@ The first example shows how to clear all CIMC sessions on a server. The second e
     UCS-A /security # **terminate cimc-sessions server 1/2/1 user-name test-user**
     This will close cimc sessions. Are you sure? (yes/no):**yes**
     
-[/code]
 
 ### Clearing All CIMC Sessions Opened by a Local User
 
@@ -534,14 +595,14 @@ This task shows how to clear the sessions opened by a local user.
 #### Example
 
 The following example shows how to clear the CIMC sessions opened by a local user:
-[code]
+    
+    
     UCS-A /security# **scope security**
     UCS-A /security# **terminate cimc-sessions local-user testuser**
     This will close cimc sessions. Are you sure? (yes/no):**yes**
     UCS-A /security#
     
     
-[/code]
 
 ### Clearing All CIMC Sessions Opened by a Remote User 
 
@@ -558,14 +619,14 @@ This task shows how to clear CIMC sessions opened by a remote user.
 #### Example
 
 The following example shows how to clear all CIMC sessions opened by a remote user:
-[code]
+    
+    
     UCS-A /security# **scope security**
     UCS-A /security# **terminate cimc-sessions remote-user testuser**
     This will close cimc sessions. Are you sure? (yes/no):**yes**
     UCS-A /security#
     
     
-[/code]
 
 ### Clearing a Specific CIMC Session Opened by a Local User 
 
@@ -583,7 +644,8 @@ This task shows how to clear a specific CIMC session opened by a local user.
 #### Example
 
 The following example shows how to clear a specific CIMC session opened by a local user and commits the transaction:
-[code]
+    
+    
     UCS-A /security# **scope security**
     UCS-A /security# **scope local-user admin**
     UCS-A /security/local user # **terminate cimc-session 6_1_2**
@@ -591,7 +653,6 @@ The following example shows how to clear a specific CIMC session opened by a loc
     UCS-A /security/local user#
     
     
-[/code]
 
 ### Clearing a Specific CIMC Session Opened by a Remote User 
 
@@ -609,7 +670,8 @@ This task shows how to clear a specific CIMC session opened by a remote user.
 #### Example
 
 The following example shows how to clear a specific CIMC session opened by a remote user and commits the transaction: 
-[code]
+    
+    
     UCS-A /security# **scope security**
     UCS-A /security# **scope remote-user admin**
     UCS-A /security/remote user # **terminate cimc-session 6_1_3**
@@ -617,7 +679,6 @@ The following example shows how to clear a specific CIMC session opened by a rem
     UCS-A /security/remote user#
     
     
-[/code]
 
 ### Clearing a CIMC Session Opened by an IPMI User
 
@@ -636,7 +697,8 @@ To clear a CIMC session opened by an IPMI user, complete the following steps:
 #### Example
 
 The following example displays how to clear a specific CIMC session opened by an IPMI user and commits the changes:
-[code]
+    
+    
     UCS-A # **scope org Finance**
     UCS-A /org* # **scope ipmi-access-profile ReadOnly**
     UCS-A /org/ipmi-access-profile* # **scope ipmi-user alice**
@@ -644,7 +706,6 @@ The following example displays how to clear a specific CIMC session opened by an
     UCS-A /org/ipmi-access-profile/ipmi-user* # **commit-buffer**
     
     
-[/code]
 
 ---
 
@@ -654,26 +715,35 @@ The following example displays how to clear a specific CIMC session opened by an
 
 Each server in a Cisco UCS domain must have a one or more management IP addresses assigned to its Cisco Integrated Management Controller (CIMC) or to the service profile associated with the server. Cisco UCS Manager uses these IP addresses for external access that terminates in the CIMC. This external access can be through one of the following services: 
 
-* KVM console 
-* Serial over LAN 
-* An IPMI tool 
+  * KVM console 
+
+  * Serial over LAN 
+
+  * An IPMI tool 
+
 
 The management IP addresses used to access the CIMC on a server can be out-of-band (OOB) addresses, through which traffic traverses the fabric interconnect via the management port, or inband addresses, through which traffic traverses the fabric interconnect via the fabric uplink port. Up to six IP addresses can be configured to access the CIMC on a server, two out-of-band (OOB) and four inband. 
 
 You can configure the following management IP addresses: 
 
-* A static OOB IPv4 address assigned directly to the server 
-* An OOB IPv4 address assigned to the server from a global ext-mgmt pool 
-* An inband IPv4 address derived from a service profile associated with the server 
-* An inband IPv4 address drawn from a management IP pool and assigned to a service profile or service profile template 
-* An static inband IPv6 address assigned directly to the server 
-* An inband IPv6 address derived from a service profile associated with the server 
+  * A static OOB IPv4 address assigned directly to the server 
+
+  * An OOB IPv4 address assigned to the server from a global ext-mgmt pool 
+
+  * An inband IPv4 address derived from a service profile associated with the server 
+
+  * An inband IPv4 address drawn from a management IP pool and assigned to a service profile or service profile template 
+
+  * An static inband IPv6 address assigned directly to the server 
+
+  * An inband IPv6 address derived from a service profile associated with the server 
+
 
 You can assign multiple management IP addresses to each CIMC on the server and to the service profile associated with the server. If you do so, you must use different IP addresses for each of them. 
 
 A management IP address that is assigned to a service profile moves with that service profile. If KVM or SoL sessions are active when you migrate the service profile to another server, Cisco UCS Manager terminates the sessions and does not restart them after the migration is completed. You configure the IP address when you create or modify a service profile. 
 
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -684,7 +754,7 @@ You cannot assign a static IP address to a server or service profile if that IP 
   
 ---|---  
   
-A unicast Internet Control Message Protocol (ICMP) request will be sent to the gateway IP address every second from each server that is configured with an inband IP address. This request is to check if connectivity for the inband traffic through the current Fabric Interconnect (FI) is up, and to initiate a failover to the other FI if it is down. The path selected for inband and the failover operations are completely independent of the server data traffic. The default polling interval is 1 second and the polling interval is configurable to a maximum of 5 seconds. After three failed polls, the CIMC will failover to the other FI. During failover, the CIMC will issue a Gratuitous Address Resolution Protocol (GARP) on the newly selected uplinks to notify the network that the MAC has been moved to a new location.
+A unicast Internet Control Message Protocol (ICMP) request will be sent to the gateway IP address every second from each server that is configured with an inband IP address. This request is to check if connectivity for the inband traffic through the current Fabric Interconnect (FI) is up, and to initiate a failover to the other FI if it is down. The path selected for inband and the failover operations are completely independent of the server data traffic. The default polling interval is 1 second and the polling interval is configurable to a maximum of 5 seconds. After three failed polls, the CIMC will failover to the other FI. During failover, the CIMC will issue a Gratuitous Address Resolution Protocol (GARP) on the newly selected uplinks to notify the network that the MAC has been moved to a new location. 
 
 ---
 
@@ -700,12 +770,16 @@ If you set up a multi-tenant environment, all organizations are hierarchical. Th
 
 If you create organizations in a multi-tenant environment, you can also set up one or more of the following for each organization or for a sub-organization in the same hierarchy: 
 
-* Resource pools 
-* Policies 
-* Service profiles 
-* Service profile templates 
+  * Resource pools 
 
-The root organization is always the top level organization.
+  * Policies 
+
+  * Service profiles 
+
+  * Service profile templates 
+
+
+The root organization is always the top level organization. 
 
 ---
 
@@ -715,7 +789,7 @@ The root organization is always the top level organization.
 
 When you perform a backup through Cisco UCS Manager, you take a snapshot of all or part of the system configuration and export the file to a location on your network. You cannot use Cisco UCS Manager to back up data on the servers. 
 
-You can perform a backup while the system is up and running. The backup operation only saves information from the management plane. It does not have any impact on the server or network traffic.
+You can perform a backup while the system is up and running. The backup operation only saves information from the management plane. It does not have any impact on the server or network traffic. 
 
 ---
 
@@ -734,16 +808,16 @@ You can perform a backup while the system is up and running. The backup operatio
 ### Example
 
 The following example creates a scheduler named maintenancesched and commits the transaction: 
-[code] 
+    
+    
     UCS-A# **scope system**
     UCS-A /system # **create scheduler maintenancesched**
     UCS-A /system/scheduler* # **commit-buffer**
     UCS-A /system/scheduler #
-[/code]
 
 ### What to do next
 
-Create a one time occurrence or recurring occurrence for the schedule.
+Create a one time occurrence or recurring occurrence for the schedule. 
 
 ---
 
@@ -757,15 +831,20 @@ Deferred deployment is available for all configuration changes that occur throug
 
 Deferred deployment is not available for the following actions which require the reboot of a server: 
 
-* Initial association of a service profile with a server 
-* Final disassociation of a service profile from a server, without associating the service profile with a different server 
-* Decommissioning a server 
-* Re-acknowledging a server 
-* Resetting a server 
+  * Initial association of a service profile with a server 
+
+  * Final disassociation of a service profile from a server, without associating the service profile with a different server 
+
+  * Decommissioning a server 
+
+  * Re-acknowledging a server 
+
+  * Resetting a server 
+
 
 If you want to defer the deployment of service profile changes, you must configure one or more maintenance policies and configure each service profile with a maintenance policy. If you want to define the time period when the deployment should occur, you also need to create at least one schedule with one or more recurring occurrences or one time occurrences, and include that schedule in a maintenance policy. 
 
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -802,12 +881,16 @@ If a Cisco UCS domain has pending activities, Cisco UCS Manager GUI notifies use
 
 Cisco UCS Manager displays information about all pending activities, including the following: 
 
-* Name of the service profile to deploy and associate with a server 
-* Server affected by the deployment 
-* Disruption caused by the deployment 
-* Change performed by the deployment 
+  * Name of the service profile to deploy and associate with a server 
 
-  
+  * Server affected by the deployment 
+
+  * Disruption caused by the deployment 
+
+  * Change performed by the deployment 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -824,8 +907,10 @@ You cannot specify the maintenance window in which a specific pending activity i
 
 When changing service profile association, the following maintenance policy options can affect how the changes are applied: 
 
-* If the On Next Boot and User Ack options are enabled in a maintenance policy, the service profile association change displays a warning that an acknowledgement is required. However, association will happen immediately. 
-* If the On Next Boot and User Ack options are not enabled in a maintenance policy, the service profile association change displays a warning that an acknowledgement is required, and will remain pending until acknowledged. 
+  * If the On Next Boot and User Ack options are enabled in a maintenance policy, the service profile association change displays a warning that an acknowledgement is required. However, association will happen immediately. 
+
+  * If the On Next Boot and User Ack options are not enabled in a maintenance policy, the service profile association change displays a warning that an acknowledgement is required, and will remain pending until acknowledged. 
+
 
 #### Cannot Undo All Changes to Service Profiles or Service Profile Templates 
 
@@ -841,7 +926,7 @@ Scheduled deployments run in parallel and independently. You cannot specify the 
 
 #### Cannot Perform Partial Deployment of Pending Activity 
 
-Cisco UCS Manager applies all changes made to a service profile in the scheduled maintenance window. You cannot make several changes to a service profile at the same time and then have those changes be spread across several maintenance windows. When Cisco UCS Manager deploys the service profile changes, it updates the service profile to match the most recent configuration in the database.
+Cisco UCS Manager applies all changes made to a service profile in the scheduled maintenance window. You cannot make several changes to a service profile at the same time and then have those changes be spread across several maintenance windows. When Cisco UCS Manager deploys the service profile changes, it updates the service profile to match the most recent configuration in the database. 
 
 ---
 
@@ -853,11 +938,16 @@ The global fault policy controls the lifecycle of a fault in a Cisco UCS domain,
 
 A fault in Cisco UCS has the following lifecycle: 
 
-1. A condition occurs in the system and Cisco UCS Manager raises a fault. This is the active state. 
-2. When the fault is alleviated, it enters a flapping or soaking interval that is designed to prevent flapping. Flapping occurs when a fault is raised and cleared several times in rapid succession. During the flapping interval, the fault retains its severity for the length of time specified in the global fault policy. 
-3. If the condition reoccurs during the flapping interval, the fault returns to the active state. If the condition does not reoccur during the flapping interval, the fault is cleared. 
-4. The cleared fault enters the retention interval. This interval ensures that the fault reaches the attention of an administrator even if the condition that caused the fault has been alleviated and the fault has not been deleted prematurely. The retention interval retains the cleared fault for the length of time specified in the global fault policy. 
-5. If the condition reoccurs during the retention interval, the fault returns to the active state. If the condition does not reoccur, the fault is deleted.
+  1. A condition occurs in the system and Cisco UCS Manager raises a fault. This is the active state. 
+
+  2. When the fault is alleviated, it enters a flapping or soaking interval that is designed to prevent flapping. Flapping occurs when a fault is raised and cleared several times in rapid succession. During the flapping interval, the fault retains its severity for the length of time specified in the global fault policy. 
+
+  3. If the condition reoccurs during the flapping interval, the fault returns to the active state. If the condition does not reoccur during the flapping interval, the fault is cleared. 
+
+  4. The cleared fault enters the retention interval. This interval ensures that the fault reaches the attention of an administrator even if the condition that caused the fault has been alleviated and the fault has not been deleted prematurely. The retention interval retains the cleared fault for the length of time specified in the global fault policy. 
+
+  5. If the condition reoccurs during the retention interval, the fault returns to the active state. If the condition does not reoccur, the fault is deleted. 
+
 
 ---
 
@@ -869,7 +959,7 @@ Cisco Intersight™ is a management platform delivered as a service with embedde
 
 You can choose between the native UCSM Managed Mode (UMM) or Intersight Managed Mode (IMM) for the Fabric attached UCS Systems during initial setup of the Fabric Interconnects. If you choose to switch back between UMM and IMM, you must erase the present configuration and start from initial setup. Before erasing the configuration, you must ensure to unclaim the device from Intersight and decommission all rack servers. 
 
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -882,7 +972,7 @@ For more information, see <https://intersight.com/help/resources#intersight_mana
   
 Cisco Intersight Managed Mode (IMM) transition tool helps bootstrap new IMM deployments by replicating the configuration attributes of the existing Cisco UCS Manager (UCSM) infrastructure and by converting the existing Service Profile Templates to IMM Server Profile Templates to accelerate deployment of new servers in IMM. 
 
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -901,7 +991,7 @@ For more information, see the latest Cisco Intersight Managed Mode Transition To
   
 Role-Based Access Control (RBAC) is a method of restricting or authorizing system access for users based on user roles and locales. A role defines the privileges of a user in the system and a locale defines the organizations (domains) that a user is allowed access. Because users are not directly assigned privileges, you can manage individual user privileges by assigning the appropriate roles and locales. 
 
-A user is granted write access to the required system resources only if the assigned role grants the access privileges and the assigned locale allows access. For example, a user with the Server Administrator role in the engineering organization can update server configurations in the Engineering organization. They cannot, however, update server configurations in the Finance organization, unless the locales assigned to the user include the Finance organization.
+A user is granted write access to the required system resources only if the assigned role grants the access privileges and the assigned locale allows access. For example, a user with the Server Administrator role in the engineering organization can update server configurations in the Engineering organization. They cannot, however, update server configurations in the Finance organization, unless the locales assigned to the user include the Finance organization. 
 
 ---
 
@@ -909,7 +999,7 @@ A user is granted write access to the required system resources only if the assi
 
 ## Security Management
 
-The Cisco UCS Manager 4.3(5a) release introduces the Security Management tab in the Admin section. This section aims to offer multiple security management options to protect sensitive data and ensure network integrity. The tab currently includes Encryption Management and assists administrators in effectively managing security settings.
+The Cisco UCS Manager 4.3(5a) release introduces the Security Management tab in the Admin section. This section aims to offer multiple security management options to protect sensitive data and ensure network integrity. The tab currently includes Encryption Management and assists administrators in effectively managing security settings. 
 
 ---
 
@@ -921,7 +1011,7 @@ Cisco Intersight™ is a management platform delivered as a service with embedde
 
 You can choose between the native UCSM Managed Mode (UMM) or Intersight Managed Mode (IMM) for the Fabric attached UCS Systems during initial setup of the Fabric Interconnects. If you choose to switch back between UMM and IMM, you must erase the present configuration and start from initial setup. Before erasing the configuration, you must ensure to unclaim the device from Intersight and decommission all rack servers. 
 
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -934,7 +1024,7 @@ For more information, see <https://intersight.com/help/resources#intersight_mana
   
 Cisco Intersight Managed Mode (IMM) transition tool helps bootstrap new IMM deployments by replicating the configuration attributes of the existing Cisco UCS Manager (UCSM) infrastructure and by converting the existing Service Profile Templates to IMM Server Profile Templates to accelerate deployment of new servers in IMM. 
 
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -959,17 +1049,28 @@ If your environment is using a UCS 6324 40 GB Mini, you can also manage the user
 
 You can configure the following basic administration configurations to manage user access in your environment: 
 
-* Passwords—Choose a password during the initial setup for the default admin user account, and create a unique username and password for each user account to access the system. 
-* RBAC—Delegate and control user access privileges according to the role and restrict user access within an organization boundary defined for the tenant, such as multi-tenancy. 
-* Authentication—Create UCS Manager local user accounts, and remote user accounts using the LDAP, RADIUS, and TACACS+ protocols. 
-* Communication Services—Configure CIM XML, HTTP, HTTPS, SMASH CLP, SNMP, SSH, and Telnet to interface third-party applications with Cisco UCS. 
-* Organizations—Create organizations for policies, pools, and service profiles. You can create multiple sub-organizations under the default Root organization, and nest sub-organization under a different sub-organization. 
-* CIMC—Close the KVM, vMedia, and SOL sessions of any user. When UCS Manager receives an event from CIMC, it updates its session table and displays the information to all users. 
-* Backup and Restore —Take a snapshot of all or part of the system configuration and export the file to a location on your network. You can configure a full state, all configuration, system configuration, and logical configuration backup. 
-* Call Home—Configure e-mail alert notifications for UCS errors and faults. You can configure the e-mail notifications for Cisco TAC (predefined) or any other recipient. 
-* Deferred Deployments—Configure deployments for a service profile to deploy immediately or during a specified maintenance window. Use this to control when disruptive configuration changes to a service profile or a service profile template are implemented. 
-* Scheduling—Schedule a one time occurrence for a schedule, a recurring occurrence for a schedule, and delete schedules. 
-* Fault Suppression—Enable fault suppression to suppress SNMP trap and Call Home notifications during a planned maintenance time.
+  * Passwords—Choose a password during the initial setup for the default admin user account, and create a unique username and password for each user account to access the system. 
+
+  * RBAC—Delegate and control user access privileges according to the role and restrict user access within an organization boundary defined for the tenant, such as multi-tenancy. 
+
+  * Authentication—Create UCS Manager local user accounts, and remote user accounts using the LDAP, RADIUS, and TACACS+ protocols. 
+
+  * Communication Services—Configure CIM XML, HTTP, HTTPS, SMASH CLP, SNMP, SSH, and Telnet to interface third-party applications with Cisco UCS. 
+
+  * Organizations—Create organizations for policies, pools, and service profiles. You can create multiple sub-organizations under the default Root organization, and nest sub-organization under a different sub-organization. 
+
+  * CIMC—Close the KVM, vMedia, and SOL sessions of any user. When UCS Manager receives an event from CIMC, it updates its session table and displays the information to all users. 
+
+  * Backup and Restore —Take a snapshot of all or part of the system configuration and export the file to a location on your network. You can configure a full state, all configuration, system configuration, and logical configuration backup. 
+
+  * Call Home—Configure e-mail alert notifications for UCS errors and faults. You can configure the e-mail notifications for Cisco TAC (predefined) or any other recipient. 
+
+  * Deferred Deployments—Configure deployments for a service profile to deploy immediately or during a specified maintenance window. Use this to control when disruptive configuration changes to a service profile or a service profile template are implemented. 
+
+  * Scheduling—Schedule a one time occurrence for a schedule, a recurring occurrence for a schedule, and delete schedules. 
+
+  * Fault Suppression—Enable fault suppression to suppress SNMP trap and Call Home notifications during a planned maintenance time. 
+
 
 ---
 
@@ -1016,18 +1117,30 @@ _ |  underscore
   
 Cisco recommends using a strong password; otherwise, the password strength check for locally authenticated users, Cisco UCS Manager rejects any password that does not meet the following requirements: 
 
-* If the Password Strength Check option is checked, passwords must be between 8 to 127 characters. 
-* If the Password Strength Check option is unchecked, administrators can create user accounts without a password as a placeholder, but a password containing 1 to 127 characters is required for successful authentication. 
-* Must contain at least three of the following: 
-* Lower case letters 
-* Upper case letters 
-* Digits 
-* Special characters 
-* Must not contain a character that is repeated more than three times consecutively, such as aaabbb. 
-* Must not be identical to the username or the reverse of the username. 
-* Must pass a password dictionary check. For example, the password must not be based on a standard dictionary word. 
-* Must not contain the following symbols: $ (dollar sign), ? (question mark), and = (equals sign). 
-* Should not be blank for local user and admin accounts.
+  * If the Password Strength Check option is checked, passwords must be between 8 to 127 characters. 
+
+  * If the Password Strength Check option is unchecked, administrators can create user accounts without a password as a placeholder, but a password containing 1 to 127 characters is required for successful authentication. 
+
+  * Must contain at least three of the following: 
+
+  * Lower case letters 
+
+  * Upper case letters 
+
+  * Digits 
+
+  * Special characters 
+
+  * Must not contain a character that is repeated more than three times consecutively, such as aaabbb. 
+
+  * Must not be identical to the username or the reverse of the username. 
+
+  * Must pass a password dictionary check. For example, the password must not be based on a standard dictionary word. 
+
+  * Must not contain the following symbols: $ (dollar sign), ? (question mark), and = (equals sign). 
+
+  * Should not be blank for local user and admin accounts. 
+
 
 ---
 
@@ -1039,16 +1152,22 @@ You can use the communication services defined below to interface third-party ap
 
 Cisco UCS Manager supports IPv4 and IPv6 address access for the following services: 
 
-* CIM XML 
-* HTTP 
-* HTTPS 
-* SNMP 
-* SSH 
-* Telnet 
+  * CIM XML 
+
+  * HTTP 
+
+  * HTTPS 
+
+  * SNMP 
+
+  * SSH 
+
+  * Telnet 
+
 
 Cisco UCS Manager supports out-of-band IPv4 address access to the Cisco UCS KVM Direct launch page from a web browser. To provide this access, you must enable the following service: 
 
-* CIMC Web Service 
+  * CIMC Web Service 
 
 Communication Service  |  Description   
 ---|---  
@@ -1061,6 +1180,6 @@ HTTPS  |  By default, HTTPS is enabled on port. With HTTPS, all data is exchange
 SMASH CLP  |  This service is enabled for read-only access and supports a limited subset of the protocols, such as the show command. You cannot disable it.  This shell service is one of the standards that the Distributed Management Task Force defines.   
 SNMP  |  By default, this service is disabled. If enabled, the default port is 161. You must configure the community and at least one SNMP trap.  Enable this service only if your system includes integration with an SNMP server.   
 SSH  |  This service is enabled on port 22. You cannot disable it, and you cannot change the default port.  This service provides access to the Cisco UCS Manager CLI.   
-Telnet  |  By default, this service is disabled.  This service provides access to the Cisco UCS Manager CLI.
+Telnet  |  By default, this service is disabled.  This service provides access to the Cisco UCS Manager CLI. 
 
 ---

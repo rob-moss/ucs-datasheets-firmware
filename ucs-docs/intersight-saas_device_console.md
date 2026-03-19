@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Device Console |
 | **URL** | https://intersight.com/help/saas/device_console |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260225095216527/docs/cloud/data/articles/device_console/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/cloud/data/articles/device_console/en/index.html |
 | **HTML Title** | Device Console |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_device_console.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:06 |
+| **Fetched on** | 2026-03-19 15:36:39 |
 
 ---
 
@@ -18,8 +18,10 @@
 
 The Device Console is a user interface that provides a limited ability to manage the system, even when Intersight is not connected. The Device Console provides both a Command-Line Interface (CLI) and a Web User Interface (UI) and can connect remotely to:
 
-* Edge Chassis Management Controllers (eCMC) of Unified Edge chassis
-* Fabric Interconnects (FI) of Intersight Managed Mode domains
+  * Edge Chassis Management Controllers (eCMC) of Unified Edge chassis
+
+  * Fabric Interconnects (FI) of Intersight Managed Mode domains
+
 
 Note:
 
@@ -31,54 +33,79 @@ This interface provides system information, including the model, serial number, 
 
 **Obtaining an IP Address for eCMC (Unified Edge)**
 
-1. The eCMC will automatically set its hostname to `UCSXE-<serial number>-<A|B>`.
-2. The eCMC will first attempt to obtain an IP address via DHCP on its management port.
-3. If Dynamic DNS (DDNS) is configured, the IP address will be accessible via `https://<hostname>`.
-4. Link-Local Fallback (if DHCP fails):
-* If a DHCP server is not present, or if a network failure is detected (defined as 5 or more pings failing within 30 seconds), the eCMC will fall back to a link-local IP address.
-* eCMC A will assign itself `169.254.254.1`
-* eCMC B will assign itself `169.254.254.2`
-* This fallback typically occurs 30-90 seconds after network failure detection
+  1. The eCMC will automatically set its hostname to `UCSXE-<serial number>-<A|B>`.
+
+  2. The eCMC will first attempt to obtain an IP address via DHCP on its management port.
+
+  3. If Dynamic DNS (DDNS) is configured, the IP address will be accessible via `https://<hostname>`.
+
+  4. Link-Local Fallback (if DHCP fails):
+
+  * If a DHCP server is not present, or if a network failure is detected (defined as 5 or more pings failing within 30 seconds), the eCMC will fall back to a link-local IP address.
+
+  * eCMC A will assign itself `169.254.254.1`
+
+  * eCMC B will assign itself `169.254.254.2`
+
+  * This fallback typically occurs 30-90 seconds after network failure detection
+
 
 **Connecting to the eCMC**
 
-1. If DHCP is used, check the DHCP server logs or interface to find the IP address assigned to the eCMC, using its hostname `(UCSXE-<serial number>-<A|B)`
+  1. If DHCP is used, check the DHCP server logs or interface to find the IP address assigned to the eCMC, using its hostname `(UCSXE-<serial number>-<A|B)`
 
 .
-2. If DDNS is configured, access the eCMC using `https://<hostname>`
+  2. If DDNS is configured, access the eCMC using `https://<hostname>`
 
 .
-3. If the eCMC has fallen back to a link-local IP address (For example, due to no DHCP or network failure), you will need to:
-1. Connect a laptop directly to the management port of the eCMC.
-2. Configure the laptop's network adapter with an IP address in the same `169.254.254.x` subnet (e.g., `169.254.254.3`) to access the device UI via the eCMC's link-local IP.
+  3. If the eCMC has fallen back to a link-local IP address (For example, due to no DHCP or network failure), you will need to:
+
+     1. Connect a laptop directly to the management port of the eCMC.
+
+     2. Configure the laptop's network adapter with an IP address in the same `169.254.254.x` subnet (e.g., `169.254.254.3`) to access the device UI via the eCMC's link-local IP.
+
 
 ## Logging in to Device Console and Resetting Default Password
 
-1. To log in to the Device Console for the first time, use the default credentials—admin as the username and password as the password.
-2. Reset the default password:
-1. Enter a new username and select a new role.
-2. Do one of these:
+  1. To log in to the Device Console for the first time, use the default credentials—admin as the username and password as the password.
+
+  2. Reset the default password:
+
+     1. Enter a new username and select a new role.
+
+     2. Do one of these:
+
   * To have a password generated automatically, enable Generate Password.
+
   * To set your own password, enter a new password.
-3. Save the password and then click Submit.
+
+     3. Save the password and then click Submit.
 
 Note:
 
 The password cannot be recovered after you click Submit. If the password is lost, a factory reset will be required to regain access.
 
-3. Log in using the updated credentials and verify access to the Device Console tabs.
+  3. Log in using the updated credentials and verify access to the Device Console tabs.
+
 
 ## User Interface of Device Console (Unified Edge)
 
 The Device Console UI consists of the following main elements:
 
-* A central pane that includes the following tabs:
-* [Device Connector](/help/device_console#device_connector)
-* [System Information](/help/device_console#system_information_\(unified_edge\))
-* [Network Settings](/help/device_console#network_settings_\(unified_edge\))
-* [Inventory](/help/device_console#inventory_\(unified_edge\))
-* [Diagnostic Data](/help/device_console#diagnostic_data_\(unified_edge\))
-* A top navigation menu that contains the Help menu and Logout button.
+  * A central pane that includes the following tabs:
+
+  * [Device Connector](/help/device_console#device_connector)
+
+  * [System Information](/help/device_console#system_information_\(unified_edge\))
+
+  * [Network Settings](/help/device_console#network_settings_\(unified_edge\))
+
+  * [Inventory](/help/device_console#inventory_\(unified_edge\))
+
+  * [Diagnostic Data](/help/device_console#diagnostic_data_\(unified_edge\))
+
+  * A top navigation menu that contains the Help menu and Logout button.
+
 
 ## Device Connector
 
@@ -96,9 +123,9 @@ Property| Description
 ---|---  
 Device Connector| Displays the following:
 
-* The Access Mode of the Device Connector.
-* The status of the connection between the Device Connector, the Internet, and Cisco Intersight.
-* The claim status of the device.
+  * The Access Mode of the Device Connector.
+  * The status of the connection between the Device Connector, the Internet, and Cisco Intersight.
+  * The claim status of the device.
 
   
 Settings| Click Settings to configure the Device Connector settings to enable the capabilities of Cisco Intersight.For more information, see [Configuring Device Connector](/help/resources/configuring_device_connector).  
@@ -137,8 +164,8 @@ Parameter| Description
 Edge Chassis Management Controller A / B| Identifies two distinct eCMCs within a Unified Edge Chassis. They are typically redundant components for high availability.  
 IPv4/IPv6| Displays the IP protocol type:
 
-* Static: When the IP addresses are configured to be manually assigned.
-* DHCP: When the IP address are configured to be automatically assigned from the DHCP server.The DHCP configuration will be applied to both Edge Chassis Management Controller A and Edge Chassis Management Controller B.
+  * Static: When the IP addresses are configured to be manually assigned.
+  * DHCP: When the IP address are configured to be automatically assigned from the DHCP server.The DHCP configuration will be applied to both Edge Chassis Management Controller A and Edge Chassis Management Controller B.
 
   
 Hostname| Displays the unique network name assigned to each eCMC for identification.  
@@ -161,29 +188,44 @@ Any changes made to the network settings will be applied to both eCMC A and eCMC
 
 To configure the network settings:
 
-1. Go to Device Console > Network Settings tab.
+  1. Go to Device Console > Network Settings tab.
 
 The current network settings are displayed.
 
-2. Click Edit.
-3. To configure the hostname:
-* In the Hostname field, update the hostname of the Unified Edge device to uniquely identify the device within the network.
-* The suffix -A or -B will be automatically appended to the hostname for each eCMC. (e.g., If you type EdgeDevice, it becomes EdgeDevice-A for eCMC A and EdgeDevice-B for eCMC B).
-4. To configure the DNS:
-* In the DNS IP field, configure the IP address for the DNS server.
-* You can configure up to four DNS IPs.
-* DNS IP can be IPv4 or IPv6 addresses.
-5. To configure NTP Server for time synchronization:
-* In the NTP IP/Hostname field, configure the IP address for the NTP server.
-* You can configure up to four NTP servers.
-* NTP IP can be hostname, IPv4, or IPv6 addresses.
-6. Enable and configure IPv4 and/or IPv6 addressing and choose one of the following options for IP assignment:
-* DHCP: Obtain IP addresses automatically from the DHCP server.
+  2. Click Edit.
+
+  3. To configure the hostname:
+
+  * In the Hostname field, update the hostname of the Unified Edge device to uniquely identify the device within the network.
+
+  * The suffix -A or -B will be automatically appended to the hostname for each eCMC. (e.g., If you type EdgeDevice, it becomes EdgeDevice-A for eCMC A and EdgeDevice-B for eCMC B).
+
+  4. To configure the DNS:
+
+  * In the DNS IP field, configure the IP address for the DNS server.
+
+  * You can configure up to four DNS IPs.
+
+  * DNS IP can be IPv4 or IPv6 addresses.
+
+  5. To configure NTP Server for time synchronization:
+
+  * In the NTP IP/Hostname field, configure the IP address for the NTP server.
+
+  * You can configure up to four NTP servers.
+
+  * NTP IP can be hostname, IPv4, or IPv6 addresses.
+
+  6. Enable and configure IPv4 and/or IPv6 addressing and choose one of the following options for IP assignment:
+
+  * DHCP: Obtain IP addresses automatically from the DHCP server.
 
 The DHCP configuration will be applied to both Edge Chassis Management Controller A and Edge Chassis Management Controller B.
 
-* Static: Manually configure IP addresses for the Management IP, Gateway IP, Subnet Mask (for IPv4), and Prefix Length (for IPv6).
-7. Click Save.
+  * Static: Manually configure IP addresses for the Management IP, Gateway IP, Subnet Mask (for IPv4), and Prefix Length (for IPv6).
+
+  7. Click Save.
+
 
 ## Inventory (Unified Edge)
 
@@ -198,11 +240,11 @@ Details| Description
 Name| Displays the name of the server, with a prefixed icon indicating whether the server is powered on or off.  
 Status| Displays the lifecycle state of the server. The values can be:
 
-* None — When the server has been recommissioned but discovery is yet to start.
-* Active — When the server is discovered.
-* Decommissioned — When the server is removed from the Unified Edge chassis.
-* DiscoveryFailed — When the server discovery has failed.
-* SlotMismatch — When the configuration of a blade server is not correct and server rediscovery is required in the slot.
+  * None — When the server has been recommissioned but discovery is yet to start.
+  * Active — When the server is discovered.
+  * Decommissioned — When the server is removed from the Unified Edge chassis.
+  * DiscoveryFailed — When the server discovery has failed.
+  * SlotMismatch — When the configuration of a blade server is not correct and server rediscovery is required in the slot.
 
   
 PID| Displays the Product ID (PID) of the server.  
@@ -212,13 +254,16 @@ User Label| Displays the user label that is set for the server.
   
 The following server actions are available:
 
-* Power On/Off
-* Launch KVM
-* Generate Tech Support Bundle
+  * Power On/Off
+
+  * Launch KVM
+
+  * Generate Tech Support Bundle
 
 The resulting Tech Support Bundles can be downloaded from the Diagnostic Data tab.
 
-* Locator LED On/Off
+  * Locator LED On/Off
+
 
 **Chassis Tab**
 
@@ -230,9 +275,9 @@ Name| Displays the name for the chassis.
 ID| Displays the unique ID for the chassis.  
 Status| Displays the status of the chassis. The values can be:
 
-* Active — When the chassis is discovered.
-* Decommissioned —When the Chassis is physically present and connected.
-* DiscoveryFailed — When the chassis discovery has failed.
+  * Active — When the chassis is discovered.
+  * Decommissioned —When the Chassis is physically present and connected.
+  * DiscoveryFailed — When the chassis discovery has failed.
 
   
 Model| Displays the chassis model.  
@@ -246,28 +291,37 @@ From the Diagnostic Data tab, you can collect diagnostic data for servers and Ed
 
 You can generate tech support bundles for the following:
 
-* eCMC: Contains technical support data for eCMC A and eCMC B.
-* Server: Contains technical support data for Unified Edge servers.
+  * eCMC: Contains technical support data for eCMC A and eCMC B.
+
+  * Server: Contains technical support data for Unified Edge servers.
+
 
 **Generating and downloading tech support bundles**
 
 To generate and download a tech support bundle:
 
-1. Log in to Device Console.
-2. Go to Diagnostic Data.
-3. Click Generate Tech Support Bundle.
-4. In the Generate Tech Support Bundle dialog box:
-1. To generate the relevant tech support bundles, from the Device Type drop-down, select Edge Chassis Management Controller or Server.
-2. Select the device for which the tech support bundle needs to be generated.
-3. Click Generate to initiate the process.
+  1. Log in to Device Console.
+
+  2. Go to Diagnostic Data.
+
+  3. Click Generate Tech Support Bundle.
+
+  4. In the Generate Tech Support Bundle dialog box:
+
+     1. To generate the relevant tech support bundles, from the Device Type drop-down, select Edge Chassis Management Controller or Server.
+
+     2. Select the device for which the tech support bundle needs to be generated.
+
+     3. Click Generate to initiate the process.
 
 Monitor the tech support bundle generation status in the Oper State column. Upon completion, the status will update from In Progress to Available.
 
-4. To download the bundle, click ellipsis (...) next to the bundle, then select Download.
+     4. To download the bundle, click ellipsis (...) next to the bundle, then select Download.
 
 This operation may take several minutes to complete. The downloaded file is saved in the default download location.
 
-5. To delete any bundle, click ellipsis (...) next to the bundle, then select Delete.
+     5. To delete any bundle, click ellipsis (...) next to the bundle, then select Delete.
+
 
 ## Administration (Unified Edge)
 
@@ -279,16 +333,26 @@ The account lockout feature cannot be disabled.
 
 **Configure the account lockout settings**
 
-1. Log in to the Device Console.
-2. Select the Administration tab.
-3. Review the current account lockout configuration.
-* Allowed Attempts: The number of consecutive incorrect login attempts that will lock the account. The default value is 5.
-* Lockout Period (minutes): The duration the account remains locked after reaching the maximum number of consecutive incorrect login attempts. The default value is 15.
-4. Select Edit.
-5. Perform these substeps on the Account Lockout page.
-1. Enter the number of Allowed Attempts. The valid range is from 1 to 20.
-2. Enter the Lockout Period in minutes. The valid range is from 1 to 60.
-6. Select Save.
+  1. Log in to the Device Console.
+
+  2. Select the Administration tab.
+
+  3. Review the current account lockout configuration.
+
+  * Allowed Attempts: The number of consecutive incorrect login attempts that will lock the account. The default value is 5.
+
+  * Lockout Period (minutes): The duration the account remains locked after reaching the maximum number of consecutive incorrect login attempts. The default value is 15.
+
+  4. Select Edit.
+
+  5. Perform these substeps on the Account Lockout page.
+
+     1. Enter the number of Allowed Attempts. The valid range is from 1 to 20.
+
+     2. Enter the Lockout Period in minutes. The valid range is from 1 to 60.
+
+  6. Select Save.
+
 
 ## Accessing the Device Console (Fabric Interconnects)
 
@@ -296,8 +360,10 @@ To access the Device Console user interface, log in to the Fabric Interconnect u
 
 You can also log into the Device Console of a Fabric Interconnect in Intersight Managed Mode using your enterprise LDAP account. To enable LDAP authentication attach the following policies:
 
-* An LDAP policy for HTTP and SSH access.
-* Certificate Management policy (optional) for secure access.
+  * An LDAP policy for HTTP and SSH access.
+
+  * Certificate Management policy (optional) for secure access.
+
 
 For more information, see the Creating an LDAP Policy and Creating a Certificate Management Policy sections in [Configuring Domain Policies](/help/resources/cisco_intersight_managed_mode_configuration#configuring_ucs_domain_policies).
 
@@ -305,12 +371,18 @@ For more information, see the Creating an LDAP Policy and Creating a Certificate
 
 The FI Device Console UI consists of the following main elements:
 
-* A central pane that includes four tabs:
-* [System Information](/help/device_console#system_information_\(fabric_interconnects\))
-* [Device Connector](/help/device_console#device_connector) (Common)
-* [Inventory](/help/device_console#inventory_\(fabric_interconnects\))
-* [Diagnostic Data](/help/device_console#diagnostic_data_\(fabric_interconnect\))
-* A top navigation menu that contains the Help menu and Logout button.
+  * A central pane that includes four tabs:
+
+  * [System Information](/help/device_console#system_information_\(fabric_interconnects\))
+
+  * [Device Connector](/help/device_console#device_connector) (Common)
+
+  * [Inventory](/help/device_console#inventory_\(fabric_interconnects\))
+
+  * [Diagnostic Data](/help/device_console#diagnostic_data_\(fabric_interconnect\))
+
+  * A top navigation menu that contains the Help menu and Logout button.
+
 
 ## Device Connector (Fabric Interconnects)
 
@@ -335,10 +407,14 @@ The Inventory screen provides comprehensive details for managed components withi
 
 **Subtabs of the Inventory screen:**
 
-* Servers
-* Chassis
-* Fabric Extender (applies to Fabric Interconnects only)
-* PCIe Nodes
+  * Servers
+
+  * Chassis
+
+  * Fabric Extender (applies to Fabric Interconnects only)
+
+  * PCIe Nodes
+
 
 **Servers Tab**
 
@@ -349,11 +425,11 @@ Details| Description
 Name| Displays the name of the server, with a prefixed icon indicating whether the server is powered on or off.  
 Status| Displays the lifecycle state of the server. The values can be:
 
-* None: When the server has been recommissioned but discovery is yet to start.
-* Active: When the server is discovered.
-* Decommissioned: When the server is removed from the Cisco UCS configuration. However, the server hardware physically remains in the Cisco UCS instance.
-* DiscoveryFailed: When the server discovery has failed.
-* SlotMismatch: When the configuration of a blade server is not correct and server rediscovery is required in the slot.
+  * None: When the server has been recommissioned but discovery is yet to start.
+  * Active: When the server is discovered.
+  * Decommissioned: When the server is removed from the Cisco UCS configuration. However, the server hardware physically remains in the Cisco UCS instance.
+  * DiscoveryFailed: When the server discovery has failed.
+  * SlotMismatch: When the configuration of a blade server is not correct and server rediscovery is required in the slot.
 
   
 PID| Displays the Product ID (PID) of the server.  
@@ -363,21 +439,26 @@ User Label| Displays the user label that is set for the server.
   
 You can perform the following server actions:
 
-* Power On/Off
-* Turn On Locator
-* Launch KVM
-* Launch IMC
+  * Power On/Off
+
+  * Turn On Locator
+
+  * Launch KVM
+
+  * Launch IMC
 
 Note:
 
 Minimum C-Series IMM server firmware version required for launching IMC: 4.3(6.250039).
 
-* Launch API Explorer
-* Generate Tech Support Bundle
+  * Launch API Explorer
+
+  * Generate Tech Support Bundle
 
 Note:
 
 The resulting Tech Support Bundles can be downloaded from the Diagnostic Data tab.
+
 
 Performing Redfish™ Based Server Operations from the API Explorer.
 
@@ -389,8 +470,10 @@ For an overview of Redfish™ based server operations and examples, see <https:/
 
 To perform Redfish™ Based server operations from the API Explorer, do the following:
 
-1. On the Servers table view, select the server and click the ellipsis (…).
-2. From the ellipsis (…), select Launch API Explorer.
+  1. On the Servers table view, select the server and click the ellipsis (…).
+
+  2. From the ellipsis (…), select Launch API Explorer.
+
 
 **Chassis Tab**
 
@@ -402,9 +485,9 @@ Name| Displays the name for the chassis.
 ID| Displays the unique ID for the chassis.  
 Status| Displays the status of the chassis. The values can be:
 
-* Active: When the chassis is discovered.
-* Decommissioned: When the Chassis is physically present and connected, but temporarily removed from the Cisco UCS configuration.
-* DiscoveryFailed: When the chassis discovery has failed.
+  * Active: When the chassis is discovered.
+  * Decommissioned: When the Chassis is physically present and connected, but temporarily removed from the Cisco UCS configuration.
+  * DiscoveryFailed: When the chassis discovery has failed.
 
   
 Model| Displays the chassis model.  
@@ -412,9 +495,12 @@ Serial| Displays the host ID/serial number of the chassis.
   
 You can perform the following chassis operations:
 
-* Launch API Explorer (IOM 1)
-* Launch API Explorer (IOM 2)
-* Generate Tech Support Bundle
+  * Launch API Explorer (IOM 1)
+
+  * Launch API Explorer (IOM 2)
+
+  * Generate Tech Support Bundle
+
 
 Performing Redfish™ Based Chassis Operations from the API Explorer
 
@@ -426,8 +512,10 @@ For an overview of Redfish™ based chassis operations and examples, see <https:
 
 To perform Redfish™ Based chassis operations from the API Explorer, do the following:
 
-1. On the Chassis table view, select the chassis and click the ellipsis (…).
-2. From the ellipsis (…), select Launch API Explorer.
+  1. On the Chassis table view, select the chassis and click the ellipsis (…).
+
+  2. From the ellipsis (…), select Launch API Explorer.
+
 
 **Fabric Extender Tab**
 
@@ -439,10 +527,10 @@ Name| Displays the name for the FEX.
 Identifier| Displays the unique ID for the FEX.  
 Lifecycle| Displays the current state of the FEX lifecycle. The values can be:
 
-* Online: When the FEX is connected.
-* Decommissioned: When the FEX is physically present and connected, but temporarily removed from the Cisco UCS configuration.
-* Unclaimed: When the FEX has not been claimed to the Intersight account.
-* Discovery Failure: When the discovery of FEX has failed.
+  * Online: When the FEX is connected.
+  * Decommissioned: When the FEX is physically present and connected, but temporarily removed from the Cisco UCS configuration.
+  * Unclaimed: When the FEX has not been claimed to the Intersight account.
+  * Discovery Failure: When the discovery of FEX has failed.
 
   
 Model| Displays the FEX model.  
@@ -458,9 +546,9 @@ Details| Description
 Name| Displays the name for the FEX.  
 Status| Displays the status of the PCIe node. The values can be:
 
-* Active: When the PCIe node is discovered.
-* Decommissioned: When the PCIe node is physically present and connected, but temporarily removed from the Cisco UCS configuration.
-* DiscoveryFailed: When the PCIe node discovery has failed.
+  * Active: When the PCIe node is discovered.
+  * Decommissioned: When the PCIe node is physically present and connected, but temporarily removed from the Cisco UCS configuration.
+  * DiscoveryFailed: When the PCIe node discovery has failed.
 
   
 Model| Displays the hardware model of the PCIe node.  
@@ -470,8 +558,10 @@ Locator LED| Displays the state of the locator LED of this PCIe node.
   
 We can perform these operation on PCIe node from the Device Console:
 
-* Turn On/Off Locator
-* Generate Tech Support Bundle
+  * Turn On/Off Locator
+
+  * Generate Tech Support Bundle
+
 
 ## Diagnostic Data (Fabric Interconnect)
 
@@ -481,29 +571,41 @@ From the Diagnostic Data tab, you can collect diagnostic data for servers, chass
 
 You can generate tech support bundles for the following:
 
-* Server: Contains technical support data for blade and rack servers including all adapters. For blade servers, tech support data is collected for IOMs.
-* Chassis: Contains technical support data for a given chassis including IOMs.
-* Fabric Interconnect: Contains technical support data for Fabric Interconnect. The data can be for either the local or both the local and peer switches.
-* PCIe Node: Contains technical support data for PCIe nodes.
+  * Server: Contains technical support data for blade and rack servers including all adapters. For blade servers, tech support data is collected for IOMs.
+
+  * Chassis: Contains technical support data for a given chassis including IOMs.
+
+  * Fabric Interconnect: Contains technical support data for Fabric Interconnect. The data can be for either the local or both the local and peer switches.
+
+  * PCIe Node: Contains technical support data for PCIe nodes.
+
 
 **Generating and Downloading Tech Support Bundles**
 
 To generate and download a tech support bundle:
 
-1. Log in to Device Console.
-2. Go to Diagnostic Data > Tech Support Bundles.
-3. Click Generate Tech Support Bundle in the right side of the screen above the table view.
-4. In the Generate Tech Support Bundle dialog box:
-1. Select a Device Type—Chassis, Fabric Interconnect, Fabric Extenders, Server, or PCIe Node—to generate the corresponding tech support bundle.
-2. If you select Fabric Interconnect as the device type, choose either Local Switch or Local and Peer Switches and proceed to step 4d. Otherwise, continue to the next step.
-3. From the second drop-down menu, select the device for which the tech support bundle needs to be generated.
-4. Click Generate to initiate the process.
+  1. Log in to Device Console.
+
+  2. Go to Diagnostic Data > Tech Support Bundles.
+
+  3. Click Generate Tech Support Bundle in the right side of the screen above the table view.
+
+  4. In the Generate Tech Support Bundle dialog box:
+
+     1. Select a Device Type—Chassis, Fabric Interconnect, Fabric Extenders, Server, or PCIe Node—to generate the corresponding tech support bundle.
+
+     2. If you select Fabric Interconnect as the device type, choose either Local Switch or Local and Peer Switches and proceed to step 4d. Otherwise, continue to the next step.
+
+     3. From the second drop-down menu, select the device for which the tech support bundle needs to be generated.
+
+     4. Click Generate to initiate the process.
 
 You can see the download status for the tech support bundle generation under the Oper State column. Once the generation is complete, the status changes from In Progress to Available.
 
-5. In the relevant row for the device, from the ellipsis (…), click Download to start the download.
+     5. In the relevant row for the device, from the ellipsis (…), click Download to start the download.
 
 This operation may take several minutes to complete. The downloaded file is saved in your default download location. You can manually delete any file by selecting Delete from the ellipsis (**…**) menu located next to each record.
+
 
 **Core Files**
 
@@ -513,11 +615,14 @@ Core files get generated on Cisco Integrated Management Controller, Chassis Mana
 
 To generate and download a core file, do the following:
 
-1. Log in to Device Console.
-2. Go to Diagnostic Data > Core Files.
-3. In the relevant row for the file, from the ellipsis (…), click Download to start the download
+  1. Log in to Device Console.
+
+  2. Go to Diagnostic Data > Core Files.
+
+  3. In the relevant row for the file, from the ellipsis (…), click Download to start the download
 
 The downloaded file is saved in your default download location.
+
 
 You can manually delete any file by selecting Delete from the ellipsis (…) menu located next to each record.
 
@@ -745,16 +850,17 @@ eCMCs must be updated serially (one after the other), not in parallel. This is c
 
 To update the firmware:
 
-1. Update the eCMC firmware using one of these methods:
-* **Method 1:** Using firmware from the workspace:/
+  1. Update the eCMC firmware using one of these methods:
+
+  * **Method 1:** Using firmware from the workspace:/
 
 Before initiating a firmware update, the firmware bundle (ESU and HUU images) must be copied to the /workspace directory on the eCMC.
 
-1. SSH to eCMC-CLI:
+       1. SSH to eCMC-CLI:
 
 `**ssh admin@**` <eCMC-CLI IP>
 
-2. Copy the ESU bundle for eCMC firmware to the workspace directory:
+       2. Copy the ESU bundle for eCMC firmware to the workspace directory:
 
 `**cp**` scp://[username@]<SOURCE_SERVER_IP>:<path_to_esu_bundle_file> `**workspace:/**` <esu_bundle_filename>
 
@@ -764,10 +870,14 @@ Example:
 
 Note:
   * [username@] is optional; omit if the source server doesn't require a username for scp.
+
   * Replace <SOURCE_SERVER_IP> with the actual IP address of your source server.
+
   * Replace <path_to_esu_bundle_file> with the full path to the ESU bundle on the source server.
+
   * Replace <esu_bundle_filename> with the desired name for the file in the eCMC's workspace:/.
-3. Copy the HUU bundle for Compute Node firmware to the workspace directory:
+
+       3. Copy the HUU bundle for Compute Node firmware to the workspace directory:
 
 `**cp**` scp://[username@]<SOURCE_SERVER_IP>:<path_to_huu_bundle_file> `**workspace:/**` <huu_bundle_filename>
 
@@ -779,35 +889,37 @@ Note:
 
 Replace the placeholders as described for the ESU bundle.
 
-4. Update eCMC Firmware:
-  1. SSH to eCMC-CLI:
+       4. Update eCMC Firmware:
+
+          1. SSH to eCMC-CLI:
 
 `**ssh admin@**` <eCMC-CLI IP>
 
-  2. Enter firmware scope:
+          2. Enter firmware scope:
 
 `**scope firmware**`
 
-  3. Update eCMC-A firmware:
+          3. Update eCMC-A firmware:
 
 `**update-ecmc-firmware workspace:/**` <esu_bundle_filename>
 
 Example:
 
 `**update-ecmc-firmware workspace:/**` esu-firmware-6.0.X.XX00XX.tar.gz
-[code]eCMC firmware update successfully triggered....
-[/code]
+                 
+                 eCMC firmware update successfully triggered....
 
-5. Update Compute Node firmware:
-  1. SSH to eCMC-CLI:
+       5. Update Compute Node firmware:
+
+          1. SSH to eCMC-CLI:
 
 `**ssh admin@**` <eCMC-CLI IP>
 
-  2. Enter firmware scope:
+          2. Enter firmware scope:
 
 `**scope firmware**`
 
-  3. Update the compute node firmware:
+          3. Update the compute node firmware:
 
 `**update-server-firmware**` <server-ID> `**workspace:/**` <huu_bundle_filename>
 
@@ -819,84 +931,93 @@ Note:
 
 Replace <server-ID> with the appropriate server number (For example:2 for Server 2).
 
-* **Method 2:** Using firmware from a USB drive
+  * **Method 2:** Using firmware from a USB drive
 
 Before initiating a firmware update, the firmware bundle (ESU and HUU images) must be copied to the USB drive.
 
-1. Connect the USB drive to the eCMC.
-2. List the USBs connected to the eCMC.
+       1. Connect the USB drive to the eCMC.
+
+       2. List the USBs connected to the eCMC.
 
 `**list-storage-drives**`
-[code]Name                      Location
+              
+              Name                      Location
               eMMC                      workspace:/
               USB Drive1                media/sda1:/
-[/code]
 
-3. Update the eCMC firmware:
+       3. Update the eCMC firmware:
 
 `**update-ecmc-firmware**` media/sda1:/esu-firmware-6.0.1.XX00XX.tar.gz.
 
-4. Update the compute node using a firmware bundle from a USB drive:
-  1. Copy the HSU bundle from the USB to the **workspace:/** directory.
-  2. Execute the command for updating the compute node.
+       4. Update the compute node using a firmware bundle from a USB drive:
+
+          1. Copy the HSU bundle from the USB to the **workspace:/** directory.
+
+          2. Execute the command for updating the compute node.
 
 `**update-server-firmware**` <absolute_file_path>
 
-2. Check firmware update status for eCMC A:
+  2. Check firmware update status for eCMC A:
 
 `**show firmware-update-status**` ecmc A
 
 **Example Output:**
-[code]ECMC A:
+         
+         ECMC A:
                  Status: Completed
                  Complete: 100%
-[/code]
 
-3. Check firmware update status for the server:
+  3. Check firmware update status for the server:
 
 `**show firmware-update-server**` <server-ID>
 
-4. Repeat steps 1-4 by logging into the eCMC-B with the eCMC-B <IP-Address>.
-5. Check servers populated in the chassis:
-1. SSH to eCMC-CLI: 
+  4. Repeat steps 1-4 by logging into the eCMC-B with the eCMC-B <IP-Address>.
+
+  5. Check servers populated in the chassis:
+
+     1. SSH to eCMC-CLI: 
 
 `**ssh admin@**` <eCMC-CLI IP>
 
-2. Enter server's scope:
+     2. Enter server's scope:
 
 `**scope servers**`
 
-3. Display servers:
+     3. Display servers:
 
 `**show servers**`
 
-6. Check firmware versions running on eCMCs:
-1. Enter firmware scope:
+  6. Check firmware versions running on eCMCs:
+
+     1. Enter firmware scope:
 
 `**scope firmware**`
 
-2. Display the firmware version running on eCMC A:
+     2. Display the firmware version running on eCMC A:
 
 `**show firmware-version**` ecmc A
 
-3. Display the firmware version running on eCMC B:
+     3. Display the firmware version running on eCMC B:
 
 `**show firmware-version**` ecmc B
 
-7. Check firmware version running on server nodes:
-1. Enter firmware scope:
+  7. Check firmware version running on server nodes:
+
+     1. Enter firmware scope:
 
 `**scope firmware**`
 
-2. Display the firmware version running on the Unified Edge server:
+     2. Display the firmware version running on the Unified Edge server:
 
 `**show firmware-version server**` <server-id>
 
-8. Check Device Console, Management Package and Bundle version of eCMC:
-1. Enter firmware scope:
+  8. Check Device Console, Management Package and Bundle version of eCMC:
+
+     1. Enter firmware scope:
 
 `**scope firmware**`
 
-2. Display Device Console, Management Package and Bundle version of eCMC:
+     2. Display Device Console, Management Package and Bundle version of eCMC:
 
 `**Show version**`
+

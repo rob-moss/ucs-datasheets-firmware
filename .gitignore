@@ -4,7 +4,9 @@ getrecommended-creds.sh
 wip/*
 archive
 archive/*
-__pycache__/
+__pycache__
+__pycache__/*
+
 .playwright-mcp/
 
 ucs-docs-raw/json/*
@@ -12,3 +14,4 @@ ucs-docs-raw/html/*
 ucs-docs-raw/pdf/*
 ucs-docs-raw/other/*
 
+.apikey

@@ -8,15 +8,16 @@
 | **HTML Title** | Cisco UCS VIC 15000 Series Best Practices in Ethernet Fabric White Paper |
 | **Source file** | `ucs-docs-raw/html/ucs-vic-15000-series-ether-fabric-wp.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:08 |
+| **Fetched on** | 2026-03-19 15:37:00 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.html
 
-* Skip to content
-* Skip to search
-* Skip to footer
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
 
 # Cisco UCS VIC 15000 Series Best Practices in Ethernet Fabric White Paper
 
@@ -32,10 +33,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.pdf) (25.1 MB)   
+  * [PDF](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.pdf) (25.1 MB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:September 23, 2025
 
@@ -49,24 +52,26 @@ __ __ __ __
 
 Contact Cisco
 
-* Contact Cisco __
-* __
-* __
+  * Contact Cisco __
+  * __
+
+  * __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-* __
+  * __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-* __
+  * __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-* __
+  * __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
 
 Save
 
@@ -78,37 +83,40 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.pdf) (25.1 MB)   
+  * [PDF](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.pdf) (25.1 MB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:September 23, 2025
 
 #### Table of Contents
 
-* Overview
-* Audience
-* Objective
-* Bandwidth on B-Series blade-servers
-* Rate limit QoS policy: VIC 15000 with IOM 2408
-* Bandwidth on Cisco UCS X-Series compute nodes
-* Performance tuning for Cisco UCS VIC 15000 Series adapters
-* Enhanced ring-size buffer allocation
-* Adapter policy with RSS
-* SR-IOV with ESXi
-* NetQueue with ESXi
-* Multiple TX/RX Queues with RSS
-* VMMQ with Windows
-* MTU setting
-* Overlay offload
-* VIC Q-in-Q tunneling
-* Precision Time Protocol (PTP)
-* FEC settings on 15425/15427/15428/15235/15237/15238
-* Rack-server connectivity with VIC 15425,15427, 15428, 15235,15237, and 15238
-* Priority tagging on VICs with standalone rack servers
-* Physical NIC mode on VICs in standalone rack servers
-* For more information
+  * Overview
+  * Audience
+  * Objective
+  * Bandwidth on B-Series blade-servers
+  * Rate limit QoS policy: VIC 15000 with IOM 2408
+  * Bandwidth on Cisco UCS X-Series compute nodes
+  * Performance tuning for Cisco UCS VIC 15000 Series adapters
+  * Enhanced ring-size buffer allocation
+  * Adapter policy with RSS
+  * SR-IOV with ESXi
+  * NetQueue with ESXi
+  * Multiple TX/RX Queues with RSS
+  * VMMQ with Windows
+  * MTU setting
+  * Overlay offload
+  * VIC Q-in-Q tunneling
+  * Precision Time Protocol (PTP)
+  * FEC settings on 15425/15427/15428/15235/15237/15238
+  * Rack-server connectivity with VIC 15425,15427, 15428, 15235,15237, and 15238
+  * Priority tagging on VICs with standalone rack servers
+  * Physical NIC mode on VICs in standalone rack servers
+  * For more information
+
 
 ` `
 
@@ -141,6 +149,8 @@ Cisco UCS 5108 Blade Server Chassis has 32x10G-KR backplane Ethernet connections
 The available bandwidth and throughput from B200 M6 servers depend on the IOM hardware version and the combination of Cisco VIC 15411 and port expander. vNICs and vHBAs created through service profiles get bonded to either 20G or 40G uplinks, depending on the presence of a port expander. In a single flow, vNIC/vHBA can achieve a bandwidth of 20G or 40G depending on the type of IOM and port expander installed.
 
 The Figure 1 shows the connectivity on a UCS 5108 chassis with a Cisco UCS 2408 Fabric Extender connected to a Cisco UCS 6454 Fabric Interconnect (FI). The red lines are the 25Gbps physical connections from IOM to FI while the blue lines show the 10G-KR backplane connections from the IOM toward the VIC 15411 on a B200 M6 server.
+
+![Cisco UCS 5108 Blade Server Chassis with FI 6454 and UCS 2408](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_0.png)
 
 Figure 1. 
 
@@ -177,9 +187,13 @@ On a B200 M6, VIC 15411 can have 20G or 40G vNICs. And the vNIC speed seen on th
 
 ● With 15411 alone on a B200 M6, the server will see 40Gbps (2x20) throughput with all IOMs except 2204. Without a port expander, vNIC on 15411 will only see a speed of 20G or 2x10G, and the vNIC will have an aggregate bandwidth of 20G with a maximum single-flow bandwidth of 20Gbps.
 
+![B200 M6 with VIC 15411 and IOM 2304](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_1.png)
+
 Figure 2. 
 
 B200 M6 with VIC 15411 and IOM 2304
+
+![B200 M6 with VIC 15411 and IOM 2408](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_2.png)
 
 Figure 3. 
 
@@ -187,9 +201,13 @@ B200 M6 with VIC 15411 and IOM 2408
 
 ● 15411 with port expander on B200 M6 will enable a 40G KR4 interface toward IOM 2304 or IOM 2408. This enables a total of 80Gbps throughput per blade server. The servers, in this case, will see a vNIC bandwidth of 40Gbps, and each vNIC will support a maximum single flow of 40Gbps. Figures 4 and 5 depict the backplane connections that are enabled on a B200 M6 server with a VIC15411 and a port expander. 
 
+![B200 M6 with VIC 15411 + port expander and IOM 2304](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_3.png)
+
 Figure 4. 
 
 B200 M6 with VIC 15411 + port expander and IOM 2304
+
+![B200 M6 with VIC 15411 + port expander and IOM 2408](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_4.png)
 
 Figure 5. 
 
@@ -203,9 +221,13 @@ Rate limit QoS policy: VIC 15000 with IOM 2408
 
 To avoid initial transient packet drops for a flow on the IOM 2408 due to a bandwidth mismatch of 40Gbps from the server toward IOM 2408 and the 25Gbps Ethernet connection between IOM 2408 and FI 6400/6536, the vNICs can be rate limited to 25Gbps. The vNIC rate-limiting can be achieved through a QoS policy applied to the vNIC. Figure 6 shows such a policy and its application.
 
+![vNIC rate-limiting configuration in Cisco UCS Manager](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_5.jpg)
+
 Figure 6. 
 
 vNIC rate-limiting configuration in Cisco UCS Manager
+
+![vNIC rate-limiting configuration in Cisco Intersight® Managed Mode](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_6.jpg)
 
 Figure 7. 
 
@@ -225,6 +247,8 @@ Additionally, the X9508 chassis bandwidth is dependent on the intelligent Fabric
 
 The UCS X9508 chassis has a backplane-less design, which allows the chassis to provide newer and higher operating speeds on the server by swapping out the intelligent fabric modules in the chassis or the virtual interface card on the servers. An example is shown in Figure 8, where the chassis bandwidth can be quadrupled to 1600Gbps from 400Gbps by swapping out the IFM-25G with the latest IFM-100G.
 
+![Cisco UCS X9508 Chassis, backplane-less design](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_7.jpg)
+
 Figure 8. 
 
 Cisco UCS X9508 Chassis, backplane-less design
@@ -233,6 +257,8 @@ In an X9508 chassis, each VIC 15420 and 15422 has 2x25G-KR lines to each IFM-25G
 
 As shown in Figure 9, each X210c compute node has 8x25G-KR Ethernet connectivity to both the IFMs in a chassis, as represented by the red links. And the X9108-IFM-100G/25G will have 100G/25G Ethernet connectivity through physical cables to the Cisco UCS 6400-series/6536 fabric interconnect, represented by the blue links.
 
+![Cisco UCS X9508 Chassis, end-to-end connectivity with VIC 15420+15422](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_8.jpg)
+
 Figure 9. 
 
 Cisco UCS X9508 Chassis, end-to-end connectivity with VIC 15420+15422
@@ -240,6 +266,8 @@ Cisco UCS X9508 Chassis, end-to-end connectivity with VIC 15420+15422
 In the X210c compute node, with both VIC 15420 and 15422 installed, each VIC will have 4x25G-KR connectivity to both IFMs; also, having two VICs will enable 8x25G-KR Ethernet connectivity. Thus, across both VICs on the X210c compute node, there will be a total aggregate bandwidth of 200Gbps. Note that VIC 15422 is an optional mezzanine VIC that enables higher throughput, redundancy, and better CPU core utilization for server I/O.
 
 Since each VIC will have 2x25G-KR connectivity to each IFM-100G/25G, the vNIC/vHBA that is provisioned on the VIC will have 50Gbps of bandwidth. So, an X210c compute node with VIC 15420 and 15422 will see 100G vNIC/vHBA on the ESXi/Linux/Windows OS. Figure 10 shows the vNIC/vHBA speed as seen on a Linux host.
+
+![vNIC/vHBA speed seen by Linux OS with VIC 15420+15422](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_9.jpg)
 
 Figure 10. 
 
@@ -261,17 +289,25 @@ Cisco UCS X210c Compute Node |  A Fl-6536 +  X9108-IFM-100G |  B Fl-6536/6400-Se
   
 Figures 11 through 14 are representations of the internal connectivity from the IFM to the X210c compute node with VIC 15231/15230, VIC 15420, and VIC 15420+15422 combo. These figures show the 25G-KR connectivity from IFM to VIC and the dynamically provisioned vNIC/vHBA, the Ethernet NIC or FC HBA interfaces for the operating system, on the VIC.
 
+![vNIC/vHBA internal connectivity between VIC 15231/15230 and 100G IFM](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_10.png)
+
 Figure 11. 
 
 vNIC/vHBA internal connectivity between VIC 15231/15230 and 100G IFM
+
+![vNIC/vHBA internal connectivity between VIC 15231/15230 and 25G IFM](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_11.png)
 
 Figure 12. 
 
 vNIC/vHBA internal connectivity between VIC 15231/15230 and 25G IFM
 
+![vNIC/vHBA internal connectivity between VIC 15420 and 25G/100G IFMs](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_12.png)
+
 Figure 13. 
 
 vNIC/vHBA internal connectivity between VIC 15420 and 25G/100G IFMs
+
+![vNIC/vHBA internal connectivity between VIC 15420+15422 and 25G/100G IFMs](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_13.png)
 
 Figure 14. 
 
@@ -347,9 +383,13 @@ Cisco UCS VIC 15000 Series adapters now support up to a ring size of 16K (specif
 
 A larger network adapter ring size can be advantageous for high-performance networking. It should be chosen based on available system resources and type of network workload.
 
+![Enhanced ring-size buffer configuration options for Cisco UCS VIC 15000 Series in UCSM/IMM](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_14.jpg)
+
 Figure 15. 
 
 Enhanced ring-size buffer configuration options for Cisco UCS VIC 15000 Series in UCSM/IMM
+
+![Enhanced ring-size buffer setting at the adapter and OS level](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_15.jpg)
 
 Figure 16. 
 
@@ -366,6 +406,8 @@ RSS improves network performance by reducing:
 ● Spinlock overhead by increasing the probability of shared data execution on multiple CPU cores. For example, spinlock overhead occurs when a function executing on a CPU0 possesses spin lock on data that a function running on CPU1 must access; thereby, CPU1 spins (waits) until CPU0 releases the lock.
 
 Having an adapter policy with RSS enables VIC hardware solution, in which packets are load balanced across multiple RX queues based on the packets’ Layer-2, Layer-3, and Layer-4 headers. This is an optimized solution for improving performance in bare-metal (Windows, Linux) and hypervisor (ESXi, KVM) environments.
+
+![Receive queues mapping to CPU cores with RSS enablement](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_16.png)
 
 Figure 17. 
 
@@ -407,9 +449,13 @@ Cisco UCS VIC 15000 adapter-policy considerations for the VIC RSS feature with E
 
 Figure 18 shows an adapter-policy with RSS that is applied on a vNIC from UCSM and the corresponding VMNIC interface statistics for an ESXi host.
 
+![Adapter policy in UCSM with RSS for ESXi host](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_17.jpg)
+
 Figure 18. 
 
 Adapter policy in UCSM with RSS for ESXi host
+
+![Adapter policy in Intersight with RSS for ESXi host](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_18.jpg)
 
 Figure 19. 
 
@@ -466,11 +512,15 @@ Beginning with the release 4.3(2b), Cisco UCS Manager provides single-root I/O v
 
 Figure 20 shows the relationship between various virtualization objects in a hypervisor host having a SR-IOV- enabled physical network adapter.
 
+![Relationship between PFs, VFs, port groups, virtual switch, hypervisor, and PCIe network adapter](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_19.png)
+
 Figure 20. 
 
 Relationship between PFs, VFs, port groups, virtual switch, hypervisor, and PCIe network adapter 
 
 On the SR-IOV-enabled VIC adapter, PF with its SR-IOV VFs, together form a local switching domain. A PF and its VFs not only can transport traffic over the wire to other hosts or to a hardware switch, but can also perform local forwarding between each other. This is made possible by a VIC through a local switch. A packet sent by an SR-IOV VF interface in a VM gets switched locally if the destination MAC address is found to belong to another SR-IOV VF interface used by another VM that has the same PF. 
+
+![Data path for traffic forwarding on VFs](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_20.png)
 
 Figure 21. 
 
@@ -508,17 +558,25 @@ The three steps given below need to be performed to enable the SR-IOV feature in
 
 ● Configuration in hypervisor and guest operating systems
 
+![BIOS policies for Intel and AMD processor–based Cisco UCS servers](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_21.jpg)
+
 Figure 22. 
 
 BIOS policies for Intel and AMD processor–based Cisco UCS servers
+
+![Adapter policy required for SR-IOV in Cisco UCS Manager](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_22.jpg)
 
 Figure 23. 
 
 Adapter policy required for SR-IOV in Cisco UCS Manager
 
+![Adapter policy for SR-IOV in IMM](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_23.jpg)
+
 Figure 24. 
 
 Adapter policy for SR-IOV in IMM
+
+![Adapter policy for SR-IOV in IMC](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_24.png)
 
 Figure 25. 
 
@@ -526,9 +584,13 @@ Adapter policy for SR-IOV in IMC
 
 Configurations to enable SR-IOV functionality for the operating environment are required both at hypervisor and guest-operating system levels. VMware vSphere/ESXi 7.0 U3, and later versions, is the supported hypervisor, while Linux OS is for supported guest VMs. At the hypervisor layer, SR-IOV needs to be enabled with the required number of Virtual Functions (VFs). The number of VFs should not exceed the number of VFs set in the SR-IOV policy. On the Linux guest VM, asynchronous eNIC driver version 4.4.0.1-930.X, and later versions, supports SR-IOV VF network interfaces. 
 
+![Enabling SR-IOV functionality on ESXi hypervisor with Cisco VIC](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_25.jpg)
+
 Figure 26. 
 
 Enabling SR-IOV functionality on ESXi hypervisor with Cisco VIC
+
+![SR-IOV configuration status on ESXi vSwitch](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_26.jpg)
 
 Figure 27. 
 
@@ -536,11 +598,15 @@ SR-IOV configuration status on ESXi vSwitch
 
 Guest Linux VM boot mode setting should have secure boot mode disabled. The ESXi hypervisor supports Virtual Machines (VMs) using virtual BIOS. The virtual BIOS does not have a Cisco UCS eNIC driver public key installed by default even when running on the UCS server platform. This causes failure to load the asynchronous ENIC driver, resulting in operating system being unable to operationalize the VFs’ network interface devices. 
 
+![VM option to disable secure boot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_27.jpg)
+
 Figure 28. 
 
 VM option to disable secure boot
 
 **Note:** For secure booting of guest Linux VMs that have a SR-IOV function, the Cisco UCS driver signing the public key needs to enroll in VM BIOS. The procedure to install the public key will be provided in the Cisco UCS SR-IOV configuration guide. 
+
+![Displaying guest operating system driver version, PCI device status, and VF status at VIC firmware](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_28.jpg)
 
 Figure 29. 
 
@@ -570,13 +636,19 @@ NetQueue on the vNIC is enabled through the VMQ connection policy. The following
 
 ● Note that the adapter policy used with VMQ would specify only one TX and one RX queue, and that no RSS is supported with an adapter policy when VMQ is used. RSS and VMQ are mutually exclusive for ESXi with VIC 15000.
 
+![VMQ configuration in UCSM for an ESXi host](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_29.jpg)
+
 Figure 30. 
 
 VMQ configuration in UCSM for an ESXi host
 
+![VMQ configuration in IMM for an ESXi host](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_30.png)
+
 Figure 31. 
 
 VMQ configuration in IMM for an ESXi host
+
+![Queues allocated per vNIC on the ESXi host based on the VMQ configuration](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_31.jpg)
 
 Figure 32. 
 
@@ -645,6 +717,8 @@ The Virtual Machine Queue (VMQ) policy with the multiple queue option enabled al
 
 Figure 33 shows a high-level incoming packet flow from pNIC (Physical Network Interface) to vmNIC within Hyper-V host, with VMMQ enabled. It highlights how incoming packets are placed into the right vPort and corresponding RSS queues for VM CPU cores for processing.[2]
 
+![Receive path within the VMMQ interface for incoming network traffic](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_32.png)
+
 Figure 33. 
 
 Receive path within the VMMQ interface for incoming network traffic
@@ -652,9 +726,13 @@ Receive path within the VMMQ interface for incoming network traffic
 This diagram highlights the network packet receive path within the VMMQ interface. On the receive path, when a packet arrives at a vNIC with the VMMQ feature configured, the following steps are executed:
 
 1. The destination MAC address is matched to find the target vPort.
+
 2. The RSS hash value of the packet is calculated using the RSS parameters – the secret key, the hash function, and the hash type of the vPort.
+
 3. This hash value is than used to index the Indirection Table (IT) associated with the vPort
+
 4. Then an interrupt call is issued to the target processor (LP = logical processor) with an indication to the host network stack.
+
 5. The final step is to place the packet into the destination VM’s vRSS-enabled Virtual Processor’s (VP’s) packet buffer for processing.
 
 For the VIC 15000, VMMQ is supported in Windows Server 2016 and following; and the recommendation for a Hyper-V host is to use VMMQ. Here are some of the considerations to keep in mind when using VMMQ on VIC 15000:
@@ -683,11 +761,15 @@ When multi-queue is enabled, the vNIC is placed into VMMQ mode. In this mode, th
 
 Figure 34 shows the four-step procedure to enable VMMQ on a vNIC using Cisco UCSM’s predefined adapter policies (“Win-HPN-v2” and “MQ-v2”). In the Cisco UCSM/IMM/IMC configuration window, “Sub vNIC” is the same as vPort in Hyper-V parlance. In UCSM, the predefined “MQ-v2” policy is for 64 vPorts and allocates one TX and eight RX queue per vPort.
 
+![Configuring VMMQ with a predefined adapter and MQ-v2 policy in UCSM](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_33.png)
+
 Figure 34. 
 
 Configuring VMMQ with a predefined adapter and MQ-v2 policy in UCSM
 
 Figure 35 provides the policy configuration details required for enabling the VMMQ feature in Intersight Managed Mode. vNIC creation through LAN connectivity policy will require selecting the pre-defined recommended adapter policies provided by Cisco. The same as in the case of UCSM, we need to select “Win-HPN-v2” and “MQ-v2” policies for vNICs and sub-vNICs. The rest of the configuration details remain same.
+
+![Configuring VMMQ with predefined adapter Win-HPN-v2 and MQ-v2 policies in Cisco Intersight](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_34.jpg)
 
 Figure 35. 
 
@@ -707,11 +789,15 @@ While the recommendation is to use the above approach to enable VMMQ using pre-d
 
 **Note:** The VIC 15000 Series adapter has, per adapter, a maximum hardware limit of 3072 interrupt counts. As such, a maximum of five vNICs with 512 interrupt counts each is supported. The remaining interrupt counts are reserved for system use. 
 
+![Defining custom MQ policy in UCSM for 16 vPorts](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_35.jpg)
+
 Figure 36. 
 
 Defining custom MQ policy in UCSM for 16 vPorts
 
 Figure 37 is a screen capture from a Hyper-V host with a single Hyper-V vSwitch and SET teaming across two vNICs. There are two VMs on the Hyper-V host with two vPorts per VM. And each vPort on the VM will have allocated one TX and eight RX queues, based on the MQ-v2 policy.
+
+![VMMQ information from a Windows Server 2019 Hyper-V host](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_36.jpg)
 
 Figure 37. 
 
@@ -779,6 +865,8 @@ The recommended adapter policy with VIC 15000 for VXLAN overlays is to have the 
 
 ● VXLAN offload enabled
 
+![VXLAN-offload-recommended adapter-policy for VMware](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_37.jpg)
+
 Figure 38. 
 
 VXLAN-offload-recommended adapter-policy for VMware
@@ -788,6 +876,8 @@ For VMware, VXLAN offload is supported only with RSS and not with VMQ or NetQueu
 The above defined adapter-policy for VMware is applicable for Linux too; please note that VXLAN offload is different from OVS offload, and OVS offload is not supported on Cisco UCS VIC adapters.
 
 For Hyper-V environments, VMMQ is the recommended solution to be used with VXLAN offload. Additionally, on Windows, NVGRE offload is also supported on the VIC 15000. VXLAN offload is the most deployed and recommended offload solution on the Windows platform.
+
+![VXLAN-offload-recommended high-performance adapter-policy for Windows](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_38.jpg)
 
 Figure 39. 
 
@@ -814,6 +904,8 @@ The recommended settings are as follows:
 ● Enable GENEVE offload
 
 Figure 40 shows the adapter policy required for enabling N-VDS in standard mode. Additionally, on NSX-T the user would create an NSX-T vSwitch in standard mode.
+
+![GENEVE-offload–enabled adapter-policy for standard N-VDS vSwitch](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_39.jpg)
 
 Figure 40. 
 
@@ -847,13 +939,19 @@ For release 4.3(4a), the recommended adapter policy is to enable NetQueue for th
 
 Figure 41 shows the adapter policy required for enabling NSX-T vSwitch in enhanced data path mode. Additionally, on the NSX-T vSwitch, the user needs to select creation of NSX-T vSwitch in enhanced data path mode.
 
+![Adapter Policy](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_40.png)
+
 Figure 41. 
 
 Adapter Policy
 
+![Adapter Policy continued.](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_41.png)
+
 Figure 42. 
 
 Adapter Policy continued.
+
+![Connection Policy with Multi Queue enabled.](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_42.png)
 
 Figure 43. 
 
@@ -869,6 +967,8 @@ With Cisco UCS VIC QinQ tunneling, two sets of VLAN tags are used. The original 
 
 Here is an example of a packet walk-through between VMs hosted on Cisco UCS servers behind a pair of fabric interconnects, using the Cisco UCS VIC Q-in-Q tunneling feature. It highlights Layer-2 segmentation using double tagging with the Q-in-Q tunneling feature for VLAN IDs 5 and 6 as inner VLANs while VLAN ID 11 is being used as the outer VLAN.
 
+![L2 segmentation for tenant VMs hosted in a Cisco UCS environment with the Q-in-Q tunneling feature](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_43.png)
+
 Figure 44. 
 
 L2 segmentation for tenant VMs hosted in a Cisco UCS environment with the Q-in-Q tunneling feature
@@ -880,9 +980,13 @@ VLAN Q-in-Q, as defined by RFC 802.1Q-in-Q, enhances the capabilities of VLAN te
 Below are sample use cases for the VLAN Q-in-Q feature:
 
 1. Service provider networks: Service providers often use VLAN Q-in-Q tunneling to segregate or isolate traffic from different customers or to transport customer VLAN traffic across their backbone. This allows service providers to maintain customer traffic separately even if the customers are using the same VLAN IDs.
+
 2. Large enterprise networks: Large organizations with complex networks can use VLAN Q-in-Q tunneling to simplify the management of VLAN IDs across their networks. It allows them to use the same VLAN ID in different parts of the network without causing overlap or conflicts.
+
 3. Network expansion: VLAN Q-in-Q tunneling can help in situations where the VLAN space is exhausted. Since it allows for stacking of VLAN tags, it can effectively expand the VLAN space.
+
 4. Security: By segregating traffic based on customer or department, VLAN Q-in-Q tunneling can add an extra layer of security. It can help prevent unauthorized access to sensitive data by keeping different types of traffic isolated from each other.
+
 5. Multitenant environments: In multitenant environments, such as data centers, Q-in-Q tunneling can be used to keep the traffic of different tenants separate and secure.
 
 The VIC Q-in-Q tunneling feature is supported starting with Cisco UCSM Release 4.3(2). 
@@ -907,11 +1011,15 @@ The rule for using VIC Q-in-Q tunneling can be applied in the following possible
 
 ● Case 3: Q-in-Q enabled, and native VLAN and Q-in-Q VLAN being different. In this case also, additional VLANs are not allowed under vNIC. For example, VLAN 201 as native and VLAN 301 as the Q-in-Q tag: in this case, untagged traffic will be carried with a single tag of 201, and tagged traffic will be double-tagged, with an outer-tag of VLAN ID 301.
 
+![Example of a Cisco UCSM VIC Q-in-Q tunneling configuration](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_44.jpg)
+
 Figure 45. 
 
 Example of a Cisco UCSM VIC Q-in-Q tunneling configuration
 
 The Q-in-Q tunneling feature is available in Cisco Intersight for UCS C-Series servers in Intersight Standalone Mode (ISM). For the Cisco UCS B-Series/X-Series/C-series servers in Intersight Managed Mode (IMM), this feature will be available in future releases. For configuring Q-in-Q tunneling, Ethernet network policy should be created with Q-in-Q VLAN IDs. 
+
+![Example of Q-in-Q tunneling configuration for standalone UCS C-Series servers managed through Intersight](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_45.jpg)
 
 Figure 46. 
 
@@ -963,6 +1071,8 @@ Clocks managed by PTP follow a primary-worker hierarchy, with workers synchroniz
 
 The time stamping parameters displayed by `ethtool -T int_name` will show a field for the PTP hardware clock. The value of PTP Hardware Clock: 0 shows that PTP is enabled for the interface. Otherwise, it will show PTP Hardware Clock: none.
 
+![PTP enablement through adapter policy in IMM and UCSM, respectively](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_46.jpg)
+
 Figure 47. 
 
 PTP enablement through adapter policy in IMM and UCSM, respectively
@@ -1004,6 +1114,8 @@ FEC configuration on a VIC 15235/15237/15238 port at 100G could be either of the
 **Note:** For these transceivers, by default the VIC firmware Operating FEC Mode is “Off.” There is no user intervention required in these cases. This essentially means that Admin FEC Mode will always be CL91, Operating FEC Mode remains “Off,” and Link State will be “Up”. 
 
 Figure 48 shows an example with QSFP-100G-DS/FS-S.
+
+![FEC settings for a VIC 100G adapter installed on UCS C-Series servers in standalone mode](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_47.jpg)
 
 Figure 48. 
 
@@ -1048,6 +1160,8 @@ Cable/transceiver PI |  Minimum FEC for cable/ transceiver |  Default on Cisco N
 **SFP-10/25G-LR-S** |  RS-FEC |  CL74 (FC-FEC) |  CL91 (RS-FEC) |  CL91  
 **SFP-25G-SL** |  RS-FEC |  CL74 (FC-FEC) |  CL91 (RS-FEC) |  CL 91  
   
+![FEC configuration and validation for a VIC 15428 ports from Cisco IMC](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_48.jpg)
+
 Figure 49. 
 
 FEC configuration and validation for a VIC 15428 ports from Cisco IMC
@@ -1065,6 +1179,8 @@ Depending on whether the VIC hardware port-channel is enabled or disabled, the v
 ● With the default port-channel enabled, each vNIC on a VIC 15425/15427/15428 will pin to a VIC hardware port-channel, and each vNIC will have the bandwidth equal to sum of the bandwidth of the active port-channel members combined. Please note that each VIC 15425/15427/15428 port supports either 10G, 25G, or 50G. Accordingly, the port-channel and vNIC speed could be 10G or 20G, 25G or 50G, and 50G or 100G, depending on whether it’s a 10G, 25G, or 50G link and how many ports are active.
 
 ● When disabling port channeling, each vNIC can pin to one of the four VIC external ports, and each vNIC will be 10G, 25G, or 50G, depending on the inserted transceiver.
+
+![Disabling default port-channeling from Cisco IMC](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_49.png)
 
 Figure 50. 
 
@@ -1086,9 +1202,13 @@ VIC 15425/15427/15428 connectivity to fabric interconnects
 
 When connected to a Fabric Interconnect (FI), the VIC ports (1, 2) and (3, 4) are always in port-channel mode and cannot be disabled. Ensure that the connectivity toward the FI is done taking into consideration hardware port-channel. Always connect ports (1, 2) to one fabric interconnect and ports (3, 4) to the other FI. When connecting two links per FI, the links become port-channeled automatically. One link per FI is also supported. VIC hardware port-channel cannot be disabled in FI-managed mode. vNIC/vHBA speeds can be 10/20/25/50G, depending on the number of active links and the transceiver type. There is no need to configure FEC or auto-negotiation; the link settings are auto-determined.
 
+![UCSM/IMM mode ports \(1, 2\) connect to one FI and ports \(3, 4\) to the other FI](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_50.jpg)
+
 Figure 51. 
 
 UCSM/IMM mode ports (1, 2) connect to one FI and ports (3, 4) to the other FI
+
+![UCSM/IMM mode port 1 & 3 connected to FIs](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_51.jpg)
 
 Figure 52. 
 
@@ -1104,6 +1224,8 @@ By default, VIC port-channel is enabled, and switch-dependent OS teaming/bonding
 
 In this case, a common deployment is to have the ToR switches in a Multi-Chassis Trunking (MCT) pair, as shown in Figure 53. Examples of MCT are Virtual Port Channel (VPC) from Cisco, or multi-chassis link aggregation (mLAG) supported on third-party switches.
 
+![Standalone mode server connectivity with HW port-channels on VIC and MCT port-channel possible with single links to each ToR](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_52.jpg)
+
 Figure 53. 
 
 Standalone mode server connectivity with HW port-channels on VIC and MCT port-channel possible with single links to each ToR
@@ -1112,6 +1234,8 @@ With VIC 15425/15427/15428 hardware port-channel enabled, if one wants to use al
 
 In this case, on each ToR switch, a non-LACP port-channel would have to be created. A VPC-like MCT port-channel spanning multiple ToR switches is not possible in this case.
 
+![Standalone mode server connectivity with default port-channeling enabled and two links to each ToR](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_53.jpg)
+
 Figure 54. 
 
 Standalone mode server connectivity with default port-channeling enabled and two links to each ToR
@@ -1119,6 +1243,8 @@ Standalone mode server connectivity with default port-channeling enabled and two
 Default port-channeling disabled
 
 With VIC 15425/15427/15428 hardware port-channeling disabled, a switch-dependent OS teaming/bonding on the server is possible across all ports with ToR switches in MCT. Switch-dependent port-channels can span across all four ports of the VIC. There is also no dependency on how the four ports of the VIC 15425/15427/15428 should be connected to the upstream ToR switches.
+
+![Standalone mode server connectivity with default port-channeling disabled](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_54.jpg)
 
 Figure 55. 
 
@@ -1143,6 +1269,8 @@ The following behavior is to be expected, depending on whether priority tagging 
 ● If the upstream switch doesn’t support priority tagging, then the vNIC must be configured as a trunk with a default VLAN. With a default VLAN configuration on the vNIC, the untagged traffic from the server will be sent on this VLAN ID by the VIC toward the upstream switch. And on the upstream switch port, this default VLAN on vNIC should be configured using a “switchport trunk native VLAN <vlan-id>” in the Cisco NX-OS equivalent configuration.
 
 Please note that untagged packets from the server, such as LACP, which are to be processed by the supervisor or control plane on the switch or router, are sent by the VIC in “VLAN-0” or the “default VLAN” of the vNIC if it is configured. So even if some switches or routers support priority tagging, they ignore the processing of the control-plane-bound packets on this VLAN. Also, in these cases, LACP cannot be used.
+
+![Default VLAN configuration under vNIC from Cisco IMC](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_55.jpg)
 
 Figure 56. 
 
@@ -1174,6 +1302,8 @@ After physical nic-mode enabled , vNIC configurations will be lost and new defau
 
 In Trunk mode.
 
+![Physical NIC mode configuration in Cisco IMC](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.docx/_jcr_content/renditions/ucs-vic-15000-series-ether-fabric-wp_56.jpg)
+
 Figure 57. 
 
 Physical NIC mode configuration in Cisco IMC
@@ -1192,6 +1322,7 @@ Joost van der Made
 
   
 
+
 * * *
 
 [1] Performance Tuning Guide for Cisco UCS M7 Servers   
@@ -1205,13 +1336,17 @@ Joost van der Made
 
 ### Learn more
 
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
 ---
 
 ## Page 2: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.html
 
-* Skip to content
-* Skip to search
-* Skip to footer
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
 
 # Cisco UCS Virtual Interface Card 15000 Series Data Sheet
 
@@ -1229,10 +1364,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.pdf) (2.5 MB)   
+  * [PDF](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.pdf) (2.5 MB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:July 14, 2025
 
@@ -1246,24 +1383,26 @@ __ __ __ __
 
 Contact Cisco
 
-* Contact Cisco __
-* __
-* __
+  * Contact Cisco __
+  * __
+
+  * __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-* __
+  * __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-* __
+  * __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-* __
+  * __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
 
 Save
 
@@ -1277,29 +1416,32 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.pdf) (2.5 MB)   
+  * [PDF](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.pdf) (2.5 MB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:July 14, 2025
 
 #### Table of Contents
 
-* Cisco Unified Computing System overview
-* Portfolio overview
-* Features and benefits
-* Next-generation data center features
-* Product specifications
-* Ordering information
-* System requirements
-* Warranty information
-* Product sustainability
-* Cisco Unified Computing Services
-* Why Cisco?
-* Cisco Capital
-* For more information
-* Document history
+  * Cisco Unified Computing System overview
+  * Portfolio overview
+  * Features and benefits
+  * Next-generation data center features
+  * Product specifications
+  * Ordering information
+  * System requirements
+  * Warranty information
+  * Product sustainability
+  * Cisco Unified Computing Services
+  * Why Cisco?
+  * Cisco Capital
+  * For more information
+  * Document history
+
 
 ` `
 
@@ -1323,9 +1465,13 @@ The Cisco UCS VIC 15230 and 15231 (Figure 1) are 2x100-Gbps Ethernet/FCoE-capabl
 
 The Cisco UCS VIC 15230 is functionally equivalent to the 15231, but incorporates secure boot technology.
 
+![Cisco UCS VIC 15231](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_0.png)
+
 Figure 1. 
 
 Cisco UCS VIC 15230 and 15231 
+
+![Cisco UCS VIC 15230 and 15231 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_1.png)
 
 Figure 2. 
 
@@ -1335,9 +1481,13 @@ Cisco VIC 15420
 
 The Cisco UCS VIC 15420 (Figure 3) is a 4x25-Gbps Ethernet/FCoE capable modular LAN On Motherboard (mLOM) designed exclusively for Cisco UCS X210c M6/M7, X410c M7, and X215c M8 Compute Nodes. The Cisco UCS VIC 15420 enables a policy-based, stateless, agile server infrastructure that can present to the host PCIe standards-compliant interfaces that can be dynamically configured as either NICs or HBAs.
 
+![Cisco UCS VIC 15420](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_2.png)
+
 Figure 3. 
 
 Cisco UCS VIC 15420
+
+![Cisco UCS VIC 15420 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_3.png)
 
 Figure 4. 
 
@@ -1351,13 +1501,19 @@ The UCS VIC 15000 bridge connector (Figure 6) is required with the mezz card to 
 
 In addition to Ethernet network connectivity to the IFM, the VIC 15422 also provides two PCIe x16 Gen4 links to the UCS 9416 X-fabric module for enabling Cisco UCS X440p PCIe node connectivity for the X210c, X410c, and X215c compute nodes.
 
+![Cisco UCS VIC 15422](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_4.png)
+
 Figure 5. 
 
 Cisco UCS VIC 15422
 
+![Cisco UCS VIC 15000 bridge connect](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_5.png)
+
 Figure 6. 
 
 Cisco UCS VIC 15000 bridge connect
+
+![Cisco UCS VIC 15422 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_6.png)
 
 Figure 7. 
 
@@ -1371,9 +1527,13 @@ The Cisco UCS VIC 15427 is functionally equivalent to the 15428, but incorporate
 
 When a UCS rack server with VIC 15427 or 15428 is connected to a fabric interconnect (FI-6536/6400/6300), the VIC 15428 is provisioned through Cisco Intersight™ Managed Mode (IMM) or Cisco UCS Manager (UCSM) policies. When the UCS rack server with VIC 15427 or 15428 is connected to a ToR switch such as Cisco Nexus® 9000 Series, the VIC adapter is provisioned through the Cisco Integrated Management Controller (IMC) or Intersight policies for a standalone server.
 
+![Cisco UCS VIC 15428](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_7.png)
+
 Figure 8. 
 
 Cisco UCS VIC 15427 and 15428 
+
+![Cisco UCS VIC 15427 and 15428 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_8.png)
 
 Figure 9. 
 
@@ -1387,9 +1547,13 @@ The Cisco UCS VIC 15237 is functionally equivalent to the 15238, but incorporate
 
 When a UCS rack server with VIC 15237 or 15238 is connected to a fabric interconnect (FI-6536/6300), the VIC adapter is provisioned through Cisco Intersight Managed Mode (IMM) or Cisco UCS Manager (UCSM) policies. When the UCS rack server with VIC 15237 or 15238 is connected to a ToR switch such as Cisco Nexus 9000 Series, the VIC adapter is provisioned through the Cisco IMC or Intersight policies for a UCS standalone server.
 
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_9.png)
+
 Figure 10. 
 
 Cisco UCS VIC 15237 and 15238 
+
+![Cisco UCS VIC 15237 and 15238 infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_10.png)
 
 Figure 11. 
 
@@ -1399,13 +1563,19 @@ Cisco VIC 15411
 
 The Cisco UCS VIC 15411 (Figure 12) is a dual-port 40-Gbps or 4x10-Gbps Ethernet/FCoE-capable modular LAN on motherboard (mLOM) designed for Cisco UCS B-Series M6 Blade Servers. When used in combination with an optional port expander, the Cisco UCS VIC 15411 capabilities are enabled for two ports of 40-Gbps Ethernet. The Cisco UCS VIC 15411 enables a policy-based, stateless, agile server infrastructure that can present to the host PCIe standards-compliant interfaces that can be dynamically configured as either NICs or HBAs.
 
+![Cisco UCS VIC 15411](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_11.png)
+
 Figure 12. 
 
 Cisco UCS VIC 15411 
 
+![Cisco UCS VIC 15411 infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_12.png)
+
 Figure 13. 
 
 Cisco UCS VIC 15411 infrastructure 
+
+![Cisco UCS VIC 15411 with port expander](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_13.png)
 
 Figure 14. 
 
@@ -1417,9 +1587,13 @@ The Cisco UCS VIC 15235 (Figure 15) is a dual-port quad small-form-factor plugga
 
 When a UCS rack server with VIC 15235 is connected to a fabric interconnect (FI-6536/6300), the VIC 15235 is provisioned through Cisco Intersight Managed Mode (IMM) or Cisco UCS Manager (UCSM) policies. When the UCS rack server with VIC 15235 is connected to a ToR switch such as Cisco Nexus 9000 Series, the VIC 15235 is provisioned through the Cisco IMC or Intersight policies for a UCS standalone server.
 
+![Cisco UCS VIC 15235](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_14.png)
+
 Figure 15. 
 
 Cisco UCS VIC 15235 
+
+![Cisco UCS VIC 15235 infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_15.png)
 
 Figure 16. 
 
@@ -1431,9 +1605,13 @@ The Cisco UCS VIC 15425 (Figure 17) is a quad-port small-form-factor pluggable (
 
 When a UCS rack server with VIC 15425 is connected to a fabric interconnect (FI-6536/6400/6300), the VIC 15425 is provisioned through Cisco Intersight Managed Mode (IMM) or Cisco UCS Manager (UCSM) policies. When the UCS rack server with VIC 15425 is connected to a ToR switch such as Cisco Nexus® 9000 Series, the VIC 15425 is provisioned through the Cisco IMC or Intersight policies for a standalone server.
 
+![Cisco UCS VIC 15425](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_16.jpg)
+
 Figure 17. 
 
 Cisco UCS VIC 15425
+
+![Cisco UCS VIC 15425 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_17.png)
 
 Figure 18. 
 
@@ -1818,8 +1996,12 @@ New or revised topic |  Described in |  Date
   
 ### Our experts recommend
 
-* [Cisco UCS VIC 15000 Series Best Practices in Ethernet Fabric White Paper](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.html "Cisco UCS VIC 15000 Series Best Practices in Ethernet Fabric White Paper")
+  * [Cisco UCS VIC 15000 Series Best Practices in Ethernet Fabric White Paper](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.html "Cisco UCS VIC 15000 Series Best Practices in Ethernet Fabric White Paper")
+
 
 ### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

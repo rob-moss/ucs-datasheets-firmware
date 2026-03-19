@@ -8,15 +8,16 @@
 | **HTML Title** | Cisco UCS 6400 Series Fabric Interconnects Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-741116.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:19 |
+| **Fetched on** | 2026-03-19 15:37:43 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.html
 
-* Skip to content
-* Skip to search
-* Skip to footer
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
 
 # Cisco UCS 6400 Series Fabric Interconnects Data Sheet
 
@@ -34,10 +35,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.pdf) (1.4 MB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.pdf) (1.4 MB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:April 21, 2021
 
@@ -51,24 +54,26 @@ __ __ __ __
 
 Contact Cisco
 
-* Contact Cisco __
-* __
-* __
+  * Contact Cisco __
+  * __
+
+  * __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-* __
+  * __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-* __
+  * __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-* __
+  * __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
 
 Save
 
@@ -82,33 +87,38 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.pdf) (1.4 MB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.pdf) (1.4 MB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:April 21, 2021
 
 #### Table of Contents
 
-* Cisco Unified Computing System overview
-* Product overview
-* Features and benefits
-* Product specifications
-* Physical specifications
-* Regulatory standards compliance: safety and EMC
-* Ordering information
-* Warranty information
-* Cisco environmental sustainability
-* Cisco Services for Unified Computing
-* Why Cisco?
-* For more information
+  * Cisco Unified Computing System overview
+  * Product overview
+  * Features and benefits
+  * Product specifications
+  * Physical specifications
+  * Regulatory standards compliance: safety and EMC
+  * Ordering information
+  * Warranty information
+  * Cisco environmental sustainability
+  * Cisco Services for Unified Computing
+  * Why Cisco?
+  * For more information
+
 
 ` `
 
 Cisco Unified Computing System overview
 
 The Cisco Unified Computing System™ (Cisco UCS®) is a next-generation data center platform that unites computing, networking, storage access, and virtualization resources into a cohesive system designed to reduce Total Cost of Ownership (TCO) and increase business agility. The system integrates a low-latency, lossless 10/25/40/100 Gigabit Ethernet unified network fabric with enterprise-class, x86-architecture servers. The system is an integrated, scalable, multichassis platform in which all resources participate in a unified management domain (Figure 1).
+
+![The Cisco Unified Computing System’s highly available, cohesive architecture](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.docx/_jcr_content/renditions/datasheet-c78-741116_0.png)
 
 Figure 1. 
 
@@ -122,9 +132,13 @@ The Cisco UCS 6400 Series provide the management and communication backbone for 
 
 From a networking perspective, the Cisco UCS 6400 Series use a cut-through architecture, supporting deterministic, low-latency, line-rate 10/25/40/100 Gigabit Ethernet ports, switching capacity of 3.82 Tbps for the 6454, 7.42 Tbps for the 64108, and 200 Gbps bandwidth between the Fabric Interconnect 6400 series and the IOM 2408 per 5108 blade chassis, independent of packet size and enabled services. The product family supports Cisco low-latency, lossless 10/25/40/100 Gigabit Ethernet unified network fabric capabilities, which increase the reliability, efficiency, and scalability of Ethernet networks. The fabric interconnect supports multiple traffic classes over a lossless Ethernet fabric from the server through the fabric interconnect. Significant TCO savings come from an FCoE-optimized server design in which Network Interface Cards (NICs), Host Bus Adapters (HBAs), cables, and switches can be consolidated.
 
+![Cisco UCS 6454 Fabric Interconnect](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.docx/_jcr_content/renditions/datasheet-c78-741116_1.png)
+
 Figure 2. 
 
 Cisco UCS 6454 Fabric Interconnect
+
+![Cisco UCS 64108](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.docx/_jcr_content/renditions/datasheet-c78-741116_2.png)
 
 Figure 3. 
 
@@ -144,7 +158,11 @@ The Cisco UCS 6454 54-Port Fabric Interconnect (Figure 3) is a One-Rack-Unit (1R
 
 Front view
 
+![Cisco UCS 6454 \(1RU\) 54-Port Fabric Interconnect_A](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.docx/_jcr_content/renditions/datasheet-c78-741116_3.png)
+
 Rear view
+
+![Cisco UCS 6454 \(1RU\) 54-Port Fabric Interconnect_b](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.docx/_jcr_content/renditions/datasheet-c78-741116_4.png)
 
 Figure 4. 
 
@@ -158,7 +176,11 @@ The Cisco UCS 64108 Fabric Interconnect also has one network management port, on
 
 Front view
 
+![Cisco UCS 64108 \(2 RU\) 108-Port Fabric Interconnect_A](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.docx/_jcr_content/renditions/datasheet-c78-741116_5.png)
+
 Rear view
+
+![Cisco UCS 64108 \(2 RU\) 108-Port Fabric Interconnect_b](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.docx/_jcr_content/renditions/datasheet-c78-741116_6.png)
 
 Figure 5. 
 
@@ -330,9 +352,13 @@ Product number |  Description
 **Note: **
 
 1. FI 6454 supports 1G optics on ports 45-48. FI 64108 supports 1G optics on ports 89-96.
+
 2. Transceiver modules and cables that are supported on a specific Fabric Interconnect are not always supported on all VIC adapters, I/O modules, or Fabric Extenders that are compatible with that Fabric Interconnect. Detailed compatibility matrices for the transceiver modules are available here: <https://www.cisco.com/c/en/us/support/interfaces-modules/transceiver-modules/products-device-support-tables-list.html>.
+
 3. SFP-10/25G-LR-S and SFP-10/25G-CSR-S currently works only at 25G speed. (i.e., FI 6454 supported ports 1-48 & FI 64108 supported ports 1-96)
+
 4. S-Class transceivers do not support FCoE at 10G and 40G speeds
+
 5. QSFP-4X10G-LR-S is supported only for uplink ports.
 
 Cabling
@@ -599,5 +625,8 @@ For more information
 For more information about Cisco UCS, visit <https://www.cisco.com/en/US/products/ps10265/index.html>.
 
 ### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_imm_infra_fw_rn_lb.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:04 |
+| **Fetched on** | 2026-03-19 15:36:01 |
 
 ---
 
@@ -21,6 +21,8 @@
 **Last Updated: February 23, 2026**
 
 # Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3
+
+![](/c/dam/en/us/td/i/400001-500000/470001-480000/473001-474000/473341.jpg)
 
 Firmware upgrades in Intersight include server firmware upgrades and infrastructure firmware upgrades. Infrastructure firmware upgrades in Intersight Managed mode is supported on Cisco UCS Fabric Interconnects Series 6600, 6500, 6400, and Cisco UCS X-Series Direct Fabric Interconnects. To manage the Cisco UCS infrastructure firmware, see [Upgrading Fabric Interconnect Firmware in IMM](https://intersight.com/help/saas/resources/Upgrading_Fabric_Interconnect_Firmware_imm). This feature is available with a Cisco Intersight Essentials or Advanced license tier. 
 
@@ -52,13 +54,13 @@ July 31, 2025 |  C-Series Server Firmware version 4.3(2.250045) has been release
 July 07, 2025 |  C-Series Server Firmware version 4.3(5.250043) has been released. There is no corresponding Infrastructure Firmware release.   
 July 07, 2025 |  Updated release notes for Cisco UCS 6400 and 6500 Series FI Infrastructure firmware release 4.3(6.250084) and Cisco UCS X-Series Direct FI Infrastructure Firmware version 4.3(6.250135).  This release includes updates to:
 
-* Resolved Caveats in Release 4.3(6.250135) and 4.3(6.250084)
+  * Resolved Caveats in Release 4.3(6.250135) and 4.3(6.250084)
 
 It does not include any new hardware support, security fixes, or open caveats.  
 July 07, 2025 |  C-Series Server Firmware version 4.3(2.250037) has been released. There is no corresponding Infrastructure Firmware release.   
 June 05, 2025 |  Updated release notes for Cisco UCS 6400 and 6500 Series FI Infrastructure firmware release 4.3(5.250012) and Cisco UCS X-Series Direct FI Infrastructure Firmware version 4.3(5.250034).  This release includes updates to:
 
-* Resolved Caveats in Release 4.3(5.250012) and 4.3(5.250034)
+  * Resolved Caveats in Release 4.3(5.250012) and 4.3(5.250034)
 
 It does not include any new hardware support, security fixes, or open caveats.  
 May 22, 2025 |  X-Series M8 5.4(0.250040), 5.4(0.250044) and M7 5.4(0.250040), and C-Series 4.3(6.250044) Server Firmware versions have been released. There is no corresponding Infrastructure Firmware release.   
@@ -66,9 +68,9 @@ May 19, 2025 |  C-Series Server Firmware version 4.3(5.250033) has been released
 May 06, 2025 |  Updated release notes to include Compatibility and Support Matrix for Cisco Fabric Interconnects and Brocade Switches.   
 April 30, 2025 |  Updated release notes for Cisco UCS 6400 and 6500 Series FI Infrastructure firmware release 4.3(6.250048) and Cisco UCS X-Series Direct FI Infrastructure Firmware version 4.3(6.250094).  This release includes updates to:
 
-* New Hardware Support in Infrastructure Firmware Release 4.3(6.250048) and 4.3(6.250094)
-* Cross-Version Firmware Support
-* Open Caveats in Release 4.3(6.250094)
+  * New Hardware Support in Infrastructure Firmware Release 4.3(6.250048) and 4.3(6.250094)
+  * Cross-Version Firmware Support
+  * Open Caveats in Release 4.3(6.250094)
 
   
 April 10, 2025 |  Cisco UCS X-Series Direct FI Infrastructure Firmware version 4.3(5.250033) has been released.  This release includes updates to Resolved Caveats in Release 4.3(5.250033) It does not include any new hardware support, security fixes, or open caveats.  
@@ -87,17 +89,17 @@ November 19, 2024 |  Included Firmware Version Equivalency Between Cisco Intersi
 November 07, 2024 |  Updated release notes to include Compatibility and Support Matrix for Cisco Fabric Interconnects and MDS Switches, change in the title of this document, and changes to the About the Release Notes section.   
 October 22, 2024 |  Updated release notes for Cisco UCS 6400 and 6500 Series FI Infrastructure firmware release 4.3(5.240032) and Cisco UCS 9108 100G FI Infrastructure firmware release 4.3(5.240162).  This release includes updates to:
 
-* Cross-Version Firmware Support
-* Security Fixes in Release 4.3(5.240032)
-* Open Caveats in Release 4.3(5.240032)
+  * Cross-Version Firmware Support
+  * Security Fixes in Release 4.3(5.240032)
+  * Open Caveats in Release 4.3(5.240032)
 
   
 October 08, 2024 |  C-Series Server Firmware version 4.3(2.240090) has been released. There is no corresponding Infrastructure Firmware release.   
 September 26, 2024 |  C-Series Server Firmware version 4.3(4.242038) has been released. There is no corresponding Infrastructure Firmware release.   
 September 03, 2024 |  Updated release notes for Intersight Infrastructure Firmware Release 4.3(4.240074).  This release includes updates to:
 
-* Resolved Caveats in Release 4.3(4.240074)
-* Open Caveats in Release 4.3(4.240074)
+  * Resolved Caveats in Release 4.3(4.240074)
+  * Open Caveats in Release 4.3(4.240074)
 
 It does not include any new hardware support.  
 August 20, 2024 |  C-Series Server Firmware version 4.3(4.241063) has been released. There is no corresponding Infrastructure Firmware release.   
@@ -121,7 +123,7 @@ Intersight software features may not align with the Intersight firmware release 
 
 ## New Hardware Support
 
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -138,11 +140,16 @@ For more information on platform-specific hardware support, see [Release Notes f
 
 ### New Hardware Support in Infrastructure Firmware Release 4.3(6.250048) and 4.3(6.250094)
 
-* Cisco UCS X210c M8 Compute Node requires Server Firmware version 5.4(0.250037) and one of the following Cisco Intersight Infrastructure Firmware versions: 
-* Cisco UCS 6400 and 6500 Series FI - 4.3(6.250048) or later. 
-* Cisco UCS X-Series Direct FI - 4.3(6.250094) or later. 
-* Cisco UCS C220 M8 Server requires Server Firmware version 4.3(6.250039) and Cisco Intersight Infrastructure Firmware version 4.3(6.250048) or later. 
-* Cisco UCS C240 M8 Server requires Server Firmware version 4.3(6.250039) and Cisco Intersight Infrastructure Firmware version 4.3(6.250048) or later. 
+  * Cisco UCS X210c M8 Compute Node requires Server Firmware version 5.4(0.250037) and one of the following Cisco Intersight Infrastructure Firmware versions: 
+
+  * Cisco UCS 6400 and 6500 Series FI - 4.3(6.250048) or later. 
+
+  * Cisco UCS X-Series Direct FI - 4.3(6.250094) or later. 
+
+  * Cisco UCS C220 M8 Server requires Server Firmware version 4.3(6.250039) and Cisco Intersight Infrastructure Firmware version 4.3(6.250048) or later. 
+
+  * Cisco UCS C240 M8 Server requires Server Firmware version 4.3(6.250039) and Cisco Intersight Infrastructure Firmware version 4.3(6.250048) or later. 
+
 
 For more information, see [Supported Hardware for Intersight Managed Mode](https://intersight.com/help/saas/supported_systems#supported_hardware_for_intersight_managed_mode). 
 
@@ -168,17 +175,27 @@ Cisco UCS X-Series Direct can be managed in Intersight Managed Mode through the 
 
 Cisco UCS X-Series Direct is made up of the following components:
 
-* Cisco UCS X9508 Chassis
-* A pair of Cisco UCS Fabric Interconnects 9108 100G (UCSX-S9108-100G)
-* One or more of the following servers:
-* Up to eight two-socket Cisco UCS X215c M8 Compute Nodes
-* Up to eight two-socket Cisco UCS X210c M6/M7 Compute Nodes
-* Up to four four-socket Cisco UCS X410c M7 Compute Nodes
-* Optional components:
-* Cisco UCS 9416 X-Fabric Modules
-* Cisco UCS X440p PCIe Node with up to four GPUs used in conjunction with the 9416 X-Fabric Modules
+  * Cisco UCS X9508 Chassis
 
-For more information on Cisco UCS X-Series Direct support in Intersight Managed Mode, see [Supported Hardware for Intersight Managed Mode](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Intersight_Managed_Mode_Configuration_Guide/b_intersight_managed_mode_guide_chapter_01010.html#Cisco_Reference.dita_69441f1c-0872-4ba2-81de-50bb71950193).    
+  * A pair of Cisco UCS Fabric Interconnects 9108 100G (UCSX-S9108-100G)
+
+  * One or more of the following servers:
+
+  * Up to eight two-socket Cisco UCS X215c M8 Compute Nodes
+
+  * Up to eight two-socket Cisco UCS X210c M6/M7 Compute Nodes
+
+  * Up to four four-socket Cisco UCS X410c M7 Compute Nodes
+
+
+  * Optional components:
+
+  * Cisco UCS 9416 X-Fabric Modules
+
+  * Cisco UCS X440p PCIe Node with up to four GPUs used in conjunction with the 9416 X-Fabric Modules
+
+
+For more information on Cisco UCS X-Series Direct support in Intersight Managed Mode, see [Supported Hardware for Intersight Managed Mode](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Intersight_Managed_Mode_Configuration_Guide/b_intersight_managed_mode_guide_chapter_01010.html#Cisco_Reference.dita_69441f1c-0872-4ba2-81de-50bb71950193).  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -193,17 +210,23 @@ This support is currently not available in UCSM Managed Mode; that is, Cisco UCS
 
 Support for the following Cisco UCS VIC 15000 Series Secure Boot-enabled mLOM adapters:
 
-* UCSX-ML-V5D200GV2 - Cisco UCS VIC 15230 (2x100G/4x25G) mLOM on X-Series M6 and M7 servers.
-* UCSC-M-V5D200GV2 - Cisco UCS VIC 15237 (2x40/100/200G) mLOM adapter on C-Series M6 and M7 servers.
-* UCSC-M-V5Q50GV2 - Cisco UCS VIC 15427 (4x10/25/50G) mLOM adapter on C-Series M6 and M7 servers.
+  * UCSX-ML-V5D200GV2 - Cisco UCS VIC 15230 (2x100G/4x25G) mLOM on X-Series M6 and M7 servers.
+
+  * UCSC-M-V5D200GV2 - Cisco UCS VIC 15237 (2x40/100/200G) mLOM adapter on C-Series M6 and M7 servers.
+
+  * UCSC-M-V5Q50GV2 - Cisco UCS VIC 15427 (4x10/25/50G) mLOM adapter on C-Series M6 and M7 servers.
+
 
 For more information, see [Supported Hardware for Intersight Managed Mode](https://intersight.com/help/saas/supported_systems#supported_hardware_for_intersight_managed_mode). 
 
 ### New Hardware Support in Infrastructure Firmware Release 4.3(2.230117)
 
-* Support for the following Cisco UCS VIC 15000 Series Secure Boot-enabled PCIe adapters on Cisco UCS C-Series M6 and M7 servers with server firmware version 4.3(2.230207): 
-* UCSC-P-V5D200G - Cisco UCS VIC 15235 2x40/100/200G
-* UCSC-P-V5Q50G - Cisco UCS VIC 15425 4x10/25/50G
+  * Support for the following Cisco UCS VIC 15000 Series Secure Boot-enabled PCIe adapters on Cisco UCS C-Series M6 and M7 servers with server firmware version 4.3(2.230207): 
+
+  * UCSC-P-V5D200G - Cisco UCS VIC 15235 2x40/100/200G
+
+  * UCSC-P-V5Q50G - Cisco UCS VIC 15425 4x10/25/50G
+
 
 For more information, see [Supported Hardware for Intersight Managed Mode](https://intersight.com/help/saas/supported_systems#supported_hardware_for_intersight_managed_mode). 
 
@@ -306,11 +329,13 @@ NVMe-TCP |  HV Hitachi VSP One Block 24 |  Cisco UCSX-S9108-100G |  Cisco UCS 15
 ---|---  
 HV Hitachi VSP One Block 26  
 HV Hitachi VSP One Block 28  
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
+
 + under OS Support column refers to the newer release in that release train. 
+
 * * *  
   
 ---|---  
@@ -325,7 +350,7 @@ UCS-FI-6454 |  8.4, 9.2 |  9.4
 UCS-FI-64108 |  8.4, 9.2 |  9.4  
 UCS-FI-6536 |  9.2 |  9.4  
 UCSX-S9108-100G |  — |  9.4  
-  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
 * * *
@@ -516,7 +541,8 @@ CSCwh30074 |  The UCS-FI-6332-16UP experienced an unexpected reboot with a reset
 CSCwf56305 |  Cisco UCS VIC 1455 shows incorrect Port enumeration. |  4.2(2a)  
 CSCwf88211 |  On Cisco UCS X210c M6 and UCS C240 M6 servers, alerts may be generated indicating that the vNIC interface is down: AdapterHostEthInterfaceDown vNIC is not operational. However, the alert has no impact on server communication and other sources report that the interface is operational.  |  4.2(3h)  
 CSCwh60769 |  The DIMM with the label DIMM_PX_X1 triggers a severity warning with Fault code - F0502 indicating the server has an invalid field replaceable unit (FRU).
-[code]
+    
+    
     Severity: Warning
     Code: F0502
     ID: 327373
@@ -527,14 +553,13 @@ CSCwh60769 |  The DIMM with the label DIMM_PX_X1 triggers a severity warning wit
     /board/memarray-X/mem-X
     Name: Memory Unit Identity Unestablishable
     Cause: Identity Unestablishable
-[/code]
 
 |  4.3(2b)  
 CSCwb82433 |  Cisco UCS C220 M5 servers equipped with Cisco UCS VIC 1400 series adapter and have **Geneve** feature enabled, go offline after the Cisco UCS VIC adapters fail to respond.  |  4.1(3d)  
 CSCwf91291 |  The RAID controller in Cisco UCS X210c servers may read incorrect voltage value and mark the battery as dead. This results in the following error: 
-[code]
+    
+    
     Battery Backup unit IMM/ chassis-x/server-y/ controller-1/ BBU is marked bad and needs to be replaced
-[/code]
 
 . |  4.3(2c)  
   
@@ -608,10 +633,15 @@ CSCwk09309 |  For Cisco UCS X-Series Direct in Intersight Managed Mode, after th
 
 ### Release Notes
 
-* [Cisco UCS Equivalency Matrix for Cisco Intersight, Cisco IMC, and Cisco UCS Manager](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/c/sw/UCS-Equivalency-Matrix/index.html)
-* [Release Notes and Release Bundles for Cisco Intersight](https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html)
-* [Release Notes for Cisco UCS Manager](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-release-notes-list.html)
-* [Release Notes for Cisco UCS Rack Server Software](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-c-series-integrated-management-controller/products-release-notes-list.html)
-* [Cisco UCS Manager and Intersight Release Strategy](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_ucsm-and-intersight-release-strategy-doc.html)
+  * [Cisco UCS Equivalency Matrix for Cisco Intersight, Cisco IMC, and Cisco UCS Manager](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/c/sw/UCS-Equivalency-Matrix/index.html)
+
+  * [Release Notes and Release Bundles for Cisco Intersight](https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html)
+
+  * [Release Notes for Cisco UCS Manager](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-release-notes-list.html)
+
+  * [Release Notes for Cisco UCS Rack Server Software](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-c-series-integrated-management-controller/products-release-notes-list.html)
+
+  * [Cisco UCS Manager and Intersight Release Strategy](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_ucsm-and-intersight-release-strategy-doc.html)
+
 
 ---

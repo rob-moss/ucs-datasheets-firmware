@@ -8,15 +8,16 @@
 | **HTML Title** | Cisco UCS 6600 Series Fabric Interconnects Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-6600-series-fabric-interconnect-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:19 |
+| **Fetched on** | 2026-03-19 15:37:45 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.html
 
-* Skip to content
-* Skip to search
-* Skip to footer
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
 
 # Cisco UCS 6600 Series Fabric Interconnects Data Sheet
 
@@ -34,10 +35,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.pdf) (262.9 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.pdf) (262.9 KB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:January 7, 2026
 
@@ -51,24 +54,26 @@ __ __ __ __
 
 Contact Cisco
 
-* Contact Cisco __
-* __
-* __
+  * Contact Cisco __
+  * __
+
+  * __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-* __
+  * __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-* __
+  * __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-* __
+  * __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
 
 Save
 
@@ -82,31 +87,34 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.pdf) (262.9 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.pdf) (262.9 KB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:January 7, 2026
 
 #### Table of Contents
 
-* Cisco Unified Computing System overview
-* Product overview
-* UCS Unified fabric: I/O consolidation
-* Management Options
-* Features and benefits
-* Product specifications
-* Cisco UCS FI 6600 series physical and environmental specifications
-* Weight
-* Regulatory standards compliance: safety and EMC
-* Ordering information
-* Warranty information
-* Cisco environmental sustainability
-* Cisco Services for Unified Computing
-* Why Cisco?
-* Cisco Capital
-* For more information
+  * Cisco Unified Computing System overview
+  * Product overview
+  * UCS Unified fabric: I/O consolidation
+  * Management Options
+  * Features and benefits
+  * Product specifications
+  * Cisco UCS FI 6600 series physical and environmental specifications
+  * Weight
+  * Regulatory standards compliance: safety and EMC
+  * Ordering information
+  * Warranty information
+  * Cisco environmental sustainability
+  * Cisco Services for Unified Computing
+  * Why Cisco?
+  * Cisco Capital
+  * For more information
+
 
 ` `
 
@@ -131,6 +139,8 @@ UCS 6600 series Fabric Interconnects support I/O consolidation with end-to-end n
 ● Server management and LAN traffic
 
 The I/O consolidation under the UCS 6600 series fabric interconnects along with the stateless policy-driven architecture of UCS and the hardware acceleration of the UCS Virtual Interface card provides great simplicity, flexibility, resiliency, performance, and TCO savings for the customer’s compute infrastructure.
+
+![Cisco UCS Unified Fabric](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.docx/_jcr_content/renditions/ucs-6600-series-fabric-interconnect-ds_0.png)
 
 Figure 1. 
 
@@ -172,9 +182,13 @@ The Cisco UCS 6652 Fabric Interconnect also has one network management port, one
 
 From a networking perspective, the Cisco UCS 6652 FI uses a cut-through architecture, supporting deterministic, low-latency, line-rate 10/25/50 Gigabit Ethernet ports and a switching capacity of 8.44 Tbps, independent of packet size and enabled services. It enables 400Gbps bandwidth per Cisco UCS X9508 Chassis with X9108-IFM-25G in addition to enabling end-to-end 25G Ethernet and 200G aggregate bandwidth per Cisco UCS X210c /X410c compute node. The Cisco UCS 6652 FI provides connectivity for 5108 chassis with IOM-2408 at 25G Ethernet. The C-series rack server can direct-connect or connect via Cisco Nexus 93180YC-FX3 FEX at 10/25G ethernet to the Cisco UCS 6652 FI. In addition to 10/25G speeds the UCS 6652 FI also enables 50G ethernet connectivity for UCS C-series rack server with UCS VIC 15000 series adapter and upgrading to 50G connectivity doubles the ethernet bandwidth at similar cost and power compared to 25G connectivity, and delivers an end-to-end 50G design across ethernet and 64G FC for storage I/O.
 
+![A close-up of a computerAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.docx/_jcr_content/renditions/ucs-6600-series-fabric-interconnect-ds_1.png)
+
 Figure 2. 
 
 Cisco UCS 6652 52-Port Fabric Interconnect – back view 
+
+![A close up of a computerAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.docx/_jcr_content/renditions/ucs-6600-series-fabric-interconnect-ds_2.png)
 
 Figure 3. 
 
@@ -190,9 +204,13 @@ From a networking perspective, the Cisco UCS 6664 FI use a cut-through architect
 
 The Cisco 6600 series FI supports Cisco low-latency, lossless 10/25/40/50/100 Gigabit Ethernet unified network fabric capabilities, which increases the reliability, efficiency, and scalability of Ethernet networks. The Cisco 6600 series FI supports multiple traffic classes over a lossless Ethernet fabric from the server through the fabric interconnect. Significant TCO savings come from the Cisco Unified Fabric ̶ optimized server design in which Network Interface Cards (NICs), Host Bus Adapters (HBAs), cables, and switches can be consolidated. 
 
+![A close-up of a computer partAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.docx/_jcr_content/renditions/ucs-6600-series-fabric-interconnect-ds_3.png)
+
 Figure 4. 
 
 Cisco UCS 6664 64-Port Fabric Interconnect – back view
+
+![A close-up of a metal boxAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.docx/_jcr_content/renditions/ucs-6600-series-fabric-interconnect-ds_4.png)
 
 Figure 5. 
 
@@ -379,17 +397,22 @@ For more information about Cisco UCS, visit <https://www.cisco.com/en/US/product
 
 ### Our experts recommend
 
-* [Cisco UCS 6664 Fabric Interconnect At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-6500-series-fabric-interconnects/ucs-6664-fabric-interconnect-aag.html "Cisco UCS 6664 Fabric Interconnect At-a-Glance")
+  * [Cisco UCS 6664 Fabric Interconnect At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-6500-series-fabric-interconnects/ucs-6664-fabric-interconnect-aag.html "Cisco UCS 6664 Fabric Interconnect At-a-Glance")
+
 
 ### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---
 
 ## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6500-series-fabric-interconnects/ucs-6664-fabric-interconnect-aag.html
 
-* Skip to content
-* Skip to search
-* Skip to footer
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
 
 # Cisco UCS 6664 Fabric Interconnect At-a-Glance
 
@@ -405,10 +428,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6500-series-fabric-interconnects/ucs-6664-fabric-interconnect-aag.pdf) (483.7 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6500-series-fabric-interconnects/ucs-6664-fabric-interconnect-aag.pdf) (483.7 KB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:June 23, 2025
 
@@ -422,24 +447,26 @@ __ __ __ __
 
 Contact Cisco
 
-* Contact Cisco __
-* __
-* __
+  * Contact Cisco __
+  * __
+
+  * __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-* __
+  * __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-* __
+  * __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-* __
+  * __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
 
 Save
 
@@ -451,19 +478,22 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6500-series-fabric-interconnects/ucs-6664-fabric-interconnect-aag.pdf) (483.7 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6500-series-fabric-interconnects/ucs-6664-fabric-interconnect-aag.pdf) (483.7 KB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:June 23, 2025
 
 #### Table of Contents
 
-* Overview
-* Benefits
-* What it does
-* Learn more
+  * Overview
+  * Benefits
+  * What it does
+  * Learn more
+
 
 ` `
 
@@ -476,6 +506,8 @@ The 6664 Fabric Interconnect has both Ethernet and unified ports. Unified ports 
 Cisco UCS C-Series Rack Servers can be directly connected to the 6664 Fabric Interconnect, or you can use the Cisco Nexus® 93180YC-FX3 switch as a Fabric Extender (FEX). A FEX provides rack servers the networking cabling consolidation benefits of a modular server system.
 
 The Cisco UCS X-Series provides network cable consolidation with Intelligent Fabric Modules (IFMs). IFMs for the UCS X-Series come in both 25Gbps and 100Gbps form factors, which enable up to 200Gpbs aggregate bandwidth per compute node.
+
+![Cisco UCS 6664 Fabric Interconnect](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-6500-series-fabric-interconnects/ucs-6664-fabric-interconnect-aag.docx/_jcr_content/renditions/ucs-6664-fabric-interconnect-aag_0.png)
 
 Figure 1. 
 
@@ -508,5 +540,8 @@ Learn more
 For more information about modernizing your infrastructure with Cisco UCS 6664 Fabric Interconnects, refer to the data sheet or spec sheet. For more information about Cisco UCS unified fabric, go to <https://cisco.com/go/ucsfabric> and for all Cisco UCS servers, please visit <https://www.cisco.com/go/ucs>
 
 ### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

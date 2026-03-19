@@ -8,15 +8,16 @@
 | **HTML Title** | Servers - Unified Computing - Cisco UCS 2408 Fabric Extender Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-742624.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:18 |
+| **Fetched on** | 2026-03-19 15:37:41 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-742624.html
 
-* Skip to content
-* Skip to search
-* Skip to footer
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
 
 # Cisco UCS 2408 Fabric Extender Data Sheet
 
@@ -36,10 +37,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-742624.pdf) (1.0 MB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-742624.pdf) (1.0 MB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:November 27, 2024
 
@@ -53,24 +56,26 @@ __ __ __ __
 
 Contact Cisco
 
-* Contact Cisco __
-* __
-* __
+  * Contact Cisco __
+  * __
+
+  * __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-* __
+  * __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-* __
+  * __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-* __
+  * __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
 
 Save
 
@@ -84,35 +89,42 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-742624.pdf) (1.0 MB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-742624.pdf) (1.0 MB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:November 27, 2024
 
 #### Table of Contents
 
-* Cisco Unified Computing System overview
-* Product overview
-* Features and benefits
-* Product specifications
-* Physical specifications
-* Regulatory standards compliance: Safety and EMC
-* Fabric interconnect support
-* Transceiver and cable support
-* Ordering information
-* Warranty information
-* Cisco environmental sustainability
-* Cisco Capital
-* For more information
-* Document history
+  * Cisco Unified Computing System overview
+  * Product overview
+  * Features and benefits
+  * Product specifications
+  * Physical specifications
+  * Regulatory standards compliance: Safety and EMC
+  * Fabric interconnect support
+  * Transceiver and cable support
+  * Ordering information
+  * Warranty information
+  * Cisco environmental sustainability
+  * Cisco Capital
+  * For more information
+  * Document history
+
 
 ` `
+
+![Cisco Unified Computing System overview](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-742624.docx/_jcr_content/renditions/datasheet-c78-742624_0.png)
 
 Cisco Unified Computing System overview
 
 The Cisco Unified Computing System™ (Cisco UCS®) is a next-generation data center platform that unites computing, network, storage access, and virtualization resources into a cohesive system designed to reduce Total Cost of Ownership (TCO) and increase business agility. The system integrates a low-latency, lossless 25-Gigabit Ethernet unified network fabric with enterprise-class, x86-architecture servers. The system is an integrated, scalable, multichassis platform in which all resources participate in a unified management domain (Figure 1).
+
+![The Cisco Unified Computing System is a highly available cohesive architecture](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-742624.docx/_jcr_content/renditions/datasheet-c78-742624_1.png)
 
 Figure 1. 
 
@@ -131,6 +143,8 @@ The Cisco UCS 2408 Fabric Extender fits into the back of the Cisco UCS 5100 Seri
 Cisco UCS 2408 Fabric Extender
 
 The Cisco UCS 2408 Fabric Extender has eight 25-Gigabit Ethernet, FCoE-capable, Small Form-Factor Pluggable (SFP28) ports that connect the blade chassis to the fabric interconnect. Each Cisco UCS 2408 provide 10-Gigabit Ethernet ports connected through the midplane to each half-width slot in the chassis, giving it a total 32 10G interfaces to UCS blades. Typically configured in pairs for redundancy, two fabric extenders provide up to 400 Gbps of I/O from FI 6400 series or FI 6536 to 5108 chassis.
+
+![Rear of Cisco UCS 5108 Blade Server Chassis with two Cisco UCS 2408 Fabric Extenders](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-742624.docx/_jcr_content/renditions/datasheet-c78-742624_2.png)
 
 Figure 2. 
 
@@ -372,13 +386,17 @@ Updated breakout cables and FI 6536 support |  Table 4 |  November 2024
   
 ### Learn more
 
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
 ---
 
 ## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/data_sheet_c78-520522.html
 
-* Skip to content
-* Skip to search
-* Skip to footer
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
 
 # Cisco UCS Manager Data Sheet
 
@@ -396,10 +414,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/data_sheet_c78-520522.pdf) (311.6 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/data_sheet_c78-520522.pdf) (311.6 KB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:March 6, 2024
 
@@ -413,24 +433,26 @@ __ __ __ __
 
 Contact Cisco
 
-* Contact Cisco __
-* __
-* __
+  * Contact Cisco __
+  * __
+
+  * __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-* __
+  * __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-* __
+  * __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-* __
+  * __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
 
 Save
 
@@ -444,30 +466,33 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/data_sheet_c78-520522.pdf) (311.6 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/data_sheet_c78-520522.pdf) (311.6 KB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:March 6, 2024
 
 #### Table of Contents
 
-* Product overview
-* Features and benefits
-* Service profiles
-* Enhanced flexibility through storage profiles and disk groups
-* Service profile templates
-* Management interface options
-* Management scope
-* Licensing
-* No additional system requirements
-* Why Cisco?
-* Cisco environmental sustainability
-* Cisco Capital
-* For more information
-* Our experts recommend
-* Document history
+  * Product overview
+  * Features and benefits
+  * Service profiles
+  * Enhanced flexibility through storage profiles and disk groups
+  * Service profile templates
+  * Management interface options
+  * Management scope
+  * Licensing
+  * No additional system requirements
+  * Why Cisco?
+  * Cisco environmental sustainability
+  * Cisco Capital
+  * For more information
+  * Our experts recommend
+  * Document history
+
 
 ` `
 
@@ -494,6 +519,8 @@ The policies coordinate and automate element management at every layer of the ha
 The service profile consists of a software definition of a server and the associated LAN and SAN connectivity that the server requires. When a service profile is associated with a server, Cisco UCS Manager automatically configures the server, adapters, fabric extenders, and fabric interconnects to match the configuration specified in the service profile. Service profiles improve IT productivity and business agility because they establish the best practices of your subject-matter experts in software. With service profiles, infrastructure can be provisioned in minutes instead of days, shifting the focus of IT staff from maintenance to strategic initiatives. Service profiles allow organizations to pre-provision servers, enabling organizations to configure new servers and associated LAN and SAN access settings even before the servers are physically deployed.
 
 Service profiles benefit both virtualized and nonvirtualized environments. Workloads may need to be moved from one server to another to change the hardware resources assigned to a workload or to take a server offline for maintenance. Service profiles can be used to increase the mobility of nonvirtualized servers. They also can be used in conjunction with virtual clusters to bring new resources online easily, complementing existing virtual machine mobility.
+
+![Cisco UCS Manager provides visibility into all physical and virtual networking, computing, and storage infrastructure in the Cisco UCS C4200 chassis.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/data_sheet_c78-520522.docx/_jcr_content/renditions/data_sheet_c78-520522_0.png)
 
 Figure 1. 
 
@@ -629,17 +656,22 @@ New or revised topic |  Described in |  Date
   
 ### Our experts recommend
 
-* [Cisco Compute Security Overview White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.html "Cisco Compute Security Overview White Paper")
+  * [Cisco Compute Security Overview White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.html "Cisco Compute Security Overview White Paper")
+
 
 ### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---
 
 ## Page 3: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.html
 
-* Skip to content
-* Skip to search
-* Skip to footer
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
 
 # Cisco UCS 6400 Series Fabric Interconnects Data Sheet
 
@@ -657,10 +689,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.pdf) (1.4 MB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.pdf) (1.4 MB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:April 21, 2021
 
@@ -674,24 +708,26 @@ __ __ __ __
 
 Contact Cisco
 
-* Contact Cisco __
-* __
-* __
+  * Contact Cisco __
+  * __
+
+  * __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-* __
+  * __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-* __
+  * __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-* __
+  * __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
 
 Save
 
@@ -705,33 +741,38 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.pdf) (1.4 MB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.pdf) (1.4 MB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:April 21, 2021
 
 #### Table of Contents
 
-* Cisco Unified Computing System overview
-* Product overview
-* Features and benefits
-* Product specifications
-* Physical specifications
-* Regulatory standards compliance: safety and EMC
-* Ordering information
-* Warranty information
-* Cisco environmental sustainability
-* Cisco Services for Unified Computing
-* Why Cisco?
-* For more information
+  * Cisco Unified Computing System overview
+  * Product overview
+  * Features and benefits
+  * Product specifications
+  * Physical specifications
+  * Regulatory standards compliance: safety and EMC
+  * Ordering information
+  * Warranty information
+  * Cisco environmental sustainability
+  * Cisco Services for Unified Computing
+  * Why Cisco?
+  * For more information
+
 
 ` `
 
 Cisco Unified Computing System overview
 
 The Cisco Unified Computing System™ (Cisco UCS®) is a next-generation data center platform that unites computing, networking, storage access, and virtualization resources into a cohesive system designed to reduce Total Cost of Ownership (TCO) and increase business agility. The system integrates a low-latency, lossless 10/25/40/100 Gigabit Ethernet unified network fabric with enterprise-class, x86-architecture servers. The system is an integrated, scalable, multichassis platform in which all resources participate in a unified management domain (Figure 1).
+
+![The Cisco Unified Computing System’s highly available, cohesive architecture](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.docx/_jcr_content/renditions/datasheet-c78-741116_0.png)
 
 Figure 1. 
 
@@ -745,9 +786,13 @@ The Cisco UCS 6400 Series provide the management and communication backbone for 
 
 From a networking perspective, the Cisco UCS 6400 Series use a cut-through architecture, supporting deterministic, low-latency, line-rate 10/25/40/100 Gigabit Ethernet ports, switching capacity of 3.82 Tbps for the 6454, 7.42 Tbps for the 64108, and 200 Gbps bandwidth between the Fabric Interconnect 6400 series and the IOM 2408 per 5108 blade chassis, independent of packet size and enabled services. The product family supports Cisco low-latency, lossless 10/25/40/100 Gigabit Ethernet unified network fabric capabilities, which increase the reliability, efficiency, and scalability of Ethernet networks. The fabric interconnect supports multiple traffic classes over a lossless Ethernet fabric from the server through the fabric interconnect. Significant TCO savings come from an FCoE-optimized server design in which Network Interface Cards (NICs), Host Bus Adapters (HBAs), cables, and switches can be consolidated.
 
+![Cisco UCS 6454 Fabric Interconnect](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.docx/_jcr_content/renditions/datasheet-c78-741116_1.png)
+
 Figure 2. 
 
 Cisco UCS 6454 Fabric Interconnect
+
+![Cisco UCS 64108](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.docx/_jcr_content/renditions/datasheet-c78-741116_2.png)
 
 Figure 3. 
 
@@ -767,7 +812,11 @@ The Cisco UCS 6454 54-Port Fabric Interconnect (Figure 3) is a One-Rack-Unit (1R
 
 Front view
 
+![Cisco UCS 6454 \(1RU\) 54-Port Fabric Interconnect_A](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.docx/_jcr_content/renditions/datasheet-c78-741116_3.png)
+
 Rear view
+
+![Cisco UCS 6454 \(1RU\) 54-Port Fabric Interconnect_b](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.docx/_jcr_content/renditions/datasheet-c78-741116_4.png)
 
 Figure 4. 
 
@@ -781,7 +830,11 @@ The Cisco UCS 64108 Fabric Interconnect also has one network management port, on
 
 Front view
 
+![Cisco UCS 64108 \(2 RU\) 108-Port Fabric Interconnect_A](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.docx/_jcr_content/renditions/datasheet-c78-741116_5.png)
+
 Rear view
+
+![Cisco UCS 64108 \(2 RU\) 108-Port Fabric Interconnect_b](/c/dam/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.docx/_jcr_content/renditions/datasheet-c78-741116_6.png)
 
 Figure 5. 
 
@@ -953,9 +1006,13 @@ Product number |  Description
 **Note: **
 
 1. FI 6454 supports 1G optics on ports 45-48. FI 64108 supports 1G optics on ports 89-96.
+
 2. Transceiver modules and cables that are supported on a specific Fabric Interconnect are not always supported on all VIC adapters, I/O modules, or Fabric Extenders that are compatible with that Fabric Interconnect. Detailed compatibility matrices for the transceiver modules are available here: <https://www.cisco.com/c/en/us/support/interfaces-modules/transceiver-modules/products-device-support-tables-list.html>.
+
 3. SFP-10/25G-LR-S and SFP-10/25G-CSR-S currently works only at 25G speed. (i.e., FI 6454 supported ports 1-48 & FI 64108 supported ports 1-96)
+
 4. S-Class transceivers do not support FCoE at 10G and 40G speeds
+
 5. QSFP-4X10G-LR-S is supported only for uplink ports.
 
 Cabling
@@ -1223,13 +1280,19 @@ For more information about Cisco UCS, visit <https://www.cisco.com/en/US/product
 
 ### Learn more
 
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
 ---
 
 ## Page 4: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-manager/whitepaper_c11-697337.html
 
-* Skip to main content
-* Skip to search
-* Skip to footer
+  * Skip to main content
+  * Skip to search
+  * Skip to footer
+
+
+![A display showing Cisco Nexus Dashboard on a monitor screen, the Nexus 9504 chassis switch, and a stack with the Nexus 9332-GX2B switch and the Nexus 3550-T switch.](/content/dam/cisco-cdc/site/images/heroes/products/networking/datacentercloud-marquee-3200x1312.jpg)
 
 # Cisco Data Center Networking
 
@@ -1244,6 +1307,8 @@ Overview [Resources](/site/us/en/products/networking/cloud-networking/resources.
 ## Comprehensive connections
 
 * * *
+
+![Data center transformation illustration](/content/dam/cisco-cdc/site/images/illustrations/networking/data%20center%20transformation%20ws.svg)
 
 #### Unlock the full potential of your data center—now. 
 
@@ -1266,6 +1331,8 @@ Embrace smart energy data center networking with visibility into actual usage of
 ###  AI blueprint for networking 
 
 Boost cost efficiencies and performance with design best practices and automation templates for AI data center networking.
+
+![Data center switches](/content/dam/cisco-cdc/site/us/en/images/networking/Data-Center-Switching-Nexus_Product-Rendering_758x217_rev.png)
 
 ##  Data center switches designed for hybrid harmony 
 
@@ -1433,6 +1500,8 @@ Mitigate common vulnerabilities and exposures (CVE) threats in real time and ens
 
 [Explore Cisco Live Protect ](https://www.cisco.com/site/us/en/products/networking/cloud-networking/nexus-platform/live-protect/index.html)
 
+![Woman working on laptop](/content/dam/cisco-cdc/site/us/en/images/networking/domaindatacentercloud-carousel-370.jpg)
+
 ##  Optimize workloads with a smarter, more secure approach 
 
 Modernize, simplify, scale, and securely deliver a more sustainable data center infrastructure.
@@ -1463,6 +1532,8 @@ Previous
 
 Next
 
+![nexus-one-spotlight-graphic](/content/dam/cisco-cdc/site/images/heroes/solutions/networking/artificial-intelligence/Nexus-one-spotlight.png)
+
 ##  Advancing Cisco Nexus One with Intelligence 
 
 Cisco Nexus One delivers a unified operating model with advanced intelligence, observability, security, breakthrough silicon and systems for seamless and secure AI workload deployment.
@@ -1470,6 +1541,8 @@ Cisco Nexus One delivers a unified operating model with advanced intelligence, o
 [View solution overview](https://www.cisco.com/c/en/us/products/collateral/networking/ios-nx-os-software/nx-os/fabric-experience-so.html)
 
 * * *
+
+![Gartner logo](/content/dam/cisco-cdc/site/images/testing/meraki/gartner.svg)
 
 ###  Cisco named a Leader in Gartner® 2025 Magic Quadrant™ for Data Center Switching 
 
@@ -1503,6 +1576,8 @@ Discover the extensible open APIs for today's modern Data Center applications.
 
 [Explore our ecosystem](https://www.cisco.com/c/en/us/solutions/data-center/data-center-partners/index.html)
 
+![Employee sitting at her desk and working on two large monitors](/content/dam/cisco-cdc/site/images/photography/lifestyle-photography/firewall-zero-trust-webinar-888x500.png)
+
 ##  The AI blueprint: Network security, zero trust, and the SOC 
 
 Security solutions that protect against identity threats, enable AI adoption, reshape firewalls, and evolve analytics.
@@ -1523,9 +1598,10 @@ Hello, how can I help?
 
 ## Page 5: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.html
 
-* Skip to content
-* Skip to search
-* Skip to footer
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
 
 # Cisco Compute Security Overview White Paper
 
@@ -1541,10 +1617,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.pdf) (3.1 MB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.pdf) (3.1 MB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:March 17, 2025
 
@@ -1558,24 +1636,26 @@ __ __ __ __
 
 Contact Cisco
 
-* Contact Cisco __
-* __
-* __
+  * Contact Cisco __
+  * __
+
+  * __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-* __
+  * __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-* __
+  * __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-* __
+  * __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
 
 Save
 
@@ -1587,57 +1667,60 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.pdf) (3.1 MB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.pdf) (3.1 MB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:March 17, 2025
 
 #### Table of Contents
 
-* Intended use and audience
-* Bias statement
-* Legal notices
-* Prerequisites
-* Introduction
-* Six pillars of security
-* 1\. The Cisco Secure Development Lifecycle–CSDL
-* CSDL philosophy
-* Development milestones
-* CSDL product adherence methodologies
-* Cisco Security and Trust Organization
-* Advisories, vulnerabilities, and incident responses
-* CERT advisories
-* Additional vulnerability testing measures
-* Incident response
-* 2\. Supply chain security
-* Counterfeit prevention
-* Consortiums for secure vendors
-* 3\. Certifications and compliance
-* Certification process
-* Common criteria
-* SOC 2 Type 2
-* FIPS
-* FIPS 140-3
-* IPv6
-* Defense information security agency approved product list
-* Other certifications and procedural guidelines
-* 4\. The mechanics of server security – system-level security
-* Physical security
-* Card boot - TAM
-* System boot
-* Deployment and management at scale
-* SSL key management: UI certificates and self-encrypting drives
-* 5\. Secure application operation
-* Confidential computing
-* 6\. Secure data delivery and storage
-* Encryption and key management
-* Self-encrypting drives
-* Virtual interface card
-* Conclusion
-* For more information
-* Document information
+  * Intended use and audience
+  * Bias statement
+  * Legal notices
+  * Prerequisites
+  * Introduction
+  * Six pillars of security
+  * 1\. The Cisco Secure Development Lifecycle–CSDL
+  * CSDL philosophy
+  * Development milestones
+  * CSDL product adherence methodologies
+  * Cisco Security and Trust Organization
+  * Advisories, vulnerabilities, and incident responses
+  * CERT advisories
+  * Additional vulnerability testing measures
+  * Incident response
+  * 2\. Supply chain security
+  * Counterfeit prevention
+  * Consortiums for secure vendors
+  * 3\. Certifications and compliance
+  * Certification process
+  * Common criteria
+  * SOC 2 Type 2
+  * FIPS
+  * FIPS 140-3
+  * IPv6
+  * Defense information security agency approved product list
+  * Other certifications and procedural guidelines
+  * 4\. The mechanics of server security – system-level security
+  * Physical security
+  * Card boot - TAM
+  * System boot
+  * Deployment and management at scale
+  * SSL key management: UI certificates and self-encrypting drives
+  * 5\. Secure application operation
+  * Confidential computing
+  * 6\. Secure data delivery and storage
+  * Encryption and key management
+  * Self-encrypting drives
+  * Virtual interface card
+  * Conclusion
+  * For more information
+  * Document information
+
 
 ` `
 
@@ -1662,6 +1745,8 @@ Introduction
 In the continuously evolving server landscape, Cisco Systems, Inc., has consistently developed solutions to address critical user concerns regarding security, performance, and reliability. This white paper serves as a holistic solution overview detailing the robust security posture within the Cisco Unified Computing System™ (Cisco UCS) platform. This guide explores the development philosophy, industry-leading certifications, robust management and scalable deployment features, confidential computing mechanisms, and secure storage capabilities present within the Cisco UCS ecosystem.
 
 At the core of Cisco's UCS platform lies a development philosophy centered on proactive security measures, with an approach designed for preemptive threat mitigation and continuous enhancement.
+
+![The Cisco security value chain](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_0.png)
 
 Figure 1. 
 
@@ -1698,6 +1783,8 @@ Security in the compute realm can be conveniently divided into six subcategories
 1\. The Cisco Secure Development Lifecycle–CSDL
 
 Cisco UCS products and components are developed, integrated, and tested using the Cisco Secure Development Lifecycle (CSDL). Secure product development and deployment has several components, ranging from following specified design and development practices, to testing their implementation, to providing customers with a set of recommendations for deployments that maximize the security of the system.
+
+![The Cisco Secure Product Development Lifecycle](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_1.png)
 
 Figure 2. 
 
@@ -1777,6 +1864,8 @@ Cisco Security and Trust Organization
 
 Cisco Security and Trust Organization (S&TO) has the core responsibility to implement CSDL. In the effort to accomplish this, S&TO encompasses various groups with core responsibilities to deliver a secure product or respond to security concerns as they arise.
 
+![A screenshot of a computerDescription automatically generated](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_2.png)
+
 Figure 3. 
 
 The groups within Cisco S&TO
@@ -1830,6 +1919,8 @@ This Value Chain has the following characteristics:
 ◦ Misuse of intellectual property 
 
 This multilayered approach is shown below.
+
+![Layers of the Cisco Value Chain](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_3.png)
 
 Figure 4. 
 
@@ -1972,6 +2063,8 @@ A comprehensive list of Cisco FIPS-compliant products is given below, along with
 
 ● Cryptographic Module Validation Program (CMVP) vendor list: [Cryptographic Module Validation Program | CSRC (nist.gov)](https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search?SearchMode=Advanced&Vendor=Cisco&CertificateStatus=Active&ValidationYear=0).
 
+![FIPS vendor listings](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_4.png)
+
 Figure 5. 
 
 FIPS vendor listings
@@ -2018,6 +2111,8 @@ ISO/IEC 27001:2013: the Cisco Intersight platform has completed its ISO/IEC 2700
 
 The first pillar we will examine is the mechanics of server security at the system level. This encompasses ensuring that the system is running legitimate software, is free from counterfeit hardware, and is a generally trustworthy platform for handling user data. This is part of Cisco’s end-to-end security philosophy with respect to server system level security.
 
+![End-to-end security at the system level from bootloader to runtime defenses](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_5.png)
+
 Figure 6. 
 
 End-to-end security at the system level from bootloader to runtime defenses
@@ -2045,6 +2140,8 @@ Cisco Secure Boot helps to ensure the code that executes on Cisco hardware platf
 Cisco Secure Boot helps ensure that the code that executes on Cisco hardware platforms is genuine and untampered. A typical UEFI-based boot process starts at the UEFI firmware and works up to the bootloader and the operating system. A tampered UEFI firmware can result in the entire boot process being compromised.
 
 Using a hardware-anchored root of trust, digitally signed software images, and a unique device identity, Cisco hardware-anchored secure boot establishes a chain of trust which boots the system securely and validates the integrity of the software. The root of trust (a.k.a. the microloader), which is protected by tamper-resistant hardware, first performs a self-check and then verifies the UEFI firmware, thus beginning a chain of trust leading up to the integrity verification of the entire Cisco UCS operating system.
+
+![Cisco Secure Boot process](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_6.png)
 
 Figure 7. 
 
@@ -2082,6 +2179,8 @@ The SUDI credential in the Trust Anchor module can be based on either RSA or Ell
 
 The SUDI can be used for asymmetric key operations such as encryption, decryption, signing, and verifying that allow passage of the data to be operated upon. This capability makes remote authentication of a device possible. It enables accurate and consistent electronic identification of Cisco products for asset management, provisioning, version visibility, service entitlement, quality feedback, and inventory management.
 
+![TAM functions](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_7.png)
+
 Figure 8. 
 
 TAM functions
@@ -2097,6 +2196,8 @@ This implementation covers the following:
 ● Supports attestation of secure boot through TPM 2.0
 
 The detailed process flow for secure boot of the system and OS with attestation capability is shown below. Note that the certificate-based hardware root of trust validates the Cisco UCS firmware, which ensures that a clean BIOS is set for key validation of the hypervisor bootloader, and so on. This guarantees that the hardware and operating system in the UCS system has not been tampered with. External validation of this can be made through attestation using the TPM 2.0 module in Cisco UCS.
+
+![Use of TAM and TPM in the entire process](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_8.png)
 
 Figure 9. 
 
@@ -2296,6 +2397,8 @@ Device connector
 
 Cisco UCS systems are connected to the Intersight SaaS platform or on-premises virtual appliance through a device connector that is embedded in the management controller of each system.
 
+![Connection to Intersight services with the Cisco UCS device connector](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_9.png)
+
 Figure 10. 
 
 Connection to Intersight services with the Cisco UCS device connector 
@@ -2361,6 +2464,8 @@ You can use a web-based GUI or SSH-based CLI or an XML-based API to access, conf
 CIMC security configuration
 
 UCSM and Intersight both use policies and profiles to manage server groups. CIMC has these settings built-in individually on each server as part of the management firmware. Figure 11 shows a typical configuration screen for CIMC security settings.
+
+![Cisco IMC security configuration settings](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_10.png)
 
 Figure 11. 
 
@@ -2531,6 +2636,8 @@ Cisco Intersight provides a dashboard for real-time health and inventory status 
 
 Intersight Monitoring Services (IMS) provide historical and real-time visibility of resource consumption and inventory health, policies for notifications based on thresholds and anomaly detection, and actions and recommendations for automated infrastructure changes in response to events. IMS help reduce operational costs, prevent SLA violations, and increase system reliability and availability.
 
+![Intersight monitoring dashboard](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_11.png)
+
 Figure 12. 
 
 Intersight monitoring dashboard
@@ -2538,6 +2645,8 @@ Intersight monitoring dashboard
 Monitoring with UCSM
 
 Cisco UCS Manager can detect system faults: critical, major, minor, and warnings. Cisco recommends that you monitor all faults of either critical or major severity status; immediate action is not required for minor faults and warnings.
+
+![UCSM fault and system summary](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_12.png)
 
 Figure 13. 
 
@@ -2564,6 +2673,8 @@ Logging is critical for investigation, audit, forensic analysis, and insight int
 ◦ SNMP for monitoring devices from a central network management station and the host and user settings.
 
 ◦ Fault-suppression policies for SNMP traps, call-home notifications, and specific devices.
+
+![Logging in UCSM](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_13.png)
 
 Figure 14. 
 
@@ -2618,6 +2729,8 @@ Secure decommissioning is a comprehensive process that involves technical, proce
 Instant Secure Erase (ISE) drives
 
 [**Instant Secure Erase (ISE)** ](https://www.bing.com/ck/a?!&&p=ec37ccb51bc4b3f5d3ed1e2bfa5c5adade361c7828dc3886e4b4565bf529105bJmltdHM9MTczOTIzMjAwMA&ptn=3&ver=2&hsh=4&fclid=25c4c0c1-844f-6afe-06e9-d35a85626b2c&u=a1aHR0cHM6Ly93d3cucGNtYWcuY29tL2VuY3ljbG9wZWRpYS90ZXJtL2luc3RhbnQtc2VjdXJlLWVyYXNl&ntb=1)is a drive erasure method that provides a fast way to delete all data quickly when required. It encrypts the drive, and when it is time to permanently delete all data, only the encryption key has to be deleted. ISE is a super set of noncryptographic disk secure and it utilizes encryption to make data unreadable. It contains noncryptographic secure erase commands, but it also adds a "Crypto" Erase (CE) command, which can be utilized by both hard disks and solid-state drives if available. This method deletes the drive in a few seconds compared to a noncryptographic secure erase command, which writes over all the sectors and can take many hours. Only specific qualified ISE drives are available for use with Cisco UCS. See your Cisco representative for more information.
+
+![ISE drives securely erase all content on a disk in an unrecoverable, cryptographic manner.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_14.png)
 
 Figure 15. 
 
@@ -2723,6 +2836,8 @@ Key management is an important aspect of an encryption deployment. Remote key ma
 
 Regularly rotating and updating encryption keys is a security best practice. Remote key management systems facilitate the secure rotation and distribution of new keys. This helps ensure that even if a key is compromised, the window of vulnerability is limited, and older keys are no longer in use.
 
+![UCS key management features](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_15.png)
+
 Figure 16. 
 
 UCS key management features
@@ -2740,6 +2855,8 @@ SEDs must be locked by providing a security key. The security key, which is also
 Cisco UCS Manager enables you to configure security keys locally or remotely. When you configure the key locally, you must remember the key. If you forget the key, it cannot be retrieved, and the data is lost. You can configure the key remotely by using a key management server (also known as KMIP server). This method addresses the issues related to safe-keeping and retrieval of the keys in the local management.
 
 The encryption and decryption for SEDs is done through the hardware. Thus, it does not affect overall system performance. SEDs reduce disk-retirement and -redeployment costs through instantaneous cryptographic erasure. Cryptographic erasure is done by changing the media-encryption key. When the media-encryption key of a disk is changed, the data on the disk cannot be decrypted and is immediately rendered unusable. With Cisco UCS Manager Release 3.1(3), SEDs offer disk-theft protection for C-Series and S-Series servers.
+
+![Anatomy of a self-encrypting drive \(SED\)](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.docx/_jcr_content/renditions/compute-security-overview-wp_16.png)
 
 Figure 17. 
 
@@ -2820,5 +2937,8 @@ Document summary |  Prepared for |  Prepared by
 **N/A**  
   
 ### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

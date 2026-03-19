@@ -8,15 +8,16 @@
 | **HTML Title** | Cisco UCS Virtual Interface Card 1340 Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-732517.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:19 |
+| **Fetched on** | 2026-03-19 15:37:45 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/ucs-virtual-interface-card-1340/datasheet-c78-732517.html
 
-* Skip to content
-* Skip to search
-* Skip to footer
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
 
 # Cisco UCS Virtual Interface Card 1340 Data Sheet
 
@@ -32,10 +33,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/interfaces-modules/ucs-virtual-interface-card-1340/datasheet-c78-732517.pdf) (648.7 KB)   
+  * [PDF](/c/en/us/products/collateral/interfaces-modules/ucs-virtual-interface-card-1340/datasheet-c78-732517.pdf) (648.7 KB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:June 16, 2019
 
@@ -61,6 +64,8 @@ The Cisco UCS VIC 1340 enables a policy-based, stateless, agile server infrastru
 
 **Figure 1. **Cisco UCS VIC 1340 
 
+![datasheet-c78-732517_0.gif](/c/dam/en/us/products/collateral/interfaces-modules/ucs-virtual-interface-card-1340/datasheet-c78-732517.doc/_jcr_content/renditions/datasheet-c78-732517_0.gif)
+
 Features and Benefits
 
 Stateless and Agile
@@ -68,6 +73,10 @@ Stateless and Agile
 The personality of the card is determined dynamically at boot time using the service profile associated with the server. The number, type (NIC or HBA), identity (MAC address and World Wide Name [WWN]), failover policy, bandwidth, and quality-of-service (QoS) policies of the PCIe interfaces are all determined using the service profile. The capability to define, create, and use interfaces on demand provides a stateless and agile server infrastructure (Figure 2).
 
 **Figure 2. **Cisco UCS VIC 1340 Architecture 
+
+![datasheet-c78-732517_1.jpg](/c/dam/en/us/products/collateral/interfaces-modules/ucs-virtual-interface-card-1340/datasheet-c78-732517.doc/_jcr_content/renditions/datasheet-c78-732517_1.jpg)
+
+![datasheet-c78-732517_2.jpg](/c/dam/en/us/products/collateral/interfaces-modules/ucs-virtual-interface-card-1340/datasheet-c78-732517.doc/_jcr_content/renditions/datasheet-c78-732517_2.jpg)
 
 Next-Generation Data Center Features
 
@@ -100,6 +109,8 @@ Cisco Data Center VM-FEX Technology
 Cisco Data Center VM-FEX technology extends fabric interconnect ports directly to virtual machines, eliminating software-based switching in the hypervisor. Cisco Data Center VM-FEX technology collapses virtual and physical networking infrastructure into a single infrastructure that is fully aware of the virtual machines’ locations and networking policies (Figure 3). Cisco Data Center VM FEX technology is implemented by Cisco VICs with a prestandard implementation of the IEEE 802.1BR Port Extender standard.
 
 **Figure 3. **Cisco Data Center VM-FEX with Cisco UCS VIC 1340 
+
+![datasheet-c78-732517_3.jpg](/c/dam/en/us/products/collateral/interfaces-modules/ucs-virtual-interface-card-1340/datasheet-c78-732517.doc/_jcr_content/renditions/datasheet-c78-732517_3.jpg)
 
 Table 1 summarizes the main features and benefits of the Cisco UCS VIC 1340.
 
@@ -162,17 +173,21 @@ For more information about the Cisco UCS VIC, visit <https://www.cisco.com/en/US
 
 ### Contact Cisco
 
-*   * [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+  *   * [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
 ##### Call Sales:
 
-* [ 1-800-553-6387 ](tel:18005536387)
-* US/CAN | 5am-5pm PT
-* [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-* [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+  * [ 1-800-553-6387 ](tel:18005536387)
+  * US/CAN | 5am-5pm PT
+  * [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
 
 ### Was this Document Helpful?
 
-Yes No [ Feedback](javascript: void\(0\);)
+Yes No [ ![Feedback](//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png)Feedback](javascript: void\(0\);)
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

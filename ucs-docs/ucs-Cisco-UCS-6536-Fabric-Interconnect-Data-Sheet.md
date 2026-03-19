@@ -8,15 +8,16 @@
 | **HTML Title** | Cisco UCS 6536 Fabric Interconnect Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs6536-fabric-interconnect-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:19 |
+| **Fetched on** | 2026-03-19 15:37:44 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.html
 
-* Skip to content
-* Skip to search
-* Skip to footer
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
 
 # Cisco UCS 6536 Fabric Interconnect Data Sheet
 
@@ -34,10 +35,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.pdf) (798.7 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.pdf) (798.7 KB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:October 5, 2023
 
@@ -51,28 +54,33 @@ __ __ __ __
 
 Contact Cisco
 
-* Contact Cisco __
-* __
-* __
+  * Contact Cisco __
+  * __
+
+  * __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-* __
+  * __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-* __
+  * __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-* __
+  * __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
 
+
+![Cisco DNA](/c/contentReuse/en/us/dm/100G-400G-offer-dg-2/_jcr_content/Grid/category_atl/layout-category-atl/spotlight_copy_copy.img.png/1703262306910.png)
+
 Upgrade to 100G or 400G optics and save.
 
-* [Get your savings on optics](/c/en/us/products/interfaces-modules/transceiver-modules/optics-offers.html?oid=podoth031691)
+  * [Get your savings on optics](/c/en/us/products/interfaces-modules/transceiver-modules/optics-offers.html?oid=podoth031691)
+
 
 Save
 
@@ -86,34 +94,39 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.pdf) (798.7 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.pdf) (798.7 KB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:October 5, 2023
 
 #### Table of Contents
 
-* Cisco Unified Computing System overview
-* Product overview
-* Features and benefits
-* Product specifications
-* Physical specifications
-* Regulatory standards compliance: Safety and EMC
-* Ordering information
-* Warranty information
-* Cisco environmental sustainability
-* Cisco Services for Unified Computing
-* Why Cisco?
-* For more information
-* Document history
+  * Cisco Unified Computing System overview
+  * Product overview
+  * Features and benefits
+  * Product specifications
+  * Physical specifications
+  * Regulatory standards compliance: Safety and EMC
+  * Ordering information
+  * Warranty information
+  * Cisco environmental sustainability
+  * Cisco Services for Unified Computing
+  * Why Cisco?
+  * For more information
+  * Document history
+
 
 ` `
 
 Cisco Unified Computing System overview
 
 The Cisco Unified Computing System™ (Cisco UCS®) is a next-generation data center platform that unites computing, networking, storage access, and virtualization resources into a cohesive system designed to reduce Total Cost of Ownership (TCO) and increase business agility. The system integrates a low-latency, lossless 10/25/40/100 Gigabit Ethernet unified network fabric with enterprise-class, x86-architecture servers. The system is an integrated, scalable, multichassis platform in which all resources participate in a unified management domain (Figure 1).
+
+![The Cisco Unified Computing System’s highly available, cohesive architecture](/c/dam/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.docx/_jcr_content/renditions/ucs6536-fabric-interconnect-ds_0.png)
 
 Figure 1. 
 
@@ -126,6 +139,8 @@ The Cisco UCS 6536 Fabric Interconnect (FI) is a core part of the Cisco Unified 
 The Cisco UCS 6536 Fabric Interconnect provides the communication backbone and management connectivity for the Cisco UCS X-Series compute nodes, UCS X9508 X-series chassis, UCS B-series blade servers, UCS 5108 B-series server chassis, and UCS C-series rack servers. All servers attached to a Cisco UCS 6536 Fabric Interconnect become part of a single, highly available management domain. In addition, by supporting a unified fabric, Cisco UCS 6536 Fabric Interconnect provides both LAN and SAN connectivity for all servers within its domain.
 
 From a networking perspective, the Cisco UCS 6536 uses a cut-through architecture, supporting deterministic, low-latency, line-rate 10/25/40/100 Gigabit Ethernet ports, a switching capacity of 7.42 Tbps per FI and 14.84 Tbps per unified fabric domain, independent of packet size and enabled services. It enables 1600Gbps bandwidth per X9508 chassis with X9108-IFM-100G in addition to enabling end-to-end 100G ethernet and 200G aggregate bandwidth per X210c compute node. With the X9108-IFM-25G and the IOM 2408, it enables 400Gbps bandwidth per chassis per FI domain. The product family supports Cisco® low-latency, lossless 10/25/40/100 Gigabit Ethernet unified network fabric capabilities, which increases the reliability, efficiency, and scalability of Ethernet networks. The 6536 Fabric Interconnect supports multiple traffic classes over a lossless Ethernet fabric from the server through the fabric interconnect. Significant TCO savings come from the Unified Fabric optimized server design in which Network Interface Cards (NICs), Host Bus Adapters (HBAs), cables, and switches can be consolidated.
+
+![Cisco UCS 6536 Fabric Interconnect](/c/dam/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.docx/_jcr_content/renditions/ucs6536-fabric-interconnect-ds_1.png)
 
 Figure 2. 
 
@@ -142,6 +157,8 @@ UCS 6536 Fabric Interconnect supports I/O consolidation with end-to-end network 
 ● Server management and LAN traffic
 
 The I/O consolidation under the UCS 6536 fabric interconnect along with the stateless policy-driven architecture of UCS and the hardware acceleration of the UCS Virtual Interface card provides great simplicity, flexibility, resiliency, performance, and TCO savings for the customer’s compute infrastructure.
+
+![Cisco UCS Unified Fabric](/c/dam/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.docx/_jcr_content/renditions/ucs6536-fabric-interconnect-ds_2.png)
 
 Figure 3. 
 
@@ -177,7 +194,11 @@ The Cisco UCS 6536 36-Port Fabric Interconnect (Figure 3) is a One-Rack-Unit (1R
 
 Front view
 
+![Cisco UCS 6536 \(1RU\) Fabric Interconnect_A](/c/dam/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.docx/_jcr_content/renditions/ucs6536-fabric-interconnect-ds_3.png)
+
 Rear view
+
+![Cisco UCS 6536 \(1RU\) Fabric Interconnect_b](/c/dam/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.docx/_jcr_content/renditions/ucs6536-fabric-interconnect-ds_4.png)
 
 Figure 4. 
 
@@ -483,17 +504,22 @@ New or revised topic |  Described in |  Date
   
 ### Our experts recommend
 
-* [Cisco UCS 5th Generation Unified Fabric At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-5th-gen-unified-fabric-aag.html "Cisco UCS 5th Generation Unified Fabric At-a-Glance")
+  * [Cisco UCS 5th Generation Unified Fabric At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-5th-gen-unified-fabric-aag.html "Cisco UCS 5th Generation Unified Fabric At-a-Glance")
+
 
 ### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---
 
 ## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-5th-gen-unified-fabric-aag.html
 
-* Skip to content
-* Skip to search
-* Skip to footer
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
 
 # Cisco UCS 5th Generation Unified Fabric At-a-Glance
 
@@ -509,10 +535,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-5th-gen-unified-fabric-aag.pdf) (567.0 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-5th-gen-unified-fabric-aag.pdf) (567.0 KB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:May 19, 2023
 
@@ -526,24 +554,26 @@ __ __ __ __
 
 Contact Cisco
 
-* Contact Cisco __
-* __
-* __
+  * Contact Cisco __
+  * __
+
+  * __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-* __
+  * __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-* __
+  * __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-* __
+  * __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
 
 Save
 
@@ -555,19 +585,22 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-5th-gen-unified-fabric-aag.pdf) (567.0 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-5th-gen-unified-fabric-aag.pdf) (567.0 KB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:May 19, 2023
 
 #### Table of Contents
 
-* Product overview
-* Benefits
-* What it offers
-* Learn more
+  * Product overview
+  * Benefits
+  * What it offers
+  * Learn more
+
 
 ` `
 
@@ -578,6 +611,8 @@ As the demand for higher bandwidth from applications continues to increase, serv
 Enter the Cisco UCS 5th Generation Fabric, designed from the ground up to simplify, scale up, consolidate, and deliver end-to-end virtualization with guaranteed bandwidth for different classes of traffic in the data center. The Cisco UCS 5th Generation Fabric consolidates LAN and SAN traffic onto a single unified fabric, resulting in cost savings in both Capital expenditures (CapEx) and Operating expenses (OpEx) compared to traditional compute network architectures that require multiple parallel networks, different adapter cards, switching infrastructure, and complex cabling within racks. As compute connectivity transitions from 10G/25G/40G to 100G in data-center networks, the Cisco UCS 5th Generation Fabric provides 100G end-to-end bandwidth for compute nodes across Ethernet, Fibre Channel, and IP storage traffic, enabling scalable application performance in data centers.
 
 The Cisco UCS 5th Generation Fabric is composed of the Cisco UCS 6536 Fabric Interconnect (FI), Cisco UCS 9108 100G Intelligent Fabric Module (X9108-IFM-100G), and the 200G Cisco UCS 15000 Series Virtual Interface Cards (VICs). These components collectively deliver a switching capacity of 7.42 Tbps per Fabric Interconnect, 14.84 Tbps per unified fabric domain, and 1.6 Tbps non-oversubscribed bandwidth per Cisco UCS X9508 Chassis with end-to-end 100G Ethernet and 200G bandwidth per Cisco UCS X-Series compute node or Cisco UCS C-Series rack server, unleashing the next level of computing innovation in data centers with the Cisco UCS 5th Generation Fabric.
+
+![Graphical user interfaceDescription automatically generated](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-5th-gen-unified-fabric-aag.docx/_jcr_content/renditions/ucs-5th-gen-unified-fabric-aag_0.png)
 
 Figure 1. 
 
@@ -592,6 +627,8 @@ The Cisco UCS 6536 Fabric Interconnect supports I/O consolidation with end-to-en
 ● NVME-over-Fabric (NVMe/FC, NVMe/TCP, NVMe over ROCEv2).
 
 The I/O consolidation under the Cisco UCS 6536 Fabric Interconnect along with the stateless policy-driven architecture of Cisco UCS and the hardware acceleration of the Cisco UCS VIC provides operational simplicity, flexibility, resiliency, performance, and TCO savings for the customer’s compute infrastructure.
+
+![Graphical user interfaceDescription automatically generated](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-5th-gen-unified-fabric-aag.docx/_jcr_content/renditions/ucs-5th-gen-unified-fabric-aag_1.png)
 
 Figure 2. 
 
@@ -643,5 +680,8 @@ Learn more
 For more information on Cisco UCS 5th Generation Unified Fabric, visit <https://www.cisco.com/c/en/us/products/servers-unified-computing/fabric-interconnects.html>.
 
 ### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

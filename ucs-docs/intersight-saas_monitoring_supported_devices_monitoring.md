@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Supported Devices for Monitoring |
 | **URL** | https://intersight.com/help/saas/monitoring/supported_devices_monitoring |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260225095216527/docs/cloud/data/resources/monitoring/en/Supported_Devices.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/cloud/data/resources/monitoring/en/Supported_Devices.html |
 | **HTML Title** | Supported Devices |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_supported_devices_monitoring.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:06 |
+| **Fetched on** | 2026-03-19 15:36:29 |
 
 ---
 
@@ -24,8 +24,10 @@ Metric collection for blade servers is only supported for the following Input/Ou
 
 Note:
 
-* For metrics collection in IMM domains, all servers must have a valid Intersight license. In UMM domains, at least one server needs a valid Intersight license for metrics collection. For more information, see [Introduction to Intersight Licensing](/help/getting_started/licensing_requirements/lic_intro).
-* Metrics data collection is enabled automatically and cannot be disabled.
+  * For metrics collection in IMM domains, all servers must have a valid Intersight license. In UMM domains, at least one server needs a valid Intersight license for metrics collection. For more information, see [Introduction to Intersight Licensing](/help/getting_started/licensing_requirements/lic_intro).
+
+  * Metrics data collection is enabled automatically and cannot be disabled.
+
 
 ## Utilization and Limits Metrics
 
@@ -62,8 +64,8 @@ Supported Server| Minimum Server Firmware Version
 UCS C-Series servers in Intersight Managed Mode| Server firmware version 4.3(2.230207)  
 UCS X-Series servers in Intersight Managed Mode| 
 
-* UCSX-210C-M6: Server firmware version 5.2(0.230039)
-* UCSX-210C-M7 or UCSX-410C-M7: Server firmware version 5.2(0.230041)
+  * UCSX-210C-M6: Server firmware version 5.2(0.230039)
+  * UCSX-210C-M7 or UCSX-410C-M7: Server firmware version 5.2(0.230041)
 
   
   
@@ -73,16 +75,18 @@ Supported Server| Minimum Server Firmware Version
 ---|---  
 UCS C-Series servers in Intersight Managed Mode| 
 
-* C-Series M7 (C220, C240): 4.3(4.242066)
-* C-Series M6 (C240, C220): 4.3(4.252001)
-* C-Series M6 (C225, C245): 4.3(4.242066)
+  * For 4.3.4.X: 4.3(4.252002) or higher
+  * For 4.3.5.X: Not supported
+  * For 4.3.6.X: 4.3(6.250077) or higher
+  * For 6.0.X: 6.0(1.250127) or higher
 
   
 UCS X-Series servers in Intersight Managed Mode| 
 
-* X-Series M8 (X215c): 5.2(2.240074)
-* X-Series M7 (X410c, X210c): 5.2(2.240074)
-* X-Series M6 (X210c): 5.2(2.240073)
+  * For 5.2.X: Not supported
+  * For 5.3.X: 5.3(0.250049D) or higher
+  * For 5.4.X: 5.4(0.250075) or higher
+  * For 6.0.X: 6.0(1.250127) or higher
 
   
   
@@ -111,17 +115,19 @@ Supported PCIe Node| Metrics
 ---|---  
 UCSX-580P in Intersight Managed Mode| 
 
-* Host Energy
-* Host Power State (PCIe node power on/off status)
-* Hardware Status (Temperature sensor status)
-* Temperature
+  * Host Energy
+  * Host Power State (PCIe node power on/off status)
+  * Hardware Status (Temperature sensor status)
+  * Temperature
 
   
   
 Note:
 
-* The "Host Type" attribute for a PCIe Node is pci.Node.
-* GPU metrics for GPUs present on the PCIe node are collected only when the node is mapped to a server.
+  * The "Host Type" attribute for a PCIe Node is pci.Node.
+
+  * GPU metrics for GPUs present on the PCIe node are collected only when the node is mapped to a server.
+
 
 ## Metrics for Supported GPUs
 
@@ -129,8 +135,10 @@ The following table lists the metrics and the corresponding supported GPUs on wh
 
 Note:
 
-* The GPU metrics are supported on Blade and Rack servers managed by an Intersight Managed Mode (IMM) domain.
-* GPU metrics for GPUs present on the PCIe node are collected only when the node is mapped to a server.
+  * The GPU metrics are supported on Blade and Rack servers managed by an Intersight Managed Mode (IMM) domain.
+
+  * GPU metrics for GPUs present on the PCIe node are collected only when the node is mapped to a server.
+
 
 Metric| Supported GPUs  
 ---|---  
@@ -156,15 +164,15 @@ Supported Server| Minimum Firmware Version
 ---|---  
 Cisco UCS X-Series servers in Intersight Managed Mode| 
 
-* X-Series M8 (X210c): 5.4(0.250037)
-* X-Series M8 (X215c): 5.4(0.250035)
-* X-Series M7 (X210c, X410c): 5.4(0.250035)
+  * X-Series M8 (X210c): 5.4(0.250037)
+  * X-Series M8 (X215c): 5.4(0.250035)
+  * X-Series M7 (X210c, X410c): 5.4(0.250035)
 
   
 Cisco UCS C-Series M7 and later servers in Intersight Managed or Intersight Standalone Mode| 
 
-* C-Series M8 (C240, C220): 4.3(6.250039)
-* C-Series M8 (C885A): 1.1(0.250016)
-* C-Series M8 (C845A): 2.0(1.250096)
-* C-Series M8 (C245, C225): 4.3(6.250040)
-* C-Series M7 (C220, C240): 4.3(6.250040)
+  * C-Series M8 (C240, C220): 4.3(6.250039)
+  * C-Series M8 (C885A): 1.1(0.250016)
+  * C-Series M8 (C845A): 2.0(1.250096)
+  * C-Series M8 (C245, C225): 4.3(6.250040)
+  * C-Series M7 (C220, C240): 4.3(6.250040)

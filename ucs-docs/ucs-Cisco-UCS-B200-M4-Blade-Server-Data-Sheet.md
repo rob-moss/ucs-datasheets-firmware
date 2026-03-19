@@ -8,15 +8,16 @@
 | **HTML Title** | Cisco UCS B200 M4 Blade Server Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-732434.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:12 |
+| **Fetched on** | 2026-03-19 15:37:25 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b200-m4-blade-server/datasheet-c78-732434.html
 
-* Skip to content
-* Skip to search
-* Skip to footer
+  * Skip to content  
+  * Skip to search
+  * Skip to footer
+
 
 # Cisco UCS B200 M4 Blade Server Data Sheet
 
@@ -34,10 +35,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b200-m4-blade-server/datasheet-c78-732434.pdf) (539.0 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b200-m4-blade-server/datasheet-c78-732434.pdf) (539.0 KB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:February 14, 2019
 
@@ -51,24 +54,26 @@ __ __ __ __
 
 Contact Cisco
 
-* Contact Cisco __
-* __
-* __
+  * Contact Cisco __
+  * __
+
+  * __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-* __
+  * __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-* __
+  * __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-* __
+  * __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
 
 Save
 
@@ -82,10 +87,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b200-m4-blade-server/datasheet-c78-732434.pdf) (539.0 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b200-m4-blade-server/datasheet-c78-732434.pdf) (539.0 KB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:February 14, 2019
 
@@ -100,6 +107,8 @@ The UCS B200 M4 Blade Server (Figure 1) delivers performance, flexibility and op
 In addition, Cisco UCS has the architectural advantage of not having to power and cool excess switches, NICs and HBAs in each blade server chassis. Having a larger power budget per blade server provides uncompromised expandability and capabilities, as in the new Cisco UCS B200 M4 server with its leading memory-slot and drive capacity.
 
 **Figure 1. **Cisco UCS B200 M4 Blade Server 
+
+![C78-732434-00_figure01](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b200-m4-blade-server/datasheet-c78-732434.doc/_jcr_content/renditions/datasheet-c78-732434_0.jpg)
 
 Cisco UCS B200 M4 Overview
 
@@ -152,6 +161,8 @@ The Cisco UCS B200 M4 server is suited for a broad spectrum of IT workloads, inc
 The Cisco UCS B200 M4 Blade Server is one member of the Cisco UCS B-Series Blade Servers platform. As part of Cisco UCS, Cisco UCS B-Series servers incorporate many innovative Cisco technologies to help customers handle their most challenging workloads. Cisco UCS B-Series servers within a Cisco UCS management framework incorporate a standards-based unified network fabric, Cisco Data Center VM-FEX virtualization support, Cisco UCS Manager, Cisco UCS Central, Cisco UCS Director software, and Cisco fabric extender architecture (Figure 2)
 
 **Figure 2. **Cisco UCS Server Innovations Change the Economics of the Data Center by Enabling Customer Workloads to Benefit from Cisco UCS Simplification and Operational Efficiencies 
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b200-m4-blade-server/datasheet-c78-732434.doc/_jcr_content/renditions/datasheet-c78-732434_1.jpg)
 
 Features and Benefits of the Cisco UCS B200 M4 Server
 
@@ -226,12 +237,18 @@ For More Information
 
 For more information about Cisco UCS B-Series Blade Servers, visit [http://www.cisco.com/en/US/products/ps10280/index.html](//www.cisco.com/en/US/products/ps10280/index.html) or contact your local Cisco representative.
 
+![Xeon_0](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b200-m4-blade-server/datasheet-c78-732434.doc/_jcr_content/renditions/datasheet-c78-732434_2.jpg)
+
 ### Our experts recommend
 
-* [Cisco Compute Security Overview White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.html "Cisco Compute Security Overview White Paper")
-* [Cisco UCS B200 M5 Blade Server At-a-Glance](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/at-a-glance-c45-739250.pdf "Cisco UCS B200 M5 Blade Server At-a-Glance")
-* [Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/q-and-a-c67-2381951.html "Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ")
+  * [Cisco Compute Security Overview White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.html "Cisco Compute Security Overview White Paper")
+  * [Cisco UCS B200 M5 Blade Server At-a-Glance](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/at-a-glance-c45-739250.pdf "Cisco UCS B200 M5 Blade Server At-a-Glance")
+  * [Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/q-and-a-c67-2381951.html "Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ")
+
 
 ### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

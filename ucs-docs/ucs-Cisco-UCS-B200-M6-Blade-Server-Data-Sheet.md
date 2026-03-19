@@ -8,15 +8,16 @@
 | **HTML Title** | Cisco UCS B200 M6 Blade Server Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-2368888.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:12 |
+| **Fetched on** | 2026-03-19 15:37:26 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-2368888.html
 
-* Skip to content
-* Skip to search
-* Skip to footer
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
 
 # Cisco UCS B200 M6 Blade Server Data Sheet
 
@@ -34,10 +35,12 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-2368888.pdf) (300.6 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-2368888.pdf) (300.6 KB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:December 2, 2022
 
@@ -51,24 +54,26 @@ __ __ __ __
 
 Contact Cisco
 
-* Contact Cisco __
-* __
-* __
+  * Contact Cisco __
+  * __
+
+  * __
 
 [Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
 
-* __
+  * __
 
 Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
 US/CAN | 5am-5pm PT 
 
-* __
+  * __
 
 [Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
 
-* __
+  * __
 
 [Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
 
 Save
 
@@ -82,25 +87,28 @@ Print
 
 ### Available Languages
 
+
 ### Download Options
 
-* [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-2368888.pdf) (300.6 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-2368888.pdf) (300.6 KB)   
 View with Adobe Reader on a variety of devices
+
 
 Updated:December 2, 2022
 
 #### Table of Contents
 
-* Product overview
-* Features and benefits
-* Product specifications
-* System requirements
-* Ordering information
-* Warranty information
-* Product sustainability
-* Product environmental information
-* Cisco and Partner Services
-* Cisco Capital
+  * Product overview
+  * Features and benefits
+  * Product specifications
+  * System requirements
+  * Ordering information
+  * Warranty information
+  * Product sustainability
+  * Product environmental information
+  * Cisco and Partner Services
+  * Cisco Capital
+
 
 ` `
 
@@ -222,10 +230,14 @@ Cisco Capital® financing makes it easier to get the right technology to achieve
 
 ### Our experts recommend
 
-* [Cisco Compute Security Overview White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.html "Cisco Compute Security Overview White Paper")
-* [Cisco UCS B200 M5 Blade Server At-a-Glance](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/at-a-glance-c45-739250.pdf "Cisco UCS B200 M5 Blade Server At-a-Glance")
-* [Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/q-and-a-c67-2381951.html "Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ")
+  * [Cisco Compute Security Overview White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.html "Cisco Compute Security Overview White Paper")
+  * [Cisco UCS B200 M5 Blade Server At-a-Glance](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/at-a-glance-c45-739250.pdf "Cisco UCS B200 M5 Blade Server At-a-Glance")
+  * [Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/q-and-a-c67-2381951.html "Cisco UCS M6 Servers with 3rd Gen Intel Xeon CPUs FAQ")
+
 
 ### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

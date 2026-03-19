@@ -104,19 +104,29 @@
 - [Intersight Appliance Supported Systems](https://intersight.com/help/appliance/supported_systems)
 
 
+### X-Series Direct guides
+- [Cisco UCS X-Series Direct Fabric Interconnect 9108 100G Installation and Service Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/x-series-direct/hw/s9108/install/ucs-x-series-direct-9108-100g/m-overview.html)
+
+
+
 # Whitepapers
 - [IMM Sharing Across Organizations and Cloning](https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.html)
 - [UCS M7 Platforms Performance Tuning](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/ucs-m7-platforms-wp.html)
 - [Cisco UCS VIC 15000 Series Ethernet Fabric Adapter Whitepaper](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.html)
 
 
-# Release Notes
+# UCS Manager
+### Release Notes
 - [UCS Manager Release Notes 4.2](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/cisco-ucs-manager-rn-4-2.html)
 - [UCS Manager Release Notes 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-4_3.html)
 - [UCS Manager Release Notes 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-6_0.html)
 - [VIC Drivers Release Notes 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/VIC/4-3/b-release-notes-for-cisco-ucs-virtual-interface-card-drivers-release-4-3.html)
 - [UCS Manager Cross-Version Firmware Support 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cross-version-fw-support_4_3.html)
 - [UCS Manager Cross-Version Firmware Support 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-6_0.html#ucsmRN_43_crossversion)
+
+### Errors and System Messages
+- [Cisco UCS Faults and Error Messages Reference Guide 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/4-3/b_cisco_ucs_faults_and_error_messages_reference-4-3.html)
+- [Cisco UCS Faults and Error Messages Reference Guide 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/6-0/b_cisco_ucs_faults_and_error_messages_reference-6-0.html)
 
 
 # JSON Data Files

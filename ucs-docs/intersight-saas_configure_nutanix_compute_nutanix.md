@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Nutanix Compute Only guide |
 | **URL** | https://intersight.com/help/saas/configure/nutanix/compute_nutanix |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260225095216527/docs/cloud/data/articles/features/nutanix/compute/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/cloud/data/articles/features/nutanix/compute/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_nutanix_compute_nutanix.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:06 |
+| **Fetched on** | 2026-03-19 15:36:20 |
 
 ---
 
@@ -20,10 +20,13 @@ The Cisco compute-only node with Nutanix Cloud Platform (NCP) and Pure Storage F
 
 **Key Benefits**
 
-* Independent Scalability: Scale compute and storage resources separately based on workload demands
-* Enterprise-Grade Protection: Built-in data protection and disaster recovery capabilities
-* Hybrid Cloud Ready: Seamlessly extend operations across on-premises and cloud environments
-* Investment protection – enables using Nutanix Cloud Platform with existing external storage
+  * Independent Scalability: Scale compute and storage resources separately based on workload demands
+
+  * Enterprise-Grade Protection: Built-in data protection and disaster recovery capabilities
+
+  * Hybrid Cloud Ready: Seamlessly extend operations across on-premises and cloud environments
+
+  * Investment protection – enables using Nutanix Cloud Platform with existing external storage
 
 ****Attributes****| ****Cisco Compute-Only (CO) node connected to Pure Storage FlashArray****  
 ---|---  
@@ -37,8 +40,9 @@ Hypervisor| AHV only
 Management| Intersight Management Mode (IMM)  
 Pure Storage| FlashArray //X and FlashArray //XL  
 Nutanix Cloud Platform Software| Supported Nutanix Software
-* Nutanix Cloud Infrastructure (NCI)
-* Nutanix Cloud Manager (NCM)
-* Nutanix Cloud Platform (NCP)
-* Nutanix Kubernetes Platform (NKP)  
-Nutanix Licensing| Nutanix Cloud Infrastructure (NCI) licenses on a per-core basis.Nutanix Cloud Infrastructure - Compute (NCI-C) (2000 cores minimum)For more information about NCI licenses, see NCI section in [Nutanix Cloud Platform Software Options](https://www.nutanix.com/products/cloud-platform/software-options)
+  * Nutanix Cloud Infrastructure (NCI)
+  * Nutanix Cloud Manager (NCM)
+  * Nutanix Cloud Platform (NCP)
+  * Nutanix Kubernetes Platform (NKP)  
+Nutanix Licensing| Nutanix Cloud Infrastructure (NCI) licenses on a per-core basis.Nutanix Cloud Infrastructure - Compute (NCI-C) (2000 cores minimum)For more information about NCI licenses, see NCI section in [Nutanix Cloud Platform Software Options](https://www.nutanix.com/products/cloud-platform/software-options)  
+  

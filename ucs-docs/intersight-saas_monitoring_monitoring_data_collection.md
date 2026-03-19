@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Monitoring Data Collection |
 | **URL** | https://intersight.com/help/saas/monitoring/monitoring_data_collection |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260225095216527/docs/cloud/data/resources/monitoring/en/Data_Collection.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/cloud/data/resources/monitoring/en/Data_Collection.html |
 | **HTML Title** | Data Collection |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_monitoring_data_collection.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-04 12:48:06 |
+| **Fetched on** | 2026-03-19 15:36:24 |
 
 ---
 
@@ -30,15 +30,20 @@ Metric collection for blade servers is only supported for the following Input/Ou
 
 Note:
 
-* For metrics collection in IMM domains, all servers must have a valid Intersight license. In UMM domains, at least one server needs a valid Intersight license for metrics collection. For more information, see [Introduction to Intersight Licensing](/help/getting_started/licensing_requirements/lic_intro).
-* Metric collection on Fabric Interconnects (FIs) is supported only if a valid NTP configuration is in place.
-* Metrics data collection is enabled automatically and cannot be disabled.
+  * For metrics collection in IMM domains, all servers must have a valid Intersight license. In UMM domains, at least one server needs a valid Intersight license for metrics collection. For more information, see [Introduction to Intersight Licensing](/help/getting_started/licensing_requirements/lic_intro).
+
+  * Metric collection on Fabric Interconnects (FIs) is supported only if a valid NTP configuration is in place.
+
+  * Metrics data collection is enabled automatically and cannot be disabled.
+
 
 ## Metrics Collection Process
 
 A metric is a measurement for a specific entity on an endpoint. To learn more about the terminology, see [Terminology](/help/monitoring/monitoring_get_start#terminology). Metrics provide a view of the state, performance, or behavior of instruments. For example, the measurement of CPU temperature for a specific device is a metric. The device connector gathers metrics from the endpoint and then aggregates data points based on the data type. After the metrics are collated, the device connector streams them to Intersight over a secure Internet connection.
 
 For more information on supported instrument types, metrics, and data point types in Cisco Intersight, see [Supported Metrics](/help/monitoring/monitoring_supported_metric).
+
+![](../files/477131.png)
 
 During an outage when the device connector cannot communicate with Intersight, the device connector locally rolls up the data with a lower granularity. As the available memory or storage on the device connector decreases, the rollup interval is gradually increased. For example, instead of retaining measurements at 10-minute intervals, the roll-up interval is gradually increased, which makes it possible to retain data for a longer period of time.
 
@@ -56,9 +61,12 @@ During down-sampling, data from multiple timestamps is aggregated into a single 
 
 Metrics are collected in 10-minute intervals and then stored at this original granularity. For long-term storage, the metrics are aggregated.
 
-* First 15 days: Metrics are stored at their original granularity of 10 minutes.
-* From 16 to 63 days: Metrics are down-sampled, in which the existing historical data is re-sampled to a lower frequency and stored at a 30-minute time interval.
-* From 64 to 90 days: Metrics are down-sampled, in which historical data is re-sampled to a lower frequency and stored at a 60-minute time intervals.
+  * First 15 days: Metrics are stored at their original granularity of 10 minutes.
+
+  * From 16 to 63 days: Metrics are down-sampled, in which the existing historical data is re-sampled to a lower frequency and stored at a 30-minute time interval.
+
+  * From 64 to 90 days: Metrics are down-sampled, in which historical data is re-sampled to a lower frequency and stored at a 60-minute time intervals.
+
 
 For example, if the data is collected at intervals of 10 minutes, the data remains available for 15 days with a 10-minute resolution. After 16 days, this data is still available, but the data is aggregated and is retrievable only with a resolution of 30 minutes. After 64 days to 90 days, the data is further aggregated and is available with a resolution of 60 minutes. After 90 days, the historical data will not be available in Cisco Intersight.
 
@@ -66,9 +74,12 @@ For example, if the data is collected at intervals of 10 minutes, the data remai
 
 Metrics are collected in 1-minute intervals and then stored at this original granularity. For long-term storage, the metrics are aggregated.
 
-* First 63 days: Metrics are stored at their original granularity of 1 minute.
-* From 63 to 125 days: Metrics are down-sampled, in which the existing historical data is re-sampled to a lower frequency and stored at a 5-minute time interval.
-* From 125 days to 2 years: Metrics are down-sampled, in which historical data is re-sampled to a lower frequency and stored at a 10-minute time intervals.
+  * First 63 days: Metrics are stored at their original granularity of 1 minute.
+
+  * From 63 to 125 days: Metrics are down-sampled, in which the existing historical data is re-sampled to a lower frequency and stored at a 5-minute time interval.
+
+  * From 125 days to 2 years: Metrics are down-sampled, in which historical data is re-sampled to a lower frequency and stored at a 10-minute time intervals.
+
 
 For example, the data is collected at intervals of 1 minute, the data remains available for 63 days with a 1-minute resolution. After 63 days, this data is still available, but the data is aggregated and is retrievable only with a resolution of 5 minutes. After 125 days to 2 years, the data is further aggregated and is available with a resolution of 10 minutes.
 
@@ -82,9 +93,12 @@ When an endpoint is removed from Intersight, the corresponding metrics for the e
 
 Metrics are collected in 10-minute intervals and then stored at this original granularity. For long-term storage, the metrics are aggregated.
 
-* First 15 days: Metrics are stored at their original granularity of 10 minutes.
-* From 16 to 63 days: Metrics are down-sampled, in which the existing historical data is re-sampled to a lower frequency and stored at a 30-minute time interval.
-* From 64 to 90 days: Metrics are down-sampled, in which historical data is re-sampled to a lower frequency and stored at a 60-minute time intervals.
+  * First 15 days: Metrics are stored at their original granularity of 10 minutes.
+
+  * From 16 to 63 days: Metrics are down-sampled, in which the existing historical data is re-sampled to a lower frequency and stored at a 30-minute time interval.
+
+  * From 64 to 90 days: Metrics are down-sampled, in which historical data is re-sampled to a lower frequency and stored at a 60-minute time intervals.
+
 
 For example, if the data is collected at intervals of 10 minutes, the data remains available for 15 days with a 10-minute resolution. After 16 days, this data is still available, but the data is aggregated and is retrievable only with a resolution of 30 minutes. After 64 days to 90 days, the data is further aggregated and is available with a resolution of 60 minutes. After 90 days, the historical data will not be available in Cisco Intersight.
 
