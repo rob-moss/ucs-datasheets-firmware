@@ -8,7 +8,7 @@
 | **HTML Title** | Servers - Unified Computing - Cisco UCS 2408 Fabric Extender Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-742624.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:14:21 |
+| **Fetched on** | 2026-03-19 16:47:12 |
 
 ---
 
