@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Servers guide |
 | **URL** | https://intersight.com/help/saas/configure/servers |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/cloud/data/articles/features/servers/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/cloud/data/articles/features/servers/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_servers.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:46:50 |
+| **Fetched on** | 2026-03-25 11:32:34 |
 
 ---
 
@@ -118,6 +118,11 @@ Note:
 To modify the server assignment for a deployed profile, first unassign the existing server, and then assign the new server using the Server Profile Actions menu.
 
   * Unassign Server—Unassign the server from the profile. This action will cause the server configurations to reset to defaults. For more information, see [Clearing and Resetting Server Configurations](../../../../../../../../../../help/configure/servers#clearing_and_resetting_server_configurations).
+
+Note:
+  * This action can be performed on a server profile that has servers assigned to it.
+
+  * If you unassign a server from its current profile, it may automatically get assigned to another profile that has the server pre-assigned and initial auto-deployment enabled. This can make the server unavailable for future manual selection.
 
   * Clone—Clone the profile.
 

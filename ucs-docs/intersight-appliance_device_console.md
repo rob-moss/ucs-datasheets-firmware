@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight Appliance Device Console |
 | **URL** | https://intersight.com/help/appliance/device_console |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/onprem/data/articles/device_console/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/onprem/data/articles/device_console/en/index.html |
 | **HTML Title** | Device Console |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_device_console.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:46:51 |
+| **Fetched on** | 2026-03-25 11:33:08 |
 
 ---
 
@@ -47,7 +47,7 @@ This interface provides system information, including the model, serial number, 
 
   * eCMC B will assign itself `169.254.254.2`
 
-  * This fallback typically occurs 30-90 seconds after network failure detection
+  * This fallback typically occurs 30 to 90 seconds after network failure detection.
 
 
 **Connecting to the eCMC**
@@ -291,12 +291,12 @@ From the Diagnostic Data tab, you can collect diagnostic data for servers and Ed
 
 You can generate tech support bundles for the following:
 
-  * eCMC—Contains technical support data for eCMC A and eCMC B.
+  * eCMC: Contains technical support data for eCMC A and eCMC B.
 
-  * Server—Contains technical support data for Unified Edge servers.
+  * Server: Contains technical support data for Unified Edge servers.
 
 
-**Generating and Downloading Tech Support Bundles**
+**Generating and downloading tech support bundles**
 
 To generate and download a tech support bundle:
 
@@ -394,11 +394,11 @@ Details| Description
 Name| Displays the name of the server, with a prefixed icon indicating whether the server is powered on or off.  
 Status| Displays the lifecycle state of the server. The values can be:
 
-  * None — When the server has been recommissioned but discovery is yet to start.
-  * Active — When the server is discovered.
-  * Decommissioned — When the server is removed from the Cisco UCS configuration. However, the server hardware physically remains in the Cisco UCS instance.
-  * DiscoveryFailed — When the server discovery has failed.
-  * SlotMismatch — When the configuration of a blade server is not correct and server rediscovery is required in the slot.
+  * None: When the server has been recommissioned but discovery is yet to start.
+  * Active: When the server is discovered.
+  * Decommissioned: When the server is removed from the Cisco UCS configuration. However, the server hardware physically remains in the Cisco UCS instance.
+  * DiscoveryFailed: When the server discovery has failed.
+  * SlotMismatch: When the configuration of a blade server is not correct and server rediscovery is required in the slot.
 
   
 PID| Displays the Product ID (PID) of the server.  
@@ -418,7 +418,7 @@ You can perform the following server actions:
 
 Note:
 
-Minimum C-Series IMM server firmware version required for launching IMC: 4.3(6.250039).
+Minimum C-Series Intersight Managed Mode server firmware version required for launching Cisco IMC is 4.3(6.250039).
 
   * Launch API Explorer
 
@@ -454,9 +454,9 @@ Name| Displays the name for the chassis.
 ID| Displays the unique ID for the chassis.  
 Status| Displays the status of the chassis. The values can be:
 
-  * Active — When the chassis is discovered.
-  * Decommissioned —When the Chassis is physically present and connected, but temporarily removed from the Cisco UCS configuration.
-  * DiscoveryFailed — When the chassis discovery has failed.
+  * Active: When the chassis is discovered.
+  * Decommissioned: When the Chassis is physically present and connected, but temporarily removed from the Cisco UCS configuration.
+  * DiscoveryFailed: When the chassis discovery has failed.
 
   
 Model| Displays the chassis model.  
@@ -496,10 +496,10 @@ Name| Displays the name for the FEX.
 Identifier| Displays the unique ID for the FEX.  
 Lifecycle| Displays the current state of the FEX lifecycle. The values can be:
 
-  * Online — When the FEX is connected.
-  * Decommissioned — When the FEX is physically present and connected, but temporarily removed from the Cisco UCS configuration.
-  * Unclaimed — When the FEX has not been claimed to the Intersight account.
-  * Discovery Failure — When the discovery of FEX has failed.
+  * Online: When the FEX is connected.
+  * Decommissioned: When the FEX is physically present and connected, but temporarily removed from the Cisco UCS configuration.
+  * Unclaimed: When the FEX has not been claimed to the Intersight account.
+  * Discovery Failure: When the discovery of FEX has failed.
 
   
 Model| Displays the FEX model.  
@@ -515,9 +515,9 @@ Details| Description
 Name| Displays the name for the FEX.  
 Status| Displays the status of the PCIe node. The values can be:
 
-  * Active — When the PCIe node is discovered.
-  * Decommissioned —When the PCIe node is physically present and connected, but temporarily removed from the Cisco UCS configuration.
-  * DiscoveryFailed — When the PCIe node discovery has failed.
+  * Active: When the PCIe node is discovered.
+  * Decommissioned: When the PCIe node is physically present and connected, but temporarily removed from the Cisco UCS configuration.
+  * DiscoveryFailed: When the PCIe node discovery has failed.
 
   
 Model| Displays the hardware model of the PCIe node.  
@@ -540,13 +540,13 @@ From the Diagnostic Data tab, you can collect diagnostic data for servers, chass
 
 You can generate tech support bundles for the following:
 
-  * Server—Contains technical support data for blade and rack servers including all adapters. For blade servers, tech support data is collected for IOMs.
+  * Server: Contains technical support data for blade and rack servers including all adapters. For blade servers, tech support data is collected for IOMs.
 
-  * Chassis—Contains technical support data for a given chassis including IOMs.
+  * Chassis: Contains technical support data for a given chassis including IOMs.
 
-  * Fabric Interconnect—Contains technical support data for Fabric Interconnect. The data can be for either the local or both the local and peer switches.
+  * Fabric Interconnect: Contains technical support data for Fabric Interconnect. The data can be for either the local or both the local and peer switches.
 
-  * PCIe Node—Contains technical support data for PCIe nodes.
+  * PCIe Node: Contains technical support data for PCIe nodes.
 
 
 **Generating and Downloading Tech Support Bundles**
@@ -730,10 +730,11 @@ Firmware Requirements for FI Secure Erase
 
 Fabric Interconnect| Minimum Infrastructure Firmware Version  
 ---|---  
-Cisco UCS 6400 Series| 6.0(1.250198)  
-Cisco UCS 6500 Series| 6.0(1.250198)  
-Cisco UCS 6600 Series| 6.0(1.250198)  
+Cisco UCS 6652 FI| 6.0(2.260045)  
+Cisco UCS 6664 FI| 6.0(1.250198)  
 Cisco UCS X-Series Direct| 6.0(1.250198)  
+Cisco UCS 6500 Series| 6.0(1.250198)  
+Cisco UCS 6400 Series| 6.0(1.250198)  
   
 ## Device Console CLI Commands (Unified Edge)
 
@@ -910,9 +911,9 @@ Before initiating a firmware update, the firmware bundle (ESU and HUU images) mu
 
 `**list-storage-drives**`
               
-              Name                      Location
-              eMMC                      workspace:/
-              USB Drive1                media/sda1:/
+              Name           Location
+              eMMC           workspace:/
+              USB Drive1        media/sda1:/
 
        3. Update the eCMC firmware:
 
@@ -944,7 +945,7 @@ Before initiating a firmware update, the firmware bundle (ESU and HUU images) mu
 
   5. Check servers populated in the chassis:
 
-     1. SSH to eCMC-CLI: 
+     1. SSH to eCMC-CLI:
 
 `**ssh admin@**` <eCMC-CLI IP>
 

@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Monitoring Topology |
 | **URL** | https://intersight.com/help/saas/monitoring/topology |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/cloud/data/resources/monitoring/en/Topology.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/cloud/data/resources/monitoring/en/Topology.html |
 | **HTML Title** | Topology View |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_topology.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:46:51 |
+| **Fetched on** | 2026-03-25 11:32:54 |
 
 ---
 
@@ -77,7 +77,7 @@ Action| Description
   
 ## Legend Details
 
-The table below details the icons shown in the legend of the Fabric Interconnects topology view:
+The table below details the icons shown in the legend of the Fabric Interconnects and Server Topology views:
 
 Note:
 
@@ -114,7 +114,7 @@ Icon| Description
 ![](../../../../../../../../en/us/td/i/400001-500000/470001-480000/477048.jpg)| This icon represents a Fabric Extender (FEX).  
 ![](../../../../../../../../en/us/td/i/400001-500000/470001-480000/477049.jpg)| This icon represents a C-Series server.  
 ![](../files/Server_Group.png)| This icon represents a group of components. For example, a group of C-Series servers connected to a FEX.  
-![](../files/Network_Switch.png)| This icon represents a networking switch.  
+![](../files/Network_Switch.png)| This icon represents a networking or a storage switch.  
 ![](../files/Storage_Array.png)| The icon represents a storage array.  
 **Metrics**  
 ![](../files/ErrorMetrics.png)|  The icon represents the count of error metrics for the last 24 hours.  
@@ -142,7 +142,7 @@ The Topology views also provide you with a visual representation of alarms, erro
 
 **Alarms**
 
-When a device has warning or critical alarms, an Alarm icon appears next to the device icons in the Topology view. This Alarms icon shows the number of error or warning alarms, with the color indicating the severity level: critical or warning. Hovering over the Alarm icon triggers a pop-up that provides the following details:
+When a device has warning or critical alarms, an Alarm icon appears next to the device icons in the Fabric Interconnects Topology view. This Alarms icon shows the number of error or warning alarms, with the color indicating the severity level: critical or warning. Hovering over the Alarm icon triggers a pop-up that provides the following details:
 
   * Count of alarms categorized by type: error, warning, and information.
 
@@ -163,7 +163,7 @@ For more information on Intersight alarms, alarm suppression, and alarm classifi
 
 **Error Metrics**
 
-When a device or FI port has errors, an Error Metrics icon appears next to the device icon in the Topology view. The Error Metrics icon show the count of errors for the last 24 hours. Hovering over an Error Metrics icon triggers a pop-up that provides the following details:
+When a device or FI port has errors, an Error Metrics icon appears next to the device icon in the Fabric Interconnects Topology view. The Error Metrics icon show the count of errors for the last 24 hours. Hovering over an Error Metrics icon triggers a pop-up that provides the following details:
 
   * The top error metrics by count for a specific time interval.
 
@@ -176,17 +176,17 @@ When a device or FI port has errors, an Error Metrics icon appears next to the d
 
 Note:
 
-To view error metrics in the Topology view, all servers in a UCS domain must have an Advantage license. If the UCS domain contains a mix of Essentials and Advantage licenses, the error metrics will not be displayed.
+To view error metrics in the Fabric Interconnects Topology view, all servers in a UCS domain must have an Advantage license. If the UCS domain contains a mix of Essentials and Advantage licenses, the error metrics will not be displayed.
 
 ![](../files/image3.png)
 
-**Note** : To enable Error Metrics in the Topology view Advantage license is required for all servers in the UCS domain.
+**Note** : To enable Error Metrics in the Fabric Interconnects Topology view Advantage license is required for all servers in the UCS domain.
 
 For more information on error metrics, see [Fabric Interconnects, Chassis, and Server Metrics](/help/monitoring/monitoring_metrics_devices).
 
 **Link Operational Status**
 
-In the Topology view, the operational status of the connection links is displayed. Hovering over the connection link triggers a pop-up that provides the following details:
+In the Fabric Interconnects Topology view, the operational status of the connection links is displayed. Hovering over the connection link triggers a pop-up that provides the following details:
 
   * Count of ports and the health status.
 
@@ -297,7 +297,14 @@ The environmental metrics displayed vary for each device type, such as Fabric In
 
 ## Viewing Fabric Interconnects Topology
 
-The Fabric Interconnects Topology displays a high-level view that shows all connections within a single IMM domain, including Fabric Interconnects and all connected devices such as servers, chassis, LLDP or CDP neighbors, and networking switches and storage arrays.
+The Fabric Interconnects (FI) Topology provides a high-level visualization of all connections within a single IMM domain, including Fabric Interconnects and connected devices such as servers, chassis, and networking infrastructure. The view displays northbound neighbors across two distinct protocols—Ethernet and Fibre Channel (FC)—with discovery and display behavior determined by the specific FI operating mode.
+
+  * **Ethernet Protocol Connectivity:** In both End-Host and Switching modes, the topology discovers Cisco and third-party Ethernet switches using the Cisco Discovery Protocol (CDP) and Link Layer Discovery Protocol (LLDP). These connections are displayed as one line per active uplink. Hovering over these connections allows users to view the FI mode, the switch name and model, the traffic type (Ethernet or FCoE), and specific port IDs.
+
+  * **Fibre Channel (FC) Protocol Connectivity:** For Fibre Channel, the topology supports End Host mode (NPV) and Switch mode (Core Switching). This view displays upstream or core FC switches (including Cisco MDS/Nexus and supported third-party switches) and, when in Switch mode, directly attached storage arrays. FC port channels are visualized as an aggregated link, while directly attached storage arrays are shown as separate icons. Hovering over these connections provides detailed metadata, including the FI mode, source and destination WWNs, peerPortWWN, VSAN, and, when available, the neighbor type (switch or storage) and vendor name.
+
+  * **Operational Insights and Clarity:** To maintain protocol-level clarity, Ethernet and Fibre Channel connections are displayed separately within the topology. Consequently, a single physical device that supports both protocols will appear twice in the view—once as an Ethernet neighbor and once as a Fibre Channel neighbor. The interface provides real-time operational status for connection links, network utilization data, and health status indicators for all claimed devices. By providing enhanced details—such as WWN, vendor information, and device capabilities—the topology view enables administrators to effectively isolate problematic links and verify configurations across various switching modes.
+
 
 To view fabric interconnects Topology:
 
@@ -336,12 +343,18 @@ Using a slider you can set the threshold for network bandwidth utilization. This
 
   * **No Link** —Opt not to display any connection links within the domain.
 
-  * The Fabric Interconnects Topology view displays the networking switches and storage arrays directly connected to the fabric interconnects (FI). Neighboring devices are discovered using the Cisco Discovery Protocol (CDP) and Link Layer Discovery Protocol (LLDP). These protocols must be enabled on both the FI and the connected devices (if applicable) through the CLI.
+  * The Fabric Interconnects Topology view displays the networking switches and storage arrays directly connected to the fabric interconnects (FI).
+
+  * **Ethernet Neighbors:** Devices are discovered using the Cisco Discovery Protocol (CDP) and Link Layer Discovery Protocol (LLDP). These protocols must be enabled on both the FI and the connected devices via the CLI.
+
+  * **Fibre Channel (FC) Neighbors:** Storage switches and storage arrays are discovered using specific CLI-based retrieval methods.
 
 Note:
   * To view CDP or LLDP neighbors in the Topology view, Advantage license is required for all LLDP or CDP neighbors.
 
-  * If a neighboring device does not have LLDP or CDP enabled, it will be displayed as _unknown_ in the Topology view.
+  * If both LLDP and CDP are enabled on a device, CDP takes precedence. Accordingly, information from CDP is displayed in the Topology view and returned by the API.
+
+  * If an Ethernet neighboring device does not have LLDP or CDP enabled, it will be displayed as "unknown" in the Topology view. For Fibre Channel devices, ensure the device is correctly configured and connected to the FI to populate the topology accurately.
 
 ![](../files/Network_Switch_UI.png)
 
@@ -355,14 +368,26 @@ Note:
 
 If both LLDP and CDP are enabled on a device, CDP takes precedence. Accordingly, information from CDP is displayed in the Topology view and returned by the API.
 
+  * The FI topology includes northbound Fibre Channel (FC) neighbors, so that UCS server administrators can see how FI uplink ports connect to:
+
+  * Cisco and third party ethernet networking switches
+
+  * Cisco and third party Fibre Channel storage switches
+
+  * Storage arrays connected through appliance ports
+
+  * Storage arrays connected through Fibre Channel storage ports
+
+For each FI uplink, Topology shows both device level and port level relationships, allowing you to view exactly which FI ports are connected to which upstream ports on your switches and storage arrays.
+
 
   * Hover over the Info icon for an FI to:
 
-  * View the health and details of the FI.
+  * **General Details** : Health, Type, Model, Serial, and Switch ID.
 
-  * View the environmental metrics for the FI by clicking **View Metrics**.
+  * **Configuration** : Management Mode, Intersight status, Bundle Version, Ethernet Switching Mode, Fc Switching Mode, and UCS Domain Profile.
 
-  * Navigate to the Server Topology View by clicking **View Topology**.
+  * **Performance** : Click **View Metrics** to access environmental metrics for the FI.
 
   * Hover over the Alarms icon to:
 
@@ -417,9 +442,18 @@ The Fabric Interconnect (FI) alarm icon displays the count of alarms for the hig
 
   * View the environmental metrics for the server by clicking **View Metrics**.
 
-  * Hover over the Info icon for a Networking Switch or Storage Array to:
+  * Hover over the Info icon for a Networking Switch to:
 
   * View the platform, vendor, model, serial number, management IP, and native VLAN details of the Networking Switch or Storage Array.
+
+![](../files/StorageSwitch.png)
+  * Hover over the Info icon for a Storage Switch to:
+
+  * View the platform, traffic type, management IP, and VSAN details of the Storage Switch or Storage Array.
+
+Note:
+
+In the Topology view, connections are represented as distinct icons to ensure protocol-level clarity. Switches operating with both Ethernet (CDP/LLDP) and Fibre Channel protocols are displayed separately. Similarly, each FI-to-storage controller connection is displayed as a unique icon, as there is no definitive physical property available to link multiple port connections to a single physical device.
 
 
 Note:

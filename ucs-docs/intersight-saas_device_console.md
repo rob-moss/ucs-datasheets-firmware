@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Device Console |
 | **URL** | https://intersight.com/help/saas/device_console |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/cloud/data/articles/device_console/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/cloud/data/articles/device_console/en/index.html |
 | **HTML Title** | Device Console |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_device_console.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:46:51 |
+| **Fetched on** | 2026-03-25 11:33:01 |
 
 ---
 
@@ -47,7 +47,7 @@ This interface provides system information, including the model, serial number, 
 
   * eCMC B will assign itself `169.254.254.2`
 
-  * This fallback typically occurs 30-90 seconds after network failure detection
+  * This fallback typically occurs 30 to 90 seconds after network failure detection.
 
 
 **Connecting to the eCMC**
@@ -94,15 +94,15 @@ The Device Console UI consists of the following main elements:
 
   * A central pane that includes the following tabs:
 
-  * [Device Connector](/help/device_console#device_connector)
+  * [Device Connector](../../../../../../../../../../help/device_console#device_connector)
 
-  * [System Information](/help/device_console#system_information_\(unified_edge\))
+  * [System Information](../../../../../../../../../../help/device_console#system_information_\(unified_edge\))
 
-  * [Network Settings](/help/device_console#network_settings_\(unified_edge\))
+  * [Network Settings](../../../../../../../../../../help/device_console#network_settings_\(unified_edge\))
 
-  * [Inventory](/help/device_console#inventory_\(unified_edge\))
+  * [Inventory](../../../../../../../../../../help/device_console#inventory_\(unified_edge\))
 
-  * [Diagnostic Data](/help/device_console#diagnostic_data_\(unified_edge\))
+  * [Diagnostic Data](../../../../../../../../../../help/device_console#diagnostic_data_\(unified_edge\))
 
   * A top navigation menu that contains the Help menu and Logout button.
 
@@ -128,12 +128,12 @@ Device Connector| Displays the following:
   * The claim status of the device.
 
   
-Settings| Click Settings to configure the Device Connector settings to enable the capabilities of Cisco Intersight.For more information, see [Configuring Device Connector](/help/resources/configuring_device_connector).  
+Settings| Click Settings to configure the Device Connector settings to enable the capabilities of Cisco Intersight.For more information, see [Configuring Device Connector](../../../../../../../../../../help/resources/configuring_device_connector).  
 Refresh| Click Refresh to update the displayed information.  
 Device ID| Displays the unique serial number of the device.  
 Claim Code| Displays the claim code of the device.  
 Claimed to Account| Displays the ID of the Intersight user who claimed the device.  
-Unclaim| Click Unclaim to unclaim a device.Use the Unclaim option on the Device Connector only when access to the original claiming account is unavailable, or when Intersight connectivity is lost and unclaiming locally from the endpoint is required. For more details on unclaiming a target see [Unclaim Target](/help/getting_started/claim_targets#unclaim_targets).  
+Unclaim| Click Unclaim to unclaim a device.Use the Unclaim option on the Device Connector only when access to the original claiming account is unavailable, or when Intersight connectivity is lost and unclaiming locally from the endpoint is required. For more details on unclaiming a target see [Unclaim Target](../../../../../../../../../../help/getting_started/claim_targets#unclaim_targets).  
   
 ## System Information (Unified Edge)
 
@@ -333,6 +333,8 @@ The account lockout feature cannot be disabled.
 
 **Configure the account lockout settings**
 
+**Procedure**
+
   1. Log in to the Device Console.
 
   2. Select the Administration tab.
@@ -365,7 +367,7 @@ You can also log into the Device Console of a Fabric Interconnect in Intersight 
   * Certificate Management policy (optional) for secure access.
 
 
-For more information, see the Creating an LDAP Policy and Creating a Certificate Management Policy sections in [Configuring Domain Policies](/help/resources/cisco_intersight_managed_mode_configuration#configuring_ucs_domain_policies).
+For more information, see the Creating an LDAP Policy and Creating a Certificate Management Policy sections in [Configuring Domain Policies](../../../../../../../../../../help/resources/cisco_intersight_managed_mode_configuration#configuring_ucs_domain_policies).
 
 ## User Interface of Device Console (Fabric Interconnects)
 
@@ -373,20 +375,20 @@ The FI Device Console UI consists of the following main elements:
 
   * A central pane that includes four tabs:
 
-  * [System Information](/help/device_console#system_information_\(fabric_interconnects\))
+  * [System Information](../../../../../../../../../../help/device_console#system_information_\(fabric_interconnects\))
 
-  * [Device Connector](/help/device_console#device_connector) (Common)
+  * [Device Connector](../../../../../../../../../../help/device_console#device_connector) (Common)
 
-  * [Inventory](/help/device_console#inventory_\(fabric_interconnects\))
+  * [Inventory](../../../../../../../../../../help/device_console#inventory_\(fabric_interconnects\))
 
-  * [Diagnostic Data](/help/device_console#diagnostic_data_\(fabric_interconnect\))
+  * [Diagnostic Data](../../../../../../../../../../help/device_console#diagnostic_data_\(fabric_interconnect\))
 
   * A top navigation menu that contains the Help menu and Logout button.
 
 
 ## Device Connector (Fabric Interconnects)
 
-This tab is common for FI and Unified Edge. For more information, see [Device Connector](/help/device_console#device_connector).
+This tab is common for FI and Unified Edge. For more information, see [Device Connector](../../../../../../../../../../help/device_console#device_connector).
 
 ## System Information (Fabric Interconnects)
 
@@ -449,7 +451,7 @@ You can perform the following server actions:
 
 Note:
 
-Minimum C-Series IMM server firmware version required for launching IMC: 4.3(6.250039).
+Minimum C-Series Intersight Managed Mode server firmware version required for launching Cisco IMC is 4.3(6.250039).
 
   * Launch API Explorer
 
@@ -626,7 +628,7 @@ The downloaded file is saved in your default download location.
 
 You can manually delete any file by selecting Delete from the ellipsis (…) menu located next to each record.
 
-For details on the auto-deletion of files, see [Core Files](/help/system/diagnostic_data#core_files).
+For details on the auto-deletion of files, see [Core Files](../../../../../../../../../../help/system/diagnostic_data#core_files).
 
 ## Device Console Common CLI Commands
 
@@ -650,16 +652,17 @@ These commands allow you to view general system information.
 
 Command| Description| Note  
 ---|---|---  
-`**show clock**`|  Displays the system date and time.| Setting the time on the FI requires NTP. NTP should be configured in the Device Console and in the NTP Policy of the Domain Profile.  
+`**show audit**`|  Displays the audit log of the Fabric Interconnect.| —  
 `**show cli history**`|  Displays the history of CLI commands run in the session.| —  
-`**show sshkey**`|  Displays the list of SSH public key of the host.| Not available for Unified Edge.  
+`**show clock**`|  Displays the system date and time.| Setting the time on the FI requires NTP. NTP should be configured in the Device Console and in the NTP Policy of the Domain Profile.  
+`**show file**` file-path| Displays the contents of a file.| Not available for Unified Edge.  
 `**show mgmt-ip-debug**`|  Displays the IP address and the interfaces on both the management and default namespaces.| Not available for Unified Edge.  
 `**show mgmt-ip-tables**`|  Displays the IP table entries on both the management and default namespaces.| Not available for Unified Edge.  
-`**show file**` file-path| Displays the contents of a file.| Not available for Unified Edge.  
+`**show mgmt-ipv6**`|  Displays the IPv6 management address.| Not available for Unified Edge.  
 `**show processes**`|  Displays a list of all processes that are currently running.| Not available for Unified Edge.  
-`**show audit**`|  Displays the audit log of the Fabric Interconnect.| —  
 `**show self-signed-certificate**`|  Shows self signed certificate.| —  
-`**scope**` <scope-name>| Changes scope.| Available only for Unified Edge.  
+`**show sshkey**`|  Displays the list of SSH public key of the host.| Not available for Unified Edge.  
+`**scope**` <scope-name>| Changes scope to the specified scope name.| Available only for Unified Edge.  
   
 **Servers/Chassis/Switch/eCMC**
 
@@ -727,44 +730,53 @@ These commands cover various networking diagnostics, system management, and conf
 
 Command| Description| Note  
 ---|---|---  
-`**set management-network**` ip-address netmask/preix_length gateway| Configures management IP address, network mask, and gateway address on a Fabric Interconnect.| Not available for Unified Edge.  
-`**tail-mgmt-log**` module_name| Displays the management log of the services running on a Fabric Interconnect.| —  
-`**ssh**` host-name| Logs in to a host that supports SSH.| —  
-`**telnet**` host-name [port-num]| Logs in to a host that supports Telnet.| —  
-`**traceroute**` [ `**-s**` source-address ] address| Displays the route to an IPv4 network host.| —  
-`**traceroute6**` [ `**-s**` source-address ] address| Displays the route to an IPv6 network host.| —  
+`**change-domain-name**`|  Updates the name of the Fabric Interconnect and the peer FI.| Not available for Unified Edge.  
+`**change-mode**`|  Changes the management mode of the server.| Not available for Unified Edge.  
+`**change-password**`|  Changes the administrator password on the Fabric Interconnect.| —  
+`**clear**`|  Clears the screen.| —  
+`**clear-firmware-cache**`|  Clears an entry from the Intersight firmware cache.| —  
+`**clear-sshkey**` host-name| Clears the SSH public key of a remote host from cache.| Not available for Unified Edge.  
+`**cluster-start**`|  For initial HA setup, starts cluster server.| The cluster-start command is used in the backend as part of the developer script when adding an FI to a cluster.Not available for Unified Edge.  
+`**connect**`|  Connects to an endpoint.| —  
+`**connect nxos**`|  Connects to NX-OS.| Not available for Unified Edge.  
+`**erase-configuration**`|  Erases configuration on the Fabric Interconnect.| Erase configuration will not affect or delete any existing data on the Fabric Interconnect.Not available for Unified Edge.  
+`**exit**`|  Exits the program.| —  
+`**fi-secure-erase**` [-preserveImage]| Erases all data and configuration on the Fabric Interconnect, run the command.Use the preserveImage flag to keep the system image while deleting all other data from the Fabric Interconnect.| FI Secure Erase may take 20 to 40 minutes to complete.For information on minimum firmware version requirement, see the Firmware Requirements for FI Secure Erase table below.Not available for Unified Edge.  
+`**generate-self-signed-certificate**`|  Generates a new self-signed certificate.| After generating the self-signed certificate, the command restarts the web server.Not available for Unified Edge.  
+`**help**`|  Displays help.| —  
+`**list-firmware-cache**`|  Displays the list of entries in the Intersight firmware cache.| —  
+`**list-storage-drives**`|  Lists storage drives.| Available only for Unified Edge.  
+`**md5sum**`|  Shows MD5 hash of the given file.| Available only for Unified Edge.  
 `**ping**` [ `**-c**` count ] [ `**-s**` packet-size ] [ `**-i**` interval ] [ `**-w**` timeout ] { host-ip-address | | | host-name }| Diagnoses basic network connectivity for IPv4 addresses.| —  
 `**ping6**` [ `**-c**` count ] [ `**-s**` packet-size ] [ `**-i**` interval ] [ `**-w**` timeout ] { host-ip-address | | | host-name }| Diagnoses basic network connectivity for IPv6 addresses.| —  
 `**reboot**`|  Reboots the system.| —  
-`**connect nxos**`|  Connects to NX-OS.| Not available for Unified Edge.  
-`**erase-configuration**`|  Erases configuration on the Fabric Interconnect.| Erase configuration will not affect or delete any existing data on the Fabric Interconnect.Not available for Unified Edge.  
-`**fi-secure-erase**` [-preserveImage]| Erases all data and configuration on the Fabric Interconnect, run the command.Use the preserveImage flag to keep the system image while deleting all other data from the Fabric Interconnect.| FI Secure Erase may take 20 to 40 minutes to complete.For information on minimum firmware version requirement, see the Firmware Requirements for FI Secure Erase table below.Not available for Unified Edge.  
-`**change-password**`|  Changes the administrator password on the Fabric Interconnect.| —  
-`**clear-sshkey**` host-name| Clears the SSH public key of a remote host from cache.| Not available for Unified Edge.  
-`**change-domain-name**`|  Updates the name of the Fabric Interconnect and the peer FI.| Not available for Unified Edge.  
-`**change-mode**`|  Changes the management mode of the server.| Not available for Unified Edge.  
-`**clear**`|  Clears the screen.| —  
-`**clear-firmware-cache**`|  Clears an entry from the Intersight firmware cache.| —  
-`**cluster-start**`|  For initial HA setup, starts cluster server.| The cluster-start command is used in the backend as part of the developer script when adding an FI to a cluster.Not available for Unified Edge.  
-`**connect**`|  Connects to an endpoint.| —  
-`**generate-self-signed-certificate**`|  Generates a new self-signed certificate.| After generating the self-signed certificate, the command restarts the web server.Not available for Unified Edge.  
-`**list-firmware-cache**`|  Displays the list of entries in the Intersight firmware cache.| —  
 `**server**`|  Displays the list of server operations and their usage (led-status, power, power-status, led).| Not available for Unified Edge.  
-`**update-management-package workspace:/**` | `**volatile:/**` filename| Updates the Device management package on Fabric Interconnect.| Packages are not accessible to the customers. This operation is used by Cisco TAC for recovery purpose.The volatile: option is not available for Unified Edge.  
-`**help**`|  Displays help.| —  
-`**exit**`|  Exits the program.| —  
-`**list-storage-drives**`|  Lists storage drives.| Available only for Unified Edge.  
-`**md5sum**`|  Shows MD5 hash of the given file.| Available only for Unified Edge.  
+`**ssh**` host-name| Logs in to a host that supports SSH.| —  
+`**set management-network**` ip-address netmask/prefix_length gateway| Configures management IP address, network mask, and gateway address on a Fabric Interconnect.| Not available for Unified Edge.  
+`**set management-network ipv6**` ipv6-addr prefix-length gateway| Configures static IPv6 management address, network mask, and gateway address on a Fabric Interconnect.| Not available for Unified Edge.  
+`**set management-network ipv6 disable**`|  Disables IPv6 address on the mgmt0 port of Fabric Interconnect.| Not available for Unified Edge.  
+`**set management-network ipv6 slaac**` [ `**--iid**` eui64 | opaque ] [ `**--redirects**` enable | disable ]| Configures SLAAC IPv6 management address, network mask, and gateway address on a Fabric Interconnect.Note:
+
+  * The gateway is learned automatically from Router Advertisement in SLAAC mode.
+  * The redirects option is available only in SLAAC mode.
+
+| Not available for Unified Edge.  
+`**tail-mgmt-log**` module_name| Displays the management log of the services running on a Fabric Interconnect.| —  
+`**telnet**` host-name [port-num]| Logs in to a host that supports Telnet.| —  
 `**top**`|  Changes scope to default scope.| Available only for Unified Edge.  
+`**traceroute**` [ `**-s**` source-address ] address| Displays the route to an IPv4 network host.| —  
+`**traceroute6**` [ `**-s**` source-address ] address| Displays the route to an IPv6 network host.| —  
+`**update-management-package workspace:/**` | `**volatile:/**` filename| Updates the Device management package on Fabric Interconnect.| Packages are not accessible to the customers. This operation is used by Cisco TAC for recovery purpose.The volatile: option is not available for Unified Edge.  
   
 Firmware Requirements for FI Secure Erase
 
 Fabric Interconnect| Minimum Infrastructure Firmware Version  
 ---|---  
-Cisco UCS 6400 Series| 6.0(1.250198)  
-Cisco UCS 6500 Series| 6.0(1.250198)  
-Cisco UCS 6600 Series| 6.0(1.250198)  
+Cisco UCS 6652 FI| 6.0(2.260045)  
+Cisco UCS 6664 FI| 6.0(1.250198)  
 Cisco UCS X-Series Direct| 6.0(1.250198)  
+Cisco UCS 6500 Series| 6.0(1.250198)  
+Cisco UCS 6400 Series| 6.0(1.250198)  
   
 ## Device Console CLI Commands (Unified Edge)
 

@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight Appliance Supported Systems |
 | **URL** | https://intersight.com/help/appliance/supported_systems |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/onprem/data/articles/supported_systems/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/onprem/data/articles/supported_systems/en/index.html |
 | **HTML Title** | Supported Systems |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_supported_systems.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:46:52 |
+| **Fetched on** | 2026-03-25 11:33:11 |
 
 ---
 
@@ -40,7 +40,7 @@ Table 4 shows the supported combination of components.
 Table 1. Supported Hardware Components with Required Minimum Infrastructure VersionsFabric Components  
 ---  
 Component| Model| Sub-Component| Sub-Component Model| Minimum Infrastructure Firmware Versions  
-Fabric Interconnect| UCS-FI-6652| | | For more information on minimum supported infrastructure firmware version, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).  
+Fabric Interconnect| UCS-FI-6652| | | 6.0(2.260045)  
 UCS-FI-6664| | | 6.0(1.250198)  
 UCSX-S9108-100G| | | 4.3(4.240078)  
 UCS-FI-6454|  |  | 4.1(3b)  
@@ -112,25 +112,25 @@ Table 3. Supported Hardware Components with Required Minimum Firmware VersionsFa
 ---  
 Component| Model| Sub-Component| Sub-Component Model| Minimum Infrastructure Firmware Versions| Minimum Server Firmware Versions| Minimum Appliance Release Version  
 X-Series Intel M8 Compute Node| Cisco UCS XE130c M8 Compute Node| See [Cisco UCS XE130c M8 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| XE9305 Unified Edge chassis: 6.0(1.251005)| 6.0(1.251030)| 1.1.6  
-Cisco UCS X410c M8 Compute Node|  | 
+Cisco UCS X410c M8 Compute Node| See [_Cisco UCS X410c M8 Compute Node Spec Sheet_ ](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
 
-  * 6652 FI
-  * 6664 FI
-  * 6400 Series and 6536 FI
-  * X-Direct FIFor more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
+  * 6652 FI: 6.0(2.260045)
+  * 6664 FI: 6.0(1.250198)
+  * 6400 Series and 6536 FI: 4.3(6.250048)
+  * X-Direct FI: 4.3(6.250094)
 
-| For more information on minimum supported server firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems)| 1.1.6  
-Cisco UCS X210c M8 Compute Node|  | 
+| 6.0(2.260040)| 1.1.6  
+Cisco UCS X210c M8 Compute Node| See [Cisco UCS X210c M8 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
 
-  * 6652 FI: For more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
+  * 6652 FI: 6.0(2.260045)
   * 6664 FI: 6.0(1.250198)
   * 6400 Series and 6536 FI: 4.3(6.250048)
   * X-Direct FI: 4.3(6.250094)
 
 | 5.4(0.250037)| 1.1.2-1  
-X-Series AMD M8 Compute Node| Cisco UCS X215c M8 Compute Node|  | 
+X-Series AMD M8 Compute Node| Cisco UCS X215c M8 Compute Node| See [Cisco UCS X215c M8 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
 
-  * 6652 FI: For more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
+  * 6652 FI: 6.0(2.260045)
   * 6664 FI: 6.0(1.250198)
   * 6400 Series and 6536 FI: 4.3(2.230117)
   * X-Direct FI: 4.3(5.240162)
@@ -158,9 +158,9 @@ DDR5-6400 MT/s:
 
 | Not Applicable| 5.3(0.250001)| 1.1.2-0  
 Storage Controller| UCSX-X10C-GPUFM| Not Applicable| 5.3(0.240016)|   
-X-Series M7 Server| Cisco UCS X410c M7 Compute Node|  | 
+X-Series M7 Server| Cisco UCS X410c M7 Compute Node| See [Cisco UCS X410c M7 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
 
-  * 6652 FI: For more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
+  * 6652 FI: 6.0(2.260045)
   * 6664 FI: 6.0(1.250198)
   * 6400 Series and 6536 FI: 4.2(3e)
   * X-Direct FI: 4.3(4.240078)
@@ -179,9 +179,9 @@ UCSX-GPU-L40S| Not Applicable| 5.2(2.240053)|
 Storage Controller| UCSX-M2-HWRAIDUCSX-X10C-RAIDF| Not Applicable| 5.1(1.230052)|   
 UCSX-M2-PT-FPN| Not Applicable| 5.2(0.230127)|   
 UCSX-X10C-GPUFM| Not Applicable| 5.2(0.230041)|   
-X-Series M7 Compute Node| Cisco UCS X210c M7 Compute Node|  | 
+X-Series M7 Compute Node| Cisco UCS X210c M7 Compute Node| See [Cisco UCS X210c M7 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
 
-  * 6652 FI: For more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
+  * 6652 FI: 6.0(2.260045)
   * 6664 FI: 6.0(1.250198)
   * 6400 Series 6536 FI: 4.2(3b)
   * X-Direct FI: 4.3(4.240078)
@@ -231,9 +231,8 @@ UCSX-GPU-FLX140MZ| Not Applicable| 5.2(2.240053)|
 Storage Controller| UCSX-X10C-PT4FUCSX-X10C-RAIDFUCSX-M2-HWRAID| Not Applicable| 5.1(0.230096)|   
 UCSX-M2-PT-FPN| Not Applicable| 5.2(0.230041)|   
 UCSX-X10C-GPUFM| Not Applicable| 5.3(0.250021)|   
-X-Series M6 Server| Cisco UCS X210c M6 Compute Node| | 
+X-Series M6 Server| Cisco UCS X210c M6 Compute Node| See [Cisco UCS X210c M6 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x210c-specsheet.pdf).| 
 
-  * 6652 and 6664 FI: For more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
   * 6400 Series and 6536 FI: 4.2(1a)
   * X-Direct FI: 4.3(4.240078)
 
@@ -249,9 +248,8 @@ Graphics processing unit (GPU)| UCSX-GPU-A100-80| Not Applicable| 5.0(2e)|
 UCSX-GPU-T4-MEZZUCSX-GPU-T4-16UCSX-GPU-A16UCSX-GPU-A40| Not Applicable| 5.0(2d)|   
 Storage Controller| UCSX-X10C-PT4FUCSX-X10C-RAIDFUCSX-M2-HWRAID| Not Applicable| 5.0(4b)|   
 UCSX-X10C-GPUFM| Not Applicable| 5.2(0.230040)|   
-B-Series M6 Server| Cisco UCS B200 M6 Server|  | 
+B-Series M6 Server| Cisco UCS B200 M6 Server| See [Cisco UCS B200 M6 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/datasheet-listing.html#anchor441).| 
 
-  * 6652 and 6664 FI: For more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
   * 6400 Series and 6536 FI: 4.1(3b)
 
 | 4.2(1d)| 1.0.9-319  
@@ -266,29 +264,29 @@ UCSB-MLOM-40G-04UCSB-VIC-M84-4P| 4.1(3b)| 4.1(3b)|
 UCSB-MLOM-PT-01| 4.1(3b)| Not Applicable|   
 Trusted Platform Module (TPM)| UCSX-TPM2-001UCSX-TPM2-002| Not Applicable| 4.1(3b)|   
 Storage Controller| UCS-M2-HWRAIDUCSB-MRAID12GUCSB-MRAID12G-HEUCSB-LSTOR-PT| Not Applicable| 4.1(3c)|   
-C-Series Intel M8 Server| Cisco UCS C220 M8 Server|  | 
+C-Series Intel M8 Server| Cisco UCS C220 M8 Server| See [Cisco UCS C220 M8 Rack Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
-  * 6652 FI: For more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
+  * 6652 FI: 6.0(2.260045)
   * 6664 FI and X-Direct FI: 6.0(1.250198)
   * 6400 Series and 6536 FI: 4.3(6.250048)
 
 | 4.3(6.250039)| 1.1.2-1  
-Cisco UCS C240 M8 Server|  | 
+Cisco UCS C240 M8 Server| See [Cisco UCS C240 M8 Rack Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
-  * 6652 FI: For more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
+  * 6652 FI: 6.0(2.260045)
   * 6664 and X-Direct FI: 6.0(1.250198)
   * 6536 and 6400 Series FI: 4.3(6.250048)
 
 | 4.3(6.250039)| 1.1.2-1  
 Storage Controller| UCSC-RAID-M1L16| 
 
-  * 6652 FI: For more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
+  * 6652 FI: 6.0(2.260045)
   * 6664, 6536, 6400 Series, and X-Direct FI: 6.0(1.250198)
 
 | 6.0(1.250127)|   
-C-Series AMD M8 Server| Cisco UCS C225 M8 Server|  | 
+C-Series AMD M8 Server| Cisco UCS C225 M8 Server| See [Cisco UCS C225 M8 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
-  * 6652 FI: For more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
+  * 6652 FI: 6.0(2.260045)
   * 6664 and X-Direct FI: 6.0(1.250198)
   * 6536 and 6400 Series FI: 4.2(3b)
 
@@ -315,9 +313,9 @@ DDR5-6400 MT/s
   * UCS-MRX64G2RE5
 
 | Not Applicable| 4.3(5.250001)| 1.1.2-0  
-Cisco UCS C245 M8 Server|  | 
+Cisco UCS C245 M8 Server| See [Cisco UCS C245 M8 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
-  * 6652 FI: For more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
+  * 6652 FI: 6.0(2.260045)
   * 6664 and X-Direct FI: 6.0(1.250198)
   * 6536 and 6400 Series FI: 4.2(3b)
 
@@ -347,9 +345,9 @@ DDR5-6400 MT/s:
   * UCS-MRX96G2RF5
 
 | Not Applicable| 4.3(5.250001)| 1.1.2-0  
-C-Series M7 Server| Cisco UCS C220 M7 Server|  | 
+C-Series M7 Server| Cisco UCS C220 M7 Server| See [Cisco UCS C220 M7 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
-  * 6652 FI: For more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
+  * 6652 FI: 6.0(2.260045)
   * 6664 and X-Direct FI: 6.0(1.250198)
   * 6536 and 6400 Series FI: 4.2(3b)
 
@@ -392,9 +390,9 @@ UCSC-GPU-L4UCSC-GPU-FLEX140| Not Applicable| 4.3(2.230207)|
 Storage Controller| UCS-M2-NVRAID| 4.3(2.230117)| 4.3(2.230207)|   
 UCSC-HBA-M1L16UCSC-RAID-M1L16| 4.3(2.230117)| 4.3(4.242038)|   
 Virtual Drives| UCS-SD16TKA3X-EPUCS-SD32TKA3X-EPUCS-SD16TBKANK9UCS-SD19TKA1X-EVUCS-SD38TKA1X-EVUCS-SD76TKA1X-EVUCS-SD15TKA1X-EVUCS-SD38TBKANK9UCS-SD76TBKANK9| 4.3(2.230117)| 4.3(2.230207)|   
-Cisco UCS C240 M7 Server|  | 
+Cisco UCS C240 M7 Server| See [Cisco UCS C240 M7 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
-  * 6652 FI: For more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
+  * 6652 FI: 6.0(2.260045)
   * 6664 and X-Direct FI: 6.0(1.250198)
   * 6536 and 6400 Series FI: 4.2(3b)
 
@@ -441,9 +439,8 @@ UCSC-GPU-H100-NVL| Not Applicable| 4.3(5.240021)|
 Storage Controller| UCS-M2-NVRAID| 4.3(2.230117)| 4.3(2.230207)|   
 UCSC-HBA-M1L16UCSC-RAID-MP1L32| 4.3(2.230117)| 4.3(4.242038)|   
 Virtual Drives| UCS-SD16TKA3X-EPUCS-SD32TKA3X-EPUCS-SD16TBKANK9UCS-SD19TKA1X-EVUCS-SD38TKA1X-EVUCS-SD76TKA1X-EVUCS-SD15TKA1X-EVUCS-SD38TBKANK9UCS-SD76TBKANK9| 4.3(2.230117)| 4.3(2.230207)|   
-C-Series M6 Server| Cisco UCS C220 M6 ServerCisco UCS C240 M6 Server|  | 
+C-Series M6 Server| Cisco UCS C220 M6 ServerCisco UCS C240 M6 Server| See [Cisco UCS C220 M6 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).See [Cisco UCS C240 M6 Rack Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
-  * 6652 and 6664 FI: For more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
   * 6536 and 6400 Series FI: 4.1(3b)
 
 | 4.2(1e)| 1.0.9-319  
@@ -458,9 +455,8 @@ UCS-TPM-002D| Not Applicable| 4.3(4.240152)|
 Graphics processing unit (GPU)| UCSC-GPU-A16UCSC-GPU-A100-80| Not Applicable| 4.2(3b)|   
 UCSC-GPU-L4| Not Applicable| 4.3(4.240152)|   
 Storage Controller| UCS-M2-HWRAIDUCSC-RAID-M6TUCSC-RAID-M6SDUCSC-RAID-M6HDUCSC-SAS-M6HDUCSC-SAS-M6T| Not Applicable| 4.2(1e)|   
-Cisco UCS C245 M6 ServerCisco UCS C225 M6 Server|  | 
+Cisco UCS C245 M6 ServerCisco UCS C225 M6 Server| See [Cisco UCS C245 M6 Server Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).See [Cisco UCS C225 M6 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
-  * 6652 and 6664 FI: For more information on minimum supported infrastructure firmware versions, see [Appliance Help Center](https://intersight.com/help/appliance/supported_systems).
   * 6536 and 6400 Series FI: 4.1(3b)
 
 | 4.2(1e)| 1.0.9-360  
@@ -474,7 +470,7 @@ Trusted Platform Module (TPM)| UCSX-TPM2-002B-C| Not Applicable| 4.2(1e)|
 UCS-TPM2-002D| Not Applicable| 4.3(4.240152)|   
 Graphics processing unit (GPU)| UCSC-GPU-A16UCSC-GPU-A100-80| Not Applicable| 4.2(3b)|   
 Storage Controller| UCS-M2-HWRAIDUCSC-RAID-M6TUCSC-RAID-M6SDUCSC-RAID-M6HDUCSC-SAS-M6HDUCSC-SAS-M6T| Not Applicable| 4.2(1e)|   
-C-Series M5 Server| Cisco UCS C220 M5 ServerCisco UCS C240 M5 ServerCisco UCS C480 M5 Server|  | 6400 Series and 6536 FI: 4.1(3b)| 4.1(3b)| 1.0.9-302  
+C-Series M5 Server| Cisco UCS C220 M5 ServerCisco UCS C240 M5 ServerCisco UCS C480 M5 Server| See [Cisco UCS C220 M5 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor744).See [Cisco UCS C240 M5 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor744).See [Cisco UCS C480 M5 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor744).| 6400 Series and 6536 FI: 4.1(3b)| 4.1(3b)| 1.0.9-302  
 Adapters| UCSC-MLOM-C40Q-03UCSC-PCIE-C40Q-03| 4.1(3b)| 4.2(2g)|   
 UCSC-PCIE-C25Q-04UCSC-MLOM-C25Q-04UCSC-PCIE-C100-04UCSC-MLOM- C100-04| 4.1(3b)| 4.1(3b)|   
 Trusted Platform Module (TPM)| UCSX-TPM2-001UCSX-TPM2-002| Not Applicable| 4.1(3b)|   
@@ -500,6 +496,12 @@ For more information on Cisco Intersight Infrastructure Firmware release notes, 
 
 Table 4. Supported Combination of Hardware Components in IMMComponent| Supported Combination  
 ---|---  
+Cisco Unified Edge| 
+
+  * Includes two hot-pluggable eCMCs (eCMC A and eCMC B) for redundancy. The eCMC manages the chassis, enabling switching between the nodes and uplink connectivity. The supported eCMC model is UCSXE-ECMC-G1.
+  * Supports up to five Unified Edge compute nodes per Unified Edge Chassis, with each compute node capable of having up to four 15TB storage drives. The supported server model is UCSXE-130C-M8.
+
+  
 Cisco UCS X-Series Direct| 
 
   * Integrated FI: UCSX-S9108-100G
@@ -546,6 +548,7 @@ Rear Mezzanine Adapters|
   
 Adapters| 
 
+  * On Cisco UCS C-Series servers, MAC address support in the Redfish API is available only for the B3220L Data Processing Unit (DPU) when installed in C245 and C225 models in release 6.0(2.260044). Other DPU combinations—including BlueField OEM B3220-C245/C225/C240/C220, B3140H-C245/C225/C240/C220, and B3220L installed in C240 and C220 models—do not support this feature, leading to inconsistent NetworkPort responses and preventing MAC address retrieval for inventory and management workflows.To work around this issue, obtain the MAC address for the affected adapters, either set the network card as the boot device or disable the `OptionRomOptimisation` token in settings. This will increase boot-up time.
   * UCSX-X10C-GPUFM is an adapter that supports the GPU, UCSX-GPU-T4-MEZZ. For more information, see [Cisco UCS X10c Front Mezzanine GPU Module Installation and Service Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-x-series-modular-system/products-installation-guides-list.html).
   * UCSX-V4-Q25GME is a mezz card requires UCS VIC 14000 bridge connector (UCSX-V4-BRIDGE) and UCSX-V4-Q25GML mLOM support in the X210c Compute Node. For more information, see [Cisco UCS X210c M6 Compute Node](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-x-series-modular-system/products-installation-guides-list.html).
   * The UCSX-210C Compute Node must include a UCSX-V4-PCIME or a supported mezz card when paired with a X440p PCIe node.

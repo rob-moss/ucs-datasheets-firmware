@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Workloads guide |
 | **URL** | https://intersight.com/help/saas/configure/Workloads |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/cloud/data/articles/features/workloads/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/cloud/data/articles/features/workloads/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_Workloads.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:46:51 |
+| **Fetched on** | 2026-03-25 11:32:38 |
 
 ---
 
@@ -28,8 +28,10 @@ For more information on fleet management, see:
 
   * [Tasks Involved in Fleet Management](/help/resources/about_fm#tasks_involved_in_fleet_management)
 
+  * [RMA in Fleet](/help/resources/about_fm#rma_in_fleet)
 
-Navigate to Configure > Workloads to open the Workloads Table View. This page shows three tabs: Definitions, Deployments, Instances.
+
+Navigate to Configure > Workloads to open the workloads table view. This page shows three tabs: Definitions, Deployments, Instances.
 
   * Definitions—Workload definition is a golden configuration for a fleet of systems. It combines one or more blueprints with custom settings to ensure consistent deployment and management. For more information, see [Definitions](/help/configure/Workloads#definitions).
 

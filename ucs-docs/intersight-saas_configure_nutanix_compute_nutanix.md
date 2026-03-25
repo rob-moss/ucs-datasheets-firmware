@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Nutanix Compute Only guide |
 | **URL** | https://intersight.com/help/saas/configure/nutanix/compute_nutanix |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/cloud/data/articles/features/nutanix/compute/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/cloud/data/articles/features/nutanix/compute/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_nutanix_compute_nutanix.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:46:51 |
+| **Fetched on** | 2026-03-25 11:32:42 |
 
 ---
 
@@ -38,7 +38,7 @@ Storage protocol: NVMe over Fabrics (NVMeoF) over TCP
 Minimum 5 CO nodes  
 Hypervisor| AHV only  
 Management| Intersight Management Mode (IMM)  
-Pure Storage| FlashArray //X and FlashArray //XL  
+Pure Storage| FlashArray //X, //XL, and //C  
 Nutanix Cloud Platform Software| Supported Nutanix Software
   * Nutanix Cloud Infrastructure (NCI)
   * Nutanix Cloud Manager (NCM)

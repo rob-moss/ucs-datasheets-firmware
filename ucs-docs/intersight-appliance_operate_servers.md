@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight Appliance Servers guide |
 | **URL** | https://intersight.com/help/appliance/operate/servers |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/onprem/data/articles/features/servers/operate/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/onprem/data/articles/features/servers/operate/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_operate_servers.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:46:51 |
+| **Fetched on** | 2026-03-25 11:33:04 |
 
 ---
 
@@ -135,11 +135,15 @@ For more information on the allowed and blocked actions in the above cases, see 
 
   * CPU Cores—Displays the number of CPU cores in the server.
 
-  * Cooling Method—Displays the server's cooling method, which can be either Air or Immersion.
+  * Cooling Method—Displays the cooling method for the server. The available methods are Air or Immersion.
 
 Note:
 
-The Liquid Immersion Cooling method is supported only on C220 M7 servers in Intersight Managed Mode (IMM) and Intersight Standalone Mode (ISM).
+Liquid immersion cooling is supported only on the following servers in Intersight Managed Mode (IMM) and Intersight Standalone Mode (ISM):
+
+  * C220 M7 with minimum server firmware 4.3(6.250040)
+
+  * C220 M8 and C240 M8 with minimum server firmware 6.0(2.260044).
 
 
 ## Properties

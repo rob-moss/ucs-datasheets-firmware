@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco UCS Manager, Release 6.0 |
 | **Source file** | `ucs-docs-raw/html/b_release-notes-ucsm-6_0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:46:56 |
+| **Fetched on** | 2026-03-25 11:33:31 |
 
 ---
 
@@ -92,6 +92,15 @@ The Cisco UCS 6652 Fabric Interconnect supports an array of Gigabit Ethernet (Gb
 The Cisco UCS X410c M8 Compute Node is a four-socket, mission-critical server designed for demanding enterprise applications, memory-intensive workloads, and virtualization. It supports up to four Intel® Xeon 6 Processors with up to 86 cores per CPU and up to 16 TB of DDR5-6400 memory across 64 DIMM slots. Storage options include up to nine hot-pluggable EDSFF E3.S NVMe drives via a new passthrough front-mezzanine controller, or up to six 2.5-inch SAS/SATA/NVMe drives with RAID options, plus flexible boot options with M.2 SATA or NVMe drives. 
 
 The server supports Cisco UCS Virtual Interface Cards (VICs) for unified fabric connectivity, including up to 200 Gbps per server with secure boot technology. It is also managed through Cisco Intersight SaaS platform for automation and proactive support, simplifying administration and accelerating time to resolution. The system is designed to fit into the Cisco UCS X9508 Chassis, leveraging shared power, cooling, and management resources for scalable data center operations. 
+
+#### Peripherals
+
+Following peripherals are supported from release 6.0(2b) onwards: 
+
+  * Nvidia Crypto B3220 DPU (UCSC-P-NC3220) with Cisco UCS C245 and C240 M8 servers
+
+  * Nvidia Crypto B3220L SuperNIC (UCSC-P-NC3220L) with Cisco UCS C225, C245, C220, and C240 M8 servers
+
 
 ### New Hardware in Release 6.0(1e)
 
@@ -1106,7 +1115,6 @@ CSCwt14361 |  Remote authentication login using TACACS fails on a Fabric Interco
   2. On the Cisco Identity Services Engine server (ISE), enable additional attribute checks such as DNS verification as recommended by Cisco ISE software to enhance authentication reliability. 
 
 |  6.0(2b)  
-CSCws19521 |  The downgrade of the server bundle to any release earlier than 6.0(2b) for Cisco UCS x210C M8 server equipped with UCSX-X10C-PT4F controller fails due to a Complex Programmable Logic Device (CPLD) firmware version mismatch.  |  Exclude the CPLD component from the Host Firmware Package (HFP). |  6.0(2b)  
 CSCwt45410 |  During the infrastructure (A Bundle) upgrade from releases 4.3(6) or 6.0(1) to 6.0(2), the AES encryption key is deleted. This causes MACsec sessions using Type-6 keys in must secure mode to go down, resulting in traffic loss. The major fault message Primary Encryption key has not been set for MACsec keys is raised.  |  Before acknowledging the reboot of the primary Fabric Interconnect during the infrastructure bundle upgrade, configure the primary encryption key. Perform the following steps: 
 
   1. Enter the security scope:UCS# scope security
@@ -1505,7 +1513,7 @@ For older supported release only MDS recommended minor version are supported. Se
 
 Table 11. Compatibility and Support Matrix for Cisco Fabric Interconnects & Nexus Switches Fabric Interconnect |  Older Supported Release of NX-OS |  Recommended release of NX-OS  
 ---|---|---  
-Cisco UCS 6652 FI |  — |  10.6(x)  
+Cisco UCS 6652 FI |  NA |  10.6(x)  
 Cisco UCS 6664 FI |  10.5(x) |  10.6(x)  
 Cisco UCS 6536 FI |  10.5(x) |  10.6(x)  
 Cisco UCS 6454 FI |  10.5(x) |  10.6(x)  

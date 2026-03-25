@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Fabric Interconnects guide |
 | **URL** | https://intersight.com/help/saas/configure/fabric_interconnects |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/cloud/data/articles/features/fabric_interconnects/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/cloud/data/articles/features/fabric_interconnects/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_fabric_interconnects.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:46:50 |
+| **Fetched on** | 2026-03-25 11:32:36 |
 
 ---
 
@@ -39,7 +39,7 @@ The following list describes the domain policies that you can configure in Cisco
 
 The port policy is associated with a switch model. The network configuration limits also vary with the switch model.
 
-The maximum number of ports and port channels supported on Cisco UCS 6400 Series and 6500 Series Fabric Interconnects are:
+The maximum number of ports and port channels supported on Cisco UCS 6400 Series, 6500 Series, and 6600 Series Fabric Interconnects are:
 
   * Ethernet Uplink, Fibre Channel over Ethernet (FCoE) Uplink port channels, and Appliance port channels (combined) — 12
 
@@ -51,7 +51,15 @@ The maximum number of ports and port channels supported on Cisco UCS 6400 Series
 
   * Ethernet Uplink and FCoE Uplink ports (combined) —31
 
-  * Server ports—54 ports for Cisco UCS 6454, 108 ports for Cisco UCS 64108 Fabric Interconnects, and 64 ports for 6664 Fabric Interconnect.
+  * Server ports—
+
+  * 48 ports for Cisco UCS 6652 FI
+
+  * 64 ports for Cisco UCS 6664 FI
+
+  * 54 ports for Cisco UCS 6454 FI
+
+  * 108 ports for Cisco UCS 64108 FI
 
 The maximum number of ports and port channels supported for Cisco UCS Fabric Interconnects 9108 100G are:
 

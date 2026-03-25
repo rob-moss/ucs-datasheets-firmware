@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Servers guide |
 | **URL** | https://intersight.com/help/saas/operate/servers |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/cloud/data/articles/features/servers/operate/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/cloud/data/articles/features/servers/operate/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_operate_servers.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:46:50 |
+| **Fetched on** | 2026-03-25 11:32:33 |
 
 ---
 
@@ -29,8 +29,6 @@ All widgets except Server Profiles are dynamic and change based on the Add Filte
   * Health—The pie chart provides a visual representation of the health of the servers.
 
   * Power—The badges display the number of servers powered off or on.
-
-  * Custom HCL—The badges display the Custom Hardware Compatibility List (HCL) status of servers, indicating the count of servers is Conforming or Non-Confirming with any baseline or not compliant with any baseline.
 
   * HCL Status—The badges display the HCL status for the servers.
 
@@ -137,16 +135,22 @@ For more information on the allowed and blocked actions in the above cases, see 
 
   * CPU Cores—Displays the number of CPU cores in the server.
 
-  * Cooling Method—Displays the server's cooling method, which can be either Air or Immersion.
+  * Cooling Method—Displays the cooling method for the server. The available methods are Air or Immersion.
 
 Note:
 
-The Liquid Immersion Cooling method is supported only on C220 M7 servers in Intersight Managed Mode (IMM) and Intersight Standalone Mode (ISM).
+Liquid immersion cooling is supported only on the following servers in Intersight Managed Mode (IMM) and Intersight Standalone Mode (ISM):
+
+  * C220 M7 with minimum server firmware 4.3(6.250040)
+
+  * C220 M8 and C240 M8 with minimum server firmware 6.0(2.260044).
 
 
 ## Properties
 
 The Properties area displays a graphical view of the front, rear, and top sections of the server. Toggling on the Health Overlay function allows you to monitor the health of the server ports. The bottom section displays the Power On/Off status, Locator LED status, number of CPUs, threads, CPU cores, enabled CPU cores, and adapters. You can also view memory capacity, CPU capacity, ID, UUID, and cooling method.
+
+Note: The dynamic display of riser configurations is supported across all server models in the rear view section of the server.
 
 ## Alarms
 

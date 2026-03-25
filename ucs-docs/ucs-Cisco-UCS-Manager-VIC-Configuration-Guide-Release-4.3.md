@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager VIC Configuration Guide, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b-vic-configuration-guide-4-3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:46:40 |
+| **Fetched on** | 2026-03-25 11:31:11 |
 
 ---
 
@@ -170,11 +170,11 @@ To configure RoCEv2 mode 2, you will:
 
 ### Before you begin
 
-  * You must have a BIOS policy that is already created with the following options enabled:
+  * Ensure your BIOS policy is set up with the following options:
 
-  * For Intel based servers, Intel VT for directed IO under Intel Directed IO tab. 
+  * For Intel based servers, enable Intel VT for directed IO under Intel Directed IO tab. 
 
-  * For AMD based servers, IOMMU and SVM Mode under Processor tab. 
+  * For AMD based servers, enable IOMMU and SVM Mode under Processor tab and enable SR-IOV under LOM and PCIe Slots BIOS Settings tab. 
 
 To update BIOS options, see, [Cisco UCS Manager Server Management Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html). 
 

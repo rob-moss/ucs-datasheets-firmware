@@ -4,15 +4,64 @@
 |---|---|
 | **URL Title** | Intersight Appliance CVA Whats New |
 | **URL** | https://intersight.com/help/appliance/whats_new/connected_appliance/ |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/onprem/data/articles/connected_appliance/new_2026/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/onprem/data/articles/connected_appliance/new_2026/en/index.html |
 | **HTML Title** | What's New in Cisco Intersight |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_whats_new_connected_appliance.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:46:51 |
+| **Fetched on** | 2026-03-25 11:33:09 |
 
 ---
 
 # What's New in Cisco Intersight
+
+## March 19, 2026 – Appliance Software Release Version: 1.1.6-0
+
+  * **When upgrading to this software release, ensure that your appliance is running on software release version 1.1.3-0 or higher.**
+
+**If your appliance is running on a software release version prior to 1.1.3-0, first upgrade to software release version 1.1.3-0 or higher, before upgrading to 1.1.6-0.**
+
+  * Added support for Cisco Unified Edge in Intersight Managed Mode. Unified Edge is a modular platform that combines compute, networking, storage, and security in a single chassis. For more information, see [Cisco Unified Edge](/help/operate/unified_edge).
+
+  * Added support for managing Cisco Unified Edge as a fleet—a logical grouping of multiple servers, devices, or clusters managed collectively—which enables centralized automation and consistent configuration across all resources, resulting in simplified and scalable administration. For more information, see [Fleet Management](/help/resources/about_fm).
+
+  * Added support for location feature that allows adding geolocations to resources for improved organization and filtering. You can add locations using either a physical address or GPS coordinates. For more information, see [Locations](/help/system/locations).
+
+  * Added support for applying and propagating Path Tags across Fabric Interconnects, Unified Edge, Chassis, and Standalone Servers. Propagation depends on the hierarchy level and object type—Unified Edge, Fabric Interconnect, Chassis, and Standalone Servers, all support downward propagation to their related components. For more information, see [Tags](/help/system/tags).
+
+  * Added the ability to perform diagnostics on one or more servers and their components, enabling identification of server issues, detection of faulty components, and troubleshooting of basic problems. This feature is supported on Cisco UCS M6 and later servers in both Intersight Managed Mode and Intersight Standalone Mode. For more information, see [Performing Server Diagnostics](/help/resources/performing_server_diagnostics) and [Server Actions](/help/operate/servers#server_actions).
+
+  * Added the ability to create custom privilege sets. This feature allows administrators to manage user privileges, ensuring that users have access only to the resources and actions necessary for their roles. Granting only the necessary privilege to each user helps improve security, reduce risk, and maintain compliance. For more information, see [Privilege Sets](/help/resources/Privilege_Sets).
+
+  * Added support for email notifications on security advisories, field notices, and end-of-life (EOL) updates. Administrators can now customize alerts by severity or key milestones, making it easier to stay informed without manually checking Advisory pages. For more information, see [Create a Notification Rule](/help/settings#configuring_smtp_settings_for_email_notifications).
+
+  * Added support for 50 Gbps speed on the unified Ethernet ports of the Cisco UCS 6664 Fabric Interconnect, enabling greater bandwidth and improved connectivity. For more information, see [Port Policy](/help/resources/domain_policies#port_policy).
+
+  * Added support for Cisco UCS X410c M8 Compute Nodes in Intersight Managed Mode and UCSM Managed Mode. For more information, see [Supported Systems](/help/supported_systems).
+
+  * Added support for Cisco UCS 6652 Fabric Interconnects in Intersight Managed Mode and UCSM Managed Mode. For more information, see [Supported Systems](/help/supported_systems).
+
+  * Added support for 4*32G LR Optics on Cisco UCS 6536 Fabric Interconnect and UCSX-Direct Fabric Interconnect in Intersight Managed Mode. This enhancement enables Fibre Channel connectivity beyond 150 meters, providing extended reach for SAN environments.
+
+  * Added support for E3.S FIPS drives on Cisco UCS M8 servers in IMM, providing enhanced compliance and security.
+
+  * Added support for the Cisco UCS 2408 I/O Module with the Cisco UCS 6664 FI when used with the Cisco UCS 5108 chassis in Intersight Managed Mode (IMM). For more information, see [Supported Systems](/help/supported_systems).
+
+  * Added support for NetFlow policy on Cisco UCS 6600 Series, 6500 Series, 6400 Series, and Cisco UCS X-Series Direct Fabric Interconnects. This feature enables you to collect and analyze IP traffic metadata to monitor bandwidth, detect security anomalies, and troubleshoot performance issues.
+
+  * Added the ability to view real-time visual representation of appliance health status, including CPU, memory, and disk utilization. This feature enables proactive monitoring of performance trends, identification of potential capacity limitations, and optimization of resource allocation. For more information, see [Intersight Virtual Appliance Monitoring](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_settings_dashboard.html#reference_rzp_xp5_kgb).
+
+  * Added support for deploying Intersight Virtual Appliance in a small configuration with 8 vCPUs, 32 GiB memory, and 600 GB storage. For more information, see [VM Resource Requirements for Intersight Virtual Appliance Deployments](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5).
+
+  * Added support for deploying Intersight Assist in a tiny configuration with 4 vCPUs and 8 GiB memory. For more information, see [VM Resource Requirements for Intersight Assist](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_appliance_overview.html#Cisco_Concept.dita_7663b259-3058-49e2-b27c-0282007dda2a_new).
+
+  * Added Field Notice _FN74355: Cisco UCS M7 or Cisco HCI M7 Host May Lock Up Due to Error-Correcting Code During Runtime_ for select UCS models. For more information, see [Cisco Field Notices](/help/resources/cisco_field_notices).
+
+  * The following API specifications, SDKs, Terraform provider, and PowerShell modules are applicable to this Virtual Appliance release.
+
+Appliance Version| API Spec Version| Python SDK| Terraform Provider| PowerShell Module  
+---|---|---|---|---  
+1.1.6| 1.0.11-20260320211357036| [intersight · PyPI 1.0.11.2026030507](https://pypi.org/project/intersight/)| [1.0.77](https://registry.terraform.io/providers/CiscoDevNet/intersight/latest)| [Intersight.PowerShell 1.0.11.2026022006](https://www.powershellgallery.com/packages/Intersight.PowerShell/)  
+
 
 ## February 5, 2026 – Appliance Patch Release Version: 1.1.5-1
 

@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Supported Systems |
 | **URL** | https://intersight.com/help/saas/supported_systems |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/cloud/data/articles/supported_systems/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/cloud/data/articles/supported_systems/en/index.html |
 | **HTML Title** | Supported Systems |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_supported_systems.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:46:51 |
+| **Fetched on** | 2026-03-25 11:33:03 |
 
 ---
 
@@ -40,7 +40,8 @@ Table 4 shows the supported combination of components.
 Table 1. Supported Hardware Components with Required Minimum Infrastructure VersionsFabric Components  
 ---  
 Component| Model| Sub-Component| Sub-Component Model| Minimum Infrastructure Firmware Versions  
-Fabric Interconnect| UCS-FI-6664|  |  | 6.0(1.250198)  
+Fabric Interconnect| UCS-FI-6652|  |  | 6.0(2.260045)  
+UCS-FI-6664|  |  | 6.0(1.250198)  
 UCSX-S9108-100G|  |  | 4.3(4.240078)  
 UCS-FI-6536|  |  | 4.2(2b)  
 UCS-FI-64108|  |  | 4.1(3b)  
@@ -61,11 +62,13 @@ UCSX-440P-U|  |  | 4.2(2b)
   
 Note:
 
-  * Intersight Managed Mode can manage up to 20 chassis and 160 servers connected within a single Fabric Interconnect domain.
+  * Intersight Managed Mode can manage up to 20 chassis and 160 servers connected within a single FI domain.
 
   * Cisco UCS 6454 and 64108 Fabric Interconnects, require the port-based licensing in IMM but will not be enforced until further notice.
 
-Beginning with UCS software release version 4.2(3), Cisco UCS 6536, Cisco UCS 6664, and UCS X-Direct Fabric Interconnects support a perpetual software license, activating all ports and features.
+Beginning with UCS software release version 4.2(3), Cisco UCS 6536, Cisco UCS 6664, Cisco UCS 6652, and UCS X-Direct Fabric Interconnects support a perpetual software license, activating all ports and features.
+
+For more information, see [Understand and Troubleshoot UCS Licensing](https://www.cisco.com/c/en/us/support/docs/servers-unified-computing/ucs-infrastructure-ucs-manager-software/200638-Understanding-and-Troubleshooting-UCS-Li.html).
 
   * Swapping or moving cable connections on rack network adapters, whether between VIC ports on the same Fabric Interconnect or between different Fabric Interconnects, is not supported while the server is powered on after server discovery. Such actions are only permitted when the server is powered off through a soft shutdown.
 
@@ -79,6 +82,7 @@ The following table lists the server models supported in Intersight Managed Mode
 Table 2. Supported Server ModelsServer Generation| Supported Model  
 ---|---  
 M8| Cisco UCS XE130c M8 Compute Node  
+Cisco UCS X410c M8 Compute Node  
 Cisco UCS X210c M8 Compute Node  
 Cisco UCS X215c M8 Compute Node  
 Cisco UCS C220 M8 Server  
@@ -106,22 +110,32 @@ Cisco UCS C220 M5 Server
 Cisco UCS C240 M5 Server, Cisco UCS C240 SD M5 Server  
 Cisco UCS C480 M5 Server *  
   
-Table 3. Supported Hardware Components with Required Minimum Firmware VersionsSupported Components for Servers  
+Table 3. Supported Hardware Components with Required Minimum Firmware VersionsFabric Components  
 ---  
 Component| Model| Sub-Component| Sub-Component Model| Minimum Infrastructure Firmware Versions| Minimum Server Firmware Versions  
-XE-Series Intel M8 Compute Node| Cisco UCS XE130c M8 Compute Node| See [Cisco UCS XE130c M8 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| XE9305 Unified Edge chassis: 6.0(1.251005)| 6.0(1.251030)  
-X-Series Intel M8 Compute Node| Cisco UCS X210c M8 Compute Node| See [Cisco UCS X210c M8 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
+X-Series Intel M8 Compute Node| Cisco UCS XE130c M8 Compute Node| See [Cisco UCS XE130c M8 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| XE9305 Unified Edge chassis: 6.0(1.251005)| 6.0(1.251030)  
+Cisco UCS X410c M8 Compute Node| See [_Cisco UCS X410c M8 Compute Node Spec Sheet_ ](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
 
+  * 6652 FI: 6.0(2.260045)
   * 6664 FI: 6.0(1.250198)
-  * X-Direct FI: 4.3(6.250094)
   * 6400 Series and 6536 FI: 4.3(6.250048)
+  * X-Direct FI: 4.3(6.250094)
+
+| 6.0(2.260040)  
+Cisco UCS X210c M8 Compute Node| See [Cisco UCS X210c M8 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
+
+  * 6652 FI: 6.0(2.260045)
+  * 6664 FI: 6.0(1.250198)
+  * 6400 Series and 6536 FI: 4.3(6.250048)
+  * X-Direct FI: 4.3(6.250094)
 
 | 5.4(0.250037)  
 X-Series AMD M8 Compute Node| Cisco UCS X215c M8 Compute Node| See [Cisco UCS X215c M8 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
 
+  * 6652 FI: 6.0(2.260045)
   * 6664 FI: 6.0(1.250198)
-  * X-Direct FI: 4.3(5.240162)
   * 6400 Series and 6536 FI: 4.3(2.230117)
+  * X-Direct FI: 4.3(5.240162)
 
 | 5.3(0.240016)  
 New Hardware Supported Since Initial Release  
@@ -133,7 +147,7 @@ CPU| 5th Generation AMD EPYC CPU:
   * UCSX-CPU-A9135
   * UCSX-CPU-A95755
 
-| Not Applicable| 5.3(0.250001)  
+Note:For more information, see the [Cisco UCS X215c M8 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x215c-m8-compute-node.pdf).| Not Applicable| 5.3(0.250001)  
 GPU| UCSC-GPU-MI210| Not Applicable| 5.3(0.250001)  
 DIMMs| DDR5-5600 MT/s:
 
@@ -146,14 +160,15 @@ DDR5-6400 MT/s:
 
 | Not Applicable| 5.3(0.250001)  
 Storage Controller| UCSX-X10C-GPUFM| Not Applicable| 5.3(0.240016)  
-X-Series M7 Compute Node| Cisco UCS X410c M7 Compute Node| See [Cisco UCS X410c M7 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
+X-Series M7 Server| Cisco UCS X410c M7 Compute Node| See [Cisco UCS X410c M7 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
 
+  * 6652 FI: 6.0(2.260045)
   * 6664 FI: 6.0(1.250198)
-  * X-Direct FI - 4.3(4.240078)
   * 6400 Series and 6536 FI: 4.2(3e)
+  * X-Direct FI: 4.3(4.240078)
 
 | 5.1(1.230052)  
-CPU| 4th Generation Intel® Xeon® Scalable Processors| Not Applicable| 5.1(1.230052)  
+CPU| 4th Generation Intel® Xeon® Scalable ProcessorsNote:For more information, see the [Cisco UCS X410c M7 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html).| Not Applicable| 5.1(1.230052)  
 DIMMs| UCSX-MRX16G1RE1UCSX-MRX32G1RE1UCSX-MRX64G2RE1UCSX-MR128G4RE1UCSX-MR256G8RE1| Not Applicable| 5.1(1.230052)  
 UCSX-MRX96G2RF3| Not Applicable| 5.2(2.240053)  
 Adapters| UCSX-ML-V5Q50G (Secure Boot)UCSX-ME-V5Q50G (Secure Boot)UCSX-ML-V5D200G| Not Applicable| 5.1(1.230052)  
@@ -168,13 +183,14 @@ UCSX-M2-PT-FPN| Not Applicable| 5.2(0.230127)
 UCSX-X10C-GPUFM| Not Applicable| 5.2(0.230041)  
 X-Series M7 Compute Node| Cisco UCS X210c M7 Compute Node| See [Cisco UCS X210c M7 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html#anchor258).| 
 
+  * 6652 FI: 6.0(2.260045)
   * 6664 FI: 6.0(1.250198)
-  * X-Direct FI - 4.3(4.240078)
   * 6400 Series and 6536 FI: 4.2(3b)
+  * X-Direct FI: 4.3(4.240078)
 
 | 5.1(0.230096)  
 CPU| 4th Generation Intel® Xeon® Scalable Processors.| Not Applicable| 5.1(0.230096)  
-5th Generation Intel® Xeon® Scalable Processors| Not Applicable| 5.2(1.240010)  
+5th Generation Intel® Xeon® Scalable ProcessorsNote:For more information, see the [Cisco UCS X210c M7 Compute Node Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html).| Not Applicable| 5.2(1.240010)  
 Additional 5th Generation Intel® Xeon® Scalable Processors:
 
   * UCSX-CPU-I4510T
@@ -217,15 +233,15 @@ UCSX-GPU-FLX140MZ| Not Applicable| 5.2(2.240053)
 Storage Controller| UCSX-X10C-PT4FUCSX-X10C-RAIDFUCSX-M2-HWRAID| Not Applicable| 5.1(0.230096)  
 UCSX-M2-PT-FPN| Not Applicable| 5.2(0.230041)  
 UCSX-X10C-GPUFM| Not Applicable| 5.3(0.250021)  
-X-Series M6 Compute Node| Cisco UCS X210c M6 Compute Node| See [Cisco UCS X210c M6 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x210c-specsheet.pdf).| 
+X-Series M6 Server| Cisco UCS X210c M6 Compute Node| See [Cisco UCS X210c M6 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x210c-specsheet.pdf).| 
 
-  * X-Direct FI - 4.3(4.240078)
   * 6400 Series and 6536 FI: 4.2(1a)
+  * X-Direct FI: 4.3(4.240078)
 
 | 5.0(1b)  
 Adapters| UCSX-V4-Q25GMLUCSX-V4-Q25GME| Not Applicable| 5.0(1b)  
 UCSX-ML-V5Q50G (Secure Boot)UCSX-ME-V5Q50G (Secure Boot)| Not Applicable| 5.1(0.230054)  
-UCSX-ML-V5D200G| 4.2(2)| 5.0(2b)  
+UCSX-ML-V5D200G| Not Applicable| 5.0(2b)  
 UCSX-ML-V5D200GV2 (Secure Boot)| Not Applicable| 5.2(0.230061)  
 Rear Mezzanine Adapters| UCSX-V4-PCIME| Not Applicable| 5.0(2d)  
 Trusted Platform Module (TPM)| UCSX-TPM-002C| Not Applicable| 5.0(1b)  
@@ -234,7 +250,11 @@ Graphics processing unit (GPU)| UCSX-GPU-A100-80| Not Applicable| 5.0(2e)
 UCSX-GPU-T4-MEZZUCSX-GPU-T4-16UCSX-GPU-A16UCSX-GPU-A40| Not Applicable| 5.0(2d)  
 Storage Controller| UCSX-X10C-PT4FUCSX-X10C-RAIDFUCSX-M2-HWRAID| Not Applicable| 5.0(4b)  
 UCSX-X10C-GPUFM| Not Applicable| 5.2(0.230040)  
-B-Series M6 Server| Cisco UCS B200 M6 Server| See [Cisco UCS B200 M6 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/datasheet-listing.html#anchor441).| 6400 Series and 6536 FI: 4.1(3b)| 4.2(1d)  
+B-Series M6 Server| Cisco UCS B200 M6 Server| See [Cisco UCS B200 M6 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/datasheet-listing.html#anchor441).| 
+
+  * 6400 Series and 6536 FI: 4.1(3b)
+
+| 4.2(1d)  
 Adapters| UCSB-ML-V5Q10G| Not Applicable| 4.2(1d)  
 UCSB-MLOM-40G-04UCSB-VIC-M84-4P| 4.1(3b)| 4.2(1d)  
 Trusted Platform Module (TPM)| UCSX-TPM-002C| Not Applicable| 4.2(1d)  
@@ -248,25 +268,29 @@ Trusted Platform Module (TPM)| UCSX-TPM2-001UCSX-TPM2-002| Not Applicable| 4.1(3
 Storage Controller| UCS-M2-HWRAIDUCSB-MRAID12GUCSB-MRAID12G-HEUCSB-LSTOR-PT| Not Applicable| 4.1(3c)  
 C-Series Intel M8 Server| Cisco UCS C220 M8 Server| See [Cisco UCS C220 M8 Rack Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
-  * 6664 and X-Direct FI: 6.0(1.250198)
+  * 6652 FI: 6.0(2.260045)
+  * 6664 FI and X-Direct FI: 6.0(1.250198)
   * 6400 Series and 6536 FI: 4.3(6.250048)
 
 | 4.3(6.250039)  
 Cisco UCS C240 M8 Server| See [Cisco UCS C240 M8 Rack Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
+  * 6652 FI: 6.0(2.260045)
   * 6664 and X-Direct FI: 6.0(1.250198)
-  * 6400 Series and 6536 FI: 4.3(6.250048)
+  * 6536 and 6400 Series FI: 4.3(6.250048)
 
 | 4.3(6.250039)  
 Storage Controller| UCSC-RAID-M1L16| 
 
-  * 6400 Series, 6536, 6664, and X-Direct FI: 6.0(1.250198)
+  * 6652 FI: 6.0(2.260045)
+  * 6664, 6536, 6400 Series, and X-Direct FI: 6.0(1.250198)
 
 | 6.0(1.250127)  
 C-Series AMD M8 Server| Cisco UCS C225 M8 Server| See [Cisco UCS C225 M8 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
+  * 6652 FI: 6.0(2.260045)
   * 6664 and X-Direct FI: 6.0(1.250198)
-  * 6400 Series and 6536 FI: 4.2(3b)
+  * 6536 and 6400 Series FI: 4.2(3b)
 
 | 4.3(5.240021)  
 New Hardware Supported Since Initial Release  
@@ -278,7 +302,7 @@ CPU| 5th Generation AMD EPYC CPU:
   * UCS-CPU-A9135
   * UCS-CPU-A9575F
 
-| Not Applicable| 4.3(5.250001)  
+Note:For more information, see the [Cisco UCS C225 M8 Server Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-sff-rack-server.pdf).| 4.2(3b)| 4.3(5.250001)  
 Storage Controller| UCSC-RAID-M1L16UCSC-RAID-MP1L32| 4.2(3b)| 4.3(5.250001)  
 UCSC-HBA-M1L16| 4.2(3b)| 4.3(5.250001)  
 DIMMs| DDR5-5600 MT/s:
@@ -293,8 +317,9 @@ DDR5-6400 MT/s
 | Not Applicable| 4.3(5.250001)  
 Cisco UCS C245 M8 Server| See [Cisco UCS C245 M8 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
+  * 6652 FI: 6.0(2.260045)
   * 6664 and X-Direct FI: 6.0(1.250198)
-  * 6400 Series and 6536 FI: 4.2(3b)
+  * 6536 and 6400 Series FI: 4.2(3b)
 
 | 4.3(4.241014)  
 New Hardware Supported Since Initial Release  
@@ -308,7 +333,7 @@ CPU| 5th Generation AMD EPYC CPU:
   * UCS-CPU-A9135
   * UCS-CPU-A9575F
 
-| Not Applicable| 4.3(5.250001)  
+Note:For more information, see the [Cisco UCS C245 M8 Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c245-m8-sff-rack-server.pdf).| Not Applicable| 4.3(5.250001)  
 Storage Controller| UCSC-RAID-M1L16UCSC-RAID-MP1L32| 4.2(3b)| 4.3(5.250001)  
 UCSC-HBA-M1L16| 4.2(3b)| 4.3(5.250001)  
 DIMMs| DDR5-5600 MT/s:
@@ -324,12 +349,13 @@ DDR5-6400 MT/s:
 | Not Applicable| 4.3(5.250001)  
 C-Series M7 Server| Cisco UCS C220 M7 Server| See [Cisco UCS C220 M7 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
+  * 6652 FI: 6.0(2.260045)
   * 6664 and X-Direct FI: 6.0(1.250198)
-  * 6400 Series and 6536 FI: 4.2(3b)
+  * 6536 and 6400 Series FI: 4.2(3b)
 
 | 4.3(1.230097)  
 CPU| 4th Generation Intel® Xeon® Scalable Processors.| Not Applicable| 4.3(1.230097)  
-5th Generation Intel® Xeon® Scalable Processors| Not Applicable| 4.3(3.240022)  
+5th Generation Intel® Xeon® Scalable ProcessorsNote:For more information, see the [Cisco UCSC C220 M7 SFF Rack Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html).| Not Applicable| 4.3(3.240022)  
 Additional 5th Generation Intel® Xeon® Scalable Processors:
 
   * UCS-CPU-I4510T
@@ -364,17 +390,17 @@ UCS-TPM-002D| Not Applicable| 4.3(4.240152)
 Graphics processing unit (GPU)| UCSC-GPU-A16UCSC-GPU-A100-80| Not Applicable| 4.3(1.230097)  
 UCSC-GPU-L4UCSC-GPU-FLEX140| Not Applicable| 4.3(2.230207)  
 Storage Controller| UCS-M2-NVRAID| 4.3(2.230117)| 4.3(2.230207)  
-UCSC-RAID-M1L16| 4.3(2.230117)| 4.3(4.242038)  
-UCSC-HBA-M1L16| 4.3(2.230117)| 4.3(4.242038)  
+UCSC-HBA-M1L16UCSC-RAID-M1L16| 4.3(2.230117)| 4.3(4.242038)  
 Virtual Drives| UCS-SD16TKA3X-EPUCS-SD32TKA3X-EPUCS-SD16TBKANK9UCS-SD19TKA1X-EVUCS-SD38TKA1X-EVUCS-SD76TKA1X-EVUCS-SD15TKA1X-EVUCS-SD38TBKANK9UCS-SD76TBKANK9| 4.3(2.230117)| 4.3(2.230207)  
 Cisco UCS C240 M7 Server| See [Cisco UCS C240 M7 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
 
+  * 6652 FI: 6.0(2.260045)
   * 6664 and X-Direct FI: 6.0(1.250198)
-  * 6400 Series and 6536 FI: 4.2(3b)
+  * 6536 and 6400 Series FI: 4.2(3b)
 
 | 4.3(1.230097)  
 CPU| 4th Generation Intel® Xeon® Scalable Processors.| Not Applicable| 4.3(1.230097)  
-5th Generation Intel® Xeon® Scalable Processors| Not Applicable| 4.3(3.240022)  
+5th Generation Intel® Xeon® Scalable ProcessorsNote:For more information, see the [Cisco UCS C240 M7 SFF Rack Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html).| Not Applicable| 4.3(3.240022)  
 Additional 5th Generation Intel® Xeon® Scalable Processors:
 
   * UCS-CPU-I4510T
@@ -413,10 +439,13 @@ UCSC-GPU-H100-80UCSC-GPU-L40UCSC-GPU-L4UCSC-GPU-FLEX140UCSC-GPU-FLEX170| Not App
 UCSC-GPU-L40S| Not Applicable| 4.3(4.240152)  
 UCSC-GPU-H100-NVL| Not Applicable| 4.3(5.240021)  
 Storage Controller| UCS-M2-NVRAID| 4.3(2.230117)| 4.3(2.230207)  
-UCSC-RAID-M1L32| 4.3(2.230117)| 4.3(4.242038)  
-UCSC-HBA-M1L16| 4.3(2.230117)| 4.3(4.242038)  
+UCSC-HBA-M1L16UCSC-RAID-MP1L32| 4.3(2.230117)| 4.3(4.242038)  
 Virtual Drives| UCS-SD16TKA3X-EPUCS-SD32TKA3X-EPUCS-SD16TBKANK9UCS-SD19TKA1X-EVUCS-SD38TKA1X-EVUCS-SD76TKA1X-EVUCS-SD15TKA1X-EVUCS-SD38TBKANK9UCS-SD76TBKANK9| 4.3(2.230117)| 4.3(2.230207)  
-C-Series M6 Server| Cisco UCS C220 M6 ServerCisco UCS C240 M6 Server| See [Cisco UCS C220 M6 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).See [Cisco UCS C240 M6 Rack Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 6400 Series and 6536 FI: 4.1(3b)| 4.2(1e)  
+C-Series M6 Server| Cisco UCS C220 M6 ServerCisco UCS C240 M6 Server| See [Cisco UCS C220 M6 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).See [Cisco UCS C240 M6 Rack Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
+
+  * 6536 and 6400 Series FI: 4.1(3b)
+
+| 4.2(1e)  
 Adapters| UCSC-PCIE-C25Q-04UCSC-PCIE-C100-04| 4.1(3b)| 4.2(1e)  
 UCSC-M-V100-04UCSC-M-V25-04| 4.1(3b)| 4.2(1e)  
 UCSC-M-V5D200G| Not Applicable| 4.2(2f)  
@@ -428,7 +457,11 @@ UCS-TPM-002D| Not Applicable| 4.3(4.240152)
 Graphics processing unit (GPU)| UCSC-GPU-A16UCSC-GPU-A100-80| Not Applicable| 4.2(3b)  
 UCSC-GPU-L4| Not Applicable| 4.3(4.240152)  
 Storage Controller| UCS-M2-HWRAIDUCSC-RAID-M6TUCSC-RAID-M6SDUCSC-RAID-M6HDUCSC-SAS-M6HDUCSC-SAS-M6T| Not Applicable| 4.2(1e)  
-Cisco UCS C245 M6 ServerCisco UCS C225 M6 Server| See [Cisco UCS C245 M6 Server Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).See [Cisco UCS C225 M6 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 6400 Series and 6536 FI: 4.1(3b)| 4.2(1e)  
+Cisco UCS C245 M6 ServerCisco UCS C225 M6 Server| See [Cisco UCS C245 M6 Server Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).See [Cisco UCS C225 M6 Server Spec Sheet](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/datasheet-listing.html#anchor741).| 
+
+  * 6536 and 6400 Series FI: 4.1(3b)
+
+| 4.2(1e)  
 Adapters| UCSC-PCIE-C25Q-04UCSC-PCIE-C100-04| 4.1(3b)| 4.2(1e)  
 UCSC-M-V100-04UCSC-M-V25-04| 4.1(3b)| 4.2(1e)  
 UCSC-M-V5D200G| Not Applicable| 4.2(2f)  
@@ -467,6 +500,12 @@ For more information on Cisco Intersight Infrastructure Firmware release notes, 
 
 Table 4. Compatibility Status of Hardware Components in IMMComponent| Supported/Unsupported Configurations  
 ---|---  
+Cisco Unified Edge| 
+
+  * Includes two hot-pluggable eCMCs (eCMC A and eCMC B) for redundancy. The eCMC manages the chassis, enabling switching between the nodes and uplink connectivity. The supported eCMC model is UCSXE-ECMC-G1.
+  * Supports up to five Unified Edge compute nodes per Unified Edge Chassis, with each compute node capable of having up to four 15TB storage drives. The supported server model is UCSXE-130C-M8.
+
+For more information, see [Cisco Unified Edge](/help/resources/components_ue).  
 Cisco UCS X-Series Direct| 
 
   * Integrated FI: UCSX-S9108-100G
@@ -476,16 +515,17 @@ Cisco UCS X-Series Direct|
   * Rack servers are supported.
   * UCS X-Series Direct currently does not support Fabric Extender.
 
-  
+For more information, see [Cisco UCS X-Series Direct](/help/resources/cisco_ucs_x_series_direct).  
 Topologies| Direct-attached Racks through 10G/25G/100G connectionsBreak-out port configuration through 10G/25G connectionsFEX-attached Racks through 10GE connectionsChassis through 10G/25G/100G connectionsN9K-C93108YC-FX3 FEX through 10G/25G connections  
 Fabric Interconnects| 
 
   * UCS-FI-6536 and direct-attached rack server are supported at 40G and 100G on Cisco UCS 1400 and 15000 series VIC adapters.
-  * Cisco UCS 6664 FI is supported with the UCSX-9508 chassis using UCSX-I-9108-25G and UCSX-I-9108-100G IFMs.
+  * Cisco UCS 6664 and 6652 FIs are supported with the UCSX-9508 chassis using UCSX-I-9108-25G and UCSX-I-9108-100G IFMs.
 
   
 Input/Output Module (IOM)| 
 
+  * UCS-IOM-2408 is supported on Cisco UCS 6652 and 6664 FIs with the Cisco UCS 5108 chassis.
   * UCS-IOM-2204XP and UCS-IOM-2208XP are not supported on Cisco UCS 6500 Series Fabric Interconnects.
   * UCS-IOM-2304 and UCS-IOM-2304V2 are supported only with Cisco UCS 6500 series Fabric Interconnect.
   * When there is a mixed IOM configuration, Access Policy deployment can fail resulting in Server Profile deployment failure. It will recover once both the IOMs are replaced.
@@ -512,6 +552,7 @@ Rear Mezzanine Adapters|
   
 Adapters| 
 
+  * On Cisco UCS C-Series servers, MAC address support in the Redfish API is available only for the B3220L Data Processing Unit (DPU) when installed in C245 and C225 models in release 6.0(2.260044). Other DPU combinations—including BlueField OEM B3220-C245/C225/C240/C220, B3140H-C245/C225/C240/C220, and B3220L installed in C240 and C220 models—do not support this feature, leading to inconsistent NetworkPort responses and preventing MAC address retrieval for inventory and management workflows.To work around this issue, obtain the MAC address for the affected adapters, either set the network card as the boot device or disable the `OptionRomOptimisation` token in settings. This will increase boot-up time.
   * UCSX-X10C-GPUFM is an adapter that supports the GPU, UCSX-GPU-T4-MEZZ. For more information, see [Cisco UCS X10c Front Mezzanine GPU Module Installation and Service Guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-x-series-modular-system/products-installation-guides-list.html).
   * UCSX-V4-Q25GME is a mezz card requires UCS VIC 14000 bridge connector (UCSX-V4-BRIDGE) and UCSX-V4-Q25GML mLOM support in the X210c Compute Node. For more information, see [Cisco UCS X210c M6 Compute Node](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-x-series-modular-system/products-installation-guides-list.html).
   * The UCSX-210C Compute Node must include a UCSX-V4-PCIME or a supported mezz card when paired with a X440p PCIe node.
@@ -551,12 +592,12 @@ Graphics processing unit (GPU)|
 
 System| Supported Version  
 ---|---  
-Cisco UCS Fabric Interconnects| For Cisco UCS 6200 and 6300 Series Fabric Interconnects: Cisco UCS Manager 3.2 and later versionFor Cisco UCS Mini 6324 Fabric Interconnects: Cisco UCS Manager 3.2 and later version.For Cisco UCS 6454 Fabric Interconnects: Cisco UCS Manager 4.0 and later versionFor Cisco UCS 64108 Fabric Interconnects: Cisco UCS Manager 4.1 and later versionFor Cisco UCS 6500 Series Fabric Interconnects: Cisco UCS Manager 4.2(3d) and later versionFor Cisco UCS 9108 100G Fabric Interconnect: Cisco UCS Manager 4.3(4b) and later version  
-UCSM Managed Mode Servers| **M8 Servers:** For Cisco UCS C220 M8 servers: Cisco UCS Manager release 4.3(6a) and later versionFor Cisco UCS C240 M8 servers: Cisco UCS Manager release 4.3(6a) and later versionFor Cisco UCS C245 M8 servers - Support for 4th Generation AMD EPYC Processors: Cisco UCS Manager release 4.3(4b) and later versionFor Cisco UCS C225 M8, C245 M8 servers, and X215c M8 Compute Nodes - Support for 5th Generation AMD EPYC Processors: Cisco UCS Manager release 4.3(5c) and later version.For Cisco UCS C225 M8 servers and X215c M8 Compute Nodes - Support for 4th Generation AMD EPYC Processors: Cisco UCS Manager release 4.3(5a) and later version.For Cisco X210c M8 servers: Cisco UCS Manager release 4.3(6a) and later version**M7 Servers:** For Cisco UCS C220 M7 and C240 M7 servers and Cisco UCS X210c and UCS X410c Compute Nodes - Support for 4th Generation Intel® Xeon® Scalable Processors: 4.2(3b) and later versionFor Cisco UCS C220 M7 and C240 M7 servers and UCS X210c M7 Compute Nodes - Support for 5th Generation Intel® Xeon® Scalable Processors: 4.3(3a) and later versionFor Cisco UCS X210c M7 Compute Nodes : Cisco UCS Manager release 4.3(2b) and later version.For Cisco X410c M7 Compute Nodes: Cisco UCS Manager release 4.3(2c) and later version.**M6 Servers:** For Cisco UCS B-Series, C-Series M6 servers: Cisco UCS Manager release 4.2(1) and later version.For Cisco UCS X210c M6 Compute Node: Cisco UCS Manager release 4.3(2b) and later version.**M5 Servers:** For Cisco UCS B-Series, C-Series, and S-Series, and HX-Series M5 Servers: Cisco UCS Manager release 3.2(1) and later version.For Cisco UCS B-Series, C-Series, and S-Series M4 Servers: Cisco UCS Manager release 3.1(1) and later version.  
+Cisco UCS Fabric Interconnects| For Cisco UCS 6652 Series Fabric Interconnects: Cisco UCS Manager 6.0(2b) and later versionsFor Cisco UCS 6664 Series Fabric Interconnects: Cisco UCS Manager 6.0(1b) and later versions.For Cisco UCS 9108 100G Fabric Interconnect: Cisco UCS Manager 4.3(4b) and later versionFor Cisco UCS 6500 Series Fabric Interconnects: Cisco UCS Manager 4.2(3d) and later versionFor Cisco UCS 64108 Fabric Interconnects: Cisco UCS Manager 4.1 and later versionFor Cisco UCS 6454 Fabric Interconnects: Cisco UCS Manager 4.0 and later versionFor Cisco UCS Mini 6324 Fabric Interconnects: Cisco UCS Manager 3.2 and later version.For Cisco UCS 6200 and 6300 Series Fabric Interconnects: Cisco UCS Manager 3.2 and later version  
+UCSM Managed Mode Servers| **M8 Servers:** For Cisco X410c M8 servers: Cisco UCS Manager release 6.0(2b) and later versionFor Cisco X210c M8 servers: Cisco UCS Manager release 4.3(6a) and later versionFor Cisco UCS C220 M8 servers: Cisco UCS Manager release 4.3(6a) and later versionFor Cisco UCS C240 M8 servers: Cisco UCS Manager release 4.3(6a) and later versionFor Cisco UCS C245 M8 servers - Support for 4th Generation AMD EPYC Processors: Cisco UCS Manager release 4.3(4b) and later versionFor Cisco UCS C225 M8, C245 M8 servers, and X215c M8 Compute Nodes - Support for 5th Generation AMD EPYC Processors: Cisco UCS Manager release 4.3(5c) and later version.For Cisco UCS C225 M8 servers and X215c M8 Compute Nodes - Support for 4th Generation AMD EPYC Processors: Cisco UCS Manager release 4.3(5a) and later version.**M7 Servers:** For Cisco UCS C220 M7 and C240 M7 servers and Cisco UCS X210c and UCS X410c Compute Nodes - Support for 4th Generation Intel® Xeon® Scalable Processors: 4.2(3b) and later versionFor Cisco UCS C220 M7 and C240 M7 servers and UCS X210c M7 Compute Nodes - Support for 5th Generation Intel® Xeon® Scalable Processors: 4.3(3a) and later versionFor Cisco UCS X210c M7 Compute Nodes : Cisco UCS Manager release 4.3(2b) and later version.For Cisco X410c M7 Compute Nodes: Cisco UCS Manager release 4.3(2c) and later version.**M6 Servers:** For Cisco UCS B-Series, C-Series M6 servers: Cisco UCS Manager release 4.2(1) and later version.For Cisco UCS X210c M6 Compute Node: Cisco UCS Manager release 4.3(2b) and later version.**M5 Servers:** For Cisco UCS B-Series, C-Series, and S-Series, and HX-Series M5 Servers: Cisco UCS Manager release 3.2(1) and later version.For Cisco UCS B-Series, C-Series, and S-Series M4 Servers: Cisco UCS Manager release 3.1(1) and later version.  
 Cisco UCS C-Series Standalone Servers| **M8 Servers:** For C220 M8 Servers:Cisco IMC Software 4.3(6.250048) and later version.For C240 M8 Servers:Cisco IMC Software 4.3(6.250048) and later version.For C225 M8 Servers:Cisco IMC Software 4.3(5.240021) and later version.For C245 M8 Servers:Cisco IMC Software 4.3(4.241014) and later version.**M7 Servers** :For C220 and C240 M7 Servers:Cisco IMC Software 4.3(1.230097) and later version.**M6 Servers** :For Cisco UCS C220M6, C240 M6, C245 M6, and C225 M6 Servers: Servers: Cisco IMC Software 4.2 and later version**M5 Servers:** Cisco IMC Software 3.1 and later version**M4 Servers** :Cisco IMC Software 3.0(4) and later version  
 Cisco UCS S3260 Standalone Servers| Cisco IMC Software 4.0(4e) and later version  
 Dense GPU Server| **Cisco UCS C885A M8 Server** Server firmware version: 1.1(0.250016) and later versionFor more information, see [Cisco Baseboard Management Controller Release Notes for Cisco UCS C885A M8 Rack Server, Release 1.1](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/Cisco-BMC-Release-Notes/1-1-0/b_cisco-openbmc-release-notes-1_1.html).**Cisco UCS C845A M8 Server** Server firmware version: 2.0(1.250096) and later versionFor more information, see [Cisco Baseboard Management Controller 2.0 Release Notes, Release 2.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/Cisco-BMC-Release-Notes/2-0-1/b_cisco-bmc-2-0-release-notes.html).  
-HyperFlex HX-Series Servers| **M8 Servers:** For Cisco UCS C220 M8 servers: Cisco UCS Manager release 4.3(6a) and later versionFor Cisco UCS C240 M8 servers: Cisco UCS Manager release 4.3(6a) and later versionFor Cisco UCS C245 M8 servers - Support for 4th Generation AMD EPYC Processors: Cisco UCS Manager release 4.3(4b) and later versionFor Cisco UCS C225 M8, C245 M8 servers, and X215c M8 Compute Nodes - Support for 5th Generation AMD EPYC Processors: Cisco UCS Manager release 4.3(5c) and later version.For Cisco UCS C225 M8 servers and X215c M8 Compute Nodes - Support for 4th Generation AMD EPYC Processors: Cisco UCS Manager release 4.3(5a) and later version.For Cisco X210c M8 servers: Cisco UCS Manager release 4.3(6a) and later version**M7 Servers:** For Cisco UCS C220 M7 and C240 M7 servers and Cisco UCS X210c and UCS X410c Compute Nodes - Support for 4th Generation Intel® Xeon® Scalable Processors: 4.2(3b) and later versionFor Cisco UCS C220 M7 and C240 M7 servers and UCS X210c M7 Compute Nodes - Support for 5th Generation Intel® Xeon® Scalable Processors: 4.3(3a) and later versionFor Cisco UCS X210c M7 Compute Nodes : Cisco UCS Manager release 4.3(2b) and later version.For Cisco X410c M7 Compute Nodes: Cisco UCS Manager release 4.3(2c) and later version.**M6 Servers:** For Cisco UCS B-Series, C-Series M6 servers: Cisco UCS Manager release 4.2(1) and later version.For Cisco UCS X210c M6 Compute Node: Cisco UCS Manager release 4.3(2b) and later version.**M5 Servers:** For Cisco UCS B-Series, C-Series, and S-Series, and HX-Series M5 Servers: Cisco UCS Manager release 3.2(1) and later version.For Cisco UCS B-Series, C-Series, and S-Series M4 Servers: Cisco UCS Manager release 3.1(1) and later version.  
+HyperFlex HX-Series Servers| **M8 Servers:** For Cisco X410c M8 servers: Cisco UCS Manager release 6.0(2b) and later versionFor Cisco X210c M8 servers: Cisco UCS Manager release 4.3(6a) and later versionFor Cisco UCS C220 M8 servers: Cisco UCS Manager release 4.3(6a) and later versionFor Cisco UCS C240 M8 servers: Cisco UCS Manager release 4.3(6a) and later versionFor Cisco UCS C245 M8 servers - Support for 4th Generation AMD EPYC Processors: Cisco UCS Manager release 4.3(4b) and later versionFor Cisco UCS C225 M8, C245 M8 servers, and X215c M8 Compute Nodes - Support for 5th Generation AMD EPYC Processors: Cisco UCS Manager release 4.3(5c) and later version.For Cisco UCS C225 M8 servers and X215c M8 Compute Nodes - Support for 4th Generation AMD EPYC Processors: Cisco UCS Manager release 4.3(5a) and later version.**M7 Servers:** For Cisco UCS C220 M7 and C240 M7 servers and Cisco UCS X210c and UCS X410c Compute Nodes - Support for 4th Generation Intel® Xeon® Scalable Processors: 4.2(3b) and later versionFor Cisco UCS C220 M7 and C240 M7 servers and UCS X210c M7 Compute Nodes - Support for 5th Generation Intel® Xeon® Scalable Processors: 4.3(3a) and later versionFor Cisco UCS X210c M7 Compute Nodes : Cisco UCS Manager release 4.3(2b) and later version.For Cisco X410c M7 Compute Nodes: Cisco UCS Manager release 4.3(2c) and later version.**M6 Servers:** For Cisco UCS B-Series, C-Series M6 servers: Cisco UCS Manager release 4.2(1) and later version.For Cisco UCS X210c M6 Compute Node: Cisco UCS Manager release 4.3(2b) and later version.**M5 Servers:** For Cisco UCS B-Series, C-Series, and S-Series, and HX-Series M5 Servers: Cisco UCS Manager release 3.2(1) and later version.For Cisco UCS B-Series, C-Series, and S-Series M4 Servers: Cisco UCS Manager release 3.1(1) and later version.  
 HyperFlex HX-Series Edge Servers| **M8 Servers:** For C220 M8 Servers:Cisco IMC Software 4.3(6.250048) and later version.For C240 M8 Servers:Cisco IMC Software 4.3(6.250048) and later version.For C225 M8 Servers:Cisco IMC Software 4.3(5.240021) and later version.For C245 M8 Servers:Cisco IMC Software 4.3(4.241014) and later version.**M7 Servers** :For C220 and C240 M7 Servers:Cisco IMC Software 4.3(1.230097) and later version.**M6 Servers** :For Cisco UCS C220M6, C240 M6, C245 M6, and C225 M6 Servers: Servers: Cisco IMC Software 4.2 and later version**M5 Servers:** Cisco IMC Software 3.1 and later version**M4 Servers** :Cisco IMC Software 3.0(4) and later version  
 Cisco HyperFlex Clusters| Requires HyperFlex Data Platform 5.0(2a) and later for Cisco HyperFlex Connect launch*1 *3  
 Dell PowerEdge Servers| iDRAC v5.10.00.0 and later version  

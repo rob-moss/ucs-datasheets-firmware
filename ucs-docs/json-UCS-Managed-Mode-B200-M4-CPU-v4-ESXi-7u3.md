@@ -6,9 +6,9 @@
 | **URL** | https://pwc014-nextgen-prod-rcdn.cisco.com/public/v2/searchBy/server/searchResults?serverType_ID=0&serverModel_ID=51,157&processor_ID=84&osVendor_ID=5&osVersion_ID=936&firmwareVersion_ID=-1&manageType=UCSM&searchBy=servers&loadDataFromJson=undefined |
 | **Long URL** |  |
 | **HTML Title** |  |
-| **Source file** | `ucs-docs-raw/json/searchResults.json` |
+| **Source file** | `ucs-docs-raw/json/searchResults__q_bf04953a9a.json` |
 | **File type** | JSON |
-| **Fetched on** | 2026-03-19 16:47:34 |
+| **Fetched on** | 2026-03-25 11:35:01 |
 
 ---
 

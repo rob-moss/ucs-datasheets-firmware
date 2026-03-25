@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight Appliance Settings |
 | **URL** | https://intersight.com/help/appliance/settings |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260316155144543/docs/onprem/data/articles/settings/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/onprem/data/articles/settings/en/index.html |
 | **HTML Title** | Appliance Settings |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_settings.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:46:51 |
+| **Fetched on** | 2026-03-25 11:33:07 |
 
 ---
 
@@ -1067,129 +1067,205 @@ The Test button is enabled only after the SMTP settings are configured. Also, em
 
 Next, complete the steps for creating notification rules.
 
-**Creating Notification Rules**
+**Email Notifications List View**
 
-Notifications are based on a rule that are set for the incoming alarms. You can define specific filter conditions for email notifications, ensuring that the appropriate team members are notified about issues requiring their attention. By setting up these filters, you can tailor notifications to specific criteria.
+When you select **Settings > Email Notifications** in the Intersight UI, the **Email Notifications** list view appears.
 
-Using filter conditions, you can:
+The list view shows each notification rule in a tabular format. The table includes the following key details:
 
-  * Customize alarm notifications based on specific parameters, such as host type, domain, or server name.
+  * **Name** —The name of the rule.
 
-  * Ensure alarms are sent to designated individuals or teams only when predefined conditions are met.
+  * **Status** —The administrative state of the rule. A setting of **Enabled** indicates the rule is active and will generate email notifications when the rule conditions are met. A setting of **Disabled** indicates the rule is inactive and will not generate email notifications.
 
+  * **Notify About** —Displays whether the notification rule configured to send notifications for Advisories, Alarms, or both, based on its configuration.
 
-A filter condition consists of three components:
+When you click the eye icon next to Notify About, a details panel shows the specific criteria configured for that notification rule.
 
-  1. **Filter Option** : The field to filter, such as _Host Type_ or _Organization_.
+For Advisories, it lists the advisory types and filters, such as security advisory severity, field notice impact rating, and EOL advisory milestone types (for example, _End of Life Announcement_ or _Last Date of Support_). For Alarms, it shows the alarm severity, whether cleared alarms are included, the configured conditions (for example, _UCS Domain = US-East_), and the condition operator (such as _All_).
 
-  2. **Operator** : The logical condition to apply, such as _Equals_ or _Not Equals_.
+  * **Email** —The email address(es) to which notifications will be sent.
 
-  3. **Value** : The specific criteria to match, such as _Blade Server_ , _Rack Server_ , or _Chassis_.
+  * **Created On** —The date and time when the rule was created.
 
-
-For example:
-
-  * **Filter Option** : Host Type
-
-  * **Operator** : Equals
-
-  * **Value** : Blade Server
-
-Note:
-
-With this filter condition, email notifications will be triggered only for alarms related to Blade servers.
+  * **Last Updated** —The last time the notification rule was updated.
 
 
-To configure a notification email rule, perform the following steps:
+**Email Notifications Actions**
 
-  1. Log into Intersight as a user with an Account Administrator role.
+On the **Email Notifications** page, click the **ellipsis (…)** icon next to an email notification rule to:
 
-  2. Navigate to Settings > Email Notifications.
+  * **Edit** —Modify the email notification rule.
+
+  * **Enable/Disable** —Turn the email notification rule on or off.
+
+  * **Delete** —Remove the email notification rule.
+
+
+You can also click the **information (eye) icon** in the Notify About column for a rule to:
+
+  * **View Details** —Display a read-only summary of the advisory and alarm configuration for that rule, including advisory types, severities or impact ratings, EOL milestone selections, alarm severities, and filter conditions.
+
+
+**Create a Notification Rule**
+
+Notification rules in Cisco Intersight let you receive email notifications for important **advisories** and **alarms** affecting your environment. You can create rules that notify only for advisories, only for alarms, or for both in a single rule. Intersight sends notification emails when new Cisco advisories matching your selections are published, or when existing advisories begin to impact additional devices in your account. This ensures you're proactively notified of both newly identified risks and expanding impacts. Alarm notifications are based on alarm severity and detailed filter conditions you configure.
+
+**Notification Rules for Advisories**
+
+Use advisory notification rules to receive proactive email alerts when new advisories that match your criteria affect devices in your Intersight account. Advisories include security advisories (PSIRTs), field notices, and end-of-life (EOL) announcements.
+
+Advisory emails are **aggregated over a 30-minute processing window** , so multiple new advisory instances are combined into a single email instead of sending one email per advisory. Each advisory email typically includes the advisory name, advisory ID, advisory type (security advisory, field notice, or EOL), severity/impact rating, the count of affected devices, and a link to view the advisory details in Intersight.
+
+**Notification Rules for Alarms**
+
+Use alarm notification rules to receive email alerts for alarms that match specific severity levels and **filter conditions**. You can use alarm-only rules, or combine alarm and advisory notifications in a single rule.
+
+Alarm notifications are based on rules you configure for incoming alarms, allowing you to define filter conditions so that email alerts are sent only when certain criteria are met—ensuring the right individuals or teams are notified.
+
+Filter conditions consist of three components:
+
+  * **Filter Option** – The field to filter, such as _Host Type_ or _Organization_.
+
+  * **Operator** – The logical condition, such as _Equals_ or _Not Equals_.
+
+  * **Value** – The specific criteria, such as _Blade Server_ , _Rack Server_ , or _Chassis_.
+
+
+For example, with:
+
+  * Filter Option: **Host Type**
+
+  * Operator: **Equals**
+
+  * Value: **Blade Server**
+
+
+This configuration ensures that email notifications are triggered only for alarms related to blade servers.
+
+To configure a notification rule, perform the following steps:
+
+  1. Log into Intersight as a user with an **Account Administrator** role.
+
+  2. Navigate to **Settings > Email Notifications**.
 
 You can view the details of the existing email notifications.
 
-  3. Click the Create Notification button in the upper right portion of the screen.
+  3. Click **Create Notification** in the upper-right portion of the screen.
 
 The Create Notification screen displays.
 
-Note:
+  4. In the **Name** field, type a string to identify the rule.
 
-Email notifications generated by the system include information such as source type, severity, and source name. When configuring notification rules, ensure that only authorized individuals have access to these notifications.
+  5. In the **Description** field, optionally type a brief description for the rule.
 
-  4. In the Name field, type a string of up to 32 characters that you want to be the name of the rule.
+  6. In the **Email** field, use the drop-down menu to select the email address(es) to which advisory notification emails will be sent.
 
-  5. In the Email field, use the drop-down menu to select the email address(es) to which you want email notifications sent.
+     1. If the required email address is not available in the list, type the email address into the drop-down field and click **+Add**.
 
-If the required email address is not available in the list, you can add a new one by typing the email address into the drop-down field and clicking the +Add option.
+     2. You can add up to three email addresses for email notifications.
 
-Note:
+Note: Email notifications generated by the system can contain sensitive information such as advisory type, severity/impact rating, source type, source name, and affected device counts. Ensure that only authorized individuals have access to these notifications.
 
-You can add up to three email destinations for email notifications.
+  7. Click **Next**.
 
-  6. In the **Notify About** region, select the severity level of the alarm that should trigger a notification email. The available severity levels are _Critical_(the most urgent), _Warning_(second-least urgent), or _Info_(no urgency). You can select one or multiple severity levels. If multiple severity levels are selected, the least severity level among them will trigger the notification email when it is reached.
+  8. To enable email notifications for Advisories, toggle the **Enable** button.
+
+  9. Select one or more Security Advisories levels for which you want to receive notifications:
+
+  * **Critical** : (CVSS score above 9.0) Indicates vulnerabilities that can lead to severe impact and typically require immediate remediation.
+
+  * **High** : (CVSS score 7.0-8.9) Indicates vulnerabilities that may cause significant impact but are generally more difficult to exploit than Critical issues.
+
+  * **Medium** : (CVSS score 4.0-6.9) Indicates vulnerabilities that may affect specific functions or configurations and are exploitable in more limited scenarios.
+
+  * **Info** : (CVSS score below 4.0) Indicates vulnerabilities with low impact and limited effect on system functionality.
+
+For more information, see [Security Vulnerability Policy.](https://sec.cloudapps.cisco.com/security/center/resources/security_vulnerability_policy.html)
+
+  10. Select one or more Field Notice impact ratings for which you want to receive notifications:
+
+  * **Critical** – May cause service downtime or significant risk to operations; requires urgent action.
+
+  * **High** – May cause noticeable performance degradation or operational impact, depending on deployment; requires timely attention.
+
+  * **Medium** – May affect performance or behavior but is less likely to cause immediate operational risk; can be addressed as part of planned maintenance.
+
+  * **Low** – Unlikely to affect normal operation; minor issues that can be handled at your convenience.
+
+For more information, see [Field Notice Rating Guide](https://www.cisco.com/c/en/us/support/web/field-notice-rating.html).
+
+  11. Select one or more End-of-Life (EOL) advisory milestone types for which you want to receive notifications:
+
+  * **End of Life Announcement** – Date Cisco publishes the formal end-of-sale and end-of-life notice for the product.
+
+  * **End** **of Software Maintenance** – Last date on which Cisco Engineering may provide software maintenance releases or bug fixes; after this date, only critical security updates may be provided.
+
+  * **Last Date of Support** – Final date on which service and support are available; after this date, the product is no longer supported and is considered obsolete.
+
+For more information, see [Cisco EOL Policy](https://www.cisco.com/c/en/us/products/eos-eol-policy.html).
+
+Intersight sends advisory emails only when new advisory instances matching these selections are created for devices in your account. Advisories that do not impact your inventory, or that have already been acknowledged do not generate emails.
+
+  12. To enable email notifications for Alarms, toggle the **Enable** button.
+
+  13. Select the severity level of the alarm that should trigger a notification email. The available severity levels are Critical (the most urgent), Warning (second-least urgent), or Info (no urgency). You can select one or multiple severity levels. If multiple severity levels are selected, the least severity level among them will trigger the notification email when it is reached.
 
 For more information on severity levels, see the Alarms in Intersight section in [Cisco Intersight Alarms Reference Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/IMM_Alarms_Guide/b_cisco_intersight_alarms_reference_guide/m_intro_intersight_alarms_guide.html).
 
-  7. To receive notifications when alarms are resolved and marked as cleared, toggle the Include Cleared Alarms option to on.
+  14. To receive notifications when alarms are resolved and marked as cleared, toggle the Include Cleared Alarms option to on. Notifications for the cleared alarms correspond to the severity level that you have selected for the active alarms.
 
-Notifications for the cleared alarms correspond to the severity level that you have selected for the active alarms.
+  15. (Optional) Use the Add Filter field to select a filter option from the available built-in options. The filter option can be one of the following: Affected Name, Affected Type, Code, Organization, Parent Name, Parent Type, Profile Name, and UCS Domain.
 
-  8. (Optional) Use the Add Filter field to select a filter option from the available built-in options. The filter option can be one of the following: Affected Name, Affected Type, Code, Organization, Parent Name, Parent Type, Profile Name, and UCS Domain.
+  16. After selecting a filter option, specify the operator to define the logical condition for the filter. The available operators are:
 
-  9. After selecting a filter option, specify the operator to define the logical condition for the filter. The available operators are:
+  * **Equals (=):** Matches entries where the value in the selected field exactly matches the specified value. This comparison is case-sensitive. Example: _Host Type = Blade_
 
-  * **Equals (=):** Matches entries where the value in the selected field exactly matches the specified value. This comparison is case-sensitive. Example: `Host Type = Blade`
+  * **Not Equals (!=):** Excludes entries where the value in the selected field matches the specified value. Example: _Host Name != TestServer_
 
-  * **Not Equals (!=):** Excludes entries where the value in the selected field matches the specified value. Example: `Host Name != TestServer`
+  * **Contains (:):** Matches entries where the specified value appears as part of the field. This comparison is case-insensitive. Example: _Domain : prod_
 
-  * **Contains (:):** Matches entries where the specified value appears as part of the field. This comparison is case-insensitive. Example: `Domain : prod`
+  * **In:** Matches entries where the field value is one of multiple specified values. Example: _Host Type In Blade Server, Rack Server_
 
-  * **In:** Matches entries where the field value is one of multiple specified values. Example: `Host Type In Blade Server, Rack Server`
+  17. Enter the value for the filter condition. The value must correspond to the selected filter option and operator. Example: If the filter option is Host Type and the operator is Equals (=), the value could be Blade Server.
 
-  10. Enter the value for the filter condition. The value must correspond to the selected filter option and operator. _Example:_ If the filter option is `Host Type` and the operator is `Equals (=)`, the value could be `Blade Server`.
+  18. Repeat these steps to specify additional conditions.
 
-  11. Repeat these steps to specify additional conditions.
-
-Note:
-
-You can specify a total of five filter conditions.
+Note: You can specify a total of five filter conditions.
 
 For example, a complete configuration for alarm email notifications could be:
 
-     1. Set the filter option to `Host Type`, with the operator as `Equals` and the value as `Blade Server`.
+     1. Set the filter option to Host Type, with the operator as Equals and the value as Blade Server.
 
-     2. Additionally, configure another filter with the option `Organization`, the operator as `Contains`, and the value as `Engineering`.
+     2. Additionally, configure another filter with the option Organization, the operator as Contains, and the value as Engineering.
 
-This configuration ensures that email notifications are sent only for alarms related to _Blade Servers_ in the _Engineering_ organization.
+This configuration ensures that email notifications are sent only for alarms related to Blade Servers in the Engineering organization.
 
-  12. If you specify multiple filters, use the Notifications will be sent when field to choose whether email notifications should be sent when Any condition is met or only when All conditions are satisfied.
+  19. If you specify multiple filters, use the Notifications will be sent when field to choose whether email notifications should be sent when Any condition is met or only when All conditions are satisfied.
 
-  13. Click Create.
+  20. Click **Next**.
+
+  21. Review the Summary step and click **Create**.
 
 Intersight returns to the Notifications screen displaying the new rule in the list.
 
 
-**Using the API to create a Notification Rule**
-
-You can create or modify email notification subscriptions by making a POST request to the _/api/v1/notification/AccountSubscriptions_ endpoint. The request body allows you to define the notification's name, description, type (email), and crucially, the filter Conditions and Actions.
-
-  * **Conditions** : Within the Conditions array, you specify an _OdataFilter_. This filter defines the criteria for triggering notifications. You can filter by various alarm attributes such as Severity (ne 'Warning') or Code (in ('NetworkDuplicateIntersightFI'. This allows for highly granular control over which alarms trigger an email.
-
-  * **Actions** : The Actions array specifies what happens when the conditions are met. For email notifications, you define an _ObjectType_ of _notification.SendEmail_ and provide the _Email_ address(es) of the intended recipients.
-
-
 **Example API Configuration:**
 
-The following example demonstrates how to set up an email notification subscription named "AdvancedApiFilter". This subscription will trigger email notifications to _abc@example.com_ for alarms that meet specific criteria:
+This section explains how to set up email notification rules using the Intersight APIs. The example below, named 'AdvancedApiFilter', configures an email notification to be sent to [__abc@example.com_ _](mailto:abc@example.com)for alarms or advisories that meet specific criteria defined by the Conditions property. The Conditions property specifies the circumstances under which an email notification is triggered.
+
+An email notification rule can contain multiple condition objects within its Conditions array. When multiple conditions are present, they are treated with an 'OR' logic across different MoTypes (Managed Object Types). This means if _any_ of the specified conditions (for example, an alarm condition OR an advisory condition) are met, the notification action is triggered.
+
+To set up an email notification subscription named "AdvancedApiFilter" with custom rules, use the following POST request:
     
     
-    POST /api/v1/notification/AccountSubscriptions 
+    POST /api/v1/notification/AccountSubscriptions
+    
     
     { 
     
       "Name": "AdvancedApiFilter", 
     
-      "Description": "User-defined email notification for alarms", 
+      "Description": "User-defined email notification for alarms and advisories", 
     
       "Enabled": true, 
     
@@ -1198,24 +1274,6 @@ The following example demonstrates how to set up an email notification subscript
       "ObjectType": "notification.AccountSubscription", 
     
       "ClassId": "notification.AccountSubscription", 
-    
-    "Conditions": [ 
-    
-    { 
-    
-    "MoType": "cond.Alarm", 
-    
-    "ObjectType": "notification.MoCondition", 
-    
-    "OdataFilter": "contains(Domain, 'dcemulator')", 
-    
-    "Enabled": true 
-    
-    } 
-    
-    ], 
-    
-     
     
       "Actions": [ 
     
@@ -1229,9 +1287,297 @@ The following example demonstrates how to set up an email notification subscript
     
         } 
     
+      ], 
+    
+      "ConditionOperator": "All", 
+    
+      "Conditions": [ 
+    
+        // Conditions will be defined here 
+    
       ] 
     
-    } 
+    }
+
+The Conditions array allows you to define various criteria for triggering notifications. Different ObjectType values within the Conditions array cater to specific filtering needs.
+
+**1\. Advisory Conditions (notification.AdvisoryMoCondition)**
+
+This condition type is used to filter for security advisories, field notices, and end-of-life advisories. It is important to note that notification.AdvisoryMoCondition is _only_ applicable when the associated action is notification.SendEmail.
+
+**Example Condition for Advisories:**
+    
+    
+    { 
+    
+      "Enabled": true, 
+    
+      "ObjectType": "notification.AdvisoryMoCondition", 
+    
+      "advisoryFilters": [ 
+    
+        { 
+    
+          "ObjectType": "notification.SecurityAdvisoryFilter", 
+    
+          "severity": [ 
+    
+            "critical", 
+    
+            "high", 
+    
+            "medium", 
+    
+            "info" 
+    
+          ] 
+    
+        }, 
+    
+        { 
+    
+          "ObjectType": "notification.FieldNoticeAdvisoryFilter", 
+    
+          "severity": [ 
+    
+            "critical", 
+    
+            "high", 
+    
+            "medium", 
+    
+            "low" 
+    
+          ] 
+    
+        }, 
+    
+        { 
+    
+          "ObjectType": "notification.EolAdvisoryFilter", 
+    
+          "milestoneType": [ 
+    
+            "endOfSoftwareMaintenanceDate", 
+    
+            "lastDateOfSupport", 
+    
+            "endOfLifeAnnouncementDate" 
+    
+          ] 
+    
+        } 
+    
+      ] 
+    
+    }
+
+**2\. Alarm Conditions**
+
+Alarm conditions can be defined in two ways:
+
+  * **Basic Alarm Filtering (notification.AlarmMoCondition):** This condition allows filtering alarms based on their severity levels.
+
+  * **Advanced Alarm Filtering by Property (notification.SimpleMoCondition):** This condition allows for more granular filtering of alarms based on specific properties and their values, such as the Domain of an alarm.
+
+
+**Example Conditions for Alarms (combined):**
+    
+    
+    [ 
+    
+      { 
+    
+        "Enabled": true, 
+    
+        "ObjectType": "notification.AlarmMoCondition", 
+    
+        "OdataFilter": "", 
+    
+        "Severity": [ 
+    
+          "Critical", 
+    
+          "Warning", 
+    
+          "Info" 
+    
+        ] 
+    
+      }, 
+    
+      { 
+    
+        "Enabled": true, 
+    
+        "ObjectType": "notification.SimpleMoCondition", 
+    
+        "MoType": "cond.Alarm", 
+    
+        "Filter": { 
+    
+          "Operator": "eq", 
+    
+          "Property": "Domain", 
+    
+          "Value": [ 
+    
+            "dcemulator-6d6cb35277cd00fc" 
+    
+          ] 
+    
+        } 
+    
+      } 
+    
+    ]
+
+**3\. Advanced Conditions (notification.MoCondition)**
+
+For highly flexible and complex filtering, the notification.MoCondition allows you to specify criteria using OData syntax.
+
+Note: If notification.MoCondition is used, _no other conditions can be specified_ for that AccountSubscription Managed Object (Mo). It acts as a standalone, comprehensive filter.
+
+**Example Condition for Advanced Filtering:**
+    
+    
+    { 
+    
+      "Enabled": true, 
+    
+      "ObjectType": "notification.MoCondition", 
+    
+      "MoType": "cond.Alarm", 
+    
+      "OdataFilter": "(Severity eq 'medium')" 
+    
+    }
+
+**Complete API Example with Multiple Conditions**
+
+Here is a full example demonstrating how to combine different condition types within a single _AccountSubscription_ to trigger email notifications:
+    
+    
+    { 
+    
+      "Enabled": true, 
+    
+      "Name": "adv", 
+    
+      "Actions": [ 
+    
+        { 
+    
+          "ObjectType": "notification.SendEmail", 
+    
+          "ClassId": "notification.SendEmail", 
+    
+          "Email": "nagsivak@cisco.com" 
+    
+        } 
+    
+      ], 
+    
+      "ConditionOperator": "All", 
+    
+      "Conditions": [ 
+    
+        { 
+    
+          "Enabled": true, 
+    
+          "ObjectType": "notification.AlarmMoCondition", 
+    
+          "OdataFilter": "", 
+    
+          "Severity": [ 
+    
+            "Critical" 
+    
+          ] 
+    
+        }, 
+    
+        { 
+    
+          "Enabled": true, 
+    
+          "ObjectType": "notification.SimpleMoCondition", 
+    
+          "MoType": "cond.Alarm", 
+    
+          "Filter": { 
+    
+            "Operator": "eq", 
+    
+            "Property": "Domain", 
+    
+            "Value": [ 
+    
+              "dcemulator-6d6cb35277cd00fc" 
+    
+            ] 
+    
+          } 
+    
+        }, 
+    
+        { 
+    
+          "Enabled": true, 
+    
+          "ObjectType": "notification.AdvisoryMoCondition", 
+    
+          "advisoryFilters": [ 
+    
+            { 
+    
+              "ObjectType": "notification.SecurityAdvisoryFilter", 
+    
+              "severity": [ 
+    
+                "critical", 
+    
+                "high", 
+    
+                "medium", 
+    
+                "info" 
+    
+              ] 
+    
+            }, 
+    
+            { 
+    
+              "ObjectType": "notification.FieldNoticeAdvisoryFilter", 
+    
+              "severity": [ 
+    
+                "critical", 
+    
+                "high", 
+    
+                "medium", 
+    
+                "low" 
+    
+              ] 
+    
+            } 
+    
+          ] 
+    
+        } 
+    
+      ] 
+    
+    }
+
+  * An Alarm with "Critical" severity is raised AND the ‘Domain’ is equal to "dcemulator-6d6cb35277cd00fc". **OR**
+
+  * A new advisory (Security Advisory or Field Notice) affects the customer environment and matches the specified severity filters.
+
 
 **Limitations**
 

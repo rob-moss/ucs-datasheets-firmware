@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS 6600 Series Fabric Interconnects Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-6600-series-fabric-interconnect-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-19 16:47:13 |
+| **Fetched on** | 2026-03-25 11:34:41 |
 
 ---
 
@@ -397,6 +397,7 @@ For more information about Cisco UCS, visit <https://www.cisco.com/en/US/product
 
 ### Our experts recommend
 
+  * [Breaking the 25G Barrier: 50G Performance with Cisco UCS 6600 Series FIs White Paper](/c/en/us/products/collateral/computing/servers-unified-computing-systems/fabric-interconnects-extenders/25g-barrier-50g-perf-ucs-6600-fi-fis-wp.html "Breaking the 25G Barrier: 50G Performance with Cisco UCS 6600 Series FIs White Paper")
   * [Cisco UCS 6664 Fabric Interconnect At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-6500-series-fabric-interconnects/ucs-6664-fabric-interconnect-aag.html "Cisco UCS 6664 Fabric Interconnect At-a-Glance")
 
 
