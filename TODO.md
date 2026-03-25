@@ -16,6 +16,17 @@
   * ucsxhw for all X-Series Hardware docs
 
 
+# Reports
+* IMM BIOS Defaults (tokens) list with explanations of each token, default value and how it is used in the Intersight BIOS Profile
+* Recommended firmware for UCS and IMM
+* UCSM compat matrix of servers, adapters, firmware, esxi ver, nfnic/nenic
+* IMM compat matrix of servers, adapters, firmware, esxi ver, nfnic/nenic
+
+* Review UCS docs to identify conflicting information. Produce a report with links and summary details to send to doc owners
+  * Make a list of use cases / issues that are not clearly documented or have conflicting information
+  
+
+
 # Recommended Firmware Versions
 
 ### UCS Manager

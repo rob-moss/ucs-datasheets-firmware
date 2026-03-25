@@ -34,6 +34,7 @@ import json
 import os
 import re
 import time
+import hashlib
 import traceback
 import datetime
 import requests
@@ -222,15 +223,31 @@ def _content_type(url: str) -> str:
 def _raw_name(url: str, ctype: str) -> str:
     """Cache filename for *url* with the correct extension."""
     slug = _url_slug(url)
+    parsed = urlparse(url)
+    query_suffix = ''
+    if parsed.query:
+        qhash = hashlib.sha1(parsed.query.encode('utf-8')).hexdigest()[:10]
+        query_suffix = f'__q_{qhash}'
+    stem, ext = os.path.splitext(slug)
+
     if ctype == 'html':
-        if not os.path.splitext(slug)[1]:
-            slug += '.html'
+        if not ext:
+            slug = f'{slug}{query_suffix}.html'
+        else:
+            slug = f'{stem}{query_suffix}{ext}'
         if urlparse(url).netloc == 'intersight.com':
             slug = _is_prefix(url) + slug
         return slug
+
     suffix = {'pdf': '.pdf', 'json': '.json'}.get(ctype, '')
-    if suffix and not slug.lower().endswith(suffix):
-        slug += suffix
+    if suffix:
+        if ext.lower() != suffix:
+            slug = f'{slug}{query_suffix}{suffix}'
+        else:
+            slug = f'{stem}{query_suffix}{ext}'
+    elif query_suffix:
+        slug = f'{slug}{query_suffix}'
+
     return slug
 
 
@@ -245,12 +262,14 @@ def _is_prefix(url: str) -> str:
 
 _DYNAMIC_URL_PREFIXES = (
     'https://pwc014-nextgen-prod-rcdn.cisco.com',
+    'https://pwc014-nextgen-prod-alln.cisco.com',
 )
 
 # URLs whose responses are always JSON regardless of file extension.
 # These are fetched with fetch_json (not fetch_html_guide) and with no caching.
 _JSON_URL_PREFIXES = (
     'https://pwc014-nextgen-prod-rcdn.cisco.com',
+    'https://pwc014-nextgen-prod-alln.cisco.com',
 )
 
 
@@ -334,6 +353,15 @@ def _clean_markdown(md: str) -> str:
             line  = '  ' * level + line.lstrip()
         lines.append(line)
     return re.sub(r'\n{4,}', '\n\n\n', '\n'.join(lines))
+
+
+def _looks_like_pdf(data: bytes) -> bool:
+    return data.lstrip().startswith(b'%PDF-')
+
+
+def _looks_like_html(data: bytes) -> bool:
+    head = data[:2048].lstrip().lower()
+    return head.startswith(b'<!doctype html') or head.startswith(b'<html')
 
 
 def _strip_html(raw: str) -> str:
@@ -614,10 +642,11 @@ class DocFetcher:
             return raw_path.read_bytes()
         data = self._get(url, headers)
         if data is not None:
-            if not _is_dynamic_url(url):
-                raw_path.parent.mkdir(parents=True, exist_ok=True)
-                raw_path.write_bytes(data)
-                print(f'  saved → {raw_path}')
+            # Keep a raw snapshot for debugging even for dynamic URLs.
+            # Dynamic endpoints still bypass cache reads via _is_dynamic_url().
+            raw_path.parent.mkdir(parents=True, exist_ok=True)
+            raw_path.write_bytes(data)
+            print(f'  saved → {raw_path}')
         return data
 
     # ------------------------------------------------------------------
@@ -913,6 +942,36 @@ class DocFetcher:
         data = self._cached_or_fetch(url, raw_path)
         if data is None:
             return None
+
+        if not _looks_like_pdf(data):
+            if _looks_like_html(data):
+                print('  warning: URL ends with .pdf but payload is HTML; using HTML fallback conversion')
+                soup = BeautifulSoup(data, 'html.parser')
+                html_title = None
+                title_tag = soup.find('title')
+                if title_tag:
+                    html_title = title_tag.get_text(strip=True)
+                body_md = _clean_markdown(_H2T.handle(self._extract_body(soup)))
+                md = _md_header(
+                    url,
+                    url_title=title,
+                    html_title=html_title,
+                    raw_path=raw_path,
+                    file_type='HTML (fallback from .pdf URL)',
+                )
+                md += body_md
+                return _md_outname(url, title), _clean_markdown(md)
+
+            print('  warning: URL ends with .pdf but payload is not PDF/HTML')
+            md = _md_header(
+                url,
+                url_title=title,
+                raw_path=raw_path,
+                file_type='PDF',
+            )
+            md += '*PDF extraction error: payload is not a valid PDF file*\n'
+            return _md_outname(url, title), md
+
         md = _md_header(
             url,
             url_title  = title,
