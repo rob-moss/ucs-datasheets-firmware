@@ -8,7 +8,7 @@
 | **HTML Title** | End-of-Sale and End-of-Life Announcement for the Cisco HyperFlex Data Platform (HXDP) Software |
 | **Source file** | `ucs-docs-raw/html/hyperflex-data-platform-eol.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-25 11:35:27 |
+| **Fetched on** | 2026-04-08 08:46:12 |
 
 ---
 

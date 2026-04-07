@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS System Software Repository |
 | **URL** | https://intersight.com/help/saas/system/software_repo |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/cloud/data/overview/system/software_repo_overview.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260402103337138/docs/cloud/data/overview/system/software_repo_overview.html |
 | **HTML Title** | Software Repository |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_system_software_repo.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-25 11:32:55 |
+| **Fetched on** | 2026-04-08 08:43:29 |
 
 ---
 

@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Monitoring Get Started |
 | **URL** | https://intersight.com/help/saas/monitoring/monitoring_get_started |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/cloud/data/resources/monitoring/en/Getting_Started.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260402103337138/docs/cloud/data/resources/monitoring/en/Getting_Started.html |
 | **HTML Title** | Getting Started |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_monitoring_get_started.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-25 11:32:46 |
+| **Fetched on** | 2026-04-08 08:43:18 |
 
 ---
 

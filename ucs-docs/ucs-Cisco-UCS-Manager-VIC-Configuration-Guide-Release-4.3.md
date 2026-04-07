@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager VIC Configuration Guide, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b-vic-configuration-guide-4-3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-25 11:31:11 |
+| **Fetched on** | 2026-04-08 08:41:47 |
 
 ---
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco UCS Manager, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_release-notes-ucsm-4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-25 11:33:27 |
+| **Fetched on** | 2026-04-08 08:43:59 |
 
 ---
 
@@ -48,9 +48,10 @@ Cisco recommends that you upgrade to release 4.3(4e) or later. For more informat
 
 Table 1. Release 4.3(6) Release |  Date |  Description  
 ---|---|---  
+4.3(6f) |  March 26, 2026 |  Updated Security Fixes in Release 4.3(6f).   
 4.3(6f) |  February 23, 2026 |  Created release notes for Cisco UCS Manager Release 4.3(6f).   
 4.3(6e) |  January 14, 2026 |  Created release notes for Cisco UCS Manager Release 4.3(6e).   
-4.3(6c) |  December 09, 2025 |  Added CSCws30219 under Open Caveats for Release 4.3(6c)  
+4.3(6c) |  December 09, 2025 |  Added CSCws30219 under Open Caveats for Release 4.3(6c).   
 4.3(6d) |  October 28, 2025 |  Created release notes for Cisco UCS Manager Release 4.3(6d).   
 4.3(6c) |  August 28, 2025 |  Updated Cisco UCS NVMeoF Support Matrix for 3rd Party Storage Vendors.   
 4.3(6c) |  July 07, 2025 |  Created release notes for Cisco UCS Manager Release 4.3(6c).   
@@ -1398,7 +1399,25 @@ Cisco UCS X-Series Servers and Cisco M7 Servers require a valid Cisco Intersight
 
 ## Security Fixes in Release 4.3(6f)
 
-There are no security fixes in release 4.3(6f). 
+### Defect ID - CSCwn23026
+
+The Cisco UCS Manager Software is affected by the vulnerability identified by the following Common Vulnerability and Exposures (CVE) ID: 
+
+CVE-2023-20077—A vulnerability in the CLI and web-based management interface of the Cisco UCS Manager Software could allow an authenticated, remote attacker with valid administrative privileges to execute arbitrary commands on the underlying operating system of an affected device with root-level privileges. This vulnerability is due to insufficient input validation of command arguments supplied by the user. 
+
+The affected software has been upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
+
+For more information, see: [Cisco UCS Manager Software Command Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ucsm-cmdinj-GvxLPeSB)
+
+### Defect ID - CSCwm68934
+
+The Cisco UCS Manager Software is affected by the vulnerability identified by the following Common Vulnerability and Exposures (CVE) ID: 
+
+CVE-2023-20076—A vulnerability in the NX-OS CLI privilege levels of Cisco UCS Manager Software could allow an authenticated, local attacker with read-only privileges to modify files and perform unauthorized actions on an affected system. This vulnerability exists because unnecessary privileges are granted to the user, which could allow an attacker to create or overwrite files in the file system or perform limited privileged actions on an affected device. 
+
+The affected software has been upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
+
+For more information, see: [Cisco UCS Manager Software Privilege Escalation Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ucsm-afwae-mOgUfyLn)
 
 ## Security Fixes in Release 4.3(6e)
 

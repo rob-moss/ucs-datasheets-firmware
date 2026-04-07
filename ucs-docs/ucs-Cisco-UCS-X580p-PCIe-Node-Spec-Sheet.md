@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/x580p-specsheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-03-25 11:36:58 |
+| **Fetched on** | 2026-04-08 08:47:56 |
 
 ---
 
@@ -26,21 +26,18 @@ computing/ucs-x-series-modular-system/datasheet-
 listing.html
 
 CISCO SYSTEMS
-170 WEST TASMAN DR.
+170 WEST TASMAN DR. 
 SAN JOSE, CA, 95134
 WWW.CISCO.COM
 
-PUBLICATION HISTORY
+PUBLICATION HISTORY 
 
-REV A.01
+REV A.02
 
-SEPTEMBER 07, 2025
+MARCH 27, 2026
 
-
-
+ 
 STEP
-STEP
-STEP
 STEP
 
 OVERVIEW  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
@@ -49,22 +46,25 @@ Cisco UCS X9516 X-Fabric   . . . . . . . . . . . . . . . . . . . . . . . . . . .
 PCIe Node STANDARD CAPABILITIES and FEATURES   . . . . . . . . . . . . . . . . . . . 5
 CONFIGURING the Cisco UCS X580p PCIe Node   . . . . . . . . . . . . . . . . . . . . . . 6
 1 CHOOSE BASE CISCO UCS X580p PCIe Node SKU   . . . . . . . . . . . . . . . . . . . . . . . . . 7
+STEP
+STEP
 2 ORDER GPU CARDS   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
-3 ORDER CISCO UCS X9516 X-FABRIC MODULES   . . . . . . . . . . . . . . . . . . . . . . . . . . 12
-4 SELECT OPTICS OPTIONS (REQUIRED)   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
-SUPPLEMENTAL MATERIAL  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  15
-System Board   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
-Solution Topology   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
-X580p PCIe Node Configuration - 2 Server 4x GPU + 2  . . . . . . . . . . . . . . . . . . . .  NIC each 18
-X580p PCIe Node Configuration - 2 Server 4x GPU + 2  .  NIC each Chassis PCIe Mapping Policy 18
-X580p PCIe Node Configuration - 1 Server 4x GPU + 2  . . . . . . . . . . . . . . . . . . . .  NIC each 19
-X580p PCIe Node Configuration - 1 Server 4x GPU + 2  .  NIC each Chassis PCIe Mapping Policy 19
-X580p PCIe Node Configuration - 1 Server 4x GPU + 2  . . . . . . . . . . . . . . . . . . . .  NIC each 20
-X580p PCIe Node Configuration - 1 Server 4x GPU + 2  .  NIC each Chassis PCIe Mapping Policy 20
-Spare Parts   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  22
-TECHNICAL SPECIFICATIONS  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  23
-Dimensions and Weight  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
-Environmental Specifications  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+X580p GPU Assignment And Population Rules:  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Supported GPU Assignment Configurations:   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Unsupported GPU Assignment Configurations:  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+3 ORDER CISCO UCS X9516 X-FABRIC MODULES   . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+4 SELECT OPTICS OPTIONS (REQUIRED)   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+SUPPLEMENTAL MATERIAL  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  17
+System Board   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Solution Topology   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+X580p PCIe Node Configuration - 2 Server 4x GPU + 2  . . . . . . . . . . . . . . . . . . . .  NIC each 20
+X580p PCIe Node Configuration - 2 Server 4x GPU + 2  .  NIC each Chassis PCIe Mapping Policy 20
+X580p PCIe Node Configuration   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+X580p PCIe Node Configuration - PCIe Mapping Policy . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+Spare Parts   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  23
+TECHNICAL SPECIFICATIONS  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  24
+Dimensions and Weight  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Environmental Specifications  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
 
 2
 
@@ -87,13 +87,13 @@ The Cisco UCS X580p PCIe Node extends the modular capabilities of the Cisco UCS 
 by delivering high-performance GPU support for a wide range of workloads including generative and agentic 
 AI fine-tuning, inference, and legacy applications that require GPU acceleration. As the second generation 
 of PCIe nodes, the X580p supports up to four PCIe GPUs and can be paired with the Cisco UCS X210c M8 
-Compute Node with Intel® Xeon® 6 processors, as well as the UCS X215c M8 compute node with EPYC 
-processors offering Compute flexibility and choice, while leveraging Cisco UCS X-Fabric Technology for GPU 
-connectivity.
+Compute Node with Intel® Xeon® 6 processors and Cisco UCS X210c M7 Compute Node with 5th Generation 
+Intel® Xeon® Scalable Processors, as well as the UCS X215c M8 compute node with EPYC processors offering 
+Compute flexibility and choice, while leveraging Cisco UCS X-Fabric Technology for GPU connectivity.
 
 The Cisco UCS X580p PCIe Node is the latest PCIe resource node to integrate into the Cisco UCS X-Series 
 Modular System. The X580p supports up to four FHFL PCIe GPUs and can be paired with the X215c M8 and 
-X210c M8 compute nodes offering flexibility and choice, while also leveraging Cisco UCS X-Fabric 
+X210c M8/M7 compute nodes offering flexibility and choice, while also leveraging Cisco UCS X-Fabric 
 Technology. Occupying two slots in the X-series Chassis, the X580p offers significantly greater flexibility 
 than the first-generation X440p, allowing users to assign up to four GPUs. Up to two PCIe Nodes can reside 
 in the 7-Rack-Unit (7RU) Cisco UCS X9508 Chassis and can be paired with one or two compute node each, 
@@ -195,15 +195,15 @@ Advanced Configuration and Power Interface (ACPI) 4.0 Standard Supported.
 ACPI states S0 and S5 are supported. There is no support for states S1 
 through S4.
 
-Status indicator
+■ Status indicator
 
-Location indicator
+■ Location indicator
 
 Management
 
 ■ Managed PCIe node with dedicated BMC support.
 
-Policy-based GPU management via Cisco Intersight.
+■ Policy-based GPU management via Cisco Intersight.
 
 Chassis
 
@@ -213,31 +213,24 @@ Cisco UCS X580P PCIe Node
 
 5
 
-■
-■
-■
 CONFIGURING the Cisco UCS X580p PCIe Node
 
 CONFIGURING the Cisco UCS X580p PCIe Node
 
 Follow these steps to configure the Cisco UCS X580p PCIe Node:
 
-STEP 1 CHOOSE BASE CISCO UCS X580p PCIe Node SKU, page 7
+■ STEP 1 CHOOSE BASE CISCO UCS X580p PCIe Node SKU, page 7
 
-STEP 2 ORDER GPU CARDS, page 8
+■ STEP 2 ORDER GPU CARDS, page 8
 
-STEP 3 ORDER CISCO UCS X9516 X-FABRIC MODULES, page 12
+■ STEP 3 ORDER CISCO UCS X9516 X-FABRIC MODULES, page 14
 
-STEP 4 SELECT OPTICS OPTIONS (REQUIRED), page 13
+■ STEP 4 SELECT OPTICS OPTIONS (REQUIRED), page 15
 
 6
 
 Cisco UCS X580P PCIe Node
 
-■
-■
-■
-■
 CONFIGURING the Cisco UCS X580p PCIe Node
 
 STEP 1 CHOOSE BASE CISCO UCS X580p PCIe Node SKU
@@ -260,16 +253,14 @@ must be selected during product ordering.
 Please follow the steps on the following pages to order components such as the following, which 
 are required in a functional PCIe Node:
 
-GPUs
+■ GPUs
 
-Cisco UCS X9516 X-Fabric Modules
+■ Cisco UCS X9516 X-Fabric Modules
 
 Cisco UCS X580P PCIe Node
 
 7
 
-■
-■
 CONFIGURING the Cisco UCS X580p PCIe Node
 
 STEP 2 ORDER GPU CARDS
@@ -277,7 +268,7 @@ STEP 2 ORDER GPU CARDS
 The Cisco UCS X-Series solution, managed by Intersight, offers significant flexibility in how GPUs 
 are assigned and utilized, enabling dynamic resource allocation based on workload needs.
 
-Variable GPU Allocation per Compute Node:
+■ Variable GPU Allocation per Compute Node:
 
 — Supports assigning up to 4 GPUs per compute node (e.g., X210c or X215c).
 
@@ -285,10 +276,11 @@ Variable GPU Allocation per Compute Node:
 
 over GPU resources.
 
-GPU Sharing Capability: The X580p PCIe Node design allows for the sharing of GPUs across 
+■ GPU Sharing Capability: The X580p PCIe Node design allows for the sharing of GPUs across 
+
 two compute nodes, maximizing resource utilization and flexibility.
 
-Intersight Policy-Based Management:
+■ Intersight Policy-Based Management:
 
 — Automated Assignment: Intersight handles the assignment of PCIe Nodes and their 
 
@@ -302,7 +294,7 @@ Fabric) within the compute node's profile.
 
 on the internal switches to ensure proper connectivity and performance.
 
-Physical Slot Configuration for Connectivity:
+■ Physical Slot Configuration for Connectivity:
 
 — PCIe Nodes (X580p) can be placed in chassis slots 1/2, 3/4, 5/6, or 7/8.
 
@@ -314,10 +306,11 @@ the chassis.
 
 • Example: A compute node in Slot 7/8 connects to a PCIe Node in Slot 5-6.
 
-Profile Based Management: The existing Intersight server profile will be used, with an 
+■ Profile Based Management: The existing Intersight server profile will be used, with an 
+
 added PCIe device policy to specify GPU and NIC mappings for compute nodes.
 
-PCIe Device Connection Policies: Policies can be defined to filter and assign GPUs based on 
+■ PCIe Device Connection Policies: Policies can be defined to filter and assign GPUs based on 
 criteria such as the number of GPUs required or specific references types, streamlining 
 deployment.
 
@@ -325,12 +318,6 @@ deployment.
 
 Cisco UCS X580P PCIe Node
 
-■
-■
-■
-■
-■
-■
 CONFIGURING the Cisco UCS X580p PCIe Node
 
 Select GPU Options
@@ -343,13 +330,16 @@ the same “Cage.” For example, a UCSX-GPU-L40S in Cage A Slot 1 and a
 UCSX-GPU-H200-NVL in Cage B Slot 3 is allowed, but they cannot both be 
 installed in Cage A.
 
-Server Node and GPU Quantity: Mixing of GPUs on a Compute node is not 
+■ Server Node and GPU Quantity: Mixing of GPUs on a Compute node is not 
+
 allowed, all the GPUs assigned must have the same Product ID (PID).
 
-Server Memory Recommendation: If x580P is selected, Cisco recommends the 
+■ Server Memory Recommendation: If x580P is selected, Cisco recommends the 
+
 Server Memory quantity to be 3 times per GPU's memory size.
 
-If UCSX-580P is selected in the 9508 Chassis, then a quantity of 1 PID 
+■ If UCSX-580P is selected in the 9508 Chassis, then a quantity of 1 PID 
+
 (UCSX-V5-PCIME) is required for each server node mapped to a UCSX-580P. For 
 example, if there are 1 or 2 UCSX-580P units and 2 to 4 server nodes, each server 
 node must include a UCSX-V5-PCIME to access the GPUs.
@@ -363,11 +353,23 @@ GPU Product ID (PID)
 
 PID Description
 
+Riser Slot Compatibility
+
+Supported GPUs on X210c/X215c M8 Compute Node
 UCSX-GPU-L40S
+
+Supported GPUs on X210c M7 Compute Node
+UCSX-GPU-H200-NVL1,2
 
 UCSX-GPU-H200-NVL1,2
 
 UCSX-GPU-RTXP6000
+
+UCSX-GPU-RTXP45003
+
+UCSX-GPU-RTXP6000
+
+UCSX-GPU-RTXP45006
 
 Notes:
 
@@ -377,8 +379,15 @@ NVIDIA H200 NVL: 600W, 141GB,
 2-Slot NVL2 FHFL GPU
 NVIDIA RTX Pro 6000: 600W, 96GB, 
 2-Slot FHFL GPU
+Nvidia RTX Pro 4500 GPU 160W 
+32GB Gen5 FHFL 1-slot
 
-Riser Slot Compatibility
+NVIDIA H200 NVL: 600W, 141GB, 
+2-Slot NVL2 FHFL GPU
+NVIDIA RTX Pro 6000: 600W, 96GB, 
+2-Slot FHFL GPU
+Nvidia RTX Pro 4500 GPU 160W 
+32GB Gen5 FHFL 1-slot
 
 Cage A & B, Slot 1, 2, 3, 4
 
@@ -386,8 +395,17 @@ Cage A & B, Slot 1, 2, 3, 4
 
 Cage A & B, Slot 1, 2, 3, 4
 
-1. Please check the  Select NVL Bridge (optional), page 10 section for the full details
+Cage A & B, Slot 1, 2, 3, 4
+
+Cage A & B, Slot 1, 2, 3, 4
+
+Cage A & B, Slot 1, 2, 3, 4
+
+Cage A & B, Slot 1, 2, 3, 4
+
+1. Please check the  Select NVL Bridge (optional), page 11 section for the full details
 2. CBL-X580p-GPU-N is auto included if this GPU is selected
+3. CBL-X580P-GPU-N is auto included if this GPU is selected
 
 NOTE:  Following STEP 3 ORDER CISCO UCS X9516 X-FABRIC MODULES is optional 
 only if the Cisco UCS X9508 Chassis already has the UCS X9516 X-Fabric modules 
@@ -398,9 +416,6 @@ Cisco UCS X580P PCIe Node
 
 9
 
-■
-■
-■
 CONFIGURING the Cisco UCS X580p PCIe Node
 
 Select NVL Bridge (optional)
@@ -409,19 +424,24 @@ The available GPU bridges options are listed in Table 4
 
 NOTE:  
 
-Availability: The NVL Bridge (UCSX-NVL2-H200) option shows only when 2 
+■ Availability: The NVL Bridge (UCSX-NVL2-H200) option shows only when 2 
+
 NVL-H200 GPUs are selected.
 
-Recommendation: If selected, Cisco recommends a minimum quantity of 2 
+■ Recommendation: If selected, Cisco recommends a minimum quantity of 2 
+
 UCSX-GPU-H200-NVL GPUs.
 
-Placement: A maximum of 2 GPUs per Bridge and a maximum of 2 NVL Bridges 
+■ Placement: A maximum of 2 GPUs per Bridge and a maximum of 2 NVL Bridges 
+
 per system are allowed.
 
-Side-by-Side Requirement: If a Bridge is selected, NVL-H200 GPUs need to be 
+■ Side-by-Side Requirement: If a Bridge is selected, NVL-H200 GPUs need to be 
+
 installed side-by-side (e.g., Slots 1 & 2 or 3 & 4).
 
-Removal Tool Kit: If the NVL Bridge PID UCSX-NVL2-H200 is selected, 1 
+■ Removal Tool Kit: If the NVL Bridge PID UCSX-NVL2-H200 is selected, 1 
+
 UCSX-GPU-RKIT-NV (GPU/NVLINK Bridge Removal Tool Kit NVIDIA) is required.
 
 Table 4   PCIe NVL Bridge
@@ -448,11 +468,6 @@ Accessories/spare included:
 
 Cisco UCS X580P PCIe Node
 
-■
-■
-■
-■
-■
 CONFIGURING the Cisco UCS X580p PCIe Node
 
 Select NVL GPU LICENSE
@@ -461,17 +476,19 @@ The available NVL GPU License options are listed in Table 4.
 
 NOTE:  
 
-Requirement: Selection of an NVIDIA LICENSE is required when UCSX-GPU-L40S 
+■ Requirement: Selection of an NVIDIA LICENSE is required when UCSX-GPU-L40S 
+
 or UCSX-GPU-RTXP6000 GPUs are selected.
 
 ■ Opt-Out: Users can select PID NV-GRID-OPT-OUT-D to opt out of the NVIDIA 
 
 License.
 
-License Quantity: The NVIDIA License quantity must equal the quantity of GPUs 
+■ License Quantity: The NVIDIA License quantity must equal the quantity of GPUs 
+
 selected.
 
-Available Licenses:
+■ Available Licenses:
 
 • Standard License: NV-AIE-P, NV-AIE-S, NV-GRID-PCS, NV-GRID-VAS, 
 
@@ -533,9 +550,109 @@ Cisco UCS X580P PCIe Node
 
 11
 
-■
-■
-■
+CONFIGURING the Cisco UCS X580p PCIe Node
+
+X580p GPU Assignment And Population Rules:
+
+Supported GPU Assignment Configurations:
+
+Table 6   Supported GPU Assignment Configurations
+
+Scenario
+
+GPU Assignment
+
+Compute Node
+
+Notes
+
+Single Host
+
+4x GPUs (Same type)
+
+Single Host
+
+1x GPU
+
+Single Host
+
+2x GPUs
+
+Single Host
+
+2x GPUs
+
+Node 1
+
+Node 1
+
+Node 1
+
+Node 1
+
+All 4 GPUs must be identical (e.g., all 
+H200 or all L40S)
+
+Can be from any Cage/Riser
+
+Both GPUs must be from Cage 1
+
+Both GPUs must be from Cage 2
+
+Multi-Host
+
+Multi-Host
+
+Cage 1 (e.g., 2x 
+H200-NVL)
+
+Cage 2 (e.g., 2x RTX 
+PRO 6k)
+
+Node 1
+
+Same PCIe Switch
+
+Node 2
+
+Same PCIe Switch
+
+Unsupported GPU Assignment Configurations
+
+:
+
+Table 7   Unsupported GPU Assignment Configurations
+
+Scenario
+
+GPU Assignment
+
+Compute Node
+
+Notes
+
+Split Assignment
+
+Split Assignment
+
+1x Cage 1 (GPU 1) + 1x 
+Cage 2 (GPU 3)
+
+1x Cage 1 (GPU 2) + 1x 
+Cage 2 (GPU 4)
+
+Node 1
+
+Not Supported
+
+Node 2
+
+Not Supported
+
+12
+
+Cisco UCS X580P PCIe Node
+
 CONFIGURING the Cisco UCS X580p PCIe Node
 
 STEP 3 ORDER CISCO UCS X9516 X-FABRIC MODULES
@@ -547,9 +664,9 @@ the Cisco UCS X580p PCIe Node.
 
 Select X-Fabric Module (Required)
 
-Select X-Fabric Modules from the Table 6.
+Select X-Fabric Modules from the Table 8.
 
-Table 6   Base PID of X-Fabric Modules
+Table 8   Base PID of X-Fabric Modules
 
 Product ID (PID)1
 
@@ -565,9 +682,9 @@ Notes:
 
 Select X-Fabric Module Adapter (Optional)
 
-Select X-Fabric Modules adapter from the Table 7.
+Select X-Fabric Modules adapter from the Table 9.
 
-Table 7   X-Fabric Modules Adapter
+Table 9   X-Fabric Modules Adapter
 
 Product ID (PID)1,2
 
@@ -595,9 +712,9 @@ Notes:
 
 modules
 
-12
-
 Cisco UCS X580P PCIe Node
+
+13
 
 CONFIGURING the Cisco UCS X580p PCIe Node
 
@@ -609,9 +726,9 @@ Select Optic Cables
 
 The recommended Cisco Optics for the server are listed in 
 
-Table 8.
+Table 10.
 
-Table 8   Supported Optic Cables1
+Table 10  Supported Optic Cables1
 
 Product ID (PID)
 
@@ -723,9 +840,9 @@ CB-M12-M12-MMF7M
 
 CABLE, MPO12-MPO12, TRUNK CABLE, TYPE B, MMF, 7M
 
-Cisco UCS X580P PCIe Node
+14
 
-13
+Cisco UCS X580P PCIe Node
 
 CONFIGURING the Cisco UCS X580p PCIe Node
 
@@ -736,9 +853,9 @@ Notes:
 what transceivers are supported with the adapters selected on UCS 9516. The above list is the current 
 supported list but its subject to change.
 
-14
-
 Cisco UCS X580P PCIe Node
+
+15
 
 SUPPLEMENTAL MATERIAL
 
@@ -760,13 +877,11 @@ Supports all type of GPUs.
 
 Supports all type of GPUs.
 
+16
+
 Cisco UCS X580P PCIe Node
 
-15
-
-SUPPLEMENTAL MATERIAL
-
-3
+3
 
 5
 
@@ -784,17 +899,7 @@ Cage slot 2
 Supports all type of GPUs.
 -
 
-16
-
-Cisco UCS X580P PCIe Node
-
-Solution Topology
-
-Figure 4  Solution Topology
-
 SUPPLEMENTAL MATERIAL
-
-PCIe Connectivity
 
 Cisco UCS X580P PCIe Node
 
@@ -802,29 +907,26 @@ Cisco UCS X580P PCIe Node
 
 SUPPLEMENTAL MATERIAL
 
-X580p PCIe Node Configuration - 2 Server 4x GPU + 2 NIC each
+Solution Topology
 
-Figure 5  Two servers with 4x GPU + 2 NIC each
+Figure 4  Solution Topology
 
-X580p PCIe Node Configuration - 2 Server 4x GPU + 2 NIC each Chassis 
-PCIe Mapping Policy
-
-Figure 6  Two servers with 4x GPU + 2 NIC each
+PCIe Connectivity
 
 18
 
 Cisco UCS X580P PCIe Node
 
-X580p PCIe Node Configuration - 1 Server 4x GPU + 2 NIC each
+X580p PCIe Node Configuration - 2 Server 4x GPU + 2 NIC each
 
-Figure 7  One servers with 4x GPU + 2 NIC each
+Figure 5  Two servers with 4x GPU + 2 NIC each
 
 SUPPLEMENTAL MATERIAL
 
-X580p PCIe Node Configuration - 1 Server 4x GPU + 2 NIC each Chassis 
+X580p PCIe Node Configuration - 2 Server 4x GPU + 2 NIC each Chassis 
 PCIe Mapping Policy
 
-Table 9   One server with 4x GPU + 2 NIC each
+Figure 6  Two servers with 4x GPU + 2 NIC each
 
 Cisco UCS X580P PCIe Node
 
@@ -832,14 +934,21 @@ Cisco UCS X580P PCIe Node
 
 SUPPLEMENTAL MATERIAL
 
-X580p PCIe Node Configuration - 1 Server 4x GPU + 2 NIC each
+X580p PCIe Node Configuration
 
-Figure 8  One server with 4x GPU + 2 NIC each
+■ 1 Server 4x GPU + 2 NIC each
 
-X580p PCIe Node Configuration - 1 Server 4x GPU + 2 NIC each Chassis 
-PCIe Mapping Policy
+■ 2 Server 2 GPU on 1 CPU + 1 NIC
 
-Figure 9  One servers with 4x GPU + 2 NIC each
+Figure 7  One servers with 4x GPU + 2 NIC each & Two servers with 2x GPU + 1 NIC
+
+X580p PCIe Node Configuration - PCIe Mapping Policy
+
+■ 1 Server 4x GPU + 2 NIC each 
+
+■ 2 Server 2x GPU on 1 CPU
+
+Table 11  One server with 4x GPU + 2 NIC each & 2 server with 2x GPU + 1 NIC
 
 20
 
@@ -857,7 +966,7 @@ Spare Parts
 
 This section lists the upgrade and service-related parts for the Cisco UCS X580p PCIe Node. 
 
-Table 10  Spare Parts  
+Table 12  Spare Parts  
 
 Product ID (PID)
 
@@ -922,7 +1031,7 @@ TECHNICAL SPECIFICATIONS
 
 Dimensions and Weight
 
-Table 11  Cisco UCS X580p PCIe Node Dimensions and Weight  
+Table 13  Cisco UCS X580p PCIe Node Dimensions and Weight  
 
 Parameter Value
 
@@ -942,16 +1051,19 @@ Weight
 
 ■ Minimally configured node weight = 18.51 lbs (8.4 kg)
 
-Fully loaded PCIe Node with L40S GPU = 28.66 lb (13 kg); minimum config with 1x L40S 
+■ Fully loaded PCIe Node with L40S GPU = 28.66 lb (13 kg); minimum config with 1x L40S 
+
 GPU = 21.05 lb (9.55 kg)
 
-Fully loaded PCIe Node with RTXPRO 6000 GPU = 29.98 lb (13.6 kg); minimum config with 
+■ Fully loaded PCIe Node with RTXPRO 6000 GPU = 29.98 lb (13.6 kg); minimum config with 
+
 1X RTXPRO 6000 GPU = 21.38 lb (9.7 kg)
 
-Fully loaded PCIe Node with H200-NVL GPU (with 2x NVL bridge cards) = 30.42 lb (13.8 
+■ Fully loaded PCIe Node with H200-NVL GPU (with 2x NVL bridge cards) = 30.42 lb (13.8 
+
 kg); minimum config with 1X H200-NVL GPU = 21.43 lb (9.72 kg)
 
-Table 12  Cisco UCS X9516 X-Fabric module Dimensions and Weight  
+Table 14  Cisco UCS X9516 X-Fabric module Dimensions and Weight  
 
 Parameter Value
 
@@ -971,22 +1083,19 @@ Weight
 
 ■ Minimally configured node weight = 12.84 lbs (5.83 kg)
 
-Fully loaded X-Fabric Module with 2x Connect-X 7 Adapters = 14.9 lb; minimum config 
+■ Fully loaded X-Fabric Module with 2x Connect-X 7 Adapters = 14.9 lb; minimum config 
+
 with 1x Connect-X 7 = 12.9 lb
 
 Cisco UCS X580P PCIe Node
 
 23
 
-■
-■
-■
-■
 TECHNICAL SPECIFICATIONS
 
 Environmental Specifications
 
-Table 13  Cisco UCS X580p PCIe Node and Cisco UCS X9516 X-Fabric Environmental Specifications  
+Table 15  Cisco UCS X580p PCIe Node and Cisco UCS X9516 X-Fabric Environmental Specifications  
 
 Parameter
 
@@ -1021,9 +1130,7 @@ For configuration-specific power specifications, use the Cisco UCS Power Calcula
 
 http://ucspowercalc.cisco.com
 
-NOTE:  The Cisco UCS X580p PCIe Node has a power cap of 1300 Watts for all 
-combinations of components. Also, the ambient temperature must be less than 27 oC 
-(80.6 oF).
+NOTE:  The ambient temperature must be less than 27 oC (80.6 oF).
 
 24
 

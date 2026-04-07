@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS 6400 Series Fabric Interconnects Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-741116.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-25 11:34:39 |
+| **Fetched on** | 2026-04-08 08:45:22 |
 
 ---
 

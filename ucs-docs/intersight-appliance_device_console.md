@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight Appliance Device Console |
 | **URL** | https://intersight.com/help/appliance/device_console |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/onprem/data/articles/device_console/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260402103337138/docs/onprem/data/articles/device_console/en/index.html |
 | **HTML Title** | Device Console |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_device_console.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-25 11:33:08 |
+| **Fetched on** | 2026-04-08 08:43:41 |
 
 ---
 

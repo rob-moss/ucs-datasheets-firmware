@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Device Console |
 | **URL** | https://intersight.com/help/saas/device_console |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/cloud/data/articles/device_console/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260402103337138/docs/cloud/data/articles/device_console/en/index.html |
 | **HTML Title** | Device Console |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_device_console.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-25 11:33:01 |
+| **Fetched on** | 2026-04-08 08:43:35 |
 
 ---
 
@@ -720,7 +720,7 @@ Command| Description| Note
 `**Is**`|  Lists the contents of the current working directory.| —  
 `**mkdir**` { `**workspace:/**` | [path] `**| volatile:/**` | [path] `**|**` | [path] `**| usbdrive1:/ | usbdrive2:/**` }| Creates a directory under allowed directories.| The volatile:, usbdrive1:, and usbdrive2: options are not available for Unified Edge.  
 `**rmdir**` { `**workspace:/**` | [path] `**| volatile:/**` | [path] `**|**` | [path] `**| usbdrive1:/ | usbdrive2:/**` }| Removes the directory.| The volatile:, usbdrive1:, and usbdrive2: options are not available for Unified Edge.  
-`**cp**` [from-filesystem:] [from-path] filename [to-filesystem:] to-path [dest-filename]| Copies a file from one directory to another.| —  
+`**cp**` [from-filesystem:] [from-path] filename [to-filesystem:] to-path [dest-filename]| Copies a file from one directory to another.| TFTP is not a secure protocol. Use it only in trusted networks.  
 `**mv**` [from-filesystem:] [from-path] filename [to-filesystem:] to-path [dest-filename]| Moves a file from one directory to another.| —  
 `**rm**` { `**workspace:/**` | [path] `**| volatile:/**` | [path] `**|**` | [path] `**| usbdrive1:/ | usbdrive2:/**` }| Removes a file from a directory.| The volatile:, usbdrive1:, and usbdrive2: options are not available for Unified Edge.  
   
@@ -730,9 +730,10 @@ These commands cover various networking diagnostics, system management, and conf
 
 Command| Description| Note  
 ---|---|---  
+`**upgrade-equipment**`|  Upgrades the server's BMC and BIOS firmware.| Not available for Unified Edge.TFTP is not a secure protocol. Use it only in trusted networks.  
 `**change-domain-name**`|  Updates the name of the Fabric Interconnect and the peer FI.| Not available for Unified Edge.  
 `**change-mode**`|  Changes the management mode of the server.| Not available for Unified Edge.  
-`**change-password**`|  Changes the administrator password on the Fabric Interconnect.| —  
+`**change-password**`|  Changes the administrator password on the Fabric Interconnect.| Starting with Infrastructure Firmware release 6.0(2), strong password enforcement is enabled by default, requiring you to enter a strong password during configuration. If you downgrade to 6.0(1) or an earlier firmware version, this strong password enforcement remains in effect and is not removed.  
 `**clear**`|  Clears the screen.| —  
 `**clear-firmware-cache**`|  Clears an entry from the Intersight firmware cache.| —  
 `**clear-sshkey**` host-name| Clears the SSH public key of a remote host from cache.| Not available for Unified Edge.  
@@ -762,7 +763,7 @@ Command| Description| Note
 
 | Not available for Unified Edge.  
 `**tail-mgmt-log**` module_name| Displays the management log of the services running on a Fabric Interconnect.| —  
-`**telnet**` host-name [port-num]| Logs in to a host that supports Telnet.| —  
+`**telnet**` host-name [port-num]| Logs in to a host that supports Telnet.| Telnet is not a secure protocol. Use it only in trusted networks.  
 `**top**`|  Changes scope to default scope.| Available only for Unified Edge.  
 `**traceroute**` [ `**-s**` source-address ] address| Displays the route to an IPv4 network host.| —  
 `**traceroute6**` [ `**-s**` source-address ] address| Displays the route to an IPv6 network host.| —  

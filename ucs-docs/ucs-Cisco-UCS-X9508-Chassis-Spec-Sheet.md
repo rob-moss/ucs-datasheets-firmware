@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/x9508-specsheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-03-25 11:37:04 |
+| **Fetched on** | 2026-04-08 08:48:01 |
 
 ---
 
@@ -26,15 +26,15 @@ unified-computing/ucs-x-series-modular-system/
 datasheet-listing.html
 
 CISCO SYSTEMS
-170 WEST TASMAN DR.
+170 WEST TASMAN DR. 
 SAN JOSE, CA, 95134
 WWW.CISCO.COM
 
-PUBLICATION HISTORY
+PUBLICATION HISTORY 
 
-REV A.16
+REV A.17
 
-FEBRUARY 18, 2026
+APRIL 04, 2026 
 
 STEP
 STEP
@@ -118,14 +118,14 @@ or the time-proven Cisco UCS Manager.
 
 The main benefits of the Cisco UCS X-Series Modular System and the Cisco UCS X-Series Direct are as follows:
 
-Cloud-operated infrastructure
+■ Cloud-operated infrastructure
 
 Management is moved from the on-premise network to the cloud so that you can respond at the 
 speed and scale of your business and manage all of your infrastructure. You can shape Cisco UCS 
 X Series Modular System resources to workload requirements with the Cisco Intersight cloud- 
 operations platform.
 
-An adaptable system designed for modern applications
+■ An adaptable system designed for modern applications
 
 Because requirements change often, you need a system that does not lock you into one set of 
 resources when you find that you need another. For hybrid applications, and a range of 
@@ -134,22 +134,19 @@ consolidate onto a single platform that combines the density and efficiency of b
 with the expandability of rack servers. The result is better performance, automation, and 
 efficiency.
 
-A system engineered for the future
+■ A system engineered for the future
 
 Cisco UCS X9508 Chassis 
 
 3
 
-■
-■
-■
 OVERVIEW
 
 The Cisco UCS X Series Modular System is emerging technology that reduces risk with a modular 
 system designed to support future generations of processors, storage, nonvolatile memory, 
 accelerators, and interconnects.
 
-Support a broader range of workloads
+■ Support a broader range of workloads
 
 A single server type supporting a broader range of workloads means fewer different products to 
 support, reduced training costs, and increased flexibility.
@@ -177,7 +174,6 @@ Device Slots 1 - 8
 
 Cisco UCS X9508 Chassis
 
-■
 Figure 2
 
   Cisco UCS X9508 Chassis Front View with PCIe Nodes (populated)
@@ -304,15 +300,15 @@ following:
 
 Cisco UCS 9108-25G IFM:
 
-Server ports: Up to 50 Gbps of unified fabric connectivity per compute node with two IFMs.
+■ Server ports: Up to 50 Gbps of unified fabric connectivity per compute node with two IFMs.
 
-Uplink ports: 8x 25-Gbps SFP28 ports. 
+■ Uplink ports: 8x 25-Gbps SFP28 ports. 
 
 Cisco UCS 9108-100G IFM:
 
-Server ports: Up to 200 Gbps of unified fabric connectivity per compute node with two IFMs.
+■ Server ports: Up to 200 Gbps of unified fabric connectivity per compute node with two IFMs.
 
-Uplink ports: 8x 100-Gbps QSFP8 ports.
+■ Uplink ports: 8x 100-Gbps QSFP8 ports.
 
 The unified fabric carries management, application data traffic using Ethernet and/or Fibre Channel over 
 FCoE protocols to the fabric interconnects. There, management traffic connects to the Cisco Intersight 
@@ -340,10 +336,6 @@ Cisco UCS X9508 Chassis
 
 7
 
-■
-■
-■
-■
 OVERVIEW
 
 Figure 6 shows the IFM front view characteristics.
@@ -450,9 +442,10 @@ Status LEDs:
 
 QSFP28 Optical Ports. 
 
-IFM Status (top LED)
+■ IFM Status (top LED)
 
-Fan Status LEDs 1 through 3, with 
+■ Fan Status LEDs 1 through 3, with 
+
 Fan 1 as LED 2, Fan 2 as LED 3, and 
 Fan 3 as LED 4. 
 
@@ -475,8 +468,6 @@ Figure 8 shows the IFM top view characteristics.
 
 Cisco UCS X9508 Chassis
 
-■
-■
 Figure 8
 
   Cisco UCS 9108-25G IFM (top view) 
@@ -630,9 +621,10 @@ Status LEDs:
 
 QSFP28 Optical Ports. 
 
-FI Status (top LED)
+■ FI Status (top LED)
 
-Fan Status LEDs 1 through 3, with 
+■ Fan Status LEDs 1 through 3, with 
+
 Fan 1 as LED 2, Fan 2 as LED 3, and 
 Fan 3 as LED 4. 
 
@@ -658,8 +650,6 @@ Console Port
 
 Cisco UCS X9508 Chassis
 
-■
-■
 Figure 12
 
   Cisco UCS Fabric Interconnect 9108 100G (top view)
@@ -718,10 +708,12 @@ X410c Compute Nodes through Cisco UCS X-Fabric modules in the Cisco UCS X9508 Ch
 Following combinations can be used to connect the Cisco UCS X210c, X215c or X410c node to the Cisco UCS 
 PCIe node via Cisco UCS X9416 X-Fabric.
 
-UCS VIC 14425 mLOM card and mezzanine-form-factor virtual interface card or the Cisco UCS PCIe 
+■ UCS VIC 14425 mLOM card and mezzanine-form-factor virtual interface card or the Cisco UCS PCIe 
+
 Mezz card for X-Fabric.
 
-UCS VIC 15230 mLOM card and mezzanine-form-factor virtual interface card or the Cisco UCS PCIe 
+■ UCS VIC 15230 mLOM card and mezzanine-form-factor virtual interface card or the Cisco UCS PCIe 
+
 Mezz card for X-Fabric.
 
 Fabric Modules slots provide an alternative path to bridging/switching within the chassis and interconnect 
@@ -746,8 +738,6 @@ Front View
 
 Cisco UCS X9508 Chassis
 
-■
-■
 BASE CHASSIS STANDARD CAPABILITIES and FEATURES
 
 BASE CHASSIS STANDARD CAPABILITIES and FEATURES
@@ -773,7 +763,7 @@ Compute Node Support
 
 • Support for 2-CPU single slot and 4-CPU dual slot compute nodes
 
-Compute Nodes
+■ Compute Nodes
 
 • Supports CPUs and future GPUs with 300W+ TDP, and 900W+ per 
 
@@ -794,7 +784,7 @@ Fabric Interconnects. Each IFM features the following:
 
 ■ Up to 100 Gbps of unified fabric connectivity per compute node.
 
-8x 25-Gbps SFP28 or 8X 100-Gbps QSFP28 uplink ports. The unified 
+■ 8x 25-Gbps SFP28 or 8X 100-Gbps QSFP28 uplink ports. The unified 
 fabric carries management traffic to the Cisco Intersight cloud- 
 operations platform, Fibre Channel over Ethernet (FCoE) traffic, and 
 production Ethernet traffic to the fabric interconnects. 
@@ -814,7 +804,7 @@ and Thermal Capability
 
 ■ Up to 100 Gbps of unified fabric connectivity per compute node.
 
-Integrated 1/10/25/40/100 Gigabit Ethernet, FCoE, and Fibre Channel 
+■ Integrated 1/10/25/40/100 Gigabit Ethernet, FCoE, and Fibre Channel 
 switch offering up to 1.6 Tbps throughput and up to 8 ports. The switch 
 has 6 40/100-Gbps Ethernet ports and 2 unified ports that can support 
 40/100-Gbps Ethernet ports or 8 Fiber Channel ports after break-out at 
@@ -825,7 +815,7 @@ modules that can flexibly connect the compute modules with I/O devices.
 The “X” in Cisco UCS X-Fabric technology denotes a variable that can evolve 
 with new technology developments.
 
-Power supplies
+■ Power supplies
 
 • Six 2800-Watt power supplies providing 54 V power
 
@@ -839,10 +829,6 @@ Cisco UCS X9508 Chassis
 
 15
 
-■
-■
-■
-■
 BASE CHASSIS STANDARD CAPABILITIES and FEATURES
 
 Table 1   Capabilities and Features  (continued)
@@ -853,84 +839,69 @@ Description
 
 Density and Form Factor
 
-Industry-leading socket density per RU
+■ Industry-leading socket density per RU
 
 ■ Minimum of 8 compute slots
 
-32 DIMM socket support on a 2-socket compute node (beginning with the 
+■ 32 DIMM socket support on a 2-socket compute node (beginning with the 
 Ice Lake CPU family) and 64 DIMM socket support on a 4-socket compute 
 node (beginning with the Sapphire Rapids CPU family)
 
-Power, thermal, and form factor support for smart NICs, FPGA 
+■ Power, thermal, and form factor support for smart NICs, FPGA 
+
 accelerators, and GPU cards
 
 Fabric Bandwidth
 
-Data fabric connectivity to compute nodes of 200 Gbps Ethernet speeds 
+■ Data fabric connectivity to compute nodes of 200 Gbps Ethernet speeds 
+
 per compute node
 
-Provision for future fabric expansion
+■ Provision for future fabric expansion
 
 Chassis Storage Support
+
+■ Local storage
 
 Virtual Card Interface 
 (VIC) Support
 
-Local storage
+■ Cisco VIC ASIC
 
-Cisco VIC ASIC
+■ 25G throughput
 
-25G throughput
-
-100G throughput
+■ 100G throughput
 
 16
 
 Cisco UCS X9508 Chassis
 
-■
-■
-■
-■
-■
-■
-■
-■
-■
 CONFIGURING the CHASSIS
 
 CONFIGURING the CHASSIS
 
 Follow these steps to configure the Cisco UCS X9508 chassis:
 
-STEP 1 VERIFY BASE CHASSIS SKU, page 18
+■ STEP 1 VERIFY BASE CHASSIS SKU, page 18
 
-STEP 2 SELECT COMPUTE NODES, page 19
+■ STEP 2 SELECT COMPUTE NODES, page 19
 
-STEP 3 SELECT INTELLIGENT FABRIC MODULES, page 20
+■ STEP 3 SELECT INTELLIGENT FABRIC MODULES, page 20
 
-STEP 4 SELECT FABRIC INTERCONNECTS MODULES, page 21
+■ STEP 4 SELECT FABRIC INTERCONNECTS MODULES, page 21
 
-STEP 6 SELECT CISCO PCIE NODE (Optional), page 23
+■ STEP 6 SELECT CISCO PCIE NODE (Optional), page 23
 
-STEP 7 CHOOSE POWER SUPPLIES, page 24
+■ STEP 7 CHOOSE POWER SUPPLIES, page 24
 
-STEP 8 SELECT INPUT POWER CORD(s), page 25
+■ STEP 8 SELECT INPUT POWER CORD(s), page 25
 
-SUPPLEMENTAL MATERIAL, page 27
+■ SUPPLEMENTAL MATERIAL, page 27
 
 Cisco UCS X9508 Chassis 
 
 17
 
-■
-■
-■
-■
-■
-■
-■
-■
 CONFIGURING the CHASSIS
 
 STEP 1
@@ -1018,52 +989,38 @@ Items included with the chassis:
 Items not included with the chassis (but may be 
 ordered separately):
 
-Fans
+■ Fans
 
-Chassis accessory kit
+■ Chassis accessory kit
 
-Compute node blank panels (where needed)
+■ Compute nodes
 
-Compute nodes
+■ IFMs
 
-IFMs
+■ Compute node blank panels (where needed)
 
-FIs
+■ FIs
 
-X-Fabric module blank panels (two)
+■ X-Fabric module blank panels (two)
 
-X-Fabric modules
+■ X-Fabric modules
 
-Power supply blanks (where needed)
+■ Power supply blanks (where needed)
 
-PCI Nodes, Risers and GPU
+■ PCI Nodes, Risers and GPU
 
-Chassis Rear AC Power Expansion Module (two)
+■ Chassis Rear AC Power Expansion Module (two)
 
-Transceivers and cables
+■ Transceivers and cables
 
-AC power supply keying bracket
+■ AC power supply keying bracket
 
-Power supplies
+■ Power supplies
 
 18
 
 Cisco UCS X9508 Chassis
 
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
 CONFIGURING the CHASSIS
 
 STEP 2 SELECT COMPUTE NODES
@@ -1115,25 +1072,20 @@ compute nodes can be installed in the chassis.
 NOTE:  Refer to the compute node specification sheets below for more details on the 
 components and PIDs:
 
-Cisco UCS X210c M8 Compute Node Spec Sheet
+■ Cisco UCS X210c M8 Compute Node Spec Sheet
 
-Cisco UCS X215c M8 Compute Node Spec Sheet
+■ Cisco UCS X215c M8 Compute Node Spec Sheet
 
-Cisco UCS X410c M7 Compute Node Spec Sheet
+■ Cisco UCS X410c M7 Compute Node Spec Sheet
 
-Cisco UCS X210c M6 Compute Node Spec Sheet 
+■ Cisco UCS X210c M6 Compute Node Spec Sheet 
 
-Cisco UCS X210c M7 Compute Node Spec Sheet 
+■ Cisco UCS X210c M7 Compute Node Spec Sheet 
 
 Cisco UCS X9508 Chassis 
 
 19
 
-■
-■
-■
-■
-■
 CONFIGURING the CHASSIS
 
 STEP 3 SELECT INTELLIGENT FABRIC MODULES
@@ -1165,7 +1117,7 @@ UCSX-I-9108-25G-D
 
 UCS 9108-25G IFM for 9508 Chassis
 
-UCSX-I-9108-100G-D
+UCSX-I9108-100G-D
 
 UCS 9108-100G IFM for X9508 chassis
 
@@ -1178,16 +1130,14 @@ Approved Configurations
 NOTE:  Refer to the IFM specification sheets below for more details on the 
 components and PIDs:
 
-Cisco UCS 9108 25G Intelligent Fabric Module Spec Sheet 
+■ Cisco UCS 9108 25G Intelligent Fabric Module Spec Sheet 
 
-Cisco UCS 9108 100G Intelligent Fabric Module Spec Sheet
+■ Cisco UCS 9108 100G Intelligent Fabric Module Spec Sheet
 
 20
 
 Cisco UCS X9508 Chassis
 
-■
-■
 CONFIGURING the CHASSIS
 
 STEP 4
@@ -1234,13 +1184,12 @@ Approved Configurations
 NOTE:  Refer to the Fabric Interconnect specification sheets below for more details 
 on the components and PIDs:
 
-Cisco UCS Fabric Interconnect 9108 100G Spec Sheet
+■ Cisco UCS Fabric Interconnect 9108 100G Spec Sheet
 
 Cisco UCS X9508 Chassis 
 
 21
 
-■
 CONFIGURING the CHASSIS
 
 STEP 5 SELECT X-FABRIC (Optional)
@@ -1317,13 +1266,12 @@ both risers included.
 NOTE:  Refer to the below spec sheet for the list of components such as riser cards 
 and available GPUs under the PCIe Nodes:
 
-Cisco UCS X440p PCIe Node Spec Sheet
+■ Cisco UCS X440p PCIe Node Spec Sheet
 
 23
 
 Cisco UCS X9508 Chassis
 
-■
 CONFIGURING the CHASSIS
 
 STEP 7 CHOOSE POWER SUPPLIES
@@ -1356,15 +1304,16 @@ Approved Configurations
 
 Choose from 2 to 6 power supplies
 
-If node quantity 1 is selected, then minimum 2 quantity of PSU is required
+■ If node quantity 1 is selected, then minimum 2 quantity of PSU is required
 
-If node quantity 2 to 6 is selected, then minimum 4 quantity of PSU is required
+■ If node quantity 2 to 6 is selected, then minimum 4 quantity of PSU is required
 
-If node quantity 7 or 8 is selected, then minimum 6 quantity of PSU is required
+■ If node quantity 7 or 8 is selected, then minimum 6 quantity of PSU is required
 
 NOTE:  
 
-Two PSUs minimum are required for chassis operation. Four PSUs are 
+■ Two PSUs minimum are required for chassis operation. Four PSUs are 
+
 recommended and the maximum number of PSUs is six.
 
 ■ Use the Power Calculator to determine the correct number of power supplies. 
@@ -1377,10 +1326,6 @@ Cisco UCS X9508 Chassis
 
 24
 
-■
-■
-■
-■
 CONFIGURING the CHASSIS
 
 STEP 8 SELECT INPUT POWER CORD(s)
@@ -1465,10 +1410,10 @@ CAB-US520-C19-US
 
 16A, 250 VAC
 
-15A, 125 VAC
+15A, 125 VAC 
 NEMA 5-15 to IEC-C19
 
-20A, 125 VAC
+20A, 125 VAC 
 NEMA 5-20 to IEC-C19
 
 CAB-BS1363-C19-UK
@@ -1710,8 +1655,8 @@ Cisco UCS X9508 Chassis
 For the X9508 chassis, the Fabric Extender modules (up to two) plug into the back of the UCS X9508 chassis. 
 The X9508 chassis accommodates the following IFMs:
 
-Cisco IFM 9108-25G (Figure 15)
-Cisco IFM 9108-100G (Figure 16)
+■ Cisco IFM 9108-25G (Figure 15)
+■ Cisco IFM 9108-100G (Figure 16)
 
 The connectivity from the X9108-IFM-25G to 6536 series Fabric Interconnects is shown in Figure 15.
 
@@ -1752,8 +1697,6 @@ Cisco UCS X9508 Chassis
 
 28
 
-■
-■
   
 SUPPLEMENTAL MATERIAL
 
@@ -1998,11 +1941,11 @@ Management
 
 Value
 
-Cisco Intersight Software
+■ Cisco Intersight Software
 
  (SaaS, Virtual Appliance and Private Virtual Appliance)
 
-Cisco UCS Manager
+■ Cisco UCS Manager
 
 Temperature: operating
 
@@ -2042,8 +1985,6 @@ Cisco UCS X9508 Chassis
 
 36
 
-■
-■
 TECHNICAL SPECIFICATIONS
 
 Power Supply Specifications
@@ -2058,7 +1999,7 @@ AC input voltage
 
 Value
 
-Voltage Range 100-127 VAC, 200-240 VAC nominal 
+Voltage Range 100-127 VAC, 200-240 VAC nominal  
 (range: 90-140 VAC, 180-264 VAC)
 
 Each power supply can be connected to a different phase
@@ -2135,76 +2076,56 @@ Safety
 
 ■ UL 60950-1
 
-CAN/CSA-C22.2 No. 60950-1
+■ CAN/CSA-C22.2 No. 60950-1
 
-EN 60950-1
+■ EN 60950-1
 
-IEC 60950-1
+■ IEC 60950-1
 
-AS/NZS 60950-1
+■ AS/NZS 60950-1
 
 ■ GB4943
 
 EMC: Emissions
 
-47CFR Part 15 (CFR 47) Class A (FCC Class A)
+■ 47CFR Part 15 (CFR 47) Class A (FCC Class A)
 
-AS/NZS CISPR22 Class A
+■ AS/NZS CISPR22 Class A
+
+■ CISPR2 2 Class A
+
+■ EN55022 Class A
+
+■ ICES003 Class A
+
+■ VCCI Class A
+
+■ EN61000-3-2
+
+■ EN61000-3-3
+
+■ KN22 Class A
+
+■ CNS13438 Class A
+
+■ EN50082-1
+
+■ EN61000-6-1
+
+■ EN55024
+
+■ CISPR24
+
+■ EN300386
+
+■ KN 61000-4 Series
 
 EMC: Immunity
-
-CISPR2 2 Class A
-
-EN55022 Class A
-
-ICES003 Class A
-
-VCCI Class A
-
-EN61000-3-2
-
-EN61000-3-3
-
-KN22 Class A
-
-CNS13438 Class A
-
-EN50082-1
-
-EN61000-6-1
-
-EN55024
-
-CISPR24
-
-EN300386
-
-KN 61000-4 Series
 
 Cisco UCS X9508 Chassis 
 
 38
 
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
 TECHNICAL SPECIFICATIONS
 
 System Requirements

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Server BIOS Tokens in Intersight Managed Mode - Introduction to Intersight Managed Mode Server Bios Tokens [Cisco Intersight] |
 | **Source file** | `ucs-docs-raw/html/b_UCS_BIOS_Tokens_Guide_chapter_01.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-25 11:32:30 |
+| **Fetched on** | 2026-04-08 08:43:03 |
 
 ---
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager - Configuration Guides |
 | **Source file** | `ucs-docs-raw/html/products-installation-and-configuration-guides-list.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-25 11:30:01 |
+| **Fetched on** | 2026-04-08 08:41:38 |
 
 ---
 
@@ -88,15 +88,15 @@ use JS to put chosen tab in here or hide
 
   * 25-Feb-2026
 
-[ Security Advisory: Cisco NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-n3kn9k_aci_lldp_dos-NdgRrrA3.html)
-
-  * 25-Feb-2026
-
 [ Security Advisory: Cisco FXOS and UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsciv-wGYtC78q.html)
 
   * 25-Feb-2026
 
 [ Security Advisory: Cisco UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-cmdinj-GvxLPeSB.html)
+
+  * 25-Feb-2026
+
+[ Security Advisory: Cisco NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-n3kn9k_aci_lldp_dos-NdgRrrA3.html)
 
   * 25-Feb-2026
 
@@ -139,11 +139,11 @@ use JS to put chosen tab in here or hide
 
 #### Security Advisories, Responses and Notices
 
-  * [Cisco NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-n3kn9k_aci_lldp_dos-NdgRrrA3.html)25-Feb-2026new
-  * [Cisco FXOS and UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsciv-wGYtC78q.html)25-Feb-2026new
-  * [Cisco FXOS and UCS Manager Software Stored Cross-Site Scripting Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsfxosxss-7skVE8Zv.html)25-Feb-2026new
-  * [Cisco UCS Manager Software Privilege Escalation Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-afwae-mOgUfyLn.html)25-Feb-2026new
-  * [Cisco UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-cmdinj-GvxLPeSB.html)25-Feb-2026new
+  * [Cisco NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-n3kn9k_aci_lldp_dos-NdgRrrA3.html)25-Feb-2026
+  * [Cisco FXOS and UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsciv-wGYtC78q.html)25-Feb-2026
+  * [Cisco FXOS and UCS Manager Software Stored Cross-Site Scripting Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsfxosxss-7skVE8Zv.html)25-Feb-2026
+  * [Cisco UCS Manager Software Privilege Escalation Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-afwae-mOgUfyLn.html)25-Feb-2026
+  * [Cisco UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-cmdinj-GvxLPeSB.html)25-Feb-2026
   * [Cisco Integrated Management Controller Virtual Keyboard Video Monitor Open Redirect Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucs-vkvmorv-CnKrV7HK.html)27-Aug-2025
   * [Cisco UCS Manager Software Command Injection Vulnerabilities ](/c/en/us/support/docs/csa/cisco-sa-ucs-multi-cmdinj-E4Ukjyrz.html)27-Aug-2025
   * [Cisco Integrated Management Controller Virtual Keyboard Video Monitor Stored Cross-Site Scripting Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucs-kvmsxss-6h7AnUyk.html)27-Aug-2025
@@ -159,12 +159,12 @@ use JS to put chosen tab in here or hide
 
 #### Release Notes
 
-  * [Release Notes for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-6_0.html)16-Mar-2026updated
-  * [Release Bundle Contents for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-6-0.html)16-Mar-2026updated
+  * [Release Notes for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-6_0.html)27-Mar-2026updated
+  * [Release Bundle Contents for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-6-0.html)27-Mar-2026updated
   * [Release Notes for Cisco UCS Virtual Interface Card Drivers, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/VIC/6-0/b-release-notes-for-cisco-ucs-vic-drivers-rel-6-0.html)16-Mar-2026updated
-  * [Release Notes for Cisco UCS Tools ](/c/en/us/td/docs/unified_computing/ucs/release/notes/UCS-Tools-ESXi-RN.html)23-Feb-2026updated
-  * [Release Notes for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-4_3.html)23-Feb-2026updated
-  * [Release Bundle Contents for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-4-3.html)23-Feb-2026updated
+  * [Release Notes for Cisco UCS Tools ](/c/en/us/td/docs/unified_computing/ucs/release/notes/UCS-Tools-ESXi-RN.html)23-Feb-2026
+  * [Release Notes for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-4_3.html)23-Feb-2026
+  * [Release Bundle Contents for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-4-3.html)23-Feb-2026
   * [Cisco UCS Manager Cross-Version Firmware Support, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cross-version-fw-support.html)18-Feb-2026
   * [Cisco UCS Manager Internal Dependencies, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cisco-ucs-manager-internal-dependencies-release-6-0.html)17-Feb-2026
   * [Release Notes for Cisco UCS Manager, Release 4.2 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/cisco-ucs-manager-rn-4-2.html)23-Sep-2025
@@ -204,9 +204,9 @@ use JS to put chosen tab in here or hide
 
 #### Technical References
 
+  * [Cisco UCS Manager 6.0 Privileges ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Privileges/6-0/b-ucsm-privileges-6-0.html)27-Mar-2026updated
   * [Open Source Used In Cisco Unified Computing System - Manager 6.0(2) ](/c/dam/en/us/td/docs/unified_computing/ucs/3rd-party/UCSM_6_0_2_Open_Source_Documentation.pdf)16-Mar-2026 (PDF)
   * [Cisco UCS Server BIOS Tokens, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Server-BIOS-Tokens/6-0/b-ucs-bios-tokens-guide-6_0.html)16-Mar-2026updated
-  * [Cisco UCS Manager 6.0 Privileges ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Privileges/6-0/b-ucsm-privileges-6-0.html)22-Sep-2025
   * [Open Source Used In Cisco Unified Computing System - Manager 6.0(1) ](/c/dam/en/us/td/docs/unified_computing/ucs/3rd-party/UCSM_6_0_1_Open_Source_Documentation.pdf)02-Sep-2025 (PDF)
   * [Cisco UCS Server BIOS Tokens, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Server-BIOS-Tokens/4-3/b-ucs-bios-tokens-guide-4_3.html)07-Jul-2025
   * [Open Source Used In Cisco Unified Computing System - Manager 4.3.6 ](/c/dam/en/us/td/docs/unified_computing/ucs/3rd-party/UCSM_4_3_6_Open_Source_Documentation.pdf)30-Apr-2025 (PDF)
@@ -268,6 +268,10 @@ use JS to put chosen tab in here or hide
 
 #### Configuration Guides
 
+  * [Cisco UCS Manager Storage Management Guide, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3.html)02-Apr-2026updated
+  * [Cisco UCS Manager Storage Management Guide using the CLI, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3.html)02-Apr-2026updated
+  * [Cisco UCS Manager Storage Management Guide, Release 4.2 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-2/b_UCSM_GUI_Storage_Management_Guide_4_2.html)01-Apr-2026updated
+  * [Cisco UCS Manager Storage Management Guide using the CLI, Release 4.2 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-2/b_CLI_UCSM_Storage_Management_Guide_4-2.html)01-Apr-2026updated
   * [Cisco UCS Manager Getting Started Guide, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/6-0/b-cisco-ucs-manager-getting-started-guide-release-6_0.html)16-Mar-2026updated
   * [Cisco UCS Manager Administration Management Guide 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/6-0/b_cisco_ucs_admin_mgmt_guide_6_0.html)16-Mar-2026updated
   * [Cisco UCS Manager Firmware Management Guide, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/6-0/b_UCSM_GUI_Firmware_Management_Guide_6_0.html)16-Mar-2026updated
@@ -279,10 +283,6 @@ use JS to put chosen tab in here or hide
   * [Migration Guide for Cisco UCS Fabric Interconnects, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/6-0/b_migration_guide_for_cisco_ucs_fabric_interconnects_6_0.html)16-Mar-2026updated
   * [Cisco UCS 6400, 6500, 6600 Series, and UCSX-S9108-100G FI Configuration Limits for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Configuration-Limits/6-0/b_ucs_configuration_limits_6_0.html)16-Mar-2026updated
   * [Cisco UCS S3260 Server Integration with Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Dense-Storage-Server-Integ-Mgmt/6-0/b_UCSM_s3260_Integration_Guide_6_0.html)16-Mar-2026updated
-  * [Cisco UCS Manager Administration Management Using the CLI, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Admin-Management/6-0/b_cisco_ucs_manager_cli_administration_mgmt_guide_6-0.html)16-Mar-2026updated
-  * [Cisco UCS Manager Firmware Management Using the CLI, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Firmware-Mgmt/6-0/b_UCSM_CLI_Firmware_Management_Guide_6-0.html)16-Mar-2026updated
-  * [Cisco UCS Manager Network Management Guide Using the CLI, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/6-0/b_cli_ucsm_network_management_guide_6_0.html)16-Mar-2026updated
-  * [Cisco UCS Manager Server Management Using the CLI, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/6-0/b_cisco_ucs_manager_server_mgmt_cli_guide_6_0.html)16-Mar-2026updated
 [View all documentation of this type ](/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html)
 
 #### Programming Guides
@@ -293,8 +293,8 @@ use JS to put chosen tab in here or hide
 
 #### Error and System Messages
 
+  * [Cisco UCS Faults and Error Messages Reference Guide 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/6-0/b_cisco_ucs_faults_and_error_messages_reference-6-0.html)27-Mar-2026updated
   * [Cisco UCS Faults and Error Messages Reference Guide 4.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/4-0/b_Cisco_UCS_Faults_and_Error_Messages_Reference-4-0.html)24-Sep-2025
-  * [Cisco UCS Faults and Error Messages Reference Guide 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/6-0/b_cisco_ucs_faults_and_error_messages_reference-6-0.html)24-Sep-2025
   * [Cisco UCS Faults and Error Messages Reference Guide 4.3 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/4-3/b_cisco_ucs_faults_and_error_messages_reference-4-3.html)30-Oct-2024
   * [Cisco UCS Faults and Error Messages Reference Guide 4.2 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/4-2/b_Cisco_UCS_Faults_and_Error_Messages_Reference-4-2.html)24-Jan-2023
   * [Cisco UCS Faults and Error Messages Reference Guide 4.1 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/4-1/b_Cisco_UCS_Faults_and_Error_Messages_Reference-4-1.html)30-Jan-2021

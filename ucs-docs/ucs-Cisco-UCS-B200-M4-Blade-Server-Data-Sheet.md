@@ -8,13 +8,13 @@
 | **HTML Title** | Cisco UCS B200 M4 Blade Server Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-732434.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-25 11:33:53 |
+| **Fetched on** | 2026-04-08 08:44:22 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b200-m4-blade-server/datasheet-c78-732434.html
 
-  * Skip to content  
+  * Skip to content
   * Skip to search
   * Skip to footer
 

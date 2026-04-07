@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Supported Devices for Monitoring |
 | **URL** | https://intersight.com/help/saas/monitoring/supported_devices_monitoring |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/cloud/data/resources/monitoring/en/Supported_Devices.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260402103337138/docs/cloud/data/resources/monitoring/en/Supported_Devices.html |
 | **HTML Title** | Supported Devices |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_supported_devices_monitoring.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-25 11:32:52 |
+| **Fetched on** | 2026-04-08 08:43:24 |
 
 ---
 

@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS System Role Based Access |
 | **URL** | https://intersight.com/help/saas/system/role_based_access |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/cloud/data/resources/settings/en/Role_Based_Access_Control.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260402103337138/docs/cloud/data/resources/settings/en/Role_Based_Access_Control.html |
 | **HTML Title** | Role-Based Access Control in Intersight |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_system_role_based_access.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-25 11:32:57 |
+| **Fetched on** | 2026-04-08 08:43:31 |
 
 ---
 

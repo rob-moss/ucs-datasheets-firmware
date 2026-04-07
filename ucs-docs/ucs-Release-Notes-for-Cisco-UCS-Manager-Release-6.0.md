@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco UCS Manager, Release 6.0 |
 | **Source file** | `ucs-docs-raw/html/b_release-notes-ucsm-6_0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-25 11:33:31 |
+| **Fetched on** | 2026-04-08 08:44:04 |
 
 ---
 
@@ -18,7 +18,7 @@
   
 **First Published: September 2, 2025**
 
-**Last Updated: March 16, 2026**
+**Last Updated: March 27, 2026**
 
 #  Cisco UCS Manager
 
@@ -38,6 +38,7 @@ Table 1. Release 6.0(2) Release |  Date |  Description
 6.0(2b) |  March 16, 2026 |  Created release notes for Cisco UCS Manager Release 6.0(2b).   
 Table 2. Release 6.0(1) Release |  Date |  Description  
 ---|---|---  
+6.0(1h) |  March 27, 2026 |  Created release notes for Cisco UCS Manager Release 6.0(1h).   
 6.0(1f) |  February 06, 2026 |  Created release notes for Cisco UCS Manager Release 6.0(1f).   
 6.0(1e) |  December 18, 2025 |  Created release notes for Cisco UCS Manager Release 6.0(1e).   
 6.0(1b) |  December 09, 2025 |  Added CSCws30219 under Open Caveats in Release 6.0(1b).   
@@ -50,6 +51,8 @@ Table 2. Release 6.0(1) Release |  Date |  Description
 ### New Hardware Features
 
   * New Hardware in Release 6.0(2b)
+
+  * New Hardware in Release 6.0(1h)\- None 
 
   * New Hardware in Release 6.0(1f)\- None 
 
@@ -65,6 +68,8 @@ Table 2. Release 6.0(1) Release |  Date |  Description
 ### New Software Features
 
   * New Software Feature in Release 6.0(2b)
+
+  * New Software features in Release 6.0(1h)\- None 
 
   * New Software features in Release 6.0(1f)\- None 
 
@@ -637,6 +642,10 @@ Cisco UCS Manager includes Third-party Software that is affected by the vulnerab
 
 The affected third-party software component has been upgraded to a version that includes fixes for the vulnerability. Future versions of the product(s) will not be affected by this vulnerability. 
 
+## Security Fixes in Release 6.0(1h)
+
+There are no new security fixes in release 6.0(1h). 
+
 ## Security Fixes in Release 6.0(1f)
 
 There are no new security fixes in release 6.0(1f). 
@@ -1040,6 +1049,7 @@ The following caveat is resolved in release 6.0(2b):
 
 Defect ID |  Symptom |  First Bundle Affected |  Resolved in Release  
 ---|---|---|---  
+CSCwt36346 |  On Cisco UCS 6500 Series and 6400 Series Fabric Interconnects, when the allowed VLAN string on the vEth interface exceeds 900 characters, data corruption occurs over time. This eventually causes both Fabric Interconnects to perform a hard reboot. The generic error message Reset Requested due to Fatal Module Error is displayed when the show system reset-reason command is run.  This issue is resolved. |  6.0(1b) |  6.0(2b)  
 CSCwq30478 |  The Fabric Interconnects (FI) svc_samc_proxy process may repeatedly log dead thread messages in the proxy log. Despite these messages, communication continues without interruption.  This issue is resolved. |  4.2(3g)A |  6.0(2b)  
 CSCws62117 |  Cisco UCS C240-M8 server with LPe35002-M2 Emulex adapters connected to Brocade SAN switches and Dell storage arrays experience intermittent I_T Nexus Loss errors, causing unstable connections and periodic LUN disconnections. Although FCP I/O completes without errors, the adapter repeatedly attempts to re-establish the connection by issuing LOGO and FLOGI commands, which temporarily restore connectivity before the issue recurs.  This issue is resolved. |  4.3(6c) |  6.0(2b)  
 CSCwr51315 |  NVMe drives UCS-NVMEG4-M7680 with firmware E2CS005 in Cisco UCS-X blade servers show an SSID of 5000 instead of the expected Cisco SSID 4800. This discrepancy causes compliance checks to fail, marking the disks as unclaimed.  This issue is resolved. |  6.0(1c) |  6.0(2b)  
@@ -1054,6 +1064,16 @@ CSCwr64103 |  After upgrading the infrastructure bundle to 4.3(6c) or later, CLI
 CSCws40268 |  The SAS Expander tab is missing in Cisco UCS Manager GUI for C240 M5 servers with SAS Expanders connected to HBAs. Drives remain visible at the OS and in logs, and Cisco IMC shows the SAS Expander as operational.  This issue is resolved. |  4.3(5a) |  6.0(2b)  
 CSCwt11034 |  Cisco UCS 6400 series FIs show a warning about missing identity files and prompt for a user password when remote users connect to the peer fabric NXOS. The warning indicates that the SSH identity file is not accessible.  This issue is resolved. |  6.0(1f) |  6.0(2b)  
 CSCwr45526 |  Certain Cisco UCS servers experience boot interruptions caused by validation failures in the Secure Boot database. This issue affects specific server models during system startup, leading to potential boot interruptions and impacting system reliability. The problem arises from outdated certificates in the Secure Boot database that prevent successful secure boot processes.  This issue is resolved. |  4.3(6f) |  6.0(2b)  
+  
+## Resolved Caveats in Release 6.0(1h)
+
+The following caveat is resolved in release 6.0(1h): 
+
+Defect ID |  Symptom |  First Bundle Affected |  Resolved in Release  
+---|---|---|---  
+CSCwt36346 |  On Cisco UCS 6500 Series and 6400 Series Fabric Interconnects, when the allowed VLAN string on the vEth interface exceeds 900 characters, data corruption occurs over time. This eventually causes both Fabric Interconnects to perform a hard reboot. The generic error message Reset Requested due to Fatal Module Error is displayed when the show system reset-reason command is run.  This issue is resolved. |  6.0(1b) |  6.0(1h)  
+CSCwn65484 |  Cisco UCS Fabric Interconnects (6400, 6500, 6600 Series, and Cisco UCS X-Series Direct UCS 9108 100G) may generate a missing FCOE_NPV_PKG license warning. The warning message is: %LICMGR-2-LOG_LIC_MISSING_WARNING Despite this warning, the FCoE feature continues to operate normally under honor-based licensing. This issue is resolved. |  4.2(3o) |  6.0(1h)  
+CSCwt30293 |  During the Cisco UCS Manager upgrade, the system validates hardware compatibility. If unsupported hardware is detected, the upgrade validation fails and the process rolls back. In some cases, rollback may not complete successfully, causing one Fabric Interconnect to become unresponsive. This results in loss of redundancy, with only the primary Fabric Interconnect remaining operational. The system maintains stability by preventing cluster disruption during validation failures.  This issue is resolved. |  6.0(1f) |  6.0(1h)  
   
 ## Resolved Caveats in Release 6.0(1f)
 
@@ -1127,6 +1147,10 @@ CSCwt42347 |  During the Host Firmware Package (HFP) upgrade from release 4.3(2)
 CSCwt15440 |  Fabric Interconnect (FI) ports using 64G Fibre Channel (FC) SFPs may experience incrementing input discards and errors, leading to errDisabled state due to high bit error rates when configured at 16G speed in FC Switch mode. Additionally, FC Name Server (FCNS) entries for targets connected to MDS switches may show empty vendor names on the FI. This issue occurs when FC ports on Cisco UCS FI 6652 use 64G FC SFPs but are set to operate at 16G speed while sending FCoE traffic across multiple VSANs.  |  Use 16G or 32G SFP |  6.0(2b)  
 CSCwt35920 |  Firmware updates may fail on certain RTX Pro 6000 GPUs shipped as spares, leaving them at an older firmware version. This issue is limited to specific spare units and does not affect the overall update process.  |  There is no known workaround. |  6.0(2b)  
   
+## Open Caveats in Release 6.0(1h)
+
+There are no new open caveats in release 6.0(1h). 
+
 ## Open Caveats in Release 6.0(1f)
 
 There are no new open caveats in release 6.0(1f). 
@@ -1166,6 +1190,10 @@ CSCwt18924 |  Cisco UCS C220 M6 servers with Cisco UCS VIC 1467 adapters experie
 ## Known Behavior and Limitations in Release 6.0(2b)
 
 There are no new know limitations in release 6.0(2b). 
+
+## Known Behavior and Limitations in Release 6.0(1h)
+
+There are no new know limitations in release 6.0(1h). 
 
 ## Known Behavior and Limitations in Release 6.0(1f)
 
@@ -1447,10 +1475,10 @@ ONTAP 9.15 onwards |  Cisco UCS X-Direct |  15000 |  ESXi 8.0 U3+, ESXi 9.0+, RH
 Pure Storage, Inc.® |  NVMe-FC |  FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6652 FI Cisco UCS 6664 FI |  15000, 14000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+, SLES 15SP5+  
 FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6400 series, Cisco UCS 6536 FI |  1400/14000, 15000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+, SLES 15SP5+  
 FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS X-Direct |  15000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+, SLES 15SP5+  
-NVMe-ROCEv2 |  FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6652 FI |  15000, 14000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+, SLES 15SP5+  
-FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6664 FI |  15000, 14000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+, SLES 15SP5+  
-FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6400 series, Cisco UCS 6536 FI |  1400/14000, 15000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+, SLES 15SP5+  
-FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS X-Direct |  15000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+, SLES 15SP5+  
+NVMe-ROCEv2 |  FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6652 FI |  15000, 14000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+  
+FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6664 FI |  15000, 14000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+  
+FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6400 series, Cisco UCS 6536 FI |  1400/14000, 15000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+  
+FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS X-Direct |  15000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+  
 NVMe-TCP |  FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6652 FI |  15000, 14000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+, SLES 15SP5+  
 FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6664 FI |  15000, 14000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+, SLES 15SP5+  
 FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6400 series, Cisco UCS 6536 FI |  1400/14000, 15000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+, SLES 15SP5+  
@@ -1963,6 +1991,7 @@ Table 22. Version Mapping UCS Release |  Catalog File Name |  Additional PIDs in
   * Accessory and blank: UCS-ACC-6652
 
 Cisco UCS X410c M8 Compute Node: UCSX-410c-M8   
+6.0(1h) |  ucs-catalog.6.0.1h.T.bin |  —  
 6.0(1f) |  ucs-catalog.6.0.1f.T.bin  |  —  
 6.0(1e) |  ucs-catalog.6.0.1e.T.bin |  —  
 6.0(1d) |  ucs-catalog.6.0.1d.T.bin |  —  

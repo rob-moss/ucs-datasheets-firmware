@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight Appliance Supported Systems |
 | **URL** | https://intersight.com/help/appliance/supported_systems |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260324061034657/docs/onprem/data/articles/supported_systems/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260402103337138/docs/onprem/data/articles/supported_systems/en/index.html |
 | **HTML Title** | Supported Systems |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_supported_systems.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-03-25 11:33:11 |
+| **Fetched on** | 2026-04-08 08:43:43 |
 
 ---
 

@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/ucs-x215c-m8-compute-node.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-03-25 11:36:06 |
+| **Fetched on** | 2026-04-08 08:46:58 |
 
 ---
 
