@@ -20,6 +20,7 @@
 * IMM BIOS Defaults (tokens) list with explanations of each token, default value and how it is used in the Intersight BIOS Profile
 * Recommended firmware for UCS and IMM
 * UCSM compat matrix of servers, adapters, firmware, esxi ver, nfnic/nenic
+  * update fetch script to save JSON files with filename expecrted by prompt
 * IMM compat matrix of servers, adapters, firmware, esxi ver, nfnic/nenic
 
 * Review UCS docs to identify conflicting information. Produce a report with links and summary details to send to doc owners
