@@ -148,6 +148,44 @@
 - [Cisco UCS X210c M7 Compute Node](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m7-compute-node-ds.html)
 - [Cisco UCS X210c M8 Compute Node](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.html)
 
+## Cisco UCS X-Series Datasheet Listing (Added 2026-03-19)
+- [Cisco UCS 9108 25G Intelligent Fabric Module Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/9108-25g-specsheet.pdf)
+- [Cisco UCS 6536 Fabric Interconnect Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/cisco-ucs-6536-fabric-interconnect-spec-sheet.pdf)
+- [Cisco UCS 9108 100G Intelligent Fabric Module Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/cisco-ucs-9108-100g-intelligent-fabric-module-spec-sheet.pdf)
+- [UCSX-M7-MLB Ordering Guide](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlb-ordering-guide.pdf)
+- [Cisco UCS 6600 Series Fabric Interconnect Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-6600-series-fabric-interconnect-specsheet.pdf)
+- [Cisco UCS Fabric Interconnect 9108 100G Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-fabric-interconnect-9108-100g.pdf)
+- [UCS X-Series M7 Xccelerate Offer Ordering Guide](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-accelerate-offer-ordering-guide.pdf)
+- [Cisco UCS X215c M8 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x215c-m8-compute-node.pdf)
+- [UCS X-Series M6 Sustainability Offer Ordering Guide](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucsx-m-sustain.pdf)
+- [UCS X-Series M7 Sustainability Offer Ordering Guide](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucsx-sustain.pdf)
+- [Cisco M7 X-Series Refuse To Lose Offer Ordering Guide](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucsx-offer-ordering-guide.pdf)
+- [Cisco UCS X210c M6 Compute Node Memory Guide](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x210c-m6-memory-guide.pdf)
+- [Cisco UCS X210c M7 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x210cm7-specsheet.pdf)
+- [Cisco UCS X210c M8 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x210cm8-specsheet.pdf)
+- [Cisco UCS X410c M7 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x410cm7-specsheet.pdf)
+- [Cisco UCS X410c M8 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x410cm8-specsheet.pdf)
+- [Cisco UCS X440p PCIe Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x440p-specsheet.pdf)
+- [Cisco UCS X580p PCIe Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x580p-specsheet.pdf)
+- [Cisco UCS X9508 Chassis Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x9508-specsheet.pdf)
+- [Cisco UCS XE9305 Chassis](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/unified-edge/ucs-xe9305-chassis/csm-4758-cisco-ucs-xe9305-chassis.pdf)
+- [Cisco UCS C220 M8 Rack Server Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-ds.html)
+- [Cisco UCS C240 M8 Rack Server Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-ds.html)
+- [Cisco UCS C845A M8 Rack Server Data Sheet - Cisco](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html)
+- [Cisco UCS C885A M8 Rack Server Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c885a-m8-ds.html)
+- [Cisco UCS X9516 X-Fabric](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-9516-x-fabric-module-ds.html)
+- [Cisco UCS X-Series Direct Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-direct-ds.html)
+- [UCS X215c M8 Compute Node](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x215c-m8-compute-node-ds.html)
+- [Cisco UCS X410c M7 Compute Node Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x410c-m7-compute-node-ds.html)
+- [Cisco UCS X410c M8 Compute Node Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x410c-m8-compute-node-ds.html)
+- [Cisco UCS X440p PCle Node Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x440p-pcle-node-ds.html)
+- [Cisco UCS X580p PCIe Node Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x580p-pcie-node-ds.html)
+- [Cisco UCS X-Series Modular System - At-a-Glance](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/at-a-glance-listing.html)
+- [Cisco UCS X-Series Modular System](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/index.html)
+- [Cisco UCS X-Series Modular System - Sales Resources](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/sales-resources-listing.html)
+- [Cisco UCS X-Series Modular System - White Papers](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/white-paper-listing.html)
+- [Cisco UCS X-Series Modular System Support](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-x-series-modular-system/series.html)
+
 ## Chassis
 - [Cisco UCS 5100 Series Blade Server Chassis](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.html)
 - [Cisco UCS 9108 Modular Chassis](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2472574.html)
@@ -169,6 +207,11 @@
 - [Cisco UCS VIC 1380](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/ucs-virtual-interface-card-1380/datasheet-c78-732516.html)
 - [Cisco UCS VIC 1400 Series](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.html)
 - [Cisco UCS VIC 15000 Series](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.html)
+
+## AI Pods
+- [AI PODs for Inferencing Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ai-infrast-pods-inferencing-ds.html)
+- [Cisco AI PODs: Pre-validated, Flexible, and Modular AI Infrastructure Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ai-pods-ds.html)
+
 
 # HCL Queries
 ## UCS Managed Mode - B480 M5
@@ -207,43 +250,14 @@
 
 
 
+# Hyperflex
+### Admin Guides
+- [Cisco HyperFlex Data Platform Administration Guide, Release 5.5](https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5.html)
+
+
+
+
 # New URLs
 
-## Cisco UCS X-Series Datasheet Listing (Added 2026-03-19)
-- [Cisco UCS 9108 25G Intelligent Fabric Module Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/9108-25g-specsheet.pdf)
-- [Cisco UCS 6536 Fabric Interconnect Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/cisco-ucs-6536-fabric-interconnect-spec-sheet.pdf)
-- [Cisco UCS 9108 100G Intelligent Fabric Module Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/cisco-ucs-9108-100g-intelligent-fabric-module-spec-sheet.pdf)
-- [UCSX-M7-MLB Ordering Guide](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlb-ordering-guide.pdf)
-- [Cisco UCS 6600 Series Fabric Interconnect Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-6600-series-fabric-interconnect-specsheet.pdf)
-- [Cisco UCS Fabric Interconnect 9108 100G Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-fabric-interconnect-9108-100g.pdf)
-- [UCS X-Series M7 Xccelerate Offer Ordering Guide](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-accelerate-offer-ordering-guide.pdf)
-- [Cisco UCS X215c M8 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x215c-m8-compute-node.pdf)
-- [UCS X-Series M6 Sustainability Offer Ordering Guide](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucsx-m-sustain.pdf)
-- [UCS X-Series M7 Sustainability Offer Ordering Guide](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucsx-sustain.pdf)
-- [Cisco M7 X-Series Refuse To Lose Offer Ordering Guide](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucsx-offer-ordering-guide.pdf)
-- [Cisco UCS X210c M6 Compute Node Memory Guide](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x210c-m6-memory-guide.pdf)
-- [Cisco UCS X210c M7 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x210cm7-specsheet.pdf)
-- [Cisco UCS X210c M8 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x210cm8-specsheet.pdf)
-- [Cisco UCS X410c M7 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x410cm7-specsheet.pdf)
-- [Cisco UCS X410c M8 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x410cm8-specsheet.pdf)
-- [Cisco UCS X440p PCIe Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x440p-specsheet.pdf)
-- [Cisco UCS X580p PCIe Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x580p-specsheet.pdf)
-- [Cisco UCS X9508 Chassis Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x9508-specsheet.pdf)
-- [Cisco UCS XE9305 Chassis](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/unified-edge/ucs-xe9305-chassis/csm-4758-cisco-ucs-xe9305-chassis.pdf)
-- [Cisco UCS C220 M8 Rack Server Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-ds.html)
-- [Cisco UCS C240 M8 Rack Server Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-ds.html)
-- [AI PODs for Inferencing Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ai-infrast-pods-inferencing-ds.html)
-- [Cisco AI PODs: Pre-validated, Flexible, and Modular AI Infrastructure Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ai-pods-ds.html)
-- [Cisco UCS X9516 X-Fabric](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-9516-x-fabric-module-ds.html)
-- [Cisco UCS X-Series Direct Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-direct-ds.html)
-- [UCS X215c M8 Compute Node](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x215c-m8-compute-node-ds.html)
-- [Cisco UCS X410c M7 Compute Node Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x410c-m7-compute-node-ds.html)
-- [Cisco UCS X410c M8 Compute Node Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x410c-m8-compute-node-ds.html)
-- [Cisco UCS X440p PCle Node Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x440p-pcle-node-ds.html)
-- [Cisco UCS X580p PCIe Node Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x580p-pcie-node-ds.html)
-- [Cisco UCS X-Series Modular System - At-a-Glance](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/at-a-glance-listing.html)
-- [Cisco UCS X-Series Modular System](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/index.html)
-- [Cisco UCS X-Series Modular System - Sales Resources](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/sales-resources-listing.html)
-- [Cisco UCS X-Series Modular System - White Papers](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/white-paper-listing.html)
-- [Cisco UCS X-Series Modular System Support](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-x-series-modular-system/series.html)
+- [Microsoft Single sign-on SAML protocol](https://learn.microsoft.com/en-us/entra/identity-platform/single-sign-on-saml-protocol)
 
