@@ -8,7 +8,7 @@
 | **HTML Title** | UCS Manager - Cisco UCS Manager API - Cisco DevNet |
 | **Source file** | `ucs-docs-raw/html/ucs-manager.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:42:41 |
+| **Fetched on** | 2026-04-10 12:48:03 |
 
 ---
 

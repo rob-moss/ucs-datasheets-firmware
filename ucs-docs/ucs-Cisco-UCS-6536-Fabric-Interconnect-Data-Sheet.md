@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS 6536 Fabric Interconnect Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs6536-fabric-interconnect-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:45:23 |
+| **Fetched on** | 2026-04-10 13:02:41 |
 
 ---
 

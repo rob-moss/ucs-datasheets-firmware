@@ -8,7 +8,7 @@
 | **HTML Title** | End-of-Sale and End-of-Life Announcement for the Cisco HyperFlex Compute M5 (HX B200 M5, HX C220 M5, HX C240 M5, HX C480 M5) |
 | **Source file** | `ucs-docs-raw/html/hyperflex-compute-m5-eol.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:46:11 |
+| **Fetched on** | 2026-04-10 13:05:23 |
 
 ---
 

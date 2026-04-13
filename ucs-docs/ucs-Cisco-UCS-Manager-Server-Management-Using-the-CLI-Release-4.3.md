@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Server Management Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_cisco_ucs_manager_server_mgmt_cli_guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:42:10 |
+| **Fetched on** | 2026-04-10 12:47:16 |
 
 ---
 
@@ -20,8 +20,8 @@
 
 ## Page 2: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_cli_guide_4_3/m_preface.html
 
-## Audience  
-  
+## Audience
+
 This guide is intended primarily for data center administrators with responsibilities and expertise in one or more of the following: 
 
   * Server administration 

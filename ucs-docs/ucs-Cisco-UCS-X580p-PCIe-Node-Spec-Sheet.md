@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/x580p-specsheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-04-08 08:47:56 |
+| **Fetched on** | 2026-04-10 13:00:35 |
 
 ---
 

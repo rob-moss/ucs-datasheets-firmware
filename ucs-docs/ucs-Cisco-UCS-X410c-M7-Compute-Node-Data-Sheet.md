@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X410c M7 Compute Node Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-x410c-m7-compute-node-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:48:32 |
+| **Fetched on** | 2026-04-10 13:02:01 |
 
 ---
 

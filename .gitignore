@@ -7,6 +7,9 @@ archive/*
 __pycache__
 __pycache__/*
 
+.venv
+
+
 .playwright-mcp/
 
 ucs-docs-raw/json/*

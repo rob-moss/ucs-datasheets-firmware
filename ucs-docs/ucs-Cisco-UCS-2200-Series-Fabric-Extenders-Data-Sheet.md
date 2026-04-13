@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS 2200 Series Fabric Extenders Data Sheet |
 | **Source file** | `ucs-docs-raw/html/data_sheet_c78-675243.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:45:10 |
+| **Fetched on** | 2026-04-10 13:02:18 |
 
 ---
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Network Management Guide, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_UCSM_Network_Mgmt_Guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:41:45 |
+| **Fetched on** | 2026-04-10 12:45:20 |
 
 ---
 
@@ -41,7 +41,7 @@ This guide is intended primarily for data center administrators with responsibil
 
 This section provides information on new features and changed behavior in Cisco UCS Manager, Release 4.3. 
 
-Table 1. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(6c) Feature  |  Description  |  Where Documented   
+Table 1. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(6f) Feature  |  Description  |  Where Documented   
 ---|---|---  
 Support for RS Cons 16 and RS 1eee configuration options |  Cisco UCS Manager now supports RS Cons 16 and RS 1eee configuration options for Ethernet Port Forward Error Correction. | 
 
@@ -76,19 +76,14 @@ Support for Cisco UCS Fabric Interconnects 9108 100G |  Cisco UCS Manager now su
   * [Internal Fabric Manager](b_UCSM_Network_Mgmt_Guide_chapter_0100.html#concept_56D774ED06374A2C8389F8E0FB839B09)
   * [Configuring Q-in-Q Forwarding](b_UCSM_Network_Mgmt_Guide_chapter_0100.html#Cisco_Task.dita_7fa66219-4e91-4a96-8c78-d765894d8b31)
   * [Unconfiguring Q-in-Q Forwarding](b_UCSM_Network_Mgmt_Guide_chapter_0100.html#disable-q-in-q-forwarding)
-  * [Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_UCSM_Network_Mgmt_Guide_chapter_0100.html#port-breakout-functionality-on-cisco-ucs-x-direct)
+  * [Port Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_UCSM_Network_Mgmt_Guide_chapter_0100.html#port-breakout-functionality-on-cisco-ucs-x-direct)
   * [Configuring Ethernet Breakout Ports on Cisco UCS Fabric Interconnects 9108 100G](b_UCSM_Network_Mgmt_Guide_chapter_0100.html#Cisco_Task_in_List_GUI.dita_2eb4b4d0-ea28-4eac-98bc-153d9574a3b6)
   * [Configuring Port Modes for Cisco UCS Fabric Interconnects 9108 100G](b_UCSM_Network_Mgmt_Guide_chapter_0100.html#Cisco_Task.dita_f69c62fd-aaf8-42ed-ab64-e2331cb2941f_5gfi)
 
   
 Table 4. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b) Release  Feature  |  Description  |  Where Documented   
 ---|---|---  
-Support for Cisco UCS C-Series M8 servers |  Cisco UCS Manager now supports Cisco UCS C245 M8 Servers.  | 
-
-  * [Receive Side Scaling Version 2 (RSSv2)](b_UCSM_Network_Mgmt_Guide_chapter_01010.html#rssv2)
-  * [Single Root I/O Virtualization HPN Connection Policy](b_UCSM_Network_Mgmt_Guide_chapter_01010.html#sr-iov-policy)
-
-  
+Support for Cisco UCS C-Series M8 servers |  Cisco UCS Manager now supports Cisco UCS C245 M8 Servers.  |  [Single Root I/O Virtualization HPN Connection Policy](b_UCSM_Network_Mgmt_Guide_chapter_01010.html#sr-iov-policy)  
 Table 5. New Features and Changed Behavior in Cisco UCS Manager, 4.3(4a) Release Feature  |  Description  |  Where Documented   
 ---|---|---  
 Configuring MACsec |  Cisco UCS Manager introduces support for configuring Media Access Control Security (MACsec) encryption. |  [About MACsec](m-gui-macsec.html#c-about-macsec)  
@@ -116,12 +111,6 @@ Support Cisco UCS X-Series chassis and servers |  Cisco UCS Manager supports Cis
   * Cisco UCS X210c M7 Compute Node
 
 Cisco UCS X-Series servers support Intelligent Fabric Modules (IFM), which function similarly to the Input/Output Module (IOM) in Cisco UCS B-Series servers.  |  —  
-Support for Receive Side Scaling Version 2 | Cisco UCS Manager introduces support for Receive Side Scaling Version 2 | 
-
-  * [Receive Side Scaling Version 2 (RSSv2)](b_UCSM_Network_Mgmt_Guide_chapter_01010.html#rssv2)
-  * [Configuring an Ethernet Adapter Policy to Enable RSS on Windows Operating Systems](b_UCSM_Network_Mgmt_Guide_chapter_01010.html#Cisco_Task.dita_f623f34e-d6ce-4c1c-b4a7-c0172770a8e5)
-
-  
 Support for VIC QinQ Tunneling | Cisco UCS Manager introduces support for VIC QinQ Tunneling. | 
 
   * [VIC QinQ Tunneling](b_UCSM_Network_Mgmt_Guide_chapter_0110.html#vic-qinq-tunneling)
@@ -354,6 +343,17 @@ By default, data traffic in Cisco UCS works on a principle of mutual inclusion. 
   
 The configuration for disjoint L2 networks works on a principle of selective exclusion. Traffic for a VLAN that is designated as part of a disjoint network can only travel along an uplink Ethernet port or port channel that is specifically assigned to that VLAN, and is selectively excluded from all other uplink ports and port channels. However, traffic for VLANs that are not specifically assigned to an uplink Ethernet port or port channel can still travel on all uplink ports or port channels, including those that carry traffic for the disjoint L2 networks. 
 
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+The behavior described above in a disjoint Layer‑2 configuration means VLAN traffic is carried for VLANs that are not explicitly assigned to uplink Ethernet ports or port channels. To ensure complete traffic segregation and allow only explicitly assigned VLANs on disjoint Layer‑2 networks, it is recommended to use VLAN groups in UCS Manager. VLAN groups ensure that traffic from unassigned VLANs does not flow over the disjoint Layer‑2 network. 
+
+* * *  
+  
+---|---  
+  
 In Cisco UCS, the VLAN represents the upstream disjoint L2 network. When you design your network topology for disjoint L2 networks, you must assign uplink interfaces to VLANs not the reverse. 
 
 For information about the maximum number of supported upstream disjoint L2 networks, see the appropriate Cisco UCS Configuration Limits for Cisco UCS Manager Guide. 

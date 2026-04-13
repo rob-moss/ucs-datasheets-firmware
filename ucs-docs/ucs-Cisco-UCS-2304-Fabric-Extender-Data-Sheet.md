@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS 2304 Fabric Extender Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-675243.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:45:12 |
+| **Fetched on** | 2026-04-10 13:02:24 |
 
 ---
 

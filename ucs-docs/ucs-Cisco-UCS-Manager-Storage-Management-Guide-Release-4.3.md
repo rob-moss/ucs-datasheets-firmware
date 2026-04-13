@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Storage Management Guide, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_ucsm_gui_storage_management_guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:41:47 |
+| **Fetched on** | 2026-04-10 12:45:50 |
 
 ---
 
@@ -20,8 +20,8 @@
 
 ## Page 2: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/b_UCSM_GUI_Storage_Management_Guide_preface_00.html
 
-## Audience  
-  
+## Audience
+
 This guide is intended primarily for data center administrators with responsibilities and expertise in one or more of the following: 
 
   * Server administration 
@@ -516,40 +516,7 @@ You must include this policy in a service profile for it to take effect.
 
 ---
 
-## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_sed_management.html
-
-## Security Policies for Self-Encrypting Drives 
-
-Self-Encrypting Drives (SEDs) have special hardware that encrypts incoming data and decrypts outgoing data in real-time. The data on the disk is always encrypted in the disk and stored in the encrypted form. The encrypted data is always decrypted on the way out of the disk. A media encryption key controls this encryption and decryption. This key is never stored in the processor or memory. Cisco UCS Manager supports SED security policies on Cisco UCS C-Series servers, B-Series servers , X-Series servers, and S-Series servers. 
-
-SEDs must be locked by providing a security key. The security key, which is also known as Key-Encryption Key or an authentication passphrase, is used to encrypt the media encryption key. If the disk is not locked, no key is required to fetch the data. 
-
-Cisco UCS Manager enables you to configure security keys locally or remotely. When you configure the key locally, you must remember the key. If you forget the key, it cannot be retrieved, and the data is lost. You can configure the key remotely by using a key management server (also known as a KMIP server). This method addresses the issues related to safe-keeping and retrieval of the keys in the local management. 
-
-The encryption and decryption for SEDs is done through the hardware. Thus, it does not affect the overall system performance. SEDs reduce the disk retirement and redeployment costs through instantaneous cryptographic erasure. Cryptographic erasure is done by changing the media encryption key. When the media encryption key of a disk is changed, the data on the disk cannot be decrypted, and is immediately rendered unusable. 
-
-Guidelines
-
-To ensure secure and efficient management of Self-Encrypting Drives (SEDs) in Cisco UCS Manager, remember these guidelines:
-
-  * The deletion of secured Logical Unit Numbers (LUNs) is only possible using a scrub policy.
-
-  * Reconfiguration and deletion of secured LUNs are not allowed on a disassociated server.
-
-  * Data sanitization is not permitted until security is enabled.
-
-  * If incorrect credentials are provided, the Finite State Machine (FSM) completes without any error, but the LUNs become inoperable, and the drives get locked. 
-
-  * A power cycle of the server is triggered if any changes are made to the security settings in the storage profile due to the Enterprise Key Management System (EKMS). 
-
-  * When secured drives are moved between setups, the first association should occur only with security details and no LUN configuration to unlock the drives. 
-
-  * Changes to login details do not trigger a change. A fresh storage profile association or modification along with other properties, is required. 
-
-
----
-
-## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_m-series_storage_profiles.html
+## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_m-series_storage_profiles.html
 
 ## Storage Profiles 
 
@@ -566,34 +533,7 @@ You can create a storage profile both at an org level and at a service-profile l
 
 ---
 
-## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_mini_storage.html
-
-## Mini Storage
-
-The mini storage slot is a new slot that is present on the Cisco UCS M5 blade and rack servers. This slot can be empty, populated with an SD storage module, or populated with an M.2 SATA module. 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-Cisco UCS Manager does not support micro-SD card.
-
-* * *  
-  
----|---  
-  
-The mini storage SD module consists of an in-built SD controller and two SD cardslots. These cards have RAID 1 capability. 
-
-The mini M.2 SATA module consists of two SATA slots. The PCH controller present on the server controls the SATA drives on this module. 
-
-Starting with 4.0(4a), Cisco UCS Manager supports Cisco boot optimized M.2 Raid controller based off Marvell 88SE92xx PCIe to SATA 6Gb/s controller (UCS-M2-HWRAID) for mini storage. 
-
-You can use Cisco UCS Manager to inventory and manage the mini storage modules. 
-
----
-
-## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_flexflash_sd_card_support.html
+## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_flexflash_sd_card_support.html
 
 ## FlexFlash Secure Digital Card Support
 
@@ -797,7 +737,7 @@ This procedure describes how to disable the FlexFlash capability in a local disk
 
 ---
 
-## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_direct_attached_storage.html
+## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_direct_attached_storage.html
 
 ## Direct Attached Storage 
 
@@ -813,7 +753,7 @@ Cisco UCS 6400 Series Fabric Interconnects do not support 8 Gbps direct-attached
 
 ---
 
-## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_storage_inventory.html
+## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_gui_storage_inventory.html
 
 ## Local Disk Locator LED Status 
 
@@ -832,7 +772,7 @@ When Intel Volume Management Device (VMD) for NVMe is enabled, you can also conf
 
 ---
 
-## Page 18: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_drive-diagnostics.html
+## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_drive-diagnostics.html
 
 ## Overview of Drive Diagnostics
 
@@ -842,7 +782,7 @@ Cisco UCS Manager does not support on demand diagnostics. This feature checks th
 
 ---
 
-## Page 19: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_storage.html
+## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/m_storage.html
 
 ## Storage Server Features and Components Overview 
 
@@ -1072,7 +1012,7 @@ For more details about the storage controllers supported in the various server n
 
 ---
 
-## Page 20: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/m_overview.html
+## Page 18: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/m_overview.html
 
 ## Cisco UCS Manager User Documentation 
 
@@ -1091,7 +1031,7 @@ Guide  |  Description
 
 ---
 
-## Page 21: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/m_initial_configuration.html
+## Page 19: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/m_initial_configuration.html
 
 ## Initial Configuration Overview   
   
@@ -1121,7 +1061,7 @@ Figure 1. Cisco UCS Manager Initial Configuration Overview
 
 ---
 
-## Page 22: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/m_direct_attached_storage.html
+## Page 20: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/m_direct_attached_storage.html
 
 ## Direct Attached Storage 
 
@@ -1137,45 +1077,12 @@ Cisco UCS 6400 Series Fabric Interconnects do not support 8 Gbps direct-attached
 
 ---
 
-## Page 23: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/m_gui_san_ports_and_port_channels.html
+## Page 21: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/m_gui_san_ports_and_port_channels.html
 
 ## Port Modes
 
 The port mode determines whether a unified port on the fabric interconnect is configured to carry Ethernet or Fibre Channel traffic. You configure the port mode in Cisco UCS Manager. However, the fabric interconnect does not automatically discover the port mode. 
 
 Changing the port mode deletes the existing port configuration and replaces it with a new logical port. Any objects associated with that port configuration, such as VLANs and VSANS, are also removed. There is no restriction on the number of times you can change the port mode for a unified port. 
-
----
-
-## Page 24: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/m_gui_sed_management.html
-
-## Security Policies for Self-Encrypting Drives 
-
-Self-Encrypting Drives (SEDs) have special hardware that encrypts incoming data and decrypts outgoing data in real-time. The data on the disk is always encrypted in the disk and stored in the encrypted form. The encrypted data is always decrypted on the way out of the disk. A media encryption key controls this encryption and decryption. This key is never stored in the processor or memory. Cisco UCS Manager supports SED security policies on Cisco UCS C-Series servers, B-Series servers , X-Series servers, and S-Series servers. 
-
-SEDs must be locked by providing a security key. The security key, which is also known as Key-Encryption Key or an authentication passphrase, is used to encrypt the media encryption key. If the disk is not locked, no key is required to fetch the data. 
-
-Cisco UCS Manager enables you to configure security keys locally or remotely. When you configure the key locally, you must remember the key. If you forget the key, it cannot be retrieved, and the data is lost. You can configure the key remotely by using a key management server (also known as a KMIP server). This method addresses the issues related to safe-keeping and retrieval of the keys in the local management. 
-
-The encryption and decryption for SEDs is done through the hardware. Thus, it does not affect the overall system performance. SEDs reduce the disk retirement and redeployment costs through instantaneous cryptographic erasure. Cryptographic erasure is done by changing the media encryption key. When the media encryption key of a disk is changed, the data on the disk cannot be decrypted, and is immediately rendered unusable. 
-
-Guidelines
-
-To ensure secure and efficient management of Self-Encrypting Drives (SEDs) in Cisco UCS Manager, remember these guidelines:
-
-  * The deletion of secured Logical Unit Numbers (LUNs) is only possible using a scrub policy.
-
-  * Reconfiguration and deletion of secured LUNs are not allowed on a disassociated server.
-
-  * Data sanitization is not permitted until security is enabled.
-
-  * If incorrect credentials are provided, the Finite State Machine (FSM) completes without any error, but the LUNs become inoperable, and the drives get locked. 
-
-  * A power cycle of the server is triggered if any changes are made to the security settings in the storage profile due to the Enterprise Key Management System (EKMS). 
-
-  * When secured drives are moved between setups, the first association should occur only with security details and no LUN configuration to unlock the drives. 
-
-  * Changes to login details do not trigger a change. A fresh storage profile association or modification along with other properties, is required. 
-
 
 ---

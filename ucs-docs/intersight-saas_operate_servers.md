@@ -8,12 +8,12 @@
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_operate_servers.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:43:06 |
+| **Fetched on** | 2026-04-10 12:48:23 |
 
 ---
 
-Choose Operate > Servers, to launch the Server Table view. From this page, you can launch device endpoints, perform bulk server actions, and navigate to the server details page. Click the settings icon (the gear icon representation), and select the columns that you want in the Table view.  
-  
+Choose Operate > Servers, to launch the Server Table view. From this page, you can launch device endpoints, perform bulk server actions, and navigate to the server details page. Click the settings icon (the gear icon representation), and select the columns that you want in the Table view.
+
 You can add specific columns or custom tags to the Servers Table view to sort and filter.
 
 Columns in the Servers Table view can be sorted using the sort option. You can also apply filters based on any column using the Filters option to view and explore the server inventory.

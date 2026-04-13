@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Infrastructure Management Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_UCSM_CLI_Infrastructure_Management_Guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:41:53 |
+| **Fetched on** | 2026-04-10 12:46:27 |
 
 ---
 
@@ -615,7 +615,32 @@ If a server slot in a chassis is empty, Cisco UCS Manager provides information, 
 
 ---
 
-## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01100.html
+## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01011.html
+
+## Virtual Circuits 
+
+A virtual circuit or virtual path refers to the path that a frame takes from its source vNIC to its destination virtual switch port (vEth) or from a source virtual switch port to its destination vNIC. There are many possible virtual circuits that traverse through a physical cable. Cisco UCS Manager uses virtual network tags (VN-TAG) to identify these virtual circuits and differentiate between them. The OS decides the virtual circuit that a frame must traverse on a basis of a series of decisions. 
+
+In the server, the OS decides the Ethernet interface from which to send the frame. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+During service profile configuration, you can select the fabric interconnect to be associated with a vNIC. You can also choose whether fabric failover is enabled for the vNIC. If fabric failover is enabled, the vNIC can access the second fabric interconnect when the default fabric interconnect is unavailable. Cisco UCS Manager Server Management Guide provides more details about vNIC configuration during service profile creation. 
+
+* * *  
+  
+---|---  
+  
+After the host vNIC is selected, the frame exits the selected vNIC and, through the host interface port (HIF), enters the IOM to which the vNIC is pinned. The frame is then forwarded to the corresponding network Interface port (NIF) and then to the Fabric Interconnect to which the IOM is pinned. 
+
+The NIF is selected based on the number of physical connections between the IOM and the Fabric Interconnect, and on the server ID from which the frame originated. 
+
+---
+
+## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_4_3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01100.html
 
 ## Recovering the Corrupt BIOS on a Blade Server 
 
@@ -655,7 +680,7 @@ The following example shows how to recover the BIOS:
 
 ---
 
-## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html
+## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_0111.html
 
 ## Power Capping in Cisco UCS
 
@@ -701,7 +726,7 @@ Global Power Profiling  |  Specifies how the power cap values of the servers are
 
 ---
 
-## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01000.html
+## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01000.html
 
 ## Blade Server Management   
   
@@ -715,7 +740,7 @@ If a blade server slot in a chassis is empty, Cisco UCS Manager provides informa
 
 ---
 
-## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html
+## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_01110.html
 
 ## Cisco UCS Manager User CLI Documentation
 
@@ -735,7 +760,7 @@ Guide  |  Description
 
 ---
 
-## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_011.html
+## Page 18: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Infrastructure-Mgmt/4-3/b_UCSM_CLI_Infrastructure_Management_Guide_chapter_011.html
 
 ## Chassis/FEX Discovery Policy   
   

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X-Series Modular System |
 | **Source file** | `ucs-docs-raw/html/index.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:48:39 |
+| **Fetched on** | 2026-04-10 13:02:12 |
 
 ---
 

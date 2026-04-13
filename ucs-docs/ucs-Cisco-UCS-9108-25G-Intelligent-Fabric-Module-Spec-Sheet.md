@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/9108-25g-specsheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-04-08 08:46:26 |
+| **Fetched on** | 2026-04-10 12:53:15 |
 
 ---
 

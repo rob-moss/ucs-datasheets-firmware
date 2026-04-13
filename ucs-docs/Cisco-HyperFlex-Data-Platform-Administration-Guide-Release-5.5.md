@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco HyperFlex Data Platform Administration Guide, Release 5.5 |
 | **Source file** | `ucs-docs-raw/html/b-hxdp-admin-guide-5-5.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:46:24 |
+| **Fetched on** | 2026-04-10 13:05:47 |
 
 ---
 
@@ -20,21 +20,27 @@
 
 ## Page 2: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/preface.html
 
-  * [Communications, Services, Bias-free Language, and Additional Information](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/preface.html)
-  * [Introduction to Intersight Managed Mode Server Bios Tokens](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/b_UCS_BIOS_Tokens_Guide_chapter_01.html)
-  * [Supported Platforms](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-supported-platforms-and-bios-tokens.html)
-  * [Boot Options BIOS Settings](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-boot-options-bios-settings.html)
-  * [Intel Directed IO](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-intel-directed-io.html)
-  * [LOM and PCIe Slots](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-lom-and-pcie-slots.html)
-  * [Main](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-main.html)
-  * [Memory](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-memory.html)
-  * [PCI](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-pci.html)
-  * [Power and Performance](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-power-and-performance.html)
-  * [Processor](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-processor.html)
-  * [QPI](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-qpi.html)
-  * [Server Management](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-server-management.html)
-  * [Trusted Platform](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-trusted-platform.html)
-  * [USB](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-usb.html)
+  * [Communications, Services, Bias-free Language, and Additional Information](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/preface.html)
+  * [New and Changed Information for this Release](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-new-and-changed-5-5.html)
+  * [HX Storage Cluster Overview](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxcluster_overview.html)
+  * [Logging in to HX Data Platform Interfaces](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-hxdp-logging-in-interfaces.html)
+  * [Monitoring HX Storage Clusters](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_cluster_monitor.html)
+  * [Managing HX Storage Clusters](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_cluster_manage.html)
+  * [Preparing for HX Storage Cluster Maintenance](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_cluster_maintenance_prep.html)
+  * [Managing Encryption](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_encryption.html)
+  * [Managing Datastores](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_datastores_manage.html)
+  * [Managing Disks](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_disks_manage.html)
+  * [Managing Nodes](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-managing-hx-nodes.html)
+  * [Expand Cisco HyperFlex System Clusters](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_expand_the_cisco_hx_cluster.html)
+  * [Managing HX Controller VMs](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_ctrlvm_manage.html)
+  * [Managing Ready Clones](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_readyclones.html)
+  * [Managing HX Native Snapshots](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_snapshots.html)
+  * [Managing Virtual Machine Disaster Recovery](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-hxdp-replication-vm-disaster_recovery.html)
+  * [Managing Storage Replication Adapter](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_manage_storage_replication_adapter.html)
+  * [Managing Users](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_users.html)
+  * [Managing iSCSI](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-hxdp-iscsi-manage.html)
+  * [Cisco HyperFlex HTML Plugin for VMware vCenter](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-html-plug-in-for-vmware-vcenter.html)
+  * [Appendix](/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-appendix.html)
 
 
 ---
@@ -1192,37 +1198,10 @@ The HyperFlex iSCSI Target Service is not supported on Stretched clusters.
 
 ---
 
-## Page 21: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-html-plug-in-for-vmware-vcenter.html
+## Page 21: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-appendix.html
 
-## Cisco HyperFlex vCenter Plugin  
+## Appendix  
   
-Cisco HyperFlex offers the flexibility of monitoring and managing content via Cisco HX Connect, Cisco HyperFlex Plugin, or Storage Controller VM command line. The vCenter plugin is designed to ease the HyperFlex administration tasks without a need to visit to each HyperFlex clusters. This chapter describes the usage of Local vCenter Plugin and Remote vCenter Plugin. 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-VMware local plugin architecture support is limited to vSphere versions 6.5, 6.7, and 7.0. For more information, see the vSphere Client Local plugins are deprecated (87880) article on the VMware site. 
-
-* * *  
-  
----|---  
-  
-To get started, use the following table to determine the plugin type for your deployment. Click the link in the Plugin Type column to advance to the full documentation. 
-
-vCenter Plugin Version |  Cisco HyperFlex Release  |  vCenter/ESXi version |  Plugin Type  
----|---|---|---  
-3.0.0 and later |  4.0(2f) and later |  6.7 U3 and later |  Cisco HyperFlex Remote Plugin for VMware vCenter1  
-2.0.0, 2.1.0 and 2.2.0 |  4.0(2e) and earlier |  Up to 7.0 U3 |  Local Plugin   
-1 In alignment with the VMware deprecation of local plugins starting with vSphere 8.0, remote plugin is the only supported version for HX 4.0(2f) and later 
-
----
-
-## Page 22: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-appendix.html
-
-## Appendix
-
 This section provides a list of terminologies that are used in this document.
 
 Name | Description  
@@ -1237,7 +1216,7 @@ Port Mappings |  Identifies the ports that are used for specific cable connectio
 
 ---
 
-## Page 23: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_maintenance_prep.html
+## Page 22: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_maintenance_prep.html
 
 ## Storage Cluster Maintenance Operations Overview  
   
@@ -1298,34 +1277,7 @@ Ensure the following:
 
 ---
 
-## Page 24: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-html-plug-in-for-vmware-vcenter.html
-
-## Cisco HyperFlex vCenter Plugin
-
-Cisco HyperFlex offers the flexibility of monitoring and managing content via Cisco HX Connect, Cisco HyperFlex Plugin, or Storage Controller VM command line. The vCenter plugin is designed to ease the HyperFlex administration tasks without a need to visit to each HyperFlex clusters. This chapter describes the usage of Local vCenter Plugin and Remote vCenter Plugin. 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-VMware local plugin architecture support is limited to vSphere versions 6.5, 6.7, and 7.0. For more information, see the vSphere Client Local plugins are deprecated (87880) article on the VMware site. 
-
-* * *  
-  
----|---  
-  
-To get started, use the following table to determine the plugin type for your deployment. Click the link in the Plugin Type column to advance to the full documentation. 
-
-vCenter Plugin Version |  Cisco HyperFlex Release  |  vCenter/ESXi version |  Plugin Type  
----|---|---|---  
-3.0.0 and later |  4.0(2f) and later |  6.7 U3 and later |  Cisco HyperFlex Remote Plugin for VMware vCenter1  
-2.0.0, 2.1.0 and 2.2.0 |  4.0(2e) and earlier |  Up to 7.0 U3 |  Local Plugin   
-1 In alignment with the VMware deprecation of local plugins starting with vSphere 8.0, remote plugin is the only supported version for HX 4.0(2f) and later 
-
----
-
-## Page 25: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxcluster_overview.html
+## Page 23: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxcluster_overview.html
 
 ## Cisco HX Data Platform Overview
 
@@ -1337,7 +1289,7 @@ Cisco HX Data Platform is installed on a virtualized platform such as VMware vSp
 
 ---
 
-## Page 26: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_manage.html
+## Page 24: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_manage.html
 
 ## Changing the Cluster Access Policy Level 
 
@@ -1353,7 +1305,7 @@ Cisco HX Data Platform is installed on a virtualized platform such as VMware vSp
 
 ---
 
-## Page 27: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_encryption.html
+## Page 25: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_encryption.html
 
 ## Self-Encrypting Drives Overview
 
@@ -1369,7 +1321,7 @@ An SED based cluster can have encryption enabled and disabled at will. You are f
 
 ---
 
-## Page 28: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_disks_manage.html
+## Page 26: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_disks_manage.html
 
 ## Managing Disks in the Cluster
 
@@ -1400,7 +1352,7 @@ Removing a functional drive from one HX cluster and installing it into another H
 
 ---
 
-## Page 29: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-hxdp-logging-in-interfaces.html
+## Page 27: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-hxdp-logging-in-interfaces.html
 
 ## HyperFlex Cluster Interfaces Overview  
   

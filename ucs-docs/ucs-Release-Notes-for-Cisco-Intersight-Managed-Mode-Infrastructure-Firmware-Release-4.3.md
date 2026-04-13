@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_imm_infra_fw_rn_lb.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:42:48 |
+| **Fetched on** | 2026-04-10 12:48:15 |
 
 ---
 
