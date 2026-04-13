@@ -27,6 +27,11 @@ Intersight URLs (intersight.com/help/…) are fetched via Cisco CDN (no JS neede
 
 Dependencies:
     pip install requests beautifulsoup4 html2text pdfminer.six
+
+Proxy support:
+    Automatically uses proxies when HTTP_PROXY, HTTPS_PROXY,
+    http_proxy, or https_proxy are set.
+    Hosts in NO_PROXY or no_proxy bypass the proxy.
 """
 
 import io
@@ -40,6 +45,7 @@ import datetime
 import requests
 from collections import OrderedDict
 from pathlib import Path
+from requests.utils import should_bypass_proxies
 from typing import Any
 from urllib.parse import urljoin, urlparse, unquote
 
@@ -203,6 +209,26 @@ _SESSION = requests.Session()
 _SESSION.headers['User-Agent'] = (
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
 )
+
+
+def _proxy_config_from_env() -> dict[str, str]:
+    """Return requests-compatible proxy config from common env vars.
+
+    Precedence per scheme is uppercase, then lowercase.
+    """
+    proxies: dict[str, str] = {}
+    http_proxy = os.environ.get('HTTP_PROXY') or os.environ.get('http_proxy')
+    https_proxy = os.environ.get('HTTPS_PROXY') or os.environ.get('https_proxy')
+    if http_proxy:
+        proxies['http'] = http_proxy
+    if https_proxy:
+        proxies['https'] = https_proxy
+    return proxies
+
+
+def _no_proxy_from_env() -> str:
+    """Return NO_PROXY/no_proxy value with uppercase precedence."""
+    return os.environ.get('NO_PROXY') or os.environ.get('no_proxy') or ''
 
 
 def _url_slug(url: str) -> str:
@@ -610,6 +636,20 @@ class DocFetcher:
         self._onprem_model:  dict | None = None   # onprem-model.json, loaded once
         self._onprem_routes: dict | None = None   # Appliance CDN route table (onprem-model.json)
         self._failures: list[dict] = []
+        self._active_proxies: dict[str, str] = {}
+        self._no_proxy = _no_proxy_from_env()
+
+        proxies = _proxy_config_from_env()
+        if proxies:
+            _SESSION.proxies.update(proxies)
+            # Explicit proxies are set from env, so do not also auto-merge
+            # requests trust_env proxy config for this session.
+            _SESSION.trust_env = False
+            self._active_proxies = proxies.copy()
+            shown = ', '.join(f'{k}={v}' for k, v in proxies.items())
+            print(f'  [NET] Proxy enabled: {shown}')
+            if self._no_proxy:
+                print(f'  [NET] NO_PROXY enabled: {self._no_proxy}')
 
         for d in _RAW_DIRS.values():
             d.mkdir(parents=True, exist_ok=True)
@@ -622,7 +662,13 @@ class DocFetcher:
     def _get(self, url: str, headers: dict | None = None) -> bytes | None:
         try:
             print(f'  GET {url}')
-            resp = _SESSION.get(url, timeout=30, headers=headers or {})
+            req_proxies: dict[str, str] | None = None
+            if self._active_proxies and self._no_proxy and should_bypass_proxies(url, self._no_proxy):
+                # Explicitly bypass proxies for matching NO_PROXY hosts.
+                req_proxies = {}
+                print(f'  [NET] NO_PROXY matched; direct: {urlparse(url).netloc}')
+
+            resp = _SESSION.get(url, timeout=30, headers=headers or {}, proxies=req_proxies)
             if resp.status_code == 403:
                 print(f'  WARNING 403 Forbidden: {url} – skipping.')
                 return None

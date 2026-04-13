@@ -145,6 +145,10 @@ python3 fetch-cisco-docs.py my-urls.md
 python3 fetch-cisco-docs.py --force
 ```
 
+If HTTP_PROXY / HTTPS_PROXY (or lowercase variants) are set in the environment,
+the script automatically uses them. Hosts listed in NO_PROXY / no_proxy bypass
+the proxy.
+
 ### CLI options
 
 ```
