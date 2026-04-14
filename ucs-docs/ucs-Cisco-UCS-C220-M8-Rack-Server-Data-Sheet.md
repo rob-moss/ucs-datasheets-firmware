@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS C220 M8 Rack Server Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-c220-m8-rack-server-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:48:16 |
+| **Fetched on** | 2026-04-13 13:39:47 |
 
 ---
 
@@ -228,7 +228,7 @@ For more information about modernizing your infrastructure with the Cisco UCS C2
 
 ### Our experts recommend
 
-  * [BIOS Performance and workload: Tuning guide for Cisco UCS M8 Platforms White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.html "BIOS Performance and workload: Tuning guide for Cisco UCS M8 Platforms White Paper")
+  * [Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html "Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper")
   * [Cisco UCS C845A M8 Rack Server At a Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html "Cisco UCS C845A M8 Rack Server At a Glance")
   * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
@@ -240,7 +240,1636 @@ For more information about modernizing your infrastructure with the Cisco UCS C2
 
 ---
 
-## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.html
+## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper
+
+[Back to Home](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs_white_paper.html?flt0_general-table0=AI%2FML&flt1_general-table0=C-Series%20Rack)
+
+White Paper
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.pdf) (2.5 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:April 8, 2026
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.pdf) (2.5 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:April 8, 2026
+
+#### Table of Contents
+
+  * Powering the AI factory with data intelligence
+  * Fueling the AI factory: moving beyond experimental AI
+  * Ideal audience
+  * The problem: the hidden crisis of “I/O wait”
+  * The advocated solution: a software-defined AI data cloud
+  * Evidence of success: validated performance
+  * Conclusion: Making your AI infrastructure future-ready
+  * Learn more
+  * Appendix A: The blueprint for success (configuration guide)
+  * Phase 1: Cisco network optimization
+  * Phase 2: Cisco Intersight management and Cisco UCS policy
+  * Phase 3: Host OS optimization (Ubuntu 24.04.3 LTS)
+  * Phase 4: DDN Infinia software deployment
+
+
+` `
+
+Powering the AI factory with data intelligence
+
+As enterprises evolve toward “AI factories,” infrastructure leaders face a persistent source of uncertainty: whether storage and data access can keep pace with the extreme concurrency and metadata intensity of modern AI pipelines. This white paper explores the architectural shift required to support retrieval-augmented generation (RAG), LLM inference, and agentic AI. We examine why traditional public cloud and legacy NAS approaches often fail under the weight of extreme concurrency and metadata intensity. 
+
+This paper provides a validated technical blueprint, including step-by-step configuration guidelines for Cisco Nexus® networking, Cisco Intersight® management, and Ubuntu Server optimization. By following this approach, you can eliminate storage-induced latency and maximize your GPU utilization by using Cisco UCS® M8 servers and DDN Infinia.
+
+Fueling the AI factory: moving beyond experimental AI
+
+The era of "AI as a project" is over. Today, you are likely tasked with building an "AI factory — a continuous pipeline where data is ingested, processed, and served in real time. In this environment, your infrastructure's success is measured by how quickly you can turn raw data into actionable insights.
+
+However, many organizations are finding that their expensive GPU clusters are sitting idle. This "I/O wait" is not just a technical metric; it is a business cost. If your data layer cannot deliver predictable, low-latency access at scale, your AI initiatives will stall. This document helps you navigate the decision-making process between traditional storage architectures and modern, software-defined approaches optimized for the high-concurrency world of generative AI.
+
+By reading this analysis, you will be able to:
+
+● Identify the hidden bottlenecks in your current RAG and LLM pipelines
+
+● Evaluate the pros and cons of public cloud versus on-premises AI data clouds
+
+● Understand how a "wire-once" architecture with Cisco UCS and DDN Infinia provides linear scaling
+
+● Determine if your current networking fabric is prepared for the demands of RoCEv2 and 200G line rates
+
+Ideal audience
+
+This paper is designed for:
+
+● Infrastructure architects designing the next generation of data centers
+
+● AI/ML engineering leads frustrated by GPU underutilization
+
+● Data center operations managers tasked with building scalable, high-performance environments for generative AI and large-scale analytics
+
+The problem: the hidden crisis of “I/O wait”
+
+You have invested in the latest GPUs, yet your training and inference times are not hitting their targets. Why? The answer lies in the unique access patterns of modern AI. Unlike traditional enterprise applications, AI workloads demand:
+
+● Extreme metadata intensity: When your model needs to “list” or “stat” millions of small objects (common in RAG), traditional NAS systems often choke, leading to massive latency.
+
+● Massive concurrency: Thousands of parallel requests hitting the storage layer simultaneously can saturate standard networking protocols.
+
+● Throughput caps: Even if your storage is fast, if your fabric isn’t “lossless”, packet drops will cause retransmissions that kill your performance.
+
+**The limitations of traditional approaches**
+
+To solve these issues, you might consider two common paths, but both have significant drawbacks:
+
+● Public cloud object storage: While convenient, the "time to first byte" (TTFB) is often unpredictable. In high-performance AI, cloud latency can be up to 25x slower than a localized, optimized solution.
+
+● Legacy NAS/SAN: These were built for a different era. As you add more nodes, these systems often hit a "performance ceiling" where adding hardware no longer results in faster data delivery.
+
+The advocated solution: a software-defined AI data cloud
+
+Cisco advocates for a modern, software-defined storage (SDS) approach that decouples your data intelligence from the underlying hardware. By combining Cisco UCS M8 rack servers with DDN Infinia, you create a high-performance foundation that behaves like the cloud but performs like a local NVMe drive.
+
+**1\. The compute foundation: Cisco UCS C225 M8 Rack Server**
+
+To handle the intensive erasure coding and metadata indexing required by AI, you need more than just storage; you need massive processing power. The Cisco UCS C225 M8 Rack Server is a high-density, single-socket rack server that delivers industry-leading performance and efficiency for your AI workloads.
+
+● **Unprecedented processing power:** By utilizing 5th Gen AMD EPYC processors with up to 192 cores, these servers ensure that your storage software never starves for CPU cycles.
+
+● **Next-gen I/O and memory:** With the introduction of PCIe Gen 5 for high-speed I/O and a DDR5 memory bus, data moves between the CPU and the network without internal contention.
+
+● **Storage density:** Each storage node contains 10x 15.3 TB NVMe U.3 high-performance drives, providing a massive, low-latency pool of ~840 TB raw capacity in a single global namespace.
+
+● **High-speed connectivity:** Each node in your storage cluster features dual-port NVIDIA ConnectX-7 network adapters. These support speeds up to 200 Gb/s and provide the ultra-low latency and extreme throughput needed for AI model training and inference.
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.docx/_jcr_content/renditions/scaling-ai-workloads-ddn-infinia-wp_0.jpg)
+
+Figure 1. 
+
+Cisco UCS C225 M8 Rack Server
+
+Unified management: Cisco Intersight
+
+Managing a high-performance AI cluster should not require a dozen different tools. Cisco Intersight is a lifecycle management platform that unifies your experience across the entire Cisco Unified Computing System™.
+
+● **One consolidated dashboard:** Whether your infrastructure resides in the enterprise data center, at the edge, or in a remote site, Intersight gives you a single view of your real-time status and interdependencies.
+
+● **Intersight Management Mode (IMM):** Your Cisco UCS servers are managed in standalone mode, providing centralized, cloud-powered management and strict policy enforcement.
+
+● **Automation at scale:** You can manage your entire system as a single logical entity through an intuitive GUI or automate complex deployments and configurations using a robust API. This allows you to deploy a secure, multitenant AI data cloud in minutes rather than weeks.
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.docx/_jcr_content/renditions/scaling-ai-workloads-ddn-infinia-wp_1.png)
+
+Figure 2. 
+
+Cisco Intersight: IT operations, simplified
+
+**2\. The networking fabric: Cisco Nexus 9300 Series Switches**
+
+Your storage is only as fast as the network connecting it. To eliminate packet loss, you need a lossless Ethernet fabric.
+
+● **400G line rates:** The Cisco Nexus 9332D-GX2B switch provides the high-bandwidth backbone your AI factory requires.
+
+● **RoCEv2 (RDMA over Converged Ethernet):** By using RDMA, tuned with priority flow control (PDC) and explicit congestion notification (ECN), you allow your storage traffic to bypass the OS kernel, drastically reducing CPU overhead and latency.
+
+● **Intelligent breakouts:** You can configure 400G ports into 2x200G lanes, providing dedicated, high-speed paths for every server node in your cluster.
+
+The next-generation fixed Cisco Nexus 9300-GX Series switches can support 400 Gigabit Ethernet (GE). The platform addresses the need for high-performance, power-efficient, and compact switches in the network infrastructure required by artificial intelligence (AI) and machine learning (ML) applications.
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.docx/_jcr_content/renditions/scaling-ai-workloads-ddn-infinia-wp_2.jpg)
+
+Figure 3. 
+
+Cisco Nexus 9332D-GX2B switch
+
+The Cisco Nexus 9332D-GX2B switch introduces a backward-compatible 400G optical quad small form-factor pluggable – double density (QSFP-DD) interface. Each of the 32 ports offers various lower port speeds and densities, including 10-, 25-, 50-, 100-, and 200-Gbps using breakouts. The last 8 ports, marked in green, are capable of wire-rate MACsec encryption.
+
+**3\. The intelligence layer: DDN Infinia**
+
+DDN Infinia is a next-generation data intelligence platform designed to meet the unprecedented performance, scalability, and efficiency demands of AI. With native metadata intelligence and extreme low-latency data access, Infinia unifies structured and unstructured AI datasets across multi-cloud, on-premises, and edge environments — simplifying AI workflows, securing critical data, and unlocking the full potential of AI-driven insights.
+
+With sub-millisecond latency and high-throughput metadata-driven AI pipelines, it replaces outdated storage models with a streamlined, software-defined platform that can handle massive data volumes and high computational requirements of modern AI. Infinia supports real-time data analytics, instant AI inference, and seamless integration with NVIDIA-powered AI stacks — delivering 10x higher efficiencies than traditional file systems. It supports capacities starting at a few hundred terabytes and seamlessly scaling all the way to multiple exabytes.
+
+Built on a scalable and reliable key-value (KV) store, Infinia simplifies data integration and serves as an ideal source for all structured and unstructured data, including existing data lakes. The KV cache stores transformer model attention data, enabling faster token generation and inference. Infinia serves the KV cache with sub-millisecond latency, avoiding costly recompute cycles. DDN Infinia is engineered to serve the KV cache at sub-millisecond latency, ensuring fast, efficient reuse of attention data. This reduces GPU idle time, improves real-time response accuracy, and lowers inference costs — outperforming traditional file systems that are not optimized for dynamic, high-speed KV access.
+
+Evidence of success: validated performance
+
+In joint proof-of-concept (POC) testing, this architecture demonstrated that it does not just work – it leads the industry. Across just six Cisco UCS C225 M8 Rack Servers, the solution achieved the following:
+
+● 149.9 GiB/s sustained S3 GET throughput
+
+● One million operations per second for S3 metadata LIST rates
+
+● Sub-millisecond latency (~0.6 ms for GET and ~0.76 ms PUT), which is an order of magnitude better than leading public cloud "express" storage tiers
+
+The POC featured a true enterprise scale-out setup using the following:
+
+● Six Cisco UCS C225 M8 Rack Server–based client nodes generating realistic HPC and AI workloads
+
+● Six Cisco UCS C225 M8 Rack Server-based high-throughput storage nodes with 10x NVMe drives each
+
+● High-speed 200 GbE fabrics to interconnect storage and client nodes using Cisco Nexus 9332D-GX2B switches 
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.docx/_jcr_content/renditions/scaling-ai-workloads-ddn-infinia-wp_3.png)
+
+Figure 4. 
+
+High-level architecture overview
+
+The DDN Infinia S3 performance as well as scalability was assessed using the popular [warp benchmark](https://github.com/minio/warp). The S3 performance testing evaluated small-object rates per second (obj/sec), metadata operations, large object throughput, and S3 object access latency, including time-to-first-byte (TTFB).
+
+The performance test shows that S3 throughput (Figure 5) as well as object rates (Figure 6) scale proportionally. Each of the Cisco UCS C225 M8 Rack Servers with Infinia S3 delivers sustained ~13 GiB7s PUT and ~25 GiB/s GET throughput, and metadata operations scale across the server nodes without diminishing returns.
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.docx/_jcr_content/renditions/scaling-ai-workloads-ddn-infinia-wp_4.png)
+
+Figure 5. 
+
+DDN Infinia S3 throughput performance scaling
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.docx/_jcr_content/renditions/scaling-ai-workloads-ddn-infinia-wp_5.png)
+
+Figure 6. 
+
+DDN Infinia S3 objects rate/second performance scaling
+
+This means that, as your AI needs grow, your performance scales linearly. You can start with a small pilot and grow to exascale without ever having to rearchitect your storage because of the “wire-once” architecture.
+
+Conclusion: Making your AI infrastructure future-ready
+
+The transition to production AI requires a departure from the storage status quo. By moving away from high-latency cloud buckets and rigid legacy NAS and adopting a software-defined approach on Cisco UCS M8 Rack Servers and DDN Infinia, you eliminate the "I/O wait" bottleneck. This architecture ensures that your GPUs stay fed, your metadata stays fast, and your AI factory remains "always on." Choosing this foundation validated by Cisco maximizes your GPU ROI and accelerates your journey from data to insight.
+
+Learn more
+
+To explore how the combination of Cisco UCS and DDN Infinia can transform your AI data strategy, visit the following resources or contact your Cisco account representative:
+
+● **Cisco AI Networking in Data Centers:** Accelerate enterprise AI with a solution that grows with you. For an overview and additional resources, visit: [AI Networking in Data Centers](https://www.cisco.com/site/us/en/solutions/artificial-intelligence/ai-networking-in-data-center/index.html).
+
+● **Cisco UCS C225 M8 rack server:** Find further details on the server which delivers record-breaking performance for space-constrained environments at <https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-rack-server-ds.html>.
+
+● **Cisco Intersight:** Learn how to manage your global AI infrastructure from a single cloud-delivered platform at [Cisco Intersight: IT Operations Management](https://www.cisco.com/site/us/en/products/computing/hybrid-cloud-operations/intersight-platform/index.html).
+
+● **DDN Infinia product page:** For deep dives into software-defined data intelligence, visit [ddn.com/products/infinia](https://www.ddn.com/products/infinia).
+
+Appendix A: The blueprint for success (configuration guide)
+
+To achieve the sub-milliseconds latencies and linear scaling mentioned in this paper, Cisco recommends the baseline configuration given below. This blueprint is divided into four phases: network fabric, compute management, host operating system, and the final phase DDN Infinia installation.
+
+Phase 1: Cisco network optimization
+
+A “lossless” fabric is non-negotiable for AI storage. Use the following steps to configure your Cisco Nexus 9300 Series Switches.
+
+1.1 Core feature enablement
+
+Enable the necessary protocols for programmability, link aggregation, and virtual port channels:
+
+feature nxapi, cfs eth distribute, udld, interface-blan, lacp, vpc, lldp
+
+1.2 Port breakouts and slice mapping
+
+To maximize throughput, map 400G ports to 2x200G.
+
+Performance tip: To optimize internal switch bandwidth, connect the NVIDIA ConnectX-7 adapters of the DDN Infinia storage cluster and the server cluster to different port subsets (for example, eth1/1-8 and eth1/17-24).
+
+interface breakout module 1 port 1-6 map 200g-2x // Breakout ports 1-6 to 2x200G
+
+interface breakout module 1 port 17-19 map 200g-2x // Breakout port 17-19 to 2x200G
+
+1.3 Lossless RoCEv2 and quality of service (QoS)
+
+This ensures that storage traffic is prioritized and never dropped.
+
+● Classification: Match DSCP 24 for RoCEv2 and DSCP 48 for congestion notification packets (CNPs)
+
+● PFC: Enable priority flow control on CoS 3
+
+● ECN: Use WRED on the egress queue to signal congestion before drops occur
+
+RoCEv2 QoS classification
+
+// Define RoCEv2 class by DSCP 24
+
+class-map type qos match-any ROCEv2
+
+match dscp 24
+
+// QoS policy: assign QoS group 3 to RoCEv2, 0 to default
+
+policy-map type qos QOS_CLASSIFICATION
+
+class ROCEv2
+
+set qos-group 3
+
+class class-default
+
+set qos-group 0
+
+// Apply QoS policy to all RoCEv2 interfaces
+
+interface interface e1/1/1,...,e1/6/2,e1/17/1,...,e1/19/2
+
+service-policy type qos input QOS_CLASSIFICATION no-stats
+
+Enable PFC (priority flow control) for RoCEv2
+
+// Network QoS: PFC on CoS 3 for RoCEv2, MTU adjustments
+
+policy-map type network-qos QOS_NETWORK
+
+class type network-qos c-8q-nq3
+
+mtu 4200
+
+pause pfc-cos 3
+
+class type network-qos c-8q-nq-default
+
+mtu 9216
+
+system qos
+
+service-policy type network-qos QOS_NETWORK
+
+// Enable PFC on all RoCEv2 interfaces
+
+interface interface e1/1/1,...,e1/6/2,e1/17/1,...,e1/19/2
+
+priority-flow-control mode on
+
+priority-flow-control watch-dog-interval // Enable PFC watchdog
+
+CNP (congestion notification packet) prioritization
+
+// Define CNP class by DSCP 48
+
+class-map type qos match-any CNP
+
+match dscp 48
+
+// QoS: Assign CNP to QoS group 7
+
+policy-map type qos QOS_CLASSIFICATION
+
+class CNP
+
+set qos-group 7
+
+// Egress queue: prioritize CNP (level 1)
+
+policy-map type queuing QOS_EGRESS_PORT
+
+class type queuing c-out-8q-q7
+
+priority level 1
+
+// ECN (Explicit Congestion Notification) using WRED
+
+policy-map type queuing QQOS_EGRESS_PORT
+
+class type queuing c-out-8q-q3
+
+bandwidth remaining percent 99
+
+random-detect minimum-threshold 150 kbytes maximum-threshold 3000 kbytes drop-probability 7 weight 0 ecn
+
+system qos
+
+service-policy type queuing output QOS_EGRESS_PORT
+
+VRF and management configuration
+
+// Management VRF: DNS and default route
+
+vrf context management
+
+ip name-server <primary DNS server IP> <secondary DNS server IP>
+
+ip route 0.0.0.0/0 192.116.0.254
+
+// Management interface configuration
+
+interface mgmt0
+
+vrf member management
+
+ip address 192.116.0.2/24
+
+no shutdown
+
+VLAN configuration
+
+vlan 2 // Native VLAN
+
+name VLAN-NATIVE
+
+vlan 1160 // Out-of-band management
+
+name VLAN-OOB-MGMT
+
+vlan 1161-1164
+
+name VLAN-<ID>
+
+Port-channel (vPC peer link)
+
+interface port-channel 11
+
+description vPC peer link
+
+switchport mode trunk
+
+switchport trunk native vlan 2
+
+switchport trunk allowed vlan 1160-1164
+
+spanning-tree port type network
+
+service-policy type qos input QoS_marking_in
+
+vpc peer-link
+
+RoCEv2 port configuration
+
+// Enable trunking, edge, jumbo MTU, and bring up all RoCEv2 interfaces
+
+interface interface e1/1/1,...,e1/6/2,e1/17/1,...,e1/19/2
+
+switchport mode trunk
+
+spanning-tree port type edge trunk
+
+mtu 9216
+
+no shutdown
+
+VLAN pinning (N9K-A and N9K-B)
+
+// N9K-A: Pin odd ports to VLAN 1161 and even ports to VLAN 1163
+
+interface interface e1/1/1,...,e1/6/1,e1/17/1,...,e1/19/1
+
+switchport trunk native vlan 1161
+
+switchport trunk allowed vlan 1161
+
+interface interface e1/1/2,...,e1/6/2,e1/17/2,...,e1/19/2
+
+switchport trunk native vlan 1163
+
+switchport trunk allowed vlan 1163
+
+// N9K-B: Pin odd ports to VLAN 1162 and even ports to VLAN 1164
+
+interface interface e1/1/1,...,e1/6/1,e1/17/1,...,e1/19/1
+
+switchport trunk native vlan 1162
+
+switchport trunk allowed vlan 1162
+
+interface interface e1/1/2,...,e1/6/2,e1/17/2,...,e1/19/2
+
+switchport trunk native vlan 1164
+
+switchport trunk allowed vlan 1164
+
+Port descriptions (N9K-A and N9K-B)
+
+// Example: N9K-A port mapping to UCS servers
+
+interface e1/1/1
+
+description UCS-C225M8-1:e1/0 (ens1f0np0)
+
+...
+
+interface e1/1/2
+
+description UCS-C225M8-1:e2/0 (ens2f0np0)
+
+// Example: N9K-B port mapping to UCS servers
+
+interface e1/1/1
+
+description UCS-C225M8-1:e1/1 (ens1f1np1)
+
+...
+
+interface e1/1/2
+
+description UCS-C225M8-1:e2/1 (ens2f1np1)
+
+Phase 2: Cisco Intersight management and Cisco UCS policy
+
+Use Cisco Intersight to enforce a consistent configuration baseline across your cluster.
+
+2.1 Cisco UCS server policies
+
+Policies in Cisco Intersight provide different configurations for UCS servers including BIOS settings, Simple Mail Transfer Protocol (SMTP), Intelligent Platform Management Interface (IPMI) settings, and more. A policy that is once configured can be assigned to any number of servers to provide a configuration baseline.
+
+For this blueprint, the following server policies have been configured and used in the server profile template.
+
+**BIOS policy**
+
+This policy automates the configuration of BIOS settings on the servers. When you create the policy, select the CPUIntensive-M8-AMD configuration and change the following BIOS tokens:
+
+● Enable SR-IOV support
+
+● Change the Power Profile Selection F19h to Maximum IO Performance Mode
+
+● Select X2APIC as local APIC mode
+
+● Disable “ACPI SRAT L3 Cache As NUMA Domain” for memory consistency
+
+● Select com-0 from the Console Redirection drop-down list
+
+**Boot order policy**
+
+Configures the linear ordering of devices and enables you to change the boot order and boot mode. Keep UEFI enabled and secure boot disabled. As boot devices, we select slot MSTOR-RAID as the local boot disk drive and KVM Mapped DVD as virtual boot media.
+
+**IPMI over LAN policy**
+
+Defines the protocols for remote interfacing with a service processor that is embedded in the server platform. Keep the defaults when creating the policy.
+
+**Local user policy**
+
+The local user policy defines and manages local user accounts (username, password, role) on Cisco UCS servers, crucial for the direct KVM access, IPMI over LAN authentication, and overriding default admin passwords like for the CIMC access. 
+
+**NTP policy**
+
+Enables the NTP service to synchronize the time with an NTP server. 
+
+**Power policy**
+
+The optional power policy enables the configuration of power redundancy, power profiling, and power restauration for servers. Configure Last State for Power Restore.
+
+**Serial over LAN policy**
+
+Enables the input and output of the serial port of a managed system to be redirected over IP. Select 115200 from the Baud Rate drop-down list.
+
+**Storage policy**
+
+Allows you to create drive groups and virtual drives. Enable the M.2 RAID configuration and keep the virtual drive name MstorBootVd and MSTOR-RAID slot.
+
+**Thermal policy**
+
+The optional thermal policy sets the fan-speed modes. For the POC, the fan control mode has been set to balanced.
+
+**Virtual KVM policy**
+
+The KVM console is an interface that emulates a direct keyboard, video, and mouse (KVM) connection to the server. Enable the Allow Tunneled vKVM selection. 
+
+2.2 Cisco UCS server profile deployment
+
+Server profile templates enable the user to define a template from which multiple server profiles can be derived and deployed. Any property modification made in the template syncs with all the derived profiles.
+
+Create the UCS server profile template in Intersight and attach the policies described in section 2.1. Derive individual UCS server profiles for each UCS C225 M8 Rack Server from template. This ensures “wire-once” simplicity.
+
+Phase 3: Host OS optimization (Ubuntu 24.04.3 LTS)
+
+Once the hardware is provisioned through Intersight, install and optimize the OS layer for the NVIDIA ConnectX-7 adapters.
+
+3.1 Additional software packages
+
+Install additional software packages that do not come with the default installation.
+
+apt install chrony ipmitool net-tools openssh-server pdsh
+
+3.2 Networking (netplan)
+
+Configure your interface with a 9000 MTU to support jumbo frames. Ensure that your VLAN IDs correlate with your interface addressing for easier troubleshooting.
+
+ens1f0np0:
+
+dhcp4: false
+
+addresses:
+
+\- [10.10.1.x/24]/24
+
+mtu: 9000
+
+3.3 Performance tools
+
+Install the Mellanox (NVIDIA) Linux tools (<https://linux.mellanox.com/public/repo/mlnx_ofed/latest-24.04/ubuntu24.04/amd64/mlnx-tools_24.04.0.2404066-1_amd64.deb>) to manage the RDMA engines. 
+
+Ensure that chrony is configured to a local NTP source for precise log synchronization across the AI factory and map the IP addresses to hostnames within the /etc/hosts file of each host.
+
+Phase 4: DDN Infinia software deployment
+
+With the compute and network foundations established, the final stage is the deployment of the DDN Infinia software. To ensure optimal performance and alignment with the Cisco UCS M8 hardware, the installation and additional health checks are performed remotely by DDN Professional Services. Please coordinate with your Cisco or DDN account team to schedule the deployment and finalize your AI data cloud.
+
+### Our experts recommend
+
+  * [Cisco UCS C845A M8 Rack Server At a Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html "Cisco UCS C845A M8 Rack Server At a Glance")
+  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
+
+
+### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 3: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS C845A M8 Rack Server At a Glance
+
+At a Glance
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.pdf) (1.0 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:March 16, 2026
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.pdf) (1.0 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:March 16, 2026
+
+#### Table of Contents
+
+  * Overview
+  * Benefits
+  * What it offers
+  * Learn more
+
+
+` `
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.docx/_jcr_content/renditions/ucs-c845a-m8-rack-server-aag_0.jpg)
+
+Overview
+
+The Cisco UCS C845A M8 Rack Server is Cisco main RTX PRO Server Specification. A highly scalable, flexible, and customizable two to eight GPU system based on the NVIDIA MGX reference design for accelerated computing. Together with NVIDIA RTX PRO Blackwell Server Edition GPUs and NVIDIA AI Enterprise software, it is designed to deliver high performance across multiple AI workloads. 
+
+The versatility of the UCS C845A M8 makes it ideal for a variety of use cases, including: 
+
+● **GenAI fine-tuning, RAG and inference:** provides a foundation of knowledge and language patterns, enabling faster adaptation to specific tasks and domains using significantly less data compared to traditional models. 
+
+● **High-Performance Computing (HPC):** supports complex computations needed for simulations and large-scale data processing. 
+
+● **Data analytics and visualization:** utilizes advanced analytics tools to extract insights from vast datasets, facilitating data-driven decision-making. 
+
+● **Design and simulation:** supports 3D content creation and photorealistic simulation workloads such as digital twins, multi-user design collaboration, and Extended Reality (XR). 
+
+● **Language processing:** enables servers to understand and interpret human language using complex algorithms, allowing for text analysis, sentiment analysis, machine translation, and human-like text generation. 
+
+● **Conversational AI:** utilizes technologies such as natural language processing and machine learning to comprehend human language, discern intent, maintain context within a conversation, and generate human-like responses. 
+
+● **Graphics and rendering:** processes large amounts of data swiftly to generate complex visual images, making rendering faster than relying on CPUs. 
+
+● **Virtual desktop:** harnesses the power of accelerated computing to boost AI-enhanced virtualized workloads and deliver high-performance workstation instances to remote users with Virtual Desktop Infrastructure (VDI). Ideal for remote workloads with CAD, video editing, 3D modeling, and AI use cases.
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.docx/_jcr_content/renditions/ucs-c845a-m8-rack-server-aag_1.jpg)
+
+Figure 1. 
+
+Cisco UCS C845A M8 Rack Server
+
+Benefits
+
+Optimized for AI use cases 
+
+Built on NVIDIA MGX modular reference design, the Cisco UCS C845A M8 Rack Server provides the accelerated computing power from NVIDIA RTX PRO Blackwell and NVIDIA AI Enterprise software necessary to handle the most challenging AI workloads. 
+
+Adaptable design 
+
+With flexible options for two, four, six or eight NVIDIA RTX PRO 4500 and/or 6000 Blackwell GPUs, you can begin with a smaller setup and expand as your needs grow. The modularity of the NVIDIA MGX design supports a wide variety of use cases. 
+
+Consistent management 
+
+Manage your AI infrastructure seamlessly with Cisco Intersight®, an operations platform that helps IT teams see, control, and automate their Cisco UCS®, converged, and hyperconverged infrastructure throughout its lifecycle—wherever it is—from one place.
+
+What it offers
+
+The Cisco UCS C845A M8 Rack Server, built on the NVIDIA MGX reference design for accelerating computing, brings AI capabilities to mainstream enterprise PCIe servers. Its adaptable configuration addresses a variety of data-center workloads, from demanding Generative AI use cases to more mainstream graphics-accelerated VDI solutions. 
+
+Configurations 
+
+● Two 5th Gen AMD EPYC CPUs in a 4RU form factor. 
+
+● 2, 4, 6 or 8x NVIDIA RTX PRO 4500 and 6000 Blackwell, H200 NVL/H100 NVL/L40S and AMD MI210 GPUs. 
+
+● 5x PCIe x16 FHHL slots and 8 x PCIe x16 GPU slots. 
+
+● 4x single-port 400G NVIDIA ConnectX-7 Smart NICs or NVIDIA BlueField-3 DPUs to scale out. One dual port 200G NIC or DPU to scale up for north-south traffic. 
+
+● Up to 20x E1.S NVMe SSDs for high-speed local storage. 
+
+Software 
+
+Systems equipped with NVIDIA H100 NVL or H200 NVL come with a 5-year license for NVIDIA AI Enterprise, a cloud-native software platform that streamlines development and deployment of production-grade AI solutions, including AI agents, Generative AI, computer vision, speech AI, and more. Easy-to-use microservices optimize model performance with enterprise-grade security, support, and stability, ensuring a smooth transition from prototype to production for enterprises that run their businesses on AI. 
+
+Management 
+
+The Cisco UCS C845A M8 Rack Server is managed by Cisco Intersight, a cloud-delivered IT operations platform that helps your IT operations team see, control, and automate the Cisco UCS infrastructure throughout its lifecycle—wherever it is—from one place. 
+
+By using Intersight, you can operate with consistency and control, strengthen your security posture, and increase energy efficiency to drive innovation and growth.
+
+Learn more
+
+For additional information about the Cisco UCS C845A M8 Rack Server, refer to the [data sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html). 
+
+For information about our data center solutions for AI visit <https://www.cisco.com/site/us/en/solutions/artificial-intelligence/infrastructure/index.html>.
+
+### Our experts recommend
+
+  * [Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html "Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper")
+  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
+
+
+### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 4: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS Servers with Intel Xeon 6 CPUs FAQ
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.pdf) (965.1 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:February 24, 2025
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.pdf) (965.1 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:February 24, 2025
+
+#### Table of Contents
+
+  * Overview
+  * Cisco UCS X210c M8 Compute Node
+  * Cisco UCS C220 M8 Rack Server
+  * Cisco UCS C240 M8 Rack Server
+
+
+` `
+
+Overview
+
+Q. What did Cisco® announce on February 24, 2025? 
+
+A. Cisco announced the: 
+
+● Cisco UCS® X210c M8 Compute Node
+
+● Cisco UCS C220 M8 Rack Server
+
+● Cisco UCS C240 M8 Rack Server
+
+Q. What CPU are these servers based on? 
+
+A. They are all Intel® Xeon® 6 (6700P or 6500P)-processors. 
+
+Cisco UCS X210c M8 Compute Node
+
+Q. What is the X210c M8 Compute Node? 
+
+A. The X210c M8 is the fifth compute node for the UCS X-Series Modular System. It is a single slot,   
+two-socket server. 
+
+Q. How many cores are supported? 
+
+A. Up to 86 cores per CPU are supported. 
+
+Q. What are some of the benefits of UCS X210c M8 Compute Node? 
+
+A. With its high core count, compute-intensive applications can see significant performance improvements as well as other benefits like power and cost efficiencies. 
+
+Q. How much memory is supported? 
+
+A. Up to 8 TB of DDR5 memory with speeds up to 6400 MT/s is supported. 
+
+Q. How many drives are supported? 
+
+A. Up to six Small Form-Factor (SFF) hot-pluggable Non-Volatile Memory Express (NVMe)/Serial Attached SCSI/Serial Advanced Technology Attachment (SAS/SATA) or up to nine hot-pluggable E3.S NVMe drives. 
+
+Q. What network adapters are supported? 
+
+A. All current Cisco UCS 15000 Series Virtual Interface Cards (VICs) are supported. 
+
+Q. How is this server managed? 
+
+A. The server is managed with Cisco Intersight®. Optionally, Cisco UCS Manager may be used. 
+
+Q. Can I mix and match the X210c M8 Compute Node with M6 and M7 Intel-based compute nodes and M8 AMD-based compute nodes? 
+
+A. Yes, you may have M6, M7, and M8 compute nodes in the same chassis regardless of processor. 
+
+Q. Can the X210c M8 Compute Node be used with the Cisco UCS X440p PCIe Node? 
+
+A. Yes, the UCS X440p PCIe Node is supported for adding Intel or NVIDIA GPUs. 
+
+Q. Does the X210c M8 Compute Node support the front GPU mezzanine? 
+
+A. Yes, the front GPU mezzanine is supported. 
+
+Cisco UCS C220 M8 Rack Server
+
+Q. What is the C220 M8 Rack Server? 
+
+A. The C220 M8 is a 1RU, two-socket server. 
+
+Q. How many cores are supported? 
+
+A. Up to 64 cores are supported. 
+
+Q. How much memory is supported? 
+
+A. Up to 4 TB of DDR5 memory with speeds up to 6400 MT/s is supported. 
+
+Q. How many drives are supported? 
+
+A. Up to 10 x SFF SAS/SATA/NVMe or up to 16 E3.S NVMe drives. 
+
+Q. What network adapters are supported? 
+
+A. All current Cisco UCS 15000 Series Virtual Interface Cards (VICs) and a variety of third-party adapters are supported. 
+
+Q. How is this server managed? 
+
+A. The server can be managed three ways: Cisco Intersight, Cisco UCS Manager, or with the Cisco Integrated Management Controller (IMC). 
+
+Q. What generation of PCIe are the I/O slots? 
+
+A. All three PCIe and modular LAN on Motherboard (mLOM) slots are PCIe Gen 5. 
+
+Cisco UCS C240 M8 Rack Server
+
+Q. What is the C240 M8 Rack Server? 
+
+A. The C240 M8 is a 2RU, two-socket server. 
+
+Q. How many cores are supported? 
+
+A. Up to 86 cores are supported. 
+
+Q. How much memory is supported? 
+
+A. Up to 8 TB of DDR5 memory with speeds up to 6400 MT/s is supported. 
+
+Q. How many drives are supported? 
+
+A. There three different chassis configurations: 
+
+● Up to 28 SFF SAS/SATA or NVMe drives or
+
+● Up to 36 E3.S NVMe drives or
+
+● Up to 16 LFF + four SFF SAS/SATA or NVMe drives
+
+Q. What network adapters are supported? 
+
+A. All current Cisco UCS 15000 Series Virtual Interface Cards (VICs) and a variety of third-party adapters are supported. 
+
+Q. How is this server managed? 
+
+A. The server can be managed three ways: Cisco Intersight, Cisco UCS Manager, or with the Cisco Integrated Management Controller (IMC). 
+
+Q. What generation of PCIe are the I/O slots? 
+
+A. All eight PCIe and mLOM slots are PCIe Gen 5. 
+
+### Our experts recommend
+
+  * [Cisco UCS X-Series with Intel Flex Data Center GPUs and VDI White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.html "Cisco UCS X-Series with Intel Flex Data Center GPUs and VDI White Paper")
+  * [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
+
+
+### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 5: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-rack-server-ds.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS C225 M8 Rack Server Data Sheet
+
+Data Sheet
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-rack-server-ds.html) to Save Content 
+
+Translations
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-rack-server-ds.pdf) (180.7 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:January 5, 2026
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-rack-server-ds.html) to Save Content 
+
+Translations
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-rack-server-ds.pdf) (180.7 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:January 5, 2026
+
+#### Table of Contents
+
+  * Product overview
+  * Powering next-generation applications
+  * Product specifications
+  * System requirements
+  * Ordering information
+  * Warranty information
+  * Product sustainability
+  * Product environmental information
+  * Cisco support
+  * Cisco and partner services
+  * Cisco Capital
+  * Document history
+
+
+` `
+
+The Cisco UCS® C225 M8 Rack Server delivers record-breaking performance for space-constrained environments.
+
+Product overview
+
+The Cisco UCS C225 M8 Rack Server is a versatile general-purpose infrastructure and application server. This high-density, 1RU, single-socket rack server delivers industry-leading performance and efficiency for a wide range of workloads, including virtualization, collaboration, and bare-metal applications. 
+
+![Cisco UCS® C225 M8 Rack Server](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-rack-server-ds.docx/_jcr_content/renditions/ucs-c225-m8-rack-server-ds_0.png)
+
+The Cisco UCS C225 M8 Rack Server extends the capabilities of the Cisco UCS rack server portfolio. It powers 5th Gen and 4th Gen AMD EPYC™ Processors with 150 percent more cores per socket designed using AMD’s chiplet architecture. With advanced features such as AMD Infinity Guard, compute-intensive applications will see significant performance improvements and reap other benefits such as power and cost efficiencies.
+
+You can deploy the Cisco UCS C-Series rack servers as standalone servers or as part of the Cisco Unified Computing System™ managed by Cisco Intersight® or Cisco UCS Manager to take advantage of Cisco® standards-based unified computing innovations that can help reduce your Total Cost of Ownership (TCO) and increase your business agility.
+
+The C225 M8 rack server brings many new innovations to the Cisco UCS AMD rack server portfolio. With the introduction of PCIe Gen 5.0 for high-speed I/O, a DDR5 memory bus, and expanded storage capabilities, the server delivers significant performance and efficiency gains that will improve your application performance.
+
+● Supports one 5th Gen or one 4th Gen AMD EPYC CPU, with up to 160 cores per socket
+
+● Up to 12 DDR5 DIMMs for up to 3 TB of capacity using 256 GB DIMMs
+
+● Up to 6000 MT/s DDR5 memory plus other speeds depending on the CPU installed
+
+● Up to 3 PCIe 4.0 slots or up to 2 PCIe 5.0 slots, plus a modular LAN on motherboard (mLOM) / OCP slot
+
+● Support for Cisco’s virtual interface card, the Cisco UCS VIC 15000 Series adapters, as well as third-party NIC options
+
+● UCS C225 M8S chassis: up to 10 SAS/SATA or NVMe disk drives
+
+◦ New tri-mode RAID controller supports SAS4 or NVMe hardware RAID 
+
+◦ Option for up to 4 direct-attach NVMe SSDs
+
+● UCS C225 M8N chassis: up to 10 direct attach NVMe SSDs 
+
+◦ All 10 NVMe drives connected at PCIe Gen4 x4
+
+● M.2 boot options
+
+◦ Up to two 960GB SATA M.2 drives with hardware RAID, or
+
+◦ Up to two 960GB NVMe M.2 drives with NVMe hardware RAID
+
+● Up to three GPUs supported
+
+● Hybrid modular LOM/OCP 3.0
+
+◦ One dedicated Gen 4.0 x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
+
+◦ mLOM allows for Cisco UCS Virtual Interface Cards (VICs) without consuming a PCIe slot, supporting quad-port 10/25/50 Gbps or dual-port 40/100/200 Gbps network connectivity
+
+◦ OCP 3.0 slot features full out-of-band management for select adapters
+
+Powering next-generation applications
+
+The Cisco UCS C225 M8 Rack Server is well suited for a wide range of workloads, including:
+
+● IT and web infrastructure
+
+● High-performance virtual desktops
+
+● Small and medium-sized and distributed databases
+
+● AI inferencing 
+
+● Collaboration
+
+● Enterprise high-performance applications
+
+Cisco UCS C225 M8 Rack Servers can be deployed as standalone servers, part of a Cisco UCS‒managed environment, or through Cisco Intersight. When used in combination with Cisco Intersight, the UCS C225 M8 brings the power and automation of unified computing to enterprise applications, including Cisco SingleConnect technology, drastically reducing switching and cabling requirements.
+
+Cisco Intersight leverages the familiar capabilities of UCS Manager with service profiles, templates, and policy-based management to enable rapid deployment and help ensure deployment consistency. It also enables end-to-end server visibility, management, and control in both virtualized and bare-metal environments.
+
+The Cisco Integrated Management Controller (IMC) delivers comprehensive out-of-band server management with support for many industry standards, including:
+
+● Redfish Version 1.13.0 (2021.1 schema0)
+
+● Intelligent Platform Management Interface (IPMI) v2.0
+
+● Simple Network Management Protocol (SNMP) v2 and v3
+
+● Syslog
+
+● Simple Mail Transfer Protocol (SMTP)
+
+● Key Management Interoperability Protocol (KMIP)
+
+● cKVM (all-new Cisco KVM)
+
+● Command-Line Interface (CLI)
+
+● XML API 
+
+Management Software Development Kits (SDKs) and DevOps integrations exist for Python, Microsoft PowerShell, Ansible, Puppet, Chef, and more. For more information about integrations, see Cisco DevNet (<https://developer.cisco.com/site/ucs-dev-center/>).
+
+Product specifications
+
+Table 1 lists the specifications for the Cisco UCS C225 M8 Rack Server.
+
+**Table 1. **Specifications
+
+Item |  Specifications  
+---|---  
+**Form factor** |  1RU rack server   
+**Processors** |  1 x 5th Gen AMD EPYC™ processor or 1 x 4th Gen AMD EPYC™ processor  
+**Memory** |  12 DDR5-6000 DIMM slots (12 DIMMS per CPU): 16, 32, 64, 96, 128, 256 GB at up to 6000 MT/s providing a memory density of up to 3 TB of memory with 5th Gen AMD EPYC™ processors or 12 DDR5-4800 DIMM slots (12 DIMMS per CPU): 16, 32, 64, 96, 128 GB at up to 4800 MT/s providing a memory density of up to 1.5 TB of memory with 4th Gen AMD EPYC™ processors.  
+**PCIe expansion** |  Up to 3 PCIe 4.0 slots or up to 2 PCIe 5.0slots plus 1 dedicated 24-Gbps RAID controller slot and 1 dedicated mLOM/OCP 3.0 slot  
+**RAID controllers** |  ● Internal controllers:  ◦ Cisco 24-Gbps modular tri-mode controller supports SAS 4 or NVMe hardware RAID ◦ Cisco 24-Gbps modular tri-mode Host Bus Adapter (HBA)  ● External controller: Cisco 12-Gbps 9500-8e SAS HBA   
+**Internal storage** |  ● Backplane options:  ◦ Up to 10 x 2.5-inch SAS and SATA HDDs, SSD, with the option of up to 4 direct-attach NVMe drives  ◦ Up to 10 x 2.5-inch NVMe PCIe SSDs (all direct-attach PCIe Gen4 x4)  
+**mLOM/OCP 3.0** |  ● One dedicated PCIe Gen4 x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity  ● mLOM slot can flexibly accommodate 10/25/5010/25/40, and 40/100/200 100-Gbps Cisco VIC adapters.  ● OCP 3.0 slot features full out-of-band manageability that supports Intel X710 OCP Dual 10GBase-T via mLOM interposer.   
+**Power supplies** |  Hot-pluggable, redundant platinum and titanium options: ● Platinum: 1050W DC, and 1600W AC  ● Titanium: 1200W AC, and 2300W AC   
+**Other storage** |  ● Dedicated Baseboard Management Controller (BMC) FlexMMC for utilities (on board)  ● Dual M.2 SATA/NVMe SSDs with HW RAID support   
+**Management** |  ● [Cisco Intersight](https://www.cisco.com/site/us/en/products/computing/hybrid-cloud-operations/intersight-platform/index.html) ● [Cisco Integrated Management Controller (IMC)](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/data_sheet_c78-728802.html) ● [Cisco UCS Manager](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-manager/index.html)  
+**Rack options** |  ● Cisco ball-bearing rail kit with optional reversible cable management arm   
+**Hardware and software interoperability** |  See the [Cisco Hardware and Software Interoperability](https://www.cisco.com/c/en/us/support/servers-unified-computing/unified-computing-system/products-technical-reference-list.html) list for a complete listing of supported operating systems and peripheral options.   
+  
+System requirements
+
+Table 2 lists system requirements for the server.
+
+**Table 2. **System requirements
+
+Item |  Requirements  
+---|---  
+**Cisco IMC** |  Release 4.3(4b)  
+  
+Ordering information
+
+**Table 3. **Ordering information
+
+Part # |  Product description   
+---|---  
+**UCSC-C225-M8S** |  C225 M8 1RU standard server with up to 10x SFF drive bays   
+**UCSC-C225-M8N** |  C225 M8 1RU NVMe optimized server with up to 10x NVMe drive capability   
+  
+Warranty information
+
+The Cisco UCS C225 M8 Rack Server has a three-year, Next-Business-Day (NBD) hardware warranty, and a 90-day software warranty.
+
+Product sustainability
+
+Information about Cisco’s Environmental, Social, and Governance (ESG) initiatives and performance is provided in Cisco’s Corporate Social Responsibility (CSR) and sustainability [reporting](https://www.cisco.com/c/dam/m/en_us/about/csr/esg-hub/_pdf/purpose-report-2024.pdf).
+
+**Table 4. **Cisco environmental sustainability information
+
+Sustainability topic |  Reference  
+---|---  
+**General** |  Information on product-material-content laws and regulations |  [Materials](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/materials.html)  
+Information on electronic waste laws and regulations, including our products, batteries, and packaging |  [WEEE compliance](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/product-recycling/weee-compliance.html)  
+Information on our product takeback and reuse program |  [Cisco Takeback and Reuse Program](https://www.cisco.com/c/en/us/about/takeback-and-reuse.html)  
+Sustainability inquiries |  Contact: [csr_inquiries@cisco.com](https://cisco-my.sharepoint.com/personal/heltsai_cisco_com/Documents/AMD%20Genoa%20Launch%20Assets/C225M8%20Launch%20Materials/csr_inquiries@cisco.com)  
+Operating and nonoperating conditions |  Product specifications  
+**Material** |  Product packaging weight and materials |  Contact: [environment@cisco.com](https://cisco-my.sharepoint.com/personal/heltsai_cisco_com/Documents/AMD%20Genoa%20Launch%20Assets/C225M8%20Launch%20Materials/environment@cisco.com)  
+  
+Product environmental information
+
+Product environmental information for users per Commission Regulation (EU) 2019/424 <https://www.cisco.com/web/dofc/EU96313.pdf>.
+
+Cisco support
+
+Augmenting the Cisco Unified Computing System (Cisco UCS) warranty, Cisco Smart Net Total Care® and Cisco Solution Support services are part of Cisco's technical services portfolio. Smart Net Total Care combines Cisco's industry-leading and award-winning foundational technical services with an extra level of actionable business intelligence that is delivered to you through the smart capabilities in the Smart Net Total Care portal. Learn more about [Smart Net Total Care](https://www.cisco.com/c/en/us/support/services/smart-net-total-%20care/index.html).
+
+Cisco Solution Support includes both Cisco product support and solution-level support, resolving complex issues in multivendor environments on average 43 percent more quickly than with product support alone. Cisco Solution Support is a critical element in data-center administration, helping to rapidly resolve any issue encountered while maintaining performance, reliability, and return on investment.
+
+This service centralizes support across your multivendor Cisco environment for both our products and solution partner products that you have deployed in your ecosystem. Whether there is an issue with a Cisco product or with a solution partner product, just call us. Our experts are the primary point of contact and own the case from first call to resolution. Learn more about [Cisco Solution Support](https://www.cisco.com/c/en/us/services/technical/solution-support.html).
+
+Cisco and partner services
+
+Cisco and our industry-leading partners deliver services that can accelerate your transition to a Cisco UCS X-Series Modular System solution. Cisco Unified Computing Systems Services can help you create an agile infrastructure, accelerate time to value, reduce costs and risks, and maintain availability during deployment and migration. After deployment, our services can help you improve performance, availability, and resiliency as your business needs evolve and help you further mitigate risk. For more information, visit <https://www.cisco.com/go/unifiedcomputingservices>.
+
+Cisco Capital
+
+Flexible payment solutions to help you achieve your objectives
+
+Cisco Capital® makes it easier to get the right technology to achieve your objectives, enable business transformation and help you stay competitive. We can help you reduce the total cost of ownership, conserve capital, and accelerate growth. In more than 100 countries, our flexible payment solutions can help you acquire hardware, software, services and complementary third-party equipment in easy, predictable payments. [Learn more](https://www.cisco.com/go/financing).
+
+Document history
+
+New or revised topic |  Described In |  Date  
+---|---|---  
+**Product specifications** |  Page 5 |  October 10, 2024  
+**Product overview** |  Page 3 |  May 21, 2025  
+**Product specifications** |  Page 5 |  May 21, 2025  
+  
+### Our experts recommend
+
+  * [Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html "Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper")
+  * [Cisco UCS C845A M8 Rack Server At a Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html "Cisco UCS C845A M8 Rack Server At a Glance")
+  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
+
+
+### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 6: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS C845A M8 Rack Server Data Sheet
+
+Data Sheet
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html) to Save Content 
+
+Translations
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.pdf) (332.7 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:March 16, 2026
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html) to Save Content 
+
+Translations
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.pdf) (332.7 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:March 16, 2026
+
+#### Table of Contents
+
+  * Product overview
+  * Features and benefits
+  * Product specifications
+  * Ordering information
+  * Warranty information
+  * Product sustainability
+  * Product environmental information
+  * Cisco and partner services
+  * Cisco Capital
+  * For more information
+  * Document history
+
+
+` `
+
+The Cisco UCS® C845A M8 Rack Server/RTX PRO Server is a highly scalable, flexible, and customizable AI system based on the NVIDIA MGX reference design for accelerated computing. With support for two (2) to eight (8) NVIDIA or AMD PCIe GPUs including NVIDIA RTX PRO 4500 and 6000 Blackwell Server Edition GPUs and NVIDIA AI Enterprise software, it delivers high performance for a wide range of AI workloads – including Generative AI fine-tuning, RAG and inference.
+
+Product overview
+
+![Cisco UCS® C845A M8 Rack Server](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.docx/_jcr_content/renditions/ucs-c845a-m8-rack-server-ds_0.png)
+
+The Cisco UCS C845A M8 Rack Server/RTX PRO Server is designed to address the most demanding AI workloads. Now an integral component of Cisco® AI PODs (Cisco Validated Designs for AI), the Cisco UCS C845A M8 provides a robust foundation for modern AI infrastructure, allowing organizations to easily scale their AI capabilities with confidence.
+
+With support for 2, 4, 6, or 8 NVIDIA GPUs—including the NVIDIA RTX Pro 4500 and 6000 Blackwell, H100 NVL, H200 NVL, L40S, and also supports AMD Instinct MI210 GPUs this system offers unparalleled flexibility to meet the diverse needs of enterprises. Leveraging the sophistication of the MGX modular reference design, this platform is also future-ready, with next-generation NVIDIA GPUs expected to seamlessly integrate as they become available.
+
+As part of Cisco AI PODs, the UCS C845A M8 is designed to accelerate workloads such as large-scale deep learning, Large Language Model (LLM) training, model optimization, and AI inference. It supports hybrid AI workflows across cloud and edge environments, making it the perfect solution for enterprises working on cutting-edge applications such as AI agents, conversational AI, intelligent search, and virtual desktops. Enhanced by 5th Gen AMD EPYC "Turin" CPUs and NVIDIA BlueField-3 DPUs, this server eliminates performance bottlenecks, ensuring optimal CPU and GPU utilization for data-intensive workloads.
+
+With seamless integration into Cisco Intersight®, customers can manage their entire infrastructure—including compute, storage, and networking—through a unified interface. The Cisco UCS C845A M8, now part of Cisco AI PODs, is the ideal platform for organizations seeking to scale their AI initiatives with confidence and efficiency.
+
+What use cases does the Cisco UCS C845A M8 address?
+
+The Cisco UCS C845A M8, a highly scalable and customizable server integrated into Cisco AI PODs, is engineered to drive a multitude of AI workloads. Its flexible GPU configurations enable it to address the most demanding AI challenges, including large deep learning, Large Language Model (LLM) training, model fine-tuning, large model inferencing, and Retrieval-Augmented Generation (RAG). 
+
+The platform's versatility is further enhanced by its support for various GPUs, each optimized for specific market needs:
+
+NVIDIA H100 NVL:
+
+● Large-scale High-Performance Computing (HPC) and AI workloads.
+
+● Advanced AI research and high-performance computing.
+
+● Generative AI inference for large language models.
+
+● High-performance AI training
+
+**NVIDIA H200 NVL:**
+
+● High-performance LLM inference.
+
+● Generative AI training and fine-tuning.
+
+**NVIDIA RTX Pro 6000 Blackwell Server Edition:**
+
+● **Agentic and physical AI:** powering autonomous systems, smart factories, and robotics for real-time decision-making.
+
+● **Advanced scientific computing and rendering:** accelerating complex simulations, medical imaging, and engineering analysis across hybrid environments.
+
+● **High-fidelity 3D graphics and video:** driving content creation, post-production, and immersive VR/AR experiences.
+
+● **Hybrid AI/ML workflows:** enabling seamless training, inferencing, and AI-assisted graphics across on-premises and cloud.
+
+● **Edge-to-core AI applications:** supporting real-time AI at the edge with centralized management and cloud integration.
+
+**NVIDIA RTX PRO 4500 Blackwell Server Edition:**
+
+● **Department-scale AI and intelligent automation:** powering agentic workflows, industrial analytics, and real-time decision support in compact servers.
+
+● **Mainstream scientific computing and simulation:** accelerating engineering analysis, digital twins, and data-heavy modeling with strong performance per watt.
+
+● **Professional visualization and content pipelines:** enabling high-quality 3D visualization, design review, and video workflows for distributed teams.
+
+● **Hybrid AI/ML workflows:** supporting efficient fine-tuning, inference, and AI-assisted graphics across on-prem and cloud environments.
+
+● **Edge-to-core AI deployments:** delivering low-latency AI at remote sites with low power budget requirements, centralized policy, monitoring, and lifecycle management.
+
+AMD Instinct MI210:
+
+● **High-Performance Computing (HPC):** accelerating scientific research, simulations, and complex modeling.
+
+● **Energy-efficient AI/ML workloads:** supporting deep learning training and inferencing with a focus on power efficiency.
+
+● **Large-scale data analytics:** speeding up data processing and analytics for enterprise applications.
+
+● **Hybrid AI inference:** providing balanced compute and efficiency for inferencing tasks in diverse environments.
+
+● **Specialized simulation workloads:** enhancing performance for engineering, manufacturing, and bioinformatics simulations.
+
+**NVIDIA L40S:**
+
+● Generative AI foundation model fine-tuning.
+
+● Deployment of intelligent chatbots and search tools.
+
+● Language processing and conversational AI.
+
+● Graphics, rendering, and NVIDIA Omniverse applications.
+
+● Virtual desktop infrastructure.
+
+Features and benefits
+
+**Table 1. **Summary of features and benefits of the Cisco UCS C845A M8 Rack Server
+
+Feature |  Benefit  
+---|---  
+**Scalable and flexible** |  ● Rapid deployment of AI and accelerated computing technologies  ● Suited for any data-center environment   
+**Built on NVIDIA MGX design** |  ● Modular and future-ready design that can adapt to evolving technology needs  ● Next-generation GPUs can be integrated without purchasing a new platform   
+**Supports NVIDIA RTX PRO Blackwell Server Edition GPUs** |  ● **Platform flexibility without compromises:** One UCS server platform supports RTX PRO 4500 and RTX PRO 6000 Blackwell Server Edition at full power, so you can standardize on a single bill of materials while scaling from cost-efficient deployments to maximum GPU performance as needs grow.  ● **Predictable performance and uptime at scale:** Full-power GPU operation with enterprise-grade cooling, power delivery, and validated configurations delivers consistent throughput for AI and visualization workloads, reducing throttling risk and simplifying operations across fleet deployments.   
+**Dense design** |  ● Drive 8x NVIDIA GPUs, 2x AMD Turin CPUs, and 5x PCIe slots in a 4RU chassis   
+**Cisco Intersight support** |  ● See, control, and automate your compute, storage, and networking infrastructure throughout its lifecycle   
+**E1.S drives for local storage** |  ● Increased storage density, improved thermal management, and hot-swappable drives  ● High performance, lower power consumption, and compact form factor   
+**Addition to NVIDIA MGX reference design** |  ● Improved power delivery, fewer PCBs, and improved cable routing   
+  
+Product specifications
+
+**Table 2. **Specifications of the Cisco UCS C845A M8 Rack Server
+
+Item |  Specifications  
+---|---  
+**Form factor** |  4RU Air-cooled rack server  
+**Processors** |  2x 5th Gen AMD EPYC 9355 32 cores, 3.55GHz (max boost 4.4 GHz) or 2x 5th Gen AMD EPYC 9375F 32 cores, 3.85GHz (max boost 4.8 GHz) or 2x 5th Gen AMD EPYC 9455 48 cores, 3.15GHz (max boost 4.4 GHz) or 2x 5th Gen AMD EPYC 9475F 48 cores, 3.65GHz (max boost 4.8 GHz) or 2x 5th Gen AMD EPYC 9555 64 cores, 3.2GHz (max boost 4.4 GHz) or 2x 5th Gen AMD EPYC 9575F 64 cores, 3.3GHz (max boost 5 GHz) or 2x 5th Gen AMD EPYC 9655 96 cores, 2.6GHz (max boost 4.5 GHz)  
+**Memory** |  32 DIMM slots (16 DIMMS per CPU) 32, 64, 96, 128GB DDR5 at up to 5200 MT/s for up to 4TB memory system capacity Refer to the Cisco UCS C845A M8 AI Memory Guide: <https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845Am8-memory-guide.pdf>.  
+**GPUs** |  Up to 8x NVIDIA RTX Pro 4500 and 6000 Blackwell Server Edition GPU or Up to 8x NVIDIA H200 NVL or Up to 8x NVIDIA H100 NVL or Up to 8x NVIDIA L40S or Up to 8x AMD Instinct MI210  
+**Boot drives** |  2x 960GB M.2 SATA SSDs (includes hardware RAID) 2x 240GB M.2 SATA SSDs (includes hardware RAID)  
+**Internal storage** |  Up to 20x 1.9TB E1.S 15 mm NVMe PCIe drives Up to 20x 3.8TB E1.S 15 mm NVMe PCIe drives Up to 20x 7.6TB E1.S 15 mm NVMe PCIe drives  
+**PCIe slots** |  One PCIe Gen5x16 FHHL for north-south traffic – NVIDIA ConnectX-7 (2x200G), NVIDIA BlueFiled-3 B3220 DPU 4x PCIe Gen5x16 FHHL for east-west traffic – NVIDIA ConnectX-7 (1x400G) or NVIDIA BlueField-3 3140H SuperNIC  
+**OCP 3.0 slot** |  Intel® X710-DA2 (dual-port 10GBaseT) for x86 management  
+**Power supply** |  4x 3.2kW 80Plus 12V M-CRPS hot-swappable redundant PSUs with N+1 Redundancy  
+**Management** |  [Cisco Intersight](https://www.cisco.com/site/us/en/products/computing/hybrid-cloud-operations/intersight-platform/index.html)  
+**Hardware and software interoperability** |  See the Cisco [Hardware and Software Interoperability](https://www.cisco.com/c/en/us/support/servers-unified-computing/unified-computing-system/products-technical-reference-list.html) lists for a complete listing of supported operating systems and peripheral options  
+  
+Ordering information
+
+Part # |  Product description  
+---|---  
+**UCS-MGPUM8-MLB** |  Cisco UCS-845A M8 Rack Server chassis Major Line Bundle (MLB) This MLB consists of the server node (UCSC-C845A-M8) with software and Cisco Intersight options. Use this PID to begin a new configuration.  
+  
+For more information, check the Ordering Guide: <https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/c845a_m8_server_ordering_guide.html>.
+
+Warranty information
+
+Cisco UCS C845A M8 Rack Servers have a three-year Next-Business-Day (NBD) hardware warranty and a 90-day software warranty.
+
+Product sustainability
+
+Information about Cisco’s Environmental, Social, and Governance (ESG) initiatives and performance is provided in Cisco’s CSR and sustainability [reporting](https://www.cisco.com/c/dam/m/en_us/about/csr/esg-hub/_pdf/purpose-report-2024.pdf).
+
+**Table 3. **Cisco environmental sustainability information
+
+Sustainability topic |  Reference  
+---|---  
+**General** |  Information on product-material-content laws and regulations |  [Materials](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/materials.html)  
+Information on electronic waste laws and regulations, including our products, batteries, and packaging |  [WEEE Compliance](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/product-recycling/weee-compliance.html)  
+Information on product takeback and reuse program |  [Cisco Takeback and Reuse Program](https://www.cisco.com/c/en/us/about/takeback-and-reuse.html)  
+Sustainability inquiries |  Contact: [csr_inquiries@cisco.com](csr_inquiries@cisco.com)  
+**Material** |  Product packaging weight and materials |  Contact: [environment@cisco.com](environment@cisco.com)  
+  
+Product environmental information
+
+Product environmental information for users per Commission Regulation (EU) 2019/424 <https://www.cisco.com/web/dofc/EU103988.pdf>.
+
+Cisco and partner services
+
+Cisco and our industry-leading partners deliver services that accelerate your transition to Cisco UCS solutions for AI and High-Performance Computing (HPC). Cisco Unified Computing Services™ can help you create an agile infrastructure, accelerate time to value, reduce costs and risks, and maintain availability during deployment and migration. After deployment, our services can help you improve performance, availability, and resiliency as your business needs evolve, and help you further mitigate risk.
+
+For more information, visit <https://www.cisco.com/go/unifiedcomputingservices>.
+
+Cisco Capital
+
+Flexible payment solutions to help you achieve your objectives
+
+Cisco Capital® makes it easier to get the right technology to achieve your objectives, enable business transformation and help you stay competitive. We can help you reduce the total cost of ownership, conserve capital, and accelerate growth. In more than 100 countries, our flexible payment solutions can help you acquire hardware, software, services and complementary third-party equipment in easy, predictable payments. [Learn more](https://www.cisco.com/go/financing).
+
+**Our experts recommend**
+
+● [BIOS Performance and workload: Tuning guide for Cisco UCS M8 Platforms White Paper](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.html)
+
+● [Cisco AI PODs At-a-Glance](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ai-pods-aag.html)
+
+● [Cisco UCS Servers with AMD EPYC](https://www.cisco.com/c/m/en_us/solutions/computing/ucs-amd.html)
+
+For more information
+
+MLperf Inference report UCS C845A M8 with NVIDIA H200 NVL and L40S GPUs <https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.html>.
+
+Document history
+
+New or Revised Topic |  Described In |  Date  
+---|---|---  
+**New Product overview, specifications and Ordering information** |  UCS C845A M8 Data Sheet |  July 2025  
+  
+### Our experts recommend
+
+  * [Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html "Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper")
+  * [Cisco UCS C845A M8 Rack Server At a Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html "Cisco UCS C845A M8 Rack Server At a Glance")
+  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
+
+
+### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 7: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.html
 
   * Skip to content
   * Skip to search
@@ -1111,1046 +2740,6 @@ For more information about the Intel Xeon 6 Processor Family, Cisco UCS BIOS tok
 
 ---
 
-## Page 3: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS C845A M8 Rack Server At a Glance
-
-At a Glance
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.pdf) (1.0 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:March 16, 2026
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.pdf) (1.0 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:March 16, 2026
-
-#### Table of Contents
-
-  * Overview
-  * Benefits
-  * What it offers
-  * Learn more
-
-
-` `
-
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.docx/_jcr_content/renditions/ucs-c845a-m8-rack-server-aag_0.jpg)
-
-Overview
-
-The Cisco UCS C845A M8 Rack Server is Cisco main RTX PRO Server Specification. A highly scalable, flexible, and customizable two to eight GPU system based on the NVIDIA MGX reference design for accelerated computing. Together with NVIDIA RTX PRO Blackwell Server Edition GPUs and NVIDIA AI Enterprise software, it is designed to deliver high performance across multiple AI workloads. 
-
-The versatility of the UCS C845A M8 makes it ideal for a variety of use cases, including: 
-
-● **GenAI fine-tuning, RAG and inference:** provides a foundation of knowledge and language patterns, enabling faster adaptation to specific tasks and domains using significantly less data compared to traditional models. 
-
-● **High-Performance Computing (HPC):** supports complex computations needed for simulations and large-scale data processing. 
-
-● **Data analytics and visualization:** utilizes advanced analytics tools to extract insights from vast datasets, facilitating data-driven decision-making. 
-
-● **Design and simulation:** supports 3D content creation and photorealistic simulation workloads such as digital twins, multi-user design collaboration, and Extended Reality (XR). 
-
-● **Language processing:** enables servers to understand and interpret human language using complex algorithms, allowing for text analysis, sentiment analysis, machine translation, and human-like text generation. 
-
-● **Conversational AI:** utilizes technologies such as natural language processing and machine learning to comprehend human language, discern intent, maintain context within a conversation, and generate human-like responses. 
-
-● **Graphics and rendering:** processes large amounts of data swiftly to generate complex visual images, making rendering faster than relying on CPUs. 
-
-● **Virtual desktop:** harnesses the power of accelerated computing to boost AI-enhanced virtualized workloads and deliver high-performance workstation instances to remote users with Virtual Desktop Infrastructure (VDI). Ideal for remote workloads with CAD, video editing, 3D modeling, and AI use cases.
-
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.docx/_jcr_content/renditions/ucs-c845a-m8-rack-server-aag_1.jpg)
-
-Figure 1. 
-
-Cisco UCS C845A M8 Rack Server
-
-Benefits
-
-Optimized for AI use cases 
-
-Built on NVIDIA MGX modular reference design, the Cisco UCS C845A M8 Rack Server provides the accelerated computing power from NVIDIA RTX PRO Blackwell and NVIDIA AI Enterprise software necessary to handle the most challenging AI workloads. 
-
-Adaptable design 
-
-With flexible options for two, four, six or eight NVIDIA RTX PRO 4500 and/or 6000 Blackwell GPUs, you can begin with a smaller setup and expand as your needs grow. The modularity of the NVIDIA MGX design supports a wide variety of use cases. 
-
-Consistent management 
-
-Manage your AI infrastructure seamlessly with Cisco Intersight®, an operations platform that helps IT teams see, control, and automate their Cisco UCS®, converged, and hyperconverged infrastructure throughout its lifecycle—wherever it is—from one place.
-
-What it offers
-
-The Cisco UCS C845A M8 Rack Server, built on the NVIDIA MGX reference design for accelerating computing, brings AI capabilities to mainstream enterprise PCIe servers. Its adaptable configuration addresses a variety of data-center workloads, from demanding Generative AI use cases to more mainstream graphics-accelerated VDI solutions. 
-
-Configurations 
-
-● Two 5th Gen AMD EPYC CPUs in a 4RU form factor. 
-
-● 2, 4, 6 or 8x NVIDIA RTX PRO 4500 and 6000 Blackwell, H200 NVL/H100 NVL/L40S and AMD MI210 GPUs. 
-
-● 5x PCIe x16 FHHL slots and 8 x PCIe x16 GPU slots. 
-
-● 4x single-port 400G NVIDIA ConnectX-7 Smart NICs or NVIDIA BlueField-3 DPUs to scale out. One dual port 200G NIC or DPU to scale up for north-south traffic. 
-
-● Up to 20x E1.S NVMe SSDs for high-speed local storage. 
-
-Software 
-
-Systems equipped with NVIDIA H100 NVL or H200 NVL come with a 5-year license for NVIDIA AI Enterprise, a cloud-native software platform that streamlines development and deployment of production-grade AI solutions, including AI agents, Generative AI, computer vision, speech AI, and more. Easy-to-use microservices optimize model performance with enterprise-grade security, support, and stability, ensuring a smooth transition from prototype to production for enterprises that run their businesses on AI. 
-
-Management 
-
-The Cisco UCS C845A M8 Rack Server is managed by Cisco Intersight, a cloud-delivered IT operations platform that helps your IT operations team see, control, and automate the Cisco UCS infrastructure throughout its lifecycle—wherever it is—from one place. 
-
-By using Intersight, you can operate with consistency and control, strengthen your security posture, and increase energy efficiency to drive innovation and growth.
-
-Learn more
-
-For additional information about the Cisco UCS C845A M8 Rack Server, refer to the [data sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html). 
-
-For information about our data center solutions for AI visit <https://www.cisco.com/site/us/en/solutions/artificial-intelligence/infrastructure/index.html>.
-
-### Our experts recommend
-
-  * [BIOS Performance and workload: Tuning guide for Cisco UCS M8 Platforms White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.html "BIOS Performance and workload: Tuning guide for Cisco UCS M8 Platforms White Paper")
-  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
-
-
-### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
----
-
-## Page 4: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS Servers with Intel Xeon 6 CPUs FAQ
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.pdf) (965.1 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:February 24, 2025
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.pdf) (965.1 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:February 24, 2025
-
-#### Table of Contents
-
-  * Overview
-  * Cisco UCS X210c M8 Compute Node
-  * Cisco UCS C220 M8 Rack Server
-  * Cisco UCS C240 M8 Rack Server
-
-
-` `
-
-Overview
-
-Q. What did Cisco® announce on February 24, 2025? 
-
-A. Cisco announced the: 
-
-● Cisco UCS® X210c M8 Compute Node
-
-● Cisco UCS C220 M8 Rack Server
-
-● Cisco UCS C240 M8 Rack Server
-
-Q. What CPU are these servers based on? 
-
-A. They are all Intel® Xeon® 6 (6700P or 6500P)-processors. 
-
-Cisco UCS X210c M8 Compute Node
-
-Q. What is the X210c M8 Compute Node? 
-
-A. The X210c M8 is the fifth compute node for the UCS X-Series Modular System. It is a single slot,   
-two-socket server. 
-
-Q. How many cores are supported? 
-
-A. Up to 86 cores per CPU are supported. 
-
-Q. What are some of the benefits of UCS X210c M8 Compute Node? 
-
-A. With its high core count, compute-intensive applications can see significant performance improvements as well as other benefits like power and cost efficiencies. 
-
-Q. How much memory is supported? 
-
-A. Up to 8 TB of DDR5 memory with speeds up to 6400 MT/s is supported. 
-
-Q. How many drives are supported? 
-
-A. Up to six Small Form-Factor (SFF) hot-pluggable Non-Volatile Memory Express (NVMe)/Serial Attached SCSI/Serial Advanced Technology Attachment (SAS/SATA) or up to nine hot-pluggable E3.S NVMe drives. 
-
-Q. What network adapters are supported? 
-
-A. All current Cisco UCS 15000 Series Virtual Interface Cards (VICs) are supported. 
-
-Q. How is this server managed? 
-
-A. The server is managed with Cisco Intersight®. Optionally, Cisco UCS Manager may be used. 
-
-Q. Can I mix and match the X210c M8 Compute Node with M6 and M7 Intel-based compute nodes and M8 AMD-based compute nodes? 
-
-A. Yes, you may have M6, M7, and M8 compute nodes in the same chassis regardless of processor. 
-
-Q. Can the X210c M8 Compute Node be used with the Cisco UCS X440p PCIe Node? 
-
-A. Yes, the UCS X440p PCIe Node is supported for adding Intel or NVIDIA GPUs. 
-
-Q. Does the X210c M8 Compute Node support the front GPU mezzanine? 
-
-A. Yes, the front GPU mezzanine is supported. 
-
-Cisco UCS C220 M8 Rack Server
-
-Q. What is the C220 M8 Rack Server? 
-
-A. The C220 M8 is a 1RU, two-socket server. 
-
-Q. How many cores are supported? 
-
-A. Up to 64 cores are supported. 
-
-Q. How much memory is supported? 
-
-A. Up to 4 TB of DDR5 memory with speeds up to 6400 MT/s is supported. 
-
-Q. How many drives are supported? 
-
-A. Up to 10 x SFF SAS/SATA/NVMe or up to 16 E3.S NVMe drives. 
-
-Q. What network adapters are supported? 
-
-A. All current Cisco UCS 15000 Series Virtual Interface Cards (VICs) and a variety of third-party adapters are supported. 
-
-Q. How is this server managed? 
-
-A. The server can be managed three ways: Cisco Intersight, Cisco UCS Manager, or with the Cisco Integrated Management Controller (IMC). 
-
-Q. What generation of PCIe are the I/O slots? 
-
-A. All three PCIe and modular LAN on Motherboard (mLOM) slots are PCIe Gen 5. 
-
-Cisco UCS C240 M8 Rack Server
-
-Q. What is the C240 M8 Rack Server? 
-
-A. The C240 M8 is a 2RU, two-socket server. 
-
-Q. How many cores are supported? 
-
-A. Up to 86 cores are supported. 
-
-Q. How much memory is supported? 
-
-A. Up to 8 TB of DDR5 memory with speeds up to 6400 MT/s is supported. 
-
-Q. How many drives are supported? 
-
-A. There three different chassis configurations: 
-
-● Up to 28 SFF SAS/SATA or NVMe drives or
-
-● Up to 36 E3.S NVMe drives or
-
-● Up to 16 LFF + four SFF SAS/SATA or NVMe drives
-
-Q. What network adapters are supported? 
-
-A. All current Cisco UCS 15000 Series Virtual Interface Cards (VICs) and a variety of third-party adapters are supported. 
-
-Q. How is this server managed? 
-
-A. The server can be managed three ways: Cisco Intersight, Cisco UCS Manager, or with the Cisco Integrated Management Controller (IMC). 
-
-Q. What generation of PCIe are the I/O slots? 
-
-A. All eight PCIe and mLOM slots are PCIe Gen 5. 
-
-### Our experts recommend
-
-  * [Cisco UCS X-Series with Intel Flex Data Center GPUs and VDI White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.html "Cisco UCS X-Series with Intel Flex Data Center GPUs and VDI White Paper")
-  * [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
-
-
-### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
----
-
-## Page 5: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS C220 M8 Rack Server At-a-Glance
-
-At a Glance
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.pdf) (652.8 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:February 24, 2025
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.pdf) (652.8 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:February 24, 2025
-
-#### Table of Contents
-
-  * Product overview
-  * Benefits
-  * What it offers
-  * Learn more
-
-
-` `
-
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.docx/_jcr_content/renditions/ucs-c220-m8-rack-server-aag_0.png)
-
-Product overview
-
-The 1RU, 2-socket Cisco® UCS C220 M8 Rack Server is designed to meet the needs of customers that choose to deploy high density rack-mount servers. It combines the latest Intel processors and is a versatile general-purpose application and infrastructure server delivering leading performance and efficiency for a wide range of workloads, including virtualization, collaboration, and bare-metal applications.
-
-The Cisco UCS C220 M8 Rack Server extends the capabilities of the Cisco Unified Computing System (Cisco UCS®) rack server portfolio incorporating Intel Xeon 6 CPUs. Improve security, performance, and efficiency while helping achieve sustainability goals with built-in accelerators the such as Intel Trust Domain Extensions (TDX), Intel Data Streaming Accelerator (DSA), Intel QuickAssist Technology (QAT), Intel Advanced Matrix Extensions (AMX), and In-Memory Analytics Accelerator (IAA).
-
-You can deploy the Cisco UCS C-Series Rack Servers as standalone servers or with Cisco Intersight® to simplify administration and management of your server infrastructure, freeing your IT staff to focus on mission-critical and value-added projects.
-
-Decrease server Operating Expenses (OpEx) for power and cooling, management, and maintenance by consolidating older servers onto the latest generation of Cisco UCS C220 M8 Rack Servers.
-
-The Cisco UCS C220 M8 Rack Server is a dense, fault-tolerant server that provides value, performance, and flexibility for both commercial and enterprise customers.
-
-Benefits
-
-● New E3.S disk drives for higher storage capacities
-
-● AI acceleration features in the Intel® Xeon® 6 CPUs improves performance
-
-● PCIe Gen5 for the fastest I/O
-
-● Hot swappable M.2 drives for improved serviceability
-
-● New Virtual Machine (VM) security features
-
-What it offers
-
-● Up to two Intel Xeon 6700P or 6500P processors, up to 64 cores per socket
-
-● Memory:
-
-◦ 32x DIMMs for up to 4 TB of capacity using 128 GB DIMMs
-
-◦ Up to 6400 MT/s DDR5 memory, plus other speeds, depending on the CPU installed
-
-◦ Support for Multiplexed Rank DIMMs (MRDIMMs) at up to 8000 MT/s
-
-● Up to 3 PCIe 5.0 slots plus a hybrid modular LAN-on-Motherboard (mLOM)/OCP slot
-
-● Support for Cisco UCS Virtual Interface Card (VIC) 15000 Series with secure boot, enabling centralized management using Cisco Intersight and UCS adapters Manager
-
-● Support for third-party network and storage adapters
-
-● Storage
-
-◦ Up to 10 SFF SAS/SATA or NVMe disk drives or
-
-◦ Up to 16 E3.S NVMe disk drives
-
-◦ RAID controller options available
-
-● M.2 boot options
-
-◦ Up to two 960 GB SATA with optional hardware RAID
-
-● Up to three GPUs supported per server
-
-● Flexible hardware management options
-
-◦ Cisco Intersight Infrastructure Service SaaS-based cloud management
-
-◦ Cisco Integrated Management Controller (CIMC)
-
-Learn more
-
-For more information about modernizing your infrastructure with the Cisco UCS C220 M8 Rack Server, refer to the data sheet or spec sheet. For more information about all Cisco UCS servers, please visit. <https://www.cisco.com/go/ucs>.
-
-### Our experts recommend
-
-  * [BIOS Performance and workload: Tuning guide for Cisco UCS M8 Platforms White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.html "BIOS Performance and workload: Tuning guide for Cisco UCS M8 Platforms White Paper")
-  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
-
-
-### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
----
-
-## Page 6: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS C240 M8 Rack Server At-a-Glance
-
-At a Glance
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.pdf) (1.0 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:February 24, 2025
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.pdf) (1.0 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:February 24, 2025
-
-#### Table of Contents
-
-  * Product overview
-  * Benefits
-  * What it offers
-  * Learn more
-
-
-` `
-
-![Cisco UCS C240 M8 Rack Server](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.docx/_jcr_content/renditions/ucs-c240-m8-rack-server-aag_0.jpg)
-
-Product overview
-
-The 2RU, 2-socket Cisco® UCS C240 M8 Rack Server is designed to meet the needs of customers who need I/O flexibility and larger storage capacity rack-mount servers. It combines the fastest Intel processors and is a versatile general-purpose application and infrastructure server delivering leading performance and efficiency for a wide range of workloads, including AI, big-data analytics, databases, collaboration, virtualization, and high-performance computing.
-
-The Cisco UCS C240 M8 Rack Server extends the capabilities of the Cisco Unified Computing System (Cisco UCS®) rack server portfolio incorporating Intel Xeon 6 CPUs. Improve security, performance, and efficiency while helping achieve sustainability goals with built-in accelerators the such as Intel Trust Domain Extensions (TDX), Intel Data Streaming Accelerator (DSA), Intel QuickAssist Technology (QAT), Intel Advanced Matrix Extensions (AMX), and In-Memory Analytics Accelerator (IAA).
-
-You can deploy the Cisco UCS C-Series Rack Servers as standalone servers or with Cisco Intersight® to simplify administration and management of your server infrastructure freeing your IT staff to focus on mission-critical and value-added projects.
-
-Decrease server Operating Expenses (OpEx) for power and cooling, management, and maintenance by consolidating older servers onto the latest generation of Cisco UCS C240 M8 Rack Servers.
-
-The Cisco UCS C240 M8 Rack Server with its large storage capacity and fault tolerance provides value, performance, and flexibility for both commercial and enterprise customers.
-
-Benefits
-
-● Massive storage capacity up to 540 TB
-
-● AI acceleration features in the Intel® Xeon® 6 CPUs
-
-● PCIe Gen5 for the fastest I/O
-
-● Hot swappable M.2 drives for improved serviceability
-
-● New Virtual Machine (VM) security features
-
-What it offers
-
-● Up to two Intel Xeon 6700P or 6500P processors, up to 86 cores per socket
-
-● Memory:
-
-◦ 32x DDR5 DIMMs for up to 8 TB of capacity using 256 GB DIMMs
-
-◦ Up to 6400 MT/s DDR5 memory, plus other speeds, depending on the CPU installed
-
-◦ Support for Multiplexed Rank DIMMs (MRDIMMs) at up to 8000 MT/s
-
-● Up to 8 PCIe 5.0 slots plus a hybrid modular LAN-on-Motherboard (mLOM)/OCP slot
-
-● Support for Cisco UCS Virtual Interface Card (VIC) 15000 Series with secure boot, enabling centralized management using Cisco Intersight and UCS adapters Manager
-
-● Support for third-party network and storage adapters
-
-● Storage
-
-◦ Up to 28 SFF SAS/SATA or NVMe disk drives or
-
-◦ Up to 36 E3.S NVMe disk drives or
-
-◦ Up to 16 LFF + four SFF SAS/SATA or NVMe disk drives
-
-◦ RAID controller options available
-
-● M.2 boot options
-
-◦ Up to two 960 GB SATA with optional hardware RAID
-
-● Up to eight GPUs supported per server
-
-● Flexible hardware management options
-
-◦ Cisco Intersight Infrastructure Service SaaS-based cloud management
-
-◦ Cisco Integrated Management Controller (CIMC)
-
-Learn more
-
-For more information about modernizing your infrastructure with the Cisco UCS C240 M8 Rack Server, refer to the data sheet or spec sheet. For more information about all Cisco UCS servers, please visit. <https://www.cisco.com/go/ucs>.
-
-### Our experts recommend
-
-  * [BIOS Performance and workload: Tuning guide for Cisco UCS M8 Platforms White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.html "BIOS Performance and workload: Tuning guide for Cisco UCS M8 Platforms White Paper")
-  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
-
-
-### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
----
-
-## Page 7: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS C845A M8 Rack Server Data Sheet
-
-Data Sheet
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.pdf) (332.7 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:March 16, 2026
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.pdf) (332.7 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:March 16, 2026
-
-#### Table of Contents
-
-  * Product overview
-  * Features and benefits
-  * Product specifications
-  * Ordering information
-  * Warranty information
-  * Product sustainability
-  * Product environmental information
-  * Cisco and partner services
-  * Cisco Capital
-  * For more information
-  * Document history
-
-
-` `
-
-The Cisco UCS® C845A M8 Rack Server/RTX PRO Server is a highly scalable, flexible, and customizable AI system based on the NVIDIA MGX reference design for accelerated computing. With support for two (2) to eight (8) NVIDIA or AMD PCIe GPUs including NVIDIA RTX PRO 4500 and 6000 Blackwell Server Edition GPUs and NVIDIA AI Enterprise software, it delivers high performance for a wide range of AI workloads – including Generative AI fine-tuning, RAG and inference.
-
-Product overview
-
-![Cisco UCS® C845A M8 Rack Server](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.docx/_jcr_content/renditions/ucs-c845a-m8-rack-server-ds_0.png)
-
-The Cisco UCS C845A M8 Rack Server/RTX PRO Server is designed to address the most demanding AI workloads. Now an integral component of Cisco® AI PODs (Cisco Validated Designs for AI), the Cisco UCS C845A M8 provides a robust foundation for modern AI infrastructure, allowing organizations to easily scale their AI capabilities with confidence.
-
-With support for 2, 4, 6, or 8 NVIDIA GPUs—including the NVIDIA RTX Pro 4500 and 6000 Blackwell, H100 NVL, H200 NVL, L40S, and also supports AMD Instinct MI210 GPUs this system offers unparalleled flexibility to meet the diverse needs of enterprises. Leveraging the sophistication of the MGX modular reference design, this platform is also future-ready, with next-generation NVIDIA GPUs expected to seamlessly integrate as they become available.
-
-As part of Cisco AI PODs, the UCS C845A M8 is designed to accelerate workloads such as large-scale deep learning, Large Language Model (LLM) training, model optimization, and AI inference. It supports hybrid AI workflows across cloud and edge environments, making it the perfect solution for enterprises working on cutting-edge applications such as AI agents, conversational AI, intelligent search, and virtual desktops. Enhanced by 5th Gen AMD EPYC "Turin" CPUs and NVIDIA BlueField-3 DPUs, this server eliminates performance bottlenecks, ensuring optimal CPU and GPU utilization for data-intensive workloads.
-
-With seamless integration into Cisco Intersight®, customers can manage their entire infrastructure—including compute, storage, and networking—through a unified interface. The Cisco UCS C845A M8, now part of Cisco AI PODs, is the ideal platform for organizations seeking to scale their AI initiatives with confidence and efficiency.
-
-What use cases does the Cisco UCS C845A M8 address?
-
-The Cisco UCS C845A M8, a highly scalable and customizable server integrated into Cisco AI PODs, is engineered to drive a multitude of AI workloads. Its flexible GPU configurations enable it to address the most demanding AI challenges, including large deep learning, Large Language Model (LLM) training, model fine-tuning, large model inferencing, and Retrieval-Augmented Generation (RAG). 
-
-The platform's versatility is further enhanced by its support for various GPUs, each optimized for specific market needs:
-
-NVIDIA H100 NVL:
-
-● Large-scale High-Performance Computing (HPC) and AI workloads.
-
-● Advanced AI research and high-performance computing.
-
-● Generative AI inference for large language models.
-
-● High-performance AI training
-
-**NVIDIA H200 NVL:**
-
-● High-performance LLM inference.
-
-● Generative AI training and fine-tuning.
-
-**NVIDIA RTX Pro 6000 Blackwell Server Edition:**
-
-● **Agentic and physical AI:** powering autonomous systems, smart factories, and robotics for real-time decision-making.
-
-● **Advanced scientific computing and rendering:** accelerating complex simulations, medical imaging, and engineering analysis across hybrid environments.
-
-● **High-fidelity 3D graphics and video:** driving content creation, post-production, and immersive VR/AR experiences.
-
-● **Hybrid AI/ML workflows:** enabling seamless training, inferencing, and AI-assisted graphics across on-premises and cloud.
-
-● **Edge-to-core AI applications:** supporting real-time AI at the edge with centralized management and cloud integration.
-
-**NVIDIA RTX PRO 4500 Blackwell Server Edition:**
-
-● **Department-scale AI and intelligent automation:** powering agentic workflows, industrial analytics, and real-time decision support in compact servers.
-
-● **Mainstream scientific computing and simulation:** accelerating engineering analysis, digital twins, and data-heavy modeling with strong performance per watt.
-
-● **Professional visualization and content pipelines:** enabling high-quality 3D visualization, design review, and video workflows for distributed teams.
-
-● **Hybrid AI/ML workflows:** supporting efficient fine-tuning, inference, and AI-assisted graphics across on-prem and cloud environments.
-
-● **Edge-to-core AI deployments:** delivering low-latency AI at remote sites with low power budget requirements, centralized policy, monitoring, and lifecycle management.
-
-AMD Instinct MI210:
-
-● **High-Performance Computing (HPC):** accelerating scientific research, simulations, and complex modeling.
-
-● **Energy-efficient AI/ML workloads:** supporting deep learning training and inferencing with a focus on power efficiency.
-
-● **Large-scale data analytics:** speeding up data processing and analytics for enterprise applications.
-
-● **Hybrid AI inference:** providing balanced compute and efficiency for inferencing tasks in diverse environments.
-
-● **Specialized simulation workloads:** enhancing performance for engineering, manufacturing, and bioinformatics simulations.
-
-**NVIDIA L40S:**
-
-● Generative AI foundation model fine-tuning.
-
-● Deployment of intelligent chatbots and search tools.
-
-● Language processing and conversational AI.
-
-● Graphics, rendering, and NVIDIA Omniverse applications.
-
-● Virtual desktop infrastructure.
-
-Features and benefits
-
-**Table 1. **Summary of features and benefits of the Cisco UCS C845A M8 Rack Server
-
-Feature |  Benefit  
----|---  
-**Scalable and flexible** |  ● Rapid deployment of AI and accelerated computing technologies  ● Suited for any data-center environment   
-**Built on NVIDIA MGX design** |  ● Modular and future-ready design that can adapt to evolving technology needs  ● Next-generation GPUs can be integrated without purchasing a new platform   
-**Supports NVIDIA RTX PRO Blackwell Server Edition GPUs** |  ● **Platform flexibility without compromises:** One UCS server platform supports RTX PRO 4500 and RTX PRO 6000 Blackwell Server Edition at full power, so you can standardize on a single bill of materials while scaling from cost-efficient deployments to maximum GPU performance as needs grow.  ● **Predictable performance and uptime at scale:** Full-power GPU operation with enterprise-grade cooling, power delivery, and validated configurations delivers consistent throughput for AI and visualization workloads, reducing throttling risk and simplifying operations across fleet deployments.   
-**Dense design** |  ● Drive 8x NVIDIA GPUs, 2x AMD Turin CPUs, and 5x PCIe slots in a 4RU chassis   
-**Cisco Intersight support** |  ● See, control, and automate your compute, storage, and networking infrastructure throughout its lifecycle   
-**E1.S drives for local storage** |  ● Increased storage density, improved thermal management, and hot-swappable drives  ● High performance, lower power consumption, and compact form factor   
-**Addition to NVIDIA MGX reference design** |  ● Improved power delivery, fewer PCBs, and improved cable routing   
-  
-Product specifications
-
-**Table 2. **Specifications of the Cisco UCS C845A M8 Rack Server
-
-Item |  Specifications  
----|---  
-**Form factor** |  4RU Air-cooled rack server  
-**Processors** |  2x 5th Gen AMD EPYC 9355 32 cores, 3.55GHz (max boost 4.4 GHz) or 2x 5th Gen AMD EPYC 9375F 32 cores, 3.85GHz (max boost 4.8 GHz) or 2x 5th Gen AMD EPYC 9455 48 cores, 3.15GHz (max boost 4.4 GHz) or 2x 5th Gen AMD EPYC 9475F 48 cores, 3.65GHz (max boost 4.8 GHz) or 2x 5th Gen AMD EPYC 9555 64 cores, 3.2GHz (max boost 4.4 GHz) or 2x 5th Gen AMD EPYC 9575F 64 cores, 3.3GHz (max boost 5 GHz) or 2x 5th Gen AMD EPYC 9655 96 cores, 2.6GHz (max boost 4.5 GHz)  
-**Memory** |  32 DIMM slots (16 DIMMS per CPU) 32, 64, 96, 128GB DDR5 at up to 5200 MT/s for up to 4TB memory system capacity Refer to the Cisco UCS C845A M8 AI Memory Guide: <https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845Am8-memory-guide.pdf>.  
-**GPUs** |  Up to 8x NVIDIA RTX Pro 4500 and 6000 Blackwell Server Edition GPU or Up to 8x NVIDIA H200 NVL or Up to 8x NVIDIA H100 NVL or Up to 8x NVIDIA L40S or Up to 8x AMD Instinct MI210  
-**Boot drives** |  2x 960GB M.2 SATA SSDs (includes hardware RAID) 2x 240GB M.2 SATA SSDs (includes hardware RAID)  
-**Internal storage** |  Up to 20x 1.9TB E1.S 15 mm NVMe PCIe drives Up to 20x 3.8TB E1.S 15 mm NVMe PCIe drives Up to 20x 7.6TB E1.S 15 mm NVMe PCIe drives  
-**PCIe slots** |  One PCIe Gen5x16 FHHL for north-south traffic – NVIDIA ConnectX-7 (2x200G), NVIDIA BlueFiled-3 B3220 DPU 4x PCIe Gen5x16 FHHL for east-west traffic – NVIDIA ConnectX-7 (1x400G) or NVIDIA BlueField-3 3140H SuperNIC  
-**OCP 3.0 slot** |  Intel® X710-DA2 (dual-port 10GBaseT) for x86 management  
-**Power supply** |  4x 3.2kW 80Plus 12V M-CRPS hot-swappable redundant PSUs with N+1 Redundancy  
-**Management** |  [Cisco Intersight](https://www.cisco.com/site/us/en/products/computing/hybrid-cloud-operations/intersight-platform/index.html)  
-**Hardware and software interoperability** |  See the Cisco [Hardware and Software Interoperability](https://www.cisco.com/c/en/us/support/servers-unified-computing/unified-computing-system/products-technical-reference-list.html) lists for a complete listing of supported operating systems and peripheral options  
-  
-Ordering information
-
-Part # |  Product description  
----|---  
-**UCS-MGPUM8-MLB** |  Cisco UCS-845A M8 Rack Server chassis Major Line Bundle (MLB) This MLB consists of the server node (UCSC-C845A-M8) with software and Cisco Intersight options. Use this PID to begin a new configuration.  
-  
-For more information, check the Ordering Guide: <https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/c845a_m8_server_ordering_guide.html>.
-
-Warranty information
-
-Cisco UCS C845A M8 Rack Servers have a three-year Next-Business-Day (NBD) hardware warranty and a 90-day software warranty.
-
-Product sustainability
-
-Information about Cisco’s Environmental, Social, and Governance (ESG) initiatives and performance is provided in Cisco’s CSR and sustainability [reporting](https://www.cisco.com/c/dam/m/en_us/about/csr/esg-hub/_pdf/purpose-report-2024.pdf).
-
-**Table 3. **Cisco environmental sustainability information
-
-Sustainability topic |  Reference  
----|---  
-**General** |  Information on product-material-content laws and regulations |  [Materials](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/materials.html)  
-Information on electronic waste laws and regulations, including our products, batteries, and packaging |  [WEEE Compliance](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/product-recycling/weee-compliance.html)  
-Information on product takeback and reuse program |  [Cisco Takeback and Reuse Program](https://www.cisco.com/c/en/us/about/takeback-and-reuse.html)  
-Sustainability inquiries |  Contact: [csr_inquiries@cisco.com](csr_inquiries@cisco.com)  
-**Material** |  Product packaging weight and materials |  Contact: [environment@cisco.com](environment@cisco.com)  
-  
-Product environmental information
-
-Product environmental information for users per Commission Regulation (EU) 2019/424 <https://www.cisco.com/web/dofc/EU103988.pdf>.
-
-Cisco and partner services
-
-Cisco and our industry-leading partners deliver services that accelerate your transition to Cisco UCS solutions for AI and High-Performance Computing (HPC). Cisco Unified Computing Services™ can help you create an agile infrastructure, accelerate time to value, reduce costs and risks, and maintain availability during deployment and migration. After deployment, our services can help you improve performance, availability, and resiliency as your business needs evolve, and help you further mitigate risk.
-
-For more information, visit <https://www.cisco.com/go/unifiedcomputingservices>.
-
-Cisco Capital
-
-Flexible payment solutions to help you achieve your objectives
-
-Cisco Capital® makes it easier to get the right technology to achieve your objectives, enable business transformation and help you stay competitive. We can help you reduce the total cost of ownership, conserve capital, and accelerate growth. In more than 100 countries, our flexible payment solutions can help you acquire hardware, software, services and complementary third-party equipment in easy, predictable payments. [Learn more](https://www.cisco.com/go/financing).
-
-**Our experts recommend**
-
-● [BIOS Performance and workload: Tuning guide for Cisco UCS M8 Platforms White Paper](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.html)
-
-● [Cisco AI PODs At-a-Glance](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ai-pods-aag.html)
-
-● [Cisco UCS Servers with AMD EPYC](https://www.cisco.com/c/m/en_us/solutions/computing/ucs-amd.html)
-
-For more information
-
-MLperf Inference report UCS C845A M8 with NVIDIA H200 NVL and L40S GPUs <https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.html>.
-
-Document history
-
-New or Revised Topic |  Described In |  Date  
----|---|---  
-**New Product overview, specifications and Ordering information** |  UCS C845A M8 Data Sheet |  July 2025  
-  
-### Our experts recommend
-
-  * [BIOS Performance and workload: Tuning guide for Cisco UCS M8 Platforms White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.html "BIOS Performance and workload: Tuning guide for Cisco UCS M8 Platforms White Paper")
-  * [Cisco UCS C845A M8 Rack Server At a Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html "Cisco UCS C845A M8 Rack Server At a Glance")
-  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
-
-
-### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
----
-
 ## Page 8: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ai-pods-aag.html
 
   * Skip to content
@@ -2341,7 +2930,7 @@ Our experts recommend BIOS Performance and workload: Tuning guide for Cisco UCS 
 
 ### Our experts recommend
 
-  * [BIOS Performance and workload: Tuning guide for Cisco UCS M8 Platforms White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.html "BIOS Performance and workload: Tuning guide for Cisco UCS M8 Platforms White Paper")
+  * [Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html "Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper")
   * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
 
@@ -2832,6 +3421,350 @@ For more information
 ### Our experts recommend
 
   * [Cisco UCS C845A M8 Rack Server At a Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html "Cisco UCS C845A M8 Rack Server At a Glance")
+  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
+
+
+### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 10: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS C220 M8 Rack Server At-a-Glance
+
+At a Glance
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.pdf) (652.8 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:February 24, 2025
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.pdf) (652.8 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:February 24, 2025
+
+#### Table of Contents
+
+  * Product overview
+  * Benefits
+  * What it offers
+  * Learn more
+
+
+` `
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.docx/_jcr_content/renditions/ucs-c220-m8-rack-server-aag_0.png)
+
+Product overview
+
+The 1RU, 2-socket Cisco® UCS C220 M8 Rack Server is designed to meet the needs of customers that choose to deploy high density rack-mount servers. It combines the latest Intel processors and is a versatile general-purpose application and infrastructure server delivering leading performance and efficiency for a wide range of workloads, including virtualization, collaboration, and bare-metal applications.
+
+The Cisco UCS C220 M8 Rack Server extends the capabilities of the Cisco Unified Computing System (Cisco UCS®) rack server portfolio incorporating Intel Xeon 6 CPUs. Improve security, performance, and efficiency while helping achieve sustainability goals with built-in accelerators the such as Intel Trust Domain Extensions (TDX), Intel Data Streaming Accelerator (DSA), Intel QuickAssist Technology (QAT), Intel Advanced Matrix Extensions (AMX), and In-Memory Analytics Accelerator (IAA).
+
+You can deploy the Cisco UCS C-Series Rack Servers as standalone servers or with Cisco Intersight® to simplify administration and management of your server infrastructure, freeing your IT staff to focus on mission-critical and value-added projects.
+
+Decrease server Operating Expenses (OpEx) for power and cooling, management, and maintenance by consolidating older servers onto the latest generation of Cisco UCS C220 M8 Rack Servers.
+
+The Cisco UCS C220 M8 Rack Server is a dense, fault-tolerant server that provides value, performance, and flexibility for both commercial and enterprise customers.
+
+Benefits
+
+● New E3.S disk drives for higher storage capacities
+
+● AI acceleration features in the Intel® Xeon® 6 CPUs improves performance
+
+● PCIe Gen5 for the fastest I/O
+
+● Hot swappable M.2 drives for improved serviceability
+
+● New Virtual Machine (VM) security features
+
+What it offers
+
+● Up to two Intel Xeon 6700P or 6500P processors, up to 64 cores per socket
+
+● Memory:
+
+◦ 32x DIMMs for up to 4 TB of capacity using 128 GB DIMMs
+
+◦ Up to 6400 MT/s DDR5 memory, plus other speeds, depending on the CPU installed
+
+◦ Support for Multiplexed Rank DIMMs (MRDIMMs) at up to 8000 MT/s
+
+● Up to 3 PCIe 5.0 slots plus a hybrid modular LAN-on-Motherboard (mLOM)/OCP slot
+
+● Support for Cisco UCS Virtual Interface Card (VIC) 15000 Series with secure boot, enabling centralized management using Cisco Intersight and UCS adapters Manager
+
+● Support for third-party network and storage adapters
+
+● Storage
+
+◦ Up to 10 SFF SAS/SATA or NVMe disk drives or
+
+◦ Up to 16 E3.S NVMe disk drives
+
+◦ RAID controller options available
+
+● M.2 boot options
+
+◦ Up to two 960 GB SATA with optional hardware RAID
+
+● Up to three GPUs supported per server
+
+● Flexible hardware management options
+
+◦ Cisco Intersight Infrastructure Service SaaS-based cloud management
+
+◦ Cisco Integrated Management Controller (CIMC)
+
+Learn more
+
+For more information about modernizing your infrastructure with the Cisco UCS C220 M8 Rack Server, refer to the data sheet or spec sheet. For more information about all Cisco UCS servers, please visit. <https://www.cisco.com/go/ucs>.
+
+### Our experts recommend
+
+  * [Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html "Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper")
+  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
+
+
+### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 11: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS C240 M8 Rack Server At-a-Glance
+
+At a Glance
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.pdf) (1.0 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:February 24, 2025
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.pdf) (1.0 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:February 24, 2025
+
+#### Table of Contents
+
+  * Product overview
+  * Benefits
+  * What it offers
+  * Learn more
+
+
+` `
+
+![Cisco UCS C240 M8 Rack Server](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.docx/_jcr_content/renditions/ucs-c240-m8-rack-server-aag_0.jpg)
+
+Product overview
+
+The 2RU, 2-socket Cisco® UCS C240 M8 Rack Server is designed to meet the needs of customers who need I/O flexibility and larger storage capacity rack-mount servers. It combines the fastest Intel processors and is a versatile general-purpose application and infrastructure server delivering leading performance and efficiency for a wide range of workloads, including AI, big-data analytics, databases, collaboration, virtualization, and high-performance computing.
+
+The Cisco UCS C240 M8 Rack Server extends the capabilities of the Cisco Unified Computing System (Cisco UCS®) rack server portfolio incorporating Intel Xeon 6 CPUs. Improve security, performance, and efficiency while helping achieve sustainability goals with built-in accelerators the such as Intel Trust Domain Extensions (TDX), Intel Data Streaming Accelerator (DSA), Intel QuickAssist Technology (QAT), Intel Advanced Matrix Extensions (AMX), and In-Memory Analytics Accelerator (IAA).
+
+You can deploy the Cisco UCS C-Series Rack Servers as standalone servers or with Cisco Intersight® to simplify administration and management of your server infrastructure freeing your IT staff to focus on mission-critical and value-added projects.
+
+Decrease server Operating Expenses (OpEx) for power and cooling, management, and maintenance by consolidating older servers onto the latest generation of Cisco UCS C240 M8 Rack Servers.
+
+The Cisco UCS C240 M8 Rack Server with its large storage capacity and fault tolerance provides value, performance, and flexibility for both commercial and enterprise customers.
+
+Benefits
+
+● Massive storage capacity up to 540 TB
+
+● AI acceleration features in the Intel® Xeon® 6 CPUs
+
+● PCIe Gen5 for the fastest I/O
+
+● Hot swappable M.2 drives for improved serviceability
+
+● New Virtual Machine (VM) security features
+
+What it offers
+
+● Up to two Intel Xeon 6700P or 6500P processors, up to 86 cores per socket
+
+● Memory:
+
+◦ 32x DDR5 DIMMs for up to 8 TB of capacity using 256 GB DIMMs
+
+◦ Up to 6400 MT/s DDR5 memory, plus other speeds, depending on the CPU installed
+
+◦ Support for Multiplexed Rank DIMMs (MRDIMMs) at up to 8000 MT/s
+
+● Up to 8 PCIe 5.0 slots plus a hybrid modular LAN-on-Motherboard (mLOM)/OCP slot
+
+● Support for Cisco UCS Virtual Interface Card (VIC) 15000 Series with secure boot, enabling centralized management using Cisco Intersight and UCS adapters Manager
+
+● Support for third-party network and storage adapters
+
+● Storage
+
+◦ Up to 28 SFF SAS/SATA or NVMe disk drives or
+
+◦ Up to 36 E3.S NVMe disk drives or
+
+◦ Up to 16 LFF + four SFF SAS/SATA or NVMe disk drives
+
+◦ RAID controller options available
+
+● M.2 boot options
+
+◦ Up to two 960 GB SATA with optional hardware RAID
+
+● Up to eight GPUs supported per server
+
+● Flexible hardware management options
+
+◦ Cisco Intersight Infrastructure Service SaaS-based cloud management
+
+◦ Cisco Integrated Management Controller (CIMC)
+
+Learn more
+
+For more information about modernizing your infrastructure with the Cisco UCS C240 M8 Rack Server, refer to the data sheet or spec sheet. For more information about all Cisco UCS servers, please visit. <https://www.cisco.com/go/ucs>.
+
+### Our experts recommend
+
+  * [Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html "Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper")
   * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
 

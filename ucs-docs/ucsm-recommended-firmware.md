@@ -1,32 +1,20 @@
 ### Recommended firmware versions for Infrastructure
 The recommended firmware versions for Cisco UCS Manager are:
-- 6.0(1e)
-- 4.3(6e)
-- 4.2(3p)
+- (no versions found)
 
 Source:
-- https://software.cisco.com/download/home/283612660/type/283655658/release/6.0(1e)
-- https://software.cisco.com/download/home/283612660/type/283655658/release/4.3(6e)
-- https://software.cisco.com/download/home/283612660/type/283655658/release/4.2(3p)
+- https://software.cisco.com/download/home/283612660/type/283655658/release/
 
 ### Recommended firmware versions for Cisco UCS Blades
 The recommended firmware versions for Cisco UCS Blades are:
-- 6.0(1e)
-- 4.3(6e)
-- 4.2(3p)
+- (no versions found)
 
 Source:
-- https://software.cisco.com/download/home/283853163/type/283655681/release/6.0(1e)
-- https://software.cisco.com/download/home/283853163/type/283655681/release/4.3(6e)
-- https://software.cisco.com/download/home/283853163/type/283655681/release/4.2(3p)
+- https://software.cisco.com/download/home/283853163/type/283655681/release/
 
 ### Recommended firmware versions for Cisco UCS C-Series rack servers
 The recommended firmware versions for Cisco UCS C-series rack servers are:
-- 6.0(1e)
-- 4.3(6e)
-- 4.2(3p)
+- (no versions found)
 
 Source:
-- https://software.cisco.com/download/home/283862063/type/283655681/release/6.0(1e)
-- https://software.cisco.com/download/home/283862063/type/283655681/release/4.3(6e)
-- https://software.cisco.com/download/home/283862063/type/283655681/release/4.2(3p)
+- https://software.cisco.com/download/home/283862063/type/283655681/release/

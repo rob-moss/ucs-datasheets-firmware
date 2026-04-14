@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 6.0 |
 | **Source file** | `ucs-docs-raw/html/b-intersight-infrastructure-fw-rn-6-0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:42:48 |
+| **Fetched on** | 2026-04-13 13:32:11 |
 
 ---
 

@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/csm-4758-cisco-ucs-xe9305-chassis.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-04-08 08:48:10 |
+| **Fetched on** | 2026-04-13 13:39:34 |
 
 ---
 

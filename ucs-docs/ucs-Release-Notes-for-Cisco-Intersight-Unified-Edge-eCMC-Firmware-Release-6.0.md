@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Unified Edge eCMC Firmware Release, 6.0 |
 | **Source file** | `ucs-docs-raw/html/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:42:42 |
+| **Fetched on** | 2026-04-13 13:32:04 |
 
 ---
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Network Management Guide Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_cli_ucsm_network_management_guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:42:02 |
+| **Fetched on** | 2026-04-13 13:30:53 |
 
 ---
 
@@ -41,7 +41,7 @@ This guide is intended primarily for data center administrators with responsibil
 
 This section provides information on new features and changed behavior in Cisco UCS Manager, Release 4.3. 
 
-Table 1. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(6c) Feature  |  Description  |  Where Documented   
+Table 1. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(6f) Feature  |  Description  |  Where Documented   
 ---|---|---  
 Support for RS Cons 16 and RS 1eee configuration options |  Cisco UCS Manager now supports RS Cons 16 and RS 1eee configuration options for Ethernet Port Forward Error Correction. | 
 
@@ -59,7 +59,7 @@ Support for Cisco UCS Fabric Interconnects 9108 100G | Cisco UCS Manager now sup
   * [Guidelines for Configuring Unified Ports](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#concept_0249934662D1439AA5E926A503AC8B4B)
   * [Fabric Interconnect Port Types](b_CLI_UCSM_Network_Management_Guide_4_1_chapter_011.html#concept_551C21C9FE2F45E9BFE81361FA47E42C)
   * [Unified Ports on 6300 Series Fabric Interconnects](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#concept_EBA4291165434774AB50F91C74633538)
-  * [Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#port-breakout-functionality-on-cisco-ucs-x-direct)
+  * [Port Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct)](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#port-breakout-functionality-on-cisco-ucs-x-direct)
   * [Configuring Multiple Breakout Ports](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#task_36B159CB4E204986A5692F4D645F8F2C)
   * [Configuring Breakout Appliance Ports](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#task_A85F71DFA78543959CA64713660A591B)
   * [Configuring Ethernet Breakout Ports on Cisco UCS Fabric Interconnects 9108 100G](b_CLI_UCSM_Network_Management_Guide_chapter_0100.html#Cisco_Task_in_List_GUI.dita_2eb4b4d0-ea28-4eac-98bc-153d9574a3b6)
@@ -77,12 +77,7 @@ Support for Cisco UCS Fabric Interconnects 9108 100G | Cisco UCS Manager now sup
   
 Table 4. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4b) Feature  |  Description  |  Where Documented   
 ---|---|---  
-Support for Cisco UCS C-Series M8 servers | Cisco UCS Manager now supports Cisco UCS C245 M8 Servers.  | 
-
-  * [Receive Side Scaling Version 2 (RSSv2)](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#rssv2)
-  * [Single Root I/O Virtualization HPN Connection Policy](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#sriov-hpn-policy-cli)
-
-  
+Support for Cisco UCS C-Series M8 servers | Cisco UCS Manager now supports Cisco UCS C245 M8 Servers.  |  [Single Root I/O Virtualization HPN Connection Policy](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#sriov-hpn-policy-cli)  
 Table 5. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(4a) Feature  |  Description  |  Where Documented   
 ---|---|---  
 Configuring MACsec | Cisco UCS Manager introduces support for configuring Media Access Control Security (MACsec) encryption. | [About MACsec](m-cli-macsec-4-3.html#c-about-macsec)  
@@ -110,12 +105,6 @@ Support Cisco UCS X-Series chassis and servers |  Cisco UCS Manager supports Cis
   * Cisco UCS X210c M6 Compute Node
 
 Cisco UCS X-Series servers support Intelligent Fabric Modules (IFM), which function similarly to the Input/Output Module (IOM) in Cisco UCS B-Series servers.  |  —  
-Support for Receive Side Scaling Version 2 | Cisco UCS Manager introduces support for Receive Side Scaling Version 2 | 
-
-  * [Receive Side Scaling Version 2 (RSSv2)](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#rssv2)
-  * [Configuring an Ethernet Adapter Policy to Enable RSS on Windows Operating Systems](b_CLI_UCSM_Network_Management_Guide_chapter_01011.html#task_5DD4B30A2263454D95C6C38881F009F0)
-
-  
 Support for VIC QinQ Tunneling | Cisco UCS Manager introduces support for VIC QinQ Tunneling. | 
 
   * [VIC QinQ Tunneling](b_CLI_UCSM_Network_Management_Guide_chapter_0101.html#vic-qinq-tunneling)
@@ -214,7 +203,7 @@ The port type defines the type of traffic carried over a unified port connection
 
 By default, unified ports changed to Ethernet port mode are set to the Ethernet uplink port type. Unified ports changed to Fibre Channel port mode are set to the Fibre Channel uplink port type. You cannot unconfigure Fibre Channel ports. 
 
-Changing the port type does not require a reboot. 
+Changing the port type does not require a Fabric Interconnect (FI) reboot. However, certain other port configuration changes do require a FI reboot. For more information, see Operations Requiring a Fabric Interconnect Reboot. 
 
 Ethernet Port Mode
 
@@ -270,6 +259,29 @@ For SPAN source ports, configure one of the port types and then configure the po
 * * *  
   
 ---|---  
+
+
+#### Operations Requiring a Fabric Interconnect Reboot
+
+Certain configuration changes on the Fabric Interconnect (FI) require a system reboot to take effect. Performing these actions will cause a temporary service disruption. 
+
+Before performing the following actions, ensure that you have planned for a maintenance window, as these operations will cause a temporary service outage: 
+
+  * Changing the port mode on unified ports (switching between Ethernet and Fibre Channel modes).
+
+  * Switching between Ethernet and Fibre Channel breakout modes on unified ports.
+
+  * Any configuration changes that affect the physical port mode grouping on the FI.
+
+  * Reconfiguring unified ports on the FI (such as configuring unified uplink ports or unified storage ports).
+
+  * Changing the FI switching mode (Example, End-Host Mode to Switch Mode and vice versa).
+
+  * Upgrading or downgrading firmware on the Fabric Interconnect.
+
+  * Replacing or migrating Fabric Interconnect hardware components.
+
+  * Changing the reserved VLAN range.
 
 
 ### Data Traffic Interruption from Port Mode Changing 
@@ -452,16 +464,17 @@ This example is not applicable for Cisco UCS 6500 Series Fabric Interconnect.
     When committed, this change will require the fixed module to restart.
     UCS-A /fc-uplink/fabric/interface* #**commit-buffer**
 
-Configuring Breakout Ports
+### Configuring Breakout Ports
 
-### Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) 
+### Port Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) 
 
 The Cisco UCS Fabric Interconnects 9108 100G is equipped with advanced port breakout functionality, which allows network administrators to subdivide a single high-bandwidth port into multiple lower-bandwidth ports. This feature is particularly beneficial for optimizing port utilization, managing cabling complexity, and adapting to various bandwidth requirements. 
 
-Physical Port |  Breakout Options |  Logical Ports After Breakout |  Supported Speeds through breakout cables  
+Physical Port |  Breakout Options |  Logical Ports After Breakout |  Speed per Logical Port  
 ---|---|---|---  
-Ethernet 1/1 - Ethernet 1/8 |  4x25G |  Ethernet 1/1/1 to Ethernet 1/8/4 |  Up to 8x100 Gbps  
-Fibre Channel 1/1 and 1/2 |  4x8G, 4x16G, 4x32G |  Fibre Channel 1/1/1 to Fibre Channel 1/2/4 |  Up to 8x32Gbps  
+Ethernet 1/1 - Ethernet 1/8 |  4x10G |  Ethernet 1/1/1 to Ethernet 1/8/4 |  10 Gbps  
+Ethernet 1/1 - Ethernet 1/8 |  4x25G |  Ethernet 1/1/1 to Ethernet 1/8/4 |  25 Gbps  
+Fibre Channel 1/1 and 1/2 |  4x8G, 4x16G, 4x32G |  Fibre Channel 1/1/1 to Fibre Channel 1/2/4 |  8G, 16G, or 32G  
   
 #### Breakout Port Guidelines
 
@@ -1566,6 +1579,17 @@ By default, data traffic in Cisco UCS works on a principle of mutual inclusion. 
   
 The configuration for disjoint L2 networks works on a principle of selective exclusion. Traffic for a VLAN that is designated as part of a disjoint network can only travel along an uplink Ethernet port or port channel that is specifically assigned to that VLAN, and is selectively excluded from all other uplink ports and port channels. However, traffic for VLANs that are not specifically assigned to an uplink Ethernet port or port channel can still travel on all uplink ports or port channels, including those that carry traffic for the disjoint L2 networks. 
 
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+The behavior described above in a disjoint Layer‑2 configuration means VLAN traffic is carried for VLANs that are not explicitly assigned to uplink Ethernet ports or port channels. To ensure complete traffic segregation and allow only explicitly assigned VLANs on disjoint Layer‑2 networks, it is recommended to use VLAN groups in UCS Manager. VLAN groups ensure that traffic from unassigned VLANs does not flow over the disjoint Layer‑2 network. 
+
+* * *  
+  
+---|---  
+  
 In Cisco UCS, the VLAN represents the upstream disjoint L2 network. When you design your network topology for disjoint L2 networks, you must assign uplink interfaces to VLANs not the reverse. 
 
 For information about the maximum number of supported upstream disjoint L2 networks, see the appropriate Cisco UCS Configuration Limits for Cisco UCS Manager Guide. 
@@ -1829,7 +1853,7 @@ The port type defines the type of traffic carried over a unified port connection
 
 By default, unified ports changed to Ethernet port mode are set to the Ethernet uplink port type. Unified ports changed to Fibre Channel port mode are set to the Fibre Channel uplink port type. You cannot unconfigure Fibre Channel ports. 
 
-Changing the port type does not require a reboot. 
+Changing the port type does not require a Fabric Interconnect (FI) reboot. However, certain other port configuration changes do require a FI reboot. For more information, see Operations Requiring a Fabric Interconnect Reboot. 
 
 Ethernet Port Mode
 
@@ -1885,6 +1909,29 @@ For SPAN source ports, configure one of the port types and then configure the po
 * * *  
   
 ---|---  
+
+
+#### Operations Requiring a Fabric Interconnect Reboot
+
+Certain configuration changes on the Fabric Interconnect (FI) require a system reboot to take effect. Performing these actions will cause a temporary service disruption. 
+
+Before performing the following actions, ensure that you have planned for a maintenance window, as these operations will cause a temporary service outage: 
+
+  * Changing the port mode on unified ports (switching between Ethernet and Fibre Channel modes).
+
+  * Switching between Ethernet and Fibre Channel breakout modes on unified ports.
+
+  * Any configuration changes that affect the physical port mode grouping on the FI.
+
+  * Reconfiguring unified ports on the FI (such as configuring unified uplink ports or unified storage ports).
+
+  * Changing the FI switching mode (Example, End-Host Mode to Switch Mode and vice versa).
+
+  * Upgrading or downgrading firmware on the Fabric Interconnect.
+
+  * Replacing or migrating Fabric Interconnect hardware components.
+
+  * Changing the reserved VLAN range.
 
 
 ### Data Traffic Interruption from Port Mode Changing 
@@ -2067,16 +2114,17 @@ This example is not applicable for Cisco UCS 6500 Series Fabric Interconnect.
     When committed, this change will require the fixed module to restart.
     UCS-A /fc-uplink/fabric/interface* #**commit-buffer**
 
-Configuring Breakout Ports
+### Configuring Breakout Ports
 
-### Port Breakout Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) 
+### Port Functionality on Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) 
 
 The Cisco UCS Fabric Interconnects 9108 100G is equipped with advanced port breakout functionality, which allows network administrators to subdivide a single high-bandwidth port into multiple lower-bandwidth ports. This feature is particularly beneficial for optimizing port utilization, managing cabling complexity, and adapting to various bandwidth requirements. 
 
-Physical Port |  Breakout Options |  Logical Ports After Breakout |  Supported Speeds through breakout cables  
+Physical Port |  Breakout Options |  Logical Ports After Breakout |  Speed per Logical Port  
 ---|---|---|---  
-Ethernet 1/1 - Ethernet 1/8 |  4x25G |  Ethernet 1/1/1 to Ethernet 1/8/4 |  Up to 8x100 Gbps  
-Fibre Channel 1/1 and 1/2 |  4x8G, 4x16G, 4x32G |  Fibre Channel 1/1/1 to Fibre Channel 1/2/4 |  Up to 8x32Gbps  
+Ethernet 1/1 - Ethernet 1/8 |  4x10G |  Ethernet 1/1/1 to Ethernet 1/8/4 |  10 Gbps  
+Ethernet 1/1 - Ethernet 1/8 |  4x25G |  Ethernet 1/1/1 to Ethernet 1/8/4 |  25 Gbps  
+Fibre Channel 1/1 and 1/2 |  4x8G, 4x16G, 4x32G |  Fibre Channel 1/1/1 to Fibre Channel 1/2/4 |  8G, 16G, or 32G  
   
 #### Breakout Port Guidelines
 

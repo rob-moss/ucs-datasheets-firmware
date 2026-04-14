@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager |
 | **Source file** | `ucs-docs-raw/html/series.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:48:39 |
+| **Fetched on** | 2026-04-13 13:40:20 |
 
 ---
 
@@ -82,15 +82,15 @@ use JS to put chosen tab in here or hide
 
   * 25-Feb-2026
 
+[ Security Advisory: Cisco NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-n3kn9k_aci_lldp_dos-NdgRrrA3.html)
+
+  * 25-Feb-2026
+
 [ Security Advisory: Cisco FXOS and UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsciv-wGYtC78q.html)
 
   * 25-Feb-2026
 
 [ Security Advisory: Cisco UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-cmdinj-GvxLPeSB.html)
-
-  * 25-Feb-2026
-
-[ Security Advisory: Cisco NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-n3kn9k_aci_lldp_dos-NdgRrrA3.html)
 
   * 25-Feb-2026
 
@@ -124,7 +124,7 @@ use JS to put chosen tab in here or hide
 
 #### English
 
-  * [End-of-Sale and End-of-Life Announcement for the Cisco UCS Manager Release 4.2 ](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/ucs-manager-release-4-2-eol.html)19-Dec-2025
+  * [End-of-Sale and End-of-Life Announcement for the Cisco UCS Manager Release 4.2 ](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/ucs-manager-release-4-2-eol.html)09-Apr-2026updated
   * [End-of-Sale and End-of-Life Announcement for the Cisco UCS Manager Release 4.1 ](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/ucs-manager-release-4-1-eol.html)28-Feb-2023
   * [End-of-Sale and End-of-Life Announcement for the Cisco UCS Manager Release 4.0 ](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/ucs-manager-release-4-0-eol.html)08-Nov-2021
   * [End-of-Sale and End-of-Life Announcement for the Cisco UCS Manager Release 3.2 ](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/eos-eol-notice-c51-743144.html)14-Nov-2019
@@ -262,6 +262,10 @@ use JS to put chosen tab in here or hide
 
 #### Configuration Guides
 
+  * [Cisco UCS Manager Network Management Guide, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-3/b_UCSM_Network_Mgmt_Guide_4_3.html)06-Apr-2026updated
+  * [Cisco UCS Manager Network Management Guide Using the CLI, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3.html)06-Apr-2026updated
+  * [Cisco UCS Manager Network Management Guide, Release 4.2 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/4-2/b_UCSM_Network_Mgmt_Guide_4_2.html)06-Apr-2026updated
+  * [Cisco UCS Manager Network Management Guide Using the CLI, Release 4.2 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-2/b_cli_ucsm_network_management_guide_4_2.html)06-Apr-2026updated
   * [Cisco UCS Manager Storage Management Guide, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3.html)02-Apr-2026updated
   * [Cisco UCS Manager Storage Management Guide using the CLI, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3.html)02-Apr-2026updated
   * [Cisco UCS Manager Storage Management Guide, Release 4.2 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-2/b_UCSM_GUI_Storage_Management_Guide_4_2.html)01-Apr-2026updated
@@ -273,10 +277,6 @@ use JS to put chosen tab in here or hide
   * [Cisco UCS Manager Network Management Guide, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Network-Mgmt/6-0/b_UCSM_Network_Mgmt_Guide_6_0.html)16-Mar-2026updated
   * [Cisco UCS Manager Server Management Guide, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/6-0/b_cisco_ucs_manager_server_mgmt_guide_6_0.html)16-Mar-2026updated
   * [Cisco UCS Manager System Monitoring Guide, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/6-0/b-ucsm-gui-system-monitoring-guide-6-0.html)16-Mar-2026updated
-  * [Cisco UCS Manager Storage Management Guide, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/6-0/b_ucsm_gui_storage_management_guide_6_0.html)16-Mar-2026updated
-  * [Migration Guide for Cisco UCS Fabric Interconnects, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Fabric-Interconnect-Migration/6-0/b_migration_guide_for_cisco_ucs_fabric_interconnects_6_0.html)16-Mar-2026updated
-  * [Cisco UCS 6400, 6500, 6600 Series, and UCSX-S9108-100G FI Configuration Limits for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Configuration-Limits/6-0/b_ucs_configuration_limits_6_0.html)16-Mar-2026updated
-  * [Cisco UCS S3260 Server Integration with Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Dense-Storage-Server-Integ-Mgmt/6-0/b_UCSM_s3260_Integration_Guide_6_0.html)16-Mar-2026updated
 [View all documentation of this type ](/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html)
 
 #### Programming Guides
@@ -346,6 +346,8 @@ Reset
 ## Solved Issues
 
 ## Community Documents
+
+community.js \-->
 
 ![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Servers - Unified Computing - Cisco UCS 2408 Fabric Extender Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-742624.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:45:18 |
+| **Fetched on** | 2026-04-13 13:40:34 |
 
 ---
 
@@ -1300,7 +1300,7 @@ For more information about Cisco UCS, visit <https://www.cisco.com/en/US/product
 
 Stay in control with industry-leading network management, automation, real-time visibility, segmentation, sustainability, and simplified operations.
 
-[Start your AI journey](https://engage.cisco.com/amer-ai-readiness-for-data-centers.html)
+[Start your AI journey](https://engage.cisco.com/amer-ai-readiness-for-data-centers.html?linkclickid=secondary)
 
 Overview [Resources](/site/us/en/products/networking/cloud-networking/resources.html)
 
@@ -1548,7 +1548,7 @@ Cisco Nexus One delivers a unified operating model with advanced intelligence, o
 
 See why we believe our industry-leading performance, simplicity, and scalability helped us earn this recognition.
 
-[Download Gartner report](https://www.cisco.com/c/en/us/solutions/data-center/networking-promotions-free-trials/gartner-magic-quadrant-data-center-switching.html)
+[Download Gartner report](https://www.cisco.com/c/en/us/solutions/data-center/networking-promotions-free-trials/gartner-magic-quadrant-data-center-switching.html?linkclickid=secondary)
 
 ## We've got your back
 
@@ -1582,13 +1582,13 @@ Discover the extensible open APIs for today's modern Data Center applications.
 
 Security solutions that protect against identity threats, enable AI adoption, reshape firewalls, and evolve analytics.
 
-[Watch the session ](https://webinars.cisco.com/amer/AI_Changes_Everything_A_New_Blueprint_for_Network_Security_Zero_Trust_and_the_SOC)
+[Watch the session ](https://webinars.cisco.com/amer/AI_Changes_Everything_A_New_Blueprint_for_Network_Security_Zero_Trust_and_the_SOC?linkclickid=secondary)
 
 ##  Discover the business benefits of a more sustainable network 
 
 Go beyond compliance and learn how a more energy efficient data center can also help you optimize operations, gain visibility, and reduce costs.
 
-[Check out the webinar](https://engage.cisco.com/amer-sustainable-data-center.html) [Read IDC survey](https://www.cisco.com/c/en/us/solutions/data-center/networking-promotions-free-trials/idc-ai-networking-insights-report.html)
+[Check out the webinar](https://engage.cisco.com/amer-sustainable-data-center.html?linkclickid=secondary) [Read IDC survey](https://www.cisco.com/c/en/us/solutions/data-center/networking-promotions-free-trials/idc-ai-networking-insights-report.html?linkclickid=secondary)
 
 __
 
