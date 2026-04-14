@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X9516 X-Fabric |
 | **Source file** | `ucs-docs-raw/html/ucs-9516-x-fabric-module-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-10 13:01:53 |
+| **Fetched on** | 2026-04-13 13:39:56 |
 
 ---
 

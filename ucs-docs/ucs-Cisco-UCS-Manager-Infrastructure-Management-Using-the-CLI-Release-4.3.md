@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Infrastructure Management Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_UCSM_CLI_Infrastructure_Management_Guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-10 12:46:27 |
+| **Fetched on** | 2026-04-13 13:30:43 |
 
 ---
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Virtual Interface Card 15000 Series Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-vic-15000-series-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-10 13:02:47 |
+| **Fetched on** | 2026-04-13 13:40:45 |
 
 ---
 

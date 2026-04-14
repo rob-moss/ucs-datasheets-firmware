@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager |
 | **Source file** | `ucs-docs-raw/html/series.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-10 13:02:13 |
+| **Fetched on** | 2026-04-13 13:40:20 |
 
 ---
 

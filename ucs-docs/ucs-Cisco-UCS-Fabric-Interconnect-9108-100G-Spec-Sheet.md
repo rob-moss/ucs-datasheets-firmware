@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/ucs-fabric-interconnect-9108-100g.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-04-10 12:55:26 |
+| **Fetched on** | 2026-04-13 13:36:38 |
 
 ---
 

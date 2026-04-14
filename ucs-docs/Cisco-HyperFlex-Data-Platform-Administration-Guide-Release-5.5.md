@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco HyperFlex Data Platform Administration Guide, Release 5.5 |
 | **Source file** | `ucs-docs-raw/html/b-hxdp-admin-guide-5-5.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-10 13:05:47 |
+| **Fetched on** | 2026-04-13 13:44:05 |
 
 ---
 
@@ -1198,10 +1198,37 @@ The HyperFlex iSCSI Target Service is not supported on Stretched clusters.
 
 ---
 
-## Page 21: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-appendix.html
+## Page 21: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-html-plug-in-for-vmware-vcenter.html
 
-## Appendix  
+## Cisco HyperFlex vCenter Plugin  
   
+Cisco HyperFlex offers the flexibility of monitoring and managing content via Cisco HX Connect, Cisco HyperFlex Plugin, or Storage Controller VM command line. The vCenter plugin is designed to ease the HyperFlex administration tasks without a need to visit to each HyperFlex clusters. This chapter describes the usage of Local vCenter Plugin and Remote vCenter Plugin. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+VMware local plugin architecture support is limited to vSphere versions 6.5, 6.7, and 7.0. For more information, see the vSphere Client Local plugins are deprecated (87880) article on the VMware site. 
+
+* * *  
+  
+---|---  
+  
+To get started, use the following table to determine the plugin type for your deployment. Click the link in the Plugin Type column to advance to the full documentation. 
+
+vCenter Plugin Version |  Cisco HyperFlex Release  |  vCenter/ESXi version |  Plugin Type  
+---|---|---|---  
+3.0.0 and later |  4.0(2f) and later |  6.7 U3 and later |  Cisco HyperFlex Remote Plugin for VMware vCenter1  
+2.0.0, 2.1.0 and 2.2.0 |  4.0(2e) and earlier |  Up to 7.0 U3 |  Local Plugin   
+1 In alignment with the VMware deprecation of local plugins starting with vSphere 8.0, remote plugin is the only supported version for HX 4.0(2f) and later 
+
+---
+
+## Page 22: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-appendix.html
+
+## Appendix
+
 This section provides a list of terminologies that are used in this document.
 
 Name | Description  
@@ -1216,7 +1243,7 @@ Port Mappings |  Identifies the ports that are used for specific cable connectio
 
 ---
 
-## Page 22: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_maintenance_prep.html
+## Page 23: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_maintenance_prep.html
 
 ## Storage Cluster Maintenance Operations Overview  
   
@@ -1277,7 +1304,34 @@ Ensure the following:
 
 ---
 
-## Page 23: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxcluster_overview.html
+## Page 24: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-html-plug-in-for-vmware-vcenter.html
+
+## Cisco HyperFlex vCenter Plugin
+
+Cisco HyperFlex offers the flexibility of monitoring and managing content via Cisco HX Connect, Cisco HyperFlex Plugin, or Storage Controller VM command line. The vCenter plugin is designed to ease the HyperFlex administration tasks without a need to visit to each HyperFlex clusters. This chapter describes the usage of Local vCenter Plugin and Remote vCenter Plugin. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+VMware local plugin architecture support is limited to vSphere versions 6.5, 6.7, and 7.0. For more information, see the vSphere Client Local plugins are deprecated (87880) article on the VMware site. 
+
+* * *  
+  
+---|---  
+  
+To get started, use the following table to determine the plugin type for your deployment. Click the link in the Plugin Type column to advance to the full documentation. 
+
+vCenter Plugin Version |  Cisco HyperFlex Release  |  vCenter/ESXi version |  Plugin Type  
+---|---|---|---  
+3.0.0 and later |  4.0(2f) and later |  6.7 U3 and later |  Cisco HyperFlex Remote Plugin for VMware vCenter1  
+2.0.0, 2.1.0 and 2.2.0 |  4.0(2e) and earlier |  Up to 7.0 U3 |  Local Plugin   
+1 In alignment with the VMware deprecation of local plugins starting with vSphere 8.0, remote plugin is the only supported version for HX 4.0(2f) and later 
+
+---
+
+## Page 25: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxcluster_overview.html
 
 ## Cisco HX Data Platform Overview
 
@@ -1289,7 +1343,7 @@ Cisco HX Data Platform is installed on a virtualized platform such as VMware vSp
 
 ---
 
-## Page 24: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_manage.html
+## Page 26: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_manage.html
 
 ## Changing the Cluster Access Policy Level 
 
@@ -1305,7 +1359,7 @@ Cisco HX Data Platform is installed on a virtualized platform such as VMware vSp
 
 ---
 
-## Page 25: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_encryption.html
+## Page 27: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_encryption.html
 
 ## Self-Encrypting Drives Overview
 
@@ -1321,7 +1375,7 @@ An SED based cluster can have encryption enabled and disabled at will. You are f
 
 ---
 
-## Page 26: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_disks_manage.html
+## Page 28: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_disks_manage.html
 
 ## Managing Disks in the Cluster
 
@@ -1352,7 +1406,7 @@ Removing a functional drive from one HX cluster and installing it into another H
 
 ---
 
-## Page 27: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-hxdp-logging-in-interfaces.html
+## Page 29: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-hxdp-logging-in-interfaces.html
 
 ## HyperFlex Cluster Interfaces Overview  
   

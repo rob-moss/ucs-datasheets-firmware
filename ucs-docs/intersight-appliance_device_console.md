@@ -8,7 +8,7 @@
 | **HTML Title** | Device Console |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_device_console.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-10 12:48:40 |
+| **Fetched on** | 2026-04-13 13:33:19 |
 
 ---
 

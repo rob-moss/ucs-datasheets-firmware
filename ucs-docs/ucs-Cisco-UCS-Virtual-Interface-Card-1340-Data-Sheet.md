@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Virtual Interface Card 1340 Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-732517.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-10 13:02:43 |
+| **Fetched on** | 2026-04-13 13:40:43 |
 
 ---
 

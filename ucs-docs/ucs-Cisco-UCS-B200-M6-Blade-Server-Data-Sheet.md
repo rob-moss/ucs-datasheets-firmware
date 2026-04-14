@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS B200 M6 Blade Server Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-2368888.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-10 12:51:04 |
+| **Fetched on** | 2026-04-13 13:34:39 |
 
 ---
 

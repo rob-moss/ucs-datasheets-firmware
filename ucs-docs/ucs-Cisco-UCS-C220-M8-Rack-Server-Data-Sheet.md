@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS C220 M8 Rack Server Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-c220-m8-rack-server-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-10 13:01:44 |
+| **Fetched on** | 2026-04-13 13:39:47 |
 
 ---
 

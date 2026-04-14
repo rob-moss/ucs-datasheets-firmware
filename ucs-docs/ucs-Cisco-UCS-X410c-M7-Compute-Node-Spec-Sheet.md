@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/x410cm7-specsheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-04-10 12:59:37 |
+| **Fetched on** | 2026-04-13 13:38:16 |
 
 ---
 

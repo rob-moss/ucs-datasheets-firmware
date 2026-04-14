@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Firmware Management Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_UCSM_CLI_Firmware_Management_Guide_4-3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-08 08:41:51 |
+| **Fetched on** | 2026-04-13 13:30:36 |
 
 ---
 
