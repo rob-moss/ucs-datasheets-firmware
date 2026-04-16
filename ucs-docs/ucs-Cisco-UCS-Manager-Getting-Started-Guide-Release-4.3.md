@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Getting Started Guide, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_ucsm_getting_started_guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:28:33 |
+| **Fetched on** | 2026-04-16 10:46:36 |
 
 ---
 

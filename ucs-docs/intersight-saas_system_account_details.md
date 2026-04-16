@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS System Account Details |
 | **URL** | https://intersight.com/help/saas/system/account_details |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260402103337138/docs/cloud/data/resources/settings/en/account_details.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260414151805446/docs/cloud/data/resources/settings/en/account_details.html |
 | **HTML Title** | Account Details |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_system_account_details.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:33:01 |
+| **Fetched on** | 2026-04-16 10:49:31 |
 
 ---
 

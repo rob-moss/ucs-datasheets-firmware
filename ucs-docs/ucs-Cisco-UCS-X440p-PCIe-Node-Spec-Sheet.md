@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/x440p-specsheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-04-13 13:38:43 |
+| **Fetched on** | 2026-04-16 10:52:01 |
 
 ---
 
@@ -26,18 +26,17 @@ computing/ucs-x-series-modular-system/datasheet-
 listing.html
 
 CISCO SYSTEMS
-170 WEST TASMAN DR.
+170 WEST TASMAN DR. 
 SAN JOSE, CA, 95134
 WWW.CISCO.COM
 
-PUBLICATION HISTORY
+PUBLICATION HISTORY 
 
-REV A.15
+REV A.16
 
-AUGUST 04, 2025
+APRIL 13, 2026
 
-
-
+ 
 STEP
 STEP
 STEP
@@ -63,10 +62,11 @@ SPARE PARTS  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 TECHNICAL SPECIFICATIONS  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  17
 Dimensions and Weight  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
 Environmental Specifications  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+DISCONTINUED EOL PRODUCTS  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  18
 
 2
 
-Cisco UCS X440P M6 PCIe Node
+Cisco UCS X440P PCIe Node
 
 OVERVIEW
 
@@ -160,9 +160,9 @@ GPU slots
 
 The Cisco UCS X440p PCIe Node mounts in a Cisco UCS X9508 chassis.
 
-Riser Type A (1 PCIe slots) for 1x dual slot GPU per riser
+n Riser Type A (1 PCIe slots) for 1x dual slot GPU per riser
 
-Riser Type B (2 PCIe slots) for 2x single slot GPU per riser
+n Riser Type B (2 PCIe slots) for 2x single slot GPU per riser
 
 Note: Not all risers are available in every server configuration option.
 
@@ -170,20 +170,19 @@ Please refer Table 3 for the complete GPU Cards PID lists
 
 Available GPUs
 
-■ NVIDIA
+n NVIDIA
 
-TESLA
+n TESLA
 
-Intel 
+n Intel 
 
-AMD
+n AMD
 
 Please refer Table 4 for the complete GPU Cards PID lists
 
 Power subsystem 
 
-Power is supplied from the Cisco UCS X9508 chassis power supplies. The 
-Cisco UCS X440p PCIe Node consumes a maximum of 1300 W.
+Power is supplied from the Cisco UCS X9508 chassis power supplies.
 
 Fans 
 
@@ -197,22 +196,23 @@ Cisco UCS X440p PCIe Node inventory, health, and system event logs.
 
 ACPI
 
-Front Indicators
-
-Management
-
 Advanced Configuration and Power Interface (ACPI) 4.0 Standard Supported. 
 ACPI states S0 and S5 are supported. There is no support for states S1 
 through S4.
 
-Status indicator
+Front Indicators
 
-Location indicator
+n Status indicator
 
-Cisco Intersight software (SaaS, Virtual Appliance and Private Virtual 
+n Location indicator
+
+Management
+
+n Cisco Intersight software (SaaS, Virtual Appliance and Private Virtual 
+
 Appliance)
 
-■ UCS Manager (UCSM) 4.3(4) or later
+n UCS Manager (UCSM) 4.3(4) or later
 
 Chassis
 
@@ -222,39 +222,26 @@ Cisco UCSX-440P PCIe Node
 
 5
 
-■
-■
-■
-■
-■
-■
-■
-■
 CONFIGURING the Cisco UCS X440p PCIe Node
 
 CONFIGURING the Cisco UCS X440p PCIe Node
 
 Follow these steps to configure the Cisco UCS X440p PCIe Node:
 
-STEP 1 CHOOSE BASE CISCO UCS X440p PCIe NODE SKU, page 7
+n STEP 1 CHOOSE BASE CISCO UCS X440p PCIe NODE SKU, page 7
 
-STEP 2 SELECT RISER CARDS (REQUIRED), page 8
+n STEP 2 SELECT RISER CARDS (REQUIRED), page 8
 
-STEP 3 ORDER GPU CARDS, page 9
+n STEP 3 ORDER GPU CARDS, page 9
 
-STEP 4 ORDER CISCO UCS X9416 X-FABRIC MODULES, page 11
+n STEP 4 ORDER CISCO UCS X9416 X-FABRIC MODULES, page 11
 
-STEP 5 CHOOSE OPTIONAL REAR MEZZANINE VIC/BRIDGE ADAPTERS, page 12
+n STEP 5 CHOOSE OPTIONAL REAR MEZZANINE VIC/BRIDGE ADAPTERS, page 12
 
 6
 
 Cisco UCSX-440P PCIe Node
 
-■
-■
-■
-■
-■
 CONFIGURING the Cisco UCS X440p PCIe Node
 
 STEP 1 CHOOSE BASE CISCO UCS X440p PCIe NODE SKU
@@ -291,19 +278,16 @@ They must be selected during product ordering.
 Please follow the steps on the following pages to order components such as the following, which 
 are required in a functional PCIe Node:
 
-GPUs
+n GPUs
 
-Riser Cards
+n Riser Cards
 
-Cisco UCS X9416 X-Fabric Modules
+n Cisco UCS X9416 X-Fabric Modules
 
 Cisco UCSX-440P PCIe Node
 
 7
 
-■
-■
-■
 CONFIGURING the Cisco UCS X440p PCIe Node
 
 STEP 2
@@ -319,58 +303,55 @@ Product ID (PID)
 Description
 
 UCSX-M6-MLB (Top Level Ordering PID)
-
-UCSX-RIS-A-440P
+UCSX-RIS-A-440P 
 
 Riser A for 1x dual slot GPU per riser, 440P PCIe node
 
-Riser1A (controlled with CPU1)
+n Riser1A (controlled with CPU1)
 
-Riser2A (controlled with CPU2)
+n Riser2A (controlled with CPU2)
 
 UCSX-RIS-B-440P
 
 Riser B for 2x single slot GPUs per riser, 440P PCIe node
 
-Riser1B (controlled with CPU1)
+n Riser1B (controlled with CPU1)
 
-Riser2B (controlled with CPU2)
+n Riser2B (controlled with CPU2)
 
 UCSX-M7-MLB (Top Level Ordering PID)
-
-UCSX-RIS-A-440P-D
+UCSX-RIS-A-440P-D 
 
 Riser A for 1x dual slot GPU per riser, 440P PCIe node
 
-Riser1A (controlled with CPU1)
+n Riser1A (controlled with CPU1)
 
-Riser2A (controlled with CPU2)
+n Riser2A (controlled with CPU2)
 
 UCSX-RIS-B-440P-D
 
 Riser B for 2x single slot GPUs per riser, 440P PCIe node
 
-Riser1B (controlled with CPU1)
+n Riser1B (controlled with CPU1)
 
-Riser2B (controlled with CPU2)
+n Riser2B (controlled with CPU2)
 
 UCSX-M8-MLB (Top Level Ordering PID)
-
-UCSX-RIS-A-440P-D
+UCSX-RIS-A-440P-D 
 
 Riser A for 1x dual slot GPU per riser, 440P PCIe node
 
-Riser1A (controlled with CPU1)
+n Riser1A (controlled with CPU1)
 
-Riser2A (controlled with CPU2)
+n Riser2A (controlled with CPU2)
 
 UCSX-RIS-B-440P-D
 
 Riser B for 2x single slot GPUs per riser, 440P PCIe node
 
-Riser1B (controlled with CPU1)
+n Riser1B (controlled with CPU1)
 
-Riser2B (controlled with CPU2)
+n Riser2B (controlled with CPU2)
 
 NOTE:  The PCIe Node requires both the risers to be configured and doesn't support 
 orderability without both risers included. Riser cards include all required power cables for 
@@ -380,18 +361,6 @@ supported GPUs.
 
 Cisco UCSX-440P PCIe Node
 
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
 CONFIGURING the Cisco UCS X440p PCIe Node
 
 STEP 3 ORDER GPU CARDS
@@ -407,23 +376,46 @@ GPU Product ID (PID) PID Description
 
 Riser Slot Compatibility
 
-Maximum 
-Number of GPUs 
-Per node
-
 UCSX-440P (M6 Servers)
-UCSX-GPU-T4-16
 UCSX-GPU-A16
 UCSX-GPU-A100-80
 
-NVIDIA T4 PCIE 75W 16GB
 NVIDIA A16 PCIE 250W 4X16GB
 TESLA A100, PASSIVE, 300W, 
 80GB
 
-UCSX-440P-D (M7 Severs)
+Riser 1A (Gen 4), Riser 2A (Gen 4)
+Riser 1A (Gen 4), Riser 2A (Gen 4)
+
+UCSX-440P-D (M7 Servers)
 UCSX-GPU-A16-D
 UCSX-GPUA100-80-D
+
+UCSX-GPU-H100-80
+
+UCSX-GPU-L4
+
+UCSX-GPU-L40
+
+UCSX-GPU-L40S
+
+UCSX-GPU-FLEX1401
+
+UCSX-GPU-FLEX1701
+
+UCSX-GPU-H100-NVL
+
+UCSX-440P-D (M8 Servers)
+UCSX-GPU-A16-D
+UCSX-GPU-L4
+
+UCSX-GPU-L402
+
+UCSX-GPU-L40S
+
+UCSX-GPU-MI2102
+
+Notes:
 
 NVIDIA A16 PCIE 250W 4X16GB
 TESLA A100, PASSIVE, 300W, 
@@ -450,43 +442,9 @@ NVIDIA L40 300W, 48GB wPWR
 CBL
 NVIDIA L40S: 350W, 48GB, 
 2-slot FHFL GPU
-
-2-slot FHFL GPU
 AMD Instinct MI210:300W, 
 64GB, 2-slot FHFL GPU
 
-UCSX-GPU-H100-80
-
-UCSX-GPU-L4
-
-UCSX-GPU-L40
-
-UCSX-GPU-L40S
-
-UCSX-GPU-FLEX1401
-
-UCSX-GPU-FLEX1701
-
-UCSX-GPU-H100-NVL
-
-UCSX-440P-D (M8 Severs)
-UCSX-GPU-A16-D
-UCSX-GPU-L4
-
-UCSX-GPU-L402
-
-UCSX-GPU-L40S
-
-UCSX-GPU-MI2102
-
-Notes:
-
-UCSX-GPU-H100-NVL3 NVIDIA H100 NVL, 400W, 94GB, 
-
-Riser 1B (Gen 4), Riser 2B (Gen 4)
-Riser 1A (Gen 4), Riser 2A (Gen 4)
-Riser 1A (Gen 4), Riser 2A (Gen 4)
-
 Riser 1A (Gen 4), Riser 2A (Gen 4)
 Riser 1A (Gen 4), Riser 2A (Gen 4)
 
@@ -513,19 +471,14 @@ Riser 1A (Gen 4), Riser 2A (Gen 4)
 
 Riser 1A (Gen 4), Riser 2A (Gen 4)
 
-Riser 1A (Gen 4), Riser 2A (Gen 4)
-
-4
-2
-2
+Maximum 
+Number of GPUs 
+Per node
 
 2
 2
 
 2
-
-4
-
 2
 
 2
@@ -536,10 +489,14 @@ Riser 1A (Gen 4), Riser 2A (Gen 4)
 
 2
 
-2
 4
 
 2
+
+2
+
+2
+4
 
 2
 
@@ -548,15 +505,13 @@ Riser 1A (Gen 4), Riser 2A (Gen 4)
 2
 
 1. Windows Server 2019 is not supported on 210C M7 and 410C M7 servers with Intel Flex 140 and 170 GPUs.
+2. Not supported with X210c compute node
 
 Cisco UCSX-440P PCIe Node
 
 9
 
 CONFIGURING the Cisco UCS X440p PCIe Node
-
-2. Not supported with X210c compute node
-3. Not supported with X410c compute node
 
 Caveats
 
@@ -566,6 +521,30 @@ NOTE:  Following Step 4 and Step 5 are optional only if the Cisco UCS X9508 Chas
 already has the UCS X9416 X-Fabric modules installed and the X-Series compute node 
 has one of the supported mezzanine adapters to connect to Cisco UCS X440p PCIe 
 node 
+
+Table 5   GPU Cards and Matching Cables Spare PIDs
+
+GPU Product ID (PID)
+
+Cable PID (Spare)
+
+UCSX-GPU-A16
+UCSX-GPU-A40
+UCSX-GPU-A100-80
+UCSX-GPU-H100-80
+UCSX-GPU-L40
+UCSX-GPU-L4
+UCSX-GPU-L40S
+UCSX-GPU-H100-NVL
+
+UCS-P100CBL-240M5=
+UCS-P100CBL-240M5=
+UCS-P100CBL-240M5=
+CBL-GPUH100-X440=
+CBL-L40GPU-C240M7=
+No cable needed
+CBL-GPUH100-X440=
+CBL-GPUH100-X440=
 
 10
 
@@ -580,9 +559,9 @@ Fabric Module. When a compute node is inserted into the chassis, the compute nod
 card plugs directly into the two Fabric Module slots (with no midplane) for PCIe connectivity to 
 the Cisco UCS X440p PCIe Node.
 
-Select X-Fabric Modules on the UCS X9508 chassis Table 5.
+Select X-Fabric Modules on the UCS X9508 chassis Table 6.
 
-Table 5   PIDs of the Risers
+Table 6   PIDs of the Risers
 
 Product ID (PID)1
 
@@ -610,10 +589,10 @@ The Cisco UCS X210c M7 Compute Node has one rear mezzanine adapter connector whi
 have a UCS VIC 15422 Mezz card that can be used as a second VIC card on the compute node for 
 network connectivity or as a connector to the X440p PCIe node via X-Fabric modules. The same 
 mezzanine slot on the compute node can also accommodate a pass-through mezzanine adapter 
-for X-Fabric which enables compute node connectivity to the X440p PCIE node. Refer to Table 6 
+for X-Fabric which enables compute node connectivity to the X440p PCIE node. Refer to Table 7 
 for supported adapters.
 
-Table 6   Available Rear Mezzanine Adapters  
+Table 7   Available Rear Mezzanine Adapters  
 
 Product ID(PID)
 
@@ -685,9 +664,9 @@ have a UCS VIC 14825/15422 Mezz card that can be used as a second VIC card on th
 node for network connectivity or as a connector to the X440p PCIe node via X-Fabric modules. 
 The same mezzanine slot on the compute node can also accommodate a pass-through mezzanine 
 adapter for X-Fabric which enables compute node connectivity to the X440p PCIE node. Refer to 
-Table 6 for supported adapters.
+Table 7 for supported adapters.
 
-Table 7   Available Rear Mezzanine Adapters  
+Table 8   Available Rear Mezzanine Adapters  
 
 Product ID(PID)
 
@@ -844,7 +823,7 @@ SPARE PARTS
 
 This section lists the upgrade and service-related parts for the Cisco UCS X440p PCIe Node. 
 
-Table 8   Spare Parts  
+Table 9   Spare Parts  
 
 Product ID (PID)
 
@@ -944,7 +923,7 @@ TECHNICAL SPECIFICATIONS
 
 Dimensions and Weight
 
-Table 9   Cisco UCS X440p PCIe Node Dimensions and Weight  
+Table 10  Cisco UCS X440p PCIe Node Dimensions and Weight  
 
 Parameter Value
 
@@ -962,19 +941,19 @@ Depth
 
 Weight 
 
-■ Minimally configured node weight = 12.84 lbs (5.83 kg)
+n Minimally configured node weight = 12.84 lbs (5.83 kg)
 
-Fully loaded PCIe Node with T4 GPU = 14.9 lb; minimum config with 1x T4 GPU = 12.9 lb
+n Fully loaded PCIe Node with T4 GPU = 14.9 lb; minimum config with 1x T4 GPU = 12.9 lb
 
-Fully loaded PCIe Node with A16 GPU = 17.1 lb; minimum config with 1X A16 GPU = 14.6 lb
+n Fully loaded PCIe Node with A16 GPU = 17.1 lb; minimum config with 1X A16 GPU = 14.6 lb
 
-Fully loaded PCIe Node with A40 GPU = 16.6 lb; minimum config with 1X A40 GPU = 14.4 lb
+n Fully loaded PCIe Node with A40 GPU = 16.6 lb; minimum config with 1X A40 GPU = 14.4 lb
 
-Fully loaded PCIe Node with A100 GPU = 17.9 lb; minimum config with 1X A100 GPU = 15 lb
+n Fully loaded PCIe Node with A100 GPU = 17.9 lb; minimum config with 1X A100 GPU = 15 lb
 
 Environmental Specifications
 
-Table 10  Cisco UCS X440p PCIe Node Environmental Specifications  
+Table 11  Cisco UCS X440p PCIe Node Environmental Specifications  
 
 Parameter
 
@@ -1009,21 +988,106 @@ For configuration-specific power specifications, use the Cisco UCS Power Calcula
 
 http://ucspowercalc.cisco.com
 
-NOTE:  The Cisco UCS X440p PCIe Node has a power cap of 1300 Watts for all 
-combinations of components. Also, the ambient temperature must be less than 35 oC 
-(95 oF).
+NOTE:  The ambient temperature must be less than 35 oC (95 oF).
 
 Cisco UCSX-440P PCIe Node
 
 17
 
-■
-■
-■
-■
-TECHNICAL SPECIFICATIONS
+DISCONTINUED EOL PRODUCTS
+
+DISCONTINUED EOL PRODUCTS
+
+Below is the list of parts were previously available for this product and are no longer sold. Please refer to 
+the EOL Bulletin Links via table below to determine if still supported.
+
+Table 12
+
+  EOS
+
+Product ID
+
+UCSX-GPU-A40
+
+Description
+
+EOL/EOS link
+
+TESLA A40 RTX, PASSIVE, 300W, 
+48GB, wPWR CBL
+
+UCSX-GPU-A40-D
+
+TESLA A40 RTX, PASSIVE, 300W, 
+48GB, wPWR CBL
+
+UCSX-GPU-FLEX140
+
+Intel GPU Flex 140, Gen4x8, 
+HHHL, 75W PCIe
+
+UCSX-GPU-FLEX170
+
+Intel GPU Flex 170, Gen4x16, 
+HHFL, 150W PCIe
+
+UCSX-GPU-H100-80
+
+NVIDIA H100: 350W, 80GB, 2-slot 
+FHFL GPU
+
+UCSX-GPU-H100-NVL
+
+NVIDIA H100 NVL, 400W, 94GB, 
+2-slot FHFL GPU
+
+UCSX-GPU-L40
+
+NVIDIA L40 300W, 48GB wPWR 
+CBL
+
+https://www.cisco.com/c/en/us/produ
+cts/collateral/servers-unified-computin
+g/ucs-x-series-modular-system/select-u
+cs-ucsx-accessories-eol.html
+https://www.cisco.com/c/en/us/produ
+cts/collateral/servers-unified-computin
+g/ucs-c-series-rack-servers/select-ucs-u
+csx-hci-accessories-eol.html
+https://www.cisco.com/c/en/us/produ
+cts/collateral/servers-unified-computin
+g/ucs-c-series-rack-servers/select-ucs-u
+csx-hci-accessories-eol15818.html
+https://www.cisco.com/c/en/us/produ
+cts/collateral/servers-unified-computin
+g/ucs-c-series-rack-servers/select-ucs-u
+csx-hci-accessories-eol15818.html
+https://www.cisco.com/c/en/us/produ
+cts/collateral/servers-unified-computin
+g/ucs-c-series-rack-servers/select-ucs-u
+csx-hci-accessories-eol.html
+https://www.cisco.com/c/en/us/produ
+cts/collateral/servers-unified-computin
+g/ucs-c-series-rack-servers/select-ucs-u
+csx-hci-accessories-eol15818.html
+https://www.cisco.com/c/en/us/produ
+cts/collateral/servers-unified-computin
+g/ucs-c-series-rack-servers/select-ucs-u
+csx-hci-accessories-eol15818.html
 
 18
+
+Cisco UCSX-440P PCIe Node
+
+DISCONTINUED EOL PRODUCTS
+
+Cisco UCSX-440P PCIe Node
+
+19
+
+DISCONTINUED EOL PRODUCTS
+
+20
 
 Cisco UCSX-440P PCIe Node
 

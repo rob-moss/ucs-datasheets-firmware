@@ -8,7 +8,7 @@
 | **HTML Title** | UCS X215c M8 Compute Node |
 | **Source file** | `ucs-docs-raw/html/ucs-x215c-m8-compute-node-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:40:07 |
+| **Fetched on** | 2026-04-16 10:52:34 |
 
 ---
 

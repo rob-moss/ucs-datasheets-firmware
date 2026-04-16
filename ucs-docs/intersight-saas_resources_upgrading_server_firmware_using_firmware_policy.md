@@ -8,7 +8,7 @@
 | **HTML Title** | Resources |
 | **Source file** | `upgrading_server_firmware_using_firmware_policy` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:32:17 |
+| **Fetched on** | 2026-04-16 10:49:07 |
 
 ---
 

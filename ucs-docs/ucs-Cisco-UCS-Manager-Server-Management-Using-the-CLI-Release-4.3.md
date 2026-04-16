@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Server Management Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_cisco_ucs_manager_server_mgmt_cli_guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:31:22 |
+| **Fetched on** | 2026-04-16 10:48:10 |
 
 ---
 
@@ -592,7 +592,39 @@ Changes to a boot policy might be propagated to all servers created with an upda
 
 ---
 
-## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_cli_guide_4_3/m_cli_configuring_server-related_policies1.html
+## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_cli_guide_4_3/m_cli_configuring_service_profiles.html
+
+## Service Profiles in UCS Manager   
+  
+A service profile defines a single server and its storage and networking characteristics. You can create a service profile for Cisco UCS Manager and UCS Mini. When a service profile is deployed to a server, UCS Manager automatically configures the server, adapters, fabric extenders, and fabric interconnects to match the configuration specified in the service profile. 
+
+A service profile includes four types of information: 
+
+  * Server definition: Defines the resources (e.g. a specific server or a blade inserted to a specific chassis) that are required to apply to the profile. 
+
+  * Identity information: Includes the UUID, MAC address for each virtual NIC (vNIC), and WWN specifications for each HBA. 
+
+  * Firmware revision specifications: Used when a certain tested firmware revision is required to be installed or for some other reason a specific firmware is used. 
+
+  * Connectivity definition: Configures network adapters, fabric extenders, and parent interconnects, however this information is abstract as it does not include the details of how each network component is configured. 
+
+
+The UCS system provides two types of service profiles: Service profiles that inherit server identity and service profiles that override server identity. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+A server can also show a Server Personality field in server properties. This field displays the server personality configuration of Hyperconverged Infrastructure (HCI). Cisco UCS M6 servers and later versions can function as either as a standard UCS servers or HCI servers.  The server personality field is informational cannot be reset in the UCS Manager GUI, indicating the specific configuration or role assigned to the server, and is only visible if a server personality is configured.  The UCS Manager CLI provides a command line option to revert the server back to a "no personality" state. For more information, see _Clearing the Server Personality Field_ section in [Cisco UCS Manager Server Management Using the CLI](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) guide. 
+
+* * *  
+  
+---|---
+
+---
+
+## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_cli_guide_4_3/m_cli_configuring_server-related_policies1.html
 
 ## Server BIOS Settings   
   
@@ -3440,7 +3472,7 @@ OS Watchdog Timer Timeout scope token-feature "OS Boot Watchdog Timer Timeout" s
 
 ---
 
-## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_cli_guide_4_3/m_cli_firmware_upgrades.html
+## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_cli_guide_4_3/m_cli_firmware_upgrades.html
 
 ## Firmware Upgrades   
   
@@ -3461,7 +3493,7 @@ You can upgrade the firmware through Auto Install, packages in service profiles,
 
 ---
 
-## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_cli_guide_4_3/m_cli_managing_diagnostics.html
+## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/b_cisco_ucs_manager_server_mgmt_cli_guide_4_3/m_cli_managing_diagnostics.html
 
 ## Overview of Cisco UCS Manager Diagnostics
 
@@ -3473,7 +3505,7 @@ The default policy only has one memory test. The default parameters of the memor
 
 ---
 
-## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/m_cli_configuring_server-related_policies1.html
+## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/m_cli_configuring_server-related_policies1.html
 
 ## Server BIOS Settings 
 
@@ -6321,7 +6353,7 @@ OS Watchdog Timer Timeout scope token-feature "OS Boot Watchdog Timer Timeout" s
 
 ---
 
-## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/m_server_management_overview-4_1.html
+## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/m_server_management_overview-4_1.html
 
 ## Server Management Overview  
   
@@ -6478,7 +6510,7 @@ To ensure the optimum server performance, you can configure the amount of power 
 
 ---
 
-## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/m_cli_managing_power_in_cisco_ucs.html
+## Page 18: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/m_cli_managing_power_in_cisco_ucs.html
 
 ## Power Capping in Cisco UCS
 
@@ -6524,7 +6556,7 @@ Global Power Profiling  |  Specifies how the power cap values of the servers are
 
 ---
 
-## Page 18: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/m_cli_configuring_server_boot.html
+## Page 19: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/m_cli_configuring_server_boot.html
 
 ##  Boot Policy  
   
@@ -6561,7 +6593,7 @@ Changes to a boot policy might be propagated to all servers created with an upda
 
 ---
 
-## Page 19: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/m_cli_managing_blade_servers.html
+## Page 20: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/m_cli_managing_blade_servers.html
 
 ## Blade Server Management   
   
@@ -6575,7 +6607,7 @@ If a blade server slot in a chassis is empty, Cisco UCS Manager provides informa
 
 ---
 
-## Page 20: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/m_cli_managing_licenses.html
+## Page 21: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/m_cli_managing_licenses.html
 
 ## Licenses
 
@@ -6697,7 +6729,7 @@ To avoid inconsistencies during failover, we recommend that both Fabric Intercon
 
 ---
 
-## Page 21: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/m_cli_firmware_upgrades.html
+## Page 22: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/m_cli_firmware_upgrades.html
 
 ## Firmware Upgrades 
 
@@ -6715,5 +6747,37 @@ Beginning with Cisco UCS Manager Release 4.2(3), Cisco is releasing unified Cisc
 
 
 You can upgrade the firmware through Auto Install, packages in service profiles, using the firmware automatic synchronization server policy, and directly at endpoints. For more information on guidelines and installing firmware, see the Cisco UCS Firmware Management Guide. 
+
+---
+
+## Page 23: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Server-Mgmt/4-3/m_cli_configuring_service_profiles.html
+
+## Service Profiles in UCS Manager 
+
+A service profile defines a single server and its storage and networking characteristics. You can create a service profile for Cisco UCS Manager and UCS Mini. When a service profile is deployed to a server, UCS Manager automatically configures the server, adapters, fabric extenders, and fabric interconnects to match the configuration specified in the service profile. 
+
+A service profile includes four types of information: 
+
+  * Server definition: Defines the resources (e.g. a specific server or a blade inserted to a specific chassis) that are required to apply to the profile. 
+
+  * Identity information: Includes the UUID, MAC address for each virtual NIC (vNIC), and WWN specifications for each HBA. 
+
+  * Firmware revision specifications: Used when a certain tested firmware revision is required to be installed or for some other reason a specific firmware is used. 
+
+  * Connectivity definition: Configures network adapters, fabric extenders, and parent interconnects, however this information is abstract as it does not include the details of how each network component is configured. 
+
+
+The UCS system provides two types of service profiles: Service profiles that inherit server identity and service profiles that override server identity. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+A server can also show a Server Personality field in server properties. This field displays the server personality configuration of Hyperconverged Infrastructure (HCI). Cisco UCS M6 servers and later versions can function as either as a standard UCS servers or HCI servers.  The server personality field is informational cannot be reset in the UCS Manager GUI, indicating the specific configuration or role assigned to the server, and is only visible if a server personality is configured.  The UCS Manager CLI provides a command line option to revert the server back to a "no personality" state. For more information, see _Clearing the Server Personality Field_ section in [Cisco UCS Manager Server Management Using the CLI](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) guide. 
+
+* * *  
+  
+---|---
 
 ---

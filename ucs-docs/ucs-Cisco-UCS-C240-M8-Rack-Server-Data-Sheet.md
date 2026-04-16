@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS C240 M8 Rack Server Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-c240-m8-rack-server-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:39:49 |
+| **Fetched on** | 2026-04-16 10:52:27 |
 
 ---
 

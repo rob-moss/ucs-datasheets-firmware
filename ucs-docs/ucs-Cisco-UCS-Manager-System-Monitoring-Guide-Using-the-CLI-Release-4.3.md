@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager System Monitoring Guide Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b-ucsm-cli-system-monitoring-guide-4-3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:31:37 |
+| **Fetched on** | 2026-04-16 10:48:20 |
 
 ---
 
@@ -20,8 +20,8 @@
 
 ## Page 2: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/System-Monitoring/4-3/b-ucsm-cli-system-monitoring-guide-4-3/m_preface.html
 
-## Audience
-
+## Audience  
+  
 This guide is intended primarily for data center administrators with responsibilities and expertise in one or more of the following: 
 
   * Server administration 

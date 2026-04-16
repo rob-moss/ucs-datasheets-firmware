@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight Appliance Settings |
 | **URL** | https://intersight.com/help/appliance/settings |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260402103337138/docs/onprem/data/articles/settings/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260414151805446/docs/onprem/data/articles/settings/en/index.html |
 | **HTML Title** | Appliance Settings |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_settings.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:33:17 |
+| **Fetched on** | 2026-04-16 10:49:41 |
 
 ---
 

@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/x410cm8-specsheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-04-13 13:38:33 |
+| **Fetched on** | 2026-04-16 10:51:58 |
 
 ---
 
@@ -26,18 +26,17 @@ computing/ucs-x-series-modular-system/datasheet-
 listing.html
 
 CISCO SYSTEMS
-170 WEST TASMAN DR.
+170 WEST TASMAN DR. 
 SAN JOSE, CA, 95134
 WWW.CISCO.COM
 
-PUBLICATION HISTORY
+PUBLICATION HISTORY 
 
-REV A.02
+REV A.03
 
-DECEMBER 05, 2025
+APRIL 14, 2026
 
-
-
+ 
 OVERVIEW  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
 DETAILED VIEWS  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
 Cisco UCS X410c M8 Compute Node Front View  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .4
@@ -168,26 +167,30 @@ Chassis
 
 CPU
 
-Memory
-
-Rear Mezzanine Adapter 
-(Optional)
-
 The Cisco UCS X410c M8 Compute Node mounts in a Cisco UCS X9508 chassis.
 
-Four Intel® Xeon® 6 Scalable Processors with up to 86 cores per 
+■ Four Intel® Xeon® 6 Scalable Processors with up to 86 cores per 
+
 processor
-Each CPU has 8 channels with up to 2 DIMMs per channel, for up to 16 
+
+■ Each CPU has 8 channels with up to 2 DIMMs per channel, for up to 16 
+
 DIMMs per CPU.
 
 ■ UPI Links: Up to 3 at up to 24GT/s
 
-64 total DDR5-6400 MT/s DIMM slots (16 per CPU) with Intel® Xeon® 6 
+Memory
+
+■ 64 total DDR5-6400 MT/s DIMM slots (16 per CPU) with Intel® Xeon® 6 
+
 Scalable Processors
+
+Rear Mezzanine Adapter 
+(Optional)
 
 ■ Up to 16TB of main memory with 64x 256 GB DDR5-6400 Memory DIMMs
 
-Cisco UCS 5th Gen VIC 15422 can occupy the server's mezzanine slot at 
+■ Cisco UCS 5th Gen VIC 15422 can occupy the server's mezzanine slot at 
 the bottom rear of the chassis. An included bridge card extends this VIC's 
 two 50 Gbps of network connections through IFM connectors, bringing 
 the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per 
@@ -199,12 +202,14 @@ cards
 The modular LAN on motherboard (mLOM) cards is located at the rear of the 
 compute node.
 
-Cisco UCS VIC (Virtual Interface Card) 15420 occupies the server's 
+■ Cisco UCS VIC (Virtual Interface Card) 15420 occupies the server's 
+
 modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps (two 
 25Gbps) of unified fabric connectivity to each of the chassis’ Intelligent 
 Fabric Modules (IFMs) for 100 Gbps connectivity per server with secure 
 boot technology.
-Cisco UCS VIC 15230 occupies the server's modular LAN on motherboard 
+
+■ Cisco UCS VIC 15230 occupies the server's modular LAN on motherboard 
 (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to 
 each of the chassis’ Intelligent Fabric Modules (IFMs) for 100 Gbps 
 connectivity per server with secure boot technology.
@@ -213,12 +218,11 @@ Front Mezzanine
 Adapters
 
 One front mezzanine connector that supports:
-
-EDSFF E3.S NVMe pass-through controller
+■ EDSFF E3.S NVMe pass-through controller
 
 ■ NVMe pass-through controller for U.3 NVMe drives
 
-RAID controller with 4GB cache for SSD and mix of SSD and NVMe drives
+■ RAID controller with 4GB cache for SSD and mix of SSD and NVMe drives
 
 ■ No front mezzanine
 
@@ -229,14 +233,6 @@ Cisco UCS X410c M8 Compute Node
 
 5
 
-■
-■
-■
-■
-■
-■
-■
-■
 COMPUTE NODE STANDARD CAPABILITIES and FEATURES
 
 Table 1   Capabilities and Features (continued)
@@ -277,8 +273,7 @@ OCuLink port to the transition serial USB and video (SUV) octopus cable.
 
 Power subsystem 
 
-Power is supplied from the Cisco UCS X9508 chassis power supplies. The 
-Cisco UCS X410c M8 Compute Node consumes a maximum of 2500 W.
+Power is supplied from the Cisco UCS X9508 chassis power supplies.
 
 Fans 
 
@@ -294,9 +289,9 @@ Firmware standards
 
 ■ UEFI Spec       2.9
 
-ACPI               6.5
+■ ACPI               6.5
 
-SMBIOS Ver     3.7
+■ SMBIOS Ver     3.7
 
 Baseboard Management 
 Controller (BMC)
@@ -311,9 +306,9 @@ Advanced Configuration and Power Interface (ACPI) 6.5 Standard Supported.
 ACPI states S0 and S5 are supported. There is no support for states S1 
 through S4.
 
-Power button and indicator
-System activity indicator
-Location button and indicator
+■ Power button and indicator
+■ System activity indicator
+■ Location button and indicator
 
 Management
 
@@ -329,54 +324,38 @@ UCSX-S9108-100G fabric interconnects.
 
 Cisco UCS X410c M8 Compute Node
 
-■
-■
-■
-■
-■
 CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE
 
 CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE
 
 Follow these steps to configure the Cisco UCS X410c M8 Compute Node:
 
-STEP 1 CHOOSE BASE SYSTEM, page 8
+■ STEP 1 CHOOSE BASE SYSTEM, page 8
 
-STEP 2 CHOOSE CPU(S), page 9
+■ STEP 2 CHOOSE CPU(S), page 9
 
-STEP 3 CHOOSE MEMORY, page 10
+■ STEP 3 CHOOSE MEMORY, page 10
 
-STEP 4 CHOOSE OPTIONAL FRONT MEZZANINE ADAPTER, page 13
+■ STEP 4 CHOOSE OPTIONAL FRONT MEZZANINE ADAPTER, page 13
 
-STEP 5 CHOOSE REAR MEZZANINE ADAPTER, page 14
+■ STEP 5 CHOOSE REAR MEZZANINE ADAPTER, page 14
 
-STEP 6 CHOOSE OPTIONAL DRIVES, page 19
+■ STEP 6 CHOOSE OPTIONAL DRIVES, page 19
 
-STEP 7 CHOOSE M.2 MODULE SSDs AND OPTIONAL DRIVES, page 21
+■ STEP 7 CHOOSE M.2 MODULE SSDs AND OPTIONAL DRIVES, page 21
 
-STEP 8 CHOOSE OPTIONAL TRUSTED PLATFORM MODULE, page 23
+■ STEP 8 CHOOSE OPTIONAL TRUSTED PLATFORM MODULE, page 23
 
-STEP 9 CHOOSE OPERATING SYSTEM AND VALUE-ADDED SOFTWARE, page 24
+■ STEP 9 CHOOSE OPERATING SYSTEM AND VALUE-ADDED SOFTWARE, page 24
 
-STEP 10 CHOOSE OPTIONAL OPERATING SYSTEM MEDIA KIT, page 27
+■ STEP 10 CHOOSE OPTIONAL OPERATING SYSTEM MEDIA KIT, page 27
 
- SUPPLEMENTAL MATERIAL, page 28
+■  SUPPLEMENTAL MATERIAL, page 28
 
 Cisco UCS X410c M8 Compute Node
 
 7
 
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
 CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE
 
 STEP 1 CHOOSE BASE SYSTEM
@@ -426,31 +405,31 @@ mezzanine adapters.
 
 NOTE:  
 
-A base Cisco UCS X410c M8 Compute Node ordered in Table 3 does not include any 
+■ A base Cisco UCS X410c M8 Compute Node ordered in Table 3 does not include any 
+
 components or options. These must be selected during product ordering.
 
-Please follow the CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE on page 7, 
+■ Please follow the CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE on page 7, 
+
 which are required in a functional compute node.
 
 8
 
 Cisco UCS X410c M8 Compute Node
 
-■
-■
 CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE
 
 STEP 2 CHOOSE CPU(S)
 
 The standard CPU features are:
 
-Up to 86 cores
+■ Up to 86 cores
 
-Cache size of up to 336 MB
+■ Cache size of up to 336 MB
 
-Power: Up to 350 Watts
+■ Power: Up to 350 Watts
 
-UPI Links: Up to 3 at up to 24GT/s
+■ UPI Links: Up to 3 at up to 24GT/s
 
 Select CPUs
 
@@ -577,10 +556,6 @@ Cisco UCS X410c M8 Compute Node
 
 9
 
-■
-■
-■
-■
 CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE
 
 STEP 3 CHOOSE MEMORY
@@ -609,14 +584,14 @@ DRAM fab density
 
 Memory type
 
-Memory DRAM DIMM/MRDIMM 
+Memory DRAM DIMM 
 organization
 
 Maximum number of DRAM 
-DIMM/MRDIMM per server
+DIMM per server
 
-DRAM DIMM/MRDIMM Densities 
-and Ranks
+DRAM DIMM Densities and 
+Ranks
 
 Maximum system memory 
 capacity 
@@ -720,14 +695,14 @@ Memory configurations and mixing rules
 
 ■ Golden Rule: Memory on every CPU socket shall be configured identically.
 
-For full details on supported memory configurations, count rules, population rules and mixing rules see 
+■ For full details on supported memory configurations, count rules, population rules and mixing rules see 
+
 the Intel M8 Memory guide.
 
 12
 
 Cisco UCS X410c M8 Compute Node
 
-■
 CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE
 
 STEP 4 CHOOSE OPTIONAL FRONT MEZZANINE ADAPTER
@@ -751,9 +726,9 @@ UCS X10c Compute Pass-Through Controller (Front)
 
 Front Mezzanine
 
-Supports up to 6 NVMe drives only
+■ Supports up to 6 NVMe drives only
 
-Does not support RAID controller
+■ Does not support RAID controller
 
 UCSX-RAID-M1L6
 
@@ -761,12 +736,13 @@ UCSX-RAID-M1L6
 
 Front Mezzanine
 
-If SAS/SATA is selected, then this controller must be 
+■ If SAS/SATA is selected, then this controller must be 
+
 selected
 
-Supports up to 6 U.3 NVMe drives
+■ Supports up to 6 U.3 NVMe drives
 
-RAID levels (0, 1, 5, 6, 10, and 50) for 6 SAS/SATA/U.3 
+■ RAID levels (0, 1, 5, 6, 10, and 50) for 6 SAS/SATA/U.3 
 NVMe drives**, or optionally up to 2 U.3 NVMe drives 
 (drive slots 5-6) in pass-through mode
 
@@ -776,9 +752,9 @@ UCS X10c Compute Pass Through Controller for E3.S (Front)
 
 Front Mezzanine
 
-Supports a maximum of 9 E3.S drives
+■ Supports a maximum of 9 E3.S drives
 
-Cannot mix with SATA/SAS/NVMe drives
+■ Cannot mix with SATA/SAS/NVMe drives
 
 Approved Configurations
 
@@ -790,18 +766,12 @@ Cisco UCS X410c M8 Compute Node
 
 13
 
-■
-■
-■
-■
-■
-■
-■
 CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE
 
 STEP 5 CHOOSE REAR MEZZANINE ADAPTER
 
-The Cisco UCS X410c M8 Compute Node must be ordered with a Cisco VIC mLOM Adapter. The 
+■ The Cisco UCS X410c M8 Compute Node must be ordered with a Cisco VIC mLOM Adapter. The 
+
 adapter is located at the back.
 
 Select Rear mLOM Adapter from Table 8
@@ -841,10 +811,11 @@ mLOM
 
 NOTE:  
 
-There is no backplane in the Cisco UCS X9508 chassis; thus, the compute nodes 
+■ There is no backplane in the Cisco UCS X9508 chassis; thus, the compute nodes 
+
 directly connect to the IFMs using Orthogonal Direct connectors.
 
-Figure 8 shows the location of the mLOM and rear mezzanine adapters on the 
+■ Figure 8 shows the location of the mLOM and rear mezzanine adapters on the 
 Cisco UCS X410c M8 Compute Node. The bridge adapter connects the mLOM 
 adapter to the rear mezzanine adapter.
 
@@ -856,12 +827,10 @@ Approved Configurations
 
 Cisco UCS X410c M8 Compute Node
 
-■
-■
-■
 CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE
 
-The Cisco UCS X410c M8 Compute Node has one rear mezzanine adapter connector which can 
+■ The Cisco UCS X410c M8 Compute Node has one rear mezzanine adapter connector which can 
+
 accommodate a UCS VIC 15422 Mezz card that can be used as a second VIC card on the compute 
 node for network connectivity.
 
@@ -925,7 +894,6 @@ Cisco UCS X410c M8 Compute Node
 
 15
 
-■
 CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE
 
 Table 10  Throughput Per UCS X410c M8 Server
@@ -1304,11 +1272,11 @@ STEP 6 CHOOSE OPTIONAL DRIVES
 
 The standard storage drive features are:
 
-2.5-inch small form factor drives or E3.S 1T NVMe drives
+■ 2.5-inch small form factor drives or E3.S 1T NVMe drives
 
-Hot-pluggable
+■ Hot-pluggable
 
-Drives come mounted in sleds
+■ Drives come mounted in sleds
 
 Select Drives
 
@@ -1360,11 +1328,20 @@ UCSX-NVE112T8K1P
 UCSX-NVE11T6K1P
 UCSX-NVE13T2K1P
 UCSX-NVE16T4K1P
+UCSX-NVE11T6S1P
+UCSX-NVE13T2S1P
 
-12.8TB E3.S1T KCD8XPJE HgPerf HgEnd Gen5 3X NVMe (SIE SCEF)
+12.8TB E3.S1T KCD8XPJE HgPerf HgEnd Gen5 3X NVMe (SIE SCEF) NVMe
+NVMe
 1.6TB E3.S1T KCD8XPJE HgPerf HgEnd Gen5 3X NVMe (SIE SCEF)
+NVMe
 3.2TB E3.S1T KCD8XPJE HgPerf HgEnd Gen5 3X NVMe (SIE SCEF)
+NVMe
 6.4TB E3.S1T KCD8XPJE HgPerf HgEnd Gen5 3X NVMe (SIE SCEF)
+NVMe
+1.6TB E3.S1T PM1745 HgPerf HgEnd Gen5 3X NVMe (TCG OPAL)
+NVMe
+3.2TB E3.S1T PM1745 HgPerf HgEnd Gen5 3X NVMe (TCG OPAL)
 
 SATA
 SATA
@@ -1372,13 +1349,10 @@ SATA
 SATA
 SATA
 
-NVMe
-NVMe
-NVMe
-NVMe
+SATA
+SATA
 
-SATA
-SATA
+Cisco UCS X410c M8 Compute Node
 
 6G
 
@@ -1392,6 +1366,13 @@ SATA
 
 6G
 6G
+
+E3.S
+E3.S
+E3.S
+E3.S
+E3.S
+E3.S
 
 480GB
 960GB
@@ -1402,23 +1383,15 @@ SATA
 240GB
 1.9TB
 
-E3.S
-E3.S
-E3.S
-E3.S
-
 12.8TB
 1.6TB
 3.2TB
 6.4TB
-
-Cisco UCS X410c M8 Compute Node
+1.6TB
+3.2TB
 
 19
 
-■
-■
-■
 CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE
 
 Table 11  Available Drive Options (continued) 
@@ -1432,9 +1405,55 @@ Type
 
 Speed  Size
 
+E3.S
+E3.S
+
+NVMe
+NVMe
+
+6.4TB E3.S1T PM1745 HgPerf HgEnd Gen5 3X NVMe (TCG OPAL)
+12.8TB E3.S1T PM1745 HgPerf HgEnd Gen5 3X NVMe (TCG OPAL)
+
+UCSX-NVE16T4S1P
+UCSX-NVE112T8S1P
+NVMe 2.5
+UCSX-NVB1T6M2P
+UCSX-NVB3T2M2P
+UCSX-NVB1T9M2V
+UCSX-NVB3T8M2V
+UCSX-NVB7T6M2V
+UCSX-NVB1T9M2V9
+UCSX-NVB3T8M2V9
+UCSX-NVB7T6M2V9
 Accessories/spare included with drives: Drive blanks, either UCSC-BBLKD-M7 for 2.5" modules or 
 UCSC-E3S1T-F for the E3.S mezzanine are included for unpopulated drive slots on configured systems.  
 They must be ordered separately when ordering a front mezzanine as a spare.
+
+NVMe U.3
+1.6TB 2.5in U.3 15mm Micron 7500 Hg Perf Hg End 3X NVMe
+NVMe U.3
+3.2TB 2.5in U.3 15mm Micron 7500 Hg Perf Hg End 3X NVMe
+NVMe U.3
+1.9TB 2.5in U.3 15mm Micron 7500 Hg Perf Med End 1X NVMe
+NVMe U.3
+3.8TB 2.5in U.3 15mm Micron 7500 Hg Perf Med End 1X NVMe
+7.6TB 2.5in U.3 15mm Micron 7500 Hg Perf Med End 1X NVMe
+NVMe U.3
+1.9TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X NVMe FIPS NVMe U.3
+3.8TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X NVMe FIPS NVMe U.3
+7.6TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X NVMe FIPS NVMe U.3
+
+6.4TB
+12.8TB
+
+1.6TB
+3.2TB
+1.9TB
+3.8TB
+7.6TB
+1.9TB
+3.8TB
+7.6TB
 
 Notes:
 
@@ -1460,32 +1479,34 @@ Cisco UCS X410c M8 Compute Node
 
 STEP 7 CHOOSE M.2 MODULE SSDs AND OPTIONAL DRIVES
 
-Cisco 6 GB/s SATA Boot-Optimized M.2 RAID Controller (included): Boot-Optimized RAID controller 
+■ Cisco 6 GB/s SATA Boot-Optimized M.2 RAID Controller (included): Boot-Optimized RAID controller 
 (UCSX-M2I-HWRD-FPS) for hardware RAID across two SATA M.2 storage modules. The Boot-Optimized 
 RAID controller plugs into the motherboard and the M.2 SATA drives plug into the Boot-Optimized RAID 
 controller.
 
-Instead of RAID Controller
+■ Instead of RAID Controller
 
 :
 
 NOTE:  
 
-The UCSX-M2-HWRD-FPS is automatically included with the server configuration
+■ The UCSX-M2-HWRD-FPS is automatically included with the server configuration
 
-The UCSX-M2-HWRD-FPS controller supports RAID 1 and JBOD mode and is available 
+■ The UCSX-M2-HWRD-FPS controller supports RAID 1 and JBOD mode and is available 
+
 only with 240GB, 480GB, and 960GB M.2 SATA SSDs.
 
-Cisco IMM is supported for configuring volumes and monitoring of the controller and 
+■ Cisco IMM is supported for configuring volumes and monitoring of the controller and 
+
 installed SATA M.2 drives
 
 ■ Hot-plug replacement is not supported. The compute node must be powered off to 
 
 replace. 
 
-If selected, the M.2 NVMe module replaces the M.2 RAID Controller.
+■ If selected, the M.2 NVMe module replaces the M.2 RAID Controller.
 
-The NVMe module does not support RAID
+■ The NVMe module does not support RAID
 
 Table 12  Front Panel with M.2 options
 
@@ -1501,19 +1522,21 @@ UCSX-M2-PT-FPN
 
 UCSX Front Panel w/M.2 Pass Through Controller for NVME drive
 
-Select Cisco M.2 drives: Order one or two matching M.2 drives. This connector accepts the 
+■ Select Cisco M.2 drives: Order one or two matching M.2 drives. This connector accepts the 
+
 boot-optimized RAID controller (see Table 12). Each boot-optimized RAID controller can accommodate 
 up to two M.2 drives shown in Table 13.
 
 NOTE:  
 
-Each boot-optimized RAID controller can accommodate up to two M.2 drives 
+■ Each boot-optimized RAID controller can accommodate up to two M.2 drives 
+
 shown in Table 13. The boot-optimized RAID controller plugs into the 
 motherboard.
 
-It is recommended that M.2 drives be used as boot-only devices.
+■ It is recommended that M.2 drives be used as boot-only devices.
 
-The M.2 drives can boot in UEFI mode only. Legacy boot mode is not supported.
+■ The M.2 drives can boot in UEFI mode only. Legacy boot mode is not supported.
 
 Table 13  M.2 Drives
 
@@ -1545,17 +1568,6 @@ Cisco UCS X410c M8 Compute Node
 
 21
 
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
 CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE
 
 Table 13  M.2 Drives
@@ -1613,14 +1625,16 @@ TPM 2.0 voids the Microsoft certification.
 
 NOTE:  
 
-The TPM module used in this system conforms to TPM v2.0 as defined by the 
+■ The TPM module used in this system conforms to TPM v2.0 as defined by the 
+
 Trusted Computing Group (TCG). 
 
-TPM installation is supported after factory. However, a TPM is installed with a 
+■ TPM installation is supported after factory. However, a TPM is installed with a 
+
 one-way screw and cannot be replaced, upgraded, or moved to another compute 
 node. 
 
-If a Cisco UCS X410c M8 Compute Node with a TPM is returned, the replacement 
+■ If a Cisco UCS X410c M8 Compute Node with a TPM is returned, the replacement 
 Cisco UCS X410c M8 Compute Node must be ordered with a new TPM. If there is 
 no existing TPM in the Cisco UCS X410c M8 Compute Node, you can install a TPM 
 2.0. Refer to the following document for Installation location and instructions:
@@ -1632,18 +1646,16 @@ Cisco UCS X410c M8 Compute Node
 
 23
 
-■
-■
-■
 CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE
 
 STEP 9 CHOOSE OPERATING SYSTEM AND VALUE-ADDED SOFTWARE
 
-Operating System (Table 15)
+■ Operating System (Table 15)
 
 NOTE:  
 
-See this link for operating system guidance: 
+■ See this link for operating system guidance: 
+
 https://ucshcltool.cloudapps.cisco.com/public/
 
 Table 15  Operating System 
@@ -1742,8 +1754,6 @@ RHEL Resilent Storage (1-2 CPU); Premium 3-yr SnS Reqd
 
 Cisco UCS X410c M8 Compute Node
 
-■
-■
 CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE
 
 Table 15  Operating System (continued)
@@ -2011,16 +2021,14 @@ Cisco UCS X410c M8 Compute Node
 
 UPGRADING or REPLACING CPUs and MEMORY
 
-Refer to Cisco UCS X410c M8 Server Installation and Service Guide to upgrading or replacing CPUs.
+■ Refer to Cisco UCS X410c M8 Server Installation and Service Guide to upgrading or replacing CPUs.
 
-Refer to Cisco UCS X410c M8 Server Installation and Service Guide to upgrading or replacing Memory.
+■ Refer to Cisco UCS X410c M8 Server Installation and Service Guide to upgrading or replacing Memory.
 
 Cisco UCS X410c M8 Compute Node
 
 31
 
-■
-■
 TECHNICAL SPECIFICATIONS
 
 TECHNICAL SPECIFICATIONS
@@ -2049,9 +2057,9 @@ Weight
 
 The weight depends on the components installed:
 
-■ Minimally configured compute node weight: 25 lb (11.34 kg)
+■ Minimally configured compute node weight: 29 lb (13.1 kg)
 
-Fully configured compute node weight: 42 lb (19.05 kg)
+■ Fully configured compute node weight: 36 lb (16.32 kg)
 
 Environmental Specifications
 
@@ -2065,10 +2073,20 @@ Operating temperature
 
 Supported operating temperatures depend on the compute node's memory:
 
-For 256GB DDR5 DIMMs: 50° to 89.6° F (10° to 32° C) at 0 to 10,000
+■ For 256GB DDR5 DIMMs: 50° to 89.6° F (10° to 32° C) at 0 to 10,000
 
-All other memory configurations: 50° to 95° F (10° to 35° C) at 0 to 
+■ All other memory configurations: 50° to 95° F (10° to 35° C) at 0 to 
+
 10,000
+
+■ For Granite Rapids CPUs:
+
+• With full HDDs installed, 50° to 95°F(10°to 35° C) all CPU SKUs, 
+except for 330W and 350W XCC SKUs: 50° to 90° F (10°to 32° C)
+
+• With less than full HDDs installed, and for all CPU SKUs: 50° to 95° F 
+
+(10° to 35° C)
 
 Non-operating temperature
 
@@ -2076,7 +2094,7 @@ Non-operating temperature
 
 Operating humidity
 
-5% to 90% non-condensing
+5% to 93% non-condensing
 
 Non-operating humidity
 
@@ -2099,9 +2117,6 @@ http://ucspowercalc.cisco.com
 
 Cisco UCS X410c M8 Compute Node
 
-■
-■
-■
 TECHNICAL SPECIFICATIONS
 
 Cisco UCS X410c M8 Compute Node
@@ -2111,6 +2126,18 @@ Cisco UCS X410c M8 Compute Node
 TECHNICAL SPECIFICATIONS
 
 34
+
+Cisco UCS X410c M8 Compute Node
+
+TECHNICAL SPECIFICATIONS
+
+Cisco UCS X410c M8 Compute Node
+
+35
+
+TECHNICAL SPECIFICATIONS
+
+36
 
 Cisco UCS X410c M8 Compute Node
 

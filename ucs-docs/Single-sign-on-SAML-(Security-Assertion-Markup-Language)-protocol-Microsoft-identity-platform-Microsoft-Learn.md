@@ -8,7 +8,7 @@
 | **HTML Title** | Single sign-on SAML (Security Assertion Markup Language) protocol - Microsoft identity platform | Microsoft Learn |
 | **Source file** | `ucs-docs-raw/html/single-sign-on-saml-protocol.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:44:09 |
+| **Fetched on** | 2026-04-16 10:54:11 |
 
 ---
 

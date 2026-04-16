@@ -8,7 +8,7 @@
 | **HTML Title** | Servers - Unified Computing - Cisco UCS 2408 Fabric Extender Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-742624.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:40:34 |
+| **Fetched on** | 2026-04-16 10:52:55 |
 
 ---
 
@@ -702,7 +702,7 @@ Bias-Free Language
 
 ### Bias-Free Language
 
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
 
 __ __ __ __
 

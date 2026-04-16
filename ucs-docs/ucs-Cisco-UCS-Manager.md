@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager |
 | **Source file** | `ucs-docs-raw/html/series.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:40:20 |
+| **Fetched on** | 2026-04-16 10:52:44 |
 
 ---
 
@@ -153,6 +153,7 @@ use JS to put chosen tab in here or hide
 
 #### Release Notes
 
+  * [Release Notes for Cisco UCS Manager, Release 4.2 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/cisco-ucs-manager-rn-4-2.html)14-Apr-2026updated
   * [Release Notes for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-6_0.html)27-Mar-2026updated
   * [Release Bundle Contents for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-6-0.html)27-Mar-2026updated
   * [Release Notes for Cisco UCS Virtual Interface Card Drivers, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/VIC/6-0/b-release-notes-for-cisco-ucs-vic-drivers-rel-6-0.html)16-Mar-2026updated
@@ -161,7 +162,6 @@ use JS to put chosen tab in here or hide
   * [Release Bundle Contents for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-4-3.html)23-Feb-2026
   * [Cisco UCS Manager Cross-Version Firmware Support, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cross-version-fw-support.html)18-Feb-2026
   * [Cisco UCS Manager Internal Dependencies, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cisco-ucs-manager-internal-dependencies-release-6-0.html)17-Feb-2026
-  * [Release Notes for Cisco UCS Manager, Release 4.2 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/cisco-ucs-manager-rn-4-2.html)23-Sep-2025
   * [Release Bundle Contents for Cisco UCS Manager, Release 4.2 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-4-2.html)23-Sep-2025
   * [Cisco UCS Manager Internal Dependencies, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cisco-ucs-manager-internal-dependencies--release-4-3.html)23-Sep-2025
   * [Cisco UCS Manager Cross-Version Firmware Support, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cross-version-fw-support_4_3.html)23-Sep-2025
@@ -346,8 +346,6 @@ Reset
 ## Solved Issues
 
 ## Community Documents
-
-community.js \-->
 
 ![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 

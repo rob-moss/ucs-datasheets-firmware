@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X210c M6 Compute Node Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-2465523.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:34:58 |
+| **Fetched on** | 2026-04-16 10:50:35 |
 
 ---
 

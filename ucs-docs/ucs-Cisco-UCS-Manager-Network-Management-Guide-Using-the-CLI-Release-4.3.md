@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Network Management Guide Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_cli_ucsm_network_management_guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:30:53 |
+| **Fetched on** | 2026-04-16 10:48:01 |
 
 ---
 

@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight Appliance CVA Whats New |
 | **URL** | https://intersight.com/help/appliance/whats_new/connected_appliance/ |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260402103337138/docs/onprem/data/articles/connected_appliance/new_2026/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260414151805446/docs/onprem/data/articles/connected_appliance/new_2026/en/index.html |
 | **HTML Title** | What's New in Cisco Intersight |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_whats_new_connected_appliance.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:33:20 |
+| **Fetched on** | 2026-04-16 10:49:43 |
 
 ---
 

@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Monitoring Metrics Devices |
 | **URL** | https://intersight.com/help/saas/monitoring/monitoring_metrics_devices |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260402103337138/docs/cloud/data/resources/monitoring/en/Metrics_FI_Server_Chassis.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260414151805446/docs/cloud/data/resources/monitoring/en/Metrics_FI_Server_Chassis.html |
 | **HTML Title** | Fabric Interconnects, Chassis, Unified Edge, and Server Metrics |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_monitoring_metrics_devices.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:32:48 |
+| **Fetched on** | 2026-04-16 10:49:24 |
 
 ---
 

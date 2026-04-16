@@ -8,7 +8,7 @@
 | **HTML Title** | AI PODs for Inferencing Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ai-infrast-pods-inferencing-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:40:55 |
+| **Fetched on** | 2026-04-16 10:53:10 |
 
 ---
 

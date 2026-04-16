@@ -8,7 +8,7 @@
 | **HTML Title** | UCS C885A M8 Rack Server Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-c885a-m8-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:39:54 |
+| **Fetched on** | 2026-04-16 10:52:28 |
 
 ---
 

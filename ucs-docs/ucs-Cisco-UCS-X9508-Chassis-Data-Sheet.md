@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X9508 Chassis Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-2472574.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:40:24 |
+| **Fetched on** | 2026-04-16 10:52:47 |
 
 ---
 

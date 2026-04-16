@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X-Series Modular System - White Papers |
 | **Source file** | `ucs-docs-raw/html/white-paper-listing.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-13 13:40:19 |
+| **Fetched on** | 2026-04-16 10:52:44 |
 
 ---
 
