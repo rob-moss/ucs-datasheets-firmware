@@ -22,6 +22,7 @@ import json
 import re
 import sys
 import urllib.parse
+from datetime import datetime
 from email.utils import formatdate
 from pathlib import Path
 
@@ -213,6 +214,9 @@ def main():
     results = sorted(data.get("Results", []), key=_row_sort_key)
     md_lines = [
         "# IMM Recommended Firmware\n",
+        "This data is fetched directly from software.cisco.com using the fetch-imm.py script.",
+        f"Generated on {datetime.now():%Y-%m-%d %H:%M:%S}",
+        "\n",
         "| SupportedModels | Version | Name | PlatformType |",
         "| --- | --- | --- | --- |",
     ]

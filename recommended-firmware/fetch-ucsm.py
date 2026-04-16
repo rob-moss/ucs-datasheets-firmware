@@ -215,6 +215,14 @@ def try_requests(page_url: str) -> list[str] | None:
 # ---------------------------------------------------------------------------
 def write_markdown(results: list[dict], output_path: Path) -> None:
     lines: list[str] = []
+
+    lines.append(f"# UCS Manager Recommended Firmware")
+    lines.append("This data is fetched directly from software.cisco.com using the fetch-ucsm.py script.")
+    lines.append("")
+    lines.append(f"Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    lines.append("")
+
+
     for entry in results:
         versions = entry.get("versions") or []
         base_url = entry["url"].rstrip("/")
