@@ -1,5 +1,14 @@
 # TODO list
 
+* Fix the JSON outputs in `ucs-docs-raw/searchResults` to re-use the expected names ie `ucsm-b200m5-v1-esxi-8u3.json` etc
+  * Potentially download the entire JSON struct and then create separate JSON files for each relevant section (e.g., firmware versions, datasheets, guides) with the expected naming convention for easier consumption by the prompts
+* fix the prompt `process-server-firmware-adapter-matrix.prompt.md` 
+* fix the prompt `validate-server-firmware-adapter-matrix.prompt.md`
+* fix the prompt `report-infra-server-models.prompt.md`
+* fix the prompt `report-crossfirmware43.prompt.md`
+
+
+
 * Clean up headings, navigation, and irrelevant content during HTML to Markdown conversion
   * Make Markdown files more concise and focused on the relevant information for firmware versions and datasheets
   * Deduplicate content across multiple sources to avoid redundancy in the Markdown files

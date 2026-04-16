@@ -1,55 +1,56 @@
 #!/usr/bin/env python3
 """
-Fetch Cisco UCSM Recommended Firmware Versions (v3)
-=====================================================
-Tries three methods in order for each target URL:
-  1. requests + BeautifulSoup  (fast, but Cisco CDN blocks bots - 403)
-  2. Selenium                  (headless Chrome with anti-detection stealth flags)
-  3. Playwright                (headless Chrome with anti-detection stealth flags)
+Fetch Cisco UCSM Recommended Firmware Versions (v4 — requests only)
+====================================================================
+Runs on any vanilla Linux/macOS host with only the 'requests' package.
 
-Key finding: software.cisco.com is protected by Akamai Edge.
-  - Plain requests/BeautifulSoup receives HTTP 403.
-  - Headless browsers without stealth flags receive Access Denied.
-  - Playwright/Selenium with --disable-blink-features=AutomationControlled
-    plus navigator.webdriver override bypasses the protection successfully.
+  pip install requests
 
-Targets:
-  - UCS Infrastructure  (UCSM)
-  - UCS B-Series Blade servers
-  - UCS C-Series Rack servers
+How it works
+------------
+software.cisco.com is an Angular SPA protected by Akamai Edge.  Plain GET
+requests receive HTTP 403 — but only because Akamai checks for session
+cookies that the browser normally acquires on the first page load.
 
-The page is an Angular SPA. The left-side tree shows release categories:
-  Suggested Release -> 6.0(1e), 4.3(6e), 4.2(3p)   <- we want these three
-  Latest Release    -> 4.3(6f), 6.0(1f), ...
-  All Release       -> ...
-  Deferred Release  -> ...
+Two-step approach using a persistent requests.Session:
+  1. GET the download page  →  Akamai + Cisco set JSESSIONID / swsession.
+  2. GET the catalog API    →  Returns the full JSON release catalog.
 
-v2 change: version spans are only accepted when their parent element also
-contains a sibling span with class 'icon-software-suggested' (the gold star
-icon that Cisco renders alongside each Suggested/Recommended release):
+Catalog API endpoint (discovered from the Angular bundle chunk-CMUZA25P.js):
+  https://software.cisco.com/services/catalog/v1/releases?mdfid={mdfid}&softwareId={softwareId}
 
-  <span class="icon-software-suggested icon-small suggestedStar"></span>
+The mdfid and softwareId values are embedded in the download page URL:
+  .../download/home/{mdfid}/type/{softwareId}/release/
 
-This ensures we capture only the truly recommended releases and ignore any
-version strings that happen to appear elsewhere in the Suggested Release
-category label or surrounding chrome.
+JSON response structure:
+  {
+    "suggestedRelease": [ {"releaseVersion": "6.0(1e)", "isSuggested": "Y", ...}, ... ],
+    "latestRelease":    [...],
+    "allRelease":       [...],
+    "deferredRelease":  [...],
+    "betaRelease":      [...]
+  }
 
-v3 change: multiple targets supported; results written to
-  ucs-firmware-reports/recommended-firmware.md
+Results are cached in recommended-firmware/jsonfiles/ for 24 hours.
 """
 
+# Version 4.0 - complete rewrite with requests only, no Selenium or Playwright dependencies.
+
+
+import json
 import re
 import sys
 import time
 from datetime import datetime, timedelta
 from pathlib import Path
 
+import requests as _requests
+
 VERSION_RE = re.compile(r"^\d+\.\d+\(\d+\w*\)$")
 
 # ---------------------------------------------------------------------------
-# Fetch targets
+# Targets
 # ---------------------------------------------------------------------------
-# Each entry: heading (used in markdown ###), intro (sentence before list), url.
 TARGETS = [
     {
         "heading": "Recommended firmware versions for Infrastructure",
@@ -68,367 +69,162 @@ TARGETS = [
     },
 ]
 
-# Output report path (relative to this script's parent directory)
-OUTPUT_PATH = Path(__file__).parent.parent / "ucs-docs" / "ucsm-recommended-firmware.md"
+# OUTPUT_PATH = Path(__file__).parent.parent / "ucs-docs" / "ucsm-recommended-firmware.md"
+OUTPUT_PATH = Path(__file__).parent.parent / "ucs-docs" / "recommended-firmware-ucsm.md"
 
-# CSS class that marks a release as Suggested / Recommended by Cisco.
-SUGGESTED_ICON_CLASS = "icon-software-suggested"
+CATALOG_BASE = "https://software.cisco.com/services/catalog/v1/releases"
 
 # ---------------------------------------------------------------------------
-# HTML cache settings
+# Cache
 # ---------------------------------------------------------------------------
-# Resolved relative to this script file so it works regardless of cwd.
-CACHE_DIR = Path(__file__).parent / "htmlfiles"
+CACHE_DIR     = Path(__file__).parent / "jsonfiles"
 CACHE_MAX_AGE = timedelta(hours=24)
 
-# Stealth Chrome launch arguments (bypass Akamai bot detection)
-CHROMIUM_STEALTH_ARGS = [
-    "--disable-blink-features=AutomationControlled",
-    "--no-sandbox",
-    "--disable-dev-shm-usage",
-]
-STEALTH_INIT_SCRIPT = (
-    "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
-)
-STEALTH_UA = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+UA = (
+    "Mozilla/5.0 (X11; Linux x86_64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/145.0.0.0 Safari/537.36"
+    "Chrome/126.0.0.0 Safari/537.36"
 )
 
-# JavaScript executed inside the live page to extract Suggested Release versions.
-# v2: only accepts a version span when its parent element contains a sibling
-# <span class="icon-software-suggested ..."> — the gold-star recommended icon.
-EXTRACT_JS = """
-() => {
-    const versionRE = /^\\d+\\.\\d+\\(\\d+\\w*\\)$/;
-    const versions = [];
-    const seen = new Set();
-    document.querySelectorAll('span').forEach(span => {
-        const t = span.textContent.trim();
-        if (!versionRE.test(t)) return;
-        // Accept only if the immediate parent also contains the suggested-release
-        // gold-star icon span: <span class="icon-software-suggested ..."></span>
-        const parent = span.parentElement;
-        if (!parent) return;
-        if (!parent.querySelector('span.icon-software-suggested')) return;
-        if (!seen.has(t)) {
-            seen.add(t);
-            versions.push({ version: t, id: span.id || '', cls: span.className || '' });
-        }
-    });
-    return versions;
-}
-"""
+
+def _api_url(page_url: str) -> str:
+    """Derive the catalog API URL from the download page URL.
+
+    Page URL pattern:  .../download/home/{mdfid}/type/{softwareId}/release/
+    API URL pattern:   .../services/catalog/v1/releases?mdfid={mdfid}&softwareId={softwareId}
+    """
+    m = re.search(r"/home/(\d+)/type/(\d+)", page_url)
+    if not m:
+        raise ValueError(f"Cannot extract mdfid/softwareId from URL: {page_url}")
+    return f"{CATALOG_BASE}?mdfid={m.group(1)}&softwareId={m.group(2)}"
 
 
-# ---------------------------------------------------------------------------
-# Cache helpers
-# ---------------------------------------------------------------------------
-def _cache_path(url: str) -> Path:
-    """Return the local .html cache file path for *url*."""
-    slug = re.sub(r"https?://", "", url)
-    slug = re.sub(r"[^\w]", "_", slug).strip("_")[:120]
-    return CACHE_DIR / f"{slug}.html"
+def _cache_path(api_url: str) -> Path:
+    slug = re.sub(r"https?://[^/]+", "", api_url)
+    slug = re.sub(r"[^\w]", "_", slug).strip("_")[:100]
+    return CACHE_DIR / f"{slug}.json"
 
 
-def _load_cache(url: str) -> str | None:
-    """Return cached HTML for *url* if it exists and is less than 24 hours old."""
-    path = _cache_path(url)
+def _load_cache(api_url: str) -> dict | None:
+    path = _cache_path(api_url)
     if not path.exists():
-        print(f"  [CACHE] MISS — no cached file: {path.name}")
         return None
     age = datetime.now() - datetime.fromtimestamp(path.stat().st_mtime)
     if age > CACHE_MAX_AGE:
-        print(f"  [CACHE] EXPIRED ({str(age).split('.')[0]} old): {path.name}")
+        print(f"  [CACHE] expired ({str(age).split('.')[0]} old) — re-fetching")
         return None
-    print(f"  [CACHE] HIT ({str(age).split('.')[0]} old): {path.name}")
-    return path.read_text(encoding="utf-8")
+    print(f"  [CACHE] hit ({str(age).split('.')[0]} old): {path.name}")
+    return json.loads(path.read_text())
 
 
-def _save_cache(url: str, html: str) -> None:
-    """Write *html* to the cache file for *url*."""
+def _save_cache(api_url: str, data: dict) -> None:
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    path = _cache_path(url)
-    path.write_text(html, encoding="utf-8")
-    print(f"  [CACHE] Saved {len(html):,} bytes → {path.name}")
+    path = _cache_path(api_url)
+    path.write_text(json.dumps(data))
+    n = len(data.get("suggestedRelease") or [])
+    print(f"  [CACHE] saved {n} suggested releases → {path.name}")
 
 
 # ---------------------------------------------------------------------------
-# HTML-only fallback parser (for static pages or when cookies are provided)
+# Parse
 # ---------------------------------------------------------------------------
-def _parse_versions_from_html(html: str) -> list[str]:
-    from bs4 import BeautifulSoup
+def _parse_suggested(data: dict) -> list[str]:
+    """Return version strings from the 'suggestedRelease' list.
 
-    soup = BeautifulSoup(html, "html.parser")
+    Falls back to filtering 'allRelease' by isSuggested=='Y' if the
+    dedicated key is absent or empty.
+    """
+    releases = data.get("suggestedRelease") or []
+    if not releases:
+        releases = [r for r in (data.get("allRelease") or []) if r.get("isSuggested") == "Y"]
+
     versions: list[str] = []
     seen: set[str] = set()
-
-    # The active Suggested Release span carries id="selectedRelease"
-    sel = soup.find("span", id="selectedRelease")
-    if sel:
-        v = sel.get_text(strip=True)
-        if VERSION_RE.match(v) and v not in seen:
-            # Verify the selectedRelease span's parent also contains the icon.
-            parent = sel.parent
-            if parent and parent.find("span", class_=SUGGESTED_ICON_CLASS):
-                versions.append(v)
-                seen.add(v)
-
-    # Walk all version-like spans.
-    # v2 filter: only accept a span when its direct parent element also contains
-    # a <span class="icon-software-suggested ..."> sibling — the gold-star icon
-    # that Cisco renders exclusively next to Suggested/Recommended releases.
-    for span in soup.find_all("span"):
-        text = span.get_text(strip=True)
-        if not VERSION_RE.match(text):
-            continue
-        if text in seen:
-            continue
-
-        parent = span.parent
-        if not parent:
-            continue
-
-        # Primary filter (v2): sibling icon span must be present.
-        if not parent.find("span", class_=SUGGESTED_ICON_CLASS):
-            continue
-
-        versions.append(text)
-        seen.add(text)
-
+    for rel in releases:
+        v = rel.get("releaseVersion", "").strip()
+        if v and VERSION_RE.match(v) and v not in seen:
+            versions.append(v)
+            seen.add(v)
     return versions
 
 
 # ---------------------------------------------------------------------------
-# Method 1: requests + BeautifulSoup
+# Fetch
 # ---------------------------------------------------------------------------
-def try_requests(url: str) -> list[str] | None:
-    print("\n[Method 1] Trying requests + BeautifulSoup ...")
-    try:
-        # Check cache before hitting the network.
-        html = _load_cache(url)
-        if html is None:
-            import requests
+def try_requests(page_url: str) -> list[str] | None:
+    """Fetch the catalog API response and return suggested release versions.
 
-            headers = {
-                "User-Agent": STEALTH_UA,
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                "Accept-Language": "en-US,en;q=0.9",
-                "Accept-Encoding": "gzip, deflate, br",
-            }
-            resp = requests.get(url, headers=headers, timeout=15)
-            resp.raise_for_status()
-            html = resp.text
-            print(f"  [OK] HTTP {resp.status_code}, {len(html):,} bytes received")
-            _save_cache(url, html)
-        else:
-            print(f"  [OK] Using cached HTML ({len(html):,} bytes)")
+    Step 1 — GET the download page with a fresh requests.Session.
+             Cisco / Akamai set JSESSIONID + swsession cookies on the response.
+    Step 2 — GET the catalog API using the same session (cookies ride along).
+             The API returns a JSON dict with a 'suggestedRelease' list.
+    """
+    print("\n[requests] Fetching catalog API ...")
+    api_url = _api_url(page_url)
 
-        versions = _parse_versions_from_html(html)
+    # Serve from JSON cache if still fresh.
+    data = _load_cache(api_url)
+    if data is not None:
+        versions = _parse_suggested(data)
         if versions:
-            print(f"  [OK] Found versions: {versions}")
+            print(f"  [OK] {versions}")
             return versions
+        print("  [WARN] cached response has no suggested versions — re-fetching")
 
-        print("  [FAIL] Page fetched but no version spans found.")
-        print("         The Angular app was not rendered (expected - JS is required).")
-        return None
-
-    except Exception as exc:
-        print(f"  [ERROR] {exc}")
-        return None
-
-
-# ---------------------------------------------------------------------------
-# Method 2: Selenium (headless Chrome)
-# ---------------------------------------------------------------------------
-def try_selenium(url: str) -> list[str] | None:
-    print("\n[Method 2] Trying Selenium (headless Chrome + stealth) ...")
     try:
-        # Use cached rendered HTML if available — avoids launching a browser.
-        cached_html = _load_cache(url)
-        if cached_html is not None:
-            print(f"  [OK] Using cached HTML ({len(cached_html):,} bytes)")
-            versions = _parse_versions_from_html(cached_html)
-            if versions:
-                print(f"  [OK] Found versions: {versions}")
-                return versions
-            print("  [WARN] Cache hit but parser found no versions; launching browser ...")
+        sess = _requests.Session()
+        sess.headers["User-Agent"] = UA
 
-        from selenium import webdriver
-        from selenium.webdriver.chrome.options import Options
-        from selenium.webdriver.chrome.service import Service
-        from selenium.webdriver.common.by import By
-        from selenium.webdriver.support.ui import WebDriverWait
-        from selenium.webdriver.support import expected_conditions as EC
-        from webdriver_manager.chrome import ChromeDriverManager
+        # Step 1: load the page to acquire session cookies.
+        print(f"  Loading page for session cookies ...")
+        r1 = sess.get(page_url, timeout=20)
+        r1.raise_for_status()
 
-        options = Options()
-        options.add_argument("--headless=new")
-        options.add_argument("--window-size=1400,900")
-        options.add_argument(f"--user-agent={STEALTH_UA}")
-        for arg in CHROMIUM_STEALTH_ARGS:
-            options.add_argument(arg)
-        options.add_experimental_option("excludeSwitches", ["enable-automation"])
-        options.add_experimental_option("useAutomationExtension", False)
-
-        print("  Locating / installing ChromeDriver ...")
-        service = Service(ChromeDriverManager().install())
-        driver = webdriver.Chrome(service=service, options=options)
-
-        driver.execute_cdp_cmd(
-            "Page.addScriptToEvaluateOnNewDocument",
-            {"source": STEALTH_INIT_SCRIPT},
+        # Step 2: call the catalog API (session cookie jar is populated).
+        ts = int(time.time() * 1000)
+        print(f"  Calling catalog API ...")
+        r2 = sess.get(
+            f"{api_url}&ts={ts}",
+            headers={
+                "Accept":  "application/json, text/plain, */*",
+                "Referer": page_url,
+            },
+            timeout=20,
         )
-
-        try:
-            print(f"  Navigating to {url} ...")
-            driver.get(url)
-
-            WebDriverWait(driver, 20).until(
-                EC.presence_of_element_located((By.ID, "selectedRelease"))
-            )
-            print("  [OK] Angular tree rendered (selectedRelease span found)")
-            time.sleep(1.5)
-
-            # Save the fully-rendered DOM to the cache.
-            _save_cache(url, driver.page_source)
-
-            # Use the JS extractor with the icon-software-suggested filter.
-            raw = driver.execute_script(f"return ({EXTRACT_JS})()")
-        finally:
-            driver.quit()
-
-        print(f"  Raw JS result: {raw}")
-        if not raw:
-            print("  [FAIL] Page rendered but JS extractor found no versions.")
-            return None
-
-        versions = [item["version"] for item in raw]
-        print(f"  [OK] Found versions: {versions}")
-        return versions
+        r2.raise_for_status()
+        data = r2.json()
 
     except Exception as exc:
         print(f"  [ERROR] {exc}")
         return None
 
+    _save_cache(api_url, data)
 
-# ---------------------------------------------------------------------------
-# Method 3: Playwright (headless Chrome, system install)
-# ---------------------------------------------------------------------------
-def try_playwright(url: str) -> list[str] | None:
-    print("\n[Method 3] Trying Playwright (headless Chrome + stealth) ...")
-    try:
-        # Use cached rendered HTML if available — avoids launching a browser.
-        cached_html = _load_cache(url)
-        if cached_html is not None:
-            print(f"  [OK] Using cached HTML ({len(cached_html):,} bytes)")
-            versions = _parse_versions_from_html(cached_html)
-            if versions:
-                print(f"  [OK] Found versions: {versions}")
-                return versions
-            print("  [WARN] Cache hit but parser found no versions; launching browser ...")
-
-        from playwright.sync_api import sync_playwright
-
-        with sync_playwright() as pw:
-            browser = pw.chromium.launch(
-                channel="chrome",
-                headless=True,
-                args=CHROMIUM_STEALTH_ARGS,
-            )
-            context = browser.new_context(user_agent=STEALTH_UA)
-            page = context.new_page()
-            page.add_init_script(STEALTH_INIT_SCRIPT)
-
-            print(f"  Navigating to {url} ...")
-            page.goto(url, wait_until="domcontentloaded", timeout=25_000)
-
-            print("  Waiting for Angular app to render ...")
-            try:
-                page.wait_for_selector("span#selectedRelease", timeout=15_000)
-                print("  [OK] selectedRelease span detected")
-            except Exception:
-                print("  [WARN] selectedRelease span not found within timeout; continuing ...")
-
-            page.wait_for_timeout(1500)
-
-            # Save the fully-rendered DOM to the cache.
-            _save_cache(url, page.content())
-
-            raw: list[dict] = page.evaluate(EXTRACT_JS)
-            browser.close()
-
-        print(f"  Raw JS result: {raw}")
-        if not raw:
-            print("  [FAIL] No version spans found after full page render.")
-            return None
-
-        versions = [item["version"] for item in raw]
-        print(f"  [OK] Found versions: {versions}")
+    versions = _parse_suggested(data)
+    if versions:
+        print(f"  [OK] {versions}")
         return versions
 
-    except Exception as exc:
-        print(f"  [ERROR] {exc}")
-        return None
-
-
-# ---------------------------------------------------------------------------
-# Orchestrator: fetch versions for a single URL using method fallback chain
-# ---------------------------------------------------------------------------
-def fetch_versions_for(url: str) -> list[str] | None:
-    """Try all three methods in order and return the first successful result."""
-    methods = [
-        ("requests + BeautifulSoup", try_requests),
-        ("Selenium",                 try_selenium),
-        ("Playwright",               try_playwright),
-    ]
-    for name, method in methods:
-        result = method(url)
-        if result:
-            print(f"  -> Method '{name}' succeeded.")
-            return result
-        print(f"  -> Method '{name}' did not return versions, trying next ...")
+    print("  [FAIL] API responded but 'suggestedRelease' list is empty.")
+    print(f"  [DEBUG] Response keys: {list(data.keys()) if isinstance(data, dict) else type(data)}")
     return None
 
 
 # ---------------------------------------------------------------------------
 # Markdown writer
 # ---------------------------------------------------------------------------
-def write_markdown(
-    results: list[dict],
-    output_path: Path,
-) -> None:
-    """
-    Write the firmware report to *output_path* in Markdown format.
-
-    Each entry in *results* is a dict with keys:
-      heading   – the ### section heading string
-      intro     – sentence preceding the version bullet list
-      url       – base Cisco download URL (version appended per bullet)
-      versions  – list of version strings, or None if fetch failed
-    """
+def write_markdown(results: list[dict], output_path: Path) -> None:
     lines: list[str] = []
     for entry in results:
-        heading  = entry["heading"]
-        intro    = entry["intro"]
-        base_url = entry["url"].rstrip("/")
         versions = entry.get("versions") or []
+        base_url = entry["url"].rstrip("/")
 
-        lines.append(f"### {heading}")
-        lines.append(f"{intro}:")
-        if versions:
-            for v in versions:
-                lines.append(f"- {v}")
-        else:
-            lines.append("- (no versions found)")
+        lines.append(f"### {entry['heading']}")
+        lines.append(f"{entry['intro']}:")
+        lines.extend(f"- {v}" for v in versions) if versions else lines.append("- (no versions found)")
         lines.append("")
         lines.append("Source:")
-        if versions:
-            for v in versions:
-                lines.append(f"- {base_url}/{v}")
-        else:
-            lines.append(f"- {base_url}/")
+        lines.extend(f"- {base_url}/{v}" for v in versions) if versions else lines.append(f"- {base_url}/")
         lines.append("")
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -441,52 +237,37 @@ def write_markdown(
 # ---------------------------------------------------------------------------
 def main() -> None:
     print("=" * 60)
-    print("Cisco UCS - Recommended Firmware Fetcher (v3)")
+    print("Cisco UCS — Recommended Firmware Fetcher (v4)")
     print(f"Targets: {len(TARGETS)}")
-    print(f"Filter: sibling span.{SUGGESTED_ICON_CLASS} must be present")
-    print(f"Output: {OUTPUT_PATH}")
+    print(f"Output:  {OUTPUT_PATH}")
     print("=" * 60)
 
     results: list[dict] = []
     any_failed = False
 
     for target in TARGETS:
-        heading = target["heading"]
-        url     = target["url"]
-        print(f"\n{'=' * 60}")
-        print(f"[TARGET] {heading}")
-        print(f"         {url}")
-        print("=" * 60)
+        print(f"\n--- {target['heading']} ---")
 
-        versions = fetch_versions_for(url)
-        if versions:
-            print(f"\n  => Versions: {versions}")
-        else:
-            print("\n  => [FAIL] Could not retrieve versions for this target.")
+        versions = try_requests(target["url"])
+        if not versions:
+            print("  [FAIL] Could not retrieve versions.")
             any_failed = True
 
-        results.append({
-            "heading":  heading,
-            "intro":    target["intro"],
-            "url":      url,
-            "versions": versions,
-        })
+        results.append({**target, "versions": versions})
 
-    # Write the report regardless — partial results are still useful.
     write_markdown(results, OUTPUT_PATH)
 
     print("\n" + "=" * 60)
     print("Summary")
     print("=" * 60)
     for entry in results:
-        versions = entry.get("versions") or []
-        status   = "OK" if versions else "FAIL"
+        status = "OK" if entry.get("versions") else "FAIL"
         print(f"  [{status}] {entry['heading']}")
-        for v in versions:
+        for v in (entry.get("versions") or []):
             print(f"         {v}")
 
     if any_failed:
-        print("\n[WARN] One or more targets failed. Check output above.")
+        print("\n[WARN] One or more targets failed.")
         sys.exit(1)
 
 

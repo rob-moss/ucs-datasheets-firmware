@@ -9,8 +9,8 @@ Filter:       RecommendedBuild eq 'Y'
 Select:       SupportedModels, Mfid, Version, RecommendedBuild, PlatformType, Name
 
 Outputs:
-    imm-recommended.json  — raw API response
-    imm-recommended.md    — markdown table (SupportedModels, Version, Name, PlatformType)
+    recommended-firmware-imm.json  — raw API response
+    recommended-firmware-imm.md    — markdown table (SupportedModels, Version, Name, PlatformType)
 
 Dependencies:
     pip install requests cryptography
@@ -36,9 +36,8 @@ BASE_URL    = "https://us-east-1.intersight.com"
 API_PATH    = "/api/v1/firmware/Distributables"
 API_KEY_ID  = "59c84e4a16267c0001c23428/5f978c447564612d314de49f/69b106f775646131013d7975"
 API_KEY_FILE  = Path(__file__).parent / ".apikey"
-JSON_OUT_FILE = Path(__file__).parent / "jsonfiles/imm-recommended-firmware.json"
-MD_OUT_FILE   = Path(__file__).parent / "../ucs-docs/imm-recommended-firmware.md"
-# MD_OUT_FILE2   = Path(__file__).parent / "../ucs-docs/imm-recommended-firmware.md"
+JSON_OUT_FILE = Path(__file__).parent / "jsonfiles/recommended-firmware-imm.json"
+MD_OUT_FILE   = Path(__file__).parent / "../ucs-docs/recommended-firmware-imm.md"
 
 QUERY_PARAMS = {
     "$filter": "RecommendedBuild eq 'Y'",
