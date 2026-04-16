@@ -134,9 +134,8 @@ ucs-firmware-reports/server-adapter-driver-matrix-raw.md
 ## Execution
 
 After creating the script:
-1. Save it as `extract_server_data.py`
-2. Run it with: `python3 extract_server_data.py`
-3. Verify the output file `server-adapter-driver-matrix.md` is created successfully
+1. Save it as `scripts/extract_server_data.py`
+2. Run it with: `python3 scripts/extract_server_data.py`
+3. Verify the output file `ucs-firmware-reports/server-adapter-driver-matrix-raw.md` is created successfully
 4. Review the markdown report for accuracy and completeness
 5. Commit the script and output file to the repository with the commit message "Updated server firmware adapter matrix version x"
-6. Run the prompt `push-all` to push changes to GitHub
