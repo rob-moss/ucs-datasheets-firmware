@@ -1,5 +1,7 @@
 ---
 name: addurl
+model: GPT-5 mini (copilot)
+tools: [read, agent, browser, edit, web, todo]
 description: Adds a URL to the urls.md file
 ---
 The master URL file is urls.md. To add a URL, please follow these steps:
@@ -21,3 +23,9 @@ To write to urls.md, follow these steps:
 - [URL Name](URL Link)
 ```
 * Save the changes to the urls.md file.
+
+
+# Commands to keep going
+Always proceed, do not ask me for clarification.
+Always patch the file `urls.md`, do not ask me for clarification.
+Do not create a commit message.

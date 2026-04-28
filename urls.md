@@ -174,6 +174,7 @@
 - [Cisco UCS C240 M8 Rack Server Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-ds.html)
 - [Cisco UCS C845A M8 Rack Server Data Sheet - Cisco](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html)
 - [Cisco UCS C885A M8 Rack Server Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c885a-m8-ds.html)
+- [Cisco UCS C885A M8 Server Troubleshooting Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide.html)
 - [Cisco UCS X9516 X-Fabric](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-9516-x-fabric-module-ds.html)
 - [Cisco UCS X-Series Direct Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-direct-ds.html)
 - [UCS X215c M8 Compute Node](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x215c-m8-compute-node-ds.html)
