@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco UCS Manager, Release 4.2 |
 | **Source file** | `ucs-docs-raw/html/cisco-ucs-manager-rn-4-2.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:49:57 |
+| **Fetched on** | 2026-05-27 10:54:25 |
 
 ---
 
@@ -457,10 +457,6 @@ If Cisco UCS Manager upgrade to release 4.2(1l) fails with Unable to open downlo
 ### Upgrade Limitation
 
 In general, capability catalog can be upgraded within the same major release version. For example, Cisco UCS 3.2(2) release can use a capability catalog with the same major release version like 3.2(1) and cannot use a capability catalog with the release version 3.0(1). However, the Capability Catalog upgrade from 4.2(1) to 4.2(2) can lead to upgrade failure. Cisco UCS release 4.2(1) release version can be used only with 4.2(1) release version of capability catalog. 
-
-### UCS Manager Health and Pre-Upgrade Check Tool
-
-The [UCS Manager Health and Pre-Upgrade Check Tool](https://www.cisco.com/c/en/us/support/docs/servers-unified-computing/ucs-infrastructure-ucs-manager-software/217601-ucsm-health-and-pre-upgrade-check-tool.html) provides automated health and pre-upgrade checks that are designed to ensure your clusters are healthy before you upgrade. It is imperative that this healthcheck is not just performed, but that you take corrective action on any cluster that is found to be unhealthy. Correct all issues reported by the UCS Manager health check before continuing. 
 
 ## Default Open Ports
 

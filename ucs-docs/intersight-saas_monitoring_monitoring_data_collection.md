@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Monitoring Data Collection |
 | **URL** | https://intersight.com/help/saas/monitoring/monitoring_data_collection |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260414151805446/docs/cloud/data/resources/monitoring/en/Data_Collection.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260514103921360/docs/cloud/data/resources/monitoring/en/Data_Collection.html |
 | **HTML Title** | Data Collection |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_monitoring_data_collection.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:49:21 |
+| **Fetched on** | 2026-05-27 10:53:47 |
 
 ---
 
@@ -18,11 +18,11 @@ Intersight collects inventory information and metrics from devices that are clai
 
 Note:
 
-Metrics are only collected from Intersight Managed Mode (IMM) or UCSM Managed Mode (UMM) domains. Only environmental metrics are collected for UMM devices. Metric collection is also supported for Intersight Standalone Mode (ISM) servers. For more information, see [Supported Hardware for Intersight Managed Mode](/help/supported_systems#supported_hardware_for_intersight_managed_mode) and [Supported Hardware for Standalone and UCSM Managed Mode](/help/supported_systems#supported_hardware_for_standalone_and_ucsm_managed_mode).
+Metrics are only collected from Intersight Managed Mode (IMM) or UCSM Managed Mode (UMM) domains. Only environmental metrics are collected for UMM devices. Metric collection is also supported for Intersight Standalone Mode (ISM) servers. For more information, see [Supported Hardware for Intersight Managed Mode](/help/supported_systems/Intersight_Managed_Mode) and [Supported Hardware for Standalone and UCSM Managed Mode](/help/supported_systems/overview).
 
 ## Supported Devices
 
-Cisco Intersight supports metrics collection from devices that are managed as an IMM or UMM domain. Only environmental metrics are collected for UMM devices. Metric collection is also supported for Intersight Standalone Mode (ISM) servers. For more information on supported Fabric Interconnects, Chassis, and Servers and supported firmware, see [Supported Hardware for Intersight Managed Mode](/help/supported_systems#supported_hardware_for_intersight_managed_mode).
+Cisco Intersight supports metrics collection from devices that are managed as an IMM or UMM domain. Only environmental metrics are collected for UMM devices. Metric collection is also supported for Intersight Standalone Mode (ISM) servers. For more information on supported Fabric Interconnects, Chassis, and Servers and supported firmware, see [Supported Hardware for Intersight Managed Mode](/help/supported_systems/Intersight_Managed_Mode).
 
 Important:
 

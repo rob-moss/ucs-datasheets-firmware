@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/x210cm8-specsheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-04-16 10:51:44 |
+| **Fetched on** | 2026-05-27 10:56:06 |
 
 ---
 
@@ -32,9 +32,9 @@ WWW.CISCO.COM
 
 PUBLICATION HISTORY 
 
-V.15
+V.16
 
-MARCH 04, 2026 
+APRIL 30, 2026 
 
 STEP
 STEP
@@ -385,7 +385,7 @@ unified fabric connectivity to each of the chassis's intelligent fabric modules
 ■ Cisco UCS VIC 15230 occupies the server's modular LAN on motherboard 
 
 (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each 
-of the chassis's intelligent fabric modules (IFMs) for 100 Gbps connectivity 
+of the chassis's intelligent fabric modules (IFMs) for 200 Gbps connectivity 
 per server with secure boot technology.
 
 Mezzanine Adapter 
@@ -2314,17 +2314,10 @@ Type
 
 Speed  Size
 
-SAS
-SAS
-SATA
-
-3.8TB 2.5in Enter Value 12G SAS Kioxia G2 SSD (SED-FIPS)
-1.6TB 2.5in Enter Perf 12G SAS Kioxia G2 SSD (3X SED-FIPS)
-
 SAS/SATA SSDs1,2,3
 Self-Encrypted Drives (SED)
-UCSX-SD38TBKANK9D
-UCSX-SD16TBKANK9D
+UCSX-SD38TBKANK9D 3.8TB 2.5in Enter Value 12G SAS Kioxia G2 SSD (SED-FIPS)
+UCSX-SD16TBKANK9D 1.6TB 2.5in Enter Perf 12G SAS Kioxia G2 SSD (3X SED-FIPS)
 UCSX-SD960GM2NK9D 960GB 2.5in Enter Value 6G SATA Micron G2 SSD (SED)
 Enterprise Performance SSDs (high endurance, supports up to 3X DWPD (drive writes per day))
 1.6TB 2.5in Enter Perf 24G SAS Kioxia G2 SSD (3X)
@@ -2333,20 +2326,18 @@ UCSXSD32TKA3XEP-D
 3.2TB 2.5in Enter Perf 24G SAS Kioxia G2 SSD (3X)
 UCSXSD480GBM3XEPD 480GB 2.5in Enter Perf 6G SATA Micron G2 SSD (3X)
 UCSXSD960GBM3XEPD 960GB 2.5in Enter Perf 6G SATA Micron G2 SSD (3X)
-1.9TB 2.5in Enter Perf 6G SATA Micron G2 SSD (3X)
-UCSX-SD19TBM3XEPD
-1.9TB 2.5in 15mm Solidigm S4620 Enter Perf 6G SATA 3X SSD
+UCSX-SD19TBM3XEPD 1.9TB 2.5in Enter Perf 6G SATA Micron G2 SSD (3X)
 UCSX-SDB1T9OA1P
-3.8TB 2.5in 15mm Solidigm S4620 Enter Perf 6G SATA 3X SSD
 UCSX-SDB3T8OA1P
-480GB 2.5in 15mm Solidigm S4620 Enter Perf 6G SATA 3X SSD
 UCSX-SDB480OA1P
-960GB 2.5in 15mm Solidigm S4620 Enter Perf 6G SATA 3X SSD
 UCSX-SDB960OA1P
-3.8TB 2.5in 15mm Solidigm S4520 Enter Perf 6G SATA 1X SSD
 UCSX-SDB3T8OA1V
-480GB 2.5in 15mm Solidigm S4520 Enter Perf 6G SATA 1X SSD
-UCSX-SDB480OA1V
+
+1.9TB 2.5in 15mm Solidigm S4620 Enter Perf 6G SATA 3X SSD
+3.8TB 2.5in 15mm Solidigm S4620 Enter Perf 6G SATA 3X SSD
+480GB 2.5in 15mm Solidigm S4620 Enter Perf 6G SATA 3X SSD
+960GB 2.5in 15mm Solidigm S4620 Enter Perf 6G SATA 3X SSD
+3.8TB 2.5in 15mm Solidigm S4520 Enter Perf 6G SATA 1X SSD
 
 SAS
 SAS
@@ -2358,25 +2349,27 @@ SATA
 SATA
 SATA
 SATA
+
+SAS
+SAS
 SATA
+
+12G
+12G
+6G
+
+24G
+24G
+6G
+6G
+6G
+6G
+6G
+6G
+6G
+6G
 
 Cisco UCS X210c M8 Compute Node
-
-12G
-12G
-6G
-
-24G
-24G
-6G
-6G
-6G
-6G
-6G
-6G
-6G
-6G
-6G
 
 3.8TB
 1,6TB
@@ -2392,7 +2385,6 @@ Cisco UCS X210c M8 Compute Node
 480GB
 960GB
 3.8TB
-480GB
 
 25
 
@@ -2410,7 +2402,9 @@ Type
 Speed  Size
 
 6G
+6G
 
+SATA
 SATA
 
 24G
@@ -2431,21 +2425,22 @@ SATA
 SATA
 SATA
 
+480GB 2.5in 15mm Solidigm S4520 Enter Perf 6G SATA 1X SSD
 960GB 2.5in 15mm Solidigm S4520 Enter Perf 6G SATA 1X SSD
 
-1.9TB 2.5in Enter Value 6G SATA Micron G2 SSD
 960GB 2.5in 6G SATA Enter Value 1X Samsung G1PM893A SSD
 1.9TB 2.5in 6G SATA Enter Value 1X Samsung G1PM893A SSD
 3.8TB 2.5in 6G SATA Enter Value 1X Samsung G1PM893A SSD
 7.6TB 2.5in 6G SATA Enter Value 1X Samsung G1PM893A SSD
 
+UCSX-SDB480OA1V
 UCSX-SDB960OA1V
 Enterprise Value SSDs (Low endurance, supports up to 1X DWPD (drive writes per day)) 
 UCSXSD38TKA1XEV-D
 3.8TB 2.5in Enter Value 24G SAS Kioxia G2 SSD
 UCSXSD240GBM1XEVD 240GB 2.5in Enter Value 6G SATA Micron G2 SSD
 UCSXSD480GBM1XEVD 480 GB 2.5in Enter Value 6G SATA Micron G2 SSD
-UCSX-SD19TBM1XEVD
+UCSX-SD19TBM1XEVD 1.9TB 2.5in Enter Value 6G SATA Micron G2 SSD
 UCSX-SDB960SA1VD
 UCSX-SDB1T9SA1VD
 UCSX-SDB3T8SA1VD
@@ -2477,41 +2472,34 @@ UCSX-NVB3T8M2V9
 UCSX-NVB1T9M2V9
 7.6TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X NVMe FIPS NVMe U.3
 UCSX-NVB7T6M2V9
-UCSX-NVB15T3M2V9
 15.3TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X NVMe FIPS NVMe U.3
+UCSX-NVB15T3M2V9
+NVMe U.3
+7.6TB 2.5in U.3 15mm Micron 7500 Hg Perf Med End 1X NVMe
+UCSX-NVB7T6M2V
+UCSX-NVB12T8M2P
+NVMe U.3
+12.8TB 2.5in U.3 15mm Micron 7500 Hg Perf Hg End 3X NVMe
 E3.S
 UCSX-NVE112T8K1P
 UCSX-NVE11T6K1P
 UCSX-NVE13T2K1P
 UCSX-NVE16T4K1P
 UCSX-NVE115T3K1V
-UCSX-NVE11T9K1V
-UCSX-NVE13T8K1V
-UCSX-NVE17T6K1V
-UCSX-NVE11T6S1P
-UCSX-NVE13T2S1P
-UCSX-NVE16T4S1P
-UCSX-NVE112T8S1P
-UCSX-NVE11T9S1V
-UCSX-NVE13T8S1V
-UCSX-NVE17T6S1V
-UCSX-NVE115T3S1V
 
-NVMe
-12.8TB E3.S1T KCD8XPJE HgPerf HgEnd Gen5 3X NVMe (SIE SCEF)
+12.8TB E3.S1T KCD8XPJE HgPerf HgEnd Gen5 3X NVMe (SIE SCEF) NVMe
 NVMe
 1.6TB E3.S1T KCD8XPJE HgPerf HgEnd Gen5 3X NVMe (SIE SCEF)
 NVMe
 3.2TB E3.S1T KCD8XPJE HgPerf HgEnd Gen5 3X NVMe (SIE SCEF)
+NVMe
 6.4TB E3.S1T KCD8XPJE HgPerf HgEnd Gen5 3X NVMe (SIE SCEF)
 NVMe
-15.3TB E3.S1T KCD8XPJE HgPerf MedEnd Gen5 1X NVMe (SIE SCEF) NVMe
-NVMe
-1.9TB E3.S1T KCD8XPJE HgPerf MedEnd Gen5 1X NVMe (SIE SCEF)
-NVMe
-3.8TB E3.S1T KCD8XPJE HgPerf MedEnd Gen5 1X NVMe (SIE SCEF)
-NVMe
-7.6TB E3.S1T KCD8XPJE HgPerf MedEnd Gen5 1X NVMe (SIE SCEF)
+15.3TB E3.S1T KCD8XPJE HgPerf MedEnd Gen5 1X NVMe (SIE 
+SCEF)
+1.9TB E3.S1T KCD8XPJE HgPerf MedEnd Gen5 1X NVMe (SIE SCEF) NVMe
+3.8TB E3.S1T KCD8XPJE HgPerf MedEnd Gen5 1X NVMe (SIE SCEF) NVMe
+7.6TB E3.S1T KCD8XPJE HgPerf MedEnd Gen5 1X NVMe (SIE SCEF) NVMe
 NVMe
 1.6TB E3.S1T PM1745 HgPerf HgEnd Gen5 3X NVMe (TCG OPAL)
 NVMe
@@ -2520,13 +2508,14 @@ NVMe
 6.4TB E3.S1T PM1745 HgPerf HgEnd Gen5 3X NVMe (TCG OPAL)
 NVMe
 12.8TB E3.S1T PM1745 HgPerf HgEnd Gen5 3X NVMe (TCG OPAL)
-NVMe
-1.9TB E3.S1T PM1743 HgPerf MedEnd Gen5 1X NVMe (TCG OPAL)
-NVMe
-3.8TB E3.S1T PM1743 HgPerf MedEnd Gen5 1X NVMe (TCG OPAL)
-7.6TB E3.S1T PM1743 HgPerf MedEnd Gen5 1X NVMe (TCG OPAL)
-NVMe
-15.3TB E3.S1T PM1743 HgPerf MedEnd Gen5 1X NVMe (TCG OPAL) NVMe
+
+UCSX-NVE11T9K1V
+UCSX-NVE13T8K1V
+UCSX-NVE17T6K1V
+UCSX-NVE11T6S1P
+UCSX-NVE13T2S1P
+UCSX-NVE16T4S1P
+UCSX-NVE112T8S1P
 
 E3.S
 E3.S
@@ -2535,16 +2524,14 @@ E3.S
 E3.S
 E3.S
 E3.S
-E3.S
-E3.S
-E3.S
-E3.S
+
 E3.S
 E3.S
 E3.S
 E3.S
 E3.S
 
+480GB
 960GB
 
 3.8TB
@@ -2568,12 +2555,15 @@ E3.S
 1.9 TB
 7.6 TB
 15.3 TB
+7.6 TB
+12.8TB
 
 12.8TB
 1.6TB
 3.2TB
 6.4TB
 15.3TB
+
 1.9TB
 3.8TB
 7.6TB
@@ -2581,10 +2571,6 @@ E3.S
 3.2TB
 6.4TB
 12.8TB
-1.9TB
-3.8TB
-7.6TB
-15.3TB
 
 26
 
@@ -2603,18 +2589,34 @@ Type
 
 Speed  Size
 
-Accessories/spare included with drives: Drive blanks, either UCSC-BBLKD-M7 for 2.5" modules or UCSC-E3S1T-F for 
-the E3.S mezzanine are included for unpopulated drive slots on configured systems. They must be ordered 
+1.9TB
+UCSX-NVE11T9S1V
+3.8TB
+UCSX-NVE13T8S1V
+UCSX-NVE115T3S1V
+15.3TB
+Accessories/spare included with drives: Drive blanks, either UCSC-BBLKD-M7 for 2.5" modules or UCSC-E3S1T-F 
+for the E3.S mezzanine are included for unpopulated drive slots on configured systems. They must be ordered 
 separately when ordering a front mezzanine as a spare.
+
+NVMe
+1.9TB E3.S1T PM1743 HgPerf MedEnd Gen5 1X NVMe (TCG OPAL)
+3.8TB E3.S1T PM1743 HgPerf MedEnd Gen5 1X NVMe (TCG OPAL)
+NVMe
+15.3TB E3.S1T PM1743 HgPerf MedEnd Gen5 1X NVMe (TCG OPAL) NVMe
+
+E3.S
+E3.S
+E3.S
 
 Notes:
 
 1. SSD drives require the UCSX-X10C-RAIDF-D front mezzanine adapter.
 2. For SSD drives to be in a RAID group, two or more identical SSDs must be used in the group.
 3. If SSDs are in JBOD Mode, the drives do not need to be identical.
-4. NVMe drives require a front mezzanine the UCSX-X10C-PT4F-D pass through controller or UCSX-X10C-RAIDF-D 
+4. NVMe drives require a front mezzanine the UCSX-X10C-PT4F-D pass through controller or 
 
-RAID controller for RAID support.
+UCSX-X10C-RAIDF-D RAID controller for RAID support.
 
 5. A maximum of 6 U.3 NVMe drives can be ordered with RAID controller.
 6. A maximum of 2 NVMe drives can be ordered with Front Mezzanine GPU module.

@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/x9508-specsheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-04-16 10:52:11 |
+| **Fetched on** | 2026-05-27 10:56:49 |
 
 ---
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco |
 | **Source file** | `ucs-docs-raw/pdf/ucs-x-series-accelerate-offer-ordering-guide.pdf` |
 | **File type** | HTML (fallback from .pdf URL) |
-| **Fetched on** | 2026-04-16 10:51:13 |
+| **Fetched on** | 2026-05-27 10:55:27 |
 
 ---
 

@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Nutanix Compute Only guide |
 | **URL** | https://intersight.com/help/saas/configure/nutanix/compute_nutanix |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260414151805446/docs/cloud/data/articles/features/nutanix/compute/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260514103921360/docs/cloud/data/articles/features/nutanix/compute/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_nutanix_compute_nutanix.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:49:17 |
+| **Fetched on** | 2026-05-27 10:53:43 |
 
 ---
 
@@ -30,15 +30,17 @@ The Cisco compute-only node with Nutanix Cloud Platform (NCP) and Pure Storage F
 
 ****Attributes****| ****Cisco Compute-Only (CO) node connected to Pure Storage FlashArray****  
 ---|---  
-Cisco Compute-Only nodes| Minimum total physical CPU core count per node - 24  
-Minimum memory – 64GB  
+Cisco Compute-Only nodes| Nutanix Foundation allocates the following minimum resources to the CVM:
+  * CVM Logical Cores: 16
+  * CPU Physical Cores per Socket: 16
+  * vRAM (in GiB): 32  
 M.2 boot drives with M.2 RAID controller (480GB is recommended)  
 Storage protocol: NVMe over Fabrics (NVMeoF) over TCP  
 25Gb Ethernet network connection recommended between Cisco Nutanix Compute cluster and Pure Storage FlashArray (10Gb will be supported)  
-Minimum 5 CO nodes  
+Minimum 3 CO nodes  
 Hypervisor| AHV only  
 Management| Intersight Management Mode (IMM)  
-Pure Storage| FlashArray //X, //XL, and //C  
+Pure Storage| FlashArray //X, //XL, and, //C  
 Nutanix Cloud Platform Software| Supported Nutanix Software
   * Nutanix Cloud Infrastructure (NCI)
   * Nutanix Cloud Manager (NCM)

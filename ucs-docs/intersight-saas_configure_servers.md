@@ -4,19 +4,19 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Servers guide |
 | **URL** | https://intersight.com/help/saas/configure/servers |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260414151805446/docs/cloud/data/articles/features/servers/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260514103921360/docs/cloud/data/articles/features/servers/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_servers.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:49:09 |
+| **Fetched on** | 2026-05-27 10:53:35 |
 
 ---
 
 In Cisco Intersight, a Server Profile enables resource management by streamlining policy alignment, and server configuration. To view the Server Profiles table view, choose Configure > Profiles > UCS Server Profiles. You can create Server Profiles using the Server Profile wizard or you can import the configuration details of C-series servers in standalone mode and FI-attached servers in Intersight Managed Mode (IMM), directly from Cisco IMC. You can create Server Profiles using the Server Profile wizard to provision servers, create policies to ensure smooth deployment of servers, and eliminate failures that are caused by inconsistent configuration. The Server Profiles wizard groups the server policies into the following four categories to provide a quick Summary View of the policies that are attached to a profile:
 
-  * Compute Policies—BIOS, Boot Order, Firmware, Persistent Memory, Memory, Power, Scrub, Thermal, and Virtual Media.
+  * Compute Policies: BIOS, Boot Order, Firmware, Persistent Memory, Memory, Power, Scrub, Thermal, and Virtual Media.
 
-  * Network Policies—Adapter Configuration, iSCSI Boot, LAN Connectivity, and SAN Connectivity policies.
+  * Network Policies: Adapter Configuration, iSCSI Boot, LAN Connectivity, and SAN Connectivity policies.
 
   * The LAN Connectivity policy requires you to create Ethernet Network Policy, Ethernet Adapter Policy, and Ethernet QoS Policy. When you attach a LAN Connectivity policy to a server profile, the addresses of the MAC address Pool, or the static MAC address, are automatically assigned.
 
@@ -26,9 +26,9 @@ Note: A LAN Connectivity policy that has a static MAC address can be attached to
 
 Note: A SAN Connectivity policy that has a static WWPN, or a static WWNN can be attached to only one server profile.
 
-  * Storage Policies—Drive Security, SD Card, and Storage policies.
+  * Storage Policies: Drive Security, SD Card, and Storage policies.
 
-  * Management Policies—Certificate Management, Device Connector, IPMI Over LAN, LDAP, Local User, Network Connectivity, NTP, Serial over LAN, SMTP, SNMP, SSH, Syslog, and Virtual KVM policies.
+  * Management Policies: Certificate Management, Device Connector, IPMI Over LAN, LDAP, Local User, Network Connectivity, NTP, Serial over LAN, SMTP, SNMP, SSH, Syslog, and Virtual KVM policies.
 
 
 Certain server configurations applied through policies are automatically cleared and reset to default settings in Intersight Managed Mode servers. This occurs under the following conditions: when policies are detached and the profile is re-deployed, when a server is unassigned from a profile, during first-time discovery, decommissioning, or during recommissioning of a server. For more information, see [Clearing and Resetting Server Configurations](../../../../../../../../../../help/configure/servers#clearing_and_resetting_server_configurations).
@@ -41,60 +41,62 @@ When you select Profiles > UCS Server Profiles in the Intersight UI, the UCS ser
 
 The list view shows the following details in a tabular format:
 
-  * Name—The name of the server profile.
+  * Name:The name of the server profile.
 
-  * Status—The deployment status of the server profile.
+  * Status:The deployment status of the server profile.
 
 The Status of the profiles can have any of the following values:
 
-  * Activating—A transient state is observed during the Activation workflow**.**
+  * Activating: A transient state is observed during the Activation workflow**.**
 
-  * Analyzing—A transient state that occurs when the policy impact estimation is in progress.
+  * Analyzing: A transient state that occurs when the policy impact estimation is in progress.
 
-  * Configuring—A transient state that occurs during the Deploy workflow when the deploy tasks for the various policies are in progress.
+  * Configuring: A transient state that occurs during the Deploy workflow when the deploy tasks for the various policies are in progress.
 
-  * Evaluating—A transient state is observed during the policy change evaluation workflow.
+  * Evaluating: A transient state is observed during the policy change evaluation workflow.
 
-  * Failed—Server profile validation, configuration, or deployment has failed.
+  * Failed: Server profile validation, configuration, or deployment has failed.
 
-  * Inconsistent—Indicates that the policy configuration has changes that have not yet been deployed or activated. It may also indicate that the policy configuration at the endpoint is not in sync with the last deployed policy configuration in the server profile. If the endpoint settings are altered manually after a server profile is deployed, Intersight automatically detects the configuration changes and they will be shown on the server profile as Inconsistent. For more information, see the _Server Profile Drift_ and the _Deploying and Activating a Server Profile_ sections.
+  * Inconsistent: Indicates that the policy configuration has changes that have not yet been deployed or activated. It may also indicate that the policy configuration at the endpoint is not in sync with the last deployed policy configuration in the server profile. If the endpoint settings are altered manually after a server profile is deployed, Intersight automatically detects the configuration changes and they will be shown on the server profile as Inconsistent. For more information, see the _Server Profile Drift_ and the _Deploying and Activating a Server Profile_ sections.
 
-  * Not Assigned—Server is not assigned to the server profile.
+  * Not Assigned: Server is not assigned to the server profile.
 
 Note:
   * Once you deploy policies to the server profile, the status changes automatically from _Not Assigned_ to the new status depending on the outcome. You may need to refresh your screen to view the updated status.
 
   * You must do the Power Cycle/Power ON after each profile deployment.
 
-  * Not Complete—The configuration import for the profile has not been completed.
+  * Not Complete: The configuration import for the profile has not been completed.
 
-  * Not Deployed—The server is assigned to the profile, but the configuration has not yet been applied to the endpoint.
+  * Not Deployed: The server is assigned to the profile, but the configuration has not yet been applied to the endpoint.
 
-  * OK—Policies deployed successfully on the server profile.
+  * OK: Policies deployed successfully on the server profile.
 
-  * Unconfiguring—A transient state occurs during the Undeploy workflow for FI-attached servers only.
+  * Unconfiguring: A transient state occurs during the Undeploy workflow for FI-attached servers only.
 
-  * Validating—A transient state is currently in progress during policy validation for the server assigned to the profile.
+  * Validating: A transient state is currently in progress during policy validation for the server assigned to the profile.
 
-  * Waiting for Resources—The profile is pending resource allocation.
+  * Waiting for Resources: The profile is pending resource allocation.
 
-  * Inconsistency Reason—The reason for the status being shown as _Inconsistent_. Example—Not Deployed, Not Activated, Out of Sync.
+  * Inconsistency Reason: The reason for the status being shown as _Inconsistent_. Example: Not Deployed, Not Activated, Out of Sync.
 
-  * Target Platform—Indicates if the platform for which the profile is applicable is a Standalone UCS server or FI-attached UCS server.
+  * Target Platform: Indicates if the platform for which the profile is applicable is a Standalone UCS server or FI-attached UCS server.
 
-  * UCS Server Profile Template—The template attached to the server profile or from which the profile has been derived.
+  * UCS Server Profile Template: The template attached to the server profile or from which the profile has been derived.
 
-  * Template Sync Status—The sync status between the server profile and the template from which the server profile has been derived.
+  * Template Sync Status: The sync status between the server profile and the template from which the server profile has been derived.
 
-  * Server—The name of the server to which the profile is attached.
+  * Server: The name of the server to which the profile is attached.
 
-  * Resource Pool—The pool to which the profile belongs.
+  * Resource Pool: The pool to which the profile belongs.
 
-  * User Label—Displays the assigned user label that helps in identification of the server profiles.
+  * Server Family: The server family indicates the server models for which this profile is created. For example, "C2XX/4XX" refers to C-Series standalone server models whose names begin with C2 or C4. "C845A" refers to Cisco UCS C845A M8 server. FI-attached and Unified Edge servers are indicated with Server Family = “All”.
 
-  * Last Update—The date on which the profile was last updated.
+  * User Label: Displays the assigned user label that helps in identification of the server profiles.
 
-  * Organization—The name of the organization.
+  * Last Update: The date on which the profile was last updated.
+
+  * Organization: The name of the organization.
 
 
 Note:
@@ -105,43 +107,43 @@ Some of the columns are not included by default, such as, User Label. To view su
 
 After creating server profiles, actions that can be performed on a server profile are as follows:
 
-  * Deploy—Deploy the profile to the attached server.
+  * Deploy: Deploy the profile to the attached server.
 
-  * Activate—Activate the profile on the attached server. The server gets power cycled on activation.
+  * Activate: Activate the profile on the attached server. The server gets power cycled on activation.
 
-  * Assign Server—Assign a server to the server profile.
+  * Assign Server: Assign a server to the server profile.
 
-  * Edit Assignment—Modify the assigned server in the server profile, provided that the profile has not yet been deployed.
+  * Edit Assignment: Modify the assigned server in the server profile, provided that the profile has not yet been deployed.
 
 Note:
 
 To modify the server assignment for a deployed profile, first unassign the existing server, and then assign the new server using the Server Profile Actions menu.
 
-  * Unassign Server—Unassign the server from the profile. This action will cause the server configurations to reset to defaults. For more information, see [Clearing and Resetting Server Configurations](../../../../../../../../../../help/configure/servers#clearing_and_resetting_server_configurations).
+  * Unassign Server: Unassign the server from the profile. This action will cause the server configurations to reset to defaults. For more information, see [Clearing and Resetting Server Configurations](../../../../../../../../../../help/configure/servers#clearing_and_resetting_server_configurations).
 
 Note:
   * This action can be performed on a server profile that has servers assigned to it.
 
   * If you unassign a server from its current profile, it may automatically get assigned to another profile that has the server pre-assigned and initial auto-deployment enabled. This can make the server unavailable for future manual selection.
 
-  * Clone—Clone the profile.
+  * Clone: Clone the profile.
 
-  * Edit—Edit the profile.
+  * Edit: Edit the profile.
 
-  * Delete—Delete the profile.
+  * Delete: Delete the profile.
 
-  * Set User Label—Allows you to set, update, or delete user labels for each server. It must be between 1 and 64 alphanumeric characters, containing only the following special characters: ! # $ % & * + , ( ) [ ] { } | / . ? @ _ : ; ~
+  * Set User Label: Allows you to set, update, or delete user labels for each server. It must be between 1 and 64 alphanumeric characters, containing only the following special characters: ! # $ % & * + , ( ) [ ] { } | / . ? @ _ : ; ~
 
-  * Attach to Template—Attach the server profile to any of the available templates.
+  * Attach to Template: Attach the server profile to any of the available templates.
 
 Note:
   * While template creation, if you toggle ON the Attach UCS Server Profile to Profile Template button, the selected profile gets attached to the template under creation.
 
   * If you keep the toggle button OFF, the selected profile's properties are carried to the template but the profile does not get attached to it.
 
-  * Create a Template—A server profile can be used to create a template. This template can then be used to create multiple profiles with same configurations and deployed on multiple servers.
+  * Create a Template: A server profile can be used to create a template. This template can then be used to create multiple profiles with same configurations and deployed on multiple servers.
 
-  * Detach from Template—Detach the profile from the template.
+  * Detach from Template: Detach the profile from the template.
 
 Note:
   * Create a Template and Attach to Template actions can be performed only if a server profile is not attached to any template.
@@ -154,9 +156,9 @@ Note:
 
   * A detached server profile can always be reattached to a template.
 
-  * Sync With Template—Synchronize the Out of Sync profiles to ensure alignment with template configurations.
+  * Sync With Template: Synchronize the Out of Sync profiles to ensure alignment with template configurations.
 
-  * Server Actions—Allows you to perform following actions on the assigned server:
+  * Server Actions: Allows you to perform following actions on the assigned server:
 
   * Power
 
@@ -173,7 +175,7 @@ For a detailed description of these actions, refer to [Server Actions](../../../
 
 From the Server Profile List View, click a profile name to open the Server Profile Details View. This page has four tabs: General, Server, Inventory, and Connectivity. The General tab shows profile information and real-time status of any pending changes from previous server deployments. The other three tabs display detailed information about the assigned server.
 
-General — The General tab has two sections: Details and Configuration.
+General : The General tab has two sections: Details and Configuration.
 
   * Details section displays the Status, Name, Description, User Label, Target Platform, Template Name, and Organization. You can also view Server Assignment fields (Assigned Server and Assignment Type) and any configured Tags.
 
@@ -242,9 +244,9 @@ If you modify or add a policy to a deployed Server Profile, its Status changes t
 
      2. Choose the appropriate UUID from Pool or Static options:
 
-  * Pool— Allows UUID Pool association to the server. Select the required pool from the list available. For more information on pools, see [Pools](/help/configure/servers#pools).
+  * Pool: Allows UUID Pool association to the server. Select the required pool from the list available. For more information on pools, see [Pools](/help/configure/servers#pools).
 
-  * Static— Allows UUID association to the server using Static UUID address, by entering the full UUID address for the server. It must include both the UUID prefix and the UUID suffix. For example, the prefix could be 69F8FB36-67F3-4BC3 and the suffix could be 0002-000000000001.
+  * Static: Allows UUID association to the server using Static UUID address, by entering the full UUID address for the server. It must include both the UUID prefix and the UUID suffix. For example, the prefix could be 69F8FB36-67F3-4BC3 and the suffix could be 0002-000000000001.
 
      3. Click Assign.
 
@@ -265,11 +267,11 @@ If you modify or add a UUID pool to a deployed Server Profile, its Status change
   9. To view errors and warnings, go to Configuration > Errors/Warnings, and review the listed items.
 
 
-**Server** —The Server tab displays the details of the assigned server and its properties.
+**Server** :The Server tab displays the details of the assigned server and its properties.
 
-**Inventory** —The Inventory tab displays the inventory details of the assigned server.
+**Inventory** :The Inventory tab displays the inventory details of the assigned server.
 
-**Connectivity** — The Connectivity tab displays the network connectivity details such as vNIC/vHBA, Network Adapter, Virtual Circuit, FI details and so on.
+**Connectivity** : The Connectivity tab displays the network connectivity details such as vNIC/vHBA, Network Adapter, Virtual Circuit, FI details and so on.
 
 For more information, see [Servers Details View](../../../../../../../../../../help/operate/servers#servers_details_view).
 
@@ -377,7 +379,7 @@ Intersight provides the capability to import configuration details of C-series s
 
 You can import a server profile configuration from the following locations in Intersight:
 
-  * Servers table view—Select a Cisco UCS C-Series Standalone server in Intersight Managed Mode (IMM) from the table view and click the ellipses (…) and select Import Server Profile.
+  * Servers table view: Select a Cisco UCS C-Series Standalone server in Intersight Managed Mode (IMM) from the table view and click the ellipses (…) and select Import Server Profile.
 
   * Click a C-series server in standalone mode in Intersight Managed Mode (IMM) in the Servers table view to access the Server details page. Click Actions on the top-right corner and select Import Server Profile. This option is enabled only when no server profile is associated with the server.
 

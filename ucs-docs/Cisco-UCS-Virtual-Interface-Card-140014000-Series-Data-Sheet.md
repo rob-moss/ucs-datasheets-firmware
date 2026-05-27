@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Virtual Interface Card 1400/14000 Series Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-741130.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:53:03 |
+| **Fetched on** | 2026-05-27 11:01:16 |
 
 ---
 
@@ -42,7 +42,7 @@ Print
 View with Adobe Reader on a variety of devices
 
 
-Updated:July 17, 2024
+Updated:April 20, 2026
 
 Bias-Free Language
 
@@ -94,7 +94,7 @@ Print
 View with Adobe Reader on a variety of devices
 
 
-Updated:July 17, 2024
+Updated:April 20, 2026
 
 #### Table of Contents
 
@@ -102,7 +102,7 @@ Updated:July 17, 2024
   * Portfolio overview
   * Product overview
   * Features and benefits
-  * Next-generation data center features
+  * Data center features
   * Product specifications
   * Ordering information
   * System requirements
@@ -133,7 +133,7 @@ Cisco UCS VIC 1400/14000 Series
 
 Cisco VICs support Cisco SingleConnect technology, which provides an easy, intelligent, and efficient way to connect and manage computing in your data center. Cisco SingleConnect unifies LAN, SAN, and systems management into one simplified link for rack servers, blade servers, and virtual machines. This technology reduces the number of network adapters, cables, and switches needed and radically simplifies the network, reducing complexity. Cisco VICs can support 256 Express (PCIe) virtual devices, either virtual Network Interface Cards (vNICs) or virtual Host Bus Adapters (vHBAs), with a high rate of I/O Operations Per Second (IOPS), support for lossless Ethernet, and 10/25/40/100-Gbps connection to servers. The PCIe Generation 3 x16 interface helps ensure optimal bandwidth to the host for network-intensive applications, with a redundant path to the fabric interconnect. Cisco VICs support NIC teaming with fabric failover for increased reliability and availability. In addition, it provides a policy-based, stateless, agile server infrastructure for your data center. 
 
-The VIC 1400/14000 series is designed for UCS X-Series M6 Blade Servers, B-Series M5 and M6 Blade Servers, C-Series M5 and M6 Rack Servers, and S-Series M5 Storage Servers. The adapters are capable of supporting 10/25/40/100-Gigabit Ethernet and Fibre Channel over Ethernet (FCoE). It incorporates Cisco’s next-generation Converged Network Adapter (CNA) technology and offers a comprehensive feature set, providing investment protection for future feature software releases. In addition, the VIC supports Cisco’s Data Center Virtual Machine Fabric Extender (VM-FEX) technology. This technology extends the Cisco UCS fabric interconnect ports to virtual machines, simplifying server virtualization deployment.
+The Cisco UCS VIC 1400/14000 Series are fourth-generation adapters designed for UCS X-Series M6 Blade Servers, B-Series M5 and M6 Blade Servers, C-Series M5 and M6 Rack Servers, and S-Series M5 Storage Servers. The adapters support 10/25/40/100-Gigabit Ethernet and Fibre Channel over Ethernet (FCoE) using Cisco’s next-generation Converged Network Adapter (CNA) technology. These VICs offer a comprehensive feature set, providing investment protection for future feature software releases. In addition, the VIC supports Cisco’s Data Center Virtual Machine Fabric Extender (VM-FEX) technology. This technology extends the Cisco UCS fabric interconnect ports to virtual machines, simplifying server virtualization deployment.
 
 Product overview
 
@@ -147,13 +147,13 @@ Figure 2.
 
 Cisco UCS VIC 1440
 
-![Cisco UCS VIC 1440 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_2.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_2.png)
 
 Figure 3. 
 
 Cisco UCS VIC 1440 Infrastructure
 
-![Cisco UCS VIC 1440 with Port Expander](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_3.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_3.png)
 
 Figure 4. 
 
@@ -169,7 +169,7 @@ Figure 5.
 
 Cisco UCS VIC 1480
 
-![Cisco UCS VIC 1480 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_5.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_5.png)
 
 Figure 6. 
 
@@ -185,7 +185,7 @@ Figure 7.
 
 Cisco UCS VIC 14425
 
-![Cisco UCS VIC 14425 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_7.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_7.png)
 
 Figure 8. 
 
@@ -207,7 +207,7 @@ Figure 10.
 
 Cisco UCS VIC 14000 bridge connect
 
-![Cisco UCS VIC 14825 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_10.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_10.png)
 
 Figure 11. 
 
@@ -223,7 +223,7 @@ Figure 12.
 
 Cisco UCS VIC 1455
 
-![Cisco UCS VIC 1455 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_12.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_12.png)
 
 Figure 13. 
 
@@ -239,7 +239,7 @@ Figure 14.
 
 Cisco UCS VIC 1457
 
-![Cisco UCS VIC 1457 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_14.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_14.png)
 
 Figure 15. 
 
@@ -255,7 +255,7 @@ Figure 16.
 
 Cisco UCS VIC 1467
 
-![Cisco UCS VIC 1467 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_16.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_16.png)
 
 Figure 17. 
 
@@ -271,7 +271,7 @@ Figure 18.
 
 Cisco UCS VIC 1495
 
-![Cisco UCS VIC 1495 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_18.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_18.png)
 
 Figure 19. 
 
@@ -287,7 +287,7 @@ Figure 20.
 
 Cisco UCS VIC 1497
 
-![Cisco UCS VIC 1497 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_20.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_20.png)
 
 Figure 21. 
 
@@ -303,7 +303,7 @@ Figure 22.
 
 Cisco UCS VIC 1477
 
-![Cisco UCS VIC 1477 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_22.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.docx/_jcr_content/renditions/datasheet-c78-741130_22.png)
 
 Figure 23. 
 
@@ -311,25 +311,23 @@ Cisco UCS VIC 1477 Infrastructure
 
 Features and benefits
 
-The Cisco UCS VIC 1400/14000 series provides the following features and benefits: 
+The Cisco UCS VIC 1400/14000 Series provides the following features and benefits: 
 
 ● Stateless and agile platform: The personality of the card is determined dynamically at boot time using the service profile associated with the server. The number, type (NIC or HBA), identity (MAC address and World Wide Name [WWN]), failover policy, bandwidth, and Quality-of-Service (QoS) policies of the PCIe interfaces are all determined using the service profile. The capability to define, create, and use interfaces on demand provides a stateless and agile server infrastructure.
 
 ● Network interface virtualization: Each PCIe interface created on the VIC is associated with an interface on the Cisco UCS fabric interconnect, providing complete network separation for each virtual cable between a PCIe device on the VIC and the interface on the Fabric Interconnect.
 
-Next-generation data center features
+Data center features
 
-A hardware classification engine provides support for advanced data center requirements, including stateless network offloads for GENEVE, VXLAN and NVGRE. Additional features support low latency kernel bypass for performance optimization via usNIC, DPDK, and server virtualization support using NetQueue and VMQ/VMMQ. The Cisco UCS VIC 1400/14000 series provides high network performance and low latency for the most demanding applications: 
+A hardware classification engine provides support for advanced data center requirements, including stateless network offloads for GENEVE, VXLAN and NVGRE. Additional features support low-latency kernel bypass for performance optimization via us NIC and DPDK, and server virtualization support using NetQueue and VMQ/VMMQ. The Cisco UCS VIC 1400/14000 Series provides high network performance and low latency for the most demanding applications: 
 
-● Big data, High-Performance Computing (HPC)
+● Big data and High-Performance Computing (HPC)
 
 ● Large-scale virtual machine deployments
 
 ● High-bandwidth storage targets and archives
 
 When the Cisco UCS VIC 1400/14000 Series is connected to Cisco Nexus 9000 Series Switches, pools of virtual hosts scale with greater speed and agility. Cisco Nexus 9000 Series Switches provide native FCoE connectivity from the VIC to both Ethernet and Fibre Channel targets.
-
-The Cisco VIC provides industry-leading performance and features. 
 
 Table 1 summarizes the main features and benefits of the Cisco UCS VIC 1400/14000 Series. 
 
@@ -339,12 +337,12 @@ Features |  Benefits
 ---|---  
 **PCIe x16 Gen3 interfaces** |  Delivers high performance (128 Gb/s) throughput   
 **10/25/40/100-Gbps unified I/O** |  ● Delivers 4x10/25-Gbps in a single VIC configuration with the Cisco UCS C-Series M5 and M6 Rack Server, and S-Series M5 Rack Server  ● Delivers 2x40/100-Gbps in a single VIC configuration with the Cisco C-Series M5 and M6 Rack Server  ● Helps reduce TCO by consolidating the overall number of NICs, HBAs, cables, and switches because LAN and SAN traffic run over the same adapter card and fabric   
-**256 dynamic virtual adapters and interfaces** |  ● Creates fully functional unique and independent PCIe adapters and interfaces (NICs and HBAs) without requiring single-root I/O virtualization (SR-IOV) support from OSes or hypervisors  ● Allows these virtual interfaces and adapters to be configured and operated independently, just like physical interfaces and adapters  ● Creates a highly flexible I/O environment needing only one card for all I/O configurations  **Note:** Cisco UCS VIC 1400/14000 series hardware is SR-IOV capable. Please refer to Cisco UCS Manager configuration limits for your specific OS and environment in the configuration guide.   
+**256 dynamic virtual adapters and interfaces** |  ● Creates fully functional unique and independent PCIe adapters and interfaces (NICs and HBAs) without requiring single-root I/O virtualization (SR-IOV) support from OSes or hypervisors  ● Allows these virtual interfaces and adapters to be configured and operated independently, just like physical interfaces and adapters  ● Creates a highly flexible I/O environment needing only one card for all I/O configurations  **Note:** Cisco UCS VIC 1400/14000 Series hardware is SR-IOV capable. Please refer to Cisco UCS Manager configuration limits for your specific OS and environment in the configuration guide.   
 **Low-latency connectivity** |  Supports usNIC technology, delivering latency as low as 1 microsecond in back-to-back VIC connections; standard latency using the Cisco Nexus Series Switches in approximately 1-2 microseconds   
 **Cisco SingleConnect technology** |  A single unified network: the same network brings LAN, SAN, and management connectivity to each server   
 **Cisco Data Center VM-FEX technology** |  ● Unifies virtual and physical networking in a single infrastructure  ● Provides virtual machine visibility from the physical network and a consistent network operating model for physical and virtual servers  ● Enables configurations and policies to follow the virtual machine during virtual machine migration   
 **Centralized management** |  Enables the VIC card in B-/X-/C-/S-Series to be centrally managed and configured by Cisco UCS Manager or Intersight   
-**Support for advanced features** |  ● SR-IOV  ● usNIC  ● Small Computer System Interface over IP (iSCSI) and iSCSI boot  ● Ethernet NIC (eNIC) and Fibre Channel NIC (fNIC)  ● VM-FEX support for KVM with RHEL  ● Microsoft System Center Virtual Machine Manager (SCVMM)  ● DPDK  ● NetFlow  ● N-Port ID Virtualization (NPIV)  ● Receive Flow Steering  ● Extended Receive (RX) Ring  ● VMware NetQueue  ● Windows VMQ/VMMQ  ● Multi-RQ  ● Receive Side Scaling (IPv4/IPv6/UDP/TCP)  ● GENEVE support with VMware NSX-T, VXLAN and NVGRE  ● NVME over RDMA support with RHEL 7.7  ● RoCEv2 support with Windows 2019 NDKPI Mode 1 and Mode 2 with IPv4 / IPv6 and Linux   
+**Support for advanced features** |  ● SR-IOV  ● usNIC  ● Small Computer System Interface over IP (iSCSI) and iSCSI boot  ● Ethernet NIC (eNIC) and Fibre Channel NIC (fNIC)  ● VM-FEX support for KVM with RHEL  ● Microsoft System Center Virtual Machine Manager (SCVMM)  ● DPDK  ● NetFlow  ● N-Port ID Virtualization (NPIV)  ● Receive Flow Steering  ● Extended Receive (RX) Ring  ● VMware NetQueue  ● Windows VMQ/VMMQ  ● Multi-RQ  ● Receive Side Scaling (IPv4/IPv6/UDP/TCP)  ● GENEVE support with VMware NSX-T, VXLAN and NVGRE  ● NVM3 over RDMA support with RHEL 7.7  ● RoCEv2 support with Windows Server 2019 NDKPI Mode 1 and Mode 2 with IPv4 / IPv6 and Linux   
 **Fibre Channel** |  ● Supports FCoE Fibre Channel with 10e15 Bit Error Rate (BER) connected to Cisco Nexus 9000 Series Switches  ● Supports NVMe capabilities by adding NVMe over Fabrics (NVMeoF) with RoCEv2 addition to existing support for NVMe over Fabrics using Fibre Channel (FC-NVMe)  ● FC-NVMe with SLES SP12 SP3/SP4, SLES 15, SLES 15 SP1, RHEL 7.6, RHEL 7.8, RHEL 7.9, RHEL 8.2, and ESXi 7.0   
 **Network architecture** |  Provides a redundant path to the Fabric Interconnect using hardware-based fabric failover   
 **High performance I/O** |  Supports 900,000+ I/O Operations Per Second (IOPS)   
@@ -359,7 +357,7 @@ Table 2 lists the specifications for the Cisco UCS VIC 1400/14000 Series.
 
 Items |  Specifications  
 ---|---  
-**Standards** |  ● 10-Gigabit Ethernet  ● 25-Gigabit Ethernet  ● 40-Gigabit Ethernet  ● 100-Gigabit Ethernet  ● IEEE 802.3x  ● IEEE 802.1q VLAN  ● IEEE 802.1p  ● IEEE 802.1Qaz  ● IEEEE 802.1Qbb  ● Prestandard IEEE 802.1BR  ● Jumbo frames up to 9KB  ● SCSI-FCP  ● T11 FCoE   
+**Standards** |  ● 10-Gigabit Ethernet  ● 25-Gigabit Ethernet  ● 40-Gigabit Ethernet  ● 100-Gigabit Ethernet  ● IEEE 802.3x  ● IEEE 802.1q VLAN  ● IEEE 802.1p  ● IEEE 802.1Qaz  ● IEEE 802.1Qbb  ● Prestandard IEEE 802.1BR  ● Jumbo frames up to 9KB  ● SCSI-FCP  ● T11 FCoE   
 **Components** |  Cisco UCS custom Application-Specific Integrated Circuit (ASIC)   
 **VIC 1495/1497/1477 physical ports** |  2 x 40/100-Gbps Ethernet and FCoE QSFP28  
 **VIC 1455/1457/1467 physical ports** |  4x10/25-Gbps Ethernet and FCoE SFP28  
@@ -367,10 +365,10 @@ Items |  Specifications
 **Performance** |  10/25/40/100-Gbps per port   
 **Management** |  Software release: Release 4.1(x) extends support for RoCEv2 Cisco VIC 1455/1457/1495/1497: Recommended UCSM Release is 4.0(4e) or later that contains VIC firmware 5.0(3d) or later and Recommended Standalone Release is 4.0(4h) or later that contains VIC firmware 5.0.3(d) or later. Review Note under Table 2 for minimum version required  
 **Number of interfaces** |  256 virtual interfaces (approximately eight are reserved for internal use; other factors such as the OS and hypervisor may limit this number further)   
-**Supported switches with VIC 1455/1457/1467** |  Cisco Fabric Interconnect and Cisco Nexus switches:  ● Cisco UCS-FI-6536 (support with minimum IMM Release 4.2(2))  ● Cisco UCS-FI-64108 (support with minimum UCSM Release 4.1(1a))  ● Cisco UCS-FI-6454  ● Cisco UCS-FI-6332-16UP  ● Cisco UCS-FI-6332  ● Cisco UCS-FI-6248 (not supported on VIC 1467)  ● Cisco UCS-FI-6296 (not supported on VIC 1467)  ● Cisco Nexus 93180YC-FX3 (support in FEX mode with minimum UCSM Release 4.2(1))  ● Cisco Nexus 2232PP  ● Cisco Nexus 2348UPQ  ● Cisco Nexus 31108PC-V  ● Cisco Nexus 3172PQ  ● Cisco Nexus 3232C  ● Cisco Nexus 3548P-10GX  ● Cisco Nexus 36180YC-R  ● Cisco Nexus 5548UP  ● Cisco Nexus 5624Q  ● Cisco Nexus 5648Q  ● Cisco Nexus 5672UP-16G  ● Cisco Nexus 5696Q  ● Cisco Nexus 92160YC-X  ● Cisco Nexus 92300YC  ● Cisco Nexus 9236C  ● Cisco Nexus 9336C-FX2  ● Cisco Nexus 9372PX  ● Cisco Nexus 93180LC-EX  ● Cisco Nexus 93180YC-EX  ● Cisco Nexus 93180YC-FX  ● Cisco Nexus 93240YC-FX2  ● Cisco Nexus 93360YC-FX2 (support from Cisco IMC Release 4.2(2))  ● Cisco Nexus 9316D-GX (support at 25G from Cisco IMC Release 4.2(2))  ● Cisco Nexus 93108TC-FX (qualified with SFP-10G-T-X from Cisco IMC Release 4.2(1))  ● Cisco Nexus 93108TC-EX (qualified with SFP-10G-T-X from Cisco IMC Release 4.2(1))   
-**Supported switches with VIC 1495/1497/1477** |  ● Cisco UCS-FI-6536 (support with minimum IMM Release 4.2(2))  ● Cisco UCS-FI-6332-16UP  ● Cisco UCS-FI-6332  ● Cisco Nexus 3232C  ● Cisco Nexus 92300YC  ● Cisco Nexus 9236C  ● Cisco Nexus 93180LC-EX  ● Cisco Nexus 93240YC-FX2  ● Cisco Nexus 9332C (support from Cisco IMC Release 4.2(2))  ● Cisco Nexus 9336C-FX2  ● Cisco Nexus 93360YC-FX2 (support from Cisco IMC Release 4.2(2))  ● Cisco Nexus 9364C   
-**Supported Fabric Interconnect and IOM with VIC 1440/1480** |  Cisco Fabric Interconnect switches and IOM:  ● Cisco UCS-FI-6536 (support with minimum IMM Release 4.2(2))  ● Cisco UCS-FI-64108 (support with minimum UCSM Release 4.1(1a))  ● Cisco UCS FI-6454  ● Cisco UCS-FI-6332-16UP  ● Cisco UCS-FI-6332  ● Cisco UCS-FI-6324 (UCS Mini)  ● Cisco UCS-FI-6248  ● Cisco UCS-FI-6296  ● Cisco UCS-IOM-2408  ● Cisco UCS-IOM-2304  ● Cisco UCS-IOM-2208  ● Cisco UCS-IOM-2204   
-**Supported Fabric Interconnect and IOM with VIC 14425/14825** |  Cisco Fabric Interconnect switches and IOM:  ● Cisco UCS-FI-6536 (support with minimum IMM Release 4.2(2))  ● Cisco UCS-FI-64108  ● Cisco UCS FI-6454  ● Cisco UCSX-I-9108-25G  ● Cisco UCSX-I-9108-100G (supported with FI-6536)   
+**Supported switches with VIC 1455/1457/1467** |  Cisco Fabric Interconnect and Cisco Nexus switches:  ● Cisco UCS-FI-6664 (support with minimum 6.0(1))  ● Cisco UCS-FI-6652 (support with minimum 6.0(2))  ● Cisco UCS-FI-6536 (support with minimum IMM Release 4.2(2))  ● Cisco UCS-FI-64108 (support with minimum UCSM Release 4.1(1a))  ● Cisco UCS-FI-6454  ● Cisco UCS-FI-6332-16UP  ● Cisco UCS-FI-6332  ● Cisco UCS-FI-6248 (not supported on VIC 1467)  ● Cisco UCS-FI-6296 (not supported on VIC 1467)  ● Cisco Nexus 93180YC-FX3 (support in FEX mode with minimum UCSM Release 4.2(1))  ● Cisco Nexus 93180YC-FX3 (support in switch mode with minimum 6.0(2))  ● Cisco Nexus 2232PP  ● Cisco Nexus 2348UPQ  ● Cisco Nexus 31108PC-V  ● Cisco Nexus 3172PQ  ● Cisco Nexus 3232C  ● Cisco Nexus 3548P-10GX  ● Cisco Nexus 36180YC-R  ● Cisco Nexus 5548UP  ● Cisco Nexus 5624Q  ● Cisco Nexus 5648Q  ● Cisco Nexus 5672UP-16G  ● Cisco Nexus 5696Q  ● Cisco Nexus 92160YC-X  ● Cisco Nexus 92300YC  ● Cisco Nexus 9236C  ● Cisco Nexus 9336C-FX2  ● Cisco Nexus 9372PX  ● Cisco Nexus 93180LC-EX  ● Cisco Nexus 93180YC-EX  ● Cisco Nexus 93180YC-FX  ● Cisco Nexus 93240YC-FX2  ● Cisco Nexus 93360YC-FX2 (support from Cisco IMC Release 4.2(2))  ● Cisco Nexus 9316D-GX (support at 25G from Cisco IMC Release 4.2(2))  ● Cisco Nexus 93108TC-FX (qualified with SFP-10G-T-X from Cisco IMC Release 4.2(1))  ● Cisco Nexus 93108TC-EX (qualified with SFP-10G-T-X from Cisco IMC Release 4.2(1))   
+**Supported switches with VIC 1495/1497/1477** |  ● Cisco UCS-FI-6664 (support with minimum 6.0(1))  ● Cisco UCS-FI-6536 (support with minimum IMM Release 4.2(2))  ● Cisco UCS-FI-6332-16UP  ● Cisco UCS-FI-6332  ● Cisco Nexus 3232C  ● Cisco Nexus 92300YC  ● Cisco Nexus 9236C  ● Cisco Nexus 93180LC-EX  ● Cisco Nexus 93240YC-FX2  ● Cisco Nexus 9332C (support from Cisco IMC Release 4.2(2))  ● Cisco Nexus 9336C-FX2  ● Cisco Nexus 93360YC-FX2 (support from Cisco IMC Release 4.2(2))  ● Cisco Nexus 9364C   
+**Supported Fabric Interconnect and IOM with VIC 1440/1480** |  Cisco Fabric Interconnect switches and IOM:  ● Cisco UCS-FI-6652 (support with minimum 6.0(2))  ● Cisco UCS-FI-6536 (support with minimum IMM Release 4.2(2))  ● Cisco UCS-FI-64108 (support with minimum UCSM Release 4.1(1a))  ● Cisco UCS FI-6454  ● Cisco UCS-FI-6332-16UP  ● Cisco UCS-FI-6332  ● Cisco UCS-FI-6324 (UCS Mini)  ● Cisco UCS-FI-6248  ● Cisco UCS-FI-6296  ● Cisco UCS-IOM-2408  ● Cisco UCS-IOM-2304  ● Cisco UCS-IOM-2208  ● Cisco UCS-IOM-2204   
+**Supported Fabric Interconnect and IOM with VIC 14425/14825** |  Cisco Fabric Interconnect switches and IOM:  ● Cisco UCS-FI-6664 (support with minimum 6.0(1))  ● Cisco UCS-FI-6536 (support with minimum IMM Release 4.2(2))  ● Cisco UCS-FI-64108  ● Cisco UCS FI-6454  ● Cisco UCSX-I-9108-25G  ● Cisco UCSX-I-9108-100G (supported with FI-6536)   
   
 VIC14425/14825: Minimum UCSM Release 4.2(1).
 
@@ -380,7 +378,7 @@ VIC 1455/1457: Minimum UCSM Release Is 4.0(1a) with VIC firmware 5.0(1c) or late
 
 VIC 1495/1497: Minimum UCSM Release Is 4.0(2c) with VIC firmware 5.0(2b) or later. Whereas the minimum Standalone Release is 4.0(2) with VIC firmware 5.0(2b).
 
-UCS Manager Release 4.1 support NVMeoF with RDMA for RoCEv2 on all VIC 1400/14000 series.
+UCS Manager Release 4.1 supports NVMeoF with RDMA for RoCEv2 on all VIC 1400/14000 Series.
 
 VIC 1440 + PE support with IOM 2408 (will support 40G aggregate flow and maximum 25G single flow per vNIC) with UCSM 4.1(2a).
 
@@ -390,11 +388,11 @@ In addition VIC 1457/1467/1455 supports 4x10G breakout with 6300 series FI, 4x10
 
 Meanwhile, with VIC 1477/1495/1497 there is no reverse-breakout support of the 40/100G ports on these VICs to 4x10G/4x25G.
 
-All the listed switches are validated against our Transceivers/Cables, any switch that is not listed is expected to work but not validated.
+All the listed switches are validated against our transceivers and cables, any switch that is not listed is expected to work but not validated.
 
 **Table 3. **Power and physical specification
 
-Items |  Specifications   
+Items |  Specifications  
 ---|---  
 **Power consumption** |  **Cisco UCS VIC** |  **Power consumption (max)**  
 1455 |  27.4W  
@@ -438,13 +436,13 @@ Transceiver and cable support
 
 The Cisco UCS VIC supports a wide variety of Ethernet connectivity options using Cisco 10/25/40/100-Gbps transceivers and 10/25/40/100-Gbps passive cables and active optical cables.
 
-Third party cables and transceivers are not supported by the Cisco UCS C-series VICs and the link would not come up if they are used to connect VIC to a Fabric Interconnect or to a ToR switch like Nexus 9K. Hence when connecting C-series VIC to Fabric Interconnect or a ToR switch only the supported transceivers and cables listed below should be used.
+Third-party cables and transceivers are not supported by the Cisco UCS C-Series VICs and the link would not come up if they are used to connect VIC to a Fabric Interconnect or to a top of rack switch such as Nexus 9000 Series. Only the supported transceivers and cables listed below should be used.
 
 Table 5 lists the supported transceiver options.
 
 **Table 5. **Cisco UCS VIC transceiver matrix
 
-Product number  |  Description   
+Product number |  Description  
 ---|---  
 **SFP+ 10-Gbps transceivers**(16)  
 **SFP-10G-T-X(14)** |  10GBASE-T, Copper, 30m  
@@ -585,10 +583,10 @@ Product number |  Description
 **QSFP-4X10G-AOC7M**(5)(10) |  40GBASE-active optical QSFP to 4xSFP+ active optical breakout cable, 7M  
 **QSFP-4X10G-AOC10M**(5)(10) |  40GBASE-active optical QSFP to 4xSFP+ active optical breakout cable, 10M  
 **QSFP 100-Gbps cables**  
-**QSFP-100G-CU1M** (17) |  100GBASE-CR4 passive copper cable, 1M  
-**QSFP-100G-CU2M** (17) |  100GBASE-CR4 passive copper cable, 2M  
-**QSFP-100G-CU3M** (17) |  100GBASE-CR4 passive copper cable, 3M  
-**QSFP-100G-CU5M** (17) |  100GBASE-CR4 passive copper cable, 5M  
+**QSFP-100G-CU1M**(17) |  100GBASE-CR4 passive copper cable, 1M  
+**QSFP-100G-CU2M**(17) |  100GBASE-CR4 passive copper cable, 2M  
+**QSFP-100G-CU3M**(17) |  100GBASE-CR4 passive copper cable, 3M  
+**QSFP-100G-CU5M**(17) |  100GBASE-CR4 passive copper cable, 5M  
 **QSFP-100G-AOC1M** |  100GBASE QSFP Active Optical Cable, 1m  
 **QSFP-100G-AOC2M** |  100GBASE QSFP Active Optical Cable, 2m  
 **QSFP-100G-AOC3M** |  100GBASE QSFP Active Optical Cable, 3m  
@@ -658,7 +656,7 @@ Find warranty information at Cisco.com on the Product Warranties page.
 
 Product sustainability
 
-Information about Cisco’s environmental, social, and governance (ESG) initiatives and performance is provided in Cisco’s CSR and sustainability [reporting](https://www-1.compliance2product.com/c2p/getAttachment.do?code=YM6Y0yThdO6Wj1FxxYPYfUG2dtFkTeFWGpzLRO8tcURFEifUCRV403Tq2ZMWP6Ai).
+Information about Cisco’s environmental, social, and governance (ESG) initiatives and performance is provided in Cisco’s CSR and sustainability [reporting](https://www.cisco.com/c/dam/m/en_us/about/csr/esg-hub/_pdf/purpose-report-2024.pdf).
 
 **Table 8. **Cisco environmental sustainability information
 
@@ -669,9 +667,9 @@ Information on electronic waste laws and regulations, including our products, ba
 Information on product takeback and reuse program |  [Cisco Takeback and Reuse Program](https://www.cisco.com/c/en/us/about/takeback-and-reuse.html)  
 Sustainability inquiries |  Contact: [csr_inquiries@cisco.com](mailto:csr_inquiries@cisco.com)  
 Standards |  Table 2. Product specifications  
-**Power** |  Power consumption |  Table 2. Product specifications  
+**Power** |  Power consumption |  Table 3. Product specifications  
 **Material** |  Product packaging weight and materials |  Contact: [environment@cisco.com](mailto:environment@cisco.com)  
-Physical dimensions |  Table 2. Product specifications  
+Physical dimensions |  Table 3. Product specifications  
   
 Cisco Unified Computing Services
 
@@ -2065,11 +2063,11 @@ Print
 
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.pdf) (2.5 MB)   
+  * [PDF](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.pdf) (2.4 MB)   
 View with Adobe Reader on a variety of devices
 
 
-Updated:July 14, 2025
+Updated:April 28, 2026
 
 Bias-Free Language
 
@@ -2117,11 +2115,11 @@ Print
 
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.pdf) (2.5 MB)   
+  * [PDF](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.pdf) (2.4 MB)   
 View with Adobe Reader on a variety of devices
 
 
-Updated:July 14, 2025
+Updated:April 28, 2026
 
 #### Table of Contents
 
@@ -2153,7 +2151,7 @@ The Cisco UCS Virtual Interface Card (VIC) 15000 Series extends the network fabr
 
 Cisco VICs support Cisco SingleConnect technology, which provides an easy, intelligent, and efficient way to connect and manage computing in your data center. Cisco SingleConnect unifies LAN, SAN, and systems management into one simplified link for rack servers, blade servers, and virtual machines. This technology reduces the number of network adapters, cables, and switches needed and radically simplifies the network, reducing complexity. Cisco VICs can support 512 PCI Express (PCIe) virtual devices, either virtual Network Interface Cards (vNICs) or virtual Host Bus Adapters (vHBAs), with a high rate of I/O Operations Per Second (IOPS), support for lossless Ethernet, and 10/25/40/50/100/200-Gbps connection to servers. The PCIe Generation 4 x16 interface helps ensure optimal bandwidth to the host for network-intensive applications, with a redundant path to the fabric interconnect. Cisco VICs support NIC teaming with fabric failover for increased reliability and availability. In addition, it provides a policy-based, stateless, agile server infrastructure for your data center.
 
-The VIC 15000 series is designed for Cisco UCS X-Series M6/M7/M8 Blade Servers, Cisco UCS B-Series M6 Blade Servers, and Cisco UCS C-Series M6/M7/M8 Rack Servers. The adapters are capable of supporting 10/25/40/50/100/200-Gigabit Ethernet and Fibre Channel over Ethernet (FCoE). They incorporate Cisco’s next-generation Converged Network Adapter (CNA) technology and offer a comprehensive feature set, providing investment protection for future feature software releases.
+The VIC 15000 Series is designed for Cisco UCS X-Series M6/M7/M8 Blade Servers, Cisco UCS B-Series M6 Blade Servers, and Cisco UCS C-Series M6/M7/M8 Rack Servers. The adapters are capable of supporting 10/25/40/50/100/200-Gigabit Ethernet and Fibre Channel over Ethernet (FCoE). They incorporate Cisco’s next-generation Converged Network Adapter (CNA) technology and offer a comprehensive feature set, providing investment protection for future feature software releases.
 
 Product overview
 
@@ -2163,13 +2161,13 @@ The Cisco UCS VIC 15230 and 15231 (Figure 1) are 2x100-Gbps Ethernet/FCoE-capabl
 
 The Cisco UCS VIC 15230 is functionally equivalent to the 15231, but incorporates secure boot technology.
 
-![Cisco UCS VIC 15231](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_0.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_0.png)
 
 Figure 1. 
 
 Cisco UCS VIC 15230 and 15231 
 
-![Cisco UCS VIC 15230 and 15231 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_1.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_1.png)
 
 Figure 2. 
 
@@ -2179,13 +2177,13 @@ Cisco VIC 15420
 
 The Cisco UCS VIC 15420 (Figure 3) is a 4x25-Gbps Ethernet/FCoE capable modular LAN On Motherboard (mLOM) designed exclusively for Cisco UCS X210c M6/M7, X410c M7, and X215c M8 Compute Nodes. The Cisco UCS VIC 15420 enables a policy-based, stateless, agile server infrastructure that can present to the host PCIe standards-compliant interfaces that can be dynamically configured as either NICs or HBAs.
 
-![Cisco UCS VIC 15420](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_2.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_2.png)
 
 Figure 3. 
 
 Cisco UCS VIC 15420
 
-![Cisco UCS VIC 15420 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_3.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_3.png)
 
 Figure 4. 
 
@@ -2199,19 +2197,19 @@ The UCS VIC 15000 bridge connector (Figure 6) is required with the mezz card to 
 
 In addition to Ethernet network connectivity to the IFM, the VIC 15422 also provides two PCIe x16 Gen4 links to the UCS 9416 X-fabric module for enabling Cisco UCS X440p PCIe node connectivity for the X210c, X410c, and X215c compute nodes.
 
-![Cisco UCS VIC 15422](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_4.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_4.png)
 
 Figure 5. 
 
 Cisco UCS VIC 15422
 
-![Cisco UCS VIC 15000 bridge connect](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_5.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_5.png)
 
 Figure 6. 
 
 Cisco UCS VIC 15000 bridge connect
 
-![Cisco UCS VIC 15422 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_6.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_6.png)
 
 Figure 7. 
 
@@ -2225,13 +2223,13 @@ The Cisco UCS VIC 15427 is functionally equivalent to the 15428, but incorporate
 
 When a UCS rack server with VIC 15427 or 15428 is connected to a fabric interconnect (FI-6536/6400/6300), the VIC 15428 is provisioned through Cisco Intersight™ Managed Mode (IMM) or Cisco UCS Manager (UCSM) policies. When the UCS rack server with VIC 15427 or 15428 is connected to a ToR switch such as Cisco Nexus® 9000 Series, the VIC adapter is provisioned through the Cisco Integrated Management Controller (IMC) or Intersight policies for a standalone server.
 
-![Cisco UCS VIC 15428](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_7.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_7.png)
 
 Figure 8. 
 
 Cisco UCS VIC 15427 and 15428 
 
-![Cisco UCS VIC 15427 and 15428 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_8.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_8.png)
 
 Figure 9. 
 
@@ -2251,7 +2249,7 @@ Figure 10.
 
 Cisco UCS VIC 15237 and 15238 
 
-![Cisco UCS VIC 15237 and 15238 infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_10.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_10.png)
 
 Figure 11. 
 
@@ -2261,19 +2259,19 @@ Cisco VIC 15411
 
 The Cisco UCS VIC 15411 (Figure 12) is a dual-port 40-Gbps or 4x10-Gbps Ethernet/FCoE-capable modular LAN on motherboard (mLOM) designed for Cisco UCS B-Series M6 Blade Servers. When used in combination with an optional port expander, the Cisco UCS VIC 15411 capabilities are enabled for two ports of 40-Gbps Ethernet. The Cisco UCS VIC 15411 enables a policy-based, stateless, agile server infrastructure that can present to the host PCIe standards-compliant interfaces that can be dynamically configured as either NICs or HBAs.
 
-![Cisco UCS VIC 15411](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_11.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_11.png)
 
 Figure 12. 
 
 Cisco UCS VIC 15411 
 
-![Cisco UCS VIC 15411 infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_12.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_12.png)
 
 Figure 13. 
 
 Cisco UCS VIC 15411 infrastructure 
 
-![Cisco UCS VIC 15411 with port expander](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_13.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_13.png)
 
 Figure 14. 
 
@@ -2285,13 +2283,13 @@ The Cisco UCS VIC 15235 (Figure 15) is a dual-port quad small-form-factor plugga
 
 When a UCS rack server with VIC 15235 is connected to a fabric interconnect (FI-6536/6300), the VIC 15235 is provisioned through Cisco Intersight Managed Mode (IMM) or Cisco UCS Manager (UCSM) policies. When the UCS rack server with VIC 15235 is connected to a ToR switch such as Cisco Nexus 9000 Series, the VIC 15235 is provisioned through the Cisco IMC or Intersight policies for a UCS standalone server.
 
-![Cisco UCS VIC 15235](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_14.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_14.png)
 
 Figure 15. 
 
 Cisco UCS VIC 15235 
 
-![Cisco UCS VIC 15235 infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_15.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_15.png)
 
 Figure 16. 
 
@@ -2303,13 +2301,13 @@ The Cisco UCS VIC 15425 (Figure 17) is a quad-port small-form-factor pluggable (
 
 When a UCS rack server with VIC 15425 is connected to a fabric interconnect (FI-6536/6400/6300), the VIC 15425 is provisioned through Cisco Intersight Managed Mode (IMM) or Cisco UCS Manager (UCSM) policies. When the UCS rack server with VIC 15425 is connected to a ToR switch such as Cisco Nexus® 9000 Series, the VIC 15425 is provisioned through the Cisco IMC or Intersight policies for a standalone server.
 
-![Cisco UCS VIC 15425](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_16.jpg)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_16.png)
 
 Figure 17. 
 
 Cisco UCS VIC 15425
 
-![Cisco UCS VIC 15425 Infrastructure](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_17.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.docx/_jcr_content/renditions/ucs-vic-15000-series-ds_17.png)
 
 Figure 18. 
 
@@ -2325,17 +2323,15 @@ The Cisco UCS VIC 15000 Series provide the following features and benefits:
 
 Next-generation data center features
 
-A hardware classification engine provides support for advanced data center requirements, including stateless network offloads for VXLAN, NVGRE, and GENEVE. Additional features support low-latency kernel bypass for performance optimization through usNIC, DPDK, SR-IOV and server virtualization support using NetQueue and VMQ/VMMQ. The Cisco UCS VIC 15000 Series provide high network performance and low latency for the most demanding applications: 
+A hardware classification engine provides support for advanced data center requirements, including stateless network offloads for VXLAN, NVGRE, and GENEVE. Additional features support low-latency kernel bypass for performance optimization through usNIC and DPDK, and server virtualization support using SR-IOV, NetQueue, and VMQ/VMMQ. The Cisco UCS VIC 15000 Series provides high network performance and low latency for the most demanding applications:
 
-● Big data, High-Performance Computing (HPC)
+● Big data and High-Performance Computing (HPC)
 
 ● Large-scale virtual machine deployments
 
 ● High-bandwidth storage targets and archives
 
-● NVMe over Fabrics support for NVMe over RoCEv2, NVMe/FC, NVMe/TCP
-
-The Cisco VIC provides industry-leading performance and features.
+● NVMe over Fabrics (NVMe/RoCEv2, NVMe/FC, NVMe/TCP)
 
 Table 1 summarizes the main features and benefits of the Cisco UCS VIC 15000 Series.
 
@@ -2350,12 +2346,12 @@ Features |  Benefits
 **Cisco SingleConnect technology** |  A single unified network: the same network brings LAN, SAN, and management connectivity to each server.  
 **VIC Secure Boot technology** |  VIC Secure Boot, available for C-Series and X-Series platforms on select VIC models, ensures the integrity of the VIC hardware and firmware upon server boot.  VIC Secure Boot is independent of server-level secure boot technologies from Cisco, Intel, and AMD, but all of these technologies contribute to the Cisco trust model ensuring customers’ equipment is genuine and running validated firmware.  
 **Centralized management** |  Enables the mLOM and mezzanine in X-Series, and mLOM or PCIe for M6/M7 rack servers, to be centrally configured and managed by Cisco Intersight   
-**Support for advanced features** |  ● usNIC  ● 802.1Q (QinQ)  ● Small Computer System Interface over IP (iSCSI) and iSCSI boot  ● Ethernet NIC (eNIC) and Fibre Channel NIC (fNIC)  ● DPDK  ● NetFlow  ● N-Port ID Virtualization (NPIV)  ● Receive flow steering  ● Multi-RQ  ● 16K extended (TX/RX) ring  ● PTPv2 (Linux only)  ● VMware NetQueue  ● Windows VMQ/VMMQ  ● Receive side scaling (IPv4/IPv6/UDP/TCP)  ● GENEVE offload support with VMware NSX-T  ● VXLAN offload support for VMware NSX-V, Linux (RHEL, SLES)  ● ENS support for VMware NSX-T  ● VXLAN and NVGRE support on Windows  ● NVMe over RoCEv2 support with RHEL  ● NVMe over RoCEv2 support with ESXi  ● NVMe-TCP qualified with ESXi  ● NVMe-TCP qualified with RHEL  ● SMB Direct support on Windows 2019 and windows 2022 using RDMA over converged Ethernet RoCEv2  ● VIC secure boot (available with VIC 15420 and 15422 from 4.3(1) release, VIC 15235 and 15425 from 4.3(2) release, and VIC 15230, 15237, and 15427 from 4.3(2c) release)  ● SR-IOV (Support for ESXi with M7 rack-servers in IMC from 4.3(1) release)   
-**Fibre Channel** |  ● Supports Fibre Channel over the UCS unified fabric with Cisco UCS Fabric Interconnect 6300 Series, 6400 Series and 6536  ● Supports NVMe over Fabrics (NVMeoF) for Fibre Channel (FC-NVMe) with RHEL, SLES, and ESXi  ● Supports FC multiqueue (FC MQ) on RHEL and SLES  ● FDMI on Linux and ESX  ● Supports FCoE Fibre Channel when connected to Cisco Nexus 9000 Series Switches   
+**Support for advanced features** |  ● usNIC  ● 802.1Q (QinQ)  ● Small Computer System Interface over IP (iSCSI) and iSCSI boot  ● Ethernet NIC (eNIC) and Fibre Channel NIC (fNIC)  ● DPDK  ● NetFlow  ● N-Port ID Virtualization (NPIV)  ● Receive flow steering  ● Multi-RQ  ● 16K extended (TX/RX) ring  ● PTPv2 (Linux only)  ● VMware NetQueue  ● Windows VMQ/VMMQ  ● Receive side scaling (IPv4/IPv6/UDP/TCP)  ● GENEVE offload support with VMware NSX-T  ● VXLAN offload support for VMware NSX-V, Linux (RHEL, SLES)  ● ENS support for VMware NSX-T  ● VXLAN and NVGRE support on Windows  ● NVMe over RoCEv2 support with RHEL  ● NVMe over RoCEv2 support with ESXi  ● NVMe-TCP qualified with ESXi  ● NVMe-TCP qualified with RHEL  ● SMB Direct support on Windows Server 2019 and Windows Server 2022 using RDMA over Converged Ethernet (RoCEv2)  ● VIC secure boot (available with VIC 15420 and 15422 from 4.3(1) release, VIC 15235 and 15425 from 4.3(2) release, and VIC 15230, 15237, and 15427 from 4.3(2c) release)  ● SR-IOV (Support for ESXi with M7 rack-servers in IMC from 4.3(1) release)   
+**Fibre Channel** |  ● Supports Fibre Channel over the UCS unified fabric with Cisco UCS Fabric Interconnect 6300 Series, 6400 Series and 6536  ● Supports NVMe over Fabrics (NVMeoF) for Fibre Channel (FC-NVMe) with RHEL, SLES, and ESXi  ● Supports FC multiqueue (FC MQ) on RHEL and SLES  ● FDMI on Linux and ESXi  ● Supports FCoE Fibre Channel when connected to Cisco Nexus 9000 Series Switches   
 **Network architecture** |  Provides a redundant path to the fabric interconnect using hardware-based fabric failover   
 **High performance I/O** |  Supports over 900,000 I/O operations per second (IOPS)   
 **Lossless Ethernet** |  Uses Priority Flow Control (PFC) to enable lossless Ethernet as part of the Cisco UCS Unified Fabric   
-**Broad OS and hypervisor support** |  Supports customer requirements for VMware vSphere, Microsoft Windows, Red Hat Enterprise Linux, Citrix XenServer, SUSE Linux Enterprise Server, and Ubuntu. Refer to the Hardware Compatibility List (HCL) for detail list of supported operating systems   
+**Broad OS and hypervisor support** |  Supports customer requirements for VMware vSphere, Microsoft Windows Server, Red Hat Enterprise Linux, Citrix XenServer, SUSE Linux Enterprise Server, and Ubuntu. Refer to the Hardware Compatibility List (HCL) for detail list of supported operating systems  
   
 Product specifications
 
@@ -2365,17 +2361,17 @@ Table 2 lists the specifications for the Cisco UCS VIC 15000 Series.
 
 Items |  Specifications  
 ---|---  
-**Standards** |  ● 10-Gigabit Ethernet  ● 25-Gigabit Ethernet  ● 40-Gigabit Ethernet  ● 50-Gigabit Ethernet  ● 100-Gigabit Ethernet  ● 200-Gigabit Ethernet  ● IEEE 802.3x  ● IEEE 802.1q (formerly 802.1ad) VLAN  ● IEEE 802.1p  ● IEEE 802.1Qaz  ● IEEEE 802.1Qbb  ● IEEE 802.3cd  ● IEEE 802.3ba, 802.3bj, 802.3bm  ● IEEE 802.3by  ● IEEE 802.3ae, 802.3ap  ● Prestandard IEEE 802.1BR  ● Jumbo frames up to 9KB  ● SCSI-FCP  ● T11 FCoE  ● PCI Express Gen 3 and Gen 4   
+**Standards** |  ● 10-Gigabit Ethernet  ● 25-Gigabit Ethernet  ● 40-Gigabit Ethernet  ● 50-Gigabit Ethernet  ● 100-Gigabit Ethernet  ● 200-Gigabit Ethernet  ● IEEE 802.3x  ● IEEE 802.1q (formerly 802.1ad) VLAN  ● IEEE 802.1p  ● IEEE 802.1Qaz  ● IEEE 802.1Qbb  ● IEEE 802.3cd  ● IEEE 802.3ba, 802.3bj, 802.3bm  ● IEEE 802.3by  ● IEEE 802.3ae, 802.3ap  ● Prestandard IEEE 802.1BR  ● Jumbo frames up to 9KB  ● SCSI-FCP  ● T11 FCoE  ● PCI Express Gen 3 and Gen 4   
 **Components** |  Cisco UCS custom Application-Specific Integrated Circuit (ASIC)   
 **Connectivity** |  PCIe 4.0x16 form factor (PCIe, mLOM and mezz)   
 **Performance** |  10/25/40/50/100/200-Gbps per port   
 **Management** |  **Software release:** Cisco VIC 15230: Minimum UCSM/IMM release is 4.3(2c).  Cisco VIC 15231: Recommended IMM release is 4.2(2) or later that contains VIC firmware 5.2(2) Cisco VIC 15427: Minimum UCSM/IMM release is 4.3(2c).  Cisco VIC 15428: Recommended UCSM release and IMM release is 4.2(2) or later that contains VIC firmware 5.2(2) or later, and recommended standalone CIMC release is 4.2(2). Review note under Table 2 for minimum version required. Cisco VIC 15411: Recommended UCSM/IMM release is 4.2(3) or later that contains VIC firmware 5.2(3) Cisco VIC 15237: Minimum UCSM/IMM release is 4.3(2c).  Cisco VIC 15238: Recommended UCSM release and IMM release is 4.2(3) or later that contains VIC firmware 5.2(3) or later, and recommended standalone CIMC release is 4.2(3). Review note under Table 2 for minimum version required. Cisco VIC 15420 and 15422: Recommended IMM release is 4.3(1) or later Cisco VIC 15235 and 15425: Recommended UCSM release and IMM release is 4.3(2) or later, and recommended standalone CIMC release is 4.3(2) or later.   
-**Supported switches with VIC 15425, 15427, and 15428** |  Cisco fabric interconnects and Cisco Nexus switches (from 4.2.3 for 15425/15428, 4.3.2 for 15427): ● Cisco UCS FI-6536  ● Cisco UCS-FI-64108  ● Cisco UCS-FI-6454  ● Cisco UCS-FI-6332-16UP  ● Cisco UCS-FI-6332  ● Cisco Nexus 93180YC-FX3 in FEX mode  ● Cisco Nexus 2348UPQ  ● Cisco Nexus 36180YC-R  ● Cisco Nexus 9336C-FX2  ● Cisco Nexus 93360YC-FX2  ● Cisco Nexus 9316D-GX  ● Cisco Nexus 93180YC-EX  ● Cisco Nexus 93180YC-FX  ● Cisco Nexus 93240YC-FX2  ● Cisco Nexus 93108TC-FX (qualified with SFP-10G-T-X)  ● Cisco Nexus 93108TC-EX (qualified with SFP-10G-T-X)  ● Catalyst C9500X-60L4D Switch (with 4.3.4 and SFP-50G-CUxM cables)  ● Cisco Nexus 93400LD-H1 (with 4.3.5 and SFP-50G-CUxM cables) [18]  
-**Supported switches with VIC 15235, 15237, and 15238** |  Cisco fabric interconnects and Cisco Nexus switches (from 4.2.3 for 15235/15238, 4.3.2 for 15237) ● Cisco UCS-FI-6536  ● Cisco UCS-FI-6332-16UP  ● Cisco UCS-FI-6332  ● Cisco Nexus 3232C  ● Cisco Nexus 9236C  ● Cisco Nexus 9332C  ● Cisco Nexus 9336C-FX2  ● Cisco Nexus 9364C  ● Cisco Nexus 9336C-FX2-E  ● Cisco Nexus 93360YC-FX2  ● Cisco Nexus 9316D-GX (with 4.3.5 and SFP-200G-SR4-S/SL4)  ● Cisco Nexus 93600CD-GX (with 4.3.5 and SFP-200G-SR4-S/SL4)  ● Cisco Nexus 9332D-GX2B (with 4.3.5 and SFP-200G-SR4-S/SL4)   
+**Supported switches with VIC 15425, 15427, and 15428** |  Cisco fabric interconnects and Cisco Nexus switches (from 4.2.3 for 15425/15428, 4.3.2 for 15427, unless otherwise noted): ● Cisco UCS-FI-6664 (from 6.0(1))  ● Cisco UCS-FI-6652 (from 6.0(2))  ● Cisco UCS-FI-6536  ● Cisco UCS-FI-64108  ● Cisco UCS-FI-6454  ● Cisco UCS-FI-6332-16UP  ● Cisco UCS-FI-6332  ● Cisco Nexus 93180YC-FX3 in FEX mode  ● Cisco Nexus 93180YC-FX3 in switch mode (from 6.0(2))  ● Cisco Nexus 2348UPQ  ● Cisco Nexus 36180YC-R  ● Cisco Nexus 9336C-FX2  ● Cisco Nexus 93360YC-FX2  ● Cisco Nexus 9316D-GX  ● Cisco Nexus 93180YC-EX  ● Cisco Nexus 93180YC-FX  ● Cisco Nexus 93240YC-FX2  ● Cisco Nexus 93108TC-FX (qualified with SFP-10G-T-X)  ● Cisco Nexus 93108TC-EX (qualified with SFP-10G-T-X)  ● Catalyst C9500X-60L4D Switch (with 4.3.4 and SFP-50G-CUxM cables)  ● Cisco Nexus 93400LD-H1 (with 4.3.5 and SFP-50G-CUxM cables) [18]  
+**Supported switches with VIC 15235, 15237, and 15238** |  Cisco fabric interconnects and Cisco Nexus switches (from 4.2.3 for 15235/15238, 4.3.2 for 15237, unless otherwise noted) ● Cisco UCS-FI-6664 (from 6.0(1))  ● Cisco UCS-FI-6536  ● Cisco UCS-FI-6332-16UP  ● Cisco UCS-FI-6332  ● Cisco Nexus 3232C  ● Cisco Nexus 9236C  ● Cisco Nexus 9332C  ● Cisco Nexus 9336C-FX2  ● Cisco Nexus 9364C  ● Cisco Nexus 9336C-FX2-E  ● Cisco Nexus 93360YC-FX2  ● Cisco Nexus 9316D-GX (with 4.3.5 and SFP-200G-SR4-S/SL4)  ● Cisco Nexus 93600CD-GX (with 4.3.5 and SFP-200G-SR4-S/SL4)  ● Cisco Nexus 9332D-GX2B (with 4.3.5 and SFP-200G-SR4-S/SL4)   
 **Supported fabric interconnect and IFM with VIC 15230, 15231, 15420, and 15422** |  Cisco fabric interconnect switches and IOMs:  ● Cisco UCS FI-6536  ● Cisco UCS-FI-64108  ● Cisco UCS FI-6454  ● Cisco UCSX-I-9108-25G  ● Cisco UCSX-I-9108-100G   
 **Supported fabric interconnect and IOM with VIC 15411** |  Cisco fabric interconnect switches and IOMs (from 4.2.3) ● Cisco UCS FI-6536  ● Cisco UCS-FI-64108  ● Cisco UCS FI-6454  ● Cisco UCS-FI-6332-16UP  ● Cisco UCS-FI-6332  ● Cisco UCS-IOM-2408  ● Cisco UCS-IOM-2304v1/v2  ● Cisco UCS-IOM-2208  ● Cisco UCS-IOM-2204   
   
-**Note: **All the listed switches are validated against our transceivers/cables. Any switch that is not listed is expected to work but is not validated. 
+**Note:** All listed switches are validated against Cisco transceivers/cables. Any switch that is not listed is expected to work but is not validated by Cisco.
 
 [18]When using Nexus 93400LD-H1 and SFP-50G-CUxM cables, the VIC Admin AN/LT setting must be changed from the default “Auto” to “Off” for the link to come up. 
 
@@ -2402,18 +2398,19 @@ Items |  Specifications
 
 Cisco UCS VIC |  Cisco UCS servers, fabric interconnects, fabric extenders   
 ---|---  
-**15230 and 15231 dual-port 100G mLOM** |  X210c-M6/M7, X410c-M7, X215c-M8, FI 6536, FI 6454/64108, X9108-IFM-25G, X9108-IFM-100G  
-**15420 quad-port 25G mLOM** |  X210c-M6/M7, X410c-M7, X215c-M8, FI 6536, FI 6454/64108, X9108-IFM-25G, X9108-IFM-100G  
-**15422 quad-port 25G Mezz** |  X210c-M6/M7, X410c-M7, X215c-M8, FI 6536, FI 6454/64108, X9108-IFM-25G, X9108-IFM-100G  
-**15427 and 15428 quad-port 10/25/50-Gbps mLOM** **15425 quad-port 10/25/50-Gbps PCIe** |  C220 M6/M7, C240 M6/M7, C225 M6, C245 M6, C225 M8, C245 M8, FI 6536, FI 6454/64108, FI 6332/6332-16UP, 93180YC-FX3 in FEX-mode, 2348UPQ FEX  
+**15230 and 15231 dual-port 100G mLOM** |  X210c-M6/M7/M8, X410c-M7/M8, X215c-M8 FI 6652/6664, FI 6536, FI 6454/64108, X9108-IFM-25G, X9108-IFM-100G  
+**15420 quad-port 25G mLOM** |  X210c-M6/M7/M8, X410c-M7/M8, X215c-M8 FI 6652/6664, FI 6536, FI 6454/64108, X9108-IFM-25G, X9108-IFM-100G  
+**15422 quad-port 25G Mezz** |  X210c-M6/M7/M8, X410c-M7/M8, X215c-M8 FI 6652/6664, FI 6536, FI 6454/64108, X9108-IFM-25G, X9108-IFM-100G  
+**15427 and 15428 quad-port 10/25/50-Gbps mLOM** **15425 quad-port 10/25/50-Gbps PCIe** |  C220 M6/M7/M8, C240 M6/M7/M8, C225 M6, C245 M6, C225 M8, C245 M8 FI 6652/6664, FI 6536, FI 6454/64108, FI 6332/6332-16UP,   
+93180YC-FX3 in FEX-mode, 2348UPQ FEX  
 **15411 dual-port 40G mLOM** |  B200-M6, FI 6536, FI 6454/64108, FI 6332/6332-16UP, IOM 2204/2208, IOM 2304, IOM 2408  
-**15237 and 15238 dual-port 40/100/200-Gbps mLOM** **15235 dual-port 40/100/200-Gbps PCIe** |  C220 M6/M7, C240 M6/M7, C225 M6, C245 M6, C225 M8, C245 M8, FI 6536, FI 6332/6332-16UP  
+**15237 and 15238 dual-port 40/100/200-Gbps mLOM** **15235 dual-port 40/100/200-Gbps PCIe** |  C220 M6/M7, C240 M6/M7, C225 M6, C245 M6, C225 M8, C245 M8 FI 6652/6664, FI 6536, FI 6332/6332-16UP  
   
 Transceiver and cable support
 
 The Cisco UCS VIC supports a wide variety of Ethernet connectivity options using Cisco 10/25/40/100-Gbps transceivers and Cisco 10/25/40/100-Gbps passive cables and active optical cables. 
 
-Third-party cables and transceivers are not supported on the Cisco UCS C-series VICs . If a third-party cable or transceiver is installed between a UCS C-series VIC and a fabric interconnect or Top-of-Rack (ToR) switch such as Cisco Nexus 9000 Series, the link will not come up. When connecting a UCS C-series VIC to a fabric interconnect or a ToR switch, only the supported transceivers and cables listed below should be used.
+Third-party cables and transceivers are not supported on Cisco UCS C-series VICs. If a third-party cable or transceiver is installed between a UCS C-series VIC and a fabric interconnect or top of rack switch such as Cisco Nexus 9000 Series, the link will not come up. Only the supported transceivers and cables listed below should be used.
 
 Table 5 lists the supported transceiver options.
 
@@ -2421,17 +2418,17 @@ Table 5 lists the supported transceiver options.
 
 Product number |  Description  
 ---|---  
-**SFP+ 10-Gbps transceivers(4)**  
-**SFP-10G-T-X(3)** |  10GBASE-T, copper, 30m  
+**SFP+ 10-Gbps transceivers**(4)  
+**SFP-10G-T-X**(3) |  10GBASE-T, copper, 30m  
 **SFP-10G-SR** |  10GBASE-SR, 850 nm, MMF, 300m  
 **SFP-10G-SR-S** |  10GBASE-SR, 850 nm, MMF, 300m, S-Class  
 **SFP-10G-LR** |  10GBASE-LR, 1310 nm, SMF, 10 km  
 **SFP-10G-LR-S** |  10GBASE-LR, 1310 nm, SMF, 10 km, S-Class  
-**SFP28 25-Gbps transceivers(7)**  
-**SFP-25G-SR-S(1,6)** |  25GBASE-SR SFP28 module for MMF  
-**SFP-25G-SL(5,6)** |  25GBASE-SL SFP28 module for MMF  
-**SFP-10/25G-CSR-S(1,6)** |  10/25GBASE-CSR SFP28 module for MMF  
-**SFP-10/25G-LR-S(2,6)** |  10/25GBASE-LR SFP28 module of SMF  
+**SFP28 25-Gbps transceivers**(7)  
+**SFP-25G-SR-S**(1,6) |  25GBASE-SR SFP28 module for MMF  
+**SFP-25G-SL**(5,6) |  25GBASE-SL SFP28 module for MMF  
+**SFP-10/25G-CSR-S**(1,6) |  10/25GBASE-CSR SFP28 module for MMF  
+**SFP-10/25G-LR-S**(2,6) |  10/25GBASE-LR SFP28 module of SMF  
 **QSFP 40-Gbps transceivers**  
 **QSFP-40G-SR4** |  40GBASE-SR4 QSFP transceiver module with MPO connector  
 **QSFP-40G-SR4-S** |  40GBASE-SR4 QSFP transceiver module, MPO connector, enterprise class  
@@ -2444,18 +2441,18 @@ Product number |  Description
 **QSFP-100G-SR4-S** |  100GBASE SR4 QSFP transceiver, MPO, 100m over OM4 MMF  
 **QSFP-100G-SL4** |  100GBASE QSFP Short Link Transceivers, 30M reach over OM4 MMF, MPO  
 **QSFP-40/100-SRBD** |  100GBASE/40GBASE SR-BiDi QSFP transceiver, LC, 100m over OM4 MMF  
-**QSFP-100G-SR1.2(8)** |  100G SR-BiDi QSFP Transceiver, LC, 100m OM4 MMF, LC  
+**QSFP-100G-SR1.2**(8) |  100G SR-BiDi QSFP Transceiver, LC, 100m OM4 MMF, LC  
 **QSFP-100G-LR4-S** |  100GBASE LR4 QSFP transceiver, LC, 10KM over SMF  
 **QSFP-100G-DR-S** |  100GBASE DR QSFP Transceiver, 500m over SMF, LC  
 **QSFP-100G-FR-S** |  100GBASE FR QSFP Transceiver, 2km over SMF, LC  
 **QSFP-100G-SM-SR** |  100GBASE CWDM4 Lite QSFP Transceiver, 2km over SMF, 10-60C, LC  
-**QSFP-100G-CWDM4-S(13)** |  100GBASE CWDM4 QSFP Transceiver, LC, 2km over SMF  
-**QSFP-100G-PSM4-S(14)** |  100GBASE PSM4 QSFP Transceiver, MPO, 500m over SMF  
+**QSFP-100G-CWDM4-S**(13) |  100GBASE CWDM4 QSFP Transceiver, LC, 2km over SMF  
+**QSFP-100G-PSM4-S**(14) |  100GBASE PSM4 QSFP Transceiver, MPO, 500m over SMF  
 **QSFP56 200-Gbps transceivers**  
 **QSFP-200G-SR4-S** |  200G QSFP56 Transceiver, MPO-12, 100m OM4 MMF, 200GBASE-SR4 compliant.   
 **QSFP-200G-SL4** |  200G QSFP56 Transceiver, MPO-12, 30m (OM4 MMF).   
   
-**Note: **
+**Note:**
 
 (1) SFP-10/25G-CSR-S is supported only at 25G for Intersight managed and UCSM managed servers. Interoperability between SFP-25G-SR-S and SFP-10/25G-CSR-S (at 25G) is supported on VIC 15425, 15427, and 15428. For Cisco IMC managed servers, both 10G and 25G speeds are supported from IMC release 4.3(6) onward. 
 
@@ -2471,7 +2468,7 @@ Product number |  Description
 
 (7) 25G connectivity from VIC 15425, 15427, and 15428 is supported with UCS fabric interconnect 6400/6500 series, 93180YC-FX3 in Fex mode and 93180YC-FX/93360YC-FX2 standalone switches. 
 
-(8) Supported in standalone mode with 4.3(1). 
+(8) Supported in standalone mode with 4.3(1). Supported in UCS Manager and Intersight Managed Mode from 4.3(2c). 
 
 (13) Supported in standalone mode with 4.3.4.240152. 
 
@@ -2501,7 +2498,9 @@ If 100-Gbps or 200-Gbps speeds are used on a 200-Gbps-capable VIC, both ports mu
 
 For customers using immersion cooling with C-Series servers, Cisco does not sell immersion-specific cables. We have qualified the following immersion cooling cables for use with 4th generation Fabric Interconnects and 25G VIC adapters. 
 
-● 10GTek LIQ-AOC-S4S4-xxx (850-nm OM3 cables) in 2m, 7m, and 10m lengths have been qualified as of 4.3(6) release
+● 10GTek LIQ-AOC-S4S4-xxx (850-nm OM3 cables) in 2m, 7m, and 10m lengths have been qualified with 4.3(6) and 6.0(1) releases. 
+
+● FormericaOE TAS-A1ZH8-P2M## (850-nm OM3 cables) in 2m, 7m, and 10m lengths have been qualified with 4.3(6) and 6.0(1) releases.
 
 **Table 6. **Cisco UCS VIC cable support matrix
 
@@ -2559,6 +2558,9 @@ Product number |  Description
 **QSFP-H40G-AOC7M** |  40GBASE active optical cable, 7M  
 **QSFP-H40G-AOC10M** |  40GBASE active optical cable, 10M  
 **QSFP-H40G-AOC15M** |  40GBASE active optical cable, 15M  
+**SFP56 50-Gbps transceivers**(15)  
+**SFP-50G-SR-S** |  25/50GBASE-SR SFP56 Module for MMF  
+**SFP-50G-SL** |  25/50G-SL SFP56 Short Link Module  
 **SFP56 50-Gbps cables with integrated transceivers**(15)  
 **SFP-50G-CU1M** |  25/50GBASE-CR1 SFP56 Copper Cable 1-meter, LSZH  
 **SFP-50G-CU1.5M** |  25/50GBASE-CR1 SFP56 Copper Cable 1.5-meter, LSZH  
@@ -2587,7 +2589,7 @@ Product number |  Description
 **QSFP-100G-AOC25M** |  100GBASE QSFP active optical cable, 25M  
 **QSFP-100G-AOC30M** |  100GBASE QSFP active optical cable, 30M  
   
-**Note: **
+**Note:**
 
 (9) Support also includes Nexus 93180YC-EX and 93240YC-FX2 with Cisco IMC Release 4.2(2). 
 
@@ -2613,7 +2615,7 @@ Part number |  Description
 **UCSX-V5-BRIDGE** |  UCS VIC 15000 bridge connector for VIC 15420 mLOM and VIC 15422 mezz in an X210c M6 Compute Node  
 **UCSC-M-V5Q50G(17)** |  Cisco UCS VIC 15428 Quad port 10/25/50G mLOM for C220-M6, C240-M6, C225-M6, C245-M6  
 **UCSC-M-V5D200G(17)** |  Cisco UCS VIC 15238 Dual port 40/100/200G mLOM for C220-M6, C240-M6, C225-M6, C245-M6  
-**UCSB-ML-V5Q10G** |  Cisco UCS VIC 15411 mLOM for Cisco UCS B-Series M6 Blade Server  
+**UCSB-ML-V5Q10G**(18) |  Cisco UCS VIC 15411 mLOM for Cisco UCS B-Series M6 Blade Server  
 **UCSC-P-V5Q50G** |  Cisco UCS VIC 15425 Quad port 10/25/50G PCIe for Cisco UCS C-Series M6 rack servers  
 **UCSC-P-V5D200G** |  Cisco UCS VIC 15235 Dual port 40/100/200G PCIe for Cisco UCS C-Series M6 rack servers  
 **UCSX-ML-V5D200G-D(17)** |  Cisco UCS VIC 15231 2x100G mLOM for Cisco UCS X210c-M7 and X410c-M7 Compute Node  
@@ -2631,9 +2633,11 @@ Part number |  Description
 **UCSX-ML-V5D200GV2** |  Cisco UCS VIC 15230 2x100G mLOM for Cisco UCS X-Series M6 Compute Nodes  
 **UCSX-ML-V5D200GV2D** |  Cisco UCS VIC 15230 2x100G mLOM for Cisco UCS X-Series M7/M8 Compute Nodes  
   
-**Note: **When ordering Cisco UCS VIC 15000 Series, the part numbers with "-D" suffix are ordering PIDs specific to UCS M7 and M8 servers, and the PIDs without "-D" apply to UCS M6 servers. There is no difference in functionality and operation for VICs with and without “-D”.
+**Note:** When ordering Cisco UCS VIC 15000 Series, the part numbers with “-D” suffix are ordering PIDs specific to UCS M7 and M8 servers, and the PIDs without “-D” apply to UCS M6 servers. There is no difference in functionality and operation for VICs with and without “-D”.
 
 (17)VIC 15231, 15238, and 15428 have been replaced by 15230, 15237, and 15427 respectively. The 15231, 15238, and 15428 adapters will not be sold after July 27, 2024, but will continue to be supported under applicable Cisco support contracts. These adapters are not supported on M8 generation servers. 
+
+(18) VIC 15411 has gone end of sale as of December 31, 2025, along with the B200 M6 server. It will continue to be supported under applicable Cisco support contracts. 
 
 System requirements
 
@@ -2645,7 +2649,7 @@ Find warranty information at Cisco.com on the [Product Warranties](https://www.c
 
 Product sustainability
 
-Information about Cisco’s Environmental, Social, and Governance (ESG) initiatives and performance is provided in Cisco’s CSR and sustainability [reporting](https://www.cisco.com/c/dam/m/en_us/about/csr/esg-hub/_pdf/purpose-report-2024.pdf).
+Information about Cisco’s Environmental, Social, and Governance (ESG) initiatives and performance is provided in Cisco’s CSR and sustainability [reporting](https://www.cisco.com/c/dam/m/en_us/about/purpose/reporting-hub/_pdf/purpose-report-2025.pdf).
 
 **Table 8. **Cisco environmental sustainability information
 
@@ -2691,6 +2695,7 @@ New or revised topic |  Described in |  Date
 **VIC switch and cables/optics compatibility updates** |  Table 2, Table 5, Table 6 |  July 1, 2024  
 **End of sale for non-Secure Boot VICs (15231, 15238, 15428)** |  Table 7 |  July 1, 2024  
 **Additional supported cables and switches with 4.3(5) release** |  Where applicable |  November 21, 2024  
+**Updated cable and transceiver support** |  Where applicable |  March 31, 2026  
   
 ### Our experts recommend
 

@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/cisco-ucs-9108-100g-intelligent-fabric-module-spec-sheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-04-16 10:51:00 |
+| **Fetched on** | 2026-05-27 10:55:15 |
 
 ---
 

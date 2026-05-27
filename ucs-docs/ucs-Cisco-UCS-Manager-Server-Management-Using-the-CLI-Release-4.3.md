@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Server Management Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_cisco_ucs_manager_server_mgmt_cli_guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:48:10 |
+| **Fetched on** | 2026-05-27 10:52:39 |
 
 ---
 
@@ -154,7 +154,7 @@ Support Cisco UCS VIC |  Cisco UCS Manager now supports following VIC cards:
   * Cisco UCS VIC 15237 mLOM
 
 |  —  
-Table 10. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(6c) Feature  |  Description  |  Where Documented   
+Table 10. New Features and Changed Behavior in Cisco UCS Manager, Release 4.3(6g) Feature  |  Description  |  Where Documented   
 ---|---|---  
 Support Cisco UCS C-Series M7 servers |  Cisco UCS Manager now supportsCisco UCS C220 M7 Server and Cisco UCS C240 M7 Server.  |  —  
 Support Cisco UCS X-Series M6 and M7 servers |  Cisco UCS Manager now supports Cisco UCS X210c M6 Compute Node and Cisco UCS X210c M7 Compute Node.  Cisco UCS X-Series servers support Intelligent Fabric Modules (IFM), which function similarly to the Input/Output Module (IOM) in Cisco UCS B-Series servers.  |  —  
@@ -204,7 +204,7 @@ Beginning with release 4.3(4b), Cisco UCS Manager introduces support for the fol
   * Cisco UCS C245 M8 Server
 
 
-Beginning with release 4.3(6c), Cisco UCS Manager introduces support for the following Cisco UCS hardware: 
+Beginning with release 4.3(6g), Cisco UCS Manager introduces support for the following Cisco UCS hardware: 
 
   * Cisco UCS VIC 15230
 
@@ -315,7 +315,7 @@ Beginning with release 4.2(1), Cisco UCS Manager introduces support for the foll
   * Cisco UCS VIC 1477 (mLOM)
 
 
-The Cisco UCS 6536 Fabric Interconnect,  Cisco UCS 6400 Series Fabric Interconnect, and Cisco UCS 6332 Fabric Interconnects include centralized management. You can manage the UCS Blade Servers and Rack-Mount Servers that are in the same domain from one console. You can also manage the UCS Mini from the Cisco UCS Manager. 
+The Cisco UCS 6536 Fabric Interconnect,  Cisco UCS 6400 Series Fabric Interconnect, andCisco UCS 6332 Fabric Interconnects include centralized management. You can manage the UCS Blade Servers and Rack-Mount Servers that are in the same domain from one console. You can also manage the UCS Mini from the Cisco UCS Manager. 
 
 To ensure the optimum server performance, you can configure the amount of power that you allocate to servers. You can also set the server boot policy, the location from which the server boots, and the order in which the boot devices are invoked. You can create service profiles and assign the service profiles to servers. In service profile, you can configure vNICs and vHBAs, enables BIOS settings, apply firmware policy, and other settings. When the service profile is associated to a server, the configured configurations, policies, and settings are pushed to the server. 
 
@@ -333,26 +333,12 @@ Cisco UCS 6536 Fabric Interconnect (UCS-FI-6536): Starting with release 4.2(3b),
 
 **Cisco UCS 9108 100G Fabric Interconnect (X-Series Direct)** : Starting with release 4.3(4b), all ports and software features are similarly activated through a perpetual software license. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) and UCS-FI-6536 do not use port-based licensing like previous generations of fabric interconnects. 
-
-* * *  
-  
----|---  
-  
-Cisco UCS 64108 Fabric Interconnect uses the following licenses: 
+Cisco UCS 6400 Series Fabric Interconnect uses port-based licensing
 
 Table 1. Cisco UCS 64108 Fabric Interconnect Licenses Ports |  Licenses  
 ---|---  
 Ports 1-96 |  ETH_PORT_ACTIVATION_PKG and ETH_PORT_C_ACTIVATION_PKG - Licenses used for 10/25 GB Ethernet ports  
 Ports 97-108 |  100G_ETH_PORT_ACTIVATION_PKG – Licenses used for 40/100 GB Ethernet ports   
-  
-Cisco UCS 6454 Fabric Interconnect uses the following licenses: 
-
 Table 2. Cisco UCS 6454 Fabric Interconnect Licenses Ports |  Licenses  
 ---|---  
 Ports 1-48 |  ETH_PORT_ACTIVATION_PKG and ETH_PORT_C_ACTIVATION_PKG - Licenses used for 10/25 GB Ethernet ports  
@@ -596,7 +582,7 @@ Changes to a boot policy might be propagated to all servers created with an upda
 
 ## Service Profiles in UCS Manager   
   
-A service profile defines a single server and its storage and networking characteristics. You can create a service profile for Cisco UCS Manager and UCS Mini. When a service profile is deployed to a server, UCS Manager automatically configures the server, adapters, fabric extenders, and fabric interconnects to match the configuration specified in the service profile. 
+A service profile defines a single server and its storage and networking characteristics. You can create a service profile for Cisco UCS Manager. When a service profile is deployed to a server, UCS Manager automatically configures the server, adapters, fabric extenders, and fabric interconnects to match the configuration specified in the service profile. 
 
 A service profile includes four types of information: 
 
@@ -752,13 +738,12 @@ Memory Clock Speed 7xx2 (AMD 2nd Gen CPU)  set CbsCmnMemSpeedDdr47xx2 |  Allows 
   * platform-default—The BIOS uses the value for this attribute contained in the BIOS defaults for the server type and vendor. 
 
   
-xGMI Link Configuration set CbsDfDbgXgmiLinkCfg |  Configures the number of xGMI2 links that are used on a multi-socket system. This can be one of the following:
+xGMI Link Configuration set CbsDfDbgXgmiLinkCfg |  This setting configures the number of xGMI (inter-CPU) links used in a multi-socket system. The setting allows users to optimize inter-CPU bandwidth for specific workloads and system requirements. This can be one of the following: 
 
-  * 2 xGMI Links
-  * 3 xGMI Links
-  * 4 xGMI Links
-  * auto—Automatically configures the number of xGMI2 links. This is the default option. 
-  * platform-default—The BIOS uses the value for this attribute contained in the BIOS defaults for the server type and vendor. 
+  * 2 xGMI Links2 xgmi links—Manually sets the system to use two xGMI links. 
+  * 3 xGMI Links3 xgmi links—Manually sets the system to use three xGMI links. 
+  * 4 xGMI Links4 xgmi links—Manually sets the system to use four xGMI links. 
+  * auto—BIOS automatically selects the best configuration based on the platform. 
 
   
 Preferred IO 7xx3 (AMD 3rd Gen CPU)  set CbsCmnPreferredIO7xx3 |  Enables the feature for a preferred bus as a performance improvement. This can be one of the following:
@@ -1155,8 +1140,8 @@ Core Performance Boost set CbsCmnCpuCpb |  Whether the AMD processor increases i
   
 Uncore Frequency Scaling |  Allows you configure the scaling of the uncore frequency of the processor. This can be one of the following:
 
-  * enabled—Uncore frequency of the processor scales up or down based on the load. (Default.) 
-  * disabled—Uncore frequency of the processor remains fixed. 
+  * mode 1—Uncore frequency of the processor scales up or down based on the load. (Default.) 
+  * mode 0—Uncore frequency of the processor remains fixed. 
   * platform-default —The BIOS uses the value for this attribute contained in the BIOS defaults for the server type and vendor. 
 
 Refer to the Intel Dear Customer Letter (DCL) to know the fixed higher and lower values for Uncore Frequency Scaling.  
@@ -2706,14 +2691,16 @@ Front NVME n Link Speed set Pcie SlotFrontNvmenLinkSpeed |  This option allows y
   * gen4—16GT/s is the maximum speed allowed. 
   * gen5—32GT/s is the maximum speed allowed. 
   * auto—The maximum speed is set automatically. This is the default option. 
-  * enabled—The maximum speed is restricted.  |  **Note** |  For _Front NVME 1 Link Speed_ and _Front NVME 2 Link Speed_, the value enabled is available but not supported on Cisco UCS M6 and M8 servers.   
----|---  
+  * enabled—The maximum speed is restricted. 
   * disabled—The maximum speed is not restricted. 
-
   * platform-default—The BIOS uses the value for this attribute contained in the BIOS defaults for the server type and vendor. 
 
+|  **Note** | 
 
-**Note** |  For _Front Nvme 13 Link Speed_ to _Front Nvme 24 Link Speed_ , the BIOS tokens and values are available but have no effect at the BIOS level if selected.   
+  * For _Front NVME 1 Link Speed_ and _Front NVME 2 Link Speed_, the value enabled is available but not supported on Cisco UCS M6 and M8 servers. 
+  * For _Front Nvme 13 Link Speed_ to _Front Nvme 24 Link Speed_ , the BIOS tokens and values are available but have no effect at the BIOS level if selected. 
+
+  
 ---|---  
 HBA Link Speed set HBALinkSpeed |  This option allows you to restrict the maximum speed of an HBA card. This can be one of the following: 
 
@@ -3633,13 +3620,12 @@ Memory Clock Speed 7xx2 (AMD 2nd Gen CPU)  set CbsCmnMemSpeedDdr47xx2 |  Allows 
   * platform-default—The BIOS uses the value for this attribute contained in the BIOS defaults for the server type and vendor. 
 
   
-xGMI Link Configuration set CbsDfDbgXgmiLinkCfg |  Configures the number of xGMI2 links that are used on a multi-socket system. This can be one of the following:
+xGMI Link Configuration set CbsDfDbgXgmiLinkCfg |  This setting configures the number of xGMI (inter-CPU) links used in a multi-socket system. The setting allows users to optimize inter-CPU bandwidth for specific workloads and system requirements. This can be one of the following: 
 
-  * 2 xGMI Links
-  * 3 xGMI Links
-  * 4 xGMI Links
-  * auto—Automatically configures the number of xGMI2 links. This is the default option. 
-  * platform-default—The BIOS uses the value for this attribute contained in the BIOS defaults for the server type and vendor. 
+  * 2 xGMI Links2 xgmi links—Manually sets the system to use two xGMI links. 
+  * 3 xGMI Links3 xgmi links—Manually sets the system to use three xGMI links. 
+  * 4 xGMI Links4 xgmi links—Manually sets the system to use four xGMI links. 
+  * auto—BIOS automatically selects the best configuration based on the platform. 
 
   
 Preferred IO 7xx3 (AMD 3rd Gen CPU)  set CbsCmnPreferredIO7xx3 |  Enables the feature for a preferred bus as a performance improvement. This can be one of the following:
@@ -4036,8 +4022,8 @@ Core Performance Boost set CbsCmnCpuCpb |  Whether the AMD processor increases i
   
 Uncore Frequency Scaling |  Allows you configure the scaling of the uncore frequency of the processor. This can be one of the following:
 
-  * enabled—Uncore frequency of the processor scales up or down based on the load. (Default.) 
-  * disabled—Uncore frequency of the processor remains fixed. 
+  * mode 1—Uncore frequency of the processor scales up or down based on the load. (Default.) 
+  * mode 0—Uncore frequency of the processor remains fixed. 
   * platform-default —The BIOS uses the value for this attribute contained in the BIOS defaults for the server type and vendor. 
 
 Refer to the Intel Dear Customer Letter (DCL) to know the fixed higher and lower values for Uncore Frequency Scaling.  
@@ -5587,14 +5573,16 @@ Front NVME n Link Speed set Pcie SlotFrontNvmenLinkSpeed |  This option allows y
   * gen4—16GT/s is the maximum speed allowed. 
   * gen5—32GT/s is the maximum speed allowed. 
   * auto—The maximum speed is set automatically. This is the default option. 
-  * enabled—The maximum speed is restricted.  |  **Note** |  For _Front NVME 1 Link Speed_ and _Front NVME 2 Link Speed_, the value enabled is available but not supported on Cisco UCS M6 and M8 servers.   
----|---  
+  * enabled—The maximum speed is restricted. 
   * disabled—The maximum speed is not restricted. 
-
   * platform-default—The BIOS uses the value for this attribute contained in the BIOS defaults for the server type and vendor. 
 
+|  **Note** | 
 
-**Note** |  For _Front Nvme 13 Link Speed_ to _Front Nvme 24 Link Speed_ , the BIOS tokens and values are available but have no effect at the BIOS level if selected.   
+  * For _Front NVME 1 Link Speed_ and _Front NVME 2 Link Speed_, the value enabled is available but not supported on Cisco UCS M6 and M8 servers. 
+  * For _Front Nvme 13 Link Speed_ to _Front Nvme 24 Link Speed_ , the BIOS tokens and values are available but have no effect at the BIOS level if selected. 
+
+  
 ---|---  
 HBA Link Speed set HBALinkSpeed |  This option allows you to restrict the maximum speed of an HBA card. This can be one of the following: 
 
@@ -6393,7 +6381,7 @@ Beginning with release 4.3(4b), Cisco UCS Manager introduces support for the fol
   * Cisco UCS C245 M8 Server
 
 
-Beginning with release 4.3(6c), Cisco UCS Manager introduces support for the following Cisco UCS hardware: 
+Beginning with release 4.3(6g), Cisco UCS Manager introduces support for the following Cisco UCS hardware: 
 
   * Cisco UCS VIC 15230
 
@@ -6504,7 +6492,7 @@ Beginning with release 4.2(1), Cisco UCS Manager introduces support for the foll
   * Cisco UCS VIC 1477 (mLOM)
 
 
-The Cisco UCS 6536 Fabric Interconnect,  Cisco UCS 6400 Series Fabric Interconnect, and Cisco UCS 6332 Fabric Interconnects include centralized management. You can manage the UCS Blade Servers and Rack-Mount Servers that are in the same domain from one console. You can also manage the UCS Mini from the Cisco UCS Manager. 
+The Cisco UCS 6536 Fabric Interconnect,  Cisco UCS 6400 Series Fabric Interconnect, andCisco UCS 6332 Fabric Interconnects include centralized management. You can manage the UCS Blade Servers and Rack-Mount Servers that are in the same domain from one console. You can also manage the UCS Mini from the Cisco UCS Manager. 
 
 To ensure the optimum server performance, you can configure the amount of power that you allocate to servers. You can also set the server boot policy, the location from which the server boots, and the order in which the boot devices are invoked. You can create service profiles and assign the service profiles to servers. In service profile, you can configure vNICs and vHBAs, enables BIOS settings, apply firmware policy, and other settings. When the service profile is associated to a server, the configured configurations, policies, and settings are pushed to the server. 
 
@@ -6619,26 +6607,12 @@ Cisco UCS 6536 Fabric Interconnect (UCS-FI-6536): Starting with release 4.2(3b),
 
 **Cisco UCS 9108 100G Fabric Interconnect (X-Series Direct)** : Starting with release 4.3(4b), all ports and software features are similarly activated through a perpetual software license. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-Cisco UCS Fabric Interconnects 9108 100G (Cisco UCS X-Series Direct) and UCS-FI-6536 do not use port-based licensing like previous generations of fabric interconnects. 
-
-* * *  
-  
----|---  
-  
-Cisco UCS 64108 Fabric Interconnect uses the following licenses: 
+Cisco UCS 6400 Series Fabric Interconnect uses port-based licensing
 
 Table 1. Cisco UCS 64108 Fabric Interconnect Licenses Ports |  Licenses  
 ---|---  
 Ports 1-96 |  ETH_PORT_ACTIVATION_PKG and ETH_PORT_C_ACTIVATION_PKG - Licenses used for 10/25 GB Ethernet ports  
 Ports 97-108 |  100G_ETH_PORT_ACTIVATION_PKG – Licenses used for 40/100 GB Ethernet ports   
-  
-Cisco UCS 6454 Fabric Interconnect uses the following licenses: 
-
 Table 2. Cisco UCS 6454 Fabric Interconnect Licenses Ports |  Licenses  
 ---|---  
 Ports 1-48 |  ETH_PORT_ACTIVATION_PKG and ETH_PORT_C_ACTIVATION_PKG - Licenses used for 10/25 GB Ethernet ports  
@@ -6754,7 +6728,7 @@ You can upgrade the firmware through Auto Install, packages in service profiles,
 
 ## Service Profiles in UCS Manager 
 
-A service profile defines a single server and its storage and networking characteristics. You can create a service profile for Cisco UCS Manager and UCS Mini. When a service profile is deployed to a server, UCS Manager automatically configures the server, adapters, fabric extenders, and fabric interconnects to match the configuration specified in the service profile. 
+A service profile defines a single server and its storage and networking characteristics. You can create a service profile for Cisco UCS Manager. When a service profile is deployed to a server, UCS Manager automatically configures the server, adapters, fabric extenders, and fabric interconnects to match the configuration specified in the service profile. 
 
 A service profile includes four types of information: 
 

@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/ucs-x215c-m8-compute-node.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-04-16 10:51:16 |
+| **Fetched on** | 2026-05-27 10:55:29 |
 
 ---
 
@@ -32,9 +32,9 @@ WWW.CISCO.COM
 
 PUBLICATION HISTORY 
 
-V.20
+V.21
 
-MARCH 02, 2026
+APRIL 30, 2026
 
  
 CONTENTS
@@ -402,7 +402,7 @@ connector.
 ■ The Cisco UCS Virtual Interface Card (VIC) 15230 occupies the server's 
 modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of 
 unified fabric connectivity to each of the chassis Intelligent Fabric Modules 
-(IFMs) for 100 Gbps connectivity per server with secure boot capability.
+(IFMs) for 200 Gbps connectivity per server with secure boot capability.
 
 Video
 
@@ -2998,8 +2998,6 @@ UCSX-NVE11T9S1V
 
 UCSX-NVE13T8S1V
 
-UCSX-NVE17T6S1V
-
 UCSX-NVE115T3S1V
 
 15.3TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X 
@@ -3067,8 +3065,6 @@ OPAL)
 1.9TB E3.S1T PM1743 HgPerf MedEnd Gen5 1X NVMe (TCG 
 OPAL)
 3.8TB E3.S1T PM1743 HgPerf MedEnd Gen5 1X NVMe (TCG 
-OPAL)
-7.6TB E3.S1T PM1743 HgPerf MedEnd Gen5 1X NVMe (TCG 
 OPAL)
 15.3TB E3.S1T PM1743 HgPerf MedEnd Gen5 1X NVMe (TCG 
 OPAL)
@@ -3156,12 +3152,6 @@ NVMe
 E3.S
 
 3.8TB
-
-NVMe
-
-E3.S
-
-7.6TB
 
 NVMe
 

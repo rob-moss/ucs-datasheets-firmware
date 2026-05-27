@@ -4,15 +4,24 @@
 |---|---|
 | **URL Title** | Intersight Appliance CVA Whats New |
 | **URL** | https://intersight.com/help/appliance/whats_new/connected_appliance/ |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260414151805446/docs/onprem/data/articles/connected_appliance/new_2026/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260514103921360/docs/onprem/data/articles/connected_appliance/new_2026/en/index.html |
 | **HTML Title** | What's New in Cisco Intersight |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_whats_new_connected_appliance.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:49:43 |
+| **Fetched on** | 2026-05-27 10:54:09 |
 
 ---
 
 # What's New in Cisco Intersight
+
+## April 20, 2026 – Appliance Patch Release Version: 1.1.6-1
+
+  * **When upgrading to this patch release, ensure that your appliance is running major release version 1.1.6-0. For more information, see[Intersight Virtual Appliance Patch Releases](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_updating_the_intersight_virtual_appliance_software.html#appliance-versioning-scheme).**
+
+This patch release includes bug fix for CSCwt69190. For more information, see [Bugs](/help/appliance/bugs).
+
+Intersight Assist does not require this patch because the defect in Appliance Software Release 1.1.6-0 does not impact Assist deployments.
+
 
 ## March 19, 2026 – Appliance Software Release Version: 1.1.6-0
 

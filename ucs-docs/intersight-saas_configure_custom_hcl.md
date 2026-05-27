@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Custom HCL guide |
 | **URL** | https://intersight.com/help/saas/configure/custom_hcl |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260414151805446/docs/cloud/data/articles/features/custom_hcl/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260514103921360/docs/cloud/data/articles/features/custom_hcl/configure/en/index.html |
 | **HTML Title** | Custom HCL Baseline |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_custom_hcl.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:49:19 |
+| **Fetched on** | 2026-05-27 10:53:45 |
 
 ---
 

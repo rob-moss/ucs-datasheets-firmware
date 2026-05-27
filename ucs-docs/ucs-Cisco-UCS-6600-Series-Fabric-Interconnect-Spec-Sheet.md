@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/ucs-6600-series-fabric-interconnect-specsheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-04-16 10:51:05 |
+| **Fetched on** | 2026-05-27 10:55:20 |
 
 ---
 

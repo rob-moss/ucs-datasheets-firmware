@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Unified Edge eCMC Firmware Release, 6.0 |
 | **Source file** | `ucs-docs-raw/html/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:48:39 |
+| **Fetched on** | 2026-05-27 10:53:05 |
 
 ---
 
@@ -34,7 +34,7 @@ Print
 
 ### Download Options
 
-  * [PDF](/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.pdf) (274.8 KB)   
+  * [PDF](/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.pdf) (273.1 KB)   
 View with Adobe Reader on a variety of devices
 
 
@@ -68,7 +68,7 @@ Print
 
 ### Download Options
 
-  * [PDF](/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.pdf) (274.8 KB)   
+  * [PDF](/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.pdf) (273.1 KB)   
 View with Adobe Reader on a variety of devices
 
 
@@ -81,18 +81,22 @@ Updated:March 27, 2026
   * Revision History
   * New software features
   * New hardware features
+  * New Hardware Features in Release 6.0(2.260034)
   * New Hardware Features in Release 6.0(2.260026)
   * New Hardware Features in Release 6.0(1.251006)
   * New Hardware Features in Release 6.0(1.251005)
   * Security fixes
+  * Security fixes in Release 6.0(2.260034)
   * Security fixes in Release 6.0(2.260026)
   * Security fixes in Release 6.0(1.251006)
   * Security fixes in Release 6.0(1.251005)
   * Resolved issues
+  * Resolved issues in Release 6.0(2.260034)
   * Resolved issues in Release 6.0(2.260026)
   * Resolved issues in Release 6.0(1.251006)
   * Resolved issues in Release 6.0(1.251005)
   * Open issues
+  * Open issues in Release 6.0(2.260034)
   * Open issues in Release 6.0(2.260026)
   * Open issues in Release 6.0(1.251006)
   * Open issues in Release 6.0(1.251005)
@@ -117,6 +121,7 @@ The following table shows the online change history for this document.
 
 Date |  Description  
 ---|---  
+April 23, 2026 |  Updated release notes for Cisco Unified Edge eCMC Infrastructure Firmware 6.0(2.260034). There is no corresponding XE Server Firmware release. This release includes fixes for issues identified internally.  
 March 16, 2026 |  Updated release notes for Cisco Unified Edge eCMC Infrastructure firmware 6.0(2.260026). This release includes updates to: - [New Hardware Features in Release 6.0(2.260026)](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html#NewHardwareFeaturesinRelease602260026) - [Open issues in Release 6.0(2.260026)](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html#OpenissuesinRelease602260026) This release includes fixes for issues identified internally.  
 January 16, 2025 |  Cisco UCS XE-Series M8 6.0(1.260001) Server Firmware version has been released. There is no corresponding Unified Edge eCMC Firmware release.  
 December 15, 2025 |  Updated release notes for Cisco Unified Edge eCMC Infrastructure firmware 6.0(1.251006). This release includes updates to: - [Resolved issues in Release 6.0(1.251006)](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html#ResolvedissuesinRelease601251006) It does not include any new hardware feature, security fixes, or open issues.  
@@ -127,6 +132,10 @@ New software features
 Intersight software features may not align with the Intersight firmware release schedule. To know more about the latest software features, see the [What's New](https://intersight.com/help/saas/whats_new) section in Intersight Help Center.
 
 New hardware features
+
+New Hardware Features in Release 6.0(2.260034)
+
+No new hardware is introduced in this release.
 
 New Hardware Features in Release 6.0(2.260026)
 
@@ -150,11 +159,11 @@ The Cisco UCS XE9305 is designed to operate in an extended range of temperatures
 
 **Key Features and Benefits**
 
-● **Five slotsFive slots** : 3 RU-high, 17-inch-wide, and 18-inch-deep chassis with five front-facing flexible slots for compute nodes and future modules that may include networking nodes for routing, switching, and secure access service edge (SASE) capabilities.
+● **Five slots** : 3 RU-high, 17-inch-wide, and 18-inch-deep chassis with five front-facing flexible slots for compute nodes and future modules that may include networking nodes for routing, switching, and secure access service edge (SASE) capabilities.
 
-● **Compute node supportCompute node support** : Support for 1-CPU single-slot compute nodes. For more information, see [Cisco UCS XE130c M8 Compute Node Data SheetCisco UCS XE130c M8 Compute Node Data Sheet](https://www.cisco.com/site/us/en/products/collateral/computing/unified-edge/ucs-xe130c-m8-compute-node-ds.html).
+● **Compute node support** : Support for 1-CPU single-slot compute nodes. For more information, see [Cisco UCS XE130c M8 Compute Node Data Sheet](https://www.cisco.com/site/us/en/products/collateral/computing/unified-edge/ucs-xe130c-m8-compute-node-ds.html).
 
-● **Hot-swappable controllersHot-swappable controllers** : Two hot-swappable Cisco Edge Chassis Management Controllers (eCMCs), forming a unified fabric that provides connectivity between all nodes within the chassis and with upstream networks, and provides local chassis management and a secure control plane connection with Cisco Intersight.
+● **Hot-swappable controllers** : Two hot-swappable Cisco Edge Chassis Management Controllers (eCMCs), forming a unified fabric that provides connectivity between all nodes within the chassis and with upstream networks, and provides local chassis management and a secure control plane connection with Cisco Intersight.
 
 **Each eCMC features:**
 
@@ -164,15 +173,15 @@ The Cisco UCS XE9305 is designed to operate in an extended range of temperatures
 
 ● Two front-panel USB-C ports for management console and external storage connectivity.
 
-● **Two power supplies:Two power supplies:** Two hot-swappable 2400W Titanium Power Supply Units (PSUs) providing N+N (Grid mode) redundancy, removable from the front for service via a latching mechanism without special tooling. Non-redundant mode is also supported.
+● **Two power supplies:** Two hot-swappable 2400W Titanium Power Supply Units (PSUs) providing N+N (Grid mode) redundancy, removable from the front for service via a latching mechanism without special tooling. Non-redundant mode is also supported.
 
-● **Acoustically optimized fans: Acoustically optimized fans:** Five 80 mm by 56 mm hot-swappable fan modules with acoustically optimized cooling controls, removable from both the top and the rear for service via a latching mechanism without special tooling.
+● **Acoustically optimized fans:** Five 80 mm by 56 mm hot-swappable fan modules with acoustically optimized cooling controls, removable from both the top and the rear for service via a latching mechanism without special tooling.
 
-● **Locking bezel:Locking bezel:** One optional locking bezel with a separately replaceable air filter covering the entire front of the server, providing protection against physical tampering and filtration against ambient particulate matter.
+● **Locking bezel:** One optional locking bezel with a separately replaceable air filter covering the entire front of the server, providing protection against physical tampering and filtration against ambient particulate matter.
 
-● **Near Field Communication (NFC) identifier:Near Field Communication (NFC) identifier:** NFC capability embedded in the chassis to aid chassis identification, claiming, and troubleshooting when used in conjunction with the Cisco Intersight mobile app.
+● **Near Field Communication (NFC) identifier:** NFC capability embedded in the chassis to aid chassis identification, claiming, and troubleshooting when used in conjunction with the Cisco Intersight mobile app.
 
-● **Multiple mounting options:Multiple mounting options:** Accessories for flexible server mounting options: sliding rail kit for 4-post racks, static mount kit for 2-post racks, brackets for wall mounting, and brackets for shelf mounting (horizontally or vertically positioned).
+● **Multiple mounting options:** Accessories for flexible server mounting options: sliding rail kit for 4-post racks, static mount kit for 2-post racks, brackets for wall mounting, and brackets for shelf mounting (horizontally or vertically positioned).
 
 ● Fabric bandwidth:
 
@@ -183,6 +192,10 @@ The Cisco UCS XE9305 is designed to operate in an extended range of temperatures
 For more information, see [Cisco UCS XE9305 Data Sheet](https://www.cisco.com/site/us/en/products/collateral/computing/unified-edge/cisco-ucs-xe9305-chassis-ds.html) and Release Notes for [Cisco Intersight Managed Mode Server Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html).
 
 Security fixes
+
+Security fixes in Release 6.0(2.260034)
+
+There are no security fixes in this release.
 
 Security fixes in Release 6.0(2.260026)
 
@@ -197,6 +210,10 @@ Security fixes in Release 6.0(1.251005)
 There are no security fixes in this release.
 
 Resolved issues
+
+Resolved issues in Release 6.0(2.260034)
+
+There are no resolved issues in this release.
 
 Resolved issues in Release 6.0(2.260026)
 
@@ -215,6 +232,10 @@ Resolved issues in Release 6.0(1.251005)
 There are no resolved issues in this release.
 
 Open issues
+
+Open issues in Release 6.0(2.260034)
+
+There are no open issues in this release.
 
 Open issues in Release 6.0(2.260026)
 
@@ -248,13 +269,13 @@ XE-Series Server Firmware Version |  eCMC Infrastructure Firmware Version
   
 Related resources
 
-● [Release Notes for Cisco Intersight Unified Edge Server Firmware, Release 6.0Release Notes for Cisco Intersight Unified Edge Server Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html)
+● [Release Notes for Cisco Intersight Unified Edge Server Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html)
 
-● [Release Notes for Cisco Intersight Unified Edge eCMC Infrastructure Firmware Release, 6.0Release Notes for Cisco Intersight Unified Edge eCMC Infrastructure Firmware Release, 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html)
+● [Release Notes for Cisco Intersight Unified Edge eCMC Infrastructure Firmware Release, 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html)
 
-● [Release Notes and Release Bundles for Unified EdgeRelease Notes and Release Bundles for Unified Edge](https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html)
+● [Release Notes and Release Bundles for Unified Edge](https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html)
 
-● [Managing Firmware in Unified EdgeManaging Firmware in Unified Edge](https://intersight.com/help/saas/resources/fw_mgmnt_ue)
+● [Managing Firmware in Unified Edge](https://intersight.com/help/saas/resources/fw_mgmnt_ue)
 
 ### Learn more
 

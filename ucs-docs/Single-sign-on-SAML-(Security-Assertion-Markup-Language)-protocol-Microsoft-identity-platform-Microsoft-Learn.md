@@ -8,7 +8,7 @@
 | **HTML Title** | Single sign-on SAML (Security Assertion Markup Language) protocol - Microsoft identity platform | Microsoft Learn |
 | **Source file** | `ucs-docs-raw/html/single-sign-on-saml-protocol.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:54:11 |
+| **Fetched on** | 2026-05-27 11:03:27 |
 
 ---
 
@@ -16,15 +16,9 @@
 
 Table of contents  Exit editor mode
 
-Ask Learn Ask Learn Focus mode
+Ask Learn Ask Learn
 
-Table of contents Read in English Add Add to plan [ Edit ](https://github.com/MicrosoftDocs/entra-docs/blob/main/docs/identity-platform/single-sign-on-saml-protocol.md)
-
-* * *
-
-#### Share via
-
-Facebook x.com LinkedIn Email
+Reading mode Table of contents Read in English Add Add to plan [ Edit ](https://github.com/MicrosoftDocs/entra-docs/blob/main/docs/identity-platform/single-sign-on-saml-protocol.md)
 
 * * *
 

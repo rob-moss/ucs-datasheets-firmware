@@ -4,15 +4,37 @@
 |---|---|
 | **URL Title** | Intersight Appliance PVA Whats New |
 | **URL** | https://intersight.com/help/appliance/whats_new/private_appliance/ |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260414151805446/docs/onprem/data/articles/private_appliance/new_2026/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260514103921360/docs/onprem/data/articles/private_appliance/new_2026/en/index.html |
 | **HTML Title** | What's New in Cisco Intersight |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_whats_new_private_appliance.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:49:44 |
+| **Fetched on** | 2026-05-27 10:54:10 |
 
 ---
 
 # What's New in Cisco Intersight
+
+## April 20, 2026 – Appliance Patch Release Version: 1.1.6-1
+
+  * **When upgrading to this patch release, ensure that your appliance is running major release version 1.1.6-0. For more information, see[Intersight Virtual Appliance Patch Releases](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_updating_the_intersight_virtual_appliance_software.html#appliance-versioning-scheme).**
+
+This patch release includes bug fix for CSCwt69190. For more information, see [Bugs](/help/appliance/bugs).
+
+
+## April 16, 2026 – Appliance Intelligence Bundle Release
+
+  * Added support for the following Security Advisories:
+
+  * _CVE-2026-20087,CVE-2026-20088,CVE-2026-20089, CVE-2026-20090: Cisco Integrated Management Controller Cross-Site Scripting Vulnerabilities._.
+
+  * _CVE-2026-20093: Cisco Integrated Management Controller Authentication Bypass Vulnerability_.
+
+  * _CVE-2026-20094: Cisco Integrated Management Controller Command Injection and Remote Code Execution Vulnerabilities_.
+
+For more information, see [Cisco Security Advisories](/help/resources/cisco_security_advisories).
+
+  * Added updates to the Hardware Compatibility List (HCL). For more information, see [Compliance with Hardware Compatibility List](/help/resources#compliance_with_hardware_compatibility_list_\(hcl\)).
+
 
 ## March 19, 2026 – Appliance Software Release Version: 1.1.6-0
 

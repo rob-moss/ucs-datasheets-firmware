@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X-Series Modular System - Cisco |
 | **Source file** | `ucs-docs-raw/pdf/ucsx-m-sustain.pdf` |
 | **File type** | HTML (fallback from .pdf URL) |
-| **Fetched on** | 2026-04-16 10:51:21 |
+| **Fetched on** | 2026-05-27 10:55:34 |
 
 ---
 
@@ -196,6 +196,16 @@ Explore the unique partnership between Cisco and NVIDIA to improve AI security a
 
 [Discover now ](https://www.cisco.com/site/us/en/solutions/artificial-intelligence/secure-ai-factory/index.html)
 
+* * *
+
+![IDC logo](/content/dam/cisco-cdc/site/images/logos/3rd-party/IDC-logo.svg)
+
+###  New IDC research: Infrastructure built for the AI era 
+
+See why organizations are turning to modular compute and unified lifecycle management as infrastructure environments grow in scale and complexity. 
+
+[Get IDC Spotlight](https://www.cisco.com/site/us/en/products/computing/offers/assets/intersight-idc-spotlight.html)
+
 ![](/content/dam/cisco-cdc/site/images/photography/products/computing/forrester-tei-report-stats-v2.svg)
 
 ##  Discover the Total Economic Impact™ of Cisco Intersight 
@@ -274,9 +284,13 @@ Previous
 
 Next
 
-##  Innovate at the speed of software 
+Webinar | On demand 
 
-Rethink operations with hybrid cloud infrastructure that's assembled from the cloud, shaped to your workloads, and continuously optimized.
+##  Modernize for AI—without a rip‑and‑replace 
+
+Learn how award‑winning Reist Telecom built an AI‑ready foundation by running VMs and containers side by side on a single, secure, cost‑efficient Cisco platform. 
+
+[Watch on demand ](https://experiences.cisco.com/amer/from-virtualization-to-ai-ready)
 
 __
 

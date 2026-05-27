@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_imm_infra_fw_rn_lb.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:48:46 |
+| **Fetched on** | 2026-05-27 10:53:11 |
 
 ---
 
@@ -18,7 +18,7 @@
   
 **First Published: November 15, 2023**
 
-**Last Updated: February 23, 2026**
+**Last Updated: May 4, 2026**
 
 # Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3
 
@@ -40,7 +40,12 @@ The following table shows the online change history for this document.
 
 Revision Date  | Description   
 ---|---  
-February 23, 2026 |  Updated release notes for Cisco UCS 6500 and 6400 Series FI Infrastructure firmware release 4.3(6.260006) and Cisco UCS X-Series Direct FI Infrastructure Firmware version 4.3(6.260015).  It does not include any new hardware feature, security fixes, resolved issues, or open issues. Corresponding server firmware release notes have been updated for the following versions: X-Series M8, M7 5.4(0.260010), M6 5.4(0.260009), C-Series M8, M7, M6 4.3(6.260017), and B-Series M6, M5 5.4(0.260011).   
+May 04, 2026 |  Updated release notes for Cisco UCS 6500 and 6400 Series Fabric Interconnect Infrastructure firmware release 4.3(6.260026) and Cisco UCS X-Series Direct Fabric Interconnect Infrastructure Firmware version 4.3(6.260026).  This release includes updates to:
+
+  * Resolved issues in Release 4.3(6.260026)
+
+It does not include any new hardware support, security fixes, or open caveats.  
+February 23, 2026 |  Updated release notes for Cisco UCS 6500 and 6400 Series Fabric Interconnect Infrastructure firmware release 4.3(6.260006) and Cisco UCS X-Series Direct Fabric Interconnect Infrastructure Firmware version 4.3(6.260015).  It does not include any new hardware feature, security fixes, resolved issues, or open issues. Corresponding server firmware release notes have been updated for the following versions: X-Series M8, M7 5.4(0.260010), M6 5.4(0.260009), C-Series M8, M7, M6 4.3(6.260017), and B-Series M6, M5 5.4(0.260011).   
 February 23, 2026 |  C-Series Server Firmware version 4.3(2.260007) has been released. There is no corresponding Infrastructure Firmware release.   
 January 14, 2026 |  Updated release notes for Cisco UCS 6500 and 6400 Series FI Infrastructure firmware release 4.3(6.260002) and Cisco UCS X-Series Direct FI Infrastructure Firmware version 4.3(6.260003).  It does not include any new hardware feature, security fixes, resolved issues, or open issues. Corresponding server firmware release notes have been updated for the following versions: X-Series M7 5.4(0.260001) and C-Series M8, M7 4.3(6.260003).   
 December 18, 2025 |  C-Series Server Firmware version 4.3(2.250063) has been released. There is no corresponding Infrastructure Firmware release.   
@@ -234,48 +239,51 @@ For more information, see [Supported Hardware for Intersight Managed Mode](https
 
 X-Series Server Firmware Version |  Infrastructure Firmware Version  
 ---|---  
-4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1)  
-6.0(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.4(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.3(0)  |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(2) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.1(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.1(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.0(4) |  N/A |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.0(2) |  N/A |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
-5.0(1) |  N/A |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
+4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1) |  6.0(2)  
+6.0(2) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+6.0(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.4(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.3(0)  |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(2) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.1(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.1(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.0(4) |  N/A |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.0(2) |  N/A |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
+5.0(1) |  N/A |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
 C-Series Server Firmware Version |  Infrastructure Firmware Version  
 ---|---  
-4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1)  
-6.0(1) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(6) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(5)  |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(4) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(1) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.2(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.2(2) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
-4.2(1) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
-4.1(3) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
+4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1) |  6.0(2)  
+6.0(2) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+6.0(1) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(6) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(5)  |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(4) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(1) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.2(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.2(2) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
+4.2(1) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
+4.1(3) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
 B-Series Server Firmware Version |  Infrastructure Firmware Version  
 ---|---  
-4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1)  
-6.0(1) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.4(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.3(0)  |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(1) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.1(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.2(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.2(2) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
-4.2(1) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
-4.1(3) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
+4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1) |  6.0(2)  
+6.0(2) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+6.0(1) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.4(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.3(0)  |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(1) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.1(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.2(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.2(2) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
+4.2(1) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
+4.1(3) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
   
 ## Cisco UCS NVMeoF Support Matrix for Third Party Storage Vendors
 
@@ -429,6 +437,14 @@ You can view the open issues, resolved issues, and security fixes using the [Cis
 
 ### Resolved Caveats
 
+#### Resolved issues in Release 4.3(6.260026)
+
+This section provides a brief description of the resolved issues.
+
+Defect ID |  Description |  First Version Affected |  Resolved in Release  
+---|---|---|---  
+[CSCws91466](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCws91466) |  IOMs in UCS domain report a CMCLowMem warning related to high usage of the /var/volatile/wtmp file, which grows due to repeated FI connections triggering rlogin. The wtmp file consumes about 1.4 GB of space, but no other service impact is observed.  This issue is resolved. |  4.3(6.250048) |  4.3(6.260026) 6.0(2.260045)  
+  
 #### Resolved Caveats in Release 4.3(6.250094)
 
 The following table lists the resolved caveats in release 4.3(6.250094): 

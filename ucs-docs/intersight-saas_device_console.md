@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Device Console |
 | **URL** | https://intersight.com/help/saas/device_console |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260414151805446/docs/cloud/data/articles/device_console/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260514103921360/docs/cloud/data/articles/device_console/en/index.html |
 | **HTML Title** | Device Console |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_device_console.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:49:36 |
+| **Fetched on** | 2026-05-27 10:54:03 |
 
 ---
 
@@ -87,6 +87,10 @@ The password cannot be recovered after you click Submit. If the password is lost
 
   3. Log in using the updated credentials and verify access to the Device Console tabs.
 
+Note:
+
+Starting with Infrastructure Firmware release 6.0(2), login block is enabled by default for Fabric Interconnect Device Console CLI and Web UI login sessions. After five consecutive failed login attempts, additional login attempts are blocked for 900 seconds to help prevent brute-force and unauthorized access attempts.
+
 
 ## User Interface of Device Console (Unified Edge)
 
@@ -104,9 +108,30 @@ The Device Console UI consists of the following main elements:
 
   * [Diagnostic Data](../../../../../../../../../../help/device_console#diagnostic_data_\(unified_edge\))
 
-  * A top navigation menu that contains the Help menu and Logout button.
+  * A top navigation menu that contains the Help menu and Profile menu.
 
 
+## Profile
+
+This table describes the Profile menu parameters.
+
+Property| Description  
+---|---  
+Username| Displays the username.  
+Role| Displays the role associated with the username.  
+User settings| Follow these steps to change the user language settings.
+
+  1. Choose Profile > User Settings.
+  2. Select your preferred language from the Language drop-down list.
+  * English
+  * Japanese
+  * Korean
+  * Chinese (Simplified)
+  3. Select Save.
+
+  
+Sign Out| Choose Profile > Sign Out to log out from the account.  
+  
 ## Device Connector
 
 Note:
@@ -282,6 +307,64 @@ Status| Displays the status of the chassis. The values can be:
   
 Model| Displays the chassis model.  
 Serial| Displays the host ID/serial number of the chassis.  
+  
+**File and directory management** is a secure, web-based interface in the Device Console that allows you to upload, browse, download, and manage files and directories in supported storage locations.
+
+The storage feature provides these benefits:
+
+  * enables self-service file management without CLI access
+
+  * reduces dependency on manual or external tooling
+
+  * provides a scalable foundation for future removable storage support, and
+
+  * supports secure, chunked uploads for large files up to 2 GiB.
+
+
+**Storage Tab**
+
+The Storage tab displays the directory structure and operations for Unified Edge servers using Edge Chassis Management Controllers (eCMC).
+
+The table describes the parameters in the Storage tab.
+
+Parameter| Description  
+---|---  
+Partition| Name of the current workspace directory.Select the directory to view subdirectories or files on the device.  
+Size| Total file size of the directory.  
+Capacity| Percentage of used storage space.  
+  
+**Edit View**
+
+Select the gear icon to change the displayed table columns.
+
+Use these actions to manage the directory structure and operations for servers:
+
+Action| Description| Notes  
+---|---|---  
+New Directory| Creates a new directory.Enter a directory name and select Create.| You cannot create a new directory in the techsupport and core directories.  
+Upload| **Before you begin** The maximum file size for an upload is 2 GB.Follow these steps to upload a file.
+
+  1. Click Browse and select the file that you want to upload.
+  2. Decide whether to upload the file or cancel the action.Note:
+  * If you decide to upload the file, select Upload.
+  * If you decide to cancel the action, select Cancel.
+
+| You cannot upload files to the techsupport and core directories.  
+Download| Downloads the selected files to your browser.| The Download operation applies only to files.  
+Delete| Deletes a directory.| The directory must be empty before it can be deleted.  
+Copy / Move| To copy or move a directory or file:
+
+  1. In the Storage table view, select the directory and select Copy/Move.
+  2. Select Copy or Move.
+  3. Select the directory to copy or move.
+  4. Click Confirm.Note:Use the Search field to quickly locate specific files or directories in a large list.
+
+| You cannot copy or move a directory:
+
+  * if the source and destination are the same, or
+  * if permissions are restricted.
+
+  
   
 ## Diagnostic Data (Unified Edge)
 

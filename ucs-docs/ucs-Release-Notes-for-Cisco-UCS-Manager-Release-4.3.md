@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco UCS Manager, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_release-notes-ucsm-4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:50:00 |
+| **Fetched on** | 2026-05-27 10:54:28 |
 
 ---
 
@@ -18,7 +18,7 @@
 
 **First Published: August 17, 2023**
 
-**Last Updated: February 23, 2026**
+**Last Updated: May 4, 2026**
 
 #  Cisco UCS Manager
 
@@ -48,6 +48,7 @@ Cisco recommends that you upgrade to release 4.3(4e) or later. For more informat
 
 Table 1. Release 4.3(6) Release |  Date |  Description  
 ---|---|---  
+4.3(6g) |  May 4, 2026 |  Created release notes for Cisco UCS Manager Release 4.3(6g).   
 4.3(6f) |  March 26, 2026 |  Updated Security Fixes in Release 4.3(6f).   
 4.3(6f) |  February 23, 2026 |  Created release notes for Cisco UCS Manager Release 4.3(6f).   
 4.3(6e) |  January 14, 2026 |  Created release notes for Cisco UCS Manager Release 4.3(6e).   
@@ -94,6 +95,8 @@ Cisco UCS Manager, Release 4.3 is a unified software release for all supported U
 
 ### New Hardware Features
 
+  * New Hardware in Release 4.3(6g)—None 
+
   * New Hardware in Release 4.3(6f)—None 
 
   * New Hardware in Release 4.3(6e)—None 
@@ -138,6 +141,8 @@ Cisco UCS Manager, Release 4.3 is a unified software release for all supported U
 
 
 ### New Software Features
+
+  * New Software in Release 4.3(6g)—None 
 
   * New Software in Release 4.3(6f)—None 
 
@@ -1397,6 +1402,10 @@ Cisco UCS X-Series Servers and Cisco M7 Servers require a valid Cisco Intersight
 
 ### Security Fixes
 
+## Security Fixes in Release 4.3(6g)
+
+There are no security fixes in release 4.3(6g). 
+
 ## Security Fixes in Release 4.3(6f)
 
 ### Defect ID - CSCwn23026
@@ -1866,6 +1875,13 @@ CVE-2022-43505—Insufficient control flow management in the BIOS firmware for s
 
 The resolved bugs for a release are accessible through the [Cisco Bug Search Tool](https://bst.cloudapps.cisco.com/bugsearch). This web-based tool provides you with access to the Cisco bug tracking system, which maintains up-to-date information about bugs and vulnerabilities in this product and other Cisco hardware and software products. 
 
+### Resolved Caveats in Release 4.3(6g)
+
+Defect ID |  Symptom |  First Bundle Affected |  Resolved in Release  
+---|---|---|---  
+CSCwt18924 |  After an upstream Cisco ACI fabric upgrade or reload, Cisco UCS VIC adapters may fail to bring vNICs online, leaving them stuck in an initializing state. This issue specifically affects configurations using 10GBase-T (SFP-10G-T-X) transceivers connected to Cisco UCS VIC 1400 series adapters (1455, 1457, 1467) or 15000 series adapters (15427, 15428, 15425) on supported Nexus switches.  The root cause is a memory leak within the adapter triggered when the 10GBase-T transceiver hogs the I2C bus during operations, including—but not limited to—server or switch resets and reboots. Although the adapter physical interfaces may come up, the memory leak prevents the vNICs from recovering automatically.  This issue is resolved. |  4.3(5a) |  4.3(6g)  
+CSCwi16863 |  BMC watchdog resets can occur on Cisco UCS B200 M6 and UCS X210c M6 servers, causing CIMC to reboot unexpectedly.  This issue is resolved. |  4.2(3d) |  4.3(6g)  
+  
 ### Resolved Caveats in Release 4.3(6f)
 
 Defect ID |  Symptom |  First Bundle Affected |  Resolved in Release  
@@ -2141,6 +2157,15 @@ CSCwf18625 |  Few UCS-HD1T7K12N and UCS-HD2T7K12N running firmware version CN05 
 
 The open bugs for a release are accessible through the [Cisco Bug Search Tool](https://tools.cisco.com/bugsearch/). This web-based tool provides you with access to the Cisco bug tracking system, which maintains up-to-date information about bugs and vulnerabilities in this product and other Cisco hardware and software products. 
 
+### Open Caveats for Release 4.3(6g)
+
+The following caveat is open in release 4.3(6g): 
+
+Defect ID |  Symptom |  Workaround |  First Bundle Affected  
+---|---|---|---  
+CSCwt96184 |  After server decommission and recommission for the Cisco UCS M6 rack servers, the Cisco UCS 15428 VIC adapter remains stuck in the Inoperable state. The server fails to receive discovery from Cisco UCS Manager due to a DHCP packet parsing error at the Baseboard Management Controller (BMC). This error occurs because the DHCP packet contains extra fields or characters, causing Cisco UCS Manager initialization to fail with a FATAL ERROR! Invalid UCSM DHCP mode token message and aborting the mode change process. This issue prevents proper adapter operation and server discovery.  |  This issue occurs during the decommission or recommission process while the system is in maintenance mode. To resolve this, reboot the BMC.  |  4.3(6f)  
+CSCwd00735 |  In a setup equipped with Cisco UCS 6300 series Fabric Interconnects or with Cisco UCS Mini, downloading a C-Series bundle larger than 2 GB can fail with an invalid image error.  |  Upgrade the infrastructure A bundle to release 4.3(6). |  4.2(2c)  
+  
 ### Open Caveats for Release 4.3(6f)
 
 The following caveats are open in Release 4.3(6f): 
@@ -2337,6 +2362,10 @@ CSCwf21977 |  Cisco UCS Manager CLI interface does not support manual control ov
 CSCwd35712 |  A critical defect has been identified in the Cisco UCS Manager where the Data Management Engine (DME) crashes due to an instance id not found error.  Additional symptoms include the inability to access the Cisco UCS Manager GUI, non-functionality of cluster management services, and a core dump indicated by the show pmon state command via SSH.  The problem is not firmware-specific and can impact any Cisco UCS Manager domain. Although the data plane and server operations of the domain remain unaffected, there is no workaround for this issue, and affected environments may require restoration from a backup.  |  There is no known workaround. Restore the domain from backup. |  4.2(1d)  
   
 ### Known Behavior and Limitations in Release 4.3
+
+## Known Behavior and Limitations in Release 4.3(6g)
+
+There are no known behavior and limitations in Release 4.3(6g). 
 
 ## Known Behavior and Limitations in Release 4.3(6f)
 
@@ -2920,10 +2949,6 @@ Upgrade from any 4.0(4) release |
 
   
   
-### UCS Manager Health and Pre-Upgrade Check Tool
-
-The [UCS Manager Health and Pre-Upgrade Check Tool](https://www.cisco.com/c/en/us/support/docs/servers-unified-computing/ucs-infrastructure-ucs-manager-software/217601-ucsm-health-and-pre-upgrade-check-tool.html) provides automated health and pre-upgrade checks that are designed to ensure your clusters are healthy before you upgrade. It is imperative that this healthcheck is not just performed, but that you take corrective action on any cluster that is found to be unhealthy. Correct all issues reported by the UCS Manager health check before continuing. 
-
 ## Internal Dependencies
 
 In this release, an interactive compatibility lookup tool is available to help you quickly determine supported combinations of Infrastructure Releases, Fabric Interconnects, servers, VICs, and IOM modules based on the selected release. 
@@ -3340,76 +3365,76 @@ The maximum length of fiber optic runs is limited to 300 meters. This is imposed
 ---|---  
 Table 19. Supported GPU/GPU PCIe Node GPU/GPU PCIe Node |  PID |  Supported Servers |  Minimum Software Version |  Suggested Software Version  
 ---|---|---|---|---  
-NVIDIA A16 GPU on X440p: PCIE 250W 4X16GB, FHFL  |  UCSX-GPU-A16 |  Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6f)  
-UCSC-CGPU-A16 |  Cisco UCSX215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6f)  
-AMD MI210 GPU; 300W 64GB, 2 slot FHFL |  UCSX-GPU-MI210 |  Cisco UCS X215c M8 |  4.3(6a) |  4.3(6f)  
-NVIDIA H100-NVL GPU 400W, 94GB, 2-slot FHFL  |  UCSX-GPU-H100-NVL |  Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6f)  
-UCSC-GPU-H100-NVL |  Cisco UCS C240 M8 |  4.3(6a) |  4.3(6f)  
-Cisco UCS X210c M7 Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6f)  
-Cisco UCS C245 M8 |  4.3(5a) |  4.3(6f)  
-Cisco UCS C240 M7 |  4.3(5a) |  4.3(6f)  
-NVIDIA L4-Mezz GPU 70W, 24GB, 1-slot HHHL |  UCSX-GPU-L4-Mezz |  Cisco UCS X210c M7 Cisco UCS X215c M8 |  4.3(5a) |  4.3(6f)  
-UCSX-440P-D GPU PCIe Node |  UCSX-440P-D |  Cisco UCS X210c M7, X210c M6, and X410c M7 |  4.3(4a) |  4.3(6f)  
-Intel GPU Flex 140, Gen4x8, HHHL, 75W PCIe (Front Mezz) |  UCSX-GPU-FLX140MZ |  Cisco UCS X210c M7 |  4.3(2b) |  4.3(6f)  
-Intel GPU Flex 140, Gen4x8, HHHL, 75W PCIe |  UCSX-GPU-FLEX140 |  Cisco UCS X410c M7 and X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-UCSC-GPU-FLEX140 |  Cisco UCS C220 M7 and C240 M7 |  4.3(4a) |  4.3(6f)  
-Intel GPU Flex 170, Gen4x16, HHFL, 150W PCIe |  UCSX-GPU-FLEX170 |  Cisco UCS X410c M7 and X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-UCSC-GPU-FLEX170 |  Cisco UCS C240 M7 |  4.3(4a) |  4.3(6f)  
-NVIDIA TESLA A16 PCIE 250W 4X16GB |  UCSX-GPU-A16-D |  Cisco UCS X210c M7 and X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-UCSC-GPU-A16 |  Cisco UCS C240 M8 |  4.3(6a) |  4.3(6f)  
-Cisco UCS C240 M6 |  4.2(1d) |  4.3(6f)  
-Cisco UCS C245 M6 |  4.2(1i) |  4.3(6f)  
-NVIDIA L4 Tensor Core, 70W, 24GB |  UCSX-GPU-L4 |  Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6f)  
-Cisco UCS X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-NVIDIA L40 300W, 48GB wPWR CBL |  UCSX-GPU-L40 |  Cisco UCS X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-UCSC-GPU-L40 |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6f)  
-Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6f)  
-NVIDIA L40S: 350W, 48GB, 2-slot FHFL GPU |  UCSX-GPU-L40S | Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6f)  
+NVIDIA A16 GPU on X440p: PCIE 250W 4X16GB, FHFL  |  UCSX-GPU-A16 |  Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6g)  
+UCSC-CGPU-A16 |  Cisco UCSX215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6g)  
+AMD MI210 GPU; 300W 64GB, 2 slot FHFL |  UCSX-GPU-MI210 |  Cisco UCS X215c M8 |  4.3(6a) |  4.3(6g)  
+NVIDIA H100-NVL GPU 400W, 94GB, 2-slot FHFL  |  UCSX-GPU-H100-NVL |  Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6g)  
+UCSC-GPU-H100-NVL |  Cisco UCS C240 M8 |  4.3(6a) |  4.3(6g)  
+Cisco UCS X210c M7 Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6g)  
+Cisco UCS C245 M8 |  4.3(5a) |  4.3(6g)  
+Cisco UCS C240 M7 |  4.3(5a) |  4.3(6g)  
+NVIDIA L4-Mezz GPU 70W, 24GB, 1-slot HHHL |  UCSX-GPU-L4-Mezz |  Cisco UCS X210c M7 Cisco UCS X215c M8 |  4.3(5a) |  4.3(6g)  
+UCSX-440P-D GPU PCIe Node |  UCSX-440P-D |  Cisco UCS X210c M7, X210c M6, and X410c M7 |  4.3(4a) |  4.3(6g)  
+Intel GPU Flex 140, Gen4x8, HHHL, 75W PCIe (Front Mezz) |  UCSX-GPU-FLX140MZ |  Cisco UCS X210c M7 |  4.3(2b) |  4.3(6g)  
+Intel GPU Flex 140, Gen4x8, HHHL, 75W PCIe |  UCSX-GPU-FLEX140 |  Cisco UCS X410c M7 and X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6g)  
+UCSC-GPU-FLEX140 |  Cisco UCS C220 M7 and C240 M7 |  4.3(4a) |  4.3(6g)  
+Intel GPU Flex 170, Gen4x16, HHFL, 150W PCIe |  UCSX-GPU-FLEX170 |  Cisco UCS X410c M7 and X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6g)  
+UCSC-GPU-FLEX170 |  Cisco UCS C240 M7 |  4.3(4a) |  4.3(6g)  
+NVIDIA TESLA A16 PCIE 250W 4X16GB |  UCSX-GPU-A16-D |  Cisco UCS X210c M7 and X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6g)  
+Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6g)  
+UCSC-GPU-A16 |  Cisco UCS C240 M8 |  4.3(6a) |  4.3(6g)  
+Cisco UCS C240 M6 |  4.2(1d) |  4.3(6g)  
+Cisco UCS C245 M6 |  4.2(1i) |  4.3(6g)  
+NVIDIA L4 Tensor Core, 70W, 24GB |  UCSX-GPU-L4 |  Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6g)  
+Cisco UCS X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6g)  
+Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6g)  
+NVIDIA L40 300W, 48GB wPWR CBL |  UCSX-GPU-L40 |  Cisco UCS X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6g)  
+Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6g)  
+UCSC-GPU-L40 |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6g)  
+Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6g)  
+NVIDIA L40S: 350W, 48GB, 2-slot FHFL GPU |  UCSX-GPU-L40S | Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6g)  
 Cisco UCS X210c M7 (with PCIe Node) Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a)  
-UCSC-GPU-L40S | Cisco UCS C240 M8 |  4.3(6a) |  4.3(6f)  
-Cisco UCS C240 M7 |  4.3(4a) |  4.3(6f)  
-Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6f)  
-NVIDIA T4 PCIE 75W 16GB |  UCSX-GPU-T4-16 |  Cisco UCS X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-UCSC-GPU-T4-16 |  Cisco UCS C220 M6 |  4.3(2b) |  4.3(6f)  
-Cisco UCS C245 M6 |  4.2(1f) |  4.3(6f)  
-Cisco UCS C225 M6 |  4.2(1l) |  4.3(6f)  
-Cisco UCS C240 M5, C220 M5, and C480 M5 |  3.2(3a) |  4.3(6f)  
-Cisco UCS S3260 M5 |  3.1(2b) |  4.3(6f)  
-NVIDIA T4 GPU PCIE 75W 16GB, MEZZ form factor (Front Mezz) |  UCSX-GPU-T4-MEZZ |  Cisco UCS X210c M7 and X210c M6 |  4.3(2b) |  4.3(6f)  
-NVIDIA Hopper L4 70W, 24GB, 1-slot HHHL |  UCSC-GPU-L4M6 |  Cisco UCS C220 M6, C240 M6 |  4.3(4a) |  4.3(6f)  
-NVIDIA H100: 350W, 80GB, 2-slot FHFL GPU |  UCSX-GPU-H100-80 |  Cisco UCS X210c M7 and X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-UCSC-GPU-H100-80 |  Cisco UCS C240 M7 |  4.3(4a) |  4.3(6f)  
-NVIDIA L4:70W, 24GB, 1-slot HHHL GPU |  UCSC-GPU-L4 |  Cisco UCS C240 M8 and C220 M8 |  4.3(6a) |  4.3(6f)  
-Cisco UCS C245 M8 |  4.3(5a) |  4.3(6f)  
-Cisco UCS C220 M7 and C240 M7 |  4.3(2b) |  4.3(6f)  
-Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6f)  
-NVIDIA P4 |  UCSC-GPU-P4 |  Cisco UCS C220 M5 |  3.2(3a) |  4.3(6f)  
-NVIDIA M10 |  UCSC-GPU-M10 |  Cisco UCS C240 M5 and C480 M5 |  3.2(3a) |  4.3(6f)  
-NVIDIA GRID P6 Front Mezzanine |  UCSB-GPU-P6-F |  Cisco UCS B200 M5 |  3.2(1d) |  4.3(6f)  
-Cisco UCS B480 M5 |  3.2(2b) |  4.3(6f)  
-NVIDIA GRID P6 Rear Mezzanine |  UCSB-GPU-P6-R |  Cisco UCS B200 M5 |  3.2(1d) |  4.3(6f)  
-Cisco UCS B480 M5 |  3.2(2b) |  4.3(6f)  
-TESLA A30, PASSIVE, 180W, 24GB |  UCSC-GPU-A30-D |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6f)  
-UCSC-GPU-A30 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6f)  
-Cisco UCS C245 M6 |  4.2(1i) |  4.3(6f)  
-TESLA A40 RTX, PASSIVE, 300W, 48GB |  UCSX-GPU-A40-D |  Cisco UCS X210c M7 and X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-UCSC-GPU-A40-D |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6f)  
-UCSC-GPU-A40 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6f)  
-Cisco UCS C245 M6 |  4.2(1i) |  4.3(6f)  
-Cisco UCS C480 M5 |  3.2(3a) |  4.3(6f)  
-TESLA A100, PASSIVE, 300W, 80GB12 |  UCSX-GPU-A100-80-D |  Cisco UCS X210c M7 and X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-Cisco UCS X410c M7 (with PCIe Node ) |  4.3(4a) |  4.3(6f)  
-UCSC-GPUA100-80-D |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6f)  
-UCSC-GPU-A100-80 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6f)  
-Cisco UCS C245 M6 |  4.2(1i) |  4.3(6f)  
-All Cisco UCS C-Series M5 |  4.2(2c) |  4.3(6f)  
-TESLA A10, PASSIVE, 150W, 24GB |  UCSC-GPU-A10 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6f)  
-Cisco UCS C245 M6 |  4.2(1i) |  4.3(6f)  
-NVIDIA H200-NVL GPU |  UCSC-GPU-H200-NVL |  Cisco UCS C240 M8 |  4.3(6c) |  4.3(6f)  
+UCSC-GPU-L40S | Cisco UCS C240 M8 |  4.3(6a) |  4.3(6g)  
+Cisco UCS C240 M7 |  4.3(4a) |  4.3(6g)  
+Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6g)  
+NVIDIA T4 PCIE 75W 16GB |  UCSX-GPU-T4-16 |  Cisco UCS X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6g)  
+UCSC-GPU-T4-16 |  Cisco UCS C220 M6 |  4.3(2b) |  4.3(6g)  
+Cisco UCS C245 M6 |  4.2(1f) |  4.3(6g)  
+Cisco UCS C225 M6 |  4.2(1l) |  4.3(6g)  
+Cisco UCS C240 M5, C220 M5, and C480 M5 |  3.2(3a) |  4.3(6g)  
+Cisco UCS S3260 M5 |  3.1(2b) |  4.3(6g)  
+NVIDIA T4 GPU PCIE 75W 16GB, MEZZ form factor (Front Mezz) |  UCSX-GPU-T4-MEZZ |  Cisco UCS X210c M7 and X210c M6 |  4.3(2b) |  4.3(6g)  
+NVIDIA Hopper L4 70W, 24GB, 1-slot HHHL |  UCSC-GPU-L4M6 |  Cisco UCS C220 M6, C240 M6 |  4.3(4a) |  4.3(6g)  
+NVIDIA H100: 350W, 80GB, 2-slot FHFL GPU |  UCSX-GPU-H100-80 |  Cisco UCS X210c M7 and X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6g)  
+UCSC-GPU-H100-80 |  Cisco UCS C240 M7 |  4.3(4a) |  4.3(6g)  
+NVIDIA L4:70W, 24GB, 1-slot HHHL GPU |  UCSC-GPU-L4 |  Cisco UCS C240 M8 and C220 M8 |  4.3(6a) |  4.3(6g)  
+Cisco UCS C245 M8 |  4.3(5a) |  4.3(6g)  
+Cisco UCS C220 M7 and C240 M7 |  4.3(2b) |  4.3(6g)  
+Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6g)  
+NVIDIA P4 |  UCSC-GPU-P4 |  Cisco UCS C220 M5 |  3.2(3a) |  4.3(6g)  
+NVIDIA M10 |  UCSC-GPU-M10 |  Cisco UCS C240 M5 and C480 M5 |  3.2(3a) |  4.3(6g)  
+NVIDIA GRID P6 Front Mezzanine |  UCSB-GPU-P6-F |  Cisco UCS B200 M5 |  3.2(1d) |  4.3(6g)  
+Cisco UCS B480 M5 |  3.2(2b) |  4.3(6g)  
+NVIDIA GRID P6 Rear Mezzanine |  UCSB-GPU-P6-R |  Cisco UCS B200 M5 |  3.2(1d) |  4.3(6g)  
+Cisco UCS B480 M5 |  3.2(2b) |  4.3(6g)  
+TESLA A30, PASSIVE, 180W, 24GB |  UCSC-GPU-A30-D |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6g)  
+UCSC-GPU-A30 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6g)  
+Cisco UCS C245 M6 |  4.2(1i) |  4.3(6g)  
+TESLA A40 RTX, PASSIVE, 300W, 48GB |  UCSX-GPU-A40-D |  Cisco UCS X210c M7 and X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6g)  
+Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6g)  
+UCSC-GPU-A40-D |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6g)  
+UCSC-GPU-A40 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6g)  
+Cisco UCS C245 M6 |  4.2(1i) |  4.3(6g)  
+Cisco UCS C480 M5 |  3.2(3a) |  4.3(6g)  
+TESLA A100, PASSIVE, 300W, 80GB12 |  UCSX-GPU-A100-80-D |  Cisco UCS X210c M7 and X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6g)  
+Cisco UCS X410c M7 (with PCIe Node ) |  4.3(4a) |  4.3(6g)  
+UCSC-GPUA100-80-D |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6g)  
+UCSC-GPU-A100-80 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6g)  
+Cisco UCS C245 M6 |  4.2(1i) |  4.3(6g)  
+All Cisco UCS C-Series M5 |  4.2(2c) |  4.3(6g)  
+TESLA A10, PASSIVE, 150W, 24GB |  UCSC-GPU-A10 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6g)  
+Cisco UCS C245 M6 |  4.2(1i) |  4.3(6g)  
+NVIDIA H200-NVL GPU |  UCSC-GPU-H200-NVL |  Cisco UCS C240 M8 |  4.3(6c) |  4.3(6g)  
   
 ## Deprecated Hardware and Software in Cisco UCS Manager
 
@@ -3449,6 +3474,7 @@ The following table lists the PIDs added in this release and maps UCS software r
 
 Table 20. Version Mapping UCS Release |  Catalog File Name |  Additional PIDs in this Release  
 ---|---|---  
+4.3(6g) |  ucs-catalog.4.3.6g.T.gbin |  —  
 4.3(6f) |  ucs-catalog.4.3.6f.T.bin |  —  
 4.3(6e) |  ucs-catalog.4.3.6e.T.bin |  —  
 4.3(6d) |  ucs-catalog.4.3.6d.T.bin |  —  

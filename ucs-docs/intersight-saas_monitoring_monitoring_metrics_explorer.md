@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Monitoring Metrics Explorer |
 | **URL** | https://intersight.com/help/saas/monitoring/monitoring_metrics_explorer |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260414151805446/docs/cloud/data/resources/monitoring/en/Metrics_Explorer.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260514103921360/docs/cloud/data/resources/monitoring/en/Metrics_Explorer.html |
 | **HTML Title** | Metrics Exploration |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_monitoring_metrics_explorer.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:49:22 |
+| **Fetched on** | 2026-05-27 10:53:48 |
 
 ---
 
@@ -46,7 +46,7 @@ No.| Component| Description
   * **Minimum** —the lowest value measured either during the specified time interval or within the granularity period.
   * **Maximum** —the highest value measured either during the specified time interval or within the granularity period.
   * **Sum** —the total of all data points collected either during the time interval or within the granularity period.Note:The statistics list above are not applicable to all the metrics. For more information on statistic applicable for each metric, see [Supported Metrics](/help/monitoring/monitoring_supported_metric).
-  * Filter By—(Optional) The condition or rule based on which the metric data is selected or excluded. The Filter By rule is specified on an attribute of the metric, combined with a condition and a value. If you have Tags defined on the element monitored by Intersight, they will also be available for filtering.
+  * Filter By—(Optional) The condition or rule based on which the metric data is selected or excluded. The Filter By rule is specified on an attribute of the metric, combined with a condition and a value. If you have Tags defined on the element monitored by Intersight, they will also be available for filtering. You can use a single attribute or combine multiple attributes in a Filter by expression using `AND` and `OR`. Use parentheses **( )** to control the order of evaluation and create nested expressions.
   * Group By—(Optional) The metric attribute(s) that you want to use to group the metric.The key attributes for the metric are highlighted in the Group by drop-down, which are prominently listed at the top of the drop-down menu with a tick symbol next to each. To group the metrics by all the key attributes, Select All Key Attributes.
   * Display—(Optional) The display options:
   * To show all records in the chart, select All .
@@ -93,15 +93,32 @@ The Explorer screen displays the metrics as a single line chart for all the endp
 
 For more information on supported instrument types, metric, and statistics in Cisco Intersight, see [Supported Metrics](/help/monitoring/monitoring_supported_metric).
 
-  3. (Optional) Select the condition by which you want to filter the metrics. The Filter By rule is specified on an attribute of the metric, combined with a condition and a value. If you have Tags defined on the element monitored by Intersight, they will also be available for filtering.
+  3. (Optional) Select the condition by which you want to filter the metrics. The Filter By rule is specified using a metric attribute, combined with a condition and a value. If you have Tags defined on the element monitored by Intersight, they will also be available for filtering. You can use a single attribute or combine multiple attributes in a Filter by expression using `AND` and `OR`. Use parentheses **( )** to control the order of evaluation and create nested logic. When you build more complex expressions, later value selections are not progressively narrowed by earlier clauses.
 
-You specify filter condition when you want to focus on a filtered subset of data rather than the entire dataset. For example, for _Temperature - Average_ metric, when you select the Filter by condition with attribute as _Host Type_ , condition as _include_ , and value as _Fabric Interconnect_ , the corresponding chart displays the data points for a single metric—Average Temperature for Fabric Interconnect and is shown as a single line on the chart.
+Note:
+
+If an expression is incomplete-such as when a value is missing or a parenthesis is left open-Metrics Explorer displays a validation error. You must correct the expression before applying the filter.
+
+You specify filter condition when you want to focus on a filtered subset of data rather than the entire dataset. The following is an example of a single-attribute **Filter by** expression:
+
+For the _Temperature - Average_ metric, when you select the Filter by condition with attribute as _Host Type_ , condition as _Equals_ , and value as _Fabric Interconnect_ , the corresponding chart displays the data points for a single metric—Average Temperature for Fabric Interconnect and is shown as a single line on the chart.
 
 ![](../files/477133.png)
 
-Alternately, for Temperature - Average metric, when you select the Filter by condition with attribute as _Host Type_ , condition as _exclude_ , and value as _Fabric Interconnect_ , the corresponding chart displays the metric for _Blade Server_ and _Rack Server_.
+Alternately, for Temperature - Average metric, when you select the Filter by condition with attribute as _Host Type_ , condition as _Not Equals_ , and value as _Fabric Interconnect_ , the corresponding chart displays the metric for _Blade Server_ and _Rack Server_.
 
 ![](../files/477134.png)
+
+The following are some examples of using multiple attributes in an expression:
+
+  * `"Host Type" = "Blade Server" AND "License Tier" = Advantage`
+
+  * `"Host Type" = "Blade Server" OR "Host Type" = "Rack Server"`
+
+  * `("Host Type" = "Rack Server" AND Vendor = Cisco) OR ("Domain Name" = dname-1)`
+
+  * `("Host Name" = Server1) AND (Name in ("Fan 1", "Fan 2")) OR (Model = UCS1)`
+
   4. (Optional) In the Group by field, specify the metric attribute you want to use for grouping the metric.
 
 You specify the Group by condition when you want to focus on data for specific entities or groups of entities. For example, for _Temperature - Average_ metric, for Fabric Interconnect, when you select the Group by condition as _Sensor Location_ , the metric is aggregated based on the sensor location— _Server_back_ , _Server_CPU_ , and _Server_front_ —and the corresponding chart displays the metric for each sensor location separately.

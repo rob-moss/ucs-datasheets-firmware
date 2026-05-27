@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/cisco-ucs-6536-fabric-interconnect-spec-sheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-04-16 10:50:54 |
+| **Fetched on** | 2026-05-27 10:55:10 |
 
 ---
 
@@ -22,15 +22,15 @@ Fabric Interconnect
 CISCO UCS 6536 FABRIC INTERCONNECT
 
 CISCO SYSTEMS
-170 WEST TASMAN DR.
+170 WEST TASMAN DR. 
 SAN JOSE, CA, 95134
 WWW.CISCO.COM
 
-PUBLICATION HISTORY
+PUBLICATION HISTORY 
 
-REV A.26
+REV A.27
 
-JANUARY 30, 2026
+MAY 05, 2026 
 
 CONTENTS
 
@@ -294,12 +294,13 @@ Power supply warning—possibly one of the following conditions:
 
 ■ High power
 
-Low voltage
+■ Low voltage
 
-Power supply installed in chassis but not connected to a power 
+■ Power supply installed in chassis but not connected to a power 
+
 source
 
-Slow power supply fan
+■ Slow power supply fan
 
 Flashing green
 
@@ -313,16 +314,12 @@ Power supply failure—possibly one of the following conditions:
 
 ■ Over temperature
 
-Power supply fan failure
+■ Power supply fan failure
 
 4
 
 Cisco UCS 6536 Fabric Interconnect
 
-■
-■
-■
-■
 Management Port LEDs
 
 The management port LED states (see Figure 2 on page 3) are shown in Table 2.
@@ -493,38 +490,44 @@ Ports 1-8
 
 Ports 9-10
 
-40/100 Gbps Ethernet or FCoE ports 
+■ 40/100 Gbps Ethernet or FCoE ports 
+
+■ 1 Gbps Ethernet via QSA
+
 only 
 
-10/25 Gbps Ethernet via breakout, 
+■ 10/25 Gbps Ethernet via breakout, 
+
 QSA or QSA28
-
-1 Gbps Ethernet via QSA
-
-40/100 Gbps Ethernet or FCoE ports only
-
-10/25 Gbps Ethernet via breakout, QSA or 
-QSA28
 
 3
 
 Ports 11-32
 
+■ 40/100 Gbps Ethernet or FCoE ports only
+
+■ 10/25 Gbps Ethernet via breakout, QSA or 
+
+QSA28
+
 4
 
 Unified 33-36
 
-40/100 Gbps Ethernet or FCoE ports 
+■ 40/100 Gbps Ethernet or FCoE ports 
+
+■ 16 x 8/16/32G FC port via breakout
+
 only 
 
-10/25 Gbps Ethernet via breakout or 
+■ 10/25 Gbps Ethernet via breakout or 
+
 QSA28
 
-16 x 8/16/32G FC port via breakout
+■ 10/25/40/100 Gbps Ethernet or FCoE
 
-10/25/40/100 Gbps Ethernet or FCoE
+■ 10/25 Gbps Ethernet via breakout, QSA or 
 
-10/25 Gbps Ethernet via breakout, QSA or 
 QSA28
 
 NOTE:  Breakout is supported on all 36 ports and after breakout the UCS 6536 Fabric 
@@ -539,16 +542,6 @@ and 10G ethernet for rack-server with FEX 2348 UPQ are supported. Note that the
 
 Cisco UCS 6536 Fabric Interconnect
 
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
 Cisco UCS 6536 Fabric Interconnect
 
 Rear LED Indicators
@@ -667,25 +660,28 @@ single, highly available management domain
 
 Unified Fabric
 
-Fabric Extender 
-Architecture
+■ Decreases total cost of ownership (TCO) by reducing the number of 
 
-Decreases total cost of ownership (TCO) by reducing the number of 
 NICs, HBAs, switches, and cables needed
 
-Support Fibre Channel and Ethernet traffic concurrently in a Unified 
+■ Support Fibre Channel and Ethernet traffic concurrently in a Unified 
+
 Fabric
 
-Increases flexibility with a range of interconnect solutions, including 
+■ Increases flexibility with a range of interconnect solutions, including 
+
 copper Twinax cable for short runs and fiber for long runs
 
-Consumes less power per port than traditional solution
+■ Consumes less power per port than traditional solution
 
-Scales to 20 chassis without adding complexity by eliminating the need 
+■ Scales to 20 chassis without adding complexity by eliminating the need 
 for dedicated chassis management and blade switches and by reducing 
 the number of cables needed
 
-Provides deterministic latency for optimized application performance
+■ Provides deterministic latency for optimized application performance
+
+Fabric Extender 
+Architecture
 
 QSFP28-compatible 
 Ports
@@ -713,12 +709,6 @@ Fan side intake, port side exhaust
 
 Cisco UCS 6536 Fabric Interconnect
 
-■
-■
-■
-■
-■
-■
 Cisco UCS 6536 Fabric Interconnect Capabilities And Features
 
 Table 7   Capabilities and Features  (continued)
@@ -733,9 +723,9 @@ power supplies
 
 ■ Helps enable high availability in multiple configurations
 
-Increases serviceability
+■ Increases serviceability
 
-Provides uninterrupted service during maintenance
+■ Provides uninterrupted service during maintenance
 
 Rear Ports
 
@@ -743,9 +733,10 @@ Performance
 
 Helps keep cable lengths short and efficient
 
-Provides high-speed, low-latency connectivity to the chassis
+■ Provides high-speed, low-latency connectivity to the chassis
 
-Provides approximately 50% reduction in end-to-end system latency 
+■ Provides approximately 50% reduction in end-to-end system latency 
+
 (latency is less than 1 microseconds)
 
 Lossless Fabric
@@ -756,10 +747,12 @@ single transport
 Priority Flow Control 
 (PFC)
 
-Simplifies management of multiple traffic flows over a single network 
+■ Simplifies management of multiple traffic flows over a single network 
+
 link
 
-Supports different classes of service, helping enable both lossless and 
+■ Supports different classes of service, helping enable both lossless and 
+
 classic Ethernet on the same fabric
 
 Systemwide Bandwidth 
@@ -772,52 +765,36 @@ Cisco UCS 6536 Fabric Interconnect
 
 9
 
-■
-■
-■
-■
-■
-■
 CONFIGURING the FABRIC INTERCONNECT
 
 CONFIGURING the FABRIC INTERCONNECT
 
 Follow these steps to configure the Cisco UCS 6536 Fabric Interconnect:
 
-STEP 1 CHOOSE FABRIC INTERCONNECT SKU, page 11
+■ STEP 1 CHOOSE FABRIC INTERCONNECT SKU, page 11
 
-STEP 2 SOFTWARE IMAGE OPTIONS (INCLUDED), page 12
+■ STEP 2 SOFTWARE IMAGE OPTIONS (INCLUDED), page 12
 
-STEP 3 SOFTWARE LICENSE (INCLUDED), page 13
+■ STEP 3 SOFTWARE LICENSE (INCLUDED), page 13
 
-STEP 4 POWER SUPPLIES (INCLUDED), page 14
+■ STEP 4 POWER SUPPLIES (INCLUDED), page 14
 
-STEP 5 SELECT AC POWER CORDS, page 15
+■ STEP 5 SELECT AC POWER CORDS, page 15
 
-STEP 6 CHOOSE TRANSCEIVERS AND CABLE OPTIONS (OPTIONAL), page 18
+■ STEP 6 CHOOSE TRANSCEIVERS AND CABLE OPTIONS (OPTIONAL), page 18
 
-STEP 7 CHOOSE QSFP CABLE OPTIONS, page 20
+■ STEP 7 CHOOSE QSFP CABLE OPTIONS, page 20
 
-STEP 8 ACCESSORY KIT (INCLUDED), page 23
+■ STEP 8 ACCESSORY KIT (INCLUDED), page 23
 
-STEP 9 FAN MODULE (INCLUDED), page 24
+■ STEP 9 FAN MODULE (INCLUDED), page 24
 
-STEP 10 CHOOSE SERVICE AND SUPPORT LEVEL, page 25
+■ STEP 10 CHOOSE SERVICE AND SUPPORT LEVEL, page 25
 
 10
 
 Cisco UCS 6536 Fabric Interconnect
 
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
 CONFIGURING the FABRIC INTERCONNECT
 
 STEP 1
@@ -858,13 +835,10 @@ Standalone FI ordering PID, Fabric Interconnect 6536 for UCSM
 The base Cisco UCS 6536 Fabric Interconnect do not include the following components. They 
 must be selected during product ordering:
 
-Transceivers
-
-Cables
-
-Power cords
-
-Warranty Service
+■ Transceivers
+■ Cables
+■ Power cords
+■ Warranty Service
 
 NOTE:  Use the steps on the following pages to configure the FI with the 
 components that you want to include.
@@ -903,10 +877,6 @@ Cisco UCS 6536 Fabric Interconnect
 
 11
 
-■
-■
-■
-■
 CONFIGURING the FABRIC INTERCONNECT
 
 STEP 2 SOFTWARE IMAGE OPTIONS (INCLUDED)
@@ -1377,49 +1347,48 @@ CVR-QSFP28-SFP25G
 
 Notes:
 
-The 6536 FI supports 1G optics on ports 9 and 10. 
+■ The 6536 FI supports 1G optics on ports 9 and 10. 
 
-Transceiver modules and cables that are supported on a specific fabric interconnect are not always 
+■ Transceiver modules and cables that are supported on a specific fabric interconnect are not always 
 supported on all VIC adapters, I/O modules, or fabric extenders that are compatible with that fabric 
 interconnect. Detailed compatibility matrices for the transceiver modules are available here: 
 https://www.cisco.com/c/en/us/support/interfaces-modules/transceiver-modules/products-devi
 ce-support-tables-list.html
 
-SFP-10/25G-LR-S and SFP-10/25G-CSR-S are supported only at 25G speed. 
+■ SFP-10/25G-LR-S and SFP-10/25G-CSR-S are supported only at 25G speed. 
 
-S-class transceivers do not support FCoE at 10G and 40G speeds.
+■ S-class transceivers do not support FCoE at 10G and 40G speeds.
 
 18
 
 Cisco UCS 6536 Fabric Interconnect
 
-■
-■
-■
-■
 Caveats
 
 CONFIGURING the FABRIC INTERCONNECT
 
-The maximum length of fiber optic runs is limited to 300 meters. This is imposed by our use 
+■ The maximum length of fiber optic runs is limited to 300 meters. This is imposed by our use 
+
 of 802.3X/802.1Qbb Priority Pauses.
 
 NOTE:  
 
-Transceiver modules and cables that are supported on a specific Fabric Interconnect are not 
+■ Transceiver modules and cables that are supported on a specific Fabric Interconnect are not 
 always supported on all VIC adapters, IOMs, or FEXs that are compatible with that Fabric 
 Interconnect. Detailed compatibility matrices for the transceiver modules are available 
 here: 
 https://www.cisco.com/c/en/us/support/interfaces-modules/transceiver-modules/product
 s-device-support-tables-list.html
 
-S-Class transceivers, (for example QSFP-40G-SR4-S), do not support FCoE.
+■ S-Class transceivers, (for example QSFP-40G-SR4-S), do not support FCoE.
 
-Also For transceiver specifications, see the following link: 
+■ Also For transceiver specifications, see the following link: 
+
 http://www.cisco.com/c/en/us/td/docs/interfaces_modules/transceiver_modules/compati
 bility/matrix/GE_Tx_Matrix.html
 
-Refer to below data sheet for the complete details. 
+■ Refer to below data sheet for the complete details. 
+
 https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs6536-fa
 bric-interconnect-ds.html
 
@@ -1427,11 +1396,6 @@ Cisco UCS 6536 Fabric Interconnect
 
 19
 
-■
-■
-■
-■
-■
 CONFIGURING the FABRIC INTERCONNECT
 
 STEP 7 CHOOSE QSFP CABLE OPTIONS
@@ -1764,43 +1728,20 @@ Spare, UCS 6536 Chassis Accessory Kit
 
 The Cisco UCS 6536 Fabric Interconnect accessory kit includes the following items:
 
-2 slider rails
+■ 2 slider rails
 
-2 rack-mount guides
+■ 2 rack-mount guides
 
-2 rack-mount brackets
+■ 2 rack-mount brackets
 
-12 M4 x 0.7 x 8-mm Phillips countersunk screws
+■ 10 M4 x 0.7 x 7-mm Phillips countersunk screws
 
-10 10-32 rack nuts
-
-10 10-32 x 3/4-inch Phillips pan-head screws
-
-1 console cable with an RJ-45-RS-232 adapter and a DB9 adapter
-
-1 ground lug kit
-
-1 ESD wrist strap
-
-1 power cord clip (a wire clip that is used to retain the power cord)
-
-1 pointer document (specifies where to find the online product documentation)
+■ 1 ground lug kit
 
 Cisco UCS 6536 Fabric Interconnect
 
 23
 
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
-■
 CONFIGURING the FABRIC INTERCONNECT
 
 STEP 9 FAN MODULE (INCLUDED)
@@ -1840,13 +1781,13 @@ Unified Computing Warranty, No Contract
 If you have noncritical implementations and choose to have no service contract, the following 
 coverage is supplied:
 
-Three-year parts coverage.
+■ Three-year parts coverage.
 
-Next business day (NBD) onsite parts replacement eight hours a day, five days a week.
+■ Next business day (NBD) onsite parts replacement eight hours a day, five days a week.
 
-90-day software warranty on media.
+■ 90-day software warranty on media.
 
-Ongoing downloads of BIOS, drivers, and firmware updates.
+■ Ongoing downloads of BIOS, drivers, and firmware updates.
 
 Smart Net Total Care (SNTC) for UCS 
 
@@ -1966,10 +1907,6 @@ Cisco UCS 6536 Fabric Interconnect
 
 25
 
-■
-■
-■
-■
 CONFIGURING the FABRIC INTERCONNECT
 
 Table 18  Cisco SNTC for UCS Service (PID UCSX-FI-6536-U) 
@@ -2390,11 +2327,11 @@ designed for partners to deliver their own branded support and managed services 
 customers. Cisco PSS provides partners with access to Cisco's support infrastructure and assets 
 to help them:
 
-Expand their service portfolios to support the most complex network environments
+■ Expand their service portfolios to support the most complex network environments
 
-Lower delivery costs
+■ Lower delivery costs
 
-Deliver services that increase customer loyalty
+■ Deliver services that increase customer loyalty
 
 PSS options enable eligible Cisco partners to develop and consistently deliver high-value 
 technical support that capitalizes on Cisco intellectual assets. This helps partners to realize 
@@ -2404,9 +2341,9 @@ PSS is available to all Cisco PSS partners.
 
 The two Partner Unified Computing Support Options include: 
 
-Partner Support Service for UCS
+■ Partner Support Service for UCS
 
-Partner Support Service for UCS Hardware Only
+■ Partner Support Service for UCS Hardware Only
 
 PSS for UCS provides hardware and software support, including triage support for third party 
 software, backed by Cisco technical resources and level three support.You can choose a desired 
@@ -2502,11 +2439,6 @@ Cisco UCS 6536 Fabric Interconnect
 
 29
 
-■
-■
-■
-■
-■
 CONFIGURING the FABRIC INTERCONNECT
 
 PSS for UCS Hardware Only
@@ -2674,16 +2606,17 @@ infrastructure and realize the most value from your unified computing investment
 benefits you realize from the Cisco Unified Computing System (Cisco UCS), the more important 
 the technology becomes to your business. These services allow you to:
 
-Optimize the uptime, performance, and efficiency of your UCS
+■ Optimize the uptime, performance, and efficiency of your UCS
 
-Protect your vital business applications by rapidly identifying and addressing issues
+■ Protect your vital business applications by rapidly identifying and addressing issues
 
-Strengthen in-house expertise through knowledge transfer and mentoring
+■ Strengthen in-house expertise through knowledge transfer and mentoring
 
-Improve operational efficiency by allowing UCS experts to augment your internal staff 
+■ Improve operational efficiency by allowing UCS experts to augment your internal staff 
+
 resources
 
-Enhance business agility by diagnosing potential issues before they affect your operations,
+■ Enhance business agility by diagnosing potential issues before they affect your operations,
 
 You can choose a desired service listed in 
 
@@ -2786,11 +2719,6 @@ Cisco UCS 6536 Fabric Interconnect
 
 31
 
-■
-■
-■
-■
-■
 CONFIGURING the FABRIC INTERCONNECT
 
 which reduces the risk of any potential liabilities. This service also enables you to comply with 
@@ -2846,10 +2774,10 @@ speeds, FCoE uplink port, Appliance port
 (EHM only), Monitor Port operate either as 
 100G/40G/25G/10G QSFP28 Ethernet
 
-FC uplink port operate either as 
+■ FC uplink port operate either as 
 8G/16G/32G Gbps Fibre channel
 
-Ethernet uplink port, Server port, FCoE 
+■ Ethernet uplink port, Server port, FCoE 
 uplink port, Appliance port (EHM only), 
 Monitor Port operate either as 
 100G/40G/25G/10G QSFP28 Ethernet
@@ -2912,8 +2840,6 @@ Cisco UCS 6536 Fabric Interconnect
 
 33
 
-■
-■
 SUPPLEMENTAL MATERIAL
 
 Connectivity
@@ -2933,8 +2859,8 @@ For the X9508 chassis, the Fabric Extender modules (up to two) plug into the bac
 There is no backplane in the Cisco UCS X9508 chassis; the compute nodes directly connect to the IFMs using 
 Orthogonal Direct connectors. The X9508 chassis accommodates the following IFMs:
 
-Cisco IFM 9108-25G (Figure 6)
-Cisco IFM 9108-100G (Figure 7)
+■ Cisco IFM 9108-25G (Figure 6)
+■ Cisco IFM 9108-100G (Figure 7)
 
 The connectivity from the X9108-IFM-25G to 6536 Fabric Interconnects is shown in Figure 6.
 
@@ -2973,8 +2899,6 @@ Cisco UCS X9508 Chassis
 
 Cisco UCS 6536 Fabric Interconnect
 
-■
-■
   
 SUPPLEMENTAL MATERIAL
 
@@ -3010,8 +2934,8 @@ For the 5108 blade chassis, the Fabric Extender modules (up to two) plug into th
 series blade server chassis. A midplane connects the blade servers to the Fabric Extenders. The 5108 chassis 
 accommodates the following FEX:
 
-Cisco UCS 2304 
-Cisco UCS 2408 (Figure 8)
+■ Cisco UCS 2304 
+■ Cisco UCS 2408 (Figure 8)
 
 Figure 8 shows how the FEX modules in the blade chassis connect to the FIs.
 
@@ -3034,8 +2958,6 @@ NOTE:  Cisco UCS 5108 rev 1 and rev 2 chassis are both supported with FI 6536
 
 Cisco UCS 6536 Fabric Interconnect
 
-■
-■
 SUPPLEMENTAL MATERIAL
 
 C-Series Rack-Mounted Server Connectivity
@@ -3054,9 +2976,8 @@ more rack-mount servers for integrated server management.
 
 C-Series Rack-Mounted Server Connectivity has two options:
 
-Single-wire Management With 93180YC-FX3 in FEX mode and FEX 2348 UPQ (Figure 10)
-
-Single-wire Management Without FEX (Figure 11 & Figure 12)
+■ Single-wire Management With 93180YC-FX3 in FEX mode and FEX 2348 UPQ (Figure 10)
+■ Single-wire Management Without FEX (Figure 11 & Figure 12)
 
 Figure 9 shows how the C-Series rack mount chassis connect to the FEXs and FIs for single-wire 
 management.
@@ -3109,8 +3030,6 @@ Cisco UCS 6536 Fabric Interconnect
 
 37
 
-■
-■
 SUPPLEMENTAL MATERIAL
 
 Figure 10 shows how the C-Series rack mount chassis connect to the FEXs and FIs for single-wire 
@@ -3283,12 +3202,14 @@ and the patch panel solution.
 
 The breakout cable or the patch panel solution can be used for the following connectivity:
 
-100G to 4x25G breakout for FI 6536 server ports with IFM-25G, IOM-2408 and 
+■ 100G to 4x25G breakout for FI 6536 server ports with IFM-25G, IOM-2408 and 
+
 VIC-15428/1455/1457/1467.
 
-100G to 4x25G or 40G to 4x10G Ethernet breakout for FI 6536 uplink port.
+■ 100G to 4x25G or 40G to 4x10G Ethernet breakout for FI 6536 uplink port.
 
-4x32G or 4x 16G or 4x 8G FC breakout using “DS-SFP-4X32G-SW” QSFP transceivers on the FI 6536 
+■ 4x32G or 4x 16G or 4x 8G FC breakout using “DS-SFP-4X32G-SW” QSFP transceivers on the FI 6536 
+
 unified ports.
 
 The following are the supported cable and patch panels PIDs that are qualified with UCS 6536 Fabric 
@@ -3354,9 +3275,6 @@ Panduit (Part Num#: FZ8RP5NLSQNM003, M005)
 
 Cisco UCS 6536 Fabric Interconnect
 
-■
-■
-■
 SUPPLEMENTAL MATERIAL
 
 Table 28  Cisco patch panel solution
@@ -3517,7 +3435,7 @@ UCS 5108 and X9508 Chassis Connection Types
 In a 5108 and X9508 Chassis, Only port-channel mode is supported for connectivity from IOM-2408/2304 to 
 FI or IFM-25G to FI or IFM-100G to FIs:
 
-Port Channel Mode
+■ Port Channel Mode
 
 In port channel mode, the FEX fabric links are bundled into a single logical link (see Figure 14) to provide 
 higher bandwidth to the servers. Up to 8 links can be port-channeled.
@@ -3554,7 +3472,6 @@ Cisco UCS 6536 Fabric Interconnect
 
 45
 
-■
 TECHNICAL SPECIFICATIONS (s)
 
 TECHNICAL SPECIFICATIONS (s)
@@ -3573,7 +3490,7 @@ Dimensions (H x W x D)
 
 1.72 in. x 17.3 in x 24.7 in (4.4 cm x 43.9 cm x 62.7 cm)
 
-Weight 
+Weight  
 (with two power supplies and fans installed)
 
 25.5 lb (11.6 kg) 

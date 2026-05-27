@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco HyperFlex Data Platform Administration Guide, Release 5.5 |
 | **Source file** | `ucs-docs-raw/html/b-hxdp-admin-guide-5-5.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:54:10 |
+| **Fetched on** | 2026-05-27 11:03:26 |
 
 ---
 
@@ -54,22 +54,10 @@ New guide for HyperFlex Release 5.5(1a) |  - |  5.5(1a) |  This guide.
 
 ---
 
-## Page 4: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxcluster_overview.html
+## Page 4: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-hxdp-logging-in-interfaces.html
 
-## Cisco HX Data Platform Overview  
+## HyperFlex Cluster Interfaces Overview  
   
-Cisco HyperFlex Data Platform (HX Data Platform) is a hyperconverged software appliance that transforms Cisco servers into a single pool of compute and storage resources. It eliminates the need for network storage and enables seamless interoperability between computing and storage in virtual environments. The Cisco HX Data Platform provides a highly fault-tolerant distributed storage system that preserves data integrity and optimizes performance for virtual machine (VM) storage workloads. In addition, native compression and deduplication reduce storage space occupied by the VMs and VM workloads. 
-
-Cisco HX Data Platform has many integrated components. These include: Cisco Fabric Interconnects (FIs), Cisco UCS Manager, Cisco HX specific servers, and Cisco compute only servers; VMware vSphere, ESXi servers, and vCenter; and the Cisco HX Data Platform Installer, controller VMs, HX Connect, vSphere HX Data Platform Plug-in, and `hxcli` commands. 
-
-Cisco HX Data Platform is installed on a virtualized platform such as VMware vSphere. During installation, after specifying the Cisco HyperFlex HX Cluster name, and the HX Data Platform creates a hyperconverged storage cluster on each of the nodes. As your storage needs to increase and you add nodes in the HX cluster, the HX Data Platform balances the storage across the additional resources. Compute only nodes can be added to increase compute only resources to the storage cluster. 
-
----
-
-## Page 5: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-hxdp-logging-in-interfaces.html
-
-## HyperFlex Cluster Interfaces Overview
-
 Each HyperFlex interface provides access to information about and a means to perform actions upon the HX Storage Cluster. The HX Storage Cluster interfaces include: 
 
   * HX Connect―Monitoring, performance charts, and tasks for upgrade, encryption, replication, datastores, nodes, disks, and VM ready clones. 
@@ -261,7 +249,7 @@ Do not use any words that can be found in the dictionary.
 
 ---
 
-## Page 6: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_cluster_monitor.html
+## Page 5: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_cluster_monitor.html
 
 ## Monitoring HyperFlex Clusters
 
@@ -276,7 +264,7 @@ This chapter describes the monitoring content available through the following HX
 
 ---
 
-## Page 7: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_cluster_manage.html
+## Page 6: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_cluster_manage.html
 
 ## Changing the Cluster Access Policy Level 
 
@@ -292,7 +280,7 @@ This chapter describes the monitoring content available through the following HX
 
 ---
 
-## Page 8: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_cluster_maintenance_prep.html
+## Page 7: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_cluster_maintenance_prep.html
 
 ## Storage Cluster Maintenance Operations Overview
 
@@ -353,7 +341,7 @@ Ensure the following:
 
 ---
 
-## Page 9: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_encryption.html
+## Page 8: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_encryption.html
 
 ## Self-Encrypting Drives Overview
 
@@ -369,7 +357,7 @@ An SED based cluster can have encryption enabled and disabled at will. You are f
 
 ---
 
-## Page 10: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_datastores_manage.html
+## Page 9: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_datastores_manage.html
 
 ## Managing Datastores 
 
@@ -422,7 +410,7 @@ Before starting, review the following support notes:
 
 ---
 
-## Page 11: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_disks_manage.html
+## Page 10: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_disks_manage.html
 
 ## Managing Disks in the Cluster
 
@@ -453,7 +441,7 @@ Removing a functional drive from one HX cluster and installing it into another H
 
 ---
 
-## Page 12: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-managing-hx-nodes.html
+## Page 11: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-managing-hx-nodes.html
 
 ## Managing Nodes  
   
@@ -510,7 +498,7 @@ Though there are subtle differences, the terms **server** , **host** , and **nod
 
 ---
 
-## Page 13: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_expand_the_cisco_hx_cluster.html
+## Page 12: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_expand_the_cisco_hx_cluster.html
 
 ## Cluster Expansion Guidelines
 
@@ -584,7 +572,7 @@ If the Hypervisor configuration fails with the SOL logging failure message, acce
 
 ---
 
-## Page 14: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_ctrlvm_manage.html
+## Page 13: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_ctrlvm_manage.html
 
 ## Managing Storage Controller VMs  
   
@@ -592,23 +580,7 @@ Storage controller VMs provide critical functionality for the Cisco HX Distribut
 
 ---
 
-## Page 15: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_readyclones.html
-
-## HX Data Platform Ready Clones Overview
-
-HX Data Platform Ready Clones is a pioneer storage technology that enables you to rapidly create and customize multiple cloned VMs from a host VM. It enables you to create multiple copies of VMs that can then be used as standalone VMs. 
-
-A Ready Clone, similar to a standard clone, is a copy of an existing VM. The existing VM is called the host VM. When the cloning operation is complete, the Ready Clone is a separate guest VM. 
-
-Changes made to a Ready Clone do not affect the host VM. A Ready Clone's MAC address and UUID are different from that of the host VM. 
-
-Installing a guest operating system and applications can be time consuming. With Ready Clone, you can make many copies of a VM from a single installation and configuration process. 
-
-Clones are useful when you deploy many identical VMs to a group. 
-
----
-
-## Page 16: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_snapshots.html
+## Page 14: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_snapshots.html
 
 ## HX Native Snapshots Overview
 
@@ -639,7 +611,7 @@ For additional information about VMware snapshots, see the "Overview of virtual 
 
 ---
 
-## Page 17: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-hxdp-replication-vm-disaster_recovery.html
+## Page 15: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-hxdp-replication-vm-disaster_recovery.html
 
 ## HX Disaster Recovery Overview
 
@@ -1074,7 +1046,7 @@ It is recommended to first understand the unique business requirements of the en
 
 ---
 
-## Page 18: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_manage_storage_replication_adapter.html
+## Page 16: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_manage_storage_replication_adapter.html
 
 ## Storage Replication Adapter Overview
 
@@ -1093,7 +1065,7 @@ HXDP Release 5.5(1x) users that need SRA admin content should refer to the **[Ma
 
 ---
 
-## Page 19: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_users.html
+## Page 17: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_users.html
 
 ## Managing Cisco HyperFlex Users Overview
 
@@ -1160,7 +1132,7 @@ Sample entry. Note the user name, `administrator@vsphere.local`
 
 ---
 
-## Page 20: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-hxdp-iscsi-manage.html
+## Page 18: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-hxdp-iscsi-manage.html
 
 ## HyperFlex iSCSI Target Service Overview and Supported Use Cases
 
@@ -1192,7 +1164,7 @@ The HyperFlex iSCSI Target Service is not supported on Stretched clusters.
 
 ---
 
-## Page 21: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-html-plug-in-for-vmware-vcenter.html
+## Page 19: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-html-plug-in-for-vmware-vcenter.html
 
 ## Cisco HyperFlex vCenter Plugin  
   
@@ -1219,7 +1191,7 @@ vCenter Plugin Version |  Cisco HyperFlex Release  |  vCenter/ESXi version |  Pl
 
 ---
 
-## Page 22: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-appendix.html
+## Page 20: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-appendix.html
 
 ## Appendix
 
@@ -1237,7 +1209,7 @@ Port Mappings |  Identifies the ports that are used for specific cable connectio
 
 ---
 
-## Page 23: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_maintenance_prep.html
+## Page 21: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_maintenance_prep.html
 
 ## Storage Cluster Maintenance Operations Overview  
   
@@ -1298,7 +1270,7 @@ Ensure the following:
 
 ---
 
-## Page 24: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-html-plug-in-for-vmware-vcenter.html
+## Page 22: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-html-plug-in-for-vmware-vcenter.html
 
 ## Cisco HyperFlex vCenter Plugin
 
@@ -1325,19 +1297,7 @@ vCenter Plugin Version |  Cisco HyperFlex Release  |  vCenter/ESXi version |  Pl
 
 ---
 
-## Page 25: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxcluster_overview.html
-
-## Cisco HX Data Platform Overview
-
-Cisco HyperFlex Data Platform (HX Data Platform) is a hyperconverged software appliance that transforms Cisco servers into a single pool of compute and storage resources. It eliminates the need for network storage and enables seamless interoperability between computing and storage in virtual environments. The Cisco HX Data Platform provides a highly fault-tolerant distributed storage system that preserves data integrity and optimizes performance for virtual machine (VM) storage workloads. In addition, native compression and deduplication reduce storage space occupied by the VMs and VM workloads. 
-
-Cisco HX Data Platform has many integrated components. These include: Cisco Fabric Interconnects (FIs), Cisco UCS Manager, Cisco HX specific servers, and Cisco compute only servers; VMware vSphere, ESXi servers, and vCenter; and the Cisco HX Data Platform Installer, controller VMs, HX Connect, vSphere HX Data Platform Plug-in, and `hxcli` commands. 
-
-Cisco HX Data Platform is installed on a virtualized platform such as VMware vSphere. During installation, after specifying the Cisco HyperFlex HX Cluster name, and the HX Data Platform creates a hyperconverged storage cluster on each of the nodes. As your storage needs to increase and you add nodes in the HX cluster, the HX Data Platform balances the storage across the additional resources. Compute only nodes can be added to increase compute only resources to the storage cluster. 
-
----
-
-## Page 26: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_manage.html
+## Page 23: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_manage.html
 
 ## Changing the Cluster Access Policy Level 
 
@@ -1353,7 +1313,7 @@ Cisco HX Data Platform is installed on a virtualized platform such as VMware vSp
 
 ---
 
-## Page 27: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_encryption.html
+## Page 24: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_encryption.html
 
 ## Self-Encrypting Drives Overview
 
@@ -1369,7 +1329,7 @@ An SED based cluster can have encryption enabled and disabled at will. You are f
 
 ---
 
-## Page 28: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_disks_manage.html
+## Page 25: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_disks_manage.html
 
 ## Managing Disks in the Cluster
 
@@ -1400,7 +1360,7 @@ Removing a functional drive from one HX cluster and installing it into another H
 
 ---
 
-## Page 29: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-hxdp-logging-in-interfaces.html
+## Page 26: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-hxdp-logging-in-interfaces.html
 
 ## HyperFlex Cluster Interfaces Overview  
   

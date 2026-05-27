@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco Intersight Virtual Appliance and Intersight Assist Getting Started Guide - Set Up [Cisco Intersight] |
 | **Source file** | `ucs-docs-raw/html/m_setting_up_appliance.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:49:06 |
+| **Fetched on** | 2026-05-27 10:53:31 |
 
 ---
 
@@ -837,18 +837,23 @@ Use the steps in the following task to install and deploy the appliance on VMwar
 
 ### Before you begin
 
-Ensure that you have downloaded the latest Cisco Intersight Virtual Appliance software package from the Intersight Software Downloads Portal. For more information, see [Downloading Software Packages from Intersight Virtual Appliance.](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_01.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5)
+Ensure the following:
+
+  * Download the latest version of the Cisco Intersight Virtual Appliance and Assist installer package from the [Cisco Software Download](https://software.cisco.com/download/home/286319499/type) site. 
+
+  * If you are installing Private Virtual Appliance, also download the latest Cisco Intersight Private Virtual Appliance software package (intersight-appliance-bundle) from the Intersight Software Downloads Portal. For more information, see [Downloading Software Packages from Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
+
 
 ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Attention** | 
 
 * * *
 
-  * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_0111.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
-  * Setting up a single-node Intersight Virtual Appliance requires an IP address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_0111.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
-  * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (two-node cluster) requires an IPv4 address and 2 DNS records for that IP address for the single-node (appliance management node) and requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_0111.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
-  * Setting up a multi-node cluster for high availability in Intersight Virtual Appliance requires three hostnames, three IP addresses, and one DC-CNAME for each hostname. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_0111.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
-  * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (four-node cluster) requires three hostnames, three IP addresses, and one DC-CNAME for each hostname for the HA management cluster. It also requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_0111.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
+  * Setting up a single-node Intersight Virtual Appliance requires an IP address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (two-node cluster) requires an IPv4 address and 2 DNS records for that IP address for the single-node (appliance management node) and requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node cluster for high availability in Intersight Virtual Appliance requires three hostnames, three IP addresses, and one DC-CNAME for each hostname. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (four-node cluster) requires three hostnames, three IP addresses, and one DC-CNAME for each hostname for the HA management cluster. It also requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Use only HTTPS protocol and fully qualified domain name to access the appliance via the Web user interface.
 
 
@@ -874,15 +879,16 @@ Ensure that you have downloaded the latest Cisco Intersight Virtual Appliance so
 **Step 11** |  On the Customize Template page, customize the deployment properties of the OVF template, and click Next.  |  OVF Property |  Description  
 ---|---  
 Enable DHCP (only for single-node appliance) |  Enables the appliance to obtain IP addresses from the DHCP server running on the same network to avoid using static IP addresses. If you select this option, all static parameters will be ignored. For more information about DHCP, see the Enabling DHCP section after this table.   
+Appliance FQDN _(Values you input will be ignored if you Enable DHCP)_ |  Enter the Appliance’s fully qualified domain name (FQDN). For example: _appliance.example.com_  
 IP Address(Values you input will be ignored if you Enable DHCP) |  Enter the IPv4 address of the node. For example: 10.0.0.100  
 Net Mask(Values you input will be ignored if you Enable DHCP) |  This field is pre-populated with the IPv4 Net Mask 255.255.255.0  
 Default Gateway(Values you input will be ignored if you Enable DHCP) |  Enter the IPv4 Default Gateway. For example: 10.0.1.254  
 DNS Domain(Values you input will be ignored if you Enable DHCP) |  Enter the DNS Search Domain.  
-DNS Servers(Values you input will be ignored if you Enable DHCP) |  Enter a comma-separated list of IPv4 addresses for your DNS servers. A maximum of 2 DNS servers are supported.  
+DNS Servers(Values you input will be ignored if you Enable DHCP) |  Enter a comma-separated list of IPv4 addresses for your DNS servers. A maximum of two DNS servers are supported.  
 Admin Password |  Enter the admin password. This is the same password that you use to log in to the appliance. Set Password—Before you register the appliance with Intersight, you must create an admin password. The password can contain 0-9, A-Z, a-z, and all special characters except a colon (:) and space.   
-NTP Servers |  Enter a comma-separated list of hostnames or IPv4 addresses for your NTP servers. You can add up to 3 NTP servers (any combination of authenticated and unauthenticated NTP servers). This setting is still required even if you use DHCP to obtain IP addresses.   
+NTP Servers |  Enter a comma-separated list of hostnames or IPv4 addresses for your NTP servers. You may add up to three unauthenticated NTP servers at this stage. Once the appliance is fully installed, you can edit the NTP server settings to include any combination of authenticated and unauthenticated NTP servers (up to three total). This setting is required even if you use DHCP to obtain IP addresses.   
 Disk Size |  Attention: Do not change the value of the disk size as it is computed based on the deployment configuration.   
-**Attention** |  **If the password you set at the time of registering your appliance is weak, Intersight prompts you to change your password to a stronger one. After a successful reset to a strong password, you are directly logged into the appliance. For more information about logging in, see[Logging In to Intersight Virtual Appliance](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_01.html#id_93446)**.   
+**Attention** |  **If the password you set at the time of registering your appliance is weak, Intersight prompts you to change your password to a stronger one. After a successful reset to a strong password, you are directly logged into the appliance. For more information about logging in, see[Logging In to Intersight Virtual Appliance](m_setting_up_appliance.html#id_93446)**.   
 ---|---  
   
 Enabling DHCP
@@ -904,7 +910,7 @@ Limitations
 
   
 **Step 12** |  On the Ready to Complete page, select Power On After Deployment and click Finish.   
-**Step 13** |  Proceed to <https://fqdn-of-your-appliance> to complete the post-install set-up of your appliance.  For information on how to complete the set-up of your appliance, see [Setting Up Intersight Virtual Appliance](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_01.html#Cisco_Task_in_List_GUI.dita_266a2c35-69a4-4a04-89c2-b9c0339b905a).   
+**Step 13** |  Proceed to <https://fqdn-of-your-appliance> to complete the post-install set-up of your appliance.  For information on how to complete the set-up of your appliance, see [Setting Up Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_266a2c35-69a4-4a04-89c2-b9c0339b905a).   
   
 * * *
 
@@ -921,7 +927,7 @@ The diagnostic tool aims to:
   * Assist with continuing the installation after you fix the settings, or set network interface properties such as IP addresses, subnet mask, and default gateway during the OVA deployment. 
 
 
-For more information, see [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_01000.html#reference_fjp_2qs_shb) and [Intersight Virtual Appliance Console UI](b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_01000.html#intersight-virtual-appliance-console-ui). 
+For more information, see [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb) and [Intersight Virtual Appliance Console UI](m_troubleshooting.html#intersight-virtual-appliance-console-ui). 
 
 For a demonstration of the Intersight Virtual Appliance Installation and troubleshooting, watch [Cisco Intersight Appliance Installation and Debug](https://www.youtube.com/watch?v=vHoDfixdi4g&feature=youtu.be). 
 
@@ -1089,7 +1095,34 @@ Once you have successfully completed the initial set up of the single-node Inter
 
 ---
 
-## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_0111.html
+## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html
+
+## Configuring a Banner Message for Displaying Before the Login Screen
+
+You can configure a banner message in Intersight Virtual Appliance. When enabled, the configured banner message will be displayed before the user login screen. 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > System > Banners.   
+**Step 3** |  Click Configure.  The Configure Banner Message window displays.   
+**Step 4** |  Update the following fields.
+
+  * Show banner message before login—Enable this option. 
+  * Banner Title—Enter a title for the banner message. The length of the title cannot exceed 128 characters. 
+  * Banner Content—Enter the content for the banner message. The content in this field has to be less than 2000 characters. 
+
+  
+**Step 5** |  Click Save.  The configured banner message content along with the title is displayed in the Banners preview window.   
+  
+* * *
+
+---
+
+## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_0111.html
 
 ## About Cisco Intersight Virtual Appliance
 
@@ -1150,33 +1183,6 @@ Before installing and setting up Intersight Virtual Appliance, it is strongly re
 This guide provides an overview of how to install and set up Intersight Virtual Appliance in your environment.
 
 For latest updates on Intersight Virtual Appliance features and functionality, see [Intersight Appliance Help Center](https://intersight.com/help/appliance). 
-
----
-
-## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html
-
-## Configuring a Banner Message for Displaying Before the Login Screen
-
-You can configure a banner message in Intersight Virtual Appliance. When enabled, the configured banner message will be displayed before the user login screen. 
-
-### Procedure
-
-* * *
-
-**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
----|---  
-**Step 2** |  Choose Settings > System > Banners.   
-**Step 3** |  Click Configure.  The Configure Banner Message window displays.   
-**Step 4** |  Update the following fields.
-
-  * Show banner message before login—Enable this option. 
-  * Banner Title—Enter a title for the banner message. The length of the title cannot exceed 128 characters. 
-  * Banner Content—Enter the content for the banner message. The content in this field has to be less than 2000 characters. 
-
-  
-**Step 5** |  Click Save.  The configured banner message content along with the title is displayed in the Banners preview window.   
-  
-* * *
 
 ---
 
