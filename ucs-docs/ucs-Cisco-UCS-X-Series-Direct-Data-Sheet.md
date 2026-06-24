@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X-Series Direct Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-x-series-direct-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-05-27 10:58:30 |
+| **Fetched on** | 2026-06-24 11:22:18 |
 
 ---
 
@@ -257,7 +257,287 @@ New or revised topic |  Described in |  Date
 
 ---
 
-## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html
+## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2472574.html?ccid=cc002456&oid=dstcsm026317
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS X9508 Chassis Data Sheet
+
+Data Sheet
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2472574.html) to Save Content 
+
+Translations
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2472574.pdf) (258.1 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:January 5, 2026
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2472574.html) to Save Content 
+
+Translations
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2472574.pdf) (258.1 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:January 5, 2026
+
+#### Table of Contents
+
+  * Product overview
+  * Features and benefits
+  * Benefits
+  * Product specifications
+  * System requirements
+  * Ordering information
+  * Warranty information
+  * Product sustainability
+  * Product environmental information
+  * Cisco and partner services
+  * Cisco Capital
+  * For more information
+
+
+` `
+
+Product overview
+
+The Cisco UCS® X-Series Modular System simplifies your data center, adapting to the unpredictable needs of modern applications while also providing for traditional scale-out and enterprise workloads. It reduces the number of server types to maintain, helping to improve operational efficiency and agility as it helps reduce complexity. Powered by the Cisco Intersight™ cloud-operations platform, it shifts users’ IT focus from administrative details to business outcomes—with a hybrid-cloud infrastructure that is assembled from the cloud, shaped to their workloads, and continuously optimized.
+
+The Cisco UCS X-Series Modular System begins with the Cisco UCS X9508 Chassis engineered to be adaptable and future ready. It is a standard, open system designed to deploy and automate faster in concert with a hybrid cloud environment.
+
+With a midplane-free design, I/O connectivity for the X9508 chassis is accomplished with frontloading, vertically oriented compute nodes intersecting with horizontally oriented I/O connectivity modules in the rear of the chassis. A unified Ethernet fabric is supplied with the Cisco UCS 9108 Intelligent Fabric Modules. In the future, Cisco UCS X-Fabric Technology interconnects will supply other industry-standard protocols as standards emerge. Interconnections can be easily updated with new modules.
+
+![UCS X9508 Chassis](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2472574.docx/_jcr_content/renditions/datasheet-c78-2472574_0.png)
+
+Figure 1. 
+
+UCS X9508 Chassis
+
+Features and benefits
+
+Main features
+
+● 7-Rack-Unit (7RU) chassis has 8x front-facing flexible slots. These can house a combination of compute nodes and a pool of future I/O resources that may include GPU accelerators, disk storage, and nonvolatile memory.
+
+● 2x Cisco UCS 9108 Intelligent Fabric Modules (IFMs) at the top of the chassis that connect the chassis to upstream Cisco UCS 6400 Series Fabric Interconnects. Each IFM features
+
+◦ Up to 100 Gbps of unified fabric connectivity per compute node
+
+◦ 8x 25-Gbps SFP28 uplink ports. The unified fabric carries management traffic to the Cisco Intersight cloud-operations platform, Fibre Channel over Ethernet (FCoE) traffic, and production Ethernet traffic to the fabric interconnects. 
+
+● At the bottom are slots ready to house future I/O modules that can flexibly connect the compute modules with I/O devices. We call this connectivity Cisco UCS X-Fabric technology because “X” is a variable that can evolve with new technology developments.
+
+● Six 2800W Power Supply Units (PSUs) provide 54V power to the chassis with N, N+1, and N+N redundancy. A higher voltage allows efficient power delivery with less copper and reduced power loss.
+
+● Efficient, 4x100mm, dual counter-rotating fans deliver industry-leading airflow and power efficiency. Optimized thermal algorithms enable different cooling modes to best support the network environment. Cooling is modular so that future enhancements can potentially handle open- or closed-loop liquid cooling to support even higher-power processors.
+
+![Cisco UCS 9508 X-Series Chassis, front \(top\) and back \(bottom\)](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2472574.docx/_jcr_content/renditions/datasheet-c78-2472574_1.png)
+
+Figure 2. 
+
+Cisco UCS 9508 X-Series Chassis, front (top) and back (bottom)
+
+Benefits
+
+Since we first delivered the Cisco Unified Computing System™ (Cisco UCS) in 2009, our goal has been to simplify the data center. We pulled management out of servers and into the network. We simplified multiple networks into a single unified fabric. And we eliminated network layers in favor of a flat topology wrapped up into a single unified system. With the Cisco UCS X-Series Modular System, we take that simplicity to the next level:
+
+● **Simplify with cloud-operated infrastructure:** We move management from the network into the cloud so that you can respond at the speed and scale of your business and manage all of your infrastructure. You can shape Cisco UCS X-Series Modular System resources to workload requirements with the Cisco Intersight cloud-operations platform. You can integrate third-party devices including storage from NetApp, Pure Storage, and Hitachi. And you gain intelligent visualization, optimization, and orchestration for all of your applications and infrastructure. 
+
+● **Simplify with an adaptable system designed for modern applications:** Today’s cloud-native, hybrid applications are inherently unpredictable. They get deployed and redeployed as part of an iterative DevOps practice. Requirements change often, and you need a system that doesn’t lock you into one set of resources when you find that you need another. For hybrid applications, and a range of traditional data center applications, you can consolidate onto a single platform that combines the density and efficiency of blade servers with the expandability of rack servers. The result: better performance, automation, and efficiency.
+
+● **Simplify with a system engineered for the future****:** Embrace emerging technology and reduce risk with a modular system designed to support future generations of processors, storage, nonvolatile memory, accelerators, and interconnects. Gone is the need to purchase, configure, maintain, power, and cool discrete management modules and servers. Cloud-based management is kept up to date automatically with a constant stream of new capabilities delivered by the Intersight software-as-a-service model.
+
+● **Support a broader range of workloads:** A single server type supporting a broader range of workloads means fewer different products to support, reduced training costs, and increased flexibility.
+
+Product specifications
+
+**Table 1. **Product specifications
+
+Item |  Specifications  
+---|---  
+**Height** |  12.05 in (30.6 cm); 7 RU  
+**Width** |  17.55 (44.6 cm); fits standard 19-inch square-hole rack  
+**Depth** |  34.81 in (88.4 cm)  
+**Node slots** |  8  
+**Intelligent Fabric Module (IFM)** |  Intelligent Fabric Module options: ● 2 x Cisco UCS 9108 25G Intelligent Fabric Module with 8x 25G SFP28 ports  ● 2 x Cisco UCS 9108 100G Intelligent Fabric Module with 8x 100G QSFP28 ports   
+**X-Fabric module (XFM)** |  X-Fabric Module options: ● 2 x Cisco UCS X9416 X-Fabric modules for X9508 chassis  ● 2x Cisco UCS X-Fabric module rear blank slots   
+**Fan module** |  4 x 100mm hot-swappable dual rotor fans  
+**Power supply bays** |  6  
+**Power supplies** |  2800W Titanium certified  
+**Input voltage** |  100 to 127 V AC 200 to 240V AC  
+**Maximum input VA** |  3200 VA at 230 VAC  
+**Maximum output power per power supply** |  2800 W @200-240 VAC Nominal 1400 W @100-127 VAC Nominal  
+**Frequency** |  50 to 60 Hz  
+**Output voltage** |  54 VDC  
+**Power connector** |  IEC320 C20  
+**Power redundancy** |  Nonredundant, N+1, N+2 and Grid (N+N)  
+**Power Entry Module (PEM)** |  2x PEM for AC inputs, PEM1 (PSU1,2,3), PEM2 (PSU4,5,6)  
+**Management** |  [Cisco Intersight software](https://www.cisco.com/c/en/us/products/servers-unified-computing/intersight/index.html) (SaaS, Virtual Appliance and Private Virtual Appliance)  
+**Temperature: operating** |  50 to 95°F (10 to 35°C) (as altitude increases, maximum temperature decreases by 1°C per 300m)  
+**Temperature: nonoperating** |  -40 to 149°F (-40 to 65°C); maximum altitude is 40,000 ft  
+**Humidity: operating** |  10% to 90% noncondensing, 28°C max  
+**Humidity: nonoperating** |  5% to 93% noncondensing, 38°C max  
+**Altitude: operating** |  0 to 10,000 ft (0 to 3000m); maximum ambient temperature decreases by 1°C per 300m  
+**Altitude: nonoperating** |  40,000 ft (12,000m)  
+**Sound pressure level** |  83 dBA – at normal operating temperature  
+  
+**Table 2. **Regulatory Standards Compliance: safety and EMC
+
+Specification |  Description  
+---|---  
+**Regulatory compliance** |  Products comply with CE Markings per directives 2004/108/EC and 2006/108/EC  
+**Safety** |  ● UL 60950-1  ● CAN/CSA-C22.2 No. 60950-1  ● EN 60950-1  ● IEC 60950-1  ● AS/NZS 60950-1  ● GB4943   
+**EMC: Emissions** |  ● 47CFR Part 15 (CFR 47) Class A (FCC Class A)  ● AS/NZS CISPR22 Class A  ● CISPR2 2 Class A  ● EN55022 Class A  ● ICES003 Class A  ● VCCI Class A  ● EN61000-3-2  ● EN61000-3-3  ● KN22 Class A  ● CNS13438 Class A   
+**EMC: Immunity** |  ● EN50082-1  ● EN61000-6-1  ● EN55024  ● CISPR24  ● EN300386  ● KN 61000-4 Series   
+  
+System requirements
+
+**Table 3. **System requirements
+
+Item |  Requirements  
+---|---  
+**X-Series chassis** |  Cisco UCS X9508 Chassis  
+**Fabric interconnect** |  Cisco UCS 6454, 64108 and 6536 fabric interconnects  
+**Cisco Intersight** |  Intersight Managed Mode   
+  
+Ordering information
+
+Table 4 provides ordering information for the Cisco UCS X9508 Chassis.
+
+**Table 4. **Ordering information
+
+Part number |  Description  
+---|---  
+**UCSX-M6-MLB** |  UCSX M6 Modular Server and CHASSIS MLB  
+**UCSX-9508-U** |  UCS X9508 Chassis Configured  
+**UCSX-9508-CH** |  DISTI: UCS X9508 Chassis  
+  
+For information about installing or upgrading Cisco UCS X9508 Chassis, see the [Hardware Installation](https://www.cisco.com/content/en/us/td/docs/unified_computing/ucs/x/hw/x9508/install/b-ucs-x9508-install.html) guide. For ordering information, see the Cisco UCS X9508 Chassis spec sheet.
+
+Warranty information
+
+The Cisco UCS X9508 Chassis has a three-year Next-Business-Day (NBD) hardware warranty and a 90-day software warranty.
+
+Augmenting the Cisco Unified Computing System™ (Cisco UCS) warranty, Cisco Smart Net Total Care® and Cisco Solution Support services are part of Cisco's technical services portfolio. Cisco Smart Net Total Care combines Cisco's industry-leading and award-winning foundational technical services with an extra level of actionable business intelligence that is delivered to you through the smart capabilities in the Cisco Smart Net Total Care portal. For more information, please refer to [https://www.cisco.com/c/en/us/support/services/smart-net-total- care/index.html](https://www.cisco.com/c/en/us/support/services/smart-net-total-%20care/index.html).
+
+Cisco Solution Support includes both Cisco® product support and solution-level support, resolving complex issues in multivendor environments on average 43 percent more quickly than with product support alone. Cisco Solution Support is a critical element in data center administration, helping rapidly resolve any issue encountered while maintaining performance, reliability, and return on investment.
+
+This service centralizes support across your multivendor Cisco environment for both our products and solution partner products that you have deployed in your ecosystem. Whether there is an issue with a Cisco product or with a solution partner product, just call us. Our experts are the primary point of contact and own the case from first call to resolution. For more information, please refer to <https://www.cisco.com/c/en/us/services/technical/solution-support.html>.
+
+Product sustainability
+
+Information about Cisco’s environmental, social, and governance (ESG) initiatives and performance is provided in Cisco’s CSR and sustainability [reporting](https://www.cisco.com/c/dam/m/en_us/about/csr/esg-hub/_pdf/purpose-report-2024.pdf).
+
+**Table 5. **Cisco environmental sustainability information
+
+Sustainability topic |  Reference  
+---|---  
+**General** |  Information on product-material-content laws and regulations |  [Materials](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/materials.html)  
+Information on electronic waste laws and regulations, including our products, batteries, and packaging |  [WEEE Compliance](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/product-recycling/weee-compliance.html)  
+Information on product takeback and reuse program |  [Cisco Takeback and Reuse Program](https://www.cisco.com/c/en/us/about/takeback-and-reuse.html)  
+Sustainability inquiries |  Contact: [csr_inquiries@cisco.com](mailto:csr_inquiries@cisco.com)  
+Operating and nonoperating conditions |  Table 1. Product specifications  
+Regulatory compliance |  Table 2. Product specifications  
+**Power** |  Power supply |  Main features Table 1. Product specifications  
+Thermal overview |  Main features Table 1. Product specifications  
+**Material** |  Product packaging weight and materials |  Contact: [environment@cisco.com](mailto:environment@cisco.com)  
+Modular design |  Benefits  
+  
+Product environmental information
+
+Product environmental information for users per Commission Regulation (EU) 2019/424 <https://www.cisco.com/web/dofc/EU86577.pdf>.
+
+Cisco and partner services
+
+Cisco and our industry-leading partners deliver services that accelerate your transition to a Cisco UCS X-Series Modular System solution. Cisco Unified Computing Services (UCS) can help you create an agile infrastructure, accelerate time to value, reduce costs and risks, and maintain availability during deployment and migration. After deployment, our services can help you improve performance, availability, and resiliency as your business needs evolve, and help you further mitigate risk. For more information, visit <https://www.cisco.com/go/unifiedcomputingservices>.
+
+Cisco Capital
+
+Flexible payment solutions to help you achieve your objectives
+
+Cisco Capital makes it easier to get the right technology to achieve your objectives, enable business transformation and help you stay competitive. We can help you reduce the total cost of ownership, conserve capital, and accelerate growth. In more than 100 countries, our flexible payment solutions can help you acquire hardware, software, services and complementary third-party equipment in easy, predictable payments. [Learn more](https://www.cisco.com/go/financing).
+
+For more information
+
+For more information about the Cisco UCS X9508 Chassis, refer to the [Cisco UCS X-Series Solution Overview](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.html).
+
+For more information about Cisco UCS X-Series, go to <https://cisco.com/go/ucsx>.
+
+### Our experts recommend
+
+  * [AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html "AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper")
+  * [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
+  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
+
+
+### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 3: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html
 
   * Skip to content
   * Skip to search
@@ -764,7 +1044,7 @@ For more information
 
 ---
 
-## Page 3: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html
+## Page 4: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html
 
   * Skip to content
   * Skip to search
@@ -904,7 +1184,326 @@ VMware vSAN ReadyNode [Cisco certified servers](https://compatibilityguide.broad
 
 ---
 
-## Page 4: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x580p-pcie-node-ds.html
+## Page 5: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Meet the UN/BOX Solution Overview 
+
+### Cisco UCS X-Series Modular System with Intersight
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.pdf) (4.1 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:September 9, 2025
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.pdf) (4.1 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:September 9, 2025
+
+#### Table of Contents
+
+  * Every day, every minute, every second, new apps are launching.
+  * Designed to be managed exclusively from the cloud
+  * Support a broader range of workloads
+  * Think like tomorrow
+  * UN/BOX the future
+  * Unified fabric connectivity
+  * Modular I/O connectivity
+  * Cisco UCS virtual interface cards
+  * Powerful computing capability
+  * Single point of connectivity for the system
+  * Ready for a hybrid-cloud world
+  * Modular management architecture
+  * Think like tomorrow
+  * Embrace the future
+
+
+` `
+
+Every day, every minute, every second, new apps are launching.
+
+The beating heart of innovation, applications are the direct expression of consumer demand and your presence. Apps have forced a whole new way of thinking on IT. The old rules no longer apply. It’s not on premises vs. cloud. It’s both. It’s massive scale and granular control. It’s always-on availability enabled by modular components that can be molded and shaped to the needs of your applications. It’s a new game where developers are free to write their own rules but where IT must free itself from the burden of managing massive complexity in order to keep up. 
+
+Tomorrow thinks differently, wanting hardware that thinks like software. The Cisco UCS® X-Series Modular System with [Intersight](https://www.cisco.com/site/us/en/products/computing/hybrid-cloud-operations/intersight-platform/index.html) is a modular system managed from the cloud. It is designed and shaped to meet the needs of modern applications and improve operational efficiency, agility, and scale through an adaptable, future-ready, modular design. Cisco UCS X-Series has won four CRN awards because of this.
+
+Designed to be managed exclusively from the cloud
+
+● Simplify with cloud-operated infrastructure.
+
+● Simplify with an adaptable system designed for modern applications.
+
+● Simplify with a system engineered for the future.
+
+Support a broader range of workloads
+
+A single server type supporting a broader range of workloads means fewer different products to support, reduced training costs, and increased flexibility. The system supports workloads including the following: 
+
+● Virtualized workloads 
+
+● Private cloud 
+
+● Enterprise applications 
+
+● GPU-accelerated AI/ML workloads 
+
+● Database management systems 
+
+● Infrastructure applications 
+
+● Cloud-native applications 
+
+● In-memory databases 
+
+● Big data clusters
+
+Think like tomorrow
+
+The Cisco UCS X-Series Modular System simplifies your data center, adapting to the unpredictable needs of modern applications while also providing for traditional scale-out and enterprise workloads. It reduces the number of server types to maintain, helping to improve operational efficiency and agility as it helps reduce complexity. Powered by the Cisco Intersight® cloud-operations platform, it shifts your thinking from administrative details to business outcomes—with hybrid cloud infrastructure that is assembled from the cloud, shaped to your workloads, and continuously optimized. Now that hardware can think and change like software, you are free to think like tomorrow. 
+
+Simplify your data center 
+
+Since we first delivered the Cisco Unified Computing System™ (Cisco UCS) in 2009, our goal has been to simplify your data center. We pulled management out of servers and into the network. We simplified multiple networks into a single unified fabric. And we eliminated network layers in favor of a flat topology wrapped up into a single unified system. With the Cisco UCS X-Series Modular System we take that simplicity to the next level: 
+
+● **Simplify with cloud-operated infrastructure:** We move management from the network into the cloud so that you can respond at the speed and scale of your business and manage all of your infrastructure. Shape Cisco UCS X-Series Modular System resources to workload requirements with the Cisco Intersight cloud-operations platform. Integrate third-party devices including storage from NetApp, Pure Storage, and Hitachi. Gain intelligent visualization, optimization, and orchestration for all of your applications and infrastructure. Automation drives agility and consistency, helping you reduce time to market while lowering cost and risk. 
+
+● **Simplify with an adaptable system designed for modern applications:** Today’s cloud-native, hybrid applications are inherently unpredictable. They get deployed and redeployed as part of an iterative DevOps practice. Requirements change often and you need a system that doesn’t lock you into one set of resources when you find that you need another. For hybrid applications, and a range of traditional data center applications, you can consolidate onto a single platform that combines the density and efficiency of blade servers with the expandability of rack servers. The result: better performance, automation, and efficiency. 
+
+● **Simplify with a system engineered for the future:** Embrace emerging technology and reduce risk with a modular system designed to support future generations of processors, storage, nonvolatile memory, accelerators, and interconnects. Gone is the need to purchase, configure, maintain, power, and cool discrete management modules and servers. Cloud-based management is kept up to date automatically with a constant stream of new capabilities delivered by the Intersight software-as-a-service model. 
+
+It doesn’t get simpler than this:
+
+The [Cisco UCS X9508 Chassis](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2472574.html?ccid=cc002456&oid=dstcsm026317) is ready to house technology for today with an approach that embraces the future. Just slide into the chassis what you need today. Embrace the future without needing a forklift. 
+
+Our chassis is free from what we call parasitic hardware—switches and management modules that must be purchased, configured, powered, cooled, and maintained. They draw from the chassis power and cooling budget while reducing the space allocated to servers. The chassis’ midplane-free design eliminates limitations on future I/O interconnect technology.
+
+UN/BOX the future
+
+The Cisco UCS X-Series Modular System begins with a chassis engineered to be adaptable and flexible. This makes it ready to power a wider range of workloads and ready to adapt to the future because there is nothing holding it back. 
+
+Our chassis has only a power-distribution midplane. For I/O connectivity, vertically oriented compute nodes intersect with horizontally oriented I/O connectivity components with blind-mating connectors (Figure 1). As future networking and I/O standards emerge, they can mate to different connectors, unboxing the future of computing without requiring a new chassis.
+
+The 7-Rack-Unit (7RU) chassis has eight flexible slots. These can house a combination of compute nodes and PCIe nodes with other Cisco UCS X-Fabric connectivity modes and expansion node types planned for the future.
+
+![The midplane-free design gives the chassis the capability to adapt to new technology—such as X-Fabric modules—as it emerges](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.docx/_jcr_content/renditions/solution-overview-c22-2432175_0.png)
+
+Figure 1. 
+
+The midplane-free design gives the chassis the capability to adapt to new technology—such as X-Fabric modules—as it emerges
+
+At the top rear of the chassis are two intelligent fabric modules that connect the chassis to upstream [Cisco UCS 6400](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.html), [6500, and UCS 6600 Series Fabric Interconnects](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.html). At the bottom are slots that house optional X-Fabric modules that connect to I/O expansion nodes within the chassis. 
+
+Six 2800W Power Supply Units (PSUs) provide 54V power to the chassis with N, N+1, and N+N redundancy. A higher voltage allows efficient power delivery with less copper and reduced power loss. Efficient, 100mm, dual counter-rotating fans deliver industry-leading airflow and power efficiency. 
+
+Optimized thermal algorithms enable different cooling modes to best support your environment. Cooling is modular so that future enhancements can potentially handle open- or closed-loop liquid cooling to support even higher-power processors. All these design and operation advantages add up to enable the UCS X-Series to not only meet but exceed sustainability benchmarks such as Energy Star, EPEAT, EU regulation 2019/424, and many others. UCS X-Series won the 2023 SEAL Sustainable Product and Silverlinings Cloud Innovation Sustainability Solution awards.
+
+Unified fabric connectivity
+
+A unified fabric interconnects all devices in the system. It securely carries all traffic to the fabric interconnects where it can be broken out into IP networking, Fabre Channel SAN, and management connectivity.
+
+![Unified fabric connectivity](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.docx/_jcr_content/renditions/solution-overview-c22-2432175_1.png)
+
+Figure 2. 
+
+Unified fabric connectivity
+
+Modular I/O connectivity
+
+In contrast to systems with fixed network and I/O traces on a chassis midplane, our midplane-free design enables easy upgrades to new connectivity technologies as they emerge. Horizontally oriented modules mate with I/O connectors on each vertically oriented compute and PCIe node, making it straightforward to accommodate new network and modular expansion speeds and modalities in the future. 
+
+Network connectivity
+
+Network connectivity is provided by a pair of Cisco UCS 9108 Intelligent Fabric Modules (IFMs) with [25](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/9108-25g-specsheet.pdf)\- or [100-Gbps](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/cisco-ucs-9108-100g-intelligent-fabric-module-spec-sheet.pdf) connectivity. These modules carry all network traffic to a pair of Cisco UCS 6400, 6500, and 6600 Series Fabric Interconnects. Having a single point of network connectivity and control in a system provides deterministic latency. This, in turn, frees you to place workloads without regard to whether the compute nodes are in the same chassis. Each IFM features (Figure 2): 
+
+● **Server ports:** Up to 200 Gbps of unified fabric connectivity per compute node with two IFMs. 
+
+● **Uplink ports:** The [Cisco UCS 9108 25G IFM](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/9108-25g-specsheet.pdf) supports 8x 25-Gbps SFP28 ports, while the 100G option supports 8x 100-Gbps QSFP ports. The unified fabric carries management, production, and storage traffic to the fabric interconnects. There, management traffic connects to the Cisco Intersight cloud-operations platform; storage traffic is passed to native Fiber Channel interfaces through universal ports on the fabric interconnects, and production Ethernet traffic is passed upstream to the data center network. 
+
+● **Management consolidation:** Each IFM connects to the Cisco® Integrated Management Controller on each compute node, enabling Intersight access to configuration and monitoring capabilities. It also connects to the chassis, power supply, and fan speed and temperature sensors, enabling both zone-based cooling and policy-based power management. 
+
+Cisco UCS X-Series Direct 
+
+[Cisco UCS X-Series Direct](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-direct-ds.html) transforms the Cisco UCS X-Series Modular System into a self-contained system with a pair of integrated fabric interconnects and up to eight server nodes. Replacing the IFMs with the Cisco UCS Fabric Interconnect 9108 100G provides you an all-in-one solution of up to eight servers with optional GPUs, eliminating the need for Top-of-Rack (ToR) fabric interconnects. You will use your existing Ethernet and optional Fibre Channel switches for data and storage connectivity. UCS X-Series Direct is an ideal solution for all your edge, retail, and small- or remote-office use cases.
+
+Cisco UCS X-Fabric connectivity
+
+We chose [X-Fabric Technology](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-fabric-here-aag.html) to describe our innovative modular connectivity approach because “X” is a variable that can evolve with new technology developments designed to create a modular pool of resources in each chassis. 
+
+The Cisco UCS 9416 X-Fabric Modules connect Cisco UCS X210c, X215c, and X410c server nodes to Cisco UCS X440p PCIe Nodes, and the Cisco UCS 9516 X-Fabric Module connects those servers to the Cisco UCS X580p PCIe Node. Tested and validated devices are AMD and NVIDIA GPUs appropriate for accelerating AI/ML and VDI applications. Combined with two onboard cards, the compute nodes can accelerate workloads with up to six GPUs per node.
+
+What we offer today is just the beginning, as we have plans for our vision to unfold into the future. Look forward to a wider range of PCIe devices, disk storage, and nonvolatile memory resources so that your compute nodes become powerful, flexible computing devices that can adapt to support any workload.
+
+![The Cisco UCS X9508 Modular System Chassis supports a wide range of workloads and is expandable with Cisco UCS X-Fabric devices](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.docx/_jcr_content/renditions/solution-overview-c22-2432175_2.png)
+
+Figure 3. 
+
+The Cisco UCS X9508 Modular System Chassis supports a wide range of workloads and is expandable with Cisco UCS X-Fabric devices
+
+Cisco UCS virtual interface cards
+
+Configuring your Cisco UCS X-Series Compute Node with both mLOM- and mezzanine-form-factor virtual interface cards delivers up to 200 Gbps of network bandwidth to the node and connects it to Cisco UCS X-Fabric nodes. 
+
+The number and types of I/O devices are configured on demand through Cisco Intersight or Cisco UCS Manager.
+
+![Cisco UCS Virtual Interface Cards in mLOM and mezzanine form factors, with mezzanine bridge module.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.docx/_jcr_content/renditions/solution-overview-c22-2432175_3.png)
+
+Figure 4. 
+
+Cisco UCS Virtual Interface Cards in mLOM and mezzanine form factors, with mezzanine bridge module
+
+Powerful computing capability
+
+The Cisco UCS X9508 Chassis is designed to house and interconnect a variety of computing and I/O devices. Up to eight nodes can fit into a single chassis. 
+
+**There are four compute node models:**
+
+● **Cisco UCS X215c M8 Compute Node**
+
+◦ **CPU:** Up to 2x 5th or 4th Gen AMD EPYC CPUs with up to 192 cores per processor and up to 1152 MB Level 3 cache per CPU.
+
+◦ **Memory:** Up to 24x 256 GB DDR5-6000 DIMMs for up to 6 TB of main memory.
+
+● [**Cisco UCS X210c M8 Compute Node**](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m7-compute-node-ds.html)
+
+◦ **CPU:** Up to 2x Intel Xeon® 6 Processors with up to 86 cores per processor and up to 336 MB Level-3 cache per CPU.
+
+◦ **Memory:** Up to 32x 256 GB DDR5-6400 DIMMs for up to 8 TB of main memory. Support for MRDIMM post FCS.
+
+● [**Cisco UCS X210c M7 Compute Node**](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m7-compute-node-ds.html)
+
+◦ **CPU:** Up to 2x 5th or 4th Gen Intel Xeon Scalable Processors with up to 64 cores per processor and up to 320 MB Level 3 cache per CPU.
+
+◦ **Memory:** Up to 32x 256 GB DDR5-5600 DIMMs for up to 8 TB of main memory.
+
+● [**Cisco UCS X410c M7 Compute Node**](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x410c-m7-compute-node-ds.html)
+
+◦ **CPU:** 4x 4th Gen Intel Xeon Scalable Processors with up to 60 cores per processor and up to 2.625 MB Level-3 cache per core and up to 112.5 MB per CPU.
+
+◦ **Memory:** Up to 64x 256 GB DDR5-4800 DIMMs for up to 16 TB of main memory.
+
+Common features across the compute family: 
+
+● **Disk storage:** There are three front storage mezzanines for compute nodes. All servers support up to 6 SAS or SATA drives can be configured with an internal RAID controller, or up to 6 NVMe drives with four lanes each of PCIe Gen4 connectivity, and up to two M.2 SATA memory cards can be configured with RAID 1 mirroring or two M.2 NVMe in pass-through mode. An optional PCIe mezzanine module supports up to two GPU accelerators, and two NVMe drives are supported on all two-socket compute nodes. For M8 compute nodes, there is an option for up to 9 ES.3 NVMe drives. Overall, the storage configuration delivers the capacity of many rack servers with the convenience of the modular form factor, adding to the system’s capability to support a wide range of workloads. 
+
+● [**mLOM virtual interface cards**](//www.cisco.com/c/en/us/products/interfaces-modules/unified-computing-system-adapters/index.html)**:** These cards fit into the upper mLOM slot in the node. The Cisco UCS Virtual Interface Card (VIC) 15231 and VIC 15230 secure boot provides 2x 100 Gbps of unified fabric connectivity to the chassis IFM, and the Cisco UCS VIC 14425 provides up to 2x 50 Gbps of connectivity. The VIC 15420 mLOM provides up to 4x 25 Gbps of connectivity with secure boot support. Combined with Mezzanine-format VICs, the chassis can eventually scale up to 400 Gbps of connectivity per node. Cisco virtual interface cards enable the number and type of I/O devices presented to the operating system to be configured on demand through Cisco Intersight.
+
+● [**Mezzanine virtual interface card:**](//www.cisco.com/c/en/us/products/interfaces-modules/unified-computing-system-adapters/index.html) The optional Cisco UCS VIC 14825 and VIC 15422 can occupy the server’s mezzanine. A bridge card extends these VIC’s 2x 50 Gbps of network connections to the mLOM slot. The mLOM VIC 14425 can be paired with the VIC 14825 and the mLOM VIC 15420 with the VIC 15422 to support additional network bandwidth and interfaces. Additionally, these cards link to optional Cisco UCS X9416 X-Fabric Modules that integrate PCIe devices into server nodes.
+
+● **Security:** The server supports an optional Trusted Platform Module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions.
+
+![Representative example of two-socket compute node for the Cisco UCS X-Series Modular System](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.docx/_jcr_content/renditions/solution-overview-c22-2432175_4.png)
+
+Figure 5. 
+
+Representative example of two-socket compute node for the Cisco UCS X-Series Modular System
+
+Single point of connectivity for the system
+
+Cisco UCS 6400, 6500, and 6600 Series Fabric Interconnects provide a single point of connectivity for the system. Multiple Cisco UCS X9508 Chassis can be connected to the interconnects along with any other servers in the Cisco UCS product lines, up to a maximum of 160 servers.
+
+The fabric interconnects provide line-rate, lossless connectivity for all traffic within a system. Rather than distributing switching functions into the chassis, the fabric interconnects maintain deterministic latency between all compute nodes regardless of whether they reside in the same chassis. As with the intelligent fabric modules, both 25- and 100-Gbps fabric interconnects can interconnect a single Cisco Unified Computing System with up to 16x 100-Gbps connections to each X-Series chassis. Each fabric interconnect links to the Cisco Intersight cloud-operations platform.
+
+Cisco Intersight Secure Connect technology
+
+With the Cisco UCS X-Series Modular System, you don’t have to host multiple management servers, software, and networks in your data center. Cisco Intersight Secure Connect technology reaches from the cloud to the fabric interconnects with connectivity as secure as when management traffic is on a protected physical network. Once you claim the fabric interconnects in the Intersight GUI, the systems become self-aware, incorporating any new compute nodes as they are plugged in. Cisco Intersight Secure Connect technology makes it possible for Intersight to manage not just the entire Cisco UCS product line, but also storage systems from the leading storage vendors, including NetApp, Pure Storage, and Hitachi. This technology is a strategic investment on our part in that it is a thin layer of software that can quickly expand the universe of supported devices, enabling you to stay ahead of new technology developments.
+
+Ready for a hybrid-cloud world
+
+The Cisco Intersight cloud-operations platform is the force that transforms the Cisco UCS X-Series Modular System from a set of components into a flexible server platform to propel your most important workloads. 
+
+The Cisco UCS X-Series with Intersight is built with a common purpose: to make hardware think like software so that you can easily adapt to a rapidly changing world. Through server profiles, Intersight defines the identity, connectivity, and I/O configuration of your servers and automates the entire infrastructure lifecycle. It’s easy to imagine how, as more features are released, the modular system supports a pool of I/O resources: banks of nonvolatile memory, GPU accelerators, specialized ASICs, and massive amounts of NVMe storage. Just as the chassis and Cisco UCS X-Fabric Technology are designed to incorporate a constant flow of new capabilities, Cisco Intersight is designed to automatically integrate those technologies into servers along with a constant flow of new, higher-level management capabilities. Software as a Service (SaaS) meets modular, infrastructure as code, and the line between hardware and software dissolves. 
+
+With Cisco Intersight and the Cisco UCS X-Series you can: 
+
+● **Define** desired system configurations based on policies that use pools of resources provided by the Cisco UCS X-Series. Let Cisco Intersight assemble the components and set up everything from firmware levels to which I/O devices are connected. Infrastructure is code, so your IT organization can use the Intersight GUI and your DevOps teams can use the Intersight API, the Intersight Service for HashiCorp Terraform, or the many API bindings from languages such as Python and PowerShell. 
+
+● **Deploy** from the cloud to any location. Anywhere the cloud reaches, Intersight can automate your IT processes. 
+
+● **Optimize** your workload by analyzing runtime performance and make resource adjustments and workload placements to keep response time within a desired range. If your first attempt at matching resources to workloads doesn’t deliver the results you need, you can reshape the system quickly and easily. Cisco Intersight facilitates deploying workloads into your private cloud and into the public cloud. Now one framework bridges your core, cloud, and edge infrastructure, managing infrastructure and workloads wherever they are deployed. 
+
+● **Maintain** your infrastructure with a consolidated dashboard of infrastructure components regardless of location. Ongoing telemetry and analytics give early detection of possible failures. Reduce risk of configuration drift and inconsistent configurations through automation with global policy enforcement. 
+
+● **Support** your infrastructure with AI-driven root-cause analysis and automated case support for the always-connected Cisco Technical Assistance Center (Cisco TAC). Intersight watches over you when you update your solution stack, helping to prevent incompatible hardware, firmware, operating system, and hypervisor configurations.
+
+![Cisco Intersight reaches from the cloud to all of your infrastructure, regardless of its location](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.docx/_jcr_content/renditions/solution-overview-c22-2432175_5.png)
+
+Figure 6. 
+
+Cisco Intersight reaches from the cloud to all of your infrastructure, regardless of its location
+
+Modular management architecture
+
+Cisco Intersight is a modular set of services that bridge applications and infrastructure to meet your specific needs, including: 
+
+● **Cisco Intersight:** Manage Cisco data-center products, Cisco converged infrastructure solutions, and third-party endpoints.
+
+Think like tomorrow
+
+The Cisco UCS X-Series Modular System is ready for your data center today, and ready to serve it well into the future with an architecture designed to support many future processor generations and multiple innovations in server I/O, networking, and infrastructure. With cloud-based lifecycle management and a simplified yet adaptable system, we continue to help you simplify your data center: 
+
+● **Simplify with cloud-operated infrastructure:** Respond at the speed and scale of your business by shaping Cisco UCS X-Series Modular System resources to workload requirements with Intersight. Deliver intelligent visualization, optimization, and orchestration to all your applications and infrastructure. 
+
+● **Simplify with an adaptable system designed for modern applications:** Adapt to the unpredictable requirements of modern applications. Consolidate onto a single platform that combines the density and efficiency of blade servers with the expandability of rack servers for better performance, automation, and efficiency. 
+
+● **Simplify with a system engineered for the future:** Embrace emerging technology and reduce risk with a modular system engineered to support future generations of processors, accelerators, and interconnects with management enabled by a constant stream of new capabilities delivered as SaaS.
+
+Embrace the future
+
+Visit [www.cisco.com/go/ucsx](www.cisco.com/go/ucsx).
+
+### Our experts recommend
+
+  * [AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html "AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper")
+  * [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
+  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
+
+
+### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 6: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x580p-pcie-node-ds.html
 
   * Skip to content
   * Skip to search
@@ -1192,7 +1791,7 @@ New or revised topic  |  Described in  |  Date
 
 ---
 
-## Page 5: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-9516-x-fabric-module-ds.html
+## Page 7: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-9516-x-fabric-module-ds.html
 
   * Skip to content
   * Skip to search
@@ -1458,6 +2057,650 @@ Document history
 New or revised topic |  Described in |  Date  
 ---|---|---  
 Initial version |  Document |  August 2025  
+  
+### Our experts recommend
+
+  * [AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html "AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper")
+  * [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
+  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
+
+
+### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 8: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-fabric-here-aag.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS X-Fabric Technology At-a-Glance
+
+At a Glance
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-fabric-here-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-fabric-here-aag.pdf) (930.9 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:September 9, 2025
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-fabric-here-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-fabric-here-aag.pdf) (930.9 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:September 9, 2025
+
+#### Table of Contents
+
+  * Applications are the heartbeat of your business
+  * Benefits
+  * Blurring the line
+  * Future-ready
+  * Cloud-operated
+  * Cisco UCS X-Fabric connectivity
+  * Learn more
+
+
+` `
+
+![Cisco UCS X-Fabric Technology](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-fabric-here-aag.docx/_jcr_content/renditions/ucs-x-fabric-here-aag_0.png)
+
+Applications are the heartbeat of your business
+
+Many applications need specialized infrastructure to make them perform at their best. In-memory databases need large amounts of nonvolatile memory. Big-data applications need vast amounts of local disk storage. Artificial intelligence and machine learning applications need GPU accelerators. Virtual desktop environments need GPUs to enhance user experiences. Supporting this range of applications once required a diverse set of server types including blade and rack servers—until now. Today you can support the entire range of requirements with the Cisco UCS® X-Series Modular System with Cisco Intersight™.
+
+Cisco UCS X-Fabric Technology gives you the capability to support a wider range of workloads—including those typically supported on rack servers—with the benefits of shared power, cooling, networking, and Intersight management. X-Fabric Technology extends each compute node’s PCIe bus to include devices such as Intel® and NVIDIA GPUs.
+
+Benefits
+
+● Adaptable to any application with a single platform that blurs the line between blade and rack servers.
+
+● Future-ready for new X-Fabric devices as they are made available.
+
+● Cloud-operated with Cisco Intersight™.
+
+Blurring the line
+
+The UCS X-Series modular system’s flexible design combines the density and efficiency of blade servers with the expandability of rack servers for better performance, automation, and efficiency. With compute nodes only, you can support applications such as big data and in-memory databases with their exceptional on-board storage and memory capacity. PCIe expansion nodes connected to compute nodes through Cisco UCS X-Fabric Technology can support applications such as artificial intelligence, machine learning, and virtual desktop infrastructure. 
+
+This approach helps you:
+
+● Standardize on a single system to support a wider range of applications, reducing staff and support costs.
+
+● Simplify operations by eliminating silos and blurring the line between blade and rack servers.
+
+● Increase operational efficiency and reliability through shared power, cooling, and management.
+
+● Achieve your sustainability goals when modernizing your infrastructure.
+
+Future-ready
+
+Cisco UCS X-Fabric Technology is how we have engineered the Cisco UCS X-Series to be ready for whatever connectivity innovations the future brings. We chose “X” because it is the variable that can change over time.
+
+The Cisco UCS 9416 X-Fabric Modules connect UCS X210c, X215c, and X410c server nodes to Cisco UCS X440p PCIe Nodes and the Cisco UCS 9516 X-Fabric Module to the Cisco UCS X580p PCIe Node. Tested and validated devices are AMD, Intel, and NVIDIA GPUs appropriate for accelerating AI/ML and VDI applications. 
+
+As new interconnect technologies emerge, new X-Fabric modules can provide more sophisticated capabilities.
+
+Cloud-operated
+
+Cisco UCS X-Series is powered by the Cisco Intersight cloud-operations platform. This Software-as-a-Service (SaaS) offering helps you define and shape compute, GPU, and fabric resources to the needs of your applications.
+
+Cisco UCS X-Series with Intersight is designed to change and evolve as new technologies become available. Enhanced I/O, expanded NVMe capacity, pools of nonvolatile memory, liquid cooling, silicon photonics—all of these are future possibilities that the Cisco UCS X-Series is ready to support. With SaaS-based management, you get a constant stream of management innovations with new features to drive better outcomes. You don’t have to worry about inconsistency from product to product or management that doesn’t support new hardware features. They all arrive at the same time and they all work together.
+
+Cisco UCS X-Fabric connectivity
+
+![Cisco UCS X-Fabric connectivity](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-fabric-here-aag.docx/_jcr_content/renditions/ucs-x-fabric-here-aag_1.jpg)
+
+Learn more
+
+For more information about modernizing your infrastructure with Cisco UCS X-Fabric Technology, go to <https://cisco.com/go/ucsx>. For all Cisco UCS Servers, please visit <https://www.cisco.com/go/ucs>.
+
+### Our experts recommend
+
+  * [AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html "AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper")
+  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
+
+
+### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 9: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m7-compute-node-ds.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS X210c M7 Compute Node Data Sheet
+
+Data Sheet
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m7-compute-node-ds.html) to Save Content 
+
+Translations
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m7-compute-node-ds.pdf) (250.1 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:March 24, 2025
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m7-compute-node-ds.html) to Save Content 
+
+Translations
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m7-compute-node-ds.pdf) (250.1 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:March 24, 2025
+
+#### Table of Contents
+
+  * Product overview
+  * Features and benefits
+  * Product specifications
+  * System requirements
+  * Ordering information
+  * Warranty information
+  * Product sustainability
+  * Product environmental information
+  * Cisco and Partner services
+  * Cisco Capital
+  * Document history
+
+
+` `
+
+Un/Box the future with Cisco UCS® X-Series Modular System and Cisco Intersight™. Embrace an adaptable, future-ready, and cloud-operated system to simplify IT and innovate at the speed of software.
+
+Product overview
+
+The Cisco UCS X-Series Modular System simplifies your data center, adapting to the unpredictable needs of modern applications while also providing for traditional scale-out and enterprise workloads. It reduces the number of server types to maintain, helping to improve operational efficiency and agility as it helps reduce complexity. Powered by the Cisco Intersight cloud-operations platform, it shifts your thinking from administrative details to business outcomes—with hybrid-cloud infrastructure that is assembled from the cloud, shaped to your workloads, and continuously optimized.
+
+Features and benefits
+
+Main features
+
+The Cisco UCS X210c M7 Compute Node is the second generation of compute node to integrate into the Cisco UCS X-Series Modular System. It delivers performance, flexibility, and optimization for deployments in data centers, in the cloud, and at remote sites. This enterprise-class server offers market-leading performance, versatility, and density without compromise for workloads. Up to eight compute nodes can reside in the 7-Rack-Unit (7RU) Cisco UCS X9508 Server Chassis, offering one of the highest densities of compute, I/O, and storage per rack unit in the industry. With 5th Gen Intel® Xeon® Processors, get more compute and faster memory at the same power envelope as our previous generation, plus outsized performance and TCO in AI, HPC, database, networking, and storage.
+
+The Cisco UCS X210c M7 provides these main features:
+
+● CPU: Up to 2x 5th Gen or 4th Gen Intel® Xeon® Scalable Processors with up to 64 cores per processor and up to 320 MB of Level 3 cache per CPU.
+
+● Memory: Up to 8TB of main memory with 32x 256 GB DDR5 5600 MT/s or DDR5 4800 MT/s DIMMs depending on the CPU installed.
+
+● Storage: Up to six hot-pluggable, Solid-State Drives (SSDs), or Non-volatile Memory Express (NVMe) 2.5-inch drives with a choice of enterprise-class Redundant Array of Independent Disks (RAIDs) or passthrough controllers, up to two M.2 SATA drives with optional hardware RAID or up to two M.2 NVMe drives in pass-through mode.
+
+● Optional front mezzanine GPU module: The Cisco UCS front mezzanine GPU module is a passive PCIe Gen 4.0 front mezzanine option with support for up to two NVMe drives and two HHHL GPUs.
+
+● mLOM virtual interface cards (VICs):
+
+◦ Cisco UCS VIC 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps of unified fabric connectivity to each of the chassis Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server.
+
+◦ Cisco UCS VIC 15231 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server.
+
+◦ Cisco UCS VIC 15230 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server with secure boot technology.
+
+● Optional mezzanine card:
+
+◦ Cisco UCS 5th Gen Virtual Interface Card (VIC) 15422 can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server) with secure boot technology.
+
+◦ Cisco UCS PCI Mezz card for X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the Cisco UCS X440p PCIe Node.
+
+◦ All VIC mezzanine cards also provide I/O connections from the X210c M7 compute node to the X440p PCIe Node.
+
+● Security: The server supports an optional Trusted Platform Module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions.
+
+Product specifications
+
+**Table 1. **Product specifications
+
+Item |  Specifications  
+---|---  
+**Processors** |  Up to 2x 5thGen Intel Xeon Scalable processors (1 or 2) or Up to 2x 4thGen Intel Xeon Scalable processors (1 or 2)  
+**Memory** |  32 DDR5-5600 DIMM slots (16 DIMMS per CPU): 16, 32, 48, 64, 96, 128, 256 GB at up to 5600 MT/s for up to 8TBof memory with 5th Gen Intel Xeon Scalable processors or 32 DDR5-4800 DIMM slots (16 DIMMS per CPU): 16, 32, 64, 128, 256 GB at up to 4800 MT/s for up to 8TBof memory with 4th Gen Intel Xeon Scalable processors  
+**mLOM** |  mLOM slot for Cisco UCS VIC 15420, Cisco UCS VIC 15231 or Cisco UCS VIC 15230  
+**Mezzanine adapter (rear)** |  Cisco UCS 15422 mezzanine card with UCS VIC 15000 bridge connector compatible with Cisco UCS VIC 15420  
+**Mezzanine module (front)** |  Front mezzanine module options: ● Cisco FlexStorage NVMe passthrough controller (for NVMe drives only)  ● Cisco FlexStorage RAID controller with 4GB cache (for SSD and mix of SSD and NVMe)  ● GPU front mezzanine  ● No front mezzanine   
+**Internal storage and GPU** |  Front mezzanine storage options: ● Up to 6x 2.5-inch SAS, SATA and NVMe RAID-compatible SSDs  ● A mixture of up to six SAS/SATA or NVMe drives  **Note:** Drives require a RAID or passthrough controller in the front mezzanine module slot. Boot drive options: ● Mini storage module with 2x M.2 (up to 960GB per drive) SATA drives with hardware RAID or 2x M.2 (up to 960GB per drive) NVMe drives  GPU options: ● GPU front mezzanine module with 2x 2.5-inch NVMe drives and 2x GPUs   
+**Management** |  ● [Cisco Intersight software](https://www.cisco.com/c/en/us/products/servers-unified-computing/intersight/index.html) (SaaS, virtual appliance, and private virtual appliance)  ● Cisco UCS Manager (UCSM) 4.3(2) or later   
+**Temperature: operating** |  50° to 95°F (10° to 35°C)  
+**Temperature: nonoperating** |  -40° to 149°F (–40° to 65°C)  
+**Humidity: operating** |  5% to 90% noncondensing  
+**Humidity: nonoperating** |  5% to 90% noncondensing  
+**Altitude: operating** |  0 to 10,000 ft (0 to 3000m); maximum ambient temperature decreases by 1°C per 300m  
+**Altitude: nonoperating** |  40,000 ft (12,000m)  
+  
+System requirements
+
+**Table 2. **System requirements
+
+Item |  Requirements  
+---|---  
+**X-Series chassis** |  Cisco UCS X9508 Server Chassis  
+**Fabric interconnect** |  Cisco UCS 6454, 64108, and 6536 fabric interconnects  
+**Cisco Intersight** |  ● Intersight Managed Mode (minimum Essentials license per server)  ● UCSM Managed Mode (UMM) with Intersight   
+  
+Ordering information
+
+Table 3 provides ordering information for the Cisco UCS X210c M7 Compute Node.
+
+**Table 3. **Ordering information
+
+Part number |  Description  
+---|---  
+**UCSX-210C-M7** |  Cisco UCS 210c M7 Compute Node w/o CPU, memory, storage, mezzanine  
+**UCSX-210C-M7-U** |  Cisco UCS 210c M7 Compute Node UPG w/o CPU, memory, storage, mezzanine  
+**UCSX-210C-M7-CH** |  DISTI: Cisco UCS 210c M7 Compute Node w/o CPU, memory, storage, mezzanine  
+  
+For information about installing or upgrading your server, see the [Hardware Installation](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/x/hw/x210c-m7/install/b-cisco-ucs-x210c-m7-install-guide/m-servicing-the-compute-node.html) Guide. For ordering information, see the Cisco UCS X210c M7 Compute Node spec sheet.
+
+Warranty information
+
+The Cisco UCS X210c Compute Node has a three-year Next-Business-Day (NBD) hardware warranty and a 90-day software warranty.
+
+Augmenting the Cisco Unified Computing System™ (Cisco UCS) warranty, Cisco Smart Net Total Care® and Cisco Solution Support services are part of Cisco's technical services portfolio. Cisco Smart Net Total Care combines Cisco's industry-leading and award-winning foundational technical services with an extra level of actionable business intelligence that is delivered to you through the smart capabilities in the Cisco Smart Net Total Care portal. For more information, please refer to <https://www.cisco.com/c/en/us/support/services/smart-net-total-care/index.html>
+
+Cisco Solution Support includes both Cisco® product support and solution-level support, resolving complex issues in multivendor environments on average 43 percent more quickly than with product support alone. Cisco Solution Support is a critical element in data center administration, helping rapidly resolve issues encountered while maintaining performance, reliability, and return on investment.
+
+This service centralizes support across your multivendor Cisco environment for both our products and solution partner products that you have deployed in your ecosystem. Whether there is an issue with a Cisco product or with a solution partner product, just call us. Our experts are the primary point of contact and own the case from first call to resolution. For more information, please refer to <https://www.cisco.com/c/en/us/services/technical/solution-support.html>.
+
+Product sustainability
+
+Information about Cisco’s Environmental, Social, and Governance (ESG) initiatives and performance is provided in Cisco’s CSR and sustainability [reporting](https://www.cisco.com/c/dam/m/en_us/about/csr/esg-hub/_pdf/purpose-report-2024.pdf).
+
+**Table 4. **Cisco environmental sustainability information
+
+Sustainability topic |  Reference  
+---|---  
+**General** |  Information on product-material-content laws and regulations |  [Materials](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/materials.html)  
+Information on electronic waste laws and regulations, including our products, batteries, and packaging |  [WEEE Compliance](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/product-recycling/weee-compliance.html)  
+Information on product takeback and reuse program |  [Cisco Takeback and Reuse Program](https://www.cisco.com/c/en/us/about/takeback-and-reuse.html)  
+Sustainability Inquiries |  Contact: [csr_inquiries@cisco.com](mailto:csr_inquiries@cisco.com)  
+**Material** |  Product packaging weight and materials |  Contact: [environment@cisco.com](mailto:environment@cisco.com)  
+  
+Product environmental information
+
+Product environmental information for users per Commission Regulation (EU) 2019/424 <https://www.cisco.com/web/dofc/23906228.pdf>.
+
+Cisco and Partner services
+
+Cisco and our industry-leading partners deliver services that accelerate your transition to a Cisco UCS X-Series Modular System solution. Cisco Unified Computing Services can help you create an agile infrastructure, accelerate time to value, reduce costs and risks, and maintain availability during deployment and migration. After deployment, our services can help you improve performance, availability, and resiliency as your business needs evolve and help you further mitigate risk. For more information, visit <https://www.cisco.com/go/unifiedcomputingservices>
+
+Cisco Capital
+
+Flexible payment solutions to help you achieve your objectives
+
+Cisco Capital® financing makes it easier to get the right technology to achieve your objectives, enable business transformation, and help you stay competitive. We can help you reduce total cost of ownership, conserve capital, and accelerate growth. In more than 100 countries, our flexible payment solutions can help you acquire hardware, software, services, and complementary third-party equipment in easy, predictable payments. [Learn more](https://www.cisco.com/go/financing).
+
+Document history
+
+New or revised topic |  Described in |  Date  
+---|---|---  
+**5 th Gen Intel® Xeon® Scalable Processors and DDR5 5600 MT/s DIMMs Support** |  |  December 5, 2023  
+  
+### Our experts recommend
+
+  * [AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html "AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper")
+  * [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
+  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
+
+
+### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 10: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x410c-m7-compute-node-ds.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS X410c M7 Compute Node Data Sheet
+
+Data Sheet
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x410c-m7-compute-node-ds.html) to Save Content 
+
+Translations
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x410c-m7-compute-node-ds.pdf) (432.0 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:October 12, 2023
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x410c-m7-compute-node-ds.html) to Save Content 
+
+Translations
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x410c-m7-compute-node-ds.pdf) (432.0 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:October 12, 2023
+
+#### Table of Contents
+
+  * Product overview
+  * Features and benefits
+  * Product specifications
+  * System requirements
+  * Ordering information
+  * Warranty information
+  * Product sustainability
+  * Product environmental information
+  * Cisco and Partner Services
+  * Cisco Capital
+  * Document history
+
+
+` `
+
+The enterprise-class Cisco UCS® X410c M7 Compute Node delivers market-leading performance, versatility, and density without compromise.
+
+Product overview
+
+The enterprise-class Cisco UCS X410c M7 Compute Node delivers market-leading performance, versatility, and density for a wide range of mission-critical enterprise applications, memory-intensive applications, and bare-metal and virtualized workloads. Powered by the Cisco Intersight™ cloud- operations platform, it is an adaptable system that can support enterprise workloads and provide a consolidation platform that provides improved performance, automation, and efficiency. It is a system engineered for the future so you can embrace emerging technologies while reducing the risk of obsolescence.
+
+Features and benefits
+
+Main features
+
+The Cisco UCS X410c M7 Compute Node is the first 4-socket 4th Gen Intel® Xeon® Scalable Processors computing device to integrate into the Cisco UCS X-Series Modular System. Up to four compute nodes or two compute nodes and two GPU nodes can reside in the 7-Rack-Unit (7RU) Cisco UCS X9508 Server Chassis, offering high performance and efficiency gains for a wide range of mission-critical enterprise applications, memory-intensive applications and bare-metal and virtualized workloads.
+
+● The Cisco UCS X410c M7 provides these main features:
+
+◦ CPU: Four 4th Gen Intel Xeon Scalable Processors with up to 60 cores per processor
+
+◦ Memory: Up to 16TB of main memory with 64x 256 GB DDR5-4800 Memory DIMMs
+
+◦ Storage: Up to six hot-pluggable Solid-State Drives (SSDs), or non-volatile memory express (NVMe) 2.5-inch drives with a choice of enterprise-class RAID or passthrough controllers, up to two M.2 SATA or NVMe drives with optional hardware RAID
+
+● mLOM Virtual Interface Cards (VICs):
+
+◦ Cisco UCS VIC 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps of unified fabric connectivity to each of the chassis's Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server with secure boot capability.
+
+◦ Cisco UCS VIC 15231 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis's Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server.
+
+◦ Cisco UCS VIC 15230 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server with secure boot technology.
+
+● Optional mezzanine card:
+
+◦ Cisco UCS 5th Gen VIC 15422 can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 2x 50 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server) with secure boot capability.
+
+◦ Cisco UCS PCI Mezz card for Cisco UCS X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the Cisco UCS X440p PCIe Node.
+
+◦ All VIC mezzanine cards also provide I/O connections from the X410c M7 compute node to the X440p PCIe node.
+
+● Security: The server supports an optional Trusted Platform Module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions.
+
+Product specifications
+
+**Table 1. **Product specifications
+
+Item |  Specifications  
+---|---  
+**Processors** |  4x 4th Gen Intel Xeon Scalable Processors  
+**Memory** |  64 DDR5 DIMM slots (16 DIMMs per CPU): 16, 32, 64, 128, 256 GB at up to 4800 MT/s for up to 16TB of total memory  
+**mLOM** |  mLOM slot for Cisco UCS VIC 15420, Cisco UCS VIC 15231, or Cisco UCS VIC 15230  
+**Mezzanine adapter (rear)** |  Cisco UCS 15422 mezzanine card with UCS VIC 15000 bridge connector, for connecting to Cisco UCS VIC 15420  
+**Mezzanine module (front)** |  Front mezzanine module options: ● Cisco FlexStorage NVMe passthrough controller (for NVMe drives only)  ● Cisco FlexStorage RAID controller with 4GB cache (for SSD and mix of SSD and NVMe)  ● No front mezzanine   
+**Internal storage** |  Front mezzanine storage options: ● Up to 6x 2.5-inch SAS/SATA or NVMe RAID-compatible drives  ● Up to 6 x 2.5-inch NVMe RAID-compatible drives  ● A mixture of up to six SAS/SATA or NVMe drives  **Note:** Drives require a RAID or passthrough controller in the front mezzanine module slot. Boot drive options: ● Mini storage module with 2x M.2 (up to 960GB per drive) SATA drives with hardware RAID ● Mini storage module with 2x M.2 NVMe (up to 960GB per drive) in passthrough mode  
+**Management** |  [Cisco Intersight software](https://www.cisco.com/c/en/us/products/servers-unified-computing/intersight/index.html) (SaaS, virtual appliance, and private virtual appliance)  
+**Temperature: operating** |  50° to 95°F (10° to 35°C)  
+**Temperature: nonoperating** |  -40° to 149°F (–40° to 65°C)  
+**Humidity: operating** |  5% to 90% noncondensing  
+**Humidity: nonoperating** |  5% to 90% noncondensing  
+**Altitude: operating** |  0 to 10,000 ft (0 to 3000m); maximum ambient temperature decreases by 1°C per 300m  
+**Altitude: nonoperating** |  40,000 ft (12,000m)  
+  
+System requirements
+
+**Table 2. **System requirements
+
+Item |  Requirements  
+---|---  
+**X-Series chassis** |  Cisco UCS X9508 Server Chassis  
+**Fabric interconnect** |  ● Cisco UCS 6454 and 64108 fabric interconnects  ● Cisco UCS 6536 Fabric Interconnect   
+**Cisco Intersight** |  Intersight Managed Mode (minimum Essentials license per server)  
+  
+Ordering information
+
+Table 3 provides ordering information for the Cisco UCS X410c M7 Compute Node.
+
+**Table 3. **Ordering information
+
+Part number |  Description  
+---|---  
+**UCSX-410C-M7** |  Cisco UCS 410c M7 Compute Node w/o CPU, memory, storage, mezzanine  
+**UCSX-410C-M7-U** |  Cisco UCS 410c M7 Compute Node UPG w/o CPU, memory, storage, mezzanine  
+**UCSX-410C-M7-CH** |  DISTI: Cisco UCS 410c M7 Compute Node w/o CPU, memory, storage, mezzanine  
+  
+For information about installing or upgrading your server, see the [hardware installation](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-x-series-modular-system/products-installation-guides-list.html) guide. For ordering information, see the Cisco UCS X410c M7 Compute Node spec sheet. 
+
+Warranty information
+
+The Cisco UCS X410c M7 Compute Node has a three-year Next-Business-Day (NBD) hardware warranty and a 90-day software warranty.
+
+Augmenting the Cisco Unified Computing System™ (Cisco UCS) warranty, Cisco Smart Net Total Care® and Cisco Solution Support services are part of Cisco's technical services portfolio. Cisco Smart Net Total Care combines Cisco's industry-leading and award-winning foundational technical services with an extra level of actionable business intelligence that is delivered to you through the smart capabilities in the Cisco Smart Net Total Care portal. For more information, please refer to <https://www.cisco.com/c/en/us/support/services/smart-net-total-care/index.html>
+
+Cisco Solution Support includes both Cisco® product support and solution-level support, resolving complex issues in multivendor environments on average 43 percent more quickly than with product support alone. Cisco Solution Support is a critical element in data center administration, helping rapidly resolve issues encountered while maintaining performance, reliability, and return on investment.
+
+This service centralizes support across your multivendor Cisco environment for both our products and solution partner products that you have deployed in your ecosystem. Whether there is an issue with a Cisco product or with a solution partner product, just call us. Our experts are the primary point of contact and own the case from first call to resolution. For more information, please refer to <https://www.cisco.com/c/en/us/services/technical/solution-support.html>.
+
+Product sustainability
+
+Information about Cisco’s Environmental, Social, and Governance (ESG) initiatives and performance is provided in Cisco’s CSR and sustainability [reporting](https://www-1.compliance2product.com/c2p/getAttachment.do?code=YM6Y0yThdO6Wj1FxxYPYfUG2dtFkTeFWGpzLRO8tcURFEifUCRV403Tq2ZMWP6Ai).
+
+**Table 4. **Cisco environmental sustainability information
+
+Sustainability topic |  Reference  
+---|---  
+**General** |  Information on product-material-content laws and regulations |  [Materials](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/materials.html)  
+Information on electronic waste laws and regulations, including our products, batteries, and packaging |  [WEEE Compliance](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/product-recycling/weee-compliance.html)  
+Information on product takeback and reuse program |  [Cisco Takeback and Reuse Program](https://www.cisco.com/c/en/us/about/takeback-and-reuse.html)  
+Sustainability inquiries |  Contact: [csr_inquiries@cisco.com](mailto:csr_inquiries@cisco.com)  
+**Material** |  Product packaging weight and materials |  Contact: [environment@cisco.com](mailto:environment@cisco.com)  
+  
+Product environmental information
+
+Product environmental information for users per Commission Regulation (EU) 2019/424 <https://www.cisco.com/web/dofc/24098842.pdf>
+
+Cisco and Partner Services
+
+Cisco and our industry-leading partners deliver services that accelerate your transition to a Cisco UCS X-Series Modular System solution. Cisco Unified Computing Services can help you create an agile infrastructure, accelerate time to value, reduce costs and risks, and maintain availability during deployment and migration. After deployment, our services can help you improve performance, availability, and resiliency as your business needs evolve and help you further mitigate risk. For more information, visit <https://www.cisco.com/go/unifiedcomputingservices>.
+
+Cisco Capital
+
+Flexible payment solutions to help you achieve your objectives
+
+Cisco Capital® financing makes it easier to get the right technology to achieve your objectives, enable business transformation, and help you stay competitive. We can help you reduce total cost of ownership, conserve capital, and accelerate growth. In more than 100 countries, our flexible payment solutions can help you acquire hardware, software, services, and complementary third-party equipment in easy, predictable payments. [Learn more](https://www.cisco.com/go/financing).
+
+Document history
+
+New or revised topic |  Described in |  Date  
+---|---|---  
+**** |  |   
+**** |  |   
+**** |  |   
   
 ### Our experts recommend
 

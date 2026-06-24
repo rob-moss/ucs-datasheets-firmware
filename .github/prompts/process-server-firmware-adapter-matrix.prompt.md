@@ -1,5 +1,4 @@
 ---
-agent: agent
 name: process-server-firmware-adapter-matrix-v4
 description: Generate a UCS Server Hardware Compatibility Matrix in markdown format by extracting data from JSON files.
 ---

@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/ucs-x215c-m8-compute-node.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-05-27 10:55:29 |
+| **Fetched on** | 2026-06-24 11:19:57 |
 
 ---
 
@@ -26,17 +26,16 @@ computing/ucs-x-series-modular-system/datasheet-
 listing.html
 
 CISCO SYSTEMS
-170 WEST TASMAN D 
+170 WEST TASMAN D
 SAN JOSE, CA, 95134
 WWW.CISCO.COM
 
-PUBLICATION HISTORY 
+PUBLICATION HISTORY
 
-V.21
+VERSION:22 JUNE 03, 2026
 
-APRIL 30, 2026
+
 
- 
 CONTENTS
 
 STEP
@@ -51,14 +50,14 @@ CONFIGURING the Cisco UCS X215c M8 Compute Node  . . . . . . . . . . . . . . . .
 1 CHOOSE BASE CISCO UCS X215c M8 COMPUTE NODE SKU   . . . . . . . . . . . . . . . . . . 10
 2 CHOOSE CPU(S)   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
 3 CHOOSE MEMORY   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
-Memory configurations and mixing rules  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Memory configurations and mixing rules . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
 4 CHOOSE REAR mLOM ADAPTER   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
 5 CHOOSE OPTIONAL REAR MEZZANINE VIC/BRIDGE ADAPTERS  . . . . . . . . . . . . . . . . 22
 6 CHOOSE OPTIONAL FRONT MEZZANINE ADAPTER . . . . . . . . . . . . . . . . . . . . . . . . 24
 7 CHOOSE OPTIONAL GPU PCIe NODE   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
 8 CHOOSE OPTIONAL GPUs   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
 9 CHOOSE OPTIONAL DRIVES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
-10 Order Boot-optimized M.2 Front Panel Module and Drives . . . . . . . . . . . . . . . . . 31
+10 ORDER BOOT-OPTIMIZED M.2 FRONT PANEL MODULE AND DRIVES  . . . . . . . . . . . . 31
 11 ORDER NVMe BOOT (OPTIONAL)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
 12 CHOOSE OPTIONAL TRUSTED PLATFORM MODULE   . . . . . . . . . . . . . . . . . . . . . . 33
 13 CHOOSE OPERATING SYSTEM AND VALUE-ADDED SOFTWARE   . . . . . . . . . . . . . . . 34
@@ -323,11 +322,12 @@ Mezzanine Adapters
 (Front)
 
 One front mezzanine connector that supports:
-■ EDSFF E3.S NVMe passthrough controller
+
+EDSFF E3.S NVMe passthrough controller
 
 ■ NVMe passthrough controller (for U.2/U.3 NVMe drives only)
 
-■ RAID controller with 4GB cache (for SSD and mix of SSD and NVMe)
+RAID controller with 4GB cache (for SSD and mix of SSD and NVMe)
 
 ■ GPU front mezzanine
 
@@ -336,7 +336,7 @@ One front mezzanine connector that supports:
 Internal Storage and 
 GPU
 
-■ Front mezzanine storage options (hot-swappable): 
+Front mezzanine storage options (hot-swappable): 
 
 • Up to 8x EDSFF E3.S NVMe drives 
 
@@ -349,7 +349,7 @@ GPU
 NOTE:  Drives require a RAID or passthrough controller in the front mezzanine 
 module slot.
 
-■ Boot drive options:
+Boot drive options:
 
 • Mini storage module with 2x M.2 (up to 960GB per drive) SATA drives with 
 
@@ -365,19 +365,23 @@ pass-through mode (Non-RAID).
 
 GPUs
 
-■ Cisco UCS 15422 mezzanine card with UCS VIC 15000 bridge connector 
+Mezzanine Adapter 
+(Rear)
 
+Cisco UCS 15422 mezzanine card with UCS VIC 15000 bridge connector 
 compatible with Cisco UCS VIC 15420
 
 ■ UCS PCI Mezz Card for X-Fabric
-
-Mezzanine Adapter 
-(Rear)
 
 6
 
 Cisco UCS X215c M8 Compute Node
 
+■
+■
+■
+■
+■
 COMPUTE NODE STANDARD CAPABILITIES and FEATURES
 
 Table 1   Capabilities and Features (continued)
@@ -391,15 +395,13 @@ mLOM
 The modular LAN on motherboard (mLOM) cards (the Cisco UCS VIC 15230 and 
 15420) is located at the rear of the compute node.
 
-■ The Cisco UCS Virtual Interface Card VIC 15420 is a Cisco designed PCI 
-
+The Cisco UCS Virtual Interface Card VIC 15420 is a Cisco designed PCI 
 Express (PCIe) based card that supports two 2x25G-KR network interfaces to 
 provide Ethernet communication to the network by means of the Intelligent 
 Fabric Modules (IFMs) in the Cisco UCS X9508 chassis. The Cisco UCS VIC 
 15420 mLOM can connect to the rear mezzanine adapter card with a bridge 
 connector.
-
-■ The Cisco UCS Virtual Interface Card (VIC) 15230 occupies the server's 
+The Cisco UCS Virtual Interface Card (VIC) 15230 occupies the server's 
 modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of 
 unified fabric connectivity to each of the chassis Intelligent Fabric Modules 
 (IFMs) for 200 Gbps connectivity per server with secure boot capability.
@@ -408,13 +410,11 @@ Video
 
 Video uses a Matrox G200e video/graphics controller.
 
-■ Integrated 2D graphics core with hardware acceleration
-■ DDR4 memory interface supports up to 512 MB of addressable memory (16 
-
+Integrated 2D graphics core with hardware acceleration
+DDR4 memory interface supports up to 512 MB of addressable memory (16 
 MB is allocated by default to video memory)
-
-■ Supports display resolutions up to 1920 x 1200 32 bpp@ 60Hz
-■ Video is available with an Oculink connector on the front panel. An adapter 
+Supports display resolutions up to 1920 x 1200 32 bpp@ 60Hz
+Video is available with an Oculink connector on the front panel. An adapter 
 cable (PID UCSX-C-DEBUGCBL) is required to connect the OCuLink port to the 
 transition serial USB and video (SUV) octopus cable. 
 
@@ -450,25 +450,24 @@ ASPEED Pilot IV
 Advanced Configuration and Power Interface (ACPI) 6.5 Standard Supported. ACPI 
 states S0 and S5 are supported. There is no support for states S1 through S4.
 
-■ Power button and indicator
-■ System activity indicator
-■ Location button and indicator
+Power button and indicator
+System activity indicator
+Location button and indicator
 
 Management
 
-■ Cisco Intersight software (SaaS, Virtual Appliance and Private Virtual 
-
+Cisco Intersight software (SaaS, Virtual Appliance and Private Virtual 
 Appliance)
 
-■ Starting with UCS Manager (UCSM) 4.3(4) or later
+Starting with UCS Manager (UCSM) 4.3(4) or later
 
 Firmware standards
 
 ■ UEFI Spec         2.9
 
-■ ACPI                 6.5
+ACPI                 6.5
 
-■ SMBIOS Ver       3.6
+SMBIOS Ver       3.6
 
 Security
 
@@ -479,6 +478,19 @@ Cisco UCS X215c M8 Compute Node
 
 7
 
+■
+■
+■
+■
+■
+■
+■
+■
+■
+■
+■
+■
+■
 COMPUTE NODE STANDARD CAPABILITIES and FEATURES
 
 Table 1   Capabilities and Features (continued)
@@ -501,40 +513,55 @@ CONFIGURING the Cisco UCS X215c M8 Compute Node
 
 Follow these steps to configure the Cisco UCS X215c M8 Compute Node:
 
-■ STEP 1 CHOOSE BASE CISCO UCS X215c M8 COMPUTE NODE SKU, page 10
+STEP 1 CHOOSE BASE CISCO UCS X215c M8 COMPUTE NODE SKU, page 10
 
-■ STEP 2 CHOOSE CPU(S), page 11
+STEP 2 CHOOSE CPU(S), page 11
 
-■ STEP 3 CHOOSE MEMORY, page 15
+STEP 3 CHOOSE MEMORY, page 15
 
-■ STEP 4 CHOOSE REAR mLOM ADAPTER, page 18
+STEP 4 CHOOSE REAR mLOM ADAPTER, page 18
 
-■ STEP 5 CHOOSE OPTIONAL REAR MEZZANINE VIC/BRIDGE ADAPTERS, page 22
+STEP 5 CHOOSE OPTIONAL REAR MEZZANINE VIC/BRIDGE ADAPTERS, page 22
 
-■ STEP 6 CHOOSE OPTIONAL FRONT MEZZANINE ADAPTER, page 24
+STEP 6 CHOOSE OPTIONAL FRONT MEZZANINE ADAPTER, page 24
 
-■ STEP 7 CHOOSE OPTIONAL GPU PCIe NODE, page 26
+STEP 7 CHOOSE OPTIONAL GPU PCIe NODE, page 26
 
-■ STEP 8 CHOOSE OPTIONAL GPUs, page 27
+STEP 8 CHOOSE OPTIONAL GPUs, page 27
 
-■ STEP 9 CHOOSE OPTIONAL DRIVES, page 28
+STEP 9 CHOOSE OPTIONAL DRIVES, page 28
 
-■ STEP 10 Order Boot-optimized M.2 Front Panel Module and Drives, page 31
+STEP 10 ORDER BOOT-OPTIMIZED M.2 FRONT PANEL MODULE AND DRIVES, page 31
 
-■ STEP 11 ORDER NVMe BOOT (OPTIONAL), page 32
+STEP 11 ORDER NVMe BOOT (OPTIONAL), page 32
 
-■ STEP 12 CHOOSE OPTIONAL TRUSTED PLATFORM MODULE, page 33
+STEP 12 CHOOSE OPTIONAL TRUSTED PLATFORM MODULE, page 33
 
-■ STEP 13 CHOOSE OPERATING SYSTEM AND VALUE-ADDED SOFTWARE, page 34
+STEP 13 CHOOSE OPERATING SYSTEM AND VALUE-ADDED SOFTWARE, page 34
 
-■ STEP 14 CHOOSE OPTIONAL OPERATING SYSTEM MEDIA KIT, page 37
+STEP 14 CHOOSE OPTIONAL OPERATING SYSTEM MEDIA KIT, page 37
 
-■  SUPPLEMENTAL MATERIAL, page 38
+ SUPPLEMENTAL MATERIAL, page 38
 
 Cisco UCS X215c M8 Compute Node
 
 9
 
+■
+■
+■
+■
+■
+■
+■
+■
+■
+■
+■
+■
+■
+■
+■
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
 STEP 1 CHOOSE BASE CISCO UCS X215c M8 COMPUTE NODE SKU
@@ -578,25 +605,30 @@ or options. They must be selected during product ordering.
 Please follow the steps on the following pages to order components such as the following, which 
 are required in a functional compute node:
 
-■ CPUs
+CPUs
 
-■ Memory
+Memory
 
-■ Cisco storage RAID or passthrough controller with drives
+Cisco storage RAID or passthrough controller with drives
 
-■ Drives
+Drives
 
-■ Cisco adapters
+Cisco adapters
 
 10
 
 Cisco UCS X215c M8 Compute Node
 
+■
+■
+■
+■
+■
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
 STEP 2 CHOOSE CPU(S)
 
-■ 5th Gen. AMD EPYC™ processors highlights are:
+5th Gen. AMD EPYC™ processors highlights are:
 
 — CPU-to-CPU communication using Infinity Fabric Interconnect
 
@@ -606,7 +638,7 @@ STEP 2 CHOOSE CPU(S)
 
 — Power: Up to 400Watts
 
-■ 4th Gen. AMD EPYC™ processors highlights are:
+4th Gen. AMD EPYC™ processors highlights are:
 
 — CPU-to-CPU communication using Infinity Fabric Interconnect
 
@@ -618,11 +650,11 @@ STEP 2 CHOOSE CPU(S)
 
 Select CPUs
 
-■ The available 5th Gen. AMD EPYC™ processors are listed in Table 4.
+The available 5th Gen. AMD EPYC™ processors are listed in Table 4.
 
-■ The available 4th Gen. AMD EPYC™ processors are listed in Table 5.
+The available 4th Gen. AMD EPYC™ processors are listed in Table 5.
 
-CAUTION:  For systems configured with processors operating above 28o C  
+CAUTION:  For systems configured with processors operating above 28o C 
 [82.4o F], a fan fault or executing workloads with extensive use of heavy 
 instructions sets may assert thermal and/or performance faults with an associated 
 event recorded in the System Event Log (SEL).
@@ -863,6 +895,10 @@ Cisco UCS X215c M8 Compute Node
 
 11
 
+■
+■
+■
+■
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
 Table 4   Available 5th Gen. AMD EPYC™ CPUs
@@ -1590,30 +1626,32 @@ Supported Configurations
 
 (1) Configurations with NVMe PCIe drives:
 
-■ Select one or two identical CPUs from Table 4 on page 11 or Table 5 on page 12
+Select one or two identical CPUs from Table 4 on page 11 or Table 5 on page 12
 
 (2) Configurations with GPUs:
 
-■ Select one or two identical CPUs from Table 4 on page 11 or Table 5 on page 12
+Select one or two identical CPUs from Table 4 on page 11 or Table 5 on page 12
 
 (3) One-CPU Configuration
 
-■ Choose one CPU from any one of the rows of Table 4 on page 11 or Table 5 on page 12
+Choose one CPU from any one of the rows of Table 4 on page 11 or Table 5 on page 12
 
 (4) Two-CPU Configuration
 
-■ Choose two identical CPUs from any one of the rows of Table 4 on page 11 or Table 5 on 
-
+Choose two identical CPUs from any one of the rows of Table 4 on page 11 or Table 5 on 
 page 12
 
 Cisco UCS X215c M8 Compute Node
 
 13
 
+■
+■
+■
+■
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
-■ When upgrading a single CPU server to two CPUs a rear heatsink is required in addition to 
-
+When upgrading a single CPU server to two CPUs a rear heatsink is required in addition to 
 the new CPU. See Table 6 on page 14 for heatsink PIDs.
 
 Table 6   CPU Accessories
@@ -1634,6 +1672,7 @@ Rear Heatsink for AMD X series servers
 
 Cisco UCS X215c M8 Compute Node
 
+■
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
 STEP 3 CHOOSE MEMORY
@@ -1686,7 +1725,7 @@ Up to 24 (2-Socket)
 
 Figure 4
 
-  12-Channel Memory Organization 
+  12-Channel Memory Organization
 
 Cisco UCS X215c M8 Compute Node
 
@@ -1708,8 +1747,7 @@ speed of the 4th Gen. AMD EPYC™ CPUs memory controller, up to 4800 MT/s.
 DDR5-6400 memory PIDs, although the memory will operate at the maximum 
 speed of the 5th Gen. AMD EPYC™ CPUs memory controller, up to 6000 MT/s.
 
-■ If UCSX-580P PCIe Node is selected, the server memory quantity must be at 
-
+If UCSX-580P PCIe Node is selected, the server memory quantity must be at 
 least three times the total GPU memory size.
 
 Table 8   Available DDR5 DIMMs for 4th Gen. AMD EPYC™ CPUs
@@ -1721,10 +1759,7 @@ PID Description
 Ranks/DIMM
 
 DDR5-5600 MT/s PIDs list1
-UCSX-MR128G4RE32
 UCSX-MR128G2RG3
-
-128GB DDR5-5600 RDIMM 4Rx4 (16Gb)
 
 128GB DDR5-5600 RDIMM 2Rx4 (32Gb)
 
@@ -1748,14 +1783,12 @@ UCSX-MRX16G1RE3
 
 16GB DDR5-5600 RDIMM 1Rx8 (16Gb)
 
-DIMM Blank3
+DIMM Blank2
 UCSX-DIMM-BLK
 
 Notes:
 
 UCS DIMM Blank
-
-4
 
 2
 
@@ -1773,13 +1806,13 @@ UCS DIMM Blank
 common denominator of CPU clock and DIMM clock. check the Table 5 column “Highest DDR5 DIMM Clock 
 Support”
 
-2. 128GB 4Rx4 (16Gb) is now End-Of-Life and is replaced by 128GB 2Rx4 (32Gb).
-3. Any empty DIMM slot must be populated with a DIMM blank to maintain proper cooling airflow. 
+2. Any empty DIMM slot must be populated with a DIMM blank to maintain proper cooling airflow. 
 
 16
 
 Cisco UCS X215c M8 Compute Node
 
+■
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
 Table 9   Available DDR5 DIMMs for 5th Gen. AMD EPYC™ CPUs
@@ -1882,16 +1915,13 @@ Compute Node
 
 mLOM
 
-■ VIC 15420 are supported with both X9108-IFM-25G and 
-
+VIC 15420 are supported with both X9108-IFM-25G and 
 X9108-IFM-100G.
 
-■ VIC 15420 will operate at 4x 25G with both 
-
+VIC 15420 will operate at 4x 25G with both 
 X9108-IFM-25G and X9108-IFM-100G.
 
-■ Cannot be selected with UCSX-ML-V5Q50G-D or 
-
+Cannot be selected with UCSX-ML-V5Q50G-D or 
 UCSX-ME-V5Q50G-D
 
 UCSX-ML-V5Q50G-D
@@ -1901,21 +1931,18 @@ Node
 
 mLOM
 
-■ VIC 15230 will operate at 4x 25G with X9108-IFM-25G 
-
+VIC 15230 will operate at 4x 25G with X9108-IFM-25G 
 and at 2x 100G with X9108-IFM-100G.
 
-■ Cannot be selected with UCSX-ML-V5D200G-D or 
-
+Cannot be selected with UCSX-ML-V5D200G-D or 
 UCSX-MLV5D200GV2D
 
 NOTE:  
 
-■ There is no backplane in the Cisco UCS X9508 chassis; thus, the compute nodes 
-
+There is no backplane in the Cisco UCS X9508 chassis; thus, the compute nodes 
 directly connect to the IFMs using Orthogonal Direct connectors.
 
-■ Figure 5 shows the location of the mLOM and rear mezzanine adapters on the 
+Figure 5 shows the location of the mLOM and rear mezzanine adapters on the 
 Cisco UCS X215c M8 Compute Node. The bridge adapter connects the mLOM 
 adapter to the rear mezzanine adapter.
 
@@ -1923,6 +1950,13 @@ adapter to the rear mezzanine adapter.
 
 Cisco UCS X215c M8 Compute Node
 
+■
+■
+■
+■
+■
+■
+■
 Figure 5  Location of mLOM and Rear Mezzanine Adapters
 
 CONFIGURING the Cisco UCS X215c M8 Compute Node
@@ -2380,14 +2414,12 @@ KR)
 
 Supported Configurations
 
-■ One of mLOM VIC from Table 10 is always required.
+One of mLOM VIC from Table 10 is always required.
 
-■ If a UCSX-ME-V5Q50G-D rear mezzanine VIC card is installed, a UCSX-V5-BRIDGE-D VIC 
-
+If a UCSX-ME-V5Q50G-D rear mezzanine VIC card is installed, a UCSX-V5-BRIDGE-D VIC 
 bridge card is included and connects the mLOM to the mezzanine adapter.
 
-■ All the connections to Cisco UCS X-Fabric 1 and Cisco UCS X-Fabric 2 are through the Molex 
-
+All the connections to Cisco UCS X-Fabric 1 and Cisco UCS X-Fabric 2 are through the Molex 
 Orthogonal Direct (OD) connector on the mezzanine card.
 
 Cisco UCS X215c M8 Compute Node
@@ -2395,6 +2427,9 @@ Cisco UCS X215c M8 Compute Node
 23
 
  
+■
+■
+■
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
 STEP 6 CHOOSE OPTIONAL FRONT MEZZANINE ADAPTER
@@ -2406,13 +2441,12 @@ Table 13.
 
 NOTE:  
 
-■ The Cisco UCS X215c M8 Compute Node can be ordered with or without the 
-
+The Cisco UCS X215c M8 Compute Node can be ordered with or without the 
 front mezzanine adapter. 
 
 ■ Only one Front Mezzanine connector or Front GPU can be selected per Server.
 
-■ RAID with NVMe drives is only supported with the NVMe U.2/U.3 drives as they 
+RAID with NVMe drives is only supported with the NVMe U.2/U.3 drives as they 
 connect to the RAID controller and RAID is not supported with the NVMe drives as 
 they directly interface with the server via the PCIe bus
 
@@ -2433,7 +2467,7 @@ to 6 NVMe drives
 Front 
 Mezzanine
 
-■ Supports up to 6 U.2/U.3 NVMe drives
+Supports up to 6 U.2/U.3 NVMe drives
 
 ■ Mixing of U.2 and U.3 NVMe drives are allowed
 
@@ -2446,11 +2480,10 @@ NVMe drives can be mixed)
 Front 
 Mezzanine
 
-■ If SAS/SATA drives are s selected, then this controller must 
-
+If SAS/SATA drives are s selected, then this controller must 
 also be selected.
 
-■ If UCSX-X10C-RAIDF-D is selected, it supports a maximum 
+If UCSX-X10C-RAIDF-D is selected, it supports a maximum 
 quantity of 6 SAS/SATA drives, or 4 NVMe U.2 drives, or 6 
 NVMe U.3 drives.
 
@@ -2460,9 +2493,9 @@ UCSX-RAID-M1L6
 
 24G Tri-Mode M1 RAID Controller w/4GB FBWC 6Drv
 
-■ Supports up to 6 U.3 NVMe drives
+Supports up to 6 U.3 NVMe drives
 
-■ RAID levels 0, 1, 5, 6, 10, and 50) for 6 SAS/SATA/U.3 NVMe 
+RAID levels 0, 1, 5, 6, 10, and 50) for 6 SAS/SATA/U.3 NVMe 
 drives or optionally up to 2 U.3 NVMe drives (drive slots 5-6) 
 in pass-through
 
@@ -2477,9 +2510,9 @@ E3.S (Front)
 Front 
 Mezzanine
 
-■ It supports a maximum of 8 E3.S drives
+It supports a maximum of 8 E3.S drives
 
-■ Cannot mix with 2.5in SATA/SAS/U.2/U.3 drives
+Cannot mix with 2.5in SATA/SAS/U.2/U.3 drives
 
 ■ Not supporting drive in drive slot 5
 
@@ -2487,6 +2520,15 @@ Mezzanine
 
 Cisco UCS X215c M8 Compute Node
 
+■
+■
+■
+■
+■
+■
+■
+■
+■
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
 Table 13  Available Front Mezzanine Adapters (continued)2
@@ -2495,17 +2537,15 @@ UCSX-X10C-GPUFM-D
 
 UCS X10c Compute Node GPU Front Mezz
 
-■ Supports configurations with either 1 or 2 CPUs.
+Supports configurations with either 1 or 2 CPUs.
 
-■ If selected, supports a maximum of 2 NVMe U.2/U.3 drives. 
-
+If selected, supports a maximum of 2 NVMe U.2/U.3 drives. 
 Mixing of U.2 and U.3 drives are allowed.
 
-■ If GPU PCIe Node is selected, this mezzanine is only 
-
+If GPU PCIe Node is selected, this mezzanine is only 
 compatible with the UCSX-GPU-L4-MEZZ GPU.
 
-■ Drive blanks are included, if no drives are selected.
+Drive blanks are included, if no drives are selected.
 
 Front 
 Mezzanine
@@ -2514,6 +2554,10 @@ Cisco UCS X215c M8 Compute Node
 
 25
 
+■
+■
+■
+■
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
 STEP 7 CHOOSE OPTIONAL GPU PCIe NODE
@@ -2536,12 +2580,13 @@ UCS X-Series Gen5 PCIe node
 
 NOTE:  
 
-■ If PCIe Node is selected, then rear mezzanine is required.
+If PCIe Node is selected, then rear mezzanine is required.
 
 26
 
 Cisco UCS X215c M8 Compute Node
 
+■
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
 STEP 8 CHOOSE OPTIONAL GPUs
@@ -2554,12 +2599,12 @@ NOTE:
 
 The available PCIe node GPU options are listed in:
 
-■ For the supported GPU card supported on the x580P PCIe Node is listed on the 
+For the supported GPU card supported on the x580P PCIe Node is listed on the 
 https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-com
 puting/ucs-x-series-modular-system/x580p-specsheet.pdf, Step 2, Order GPU 
 Cards
 
-■ For the supported GPU card supported on the x4400P PCIe Node is listed on the 
+For the supported GPU card supported on the x4400P PCIe Node is listed on the 
 https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-com
 puting/ucs-x-series-modular-system/x440p-specsheet.pdf, Step 3, Order GPU 
 Cards
@@ -2576,36 +2621,35 @@ Cisco UCS X215c M8 Compute Node
 
 27
 
+■
+■
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
 STEP 9 CHOOSE OPTIONAL DRIVES
 
 The standard storage drive features are:
 
-■ 2.5-inch small form factor drives or E3.S 1T NVMe drives
+2.5-inch small form factor drives or E3.S 1T NVMe drives
 
-■ Hot-pluggable
+Hot-pluggable
 
-■ Drives come mounted in sleds
+Drives come mounted in sleds
 
 Select Drives Table 16.
 
 NOTE:  
 
-■ The Cisco UCS X215c M8 Compute Node can be ordered with or without drives. 
+The Cisco UCS X215c M8 Compute Node can be ordered with or without drives. 
 
-■ Select one to six 2.5-inch small form factor SAS/SATA SSDs or PCIe U.2/U.3 
-
+Select one to six 2.5-inch small form factor SAS/SATA SSDs or PCIe U.2/U.3 
 NVMe drives
 
-■ Select one to eight E3.S 1T NVMe drives
+Select one to eight E3.S 1T NVMe drives
 
-■ If SAS/SATA/SED drives are selected, then UCSX-X10C-RAIDF-D must also be 
-
+If SAS/SATA/SED drives are selected, then UCSX-X10C-RAIDF-D must also be 
 selected.
 
-■ Drive slot 5 is not supported for E3.S drives on the compute node and must 
-
+Drive slot 5 is not supported for E3.S drives on the compute node and must 
 include a drive filler (UCSC-E3S1T-F)
 
 Table 16  Available Drive Options  
@@ -2718,6 +2762,14 @@ SATA
 
 Cisco UCS X215c M8 Compute Node
 
+■
+■
+■
+■
+■
+■
+■
+■
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
 Table 16  Available Drive Options (continued) 
@@ -2849,16 +2901,6 @@ U.3
 
 Endurance
 
-UCSX-NVMEG4M1600D 1.6TB 2.5in U.3 Micron 7450 NVMe High Perf High 
-
-NVMe
-
-U.3
-
-1.6TB
-
-Endurance
-
 UCSX-NVMEG4M6400D 6.4TB 2.5in U.3 Micron 7450 NVMe High Perf High 
 
 NVMe
@@ -2866,16 +2908,6 @@ NVMe
 U.3
 
 6.4TB
-
-Endurance
-
-UCSX-NVMEG4M7680D 7.6TB 2.5in U.3 Micron 7450 NVMe High Perf Medium 
-
-NVMe
-
-U.3
-
-7.6TB
 
 UCSX-NVB960M2V
 
@@ -2890,6 +2922,10 @@ UCSX-NVB3T8M2V9
 UCSX-NVB1T9M2V9
 
 UCSX-NVB7T6M2V9
+
+UCSX-NVB15T3M2V9
+
+UCSX-NVB12T8M2P
 
 Endurance
 960GB 2.5in U.3 15mm Micron 7500 Hg Perf Med End 1X 
@@ -2906,6 +2942,10 @@ NVMe FIPS
 NVMe FIPS
 7.6TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X 
 NVMe FIPS
+15.3TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X 
+NVMe FIPS
+12.8TB 2.5in U.3 15mm Micron 7500 Hg Perf Hg End 3X 
+NVMe
 
 NVMe
 
@@ -2949,6 +2989,18 @@ U.3
 
 7.6 TB
 
+NVMe
+
+U.3
+
+15.3 TB
+
+NVMe
+
+U.3
+
+12.8TB
+
 Cisco UCS X215c M8 Compute Node
 
 29
@@ -2961,13 +3013,13 @@ Product ID (PID)
 
 Description
 
-UCSX-NVB15T3M2V9
-
-UCSX-NVB12T8M2P
-
 UCSX-NVB7T6M2V
 
 UCSX-NVB15T3M2V
+
+UCSX-NVB1T6M2P
+
+UCSX-NVB61T4M3L
 
 E3.S
 UCSX-NVE112T8K1P
@@ -3000,31 +3052,19 @@ UCSX-NVE13T8S1V
 
 UCSX-NVE115T3S1V
 
-15.3TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X 
-NVMe FIPS
-12.8TB 2.5in U.3 15mm Micron 7500 Hg Perf Hg End 3X 
-NVMe
 7.6TB 2.5in U.3 15mm Micron 7500 Hg Perf Med End 1X 
 NVMe
 15.3TB 2.5in U.3 15mm Micron 7500 Hg Perf Med End 1X 
 NVMe
+1.6TB 2.5in U.3 15mm Micron 7500 Hg Perf Hg End 3X 
+NVMe
+61.4TB 2.5" U.2 15mm Micron 6550 HgPerf EcoEnd G4/5 
+<1X NVMe
 
 Drive 
 Type
 
 Speed  Size
-
-NVMe
-
-U.3
-
-15.3 TB
-
-NVMe
-
-U.3
-
-12.8TB
 
 NVMe
 
@@ -3037,6 +3077,18 @@ NVMe
 U.3
 
 15.3 TB
+
+NVMe
+
+U.3
+
+1.6 TB
+
+NVMe
+
+U.2
+
+61.4 TB
 
 12.8TB E3.S1T KCD8XPJE HgPerf HgEnd Gen5 3X NVMe (SIE 
 SCEF)
@@ -3170,32 +3222,29 @@ Cisco UCS X215c M8 Compute Node
 
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
-STEP 10 Order Boot-optimized M.2 Front Panel Module and Drives
+STEP 10 ORDER BOOT-OPTIMIZED M.2 FRONT PANEL MODULE AND 
+DRIVES
 
-■ Cisco 6GB/s SATA Boot-Optimized M.2 RAID Controller (included): Boot-Optimized RAID controller 
-
+Cisco 6GB/s SATA Boot-Optimized M.2 RAID Controller (included): Boot-Optimized RAID controller 
 (UCSX-M2-HWRD-FPS) for hardware RAID across two SATA M.2 storage modules. The Boot-Optimized RAID 
 controller plugs into the motherboard and the M.2 SATA drives plug into the Boot-Optimized RAID 
 controller.
 
 NOTE:  
 
-■ The UCSX-M2-HWRD-FPS is auto included with the server configuration
+The UCSX-M2-HWRD-FPS is auto included with the server configuration
 
-■ The UCSX-M2-HWRD-FPS controller supports RAID 1 and JBOD mode and is available 
-
+The UCSX-M2-HWRD-FPS controller supports RAID 1 and JBOD mode and is available 
 only with 240GB, 480GB, and 960GB M.2 SATA SSDs.
 
-■ Cisco IMM is supported for configuring of volumes and monitoring of the controller 
-
+Cisco IMM is supported for configuring of volumes and monitoring of the controller 
 and installed SATA M.2 drives
 
 ■ Hot-plug replacement is not supported. The compute node must be powered off to 
 
 replace. 
 
-■ The Boot-Optimized RAID controller supports VMware, Windows, and Linux Operating 
-
+The Boot-Optimized RAID controller supports VMware, Windows, and Linux Operating 
 Systems
 
 Table 17  Boot-Optimized RAID controller (auto included)
@@ -3208,22 +3257,19 @@ UCSX-M2-HWRD-FPS
 
 UCSX Front panel with M.2 RAID controller for SATA drives
 
-■ Select Cisco M.2 SATA SSDs: Order one or two matching M.2 SATA SSDs. This connector accepts the 
-
+Select Cisco M.2 SATA SSDs: Order one or two matching M.2 SATA SSDs. This connector accepts the 
 boot-optimized RAID controller (see Table 17). Each boot-optimized RAID controller can accommodate 
 up to two SATA M.2 SSDs shown in Table 18.
 
 NOTE:  
 
-■ Each boot-optimized RAID controller can accommodate up to two SATA M.2 SSDs 
-
+Each boot-optimized RAID controller can accommodate up to two SATA M.2 SSDs 
 shown in Table 18. The boot-optimized RAID controller plugs into the 
 motherboard.
 
-■ It is recommended that M.2 SATA SSDs be used as boot-only devices.
+It is recommended that M.2 SATA SSDs be used as boot-only devices.
 
-■ The SATA M.2 drives can boot in UEFI mode only. Legacy boot mode is not 
-
+The SATA M.2 drives can boot in UEFI mode only. Legacy boot mode is not 
 supported.
 
 Table 18  M.2 SATA SSDs
@@ -3252,6 +3298,15 @@ Cisco UCS X215c M8 Compute Node
 
 31
 
+■
+■
+■
+■
+■
+■
+■
+■
+■
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
 STEP 11 ORDER NVMe BOOT
@@ -3318,12 +3373,10 @@ TPM 2.0 voids the Microsoft certification.
 
 NOTE:  
 
-■ The TPM module used in this system conforms to TPM v2.0 as defined by the 
-
+The TPM module used in this system conforms to TPM v2.0 as defined by the 
 Trusted Computing Group (TCG). 
 
-■ TPM installation is supported after-factory. However, a TPM installs with a 
-
+TPM installation is supported after-factory. However, a TPM installs with a 
 one-way screw and cannot be replaced, upgraded, or moved to another compute 
 node. If a Cisco UCS X215c M8 Compute Node with a TPM is returned, the 
 replacement Cisco UCS X215c M8 Compute Node must be ordered with a new 
@@ -3338,16 +3391,17 @@ Cisco UCS X215c M8 Compute Node
 
 33
 
+■
+■
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
 STEP 13 CHOOSE OPERATING SYSTEM AND VALUE-ADDED SOFTWARE
 
-■ Operating System (Table 22)
+Operating System (Table 22)
 
 NOTE:  
 
-■ See this link for operating system guidance: 
-
+See this link for operating system guidance: 
 https://ucshcltool.cloudapps.cisco.com/public/
 
 Table 22  Operating System 
@@ -3446,6 +3500,8 @@ RHEL Resilent Storage (1-2 CPU); Premium 3-yr SnS Reqd
 
 Cisco UCS X215c M8 Compute Node
 
+■
+■
 CONFIGURING the Cisco UCS X215c M8 Compute Node
 
 Table 22  Operating System (continued)
@@ -4326,12 +4382,12 @@ SPARE PARTS
 This section lists the upgrade and service-related parts for the Cisco UCS X215c M8 Compute Node. Some of 
 these parts are configured with every server.
 
-■ Spare parts for the Cisco UCS X215c M8 Compute Node use the same Product IDs (PIDs) as the regular 
+Spare parts for the Cisco UCS X215c M8 Compute Node use the same Product IDs (PIDs) as the regular 
 components, with the addition of an equals sign (=) at the end of the PID. For example, if the 
 regular PID for a component is UCS-CPU-I6760P, its corresponding spare PID would be 
 UCS-CPU-I6760P=
 
-■ Therefore, to find the full list of available spare parts and their descriptions, refer to the relevant 
+Therefore, to find the full list of available spare parts and their descriptions, refer to the relevant 
 sections for each component (e.g., Risers, CPUs, Memory, Drive Controllers, Drives, PCIe Cards, 
 Power Supplies, etc.) and append an = to the listed PIDs.
 
@@ -4372,18 +4428,20 @@ UCS C-Series E3.S 1T Drive Filler
 
 Cisco UCS X215c M8 Compute Node
 
+■
+■
 UPGRADING or REPLACING CPUs and Memory
 
 UPGRADING or REPLACING CPUs and Memory
 
-■ Refer to Cisco UCS X215c M8 Server Installation and Service Guide for upgrading or replacing the CPUs 
-
+Refer to Cisco UCS X215c M8 Server Installation and Service Guide for upgrading or replacing the CPUs 
 and Memory Devices.
 
 Cisco UCS X215c M8 Compute Node
 
 43
 
+■
 TECHNICAL SPECIFICATIONS
 
 TECHNICAL SPECIFICATIONS
@@ -4412,7 +4470,7 @@ Weight
 
 ■ Minimally configured node weight = 12.84 lbs. (5.83 kg)
 
-■ Fully configured compute node weight = 25.1 lbs. (11.39 kg)
+Fully configured compute node weight = 25.1 lbs. (11.39 kg)
 
 Environmental Specifications
 
@@ -4457,6 +4515,7 @@ NOTE:  The ambient temperature must be less than 35 oC (95 oF).
 
 Cisco UCS X215c M8 Compute Node
 
+■
 DISCONTINUED EOL PRODUCTS
 
 DISCONTINUED EOL PRODUCTS
@@ -4517,6 +4576,26 @@ UCSX-MR256G8RE3
 256GB DDR5-5600 RDIMM 8Rx4 
 (16Gb)
 
+UCS-MR256G8RE3
+
+256GB DDR5-5600 RDIMM 8Rx4 
+(16Gb)
+
+UCS-MR128G4RE3
+
+128GB DDR5-5600 RDIMM 4Rx4 
+(16Gb)
+
+UCSX-NVMEG4M1600D
+
+1.6TB 2.5in U.3 15mm P7450 Hg 
+Perf Hg End NVMe (3X)
+
+UCSX-NVMEG4M7680D
+
+7.6TB 2.5in U.3 15mm P7450 Hg 
+Perf Med End NVMe
+
 https://www.cisco.com/c/en/us/products/collater
 al/servers-unified-computing/ucs-c-series-rack-ser
 vers/select-ucs-ucsx-hci-accessories-eol15818.html
@@ -4544,6 +4623,18 @@ vers/select-ucs-accessories-eol15502.html
 https://www.cisco.com/c/en/us/products/collater
 al/servers-unified-computing/ucs-c-series-rack-ser
 vers/ucs-accessories_eol.html
+https://www.cisco.com/c/en/us/products/collater
+al/servers-unified-computing/ucs-c-series-rack-ser
+vers/ucs-accessories_eol.html
+https://www.cisco.com/c/en/us/products/collater
+al/servers-unified-computing/ucs-c-series-rack-ser
+vers/select-ucs-accessories-eol15570.html
+https://www.cisco.com/c/en/us/products/collater
+al/servers-unified-computing/ucs-c-series-rack-ser
+vers/select-ucs-ucsx-hci-accessories-eol15818.html
+https://www.cisco.com/c/en/us/products/collater
+al/servers-unified-computing/ucs-c-series-rack-ser
+vers/select-ucs-accessories-eol15875.html
 
 Cisco UCS X215c M8 Compute Node
 
@@ -4552,6 +4643,18 @@ Cisco UCS X215c M8 Compute Node
 DISCONTINUED EOL PRODUCTS
 
 46
+
+Cisco UCS X215c M8 Compute Node
+
+DISCONTINUED EOL PRODUCTS
+
+Cisco UCS X215c M8 Compute Node
+
+47
+
+DISCONTINUED EOL PRODUCTS
+
+48
 
 Cisco UCS X215c M8 Compute Node
 

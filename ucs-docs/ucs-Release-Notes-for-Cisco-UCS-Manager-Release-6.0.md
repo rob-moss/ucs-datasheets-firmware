@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco UCS Manager, Release 6.0 |
 | **Source file** | `ucs-docs-raw/html/b_release-notes-ucsm-6_0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-05-27 10:54:32 |
+| **Fetched on** | 2026-06-24 11:18:34 |
 
 ---
 
@@ -1266,6 +1266,7 @@ There are no new know limitations in release 6.0(1c).
 Defect ID |  Symptom |  Workaround |  First Bundle Affected  
 ---|---|---|---  
 CSCwq41000 |  Broadcom AERO RAID controller (UCSX-X10C-RAIDF) for Cisco UCS X210c server and Cisco 12G Modular Raid controller with 4GB Cache (UCSC-RAID-M6T) do not transition drives from Unconfigured Good (UG) to Online state when Auto Configuration Mode (ACM) is set to RAID0 after storage profile redeploy and server reboot. As a result, RAID0 LUNs are not created.  This issue affects drive state transitions and RAID0 LUN creation on Cisco Tri-Mode 24G SAS RAID Controller w/4GB Cache (UCSC-RAID-HP). |  There is no known workaround. |  6.0(1b)  
+CSCwm70985 |  During or immediately after a firmware upgrade/downgrade on NVIDIA L40s GPUs, no read/write operations should be performed on the card. However, PNUOS performs read operations using the nvidia-smi utility to check the GPU mode immediately after the upgrade. This issue occurs when upgrading/downgrading firmware on NVIDIA L40 GPUs, causing PNUOS to crash and raise a major fault.  As a result, Cisco UCS Manager does not support mode switch for NVIDIA L40 GPUs from release 4.3(5a) onwards.  |  You can perform mode changes using NVIDIA tools on the host OS if required.  This limitation does not affect other L-series GPUs, which continue to support mode changes. |  4.3(5a)  
   
 ### Compatibility
 
@@ -1521,9 +1522,9 @@ ONTAP 9.15 onwards |  Cisco UCS X-Direct |  15000 |  ESXi 8.0 U3+, ESXi 9.0+, RH
 Pure Storage, Inc.® |  NVMe-FC |  FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6652 FI Cisco UCS 6664 FI |  15000, 14000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+, SLES 15SP5+  
 FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6400 series, Cisco UCS 6536 FI |  1400/14000, 15000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+, SLES 15SP5+  
 FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS X-Direct |  15000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+, SLES 15SP5+  
-NVMe-ROCEv2 |  FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6652 FI |  15000, 14000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+  
-FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6664 FI |  15000, 14000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+  
-FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6400 series, Cisco UCS 6536 FI |  1400/14000, 15000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+  
+NVMe-ROCEv2 |  FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6652 FI |  15000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+  
+FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6664 FI |  15000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+  
+FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6400 series, Cisco UCS 6536 FI |  15000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+  
 FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS X-Direct |  15000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+  
 NVMe-TCP |  FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6652 FI |  15000, 14000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+, SLES 15SP5+  
 FlashArray//C, FlashArray//X, FlashArray//XL |  Cisco UCS 6664 FI |  15000, 14000 |  ESXi 8.0 U3+, ESXi 9.0+, RHEL 9.6+, RHEL 10+, SLES 15SP5+  

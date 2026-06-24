@@ -1,7 +1,9 @@
 # UCS Manager configuration guides for GUI and CLI all versions
 ### Cisco UCS Manager - Configuration Guides - Cisco
 > Note: The links below are going to be fetched, parsed, and converted to Markdown for later indexing and searching purposes.
-> https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html
+
+
+- [Cisco UCS Manager PowerTool User Guide, Release 3.x - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/msft_tools/powertools/ucs_powertool_book/3x/b_cisco_ucsm_powertool_ug_release_3x.html)
 
 
 
@@ -35,7 +37,8 @@
 
 
 
-# Intersight Managed Mode guides
+-# Intersight Managed Mode guides
+- [Intersight Policies - Resources](https://intersight.com/help/saas/resources/policies)
 - [Release Notes for Cisco Intersight Unified Edge eCMC Firmware Release, 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html)
 - [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0.html)
 - [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/imm_infra_fw_rn_4_3/b_imm_infra_fw_rn_lb.html)
@@ -52,6 +55,7 @@
 ### Intersight SaaS guides
 - [Intersight SaaS Upgrading Firmware guide](https://intersight.com/help/saas/resources/upgrading_server_firmware_using_firmware_policy)
 - [Intersight SaaS guide](https://intersight.com/help/saas)
+- [Intersight SaaS Supported Features Matrix - CVA and PVA](https://intersight.com/help/saas/getting_started/supported_features_matrix)
 - [Intersight SaaS Servers guide](https://intersight.com/help/saas/operate/servers)
 - [Intersight SaaS Configure Servers guide](https://intersight.com/help/saas/configure/servers)
 - [Intersight SaaS Configure Chassis guide](https://intersight.com/help/saas/configure/chassis)
@@ -103,10 +107,12 @@
 - [Intersight Appliance CVA Whats New](https://intersight.com/help/appliance/whats_new/connected_appliance/)
 - [Intersight Appliance PVA Whats New](https://intersight.com/help/appliance/whats_new/private_appliance/)
 - [Intersight Appliance Supported Systems](https://intersight.com/help/appliance/supported_systems)
+- [Cisco Intersight Appliance Getting Started Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide.html)
 
 
 ### X-Series Direct guides
 - [Cisco UCS X-Series Direct Fabric Interconnect 9108 100G Installation and Service Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/x-series-direct/hw/s9108/install/ucs-x-series-direct-9108-100g/m-overview.html)
+- [Cisco UCS X-Series Direct 9108 100G Installation and Service Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/x-series-direct/hw/s9108/install/ucs-x-series-direct-9108-100g.html)
  - [IFMS Installation Instructions - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/x/hw/x9508/install/b-ucs-x9508-install/m_ifms-installation-instructions.html)
 
 
@@ -210,6 +216,9 @@
 - [Cisco UCS VIC 1380](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/ucs-virtual-interface-card-1380/datasheet-c78-732516.html)
 - [Cisco UCS VIC 1400 Series](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/datasheet-c78-741130.html)
 - [Cisco UCS VIC 15000 Series](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.html)
+
+## Transceiver Modules
+- [Cisco UCS Transceiver Modules Datasheet](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html)
 
 ## AI Pods
 - [AI PODs for Inferencing Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ai-infrast-pods-inferencing-ds.html)

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Server BIOS Tokens in Intersight Managed Mode - Introduction to Intersight Managed Mode Server Bios Tokens [Cisco Intersight] |
 | **Source file** | `ucs-docs-raw/html/b_UCS_BIOS_Tokens_Guide_chapter_01.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-05-27 10:53:21 |
+| **Fetched on** | 2026-06-24 11:17:20 |
 
 ---
 
@@ -129,7 +129,12 @@ This document includes BIOS token information starting from 4.3(3a) and continue
 * * *  
   
 ---|---  
-Table 1. **New/Changed BIOS Tokens for 6.0(2.260040)** BIOS Token |  Platform |  New/Changed  
+Table 1. **New/Changed BIOS Tokens for 6.0(x)** BIOS Token |  Platform |  New/Changed  
+---|---|---  
+Reset After Sync-Flood |  C845A |  New  
+Delay Reset After Sync-Flood |  C845A |  New  
+DF Cstates |  C845A |  Changed  
+Table 2. **New/Changed BIOS Tokens for 6.0(2.260040)** BIOS Token |  Platform |  New/Changed  
 ---|---|---  
 Speculative Lock |  C220 M8, C240 M8, X210c M8, X410c M8, XE1X0M8 |  New  
 CPU Frequency Control |  C245 M8, C225 M8, X215c M8 |  New  
@@ -251,11 +256,11 @@ Network Stack |  X410c M8 |  New
 IPV4 PXE Support |  X410c M8 |  New  
 IPV6 PXE Support |  X410c M8 |  New  
 xGMI Link Configuration |  C245M6, C225M6 |  Updated  
-Table 2. **New/Changed BIOS Tokens for 6.0(1.250229)** BIOS Token |  Platform |  New/Changed  
+Table 3. **New/Changed BIOS Tokens for 6.0(1.250229)** BIOS Token |  Platform |  New/Changed  
 ---|---|---  
 GPU Direct CPU1 |  X210c M8 |  New  
 GPU Direct CPU2 |  X210c M8 |  New  
-Table 3. **New/Changed BIOS Tokens for 6.0(1a.0)** BIOS Token |  Platform |  New/Changed  
+Table 4. **New/Changed BIOS Tokens for 6.0(1a.0)** BIOS Token |  Platform |  New/Changed  
 ---|---|---  
 Uncore Frequency Scaling |  XE1X0M8 |  New  
 Uncore Frequency Scaling IO |  XE1X0M8 |  New  
@@ -381,16 +386,16 @@ Re-Size BAR Support |  XE1X0M8 |  New
 PreBoot DMA Protection |  XE1X0M8 |  New  
 CPU Performance |  XE1X0M8 |  New  
 Security Device Support |  XE1X0M8 |  New  
-Table 4. **New/Changed BIOS Tokens for 6.0(1b)/6.0(1.250120)** BIOS Token |  Platform |  New/Changed  
+Table 5. **New/Changed BIOS Tokens for 6.0(1b)/6.0(1.250120)** BIOS Token |  Platform |  New/Changed  
 ---|---|---  
 IIO eDPC Support |  X210c M8, X210c M7, X410c M7 |  New  
 CDN Support for LOM |  C220 M8, C240 M8, X210c M8, X210c M7, X410c M7 |  Changed |  **Note** |  Support for the bios discontinued.   
 ---|---  
-Table 5. **New/Changed BIOS Tokens for 4.3(6c)** BIOS Token |  Platform |  New/Changed  
+Table 6. **New/Changed BIOS Tokens for 4.3(6c)** BIOS Token |  Platform |  New/Changed  
 ---|---|---  
 IIO eDPC Support |  C225 M8, C245 M8, X215c M8 |  New  
 Sub NUMA Clustering |  C220 M8, C240 M8, X210c M8 |  Changed  
-Table 6. **New/Changed BIOS Tokens for 4.3(6a)** BIOS Token |  Platform |  New/Changed  
+Table 7. **New/Changed BIOS Tokens for 4.3(6a)** BIOS Token |  Platform |  New/Changed  
 ---|---|---  
 Latency Optimized Mode |  C220 M8, C240 M8, X210c M8 |  New  
 PreBoot DMA Protection |  C220 M8, C240 M8, X210c M8 |  New  
@@ -520,14 +525,14 @@ SGX Factory Reset |  C220 M8, C240 M8, X210c M8 |  New
 SGX Package Information In-Band Access |  C220 M8, C240 M8, X210c M8 |  New  
 Security Device Support |  C220 M8, C240 M8, X210c M8 |  New  
 LIMIT CPU PA to 46 Bits |  C220 M8, C240 M8, X210c M8 |  New  
-Table 7. **New/Changed BIOS Tokens for 4.3(5c)** BIOS Token |  Platform |  New/Changed  
+Table 8. **New/Changed BIOS Tokens for 4.3(5c)** BIOS Token |  Platform |  New/Changed  
 ---|---|---  
 UEFI Memory Map Special Purpose Memory Flag |  C220 M7, C240 M7, X210c M7, X410c M7 | New  
 ACPI SRAT Special Purpose Memory Flag | C220 M7, C240 M7, X210c M7, X410c M7 | New  
 CCD Control | C245 M8, C225 M8, X215c M8 | Changed  
 Power Profile Selection F19h | C245 M8, C225 M8, X215c M8 | Changed  
 CPU Downcore control F19 M10h-1Fh | C245 M8, C225 M8, X215c M8 | Changed  
-Table 8. **New/Changed BIOS Tokens for 4.3(5a)** BIOS Token |  Platform |  New/Changed  
+Table 9. **New/Changed BIOS Tokens for 4.3(5a)** BIOS Token |  Platform |  New/Changed  
 ---|---|---  
 PCIe Slot:MLOM Link Speed | C225 M8 | New  
 PCIe Slot:MLOM OptionROM | C225 M8 | New  
@@ -609,7 +614,7 @@ Enhanced Memory Test | C225 M8, C245 M8, X215c M8 | New
 Enhanced CPU Performance | C225 M8, C245 M8, X215c M8 | New  
 Burst and Postponed Refresh | C225 M8, C245 M8, X215c M8 | New  
 Global C State Control | C225 M8, C245 M8, X215c M8 | Changed  
-Table 9. **New/Changed BIOS Tokens for 4.3(4b)** BIOS Token |  Platform |  New/Changed  
+Table 10. **New/Changed BIOS Tokens for 4.3(4b)** BIOS Token |  Platform |  New/Changed  
 ---|---|---  
 DF PState Frequency Optimizer  |  C245 M8 | New  
 AVX512 |  C245 M8 | New  
@@ -689,7 +694,7 @@ Dram Scrub Time |  C245 M8 |  Changed
 CCD Control |  C245 M8 |  Changed  
 SEV-SNP Support |  C245 M8 |  Changed  
 Memory Refresh Rate  |  C245 M8 |  Changed  
-Table 10. **New/Changed/Deprecated BIOS Tokens for 4.3(4a)** BIOS Token |  Platform |  New/Changed  
+Table 11. **New/Changed/Deprecated BIOS Tokens for 4.3(4a)** BIOS Token |  Platform |  New/Changed  
 ---|---|---  
 DFX OSB |  X410c M7, X210c M7 |  New  
 SHA384 PCR Bank* |  C225 M6, C245 M6, C220 M6, C240 M6, x210 M6, B200 M6 |  New  
@@ -738,12 +743,12 @@ For Local APIC Mode Bios token, Compatability values are not supported for AMD E
 * * *  
   
 ---|---  
-Table 11. **New/Changed BIOS Tokens for 4.3(3c)** BIOS Token |  Platform |  New/Changed  
+Table 12. **New/Changed BIOS Tokens for 4.3(3c)** BIOS Token |  Platform |  New/Changed  
 ---|---|---  
 MMIO High Granularity Size |  X410c M7, X210c M7, C220 M7, C240 M7 |  New  
 MMIO High Base |  X410c M7, X210c M7, C220 M7, C240 M7 |  New  
 IOAT Configuration |  X410c M7, X210c M7, C220 M7, C240 M7 |  New  
-Table 12. **New/Changed BIOS Tokens for 4.3(3a)** BIOS Token |  Platform |  New/Changed  
+Table 13. **New/Changed BIOS Tokens for 4.3(3a)** BIOS Token |  Platform |  New/Changed  
 ---|---|---  
 Trust Domain Extension (TDX) |  X410c M7, X210c M7, C220 M7, C240 M7 |  New  
 TDX Secure Arbitration Mode (SEAM) Loader |  X410c M7, X210c M7, C220 M7, C240 M7 |  New  
@@ -2379,7 +2384,9 @@ Volatile Memory Mode |  Allows the memory mode configuration. |  4.0(2) and late
 |   
 Error Check Scrub |  Allows you to enable a memory device to perform memory checking, correction and count errors. |  4.0(2) and later |  C220 M7, C240 M7, X210c M7, X410c M7, C220 M8, C240 M8, X210c M8, X410c M8, XE1X0M8 |  Disabled, Enabled with result collection, Enabled without result collection  |   
 Rank Margin Tool |  Allows automated memory margin testing and is used to identify DDR margins at the rank level. |  4.0(2) and later |  C220 M7, C240 M7, X210c M7, X410c M7, C220 M8, C240 M8, X210c M8, X410c M8, XE1X0M8 |  Enabled, Disabled |   
-Adaptive Refresh Management Level |  Selects Adaptive Refresh Management (ARFM) Level when refresh management (RFM) is required. |  4.0(2) and later |  C220 M7, C240 M7, X210c M7, X410c M7, C220 M8, C240 M8, X210c M8, X410c M8,XE1X0M8  | **Default** , Level A, Level B, Level C  | 
+Adaptive Refresh Management Level |  Selects Adaptive Refresh Management (ARFM) Level when refresh management (RFM) is required. |  4.0(2) and later |  C220 M7, C240 M7, X210c M7, X410c M7, C220 M8, C240 M8, X210c M8, X410c M8,XE1X0M8  | **Default** , Level A, Level B, Level C  |   
+Reset After Sync-Flood |  Enable AB to forward downstream sync-flood message to system controller. |  6.0(2x) |  C845A M8 |  **Enable** , Disable, Auto  |   
+Delay Reset After Sync-Flood |  This control delay time for system reset when a Sync Flood is detected. The delayed minutes range from 5 to 255 minutes 0 ~ 4.  |  6.0(2x) |  C845A M8 |  Values are 0 to 255. Default is 5. | 
 
 ---
 
@@ -2577,24 +2584,16 @@ APBDIS |  Allows you to select the Algorithm Performance Boost (APB) Disable val
 DFX OSB |  Controls the Opportunistic Snoop Broadcast (OSB) feature. OSB is used by CHA to broadcast snoops under lightly loaded ring or Intel UPI link condition. It is used to reduce the latency due to the directory lookup.  | 4.3(4a) and later |  X410c M7, X210c M7, X210c M8, X410c M8, XE1X0M8  |  Auto, **Enabled** , Disabled  |   
 Downcore control F19 MA0h-AFh |  Provides the ability to remove one or more cores from operation is supported in the silicon. It may be desirable to reduce the number of cores due to operating system restrictions, or power reduction requirements of the system. This item allows the control on the number of cores that are running. This setting can only reduce the number of cores from only those available in the processor.  |  **Note** |  This is applicable only for AMD processors of family 19h and for models A0h-AFh. where, F refers to the processor family and M denotes the model   
 ---|---  
-4.0(2) and later |  C225 M8, C245 M8, X215c M8 |  **Auto** , TWO (1 + 1), TWO (2 + 0), THREE (3 + 0), FOUR (2 + 2), FOUR (4 + 0)",  "SIX (3 + 3)" ONE (1 + 0), TWO (2 + 0), THREE (3 + 0), FOUR (4 + 0), FIVE (5 + 0), SIX (6 + 0), SEVEN (7 + 0), EIGHT (8 + 0), NINE (9 + 0), TEN (10 + 0), ELEVEN (11 + 0), TWELVE (12 + 0), THIRTEEN (13 + 0), FOURTEEN (14 + 0), FIFTEEN (15 + 0) 
+4.0(2) and later |  C225 M8, C245 M8, X215c M8 |  **Auto** , TWO (1 + 1), FOUR (2 + 2), SIX (3 + 3), EIGHT (4 + 4), TEN (5 + 5), TWELVE (6 + 6), FOURTEEN (7 + 7) 
 
   * Auto—The CPU determines how many cores must be enabled. This is the default option. 
-  * ONE (1 + 0)—One core enabled on one CPU complex. 
-  * TWO (2 + 0)—Two cores enabled on one CPU complex. 
-  * **THREE (3 + 0)** —Three cores enabled on one CPU complex. 
-  * **FOUR (4 + 0)** —Four cores enabled on one CPU complex. 
-  * FIVE (5 + 0)—Five cores enabled on one CPU complex. 
-  * **SIX (6 + 0)** —Six cores enabled on one CPU complex. 
-  * SEVEN (7 + 0)—Seven cores enabled on one CPU complex. 
-  * EIGHT (8 + 0)—Eight cores enabled on one CPU complex. 
-  * NINE (9 + 0)—Nine cores enabled on one CPU complex. 
-  * TEN (10 + 0)—Ten cores enabled on one CPU complex. 
-  * ELEVEN (11 + 0)—Eleven cores enabled on one CPU complex. 
-  * TWELVE (12 + 0)—Twelve cores enabled on one CPU complex. 
-  * THIRTEEN (13 + 0)—Thirteen cores enabled on one CPU complex. 
-  * FOURTEEN (14 + 0)—Fourteen cores enabled on one CPU complex. 
-  * FIFTEEN (15 + 0)—Fifteen cores enabled on one CPU complex. 
+  * TWO (1 + 1)—Two core enabled on one CPU complex.
+  * FOUR (2 + 2)—Four core enabled on one CPU complex. 
+  * SIX (3 + 3)—Six core enabled on one CPU complex. 
+  * EIGHT (4 + 4)—Eight core enabled on one CPU complex. 
+  * TEN (5 + 5)—Ten core enabled on one CPU complex. 
+  * TWELVE (6 + 6)—Twelve core enabled on one CPU complex. 
+  * FOURTEEN (7 + 7)—Fourteen core enabled on one CPU complex. 
 
 |  This token is applicable only for the servers with 7xx2 and 7xx3 Model processors.  
 Downcore control  |  Provides the ability to remove one or more cores from operation is supported in the silicon. It may be desirable to reduce the number of cores due to operating system restrictions, or power reduction requirements of the system. This item allows the control on the number of cores that are running. This setting can only reduce the number of cores from only those available in the processor.  |  4.0(2) and later |  C125 M5, C225 M6, C245 M6 |  **Auto** , TWO (1 + 1), TWO (2 + 0), THREE (3 + 0), FOUR (2 + 2), FOUR (4 + 0), SIX (3 + 3) 
@@ -2620,11 +2619,11 @@ Fixed SOC P-State |  This option defines the target P-state when APBDIS (to disa
   * **P0 to P3** —Highest-performing SOC P-state to lowest-performing SOC P-state. 
 
 |   
-DF C-States |  When long duration idleness is expected in a system, this control allows the system to transition into a DF C-state which can set the system into an even lower power state.  |  4.0(2) and later |  C225 M6, C245 M6, C245 M8, C225 M8, X215c M8 |  **Auto** , Disabled, Enabled  |   
-CCD Control |  Allows you to specify the number of charge-coupled device CCDs that are desired to be enable in the system. |  4.0(2) and later |  C225 M6, C245 M6,C245 M8, C225 M8, X215c M8 |  **Auto** , 2 CCDs, 3 CCDs, 4 CCDs, 6 CCDs, 8 CCDs, 10 CCDs  |  **Note** | 
+DF C-States |  When long duration idleness is expected in a system, this control allows the system to transition into a DF C-state which can set the system into an even lower power state.  |  4.0(2) and later |  C225 M6, C245 M6, C245 M8, C225 M8, X215c M8 |  Auto, **Disabled** , Enabled  |   
+CCD Control |  Allows you to specify the number of charge-coupled device CCDs that are desired to be enable in the system. |  4.0(2) and later |  C225 M6, C245 M6,C245 M8, C225 M8, X215c M8 |  **Auto** , 2 CCDs, 3 CCDs, 4 CCDs, 6 CCDs, 8 CCDs, 10 CCDs, 12 CCDs, and 14 CCDs  |  **Note** | 
 
   * 2 CCDs, 3 CCDs, 4 CCDs, 6 CCDs options are available only for M6 servers.
-  * 2 CCDs, 4 CCDs, 6 CCDs, 8 CCDs, and 10 CCDs options are available only for M8 servers.
+  * 2 CCDs, 4 CCDs, 6 CCDs, 8 CCDs, 10 CCDs, 12 CCDs, and 14 CCDs options are available only for M8 servers.
 
   
 ---|---  

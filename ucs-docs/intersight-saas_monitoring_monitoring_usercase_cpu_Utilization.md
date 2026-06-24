@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Monitoring User Case CPU Utilization |
 | **URL** | https://intersight.com/help/saas/monitoring/monitoring_usercase_cpu_Utilization |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260514103921360/docs/cloud/data/resources/monitoring/en/Tutorial-C0-CPU-Utilization.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260616155027767/docs/cloud/data/resources/monitoring/en/Tutorial-C0-CPU-Utilization.html |
 | **HTML Title** | Tutorial: Active CPU Utilization Metrics for Monitoring Server Performance |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_monitoring_usercase_cpu_Utilization.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-05-27 10:53:51 |
+| **Fetched on** | 2026-06-24 11:17:49 |
 
 ---
 

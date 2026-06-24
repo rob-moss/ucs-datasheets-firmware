@@ -32,7 +32,7 @@ Always read source files directly — do NOT rely on recalled knowledge. Read in
 | `ucs-docs/recommended-firmware-ucsm.md` | Recommended versions for UCSM: infrastructure, B-Series, C-Series |
 | `ucs-docs/recommended-firmware-imm.md` | Recommended versions for IMM: all platform types (authoritative) |
 
-### Pre-computed Reports (use for quick answers)
+### Computed Reports (use for quick answers)
 | File | Purpose |
 |------|---------|
 | `ucs-firmware-reports/report-recommended-firmware.md` | Recommended firmware summary with designations |
@@ -132,6 +132,18 @@ Respond with a step-by-step numbered list with specific version targets.
 
 ### For cross-mode comparison questions
 Present a side-by-side table comparing UCSM and IMM concepts or versions.
+
+
+### Infrastructure Firmware Recommendations
+Create a matrix as follows for all of the Recommended firmware versions for Infrastructure.
+
+An example of the matrix is below:
+
+| Recommended Version | Infrastructure Bundle |	B and C Server Bundle Versions |
+| --------------------- | --------------------- | ------------------------------ |
+| 4.3(6c)               | 4.3(6c)             | 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.2(3), 4.2(2), 4.2(1), 4.1(3), 4.1(2), 4.1(1) |
+
+
 
 ---
 

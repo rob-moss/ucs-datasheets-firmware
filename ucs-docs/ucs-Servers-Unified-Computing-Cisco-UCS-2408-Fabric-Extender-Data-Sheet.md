@@ -8,7 +8,7 @@
 | **HTML Title** | Servers - Unified Computing - Cisco UCS 2408 Fabric Extender Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-742624.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-05-27 11:00:53 |
+| **Fetched on** | 2026-06-24 11:23:32 |
 
 ---
 
@@ -1285,7 +1285,324 @@ For more information about Cisco UCS, visit <https://www.cisco.com/en/US/product
 
 ---
 
-## Page 4: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.html
+## Page 4: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-manager/whitepaper_c11-697337.html
+
+  * Skip to main content
+  * Skip to search
+  * Skip to footer
+
+
+![A display showing Cisco Nexus Dashboard on a monitor screen, the Nexus 9504 chassis switch, and a stack with the Nexus 9332-GX2B switch and the Nexus 3550-T switch.](/content/dam/cisco-cdc/site/images/heroes/products/networking/datacentercloud-marquee-3200x1312.jpg)
+
+# Cisco Data Center Networking
+
+##  Achieve simple, secure, AI-ready, and modern networks 
+
+Stay in control with industry-leading network management, automation, real-time visibility, segmentation, sustainability, and simplified operations.
+
+[Start your AI journey](https://experiences.cisco.com/amer/ai-readiness-for-data-centers?searchparam=AI-ready) [Read blog](https://blogs.cisco.com/datacenter/end-to-end-ai-networking-ciscos-answer-to-the-inferencing-era)
+
+Overview [Resources](/site/us/en/products/networking/cloud-networking/resources.html)
+
+## Comprehensive connections
+
+* * *
+
+![Data center transformation illustration](/content/dam/cisco-cdc/site/images/illustrations/networking/data%20center%20transformation%20ws.svg)
+
+#### Unlock the full potential of your data center—now. 
+
+[Access the eBook ](https://www.cisco.com/site/us/en/products/networking/networking-cloud/data-center/three-reasons-to-modernize-data-center-ebook.html)
+
+Keep your data, workloads, and applications connected and secure for exceptional efficiency across your global data-center networks. 
+
+###  Unify experiences across all data-center networks 
+
+Choose the best operational experience for the job, every time, with secure on-premises and cloud-managed data center networking. Configure with ease, operate with confidence, and analyze for predictability with one fabric experience.
+
+###  Review, react, relax 
+
+Make it easier than ever to assess the situation, deliver a solution, and get to what's next with increased visibility, intelligent automation, and rapid troubleshooting.
+
+###  Work sustainably 
+
+Embrace smart-energy data-center networking with visibility into actual usage of power and your carbon footprint, and enjoy the benefits of being at the forefront of the net-zero journey. 
+
+###  AI blueprint for networking 
+
+Boost cost efficiencies and performance with design best-practices and automation templates for AI data-center networking. 
+
+![Data center switches](/content/dam/cisco-cdc/site/us/en/images/networking/Data-Center-Switching-Nexus_Product-Rendering_758x217_rev.png)
+
+##  Data center switches designed for hybrid harmony 
+
+###  Fixed switching 
+
+###  Cisco N3000 Series Switches 
+
+Purpose-built low-latency switches to support business-critical applications and performance
+
+[Explore N3000 Series ](https://www.cisco.com/c/en/us/products/switches/nexus-3000-series-switches/index.html)
+
+###  Cisco N9200 Series Switches 
+
+Compact 100M/1G Base-T switch running Cisco NX-OS
+
+[Explore N9200 Series](/site/us/en/products/networking/cloud-networking-switches/nexus-9200-series-switches/index.html)
+
+###  Cisco N9300 Series Switches 
+
+Whether spine-and-leaf or top-of-rack is your style, these fixed switches support ports from 1G to 800G to 1.6T. They enable modern and AI-ready infrastructure for data-centers of any size
+
+[Explore N9300 Series](https://www.cisco.com/site/us/en/products/networking/cloud-networking-switches/nexus-9300-series-switches/index.html)
+
+###  Cisco 6000 Series Switches 
+
+Cloud-managed switches that are easy to deploy and manage for Cisco Nexus Hyperfabric.
+
+[Explore 6000 Series](https://www.cisco.com/site/us/en/products/networking/cloud-networking-switches/6000-series-switches/index.html)
+
+[Explore the N9000 Series family ](https://www.cisco.com/site/us/en/products/networking/cloud-networking-switches/nexus-9000-switches/index.html) [Explore Cisco Nexus One](https://www.cisco.com/site/us/en/products/networking/cloud-networking/nexus-one/index.html)
+
+###  Modular switching 
+
+###  Cisco N9400 Series switches 
+
+These switches pack high performance and density plus improved telemetry into a compact, modular design. 
+
+[Explore N9400 Series ](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus9400-series-switches-ds.html?ccid=cc002960&oid=dstdnc029385)
+
+###  Cisco N9500 Series Switches 
+
+Enterprise or high growth? Modular configurations can support you with ports from 1G to 400G. 
+
+[Explore N9500 Series ](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html)
+
+###  Cisco N9800 Series switches 
+
+Get high-density switching that's designed for 800G adoption and beyond. 
+
+[Explore N9800 Series ](/site/us/en/products/networking/cloud-networking-switches/nexus-9800-series-switches/index.html)
+
+[Explore the N9000 Series family ](https://www.cisco.com/site/us/en/products/networking/cloud-networking-switches/nexus-9000-switches/index.html)
+
+###  High density and transport
+
+###  Cisco N9000 400G and 800G family 
+
+Bandwidth like you’ve never known. Adopt 400G with scalability to 800G with confidence in a family of 1-, 2-, and 4-RU switches. 
+
+[Explore 400G and 800G](https://www.cisco.com/c/en/us/solutions/data-center/high-capacity-400g-data-center-networking/index.html)
+
+###  CIsco Optics 
+
+Fiber-optic transceiver modules to accelerate your network connections.
+
+[Explore optics ](/site/us/en/products/networking/optics-transceiver-modules/index.html)
+
+###  Ultra-low latency
+
+###  Cisco N3500 Series portfolio 
+
+Design efficient, low-latency networks with programmable platforms, switches, and smart adapters.
+
+[Explore N3550 Series ](/site/us/en/products/networking/cloud-networking-switches/nexus-3550-portfolio/index.html)
+
+###  Cisco N3550-T Series 
+
+FPGA-based programmable network platform for critical, ultra-low latency network applications.
+
+[Explore N3550-T Series](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3550-series/datasheet-c78-744762.html?ccid=cc001479&oid=dstdnc025196)
+
+###  Cisco Nexus SmartNICs 
+
+FPGA-based network interface cards (NICs). Ideal for ultra-low latency, high-resolution timestamping.
+
+[Explore Nexus SmartNICs](https://www.cisco.com/c/en/us/products/interfaces-modules/nexus-smartnic/index.html)
+
+###  Cisco N3500 Series Switches 
+
+Low-latency, 1RU switches supporting 1G to 40G. Ideal for high-frequency trading (HFT) and big-data environments. 
+
+[Explore N3500 Series](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3548-switch/data_sheet_c78-707001.html)
+
+###  Storage area networking 
+
+###  Cisco MDS 9700 Series 
+
+A SAN director with scale, performance, integrated analytics, and superior port density.
+
+[Explore MDS 9700 Series ](/site/us/en/products/networking/cloud-networking-switches/storage-area-networking/mds-9700-series-multilayer-directors/index.html)
+
+###  Cisco MDS 9300 Series 
+
+Next-generation high-density fabric switches with integrated analytics and telemetry.
+
+[Explore MDS 9300 Series ](/site/us/en/products/networking/cloud-networking-switches/storage-area-networking/mds-9300-series-multilayer-fabric-switches/index.html)
+
+###  Cisco MDS 9200 Series 
+
+High-performance SAN extension, disaster recovery, intelligent fabrics, and multiprotocol connectivity.
+
+[Explore MDS 9200 Series ](/site/us/en/products/networking/cloud-networking-switches/storage-area-networking/mds-9200-series-multiservice-switches/index.html)
+
+###  Cisco MDS 9100 Series 
+
+Flexible and agile, highly available and secure, and easy to use, with visibility to every flow.
+
+[Explore MDS 9100 Series ](https://www.cisco.com/c/en/us/products/storage-networking/mds-9100-series-multilayer-fabric-switches/index.html)
+
+###  Cisco SAN Analytics 
+
+Visibility and data-driven guidance, for faster troubleshooting and optimized infrastructure.
+
+[Explore Cisco SAN Analytics ](https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9700-series-multilayer-directors/solution-overview-c22-740197.html)
+
+[See all SAN solutions ](https://www.cisco.com/site/us/en/products/networking/cloud-networking-switches/storage-area-networking/index.html)
+
+###  Management platforms and controllers
+
+###  Cisco Nexus One 
+
+One architecture across silicon, systems, and software to scale AI factories and modernize enterprise workloads on a unified operating model—without fragmenting operations.
+
+[Explore Cisco Nexus One](https://www.cisco.com/site/us/en/products/networking/cloud-networking/nexus-one/index.html)
+
+###  Cisco Application Centric Infrastructure (ACI) 
+
+Simplifies data center network management, boosts security with centralized application-centric approach with automation and policy-based control driving agile IT.
+
+[Explore ACI](/site/us/en/products/networking/cloud-networking/application-centric-infrastructure/index.html)
+
+###  Cisco NX-OS 
+
+Make your network agile, easily scalable, and secure with simplified network operations and integrated automation.
+
+[Explore the platform](/site/us/en/products/networking/cloud-networking/nx-os/index.html)
+
+###  Cisco Nexus Dashboard 
+
+Configure, operate, and analyze, all from one place. Private cloud-managed across your data-center networks.
+
+[Explore Cisco Nexus Dashboard ](https://www.cisco.com/site/us/en/products/networking/cloud-networking/nexus-platform/index.html)
+
+###  Cisco Nexus Hyperfabric 
+
+New plug-and-play, cloud-managed operations and validation of the full lifecycle of data-center networks.
+
+[Explore Cisco Nexus Hyperfabric](https://www.cisco.com/site/us/en/products/networking/data-center-networking/nexus-hyperfabric/index.html)
+
+###  Data center security
+
+###  Cisco N9300 Series Smart Switches 
+
+Cisco data-center smart switches with Cisco Hypershield fuses networking with security.
+
+[Explore N9300 Series Smart switches](/site/us/en/products/networking/cloud-networking-switches/9300-series-smart-switches/index.html)
+
+###  Cisco Live Protect 
+
+Mitigate common vulnerability and exposure (CVE) threats in real time and help ensure uninterrupted data-center security and operational stability with Cisco Live Protect. 
+
+[Explore Cisco Live Protect ](https://www.cisco.com/site/us/en/products/networking/cloud-networking/nexus-platform/live-protect/index.html)
+
+![Woman working on laptop](/content/dam/cisco-cdc/site/us/en/images/networking/domaindatacentercloud-carousel-370.jpg)
+
+##  Build the infrastructure that scales with you 
+
+Access validated architectures, deployment guides, and technical resources. Whether you're integrating compute, networking, storage, or security—find the blueprints and expertise to modernize on your terms. 
+
+[Explore modernization paths](https://www.cisco.com/site/us/en/solutions/data-center/index.html)
+
+### Better together, built to perform 
+
+###  SD-WAN 
+
+Smoothly manage your multicloud network with the exceptional pairing of Cisco ACI and SD-WAN.
+
+[Explore SD-WAN](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/kb/Cisco-ACI-and-SDWAN-Integration.html#id_94875)
+
+###  Deftly handle AI workloads 
+
+Deliver AI networking everywhere—at the edge, in the data center, in the cloud, across enterprises, Neoclouds, sovereign clouds, telcos, and hyperscalers. 
+
+[Get started](https://www.cisco.com/site/us/en/solutions/artificial-intelligence/ai-networking-in-data-center/index.html)
+
+###  Network-as-Code 
+
+Manage your data-center network as code to automate provisioning, ensure version control, and scale network operations with absolute reliability.
+
+[Explore Network-as-Code](https://netascode.cisco.com/)
+
+Previous
+
+Next
+
+![nexus-one-spotlight-graphic](/content/dam/cisco-cdc/site/images/heroes/solutions/networking/artificial-intelligence/Nexus-one-spotlight.png)
+
+##  Advancing Cisco Nexus One with Intelligence 
+
+Cisco Nexus One delivers a unified operating model with advanced intelligence, observability, security, breakthrough silicon, and systems for seamless and secure data-center and AI-workload deployment. 
+
+[Explore Nexus One](https://www.cisco.com/site/us/en/products/networking/cloud-networking/nexus-one/index.html) [View solution overview](https://www.cisco.com/c/en/us/products/collateral/networking/ios-nx-os-software/nx-os/fabric-experience-so.html)
+
+* * *
+
+![Gartner logo](/content/dam/cisco-cdc/site/images/testing/meraki/gartner.svg)
+
+###  Cisco named a Leader in Gartner® 2025 Magic Quadrant™ for Data Center Switching 
+
+See why we believe our industry-leading performance, simplicity, and scalability helped us earn this recognition.
+
+[Download Gartner report](https://www.cisco.com/c/en/us/solutions/data-center/networking-promotions-free-trials/gartner-magic-quadrant-data-center-switching.html?linkclickid=secondary)
+
+## We've got your back
+
+Cisco Services
+
+###  With you at every step 
+
+Guide your data-center networking transformation journey with embedded services and expertise.
+
+[Access Cisco Services](/site/us/en/services/index.html)
+
+Cisco Hybrid Cloud
+
+###  An exceptional consumption model 
+
+Ensure your energy expenditure remains balanced with flexible consumption for your hybrid cloud infrastructure.
+
+[Access Cisco Hybrid Cloud](https://www.cisco.com/c/en/us/products/plus-as-a-service/hybrid-cloud.html)
+
+Cisco Ecosystem
+
+###  Joint solutions for increased productivity 
+
+Discover the extensible open APIs for today's modern data-center applications.
+
+[Explore our ecosystem](https://www.cisco.com/c/en/us/solutions/data-center/data-center-partners/index.html)
+
+![Employee sitting at her desk and working on two large monitors](/content/dam/cisco-cdc/site/images/photography/lifestyle-photography/firewall-zero-trust-webinar-888x500.png)
+
+##  The AI blueprint: network security, zero-trust, and the SOC 
+
+Security solutions that protect against identity threats, enable AI adoption, reshape firewalls, and evolve analytics.
+
+[Watch the session ](https://webinars.cisco.com/amer/AI_Changes_Everything_A_New_Blueprint_for_Network_Security_Zero_Trust_and_the_SOC?linkclickid=secondary)
+
+##  Discover the business benefits of a more sustainable network 
+
+Go beyond compliance and learn how a more energy-efficient data center can also help you optimize operations, gain visibility, and reduce costs.
+
+[Check out the webinar](https://engage.cisco.com/amer-sustainable-data-center.html?linkclickid=secondary) [Read IDC survey](https://www.cisco.com/c/en/us/solutions/data-center/networking-promotions-free-trials/idc-ai-networking-insights-report.html?linkclickid=secondary)
+
+__
+
+Hello, how can I help?
+
+---
+
+## Page 5: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.html
 
   * Skip to content
   * Skip to search

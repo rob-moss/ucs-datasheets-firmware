@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight Appliance Servers guide |
 | **URL** | https://intersight.com/help/appliance/operate/servers |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260514103921360/docs/onprem/data/articles/features/servers/operate/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260616155027767/docs/onprem/data/articles/features/servers/operate/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_operate_servers.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-05-27 10:54:05 |
+| **Fetched on** | 2026-06-24 11:18:03 |
 
 ---
 

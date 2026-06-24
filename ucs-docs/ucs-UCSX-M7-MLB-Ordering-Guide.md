@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco |
 | **Source file** | `ucs-docs-raw/pdf/mlb-ordering-guide.pdf` |
 | **File type** | HTML (fallback from .pdf URL) |
-| **Fetched on** | 2026-05-27 10:55:18 |
+| **Fetched on** | 2026-06-24 11:19:42 |
 
 ---
 

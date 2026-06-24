@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/x410cm8-specsheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-04-16 10:51:58 |
+| **Fetched on** | 2026-06-24 11:20:54 |
 
 ---
 
@@ -32,9 +32,9 @@ WWW.CISCO.COM
 
 PUBLICATION HISTORY 
 
-REV A.03
+REV A.04
 
-APRIL 14, 2026
+APRIL 30, 2026
 
  
 OVERVIEW  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
@@ -154,8 +154,8 @@ COMPUTE NODE STANDARD CAPABILITIES and FEATURES
 
 Table 1 lists the capabilities and features of the base Cisco UCS X410c M8 Compute Node. Details about how 
 to configure the compute node for a listed feature or capability (for example, number of processors, disk 
-drives, or amount of memory) are provided in CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE on 
-page 7
+drives, or amount of memory) are provided in CONFIGURING THE CISCO UCS X410C M8 COMPUTE NODE 
+on page 7
 
 Table 1   Capabilities and Features 
 
@@ -211,7 +211,7 @@ boot technology.
 
 ■ Cisco UCS VIC 15230 occupies the server's modular LAN on motherboard 
 (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to 
-each of the chassis’ Intelligent Fabric Modules (IFMs) for 100 Gbps 
+each of the chassis’ Intelligent Fabric Modules (IFMs) for 200 Gbps 
 connectivity per server with secure boot technology.
 
 Front Mezzanine 
@@ -658,11 +658,11 @@ UCSX-MR128G2RG5
 
 128GB RDIMM 2Rx4 1.1Volts (32Gb)
 
-UCSX-MR256G4RG51
+UCSX-MR256G4RG5
 
 256GB DDR5-6400 RDIMM 4Rx4 (32Gb)
 
-Memory Mirroring Option2
+Memory Mirroring Option1
 
 N01-MMIRRORD
 
@@ -670,7 +670,7 @@ Memory mirroring option
 
 Accessories/spare included with Memory configuration:
 
-■ UCS-DDR5-BLK3 is auto included for the unpopulated DIMMs slots
+■ UCS-DDR5-BLK2 is auto included for the unpopulated DIMMs slots
 
 Ranks/DIMM
 
@@ -684,12 +684,11 @@ Ranks/DIMM
 
 Notes:
 
-1. Available post-GA.
-2. If N01-MMIRROR is selected and Processor quantity is 4, then the total memory DIMMs must be 16, 32, or 64 
+1. If N01-MMIRROR is selected and Processor quantity is 4, then the total memory DIMMs must be 16, 32, or 64 
 
 identical DIMMs per CPU.
 
-3. Any empty DIMM slot must be populated with a DIMM blank to maintain proper cooling airflow.
+2. Any empty DIMM slot must be populated with a DIMM blank to maintain proper cooling airflow.
 
 Memory configurations and mixing rules
 
@@ -1425,6 +1424,7 @@ UCSX-NVB7T6M2V
 UCSX-NVB1T9M2V9
 UCSX-NVB3T8M2V9
 UCSX-NVB7T6M2V9
+UCSX-NVB15T3M2V93
 Accessories/spare included with drives: Drive blanks, either UCSC-BBLKD-M7 for 2.5" modules or 
 UCSC-E3S1T-F for the E3.S mezzanine are included for unpopulated drive slots on configured systems.  
 They must be ordered separately when ordering a front mezzanine as a spare.
@@ -1442,6 +1442,7 @@ NVMe U.3
 1.9TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X NVMe FIPS NVMe U.3
 3.8TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X NVMe FIPS NVMe U.3
 7.6TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X NVMe FIPS NVMe U.3
+15.3TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X NVMe FIPS NVMe U.3
 
 6.4TB
 12.8TB
@@ -1454,11 +1455,14 @@ NVMe U.3
 1.9TB
 3.8TB
 7.6TB
+15.3 TB
 
 Notes:
 
 1. For SSD drives to be in a RAID group, two or more identical SSDs must be used in the group.
 2. If SSDs are in JBOD Mode, the drives do not need to be identical.
+3. Ordering UCSX-NVB15T3M2V9 as an option with UCSX-410C-M8/UCSX-410C-M8-U is under hold until September 2026, 
+leading to longer lead times. As an alternative, this drive can be ordered using the spare PID UCSX-NVB15T3M2V9=
 
 Approved Configuration
 

@@ -8,7 +8,7 @@
 | **HTML Title** | UCS C885A M8 Rack Server Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-c885a-m8-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:52:28 |
+| **Fetched on** | 2026-06-24 11:21:42 |
 
 ---
 
@@ -238,7 +238,7 @@ Product environmental information |  Product environmental information |  Februa
   
 ### Our experts recommend
 
-  * [Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html "Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper")
+  * [AI Performance: MLPerf Inference on Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL, L40S and RTX PRO 6000 GPUs](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.html "AI Performance: MLPerf Inference on Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL, L40S and RTX PRO 6000 GPUs")
   * [Cisco UCS C845A M8 Rack Server At a Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html "Cisco UCS C845A M8 Rack Server At a Glance")
   * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
@@ -250,22 +250,20 @@ Product environmental information |  Product environmental information |  Februa
 
 ---
 
-## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html
+## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.html
 
   * Skip to content
   * Skip to search
   * Skip to footer
 
 
-# Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper
-
-[Back to Home](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs_white_paper.html?flt0_general-table0=AI%2FML&flt1_general-table0=C-Series%20Rack)
+# AI Performance: MLPerf Inference on Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL, L40S and RTX PRO 6000 GPUs
 
 White Paper
 
 Save
 
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html) to Save Content 
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.html) to Save Content 
 
 Download
 
@@ -276,11 +274,11 @@ Print
 
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.pdf) (2.5 MB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.pdf) (5.0 MB)   
 View with Adobe Reader on a variety of devices
 
 
-Updated:April 8, 2026
+Updated:May 15, 2026
 
 Bias-Free Language
 
@@ -315,7 +313,7 @@ US/CAN | 5am-5pm PT
 
 Save
 
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html) to Save Content 
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.html) to Save Content 
 
 Download
 
@@ -326,552 +324,490 @@ Print
 
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.pdf) (2.5 MB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.pdf) (5.0 MB)   
 View with Adobe Reader on a variety of devices
 
 
-Updated:April 8, 2026
+Updated:May 15, 2026
 
 #### Table of Contents
 
-  * Powering the AI factory with data intelligence
-  * Fueling the AI factory: moving beyond experimental AI
-  * Ideal audience
-  * The problem: the hidden crisis of “I/O wait”
-  * The advocated solution: a software-defined AI data cloud
-  * Evidence of success: validated performance
-  * Conclusion: Making your AI infrastructure future-ready
-  * Learn more
-  * Appendix A: The blueprint for success (configuration guide)
-  * Phase 1: Cisco network optimization
-  * Phase 2: Cisco Intersight management and Cisco UCS policy
-  * Phase 3: Host OS optimization (Ubuntu 24.04.3 LTS)
-  * Phase 4: DDN Infinia software deployment
+  * Executive summary
+  * Scope of this document
+  * Product overview
+  * MLPerf overview
+  * MLPerf has multiple benchmarks, including:
+  * MLPerf Training
+  * MLPerf Inference: Datacenter
+  * Test configuration
+  * MLPerf Inference performance results
+  * Performance data for NVIDIA H200 NVL PCIe GPU
+  * Performance data for NVIDIA L40S PCIe GPU
+  * Performance data for NVIDIA RTX PRO 6000 PCIe GPU
+  * Performance summary
+  * Appendix: Test environment
+  * For more information
 
 
 ` `
 
-Powering the AI factory with data intelligence
+Executive summary
 
-As enterprises evolve toward “AI factories,” infrastructure leaders face a persistent source of uncertainty: whether storage and data access can keep pace with the extreme concurrency and metadata intensity of modern AI pipelines. This white paper explores the architectural shift required to support retrieval-augmented generation (RAG), LLM inference, and agentic AI. We examine why traditional public cloud and legacy NAS approaches often fail under the weight of extreme concurrency and metadata intensity. 
+With Generative AI (GenAI) poised to significantly boost global economic output, Cisco is helping to simplify the challenges of preparing organizations’ infrastructure for AI implementation. The exponential growth of AI is transforming data-center requirements, driving demand for scalable, accelerated computing infrastructure. 
 
-This paper provides a validated technical blueprint, including step-by-step configuration guidelines for Cisco Nexus® networking, Cisco Intersight® management, and Ubuntu Server optimization. By following this approach, you can eliminate storage-induced latency and maximize your GPU utilization by using Cisco UCS® M8 servers and DDN Infinia.
+The Cisco UCS® C845A M8 Rack Server is a highly scalable, flexible, and customizable AI system based on the NVIDIA MGX reference design for accelerated computing. With support for Two (2) to Eight (8) NVIDIA or AMD PCIe GPUs and NVIDIA AI Enterprise software, it delivers high performance for a wide range of AI workloads – including generative AI fine-tuning, Retrieval-Augmented Generation (RAG), and inference. 
 
-Fueling the AI factory: moving beyond experimental AI
+The Cisco UCS C845A M8 Rack Server is designed to address the most demanding AI workloads. Now an integral component of Cisco AI PODs (Cisco Validated Designs for AI), the Cisco UCS C845A M8 provides a robust foundation for modern AI infrastructure, allowing organizations to easily scale their AI capabilities with confidence. 
 
-The era of "AI as a project" is over. Today, you are likely tasked with building an "AI factory — a continuous pipeline where data is ingested, processed, and served in real time. In this environment, your infrastructure's success is measured by how quickly you can turn raw data into actionable insights.
+With support for 2, 4, 6, or 8 NVIDIA GPUs—including the NVIDIA RTX PRO 6000 Blackwell, NVIDIA H200 NVL, and NVIDIA L40S, and also support for AMD Instinct MI210 accelerators, this system offers unparalleled flexibility to meet the diverse needs of enterprises. Leveraging the sophistication of the MGX modular reference design, this platform is also future-ready, with next-generation NVIDIA GPUs expected to seamlessly integrate as they become available. 
 
-However, many organizations are finding that their expensive GPU clusters are sitting idle. This "I/O wait" is not just a technical metric; it is a business cost. If your data layer cannot deliver predictable, low-latency access at scale, your AI initiatives will stall. This document helps you navigate the decision-making process between traditional storage architectures and modern, software-defined approaches optimized for the high-concurrency world of generative AI.
+To help demonstrate the AI performance capacity of the new Cisco UCS C845A M8 Rack Server, MLPerf Benchmarking performance testing for Inference 5.1 was conducted by Cisco, using both NVIDIA H200 NVL and L40S PCIe GPUs, as detailed later in this document. 
 
-By reading this analysis, you will be able to:
+Accelerated compute 
 
-● Identify the hidden bottlenecks in your current RAG and LLM pipelines
+A typical AI journey starts with training GenAI models with large amounts of data to build the model intelligence. For this important stage, the new Cisco UCS C845A M8 Rack Server is a powerhouse designed to tackle the most demanding AI-training tasks. With its high-density configuration of NVIDIA H200 NVL and L40S Tensor Core GPUs, coupled with the efficiency of NVIDIA MGX architecture, the UCS C845A M8 provides the raw computational power necessary for handling massive data sets and complex algorithms. Moreover, its simplified deployment and streamlined management make it easier than ever for enterprise customers to embrace AI.
 
-● Evaluate the pros and cons of public cloud versus on-premises AI data clouds
-
-● Understand how a "wire-once" architecture with Cisco UCS and DDN Infinia provides linear scaling
-
-● Determine if your current networking fabric is prepared for the demands of RoCEv2 and 200G line rates
-
-Ideal audience
-
-This paper is designed for:
-
-● Infrastructure architects designing the next generation of data centers
-
-● AI/ML engineering leads frustrated by GPU underutilization
-
-● Data center operations managers tasked with building scalable, high-performance environments for generative AI and large-scale analytics
-
-The problem: the hidden crisis of “I/O wait”
-
-You have invested in the latest GPUs, yet your training and inference times are not hitting their targets. Why? The answer lies in the unique access patterns of modern AI. Unlike traditional enterprise applications, AI workloads demand:
-
-● Extreme metadata intensity: When your model needs to “list” or “stat” millions of small objects (common in RAG), traditional NAS systems often choke, leading to massive latency.
-
-● Massive concurrency: Thousands of parallel requests hitting the storage layer simultaneously can saturate standard networking protocols.
-
-● Throughput caps: Even if your storage is fast, if your fabric isn’t “lossless”, packet drops will cause retransmissions that kill your performance.
-
-**The limitations of traditional approaches**
-
-To solve these issues, you might consider two common paths, but both have significant drawbacks:
-
-● Public cloud object storage: While convenient, the "time to first byte" (TTFB) is often unpredictable. In high-performance AI, cloud latency can be up to 25x slower than a localized, optimized solution.
-
-● Legacy NAS/SAN: These were built for a different era. As you add more nodes, these systems often hit a "performance ceiling" where adding hardware no longer results in faster data delivery.
-
-The advocated solution: a software-defined AI data cloud
-
-Cisco advocates for a modern, software-defined storage (SDS) approach that decouples your data intelligence from the underlying hardware. By combining Cisco UCS M8 rack servers with DDN Infinia, you create a high-performance foundation that behaves like the cloud but performs like a local NVMe drive.
-
-**1\. The compute foundation: Cisco UCS C225 M8 Rack Server**
-
-To handle the intensive erasure coding and metadata indexing required by AI, you need more than just storage; you need massive processing power. The Cisco UCS C225 M8 Rack Server is a high-density, single-socket rack server that delivers industry-leading performance and efficiency for your AI workloads.
-
-● **Unprecedented processing power:** By utilizing 5th Gen AMD EPYC processors with up to 192 cores, these servers ensure that your storage software never starves for CPU cycles.
-
-● **Next-gen I/O and memory:** With the introduction of PCIe Gen 5 for high-speed I/O and a DDR5 memory bus, data moves between the CPU and the network without internal contention.
-
-● **Storage density:** Each storage node contains 10x 15.3 TB NVMe U.3 high-performance drives, providing a massive, low-latency pool of ~840 TB raw capacity in a single global namespace.
-
-● **High-speed connectivity:** Each node in your storage cluster features dual-port NVIDIA ConnectX-7 network adapters. These support speeds up to 200 Gb/s and provide the ultra-low latency and extreme throughput needed for AI model training and inference.
-
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.docx/_jcr_content/renditions/scaling-ai-workloads-ddn-infinia-wp_0.jpg)
+![A close-up of a computer serverAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_0.jpg)
 
 Figure 1. 
 
-Cisco UCS C225 M8 Rack Server
+Cisco UCS C845A M8 Rack Server front and back views 
 
-Unified management: Cisco Intersight
+Scalable network fabric for AI connectivity 
 
-Managing a high-performance AI cluster should not require a dozen different tools. Cisco Intersight is a lifecycle management platform that unifies your experience across the entire Cisco Unified Computing System™.
+Network Fabric: Cisco Nexus 9000 Series Switches and Nexus Dashboard
 
-● **One consolidated dashboard:** Whether your infrastructure resides in the enterprise data center, at the edge, or in a remote site, Intersight gives you a single view of your real-time status and interdependencies.
+In distributed inference, training and fine-tuning, the network fabric plays a crucial role in providing high-bandwidth, low-latency communication to interconnect dense GPU servers like the UCS C885A and C845A. The Cisco Nexus 9000 series is designed to meet these demanding requirements, serving as the high-performance foundation for both the leaf and spine layers of the backend and frontend fabrics in the architecture.
 
-● **Intersight Management Mode (IMM):** Your Cisco UCS servers are managed in standalone mode, providing centralized, cloud-powered management and strict policy enforcement.
+The AI POD architecture leverages the following key platforms:
 
-● **Automation at scale:** You can manage your entire system as a single logical entity through an intuitive GUI or automate complex deployments and configurations using a robust API. This allows you to deploy a secure, multitenant AI data cloud in minutes rather than weeks.
+● Cisco Nexus 9332D-GX2B: A 1RU, 32-port 400GbE switch based on Cisco Cloud Scale technology, ideally suited for leaf role. 
 
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.docx/_jcr_content/renditions/scaling-ai-workloads-ddn-infinia-wp_1.png)
+● Cisco Nexus 9364D-GX2A: A 2RU, 64-port 400GbE switch based on Cisco Cloud Scale technology, ideally suited for larger leaf or spine roles. 
+
+● Cisco Nexus 9364E-SG2 is a 2RU, 64-port 800GbE (or 128 x 400GbE ports) switch based on Cisco Silicon One technology. Designed for next-generation fabrics, it is available in QSFP-DD and OSFP form factors with dual-port transceivers for 400GbE connectivity, making it suitable for both leaf and spine roles.
+
+All these Nexus switches provide the port density, switching capacity, and advanced features necessary for AI/ML workloads, including support for RDMA over Converged Ethernet (RoCE), hardware-accelerated telemetry, and advanced load-balancing mechanisms.
+
+For more information, refer following design guide: “[Cisco AI POD architecture design guide for AI workloads, including inference, training and fine-tuning](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/cisco_ai_pod_for_training_design.html)”
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_1.png)
 
 Figure 2. 
 
-Cisco Intersight: IT operations, simplified
+Cisco Nexus 9364E-SG2 Switch for AI connectivity 
 
-**2\. The networking fabric: Cisco Nexus 9300 Series Switches**
+<https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9000-series-switches-ai-clusters-wp.html>.
 
-Your storage is only as fast as the network connecting it. To eliminate packet loss, you need a lossless Ethernet fabric.
+**Purchasing simplicity**
 
-● **400G line rates:** The Cisco Nexus 9332D-GX2B switch provides the high-bandwidth backbone your AI factory requires.
+Once these powerful models are trained, you need infrastructure deployed for inferencing to provide actual value, often across a distributed landscape of data centers and edge locations. We have greatly simplified this process with new Cisco AI PODs that accelerate deployment of the entire AI infrastructure stack itself. AI PODs are designed to offer a plug-and-play experience with NVIDIA-accelerated computing. The pre-sized and pre-validated bundles of infrastructure eliminate the guesswork from deploying edge-inferencing, large-scale clusters, and other AI inferencing solutions. 
 
-● **RoCEv2 (RDMA over Converged Ethernet):** By using RDMA, tuned with priority flow control (PDC) and explicit congestion notification (ECN), you allow your storage traffic to bypass the OS kernel, drastically reducing CPU overhead and latency.
+Our goal is to enable customers to confidently deploy AI PODs with predictability around performance, scalability, cost, and outcomes, while shortening time to production-ready inferencing with a full stack of infrastructure, software, and AI toolsets. AI PODs include NVIDIA AI Enterprise, an end-to-end, cloud-native software platform that accelerates data-science pipelines and streamlines AI development and deployment. Managed through Cisco Intersight®, AI PODs provide centralized control and automation, simplifying everything from configuration to day-to-day operations, with more use cases to come.
 
-● **Intelligent breakouts:** You can configure 400G ports into 2x200G lanes, providing dedicated, high-speed paths for every server node in your cluster.
+AI-cluster network design 
 
-The next-generation fixed Cisco Nexus 9300-GX Series switches can support 400 Gigabit Ethernet (GE). The platform addresses the need for high-performance, power-efficient, and compact switches in the network infrastructure required by artificial intelligence (AI) and machine learning (ML) applications.
+An AI cluster typically has multiple networks—an inter-GPU backend network, a frontend network, a storage network, and an Out-Of-Band (OOB) management network. 
 
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.docx/_jcr_content/renditions/scaling-ai-workloads-ddn-infinia-wp_2.jpg)
+Figure 3 shows an overview of these networks. Users (in the corporate network in the figure) and applications (in the data-center network) reach the GPU nodes through the frontend network. The GPU nodes access the storage nodes through a storage network, which, in Figure 3, has been converged with the frontend network. A separate OOB management network provides access to the management and console ports on switches, BMC ports on the servers, and Power Distribution Units (PDUs). A dedicated inter-GPU backend network connects the GPUs in different nodes for transporting Remote Direct Memory Access (RDMA) traffic while running a distributed job.
+
+![A screenshot of a computerAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_2.jpg)
 
 Figure 3. 
 
-Cisco Nexus 9332D-GX2B switch
+AI-cluster network design 
 
-The Cisco Nexus 9332D-GX2B switch introduces a backward-compatible 400G optical quad small form-factor pluggable – double density (QSFP-DD) interface. Each of the 32 ports offers various lower port speeds and densities, including 10-, 25-, 50-, 100-, and 200-Gbps using breakouts. The last 8 ports, marked in green, are capable of wire-rate MACsec encryption.
+<https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9000-series-switches-ai-clusters-wp.html>.
 
-**3\. The intelligence layer: DDN Infinia**
+Rail-optimized network design 
 
-DDN Infinia is a next-generation data intelligence platform designed to meet the unprecedented performance, scalability, and efficiency demands of AI. With native metadata intelligence and extreme low-latency data access, Infinia unifies structured and unstructured AI datasets across multi-cloud, on-premises, and edge environments — simplifying AI workflows, securing critical data, and unlocking the full potential of AI-driven insights.
+GPUs in a scalable unit are interconnected using rail-optimized design to improve collective communication performance by allowing single-hop forwarding through the leaf switches, without the traffic going to the spine switches. In rail-optimized design, port 1 on all the GPU nodes connects to the first leaf switch, port 2 connects to the second leaf switch, and so on. 
 
-With sub-millisecond latency and high-throughput metadata-driven AI pipelines, it replaces outdated storage models with a streamlined, software-defined platform that can handle massive data volumes and high computational requirements of modern AI. Infinia supports real-time data analytics, instant AI inference, and seamless integration with NVIDIA-powered AI stacks — delivering 10x higher efficiencies than traditional file systems. It supports capacities starting at a few hundred terabytes and seamlessly scaling all the way to multiple exabytes.
+The acceleration of AI is fundamentally changing our world and creating new growth drivers for organizations, such as improving productivity and business efficiency while achieving sustainability goals. Scaling infrastructure for AI workloads is more important than ever to realize the benefits of these new AI initiatives. IT departments are being asked to step in and modernize their data-center infrastructure to accommodate these new demanding workloads. 
 
-Built on a scalable and reliable key-value (KV) store, Infinia simplifies data integration and serves as an ideal source for all structured and unstructured data, including existing data lakes. The KV cache stores transformer model attention data, enabling faster token generation and inference. Infinia serves the KV cache with sub-millisecond latency, avoiding costly recompute cycles. DDN Infinia is engineered to serve the KV cache at sub-millisecond latency, ensuring fast, efficient reuse of attention data. This reduces GPU idle time, improves real-time response accuracy, and lowers inference costs — outperforming traditional file systems that are not optimized for dynamic, high-speed KV access.
+AI projects go through different phases: training your model, fine tuning it, and then deploying the model to end users. Each phase has different infrastructure requirements. Training is the most compute-intensive phase, and Large Language Models (LLMs), deep learning, Natural Language Processing (NLP), and digital twins require significant accelerated compute. 
 
-Evidence of success: validated performance
+<https://www.cisco.com/c/en/us/td/docs/dcn/whitepapers/cisco-addressing-ai-ml-network-challenges.html>.
 
-In joint proof-of-concept (POC) testing, this architecture demonstrated that it does not just work – it leads the industry. Across just six Cisco UCS C225 M8 Rack Servers, the solution achieved the following:
+**What use cases does the Cisco UCS C845A M8 Rack Server address?**
 
-● 149.9 GiB/s sustained S3 GET throughput
+The Cisco UCS C845A M8 Rack Server, a highly scalable and customizable server integrated into Cisco AI PODs, is engineered to drive a multitude of AI workloads. Its flexible GPU configurations enable it to address the most demanding AI challenges, including large deep learning, Large Language Model (LLM) training, model fine-tuning, large model inferencing, and Retrieval-Augmented Generation (RAG). 
 
-● One million operations per second for S3 metadata LIST rates
+The platform’s versatility is further enhanced by its support for various GPUs, each optimized for specific market needs: 
 
-● Sub-millisecond latency (~0.6 ms for GET and ~0.76 ms PUT), which is an order of magnitude better than leading public cloud "express" storage tiers
+**NVIDIA H200 NVL:**
 
-The POC featured a true enterprise scale-out setup using the following:
+● High-performance LLM inference 
 
-● Six Cisco UCS C225 M8 Rack Server–based client nodes generating realistic HPC and AI workloads
+● Generative AI training and fine tuning 
 
-● Six Cisco UCS C225 M8 Rack Server-based high-throughput storage nodes with 10x NVMe drives each
+**NVIDIA RTX PRO 6000 Blackwell:**
 
-● High-speed 200 GbE fabrics to interconnect storage and client nodes using Cisco Nexus 9332D-GX2B switches 
+● Agentic and physical AI: powering autonomous systems, smart factories, and robotics for real-time decision making 
 
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.docx/_jcr_content/renditions/scaling-ai-workloads-ddn-infinia-wp_3.png)
+● Advanced scientific computing and rendering: accelerating complex simulations, medical imaging, and engineering analysis across hybrid environments 
+
+● High-fidelity 3D graphics and video: driving content creation, post-production, and immersive VR/AR experiences 
+
+● Hybrid AI/ML workflows: enabling seamless training, inferencing, and AI-assisted graphics across on-premises and cloud 
+
+● Edge-to-core AI applications: supporting real-time AI at the edge with centralized management and cloud integration
+
+**AMD Instinct MI210 accelerators**
+
+● **High-Performance Computing (HPC):** accelerating scientific research, simulations, and complex modeling 
+
+● **Energy-efficient AI/ML workloads:** supporting deep-learning training and inferencing with a focus on power efficiency 
+
+● **Large-scale data analytics:** speeding up data processing and analytics for enterprise applications 
+
+● **Hybrid AI inference:** providing balanced compute and efficiency for inferencing tasks in diverse environments 
+
+● **Specialized simulation workloads:** enhancing performance for engineering, manufacturing, and bioinformatics simulations 
+
+**NVIDIA L40S:**
+
+● Generative AI foundation model fine-tuning 
+
+● Deployment of intelligent chatbots and search tools 
+
+● Language processing and conversational AI 
+
+● Graphics, rendering, and NVIDIA Omniverse applications 
+
+● Virtual desktop infrastructure 
+
+Scope of this document
+
+For MLPerf Benchmark performance testing:
+
+● Inference 5.1: Datacenter performance was measured on a Cisco UCS C845A M8 Rack Server equipped with 8 NVIDIA H200 NVL GPUs, 8 NVIDIA L40S PCIe GPUs and 8 NVIDIA RTX PRO 6000 PCIe GPUs. Inference benchmark results were gathered across multiple datasets.
+
+● These results help illustrate the inference performance advantages of the Cisco UCS C845A M8 Rack Server when deployed with these PCIe GPU configurations. This white paper highlights selected MLPerf Inference 5.1 performance results to provide a concise overview of the server’s inference capabilities.
+
+Product overview
+
+Built on the NVIDIA MGX modular reference design, the Cisco UCS C845A M8 Rack Server is a flexible, scalable, and customizable AI system capable of growing as your AI needs grow. Configure with 2, 4, 6, or 8 PCIe GPUs to address a multitude of workloads ranging from generative AI, graphics and rendering, to virtual desktop infrastructure. 
+
+● UCS C845A M8 servers can be configured with two to eight NVIDIA GPUs. Depending on the configuration, customers can choose between the PCIe-based NVIDIA H200 NVL, L40S, RTXP6000, or AMD MI210 accelerators GPUs. Thanks to the sophistication of the MGX design, more “next-generation” NVIDIA and AMD GPUs are planned for introduction on this platform as they become available. 
+
+● With a compute node powered by AMD’s new high-end EPYC Turin (5th Gen) CPUs, designed specifically for AI workloads, the UCS C845A M8 provides a no-compromise solution for CPU or GPU performance required to avoid bottlenecks within an AI server. Another benefit is the capability to configure the server with NVIDIA ConnectX-7 SmartNIC adapters and/or NVIDIA BlueField-3 DPUs to handle data traffic in and out of the server.
+
+![A diagram of a serverAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_3.jpg)
 
 Figure 4. 
 
-High-level architecture overview
+Components of the Cisco UCS C845A Rack Server 
 
-The DDN Infinia S3 performance as well as scalability was assessed using the popular [warp benchmark](https://github.com/minio/warp). The S3 performance testing evaluated small-object rates per second (obj/sec), metadata operations, large object throughput, and S3 object access latency, including time-to-first-byte (TTFB).
+A specifications sheet for the Cisco UCS C845A M8 Rack Server is available at: 
 
-The performance test shows that S3 throughput (Figure 5) as well as object rates (Figure 6) scale proportionally. Each of the Cisco UCS C225 M8 Rack Servers with Infinia S3 delivers sustained ~13 GiB7s PUT and ~25 GiB/s GET throughput, and metadata operations scale across the server nodes without diminishing returns.
+<https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-spec-sheet.pdf>.
 
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.docx/_jcr_content/renditions/scaling-ai-workloads-ddn-infinia-wp_4.png)
+MLPerf overview
+
+MLPerf is a benchmark suite designed to evaluate the performance of machine-learning software, hardware, and services. It is developed by MLCommons, a consortium of AI leaders from academia, research labs, and industry. The primary goal of MLPerf is to provide an objective and standardized yardstick for assessing machine-learning platforms and frameworks.
+
+MLPerf includes multiple benchmarks, notably:
+
+● MLPerf Training: Measures the time required to train machine-learning models to a specified accuracy level.
+
+● MLPerf Inference: Datacenter: Measures how quickly a trained neural network can perform inference tasks on new data.
+
+MLPerf has multiple benchmarks, including:
+
+● **MLPerf Training:** measures the time it takes to train machine-learning models to a target level of accuracy 
+
+● **MLPerf Inference:** Datacenter measures how quickly a trained neural network can perform inference tasks on new data 
+
+MLPerf Training
+
+The MLPerf Training benchmark suite measures how fast systems can train models to a target quality metric. Current and previous results can be reviewed through the results dashboard given in below mlcommons link. 
+
+This [MLPerf Training Benchmark paper](https://arxiv.org/pdf/1910.01500.pdf) provides a detailed description of the motivation and guiding principles behind the MLPerf Training benchmark suite. 
+
+<https://mlcommons.org/benchmarks/training/>.
+
+MLPerf Inference: Datacenter
+
+The MLPerf Inference: Datacenter benchmark suite measures how fast systems can process inputs and produce results using a trained model. Below mlcommons link gives summary of the current benchmarks and metrics. 
+
+This [MLPerf Inference Benchmark paper](https://arxiv.org/abs/1911.02549) provides a detailed description of the motivation and guiding principles behind the MLPerf Inference: Datacenter benchmark suite. 
+
+<https://mlcommons.org/benchmarks/inference-datacenter/>.
+
+Test configuration
+
+For the MLPerf Inference 5.1 performance testing covered in this document, the following configurations were used with Cisco UCS C845A M8 Rack Server:
+
+● 8x NVIDIA H200 NVL PCIe GPUs 
+
+● 8x NVIDIA L40S PCIe GPUs
+
+MLPerf Inference performance results
+
+MLPerf Inference benchmarks 
+
+The MLPerf Inference models given in Table 1 were configured on a Cisco UCS C845A M8 Rack Server and tested for performance. 
+
+**Table 1. **MLPerf Inference 5.1 models
+
+Model  |  Reference implementation model  |  Description   
+---|---|---  
+**Retinanet 800x800** |  [vision/classification_and_detection](https://github.com/mlcommons/inference/tree/master/vision/classification_and_detection) |  Single-stage object detection model optimized for detecting small objects in high-resolution images   
+**Stable Diffusion XL** |  [text_to_image](https://github.com/mlcommons/inference/tree/master/text_to_image) |  Generative model for creating high-quality images from text prompts   
+**Llama2-70B** |  [language/llama2-70b](https://github.com/mlcommons/inference/tree/master/language/llama2-70b) |  Large language model with 70 billion parameters. It is designed for Natural Language Processing (NLP) tasks and answering questions   
+**Llama3.1-8B** |  [language/llama3.1-8b](https://github.com/mlcommons/inference/tree/master/language/llama3.1-8b) |  Multilingual Large Language Models (LLMs) with a collection of pretrained and instruction tuned generative models   
+**Whisper** |  [speech2text](https://github.com/mlcommons/inference/tree/master/speech2text) |  Designed to enable not only transcriptions but also such tasks as language identification, phrase-level timestamps, and speech translation from other languages into English   
+**Mixtral** |  [language/mixtral-8x7b](https://github.com/mlcommons/inference/tree/master/language/mixtral-8x7b) |  The Mixtral-8x7B dataset refers to a mixture of experts model composed of multiple specialized sub-models, each having 7 billion parameters. This model uses a gating mechanism to activate relevant experts during training and inference to optimize performance across various tasks.  
+  
+MLPerf Inference 5.1 performance data 
+
+As part of the MLPerf Inference 5.1 submission, Cisco has tested most of the datasets listed in Table 1 on the Cisco UCS C845A M8 Rack Server and submitted the results to MLCommons. The results are published on MLCommons results page: <https://mlcommons.org/benchmarks/inference-datacenter/>.
+
+**Note:** The graph below includes unverified MLPerf Inference 5.1 results collected after the MLPerf submission deadline. For such data, there is an added note: “Result not verified by MLCommons Association.” 
+
+MLPerf Inference results are measured in both offline and server scenarios. The offline scenario focuses on maximum throughput, whereas the server scenario measures both throughput and latency, ensuring that a certain percentage of requests are served within a specified latency threshold.
+
+Performance data for NVIDIA H200 NVL PCIe GPU
+
+Retinanet 
+
+Retinanet is a single-stage object-detection model known for its focus on addressing class imbalances using a novel focal-loss function. The “800x800” refers to the input image size, and the model is optimized for detecting small objects in high-resolution images. 
+
+Figure 2 shows the performance of the Retinanet model tested on UCS C845A M8 Rack Server with NVIDIA 8x H200 NVL GPUs.
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_4.png)
 
 Figure 5. 
 
-DDN Infinia S3 throughput performance scaling
+Retinanet performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL GPUs
 
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.docx/_jcr_content/renditions/scaling-ai-workloads-ddn-infinia-wp_5.png)
+Llama3.1-8b 
+
+Llama3.1-8b is a powerful Large Language Model (LLM) with impressive capabilities in text generation, translation, and question answering. However, using cutting-edge LLMs often requires cloud resources. This tutorial empowers you to run the 8b version of Meta Llama3.1 directly on your local machine, giving you more control and privacy over your AI interactions. 
+
+Figure 6 shows the performance of the Llama3.1-8b model tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA H200 NVL GPUs.
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_5.png)
 
 Figure 6. 
 
-DDN Infinia S3 objects rate/second performance scaling
+Llama3.1-8b performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL GPUs
 
-This means that, as your AI needs grow, your performance scales linearly. You can start with a small pilot and grow to exascale without ever having to rearchitect your storage because of the “wire-once” architecture.
+Llama2-70b (99) 
 
-Conclusion: Making your AI infrastructure future-ready
+Llama2-70b is a large language model from Meta, with 70 billion parameters. It is designed for various natural language processing tasks such as text generation, summarization, translation, and answering questions. 
 
-The transition to production AI requires a departure from the storage status quo. By moving away from high-latency cloud buckets and rigid legacy NAS and adopting a software-defined approach on Cisco UCS M8 Rack Servers and DDN Infinia, you eliminate the "I/O wait" bottleneck. This architecture ensures that your GPUs stay fed, your metadata stays fast, and your AI factory remains "always on." Choosing this foundation validated by Cisco maximizes your GPU ROI and accelerates your journey from data to insight.
+Figure 7 shows the performance of the Llama2-70b model, with an accuracy of 99, tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA H200 NVL GPUs.
 
-Learn more
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_6.png)
 
-To explore how the combination of Cisco UCS and DDN Infinia can transform your AI data strategy, visit the following resources or contact your Cisco account representative:
+Figure 7. 
 
-● **Cisco AI Networking in Data Centers:** Accelerate enterprise AI with a solution that grows with you. For an overview and additional resources, visit: [AI Networking in Data Centers](https://www.cisco.com/site/us/en/solutions/artificial-intelligence/ai-networking-in-data-center/index.html).
+Llama2-70b performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL GPUs 
 
-● **Cisco UCS C225 M8 rack server:** Find further details on the server which delivers record-breaking performance for space-constrained environments at <https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-rack-server-ds.html>.
+**Note:** For Llama2-70b performance data, the results have not been verified by MLCommons Association because the results were collected after the MLPerf submission deadline.
 
-● **Cisco Intersight:** Learn how to manage your global AI infrastructure from a single cloud-delivered platform at [Cisco Intersight: IT Operations Management](https://www.cisco.com/site/us/en/products/computing/hybrid-cloud-operations/intersight-platform/index.html).
+Llama2-70b (99.9) 
 
-● **DDN Infinia product page:** For deep dives into software-defined data intelligence, visit [ddn.com/products/infinia](https://www.ddn.com/products/infinia).
+Llama2-70b (99.9) is a large language model from Meta, with 70 billion parameters. It is designed for various natural language processing tasks such as text generation, summarization, translation, and answering questions. 
 
-Appendix A: The blueprint for success (configuration guide)
+Figure 8 shows the performance of the Llama2-70b model, with a high accuracy of 99.9, tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA H200 NVL GPUs.
 
-To achieve the sub-milliseconds latencies and linear scaling mentioned in this paper, Cisco recommends the baseline configuration given below. This blueprint is divided into four phases: network fabric, compute management, host operating system, and the final phase DDN Infinia installation.
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_7.png)
 
-Phase 1: Cisco network optimization
+Figure 8. 
 
-A “lossless” fabric is non-negotiable for AI storage. Use the following steps to configure your Cisco Nexus 9300 Series Switches.
+Llama2-70b (99.9) performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL GPUs 
 
-1.1 Core feature enablement
+**Note:** For Llama2-70b high-accuracy (99.9) performance data, the results have not been verified by MLCommons Association because the results were collected after the MLPerf submission deadline.
 
-Enable the necessary protocols for programmability, link aggregation, and virtual port channels:
+Llama2-70b Interactive 
 
-feature nxapi, cfs eth distribute, udld, interface-blan, lacp, vpc, lldp
+This model is essentially identical to the existing Llama2-70b workload, but for the tighter latency constraints in a server scenario. 
 
-1.2 Port breakouts and slice mapping
+Figure 9 shows the performance of the Llama2-70b Interactive model for 99 and 99.9 accuracy tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA H200 NVL GPUs.
 
-To maximize throughput, map 400G ports to 2x200G.
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_8.png)
 
-Performance tip: To optimize internal switch bandwidth, connect the NVIDIA ConnectX-7 adapters of the DDN Infinia storage cluster and the server cluster to different port subsets (for example, eth1/1-8 and eth1/17-24).
+Figure 9. 
 
-interface breakout module 1 port 1-6 map 200g-2x // Breakout ports 1-6 to 2x200G
+Llama2-70b Interactive performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL GPUs 
 
-interface breakout module 1 port 17-19 map 200g-2x // Breakout port 17-19 to 2x200G
+**Note:** For NVIDIA H200 NVL Llama2-70b Interactive performance data, the results have not been verified by MLCommons Association because the results were collected after the MLPerf submission deadline.
 
-1.3 Lossless RoCEv2 and quality of service (QoS)
+Stable Diffusion XL 
 
-This ensures that storage traffic is prioritized and never dropped.
+Stable Diffusion XL is a generative model for creating high-quality images from text prompts. It is an advanced version of Stable Diffusion, offering larger models and better image quality, used for tasks such as image synthesis, art generation, and image editing. 
 
-● Classification: Match DSCP 24 for RoCEv2 and DSCP 48 for congestion notification packets (CNPs)
+Figure 10 shows the performance of the Stable Diffusion XL model tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA H200 NVL GPUs.
 
-● PFC: Enable priority flow control on CoS 3
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_9.png)
 
-● ECN: Use WRED on the egress queue to signal congestion before drops occur
+Figure 10. 
 
-RoCEv2 QoS classification
+Stable Diffusion XL performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL GPUs 
 
-// Define RoCEv2 class by DSCP 24
+**Note:** For NVIDIA H200 NVL Stable Diffusion XL performance data, the results have not been verified by MLCommons Association because the results were collected after the MLPerf submission deadline.
 
-class-map type qos match-any ROCEv2
+Whisper 
 
-match dscp 24
+Whisper is an automatic speech recognition model trained on 680,000 hours of multilingual data collected from the web. As per OpenAI, this model is robust on accents, background noise, and technical language. In addition, it supports transcription of 99 different languages and translation from those languages into English. 
 
-// QoS policy: assign QoS group 3 to RoCEv2, 0 to default
+Figure 11 shows the performance of the Whisper model tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA H200 NVL GPUs.
 
-policy-map type qos QOS_CLASSIFICATION
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_10.png)
 
-class ROCEv2
+Figure 11. 
 
-set qos-group 3
+Whisper performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL GPUs 
 
-class class-default
+**Note:** For NVIDIA H200 NVL Whisper performance data, the results have not been verified by MLCommons Association because the results were collected after the MLPerf submission deadline.
 
-set qos-group 0
+Performance data for NVIDIA L40S PCIe GPU
 
-// Apply QoS policy to all RoCEv2 interfaces
+**Retinanet**
 
-interface interface e1/1/1,...,e1/6/2,e1/17/1,...,e1/19/2
+Retinanet is a single-stage object detection model known for its focus on addressing class imbalances using a novel focal-loss function. The “800x800” refers to the input image size, and the model is optimized for detecting small objects in high-resolution images. 
 
-service-policy type qos input QOS_CLASSIFICATION no-stats
+Figure 12 shows the performance of the Retinanet model tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA L40S GPUs.
 
-Enable PFC (priority flow control) for RoCEv2
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_11.png)
 
-// Network QoS: PFC on CoS 3 for RoCEv2, MTU adjustments
+Figure 12. 
 
-policy-map type network-qos QOS_NETWORK
+Retinanet performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA L40S GPUs
 
-class type network-qos c-8q-nq3
+Whisper
 
-mtu 4200
+Whisper is an automatic speech recognition model trained on 680,000 hours of multilingual data collected from the web. As per OpenAI, this model is robust on accents, background noise, and technical language. In addition, it supports the transcription of 99 different languages and translation from those languages into English.
 
-pause pfc-cos 3
+Figure 13 shows the performance of the Whisper model tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA L40S GPUs.
 
-class type network-qos c-8q-nq-default
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_12.png)
 
-mtu 9216
+Figure 13. 
 
-system qos
+Whisper performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA L40S GPUs
 
-service-policy type network-qos QOS_NETWORK
+Performance data for NVIDIA RTX PRO 6000 PCIe GPU
 
-// Enable PFC on all RoCEv2 interfaces
+**Llama3.1-8b**
 
-interface interface e1/1/1,...,e1/6/2,e1/17/1,...,e1/19/2
+Llama3.1-8b is a powerful Large Language Model (LLM) with impressive capabilities in text generation, translation, and question answering. However, using cutting-edge LLMs often requires cloud resources. This tutorial empowers you to run the 8b version of Meta Llama3.1 directly on your local machine, giving you more control and privacy over your AI interactions. 
 
-priority-flow-control mode on
+Figure 13 shows the performance of the Llama3.1-8b model tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA RTX PRO 6000 GPUs.
 
-priority-flow-control watch-dog-interval // Enable PFC watchdog
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_13.png)
 
-CNP (congestion notification packet) prioritization
+Figure 14. 
 
-// Define CNP class by DSCP 48
+Llama3.1-8b performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA RTX PRO 6000 GPUs
 
-class-map type qos match-any CNP
+**Note:** For NVIDIA RTX PRO 6000 Llama3.1-8b performance data, the results have not been verified by MLCommons Association because the results were collected after the MLPerf submission deadline.
 
-match dscp 48
+Llama2-70b 
 
-// QoS: Assign CNP to QoS group 7
+Llama2-70b is a large language model from Meta, with 70 billion parameters. It is designed for various natural language processing tasks such as text generation, summarization, translation, and answering questions. 
 
-policy-map type qos QOS_CLASSIFICATION
+Figure 14 shows the performance of the Llama2-70b model tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA RTX PRO 6000 GPUs.
 
-class CNP
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_14.png)
 
-set qos-group 7
+Figure 15. 
 
-// Egress queue: prioritize CNP (level 1)
+Llama2-70b performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA RTX PRO 6000 GPUs
 
-policy-map type queuing QOS_EGRESS_PORT
+**Note:** For NVIDIA RTX PRO 6000 Llama2-70b performance data, the results have not been verified by MLCommons Association because the results were collected after the MLPerf submission deadline.
 
-class type queuing c-out-8q-q7
+Mixtral
 
-priority level 1
+The Mixtral-8x7B dataset refers to a mixture of expert’s model composed of multiple specialized sub-models, each having 7 billion parameters. This model uses a gating mechanism to activate relevant experts during training and inference to optimize performance across various tasks. 
 
-// ECN (Explicit Congestion Notification) using WRED
+Figure 15 shows the performance of the Mixtral model tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA RTX PRO 6000 GPUs.
 
-policy-map type queuing QQOS_EGRESS_PORT
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_15.png)
 
-class type queuing c-out-8q-q3
+Figure 16. 
 
-bandwidth remaining percent 99
+Mixtral performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA RTX PRO 6000 GPUs
 
-random-detect minimum-threshold 150 kbytes maximum-threshold 3000 kbytes drop-probability 7 weight 0 ecn
+**Note:** For NVIDIA RTX PRO 6000 Mixtral performance data, the results have not been verified by MLCommons Association because the results were collected after the MLPerf submission deadline.
 
-system qos
+Whisper 
 
-service-policy type queuing output QOS_EGRESS_PORT
+Whisper is an automatic speech recognition model trained on 680,000 hours of multilingual data collected from the web. As per OpenAI, this model is robust on accents, background noise, and technical language. In addition, it supports the transcription of 99 different languages and translation from those languages into English. 
 
-VRF and management configuration
+Figure 13 shows the performance of the Whisper model tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA L40S GPUs.
 
-// Management VRF: DNS and default route
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_16.png)
 
-vrf context management
+Figure 17. 
 
-ip name-server <primary DNS server IP> <secondary DNS server IP>
+Whisper performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA L40S GPUs
 
-ip route 0.0.0.0/0 192.116.0.254
+Performance summary
 
-// Management interface configuration
+Built on the NVIDIA MGX platform, the Cisco UCS C845A M8 Rack Server delivers the accelerated compute needed to address the most demanding AI workloads. With its powerful performance and simplified deployment, it helps you achieve faster results from your AI initiatives. 
 
-interface mgmt0
+Cisco successfully submitted MLPerf 5.1 Inference results in partnership with NVIDIA to enhance performance and efficiency, optimizing various inference workloads such as large language models (language), natural language processing (language), image generation (image), generative image (text to image), and object detection (vision). 
 
-vrf member management
+The results were exceptional AI performance across Cisco UCS platforms for MLPerf Inference 5.1: 
 
-ip address 192.116.0.2/24
+● The Cisco UCS C845A M8 platform with 8x NVIDIA H200 NVL GPUs emerged as the leader, securing first position for the Llama3.1-8b model. 
 
-no shutdown
+● The Cisco UCS C845A M8 platform with 8x NVIDIA H200 NVL GPUs emerged as the leader, securing first position for the Retinanet model. 
 
-VLAN configuration
+Appendix: Test environment
 
-vlan 2 // Native VLAN
+Table 2 details the properties of the Cisco UCS C845A Rack Server under test environment conditions. 
 
-name VLAN-NATIVE
+**Table 2. **Server properties
 
-vlan 1160 // Out-of-band management
+Description  |  Value   
+---|---  
+**Product name** |  Cisco UCS C845A M8 Rack Server   
+**CPU** |  2x AMD EPYC 9575 64-Core Processor   
+**Number of cores** |  64   
+**Number of threads** |  128   
+**Total memory** |  2.3 TB   
+**Memory DIMMs (16)** |  96 GB x 24 DIMMs   
+**Memory speed** |  6400 MHz   
+**Network adapter** |  8x NVIDIA BlueField-3 E-series SuperNIC 400GbE/NDR  2x NIC cards   
+**GPU controllers** |  NVIDIA H200 NVL PCIe 8-GPU  NVIDIA L40S PCIe 8-GPU   
+**SFF NVMe SSDs** |  16x 1.9 TB 2.5-inch high-performance, high-endurance NVMe SSD  
+  
+Table 3 lists the server BIOS settings applied for MLPerf testing. 
 
-name VLAN-OOB-MGMT
+**Table 3. **Server BIOS settings
 
-vlan 1161-1164
+BIOS Settings  |  Value   
+---|---  
+**SMT mode** |  Auto   
+**NUMA nodes per socket** |  NPS2   
+**IOMMU** |  Auto   
+**Core performance boost** |  Auto   
+**Determinism slider** |  Power   
+**DRAM refresh rate** |  Platform default   
+**L1 stream HW prefetcher** |  Enable   
+**L2 stream HW prefetcher** |  Enable   
+**AVX512** |  Enable   
+**3-link xGMI max speed** |  Platform default   
+**Streaming Stores Control** |  Auto   
+  
+**Note:** The rest of the BIOS settings are platform default values.
 
-name VLAN-<ID>
+For more information
 
-Port-channel (vPC peer link)
+● For additional information on the server, refer to: <https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html>.
 
-interface port-channel 11
+● Data sheet: <https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html>.
 
-description vPC peer link
+● Cisco AI-Ready Data Center Infrastructure: <https://blogs.cisco.com/datacenter/power-your-genai-ambitions-with-new-cisco-ai-ready-data-center-infrastructure>. 
 
-switchport mode trunk
+● Cisco AI PODs: <https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ai-infrastructure-pods-inferencing-aag.html>.
 
-switchport trunk native vlan 2
-
-switchport trunk allowed vlan 1160-1164
-
-spanning-tree port type network
-
-service-policy type qos input QoS_marking_in
-
-vpc peer-link
-
-RoCEv2 port configuration
-
-// Enable trunking, edge, jumbo MTU, and bring up all RoCEv2 interfaces
-
-interface interface e1/1/1,...,e1/6/2,e1/17/1,...,e1/19/2
-
-switchport mode trunk
-
-spanning-tree port type edge trunk
-
-mtu 9216
-
-no shutdown
-
-VLAN pinning (N9K-A and N9K-B)
-
-// N9K-A: Pin odd ports to VLAN 1161 and even ports to VLAN 1163
-
-interface interface e1/1/1,...,e1/6/1,e1/17/1,...,e1/19/1
-
-switchport trunk native vlan 1161
-
-switchport trunk allowed vlan 1161
-
-interface interface e1/1/2,...,e1/6/2,e1/17/2,...,e1/19/2
-
-switchport trunk native vlan 1163
-
-switchport trunk allowed vlan 1163
-
-// N9K-B: Pin odd ports to VLAN 1162 and even ports to VLAN 1164
-
-interface interface e1/1/1,...,e1/6/1,e1/17/1,...,e1/19/1
-
-switchport trunk native vlan 1162
-
-switchport trunk allowed vlan 1162
-
-interface interface e1/1/2,...,e1/6/2,e1/17/2,...,e1/19/2
-
-switchport trunk native vlan 1164
-
-switchport trunk allowed vlan 1164
-
-Port descriptions (N9K-A and N9K-B)
-
-// Example: N9K-A port mapping to UCS servers
-
-interface e1/1/1
-
-description UCS-C225M8-1:e1/0 (ens1f0np0)
-
-...
-
-interface e1/1/2
-
-description UCS-C225M8-1:e2/0 (ens2f0np0)
-
-// Example: N9K-B port mapping to UCS servers
-
-interface e1/1/1
-
-description UCS-C225M8-1:e1/1 (ens1f1np1)
-
-...
-
-interface e1/1/2
-
-description UCS-C225M8-1:e2/1 (ens2f1np1)
-
-Phase 2: Cisco Intersight management and Cisco UCS policy
-
-Use Cisco Intersight to enforce a consistent configuration baseline across your cluster.
-
-2.1 Cisco UCS server policies
-
-Policies in Cisco Intersight provide different configurations for UCS servers including BIOS settings, Simple Mail Transfer Protocol (SMTP), Intelligent Platform Management Interface (IPMI) settings, and more. A policy that is once configured can be assigned to any number of servers to provide a configuration baseline.
-
-For this blueprint, the following server policies have been configured and used in the server profile template.
-
-**BIOS policy**
-
-This policy automates the configuration of BIOS settings on the servers. When you create the policy, select the CPUIntensive-M8-AMD configuration and change the following BIOS tokens:
-
-● Enable SR-IOV support
-
-● Change the Power Profile Selection F19h to Maximum IO Performance Mode
-
-● Select X2APIC as local APIC mode
-
-● Disable “ACPI SRAT L3 Cache As NUMA Domain” for memory consistency
-
-● Select com-0 from the Console Redirection drop-down list
-
-**Boot order policy**
-
-Configures the linear ordering of devices and enables you to change the boot order and boot mode. Keep UEFI enabled and secure boot disabled. As boot devices, we select slot MSTOR-RAID as the local boot disk drive and KVM Mapped DVD as virtual boot media.
-
-**IPMI over LAN policy**
-
-Defines the protocols for remote interfacing with a service processor that is embedded in the server platform. Keep the defaults when creating the policy.
-
-**Local user policy**
-
-The local user policy defines and manages local user accounts (username, password, role) on Cisco UCS servers, crucial for the direct KVM access, IPMI over LAN authentication, and overriding default admin passwords like for the CIMC access. 
-
-**NTP policy**
-
-Enables the NTP service to synchronize the time with an NTP server. 
-
-**Power policy**
-
-The optional power policy enables the configuration of power redundancy, power profiling, and power restauration for servers. Configure Last State for Power Restore.
-
-**Serial over LAN policy**
-
-Enables the input and output of the serial port of a managed system to be redirected over IP. Select 115200 from the Baud Rate drop-down list.
-
-**Storage policy**
-
-Allows you to create drive groups and virtual drives. Enable the M.2 RAID configuration and keep the virtual drive name MstorBootVd and MSTOR-RAID slot.
-
-**Thermal policy**
-
-The optional thermal policy sets the fan-speed modes. For the POC, the fan control mode has been set to balanced.
-
-**Virtual KVM policy**
-
-The KVM console is an interface that emulates a direct keyboard, video, and mouse (KVM) connection to the server. Enable the Allow Tunneled vKVM selection. 
-
-2.2 Cisco UCS server profile deployment
-
-Server profile templates enable the user to define a template from which multiple server profiles can be derived and deployed. Any property modification made in the template syncs with all the derived profiles.
-
-Create the UCS server profile template in Intersight and attach the policies described in section 2.1. Derive individual UCS server profiles for each UCS C225 M8 Rack Server from template. This ensures “wire-once” simplicity.
-
-Phase 3: Host OS optimization (Ubuntu 24.04.3 LTS)
-
-Once the hardware is provisioned through Intersight, install and optimize the OS layer for the NVIDIA ConnectX-7 adapters.
-
-3.1 Additional software packages
-
-Install additional software packages that do not come with the default installation.
-
-apt install chrony ipmitool net-tools openssh-server pdsh
-
-3.2 Networking (netplan)
-
-Configure your interface with a 9000 MTU to support jumbo frames. Ensure that your VLAN IDs correlate with your interface addressing for easier troubleshooting.
-
-ens1f0np0:
-
-dhcp4: false
-
-addresses:
-
-\- [10.10.1.x/24]/24
-
-mtu: 9000
-
-3.3 Performance tools
-
-Install the Mellanox (NVIDIA) Linux tools (<https://linux.mellanox.com/public/repo/mlnx_ofed/latest-24.04/ubuntu24.04/amd64/mlnx-tools_24.04.0.2404066-1_amd64.deb>) to manage the RDMA engines. 
-
-Ensure that chrony is configured to a local NTP source for precise log synchronization across the AI factory and map the IP addresses to hostnames within the /etc/hosts file of each host.
-
-Phase 4: DDN Infinia software deployment
-
-With the compute and network foundations established, the final stage is the deployment of the DDN Infinia software. To ensure optimal performance and alignment with the Cisco UCS M8 hardware, the installation and additional health checks are performed remotely by DDN Professional Services. Please coordinate with your Cisco or DDN account team to schedule the deployment and finalize your AI data cloud.
+Cisco AI-Native Infrastructure for Data Center: <https://www.cisco.com/site/us/en/solutions/artificial-intelligence/infrastructure/index.html>.
 
 ### Our experts recommend
 
@@ -910,11 +846,11 @@ Print
 
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.pdf) (1.0 MB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.pdf) (2.0 MB)   
 View with Adobe Reader on a variety of devices
 
 
-Updated:March 16, 2026
+Updated:June 5, 2026
 
 Bias-Free Language
 
@@ -960,11 +896,11 @@ Print
 
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.pdf) (1.0 MB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.pdf) (2.0 MB)   
 View with Adobe Reader on a variety of devices
 
 
-Updated:March 16, 2026
+Updated:June 5, 2026
 
 #### Table of Contents
 
@@ -976,33 +912,43 @@ Updated:March 16, 2026
 
 ` `
 
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.docx/_jcr_content/renditions/ucs-c845a-m8-rack-server-aag_0.jpg)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.docx/_jcr_content/renditions/ucs-c845a-m8-rack-server-aag_0.png)
+
+Figure 1. 
+
+Cisco UCS C845A M8 Rack Server
 
 Overview
 
-The Cisco UCS C845A M8 Rack Server is Cisco main RTX PRO Server Specification. A highly scalable, flexible, and customizable two to eight GPU system based on the NVIDIA MGX reference design for accelerated computing. Together with NVIDIA RTX PRO Blackwell Server Edition GPUs and NVIDIA AI Enterprise software, it is designed to deliver high performance across multiple AI workloads. 
+The Cisco UCS ®C845A M8 Rack Server is Cisco’s flagship NVIDIA RTX PRO server platform, purpose-built for enterprise AI inferencing, agentic AI, and the NVIDIA AI Data Platform. It is a highly scalable, flexible, and customizable two- to eight-GPU system based on the NVIDIA MGX reference design for accelerated computing. Together with NVIDIA RTX PRO Blackwell Server Edition GPUs and NVIDIA AI Enterprise software, it is designed to deliver high performance across multiple AI workloads. As a foundational compute building block for the Cisco Secure AI Factory with NVIDIA, the C845A M8 helps enterprises move from AI pilot to production with a secure, simple, and scalable infrastructure—accelerating time to first token and lowering the cost per token from the core to the edge.
 
-The versatility of the UCS C845A M8 makes it ideal for a variety of use cases, including: 
+The versatility of the C845A M8 makes it ideal for a variety of use cases, including: 
 
-● **GenAI fine-tuning, RAG and inference:** provides a foundation of knowledge and language patterns, enabling faster adaptation to specific tasks and domains using significantly less data compared to traditional models. 
+● **GenAI inferencing, fine-tuning, and RAG:** provides a foundation of knowledge and language patterns, enabling faster adaptation to specific tasks and domains using significantly less data compared to traditional models. With up to 96 GB of GPU memory per NVIDIA RTX PRO 6000 Blackwell GPU and up to 8 TB of system memory, the C845A M8 keeps larger models, longer contexts, and more concurrent users resident in memory, driving higher throughput and lower cost per token for production inferencing
 
-● **High-Performance Computing (HPC):** supports complex computations needed for simulations and large-scale data processing. 
+● **Agentic and physical AI:** powers autonomous agents, smart factories, robotics, and digital twins with NVIDIA RTX PRO Blackwell Server Edition GPUs, delivering real-time decision-making at enterprise scale
 
-● **Data analytics and visualization:** utilizes advanced analytics tools to extract insights from vast datasets, facilitating data-driven decision-making. 
+● **NVIDIA AI Data Platform foundation:** serves as the accelerated compute tier for the NVIDIA AI Data Platform, pairing NVIDIA-certified storage partners with NVIDIA AI Enterprise software so enterprises can turn proprietary data into production-grade reasoning, retrieval, and agentic workflows
 
-● **Design and simulation:** supports 3D content creation and photorealistic simulation workloads such as digital twins, multi-user design collaboration, and Extended Reality (XR). 
+● **Core-to-edge distributed inferencing:** deploys low-latency inferencing close to data and users with consistent policy, security, and observability through Cisco Intersight® and the Cisco Secure AI Factory with NVIDIA
 
-● **Language processing:** enables servers to understand and interpret human language using complex algorithms, allowing for text analysis, sentiment analysis, machine translation, and human-like text generation. 
+● **High-Performance Computing (HPC):** supports complex computations needed for simulations and large-scale data processing
 
-● **Conversational AI:** utilizes technologies such as natural language processing and machine learning to comprehend human language, discern intent, maintain context within a conversation, and generate human-like responses. 
+● **Data analytics and visualization:** utilizes advanced analytics tools to extract insights from vast datasets, facilitating data-driven decision-making
 
-● **Graphics and rendering:** processes large amounts of data swiftly to generate complex visual images, making rendering faster than relying on CPUs. 
+● **Design and simulation:** supports 3D content creation and photorealistic simulation workloads such as digital twins, multi-user design collaboration, and Extended Reality (XR)
+
+● **Language processing:** enables servers to understand and interpret human language using complex algorithms, allowing for text analysis, sentiment analysis, machine translation, and human-like text generation 
+
+● **Conversational AI:** utilizes technologies such as natural language processing and machine learning to comprehend human language, discern intent, maintain context within a conversation, and generate human-like responses
+
+● **Graphics and rendering:** processes large amounts of data swiftly to generate complex visual images, making rendering faster than relying on CPUs
 
 ● **Virtual desktop:** harnesses the power of accelerated computing to boost AI-enhanced virtualized workloads and deliver high-performance workstation instances to remote users with Virtual Desktop Infrastructure (VDI). Ideal for remote workloads with CAD, video editing, 3D modeling, and AI use cases.
 
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.docx/_jcr_content/renditions/ucs-c845a-m8-rack-server-aag_1.jpg)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.docx/_jcr_content/renditions/ucs-c845a-m8-rack-server-aag_1.png)
 
-Figure 1. 
+Figure 2. 
 
 Cisco UCS C845A M8 Rack Server
 
@@ -1010,15 +956,19 @@ Benefits
 
 Optimized for AI use cases 
 
-Built on NVIDIA MGX modular reference design, the Cisco UCS C845A M8 Rack Server provides the accelerated computing power from NVIDIA RTX PRO Blackwell and NVIDIA AI Enterprise software necessary to handle the most challenging AI workloads. 
+Built on NVIDIA MGX modular reference design, the Cisco UCS C845A M8 Rack Server provides the accelerated computing power from NVIDIA RTX PRO Blackwell and NVIDIA AI Enterprise software necessary to handle the most challenging AI workloads. The platform is engineered for the AI era, optimized for high-throughput, memory-bound inferencing of LLMs, agentic AI, and multimodal models, with NVIDIA RTX PRO 6000 (96GB), RTX PRO 6000D (84GB), and RTX PRO 4500 (32GB) Blackwell Server Edition GPUs to right-size every deployment.
 
 Adaptable design 
 
-With flexible options for two, four, six or eight NVIDIA RTX PRO 4500 and/or 6000 Blackwell GPUs, you can begin with a smaller setup and expand as your needs grow. The modularity of the NVIDIA MGX design supports a wide variety of use cases. 
+With flexible options for two, four, six or eight NVIDIA RTX PRO 4500 (32GB), RTX PRO 6000D (84GB), and/or 6000 (96GB) Blackwell GPUs, you can begin with a smaller setup and expand as your needs grow. Up to 8 TB of DDR5-6400 system memory and Gen5 E1.S NVMe storage (up to 15.3 TB per drive) keep large models, vector indexes, and KV caches close to the GPU, sustaining high tokens-per-second under real workloads. The modularity of the NVIDIA MGX design supports a wide variety of use cases. 
+
+Secure, simple, and scalable AI infrastructure
+
+As a building block of the Cisco Secure AI Factory with NVIDIA, the C845A M8 inherits distributed security fused into every layer, protecting models, agents, workloads, and infrastructure with Cisco AI Defense, Hybrid Mesh Firewall, Isovalent®, and Hypershield™. NVIDIA BlueField-3 DPUs with crypto acceleration offload security policy enforcement from CPU and GPU, preserving cycles for AI processing while keeping the entire stack hardened and observable through Splunk® Enterprise Security and Splunk Observability Cloud.
 
 Consistent management 
 
-Manage your AI infrastructure seamlessly with Cisco Intersight®, an operations platform that helps IT teams see, control, and automate their Cisco UCS®, converged, and hyperconverged infrastructure throughout its lifecycle—wherever it is—from one place.
+Manage your AI infrastructure seamlessly with Cisco Intersight, an operations platform that helps IT teams see, control, and automate their Cisco UCS, converged, and hyperconverged infrastructure throughout its lifecycle—wherever it is—from one place.
 
 What it offers
 
@@ -1026,19 +976,21 @@ The Cisco UCS C845A M8 Rack Server, built on the NVIDIA MGX reference design for
 
 Configurations 
 
-● Two 5th Gen AMD EPYC CPUs in a 4RU form factor. 
+● Two 5th Gen AMD EPYC CPUs in a 4RU form factor, with up to 8 TB of DDR5-6400 system memory using 32GB to 256GB DIMMs
 
-● 2, 4, 6 or 8x NVIDIA RTX PRO 4500 and 6000 Blackwell, H200 NVL/H100 NVL/L40S and AMD MI210 GPUs. 
+● 2, 4, 6 or 8x NVIDIA RTX PRO 4500 (32 GB), RTX PRO 6000D (84 GB), and 6000 Blackwell (96 GB), H200 NVL/H100 NVL/L40S and AMD MI210 GPUs 
 
-● 5x PCIe x16 FHHL slots and 8 x PCIe x16 GPU slots. 
+● 5x PCIe x16 FHHL slots and 8 x PCIe x16 GPU slots
 
-● 4x single-port 400G NVIDIA ConnectX-7 Smart NICs or NVIDIA BlueField-3 DPUs to scale out. One dual port 200G NIC or DPU to scale up for north-south traffic. 
+● 4x single-port 400G NVIDIA ConnectX-7 Smart NICs or NVIDIA BlueField-3 DPUs with crypto-enabled options for in-line data protection to scale out. One dual port 200G NIC or DPU to scale up for north/south traffic. 
 
-● Up to 20x E1.S NVMe SSDs for high-speed local storage. 
+● Up to 20x Gen5 E1.S NVMe SSDs (up to 15.3 TB per drive) for high-speed local storage
 
 Software 
 
 Systems equipped with NVIDIA H100 NVL or H200 NVL come with a 5-year license for NVIDIA AI Enterprise, a cloud-native software platform that streamlines development and deployment of production-grade AI solutions, including AI agents, Generative AI, computer vision, speech AI, and more. Easy-to-use microservices optimize model performance with enterprise-grade security, support, and stability, ensuring a smooth transition from prototype to production for enterprises that run their businesses on AI. 
+
+The C845A M8 is engineered to align with the NVIDIA AI Data Platform reference design, connecting enterprise data, vector stores, and retrieval pipelines to GPU-accelerated inferencing, so customers can build agentic AI and RAG applications on their own data with the performance, governance, and security required for production. Combined with NVIDIA NIM microservices, NeMo, and Blueprints, the platform compresses time to first token and shortens the path from pilot to enterprise deployment.
 
 Management 
 
@@ -1048,13 +1000,13 @@ By using Intersight, you can operate with consistency and control, strengthen yo
 
 Learn more
 
-For additional information about the Cisco UCS C845A M8 Rack Server, refer to the [data sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html). 
+For additional information about the Cisco UCS C845A M8 Rack Server, refer to the data sheet. 
 
 For information about our data center solutions for AI visit <https://www.cisco.com/site/us/en/solutions/artificial-intelligence/infrastructure/index.html>.
 
 ### Our experts recommend
 
-  * [Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html "Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper")
+  * [AI Performance: MLPerf Inference on Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL, L40S and RTX PRO 6000 GPUs](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.html "AI Performance: MLPerf Inference on Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL, L40S and RTX PRO 6000 GPUs")
   * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
 
@@ -1280,7 +1232,7 @@ A. All eight PCIe and mLOM slots are PCIe Gen 5.
 
 ### Our experts recommend
 
-  * [Cisco UCS X-Series with Intel Flex Data Center GPUs and VDI White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-intel-flex-dc-gpu-vdi-wp.html "Cisco UCS X-Series with Intel Flex Data Center GPUs and VDI White Paper")
+  * [AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html "AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper")
   * [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
 
 
@@ -1291,311 +1243,14 @@ A. All eight PCIe and mLOM slots are PCIe Gen 5.
 
 ---
 
-## Page 5: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-rack-server-ds.html
+## Page 5: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html
 
   * Skip to content
   * Skip to search
   * Skip to footer
 
 
-# Cisco UCS C225 M8 Rack Server Data Sheet
-
-Data Sheet
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-rack-server-ds.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-rack-server-ds.pdf) (180.7 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:January 5, 2026
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-rack-server-ds.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-rack-server-ds.pdf) (180.7 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:January 5, 2026
-
-#### Table of Contents
-
-  * Product overview
-  * Powering next-generation applications
-  * Product specifications
-  * System requirements
-  * Ordering information
-  * Warranty information
-  * Product sustainability
-  * Product environmental information
-  * Cisco support
-  * Cisco and partner services
-  * Cisco Capital
-  * Document history
-
-
-` `
-
-The Cisco UCS® C225 M8 Rack Server delivers record-breaking performance for space-constrained environments.
-
-Product overview
-
-The Cisco UCS C225 M8 Rack Server is a versatile general-purpose infrastructure and application server. This high-density, 1RU, single-socket rack server delivers industry-leading performance and efficiency for a wide range of workloads, including virtualization, collaboration, and bare-metal applications. 
-
-![Cisco UCS® C225 M8 Rack Server](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-rack-server-ds.docx/_jcr_content/renditions/ucs-c225-m8-rack-server-ds_0.png)
-
-The Cisco UCS C225 M8 Rack Server extends the capabilities of the Cisco UCS rack server portfolio. It powers 5th Gen and 4th Gen AMD EPYC™ Processors with 150 percent more cores per socket designed using AMD’s chiplet architecture. With advanced features such as AMD Infinity Guard, compute-intensive applications will see significant performance improvements and reap other benefits such as power and cost efficiencies.
-
-You can deploy the Cisco UCS C-Series rack servers as standalone servers or as part of the Cisco Unified Computing System™ managed by Cisco Intersight® or Cisco UCS Manager to take advantage of Cisco® standards-based unified computing innovations that can help reduce your Total Cost of Ownership (TCO) and increase your business agility.
-
-The C225 M8 rack server brings many new innovations to the Cisco UCS AMD rack server portfolio. With the introduction of PCIe Gen 5.0 for high-speed I/O, a DDR5 memory bus, and expanded storage capabilities, the server delivers significant performance and efficiency gains that will improve your application performance.
-
-● Supports one 5th Gen or one 4th Gen AMD EPYC CPU, with up to 160 cores per socket
-
-● Up to 12 DDR5 DIMMs for up to 3 TB of capacity using 256 GB DIMMs
-
-● Up to 6000 MT/s DDR5 memory plus other speeds depending on the CPU installed
-
-● Up to 3 PCIe 4.0 slots or up to 2 PCIe 5.0 slots, plus a modular LAN on motherboard (mLOM) / OCP slot
-
-● Support for Cisco’s virtual interface card, the Cisco UCS VIC 15000 Series adapters, as well as third-party NIC options
-
-● UCS C225 M8S chassis: up to 10 SAS/SATA or NVMe disk drives
-
-◦ New tri-mode RAID controller supports SAS4 or NVMe hardware RAID 
-
-◦ Option for up to 4 direct-attach NVMe SSDs
-
-● UCS C225 M8N chassis: up to 10 direct attach NVMe SSDs 
-
-◦ All 10 NVMe drives connected at PCIe Gen4 x4
-
-● M.2 boot options
-
-◦ Up to two 960GB SATA M.2 drives with hardware RAID, or
-
-◦ Up to two 960GB NVMe M.2 drives with NVMe hardware RAID
-
-● Up to three GPUs supported
-
-● Hybrid modular LOM/OCP 3.0
-
-◦ One dedicated Gen 4.0 x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity
-
-◦ mLOM allows for Cisco UCS Virtual Interface Cards (VICs) without consuming a PCIe slot, supporting quad-port 10/25/50 Gbps or dual-port 40/100/200 Gbps network connectivity
-
-◦ OCP 3.0 slot features full out-of-band management for select adapters
-
-Powering next-generation applications
-
-The Cisco UCS C225 M8 Rack Server is well suited for a wide range of workloads, including:
-
-● IT and web infrastructure
-
-● High-performance virtual desktops
-
-● Small and medium-sized and distributed databases
-
-● AI inferencing 
-
-● Collaboration
-
-● Enterprise high-performance applications
-
-Cisco UCS C225 M8 Rack Servers can be deployed as standalone servers, part of a Cisco UCS‒managed environment, or through Cisco Intersight. When used in combination with Cisco Intersight, the UCS C225 M8 brings the power and automation of unified computing to enterprise applications, including Cisco SingleConnect technology, drastically reducing switching and cabling requirements.
-
-Cisco Intersight leverages the familiar capabilities of UCS Manager with service profiles, templates, and policy-based management to enable rapid deployment and help ensure deployment consistency. It also enables end-to-end server visibility, management, and control in both virtualized and bare-metal environments.
-
-The Cisco Integrated Management Controller (IMC) delivers comprehensive out-of-band server management with support for many industry standards, including:
-
-● Redfish Version 1.13.0 (2021.1 schema0)
-
-● Intelligent Platform Management Interface (IPMI) v2.0
-
-● Simple Network Management Protocol (SNMP) v2 and v3
-
-● Syslog
-
-● Simple Mail Transfer Protocol (SMTP)
-
-● Key Management Interoperability Protocol (KMIP)
-
-● cKVM (all-new Cisco KVM)
-
-● Command-Line Interface (CLI)
-
-● XML API 
-
-Management Software Development Kits (SDKs) and DevOps integrations exist for Python, Microsoft PowerShell, Ansible, Puppet, Chef, and more. For more information about integrations, see Cisco DevNet (<https://developer.cisco.com/site/ucs-dev-center/>).
-
-Product specifications
-
-Table 1 lists the specifications for the Cisco UCS C225 M8 Rack Server.
-
-**Table 1. **Specifications
-
-Item |  Specifications  
----|---  
-**Form factor** |  1RU rack server   
-**Processors** |  1 x 5th Gen AMD EPYC™ processor or 1 x 4th Gen AMD EPYC™ processor  
-**Memory** |  12 DDR5-6000 DIMM slots (12 DIMMS per CPU): 16, 32, 64, 96, 128, 256 GB at up to 6000 MT/s providing a memory density of up to 3 TB of memory with 5th Gen AMD EPYC™ processors or 12 DDR5-4800 DIMM slots (12 DIMMS per CPU): 16, 32, 64, 96, 128 GB at up to 4800 MT/s providing a memory density of up to 1.5 TB of memory with 4th Gen AMD EPYC™ processors.  
-**PCIe expansion** |  Up to 3 PCIe 4.0 slots or up to 2 PCIe 5.0slots plus 1 dedicated 24-Gbps RAID controller slot and 1 dedicated mLOM/OCP 3.0 slot  
-**RAID controllers** |  ● Internal controllers:  ◦ Cisco 24-Gbps modular tri-mode controller supports SAS 4 or NVMe hardware RAID ◦ Cisco 24-Gbps modular tri-mode Host Bus Adapter (HBA)  ● External controller: Cisco 12-Gbps 9500-8e SAS HBA   
-**Internal storage** |  ● Backplane options:  ◦ Up to 10 x 2.5-inch SAS and SATA HDDs, SSD, with the option of up to 4 direct-attach NVMe drives  ◦ Up to 10 x 2.5-inch NVMe PCIe SSDs (all direct-attach PCIe Gen4 x4)  
-**mLOM/OCP 3.0** |  ● One dedicated PCIe Gen4 x16 slot that can be used to add an mLOM or OCP 3.0 card for additional rear-panel connectivity  ● mLOM slot can flexibly accommodate 10/25/5010/25/40, and 40/100/200 100-Gbps Cisco VIC adapters.  ● OCP 3.0 slot features full out-of-band manageability that supports Intel X710 OCP Dual 10GBase-T via mLOM interposer.   
-**Power supplies** |  Hot-pluggable, redundant platinum and titanium options: ● Platinum: 1050W DC, and 1600W AC  ● Titanium: 1200W AC, and 2300W AC   
-**Other storage** |  ● Dedicated Baseboard Management Controller (BMC) FlexMMC for utilities (on board)  ● Dual M.2 SATA/NVMe SSDs with HW RAID support   
-**Management** |  ● [Cisco Intersight](https://www.cisco.com/site/us/en/products/computing/hybrid-cloud-operations/intersight-platform/index.html) ● [Cisco Integrated Management Controller (IMC)](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/data_sheet_c78-728802.html) ● [Cisco UCS Manager](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-manager/index.html)  
-**Rack options** |  ● Cisco ball-bearing rail kit with optional reversible cable management arm   
-**Hardware and software interoperability** |  See the [Cisco Hardware and Software Interoperability](https://www.cisco.com/c/en/us/support/servers-unified-computing/unified-computing-system/products-technical-reference-list.html) list for a complete listing of supported operating systems and peripheral options.   
-  
-System requirements
-
-Table 2 lists system requirements for the server.
-
-**Table 2. **System requirements
-
-Item |  Requirements  
----|---  
-**Cisco IMC** |  Release 4.3(4b)  
-  
-Ordering information
-
-**Table 3. **Ordering information
-
-Part # |  Product description   
----|---  
-**UCSC-C225-M8S** |  C225 M8 1RU standard server with up to 10x SFF drive bays   
-**UCSC-C225-M8N** |  C225 M8 1RU NVMe optimized server with up to 10x NVMe drive capability   
-  
-Warranty information
-
-The Cisco UCS C225 M8 Rack Server has a three-year, Next-Business-Day (NBD) hardware warranty, and a 90-day software warranty.
-
-Product sustainability
-
-Information about Cisco’s Environmental, Social, and Governance (ESG) initiatives and performance is provided in Cisco’s Corporate Social Responsibility (CSR) and sustainability [reporting](https://www.cisco.com/c/dam/m/en_us/about/csr/esg-hub/_pdf/purpose-report-2024.pdf).
-
-**Table 4. **Cisco environmental sustainability information
-
-Sustainability topic |  Reference  
----|---  
-**General** |  Information on product-material-content laws and regulations |  [Materials](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/materials.html)  
-Information on electronic waste laws and regulations, including our products, batteries, and packaging |  [WEEE compliance](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/product-recycling/weee-compliance.html)  
-Information on our product takeback and reuse program |  [Cisco Takeback and Reuse Program](https://www.cisco.com/c/en/us/about/takeback-and-reuse.html)  
-Sustainability inquiries |  Contact: [csr_inquiries@cisco.com](https://cisco-my.sharepoint.com/personal/heltsai_cisco_com/Documents/AMD%20Genoa%20Launch%20Assets/C225M8%20Launch%20Materials/csr_inquiries@cisco.com)  
-Operating and nonoperating conditions |  Product specifications  
-**Material** |  Product packaging weight and materials |  Contact: [environment@cisco.com](https://cisco-my.sharepoint.com/personal/heltsai_cisco_com/Documents/AMD%20Genoa%20Launch%20Assets/C225M8%20Launch%20Materials/environment@cisco.com)  
-  
-Product environmental information
-
-Product environmental information for users per Commission Regulation (EU) 2019/424 <https://www.cisco.com/web/dofc/EU96313.pdf>.
-
-Cisco support
-
-Augmenting the Cisco Unified Computing System (Cisco UCS) warranty, Cisco Smart Net Total Care® and Cisco Solution Support services are part of Cisco's technical services portfolio. Smart Net Total Care combines Cisco's industry-leading and award-winning foundational technical services with an extra level of actionable business intelligence that is delivered to you through the smart capabilities in the Smart Net Total Care portal. Learn more about [Smart Net Total Care](https://www.cisco.com/c/en/us/support/services/smart-net-total-%20care/index.html).
-
-Cisco Solution Support includes both Cisco product support and solution-level support, resolving complex issues in multivendor environments on average 43 percent more quickly than with product support alone. Cisco Solution Support is a critical element in data-center administration, helping to rapidly resolve any issue encountered while maintaining performance, reliability, and return on investment.
-
-This service centralizes support across your multivendor Cisco environment for both our products and solution partner products that you have deployed in your ecosystem. Whether there is an issue with a Cisco product or with a solution partner product, just call us. Our experts are the primary point of contact and own the case from first call to resolution. Learn more about [Cisco Solution Support](https://www.cisco.com/c/en/us/services/technical/solution-support.html).
-
-Cisco and partner services
-
-Cisco and our industry-leading partners deliver services that can accelerate your transition to a Cisco UCS X-Series Modular System solution. Cisco Unified Computing Systems Services can help you create an agile infrastructure, accelerate time to value, reduce costs and risks, and maintain availability during deployment and migration. After deployment, our services can help you improve performance, availability, and resiliency as your business needs evolve and help you further mitigate risk. For more information, visit <https://www.cisco.com/go/unifiedcomputingservices>.
-
-Cisco Capital
-
-Flexible payment solutions to help you achieve your objectives
-
-Cisco Capital® makes it easier to get the right technology to achieve your objectives, enable business transformation and help you stay competitive. We can help you reduce the total cost of ownership, conserve capital, and accelerate growth. In more than 100 countries, our flexible payment solutions can help you acquire hardware, software, services and complementary third-party equipment in easy, predictable payments. [Learn more](https://www.cisco.com/go/financing).
-
-Document history
-
-New or revised topic |  Described In |  Date  
----|---|---  
-**Product specifications** |  Page 5 |  October 10, 2024  
-**Product overview** |  Page 3 |  May 21, 2025  
-**Product specifications** |  Page 5 |  May 21, 2025  
-  
-### Our experts recommend
-
-  * [Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html "Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper")
-  * [Cisco UCS C845A M8 Rack Server At a Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html "Cisco UCS C845A M8 Rack Server At a Glance")
-  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
-
-
-### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
----
-
-## Page 6: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS C845A M8 Rack Server Data Sheet
+# Cisco UCS C845A Rack Server Data Sheet
 
 Data Sheet
 
@@ -1614,11 +1269,11 @@ Print
 
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.pdf) (332.7 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.pdf) (449.9 KB)   
 View with Adobe Reader on a variety of devices
 
 
-Updated:March 16, 2026
+Updated:June 4, 2026
 
 Bias-Free Language
 
@@ -1666,11 +1321,11 @@ Print
 
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.pdf) (332.7 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.pdf) (449.9 KB)   
 View with Adobe Reader on a variety of devices
 
 
-Updated:March 16, 2026
+Updated:June 4, 2026
 
 #### Table of Contents
 
@@ -1689,19 +1344,27 @@ Updated:March 16, 2026
 
 ` `
 
-The Cisco UCS® C845A M8 Rack Server/RTX PRO Server is a highly scalable, flexible, and customizable AI system based on the NVIDIA MGX reference design for accelerated computing. With support for two (2) to eight (8) NVIDIA or AMD PCIe GPUs including NVIDIA RTX PRO 4500 and 6000 Blackwell Server Edition GPUs and NVIDIA AI Enterprise software, it delivers high performance for a wide range of AI workloads – including Generative AI fine-tuning, RAG and inference.
+The Cisco UCS® C845A M8 Rack Server/RTX PRO Server is a highly scalable, flexible, and customizable AI system based on the NVIDIA MGX reference design for accelerated computing. With support for two (2) to eight (8) NVIDIA or AMD PCIe GPUs including NVIDIA RTX PRO 4500, RTX PRO 6000D, and 6000 Blackwell Server Edition GPUs and NVIDIA AI Enterprise software, it delivers high performance for a wide range of AI workloads and is optimized for enterprise AI inferencing, agentic AI, and the NVIDIA AI Data Platform in addition to generative AI fine-tuning and RAG.
 
 Product overview
 
-![Cisco UCS® C845A M8 Rack Server](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.docx/_jcr_content/renditions/ucs-c845a-m8-rack-server-ds_0.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.docx/_jcr_content/renditions/ucs-c845a-m8-rack-server-ds_0.png)
 
-The Cisco UCS C845A M8 Rack Server/RTX PRO Server is designed to address the most demanding AI workloads. Now an integral component of Cisco® AI PODs (Cisco Validated Designs for AI), the Cisco UCS C845A M8 provides a robust foundation for modern AI infrastructure, allowing organizations to easily scale their AI capabilities with confidence.
+Figure 1. 
 
-With support for 2, 4, 6, or 8 NVIDIA GPUs—including the NVIDIA RTX Pro 4500 and 6000 Blackwell, H100 NVL, H200 NVL, L40S, and also supports AMD Instinct MI210 GPUs this system offers unparalleled flexibility to meet the diverse needs of enterprises. Leveraging the sophistication of the MGX modular reference design, this platform is also future-ready, with next-generation NVIDIA GPUs expected to seamlessly integrate as they become available.
+Cisco UCS C845A M8 Rack Server
 
-As part of Cisco AI PODs, the UCS C845A M8 is designed to accelerate workloads such as large-scale deep learning, Large Language Model (LLM) training, model optimization, and AI inference. It supports hybrid AI workflows across cloud and edge environments, making it the perfect solution for enterprises working on cutting-edge applications such as AI agents, conversational AI, intelligent search, and virtual desktops. Enhanced by 5th Gen AMD EPYC "Turin" CPUs and NVIDIA BlueField-3 DPUs, this server eliminates performance bottlenecks, ensuring optimal CPU and GPU utilization for data-intensive workloads.
+The Cisco UCS C845A M8 Rack Server/RTX PRO Server is designed to address the most demanding AI workloads. Now an integral component of Cisco® AI PODs (Cisco Validated Designs for AI) and a foundational compute building block for the Cisco Secure AI Factory with NVIDIA, the Cisco UCS C845A M8 provides a robust foundation for modern AI infrastructure, allowing organizations to easily scale their AI capabilities with confidence—moving from AI pilot to production with secure, simple, and scalable infrastructure that accelerates time to first token and lowers cost per token from core to edge.
+
+With support for 2, 4, 6, or 8 NVIDIA GPUs—including the NVIDIA RTX PRO 4500 (32GB), RTX PRO 6000D (84 GB), and RTX PRO 6000 Blackwell (96 GB), H100 NVL, H200 NVL, L40S, and also supports AMD Instinct MI210 GPUs—this system offers unparalleled flexibility to meet the diverse needs of enterprises. Combined with up to 8 TB of DDR5-6400 system memory and Gen5 E1.S NVMe storage (up to 15.3 TB per drive), the platform keeps large models, vector indexes, and KV caches close to the GPU, sustaining higher tokens-per-second under real production inferencing workloads. Leveraging the sophistication of the MGX modular reference design, this platform is also future-ready, with next-generation NVIDIA GPUs expected to seamlessly integrate as they become available.
+
+As part of Cisco AI PODs, the C845A M8 is designed to accelerate workloads such as large-scale deep learning, Large Language Model (LLM) training, model optimization, and AI inference. It supports hybrid AI workflows across cloud and edge environments, making it the perfect solution for enterprises working on cutting-edge applications such as AI agents, conversational AI, intelligent search, and virtual desktops. Enhanced by 5th Gen AMD EPYC "Turin" CPUs and NVIDIA BlueField-3 DPUs, this server eliminates performance bottlenecks, ensuring optimal CPU and GPU utilization for data-intensive workloads.
 
 With seamless integration into Cisco Intersight®, customers can manage their entire infrastructure—including compute, storage, and networking—through a unified interface. The Cisco UCS C845A M8, now part of Cisco AI PODs, is the ideal platform for organizations seeking to scale their AI initiatives with confidence and efficiency.
+
+As a building block of the Cisco Secure AI Factory with NVIDIA, the C845A M8 inherits distributed security fused into every layer, protecting models, agents, workloads, and infrastructure with Cisco AI Defense, Hybrid Mesh Firewall, Isovalent®, and Hypershield™. NVIDIA BlueField-3 DPUs with crypto acceleration offload security policy enforcement from CPU and GPU, preserving cycles for AI processing while keeping the entire stack hardened and observable through Splunk® Enterprise Security and Splunk Observability Cloud.
+
+The C845A M8 is engineered to align with the NVIDIA AI Data Platform reference design, connecting enterprise data, vector stores, and retrieval pipelines to GPU-accelerated inferencing, so customers can build agentic AI and RAG applications on their own data with the performance, governance, and security required for production. Combined with NVIDIA NIM microservices, NeMo, and Blueprints, the platform compresses time to first token and shortens the path from AI pilot to enterprise deployment. 
 
 What use cases does the Cisco UCS C845A M8 address?
 
@@ -1717,7 +1380,7 @@ NVIDIA H100 NVL:
 
 ● Generative AI inference for large language models.
 
-● High-performance AI training
+● High-performance AI training.
 
 **NVIDIA H200 NVL:**
 
@@ -1736,6 +1399,14 @@ NVIDIA H100 NVL:
 ● **Hybrid AI/ML workflows:** enabling seamless training, inferencing, and AI-assisted graphics across on-premises and cloud.
 
 ● **Edge-to-core AI applications:** supporting real-time AI at the edge with centralized management and cloud integration.
+
+**NVIDIA RTX PRO 6000D Blackwell Server Edition:**
+
+● **Enterprise AI inferencing at scale:** serving high-concurrency LLM, multimodal, and agentic workloads with 84 GB of GPU memory, balancing throughput and cost per token for production deployments.
+
+● **NVIDIA AI Data Platform workloads:** accelerating retrieval-augmented generation, vector search, and enterprise data pipelines on the customer’s own data.
+
+● **Cost-optimized GenAI deployments:** a strong price/performance option for fine-tuning and inferencing where 96 GB of HBM is more than the memory that is required. 
 
 **NVIDIA RTX PRO 4500 Blackwell Server Edition:**
 
@@ -1786,24 +1457,28 @@ Feature |  Benefit
 **Cisco Intersight support** |  ● See, control, and automate your compute, storage, and networking infrastructure throughout its lifecycle   
 **E1.S drives for local storage** |  ● Increased storage density, improved thermal management, and hot-swappable drives  ● High performance, lower power consumption, and compact form factor   
 **Addition to NVIDIA MGX reference design** |  ● Improved power delivery, fewer PCBs, and improved cable routing   
+**Cisco Secure AI Factory with NVIDIA building block** |  ● Distributed security across the AI stack with Cisco AI Defense, Hybrid Mesh Firewall, Isovalent, and Hypershield  ● End-to-end observability through Splunk Enterprise Security and Splunk Observability Cloud  ● Faster path from AI pilot to production: secure, simple, scalable from core to edge   
+**Optimized for enterprise inferencing and the NVIDIA AI Data Platform** |  ● Up to 96 GB of GPU memory per RTX PRO 6000 and up to 8 TB of DDR5-6400 system memory keep larger models, longer contexts, and more concurrent users resident, higher throughput, and lower cost per token.  ● Aligned with NVIDIA AI Data Platform reference design and NVIDIA NIM, NeMo, and Blueprints for agentic AI and RAG on enterprise data  ● Gen5 E1.S NVMe (up to 15.3 TB per drive) keeps vector indexes and KV caches close to the GPU for sustained tokens-per-second.   
   
 Product specifications
 
 **Table 2. **Specifications of the Cisco UCS C845A M8 Rack Server
 
-Item |  Specifications  
+Specification |  Cisco UCS 845A M8 Details  
 ---|---  
-**Form factor** |  4RU Air-cooled rack server  
-**Processors** |  2x 5th Gen AMD EPYC 9355 32 cores, 3.55GHz (max boost 4.4 GHz) or 2x 5th Gen AMD EPYC 9375F 32 cores, 3.85GHz (max boost 4.8 GHz) or 2x 5th Gen AMD EPYC 9455 48 cores, 3.15GHz (max boost 4.4 GHz) or 2x 5th Gen AMD EPYC 9475F 48 cores, 3.65GHz (max boost 4.8 GHz) or 2x 5th Gen AMD EPYC 9555 64 cores, 3.2GHz (max boost 4.4 GHz) or 2x 5th Gen AMD EPYC 9575F 64 cores, 3.3GHz (max boost 5 GHz) or 2x 5th Gen AMD EPYC 9655 96 cores, 2.6GHz (max boost 4.5 GHz)  
-**Memory** |  32 DIMM slots (16 DIMMS per CPU) 32, 64, 96, 128GB DDR5 at up to 5200 MT/s for up to 4TB memory system capacity Refer to the Cisco UCS C845A M8 AI Memory Guide: <https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845Am8-memory-guide.pdf>.  
-**GPUs** |  Up to 8x NVIDIA RTX Pro 4500 and 6000 Blackwell Server Edition GPU or Up to 8x NVIDIA H200 NVL or Up to 8x NVIDIA H100 NVL or Up to 8x NVIDIA L40S or Up to 8x AMD Instinct MI210  
-**Boot drives** |  2x 960GB M.2 SATA SSDs (includes hardware RAID) 2x 240GB M.2 SATA SSDs (includes hardware RAID)  
-**Internal storage** |  Up to 20x 1.9TB E1.S 15 mm NVMe PCIe drives Up to 20x 3.8TB E1.S 15 mm NVMe PCIe drives Up to 20x 7.6TB E1.S 15 mm NVMe PCIe drives  
-**PCIe slots** |  One PCIe Gen5x16 FHHL for north-south traffic – NVIDIA ConnectX-7 (2x200G), NVIDIA BlueFiled-3 B3220 DPU 4x PCIe Gen5x16 FHHL for east-west traffic – NVIDIA ConnectX-7 (1x400G) or NVIDIA BlueField-3 3140H SuperNIC  
-**OCP 3.0 slot** |  Intel® X710-DA2 (dual-port 10GBaseT) for x86 management  
-**Power supply** |  4x 3.2kW 80Plus 12V M-CRPS hot-swappable redundant PSUs with N+1 Redundancy  
-**Management** |  [Cisco Intersight](https://www.cisco.com/site/us/en/products/computing/hybrid-cloud-operations/intersight-platform/index.html)  
-**Hardware and software interoperability** |  See the Cisco [Hardware and Software Interoperability](https://www.cisco.com/c/en/us/support/servers-unified-computing/unified-computing-system/products-technical-reference-list.html) lists for a complete listing of supported operating systems and peripheral options  
+**CPU** |  Dual AMD™ Turin CPUs, up to 400W TDP each. Each CPU supports 3-link XGMII. ● Supported CPUs:  ◦ AMD 9575F 3.3GHz 400W 64C/256MB Cache DDR5 6000MT/s (CAI-CPU-A9575F) ◦ AMD 9475F 3.65GHz 400W 48C/256MB Cache DDR5 6000MT/s (CAI-CPU-A9475F) ◦ AMD 9375F 3.85GHz 320W 32C/256MB Cache DDR5 6000MT/s (CAI-CPU-A9375F) ◦ AMD 9655 2.6GHz 400W 96C/384MB Cache DDR5 6000MT/s (CAI-CPU-A9655) ◦ AMD 9555 3.2GHz 360W 64C/256MB Cache DDR5 6000MT/s (CAI-CPU-A9555) ◦ AMD 9455 3.15GHz 300W 48C/256MB Cache DDR5 6000MT/s (CAI-CPU-A9455) ◦ AMD 9355 3.55GHz 280W 32C/256MB Cache DDR5 6000MT/s (CAI-CPU-A9355)  
+**System Memory** |  Up to 32 DDR5 DIMMs: ● 32GB DDR5-6400 RDIMM 1Rx4 (16Gb) (CAI-MRx32G1RE5)  ● 64GB DDR5-6400 RDIMM 2Rx4 (16Gb) (CAI-MRx64G2RE5)  ● 96GB DDR5-6400 RDIMM 2Rx4 (24Gb) (CAI-MRx96G2RF5)  ● 128GB DDR5-6400 RDIMM 2Rx4 (32Gb) (CAI-MR128G2RG5)  ● 256GB DDR5-6400 RDIMM 4Rx4 (32Gb) (CAI-MR256G4RG5)   
+**System Control** |  Dedicated RJ-45 Ethernet port which provides physical access to the server’s baseboard management controller (BMC)  
+**GPU** |  Two, four, six, or eight of the following PCIe GPUs: ● AMD ™ Instinct MI210 GPU, 300W, 64GB, FHFL, 2-slot (CAI-GPU-MI210). This GPU supports AMD's 2-Way and 4-Way GPU interconnect.  ◦ AMD Infinity 2-Way Bridge for the AMD MI210 GPU (CAI-INF2-MI210) ◦ AMD Infinity 4-Way Bridge for the AMD MI210 GPU (CAI-INF4-MI210) ● NVIDIA ™ RTX Pro 6000 GPU, 600W, 96GB, FHFL, 2-slot (CAI-GPU-RTXP6000)  ● NVIDIA RTX Pro 6000D GPU, 600W, 84GB, FHFL, 2-slot (CAI-GPU-RTXP6000D)  ● NVIDIA L40S: 350W, 48GB, 2-slot FHFL GPU (CAI-GPU-L40S)  ● NVIDIA OEM H200-NVL GPU 600W, 141GB, 2-slot FHFL (CAI-GPU-H200-NVL). This GPU supports NVIDIA's 2-Way and 4-Way NVLink GPU interconnect.  ◦ NVIDIA NVL-2 Way Bridge for H200 GPU (CAI-NVL2-H200) ◦ NVIDIA NVL-4 Way Bridge for H200 GPU (CAI-NVL4-H200) ● NVIDIA RTX Pro 4500 GPU, 165W, 32GB, FHFL, 1-slot (CAI-GPU-RTXP4500)  **Note** If your system will use this GPU, or another single-width GPU, make sure to obtain a perforated filler panel by ordering (UCSC-PCIE-FH). The number of perforated filler panels you will need equals (16 -  _x_) where  _x_ is the number of single-width GPUs.  
+**LAN** |  One OCP 3.0 SFF PCIe Gen5 x8 NIC (CPU0) with two 10GbE RJ-45 Ethernet  
+**Management** |  Supported through the DC-SCM card, which features an AST2600 BMC Security is offered through a version 3.0 trusted platform module (TPM). One OCP 3.0 10GBaseT module offers server host management.  
+**Storage** |  Up to 20 E1.S NVMe PCIe Gen5 SSDs. ● 1.9TB E1.S 15mm Kioxia ™ XD7P Hg Perf Med End Gen4 1X NVMe (CAI-NVES1T9K1V)  ● 3.8TB E1.S 15mm Kioxia XD7P Hg Perf Med End Gen4 1X NVMe (CAI-NVES3T8K1V)  ● 7.6TB E1.S 15mm Kioxia XD7P Hg Perf Med End Gen4 1X NVMe (CAI-NVES7T6K1V)  ● 1.9TB E1.S 15mm Kioxia XD8 Hg Perf Med End Gen5 1X NVMe (CAI-NVES1T9K2V)  ● 3.8TB E1.S 15mm Kioxia XD8 Hg Perf Med End Gen5 1X NVMe (CAI-NVES3T8K2V)  ● 7.6TB E1.S 15mm Kioxia XD8 Hg Perf Med End Gen5 1X NVMe (CAI-NVES7T6K2V)  ● 1.9TB E1.S 15mm Sandisk SN861 Hg Perf Med End Gen5 1X NVMe (CAI-NVES1T9D1V)  ● 3.8TB E1.S 15mm Sandisk SN861 Hg Perf Med End Gen5 1X NVMe (CAI-NVES3T8D1V)  ● 7.6TB E1.S 15mm Sandisk SN861 Hg Perf Med End Gen5 1X NVMe (CAI-NVES7T6D1V)  ● 15.3TB E1.S 15mm Sandisk SN861 Hg Perf Med End Gen5 1X NVMe (CAI-NVES15T3D1V)  Boot Drives: A Cisco Boot-Optimized RAID controller with two M.2 SATA boot drives is also supported in either few the following configurations. ● 240GB M.2 SATA Micron G2 SSD (CAI-M2-240G)  ● 960GB M.2 SATA Micron G2 SSD (CAI-M2-960G)   
+**Expansion Slot** |  Five FHHL PCIe Gen5 x16 slots One OCP 3.0 slot  
+**Networking** |  Five PCIe x16 full height, half length (FHHL) slots for single-slot NICS or data processing units (DPUs) For north-south traffic: ● NVIDIA MCX755106AS-HEAT 2x200GbE QSFP112 Gen5x16, PCIe VPI NIC (CAI-P-N7D200GFO)  ● NVIDIA BF-3 B3220 DPU 2x200G QSFP112, Crypto Disabled (CAI-P-N3220)  ● Intel X710-DA2 (2x10GbE) (RJ45 OCP 3.0) (CAI-O-ID10GC)  ● NVIDIA BF-3 B3220 DPU 2x200G Crypto enabled (CAI-P-NC3220)  ● NVIDIA OEM CX713104AS-ADAT: 4x25GbE SFP56 Gen4x16, PCIe NIC (CAI-P-N7Q25GFO)  For east-west traffic: ● NVIDIA OEM BlueField-3 B3140H SuperNIC 1x400G Crypto Disabled (CAI-P-N3140H)  ● NVIDIA OEM MCX715105AS-WEAT 1x400GbE QSFP112 PCIe Gen5 NIC, Crypto Disabled (CAI-P-N7S400GFO)  ● NVIDIA BF-3 B3140H SuperNIC 1x400G Crypto enabled (CAI-P-NC3140H)  ● NVIDIA OEM CX713104AS-ADAT: 4x25GbE SFP56 Gen4x16, PCIe NIC (CAI-P-N7Q25GFO)   
+**System Cooling** |  Five individual 80 mm fans  
+**Power** |  Up to four 3.2KW MCRPS hot-swappable PSUs with N+1 redundancy  
+**System BIOS** |  AMI™ BIOS  
+**System Software** |  AMD ROCm™ Software Ubuntu / Red Hat Enterprise Linux (operating system)  
   
 Ordering information
 
@@ -1828,12 +1503,14 @@ Sustainability topic |  Reference
 **General** |  Information on product-material-content laws and regulations |  [Materials](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/materials.html)  
 Information on electronic waste laws and regulations, including our products, batteries, and packaging |  [WEEE Compliance](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/product-recycling/weee-compliance.html)  
 Information on product takeback and reuse program |  [Cisco Takeback and Reuse Program](https://www.cisco.com/c/en/us/about/takeback-and-reuse.html)  
-Sustainability inquiries |  Contact: [csr_inquiries@cisco.com](csr_inquiries@cisco.com)  
-**Material** |  Product packaging weight and materials |  Contact: [environment@cisco.com](environment@cisco.com)  
+Sustainability inquiries |  Contact[: csr_inquiries@cisco.com](mailto:csr_inquiries@cisco.com)  
+**Material** |  Product packaging weight and materials |  Contact: [environment@cisco.com](mailto:environment@cisco.com)  
   
 Product environmental information
 
-Product environmental information for users per Commission Regulation (EU) 2019/424 <https://www.cisco.com/web/dofc/EU103988.pdf>.
+Product environmental information for users per Commission Regulation (EU) 2019/424
+
+<https://www.cisco.com/web/dofc/25836410.pdf>
 
 Cisco and partner services
 
@@ -1863,11 +1540,12 @@ Document history
 
 New or Revised Topic |  Described In |  Date  
 ---|---|---  
-**New Product overview, specifications and Ordering information** |  UCS C845A M8 Data Sheet |  July 2025  
+**New Product overview, specifications and Ordering information** |  Cisco UCS C845A M8 Data Sheet |  July 2025  
+**Added RTX PRO 6000D GPU; DDR5-6400 memory up to 8 TB (256GB DIMMs); Gen5 E1.S NVMe up to 15.3 TB; crypto-enabled BlueField-3 DPU options; Windows Server 2022/2025 support; Cisco Secure AI Factory with NVIDIA and NVIDIA AI Data Platform positioning** |  Cisco UCS C845A M8 Data Sheet |  April 2026  
   
 ### Our experts recommend
 
-  * [Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html "Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper")
+  * [AI Performance: MLPerf Inference on Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL, L40S and RTX PRO 6000 GPUs](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.html "AI Performance: MLPerf Inference on Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL, L40S and RTX PRO 6000 GPUs")
   * [Cisco UCS C845A M8 Rack Server At a Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html "Cisco UCS C845A M8 Rack Server At a Glance")
   * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
@@ -1879,7 +1557,7 @@ New or Revised Topic |  Described In |  Date
 
 ---
 
-## Page 7: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.html
+## Page 6: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.html
 
   * Skip to content
   * Skip to search
@@ -2750,7 +2428,7 @@ For more information about the Intel Xeon 6 Processor Family, Cisco UCS BIOS tok
 
 ---
 
-## Page 8: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ai-pods-aag.html
+## Page 7: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ai-pods-aag.html
 
   * Skip to content
   * Skip to search
@@ -2940,7 +2618,7 @@ Our experts recommend BIOS Performance and workload: Tuning guide for Cisco UCS 
 
 ### Our experts recommend
 
-  * [Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html "Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper")
+  * [From X440p to X580p. How Cisco is Expanding Modular Server Use Cases (Again) White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x580-wp.html "From X440p to X580p. How Cisco is Expanding Modular Server Use Cases \(Again\) White Paper")
   * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
 
@@ -2951,497 +2629,7 @@ Our experts recommend BIOS Performance and workload: Tuning guide for Cisco UCS 
 
 ---
 
-## Page 9: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# AI Performance: MLPerf Inference on Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL and L40S GPUs
-
-White Paper
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.pdf) (5.0 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:October 2, 2025
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.pdf) (5.0 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:October 2, 2025
-
-#### Table of Contents
-
-  * Executive summary
-  * Scope of this document
-  * Product overview
-  * MLPerf overview
-  * MLPerf has multiple benchmarks, including:
-  * MLPerf Training
-  * MLPerf Inference: Datacenter
-  * Test configuration
-  * MLPerf Inference performance results
-  * Performance data for NVIDIA H200 NVL PCIe GPU
-  * Performance data for NVIDIA L40S PCIe GPU
-  * Performance summary
-  * Appendix: Test environment
-  * For more information
-
-
-` `
-
-Executive summary
-
-With Generative AI (GenAI) poised to significantly boost global economic output, Cisco is helping to simplify the challenges of preparing organizations’ infrastructure for AI implementation. The exponential growth of AI is transforming data-center requirements, driving demand for scalable, accelerated computing infrastructure. 
-
-The Cisco UCS® C845A M8 Rack Server is a highly scalable, flexible, and customizable AI system based on the NVIDIA MGX reference design for accelerated computing. With support for Two (2) to Eight (8) NVIDIA or AMD PCIe GPUs and NVIDIA AI Enterprise software, it delivers high performance for a wide range of AI workloads – including generative AI fine-tuning, Retrieval-Augmented Generation (RAG), and inference. 
-
-The Cisco UCS C845A M8 Rack Server is designed to address the most demanding AI workloads. Now an integral component of Cisco AI PODs (Cisco Validated Designs for AI), the Cisco UCS C845A M8 provides a robust foundation for modern AI infrastructure, allowing organizations to easily scale their AI capabilities with confidence. 
-
-With support for 2, 4, 6, or 8 NVIDIA GPUs—including the NVIDIA RTX PRO 6000 Blackwell, NVIDIA H200 NVL, and NVIDIA L40S, and also support for AMD Instinct MI210 accelerators, this system offers unparalleled flexibility to meet the diverse needs of enterprises. Leveraging the sophistication of the MGX modular reference design, this platform is also future-ready, with next-generation NVIDIA GPUs expected to seamlessly integrate as they become available. 
-
-To help demonstrate the AI performance capacity of the new Cisco UCS C845A M8 Rack Server, MLPerf Benchmarking performance testing for Inference 5.1 was conducted by Cisco, using both NVIDIA H200 NVL and L40S PCIe GPUs, as detailed later in this document. 
-
-Accelerated compute 
-
-A typical AI journey starts with training GenAI models with large amounts of data to build the model intelligence. For this important stage, the new Cisco UCS C845A M8 Rack Server is a powerhouse designed to tackle the most demanding AI-training tasks. With its high-density configuration of NVIDIA H200 NVL and L40S Tensor Core GPUs, coupled with the efficiency of NVIDIA MGX architecture, the UCS C845A M8 provides the raw computational power necessary for handling massive data sets and complex algorithms. Moreover, its simplified deployment and streamlined management make it easier than ever for enterprise customers to embrace AI.
-
-![A close-up of a computer serverAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_0.jpg)
-
-Figure 1. 
-
-Cisco UCS C845A M8 Rack Server front and back views 
-
-Scalable network fabric for AI connectivity 
-
-To train GenAI models, clusters of these powerful servers often work in unison, generating an immense flow of data that necessitates a network fabric capable of handling high bandwidth with minimal latency. This is where the newly released Cisco Nexus® 9364E-SG2 Switches shine. Their high-density 800G aggregation ensures smooth data flow between servers, while advanced congestion management and large buffer sizes minimize packet drops—keeping latency low and training performance high. The Nexus 9364E-SG2 Switches serve as a cornerstone for a highly scalable network infrastructure, allowing AI clusters to expand seamlessly as organizational needs grow.
-
-![A rectangular electronic device with many slotsAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_1.jpg)
-
-Figure 2. 
-
-Cisco Nexus 9364E-SG2 Switch for AI connectivity 
-
-<https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9000-series-switches-ai-clusters-wp.html>.
-
-Purchasing simplicity 
-
-Once these powerful models are trained, you need infrastructure deployed for inferencing to provide actual value, often across a distributed landscape of data centers and edge locations. We have greatly simplified this process with new Cisco AI PODs that accelerate deployment of the entire AI infrastructure stack itself. AI PODs are designed to offer a plug-and-play experience with NVIDIA-accelerated computing. The pre-sized and pre-validated bundles of infrastructure eliminate the guesswork from deploying edge-inferencing, large-scale clusters, and other AI inferencing solutions. 
-
-Our goal is to enable customers to confidently deploy AI PODs with predictability around performance, scalability, cost, and outcomes, while shortening time to production-ready inferencing with a full stack of infrastructure, software, and AI toolsets. AI PODs include NVIDIA AI Enterprise, an end-to-end, cloud-native software platform that accelerates data-science pipelines and streamlines AI development and deployment. Managed through Cisco Intersight®, AI PODs provide centralized control and automation, simplifying everything from configuration to day-to-day operations, with more use cases to come. 
-
-AI-cluster network design 
-
-An AI cluster typically has multiple networks—an inter-GPU backend network, a frontend network, a storage network, and an Out-Of-Band (OOB) management network. 
-
-Figure 3 shows an overview of these networks. Users (in the corporate network in the figure) and applications (in the data-center network) reach the GPU nodes through the frontend network. The GPU nodes access the storage nodes through a storage network, which, in Figure 3, has been converged with the frontend network. A separate OOB management network provides access to the management and console ports on switches, BMC ports on the servers, and Power Distribution Units (PDUs). A dedicated inter-GPU backend network connects the GPUs in different nodes for transporting Remote Direct Memory Access (RDMA) traffic while running a distributed job.
-
-![A screenshot of a computerAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_2.jpg)
-
-Figure 3. 
-
-AI-cluster network design 
-
-<https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9000-series-switches-ai-clusters-wp.html>.
-
-Rail-optimized network design 
-
-GPUs in a scalable unit are interconnected using rail-optimized design to improve collective communication performance by allowing single-hop forwarding through the leaf switches, without the traffic going to the spine switches. In rail-optimized design, port 1 on all the GPU nodes connects to the first leaf switch, port 2 connects to the second leaf switch, and so on. 
-
-The acceleration of AI is fundamentally changing our world and creating new growth drivers for organizations, such as improving productivity and business efficiency while achieving sustainability goals. Scaling infrastructure for AI workloads is more important than ever to realize the benefits of these new AI initiatives. IT departments are being asked to step in and modernize their data-center infrastructure to accommodate these new demanding workloads. 
-
-AI projects go through different phases: training your model, fine tuning it, and then deploying the model to end users. Each phase has different infrastructure requirements. Training is the most compute-intensive phase, and Large Language Models (LLMs), deep learning, Natural Language Processing (NLP), and digital twins require significant accelerated compute. 
-
-<https://www.cisco.com/c/en/us/td/docs/dcn/whitepapers/cisco-addressing-ai-ml-network-challenges.html>.
-
-**What use cases does the Cisco UCS C845A M8 Rack Server address?**
-
-The Cisco UCS C845A M8 Rack Server, a highly scalable and customizable server integrated into Cisco AI PODs, is engineered to drive a multitude of AI workloads. Its flexible GPU configurations enable it to address the most demanding AI challenges, including large deep learning, Large Language Model (LLM) training, model fine-tuning, large model inferencing, and Retrieval-Augmented Generation (RAG). 
-
-The platform’s versatility is further enhanced by its support for various GPUs, each optimized for specific market needs: 
-
-**NVIDIA H200 NVL:**
-
-● High-performance LLM inference 
-
-● Generative AI training and fine tuning 
-
-**NVIDIA RTX PRO 6000 Blackwell:**
-
-● Agentic and physical AI: powering autonomous systems, smart factories, and robotics for real-time decision making 
-
-● Advanced scientific computing and rendering: accelerating complex simulations, medical imaging, and engineering analysis across hybrid environments 
-
-● High-fidelity 3D graphics and video: driving content creation, post-production, and immersive VR/AR experiences 
-
-● Hybrid AI/ML workflows: enabling seamless training, inferencing, and AI-assisted graphics across on-premises and cloud 
-
-● Edge-to-core AI applications: supporting real-time AI at the edge with centralized management and cloud integration
-
-**AMD Instinct MI210 accelerators**
-
-● **High-Performance Computing (HPC):** accelerating scientific research, simulations, and complex modeling 
-
-● **Energy-efficient AI/ML workloads:** supporting deep-learning training and inferencing with a focus on power efficiency 
-
-● **Large-scale data analytics:** speeding up data processing and analytics for enterprise applications 
-
-● **Hybrid AI inference:** providing balanced compute and efficiency for inferencing tasks in diverse environments 
-
-● **Specialized simulation workloads:** enhancing performance for engineering, manufacturing, and bioinformatics simulations 
-
-**NVIDIA L40S:**
-
-● Generative AI foundation model fine-tuning 
-
-● Deployment of intelligent chatbots and search tools 
-
-● Language processing and conversational AI 
-
-● Graphics, rendering, and NVIDIA Omniverse applications 
-
-● Virtual desktop infrastructure 
-
-Scope of this document
-
-For the MLPerf Benchmarking performance testing for Inference 5.1: Datacenter, performance was evaluated using 8x NVIDIA H200 NVL and 8x NVIDIA L40S PCIe GPUs configured on a Cisco UCS C845A M8 Rack Server, and Inference benchmark results were collected for various datasets. This data will help in understanding the performance benefits of the UCS C845A M8 server using these PCIe GPUs for inference workloads. Performance data for MLPerf Inference 5.1 is highlighted in this white paper for selected datasets, to provide a quick understanding of the performance of the Cisco UCS C845A M8 Rack Server. 
-
-Product overview
-
-Built on the NVIDIA MGX modular reference design, the Cisco UCS C845A M8 Rack Server is a flexible, scalable, and customizable AI system capable of growing as your AI needs grow. Configure with 2, 4, 6, or 8 PCIe GPUs to address a multitude of workloads ranging from generative AI, graphics and rendering, to virtual desktop infrastructure. 
-
-● UCS C845A M8 servers can be configured with two to eight NVIDIA GPUs. Depending on the configuration, customers can choose between the PCIe-based NVIDIA H200 NVL, L40S, RTXP6000, or AMD MI210 accelerators GPUs. Thanks to the sophistication of the MGX design, more “next-generation” NVIDIA and AMD GPUs are planned for introduction on this platform as they become available. 
-
-● With a compute node powered by AMD’s new high-end EPYC Turin (5th Gen) CPUs, designed specifically for AI workloads, the UCS C845A M8 provides a no-compromise solution for CPU or GPU performance required to avoid bottlenecks within an AI server. Another benefit is the capability to configure the server with NVIDIA ConnectX-7 SmartNIC adapters and/or NVIDIA BlueField-3 DPUs to handle data traffic in and out of the server.
-
-![A diagram of a serverAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_3.jpg)
-
-Figure 4. 
-
-Components of the Cisco UCS C845A Rack Server 
-
-A specifications sheet for the Cisco UCS C845A M8 Rack Server is available at: 
-
-<https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-spec-sheet.pdf>.
-
-MLPerf overview
-
-MLPerf is a benchmark suite that evaluates the performance of machine-learning software, hardware, and services. The benchmarks are developed by MLCommons, a consortium of AI leaders from academia, research labs, and industry. The goal of MLPerf is to provide an objective yardstick for evaluating machine-learning platforms and frameworks. 
-
-MLPerf has multiple benchmarks, including:
-
-● **MLPerf Training:** measures the time it takes to train machine-learning models to a target level of accuracy 
-
-● **MLPerf Inference:** Datacenter measures how quickly a trained neural network can perform inference tasks on new data 
-
-MLPerf Training
-
-The MLPerf Training benchmark suite measures how fast systems can train models to a target quality metric. Current and previous results can be reviewed through the results dashboard given in below mlcommons link. 
-
-This [MLPerf Training Benchmark paper](https://arxiv.org/pdf/1910.01500.pdf) provides a detailed description of the motivation and guiding principles behind the MLPerf Training benchmark suite. 
-
-<https://mlcommons.org/benchmarks/training/>.
-
-MLPerf Inference: Datacenter
-
-The MLPerf Inference: Datacenter benchmark suite measures how fast systems can process inputs and produce results using a trained model. Below mlcommons link gives summary of the current benchmarks and metrics. 
-
-This [MLPerf Inference Benchmark paper](https://arxiv.org/abs/1911.02549) provides a detailed description of the motivation and guiding principles behind the MLPerf Inference: Datacenter benchmark suite. 
-
-<https://mlcommons.org/benchmarks/inference-datacenter/>.
-
-Test configuration
-
-For the MLPerf Inference 5.1 performance testing covered in this document, the following two Cisco UCS C845A M8 Rack Server configurations were used: 
-
-● 8x NVIDIA H200 NVL PCIe GPUs 
-
-● 8x NVIDIA L40S PCIe GPUs
-
-MLPerf Inference performance results
-
-MLPerf Inference benchmarks 
-
-The MLPerf Inference models given in Table 1 were configured on a Cisco UCS C845A M8 Rack Server and tested for performance. 
-
-**Table 1. **MLPerf Inference 5.1 models
-
-Model  |  Reference implementation model  |  Description   
----|---|---  
-**Retinanet 800x800** |  [vision/classification_and_detection](https://github.com/mlcommons/inference/tree/master/vision/classification_and_detection) |  Single-stage object detection model optimized for detecting small objects in high-resolution images   
-**Stable Diffusion XL** |  [text_to_image](https://github.com/mlcommons/inference/tree/master/text_to_image) |  Generative model for creating high-quality images from text prompts   
-**Llama2-70B** |  [language/llama2-70b](https://github.com/mlcommons/inference/tree/master/language/llama2-70b) |  Large language model with 70 billion parameters. It is designed for Natural Language Processing (NLP) tasks and answering questions   
-**Llama3.1-8B** |  [language/llama3.1-8b](https://github.com/mlcommons/inference/tree/master/language/llama3.1-8b) |  Multilingual Large Language Models (LLMs) with a collection of pretrained and instruction tuned generative models   
-**Whisper** |  [speech2text](https://github.com/mlcommons/inference/tree/master/speech2text) |  Designed to enable not only transcriptions but also such tasks as language identification, phrase-level timestamps, and speech translation from other languages into English   
-  
-MLPerf Inference 5.1 performance data 
-
-As part of the MLPerf Inference 5.1 submission, Cisco has tested most of the datasets listed in Table 1 on the Cisco UCS C845A M8 Rack Server and submitted the results to MLCommons. The results are published on MLCommons results page: <https://mlcommons.org/benchmarks/inference-datacenter/>.
-
-**Note:** The graph below includes unverified MLPerf Inference 5.1 results collected after the MLPerf submission deadline. For such data, there is an added note: “Result not verified by MLCommons Association.” 
-
-MLPerf Inference results are measured in both offline and server scenarios. The offline scenario focuses on maximum throughput, whereas the server scenario measures both throughput and latency, ensuring that a certain percentage of requests are served within a specified latency threshold.
-
-Performance data for NVIDIA H200 NVL PCIe GPU
-
-Retinanet 
-
-Retinanet is a single-stage object-detection model known for its focus on addressing class imbalances using a novel focal-loss function. The “800x800” refers to the input image size, and the model is optimized for detecting small objects in high-resolution images. 
-
-Figure 2 shows the performance of the Retinanet model tested on UCS C845A M8 Rack Server with NVIDIA 8x H200 NVL GPUs.
-
-![A graph of blue rectangular barsAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_4.jpg)
-
-Figure 5. 
-
-Retinanet performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL GPUs
-
-Llama3.1-8b 
-
-Llama3.1-8b is a powerful Large Language Model (LLM) with impressive capabilities in text generation, translation, and question answering. However, using cutting-edge LLMs often requires cloud resources. This tutorial empowers you to run the 8b version of Meta Llama3.1 directly on your local machine, giving you more control and privacy over your AI interactions. 
-
-Figure 6 shows the performance of the Llama3.1-8b model tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA H200 NVL GPUs.
-
-![A graph of blue rectangular barsAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_5.png)
-
-Figure 6. 
-
-Llama3.1-8b performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL GPUs
-
-Llama2-70b (99) 
-
-Llama2-70b is a large language model from Meta, with 70 billion parameters. It is designed for various natural language processing tasks such as text generation, summarization, translation, and answering questions. 
-
-Figure 7 shows the performance of the Llama2-70b model, with an accuracy of 99, tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA H200 NVL GPUs.
-
-![A graph of blue rectangular barsAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_6.png)
-
-Figure 7. 
-
-Llama2-70b performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL GPUs 
-
-**Note:** For Llama2-70b performance data, the results have not been verified by MLCommons Association because the results were collected after the MLPerf submission deadline.
-
-Llama2-70b (99.9) 
-
-Llama2-70b (99.9) is a large language model from Meta, with 70 billion parameters. It is designed for various natural language processing tasks such as text generation, summarization, translation, and answering questions. 
-
-Figure 8 shows the performance of the Llama2-70b model, with a high accuracy of 99.9, tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA H200 NVL GPUs.
-
-![A graph of blue rectangular barsAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_7.png)
-
-Figure 8. 
-
-Llama2-70b (99.9) performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL GPUs 
-
-**Note:** For Llama2-70b high-accuracy (99.9) performance data, the results have not been verified by MLCommons Association because the results were collected after the MLPerf submission deadline.
-
-Llama2-70b Interactive 
-
-This model is essentially identical to the existing Llama2-70b workload, but for the tighter latency constraints in a server scenario. 
-
-Figure 9 shows the performance of the Llama2-70b Interactive model for 99 and 99.9 accuracy tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA H200 NVL GPUs.
-
-![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_8.png)
-
-Figure 9. 
-
-Llama2-70b Interactive performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL GPUs 
-
-**Note:** For NVIDIA H200 NVL Llama2-70b Interactive performance data, the results have not been verified by MLCommons Association because the results were collected after the MLPerf submission deadline.
-
-Stable Diffusion XL 
-
-Stable Diffusion XL is a generative model for creating high-quality images from text prompts. It is an advanced version of Stable Diffusion, offering larger models and better image quality, used for tasks such as image synthesis, art generation, and image editing. 
-
-Figure 10 shows the performance of the Stable Diffusion XL model tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA H200 NVL GPUs.
-
-![A graph of blue barsAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_9.png)
-
-Figure 10. 
-
-Stable Diffusion XL performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL GPUs 
-
-**Note:** For NVIDIA H200 NVL Stable Diffusion XL performance data, the results have not been verified by MLCommons Association because the results were collected after the MLPerf submission deadline.
-
-Whisper 
-
-Whisper is an automatic speech recognition model trained on 680,000 hours of multilingual data collected from the web. As per OpenAI, this model is robust on accents, background noise, and technical language. In addition, it supports transcription of 99 different languages and translation from those languages into English. 
-
-Figure 11 shows the performance of the Whisper model tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA H200 NVL GPUs.
-
-![A graph of a barAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_10.png)
-
-Figure 11. 
-
-Whisper performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL GPUs 
-
-**Note:** For NVIDIA H200 NVL Whisper performance data, the results have not been verified by MLCommons Association because the results were collected after the MLPerf submission deadline.
-
-Performance data for NVIDIA L40S PCIe GPU
-
-**Retinanet**
-
-Retinanet is a single-stage object detection model known for its focus on addressing class imbalances using a novel focal-loss function. The “800x800” refers to the input image size, and the model is optimized for detecting small objects in high-resolution images. 
-
-Figure 12 shows the performance of the Retinanet model tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA L40S GPUs.
-
-![A graph of blue rectangular barsAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_11.png)
-
-Figure 12. 
-
-Retinanet performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA L40S GPUs
-
-Whisper 
-
-Whisper is an automatic speech recognition model trained on 680,000 hours of multilingual data collected from the web. As per OpenAI, this model is robust on accents, background noise, and technical language. In addition, it supports the transcription of 99 different languages and translation from those languages into English. 
-
-Figure 13 shows the performance of the Whisper model tested on a Cisco UCS C845A M8 Rack Server with 8x NVIDIA L40S GPUs.
-
-![A graph of a barAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.docx/_jcr_content/renditions/mlperf-ucs-c845a-m8-rack-server-wp_12.png)
-
-Figure 13. 
-
-Whisper performance data on a Cisco UCS C845A M8 Rack Server with NVIDIA L40S GPUs
-
-Performance summary
-
-Built on the NVIDIA MGX platform, the Cisco UCS C845A M8 Rack Server delivers the accelerated compute needed to address the most demanding AI workloads. With its powerful performance and simplified deployment, it helps you achieve faster results from your AI initiatives. 
-
-Cisco successfully submitted MLPerf 5.1 Inference results in partnership with NVIDIA to enhance performance and efficiency, optimizing various inference workloads such as large language models (language), natural language processing (language), image generation (image), generative image (text to image), and object detection (vision). 
-
-The results were exceptional AI performance across Cisco UCS platforms for MLPerf Inference 5.1: 
-
-● The Cisco UCS C845A M8 platform with 8x NVIDIA H200 NVL GPUs emerged as the leader, securing first position for the Llama3.1-8b model. 
-
-● The Cisco UCS C845A M8 platform with 8x NVIDIA H200 NVL GPUs emerged as the leader, securing first position for the Retinanet model. 
-
-Appendix: Test environment
-
-Table 2 details the properties of the Cisco UCS C845A Rack Server under test environment conditions. 
-
-**Table 2. **Server properties
-
-Description  |  Value   
----|---  
-**Product name** |  Cisco UCS C845A M8 Rack Server   
-**CPU** |  2x AMD EPYC 9575 64-Core Processor   
-**Number of cores** |  64   
-**Number of threads** |  128   
-**Total memory** |  2.3 TB   
-**Memory DIMMs (16)** |  96 GB x 24 DIMMs   
-**Memory speed** |  6400 MHz   
-**Network adapter** |  8x NVIDIA BlueField-3 E-series SuperNIC 400GbE/NDR  2x NIC cards   
-**GPU controllers** |  NVIDIA H200 NVL PCIe 8-GPU  NVIDIA L40S PCIe 8-GPU   
-**SFF NVMe SSDs** |  16x 1.9 TB 2.5-inch high-performance, high-endurance NVMe SSD  
-  
-Table 3 lists the server BIOS settings applied for MLPerf testing. 
-
-**Table 3. **Server BIOS settings
-
-BIOS Settings  |  Value   
----|---  
-**SMT mode** |  Auto   
-**NUMA nodes per socket** |  NPS2   
-**IOMMU** |  Auto   
-**Core performance boost** |  Auto   
-**Determinism slider** |  Power   
-**DRAM refresh rate** |  Platform default   
-**L1 stream HW prefetcher** |  Enable   
-**L2 stream HW prefetcher** |  Enable   
-**AVX512** |  Enable   
-**3-link xGMI max speed** |  Platform default   
-**Streaming Stores Control** |  Auto   
-  
-**Note:** The rest of the BIOS settings are platform default values.
-
-For more information
-
-● For additional information on the server, refer to: <https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html>.
-
-● Data sheet: <https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html>.
-
-● Cisco AI-Ready Data Center Infrastructure: <https://blogs.cisco.com/datacenter/power-your-genai-ambitions-with-new-cisco-ai-ready-data-center-infrastructure>. 
-
-● Cisco AI PODs: <https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ai-infrastructure-pods-inferencing-aag.html>.
-
-● Cisco AI-Native Infrastructure for Data Center: <https://www.cisco.com/site/us/en/solutions/artificial-intelligence/infrastructure/index.html>.
-
-### Our experts recommend
-
-  * [Cisco UCS C845A M8 Rack Server At a Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html "Cisco UCS C845A M8 Rack Server At a Glance")
-  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
-
-
-### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
----
-
-## Page 10: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.html
+## Page 8: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.html
 
   * Skip to content
   * Skip to search
@@ -3601,7 +2789,7 @@ For more information about modernizing your infrastructure with the Cisco UCS C2
 
 ### Our experts recommend
 
-  * [Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html "Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper")
+  * [From X440p to X580p. How Cisco is Expanding Modular Server Use Cases (Again) White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x580-wp.html "From X440p to X580p. How Cisco is Expanding Modular Server Use Cases \(Again\) White Paper")
   * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
 
@@ -3612,7 +2800,7 @@ For more information about modernizing your infrastructure with the Cisco UCS C2
 
 ---
 
-## Page 11: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.html
+## Page 9: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.html
 
   * Skip to content
   * Skip to search
@@ -3774,7 +2962,7 @@ For more information about modernizing your infrastructure with the Cisco UCS C2
 
 ### Our experts recommend
 
-  * [Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/scaling-ai-workloads-ddn-infinia-wp.html "Scaling AI Workloads with Cisco UCS M8 Platform and DDN Infinia White Paper")
+  * [From X440p to X580p. How Cisco is Expanding Modular Server Use Cases (Again) White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x580-wp.html "From X440p to X580p. How Cisco is Expanding Modular Server Use Cases \(Again\) White Paper")
   * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
 

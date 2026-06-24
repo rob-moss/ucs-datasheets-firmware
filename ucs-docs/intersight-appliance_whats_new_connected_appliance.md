@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight Appliance CVA Whats New |
 | **URL** | https://intersight.com/help/appliance/whats_new/connected_appliance/ |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260514103921360/docs/onprem/data/articles/connected_appliance/new_2026/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260616155027767/docs/onprem/data/articles/connected_appliance/new_2026/en/index.html |
 | **HTML Title** | What's New in Cisco Intersight |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_whats_new_connected_appliance.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-05-27 10:54:09 |
+| **Fetched on** | 2026-06-24 11:18:09 |
 
 ---
 
@@ -81,6 +81,8 @@ This patch release includes bug fixes. For more information, see [Bugs](/help/ap
   * Added support for the Cisco UCS X580p PCIe Node and Cisco UCS X9516 X-Fabric Module in Intersight Managed Mode. For more information, see [Supported Hardware for Intersight Managed Mode](/help/supported_systems#supported_hardware_for_intersight_managed_mode) and [Chassis Inventory View](/help/operate/chassis#chassis_inventory_view).
 
   * Added support for the Cisco UCS X580p PCIe Node and Cisco UCS X9516 X-Fabric Module on UCS X-Series Direct (9108-100G) Fabric Interconnects. For more information, see [PCIe Connectivity Policy](/help/resources/server_policies#pcie_connectivity_policy).
+
+  * Added support for upgrading Cisco UCS X9508 chassis firmware in Intersight Managed Mode (IMM) through the Intersight UI. The chassis firmware upgrade also includes firmware upgrades for Cisco UCS X9516 X-Fabric Modules (XFMs) and Power Supply Units (PSUs). For more information, see [Upgrading Chassis Firmware in IMM](/help/resources/Upgrading_Chassis_Firmware).
 
   * Added the ability to map individual IP blocks within an IP pool to specific **Organizations** or **Resource Groups**. This mapping is achieved using an **ID Mapping** policy, enabling granular control over IP address allocation based on the organization or resource group where the server is deployed, while also ensuring consistent pool usage across organizations and resource groups. For more information, see [Configuring Pools](/help/resources/cisco_intersight_managed_mode_configuration#configuring_pools).
 

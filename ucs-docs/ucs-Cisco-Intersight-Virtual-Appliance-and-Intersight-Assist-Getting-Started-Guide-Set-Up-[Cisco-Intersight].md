@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco Intersight Virtual Appliance and Intersight Assist Getting Started Guide - Set Up [Cisco Intersight] |
 | **Source file** | `ucs-docs-raw/html/m_setting_up_appliance.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-05-27 10:53:31 |
+| **Fetched on** | 2026-06-24 11:17:29 |
 
 ---
 
@@ -289,7 +289,12 @@ DNS Servers(Values you input will be ignored if you Enable DHCP) |  Enter a comm
 Admin Password |  Enter the admin password. This is the same password that you use to log in to the appliance. Set Password—Before you register the appliance with Intersight, you must create an admin password. The password can contain 0-9, A-Z, a-z, and all special characters except a colon (:) and space.   
 NTP Servers |  Enter a comma-separated list of hostnames or IPv4 addresses for your NTP servers. You may add up to three unauthenticated NTP servers at this stage. Once the appliance is fully installed, you can edit the NTP server settings to include any combination of authenticated and unauthenticated NTP servers (up to three total). This setting is required even if you use DHCP to obtain IP addresses.   
 Disk Size |  Attention: Do not change the value of the disk size as it is computed based on the deployment configuration.   
-**Attention** |  **If the password you set at the time of registering your appliance is weak, Intersight prompts you to change your password to a stronger one. After a successful reset to a strong password, you are directly logged into the appliance. For more information about logging in, see[Logging In to Intersight Virtual Appliance](m_setting_up_appliance.html#id_93446)**.   
+**Attention** | 
+
+  * **If the password you set at the time of registering your appliance is weak, Intersight prompts you to change your password to a stronger one. After a successful reset to a strong password, you are directly logged into the appliance. For more information about logging in, see[Logging In to Intersight Virtual Appliance](m_setting_up_appliance.html#id_93446)**. 
+  * Ensure that DNS, NTP, and file services are hosted outside of the infrastructure being managed by the appliance to avoid potential service conflicts. If you need to make changes to the infrastructure hosting these services, ensure they are configured with redundancy so that they remain available during maintenance. 
+
+  
 ---|---  
   
 Enabling DHCP
@@ -888,7 +893,12 @@ DNS Servers(Values you input will be ignored if you Enable DHCP) |  Enter a comm
 Admin Password |  Enter the admin password. This is the same password that you use to log in to the appliance. Set Password—Before you register the appliance with Intersight, you must create an admin password. The password can contain 0-9, A-Z, a-z, and all special characters except a colon (:) and space.   
 NTP Servers |  Enter a comma-separated list of hostnames or IPv4 addresses for your NTP servers. You may add up to three unauthenticated NTP servers at this stage. Once the appliance is fully installed, you can edit the NTP server settings to include any combination of authenticated and unauthenticated NTP servers (up to three total). This setting is required even if you use DHCP to obtain IP addresses.   
 Disk Size |  Attention: Do not change the value of the disk size as it is computed based on the deployment configuration.   
-**Attention** |  **If the password you set at the time of registering your appliance is weak, Intersight prompts you to change your password to a stronger one. After a successful reset to a strong password, you are directly logged into the appliance. For more information about logging in, see[Logging In to Intersight Virtual Appliance](m_setting_up_appliance.html#id_93446)**.   
+**Attention** | 
+
+  * **If the password you set at the time of registering your appliance is weak, Intersight prompts you to change your password to a stronger one. After a successful reset to a strong password, you are directly logged into the appliance. For more information about logging in, see[Logging In to Intersight Virtual Appliance](m_setting_up_appliance.html#id_93446)**. 
+  * Ensure that DNS, NTP, and file services are hosted outside of the infrastructure being managed by the appliance to avoid potential service conflicts. If you need to make changes to the infrastructure hosting these services, ensure they are configured with redundancy so that they remain available during maintenance. 
+
+  
 ---|---  
   
 Enabling DHCP

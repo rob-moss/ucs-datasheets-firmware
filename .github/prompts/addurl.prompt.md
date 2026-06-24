@@ -1,6 +1,6 @@
 ---
 name: addurl
-model: GPT-5 mini (copilot)
+model: Claude Haiku 4.5 (copilot)
 tools: [read, agent, browser, edit, web, todo]
 description: Adds a URL to the urls.md file
 ---

@@ -8,13 +8,13 @@
 | **HTML Title** | Cisco UCS X9516 X-Fabric |
 | **Source file** | `ucs-docs-raw/html/ucs-9516-x-fabric-module-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-05-27 10:58:15 |
+| **Fetched on** | 2026-06-24 11:22:01 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-9516-x-fabric-module-ds.html
 
-  * Skip to content
+  * Skip to content  
   * Skip to search
   * Skip to footer
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X-Series Modular System - Cisco |
 | **Source file** | `ucs-docs-raw/pdf/ucsx-m-sustain.pdf` |
 | **File type** | HTML (fallback from .pdf URL) |
-| **Fetched on** | 2026-05-27 10:55:34 |
+| **Fetched on** | 2026-06-24 11:20:01 |
 
 ---
 
@@ -253,6 +253,14 @@ Bridge the gap between IT and AI applications with a modular platform that enabl
 Show more
 
 * * *
+
+##  Evolve your data center for tomorrow 
+
+Find out how to transform your data center with a unified approach. Simplify operations, enhance security, and build a future-proof AI infrastructure tailored to your pace and needs. 
+
+[Take the next step ](https://www.cisco.com/site/us/en/solutions/data-center/index.html)
+
+![](/content/dam/cisco-cdc/site/images/heroes/solutions/data-center/data-center-with-ai-overlay-2400x1028.jpg)
 
 ![](/content/dam/cisco-cdc/site/images/poster-image/nutanix-658x370.png)
 

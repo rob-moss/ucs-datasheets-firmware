@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco UCS Manager, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_release-notes-ucsm-4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-05-27 10:54:28 |
+| **Fetched on** | 2026-06-24 11:18:29 |
 
 ---
 
@@ -1881,6 +1881,7 @@ Defect ID |  Symptom |  First Bundle Affected |  Resolved in Release
 ---|---|---|---  
 CSCwt18924 |  After an upstream Cisco ACI fabric upgrade or reload, Cisco UCS VIC adapters may fail to bring vNICs online, leaving them stuck in an initializing state. This issue specifically affects configurations using 10GBase-T (SFP-10G-T-X) transceivers connected to Cisco UCS VIC 1400 series adapters (1455, 1457, 1467) or 15000 series adapters (15427, 15428, 15425) on supported Nexus switches.  The root cause is a memory leak within the adapter triggered when the 10GBase-T transceiver hogs the I2C bus during operations, including—but not limited to—server or switch resets and reboots. Although the adapter physical interfaces may come up, the memory leak prevents the vNICs from recovering automatically.  This issue is resolved. |  4.3(5a) |  4.3(6g)  
 CSCwi16863 |  BMC watchdog resets can occur on Cisco UCS B200 M6 and UCS X210c M6 servers, causing CIMC to reboot unexpectedly.  This issue is resolved. |  4.2(3d) |  4.3(6g)  
+CSCws91466 |  IOMs in the Cisco UCS domain running Cisco UCS Manager version report a CMCLowMem warning related to high usage of the /var/volatile/wtmp file, which grows due to repeated FI connections triggering rlogin. The wtmp file consumes about 1.4 GB of space, but no other service impact is observed.  This issue is resolved. |  4.3(6b)A |  4.3(6g)  
   
 ### Resolved Caveats in Release 4.3(6f)
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco |
 | **Source file** | `ucs-docs-raw/pdf/ucsx-offer-ordering-guide.pdf` |
 | **File type** | HTML (fallback from .pdf URL) |
-| **Fetched on** | 2026-04-16 10:51:24 |
+| **Fetched on** | 2026-06-11 16:25:47 |
 
 ---
 

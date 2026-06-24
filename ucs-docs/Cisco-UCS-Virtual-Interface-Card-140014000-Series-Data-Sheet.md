@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Virtual Interface Card 1400/14000 Series Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-741130.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-05-27 11:01:16 |
+| **Fetched on** | 2026-06-24 11:23:39 |
 
 ---
 

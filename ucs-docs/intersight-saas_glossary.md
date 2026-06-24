@@ -8,7 +8,7 @@
 | **HTML Title** | Glossary |
 | **Source file** | `glossary` |
 | **File type** | HTML |
-| **Fetched on** | 2026-05-27 10:54:03 |
+| **Fetched on** | 2026-06-24 11:18:01 |
 
 ---
 

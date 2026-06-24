@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X210c M8 Compute Node Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-x210c-m8-compute-node-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-05-27 10:55:00 |
+| **Fetched on** | 2026-06-24 11:19:20 |
 
 ---
 
@@ -38,11 +38,11 @@ Print
 
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.pdf) (167.1 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.pdf) (303.8 KB)   
 View with Adobe Reader on a variety of devices
 
 
-Updated:January 5, 2026
+Updated:June 4, 2026
 
 Bias-Free Language
 
@@ -90,11 +90,11 @@ Print
 
 ### Download Options
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.pdf) (167.1 KB)   
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.pdf) (303.8 KB)   
 View with Adobe Reader on a variety of devices
 
 
-Updated:January 5, 2026
+Updated:June 4, 2026
 
 #### Table of Contents
 
@@ -227,12 +227,14 @@ Sustainability topic |  Reference
 **General** |  Information on product-material-content laws and regulations |  [Materials](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/materials.html)  
 Information on electronic waste laws and regulations, including our products, batteries, and packaging |  [WEEE Compliance](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/product-recycling/weee-compliance.html)  
 Information on product takeback and reuse program |  [Cisco Takeback and Reuse Program](https://www.cisco.com/c/en/us/about/takeback-and-reuse.html)  
-Sustainability inquiries |  Contact: csr_inquiries@cisco.com  
-**Material** |  Product packaging weight and materials |  Contact: environment@cisco.com  
+Sustainability inquiries |  Contact: [csr_inquiries@cisco.com](mailto:csr_inquiries@cisco.com)  
+**Material** |  Product packaging weight and materials |  Contact: [environment@cisco.com](mailto:environment@cisco.com)  
   
 Product environmental information
 
-Product environmental information for users per Commission Regulation (EU) 2019/424 <https://www.cisco.com/web/dofc/EU101693.pdf>.
+Product environmental information for users per Commission Regulation (EU) 2019/424 <https://www.cisco.com/web/dofc/25726544.pdf>
+
+<https://www.cisco.com/web/dofc/25726545.pdf>
 
 Cisco and partner services
 

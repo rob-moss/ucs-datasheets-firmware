@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco AI PODs: Pre-validated, Flexible and Modular Infrastructure for Cisco Secure AI Factory Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ai-pods-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-05-27 11:01:38 |
+| **Fetched on** | 2026-06-24 11:23:48 |
 
 ---
 

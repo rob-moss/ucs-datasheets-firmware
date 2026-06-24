@@ -8,7 +8,7 @@
 | **HTML Title** | AI PODs for Inferencing Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ai-infrast-pods-inferencing-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-05-27 11:01:37 |
+| **Fetched on** | 2026-06-24 11:23:47 |
 
 ---
 
@@ -4744,7 +4744,174 @@ New or revised topic |  Described in |  Date
 
 ---
 
-## Page 18: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x410c-m7-compute-node-aag.html
+## Page 18: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/at-a-glance-c45-2440263.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS X9508 Chassis At-a-Glance
+
+At a Glance
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/cisco-ucs-x9508-chassis-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/cisco-ucs-x9508-chassis-aag.pdf) (1.3 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:September 9, 2025
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/cisco-ucs-x9508-chassis-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/cisco-ucs-x9508-chassis-aag.pdf) (1.3 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:September 9, 2025
+
+#### Table of Contents
+
+  * Overview
+  * Benefits
+  * What it does
+  * For more information
+
+
+` `
+
+Overview
+
+The Cisco UCS® X-Series Modular System begins with the Cisco UCS X9508 Chassis engineered to be adaptable and future ready. It is a standard, open system, designed to deploy and automate faster in concert with your hybrid-cloud environment.
+
+With a midplane-free design, the X9508 chassis achieves I/O connectivity using frontloading, vertically oriented compute and accelerator nodes that intersect with horizontally oriented I/O connectivity modules in the rear of the chassis. A unified Ethernet fabric is supplied with UCS® 9108 Intelligent Fabric Modules.
+
+UCS X9416 X-Fabric Module and UCS 9516 X-Fabric Module are part of the UCS X-Fabric Technology family suppling PCIe industry-standard protocols for GPU accelerators.
+
+![A close-up of a computer serverAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/cisco-ucs-x9508-chassis-aag.docx/_jcr_content/renditions/cisco-ucs-x9508-chassis-aag_0.jpg)
+
+Eight flexible front-facing slots can house a combination of compute nodes and resource nodes such as GPUs. There are five compute nodes: Cisco UCS X215c M8 based on 4th and 5th Gen AMD EPYC CPUs, Cisco UCS X210c M8 based on Intel Xeon 6 CPUs, Cisco UCS X210c M7 based on 4th and 5th Gen Intel® Xeon® Scalable Processors, Cisco UCS X410c M7 compute nodes based on 4th Gen Intel® Xeon® Scalable Processors, and the Cisco UCS X210c M6 Compute Node based on 3rd Gen Intel Xeon Scalable processors. Two resource nodes – the Cisco UCS X440p PCIe Node and the Cisco UCS X580p PCIe Node – can accommodate up to four GPUs and is always paired with a compute node.
+
+The Cisco UCS X-Series Modular System was designed to be managed with Cisco Intersight™. Intersight is a cloud-operations, Software-as-a-Service (SaaS) platform that uses analytics to deliver proactive monitoring, automation, and optimization of workloads across hybrid-cloud environments. Cisco Intersight Managed Mode (IMM) delivers policy-based configurations and accelerates the deployment of both physical and virtual workloads.
+
+Cisco Customer Experience (CX) Custom Quick Start Solutions help you implement your Cisco UCS X-Series technology successfully, faster, and with less risk. CX experts assist with design development, validation of your deployment prerequisites, and configuration of your workloads. We also work with you to establish a system health baseline. Then, our experts train your team to use the new solution. With expertise, best practices, and insights developed from more than 35 years of leading large-scale technology implementations, you can trust us to help you get your Cisco UCS solution up and running the right way, the first time.
+
+Benefits
+
+Computing for the next decade
+
+● Simplify with cloud-operated infrastructure
+
+● Simplify with an adaptable system designed for modern applications
+
+● Simplify with a system engineered for the future
+
+What it does
+
+What the Cisco UCS X9508 Chassis provides:
+
+● 7-Rack-Unit (7RU) chassis
+
+● 8x front-facing flexible slots, which can contain a mix-and-match combination of:
+
+◦ Up to eight Cisco UCS X210c or X215c Compute Nodes
+
+◦ Up to four Cisco UCS X410c Compute Nodes
+
+◦ Up to four Cisco UCS X440p PCIe Nodes with UCS X-Fabric Technology with a PCIe Gen 4 fabric
+
+◦ Up to two Cisco UCS X580p PCIe Nodes with UCS X-Fabric Technology with a PCIe Gen 5 fabric
+
+● 2x Cisco UCS 9108 Intelligent Fabric Modules (IFMs)
+
+◦ Combines Ethernet, Fibre Channel, and management traffic
+
+◦ Both 25Gbps and 100Gbps versions are available
+
+● Optional Cisco UCS X9416 X-Fabric Modules for use with the Cisco UCS X440p PCIe Nodes
+
+● Optional Cisco UCS X9516 X-Fabric Modules for use with the Cisco UCS X580p PCIe Nodes
+
+● 6x 2800W PSUs
+
+● 54V power distribution
+
+● 4x 100mm dual rotor fans
+
+For more information
+
+For more information about the Cisco UCS X9508 Chassis, refer to the [data sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2472574.html?ccid=cc002456&oid=dstcsm026317), [spec sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x9508-specsheet.pdf), and the [solution overview](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.html).
+
+For more information about the Cisco UCS X-Series, go to <https://cisco.com/go/ucsx>.
+
+### Our experts recommend
+
+  * [AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html "AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper")
+  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
+
+
+### Learn more
+
+
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 19: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x410c-m7-compute-node-aag.html
 
   * Skip to content
   * Skip to search
@@ -4934,7 +5101,7 @@ for all Cisco UCS Servers, please visit https:// [www.cisco.com/go/ucs](//www.ci
 
 ---
 
-## Page 19: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x440p-pcle-node-ds.html
+## Page 20: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x440p-pcle-node-ds.html
 
   * Skip to content
   * Skip to search
@@ -5186,7 +5353,7 @@ New or Revised Topic |  Described In |  Date
 
 ---
 
-## Page 20: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.html
+## Page 21: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.html
 
   * Skip to content
   * Skip to search
