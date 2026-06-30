@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Network Management Guide Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_cli_ucsm_network_management_guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:48:01 |
+| **Fetched on** | 2026-06-30 10:59:16 |
 
 ---
 
@@ -1776,55 +1776,7 @@ The following example deletes the vNIC template named VnicTemp42 and commits the
 
 ---
 
-## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/m-cli-macsec-4-3.html
-
-## About MACsec
-
-MACsec is an IEEE 802.1AE standards-based Layer 2 hop-by-hop encryption that provides data confidentiality and integrity for media access independent protocols. 
-
-MACsec provides MAC-layer encryption over wired networks by using out-of-band methods for encryption keying. The MACsec Key Agreement (MKA) Protocol provides the required session keys and manages the required encryption keys. 
-
-MACsec encrypts the entire data except for the Source and Destination MAC addresses of an Ethernet packet. It offers the following capabilities: 
-
-  * Provides line rate encryption.
-
-  * Ensures data confidentiality by providing strong encryption at Layer 2. 
-
-  * Provides integrity checking to help ensure that data cannot be modified in transit. 
-
-  * Key Lifetime and Hitless Key Rollover
-
-  * Fallback Key
-
-
-### Key Lifetime and Hitless Key Rollover
-
-A MACsec keychain can have multiple pre-shared keys (PSKs), each configured with a key ID and an optional lifetime. A key lifetime specifies at which time the key activates and expires. In the absence of a lifetime configuration, the default lifetime is unlimited. When a lifetime is configured, MKA rolls over to the next configured pre-shared key in the keychain after the lifetime is expired. The time zone of the key can be local or UTC. The default time zone is UTC. 
-
-To configure a MACsec keychain, see Creating a MACsec Keychain
-
-A key can roll over to a second key within the same keychain by configuring the second key (in the keychain) and configuring a lifetime for the first key. When the lifetime of the first key expires, it automatically rolls over to the next key in the list. If the same key is configured on both sides of the link at the same time, then the key rollover is hitless (that is, the key rolls over without traffic interruption). 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-The lifetime of the keys are overlapped to achieve hitless key rollover.
-
-* * *  
-  
----|---  
-  
-### Fallback Key
-
-A MACsec session can fail due to a key/key ID (CKN) mismatch or a finite key duration between the Fabric Interconnect and the peer. If a MACsec session fails, a fallback session can take over if a fallback key is configured. A fallback session prevents downtime due to primary session failure and allows a user time to fix the key issue causing the failure. A fallback key also provides a backup session if the primary session fails to start. This feature is optional. 
-
-For more information, see Creating a MACsec Keychain. 
-
----
-
-## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0100.html
+## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0100.html
 
 ## Unified Ports on 6300 Series Fabric Interconnects 
 
@@ -3041,55 +2993,7 @@ The following example illuminates all of the beacon lights for Unified Ports in 
 
 ---
 
-## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/m-cli-macsec-4-3.html
-
-## About MACsec
-
-MACsec is an IEEE 802.1AE standards-based Layer 2 hop-by-hop encryption that provides data confidentiality and integrity for media access independent protocols. 
-
-MACsec provides MAC-layer encryption over wired networks by using out-of-band methods for encryption keying. The MACsec Key Agreement (MKA) Protocol provides the required session keys and manages the required encryption keys. 
-
-MACsec encrypts the entire data except for the Source and Destination MAC addresses of an Ethernet packet. It offers the following capabilities: 
-
-  * Provides line rate encryption.
-
-  * Ensures data confidentiality by providing strong encryption at Layer 2. 
-
-  * Provides integrity checking to help ensure that data cannot be modified in transit. 
-
-  * Key Lifetime and Hitless Key Rollover
-
-  * Fallback Key
-
-
-### Key Lifetime and Hitless Key Rollover
-
-A MACsec keychain can have multiple pre-shared keys (PSKs), each configured with a key ID and an optional lifetime. A key lifetime specifies at which time the key activates and expires. In the absence of a lifetime configuration, the default lifetime is unlimited. When a lifetime is configured, MKA rolls over to the next configured pre-shared key in the keychain after the lifetime is expired. The time zone of the key can be local or UTC. The default time zone is UTC. 
-
-To configure a MACsec keychain, see Creating a MACsec Keychain
-
-A key can roll over to a second key within the same keychain by configuring the second key (in the keychain) and configuring a lifetime for the first key. When the lifetime of the first key expires, it automatically rolls over to the next key in the list. If the same key is configured on both sides of the link at the same time, then the key rollover is hitless (that is, the key rolls over without traffic interruption). 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-The lifetime of the keys are overlapped to achieve hitless key rollover.
-
-* * *  
-  
----|---  
-  
-### Fallback Key
-
-A MACsec session can fail due to a key/key ID (CKN) mismatch or a finite key duration between the Fabric Interconnect and the peer. If a MACsec session fails, a fallback session can take over if a fallback key is configured. A fallback session prevents downtime due to primary session failure and allows a user time to fix the key issue causing the failure. A fallback key also provides a backup session if the primary session fails to start. This feature is optional. 
-
-For more information, see Creating a MACsec Keychain. 
-
----
-
-## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_4_1_chapter_011.html
+## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_4_1_chapter_011.html
 
 ## Fabric Interconnect Overview 
 
@@ -3101,7 +3005,7 @@ For more information about Cisco UCS Fabric Interconnects, see the Cisco UCS Man
 
 ---
 
-## Page 18: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0101.html
+## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0101.html
 
 ## VLANs
 
@@ -3113,7 +3017,7 @@ VLANs are typically associated with IP subnetworks. For example, all of the end 
 
 ---
 
-## Page 19: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_01000.html
+## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_01000.html
 
 ## Quality of Service 
 
@@ -3197,7 +3101,7 @@ Enable and no-drop  |  Change in MTU size  |  Yes
 
 ---
 
-## Page 20: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_01011.html
+## Page 18: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_01011.html
 
 ## vNIC Template 
 
@@ -3377,7 +3281,7 @@ The following example deletes the vNIC template named VnicTemp42 and commits the
 
 ---
 
-## Page 21: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0110.html
+## Page 19: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0110.html
 
 ## LAN Pin Groups 
 

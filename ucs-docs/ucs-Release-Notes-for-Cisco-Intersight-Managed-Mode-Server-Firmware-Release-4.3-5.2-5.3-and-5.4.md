@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 4.3, 5.2, 5.3, and 5.4 |
 | **Source file** | `ucs-docs-raw/html/b_intersight_server_fw_rn_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:48:47 |
+| **Fetched on** | 2026-06-30 10:59:49 |
 
 ---
 
@@ -18,7 +18,7 @@
   
 **First Published: November 15, 2023**
 
-**Last Updated: February 23, 2026**
+**Last Updated: June 25, 2026**
 
 # Overview
 
@@ -83,9 +83,9 @@ To view the complete matrix in PDF format, click [here](https://www.cisco.com/c/
 Platform |  Supported Latest Firmware version  
 ---|---  
 Cisco UCS C-Series M5 (C220, C240, C480) |  4.3(2.260007)  
-Cisco UCS C-Series M6 (C220, C240) |  4.3(6.260017)  
-Cisco UCS B-Series M5 (B200, B480) |  5.4(0.260011)  
-Cisco UCS B-Series M6 (B200) |  5.4(0.260011)  
+Cisco UCS C-Series M6 (C220, C240) |  4.3(6.260054)  
+Cisco UCS B-Series M5 (B200, B480) |  5.4(0.260050)  
+Cisco UCS B-Series M6 (B200) |  5.4(0.260050)  
   
 For more information, see [End-of-Life and End-of-Sale Notices for C-Series Servers](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/eos-eol-notice-listing.html) and [End-of-Life and End-of-Sale Notices for B-Series Servers](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/eos-eol-notice-listing.html). 
 
@@ -95,6 +95,32 @@ The following table includes the change history for this document.
 
 Table 1. Release 4.3(6) Revision Date |  Description  
 ---|---  
+June 25, 2026 |  Updated release notes for the following Server Firmware Release versions:
+
+  * Cisco UCS X-Series M8 and M7 Server Firmware Release 5.4(0.260049)
+  * Cisco UCS X-Series M8 Server Firmware Release 5.4(0.260044)
+  * Cisco UCS X-Series M6 Server Firmware Release 5.4(0.260042)
+  * Cisco UCS C-Series M8, M7, and M6 Server Firmware Release 4.3(6.260054)
+  * Cisco UCS B-Series M6 and M5 Server Firmware Release 5.4(0.260050)
+
+This release includes updates to:
+
+  * Resolved issues in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049) and C-Series M8 4.3(6.260054) Server Firmware Release
+
+It does not include any new hardware support, security fixes, or open issues.  
+May 04, 2026 |  Updated release notes for the following Server Firmware Release versions:
+
+  * Cisco UCS X-Series M8 and M7 Server Firmware Release 5.4(0.260029)
+  * Cisco UCS X-Series M8 Server Firmware Release 5.4(0.260025)
+  * Cisco UCS X-Series M6 Server Firmware Release 5.4(0.260025)
+  * Cisco UCS C-Series M8, M7, and M6 Server Firmware Release 4.3(6.260033)
+  * Cisco UCS B-Series M6 and M5 Server Firmware Release 5.4(0.260028)
+
+This release includes updates to:
+
+  * Resolved issues in Cisco UCS X-Series M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6 5.4(0.260028) Server Firmware Release
+
+It does not include any new hardware support, security fixes, or open issues.  
 February 23, 2026 |  Updated release notes for the following Server Firmware Release versions:
 
   * Cisco UCS X-Series M8 and M7 Server Firmware Release 5.4(0.260010)
@@ -398,6 +424,10 @@ August 16, 2023 |  Created release notes for the following server firmware relea
 Intersight software features may not align with the Intersight firmware release schedule. To know more about the latest software features, see the [What's New](https://intersight.com/help/saas/whats_new) section in Intersight Help Center. 
 
 ## New Hardware Features in Server Firmware Release
+
+### New hardware in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None 
+
+### New hardware in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None 
 
 ### New Hardware in X-Series M8, M7 5.4(0.260010), M6 5.4(0.260009), C-Series M8, M7, M6 4.3(6.260017), and B-Series M6, M5 5.4(0.260011) Server Firmware Release — None 
 
@@ -1233,54 +1263,61 @@ For more information, see [Supported Hardware for Intersight Managed Mode](https
 
 X-Series Server Firmware Version |  Infrastructure Firmware Version  
 ---|---  
-4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1)  
-6.0(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.4(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.3(0)  |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(2) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.1(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.1(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.0(4) |  N/A |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.0(2) |  N/A |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
-5.0(1) |  N/A |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
+4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1) |  6.0(2)  
+6.0(2) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+6.0(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.4(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.3(0)  |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(2) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.1(1) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.1(0) |  N/A |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.0(4) |  N/A |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.0(2) |  N/A |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
+5.0(1) |  N/A |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
 C-Series Server Firmware Version |  Infrastructure Firmware Version  
 ---|---  
-4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1)  
-6.0(1) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(6) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(5)  |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(4) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(1) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.2(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.2(2) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
-4.2(1) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
-4.1(3) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
+4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1) |  6.0(2)  
+6.0(2) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+6.0(1) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(6) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(5)  |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(4) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(1) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.2(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.2(2) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
+4.2(1) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
+4.1(3) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
 B-Series Server Firmware Version |  Infrastructure Firmware Version  
 ---|---  
-4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1)  
-6.0(1) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.4(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.3(0)  |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(1) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.2(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-5.1(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.3(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.2(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
-4.2(2) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
-4.2(1) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
-4.1(3) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No  
+4.1(3) |  4.2(1) |  4.2(2) |  4.2(3) |  4.3(2) |  4.3(3) |  4.3(4) |  4.3(5) |  4.3(6) |  6.0(1) |  6.0(2)  
+6.0(2) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+6.0(1) |  No |  No |  No |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.4(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.3(0)  |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(1) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.2(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+5.1(0) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.3(2) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.2(3) |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes |  Yes  
+4.2(2) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
+4.2(1) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
+4.1(3) |  Yes |  Yes |  Yes |  Yes |  No |  No |  No |  No |  No |  No |  No  
   
 ## Updating the Firmware
 
 To update the Cisco UCS firmware, see [Managing Firmware in Intersight Managed Mode](https://intersight.com/help/saas/resources#managing_firmware_in_intersight_managed_mode). 
 
 ## Security Fixes
+
+### Security fixes in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None 
+
+### Security fixes in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None 
 
 ### Security Fixes in X-Series M8, M7 5.4(0.260010), M6 5.4(0.260009), C-Series M8, M7, M6 4.3(6.260017), and B-Series M6, M5 5.4(0.260011) Server Firmware Release — None 
 
@@ -1700,6 +1737,24 @@ You can view the open issues, resolved issues, and security fixes using the [Cis
 
 ### **Resolved Caveats**
 
+#### Resolved issues in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049) and C-Series M8 4.3(6.260054) Server Firmware Release 
+
+The following table lists the resolved caveats in this release:
+
+Defect ID |  Description |  First Version Affected |  Resolved in Release  
+---|---|---|---  
+[CSCwt57564](https://cdetsng.cisco.com/webui/#view=CSCwt57564) |  On Cisco UCS X210c M8 servers with Cisco UCS Virtual Interface Card (VIC) adapters, VMware ESXi may display a Purple Screen of Death (PSOD) with a Peripheral Component Interconnect (PCI) bus error. The error message may indicate an undiagnosed PCI bus error and an event received for a port with no Downstream Port Containment (DPC) driver. This issue occurs when the posted value in the ring registers does not increment as expected, preventing the software from detecting that an indirect transaction has arrived.  This issue is resolved. |  X-Series M8 (X215c): 5.3(0.240016) X-Series M8 (X210c): 5.4(0.250037) X-Series M8 (X410c): 6.0(2.260040) |  X-Series M8 (X215c, X210c): 5.4(0.260044), 5.4(0.260049) X-Series M8 (X410c, X215c, X210c): 6.0(2.260143)  
+[CSCwn42410](https://cdetsng.cisco.com/webui/#view=CSCwn42410) |  A partial failure of one of the M.2 drives on a Cisco UCS-M2-HWRAID controller may cause the affected drive to be reported incorrectly and may degrade the RAID 1 virtual drive.  In this condition, the drive can appear in `PhyDriveInfo` with no valid device data visible, while the reported link speed is reduced to 1.5 GB.  Additional drive attributes such as power-on hours, power cycle count, percentage life, wear status days, and temperature may all appear as 0.  Product ID and firmware fields may also be blank even though the drive is still shown as online. In some cases, the messages log may incorrectly report the affected drive as having 0% life remaining by generating an `SSD LIFE TIME LAPSE` fault.  This issue has been observed on systems using the Cisco UCS-M2-HWRAID M.2 storage controller with M.2 drives configured in a RAID 1 virtual drive.  This issue is resolved. |  4.3(2.230207) |  C-Series: 4.3(6.260054), 6.0(2.260143)  
+  
+#### Resolved issues in Cisco UCS X-Series M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6 5.4(0.260028) Server Firmware Release 
+
+The following table lists the resolved caveats in this release:
+
+Defect ID |  Description |  First Version Affected |  Resolved in Release  
+---|---|---|---  
+[CSCwi16863](https://cdetsng.cisco.com/webui/#view=CSCwi16863) |  Cisco UCS B200 M6 and X210c M6 servers running firmware 5.X may experience an unexpected BMC reboot, resulting in a temporary loss of server management availability. The host server remains unaffected, and this event may appear as a new server discovery in Intersight.  This issue is resolved. |  X-Series M6 (X210c): 5.2(0.230040) B-Series M6 (B200): 5.2(0.230039) |  X-Series M6 (X210c): 5.4(0.260025) B-Series M6 (B200): 5.4(0.260028)  
+[CSCwt18924](https://cdetsng.cisco.com/webui/#view=CSCwt18924) |  After an upstream Cisco ACI fabric upgrade or reload, Cisco UCS VIC adapters may fail to bring vNICs online. The adapter physical interfaces come up, but the vNICs remain stuck in an initializing state and do not recover automatically. Adapter logs may show the adapter encountering out-of-memory conditions, followed by a reset. This issue is observed with 10GBase-T (10G-T-X) transceivers on Cisco UCS VIC 1400 Series and 15000 Series adapters and may be triggered during switch or server reload events when the transceiver holds the I2C bus, leading to a memory leak in the adapter.  This issue is resolved. |  C-Series: 4.3(5.250030) |  C-Series: 6.0(2.260069) C-Series: 4.3(6.260033)  
+  
 #### Resolved Caveats in Cisco UCS B-Series M5 5.4(0.260011) and C-Series M7, M6 Server Firmware Release 4.3(6.260017)
 
 The following table lists the resolved caveats in this release:
@@ -2249,6 +2304,10 @@ Defect ID | Description | First Bundle Affected
 CSCwe47118 |  Redfish monitor core occured during combinational stress(Redfish stress included). |  4.3(1.230097)  
   
 ### Open Caveats
+
+#### Open issues in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None 
+
+#### Open issues in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None 
 
 #### Open Caveats in X-Series M8, M7 5.4(0.260010), M6 5.4(0.260009), C-Series M8, M7, M6 4.3(6.260017), and B-Series M6, M5 5.4(0.260011) Server Firmware Release — None 
 
