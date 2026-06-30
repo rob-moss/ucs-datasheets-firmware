@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS System Diagnostic Data |
 | **URL** | https://intersight.com/help/saas/system/diagnostic_data |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260414151805446/docs/cloud/data/overview/system/diagnostic_data.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/overview/system/diagnostic_data.html |
 | **HTML Title** | Diagnostic Data |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_system_diagnostic_data.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:49:31 |
+| **Fetched on** | 2026-06-30 10:59:57 |
 
 ---
 
@@ -34,6 +34,10 @@ To submit a tech support bundle collection request:
 
 
 Once the file is available, it can be downloaded by clicking the download icon located before the relevant file record.
+
+Note:
+
+For directly claimed Fabric Interconnects (FIs) in Intersight Managed Mode, the tech support bundle includes two files: the device-level log bundle and an additional domain tech support JSON file. This domain tech support file provides service-level data, associated configurations, and workflow operations from the previous seven days to assist with troubleshooting. Intersight includes this file by default when you trigger a tech support bundle collection through the Intersight UI.
 
 For more information on Configuring Tech Support Bundle Collection, refer the following:
 

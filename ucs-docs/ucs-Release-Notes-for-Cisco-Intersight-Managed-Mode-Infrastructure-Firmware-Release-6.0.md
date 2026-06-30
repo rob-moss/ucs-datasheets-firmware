@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 6.0 |
 | **Source file** | `ucs-docs-raw/html/b-intersight-infrastructure-fw-rn-6-0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:48:45 |
+| **Fetched on** | 2026-06-30 10:59:48 |
 
 ---
 
@@ -38,38 +38,37 @@ Intersight software features may not align with the Intersight firmware release 
 
 ## Page 4: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0/m-new-hardware-features.html
 
-## New hardware features in Infrastructure Firmware Release 6.0(1.260006) — None 
+## New hardware features in Infrastructure Firmware Release 6.0(2.260067) — None 
 
 ---
 
 ## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0/m-security-fixes.html
 
-## Security fixes in Release 6.0(1.260006) — None 
+## Security fixes in Release 6.0(2.260067) — None 
 
 ---
 
 ## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0/m-resolved-issues.html
 
-## Resolved issues in Release 6.0(1.260006)
+## Resolved issues in Release 6.0(2.260067)
 
 This section provides a brief description of the resolved issues.
 
 Defect ID |  Description |  First Version Affected |  Resolved in Release  
 ---|---|---|---  
-[CSCwt36346](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwt36346) |  On Cisco UCS 6500 Series and 6400 Series Fabric Interconnects, when the allowed VLAN string on the vEth interface exceeds 900 characters, data corruption occurs over time. This eventually causes both Fabric Interconnects to perform a hard reboot. The generic error message `Reset Requested due to Fatal Module Error` is displayed when the `show system reset-reason` command is run.  This issue is resolved. |  6.0(1.250198) |  6.0(1.260006) 6.0(2.260045)  
-[CSCwn65484](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwn65484) |  Cisco UCS Fabric Interconnects (6400, 6500, 6600 Series, and Cisco UCS X-Series Direct UCS 9108 100G) may generate a missing FCOE_NPV_PKG license warning. The warning message is: %LICMGR-2-LOG_LIC_MISSING_WARNING.  Despite this warning, the FCoE feature continues to operate normally under honor-based licensing. This issue is resolved. |  4.3(3.240007) |  6.0(1.260006)
+[CSCwt42965](https://cdetsng.cisco.com/webui/#view=CSCwt42965) |  On Cisco UCS X9508 chassis connected to Cisco Intersight Virtual Appliance, chassis profile deployment may fail when a Simple Network Management Protocol (SNMP) policy is attached to the profile. When this condition occurs, the device SNMP policy deployment fails, and the chassis profile does not fully deploy in Cisco Intersight.  This issue is resolved. |  4.3(6.250048) |  6.0(2.260067) 4.3(6.260036)
 
 ---
 
 ## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0/m-open-issues.html
 
-## Open issues in Release 6.0(1.260006) — None 
+## Open issues in Release 6.0(2.260067) — None 
 
 ---
 
 ## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0/m-known-issues.html
 
-## Known issues in Release 6.0(1.260006) — None 
+## Known issues in Release 6.0(2.260067) — None 
 
 ---
 
@@ -148,32 +147,31 @@ B-Series Server Firmware Version |  Infrastructure Firmware Version
 
 ## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/m-resolved-issues.html
 
-## Resolved issues in Release 6.0(1.260006)
+## Resolved issues in Release 6.0(2.260067)
 
 This section provides a brief description of the resolved issues.
 
 Defect ID |  Description |  First Version Affected |  Resolved in Release  
 ---|---|---|---  
-[CSCwt36346](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwt36346) |  On Cisco UCS 6500 Series and 6400 Series Fabric Interconnects, when the allowed VLAN string on the vEth interface exceeds 900 characters, data corruption occurs over time. This eventually causes both Fabric Interconnects to perform a hard reboot. The generic error message `Reset Requested due to Fatal Module Error` is displayed when the `show system reset-reason` command is run.  This issue is resolved. |  6.0(1.250198) |  6.0(1.260006) 6.0(2.260045)  
-[CSCwn65484](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwn65484) |  Cisco UCS Fabric Interconnects (6400, 6500, 6600 Series, and Cisco UCS X-Series Direct UCS 9108 100G) may generate a missing FCOE_NPV_PKG license warning. The warning message is: %LICMGR-2-LOG_LIC_MISSING_WARNING.  Despite this warning, the FCoE feature continues to operate normally under honor-based licensing. This issue is resolved. |  4.3(3.240007) |  6.0(1.260006)
+[CSCwt42965](https://cdetsng.cisco.com/webui/#view=CSCwt42965) |  On Cisco UCS X9508 chassis connected to Cisco Intersight Virtual Appliance, chassis profile deployment may fail when a Simple Network Management Protocol (SNMP) policy is attached to the profile. When this condition occurs, the device SNMP policy deployment fails, and the chassis profile does not fully deploy in Cisco Intersight.  This issue is resolved. |  4.3(6.250048) |  6.0(2.260067) 4.3(6.260036)
 
 ---
 
 ## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/m-new-hardware-features.html
 
-## New hardware features in Infrastructure Firmware Release 6.0(1.260006) — None 
+## New hardware features in Infrastructure Firmware Release 6.0(2.260067) — None 
 
 ---
 
 ## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/m-open-issues.html
 
-## Open issues in Release 6.0(1.260006) — None 
+## Open issues in Release 6.0(2.260067) — None 
 
 ---
 
 ## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/m-known-issues.html
 
-## Known issues in Release 6.0(1.260006) — None 
+## Known issues in Release 6.0(2.260067) — None 
 
 ---
 

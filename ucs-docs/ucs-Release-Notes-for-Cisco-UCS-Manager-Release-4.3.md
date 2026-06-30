@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco UCS Manager, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_release-notes-ucsm-4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-04-16 10:50:00 |
+| **Fetched on** | 2026-06-30 11:00:02 |
 
 ---
 
@@ -18,7 +18,7 @@
 
 **First Published: August 17, 2023**
 
-**Last Updated: February 23, 2026**
+**Last Updated: June 25, 2026**
 
 #  Cisco UCS Manager
 
@@ -48,6 +48,8 @@ Cisco recommends that you upgrade to release 4.3(4e) or later. For more informat
 
 Table 1. Release 4.3(6) Release |  Date |  Description  
 ---|---|---  
+4.3(6h) |  June 25, 2026 |  Created release notes for Cisco UCS Manager Release 4.3(6h).   
+4.3(6g) |  May 4, 2026 |  Created release notes for Cisco UCS Manager Release 4.3(6g).   
 4.3(6f) |  March 26, 2026 |  Updated Security Fixes in Release 4.3(6f).   
 4.3(6f) |  February 23, 2026 |  Created release notes for Cisco UCS Manager Release 4.3(6f).   
 4.3(6e) |  January 14, 2026 |  Created release notes for Cisco UCS Manager Release 4.3(6e).   
@@ -94,6 +96,8 @@ Cisco UCS Manager, Release 4.3 is a unified software release for all supported U
 
 ### New Hardware Features
 
+  * New Hardware in Release 4.3(6g)—None 
+
   * New Hardware in Release 4.3(6f)—None 
 
   * New Hardware in Release 4.3(6e)—None 
@@ -138,6 +142,8 @@ Cisco UCS Manager, Release 4.3 is a unified software release for all supported U
 
 
 ### New Software Features
+
+  * New Software in Release 4.3(6g)—None 
 
   * New Software in Release 4.3(6f)—None 
 
@@ -725,7 +731,7 @@ Cisco UCS Manager adds support for the following Cisco Tri-Mode M1 24G RAID and 
 
 Support for the following new GPUs:
 
-  * NVIDIA A16 GPU on X440p: PCIE 250W 4X16GB, FHFL (UCSC-CGPU-A16 )—Cisco UCS X215c M8 (with PCIe Node). 
+  * NVIDIA A16 GPU on X440p: PCIE 250W 4X16GB, FHFL (UCSC-GPU-A16 )—Cisco UCS X215c M8 (with PCIe Node). 
 
   * NVIDIAH100-NVL GPU 400W, 94GB, 2-slot FHFL (UCSC-GPU-H100-NVL)—Cisco UCS X215c M8 (with PCIe Node), UCS X210c M7, UCS C245 M8, UCS C240 M7. 
 
@@ -1397,6 +1403,14 @@ Cisco UCS X-Series Servers and Cisco M7 Servers require a valid Cisco Intersight
 
 ### Security Fixes
 
+## Security fixes in Release 4.3(6h)
+
+There are no security fixes in release 4.3(6h). 
+
+## Security Fixes in Release 4.3(6g)
+
+There are no security fixes in release 4.3(6g). 
+
 ## Security Fixes in Release 4.3(6f)
 
 ### Defect ID - CSCwn23026
@@ -1866,6 +1880,28 @@ CVE-2022-43505—Insufficient control flow management in the BIOS firmware for s
 
 The resolved bugs for a release are accessible through the [Cisco Bug Search Tool](https://bst.cloudapps.cisco.com/bugsearch). This web-based tool provides you with access to the Cisco bug tracking system, which maintains up-to-date information about bugs and vulnerabilities in this product and other Cisco hardware and software products. 
 
+### Resolved caveats in Release 4.3(6h)
+
+Defect ID | Symptoms | First Bundle Affected | Resolved in Release  
+---|---|---|---  
+CSCwt12837 |  During Cisco UCS Manager activation, a loss of SSH connectivity between the fabric interconnects can leave the two fabrics on different versions and block GUI access. This issue is specific to upgrade scenarios in which the activation depends on uninterrupted SSH communication between the fabrics.  This issue is resolved. |  3.2(3d)A |  4.3(6h)  
+CSCws79672 |  The Cisco UCS 6454 FI running release 4.3(6b) experiences management service unresponsiveness on Fabric Interconnect B due to the DME database becoming full. This condition triggers Call Home alerts and causes the management services to become unresponsive temporarily.  This issue is resolved. |  4.3(6b) |  4.3(6h)  
+CSCwn42410 |  A partial failure of one of the M.2 drives on a Cisco UCS-M2-HWRAID controller may cause the affected drive to be reported incorrectly and may degrade the RAID 1 virtual drive.  In this condition, the drive can appear in `PhyDriveInfo` with no valid device data visible, while the reported link speed is reduced to 1.5 GB.  Additional drive attributes such as power-on hours, power cycle count, percentage life, wear status days, and temperature may all appear as 0.  Product ID and firmware fields may also be blank even though the drive is still shown as online. In some cases, the messages log may incorrectly report the affected drive as having 0% life remaining by generating an `SSD LIFE TIME LAPSE` fault. T  This issue has been observed on systems using the Cisco UCS-M2-HWRAID M.2 storage controller with M.2 drives configured in a RAID 1 virtual drive.  This issue is resolved. |  4.2(3m) |  4.3(6h)  
+CSCwu82212 |  The fabric interconnect root file system can reach 100 percent utilization, which may affect services such as DNS resolution. This issue can occur during normal fabric interconnect operation. This issue can cause DNS-related failures on the fabric interconnect.  This issue is resolved. |  4.3(6d)A |  4.3(6h)  
+CSCwt96184 |  After server decommission and recommission for the Cisco UCS M6 rack servers, the Cisco UCS 15428 VIC adapter remains stuck in the Inoperable state. The server fails to receive discovery from Cisco UCS Manager due to a DHCP packet parsing error at the Baseboard Management Controller (BMC). This error occurs because the DHCP packet contains extra fields or characters, causing Cisco UCS Manager initialization to fail with a FATAL ERROR! Invalid UCSM DHCP mode token message and aborting the mode change process. This issue prevents proper adapter operation and server discovery.  This issue is resolved. |  4.3(6f) |  4.3(6h)  
+CSCwt79531 |  After an infrastructure upgrade, server discovery can fail at 25 percent because the svc_sam_dme process restarts unexpectedly. This issue is seen Cisco UCS 6454 fabric interconnect deployments, where NIC AG logs reported memory allocation failures during the upgrade flow.  This issue is resolved. |  4.3(4e)A |  4.3(6h)  
+CSCwp23550 |  When a non-admin user exits a fabric interconnect CLI session, the session can prompt for a sudo password instead of closing normally.  This issue is resolved. |  4.3(6c)A |  4.3(6h)  
+CSCwr55882 |  After an upgrade, some IOM backplane ports can remain down because fabric evacuation does not turn off as expected. This issue can occur after fabric evacuation is enabled before an auto-upgrade and the first fabric interconnect completes the upgrade while shallow discovery is still in progress. A shallow discovery can update the evacuation state too early and keep HIF ports down on affected chassis.  This issue is resolved. |  4.3(4e)A |  4.3(6h)  
+CSCwn60596 |  After an infrastructure firmware upgrade, KVM consoles can become inoperable even though the assigned KVM IP address remains reachable. This issue has been observed in domains with multiple chassis and out-of-band management after firmware upgrades or PMON restarts.  This issue is resolved. |  4.3(4a) |  4.3(6h)  
+  
+### Resolved Caveats in Release 4.3(6g)
+
+Defect ID |  Symptom |  First Bundle Affected |  Resolved in Release  
+---|---|---|---  
+CSCwt18924 |  After an upstream Cisco ACI fabric upgrade or reload, Cisco UCS VIC adapters may fail to bring vNICs online, leaving them stuck in an initializing state. This issue specifically affects configurations using 10GBase-T (SFP-10G-T-X) transceivers connected to Cisco UCS VIC 1400 series adapters (1455, 1457, 1467) or 15000 series adapters (15427, 15428, 15425) on supported Nexus switches.  The root cause is a memory leak within the adapter triggered when the 10GBase-T transceiver hogs the I2C bus during operations, including—but not limited to—server or switch resets and reboots. Although the adapter physical interfaces may come up, the memory leak prevents the vNICs from recovering automatically.  This issue is resolved. |  4.3(5a) |  4.3(6g)  
+CSCwi16863 |  BMC watchdog resets can occur on Cisco UCS B200 M6 and UCS X210c M6 servers, causing CIMC to reboot unexpectedly.  This issue is resolved. |  4.2(3d) |  4.3(6g)  
+CSCws91466 |  IOMs in the Cisco UCS domain running Cisco UCS Manager version report a CMCLowMem warning related to high usage of the /var/volatile/wtmp file, which grows due to repeated FI connections triggering rlogin. The wtmp file consumes about 1.4 GB of space, but no other service impact is observed.  This issue is resolved. |  4.3(6b)A |  4.3(6g)  
+  
 ### Resolved Caveats in Release 4.3(6f)
 
 Defect ID |  Symptom |  First Bundle Affected |  Resolved in Release  
@@ -2141,6 +2177,19 @@ CSCwf18625 |  Few UCS-HD1T7K12N and UCS-HD2T7K12N running firmware version CN05 
 
 The open bugs for a release are accessible through the [Cisco Bug Search Tool](https://tools.cisco.com/bugsearch/). This web-based tool provides you with access to the Cisco bug tracking system, which maintains up-to-date information about bugs and vulnerabilities in this product and other Cisco hardware and software products. 
 
+### Open caveats in Release 4.3(6h)
+
+There are no open caveats in release 4.3(6h). 
+
+### Open Caveats for Release 4.3(6g)
+
+The following caveat is open in release 4.3(6g): 
+
+Defect ID |  Symptom |  Workaround |  First Bundle Affected  
+---|---|---|---  
+CSCwt96184 |  After server decommission and recommission for the Cisco UCS M6 rack servers, the Cisco UCS 15428 VIC adapter remains stuck in the Inoperable state. The server fails to receive discovery from Cisco UCS Manager due to a DHCP packet parsing error at the Baseboard Management Controller (BMC). This error occurs because the DHCP packet contains extra fields or characters, causing Cisco UCS Manager initialization to fail with a FATAL ERROR! Invalid UCSM DHCP mode token message and aborting the mode change process. This issue prevents proper adapter operation and server discovery.  |  This issue occurs during the decommission or recommission process while the system is in maintenance mode. To resolve this, reboot the BMC.  |  4.3(6f)  
+CSCwd00735 |  In a setup equipped with Cisco UCS 6300 series Fabric Interconnects or with Cisco UCS Mini, downloading a C-Series bundle larger than 2 GB can fail with an invalid image error.  |  Upgrade the infrastructure A bundle to release 4.3(6). |  4.2(2c)  
+  
 ### Open Caveats for Release 4.3(6f)
 
 The following caveats are open in Release 4.3(6f): 
@@ -2337,6 +2386,14 @@ CSCwf21977 |  Cisco UCS Manager CLI interface does not support manual control ov
 CSCwd35712 |  A critical defect has been identified in the Cisco UCS Manager where the Data Management Engine (DME) crashes due to an instance id not found error.  Additional symptoms include the inability to access the Cisco UCS Manager GUI, non-functionality of cluster management services, and a core dump indicated by the show pmon state command via SSH.  The problem is not firmware-specific and can impact any Cisco UCS Manager domain. Although the data plane and server operations of the domain remain unaffected, there is no workaround for this issue, and affected environments may require restoration from a backup.  |  There is no known workaround. Restore the domain from backup. |  4.2(1d)  
   
 ### Known Behavior and Limitations in Release 4.3
+
+## Known behaviors and limitations in Release 4.3(6h)
+
+There are no known behaviors and limitations in release 4.3(6h). 
+
+## Known Behavior and Limitations in Release 4.3(6g)
+
+There are no known behavior and limitations in Release 4.3(6g). 
 
 ## Known Behavior and Limitations in Release 4.3(6f)
 
@@ -2920,10 +2977,6 @@ Upgrade from any 4.0(4) release |
 
   
   
-### UCS Manager Health and Pre-Upgrade Check Tool
-
-The [UCS Manager Health and Pre-Upgrade Check Tool](https://www.cisco.com/c/en/us/support/docs/servers-unified-computing/ucs-infrastructure-ucs-manager-software/217601-ucsm-health-and-pre-upgrade-check-tool.html) provides automated health and pre-upgrade checks that are designed to ensure your clusters are healthy before you upgrade. It is imperative that this healthcheck is not just performed, but that you take corrective action on any cluster that is found to be unhealthy. Correct all issues reported by the UCS Manager health check before continuing. 
-
 ## Internal Dependencies
 
 In this release, an interactive compatibility lookup tool is available to help you quickly determine supported combinations of Infrastructure Releases, Fabric Interconnects, servers, VICs, and IOM modules based on the selected release. 
@@ -3340,76 +3393,76 @@ The maximum length of fiber optic runs is limited to 300 meters. This is imposed
 ---|---  
 Table 19. Supported GPU/GPU PCIe Node GPU/GPU PCIe Node |  PID |  Supported Servers |  Minimum Software Version |  Suggested Software Version  
 ---|---|---|---|---  
-NVIDIA A16 GPU on X440p: PCIE 250W 4X16GB, FHFL  |  UCSX-GPU-A16 |  Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6f)  
-UCSC-CGPU-A16 |  Cisco UCSX215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6f)  
-AMD MI210 GPU; 300W 64GB, 2 slot FHFL |  UCSX-GPU-MI210 |  Cisco UCS X215c M8 |  4.3(6a) |  4.3(6f)  
-NVIDIA H100-NVL GPU 400W, 94GB, 2-slot FHFL  |  UCSX-GPU-H100-NVL |  Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6f)  
-UCSC-GPU-H100-NVL |  Cisco UCS C240 M8 |  4.3(6a) |  4.3(6f)  
-Cisco UCS X210c M7 Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6f)  
-Cisco UCS C245 M8 |  4.3(5a) |  4.3(6f)  
-Cisco UCS C240 M7 |  4.3(5a) |  4.3(6f)  
-NVIDIA L4-Mezz GPU 70W, 24GB, 1-slot HHHL |  UCSX-GPU-L4-Mezz |  Cisco UCS X210c M7 Cisco UCS X215c M8 |  4.3(5a) |  4.3(6f)  
-UCSX-440P-D GPU PCIe Node |  UCSX-440P-D |  Cisco UCS X210c M7, X210c M6, and X410c M7 |  4.3(4a) |  4.3(6f)  
-Intel GPU Flex 140, Gen4x8, HHHL, 75W PCIe (Front Mezz) |  UCSX-GPU-FLX140MZ |  Cisco UCS X210c M7 |  4.3(2b) |  4.3(6f)  
-Intel GPU Flex 140, Gen4x8, HHHL, 75W PCIe |  UCSX-GPU-FLEX140 |  Cisco UCS X410c M7 and X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-UCSC-GPU-FLEX140 |  Cisco UCS C220 M7 and C240 M7 |  4.3(4a) |  4.3(6f)  
-Intel GPU Flex 170, Gen4x16, HHFL, 150W PCIe |  UCSX-GPU-FLEX170 |  Cisco UCS X410c M7 and X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-UCSC-GPU-FLEX170 |  Cisco UCS C240 M7 |  4.3(4a) |  4.3(6f)  
-NVIDIA TESLA A16 PCIE 250W 4X16GB |  UCSX-GPU-A16-D |  Cisco UCS X210c M7 and X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-UCSC-GPU-A16 |  Cisco UCS C240 M8 |  4.3(6a) |  4.3(6f)  
-Cisco UCS C240 M6 |  4.2(1d) |  4.3(6f)  
-Cisco UCS C245 M6 |  4.2(1i) |  4.3(6f)  
-NVIDIA L4 Tensor Core, 70W, 24GB |  UCSX-GPU-L4 |  Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6f)  
-Cisco UCS X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-NVIDIA L40 300W, 48GB wPWR CBL |  UCSX-GPU-L40 |  Cisco UCS X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-UCSC-GPU-L40 |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6f)  
-Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6f)  
-NVIDIA L40S: 350W, 48GB, 2-slot FHFL GPU |  UCSX-GPU-L40S | Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6f)  
+NVIDIA A16 GPU on X440p: PCIE 250W 4X16GB, FHFL  |  UCSX-GPU-A16 |  Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6h)  
+UCSC-GPU-A16 |  Cisco UCSX215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6h)  
+AMD MI210 GPU; 300W 64GB, 2 slot FHFL |  UCSX-GPU-MI210 |  Cisco UCS X215c M8 |  4.3(6a) |  4.3(6h)  
+NVIDIA H100-NVL GPU 400W, 94GB, 2-slot FHFL  |  UCSX-GPU-H100-NVL |  Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6h)  
+UCSC-GPU-H100-NVL |  Cisco UCS C240 M8 |  4.3(6a) |  4.3(6h)  
+Cisco UCS X210c M7 Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6h)  
+Cisco UCS C245 M8 |  4.3(5a) |  4.3(6h)  
+Cisco UCS C240 M7 |  4.3(5a) |  4.3(6h)  
+NVIDIA L4-Mezz GPU 70W, 24GB, 1-slot HHHL |  UCSX-GPU-L4-Mezz |  Cisco UCS X210c M7 Cisco UCS X215c M8 |  4.3(5a) |  4.3(6h)  
+UCSX-440P-D GPU PCIe Node |  UCSX-440P-D |  Cisco UCS X210c M7, X210c M6, and X410c M7 |  4.3(4a) |  4.3(6h)  
+Intel GPU Flex 140, Gen4x8, HHHL, 75W PCIe (Front Mezz) |  UCSX-GPU-FLX140MZ |  Cisco UCS X210c M7 |  4.3(2b) |  4.3(6h)  
+Intel GPU Flex 140, Gen4x8, HHHL, 75W PCIe |  UCSX-GPU-FLEX140 |  Cisco UCS X410c M7 and X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6h)  
+UCSC-GPU-FLEX140 |  Cisco UCS C220 M7 and C240 M7 |  4.3(4a) |  4.3(6h)  
+Intel GPU Flex 170, Gen4x16, HHFL, 150W PCIe |  UCSX-GPU-FLEX170 |  Cisco UCS X410c M7 and X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6h)  
+UCSC-GPU-FLEX170 |  Cisco UCS C240 M7 |  4.3(4a) |  4.3(6h)  
+NVIDIA TESLA A16 PCIE 250W 4X16GB |  UCSX-GPU-A16-D |  Cisco UCS X210c M7 and X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6h)  
+Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6h)  
+UCSC-GPU-A16 |  Cisco UCS C240 M8 |  4.3(6a) |  4.3(6h)  
+Cisco UCS C240 M6 |  4.2(1d) |  4.3(6h)  
+Cisco UCS C245 M6 |  4.2(1i) |  4.3(6h)  
+NVIDIA L4 Tensor Core, 70W, 24GB |  UCSX-GPU-L4 |  Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6h)  
+Cisco UCS X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6h)  
+Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6h)  
+NVIDIA L40 300W, 48GB wPWR CBL |  UCSX-GPU-L40 |  Cisco UCS X210c M7 (with PCIe Node) |  4.3(4a) |  4.3(6h)  
+Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6h)  
+UCSC-GPU-L40 |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6h)  
+Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6h)  
+NVIDIA L40S: 350W, 48GB, 2-slot FHFL GPU |  UCSX-GPU-L40S | Cisco UCS X210c M8 (with PCIe Node)  |  4.3(6a) |  4.3(6h)  
 Cisco UCS X210c M7 (with PCIe Node) Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a)  
-UCSC-GPU-L40S | Cisco UCS C240 M8 |  4.3(6a) |  4.3(6f)  
-Cisco UCS C240 M7 |  4.3(4a) |  4.3(6f)  
-Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6f)  
-NVIDIA T4 PCIE 75W 16GB |  UCSX-GPU-T4-16 |  Cisco UCS X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-UCSC-GPU-T4-16 |  Cisco UCS C220 M6 |  4.3(2b) |  4.3(6f)  
-Cisco UCS C245 M6 |  4.2(1f) |  4.3(6f)  
-Cisco UCS C225 M6 |  4.2(1l) |  4.3(6f)  
-Cisco UCS C240 M5, C220 M5, and C480 M5 |  3.2(3a) |  4.3(6f)  
-Cisco UCS S3260 M5 |  3.1(2b) |  4.3(6f)  
-NVIDIA T4 GPU PCIE 75W 16GB, MEZZ form factor (Front Mezz) |  UCSX-GPU-T4-MEZZ |  Cisco UCS X210c M7 and X210c M6 |  4.3(2b) |  4.3(6f)  
-NVIDIA Hopper L4 70W, 24GB, 1-slot HHHL |  UCSC-GPU-L4M6 |  Cisco UCS C220 M6, C240 M6 |  4.3(4a) |  4.3(6f)  
-NVIDIA H100: 350W, 80GB, 2-slot FHFL GPU |  UCSX-GPU-H100-80 |  Cisco UCS X210c M7 and X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-UCSC-GPU-H100-80 |  Cisco UCS C240 M7 |  4.3(4a) |  4.3(6f)  
-NVIDIA L4:70W, 24GB, 1-slot HHHL GPU |  UCSC-GPU-L4 |  Cisco UCS C240 M8 and C220 M8 |  4.3(6a) |  4.3(6f)  
-Cisco UCS C245 M8 |  4.3(5a) |  4.3(6f)  
-Cisco UCS C220 M7 and C240 M7 |  4.3(2b) |  4.3(6f)  
-Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6f)  
-NVIDIA P4 |  UCSC-GPU-P4 |  Cisco UCS C220 M5 |  3.2(3a) |  4.3(6f)  
-NVIDIA M10 |  UCSC-GPU-M10 |  Cisco UCS C240 M5 and C480 M5 |  3.2(3a) |  4.3(6f)  
-NVIDIA GRID P6 Front Mezzanine |  UCSB-GPU-P6-F |  Cisco UCS B200 M5 |  3.2(1d) |  4.3(6f)  
-Cisco UCS B480 M5 |  3.2(2b) |  4.3(6f)  
-NVIDIA GRID P6 Rear Mezzanine |  UCSB-GPU-P6-R |  Cisco UCS B200 M5 |  3.2(1d) |  4.3(6f)  
-Cisco UCS B480 M5 |  3.2(2b) |  4.3(6f)  
-TESLA A30, PASSIVE, 180W, 24GB |  UCSC-GPU-A30-D |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6f)  
-UCSC-GPU-A30 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6f)  
-Cisco UCS C245 M6 |  4.2(1i) |  4.3(6f)  
-TESLA A40 RTX, PASSIVE, 300W, 48GB |  UCSX-GPU-A40-D |  Cisco UCS X210c M7 and X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-UCSC-GPU-A40-D |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6f)  
-UCSC-GPU-A40 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6f)  
-Cisco UCS C245 M6 |  4.2(1i) |  4.3(6f)  
-Cisco UCS C480 M5 |  3.2(3a) |  4.3(6f)  
-TESLA A100, PASSIVE, 300W, 80GB12 |  UCSX-GPU-A100-80-D |  Cisco UCS X210c M7 and X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6f)  
-Cisco UCS X410c M7 (with PCIe Node ) |  4.3(4a) |  4.3(6f)  
-UCSC-GPUA100-80-D |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6f)  
-UCSC-GPU-A100-80 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6f)  
-Cisco UCS C245 M6 |  4.2(1i) |  4.3(6f)  
-All Cisco UCS C-Series M5 |  4.2(2c) |  4.3(6f)  
-TESLA A10, PASSIVE, 150W, 24GB |  UCSC-GPU-A10 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6f)  
-Cisco UCS C245 M6 |  4.2(1i) |  4.3(6f)  
-NVIDIA H200-NVL GPU |  UCSC-GPU-H200-NVL |  Cisco UCS C240 M8 |  4.3(6c) |  4.3(6f)  
+UCSC-GPU-L40S | Cisco UCS C240 M8 |  4.3(6a) |  4.3(6h)  
+Cisco UCS C240 M7 |  4.3(4a) |  4.3(6h)  
+Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6h)  
+NVIDIA T4 PCIE 75W 16GB |  UCSX-GPU-T4-16 |  Cisco UCS X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6h)  
+UCSC-GPU-T4-16 |  Cisco UCS C220 M6 |  4.3(2b) |  4.3(6h)  
+Cisco UCS C245 M6 |  4.2(1f) |  4.3(6h)  
+Cisco UCS C225 M6 |  4.2(1l) |  4.3(6h)  
+Cisco UCS C240 M5, C220 M5, and C480 M5 |  3.2(3a) |  4.3(6h)  
+Cisco UCS S3260 M5 |  3.1(2b) |  4.3(6h)  
+NVIDIA T4 GPU PCIE 75W 16GB, MEZZ form factor (Front Mezz) |  UCSX-GPU-T4-MEZZ |  Cisco UCS X210c M7 and X210c M6 |  4.3(2b) |  4.3(6h)  
+NVIDIA Hopper L4 70W, 24GB, 1-slot HHHL |  UCSC-GPU-L4M6 |  Cisco UCS C220 M6, C240 M6 |  4.3(4a) |  4.3(6h)  
+NVIDIA H100: 350W, 80GB, 2-slot FHFL GPU |  UCSX-GPU-H100-80 |  Cisco UCS X210c M7 and X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6h)  
+UCSC-GPU-H100-80 |  Cisco UCS C240 M7 |  4.3(4a) |  4.3(6h)  
+NVIDIA L4:70W, 24GB, 1-slot HHHL GPU |  UCSC-GPU-L4 |  Cisco UCS C240 M8 and C220 M8 |  4.3(6a) |  4.3(6h)  
+Cisco UCS C245 M8 |  4.3(5a) |  4.3(6h)  
+Cisco UCS C220 M7 and C240 M7 |  4.3(2b) |  4.3(6h)  
+Cisco UCS X215c M8 (with PCIe Node)  |  4.3(5a) |  4.3(6h)  
+NVIDIA P4 |  UCSC-GPU-P4 |  Cisco UCS C220 M5 |  3.2(3a) |  4.3(6h)  
+NVIDIA M10 |  UCSC-GPU-M10 |  Cisco UCS C240 M5 and C480 M5 |  3.2(3a) |  4.3(6h)  
+NVIDIA GRID P6 Front Mezzanine |  UCSB-GPU-P6-F |  Cisco UCS B200 M5 |  3.2(1d) |  4.3(6h)  
+Cisco UCS B480 M5 |  3.2(2b) |  4.3(6h)  
+NVIDIA GRID P6 Rear Mezzanine |  UCSB-GPU-P6-R |  Cisco UCS B200 M5 |  3.2(1d) |  4.3(6h)  
+Cisco UCS B480 M5 |  3.2(2b) |  4.3(6h)  
+TESLA A30, PASSIVE, 180W, 24GB |  UCSC-GPU-A30-D |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6h)  
+UCSC-GPU-A30 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6h)  
+Cisco UCS C245 M6 |  4.2(1i) |  4.3(6h)  
+TESLA A40 RTX, PASSIVE, 300W, 48GB |  UCSX-GPU-A40-D |  Cisco UCS X210c M7 and X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6h)  
+Cisco UCS X410c M7 (with PCIe Node) |  4.3(4a) |  4.3(6h)  
+UCSC-GPU-A40-D |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6h)  
+UCSC-GPU-A40 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6h)  
+Cisco UCS C245 M6 |  4.2(1i) |  4.3(6h)  
+Cisco UCS C480 M5 |  3.2(3a) |  4.3(6h)  
+TESLA A100, PASSIVE, 300W, 80GB12 |  UCSX-GPU-A100-80-D |  Cisco UCS X210c M7 and X210c M6 (with PCIe Node) |  4.3(4a) |  4.3(6h)  
+Cisco UCS X410c M7 (with PCIe Node ) |  4.3(4a) |  4.3(6h)  
+UCSC-GPUA100-80-D |  Cisco UCS C240 M7 |  4.3(2b) |  4.3(6h)  
+UCSC-GPU-A100-80 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6h)  
+Cisco UCS C245 M6 |  4.2(1i) |  4.3(6h)  
+All Cisco UCS C-Series M5 |  4.2(2c) |  4.3(6h)  
+TESLA A10, PASSIVE, 150W, 24GB |  UCSC-GPU-A10 |  Cisco UCS C240 M6 |  4.2(1d) |  4.3(6h)  
+Cisco UCS C245 M6 |  4.2(1i) |  4.3(6h)  
+NVIDIA H200-NVL GPU |  UCSC-GPU-H200-NVL |  Cisco UCS C240 M8 |  4.3(6c) |  4.3(6h)  
   
 ## Deprecated Hardware and Software in Cisco UCS Manager
 
@@ -3449,6 +3502,8 @@ The following table lists the PIDs added in this release and maps UCS software r
 
 Table 20. Version Mapping UCS Release |  Catalog File Name |  Additional PIDs in this Release  
 ---|---|---  
+4.3(6h) |  ucs-catalog.4.3.6h.T.bin |  —  
+4.3(6g) |  ucs-catalog.4.3.6g.T.gbin |  —  
 4.3(6f) |  ucs-catalog.4.3.6f.T.bin |  —  
 4.3(6e) |  ucs-catalog.4.3.6e.T.bin |  —  
 4.3(6d) |  ucs-catalog.4.3.6d.T.bin |  —  
@@ -3593,7 +3648,7 @@ Cisco Tri-Mode M1 24G RAID and HBA controllers:
 
 GPUs:
 
-  * UCSC-CGPU-A16
+  * UCSC-GPU-A16
   * UCSC-GPU-H100-NVL
   * UCSX-GPU-L4-Mezz
 
@@ -3952,14 +4007,14 @@ Table 1. Minimum Host Firmware Versions for Blade Servers Servers |  Minimum Sof
 ---|---|---|---|---|---|---|---  
 UCS-IOM- 2204  UCS-IOM- 2208  |  UCS-IOM- 2304  |  UCS-IOM- 2304V2  |  UCS-IOM- 2204  UCS-IOM- 2208  UCS-IOM- 2408* UCSX-I-9108-25G |  UCS-IOM- 2204  UCS-IOM- 2208  UCS-IOM- 2408* UCSX-I-9108-25G |  UCS-IOM- 2304V1/V2  UCS-IOM- 2408 UCSX-I-9108-25G or UCSX-I-9108-100G |  UCSX-S9108-100G |  UCS-IOM-2204  UCS-IOM-2208  UCS-IOM-2408 UCS-IOM- 2304  UCS-IOM- 2304V2  UCSX-I-9108-25G or UCSX-I-9108-100G  
 UCS-IOM-2408 support M5 server is with UCS 1300/1400 series VIC adapters. UCS-IOM-2408 is supported with UCS 6400 Series/UCS 6536 FI UCS IOM-2304v1/v2 is supported with UCS 6300/UCS 6536 FI UCS IOM-220x is supported with UCS 6200 series/UCS 6300/UCS 6400 series FI. Cisco UCS M6 servers are not supported with 6200 series FI UCSX-I-9108-25G and UCSX-I-9108-100G are supported only with UCS X-Series Servers  
-UCS X215c M8 |  — |  — |  — |  4.3(5a) |  4.3(5a) |  4.3(5a) |  4.3(5a) |  4.3(6e) *  
-UCS X410c M7 |  — |  — |  — |  4.3(2c) |  4.3(2c) |  4.3(2c) |  4.3(4b) |  4.3(6e) *  
-UCS X210c M7 |  — |  — |  — |  4.3(2b) |  4.3(2b) |  4.3(2b) |  4.3(4b) |  4.3(6e) *  
-UCS X210c M6 |  — |  — |  — |  4.3(2b) |  4.3(2b) |  4.3(2b) |  4.3(4b) |  4.3(6e) *  
+UCS X215c M8 |  — |  — |  — |  4.3(5a) |  4.3(5a) |  4.3(5a) |  4.3(5a) |  4.3(6h) *  
+UCS X410c M7 |  — |  — |  — |  4.3(2c) |  4.3(2c) |  4.3(2c) |  4.3(4b) |  4.3(6h) *  
+UCS X210c M7 |  — |  — |  — |  4.3(2b) |  4.3(2b) |  4.3(2b) |  4.3(4b) |  4.3(6h) *  
+UCS X210c M6 |  — |  — |  — |  4.3(2b) |  4.3(2b) |  4.3(2b) |  4.3(4b) |  4.3(6h) *  
 * Cisco UCS X215c M8 Compute Node is supported only with Cisco UCS 6454, 64108, and 6536 FIs.  Cisco UCS X-Series M7 and M6 servers are supported only with Cisco UCS UCSX-S9108-100G, 6454, 64108, and 6536 FIs and are not supported with Cisco UCS 6324, UCS 6332, 6332-16UP FIs.   
-B200 M6 |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(3p) |  - |  4.3(6e)  
-B200 M5 |  3.2(1d) |  3.2(1d) |  4.0(4o) |  4.0(1a) |  4.1(1a) |  4.2(3p) |  - |  4.3(6e)  
-B480 M5 |  3.2(2b) |  3.2(2b) |  4.0(4o) |  4.0(1a) |  4.1(1a) |  4.2(3p) |  - |  4.3(6e)  
+B200 M6 |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(3r) |  - |  4.3(6h)  
+B200 M5 |  3.2(1d) |  3.2(1d) |  4.0(4o) |  4.0(1a) |  4.1(1a) |  4.2(3r) |  - |  4.3(6h)  
+B480 M5 |  3.2(2b) |  3.2(2b) |  4.0(4o) |  4.0(1a) |  4.1(1a) |  4.2(3r) |  - |  4.3(6h)  
   
 ## Rack Servers
 
@@ -3975,19 +4030,19 @@ In a mixed firmware configuration, we recommend that the minimum server bundle c
 ---|---  
 Table 2. Minimum Host Firmware Versions for Rack Servers Servers  |  Minimum Software Version  UCS 6332, 6332-16UP  2232 PP 2348 |  Minimum Software Version  UCS 6454 2232 PP (10G) 2348 UPQ (10G) 93180YC-FX3 (25G server ports) 93180YC-FX3 (10G server ports) |  Minimum Software Version  UCS 64108 2232 PP (10G) 2348 UPQ (10G) 93180YC-FX3 (25G server ports) 93180YC-FX3 (10G server ports) |  Minimum Software Version  UCS 6536 93180YC-FX3 (25G server ports) 93180YC-FX3 (10G server ports) 2348 UPQ (10G server ports) |  Suggested Software Version  UCS 6332, 6332-16UP FI  UCS 6400 Series FI UCS 6536  
 ---|---|---|---|---|---  
-Cisco UCS C240 M7 |  — |  4.3(2b) |  4.3(2b) |  4.3(2b) |  4.3(6e)*  
-Cisco UCS C220 M7 |  — |  4.3(2b) |  4.3(2b) |  4.3(2b) |  4.3(6e)*  
+Cisco UCS C240 M7 |  — |  4.3(2b) |  4.3(2b) |  4.3(2b) |  4.3(6h)*  
+Cisco UCS C220 M7 |  — |  4.3(2b) |  4.3(2b) |  4.3(2b) |  4.3(6h)*  
 * Cisco UCS C-Series M7 Serves are supported only with Cisco UCS 6454, 64108, and 6536 FIs and are not supported with Cisco UCS UCS 6332, 6332-16UP FIs.   
-Cisco UCS C220 M6 |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(3p) |  4.3(6e)  
-Cisco UCS C240 M6 |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(3p) |  4.3(6e)  
-Cisco UCS C225 M6 |  4.2(1l) |  4.2(1l) |  4.2(1l) |  4.2(3p) |  4.3(6e)  
-Cisco UCS C245 M6 |  4.2(1i) |  4.2(1i) |  4.2(1i) |  4.2(3p) |  4.3(6e)  
-Cisco UCS C220 M5 |  3.2(1d) | 4.0(1a) |  4.1(1a) |  4.2(3p) |  4.3(6e)  
-Cisco UCS C240 M5 |  3.2(1d) | 4.0(1a) |  4.1(1a) |  4.2(3p) |  4.3(6e)  
-Cisco UCS C125 M5 | 4.0(1a) | 4.0(1a) |  4.1(1a) |  4.2(3p) |  4.3(6e)  
-Cisco UCS S3260 M5 |  3.2(3a) | 4.0(1a) |  4.1(1a) |  4.2(3p) |  4.3(6e)  
-Cisco UCS C480 M5 ML |  4.0(2a) |  4.0(2a) |  4.1(1a) |  4.2(3p) |  4.3(6e)  
-Cisco UCS C480 M5 |  3.2(2b) | 4.0(1a) |  4.1(1a) |  4.2(3p) |  4.3(6e)  
+Cisco UCS C220 M6 |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(3r) |  4.3(6h)  
+Cisco UCS C240 M6 |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(3r) |  4.3(6h)  
+Cisco UCS C225 M6 |  4.2(1l) |  4.2(1l) |  4.2(1l) |  4.2(3r) |  4.3(6h)  
+Cisco UCS C245 M6 |  4.2(1i) |  4.2(1i) |  4.2(1i) |  4.2(3r) |  4.3(6h)  
+Cisco UCS C220 M5 |  3.2(1d) | 4.0(1a) |  4.1(1a) |  4.2(3r) |  4.3(6h)  
+Cisco UCS C240 M5 |  3.2(1d) | 4.0(1a) |  4.1(1a) |  4.2(3r) |  4.3(6h)  
+Cisco UCS C125 M5 | 4.0(1a) | 4.0(1a) |  4.1(1a) |  4.2(3r) |  4.3(6h)  
+Cisco UCS S3260 M5 |  3.2(3a) | 4.0(1a) |  4.1(1a) |  4.2(3r) |  4.3(6h)  
+Cisco UCS C480 M5 ML |  4.0(2a) |  4.0(2a) |  4.1(1a) |  4.2(3r) |  4.3(6h)  
+Cisco UCS C480 M5 |  3.2(2b) | 4.0(1a) |  4.1(1a) |  4.2(3r) |  4.3(6h)  
   
 ## Cisco UCS X-Series Direct and Components 
 
@@ -3995,23 +4050,23 @@ Cisco UCS C480 M5 |  3.2(2b) | 4.0(1a) |  4.1(1a) |  4.2(3p) |  4.3(6e)
 
 Table 3. Minimum Software Versions Chassis  |  Minimum Software Version  |  Suggested Software Version   
 ---|---|---  
-Cisco UCS X9508 Chassis |  4.3(4b) |  4.3(6e)  
+Cisco UCS X9508 Chassis |  4.3(4b) |  4.3(6h)  
   
 ### Cisco UCS X-Series Direct Supported Blade Servers 
 
 Table 4. Minimum Host Firmware Versions for Blade Servers on Cisco UCS X-Series Direct Servers  |  Minimum Software Version  |  Suggested Software Version   
 ---|---|---  
-X210c M8 |  4.3(6a) |  4.3(6e)  
-X215c M8 |  4.3(5a) |  4.3(6e)  
-X210c M7 |  4.3(4b) |  4.3(6e)  
-X410c M7 |  4.3(4b) |  4.3(6e)  
-X210c M6 |  4.3(4b) |  4.3(6e)  
+X210c M8 |  4.3(6a) |  4.3(6h)  
+X215c M8 |  4.3(5a) |  4.3(6h)  
+X210c M7 |  4.3(4b) |  4.3(6h)  
+X410c M7 |  4.3(4b) |  4.3(6h)  
+X210c M6 |  4.3(4b) |  4.3(6h)  
   
 ### Cisco UCS X-Series Direct Supported Fabric Interconnects 
 
 Fabric Interconnects  |  Minimum Software Version  |  Suggested Software Version   
 ---|---|---  
-Cisco UCS 9108-100G  | 4.3(4b) |  4.3(6e)  
+Cisco UCS 9108-100G  | 4.3(4b) |  4.3(6h)  
   
 ### Cisco UCS X-Series Direct Supported Gb Connector Modules 
 
@@ -4033,49 +4088,49 @@ Gb Connector Modules  |  Cables
 
 Table 5. Minimum Software Versions for UCS Mini Chassis Chassis  |  Minimum Software Version  |  Suggested Software Version   
 ---|---|---  
-UCSB-5108-AC2  |  3.0(1e)  |  4.3(6e)  
-UCSB-5108-DC2  |  3.0(2c)  |  4.3(6e)  
+UCSB-5108-AC2  |  3.0(1e)  |  4.3(6h)  
+UCSB-5108-DC2  |  3.0(2c)  |  4.3(6h)  
   
 ### UCS Mini Supported Blade and Rack Servers
 
 Table 6. Minimum Host Firmware Versions for Blade and Rack Servers on UCS Mini Servers  |  Minimum Software Version  |  Suggested Software Version   
 ---|---|---  
-B200 M6 |  4.2(1d) |  4.3(6e)  
-B200 M5 |  4.2(1d) |  4.3(6e)  
-B480 M5 |  4.2(1d) |  4.3(6e)  
-C220 M5 |  4.2(1d) |  4.3(6e)  
-C240 M5 |  4.2(1d) |  4.3(6e)  
-C480 M5 |  4.2(1d) |  4.3(6e)  
+B200 M6 |  4.2(1d) |  4.3(6h)  
+B200 M5 |  4.2(1d) |  4.3(6h)  
+B480 M5 |  4.2(1d) |  4.3(6h)  
+C220 M5 |  4.2(1d) |  4.3(6h)  
+C240 M5 |  4.2(1d) |  4.3(6h)  
+C480 M5 |  4.2(1d) |  4.3(6h)  
   
 ### UCS Mini Supported Adapters
 
 Adapters  |  Minimum Software Version  |  Suggested Software Version   
 ---|---|---  
-UCSC-PCIE-C25Q-04 (UCS VIC 1455) |  4.2(2a) |  4.3(6e)  
-UCSC-MLOM-C25Q-04 (UCS VIC 1457) |  4.2(2a) |  4.3(6e)  
-UCSB-VIC-M84-4P (UCS VIC 1480) |  4.2(2a) |  4.3(6e)  
-UCSB-MLOM-40G-04 (UCS VIC 1440) |  4.2(2a) |  4.3(6e)  
-UCSC-PCIE-C40Q-03 (UCS VIC 1385)  UCSC-MLOM-C40Q-03 (UCS VIC 1387)  |  3.1(3a)  | 4.3(6e)  
-UCSB-MLOM-40G-03 (UCS VIC 1340) UCSB-VIC-M83-8P (UCS VIC 1380) |  3.1(3a)  |  4.3(6e)  
+UCSC-PCIE-C25Q-04 (UCS VIC 1455) |  4.2(2a) |  4.3(6h)  
+UCSC-MLOM-C25Q-04 (UCS VIC 1457) |  4.2(2a) |  4.3(6h)  
+UCSB-VIC-M84-4P (UCS VIC 1480) |  4.2(2a) |  4.3(6h)  
+UCSB-MLOM-40G-04 (UCS VIC 1440) |  4.2(2a) |  4.3(6h)  
+UCSC-PCIE-C40Q-03 (UCS VIC 1385)  UCSC-MLOM-C40Q-03 (UCS VIC 1387)  |  3.1(3a)  | 4.3(6h)  
+UCSB-MLOM-40G-03 (UCS VIC 1340) UCSB-VIC-M83-8P (UCS VIC 1380) |  3.1(3a)  |  4.3(6h)  
   
 ### UCS Mini Supported Fabric Interconnects
 
 Fabric Interconnects  |  Minimum Software Version  |  Suggested Software Version   
 ---|---|---  
-Cisco UCS 6324  |  3.1(3a)  |  4.3(6e)  
+Cisco UCS 6324  |  3.1(3a)  |  4.3(6h)  
   
 ### UCS Mini Supported Fabric Extenders for Secondary Chassis
 
 Fabric Extenders  |  Minimum Software Version  |  Suggested Software Version   
 ---|---|---  
-UCS 2204 XP  | 3.1(3a) |  4.3(6e)  
-UCS 2208 XP  | 3.1(3a) |  4.3(6e)  
+UCS 2204 XP  | 3.1(3a) |  4.3(6h)  
+UCS 2208 XP  | 3.1(3a) |  4.3(6h)  
   
 ### UCS Mini Supported Power Supplies
 
 Power Supplies  |  Minimum Software Version  |  Suggested Software Version   
 ---|---|---  
-UCSB-PSU-2500ACDV  UCSB-PSU-2500DC48  UCSC-PSU-930WDC  UCSC-PSU2V2-930WDC  UCSC-PSUV2-1050DC  UCSC-PSU1-770W  UCSC-PSU2-1400  UCSC-PSU2V2-1400W  UCSC-PSU2V2-650W  UCSC-PSU2V2-1200W  |  3.1(3a)  |  4.3(6e)  
+UCSB-PSU-2500ACDV  UCSB-PSU-2500DC48  UCSC-PSU-930WDC  UCSC-PSU2V2-930WDC  UCSC-PSUV2-1050DC  UCSC-PSU1-770W  UCSC-PSU2-1400  UCSC-PSU2V2-1400W  UCSC-PSU2V2-650W  UCSC-PSU2V2-1200W  |  3.1(3a)  |  4.3(6h)  
   
 ### UCS Mini Supported Gb Connector Modules
 
@@ -4107,70 +4162,70 @@ Table 7. Minimum Software Versions for Adapters Adapters  |  Minimum Software Ve
 ---|---|---|---|---|---|---|---|---|---|---  
 UCS-IOM -2204  UCS-IOM -2208  |  UCS-IOM-2304  UCS-IOM-2304V2  |  2232 PP 2348 |  UCS-IOM- 2204  UCS-IOM -2208  UCS-IOM -2408* |  93180YC -FX3 (10/25G server ports) 2232 PP 2348 UPQ UCSX-I-9108 -25G UCSX-I-9108- 100G |  UCS-IOM -2204  UCS-IOM -2208  UCS-IOM -2408* UCSX-I-9108-25G UCSX-I-9108-100G |  UCS-IOM -2304 V1/V2 UCS-IOM -2408 |  93180YC -FX3 (10/25G server ports) 2348 UPQ (10G server ports) UCSX-I-9108 -25G UCSX-I-9108- 100G |  UCSX-I-9108 -25G UCSX-I-9108- 100G |  UCS-IOM -2204  UCS-IOM -2208  UCS-IOM -2408* UCS-IOM- 2304  UCS-IOM- 2304V2   
 Cisco UCS IOMs are applicable only for Cisco UCS B-Series Servers UCSX-I-9108-25G and UCSX-I-9108-100G are supported only with Cisco UCS X-Series Servers UCSX-S9108-100G (Primary) supports only Cisco UCS X-Series Servers  
-UCSC-M-V5Q50GV2 (Cisco UCS VIC 15427 Quad-port 10/25/50-G mLOM)  |  - |  - |  - |  - |  4.3(2c) |  4.3(2c) |  - |  4.3(2c) |  - |  4.3(6e)  
-UCSX-ML-V5D200GV2 (Cisco UCS VIC 15230 Dual-port 100-G mLOM)  |  - |  - |  - |  - |  4.3(2c) |  4.3(2c) |  - |  4.3(2c) |  4.3(6e) |  4.3(6e)  
-UCSC-M-V5D200GV2 (Cisco UCS VIC 15237 mLOM Dual-port 40/100/200-G mLOM)  |  - |  - |  - |  - |  4.3(2c) |  4.3(2c) |  - |  4.3(2c) |  - |  4.3(6e)  
-UCSX-ML-V5D200G (Cisco UCS VIC 15231 Dual-port 100-G mLOM) |  - |  - |  - |  - |  4.3(2b) |  4.3(2b) |  - |  4.3(2b) |  4.3(6e) |  4.3(6e)  
-UCSX-ME-V5Q50G (Cisco UCS VIC 15422 Quad-port 25G mezzanine) |  - |  - |  - |  - |  4.3(2b) |  4.3(2b) |  - |  4.3(2b) |  - |  4.3(6e)  
-UCSX-ML-V5Q50G (Cisco UCS VIC 15420 Quad-port 25G mLOM) |  - |  - |  - |  - |  4.3(2b) |  4.3(2b) |  - |  4.3(2b) |  4.3(6e) |  4.3(6e)  
-UCSX-V4-Q25GML (Cisco UCS VIC 14425 Quad-port 25G mLOM)  |  - |  - |  - |  - |  4.3(2b) |  4.3(2b) |  - |  4.3(2b) |  4.3(6e) |  4.3(6e)  
-UCSX-V4-Q25GME (Cisco VIC 14825 Quad-port 25G mezzanine)  |  - |  - |  - |  - |  4.3(2b) |  4.3(2b) |  - |  4.3(2b) |  - |  4.3(6e)  
-UCSC-P-V5D200G (Cisco UCS VIC 15235 Dual-port 40/100/200-G PCIe\\) |  - |  - |  4.3(2b) |  - |  - |  - |  - |  - |  - |  4.3(6e)  
-UCSC-P-V5Q50G (Cisco UCS VIC 15425 Quad-port 10/25/50-G PCIe |  - |  - |  4.3(2b) |  - |  4.3(2b) |  - |  4.3(2b) |  4.3(2b) |  - |  4.3(6e)  
-UCSC-M-V5Q50G (Cisco UCS VIC 15428 MLOM 4-port adapter) |  - |  - |  4.2(1d) |  - |  4.2(1d) |  - |  - |  4.2(3p) |  - |  4.3(6e)  
-UCSC-M-V5D200G (Cisco UCS VIC 15238 MLOM adapter) Direct Attached only |  4.2(3p) Direct Attached only |  4.2(3p) Direct Attached only  |  4.2(3p) Direct Attached only |  - |  - |  - |  4.2(3p) Direct Attached only (40/100G) |  4.2(3p) Direct Attached only (40/100G) |  - |  4.3(6e)  
-UCSBMLV5Q 10G  (Cisco VIC 15411) |  4.2(1d) |  4.2(1d) |  - |  4.2(1d) |  - |  4.2(1d) |  4.2(3p) |  - |  - |  4.3(6e)  
-UCSC-PCIE-C100 -04  (Cisco UCS VIC 1495) |  4.0(2a) * |  4.0(2a) |  - |  4.0(2a) * |  - |  4.0(2a) * |  4.2(3p) Direct Attach only (40/100G) |  4.2(3p) Direct Attach only (40/100G) |  - |  4.3(6e)  
-UCSC-MLOM-C100 -04  (Cisco UCS VIC 1497) |  4.0(2a) * |  4.0(2a) * |  - |  4.0(2a) * |  - |  4.0(2a) * |  4.2(3p) Direct Attach only (40/100G) |  4.2(3p) Direct Attach only (40/100G) |  - |  4.3(6e)  
-UCSB-MLOM- 40G-04  (UCS VIC 1440) |  4.0(1a) * |  4.0(1a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  4.2(3p) |  - |  - |  4.3(6e)  
-UCSCM- V25-04 (UCS VIC 1467) |  - |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  4.2(3p) |  - |  4.3(6e)  
-UCSC-M-V100-04 (UCS VIC 1477) |  4.2(1l)Direct Attached only  |  - |  - |  - |  4.2(3p) Direct Attached only |  - |  4.3(6e)  
-UCSB-VIC- M84-4P  (UCS VIC 1480) |  4.0(1a) * |  4.0(1a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  4.2(3p) |  - |  - |  4.3(6e)  
-UCSC-PCIE- C25Q-04  (UCS VIC 1455) |  4.0(1a) * |  4.0(1a) * |  4.2(3p) |  4.0(1a) * |  4.2(3p) |  4.1(1a) * |  - |  4.2(3p) |  - |  4.3(6e)  
-UCSC-MLOM- C25Q-04  (UCS VIC 1457) |  4.0(1a) * |  4.0(1a) * |  4.2(3p) |  4.0(1a) * |  4.2(3p) |  4.1(1a) * |  - |  4.2(3p) |  - |  4.3(6e)  
-UCSC-PCIE-C40Q -03 (UCS VIC 1385) UCSC-MLOM-C40Q -03 (UCS VIC 1387) |  3.1(3a) * |  3.1(3a) * |  4.2(3p) |  4.0(1a) * |  4.2(3p) |  4.1(1a) * |  - |  4.2(3p) |  - |  4.3(6e)  
-UCSB-MLOM- 40G-03 (UCS VIC 1340) UCSB-VIC- M83-8P (UCS VIC 1380) |  3.1(3a) * |  3.1(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  4.2(3p) |  - |  - |  4.3(6e)  
-UCSC-PCIE -BD16GF (Emulex LPe31002 Dual-Port 16G FC HBA) |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6e)  
-UCSC-PCIE -ID40GF (Intel XL710 adapter) |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6e)  
-UCSC-PCIE -IQ10GF (Intel X710-DA4 Quad Port 10G Ethernet PCIe adapter) |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a)* |  - |  4.1(1a)* |  - |  - |  - |  4.3(6e)  
-UCSC-PCIE -ID10GF (Intel X710-DA2 Dual Port 10G Ethernet PCIe adapter) |  3.2(3a)* |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6e)  
-UCSC-PCIE -ID40GF: Intel XL710-QDA2 Dual port 40 Gigabit  Ethernet PCIe adapter  |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6e)  
-UCSC-PCIE -ID25GF (Intel XXV710-DA2 Dual port 25 Gigabit Ethernet PCIe adapter) |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6e)  
-UCSC-PCIE -ID10GC (Intel X550-T2 adapter) |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6e)  
-N2XX-AIPCI01 (Intel X520 dual port adapter) |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6e)  
-UCSC-PCIE-IRJ45:  Intel Ethernet Server Adapter I350-T4 |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6e)  
-UCSC-MLOM-IRJ45:  Intel Ethernet I350-mLOM 1 Gbps Network Controller |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6e)  
-UCSC-PCIE -ID25GF (Intel X710 25Gb Dual-port BaseT) |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6e)  
-UCSC-PCIE -IQ10GC (Intel X710-T4) |  3.2(2b) * |  3.2(2b) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6e)  
-UCSC-PCIE -IQ10GF (Intel X710-DA4 adapter) UCSC-PCIE -ID40GF (Intel XL710 adapter) |  —  |  3.1(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6e)  
-UCSC-PCIE -BD32GF (Emulex LPe32002) UCSC-PCIE -BS32GF (Emulex LPe32000 Single-Port 32G FC HBA) |  3.1(3a) * |  3.1(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6e)  
-UCSC-PCIE -E16002 (Emulex LPe16002-M6 16G FC rack HBA) |  3.2(1d) * |  3.2(1d) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6e)  
-UCSC-PCIE -ID10GC (Intel X550 Dual-port 10GBase-T NIC) |  3.1(3a) * |  3.1(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6e)  
-UCSC-O -ID25GF (Intel XXV710 - DA2 - OCP1 2x25/10GbE OCP 2.0 adapter) |  4.0(1a) * |  4.0(1a) * |  - |  4.0(1a) * |  - |  4.0(1a) * |  - |  - |  - |  4.3(6e)  
-UCSC-P -Q6D32GF (Cisco-QLogic QLE2772 2x32GFC Gen 6 Enhanced PCIe HBA) |  4.2(1l) |  4.2(1l) |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  - |  4.3(6e)  
-UCSC-P -B7D32GF (Cisco-Emulex LPe35002-M2-2x32GFC Gen 7 PCIe HBA) |  4.2(1l) |  4.2(1l) |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  - |  4.3(6e)  
-UCSC-P -I8D100GF(Cisco - Intel E810CQDA2 2x100 GbE QSFP28 PCIe NIC) |  4.2(1l) |  4.2(1l) |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  - |  4.3(6e)  
-UCSC-P -I8Q25GF (Cisco - Intel E810XXVDA4 4x25/10 GbE SFP28 PCIe NIC) |  4.2(1l) |  4.2(1l) |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  - |  4.3(6e)  
-UCSC-P -I8D25GF (Cisco - Intel E810XXVDA2 2x25/10 GbE SFP PCIe NIC) |  4.2(1l) |  4.2(1l) |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  - |  4.3(6e)  
-UCSC-P -ID10GC (Cisco - Intel X710T2LG 2x10 GbE RJ45 PCIe NIC) |  4.2(1l) |  4.2(1l) |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  - |  4.3(6e)  
-UCSC-O -ID10GC: Cisco(R) X710T2LG 2x10 GbE  RJ45 OCP 3.0 NIC |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  - |  4.3(6e)  
+UCSC-M-V5Q50GV2 (Cisco UCS VIC 15427 Quad-port 10/25/50-G mLOM)  |  - |  - |  - |  - |  4.3(2c) |  4.3(2c) |  - |  4.3(2c) |  - |  4.3(6h)  
+UCSX-ML-V5D200GV2 (Cisco UCS VIC 15230 Dual-port 100-G mLOM)  |  - |  - |  - |  - |  4.3(2c) |  4.3(2c) |  - |  4.3(2c) |  4.3(6h) |  4.3(6h)  
+UCSC-M-V5D200GV2 (Cisco UCS VIC 15237 mLOM Dual-port 40/100/200-G mLOM)  |  - |  - |  - |  - |  4.3(2c) |  4.3(2c) |  - |  4.3(2c) |  - |  4.3(6h)  
+UCSX-ML-V5D200G (Cisco UCS VIC 15231 Dual-port 100-G mLOM) |  - |  - |  - |  - |  4.3(2b) |  4.3(2b) |  - |  4.3(2b) |  4.3(6h) |  4.3(6h)  
+UCSX-ME-V5Q50G (Cisco UCS VIC 15422 Quad-port 25G mezzanine) |  - |  - |  - |  - |  4.3(2b) |  4.3(2b) |  - |  4.3(2b) |  - |  4.3(6h)  
+UCSX-ML-V5Q50G (Cisco UCS VIC 15420 Quad-port 25G mLOM) |  - |  - |  - |  - |  4.3(2b) |  4.3(2b) |  - |  4.3(2b) |  4.3(6h) |  4.3(6h)  
+UCSX-V4-Q25GML (Cisco UCS VIC 14425 Quad-port 25G mLOM)  |  - |  - |  - |  - |  4.3(2b) |  4.3(2b) |  - |  4.3(2b) |  4.3(6h) |  4.3(6h)  
+UCSX-V4-Q25GME (Cisco VIC 14825 Quad-port 25G mezzanine)  |  - |  - |  - |  - |  4.3(2b) |  4.3(2b) |  - |  4.3(2b) |  - |  4.3(6h)  
+UCSC-P-V5D200G (Cisco UCS VIC 15235 Dual-port 40/100/200-G PCIe\\) |  - |  - |  4.3(2b) |  - |  - |  - |  - |  - |  - |  4.3(6h)  
+UCSC-P-V5Q50G (Cisco UCS VIC 15425 Quad-port 10/25/50-G PCIe |  - |  - |  4.3(2b) |  - |  4.3(2b) |  - |  4.3(2b) |  4.3(2b) |  - |  4.3(6h)  
+UCSC-M-V5Q50G (Cisco UCS VIC 15428 MLOM 4-port adapter) |  - |  - |  4.2(1d) |  - |  4.2(1d) |  - |  - |  4.2(3r) |  - |  4.3(6h)  
+UCSC-M-V5D200G (Cisco UCS VIC 15238 MLOM adapter) Direct Attached only |  4.2(3r) Direct Attached only |  4.2(3r) Direct Attached only  |  4.2(3r) Direct Attached only |  - |  - |  - |  4.2(3r) Direct Attached only (40/100G) |  4.2(3r) Direct Attached only (40/100G) |  - |  4.3(6h)  
+UCSBMLV5Q 10G  (Cisco VIC 15411) |  4.2(1d) |  4.2(1d) |  - |  4.2(1d) |  - |  4.2(1d) |  4.2(3r) |  - |  - |  4.3(6h)  
+UCSC-PCIE-C100 -04  (Cisco UCS VIC 1495) |  4.0(2a) * |  4.0(2a) |  - |  4.0(2a) * |  - |  4.0(2a) * |  4.2(3r) Direct Attach only (40/100G) |  4.2(3r) Direct Attach only (40/100G) |  - |  4.3(6h)  
+UCSC-MLOM-C100 -04  (Cisco UCS VIC 1497) |  4.0(2a) * |  4.0(2a) * |  - |  4.0(2a) * |  - |  4.0(2a) * |  4.2(3r) Direct Attach only (40/100G) |  4.2(3r) Direct Attach only (40/100G) |  - |  4.3(6h)  
+UCSB-MLOM- 40G-04  (UCS VIC 1440) |  4.0(1a) * |  4.0(1a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  4.2(3r) |  - |  - |  4.3(6h)  
+UCSCM- V25-04 (UCS VIC 1467) |  - |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  4.2(3r) |  - |  4.3(6h)  
+UCSC-M-V100-04 (UCS VIC 1477) |  4.2(1l)Direct Attached only  |  - |  - |  - |  4.2(3r) Direct Attached only |  - |  4.3(6h)  
+UCSB-VIC- M84-4P  (UCS VIC 1480) |  4.0(1a) * |  4.0(1a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  4.2(3r) |  - |  - |  4.3(6h)  
+UCSC-PCIE- C25Q-04  (UCS VIC 1455) |  4.0(1a) * |  4.0(1a) * |  4.2(3r) |  4.0(1a) * |  4.2(3r) |  4.1(1a) * |  - |  4.2(3r) |  - |  4.3(6h)  
+UCSC-MLOM- C25Q-04  (UCS VIC 1457) |  4.0(1a) * |  4.0(1a) * |  4.2(3r) |  4.0(1a) * |  4.2(3r) |  4.1(1a) * |  - |  4.2(3r) |  - |  4.3(6h)  
+UCSC-PCIE-C40Q -03 (UCS VIC 1385) UCSC-MLOM-C40Q -03 (UCS VIC 1387) |  3.1(3a) * |  3.1(3a) * |  4.2(3r) |  4.0(1a) * |  4.2(3r) |  4.1(1a) * |  - |  4.2(3r) |  - |  4.3(6h)  
+UCSB-MLOM- 40G-03 (UCS VIC 1340) UCSB-VIC- M83-8P (UCS VIC 1380) |  3.1(3a) * |  3.1(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  4.2(3r) |  - |  - |  4.3(6h)  
+UCSC-PCIE -BD16GF (Emulex LPe31002 Dual-Port 16G FC HBA) |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6h)  
+UCSC-PCIE -ID40GF (Intel XL710 adapter) |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6h)  
+UCSC-PCIE -IQ10GF (Intel X710-DA4 Quad Port 10G Ethernet PCIe adapter) |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a)* |  - |  4.1(1a)* |  - |  - |  - |  4.3(6h)  
+UCSC-PCIE -ID10GF (Intel X710-DA2 Dual Port 10G Ethernet PCIe adapter) |  3.2(3a)* |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6h)  
+UCSC-PCIE -ID40GF: Intel XL710-QDA2 Dual port 40 Gigabit  Ethernet PCIe adapter  |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6h)  
+UCSC-PCIE -ID25GF (Intel XXV710-DA2 Dual port 25 Gigabit Ethernet PCIe adapter) |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6h)  
+UCSC-PCIE -ID10GC (Intel X550-T2 adapter) |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6h)  
+N2XX-AIPCI01 (Intel X520 dual port adapter) |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6h)  
+UCSC-PCIE-IRJ45:  Intel Ethernet Server Adapter I350-T4 |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6h)  
+UCSC-MLOM-IRJ45:  Intel Ethernet I350-mLOM 1 Gbps Network Controller |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6h)  
+UCSC-PCIE -ID25GF (Intel X710 25Gb Dual-port BaseT) |  3.2(3a) * |  3.2(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6h)  
+UCSC-PCIE -IQ10GC (Intel X710-T4) |  3.2(2b) * |  3.2(2b) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6h)  
+UCSC-PCIE -IQ10GF (Intel X710-DA4 adapter) UCSC-PCIE -ID40GF (Intel XL710 adapter) |  —  |  3.1(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6h)  
+UCSC-PCIE -BD32GF (Emulex LPe32002) UCSC-PCIE -BS32GF (Emulex LPe32000 Single-Port 32G FC HBA) |  3.1(3a) * |  3.1(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6h)  
+UCSC-PCIE -E16002 (Emulex LPe16002-M6 16G FC rack HBA) |  3.2(1d) * |  3.2(1d) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6h)  
+UCSC-PCIE -ID10GC (Intel X550 Dual-port 10GBase-T NIC) |  3.1(3a) * |  3.1(3a) * |  - |  4.0(1a) * |  - |  4.1(1a) * |  - |  - |  - |  4.3(6h)  
+UCSC-O -ID25GF (Intel XXV710 - DA2 - OCP1 2x25/10GbE OCP 2.0 adapter) |  4.0(1a) * |  4.0(1a) * |  - |  4.0(1a) * |  - |  4.0(1a) * |  - |  - |  - |  4.3(6h)  
+UCSC-P -Q6D32GF (Cisco-QLogic QLE2772 2x32GFC Gen 6 Enhanced PCIe HBA) |  4.2(1l) |  4.2(1l) |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  - |  4.3(6h)  
+UCSC-P -B7D32GF (Cisco-Emulex LPe35002-M2-2x32GFC Gen 7 PCIe HBA) |  4.2(1l) |  4.2(1l) |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  - |  4.3(6h)  
+UCSC-P -I8D100GF(Cisco - Intel E810CQDA2 2x100 GbE QSFP28 PCIe NIC) |  4.2(1l) |  4.2(1l) |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  - |  4.3(6h)  
+UCSC-P -I8Q25GF (Cisco - Intel E810XXVDA4 4x25/10 GbE SFP28 PCIe NIC) |  4.2(1l) |  4.2(1l) |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  - |  4.3(6h)  
+UCSC-P -I8D25GF (Cisco - Intel E810XXVDA2 2x25/10 GbE SFP PCIe NIC) |  4.2(1l) |  4.2(1l) |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  - |  4.3(6h)  
+UCSC-P -ID10GC (Cisco - Intel X710T2LG 2x10 GbE RJ45 PCIe NIC) |  4.2(1l) |  4.2(1l) |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  - |  4.3(6h)  
+UCSC-O -ID10GC: Cisco(R) X710T2LG 2x10 GbE  RJ45 OCP 3.0 NIC |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  - |  4.3(6h)  
 UCSC-P -IQ1GC: Intel I710-T4L  4x1GBASE-T NIC |  Cisco UCS Manager does not support UCSC-P -IQ1GC: Intel I710-T4L 4x1GBASE-T NIC card even if the server supports this card.  
-UCSB-RAID12G-M6:  Cisco FlexStorage 12G SAS  RAID Controller |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  - |  4.3(6e)  
-UCSC-SAS-M6T:  Cisco M6 12G SAS HBA for (16 Drives)  |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  - |  4.3(6e)  
-UCSX-X10C-RAIDF:  UCS X10c Compute RAID Controller |  - |  - |  - |  - |  - |  - |  - |  - |  - |  4.3(6e)  
-Cisco Mini Storage Carrier for M.2 SATA-SWRAID Mode |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  - |  4.3(6e)  
-Cisco UCSC-P-M5S100GF (Mellanox ConnectX-5 MCX515A-CCAT 1 x 100GbE QSFP PCI NIC) |  4.1(1a) |  4.1(1a) |  - |  4.1(1a) |  - |  4.1(1a) |  - |  - |  - |  4.3(6e)  
-Cisco UCSC-P-M5D25GF (Mellanox ConnectX-5 MCX512A-ACAT 2 x 25Gb/10GbE SFP PCI) |  4.1(1a) |  4.1(1a) |  - |  4.1(1a) |  - |  4.1(1a) |  - |  - |  - |  4.3(6e)  
-Cisco UCSC-O-M5S100GF (Mellanox ConnectX-5 MCX545B-ECAN 1 x 100GbE QSFP PCI NIC) |  4.1(1a) |  4.1(1a) |  - |  4.1(1a) |  - |  4.1(1a) |  - |  - |  - |  4.3(6e)  
-Cisco UCSC-PCIE-QS100GF (QLogic R FastLinQ QL45611H 100GbE) |  4.0(4o) |  4.0(2a) |  - |  4.0(4o) |  - |  4.1(1a) |  - |  - |  - |  4.3(6e)  
-Cisco UCSC-PCIE-QD40GF (QLogic QL45412H 40GbE) |  3.2(3a) |  3.2(3a) |  - |  4.0(1a) |  - |  4.1(1a) |  - |  - |  - |  4.3(6e)  
-Cisco UCSC-PCIE-QD16GF (QLogic QLE2692 16GB dual Port FC HBA) |  3.2(3a) |  3.2(3a) |  - |  4.0(1a) |  - |  4.1(1a) |  - |  - |  - |  4.3(6e)  
-Cisco UCSC-PCIE-QD25GF (QLogic FastLinQ QL41212H 25GbE adapter) |  3.2(3a) |  3.2(3a) |  - |  4.0(1a) |  - |  4.1(1a) |  - |  - |  - |  4.3(6e)  
-Cisco UCSC-OCP-QD25GF (QLogic FastLinQ QL41232H Dual Port 25GbE Adapter) |  4.0(1a) |  4.0(1a) |  - |  4.0(1a) |  - |  4.0(1a) |  - |  - |  - |  4.3(6e)  
-Cisco UCSC-OCP-QD10GC (QLogic FastLinQ QL41132H Dual Port 10GbE Adapter) |  4.0(1a) |  4.0(1a) |  - |  4.0(1a) |  - |  4.0(1a) |  - |  - |  - |  4.3(6e)  
-Cisco UCSC-PCIE-QD10GC (Qlogic QL41162HLRJ-11-SP dual-port 10GBase-T CNA) |  4.0(2a |  4.0(2a |  - |  4.0(2a) |  - |  4.0(2a) |  - |  - |  - |  4.3(6e)  
-Cisco UCSB-MLOM-PT-01 (Cisco Port Expander Card) |  3.2(2b) |  3.2(2b) |  - |  4.0(1a) |  - |  4.0(1a) |  - |  - |  - |  4.3(6e)  
-Cisco UCSC-PCIE-QD32GF (Qlogic QLE2742 Dual Port 32Gb FC HBA) |  3.2(3a) |  3.2(3a) |  - |  4.0(1a) |  - |  4.1(1a) |  - |  - |  - |  4.3(6e)  
+UCSB-RAID12G-M6:  Cisco FlexStorage 12G SAS  RAID Controller |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  - |  4.3(6h)  
+UCSC-SAS-M6T:  Cisco M6 12G SAS HBA for (16 Drives)  |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  - |  4.3(6h)  
+UCSX-X10C-RAIDF:  UCS X10c Compute RAID Controller |  - |  - |  - |  - |  - |  - |  - |  - |  - |  4.3(6h)  
+Cisco Mini Storage Carrier for M.2 SATA-SWRAID Mode |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(1d) |  - |  4.3(6h)  
+Cisco UCSC-P-M5S100GF (Mellanox ConnectX-5 MCX515A-CCAT 1 x 100GbE QSFP PCI NIC) |  4.1(1a) |  4.1(1a) |  - |  4.1(1a) |  - |  4.1(1a) |  - |  - |  - |  4.3(6h)  
+Cisco UCSC-P-M5D25GF (Mellanox ConnectX-5 MCX512A-ACAT 2 x 25Gb/10GbE SFP PCI) |  4.1(1a) |  4.1(1a) |  - |  4.1(1a) |  - |  4.1(1a) |  - |  - |  - |  4.3(6h)  
+Cisco UCSC-O-M5S100GF (Mellanox ConnectX-5 MCX545B-ECAN 1 x 100GbE QSFP PCI NIC) |  4.1(1a) |  4.1(1a) |  - |  4.1(1a) |  - |  4.1(1a) |  - |  - |  - |  4.3(6h)  
+Cisco UCSC-PCIE-QS100GF (QLogic R FastLinQ QL45611H 100GbE) |  4.0(4o) |  4.0(2a) |  - |  4.0(4o) |  - |  4.1(1a) |  - |  - |  - |  4.3(6h)  
+Cisco UCSC-PCIE-QD40GF (QLogic QL45412H 40GbE) |  3.2(3a) |  3.2(3a) |  - |  4.0(1a) |  - |  4.1(1a) |  - |  - |  - |  4.3(6h)  
+Cisco UCSC-PCIE-QD16GF (QLogic QLE2692 16GB dual Port FC HBA) |  3.2(3a) |  3.2(3a) |  - |  4.0(1a) |  - |  4.1(1a) |  - |  - |  - |  4.3(6h)  
+Cisco UCSC-PCIE-QD25GF (QLogic FastLinQ QL41212H 25GbE adapter) |  3.2(3a) |  3.2(3a) |  - |  4.0(1a) |  - |  4.1(1a) |  - |  - |  - |  4.3(6h)  
+Cisco UCSC-OCP-QD25GF (QLogic FastLinQ QL41232H Dual Port 25GbE Adapter) |  4.0(1a) |  4.0(1a) |  - |  4.0(1a) |  - |  4.0(1a) |  - |  - |  - |  4.3(6h)  
+Cisco UCSC-OCP-QD10GC (QLogic FastLinQ QL41132H Dual Port 10GbE Adapter) |  4.0(1a) |  4.0(1a) |  - |  4.0(1a) |  - |  4.0(1a) |  - |  - |  - |  4.3(6h)  
+Cisco UCSC-PCIE-QD10GC (Qlogic QL41162HLRJ-11-SP dual-port 10GBase-T CNA) |  4.0(2a |  4.0(2a |  - |  4.0(2a) |  - |  4.0(2a) |  - |  - |  - |  4.3(6h)  
+Cisco UCSB-MLOM-PT-01 (Cisco Port Expander Card) |  3.2(2b) |  3.2(2b) |  - |  4.0(1a) |  - |  4.0(1a) |  - |  - |  - |  4.3(6h)  
+Cisco UCSC-PCIE-QD32GF (Qlogic QLE2742 Dual Port 32Gb FC HBA) |  3.2(3a) |  3.2(3a) |  - |  4.0(1a) |  - |  4.1(1a) |  - |  - |  - |  4.3(6h)  
 ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Note** | 
 
@@ -4182,7 +4237,7 @@ Cisco UCS Manager Infrastructure A Bundle only supports adapters running release
   
 ---|---  
   
-## Cisco UCS Fabric Interconnect Server Compatibility Matrix - Release 4.3(6e)
+## Cisco UCS Fabric Interconnect Server Compatibility Matrix - Release 4.3(6h)
 
 ### Cisco UCS 6536 FI
 

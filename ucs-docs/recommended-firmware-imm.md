@@ -1,5 +1,9 @@
 # IMM Recommended Firmware
 
+This data is fetched directly from software.cisco.com using the fetch-imm.py script.
+Generated on 2026-04-16 11:07:49
+
+
 | SupportedModels | Version | Name | PlatformType |
 | --- | --- | --- | --- |
 | UCSX-210C-M6 | 5.4(0.250047) | intersight-ucs-server-210c-m6.5.4.0.250047.bin | intersight-server-210c-m6 |
