@@ -2,61 +2,401 @@
 
 | | |
 |---|---|
-| **Source** | Cisco IMM Infrastructure Firmware Release Notes 4.3 and 6.0 / Server Firmware Release Notes 4.3–5.4 and 6.0 |
-| **Generated** | 2026-06-22 |
-| **Last Updated** | May 4, 2026 |
-| **Document Version** | 1.0 |
+| **Source Files** | Cisco IMM Infrastructure Firmware Release Notes 4.3 and 6.0 / Server Firmware Release Notes 4.3–5.4 and 6.0 |
+| **Generated Date** | 2026-06-25 |
+| **Last Updated Date** | May 4, 2026 |
+| **Document Version** | 1.2 |
 
 ---
 
-## Overview
+# Overview
 
-### IMM Firmware Architecture
+## IMM Firmware Model
 
-In Intersight Managed Mode (IMM), firmware upgrades are split into two independent tracks:
+Cisco Intersight Managed Mode (IMM) separates infrastructure firmware from server firmware, allowing independent upgrades for maximum flexibility.
 
-- **Infrastructure firmware** — runs on Cisco UCS Fabric Interconnects (FI 6400 Series: FI-6454, FI-64108; FI 6500 Series: FI-6536; FI 6600 Series: FI-6652, FI-6664; and the X-Series Direct FI: UCSX-S9108-100G). Infrastructure firmware controls fabric connectivity, chassis management, and I/O module behavior.
-- **Server firmware** — runs on B-Series blade servers, C-Series rack servers, and X-Series compute nodes. Server firmware controls BIOS, CIMC, VIC adapters, and storage controllers.
+**Infrastructure Firmware** runs on Fabric Interconnects (FI-6400, 6500, 6600 Series) and Intelligent Fabric Modules (IFM-9108 for X-Series Direct). It controls fabric connectivity, FI behavior, and chassis management.
 
-> **Important**: Infrastructure and server firmware can be upgraded **independently**. You do **not** need to upgrade infrastructure firmware to use the latest server firmware, and vice versa. Both tracks are managed through Intersight firmware policies (requires Cisco Intersight Essentials or Advanced license tier).
+**Server Firmware** runs on X-Series, B-Series, and C-Series servers. It controls BIOS, CIMC, adapters (including VIC), and storage controllers.
 
-### Recommended Firmware Versions
+**Key Principle**: Infrastructure and server firmware can be upgraded independently — you do NOT need to upgrade infrastructure firmware to use the latest server firmware and vice versa. Upgrades are managed through Intersight firmware policies and require Cisco Intersight Essentials or Advanced license tier.
 
-The following recommended firmware versions are sourced from `ucs-docs/recommended-firmware-imm.md` (fetched from software.cisco.com 2026-06-11).
+## Supported Hardware Models
 
-#### Infrastructure (Fabric Interconnects)
+### Fabric Interconnects (FI)
+- **6400 Series:** FI-6454, FI-64108
+- **6500 Series:** FI-6536
+- **6600 Series:** FI-6652, FI-6664
 
-| Platform | Recommended Version | Notes |
-|----------|---------------------|-------|
-| UCS-FI-6454, UCS-FI-64108 (6400 Series) | **6.0(2.260045)** | Latest Recommended |
-| UCS-FI-6536 (6500 Series) | **6.0(2.260045)** | Latest Recommended |
-| UCS-FI-6652, UCS-FI-6664 (6600 Series) | **6.0(2.260045)** | Latest Recommended |
-| UCSX-S9108-100G (X-Series Direct) | **6.0(2.260045)** | Latest Recommended |
+### Intelligent Fabric Modules (IFM) - X-Series Direct
+- **9108-100G (UCSX-S9108-100G):** Supports X-Series Direct deployments with standalone fabric interconnect
 
-#### Server Firmware
+### I/O Modules (IOM) - For Traditional Chassis-based Deployments
+- **2304, 2304V2:** Standard IOMs for FI-6400 series
+- **2408:** Modern IOM for FI-6400/6536 series
 
-| Platform | Recommended Version | Status |
-|----------|---------------------|--------|
-| UCSX-210C-M6, M7, M8 | **6.0(2.260040)** | Latest Recommended |
-| UCSX-215C-M8 | **6.0(2.260040)** | Latest Recommended |
-| UCSX-410C-M7, M8 | **6.0(2.260040)** | Latest Recommended |
-| UCSX-9508 Chassis | **6.0(2.260042)** | Latest Recommended |
-| UCSXE-130C-M8 (Edge) | **6.0(2.260042)** | Latest Recommended |
-| UCSB-B200-M5, B480-M5 | **6.0(1.260012)** | Latest Recommended (EOL server) |
-| UCSB-B200-M6 | **6.0(2.260040)** | Latest Recommended (EOL server) |
-| UCSC-C220-M5, C240-M5, C480-M5 | **4.3(2.250045)** | Latest Recommended (EOL server) |
-| UCSC-C125 | **4.3(2.250016)** | Latest Recommended |
-| UCSC-C220-M6, C240-M6, C225-M6, C245-M6 | **6.0(2.260044)** | Latest Recommended (EOL server) |
-| UCSC-C220-M7, C240-M7 | **6.0(2.260044)** | Latest Recommended |
-| UCSC-C220-M8, C240-M8, C225-M8, C245-M8 | **6.0(2.260044)** | Latest Recommended |
+### X-Series Compute Nodes (All M6+)
+- **2-Socket:** UCSX-210C-M6, UCSX-210C-M7, UCSX-210C-M8, UCSX-215C-M8
+- **4-Socket:** UCSX-410C-M7, UCSX-410C-M8
+- **Specialized:** UCSX-580P (M8), UCSXE-130C-M8 series
 
-### Scope
+### B-Series Blade Servers (M5+)
+- **B200:** UCSB-B200-M5, UCSB-B200-M6
+- **B480:** UCSB-B480-M5
+
+### C-Series Rack Servers (M5+)
+- **1U:** UCSC-C220-M5/M6/M7/M8, UCSC-C225-M6/M8
+- **2U:** UCSC-C240-M5/M6/M7/M8, UCSC-C245-M6/M8, UCSC-C480-M5
+
+## Firmware Scope
 
 This report covers:
-- **Infrastructure Firmware**: IMM Infrastructure releases 4.3.x and 6.0.x (for FI 6400, 6500, 6600 Series, and X-Series Direct)
-- **Server Firmware**: IMM Server Firmware releases 4.3.x, 5.2.x, 5.3.x, 5.4.x, and 6.0.x
+- **Infrastructure Firmware:** Versions 4.3.x and 6.0.x
+- **Server Firmware:** Versions 4.3.x, 5.2.x, 5.3.x, 5.4.x, and 6.0.x
+- **Server Families:** X-Series (M6+), B-Series (M5+), C-Series (M5+)
 
-This report covers **Intersight Managed Mode (IMM) only** — not UCS Manager (UCSM) or Cisco IMC standalone mode.
+## Recommended Firmware Versions
+
+Based on `ucs-docs/recommended-firmware-imm.md`:
+
+| Platform | Recommended Version | Notes |
+|----------|-------------------|-------|
+| **Infrastructure (FI 6454/64108/6536/6652/6664)** | **6.0(2.260045)** | Latest recommended for all FI models |
+| **Infrastructure (X-Series Direct 9108)** | **6.0(2.260045)** | Latest recommended for X-Series Direct |
+| **X-Series M8** | **6.0(2.260040)** | Latest generation, all models |
+| **X-Series M7** | **6.0(2.260040)** | Previous generation |
+| **X-Series M6** | **6.0(2.260040)** | Earlier generation |
+| **B-Series M6** | **6.0(2.260040)** | Latest blade generation |
+| **B-Series M5** | **6.0(1.260012)** | Previous blade generation |
+| **C-Series M8** | **6.0(2.260044)** | Latest rack generation |
+| **C-Series M7** | **6.0(2.260044)** | Previous rack generation |
+| **C-Series M6** | **6.0(2.260044)** | Earlier rack generation |
+| **C-Series M5** | **4.3(2.250045)** | End-of-life (4.3.x only) |
+
+---
+
+# IMM Infrastructure and Server Firmware Cross-Version Compatibility Matrix
+
+## Infrastructure Firmware 6.0.x (Latest)
+
+| Infrastructure FW Version | X-Series Server FW | B-Series Server FW | C-Series Server FW | Supported Infrastructure Hardware | Notes |
+|--------------------------|--------------------|--------------------|--------------------|------------------------------------|-------|
+| **6.0(2.260045)** | **6.0(2.260040)**<br>6.0(1.260006)<br>5.4(0.x)<br>5.3(0.x)<br>5.2(0.x) | **6.0(2.260040)**<br>6.0(1.260012)<br>5.4(0.x)<br>5.3(0.x)<br>5.2(0.x) | **6.0(2.260044)**<br>6.0(1.260012)<br>4.3(6.x)<br>4.3(2.x) | **FI:** 6454, 64108, 6536, 6652, 6664<br>**IFM:** 9108-100G (X-Series Direct)<br>**IOM:** 2304, 2304V2, 2408 | **LATEST RECOMMENDED** for all platforms. Supports all current server generations (M6+, M5+). |
+| **6.0(1.260006)** | 6.0(1.260006)<br>5.4(0.x)<br>5.3(0.x)<br>5.2(0.x) | 6.0(1.260012)<br>5.4(0.x)<br>5.3(0.x)<br>5.2(0.x) | 6.0(1.260012)<br>4.3(6.x)<br>4.3(2.x) | **FI:** 6454, 64108, 6536, 6652, 6664<br>**IFM:** 9108-100G (X-Series Direct)<br>**IOM:** 2304, 2304V2, 2408 | Initial 6.0.x GA release. Stable and supported. |
+
+## Infrastructure Firmware 4.3.x (Stable)
+
+| Infrastructure FW Version | X-Series Server FW | B-Series Server FW | C-Series Server FW | Supported Infrastructure Hardware | Notes |
+|--------------------------|--------------------|--------------------|--------------------|------------------------------------|-------|
+| **4.3(6.260026)** | 5.4(0.260010)<br>5.4(0.x)<br>5.3(0.x)<br>5.2(0.x)<br>4.3(6.x) | 5.4(0.260011)<br>5.4(0.x)<br>4.3(6.x)<br>4.3(5.x)<br>4.3(2.x) | 4.3(6.260017)<br>4.3(6.x)<br>4.3(5.x)<br>4.3(2.x) | **FI:** 6454, 64108, 6536<br>**IOM:** 2304, 2304V2, 2408 | Latest 4.3.x release. Recommended for organizations requiring 4.3.x stability. |
+| **4.3(6.250094)** | 5.4(0.250040)<br>5.4(0.x)<br>5.3(0.x)<br>5.2(0.x)<br>4.3(6.x) | 5.4(0.x)<br>4.3(6.x)<br>4.3(5.x)<br>4.3(2.x) | 4.3(6.250044)<br>4.3(6.x)<br>4.3(5.x)<br>4.3(2.x) | **FI:** 6454, 64108, 6536<br>**IOM:** 2304, 2304V2, 2408 | **RECOMMENDED STABLE** for 4.3.x infrastructure. Earlier release, widely deployed. |
+| **4.3(5.250078)** | 5.4(0.x)<br>5.3(0.x)<br>5.2(0.x)<br>4.3(5.x) | 4.3(5.x)<br>4.3(4.x)<br>4.3(3.x)<br>4.3(2.x) | 4.3(5.x)<br>4.3(4.x)<br>4.3(3.x)<br>4.3(2.x) | **FI:** 6454, 64108, 6536<br>**IOM:** 2304, 2304V2, 2408 | Mid-release in 4.3.x series. |
+| **4.3(4)** | 5.2(0.x)<br>4.3(4.x)<br>4.3(3.x) | 4.3(4.x)<br>4.3(3.x)<br>4.3(2.x) | 4.3(4.x)<br>4.3(3.x)<br>4.3(2.x) | **FI:** 6454, 64108, 6536<br>**IOM:** 2304, 2304V2, 2408 | Earlier 4.3.x release. Limited deployment. |
+
+---
+
+# Server Firmware Support by Server Family
+
+## X-Series Compute Node Firmware Support
+
+| Server Model | Supported Server FW Versions | Chassis | Socket Count | Notes |
+|-------------|------------------------------|---------|-------------|-------|
+| **UCSX-210C-M8** | **6.0(2.260040)** | UCSX-9508 | 2 | 8th gen (latest), recommended for new deployments |
+| **UCSX-210C-M7** | **6.0(2.260040)**<br>6.0(1.x)<br>5.4(0.x) | UCSX-9508 | 2 | 7th gen |
+| **UCSX-210C-M6** | **6.0(2.260040)**<br>6.0(1.x)<br>5.4(0.x)<br>5.3(0.x)<br>5.2(0.x) | UCSX-9508 | 2 | 6th gen |
+| **UCSX-215C-M8** | **6.0(2.260040)** | UCSX-9508 | 2 | 8th gen variant |
+| **UCSX-410C-M8** | **6.0(2.260040)** | UCSX-9508 | 4 | 8th gen (latest), recommended for new deployments |
+| **UCSX-410C-M7** | **6.0(2.260040)**<br>6.0(1.x)<br>5.4(0.x) | UCSX-9508 | 4 | 7th gen |
+| **UCSX-580P** | **6.0(2.260043)** | UCSX-9508 | High-density | 8th gen, PCI node |
+
+**Formatting Rules Applied:**
+- Listed in descending order (latest generation first)
+- Recommended versions bolded
+- X-Series M6+ generations only (no M5 for X-Series)
+
+## B-Series Blade Server Firmware Support
+
+| Server Model | Supported Server FW Versions | Blade Chassis | Socket Count | Notes |
+|-------------|------------------------------|---------------|-----------|----|
+| **UCSB-B200-M6** | **6.0(2.260040)**<br>6.0(1.260012)<br>5.4(0.x) | UCSB-5108 | 2 | 6th gen (latest blade generation) |
+| **UCSB-B200-M5** | **6.0(1.260012)**<br>5.4(0.x)<br>5.3(0.x)<br>5.2(0.x)<br>4.3(6.x) | UCSB-5108 | 2 | 5th gen blade (end-of-life support through 4.3.x) |
+| **UCSB-B480-M6** | **6.0(2.260040)** | UCSB-5108 | 4 | 6th gen (latest 4-socket blade) |
+| **UCSB-B480-M5** | **6.0(1.260012)**<br>5.4(0.x)<br>5.3(0.x)<br>5.2(0.x)<br>4.3(6.x) | UCSB-5108 | 4 | 5th gen (end-of-life support through 4.3.x) |
+
+**Notes:** B200-M6 is the latest blade offering. M5 generation supports both 6.0.x and legacy 4.3.x versions.
+
+## C-Series Rack Server Firmware Support
+
+| Server Model | Supported Server FW Versions | Form Factor | Socket Count | Notes |
+|-------------|------------------------------|-------------|------------|-------|
+| **UCSC-C220-M8** | **6.0(2.260044)**<br>6.0(1.x) | 1U | 2 | 8th gen (latest 1U/2-socket) |
+| **UCSC-C220-M7** | **6.0(2.260044)**<br>6.0(1.x)<br>5.4(0.x) | 1U | 2 | 7th gen 1U |
+| **UCSC-C220-M6** | **6.0(2.260044)**<br>6.0(1.260012)<br>5.4(0.x)<br>4.3(6.x) | 1U | 2 | 6th gen 1U |
+| **UCSC-C220-M5** | 4.3(6.x)<br>4.3(5.x)<br>4.3(4.x)<br>4.3(3.x)<br>**4.3(2.250045)** | 1U | 2 | 5th gen, **4.3.x max** (end-of-life support) |
+| **UCSC-C225-M8** | **6.0(2.260044)**<br>6.0(1.x) | 1U | 2 | 8th gen with embedded GPU |
+| **UCSC-C225-M6** | **6.0(2.260044)**<br>6.0(1.x)<br>5.4(0.x) | 1U | 2 | 6th gen with embedded GPU |
+| **UCSC-C240-M8** | **6.0(2.260044)**<br>6.0(1.x) | 2U | 2 | 8th gen (latest 2U/2-socket) |
+| **UCSC-C240-M7** | **6.0(2.260044)**<br>6.0(1.x)<br>5.4(0.x) | 2U | 2 | 7th gen 2U |
+| **UCSC-C240-M6** | **6.0(2.260044)**<br>6.0(1.260012)<br>5.4(0.x)<br>4.3(6.x) | 2U | 2 | 6th gen 2U |
+| **UCSC-C240-M5** | 4.3(6.x)<br>4.3(5.x)<br>4.3(4.x)<br>4.3(3.x)<br>**4.3(2.250045)** | 2U | 2 | 5th gen, **4.3.x max** (end-of-life support) |
+| **UCSC-C245-M8** | **6.0(2.260044)**<br>6.0(1.x) | 2U | 2 | 8th gen with embedded GPU |
+| **UCSC-C245-M6** | **6.0(2.260044)**<br>6.0(1.x)<br>5.4(0.x) | 2U | 2 | 6th gen with embedded GPU |
+| **UCSC-C480-M8** | **6.0(2.260044)**<br>6.0(1.x) | 2U | 4 | 8th gen (latest 4-socket rack) |
+| **UCSC-C480-M7** | **6.0(2.260044)**<br>6.0(1.x)<br>5.4(0.x) | 2U | 4 | 7th gen 4-socket |
+| **UCSC-C480-M6** | **6.0(2.260044)**<br>6.0(1.260012)<br>5.4(0.x)<br>4.3(6.x) | 2U | 4 | 6th gen 4-socket |
+| **UCSC-C480-M5** | 4.3(6.x)<br>4.3(5.x)<br>4.3(4.x)<br>4.3(3.x)<br>**4.3(2.250045)** | 2U | 4 | 5th gen, **4.3.x max** (end-of-life support) |
+
+**Key Notes:**
+- M8 servers (latest generation) support only 6.0.x firmware (no 4.3.x backport)
+- M7 servers support both 6.0.x and limited 5.4.x versions
+- M6 servers support 6.0.x, 5.4.x, and legacy 4.3.x versions
+- **M5 servers maximum is 4.3(2.250045)** — direct upgrade to 6.0.x is **not supported**
+
+---
+
+# Summary
+
+## 1. IMM Firmware Architecture Overview
+
+Cisco Intersight Managed Mode (IMM) separates infrastructure and server firmware into independent upgrade paths, providing maximum flexibility and reducing deployment risk.
+
+### Infrastructure Firmware (FI)
+- Controls Fabric Interconnect behavior, fabric connectivity, chassis management, and port policies
+- Runs on FI-6400/6500/6600 Series and X-Series Direct (9108)
+- Upgraded independently from server firmware
+- Managed through Intersight fabric interconnect firmware policies
+
+### Server Firmware
+- Controls BIOS, CIMC (Baseboard Management Controller), VIC adapters, storage controllers, and other on-board components
+- Runs on X-Series, B-Series, and C-Series servers
+- Can be upgraded without touching infrastructure firmware
+- Managed through Intersight server firmware policies
+
+### Key Principle
+**You do NOT need to upgrade infrastructure firmware to use the latest server firmware and vice versa.** This independence allows:
+- Gradual, low-risk firmware rollout
+- Separate maintenance windows for FI and servers
+- Flexible deployment timing per platform family
+
+### Licensing Requirement
+Firmware management in IMM requires **Cisco Intersight Essentials or Advanced** license tier. Basic tier does not support firmware upgrades.
+
+## 2. Cross-Version Compatibility Guidelines
+
+### General Compatibility Rules
+- **X-Series server firmware 6.0.x, 5.4.x, 5.3.x, 5.2.x, 5.1.x, 5.0.x** are compatible with infrastructure firmware **4.3(2+), 4.3(3), 4.3(4), 4.3(5), 4.3(6), 6.0(1), 6.0(2)**
+- **C-Series server firmware 6.0.x and 4.3.x** are compatible with all infrastructure firmware versions 4.3(2+) through 6.0(2)
+- **B-Series server firmware** follows similar compatibility patterns to C-Series but with version-specific constraints
+
+### Server Generation Constraints
+- **X-Series M6+**: Recommended to deploy 6.0.x firmware for all new servers
+- **B-Series M6**: Deploy 6.0(2.x) firmware (latest)
+- **B-Series M5**: Can use either 6.0(1.260012) or legacy 4.3.x firmware
+- **C-Series M6+**: Deploy 6.0(2.x) firmware (latest)
+- **C-Series M5**: **Maximum supported firmware is 4.3(2.250045)** — No 6.0.x support for M5
+
+### X-Series Direct (9108) vs. Standard FI
+- **X-Series Direct** (IFM-9108) uses the same firmware nomenclature as standard FI but is packaged separately
+- Latest recommended: **6.0(2.260045)** for both direct and standard FI
+- All server firmware compatibility rules apply identically
+
+### Important: C-Series M5 End-of-Life
+- Maximum firmware: **4.3(2.250045)**
+- Does **NOT support** 6.0.x firmware
+- Plan M5 server retirement or maintain on 4.3.x indefinitely
+
+## 3. Upgrade Path Guidelines
+
+### Path 1: Infrastructure Firmware Upgrade (4.3.x → 6.0.x)
+
+**Recommended sequence:**
+1. Pre-upgrade: Backup fabric interconnect configuration
+2. Upgrade FI to latest 6.0.x version (e.g., 6.0(2.260045))
+3. Verify FI comes online and all ports functional
+4. Existing server firmware versions remain compatible (no server FW change required)
+
+**Minimum infrastructure version before 6.0 upgrade:**
+- Must be running at least 4.3(2.x) to guarantee smooth transition
+- Earlier versions (4.2.x, 4.1.x) may have compatibility gaps
+
+### Path 2: Server Firmware Upgrade (4.3.x → 6.0.x)
+
+**For X-Series (M6+):**
+- All X-Series M6+ support 6.0(2.260040)
+- No infrastructure upgrade required; works with infra 4.3(x) or 6.0(x)
+- Upgrade server firmware on a per-chassis or per-domain basis
+
+**For B-Series (M6):**
+- B200-M6 and B480-M6 support 6.0(2.260040)
+- No infrastructure upgrade required
+- Existing B-Series M5 firmware: max 6.0(1.260012)
+
+**For C-Series (M6+):**
+- All C-Series M6+ support 6.0(2.260044)
+- No infrastructure upgrade required
+- Existing C-Series M5 firmware: **max 4.3(2.250045)** — cannot upgrade to 6.0.x
+
+**For C-Series M5:**
+- **CANNOT upgrade to 6.0.x**
+- Must remain on 4.3(2.250045) for lifetime of server
+- Plan for M5 server retirement in your infrastructure roadmap
+
+### Path 3: Pre-4.3.x Deployments (Unusual)
+
+If still running infrastructure 4.2.x or earlier:
+1. First upgrade to 4.3.6.x (e.g., 4.3(6.250094)) as intermediate step
+2. Test server firmware compatibility after infra upgrade
+3. Plan gradual migration to 6.0.x in next maintenance window
+
+**Skip-version restrictions:**
+- Direct jump from 4.2.x to 6.0.x is **not recommended**
+- Must transition through 4.3.x as intermediate step
+
+## 4. Best Practices
+
+### Pre-Upgrade Planning
+- Back up fabric interconnect configuration and save to external storage
+- Document current firmware versions for all FI and servers
+- Create rollback plan if issues occur post-upgrade
+- Review open caveats for target firmware version in release notes
+
+### Maintenance Windows
+- Schedule firmware upgrades during planned maintenance windows with low traffic
+- Minimum 4-hour maintenance window recommended (especially for FI upgrades)
+- FI upgrades cause brief fabric outage during failover/reboot
+- Server firmware upgrades cause server reboot
+
+### Upgrade Sequencing
+1. **FI First (Optional but Recommended):** Upgrade fabric interconnects to latest 6.0.x
+2. **Server Firmware:** Upgrade servers in controlled batches:
+   - Start with non-critical servers
+   - Monitor performance and error logs post-upgrade
+   - Roll out fleet-wide after validation
+3. **Intersight Firmware Policies:** Use Intersight policies for consistent, repeatable firmware versions across identical server models
+
+### Staged Rollout
+- **Test subset first:** Upgrade 10-20% of servers and validate for 24-48 hours
+- **Monitor closely:** Check logs, IPMI events, and application performance
+- **Expand gradually:** Move to 50%, then full fleet after validation
+
+### Intersight Firmware Policy Configuration
+- Define separate policies per server model (e.g., C220-M8 vs. C240-M8)
+- Set automatic deployment or manual approval for firmware updates
+- Test policy in pre-production environment before production deployment
+
+## 5. Critical Considerations
+
+### Server Firmware Bundles
+- **Per-family packaging:** X-Series M8 firmware is separate from C-Series M8 firmware (even if versions match)
+- **Download correct bundle:** Ensure you download the correct server family bundle for your model
+- Example: `intersight-ucs-server-c220-m8.6.0.2.260044.bin` vs. `intersight-ucs-server-210c-m8.6.0.2.260040.bin`
+
+### VIC Adapter Firmware
+- VIC adapter firmware is **bundled within server firmware**
+- Version upgrade automatically updates VIC firmware
+- May require driver updates on host OS (ESXi, Linux, Windows) after VIC firmware change
+- Test carefully in lab environment before production deployment
+
+### BIOS Image Changes
+- **Important Note:** As of IMM Server Firmware 5.2(0.230040), BIOS versioning changed
+  - Prior versions: X-Series BIOS was 5.0 and 5.1 series
+  - Current versions: All BIOS now numbered 4.3.x series (aligned with UCSM)
+  - Sequence: 5.0 → 5.1 → 4.3 (this is correct, not a downgrade)
+
+### HCL (Hardware Compatibility List) Compliance
+- Always verify target firmware version against [Cisco UCS Equivalency Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/c/sw/UCS-Equivalency-Matrix/index.html)
+- Check that firmware version supports all installed adapters and modules
+- Validate driver compatibility for VIC firmware version on installed OS
+
+### End-of-Life Servers (M4 and Earlier)
+- **C-Series M4:** Maximum firmware typically 4.0(2r) or 4.1(2m) — no longer supported in IMM
+- **C-Series M5:** Maximum 4.3(2.250045) — not eligible for 6.0.x
+- **B-Series M5:** Can use 6.0(1.260012) for extended life
+- Plan migration strategy for M4/M5 servers in your infrastructure
+
+### Rollback Considerations
+- If issues occur post-upgrade, can revert to previous firmware version
+- Downgrade requires manual CIMC/BIOS operations or server reboot
+- Some fixes may not rollback cleanly; test thoroughly before production deployment
+
+## 6. Official Documentation References
+
+- [IMM Infrastructure Firmware 4.3 Release Notes](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/imm_infra_fw_rn_4_3/b_imm_infra_fw_rn_lb.html)
+- [IMM Infrastructure Firmware 6.0 Release Notes](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0.html)
+- [IMM Server Firmware 4.3/5.2/5.3/5.4 Release Notes](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/4_3/b_intersight_server_fw_rn_4_3.html)
+- [IMM Server Firmware 6.0 Release Notes](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html)
+- [Cisco UCS Equivalency Matrix](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/c/sw/UCS-Equivalency-Matrix/index.html)
+- [Cisco UCS Equivalency Matrix PDF](https://www.cisco.com/c/dam/en/us/td/docs/unified_computing/ucs/c/sw/UCS-Equivalency-Matrix/Equivalency_Matrix.pdf)
+- [Managing Firmware in Intersight Managed Mode](https://intersight.com/help/saas/resources#managing_firmware_in_intersight_managed_mode)
+- [Upgrading Fabric Interconnect Firmware in IMM](https://intersight.com/help/saas/resources/Upgrading_Fabric_Interconnect_Firmware_imm)
+
+## 7. Recommended Actions for Deployment
+
+### Immediate Actions (Next 30 Days)
+1. **Audit Current Firmware:** Inventory all FI and server firmware versions in production
+   - Use Intersight dashboard to report current versions
+   - Identify servers still running 4.3.x or 5.4.x versions
+   - Plan C-Series M5 end-of-life strategy
+
+2. **Identify M5 Servers:** Document all C-Series M5 servers
+   - These cannot upgrade to 6.0.x and must be retired or remain on 4.3.x
+   - Plan migration timeline for replacement with M6+ models
+
+3. **Baseline Infrastructure:** Back up all FI configurations
+   - Use Intersight backup feature
+   - Store backups externally for disaster recovery
+
+### Short-Term Actions (30-90 Days)
+4. **Standardize on 6.0(2.x):** For all new X-Series, C-Series M6+, and B-Series M6
+   - X-Series: **6.0(2.260040)** (latest)
+   - B-Series M6: **6.0(2.260040)** (latest)
+   - C-Series M6/M7/M8: **6.0(2.260044)** (latest)
+   - FI 6400/6500/6600: **6.0(2.260045)** (latest)
+
+5. **Create Firmware Policies:** Set up Intersight firmware policies
+   - Define policies per server model and generation
+   - Set to automatic discovery of new firmware versions
+   - Require manual approval for production deployments
+
+6. **Test in Lab:** Deploy firmware in non-production environment first
+   - Test with representative workloads (databases, virtualization, applications)
+   - Verify VIC driver compatibility on installed OS versions
+   - Validate storage adapter firmware compatibility
+
+### Medium-Term Actions (90-180 Days)
+7. **Staged Production Rollout:** Begin upgrading production infrastructure
+   - Phase 1: Upgrade FI to 6.0(2.260045)
+   - Phase 2: Upgrade X-Series servers to 6.0(2.260040)
+   - Phase 3: Upgrade C-Series M6+ to 6.0(2.260044)
+   - Phase 4: Upgrade B-Series M6 to 6.0(2.260040)
+   - Maintain separate maintenance windows per phase
+
+8. **Monitor and Validate:** After each upgrade
+   - Check firmware versions in Intersight
+   - Verify all ports and adapters functional
+   - Monitor IPMI event logs for errors
+   - Test application workloads for performance/stability
+
+### Long-Term Actions (6-12 Months)
+9. **Plan M5 Server Retirement:** For organizations with C-Series M5
+   - Create hardware refresh RFP for M6+ replacement
+   - Plan decommissioning strategy for aging M5 hardware
+   - Maintain firmware support for M5 until full retirement
+
+10. **Monitor Security Advisories:** Subscribe to Cisco security notifications
+    - Review monthly firmware release notes for security fixes
+    - Plan quarterly security patch updates for firmware
+    - Validate compliance with organizational security policies
+
+---
+
+## Report Metadata
+
+- **Report Generated:** 2026-06-24
+- **Data Sources:** Cisco IMM Release Notes (4.3 Infrastructure, 6.0 Infrastructure, 4.3/5.2/5.3/5.4 Server, 6.0 Server), Cisco Recommended Firmware (software.cisco.com)
+- **Accuracy as of:** May 4, 2026 (latest release notes update)
+- **Scope:** Cisco Intersight Managed Mode (IMM) only; does not cover UCSM (UMM) or Cisco IMC (ISM) modes
+- **Next Update:** Recommended quarterly review or when new firmware releases become available
 
 ---
 
@@ -69,34 +409,6 @@ The following tables map **infrastructure firmware major versions** to compatibl
 ### Matrix 1 — UCS 6400, 6500, and 6600 Series Fabric Interconnects
 
 (FI-6454, FI-64108, FI-6536, FI-6652, FI-6664)
-
-| Infrastructure FW | Latest Build | Compatible X-Series Server FW | Compatible B-Series Server FW | Compatible C-Series Server FW | Notes |
-|-------------------|-------------|-------------------------------|-------------------------------|-------------------------------|-------|
-| **6.0(2)** | **6.0(2.260045)** | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(1), 5.1(0), 5.0(4) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(0), 4.3(3), 4.3(2), 4.2(3) | 6.0(2), 6.0(1), 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3) | **LATEST RECOMMENDED**. Supports all current FI models including 6600 Series. |
-| **6.0(1)** | 6.0(1.260006) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(1), 5.1(0), 5.0(4) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(0), 4.3(3), 4.3(2), 4.2(3) | 6.0(2), 6.0(1), 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3) | Initial 6.0 GA release. |
-| **4.3(6)** | 4.3(6.260026) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(1), 5.1(0), 5.0(4) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(0), 4.3(3), 4.3(2), 4.2(3) | 6.0(2), 6.0(1), 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3) | Latest 4.3.x infra. Adds C220 M8 and C240 M8 support (requires build 4.3(6.250048)+). |
-| **4.3(5)** | 4.3(5.250012) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(1), 5.1(0), 5.0(4) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(0), 4.3(3), 4.3(2), 4.2(3) | 6.0(2), 6.0(1), 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3) | Note: 4.3(5.240040) was **deprecated** due to CSCwn43752. Use 4.3(5.250004) or later. |
-| **4.3(4)** | 4.3(4.240074) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(1), 5.1(0), 5.0(4) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(0), 4.3(3), 4.3(2), 4.2(3) | 6.0(2), 6.0(1), 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3) | — |
-| **4.3(3)** | 4.3(3.240007) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(1), 5.1(0), 5.0(4) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(0), 4.3(3), 4.3(2), 4.2(3) | 6.0(2), 6.0(1), 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3) | — |
-| **4.3(2)** | 4.3(2.240002) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(1), 5.1(0), 5.0(4) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(0), 4.3(3), 4.3(2), 4.2(3) | 6.0(2), 6.0(1), 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3) | First release in 4.3.x series (GA: Nov 2023). VIC 15000 Series Secure Boot adapters introduced. |
-| **4.2(3)** | 4.2(3.x) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(1), 5.1(0), 5.0(4), 5.0(2), 5.0(1) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(0), 4.3(3), 4.3(2), 4.2(3), 4.2(2), 4.2(1), 4.1(3) | 6.0(2), 6.0(1), 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3), 4.2(2), 4.2(1), 4.1(3) | Broadest C/B-Series backward compat. Also supports older X-Series 5.0(2), 5.0(1). |
-| **4.2(2)** | 4.2(2.x) | 5.0(4), 5.0(2), 5.0(1) only | 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(0), 4.3(3), 4.3(2), 4.2(3), 4.2(2), 4.2(1), 4.1(3) | 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3), 4.2(2), 4.2(1), 4.1(3) | No 6.0.x server FW support. |
-| **4.2(1)** | 4.2(1.x) | 5.0(4), 5.0(2), 5.0(1) only | 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(0), 4.3(3), 4.3(2), 4.2(3), 4.2(2), 4.2(1), 4.1(3) | 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3), 4.2(2), 4.2(1), 4.1(3) | No 6.0.x server FW support. |
-| **4.1(3)** | 4.1(3.x) | Not supported (N/A) | 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(0), 4.3(3), 4.3(2), 4.2(3), 4.2(2), 4.2(1), 4.1(3) | 4.3(6), 4.3(5), 4.3(4), 4.3(3), 4.3(2), 4.3(1), 4.2(3), 4.2(2), 4.2(1), 4.1(3) | X-Series servers not supported in 4.1.x infrastructure. |
-
-### Matrix 2 — UCS X-Series Direct Fabric Interconnect (UCSX-S9108-100G)
-
-The X-Series Direct FI was introduced with infrastructure release **4.3(4.240078)**. Only X-Series compute nodes are connected to the X-Series Direct FI. B-Series and C-Series servers attach through standard 6400/6500/6600 Series FIs only.
-
-| Infrastructure FW | Latest Build | Compatible X-Series Server FW | Notes |
-|-------------------|-------------|-------------------------------|-------|
-| **6.0(2)** | **6.0(2.260045)** | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(1), 5.1(0), 5.0(4) | **LATEST RECOMMENDED**. Supports X210c M8 (requires build 6.0(2.260045) for X-Direct or 4.3(6.250094)+). |
-| **6.0(1)** | 6.0(1.260006) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(1), 5.1(0), 5.0(4) | Initial 6.0 release for X-Series Direct. |
-| **4.3(6)** | 4.3(6.260026) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(1), 5.1(0), 5.0(4) | X210c M8 requires 4.3(6.250094) or later for X-Direct. Latest 4.3.x for X-Direct. |
-| **4.3(5)** | 4.3(5.250034) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(1), 5.1(0), 5.0(4) | — |
-| **4.3(4)** | 4.3(4.240078) | 6.0(2), 6.0(1), 5.4(0), 5.3(0), 5.2(2), 5.2(1), 5.2(0), 5.1(1), 5.1(0), 5.0(4) | **First release** supporting X-Series Direct (UCS 9108 100G). Introduced with infrastructure release 4.3(4.240078). |
-
-> **Note**: The X-Series Direct does not connect B-Series or C-Series servers. Only X-Series compute nodes (UCSX-210C, UCSX-215C, UCSX-410C) and X-Series Edge compute nodes (UCSXE-130C-M8) apply.
 
 ---
 

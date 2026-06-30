@@ -42,6 +42,7 @@
 - [Release Notes for Cisco Intersight Unified Edge eCMC Firmware Release, 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html)
 - [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/6-0/b-intersight-infrastructure-fw-rn-6-0.html)
 - [Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/imm_infra_fw_rn_4_3/b_imm_infra_fw_rn_lb.html)
+- [Release Notes for Cisco Intersight Infrastructure Firmware](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/b_Intersight_Infra_FW_RN.html)
 - [Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 6.0](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html)
 - [Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 4.3, 5.2, 5.3, and 5.4](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/4_3/b_intersight_server_fw_rn_4_3.html)
 - [IMM UCS Server BIOS tokens](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/b_UCS_BIOS_Tokens_Guide_chapter_01.html)
@@ -113,6 +114,7 @@
 ### X-Series Direct guides
 - [Cisco UCS X-Series Direct Fabric Interconnect 9108 100G Installation and Service Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/x-series-direct/hw/s9108/install/ucs-x-series-direct-9108-100g/m-overview.html)
 - [Cisco UCS X-Series Direct 9108 100G Installation and Service Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/x-series-direct/hw/s9108/install/ucs-x-series-direct-9108-100g.html)
+- [Cisco UCS X9508 Chassis Installation and Service Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/x/hw/x9508/install/b-ucs-x9508-install.html)
  - [IFMS Installation Instructions - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/x/hw/x9508/install/b-ucs-x9508-install/m_ifms-installation-instructions.html)
 
 

@@ -20,7 +20,7 @@ Read the data from the following files:
 
 # Output
 
-Write to the output file: ucs-firmware-reports/report-recommended-firmware.md
+Write to the output file: `ucs-firmware-reports/report-recommended-firmware.md`
 
 
 
