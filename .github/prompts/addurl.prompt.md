@@ -1,7 +1,7 @@
 ---
 name: addurl
 model: Claude Haiku 4.5 (copilot)
-tools: [read, agent, browser, edit, web, todo]
+tools: [read, agent, edit, web, 'playwright/*', todo]
 description: Adds a URL to the urls.md file
 ---
 The master URL file is urls.md. To add a URL, please follow these steps:

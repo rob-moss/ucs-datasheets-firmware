@@ -114,6 +114,7 @@
 ### X-Series Direct guides
 - [Cisco UCS X-Series Direct Fabric Interconnect 9108 100G Installation and Service Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/x-series-direct/hw/s9108/install/ucs-x-series-direct-9108-100g/m-overview.html)
 - [Cisco UCS X-Series Direct 9108 100G Installation and Service Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/x-series-direct/hw/s9108/install/ucs-x-series-direct-9108-100g.html)
+- [Cisco UCS X-Series Direct Fabric Interconnect 9108 100G - Connecting the Fabric Interconnect](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/x-series-direct/hw/s9108/install/ucs-x-series-direct-9108-100g/m-connecting.html)
 - [Cisco UCS X9508 Chassis Installation and Service Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/x/hw/x9508/install/b-ucs-x9508-install.html)
  - [IFMS Installation Instructions - Cisco](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/x/hw/x9508/install/b-ucs-x9508-install/m_ifms-installation-instructions.html)
 

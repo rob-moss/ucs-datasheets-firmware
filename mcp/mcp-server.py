@@ -11,6 +11,10 @@ Run from the command line:
 
 Or with uv:
     uv run mcp/server.py
+
+
+Version 1.0
+
 """
 
 import os
