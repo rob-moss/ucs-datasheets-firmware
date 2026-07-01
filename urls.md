@@ -120,6 +120,7 @@
 
 
 # Whitepapers
+- [Cisco Unified Computing System Ethernet Switching Modes White Paper](https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/unified-computing/whitepaper_c11-701962.html)
 - [IMM Sharing Across Organizations and Cloning](https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.html)
 - [UCS M7 Platforms Performance Tuning](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/ucs-m7-platforms-wp.html)
 - [Cisco UCS VIC 15000 Series Ethernet Fabric Adapter Whitepaper](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ether-fabric-wp.html)
