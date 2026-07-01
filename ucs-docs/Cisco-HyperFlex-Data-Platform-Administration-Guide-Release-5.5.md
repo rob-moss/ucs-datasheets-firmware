@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco HyperFlex Data Platform Administration Guide, Release 5.5 |
 | **Source file** | `ucs-docs-raw/html/b-hxdp-admin-guide-5-5.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-30 11:05:05 |
+| **Fetched on** | 2026-06-30 16:59:35 |
 
 ---
 
@@ -1074,26 +1074,7 @@ It is recommended to first understand the unique business requirements of the en
 
 ---
 
-## Page 18: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_manage_storage_replication_adapter.html
-
-## Storage Replication Adapter Overview
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Restriction** | 
-
-* * *
-
-The Storage Replication Adapter feature is supported through HXDP Release 5.5(1x). 
-
-* * *  
-  
----|---  
-  
-HXDP Release 5.5(1x) users that need SRA admin content should refer to the **[Managing Storage Replication Adapter](https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-0/b-hxdp-admin-guide-5-0/m_hxdp_manage_storage_replication_adapter.html)** chapter in the HyperFlex Admin Guide for HXDP Release 5.0(x). 
-
----
-
-## Page 19: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_users.html
+## Page 18: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_users.html
 
 ## Managing Cisco HyperFlex Users Overview
 
@@ -1160,7 +1141,7 @@ Sample entry. Note the user name, `administrator@vsphere.local`
 
 ---
 
-## Page 20: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-hxdp-iscsi-manage.html
+## Page 19: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-hxdp-iscsi-manage.html
 
 ## HyperFlex iSCSI Target Service Overview and Supported Use Cases
 
@@ -1192,7 +1173,7 @@ The HyperFlex iSCSI Target Service is not supported on Stretched clusters.
 
 ---
 
-## Page 21: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-html-plug-in-for-vmware-vcenter.html
+## Page 20: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-html-plug-in-for-vmware-vcenter.html
 
 ## Cisco HyperFlex vCenter Plugin  
   
@@ -1219,7 +1200,7 @@ vCenter Plugin Version |  Cisco HyperFlex Release  |  vCenter/ESXi version |  Pl
 
 ---
 
-## Page 22: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-appendix.html
+## Page 21: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-appendix.html
 
 ## Appendix
 
@@ -1237,7 +1218,7 @@ Port Mappings |  Identifies the ports that are used for specific cable connectio
 
 ---
 
-## Page 23: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_maintenance_prep.html
+## Page 22: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_maintenance_prep.html
 
 ## Storage Cluster Maintenance Operations Overview  
   
@@ -1298,7 +1279,7 @@ Ensure the following:
 
 ---
 
-## Page 24: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-html-plug-in-for-vmware-vcenter.html
+## Page 23: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-html-plug-in-for-vmware-vcenter.html
 
 ## Cisco HyperFlex vCenter Plugin
 
@@ -1325,7 +1306,7 @@ vCenter Plugin Version |  Cisco HyperFlex Release  |  vCenter/ESXi version |  Pl
 
 ---
 
-## Page 25: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxcluster_overview.html
+## Page 24: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxcluster_overview.html
 
 ## Cisco HX Data Platform Overview
 
@@ -1337,7 +1318,7 @@ Cisco HX Data Platform is installed on a virtualized platform such as VMware vSp
 
 ---
 
-## Page 26: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_manage.html
+## Page 25: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_manage.html
 
 ## Changing the Cluster Access Policy Level 
 
@@ -1353,7 +1334,7 @@ Cisco HX Data Platform is installed on a virtualized platform such as VMware vSp
 
 ---
 
-## Page 27: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_encryption.html
+## Page 26: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_encryption.html
 
 ## Self-Encrypting Drives Overview
 
@@ -1369,7 +1350,7 @@ An SED based cluster can have encryption enabled and disabled at will. You are f
 
 ---
 
-## Page 28: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_disks_manage.html
+## Page 27: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_disks_manage.html
 
 ## Managing Disks in the Cluster
 
@@ -1400,7 +1381,7 @@ Removing a functional drive from one HX cluster and installing it into another H
 
 ---
 
-## Page 29: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-hxdp-logging-in-interfaces.html
+## Page 28: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-hxdp-logging-in-interfaces.html
 
 ## HyperFlex Cluster Interfaces Overview  
   

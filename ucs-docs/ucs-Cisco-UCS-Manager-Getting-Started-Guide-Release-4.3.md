@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Getting Started Guide, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_ucsm_getting_started_guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-30 10:58:47 |
+| **Fetched on** | 2026-06-30 16:38:13 |
 
 ---
 
@@ -85,18 +85,10 @@ Guide  |  Description
 
 ---
 
-## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/b_ucsm_getting_started_guide_4_3/m_system_requirements.html
+## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/b_ucsm_getting_started_guide_4_3/m_initial_configuration.html
 
-## System Requirements Overview   
+## Initial Configuration Overview   
   
-The following minimum hardware, browser, and port requirements must be met prior to Cisco UCS Manager initial configuration. 
-
----
-
-## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/b_ucsm_getting_started_guide_4_3/m_initial_configuration.html
-
-## Initial Configuration Overview 
-
 Before you get started with Cisco UCS Manager initial configuration, review the Fundamentals of Cisco Unified Computing System and System Requirements sections in this guide. 
 
 The Cisco UCS Manager initial configuration involves the following steps: 
@@ -123,7 +115,7 @@ Figure 1. Cisco UCS Manager Initial Configuration Overview
 
 ---
 
-## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/b_ucsm_getting_started_guide_4_3/m_appendix.html
+## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/b_ucsm_getting_started_guide_4_3/m_appendix.html
 
 ## Recommendations and Best Practices 
 
@@ -240,7 +232,7 @@ For the Logical Configuration and All Configurations backups, select the Cisco U
 
 ---
 
-## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/m_overview.html
+## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/m_overview.html
 
 ## Cisco UCS Manager User Documentation 
 
@@ -259,7 +251,7 @@ Guide  |  Description
 
 ---
 
-## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/m_initial_configuration.html
+## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/m_initial_configuration.html
 
 ## Initial Configuration Overview   
   

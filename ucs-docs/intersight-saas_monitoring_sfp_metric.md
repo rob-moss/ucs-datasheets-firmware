@@ -8,7 +8,7 @@
 | **HTML Title** | Metric Collection for Transceivers |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_sfp_metric.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-30 10:59:57 |
+| **Fetched on** | 2026-06-30 16:42:37 |
 
 ---
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X-Series Modular System - Cisco |
 | **Source file** | `ucs-docs-raw/pdf/ucsx-m-sustain.pdf` |
 | **File type** | HTML (fallback from .pdf URL) |
-| **Fetched on** | 2026-06-30 11:01:01 |
+| **Fetched on** | 2026-06-30 16:47:16 |
 
 ---
 

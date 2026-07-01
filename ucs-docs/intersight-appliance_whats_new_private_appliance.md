@@ -8,7 +8,7 @@
 | **HTML Title** | What's New in Cisco Intersight |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_whats_new_private_appliance.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-30 10:59:58 |
+| **Fetched on** | 2026-06-30 16:42:46 |
 
 ---
 

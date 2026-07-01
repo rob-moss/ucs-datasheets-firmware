@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Storage Management Guide, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_ucsm_gui_storage_management_guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-30 10:58:59 |
+| **Fetched on** | 2026-06-30 16:39:22 |
 
 ---
 
@@ -20,8 +20,8 @@
 
 ## Page 2: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Storage-Mgmt/4-3/b_ucsm_gui_storage_management_guide_4_3/b_UCSM_GUI_Storage_Management_Guide_preface_00.html
 
-## Audience  
-  
+## Audience
+
 This guide is intended primarily for data center administrators with responsibilities and expertise in one or more of the following: 
 
   * Server administration 

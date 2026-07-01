@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Network Management Guide Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_cli_ucsm_network_management_guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-30 10:59:16 |
+| **Fetched on** | 2026-06-30 16:40:24 |
 
 ---
 
@@ -1391,19 +1391,7 @@ The following example illuminates all of the beacon lights for Unified Ports in 
 
 ---
 
-## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_0101.html
-
-## VLANs
-
-A VLAN is a switched network that is logically segmented by function, project team, or application, without regard to the physical locations of the users. VLANs have the same attributes as physical LANs, but you can group end stations even if they are not physically located on the same LAN segment. 
-
-Any switch port can belong to a VLAN. Unicast, broadcast, and multicast packets are forwarded and flooded only to end stations in the VLAN. Each VLAN is considered a logical network, and packets destined for stations that do not belong to the VLAN must be forwarded through a router or bridge. 
-
-VLANs are typically associated with IP subnetworks. For example, all of the end stations in a particular IP subnet belong to the same VLAN. To communicate between VLANs, you must route the traffic. By default, a newly created VLAN is operational. Additionally, you can configure VLANs to be in the active state, which is passing traffic, or in the suspended state, in which the VLANs are not passing packets. By default, the VLANs are in the active state and pass traffic. 
-
----
-
-## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_0110.html
+## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_0110.html
 
 ## LAN Pin Groups 
 
@@ -1424,7 +1412,7 @@ If you do not assign a pin group to a server interface through a vNIC policy, Ci
 
 ---
 
-## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_0111.html
+## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_0111.html
 
 ## MAC Pools  
   
@@ -1438,7 +1426,7 @@ You can specify your own MAC addresses or use a group of MAC addresses provided 
 
 ---
 
-## Page 10: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01000.html
+## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01000.html
 
 ## Quality of Service 
 
@@ -1522,7 +1510,7 @@ Enable and no-drop  |  Change in MTU size  |  Yes
 
 ---
 
-## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/m_cli_port_security.html
+## Page 10: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/m_cli_port_security.html
 
 ## Port Security Overview
 
@@ -1555,7 +1543,7 @@ After port security is enabled on an interface and a new MAC address is seen on 
 
 ---
 
-## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01001.html
+## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01001.html
 
 ## Upstream Disjoint Layer-2 Networks 
 
@@ -1596,7 +1584,7 @@ For information about the maximum number of supported upstream disjoint L2 netwo
 
 ---
 
-## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01011.html
+## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01011.html
 
 ## vNIC Template 
 
@@ -1776,7 +1764,7 @@ The following example deletes the vNIC template named VnicTemp42 and commits the
 
 ---
 
-## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0100.html
+## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0100.html
 
 ## Unified Ports on 6300 Series Fabric Interconnects 
 
@@ -2993,7 +2981,7 @@ The following example illuminates all of the beacon lights for Unified Ports in 
 
 ---
 
-## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_4_1_chapter_011.html
+## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_4_1_chapter_011.html
 
 ## Fabric Interconnect Overview 
 
@@ -3005,19 +2993,7 @@ For more information about Cisco UCS Fabric Interconnects, see the Cisco UCS Man
 
 ---
 
-## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0101.html
-
-## VLANs
-
-A VLAN is a switched network that is logically segmented by function, project team, or application, without regard to the physical locations of the users. VLANs have the same attributes as physical LANs, but you can group end stations even if they are not physically located on the same LAN segment. 
-
-Any switch port can belong to a VLAN. Unicast, broadcast, and multicast packets are forwarded and flooded only to end stations in the VLAN. Each VLAN is considered a logical network, and packets destined for stations that do not belong to the VLAN must be forwarded through a router or bridge. 
-
-VLANs are typically associated with IP subnetworks. For example, all of the end stations in a particular IP subnet belong to the same VLAN. To communicate between VLANs, you must route the traffic. By default, a newly created VLAN is operational. Additionally, you can configure VLANs to be in the active state, which is passing traffic, or in the suspended state, in which the VLANs are not passing packets. By default, the VLANs are in the active state and pass traffic. 
-
----
-
-## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_01000.html
+## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_01000.html
 
 ## Quality of Service 
 
@@ -3101,7 +3077,7 @@ Enable and no-drop  |  Change in MTU size  |  Yes
 
 ---
 
-## Page 18: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_01011.html
+## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_01011.html
 
 ## vNIC Template 
 
@@ -3281,7 +3257,7 @@ The following example deletes the vNIC template named VnicTemp42 and commits the
 
 ---
 
-## Page 19: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0110.html
+## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0110.html
 
 ## LAN Pin Groups 
 

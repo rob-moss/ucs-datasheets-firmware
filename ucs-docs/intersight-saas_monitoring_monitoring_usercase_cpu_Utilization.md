@@ -8,7 +8,7 @@
 | **HTML Title** | Tutorial: Active CPU Utilization Metrics for Monitoring Server Performance |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_monitoring_usercase_cpu_Utilization.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-30 10:59:57 |
+| **Fetched on** | 2026-06-30 16:42:38 |
 
 ---
 

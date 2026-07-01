@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager |
 | **Source file** | `ucs-docs-raw/html/series.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-30 11:01:19 |
+| **Fetched on** | 2026-06-30 16:53:38 |
 
 ---
 
@@ -82,19 +82,19 @@ use JS to put chosen tab in here or hide
 
   * 25-Feb-2026
 
-[ Security Advisory: Cisco NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-n3kn9k_aci_lldp_dos-NdgRrrA3.html)
-
-  * 25-Feb-2026
-
 [ Security Advisory: Cisco FXOS and UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsciv-wGYtC78q.html)
 
   * 25-Feb-2026
 
-[ Security Advisory: Cisco UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-cmdinj-GvxLPeSB.html)
+[ Security Advisory: Cisco NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-n3kn9k_aci_lldp_dos-NdgRrrA3.html)
 
   * 25-Feb-2026
 
 [ Security Advisory: Cisco UCS Manager Software Privilege Escalation Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-afwae-mOgUfyLn.html)
+
+  * 25-Feb-2026
+
+[ Security Advisory: Cisco UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-cmdinj-GvxLPeSB.html)
 
 
 ### Document Categories

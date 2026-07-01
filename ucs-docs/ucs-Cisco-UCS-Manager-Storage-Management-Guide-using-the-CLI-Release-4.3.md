@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Storage Management Guide using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_cli_ucsm_storage_management_guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-30 10:59:46 |
+| **Fetched on** | 2026-06-30 16:41:25 |
 
 ---
 
@@ -152,63 +152,7 @@ Changing the port mode deletes the existing port configuration and replaces it w
 
 ---
 
-## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_fc_zoning.html
-
-## Information About Fibre Channel Zoning
-
-Fibre Channel zoning allows you to partition the Fibre Channel fabric into one or more zones. Each zone defines the set of Fibre Channel initiators and Fibre Channel targets that can communicate with each other in a VSAN. Zoning also enables you to set up access control between hosts and storage devices or user groups. 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-Fibre Channel Zoning is not supported on Cisco UCS 6454 Fabric Interconnect
-
-* * *  
-  
----|---  
-  
-The access and data traffic control provided by zoning does the following:
-
-  * Enhances SAN network security
-
-  * Helps prevent data loss or corruption
-
-  * Reduces performance issues
-
-
-### Information About Zones
-
-A zone consists of multiple zone members and has the following characteristics:
-
-  * Members in a zone can access each other; members in different zones cannot access each other.
-
-  * Zones can vary in size.
-
-  * Devices can belong to more than one zone.
-
-  * A physical fabric can have a maximum of 8,000 zones.
-
-
-### Information About Zone Sets 
-
-Each zone set consists of one or more zones. You can use zone sets to enforce access control within the Fibre Channel fabric. In addition, zone sets provide you with the following advantages: 
-
-  * Only one zone set can be active at any time. 
-
-  * All zones in a zone set can be activated or deactivated as a single entity across all switches in the fabric. 
-
-  * Changes to a zone set are not applied until the zone set has been activated. If you make changes to the active zone set, you must reactivate that zone set to apply the changes. 
-
-  * A zone can be a member of more than one zone set. 
-
-  * A switch in a zone can have a maximum of 500 zone sets. 
-
-
----
-
-## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_named_vsans.html
+## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_named_vsans.html
 
 ## Named VSANs
 
@@ -239,7 +183,7 @@ In the following sample configuration, a service profile with a vNIC and vHBA ma
 
 ---
 
-## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_san_pin_groups.html
+## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_san_pin_groups.html
 
 ## SAN Pin Groups
 
@@ -271,7 +215,7 @@ Changing the target interface for an existing SAN pin group disrupts traffic for
 
 ---
 
-## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_fc_identity_assignment.html
+## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_fc_identity_assignment.html
 
 ## Fibre Channel Identity   
   
@@ -294,7 +238,7 @@ The FC Identity Tab in Cisco UCS Manager displays the FC Identity of the devices
 
 ---
 
-## Page 10: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_wwn_pools.html
+## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_wwn_pools.html
 
 ## WWN Pools
 
@@ -343,7 +287,7 @@ You can use a WWxN pool whenever you select a WWNN or WWPN pool. The WWxN pool m
 
 ---
 
-## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_storage-related_policies.html
+## Page 10: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_storage-related_policies.html
 
 ## vHBA Template 
 
@@ -353,7 +297,7 @@ You must include this policy in a service profile for it to take effect.
 
 ---
 
-## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_series_cli_configuring_storage_profiles_4_0.html
+## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_series_cli_configuring_storage_profiles_4_0.html
 
 ## Storage Profiles 
 
@@ -370,83 +314,7 @@ You can create a storage profile both at an org level and at a service-profile l
 
 ---
 
-## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_flex_flash_sd_card_support.html
-
-## FlexFlash Secure Digital Card Support
-
-### Overview
-
-The SD cards are hosted by the Cisco Flexible Flash storage controller, a PCI-based controller which has two slots for SD cards. The cards contain a single partition called HV. When FlexFlash is enabled, Cisco UCS Manager displays the HV partition as a USB drive to both the BIOS and the host operating system. 
-
-You can populate one or both the SD card slots that are provided. If two SD cards are populated, you can use them in a mirrored mode. 
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-Do not mix different capacity cards in the same server. 
-
-* * *  
-  
----|---  
-  
-The SD cards can be used to store operating system boot images or other information. The following figure illustrates the SD card slots. 
-
-Figure 1. SD Card Slots  ![](/c/dam/en/us/td/i/300001-400000/300001-310000/309001-310000/309589.jpg)
-
-FlexFlash is disabled by default. You can enable FlexFlash in a local disk policy used in a service profile. When FlexFlash is enabled in a local disk policy, and the server is capable of supporting SD cards, the FlexFlash controller is enabled during service profile association. If a server is not capable of supporting SD cards or has an older CIMC version, a config failure message is displayed. 
-
-If you disable FlexFlash in a supported server, the Hypervisor or HV partition is immediately disconnected from the host. The FlexFlash controller will also be disabled as part of a related service profile disassociation. 
-
-The FlexFlash controller supports RAID-1 for dual SD cards. The FlexFlash scrub policy erases the HV partition in both cards, and brings the cards to a healthy RAID state. 
-
-You can configure new SD cards in a RAID pair and format them using one of the following methods:
-
-  * Format the SD cards. 
-
-  * For an associated server, create a FlexFlash scrub policy and disassociate the service profile from the server. For an unassociated server, create a FlexFlash scrub policy and reacknowledge the server after modifying the default scrub policy. 
-
-The Scrub Policy Settings section in the Cisco UCS Manager Server Management Guide provides more details about the usage of the scrub policy. 
-
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-Disable the scrub policy as soon as the pairing is complete. 
-
-* * *  
-  
----|---  
-  
-To boot from the HV partition, the SD card must be present in the boot policy used in the service profile. 
-
-### FlexFlash Firmware Management 
-
-The FlexFlash controller firmware is bundled as part of the CIMC image. When you upgrade the CIMC, if a newer firmware version is available for the FlexFlash controller, the controller can no longer be managed, and the FlexFlash inventory displays the Controller State as Waiting For User Action and the Controller Health as Old Firmware Running. To upgrade the FlexFlash controller firmware, you need to perform a board controller update. For more information, see the appropriate Cisco UCS B-Series Firmware Management Guide, available at the following URL: <http://www.cisco.com/en/US/products/ps10281/products_installation_and_configuration_guides_list.html>. 
-
-### Limitations for the Cisco Flexible Flash Storage Controller: 
-
-  * The Cisco Flexible Flash storage controller only supports 16 GB, 32 GB, and 64 GB SD cards. 
-
-  * We do not recommend using an SD card from a rack server in a blade server, or using an SD card from a blade server in a rack server. Switching SD cards between server types might result in data loss from the SD card. 
-
-  * Some Cisco UCS C-Series rack-mount servers have SD cards with four partitions: HV, HUU, SCU, and Drivers. Only the HV partition is visible in Cisco UCS Manager. You can migrate a four-partition SD card to a single HV partition card with a FlexFlash scrub policy. 
-
-  * The FlexFlash controller does not support RAID-1 sync (mirror rebuild). If the SD cards are in a degraded RAID state, or if any metadata errors are reported by the controller, you must run the FlexFlash scrub policy to pair the cards for RAID. For more information about the FlexFlash scrub policy, see [Server-Related Policies](https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Server-Mgmt/3-1/b_Cisco_UCS_Manager_Server_Mgmt_Guide_3_1/server_related_policies.html). The following conditions might result in degraded RAID or metadata errors: 
-
-  * Inserting a new or used SD card in one slot, when the server already has an SD card populated in the second slot. 
-
-  * Inserting two SD cards from different servers. 
-
-  * The server firmware version must be at 2.2(1a) or higher. 
-
-
----
-
-## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_mini_storage.html
+## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_mini_storage.html
 
 ## Mini Storage
 
@@ -549,7 +417,7 @@ This example displays information about the storage controller for the SD mini s
 
 ---
 
-## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_sed_management_cli.html
+## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_sed_management_cli.html
 
 ## Security Policies for Self-Encrypting Drives 
 
@@ -582,7 +450,7 @@ To ensure secure and efficient management of Self-Encrypting Drives (SEDs) in Ci
 
 ---
 
-## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_storage_inventory1.html
+## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_storage_inventory1.html
 
 ## NVMe-optimized M5 Servers
 
@@ -695,7 +563,7 @@ The following example recovers the MSwitch on server1:
 
 ---
 
-## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_drive-diagnostics.html
+## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_drive-diagnostics.html
 
 ## Overview of Drive Diagnostics
 
@@ -705,7 +573,7 @@ Cisco UCS Manager does not support on demand diagnostics. This feature checks th
 
 ---
 
-## Page 18: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_3260_storage_management.html
+## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_3260_storage_management.html
 
 ## Storage Server Features and Components Overview 
 
@@ -935,7 +803,7 @@ For more details about the storage controllers supported in the various server n
 
 ---
 
-## Page 19: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_series_cli_configuring_storage_profiles_4_0.html
+## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_series_cli_configuring_storage_profiles_4_0.html
 
 ## Storage Profiles 
 
@@ -952,7 +820,7 @@ You can create a storage profile both at an org level and at a service-profile l
 
 ---
 
-## Page 20: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_cli_storage-related_policies.html
+## Page 18: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_cli_storage-related_policies.html
 
 ## vHBA Template 
 
@@ -962,7 +830,7 @@ You must include this policy in a service profile for it to take effect.
 
 ---
 
-## Page 21: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_storage_inventory1.html
+## Page 19: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_storage_inventory1.html
 
 ## NVMe-optimized M5 Servers
 
@@ -1075,7 +943,7 @@ The following example recovers the MSwitch on server1:
 
 ---
 
-## Page 22: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_cli_san_ports_and_port_channels.html
+## Page 20: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_cli_san_ports_and_port_channels.html
 
 ## Port Modes
 
@@ -1085,7 +953,7 @@ Changing the port mode deletes the existing port configuration and replaces it w
 
 ---
 
-## Page 23: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_cli_named_vsans.html
+## Page 21: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_cli_named_vsans.html
 
 ## Named VSANs
 
@@ -1116,7 +984,7 @@ In the following sample configuration, a service profile with a vNIC and vHBA ma
 
 ---
 
-## Page 24: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_sed_management_cli.html
+## Page 22: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_sed_management_cli.html
 
 ## Security Policies for Self-Encrypting Drives 
 

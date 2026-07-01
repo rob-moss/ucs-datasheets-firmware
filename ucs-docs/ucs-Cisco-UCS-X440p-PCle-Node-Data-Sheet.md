@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X440p PCle Node Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-x440p-pcle-node-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-30 11:01:18 |
+| **Fetched on** | 2026-06-30 16:53:33 |
 
 ---
 

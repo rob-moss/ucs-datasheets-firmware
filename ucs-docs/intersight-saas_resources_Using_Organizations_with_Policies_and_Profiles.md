@@ -8,7 +8,7 @@
 | **HTML Title** | Resources |
 | **Source file** | `Using_Organizations_with_Policies_and_Profiles` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-30 10:59:57 |
+| **Fetched on** | 2026-06-30 16:42:42 |
 
 ---
 
@@ -268,7 +268,7 @@ Cisco Intersight provides a node redeployment workflow for HyperFlex clusters. F
 - [en/Node_Redeployment_Workflow.html](node_redeployment_workflow)
 
 ## Intersight Advisories
-Cisco Intersight alerts users about the devices that are affected by supported security advisories, field notices, and End of Life (EOL) advisories. EOL advisories are available for UCS product family and HyperFlex Data Platform software releases. These alerts are displayed as Advisories in Intersight. Two-Tiered Intersight Advisory Processing < Tier 1: 30-Minute Processing Cycle : Field Notices and Security Advisories published less than three years ago are processed every 30 minutes, and any updates on the devices with respect to those advisories will be displayed within 30 minutes. Tier 2: 4-12 Hour Processing Cycle :  Field Notices and Security Advisories published more than three years ago, and all End-of-Life Advisories, continue to be processed every 4 to 12 hours, and updated status for the device is displayed within 12 hours. Note : A newly published Security Advisory or Field Notice is initially placed in Tier 2 until it has been successfully processed for all Intersight accounts. It is then moved to Tier 1 to enable faster processing. For information on processing times, refer to the banner banner on the specific advisory details page within the Intersight UI. You can create custom subscriptions for security advisories, field notices, end-of-sale and end-of-support announcements, software updates, and updates to known bugs for Cisco products. For more information, refer to https://cway.cisco.com/mynotifications . Note: Advisories feature requires an Essentials license tier. Most advisories are digitized and published in Intersight within one week of being published on AI Infrastructure, Secure Networking, and Software Solutions . For a complete list of supported security advisories, field notices, and End of Life advisories, refer to:
+Cisco Intersight alerts users about the endpoint targets that are impacted by supported security advisories, field notices, and End of Life (EOL) advisories. EOL advisories are available for UCS product family and HyperFlex Data Platform software releases. These alerts are displayed as Advisories in Intersight. Two-Tiered Intersight Advisory Processing Tier 1: 30-Minute Processing Cycle : Field Notices and Security Advisories published less than three years on Cisco.com ago are processed every 30 minutes, and any updates on the devices with respect to those advisories will be displayed within 30 minutes. Tier-2: 4-12 Hour Processing Cycle :  Field Notices and Security Advisories published more than three years ago, and all End-of-Life Advisories, continue to be processed every 4-12 hours, and updated status for the device is displayed within 12 hours. Note : A newly published Security Advisory or Field Notice is initially placed in Tier-2 until it has been successfully processed for all Intersight accounts. It is then moved to Tier-1 to enable faster processing. For information on processing times, please refer to the banner on the specific advisory details page within the Intersight UI. You can create custom subscriptions for security advisories, field notices, end-of-sale/support announcements, software updates, and updates to known bugs for Cisco products. For more information, see https://cway.cisco.com/mynotifications . Note: Advisories are supported with Essentials tier license. Advisories are digitized and published in Intersight within 1 week of being published on cisco.com. For a complete list of supported security advisories, field notices, and EOL advisories, see:
 - [en/cisco_security_advisories.html](cisco_security_advisories)
 - [en/cisco_field_notices.html](cisco_field_notices)
 - [en/Cisco_End_of_Life_Advisories.html](cisco_end_of_life_advisories)
@@ -334,10 +334,6 @@ Cisco Intersight Workload Optimizer radically simplifies application resource ma
 The Intersight mobile app complements the Intersight platform by providing a mobility-optimized connection to the resources managed in your account. The mobile app enables you to stay up-to-date with the status of your environment and connect with members of your IT organization to address critical issues on the go.
 - [en/MobileApp.html](mobile)
 
-## Cisco Intersight Plugin for Red Hat OpenShift
-The Cisco Intersight Plugin for Red Hat OpenShift is a web console extension that integrates physical infrastructure management directly into the Red Hat OpenShift interface. Its primary use is to provide Red Hat OpenShift administrators with real-time visibility and operational control over the underlying Cisco UCS hardware, bridging the gap between the application layer and the physical server layer. For more information, refer to
-- [en/cisco-intersight-plugin-for-red-hat-openshift.html](plugin_openshift)
-
 ## VCF Operations Management Pack for Cisco Intersight
 The VCF Operations Management Pack for Cisco Intersight allows you to use VCF Operations to monitor, manage, and troubleshoot infrastructure running on Cisco Intersight Managed Mode (IMM) servers.
 - [en/r_vcf_op-aria.html](VCF_Operations_Management_Pack)
@@ -347,7 +343,6 @@ The VMware vSphere/vCenter plugins provided by Cisco Intersight allow VMware vCe
 - [Upgrading_Server_Firmware_Using_Hardware_Support_Manager.html](Upgrading_Server_Firmware_Using_Hardware_Support_Manager)
 - [en/r_vSphere_vCenter.html](plugin_vsphere)
 - [en/r_vSphere_vCenter_ts.html](plugin_vsphere_ts)
-- [en/r_vcenter_privileges.html](vcenter_privileges)
 
 ## Installing VMware ESXi 9 with the Latest Cisco Drivers
 This document provides detailed instructions for UCS customers on how to use one of the following options to include Cisco add-on drivers with the ESXi image on servers: Manually install Cisco drivers on each VMware host. Create a custom ISO using VMware vSphere Lifecycle Manager (vLCM) in VMware vCenter.

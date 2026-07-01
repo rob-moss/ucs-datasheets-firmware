@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco UCS Manager, Release 6.0 |
 | **Source file** | `ucs-docs-raw/html/b_release-notes-ucsm-6_0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-30 11:00:10 |
+| **Fetched on** | 2026-06-30 16:43:38 |
 
 ---
 
