@@ -8,7 +8,12 @@
       "command": ".venv/bin/python",
       "args": [
         "mcp/mcp-server.py"
-    ]
+      ],
+      "type": "stdio"
+    },
+    "ucs-docs-mcp": {
+      "type": "http",
+      "url": "http://localhost:31310"
     }
   }
 }

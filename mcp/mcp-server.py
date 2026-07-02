@@ -7,15 +7,18 @@ in the ucs-guides-help-query directory) to AI assistants via the Model Context
 Protocol.
 
 Run from the command line:
-    python mcp/server.py
+    python mcp/server.py                 # Run on stdio
+    python mcp/server.py --tcp 31310     # Run on TCP port 31310
 
 Or with uv:
     uv run mcp/server.py
+    uv run mcp/server.py -- --tcp 31310
 
-
-Version 1.0
+Version 1.2 - Added TCP transport support and tag-based filtering
 
 """
+
+__version__ = "1.2"
 
 import os
 import re
@@ -64,6 +67,15 @@ _STOP_WORDS = frozenset({
     "cisco", "Cisco", "documentation", "document", "guide", "manual",
 })
 
+# Recognized tag categories for validation and help
+TAG_CATEGORIES = {
+    "type": ["cli", "reference", "guide", "release-notes", "api", "architecture", "troubleshooting"],
+    "scope": ["fabricinterconnect", "server", "firmware", "intersight", "ucsmanager"],
+    "mode": ["imm", "ucsmanager", "intersight"],
+    "feature": ["cli", "api", "configuration", "deployment", "monitoring", "ui"],
+    "content": ["commands", "compatibility", "upgrade", "bestpractices", "troubleshooting", "diagnostics", "integration", "deployment"],
+}
+
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
@@ -88,9 +100,10 @@ def _find_doc(filename: str) -> Path | None:
 
 
 def _parse_metadata(text: str) -> dict:
-    """Extract the source URL and fetch date from the file header."""
+    """Extract the source URL, fetch date, and tags from the file header."""
     url = None
     fetched = None
+    tags: list[str] = []
 
     url_match = re.search(r"^#\s+Documentation:\s+(https?://\S+)", text, re.MULTILINE)
     if url_match:
@@ -100,7 +113,15 @@ def _parse_metadata(text: str) -> dict:
     if date_match:
         fetched = date_match.group(1).strip()
 
-    return {"source_url": url, "fetched_on": fetched}
+    # Extract tags from metadata section
+    # Format: "- **Tags:** type:CLI, scope:FabricInterconnect, ..."
+    tags_match = re.search(r"(?:\*\*Tags:\*\*|Tags:)\s*([^\n]+)", text, re.IGNORECASE)
+    if tags_match:
+        tags_str = tags_match.group(1).strip()
+        # Split by comma and clean up each tag
+        tags = [tag.strip().lower() for tag in tags_str.split(",") if tag.strip()]
+
+    return {"source_url": url, "fetched_on": fetched, "tags": tags}
 
 
 def _extract_sections(text: str) -> list[dict]:
@@ -181,6 +202,20 @@ def _infer_title(filename: str, metadata: dict) -> str:
     return title
 
 
+def _tags_match(doc_tags: list[str], query_tags: list[str]) -> bool:
+    """Check if document tags contain any of the query tags (OR logic)."""
+    if not query_tags:
+        return True
+    return any(tag in doc_tags for tag in query_tags)
+
+
+def _get_tag_score(doc_tags: list[str], query_tags: list[str]) -> int:
+    """Return score based on how many query tags match document tags."""
+    if not query_tags:
+        return 0
+    return sum(1 for tag in query_tags if tag in doc_tags)
+
+
 # ---------------------------------------------------------------------------
 # MCP Server
 # ---------------------------------------------------------------------------
@@ -190,9 +225,11 @@ mcp = FastMCP(
     instructions=(
         "This server provides access to Cisco UCS documentation fetched from "
         "cisco.com. Use list_documents to see what is available, "
-        "search_documents to find relevant sections by keyword, "
+        "search_documents to find relevant sections by keyword or tags, "
         "read_document to retrieve the full content of a file, and "
-        "get_document_outline to inspect the structure of a document."
+        "get_document_outline to inspect the structure of a document. "
+        "Use the tags parameter in search_documents to narrow results to specific "
+        "document types, scopes, or features (e.g., 'type:CLI', 'scope:FabricInterconnect')."
     ),
 )
 
@@ -212,6 +249,7 @@ def list_documents() -> list[dict]:
     - title: a human-readable title derived from the filename
     - source_url: the original Cisco URL the document was fetched from
     - fetched_on: the date/time the document was downloaded
+    - tags: list of tags (e.g., ['type:CLI', 'scope:FabricInterconnect'])
     - size_kb: approximate file size in KB
     """
     results = []
@@ -225,6 +263,7 @@ def list_documents() -> list[dict]:
                     "title": _infer_title(path.name, meta),
                     "source_url": meta.get("source_url"),
                     "fetched_on": meta.get("fetched_on"),
+                    "tags": meta.get("tags", []),
                     "size_kb": round(len(text) / 1024, 1),
                 }
             )
@@ -237,20 +276,25 @@ def list_documents() -> list[dict]:
 def search_documents(
     query: str,
     filename: Optional[str] = None,
+    tags: Optional[list[str]] = None,
     max_results: int = 10,
 ) -> list[dict]:
     """
-    Search across UCS documentation for the given query string.
+    Search across UCS documentation for the given query string, with optional tag filtering.
 
     The query is tokenised into keywords so natural-language questions
     (e.g. "what is a policy") work in addition to exact CLI phrases
-    (e.g. "show fabric-interconnect").  Sections that match ALL tokens
+    (e.g. "show fabric-interconnect"). Sections that match ALL tokens
     are ranked above sections that match only some tokens.
+
+    Tag-based filtering narrows results to documents with matching tags.
+    Use tags like: ['type:CLI', 'scope:FabricInterconnect', 'mode:IMM']
 
     Args:
         query: The keyword or phrase to search for (case-insensitive).
-                Natural language queries are automatically tokenised.
         filename: Optional. Restrict search to a single file.
+        tags: Optional list of tags to filter documents (OR logic—matches any tag).
+              Format: ['type:CLI', 'scope:Server', 'content:Compatibility']
         max_results: Maximum number of result snippets to return (default 10).
 
     Returns a list of matches, each with:
@@ -259,9 +303,13 @@ def search_documents(
     - snippet: a short excerpt of the surrounding text
     - match_count: total keyword occurrences in that section
     - matched_tokens: which query keywords were found
+    - tag_score: number of matching tags (0 if no tag filtering)
+    - doc_tags: tags on the document
     """
     query_lower = query.lower().strip()
     tokens = _tokenize(query)
+    query_tags = [t.lower() for t in (tags or [])]
+
     if filename:
         found = _find_doc(filename)
         files = [found] if found else []
@@ -269,6 +317,7 @@ def search_documents(
         files = _doc_files()
 
     # Bucket results: exact phrase > all tokens matched > partial match
+    # Within each bucket, also rank by tag match score
     exact_results: list[dict] = []
     all_token_results: list[dict] = []
     partial_results: list[dict] = []
@@ -278,7 +327,12 @@ def search_documents(
             continue
         try:
             text = path.read_text(encoding="utf-8")
+            meta = _parse_metadata(text)
         except Exception:
+            continue
+
+        # Filter by tags if provided
+        if query_tags and not _tags_match(meta.get("tags", []), query_tags):
             continue
 
         # Quick pre-filter: skip file entirely if no token appears anywhere
@@ -288,6 +342,7 @@ def search_documents(
 
         sections = _extract_sections(text)
         hits_in_doc = 0
+        tag_score = _get_tag_score(meta.get("tags", []), query_tags)
 
         for section in sections:
             content = section["content"]
@@ -305,6 +360,8 @@ def search_documents(
                 "snippet": snippet,
                 "match_count": match_count,
                 "matched_tokens": matched,
+                "tag_score": tag_score,
+                "doc_tags": meta.get("tags", []),
             }
 
             if query_lower in content_lower:
@@ -318,13 +375,31 @@ def search_documents(
             if hits_in_doc >= MAX_HITS_PER_DOC:
                 break
 
-    # Merge ranked results
+    # Merge ranked results, with tag score as secondary sort
     ranked = exact_results + all_token_results + partial_results
 
-    # Sort each bucket by match_count descending so best snippets come first
-    ranked.sort(key=lambda r: len(r["matched_tokens"]) * 1000 + r["match_count"], reverse=True)
+    # Sort each bucket: first by tag_score (desc), then by match_count (desc)
+    ranked.sort(
+        key=lambda r: (
+            len(r["matched_tokens"]) * 10000,  # Token match quality
+            r["tag_score"] * 1000,              # Tag match bonus
+            r["match_count"],                    # Keyword frequency
+        ),
+        reverse=True,
+    )
 
     return ranked[:max_results]
+
+
+@mcp.tool()
+def list_tags() -> dict:
+    """
+    List all recognized tag categories and their valid values.
+
+    Returns a dictionary mapping category names to lists of valid tag values.
+    Useful for understanding what tags to use in search_documents.
+    """
+    return TAG_CATEGORIES
 
 
 @mcp.tool()
@@ -433,9 +508,12 @@ def docs_index() -> str:
             title = _infer_title(path.name, meta)
             url = meta.get("source_url", "")
             fetched = meta.get("fetched_on", "unknown")
+            tags = meta.get("tags", [])
             lines.append(f"## [{title}](docs://{path.name})")
             if url:
                 lines.append(f"- **Source:** {url}")
+            if tags:
+                lines.append(f"- **Tags:** {', '.join(tags)}")
             lines.append(f"- **Fetched:** {fetched}")
             lines.append(f"- **File:** `{path.name}`\n")
         except Exception as exc:
@@ -457,4 +535,98 @@ def doc_resource(filename: str) -> str:
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    mcp.run(transport="stdio")
+    import argparse
+    
+    # If running as a subprocess for a TCP client, skip argument parsing
+    if os.environ.get("MCP_SUBPROCESS") != "1":
+        parser = argparse.ArgumentParser(
+            description="UCS Docs MCP Server",
+            epilog="Examples:\n"
+                   "  python mcp-server.py              # Run on stdio (default)\n"
+                   "  python mcp-server.py --tcp 31310  # Listen on TCP port 31310 (all interfaces)",
+            formatter_class=argparse.RawDescriptionHelpFormatter,
+        )
+        parser.add_argument(
+            "--tcp",
+            type=int,
+            metavar="PORT",
+            help="Listen on TCP port instead of stdio (e.g., 31310); binds to 0.0.0.0 for all interfaces",
+        )
+        args = parser.parse_args()
+        
+        if args.tcp:
+            import asyncio
+            
+            async def main():
+                async def handle_client(reader, writer):
+                    """Handle a single TCP client by spawning an MCP subprocess."""
+                    try:
+                        # Spawn a subprocess running this script in stdio mode
+                        proc = await asyncio.create_subprocess_exec(
+                            sys.executable, __file__,
+                            stdout=asyncio.subprocess.PIPE,
+                            stdin=asyncio.subprocess.PIPE,
+                            stderr=None,
+                            env={**os.environ, "MCP_SUBPROCESS": "1"},
+                        )
+                        
+                        async def pump_to_server():
+                            """Pump data from TCP client to subprocess stdin."""
+                            try:
+                                while True:
+                                    data = await reader.read(4096)
+                                    if not data:
+                                        break
+                                    if proc.stdin:
+                                        proc.stdin.write(data)
+                                        await proc.stdin.drain()
+                            except Exception:
+                                pass
+                            finally:
+                                if proc.stdin:
+                                    proc.stdin.close()
+                                    await proc.stdin.wait_closed()
+                        
+                        async def pump_from_server():
+                            """Pump data from subprocess stdout to TCP client."""
+                            try:
+                                while True:
+                                    data = await proc.stdout.read(4096) if proc.stdout else None
+                                    if not data:
+                                        break
+                                    writer.write(data)
+                                    await writer.drain()
+                            except Exception:
+                                pass
+                            finally:
+                                writer.close()
+                                await writer.wait_closed()
+                        
+                        # Pump data bidirectionally
+                        await asyncio.gather(pump_to_server(), pump_from_server())
+                        await proc.wait()
+                    except Exception as e:
+                        print(f"Client connection error: {e}", file=sys.stderr)
+                        try:
+                            writer.close()
+                            await writer.wait_closed()
+                        except Exception:
+                            pass
+                
+                # Start TCP server on all interfaces
+                server = await asyncio.start_server(handle_client, "0.0.0.0", args.tcp)
+                print(f"UCS Docs MCP Server listening on 0.0.0.0:{args.tcp}", file=sys.stderr)
+                
+                async with server:
+                    try:
+                        await server.serve_forever()
+                    except KeyboardInterrupt:
+                        print("Server stopped.", file=sys.stderr)
+            
+            asyncio.run(main())
+        else:
+            # Run on stdio
+            mcp.run()
+    else:
+        # Running as subprocess for TCP client—just run on stdio
+        mcp.run()
