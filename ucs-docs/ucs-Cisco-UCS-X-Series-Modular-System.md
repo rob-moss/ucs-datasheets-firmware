@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X-Series Modular System |
 | **Source file** | `ucs-docs-raw/html/series.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:23:09 |
+| **Fetched on** | 2026-07-02 13:08:39 |
 
 ---
 
@@ -17,6 +17,11 @@
   * Skip to content
   * Skip to search
   * Skip to footer
+
+
+  *   * [Support](/c/en/us/support/index.html)
+  * [Product Support](/c/en/us/support/all-products.html)
+  * [Servers - Unified Computing](/c/en/us/support/servers-unified-computing/category.html)
 
 
 # Cisco UCS X-Series Modular System
@@ -253,6 +258,7 @@ use JS to put chosen tab in here or hide
 
   * #### 
 
+  * [Cisco UCS with Red Hat OpenShift Virtualization and Citrix for VDI White Paper ](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-red-hat-osv-citrix-vdi-wp.html)30-Jun-2026new
   * [AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper ](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html)22-Apr-2026
   * [Generative AI Inferencing Use Cases with Cisco UCS X-Series M7 Blade Servers Using 5th Gen Intel Xeon Scalable Processors White Paper ](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ai-ucs-m7-blades-5th-gen-xeon-cpu-wp.html)26-Mar-2024
   * [Run:ai on Cisco UCS Converged Infrastructure White Paper ](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/run-ai-ucs-converged-infra-wp.html)22-Mar-2024
@@ -280,6 +286,10 @@ Log in to see available downloads.
 
 Community
     
+
+  * [Cisco Community Home](https://community.cisco.com/t5/technology-and-support/ct-p/technology-support)
+  * [Ask a Question![login required](/etc/designs/cdc/fw/i/icon_lock_small.png)](//supportforums.cisco.com/node/add/discussion)
+
 
   * Select a Community Board
 

@@ -8,110 +8,11 @@
 | **HTML Title** | Cisco UCS 6324 Fabric Interconnect Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-732207.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:23:35 |
+| **Fetched on** | 2026-07-02 13:08:53 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/datasheet-c78-732207.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS 6324 Fabric Interconnect Data Sheet
-
-Data Sheet
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/datasheet-c78-732207.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/datasheet-c78-732207.pdf) (976.3 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:May 1, 2020
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/datasheet-c78-732207.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/datasheet-c78-732207.pdf) (976.3 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:May 1, 2020
-
-#### Table of Contents
-
-  * Cisco Unified Computing System overview
-  * Product overview
-  * Features and benefits
-  * Product specifications
-  * Physical specifications
-  * Cisco UCS 6324 Fabric Interconnect physical and environmental specifications
-  * Regulatory Standards Compliance: Safety and EMC
-  * Warranty information
-  * Cisco environmental sustainability
-  * Cisco Unified Computing Services
-  * Why Cisco?
-  * Cisco Capital
-  * For more information
-
 
 ` `
 
@@ -461,8 +362,6 @@ For more information about the Cisco UCS 6324 Fabric Interconnect, visit <https:
 ### Learn more
 
 
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
 ---
 
 ## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/whitepaper-c11-736918.html
@@ -470,6 +369,11 @@ For more information about the Cisco UCS 6324 Fabric Interconnect, visit <https:
   * Skip to content
   * Skip to search
   * Skip to footer
+
+
+  *   * [Products & Services](/c/en/us/products/index.html)
+  * [Servers - Unified Computing](/c/en/us/products/servers-unified-computing/index.html)
+  * [Cisco UCS 6300 Series Fabric Interconnects](/c/en/us/products/servers-unified-computing/ucs-6300-series-fabric-interconnects/index.html)
 
 
 # Migrate to 40 Gbps with Cisco UCS Fabric Interconnects
@@ -924,6 +828,12 @@ Yes No [ ![Feedback](//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png)Feedback
   * Skip to content
   * Skip to search
   * Skip to footer
+
+
+  *   * [Products & Services](/c/en/us/products/index.html)
+  * [Servers - Unified Computing](/c/en/us/products/servers-unified-computing/index.html)
+  * [Cisco UCS 6300 Series Fabric Interconnects](/c/en/us/products/servers-unified-computing/ucs-6300-series-fabric-interconnects/index.html)
+  * [Data Sheets](/c/en/us/products/servers-unified-computing/ucs-6300-series-fabric-interconnects/datasheet-listing.html)
 
 
 # Cisco UCS 2200 Series Fabric Extenders Data Sheet

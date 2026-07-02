@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS C885A M8 Server Troubleshooting Guide |
 | **Source file** | `ucs-docs-raw/html/b_c885a-m8-server-troubleshooting-guide.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:22:01 |
+| **Fetched on** | 2026-07-02 13:08:28 |
 
 ---
 
@@ -19,6 +19,10 @@
 ---
 
 ## Page 2: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/m-preface.html
+
+# Preface
+
+This preface contains the following topics:
 
 ## Bias-Free Documentation
 
@@ -31,14 +35,72 @@ The documentation set for this product strives to use bias-free language. For pu
 
 * * *  
   
----|---
+---|---  
+  
+## Full Cisco Trademarks with Hardware License
+
+THE SPECIFICATIONS AND INFORMATION REGARDING THE PRODUCTS IN THIS MANUAL ARE SUBJECT TO CHANGE WITHOUT NOTICE. ALL STATEMENTS, INFORMATION, AND RECOMMENDATIONS IN THIS MANUAL ARE BELIEVED TO BE ACCURATE BUT ARE PRESENTED WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. USERS MUST TAKE FULL RESPONSIBILITY FOR THEIR APPLICATION OF ANY PRODUCTS. 
+
+THE SOFTWARE LICENSE AND LIMITED WARRANTY FOR THE ACCOMPANYING PRODUCT ARE SET FORTH IN THE INFORMATION PACKET THAT SHIPPED WITH THE PRODUCT AND ARE INCORPORATED HEREIN BY THIS REFERENCE. IF YOU ARE UNABLE TO LOCATE THE SOFTWARE LICENSE OR LIMITED WARRANTY, CONTACT YOUR CISCO REPRESENTATIVE FOR A COPY. 
+
+The following information is for FCC compliance of Class A devices: This equipment has been tested and found to comply with the limits for a Class A digital device, pursuant to part 15 of the FCC rules. These limits are designed to provide reasonable protection against harmful interference when the equipment is operated in a commercial environment. This equipment generates, uses, and can radiate radio-frequency energy and, if not installed and used in accordance with the instruction manual, may cause harmful interference to radio communications. Operation of this equipment in a residential area is likely to cause harmful interference, in which case users will be required to correct the interference at their own expense. 
+
+The following information is for FCC compliance of Class B devices: This equipment has been tested and found to comply with the limits for a Class B digital device, pursuant to part 15 of the FCC rules. These limits are designed to provide reasonable protection against harmful interference in a residential installation. This equipment generates, uses and can radiate radio frequency energy and, if not installed and used in accordance with the instructions, may cause harmful interference to radio communications. However, there is no guarantee that interference will not occur in a particular installation. If the equipment causes interference to radio or television reception, which can be determined by turning the equipment off and on, users are encouraged to try to correct the interference by using one or more of the following measures: 
+
+  * Reorient or relocate the receiving antenna. 
+
+  * Increase the separation between the equipment and receiver. 
+
+  * Connect the equipment into an outlet on a circuit different from that to which the receiver is connected. 
+
+  * Consult the dealer or an experienced radio/TV technician for help. 
+
+
+Modifications to this product not authorized by Cisco could void the FCC approval and negate your authority to operate the product. 
+
+The Cisco implementation of TCP header compression is an adaptation of a program developed by the University of California, Berkeley (UCB) as part of UCB’s public domain version of the UNIX operating system. All rights reserved. Copyright © 1981, Regents of the University of California. 
+
+NOTWITHSTANDING ANY OTHER WARRANTY HEREIN, ALL DOCUMENT FILES AND SOFTWARE OF THESE SUPPLIERS ARE PROVIDED "AS IS" WITH ALL FAULTS. CISCO AND THE ABOVE-NAMED SUPPLIERS DISCLAIM ALL WARRANTIES, EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THOSE OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OR ARISING FROM A COURSE OF DEALING, USAGE, OR TRADE PRACTICE. 
+
+IN NO EVENT SHALL CISCO OR ITS SUPPLIERS BE LIABLE FOR ANY INDIRECT, SPECIAL, CONSEQUENTIAL, OR INCIDENTAL DAMAGES, INCLUDING, WITHOUT LIMITATION, LOST PROFITS OR LOSS OR DAMAGE TO DATA ARISING OUT OF THE USE OR INABILITY TO USE THIS MANUAL, EVEN IF CISCO OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. 
+
+Any Internet Protocol (IP) addresses and phone numbers used in this document are not intended to be actual addresses and phone numbers. Any examples, command display output, network topology diagrams, and other figures included in the document are shown for illustrative purposes only. Any use of actual IP addresses or phone numbers in illustrative content is unintentional and coincidental. 
+
+All printed copies and duplicate soft copies of this document are considered uncontrolled. See the current online version for the latest version. 
+
+Cisco has more than 200 offices worldwide. Addresses and phone numbers are listed on the Cisco website at www.cisco.com/go/offices.
+
+Cisco and the Cisco logo are trademarks or registered trademarks of Cisco and/or its affiliates in the U.S. and other countries. To view a list of Cisco trademarks, go to this URL: <https://www.cisco.com/c/en/us/about/legal/trademarks.html>. Third-party trademarks mentioned are the property of their respective owners. The use of the word partner does not imply a partnership relationship between Cisco and any other company. (1721R) 
+
+## Communications, Services, and Additional Information
+
+  * To receive timely, relevant information from Cisco, sign up at [Cisco Profile Manager](https://www.cisco.com/offer/subscribe). 
+
+  * To get the business impact you’re looking for with the technologies that matter, visit [Cisco Services](https://www.cisco.com/go/services). 
+
+  * To submit a service request, visit [Cisco Support](https://www.cisco.com/c/en/us/support/index.html). 
+
+  * To discover and browse secure, validated enterprise-class apps, products, solutions and services, visit [Cisco Marketplace](https://developer.cisco.com/site/marketplace/). 
+
+  * To obtain general networking, training, and certification titles, visit [Cisco Press](http://www.ciscopress.com). 
+
+  * To find warranty information for a specific product or product family, access [Cisco Warranty Finder](http://www.cisco-warrantyfinder.com). 
+
+
+### Cisco Bug Search Tool
+
+[Cisco Bug Search Tool](https://www.cisco.com/c/en/us/support/web/tools/bst/bsthelp/index.html) (BST) is a web-based tool that acts as a gateway to the Cisco bug tracking system that maintains a comprehensive list of defects and vulnerabilities in Cisco products and software. BST provides you with detailed defect information about your products and software. 
 
 ---
 
 ## Page 3: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/m-Chapter-1.html
 
-## Introduction  
-  
+# Introduction
+
+This introduction contains the following topics:
+
+## Introduction
+
 **Component** |  **Description**  
 ---|---  
 GPU |  Support HGX 8-GPU SXM5 with GPU BB Sled AMD: MI300X 750W CPU-GPU Interconnect: 8xPCIe Gen5x16 (Refer to the PCIe topology in Figure 4 and 5)  
@@ -76,6 +138,9 @@ Figure 3. System Rear View  ![](/c/dam/en/us/td/i/500001-600000/520001-530000/52
 7 |  DC-SCM  
 Figure 4. Block diagram (8U GPU Server with NV H100 and H200)  ![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525346.jpg) Figure 5. Block diagram (8U GPU Server w/ AMD MI300)  ![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525347.jpg)
 
+  * Terminology
+
+
 ### Terminology
 
 Term | Definition  
@@ -96,8 +161,12 @@ IPMI | Intelligent Platform Management Interface
 
 ## Page 4: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/m-Chapter-2-Diagnostic-Indicator.html
 
-## Power Supply and DC-SCM Module  
+# Diagnostic Indicator  
   
+This diagnostic indicator contains the following topics:
+
+## Power Supply and DC-SCM Module
+
 Figure 1. 2400W *2 CRPS Power Supply  ![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525348.jpg) 1 |  2400W CRPS Power Supply LED  
 ---|---  
 2 |  2400W CRPS Power Supply LED  
@@ -134,17 +203,68 @@ Indicator code  | Condition
 LED Off  | Failure – PSU is not detected or installed / PSU fail   
 In LED – Green Solid  | AC Input Active   
 Out LED – Amber Blinking  | Output power Standby   
-Out LED – Amber Solid  | AC Output Active 
+Out LED – Amber Solid  | AC Output Active   
+  
+## System Fan LED 
+
+Figure 4. System Fan LED  ![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525351.jpg) 1 |  System Fan LED  
+---|---  
+Indicator code | Condition  
+---|---  
+Off | Fan active  
+Amber solid | Fan fail  
+  
+## SSD/NVMe Drivers
+
+Figure 5. SSD/NVMe Drivers  ![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525352.jpg) 1 |  Activity LED  
+---|---  
+2 |  Status LED  
+**Indicator** |  **Color** |  **Blinking Pattern** |  **Behavior for Device**  
+---|---|---|---  
+Activity LED | OFF | OFF | Drive Not Present  
+Green | Solid ON | Drive Present, But no activity  
+Green | Blinking 4Hz | Drive Present, I/O Activity  
+Status LED | Amber | Blinking 4Hz | Locate (Identify)  
+RED | Solid ON | Fail  
+RED | Blinking 1Hz | Rebuild  
+  
+## Front panel LED Indicators
+
+Figure 6. Front panel LED Indicators  ![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525353.jpg) 1 |  Power Button with LED  
+---|---  
+2 |  UID Button with LED  
+3 |  USB2.0 X 2  
+Table 1. UID Button with LED Indicator code | Condition  
+---|---  
+Off | UID is off  
+Blue | UID is on  
+Table 2. Power Button with LED Indicator code | Condition  
+---|---  
+Off | Power off  
+Green slow blink | Before BMC initial done(S5)  
+Green fast blink | After BMC initial done to power button(S5)  
+Green solid | After power button triggered(S0)  
+Amber slow blink | Temperature abnormal, fan quantity abnormal, fan speed abnormal  
+  
+*If any of the warning condition occurs, you will need to re-plug or change the device.
 
 ---
 
 ## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/m-Chapter-3-Running-diagnostic.html
 
-## Running diagnostic  
-  
+# Running Diagnostic
+
+This running diagnostic contains the following topics:
+
+## Running diagnostic
+
 The Self-Diagnostic Test is used to perform function coverage testing. Running on Linux, it is a UI framework to merge/involve different test diagnostic programs including Open-Source tools (included BSD/GPL v2.0 license), Vendor Tools/Drivers, and some diagnostic tools from ODM. 
 
 The user can utilize selftest.py to merge various diagnostic utilities, packages, and scripts for conducting function testing. ODM can set up and build a package that includes selftest.py and diagnostic utilities for customers to perform interaction testing. 
+
+  * Environment requirement
+  * User interface
+
 
 ### Environment requirement
 
@@ -217,7 +337,16 @@ Switch to the Log path to review the test log directly and find the complete Log
 
 ## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/m-Chapter-4-Troubleshooting-hardware-issues.html
 
+# Troubleshooting hardware issues
+
+This troubleshooting hardware issues contains the following topics:
+
 ## Mother board
+
+  * G3 to S5
+  * FPGA postcode error code check
+  * S5 to S0(POST)
+
 
 ### G3 to S5
 
@@ -319,870 +448,140 @@ Check 80/81 port LED
 
 (BIOS provide decode)
 
----
+## System Failure
 
-## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/m-Chapter-5-Server-management-software-issues.html
+Troubleshooting under OS issue
 
-## Maintenance
+  * Loss PCIE Device check
+  * SAS/SATA Issue
 
-### How to get firmware information
 
-To retrieve firmware information, you can use the IPMI command. This command allows you to obtain component firmware version in your system, such as the BMC, BIOS, FPGA, and RoT. 
+### Loss PCIE Device check
 
-**IPMI Command**
+#### Prerequisite
 
-**Command Format**
-    
-    
-    Ipmitool raw 0x30 0x20
+PCIE Device not detect under OS.
 
-**Request Data**
+#### Troubleshooting step:
 
-Not required.
+  1. Execute the command in OS to check the device lost and its corresponding slot location:
 
-**Response Data**
+  * Check PCIe Tree and device address: lspci -tv | less
 
-**Byte** |  **Data Field**  
----|---  
-1 |  **Completion Code**  
-2:3 |  **BMC Firmware Revision** Byte 2: Major Revision Byte 3: Minor Revision  
-4:6 |  **BIOS Firmware Revision** Byte 4: Major Revision Byte 5: Minor Revision Byte 6: Iteration Revision  
-7:8 |  **DC-SCM FPGA Firmware Revision** Byte 7: Major Revision Byte 8: Minor Revision  
-9:10 |  **HPM FPGA Firmware Revision** Byte 9: Major Revision Byte 10: Minor Revision  
-11:12 |  **HIB FPGA Firmware Revision** Byte 11: Major Revision Byte 12: Minor Revision  
-13:14 |  **RoT Firmware Revision** Byte 13: Major Revision Byte 14: Minor Revision  
+  * Check which slot ID cannot recognize: _lspci -v | grep -i “slot:”|sort “_
+
+  2. Apply the system PCIE Topology Mapping table to check the path of lost device after you get the lost slot location.
+
+
+#### PCIE Topology Mapping Table
+
+**PCIE Root Port** |  **Source** |  **Cable ID** |  **Switch** |  **Cable** |  **Board** |  **Connector** |  **END Device Category** |  **Device Name** |  **System** **Slot Name**  
+---|---|---|---|---|---|---|---|---|---  
+**[0000:40] [0000:60]** |  **MB** |  **#A #B** |  **SW1 HIB Board** |  **#J** |  **CEMBB** |  |  **PCIE Slot (x16)** |  **LP2** |  **202**  
+**#I** |  **PCIE Slot (x16)** |  **LP1** |  **201**  
+|  **MIDPLANE** |  **CNHIB1** |  **NVME SSD (x4)** |  **SSD1** |  **301**  
+**NVME SSD (x4)** |  **SSD2** |  **302**  
+**NVME SSD (x4)** |  **SSD3** |  **303**  
+**NVME SSD (x4)** |  **SSD4** |  **304**  
+**MEDPLANE to HGBB** |  **CNHIB3,** **CNHIB4, CNUBBJ9,** **CNUBBJ10** |  **GPU (OAM)** |  **GPU2** |  **102**  
+**GPU (OAM)** |  **GPU3** |  **103**  
+**#Q** |  **CEM_L** |  |  **PCIE Slot (x16)** |  **FHHL11** |  **211**  
+**PCIE Root Port** |  **Source** |  **Cable ID** |  **Switch** |  **Cable** |  **Board** |  **Connector** |  **END Device Category** |  **Device Name** |  **System Slot Name**  
+---|---|---|---|---|---|---|---|---|---  
+**[0000:00] [0000:20]** |  **MB** |  **#C #D** |  **SW2 HIB Board** |  **#L** |  **CEMBB** |  **** |  **PCIE Slot (x16)** |  **LP4** |  **204**  
+**#K** |  **PCIE Slot (x16)** |  **LP3** |  **203**  
+**** |  **MIDPLANE** |  **CNHIB5** |  **NVME SSD (x4)** |  **SSD5** |  **305**  
+**NVME SSD (x4)** |  **SSD6** |  **306**  
+**NVME SSD (x4)** |  **SSD7** |  **307**  
+**NVME SSD (x4)** |  **SSD8** |  **308**  
+**MEDPLANE to HGBB** |  **CNHIB6,** **CNHIB7, CNUBBJ7,** **CNUBBJ8** |  **GPU (OAM)** |  **GPU0** |  **100**  
+**GPU (OAM)** |  **GPU1** |  **101**  
+**#R #U** |  **CEM_L** |  **** |  **PCIE Slot (x16)** |  **FHHL13** |  **213**  
+**#Y #U** |  **CEM_L** |  **PCIE Slot (x16)** |  **FHHL15** |  **215**  
+**** |  **Riser-M.2 (x4)** |  **M.2** |  ****  
+**PCIE Root Port** |  **Source** |  **Cable ID** |  **Switch** |  **Cable** |  **Board** |  **Connector** |  **END Device Category** |  **Device Name** |  **System Slot Name**  
+---|---|---|---|---|---|---|---|---|---  
+**[0000:c0] [0000:e0]** |  **MB** |  **#E #F** |  **SW3 HIB Board** |  **#N** |  **CEMBB** |  **** |  **PCIE Slot (x16)** |  **LP6** |  **206**  
+**#M** |  **PCIE Slot (x16)** |  **LP5** |  **205**  
+**** |  **MIDPLANE** |  **CNHIB10** |  **NVME SSD (x4)** |  **SSD9** |  **309**  
+**NVME SSD (x4)** |  **SSD10** |  **310**  
+**NVME SSD (x4)** |  **SSD11** |  **311**  
+**NVME SSD (x4)** |  **SSD12** |  **312**  
+**MEDPLANE to HGBB** |  **CNHIB8** **CNHIB9 CNUBBJ5** **CNUBBJ6** |  **GPU (OAM)** |  **GPU7** |  **107**  
+**GPU (OAM)** |  **GPU6** |  **106**  
+**#S #X** |  **CEM_R** |  **** |  **PCIE Slot (x16)** |  **FHHL12** |  **212**  
+**#Z** |  **** |  **M.2 Adapt Card** |  **** |  **Riser-M.2 (x4)** |  **M.2** |  ****  
+**** |  **Riser-M.2 (x4)** |  **M.2** |  ****  
+**OCP Card** |  **** |  **OCP** |  **OCP1** |  ****  
+**PCIE Root Port** |  **Source** |  **Cable ID** |  **Switch** |  **Cable** |  **Board** |  **Connector** |  **END Device Category** |  **Device Name** |  **System Slot Name**  
+---|---|---|---|---|---|---|---|---|---  
+**[0000:80] [0000:a0]** |  **MB** |  **#G #H** |  **SW4 HIB Board** |  **#P** |  **CEMBB** |  **** |  **PCIE Slot (x16)** |  **LP8** |  **208**  
+**#O** |  **PCIE Slot (x16)** |  **LP7** |  **207**  
+**** |  **MIDPLANE** |  **CNHIB11** |  **NVME SSD (x4)** |  **SSD13** |  **313**  
+**NVME SSD (x4)** |  **SSD14** |  **314**  
+**CNHIB14** |  **NVME SSD (x4)** |  **SSD15** |  **315**  
+**NVME SSD (x4)** |  **SSD16** |  **316**  
+**MEDPLANE to HGBB** |  **CNHIB12,** **CNHIB13, CNUBBJ3** **CNUBBJ4** |  **GPU (OAM)** |  **GPU4** |  **104**  
+**GPU (OAM)** |  **GPU5** |  **105**  
+**#T #X** |  **CEM_R** |  **** |  **PCIE Slot (x16)** |  **FHHL14** |  **214**  
   
-**Example: Obtain firmware version using IPMI Command**
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525370.jpg)
 
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525398.jpg)
+### SAS/SATA Issue
 
-#### Redfish
+#### Cannot detect single SAS or SATA device
 
-After using the command, you can find the firmware version in the red box.
+  1. Re-plug the SAS or SATA card.
 
-**Command format:**
-    
-    
-    curl -k -X GET
-    https://<username>:<password>@<BMC
-    IP>/redfish/v1/Managers/bmc | grep -A 6 -i
-    FirmwareVersion
+  2. If you still cannot read the device, change the new SAS or SATA card.
 
-**Example: Obtain firmware version via Redfish**
+  3. If you still cannot read the device, change to a new Midplane.
 
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525399.jpg)
 
-### How to do BMC firmware update
+#### Cannot detect all SAS or SATA device
 
-**BMC Web UI**
+  1. Check the Raid Card in the Bios setup menu. 
 
-To ensure the proper functioning of the system, please follow the steps below to update the BMC firmware using the WEB GUI.
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525381.jpg)
 
-To open Firmware Update page, click **Operations** > **Firmware** from the menu bar. A sample screenshot of the Firmware Update Page is displayed. 
+You will be able to view the "Healthy" screen under normal circumstances.
 
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525919.jpg)
+  2. If the Raid card displays Fail or card not showing, re-plug the Raid card or change to a new one.
 
-Add File: Choose BMC firmware image.
+  3. If the issue still exists, replace to a new CEM_L(R) Card.
 
-Start update: Choose Start update in the pop menu.
+  4. If the SSD Driver displays Fail or not showing, re-plug the SAS IO cable and make sure that there are no bent pins.
 
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525921.jpg)
+  5. If you still cannot detect the device, re-plug the SAS IO card.
 
-Pop Menu: Choose Start update in the pop menu.
+  6. If the issue occurs again, change the SAS IO cable and SAS IO card.
 
-The update procedure will be triggered as displayed.
 
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525923.jpg)
+#### NVMe/SAS/SATA device abnormal or show Fail LED
 
-**Redfish**
+  1. Check the drive LED, the active LED lights up Green when the drive is present.
 
-To ensure proper functioning of the system, perform the following to update the BMC firmware through Redfish:
+**Drive Carrier LED Indicators**  
+---  
+**Indicator** |  **Color** |  **Blinking Pattern** |  **Behavior for Device**  
+Activity LED | OFF | OFF | Drive Not Present  
+Green | Solid ON | Drive Present, But no activity  
+Green | Blinking 4Hz | Drive Present, I/O Activity  
+Locate LED | Amber | Blinking 4Hz | Locate (Identify)  
+Fail LED | RED | Solid ON | Fail  
+RED | Blinking 1Hz | Rebuild  
+  2. If the fail LED lights up Red, enter the BIOS Menu to check if the device is healthy or not.
 
-  1. Configure when the new BMC firmware image should be applied.
+  3. Enter the RAID card settings in the BIOS and check whether the status of all the devices are normal and confirm the number. If there is an abnormality in the hard disk, please open a case with TAC. 
 
-**Command format:**
-         
-         curl -k -X PATCH
-         https://<username>:<password>@<BMC
-         IP>/redfish/v1/UpdateService/ -H "Content-Type:application/json"
-         -d '{"HttpPushUriOptions":{"HttpPushUriApplyTime":{"ApplyTime":
-         "Immediate"}}}'
-
-**Example: Configure the new BMC firmware image apply time**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525403.jpg)
-
-  2. Check whether the system is in provision or unprovision mode.
-
-**Command format:**
-         
-         curl -k -X GET
-         https://<username>:<password>@<BMC
-         IP>/redfish/v1/Managers/bmc | grep ProvisionStatus
-
-**Example: Check Provision Status**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525404.jpg)
-
-  3. Request BMC to download the BMC firmware image and update the BMC firmware. Once the command is executed successfully, BMC takes 10 to 12 minutes to update the firmware and wait for 3 to 5 minutes to boot up. 
-
-**Command format:**
-         
-         curl -k -X POST
-         https://<username>:<password>@<BMC
-         IP>/redfish/v1/UpdateService/ -H
-         "Content-Type:application/octet-stream" --data-binary @<BMC
-         firmware image name>
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-If system is unprovisioned, use **xxxx.tar** for the BMC firmware update. If system is provisioned, use **capsule** for the BMC firmware update. 
-
-* * *  
-  
----|---  
-
-
-### How to do BIOS firmware update
-
-**BMC Web UI**
-
-To ensure the proper functioning of the system, perform the following to update the BIOS firmware through the WEB GUI:
-
-To open Firmware Update page, click **Operations** > **OEM** **Firmware** from the menu bar. A sample screenshot of the Firmware Update Page is displayed. 
-
-**Note** : Please confirm that the host power is turned off. 
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525925.jpg)
-
-To select BIOS for firmware update.
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525927.jpg)
-
-Add File: Choose DC-SCM FPGA, MB FPGA or HIB FPGA firmware image.
-
-Start update: Choose Start update in the pop menu.
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525929.jpg)
-
-Pop Menu: Choose OK in the pop menu.
-
-The update procedure will be triggered as displayed.
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525931.jpg)
-
-**Redfish**
-
-To ensure the proper functioning of the system, perform the following to update the BIOS firmware through Redfish:
-
-  1. Request the BMC to download the BIOS firmware image.
-
-  * **Command format:**
-           
-           curl -k -X POST
-           https://<username>:<password>@<BMC
-           IP>/redfish/v1/Managers/c885a/UploadFile -H
-           "Content-Type:application/octet-stream" -H "Filename:oem.bin"
-           --data-binary @<BIOS firmware image name>
-
-  * **Example: Request BMC to download the BIOS firmware image**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525409.jpg)
-
-  2. Request the BMC to update the BIOS firmware.
-
-  * **Command format:**
-           
-           curl -k -X POST
-           https://<username>:<password>@<BMC
-           IP>/redfish/v1/Managers/c885a/OEMUpdate -d '{"updateDevice":
-           "bios"}'
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-Use this command to get the updated status.
-
-* * *  
-  
----|---  
-  * **Command format:**
-           
-           curl -k -X GET
-           https://<username>:<password>@<BMC
-           IP>/redfish/v1/Managers/c885a/OEMUpdate/CheckStatus
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-  * If the update is in progress, you will not receive any response.
-  * If the update is successful, the result will be success.
-
-* * *  
-  
----|---  
-  
-**Example: Get BIOS update status**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525410.jpg)
-
-
-### How to do FPGA firmware update
-
-**BMC Web UI**
-
-To ensure the proper functioning of the system, perform the following to update the FPGA firmware through the WEB GUI:
-
-To open Firmware Update page, click **Operations** > **OEM** **Firmware** from the menu bar. A sample screenshot of Firmware Update Page is displayed. 
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525405.jpg)
-
-To select the DC-SCM FPGA, MB FPGA or HIB FPGA for firmware update.
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525406.jpg)
-
-Add File: Choose DC-SCM FPGA, MB FPGA or HIB FPGA firmware image.
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-The FPGA firmware image should be .rpd file.
-
-* * *  
-  
----|---  
-  
-Start update: Choose Start update in the pop menu.
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525411.jpg)
-
-Pop Menu: Choose OK in the pop menu.
-
-The update procedure will be triggered as displayed.
-
-  * DC-SCM FPGA Firmware Update
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525412.jpg)
-
-  * MB FPGA Firmware Update
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525413.jpg)
-
-  * HIB FPGA Firmware Update
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525414.jpg)
-
-
-#### Redfish
-
-To ensure the proper functioning of the system, perform the following to update the FPGA firmware through Redfish.
-
-  1. Request BMC to download the FPGA firmware image using the following image:
-         
-         curl -k -X POST
-         https://<username>:<password>@<BMC
-         IP>/redfish/v1/Managers/c885a/UploadFile -H
-         "Content-Type:application/octet-stream" -H "Filename:oem.bin"
-         --data-binary @<FPGA firmware image name>
-
-  2. Request BMC to update DC-SCM FPGA firmware, MB FPGA firmware or HIB FPGA firmware using the following commands:
-
-**DC-SCM FPGA:**
-         
-         curl -k -X POST
-         https://<username>:<password>@<BMC
-         IP>/redfish/v1/Managers/c885a/OEMUpdate -d '{"updateDevice":
-         "dcscm-fpga"}'
-
-**MB FPGA:**
-         
-         curl -k -X POST
-         https://<username>:<password>@<BMC
-         IP>/redfish/v1/Managers/c885a/OEMUpdate -d '{"updateDevice":
-         "mb-fpga"}'
-
-**HIB FPGA:**
-         
-         curl -k -X POST
-         https://<username>:<password>@<BMC
-         IP>/redfish/v1/Managers/c885a/OEMUpdate -d '{"updateDevice":
-         "hib-fpga"}'
-
-  3. Verify the updated status using the following command:
-         
-         curl -k -X GET
-         https://<username>:<password>@<BMC
-         IP>/redfish/v1/Managers/c885a/OEMUpdate/CheckStatus
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-  * If the update is in the progress, you will not receive any response.
-  * If the update is successful, the Result will be success.
-
-* * *  
-  
----|---  
-
-
-### How to do factory reset
-
-To perform a factory reset on your system, you can use the BMC Web UI. This method allows you to easily reset your system's configuration to its original factory settings. 
-
-**IPMI Command**
-
-ipmitool raw 0x30 0x41
-
-**Example: Factory reset using IPMI command**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525415.jpg)
-
-**BMC Web UI**
-
-To open the Factory reset page, click **Operations** > **Factory reset** from the menu bar. A sample screenshot of Factory reset Page is displayed. 
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525935.jpg)
-
-**Redfish**
-
-**Command format:**
-    
-    
-    curl -k -X POST
-    https://<username>:<password>@<BMC
-    IP>/redfish/v1/Managers/bmc/Actions/Manager.ResetToDefaults -H
-    "Content-Type:application/json" -d
-    '{"ResetToDefaultsType":"ResetAll"}'
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-After entering the command, the status **ok** is returned, and the factory reset starts. At this time, you still need to wait for a while. 
-
-* * *  
-  
----|---  
-  
-**Example: Factory reset using Redfish**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525417.jpg)
-
-### Platform Management
-
-#### How to check sensor status and value
-
-To check the sensor status and values of your system, you can use either the IPMI command or the BMC Web UI. Both methods provide you with information about the various sensors in your system, such as temperature, voltage, fan speed, and power supply status. 
-
-**IPMI Command**
-
-`ipmitool sensor list`
-
-**Example: Get sensor list using the IPMI command**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525418.jpg)
-
-**BMC Web UI**
-
-  * To open the Sensors page, click **Hardware status** > **Sensors** from the menu bar. The Sensors page displays all the sensor related information. 
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525937.jpg)
-
-
-**Redfish**
-
-  * **Command format**
-        
-        curl -k -X GET
-        https://<username>:<password>@<BMC
-        IP>/redfish/v1/Chassis/c885a_Sensor/<sensor type>
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-The <sensor type> refers to the following: 
-  * Sensors: Contains the wattage of the power and status of the sensor.
-  * Thermal: Contains the sensor temperature and fan speed.
-
-* * *  
-  
----|---  
-  * **Example: Get sensor list using Redfish**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525420.jpg)
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525421.jpg)
-
-
-#### How to set or get fan speed control
-
-This procedure explains how to set and retrieve the fan speed control parameters in your system by IPMI command.
-
-**IPMI Command**
-
-**_Set fan speed control_ **
-
-**Command format**
-
-`ipmitool 0x30 0x21 <control mode> <PWM>`
-
-**Request Data**
-
-**Byte** |  **Data Field**  
----|---  
-1 |  **Control Mode** 01h = Manually Control. 00h = Auto Control (follow fan control algorithm)  
-2 |  **Fan PWM Duty Cycle** 00h ~ 64h for 0% ~ 100% PWM duty cycle. This field is valid only if the request data byte #1 equals to 01h.  
-  
-**Response Data**
-
-**Byte** |  **Data Field**  
----|---  
-1 |  **Completion Code**  
-  
-**_Get fan speed control_ **
-
-**Command format**
-
-`ipmitool 0x30 0x22`
-
-**Request Data**
-
-Not required.
-
-**Response Data**
-
-**Byte** |  **Data Field**  
----|---  
-1 |  **Completion Code**  
-2 |  **Control Mode** 01h = Manually Control 00h = Auto Control (Default, follow fan control algorithm)  
-3 |  **Fan PWM Duty Cycle** 00h ~ 64h for 0% ~ 100% PWM duty cycle  
-  
-#### How to get power state
-
-This procedure explains how to retrieve the power state of the system, indicating whether it is powered up or powered down. 
-
-**IPMI Command**
-
-  * **Command format:**
-
-`ipmitool power status`
-
-  * The system power state is powered up.
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525422.jpg)
-
-  * The system power state is powered down.
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525423.jpg)
-
-
-##### BMC Web UI
-
-  * The system power state is powered up.
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525424.jpg)
-
-  * The system power state is powered down.
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525425.jpg)
-
-
-##### Redfish
-
-  * **Command format:**
-        
-        curl -s -k -X GET
-        https://<username>:<password>@<BMC
-        IP>/redfish/v1/Systems/system | grep -i powerstate
-
-  * The system power state is powered up.
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525426.jpg)
-
-  * The system power state is powered down.
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525427.jpg)
-
-
-##### How to do power on
-
-The power on action is used to start up a system and bring it to an operational state. This procedure provides instructions on how to perform a power on action. 
-
-**IPMI Command**
-
-  * **Command format:**
-
-`ipmitool power on`
-
-  * Example: Power on using the IPMI command
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525428.jpg)
-
-
-##### BMC Web UI
-
-  * **Example:**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525429.jpg)
-
-
-##### Redfish
-
-  * **Redfish**
-        
-        curl -s -k -X POST
-        https://<username>:<password>@<BMC
-        IP>/redfish/v1/Systems/system/Actions/ComputerSystem.Reset -H
-        "Content-Type: application/json" -d '{"ResetType": "On"}'
-
-  * **Example: Power on using Redfish**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525430.jpg)
-
-
-##### How to do power off
-
-The power off action is used to shut down a system. This procedure provides instructions on how to perform a power off action.
-
-**IPMI Command**
-
-  * **Command format:**
-
-`ipmitool power off`
-
-  * **Example: Power off using IPMI command**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525431.jpg)
-
-
-**BMC Web UI**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525432.jpg)
-
-**Redfish**
-
-  * **Command format:**
-        
-        curl -s -k -X POST
-        https://<username>:<password>@<BMC
-        IP>/redfish/v1/Systems/system/Actions/ComputerSystem.Reset -H
-        "Content-Type: application/json" -d '{"ResetType":
-        "ForceOff"}'
-
-  * **Example: Power off using Redfish**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525433.jpg)
-
-
-**_**How to do power cycle** _ **
-
-This procedure provides instructions on how to perform a power cycle on a system.
-
-**IPMI Command**
-
-  * **Command format:**
-
-`ipmitool power cycle`
-
-  * **Example: Power cycle using IPMI command**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525434.jpg)
-
-
-**Redfish**
-
-  * **Command format:**
-        
-        curl -s -k -X POST
-        https://<username>:<password>@<BMC
-        IP>/redfish/v1/Systems/system/Actions/ComputerSystem.Reset -H
-        "Content-Type: application/json" -d '{"ResetType":
-        "PowerCycle"}'
-
-  * **Example: Power cycle using Redfish**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525435.jpg)
-
-
-**_**How to use LED to identify errors** _ **
-
-The BMC facilitates a range of LED functionalities, succinctly presented in the following Table:
-
-**LED Name** |  **Description** |  **State** |  **Color** |  **Control command**  
----|---|---|---|---  
-ID LED | Unit identified | Solid On or Blinking | Blue | IPMI “Chassis Identify”  
-Deactivated | Off | None  
-Healthy LED | System power on and healthy | Solid On | Green | None  
-BMC not ready | Fast Blinking (2Hz) | Green | None  
-System power off and healthy | Slow Blinking (0.5Hz) | Green | None  
-System fault | Solid On | Amber | None  
-Fan Fail LED | Fan failure | Solid On | Amber | None  
-Fan healthy | Off | None | None  
-  
-The following are the System Fault conditions:
-
-  * Fan Failure.
-
-  * The component temperature reading exceeds the threshold.
-
-  * PSU not detected.
-
-  * PSU Failure.
-
-
-The following are the Fan Failure conditions:
-
-  * Fan not detected.
-
-  * BMC unable to reading fan speed.
-
-  * Fan speed reading is 0.
-
-  * Fan speed below the threshold.
-
-
-**_**How to configure BMC network** _ **
-
-OpenBMC provides diverse interface, including Web GUI, Redfish, and IPMI commands, to facilitate users in the comprehensive management of the BMC's network. 
-
-Network configuration encompasses a multitude of facets, encompassing tasks such as configuring IP addresses, IP addresses source, gateways, and other pivotal elements. 
-
-The following are some fundamental network configuration features:
-
-  * IP Addresses Source
-
-
-  * IP Address
-
-  * Gateways
-
-
-**IPMI Command**
-
-  * Set IP address source command format:
-
-
-    
-    
-    Ipmitool lan <channel> set ipsrc
-    <source>channel:eth0 = 1**Note:** Here,
-    <source> refers to the following:static = address manually
-    configured to be staticdhcp = address obtained by BMC running
-    DHCP
-
-  * Set channel IP address command format:
-
-
-    
-    
-    Ipmitool lan <channel> set ipaddr
-    <x.x.x.x>
-
-  * Set channel IP netmask command format:
-
-
-    
-    
-    Ipmitool lan <channel> set netmask
-    <x.x.x.x>
-
-**BMC Web GUI**
-
-Toggle DHCP button to enable or disable DHCP. After enabling DHCP, the IPv4 address will be automatically configured. When disabling DHCP, the IPv4 address will be manually configured. 
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525436.jpg)
-
-After disabling DHCP, it pops the “Add Static IPv4 address” window to configure the IPv4 address. In the "Add Static IPv4 Address" window, enter the IP address, gateway, and subnet mask. Click “Add” button to add the static IPV4 address. 
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525437.jpg)
-
-Click the "OK" button to apply the static IPv4 address configuration.
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525438.jpg)
-
-It will pop up an "Information" window, notifying the user to login to the BMC Web GUI using the new IP.
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525439.jpg)
-
-**Redfish**
-
-  * **Command format:**
-
-
-    
-    
-    curl -k -X PATCH
-    https://<username>:<password>@<BMC
-    IP>/redfish/v1/Managers/bmc/EthernetInterfaces/eth0 -H
-    "Content-Type:application/json" -d
-    '{"DHCPv4":{"DHCPEnabled":false},"IPv4StaticAddresses":[{"Address":"<ipaddr>","SubnetMask":"<subnetmask>","Gateway":"<gateway>"}]}'
-
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
-**Note** | 
-
-* * *
-
-If you want to set the network to DHCP, please set the DHCPEnabled field to true, or if you want to set the network to static, please set the DHCPEnabled field to false, and fill in ip address subnet mask and gateway in order. 
-
-* * *  
-  
----|---  
-  
-  * **Example:**
-
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525440.jpg)
-
-**_How to get BMC time_ **
-
-This procedure explains how to retrieve the BMC time, which provides the date and time information of the BMC.
-
-**IPMI Command**
-    
-    
-    ipmitool sel time get**Example:** Get BMC time
-    using IPMI command
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525441.jpg)
-
-**BMC Web UI**
-
-**Example:**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525442.jpg)
-
-**Redfish**
-
-  * **Command format:**
-        
-        curl -s -k -X GET
-        https://<username>:<password>@<BMC
-        IP>/redfish/v1/Managers/bmc | grep -i "DateTime"
-
-  * **Example: Get BMC time using Redfish**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525443.jpg)
-
-
-**How to set BMC time**
-
-This procedure explains how to set the BMC time, which allows you to synchronize the BMC's date and time with the desired values. 
-
-**IPMI Command**
-
-  1. Disable NTP
-
-`ipmitool raw 0x30 0x42 0x00`
-
-  2. Wait for NTP to be closed, about 15 seconds
-
-  3. Set BMC time
-         
-         ipmitool sel time set “mm/dd/yyyy
-         hh:mm:ss”
-
-
-**Example: Set BMC time using IPMI**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525444.jpg)
-
-**BMC Web UI:**
-
-  * **Example: Set BMC time using Web UI**
-
-Please look for setting in the left column of the Web UI, click it and select date and time.
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525445.jpg)
-
-
-**Redfish:**
-
-**Command:**
-
-  1. Disable NTP.
-         
-         curl -k -X PATCH
-         https://<username>:<password>@<BMC
-         IP>/redfish/v1/Managers/bmc/NetworkProtocol -H
-         "Content-Type:application/json" -d
-         '{"NTP":{"ProtocolEnabled":false}}'
-
-  2. Wait for NTP to be closed, about 15 seconds.
-
-  3. Set BMC time.
-         
-         curl -k -X PATCH
-         https://<username>:<password>@<BMC
-         IP>/redfish/v1/Managers/bmc/ -H "Content-Type:application/json"
-         -d '{"DateTime":"<yy-mm-dd hh:mm:ss>"}'
-
-
-**Example: Set BMC time using Redfish**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525446.jpg)
-
-**How to enable NTP time synchronization**
-
-This procedure provides instructions on how to enable NTP time synchronization on the BMC.
-
-**IPMI Command**
-
-`ipmitool raw 0x30 0x42 0x01`
-
-**Example: Enable NTP using IPMI**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525447.jpg)
-
-**BMC Web UI**
-
-  * **Example: Enable NTP using Web UI**
-
-The Manual option is set to the specified time, and the NTP option is to select the NTP server to automatically update the time. 
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525448.jpg)
-
-
-**Redfish**
-
-  * **Command format:**
-        
-        curl -k -X PATCH
-        https://<username>:<password>@<BMC
-        IP>/redfish/v1/Managers/bmc/NetworkProtocol -H
-        "Content-Type:application/json" -d
-        '{"NTP":{"ProtocolEnabled":true,"NTPServers":["NTP Server
-        Adderss"]}}'
-
-  * **Example: Enable NTP using Redfish**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525449.jpg)
-
-
-**How to enable/disable ssh/ipmi function**
-
-This procedure explains how to enable or disable the SSH (Secure Shell) and IPMI (Intelligent Platform Management Interface) functions within your system. By enabling these functions, you can gain remote access and management capabilities. Disabling them can help enhance security by limiting remote connectivity. 
-
-**BMC Web UI**
-
-![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525450.jpg)
 
 ---
 
-## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/m-Chapter-6-Troubleshooting-operating-system-issues.html
+## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/m-Chapter-6-Troubleshooting-operating-system-issues.html
+
+# Troubleshooting Operating System Issues
+
+This Troubleshooting operating system issues contains the following topics:
 
 ## Troubleshooting operating system issues 
 
@@ -1207,6 +606,10 @@ Topics:
   * Why do AMD Applications hang on Multi-GPU systems
 
   * How to update AMD MI300X UBB Firmware via BMC Console
+
+
+  * How to install the operation system using Virtual media - Ubuntu 22.04
+  * AMD GPU
 
 
 ### How to install the operation system using Virtual media - Ubuntu 22.04 
@@ -1254,6 +657,12 @@ Figure 1. Login BMC WebGUI  ![](/c/dam/en/us/td/i/500001-600000/520001-530000/52
 **Step 11** |  Once the installation completes, the server reboots again, this time booting from the installed operating system on the server's local disk.  |   
   
 ### AMD GPU
+
+  * How to add amdgpu driver to blacklist in Linux
+  * How to Install AMD MI300X ROCm and Driver in Ubuntu
+  * AMDGPU driver cause fatal error with AMD platform
+  * Why does the AMD application become unresponsive on multi-GPU systems
+
 
 #### How to add amdgpu driver to blacklist in Linux
 
@@ -1467,6 +876,9 @@ After rebooting, the iommu=pt and pci=noats parameters will be added to the kern
 Figure 7. Disable IOMMU  ![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525482.jpg)
 
 
+  * How to uninstall ROCm
+
+
 ##### How to uninstall ROCm
 
 **Solution** : 
@@ -1526,11 +938,27 @@ BOOT_IMAGE=/vmlinuz-5.15.0-101-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
 
 ---
 
-## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/m-Chapter-7-BIOS-Related-Issue.html
+## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/m-Chapter-7-BIOS-Related-Issue.html
 
-## BIOS Related Issue   
+# BIOS Related Issue  
   
+This BIOS Related Issue contains the following topics:
+
+## BIOS Related Issue 
+
 When an issue occurs (error or loss), please refer to the following sections for initial troubleshooting. 
+
+  * System Power-on issue
+  * POST issue
+  * Boot with no display
+  * OS boot issue
+  * Error occur after a BIOS setting is changed
+  * Failure occurs during ROM flash via BMC web
+  * PCIe Slot
+  * Post
+  * Agesa POST code
+  * BIOS POST code
+
 
 ### System Power-on issue
 
@@ -1660,6 +1088,15 @@ ex. FS1\EFI\BOOT> BOOTX64.EFI
 
 ### PCIe Slot
 
+  * Fixed PFA for PCIE Slots
+  * NVME
+  * CEM PCIE Slot
+  * GPU Slot
+  * OCP Slot
+  * PCIE information in the Setup Page
+  * PCIE information for the M.2s in the Setup
+
+
 #### Fixed PFA for PCIE Slots
 
 When an issue occurs (error or loss), please refer to the table below to find out the problematic device. 
@@ -1765,6 +1202,18 @@ Figure 1. Debug Panel  ![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-
 Note: We have both Agesa and BIOS Post codes during POST. The Agesa Post code is sent by the Agesa code and consists of 2 bytes, such as 0xE000. On the other hand, the BIOS Post Code is sent from an AMI-based BIOS and is only one byte. This implies that the high byte is not relevant for the BIOS Post code, such as 0xXX00. 
 
 ### Agesa POST code
+
+  * StartProcessorTestPoints
+  * Memory test points
+  * PMU Test Points
+  * Original Post code
+  * CPU test points
+  * Extended memory test point
+  * Gnb Earlier init
+  * PMU test points
+  * ABL0 test points
+  * ABL5 test points
+
 
 #### StartProcessorTestPoints
 
@@ -2195,6 +1644,11 @@ Note: We have both Agesa and BIOS Post codes during POST. The Agesa Post code is
   
 ### BIOS POST code
 
+  * SEC Phase
+  * PEI Phase
+  * DXE Phase
+
+
 #### SEC Phase
 
 0xXX00 | Not used  
@@ -2346,5 +1800,13 @@ Note: We have both Agesa and BIOS Post codes during POST. The Agesa Post code is
 0xXXDA | Boot Option is failed (StartImage returned error)  
 0xXXDB | Flash update is failed  
 0xXXDC | Reset protocol is not available
+
+---
+
+## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/b_c885a-m8-server-troubleshooting-guide_index.html
+
+> ## Contents  
+>   
+> ## Index
 
 ---

@@ -8,107 +8,11 @@
 | **HTML Title** | Cisco UCS X440p PCle Node Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-x440p-pcle-node-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:22:36 |
+| **Fetched on** | 2026-07-02 13:08:35 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x440p-pcle-node-ds.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS X440p PCle Node Data Sheet 
-
-Data Sheet
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x440p-pcle-node-ds.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x440p-pcle-node-ds.pdf) (276.1 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:September 4, 2024
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x440p-pcle-node-ds.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x440p-pcle-node-ds.pdf) (276.1 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:September 4, 2024
-
-#### Table of Contents
-
-  * Product overview
-  * Features and benefits
-  * Product specifications
-  * System requirements
-  * Ordering information
-  * Warranty information
-  * Product sustainability
-  * Cisco and Partner Services
-  * Cisco Capital
-  * Document history
-
 
 ` `
 
@@ -252,7 +156,7 @@ New or Revised Topic |  Described In |  Date
   
 ### Our experts recommend
 
-  * [AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html "AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper")
+  * [Cisco UCS with Red Hat OpenShift Virtualization and Citrix for VDI White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-red-hat-osv-citrix-vdi-wp.html "Cisco UCS with Red Hat OpenShift Virtualization and Citrix for VDI White Paper")
   * [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
   * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
@@ -260,105 +164,522 @@ New or Revised Topic |  Described In |  Date
 ### Learn more
 
 
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+---
+
+## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-red-hat-osv-citrix-vdi-wp.html
+
+` `
+
+Introduction
+
+Organizations are increasingly modernizing their virtualization strategies to support a mix of traditional and cloud-native workloads, with Cisco® architecture—particularly the Cisco Unified Computing System™ (Cisco UCS®)—at the core of on-premises infrastructure. The addition of the Cisco UCS X-Series, a cloud-managed, modular system, to the Cisco UCS portfolio helps meet the evolving requirements of virtualized environments by enhancing operational efficiency, agility, and scalability through an adaptable, future-ready design. It combines the functionalities of both blade and rack servers, offering compute density, storage capacity, and expandability in a single system. The latest introduction of Cisco UCS M8 servers has achieved top performance results across several key categories, enabling faster application response times, improved user experiences, and the ability to support the most demanding virtualized workloads.
+
+This white paper explores the deployment of Red Hat OpenShift Virtualization on Cisco UCS X-Series M8 servers to deliver a modern virtualization platform for Citrix Virtual Apps and Desktops environments. By integrating virtual machine management with Kubernetes orchestration, this solution provides a consistent and scalable foundation for running virtualized workloads alongside containerized applications, simplifying operations and enabling a streamlined path toward application modernization. As organizations evaluate alternatives to traditional virtualization platforms, OpenShift Virtualization provides a consistent operational model that enables virtual machines and containerized applications to coexist on a common infrastructure platform.
+
+Key features of [Cisco UCS X210c M8](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.html) Compute Node:
+
+● **Processors:** supports up to two Intel® Xeon® 6700P or 6500P processors, providing high performance and flexibility for various workloads
+
+● **Memory:** enhances performance for data-intensive applications with up to 8 TB of main memory with 32x 256 GB DDR5 6400 MT/s DIMMs
+
+● **Storage:** supports a versatile range of storage options, including hot-swappable Small-Form-Factor (SFF) E3.SNVMe, SAS/SATA, and NVMe drives
+
+● **Management:** is managed through Cisco Intersight®, including cloud-based lifecycle management
+
+Red Hat OpenShift Virtualization
+
+Red Hat OpenShift Virtualization helps organizations migrate, run, and manage traditional [Virtual Machines (VMs)](https://www.redhat.com/en/topics/virtualization/what-is-a-virtual-machine) alongside modern workloads on a unified, hybrid-cloud application platform. OpenShift Virtualization is built on KubeVirt technology, enabling organizations to run virtual machines and containers side by side on a common Kubernetes platform.
+
+As an included feature of [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift), OpenShift Virtualization lets you respond to change with confidence, keep critical VMs running reliably, and move forward on a single foundation that supports innovation, growth, and emerging requirements, such as for AI. With OpenShift Virtualization, you can:
+
+● Migrate and run VMs with cloud-native benefits
+
+● Manage VMs alongside containers and serverless workloads with a unified set of tools
+
+● Modernize your workloads at your own pace by adopting containers, implementing microservices, or integrating AI, without disrupting your traditional VMs
+
+For additional details, refer to the Red Hat OpenShift Virtualization documentation [here](https://www.redhat.com/en/technologies/cloud-computing/openshift/virtualization?sc_cid=RHCTN0250000435994&gclsrc=aw.ds&gad_source=1&gad_campaignid=23377801914&gbraid=0AAAAADsbVMRtt1fjCTehw0M03aTEpkEgY&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB79MpwPt_Hvl5-ZQta6QcXgUDuG2u80jvVT-1_6zCYSITJH7AgXT2sIaAsCYEALw_wcB).
+
+Citrix Virtual Apps and Desktops 2603
+
+Citrix Virtual Apps and Desktops 2603 provides the following features and enhancements:
+
+● **New features and enhancements:** improved user experience with updates to the graphical interface and performance optimizations. Enhanced security features to protect data and ensure compliance with industry standards. Updates to the management and monitoring tools for better control and visibility.
+
+● **Support and compatibility:** extended support for the latest operating systems and compatibility with various client devices. Integration improvements with third-party applications and services.
+
+● **Bug fixes and stability improvements:** resolution of known issues from previous versions to enhance system stability and performance. Optimizations to reduce system resource consumption and improve overall efficiency.
+
+For additional details, refer to the Citrix documentation [here](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/2402-ltsr/whats-new/2402-ltsr-initial-release). 
+
+Citrix integration considerations for OpenShift Virtualization
+
+Red Hat OpenShift Virtualization provides a flexible platform for deploying Citrix Virtual Apps and Desktops infrastructure and desktop workloads. During validation activities, several configuration considerations were identified that can help simplify Citrix integration and improve operational consistency. These recommendations are based on deployment and testing performed using Red Hat OpenShift Virtualization and Citrix Virtual Apps and Desktops 2603.
+
+**OpenShift Virtualization readiness**
+
+Before deploying Citrix infrastructure components or desktop workloads, organizations should verify that OpenShift Virtualization and its supporting services are fully operational. This includes validation of storage classes, DataVolume functionality, and network connectivity for virtual machine workloads. Establishing a stable OpenShift Virtualization foundation helps ensure successful provisioning and lifecycle management of Citrix virtual machines.
+
+**Citrix service account configuration**
+
+Citrix hosting connections require appropriate permissions within the OpenShift environment to manage virtual machines and supporting resources. Prior to integrating Citrix with OpenShift Virtualization, administrators should validate service account permissions and confirm access to the resources required for desktop provisioning and management operations.
+
+**Virtual machine configuration best practices**
+
+During validation testing, virtual machines configured with explicitly defined CPU and memory resources provided the most consistent integration experience with Citrix management components. Cisco recommends using standardized virtual machine templates with clearly defined hardware characteristics rather than relying on automatically assigned resource profiles.
+
+Recommended practices include:
+
+● Explicit CPU and memory assignments
+
+● Consistent virtual machine templates
+
+● Standardized operating system images
+
+● VirtIO-based storage devices
+
+● Dedicated master images for desktop catalog creation
+
+These practices simplify image management and improve desktop provisioning consistency.
+
+**Master image preparation**
+
+A properly prepared master image is critical to successful desktop deployment. The master image should include the target operating system, Citrix Virtual Delivery Agent (VDA), current operating system updates, required enterprise applications, and all necessary virtualization drivers and guest tools.
+
+Prior to desktop catalog creation, the master image should be validated, updated, and preserved as a dedicated source image. This approach simplifies ongoing desktop lifecycle management and reduces operational risk during future updates.
+
+**Validation and operational testing**
+
+Before onboarding production users, organizations should validate the complete desktop delivery workflow, including virtual machine provisioning, desktop registration, user authentication, application delivery, and desktop launch operations. Cisco also recommends establishing baseline performance metrics using workload simulation tools such as Login Enterprise to characterize user experience and platform scalability.
+
+These practices help ensure a successful Citrix deployment while providing a repeatable operational framework for future growth and lifecycle management activities.
+
+Deploying Red Hat OpenShift Virtualization on Cisco UCS
+
+Cisco UCS X-Series servers provide a scalable and highly automated platform for deploying Red Hat OpenShift Virtualization. By combining Cisco UCS X210c M8 Compute Nodes, Cisco fabric interconnects, Cisco Nexus® networking, and Cisco Intersight management, organizations can establish a consistent infrastructure foundation for running both virtual machines and containerized applications.
+
+Red Hat OpenShift Virtualization extends the capabilities of Red Hat OpenShift by enabling organizations to run and manage traditional virtual machines alongside Kubernetes-native workloads on a unified platform. Built on KubeVirt technology, OpenShift Virtualization provides enterprise virtualization features, including virtual machine lifecycle management, live migration, high availability, and integration with Kubernetes-native automation and operations.
+
+**Cisco UCS infrastructure preparation**
+
+Prior to deploying OpenShift Virtualization, Cisco UCS infrastructure should be configured using Cisco Intersight policies and profiles to ensure consistent server configuration across all cluster nodes.
+
+Recommended Cisco UCS configuration tasks:
+
+● Configure Cisco UCS service profiles for OpenShift control plane and worker nodes
+
+● Apply BIOS policies optimized for virtualization workloads
+
+● Configure network connectivity for management, storage, workload, and migration traffic
+
+● Deploy redundant network paths through Cisco fabric interconnects
+
+● Configure boot policies and local storage for OpenShift installation
+
+● Verify firmware consistency across all cluster nodes
+
+Cisco Intersight simplifies these activities through centralized policy management and automated server provisioning.
+
+**OpenShift cluster deployment**
+
+The validated environment uses Red Hat OpenShift deployed on Cisco UCS X210c M8 compute nodes using the Red Hat Assisted Installer. This deployment method simplifies cluster creation by providing guided installation workflows, automated node discovery, and infrastructure validation.
+
+A typical OpenShift deployment consists of:
+
+● Three control plane nodes
+
+● Three or more worker nodes
+
+● Optional infrastructure nodes for platform services
+
+The Red Hat Assisted Installer generates a discovery image that is booted on each Cisco UCS server. Once discovered, nodes are assigned roles and configured as part of the cluster deployment process.
+
+After installation, administrators can validate cluster health using the OpenShift web console and Command-Line Interface (CLI).
+
+**Enabling OpenShift Virtualization**
+
+OpenShift Virtualization is installed using the OpenShift OperatorHub.
+
+To enable OpenShift Virtualization:
+
+1. Access OperatorHub from the OpenShift Console.
+
+2. Install the OpenShift Virtualization Operator.
+
+3. Create and configure the HyperConverged resource.
+
+4. Verify successful deployment of KubeVirt components.
+
+5. Configure storage classes for virtual machine workloads.
+
+6. Configure networking for virtual machine connectivity and live migration.
+
+Following deployment, OpenShift Virtualization provides a complete virtual machine management platform integrated into the OpenShift administration experience.
+
+**Virtual machine readiness**
+
+Once OpenShift Virtualization is operational, administrators can create virtual machine templates, deploy guest operating systems, and establish standardized images for Citrix infrastructure components and desktop workloads.
+
+The platform supports:
+
+● Windows and Linux virtual machines
+
+● Virtual machine templates
+
+● Live migration
+
+● High availability
+
+● Snapshot and cloning operations
+
+● Integration with enterprise storage platforms
+
+These capabilities enable organizations to deploy Citrix Virtual Apps and Desktops components using familiar virtual machine workflows while benefiting from the automation, scalability, and operational consistency of Kubernetes.
+
+**Operational benefits**
+
+Deploying Red Hat OpenShift Virtualization on Cisco UCS provides organizations with a modern virtualization platform capable of supporting both traditional and cloud-native workloads. Combined with Cisco Intersight, administrators gain centralized visibility into infrastructure health, lifecycle management, and policy compliance across the entire OpenShift environment.
+
+This architecture provides a foundation for virtualization modernization while preserving enterprise-class availability, scalability, and operational simplicity for Citrix Virtual Apps and Desktops deployments.
+
+Solution architecture
+
+The validated solution architecture consists of four primary layers: the user access layer, the Citrix control plane, the OpenShift Virtualization platform, and the Cisco UCS infrastructure layer.
+
+At the user access layer, end users connect through Citrix Workspace and Citrix Gateway services to access virtual desktops and published applications. The Citrix control plane provides desktop brokering, authentication, licensing, monitoring, and application delivery services through components such as Citrix Delivery Controllers, StoreFront, and Citrix Director.
+
+The OpenShift Virtualization layer provides the virtual machine runtime environment. Citrix infrastructure services and Citrix Virtual Delivery Agents (VDAs) are deployed as virtual machines managed by OpenShift Virtualization and scheduled across Cisco UCS worker nodes. This architecture enables virtual machines and containerized workloads to coexist on a common Kubernetes platform while maintaining operational separation where required.
+
+Underlying the virtualization platform, Cisco UCS X210c M8 compute nodes provide the compute resources necessary to support enterprise-scale Citrix deployments. Cisco Intersight provides centralized visibility, policy-based automation, and lifecycle management capabilities that simplify the deployment and ongoing operation of OpenShift Virtualization clusters across distributed environments.
+
+Figure 1 provides an overview of the solution’s physical architecture.
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-red-hat-osv-citrix-vdi-wp.docx/_jcr_content/renditions/ucs-red-hat-osv-citrix-vdi-wp_0.png)
+
+Figure 1. 
+
+Physical architecture 
+
+Table 1 lists the software and hardware versions used in the solution described in this document.
+
+**Table 1. **Software and firmware versions
+
+Component |  Version  
+---|---  
+**Cisco Nexus C9332D-GX2B Switch** |  10.5(3)  
+**Cisco UCSX-X210c-M8 Compute Node** |  6.0(1.250194)  
+**Red Hat OpenShift** |  4.18  
+**Red Hat OpenShift Virtualization** |  4.18  
+**Citrix Virtual Apps and Desktops 7 2603** |  2603.0.100  
+  
+Citrix Virtual Apps and Desktops on Red Hat OpenShift Virtualization with Cisco UCS
+
+This section provides an overview of the deployment architecture using Cisco UCS X210c M8 Compute Servers for Virtual Desktop Infrastructure (VDI) environments leveraging Red Hat OpenShift Virtualization, and Citrix Virtual Apps and Desktops 2603 for enterprise end users. The document focuses on the use case of OpenShift Virtualization within VDI deployments and does not cover detailed design or configuration of individual components.
+
+While this paper does not present exhaustive testing results, it demonstrates the successful deployment of Citrix Virtual Apps and Desktops on a Cisco UCS X210c M8–based platform incorporating Red Hat OpenShift Virtualization. This provides a validated starting point for organizations looking to modernize their virtualization strategy. Readers are encouraged to follow Citrix, Red Hat, and Cisco documentation to guide their own implementations. Cisco has a long history of supporting a broad range of VDI management solutions, and this validation highlights Cisco UCS X210c M8 Compute Nodes with OpenShift Virtualization as a compelling infrastructure choice for VDI deployments. We encourage further exploration of this approach.
+
+Logical architecture
+
+The logical architecture used in this white paper illustrates Red Hat OpenShift Virtualization running on Cisco UCS X210c M8 Compute Nodes as the foundation for delivering Citrix Virtual Apps and Desktops (CVAD) 2603 environments. OpenShift Virtualization provides the virtual machine runtime environment for Citrix infrastructure components and Virtual Delivery Agent (VDA) desktops, enabling organizations to manage virtual machines alongside containerized applications on a unified Kubernetes-based platform.
+
+The architecture consists of a user access layer, a Citrix control plane layer, an OpenShift Virtualization layer, and the underlying Cisco UCS infrastructure. Citrix Delivery Controllers, StoreFront servers, licensing services, and supporting infrastructure components are deployed as virtual machines managed by OpenShift Virtualization, while Citrix desktop workloads are provisioned as VDA virtual machines across Cisco UCS worker nodes. This architecture is illustrated in Figure 2.
+
+This design is intended to provide a reference architecture and validation framework for deploying Citrix Virtual Apps and Desktops on Red Hat OpenShift Virtualization using Cisco UCS X210c M8 Compute Nodes. The solution demonstrates how organizations can modernize virtualization infrastructure while maintaining the performance, scalability, and operational capabilities required for enterprise virtual desktop environments.
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-red-hat-osv-citrix-vdi-wp.docx/_jcr_content/renditions/ucs-red-hat-osv-citrix-vdi-wp_1.png)
+
+Figure 2. 
+
+Logical architecture 
+
+**Table 2. **Citrix software versions
+
+Component |  Version  
+---|---  
+**Citrix Virtual Apps and Desktops 2603** |  2603.0.100  
+**Citrix Virtual Apps and Desktops 2603 – StoreFront** |  2603.0.100  
+**Citrix Virtual Apps and Desktops 2603– Virtual Delivery Agent** |  2603.0.100  
+  
+Testing
+
+It is essential to test the virtual desktops to ensure they fully meet the expected performance and accessibility standards. Validation focused on the deployment and operation of Citrix Virtual Apps and Desktops 2603 running on Red Hat OpenShift Virtualization hosted on Cisco UCS X210c M8 Compute Nodes. Testing included virtual machine provisioning, Citrix infrastructure deployment, desktop registration, user authentication, desktop launch operations, and workload characterization using Login Enterprise. The objective was to verify functional operation, operational consistency, and end-user experience on Cisco UCS infrastructure.
+
+One of the tools available for assessing Virtual Desktop Infrastructure (VDI) environments is Login Enterprise, developed by Login VSI. This industry-standard software simulates human-centric workloads to benchmark the capacity and performance of Virtual Desktop Infrastructure (VDI) solutions. Cisco Technical Marketing utilizes Login Enterprise to evaluate Cisco VDI architectures for Cisco Validated Designs (CVDs).
+
+About Login VSI
+
+Cisco Technical Marketing used Login Enterprise as part of the validation process to characterize the performance and user experience of the Citrix Virtual Apps and Desktops environment running on Red Hat OpenShift Virtualization and Cisco UCS. Login Enterprise is an industry-recognized workload simulation tool that generates repeatable user activity to evaluate the performance, scalability, and responsiveness of Virtual Desktop Infrastructure (VDI) environments.
+
+Using representative user workloads, Login Enterprise enables validation of desktop provisioning, user logon performance, application launch times, and overall desktop responsiveness under controlled test conditions. This approach provides a consistent methodology for evaluating VDI environments across a range of user workloads and deployment scenarios.
+
+For additional information about Login Enterprise, visit [www.loginvsi.com](http://www.loginvsi.com).
+
+This testing approach with Login Enterprise is well suited for continuous validation, load testing, and application compatibility testing. It simulates representative end-user workloads to evaluate the performance, scalability, and responsiveness of virtual desktop infrastructures, providing a repeatable methodology for validating user experience across a range of desktop workloads and deployment scenarios. 
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-red-hat-osv-citrix-vdi-wp.docx/_jcr_content/renditions/ucs-red-hat-osv-citrix-vdi-wp_2.png)
+
+Figure 3. 
+
+Load testing with Login Enterprise test dashboard
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-red-hat-osv-citrix-vdi-wp.docx/_jcr_content/renditions/ucs-red-hat-osv-citrix-vdi-wp_3.png)
+
+Figure 4. 
+
+Load testing with Login Enterprise results
+
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-red-hat-osv-citrix-vdi-wp.docx/_jcr_content/renditions/ucs-red-hat-osv-citrix-vdi-wp_4.png)
+
+Figure 5. 
+
+Performance details for VDI sessions running on Red Hat OpenShift Virtualization
+
+Key findings
+
+Validation testing demonstrated the successful deployment of Citrix Virtual Apps and Desktops 2603 on Red Hat OpenShift Virtualization running on Cisco UCS X210c M8 Compute Nodes.
+
+Key findings included:
+
+● Successful deployment and operation of Citrix infrastructure services on OpenShift Virtualization 
+
+● Consistent desktop registration and launch performance 
+
+● Successful virtual machine lifecycle operations through OpenShift Virtualization 
+
+● Simplified infrastructure management through Cisco Intersight 
+
+● Efficient utilization of Cisco UCS compute resources 
+
+● A scalable architecture capable of supporting future virtualization modernization initiatives
+
+Summary
+
+Red Hat OpenShift Virtualization provides organizations with a modern platform for running traditional virtual machines alongside cloud-native applications on a unified Kubernetes-based architecture. Combined with Citrix Virtual Apps and Desktops and Cisco UCS X-Series servers, organizations can deliver scalable, secure, and high-performance virtual desktop environments while reducing operational complexity.
+
+Cisco UCS X210c M8 Compute Nodes provide the compute performance, memory scalability, and operational consistency required for enterprise desktop virtualization deployments. Through Cisco Intersight, organizations can implement policy-based infrastructure management and lifecycle automation that simplifies deployment and ongoing operations across OpenShift Virtualization environments.
+
+The validation presented in this paper demonstrates the successful deployment of Citrix Virtual Apps and Desktops on Red Hat OpenShift Virtualization running on Cisco UCS infrastructure. The resulting architecture provides organizations with a flexible and scalable platform for virtualization modernization while maintaining the performance, availability, and operational capabilities required for enterprise virtual desktop environments.
+
+Author
+
+Jeff Nichols, Technical Marketing Engineer, Cisco Systems, Inc.
+
+### Our experts recommend
+
+  * [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
+  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
+
+
+### Learn more
+
 
 ---
 
-## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html
+## Page 3: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html
 
-  * Skip to content
-  * Skip to search
-  * Skip to footer
+` `
 
+Overview
 
-# AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper
+VMware vSAN ReadyNodes are for organizations that want the most flexibility, the lowest up-front cost, and direct control over their HCI software configuration. IDC[1] data shows that HCI systems powered by VMware are number one in market share, and Cisco offers vSAN ReadyNodes for Cisco UCS® servers. ReadyNodes are jointly certified by VMware and Cisco to provide IT customers enterprise-grade storage performance and reliability. Cisco uses vSAN ReadyNodes with many server configurations from high-capacity hybrid systems, to fully composable solutions, to the highest-performance all-NVMe nodes. VMware vSAN ReadyNodes are jointly certified to meet performance and reliability benchmarks from VMware and Cisco.
 
-White Paper
+Benefits
 
-Save
+● **Improve TCO:** by leveraging industry-standard server hardware, VMware vSAN ReadyNodes offer a cost-effective solution for customers who want to build a Hyper-Converged Infrastructure (HCI) environment without the high costs typically associated with proprietary hardware.
 
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html) to Save Content 
+● **Simplify deployment:** VMware vSAN ReadyNodes are preconfigured, validated, and certified to run VMware vSAN software, making it easy and quick to deploy the solution in your data center.
 
-Download
+● **Increased flexibility:** customers have the flexibility to choose the configuration that best suits their specific requirements while still benefiting from VMware vSAN ReadyNodes' optimized and validated configuration.
 
-Print
+● **Reduce risk:** the pre-validated and tested hardware configuration of VMware vSAN ReadyNodes helps reduce the risk of compatibility issues, ensuring that customers can deploy the solution with confidence.
 
-### Available Languages
+Why Cisco UCS X-Series for VMware vSAN
 
+Companies have traditionally chosen rack form-factor servers for VMware vSAN deployments because of the requirements for fast networks, storage capacity, or GPUs. The Cisco UCS X-Series easily meets these requirements. The Cisco UCS X-Series provides the functionalities of both blade and rack servers by offering compute density, storage capacity, and expandability in a single system, embracing a wide range of workloads in your data center.
 
-### Download Options
+With six drives, up to 15.3TB each, customers have plenty of storage capacity, up to 91TB per server node. You can quickly and seamlessly add GPUs to any server node with Cisco UCS X-Series X-Fabric Technology. And only Cisco offers a 100G unified fabric. Unified fabric allows customers to easily wire the Cisco UCS X9508 Chassis for needed bandwidth regardless of type – data, storage, or management.
 
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.pdf) (3.3 MB)   
-View with Adobe Reader on a variety of devices
+Cisco UCS X-Series Modular System is managed from the cloud using Cisco Intersight®. It is designed to meet the needs of modern applications and improve operational efficiency, agility, and scale through an adaptable, future-ready, modular design.
 
+Cisco UCS X-Series can reduce risk by using pre-validated and tested hardware configuration of vSAN ReadyNodes. This simplifies deployment, making it easy and quick to deploy the solution for your hyper-converged infrastructure.
 
-Updated:April 22, 2026
+Learn more
 
-Bias-Free Language
+For additional information, visit Cisco UCS X-Series Modular System: <https://cisco.com/go/ucsx>
 
-### Bias-Free Language
+VMware vSAN ReadyNode [Cisco certified servers](https://compatibilityguide.broadcom.com/search?program=vsanesa&persona=live&column=vendor&order=asc&partnerName=%5BCisco%5D&vsanEsaReadynodeVendors=%5BCisco%5D&activePage=1&activeDelta=20)
 
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+  
 
 
-Save
+* * *
 
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html) to Save Content 
+[1] IDC 1Q2023 Worldwide Quarterly Converged Systems Tracker, March 2023 
 
-Download
+### Our experts recommend
 
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.pdf) (3.3 MB)   
-View with Adobe Reader on a variety of devices
+  * [AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html "AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper")
+  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
 
-Updated:April 22, 2026
+### Learn more
 
-#### Table of Contents
 
-  * Executive summary
-  * Product overview
-  * Scalable network fabric for AI connectivity
-  * MLPerf benchmark overview
-  * MLPerf Inference models validated
-  * MLPerf Inference benchmarking methodology
-  * Performance data for the Cisco UCS X580p PCIe Node with NVIDIA H200 NVL PCIe GPUs
-  * Performance data for NVIDIA RTX Pro 6000 PCIe GPUs
-  * Performance summary
-  * Appendix: Test environment
-  * Conclusion
-  * For more information
+---
 
+## Page 4: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.html
+
+` `
+
+Un/Box the future with the Cisco UCS X-Series Modular System and Cisco Intersight®. Embrace an adaptable, future-ready, and cloud-operated system to simplify IT and innovate at the speed of software.
+
+Product overview
+
+The Cisco UCS X-Series Modular System simplifies your data center, adapting to the unpredictable needs of modern applications while also providing for traditional scale-out and enterprise workloads. It reduces the number of server types to maintain, helping to improve operational efficiency and agility as it also helps reduce complexity. Powered by the Cisco Intersight cloud-operations platform, it shifts your thinking from administrative details to business outcomes—with hybrid-cloud infrastructure that is assembled from the cloud, shaped to your workloads, and continuously optimized.
+
+Features and benefits
+
+Main features
+
+The Cisco UCS X210c M8 Compute Node is the third generation of compute node to integrate into the Cisco UCS X-Series Modular System. It delivers performance, flexibility, and optimization for deployments in data centers, in the cloud, and at remote sites. This enterprise-class server offers market-leading performance, versatility, and density without compromise for workloads. Up to eight compute nodes can reside in the 7-Rack-Unit (7RU) Cisco UCS X9508 Chassis, offering one of the highest densities of compute, I/O, and storage per rack unit in the industry.
+
+The Cisco UCS X210c M8 provides these main features:
+
+● CPU: up to two Intel® Xeon® 6 Scalable Processors with up to 86 cores per processor and up to 336MB of Level 3 cache per CPU
+
+● Memory: up to 8 TB of main memory with 32x 256 GB DDR5-6400 DIMMs and support for MRDIMMs at up to 8000 MT/s
+
+● Storage: 
+
+◦ Up to nine hot-pluggable EDSFF E3.S NVMe drives with a new passthrough front mezzanine controller option new to the Cisco UCS X210c M8
+
+◦ Up to six hot-pluggable, Solid-State Drives (SSDs), or Non-Volatile Memory Express (NVMe) 2.5-inch drives with a choice of enterprise-class Redundant Array of Independent Disks (RAIDs) or passthrough controllers with four lanes each of PCIe Gen 5 connectivity
+
+◦ Up to two M.2 SATA drives or two M.2 NVMe drives for flexible boot and local storage capabilities
+
+● Optional front mezzanine GPU module: the Cisco UCS® front mezzanine GPU module is a passive PCIe Gen 4 front mezzanine option with support for up to two U.2 or U.3 NVMe drives and two HHHL GPUs
+
+● Optional PCIe node connectivity for additional GPU support: the Cisco UCS X210c M8 Compute Node can be paired with the Cisco UCS X440p PCIe Node supporting up to two x16 full-height, full-length dual slot GPUs, or four x8 full-height, full-length single-slot GPUs
+
+● mLOM virtual interface cards:
+
+◦ Cisco UCS VIC (Virtual Interface Card) 15420 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 50 Gbps (2x 25Gbps) of unified fabric connectivity to each of the chassis’s Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server with secure boot technology
+
+◦ Cisco UCS VIC 15230 occupies the server's modular LAN on motherboard (mLOM) slot, enabling up to 100 Gbps of unified fabric connectivity to each of the chassis’s Intelligent Fabric Modules (IFMs) for 100 Gbps connectivity per server with secure boot technology
+
+● Optional mezzanine card:
+
+◦ Cisco UCS VIC 15422, a 5th Gen virtual interface card, can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric technology. An included bridge card extends this VIC's 4x 25 Gbps of network connections through IFM connectors, bringing the total bandwidth to 100 Gbps per fabric (for a total of 200 Gbps per server)
+
+◦ Cisco UCS PCI mezzanine card for Cisco UCS X-Fabric can occupy the server's mezzanine slot at the bottom rear of the chassis. This card's I/O connectors link to Cisco UCS X-Fabric modules and enable connectivity to the Cisco UCS X440p PCIe Node
+
+◦ All VIC mezzanine cards also provide I/O connections from the Cisco UCS X210c Compute Node to the Cisco UCS X440p PCIe Node
+
+● Security: The server supports an optional Trusted Platform Module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions
+
+Product specifications
+
+**Table 1. **Product specifications
+
+Item |  Specifications  
+---|---  
+**Processors** |  Up to 2x Intel Xeon 6 Scalable Processors (1 or 2)  
+**Memory** |  Up to 32 DDR5 DIMM slots (up to 16 DIMMS per CPU): 16, 32, 64, 128, 256GB RDIMM at up to 6400 MT/s and support of 32, 64B MRDIMM at up to 8000 MT/s  
+**mLOM** |  mLOM slot for Cisco UCS VIC 15420 or Cisco VIC 15230  
+**Mezzanine adapter (rear)** |  Cisco UCS 15422 mezzanine card with UCS VIC 15000 bridge connector compatible with Cisco UCS VIC 15420  
+**Mezzanine Module (front)** |  **Front mezzanine module options:** ● EDSFF E3.S NVMe passthrough controller  ● NVMe passthrough controller (for U.2 and U.3 NVMe drives only)  ● RAID controller with 4GB cache (for SSD and mix of SSD and NVMe)  ● GPU front mezzanine  ● No front mezzanine   
+**Internal storage and GPU** |  **Front mezzanine storage options:** ● Up to 9x EDSFF E3.S NVMe drives  ● Up to 6x 2.5-inch SAS and SATA RAID-compatible SSDs  ● Up to 6x 2.5-inch NVMe PCIe drives  ● A mixture of up to six SAS/SATA or NVMe drives  **Note:** Drives require a RAID or passthrough controller in the front mezzanine module slot. **Boot drive options:** ● Mini storage module with 2x M.2 (up to 960GB per drive) SATA drives with Hardware RAID  ● Mini storage module with 2x M.2 (up to 960GB per drive) NVMe drives in pass-through mode  **GPU options:** ● GPU front mezzanine module with 2x 2.5-inch NVMe drives and 2x GPUs   
+**Management** |  ● Cisco Intersight software (SaaS, virtual appliance, and private virtual appliance)   
+**Temperature: operating** |  50° to 95°F (10° to 35°C)  
+**Temperature: nonoperating** |  -40° to 149°F (–40° to 65°C)  
+**Humidity: operating** |  5% to 93% noncondensing  
+**Humidity: nonoperating** |  5% to 93% noncondensing  
+**Altitude: operating** |  0 to 10,000 ft (0 to 3000m); maximum ambient temperature decreases by 1°C per 300m  
+**Altitude: nonoperating** |  40,000 ft (12,000m)  
+  
+System requirements
+
+**Table 2. **System requirements
+
+Item |  Requirements  
+---|---  
+**X-Series chassis** |  Cisco UCS X9508 Chassis  
+**Fabric interconnect** |  ● Cisco UCS 6454, 64108, and 6536 fabric interconnects  ● Cisco UCS Fabric Interconnect 9108 100G   
+**Cisco Intersight** |  ● Intersight Managed Mode (minimum Essentials license per server)   
+  
+Ordering information
+
+Table 3 provides ordering information for the Cisco UCS X210c M8.
+
+**Table 3. **Ordering information
+
+Part number |  Description  
+---|---  
+**UCSX-210C-M8** |  Cisco UCS 210c M8 Compute Node w/o CPU, memory, storage, mezzanine  
+**UCSX-210C-M8-U** |  Cisco UCS 210c M8 Compute Node UPG w/o CPU, memory, storage, mezzanine  
+**UCSX-210C-M8-CH** |  DISTI: Cisco UCS 210c M8 Compute Node w/o CPU, memory, storage, mezzanine  
+  
+For information about installing or upgrading your server, see the [Hardware Installation guide](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-x-series-modular-system/products-installation-guides-list.html). For ordering information, see the Cisco UCS X210c M8 Compute Node spec sheet.
+
+Warranty information
+
+The Cisco UCS X210c M8 Compute Node has a three-year Next-Business-Day (NBD) hardware warranty and a 90-day software warranty.
+
+Augmenting the Cisco Unified Computing System™ (Cisco UCS) warranty, Cisco Smart Net Total Care® and Cisco Solution Support services are part of Cisco's technical services portfolio. Cisco Smart Net Total Care combines Cisco's industry-leading and award-winning foundational technical services with an extra level of actionable business intelligence that is delivered to you through the smart capabilities in the Cisco Smart Net Total Care portal. 
+
+For more information, please refer to <https://www.cisco.com/c/en/us/support/services/smart-net-total-care/index.html>.
+
+Cisco Solution Support includes both Cisco® product support and solution-level support, resolving complex issues in multivendor environments on average 43 percent more quickly than with product support alone. Cisco Solution Support is a critical element in data-center administration, helping rapidly resolve any issue encountered while maintaining performance, reliability, and return on investment.
+
+This service centralizes support across your multivendor Cisco environment for both our products and solution partner products that you have deployed in your ecosystem. Whether there is an issue with a Cisco product or with a solution partner product, just call us. Our experts are the primary point of contact and own the case from first call to resolution. 
+
+For more information, please refer to <https://www.cisco.com/c/en/us/services/technical/solution-support.html>. 
+
+Product sustainability
+
+Information about Cisco’s Environmental, Social, and Governance (ESG) initiatives and performance is provided in Cisco’s CSR and sustainability [reporting](https://www.cisco.com/c/dam/m/en_us/about/csr/esg-hub/_pdf/purpose-report-2024.pdf).
+
+**Table 4. **Cisco environmental sustainability information
+
+Sustainability topic |  Reference  
+---|---  
+**General** |  Information on product-material-content laws and regulations |  [Materials](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/materials.html)  
+Information on electronic waste laws and regulations, including our products, batteries, and packaging |  [WEEE Compliance](https://www.cisco.com/c/en/us/about/product-innovation-stewardship/product-recycling/weee-compliance.html)  
+Information on product takeback and reuse program |  [Cisco Takeback and Reuse Program](https://www.cisco.com/c/en/us/about/takeback-and-reuse.html)  
+Sustainability inquiries |  Contact: [csr_inquiries@cisco.com](mailto:csr_inquiries@cisco.com)  
+**Material** |  Product packaging weight and materials |  Contact: [environment@cisco.com](mailto:environment@cisco.com)  
+  
+Product environmental information
+
+Product environmental information for users per Commission Regulation (EU) 2019/424 <https://www.cisco.com/web/dofc/25726544.pdf>
+
+<https://www.cisco.com/web/dofc/25726545.pdf>
+
+Cisco and partner services
+
+Cisco and our industry-leading partners deliver services that accelerate your transition to a Cisco UCS X-Series Modular System solution. Cisco Unified Computing Services can help you create an agile infrastructure, accelerate time to value, reduce costs and risks, and maintain availability during deployment and migration. After deployment, our services can help you improve performance, availability, and resiliency as your business needs evolve and help you further mitigate risk. 
+
+For more information, visit <https://www.cisco.com/go/unifiedcomputingservices>.
+
+Cisco Capital
+
+Flexible payment solutions to help you achieve your objectives
+
+Cisco Capital®makes it easier to get the right technology to achieve your objectives, enable business transformation and help you stay competitive. We can help you reduce the total cost of ownership, conserve capital, and accelerate growth. In more than 100 countries, our flexible payment solutions can help you acquire hardware, software, services and complementary third-party equipment in easy, predictable payments. [Learn more](https://www.cisco.com/go/financing).
+
+### Our experts recommend
+
+  * [Cisco UCS with Red Hat OpenShift Virtualization and Citrix for VDI White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-red-hat-osv-citrix-vdi-wp.html "Cisco UCS with Red Hat OpenShift Virtualization and Citrix for VDI White Paper")
+  * [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
+  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
+
+
+### Learn more
+
+
+---
+
+## Page 5: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html
 
 ` `
 
@@ -767,248 +1088,9 @@ For more information
 ### Learn more
 
 
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
 ---
 
-## Page 3: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance
-
-At a Glance
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.pdf) (280.1 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:July 21, 2023
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.pdf) (280.1 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:July 21, 2023
-
-#### Table of Contents
-
-  * Overview
-  * Benefits
-  * Why Cisco UCS X-Series for VMware vSAN
-  * Learn more
-
-
-` `
-
-Overview
-
-VMware vSAN ReadyNodes are for organizations that want the most flexibility, the lowest up-front cost, and direct control over their HCI software configuration. IDC[1] data shows that HCI systems powered by VMware are number one in market share, and Cisco offers vSAN ReadyNodes for Cisco UCS® servers. ReadyNodes are jointly certified by VMware and Cisco to provide IT customers enterprise-grade storage performance and reliability. Cisco uses vSAN ReadyNodes with many server configurations from high-capacity hybrid systems, to fully composable solutions, to the highest-performance all-NVMe nodes. VMware vSAN ReadyNodes are jointly certified to meet performance and reliability benchmarks from VMware and Cisco.
-
-Benefits
-
-● **Improve TCO:** by leveraging industry-standard server hardware, VMware vSAN ReadyNodes offer a cost-effective solution for customers who want to build a Hyper-Converged Infrastructure (HCI) environment without the high costs typically associated with proprietary hardware.
-
-● **Simplify deployment:** VMware vSAN ReadyNodes are preconfigured, validated, and certified to run VMware vSAN software, making it easy and quick to deploy the solution in your data center.
-
-● **Increased flexibility:** customers have the flexibility to choose the configuration that best suits their specific requirements while still benefiting from VMware vSAN ReadyNodes' optimized and validated configuration.
-
-● **Reduce risk:** the pre-validated and tested hardware configuration of VMware vSAN ReadyNodes helps reduce the risk of compatibility issues, ensuring that customers can deploy the solution with confidence.
-
-Why Cisco UCS X-Series for VMware vSAN
-
-Companies have traditionally chosen rack form-factor servers for VMware vSAN deployments because of the requirements for fast networks, storage capacity, or GPUs. The Cisco UCS X-Series easily meets these requirements. The Cisco UCS X-Series provides the functionalities of both blade and rack servers by offering compute density, storage capacity, and expandability in a single system, embracing a wide range of workloads in your data center.
-
-With six drives, up to 15.3TB each, customers have plenty of storage capacity, up to 91TB per server node. You can quickly and seamlessly add GPUs to any server node with Cisco UCS X-Series X-Fabric Technology. And only Cisco offers a 100G unified fabric. Unified fabric allows customers to easily wire the Cisco UCS X9508 Chassis for needed bandwidth regardless of type – data, storage, or management.
-
-Cisco UCS X-Series Modular System is managed from the cloud using Cisco Intersight®. It is designed to meet the needs of modern applications and improve operational efficiency, agility, and scale through an adaptable, future-ready, modular design.
-
-Cisco UCS X-Series can reduce risk by using pre-validated and tested hardware configuration of vSAN ReadyNodes. This simplifies deployment, making it easy and quick to deploy the solution for your hyper-converged infrastructure.
-
-Learn more
-
-For additional information, visit Cisco UCS X-Series Modular System: <https://cisco.com/go/ucsx>
-
-VMware vSAN ReadyNode [Cisco certified servers](https://compatibilityguide.broadcom.com/search?program=vsanesa&persona=live&column=vendor&order=asc&partnerName=%5BCisco%5D&vsanEsaReadynodeVendors=%5BCisco%5D&activePage=1&activeDelta=20)
-
-  
-
-
-* * *
-
-[1] IDC 1Q2023 Worldwide Quarterly Converged Systems Tracker, March 2023 
-
-### Our experts recommend
-
-  * [AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html "AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper")
-  * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
-
-
-### Learn more
-
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
----
-
-## Page 4: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x580p-pcie-node-ds.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS X580p PCIe Node Data Sheet
-
-Data Sheet
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x580p-pcie-node-ds.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x580p-pcie-node-ds.pdf) (1.9 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:March 16, 2026
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x580p-pcie-node-ds.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x580p-pcie-node-ds.pdf) (1.9 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:March 16, 2026
-
-#### Table of Contents
-
-  * Value statement
-  * Product overview
-  * Main features
-  * Product specifications
-  * System requirements
-  * Ordering information
-  * Warranty services
-  * Product sustainability
-  * Cisco and partner services
-  * Cisco Capital
-  * Document history
-
+## Page 6: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x580p-pcie-node-ds.html
 
 ` `
 
@@ -1187,7 +1269,7 @@ New or revised topic  |  Described in  |  Date
   
 ### Our experts recommend
 
-  * [AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html "AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper")
+  * [Cisco UCS with Red Hat OpenShift Virtualization and Citrix for VDI White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-red-hat-osv-citrix-vdi-wp.html "Cisco UCS with Red Hat OpenShift Virtualization and Citrix for VDI White Paper")
   * [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
   * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
@@ -1195,110 +1277,9 @@ New or revised topic  |  Described in  |  Date
 ### Learn more
 
 
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
 ---
 
-## Page 5: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-9516-x-fabric-module-ds.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS X9516 X-Fabric
-
-Data Sheet
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-9516-x-fabric-module-ds.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-9516-x-fabric-module-ds.pdf) (519.6 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:September 9, 2025
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-9516-x-fabric-module-ds.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-9516-x-fabric-module-ds.pdf) (519.6 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:September 9, 2025
-
-#### Table of Contents
-
-  * Product overview
-  * Key highlights:
-  * Features and benefits
-  * Product sustainability
-  * Product specifications
-  * System requirements
-  * Ordering information
-  * Warranty Information
-  * Warranty services
-  * Cisco and partner services
-  * Cisco Capital
-  * Flexible payment solutions to help you achieve your objectives
-  * Document history
-
+## Page 7: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-9516-x-fabric-module-ds.html
 
 ` `
 
@@ -1468,14 +1449,12 @@ Initial version |  Document |  August 2025
   
 ### Our experts recommend
 
-  * [AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/mlperf-inference-ucs-x580p-wp.html "AI Performance: MLPerf Inference on Cisco UCS X580p PCIe Node with NVIDIA H200 NVL and RTX Pro 6000 GPUs White Paper")
+  * [Cisco UCS with Red Hat OpenShift Virtualization and Citrix for VDI White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-red-hat-osv-citrix-vdi-wp.html "Cisco UCS with Red Hat OpenShift Virtualization and Citrix for VDI White Paper")
   * [Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-bp-vmware-vsan-aag.html "Cisco UCS X-Series Boosting Performance of VMware vSAN At-a-Glance")
   * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
 
 ### Learn more
 
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

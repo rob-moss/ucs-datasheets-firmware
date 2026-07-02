@@ -8,117 +8,11 @@
 | **HTML Title** | Cisco UCS 6536 Fabric Interconnect Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs6536-fabric-interconnect-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:23:36 |
+| **Fetched on** | 2026-07-02 13:08:54 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS 6536 Fabric Interconnect Data Sheet
-
-Data Sheet
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.pdf) (798.7 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:October 5, 2023
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-![Cisco DNA](/c/contentReuse/en/us/dm/100G-400G-offer-dg-2/_jcr_content/Grid/category_atl/layout-category-atl/spotlight_copy_copy.img.png/1703262306910.png)
-
-Upgrade to 100G or 400G optics and save.
-
-  * [Get your savings on optics](/c/en/us/products/interfaces-modules/transceiver-modules/optics-offers.html?oid=podoth031691)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs6536-fabric-interconnect-ds.pdf) (798.7 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:October 5, 2023
-
-#### Table of Contents
-
-  * Cisco Unified Computing System overview
-  * Product overview
-  * Features and benefits
-  * Product specifications
-  * Physical specifications
-  * Regulatory standards compliance: Safety and EMC
-  * Ordering information
-  * Warranty information
-  * Cisco environmental sustainability
-  * Cisco Services for Unified Computing
-  * Why Cisco?
-  * For more information
-  * Document history
-
 
 ` `
 
@@ -510,97 +404,9 @@ New or revised topic |  Described in |  Date
 ### Learn more
 
 
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
 ---
 
 ## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-5th-gen-unified-fabric-aag.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS 5th Generation Unified Fabric At-a-Glance
-
-At a Glance
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-5th-gen-unified-fabric-aag.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-5th-gen-unified-fabric-aag.pdf) (567.0 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:May 19, 2023
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-5th-gen-unified-fabric-aag.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-5th-gen-unified-fabric-aag.pdf) (567.0 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:May 19, 2023
-
-#### Table of Contents
-
-  * Product overview
-  * Benefits
-  * What it offers
-  * Learn more
-
 
 ` `
 
@@ -681,7 +487,5 @@ For more information on Cisco UCS 5th Generation Unified Fabric, visit <https://
 
 ### Learn more
 
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

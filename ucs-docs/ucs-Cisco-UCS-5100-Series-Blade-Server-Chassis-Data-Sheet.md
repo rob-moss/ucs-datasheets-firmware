@@ -8,109 +8,11 @@
 | **HTML Title** | Cisco UCS 5100 Series Blade Server Chassis Data Sheet |
 | **Source file** | `ucs-docs-raw/html/data_sheet_c78-526830.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:23:10 |
+| **Fetched on** | 2026-07-02 13:08:39 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS 5100 Series Blade Server Chassis Data Sheet
-
-[Back to Home](https://www.cisco.com/c/en/us/products/index.html)
-
-Data Sheet
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.pdf) (1.1 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:January 27, 2021
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.pdf) (1.1 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:January 27, 2021
-
-#### Table of Contents
-
-  * Cisco unified computing system overview
-  * Product overview
-  * Features and benefits
-  * Specifications
-  * Warranty information
-  * Cisco environmental sustainability
-  * Cisco unified computing services
-  * Why Cisco?
-  * Cisco Capital
-  * For more information
-
 
 ` `
 
@@ -246,7 +148,5 @@ For more information about the Cisco UCS 5100 Series Blade Server Chassis, visit
 
 ### Learn more
 
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

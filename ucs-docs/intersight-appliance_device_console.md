@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight Appliance Device Console |
 | **URL** | https://intersight.com/help/appliance/device_console |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260616155027767/docs/onprem/data/articles/device_console/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/onprem/data/articles/device_console/en/index.html |
 | **HTML Title** | Device Console |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_device_console.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:18:08 |
+| **Fetched on** | 2026-07-02 13:04:31 |
 
 ---
 
@@ -104,9 +104,30 @@ The Device Console UI consists of the following main elements:
 
   * [Diagnostic Data](/help/device_console#diagnostic_data_\(unified_edge\))
 
-  * A top navigation menu that contains the Help menu and Logout button.
+  * A top navigation menu that contains the Help menu and Profile menu.
 
 
+## Profile
+
+This table describes the Profile menu parameters.
+
+Property| Description  
+---|---  
+Username| Displays the username.  
+Role| Displays the role associated with the username.  
+User settings| Follow these steps to change the user language settings.
+
+  1. Choose Profile > User Settings.
+  2. Select your preferred language from the Language drop-down list.
+  * English
+  * Japanese
+  * Korean
+  * Chinese (Simplified)
+  3. Select Save.
+
+  
+Sign Out| Choose Profile > Sign Out to log out from the account.  
+  
 ## Device Connector
 
 Note:
@@ -283,6 +304,64 @@ Status| Displays the status of the chassis. The values can be:
 Model| Displays the chassis model.  
 Serial| Displays the host ID/serial number of the chassis.  
   
+**File and directory management** is a secure, web-based interface in the Device Console that allows you to upload, browse, download, and manage files and directories in supported storage locations.
+
+The storage feature provides these benefits:
+
+  * enables self-service file management without CLI access
+
+  * reduces dependency on manual or external tooling
+
+  * provides a scalable foundation for future removable storage support, and
+
+  * supports secure, chunked uploads for large files up to 2 GiB.
+
+
+**Storage Tab**
+
+The Storage tab displays the directory structure and operations for Unified Edge servers using Edge Chassis Management Controllers (eCMC).
+
+The table describes the parameters in the Storage tab.
+
+Parameter| Description  
+---|---  
+Partition| Name of the current workspace directory.Select the directory to view subdirectories or files on the device.  
+Size| Total file size of the directory.  
+Capacity| Percentage of used storage space.  
+  
+**Edit View**
+
+Select the gear icon to change the displayed table columns.
+
+Use these actions to manage the directory structure and operations for servers:
+
+Action| Description| Notes  
+---|---|---  
+New Directory| Creates a new directory.Enter a directory name and select Create.| You cannot create a new directory in the techsupport and core directories.  
+Upload| **Before you begin** The maximum file size for an upload is 2 GB.Follow these steps to upload a file.
+
+  1. Click Browse and select the file that you want to upload.
+  2. Decide whether to upload the file or cancel the action.Note:
+  * If you decide to upload the file, select Upload.
+  * If you decide to cancel the action, select Cancel.
+
+| You cannot upload files to the techsupport and core directories.  
+Download| Downloads the selected files to your browser.| The Download operation applies only to files.  
+Delete| Deletes a directory.| The directory must be empty before it can be deleted.  
+Copy / Move| To copy or move a directory or file:
+
+  1. In the Storage table view, select the directory and select Copy/Move.
+  2. Select Copy or Move.
+  3. Select the directory to copy or move.
+  4. Click Confirm.Note:Use the Search field to quickly locate specific files or directories in a large list.
+
+| You cannot copy or move a directory:
+
+  * if the source and destination are the same, or
+  * if permissions are restricted.
+
+  
+  
 ## Diagnostic Data (Unified Edge)
 
 From the Diagnostic Data tab, you can collect diagnostic data for servers and Edge Chassis Management Controller (eCMC) for troubleshooting and further analysis.
@@ -321,6 +400,39 @@ Monitor the tech support bundle generation status in the Oper State column. Upon
 This operation may take several minutes to complete. The downloaded file is saved in the default download location.
 
      5. To delete any bundle, click ellipsis (...) next to the bundle, then select Delete.
+
+
+## Administration (Unified Edge)
+
+Account lockout is a security feature that monitors consecutive incorrect login attempts for an account. This feature helps to keep the account secure by slowing down unauthorized access attempts. When the maximum allowed number of consecutive incorrect login attempts is reached, the account locks for the configured lockout duration. After this lockout duration, the account automatically unlocks. The count of incorrect attempts resets after the lockout duration.
+
+Note:
+
+The account lockout feature cannot be disabled.
+
+**Configure the account lockout settings**
+
+**Procedure**
+
+  1. Log in to the Device Console.
+
+  2. Select the Administration tab.
+
+  3. Review the current account lockout configuration.
+
+  * Allowed Attempts: The number of consecutive incorrect login attempts that will lock the account. The default value is 5.
+
+  * Lockout Period (minutes): The duration the account remains locked after reaching the maximum number of consecutive incorrect login attempts. The default value is 15.
+
+  4. Select Edit.
+
+  5. On the Account Lockout page.
+
+     1. Enter the number of Allowed Attempts. The valid range is from 1 to 20.
+
+     2. Enter the Lockout Period in minutes. The valid range is from 1 to 60.
+
+  6. Select Save.
 
 
 ## Accessing the Device Console (Fabric Interconnects)
@@ -619,16 +731,17 @@ These commands allow you to view general system information.
 
 Command| Description| Note  
 ---|---|---  
-`**show clock**`|  Displays the system date and time.| Setting the time on the FI requires NTP. NTP should be configured in the Device Console and in the NTP Policy of the Domain Profile.  
+`**show audit**`|  Displays the audit log of the Fabric Interconnect.| —  
 `**show cli history**`|  Displays the history of CLI commands run in the session.| —  
-`**show sshkey**`|  Displays the list of SSH public key of the host.| Not available for Unified Edge.  
+`**show clock**`|  Displays the system date and time.| Setting the time on the FI requires NTP. NTP should be configured in the Device Console and in the NTP Policy of the Domain Profile.  
+`**show file**` file-path| Displays the contents of a file.| Not available for Unified Edge.  
 `**show mgmt-ip-debug**`|  Displays the IP address and the interfaces on both the management and default namespaces.| Not available for Unified Edge.  
 `**show mgmt-ip-tables**`|  Displays the IP table entries on both the management and default namespaces.| Not available for Unified Edge.  
-`**show file**` file-path| Displays the contents of a file.| Not available for Unified Edge.  
+`**show mgmt-ipv6**`|  Displays the IPv6 management address.| Not available for Unified Edge.  
 `**show processes**`|  Displays a list of all processes that are currently running.| Not available for Unified Edge.  
-`**show audit**`|  Displays the audit log of the Fabric Interconnect.| —  
-`**show self-signed-certificate**`|  Shows self signed certificate.| —  
-`**scope**` <scope-name>| Changes scope.| Available only for Unified Edge.  
+`**show self-signed-certificate**`|  Shows self-signed certificate.| —  
+`**show sshkey**`|  Displays the list of SSH public key of the host.| Not available for Unified Edge.  
+`**scope**` <scope-name>| Changes scope to the specified scope name.| Available only for Unified Edge.  
   
 **Servers/Chassis/Switch/eCMC**
 
@@ -696,7 +809,15 @@ These commands cover various networking diagnostics, system management, and conf
 
 Command| Description| Note  
 ---|---|---  
-`**set management-network**` ip-address netmask/preix_length gateway| Configures management IP address, network mask, and gateway address on a Fabric Interconnect.| Not available for Unified Edge.  
+`**set management-network**` ip-address netmask/prefix_length gateway| Configures management IP address, network mask, and gateway address on a Fabric Interconnect.| Not available for Unified Edge.  
+`**set management-network ipv6**` ipv6-addr prefix-length gateway| Configures static IPv6 management address, network mask, and gateway address on a Fabric Interconnect.| Not available for Unified Edge.  
+`**set management-network ipv6 disable**`|  Disables IPv6 address on the mgmt0 port of Fabric Interconnect.| Not available for Unified Edge.  
+`**set management-network ipv6 slaac**` [ `**--iid**` eui64 | opaque ] [ `**--redirects**` enable | disable ]| Configures SLAAC IPv6 management address, network mask, and gateway address on a Fabric Interconnect.Note:
+
+  * The gateway is learned automatically from Router Advertisement in SLAAC mode.
+  * The redirects option is available only in SLAAC mode.
+
+| Not available for Unified Edge.  
 `**tail-mgmt-log**` module_name| Displays the management log of the services running on a Fabric Interconnect.| —  
 `**ssh**` host-name| Logs in to a host that supports SSH.| —  
 `**telnet**` host-name [port-num]| Logs in to a host that supports Telnet.| —  

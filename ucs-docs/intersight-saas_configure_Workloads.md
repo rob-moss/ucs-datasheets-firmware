@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Workloads guide |
 | **URL** | https://intersight.com/help/saas/configure/Workloads |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260616155027767/docs/cloud/data/articles/features/workloads/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/articles/features/workloads/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_Workloads.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:17:37 |
+| **Fetched on** | 2026-07-02 13:03:59 |
 
 ---
 
@@ -39,3 +39,7 @@ Navigate to Configure > Workloads to open the workloads table view. This page sh
 
   * Instances—An instance represents the actual application of a configuration to a specific endpoint device as defined by a deployment. For more information, see [Instances](/help/configure/Workloads#instances).
 
+
+Note:
+
+When workload configuration changes remove server VLANs or eCMC VLANs, Cisco Intersight handles the required change-management sequence during deployment, so users do not need to create an intermediate workload deployment version only for VLAN removal.

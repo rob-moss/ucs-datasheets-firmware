@@ -8,83 +8,11 @@
 | **HTML Title** | Performance Tuning Best Practices Guide for Cisco UCS M7 Platforms |
 | **Source file** | `ucs-docs-raw/html/ucs-m7-platforms-wp.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:18:24 |
+| **Fetched on** | 2026-07-02 13:04:47 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/ucs-m7-platforms-wp.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Performance Tuning Best Practices Guide for Cisco UCS M7 Platforms
-
-White Paper
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/ucs-m7-platforms-wp.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/ucs-m7-platforms-wp.pdf) (630.7 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:June 2, 2023
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/ucs-m7-platforms-wp.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/ucs-m7-platforms-wp.pdf) (630.7 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:June 2, 2023
-
-#### Table of Contents
-
-  * Purpose and scope
-  * What you will learn
-  * BIOS tuning scenarios
-  * Tuning for general-purpose workloads
-  * Tuning for enterprise workloads
-  * Cisco UCS BIOS options
-  * Processor settings
-  * Memory settings
-  * Power and performance configuration
-  * Fan Control Policy (CIMC/IMM)
-  * BIOS settings for Cisco UCS M7 servers
-  * BIOS recommendations for various general-purpose workloads
-  * Additional BIOS recommendations for enterprise workloads
-  * Conclusion
-  * For more information
-
 
 ` `
 
@@ -745,7 +673,5 @@ For more information about Cisco UCS C-Series, and X-Series M7 servers, see the 
 
 ### Learn more
 
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

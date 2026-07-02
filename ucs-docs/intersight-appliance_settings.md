@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight Appliance Settings |
 | **URL** | https://intersight.com/help/appliance/settings |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260616155027767/docs/onprem/data/articles/settings/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/onprem/data/articles/settings/en/index.html |
 | **HTML Title** | Appliance Settings |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_settings.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:18:06 |
+| **Fetched on** | 2026-07-02 13:04:30 |
 
 ---
 
@@ -354,79 +354,57 @@ The Upload Appliance Software screen displays.
 
 You can track the upload progress by clicking on the Requests icon. Once the installation completes, you can view the status of the installation in the table under the Intelligence Update History tab by navigating to Settings > Software.
 
-## Configuring Email Notifications for Intersight Virtual Appliance Software Updates
-
-Intersight Virtual Appliance allows you to configure email notifications when a new software update or a new patch update becomes available for installation and when a new software update or a patch update is completed.
-
-Note:
-
-Ensure that you have configured SMTP settings before proceeding to configure email notifications for software updates. For information on how to configure SMTP settings, see [Configuring SMTP Settings for Email Notifications](/help/appliance/settings#configuring_smtp_settings_for_email_notifications).
-
-  1. Log into Intersight Virtual Appliance as a user with an account administrator role.
-
-  2. Choose Settings > System > Appliance Updates.
-
-  3. Click Update Settings.
-
-  4. Enable Email Notifications under Software Update Notifications.
-
-  5. Choose when to send email notifications from the following options:
-
-  * Updates Are Ready to Install
-
-  * Updates Are Complete
-
-  6. Enter up to 3 valid emails.
-
-  7. Click Save.
-
-
-Based on your selection for the notifications, emails are sent when an appliance software update or a patch update becomes available for installation and when a software update or a patch update is completed. To ensure that the configured users receive email notifications, and the emails do not end up in their Spam folder, it is recommended that the recipients add the sender's email address as per the SMTP configuration settings, to their "**approved senders** " list within their email client.
-
 ## Backing Up Data
 
-Backing up of Intersight Virtual Appliance regularly is essential. Without regular backups, there is no automatic way to reconstruct the configuration settings, and recreating the profiles and policies. You can perform a backup once a day using a scheduled backup or create a backup on demand. Intersight Virtual Appliance enables you to take a full state backup of the data in the appliance and store it on a remote server. If there is a total site failure or other disaster recovery scenarios, the restore capability enables you to do a full state system restore from the backed-up system data.
+Backing up Intersight Virtual Appliance regularly is essential. Without regular backups, there is no automatic way to reconstruct configuration settings and recreate profiles and policies.
+
+You can use the following methods to protect Intersight Virtual Appliance:
+
+  * VM snapshots—A VM snapshot is not a true backup unless you also copy it to a remote location. Snapshots are quick to create and restore, but they can become corrupted if they are taken while the VM is running. Always create application backups in addition to VM snapshots.
+
+  * Application backups—Application backups capture the database and other data that are required to fully restore the appliance. If an application backup completes successfully, you can recover the appliance without the corruption risks that are associated with VM snapshots.
+
+
+You can perform a backup once a day using a scheduled backup or create a backup on demand. Intersight Virtual Appliance supports full-state backups that can be saved to a remote server or to a local machine. In a site failure or other disaster recovery scenario, you can use the backup file to perform a full-state recovery of the appliance.
 
 Note:
 
-An appliance installer is required to restore the appliance from a backup. If a backup is taken from appliance release version N, it can only be restored using the latest installer that is older than or equal to version N. For example:
+  * Backup files do not include metrics data. To back up metrics data, take a snapshot of the metrics node VM.
+
+  * When you capture a snapshot of the Intersight Virtual Appliance VM, note the following storage size specifications:
+
+  * **Without Metrics Collection** —The snapshot size on disk is 180 GB.
+
+  * **With Metrics Collection Enabled** —The snapshot size on disk exceeds 1 TB.
+
+For more information, see [Supported Configuration Limits](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_appliance_overview.html#reference_d1b_nhj_sjb).
+
+  * There is no difference between backups on a multi-node appliance and backups on a single-node appliance. Backup occurs at the cluster level and not at the node level. The backup originates from one node, but it is not restricted to a specific node.
+
+
+Restore Requirements—An appliance installer is required to restore the appliance from a backup. If a backup is taken from appliance release version N, it can only be restored using the latest installer that is older than or equal to version N. For example:
 
   * If the backup of your appliance release version is 1.1.0-0, you need the latest appliance installer version that is older than or equal to 1.1.0-0, which is 1.1.0-0.
 
   * If the backup of your appliance release version is 1.1.1-1, you need the latest appliance installer version that is older than or equal to 1.1.1-1, which is 1.1.1-0.
 
 
-Hence, it is recommended that you retain the appliance installer for the backup that you are creating. For more information, see [Recovering Intersight Connected Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7) and [Recovering Intersight Private Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18).
+Cisco recommends that you retain the appliance installer that corresponds to each backup you create. For more information, see [Recovering Intersight Connected Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7) and [Recovering Intersight Private Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18).
 
-You can select one of the following options for backing up data:
+You can use one of the following backup options:
 
-  * Create Backup—Creates a full state backup of the data on demand. You can save the backed-up data on a remote server. For detailed instructions, see the Creating Backup section.
+  * Create Backup—Creates an on-demand full-state backup and saves it to a remote server or a local machine. If the backup file is saved to a local machine, note that the maximum number of downloadable local backups is five.
 
-  * Schedule Backup—Schedules a full state periodic backup of the data in the appliance, based on the schedule. You can save the backed-up data on a remote server. For detailed instructions, see the Scheduling Backup section.
+  * Backup Schedule—Configures a scheduled full-state backup and saves it to a remote server.
 
-
-Note:
-
-There is no difference between a backup that is running on a multi-node appliance versus one that is running on a single-node appliance. The backup is done at the cluster level and not at the node level. The backup originates from one node, but there is no restriction on which node the backup originates from.
-
-Note:
-
-  * When you take a backup of the Intersight Virtual Appliance, the metrics collection data is not backed up. Take a snapshot of the metrics node VM to back up the metrics data.
-
-  * When you capture a snapshot of the Intersight Virtual Appliance VM, note the following storage size specifications:
-
-  * **Without Metrics Collection** : The snapshot size on disk is 180 GB.
-
-  * **With Metrics Collection Enabled** : The snapshot size on disk exceeds 1 TB.
-
-For more information, see the Resource Requirements section in [Cisco Intersight Virtual Appliance and Intersight Assist Getting Started Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5).
+  * Backup Now—Initiates an immediate backup that runs independently of the configure backup schedule. This option can be triggered only when a **Backup Schedule** is already configured.
 
 
 ## Creating a Backup
 
-You can create a full state periodic backup of the Intersight Virtual Appliance, and save the backed-up file on a remote server.
+You can create a full-state backup of the Intersight Virtual Appliance and save the file to a remote server or a local machine. If you save the backup file to a local machine, note that the maximum number of downloadable local backups is five. When you attempt to create a sixth backup, the UI displays a confirmation prompt. After you acknowledge the prompt, the system deletes the oldest local backup entry from the backup table to accommodate the new backup.
 
-To create a backup, do the following:
+To create a backup:
 
   1. Log into Intersight Virtual Appliance as a user with account administrator role.
 
@@ -438,91 +416,97 @@ The Backup window displays.
 
   4. Enter the following details:
 
-  * Protocol—Communication protocol option used in the backup process. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol) and SFTP (Secure File Transfer Protocol) for backup. Enter the details of the remote server where you want to save the backed-up data.
+  * Type—Backup destination type. Intersight Virtual Appliance currently supports SCP (Secure Copy Protocol), SFTP (Secure File Transfer Protocol), CIFS (Common Internet File System), and Local for backup.
 
-  * Remote Port—Remote TCP port on the backup server (applicable only for SCP and SFTP).
+Depending on the type that you select (SCP, SFTP, CIFS, or Local), enter the following fields as needed:
 
-  * Remote Host—The remote host for saving the backup files. Both Hostname and IP address are supported.
+  * Remote Port—Remote TCP port on the backup server. This field applies only to SCP and SFTP.
 
-  * Remote Path—Directory where the backup files are saved.
+  * Remote Host—Remote host where the backup file is saved. Hostname and IP address are supported.
+
+  * Remote Path—Directory where the backup file is saved.
 
 Note:
 
-CIFS share names must contain alpha-numeric characters only and must conform to the regular expression such as ^(\w+)(/\w+)*/?$. It cannot contain spaces. In addition, when specifying folders under the CIFS share, forward slash (/) must be used as a separator. For example, backupshare/Intersight/Daily and backupshare/Monthly.
+CIFS share names must contain only alphanumeric characters and must conform to the regex _^(\w+)(/\w+)*/?$_. They cannot contain spaces or backtick symbol _`_. When specifying folders under the CIFS share, use the forward slash _/_ as a separator. For example: _backupshare/Intersight/Daily_ or _backupshare/Monthly_.
 
-Also, since the regular expression share names does not include a preceding forward slash, ensure that you enter the CIFs share name without an initial forward slash. For example, <share1/subdirectory1>.
+Because the regex does not allow for a preceding forward slash, do not include an initial forward slash when you enter the CIFS share name. For example: _share1/subdirectory1_.
 
-  * Filename—Name of the backup file.
+  * File Prefix—Prefix for the backup file name. This is a mandatory field for local backup.
 
-  * Username—Username for authenticating with the backup server.
+  * Username—Username for authenticating to the backup server.
 
-  * Password—Password for authenticating with the backup server.
+  * Password—Password for authenticating to the backup server. The password must not contain the backtick symbol _`_.
 
-  * Password Confirmation—Reenter the password to complete validation.
+  * Password Confirmation—Reenter the password to confirm it.
 
-  5. Click Start Backup.
+  5. Click Create.
 
 
-## Scheduling Backup
+If you select Local, the backup file is generated on the appliance and then made available for download through your browser.
 
-Schedule Backup enables you to schedule a periodic weekly backup of the data in the Intersight Appliance.
+## Backup Schedule
+
+Backup Schedule enables you to configure a periodic backup of the data in Intersight Virtual Appliance. Note that local backups cannot be scheduled.
+
+To configure a backup schedule for the first time:
 
   1. Log into Intersight Virtual Appliance as a user with account administrator role.
 
   2. Choose Settings > System > Backups.
 
-  3. Click Schedule Backup.
+  3. Under Backup Schedule, click Configure.
 
-The Schedule Backup window displays.
+The Configure Backup Schedule screen appears.
 
-  4. On the Schedule Backup window, enable Use Backup Schedule.
-
-If you disable this option, you must re-enable the Use Backup Schedule option to schedule a backup.
-
-  5. Provide the following details to complete creating the Backup Schedule:
+  4. Enter the following information:
 
   * Backup Schedule
 
-  * Day of Week—Specify the day of the week when you want to schedule a data backup or select Daily.
+  * Day of Week—Select the day on which to run the backup, or select Daily.
 
-  * Time of Day—Specify the time on the selected day when you want to schedule a data backup. The Time of Day follows the browser time of your session and displays your local time of the day.
+  * Time of Day—Specify when the backup runs. This value uses the browser time of your current session and is displayed in your local time zone.
 
   * Backup Destination
 
-  * Protocol—Communication protocol used in the backup process. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol) and SFTP (Secure File Transfer Protocol) for backup.
+  * Type—Backup destination type. Intersight Virtual Appliance currently supports SCP (Secure Copy Protocol), SFTP (Secure File Transfer Protocol), and CIFS (Common Internet File System).
 
-  * Remote Port—Remote TCP port on the backup server (applicable only for SCP and SFTP).
+Depending on your selection (SCP, SFTP, or CIFS), enter the following fields as needed.
 
-  * Remote Host—The remote host for saving the backup files. Both Hostname and IP address are supported.
+  * Remote Port—Remote TCP port on the backup server. This field applies only to SCP and SFTP.
 
-  * Remote Path—Directory location where the backup files are saved.
+  * Remote Host—Remote host where the backup file is saved. Hostname and IP address are supported.
+
+  * Remote Path—Directory location where the backup file id saved.
 
 Note:
 
-CIFS share names must contain alpha-numeric characters only and must conform to the regular expression such as ^(\w+)(/\w+)*/?$. It cannot contain spaces. In addition, when specifying folders under the CIFS share, forward slash (/) must be used as a separator. For example, backupshare/Intersight/Daily and backupshare/Monthly.
+CIFS share names must contain only alphanumeric characters and must conform to the regex _^(\w+)(/\w+)*/?$_. They cannot contain spaces or backtick symbol _`_. When specifying folders under the CIFS share, use the forward slash _/_ as a separator. For example: _backupshare/Intersight/Daily_ or _backupshare/Monthly_.
 
-Also, since the regular expression share names does not include a preceding forward slash, ensure that you enter the CIFs share name without an initial forward slash. For example, <share1/subdirectory1>.
+Because the regex does not allow for a preceding forward slash, do not include an initial forward slash when you enter the CIFS share name. For example: _share1/subdirectory1_.
 
-  * Filename—Name of the backup file
+  * File Prefix—Prefix for the backup file name.
 
-  * Username—Username for authenticating with the backup server.
+  * Username—Username for authenticating to the backup server.
 
-  * Password—Password for authenticating with the backup server.
+  * Password—Password for authenticating to the backup server. The password must not contain the backtick symbol _`_.
 
-  * Password Confirmation—Reenter the password
+  * Password Confirmation—Reenter the password to confirm it.
 
-  * Backup Retention—Number of backups to retain
+  * Backup Retention—Number of backups to retain.
 
-Click Enable Backups Retention to enter the number of backups to retain on the remote server. The default number is 15. You can enter a number from 1 to 100.
+Turn on Enable Backup Retention to specify how many backups to retain on the remote server. The default number is 1. You can enter a number from 1 to 100.
 
 Note:
 
 In order for the backup retention limits to function properly while using the SCP protocol, ensure that the SFTP protocol is also enabled on your remote host.
 
-For more information regarding the various backup retention scenarios, see [Backup Retention Scenarios](c_ia_backup_retention_scenarios.html).
+For more information regarding the various backup retention scenarios, see [Backup Retention Scenarios](/help/appliance/settings#backup_retention_scenarios).
 
-  6. Click Schedule Backup to complete the process.
+  5. Click Configure.
 
+
+After the initial backup schedule is configured, you can edit or delete it by navigating to Settings > System > Backups.
 
 ## Backup Retention Scenarios
 
@@ -590,6 +574,35 @@ Note:
 
      3. Click Save.
 
+
+## Configuring Email Notifications for Intersight Virtual Appliance Software Updates
+
+Intersight Virtual Appliance allows you to configure email notifications when a new software update or a new patch update becomes available for installation and when a new software update or a patch update is completed.
+
+Note:
+
+Ensure that you have configured SMTP settings before proceeding to configure email notifications for software updates. For information on how to configure SMTP settings, see [Configuring SMTP Settings for Email Notifications](/help/appliance/settings#configuring_smtp_settings_for_email_notifications).
+
+  1. Log into Intersight Virtual Appliance as a user with an account administrator role.
+
+  2. Choose Settings > System > Appliance Updates.
+
+  3. Click Update Settings.
+
+  4. Enable Email Notifications under Software Update Notifications.
+
+  5. Choose when to send email notifications from the following options:
+
+  * Updates Are Ready to Install
+
+  * Updates Are Complete
+
+  6. Enter up to 3 valid emails.
+
+  7. Click Save.
+
+
+Based on your selection for the notifications, emails are sent when an appliance software update or a patch update becomes available for installation and when a software update or a patch update is completed. To ensure that the configured users receive email notifications, and the emails do not end up in their Spam folder, it is recommended that the recipients add the sender's email address as per the SMTP configuration settings, to their "**approved senders** " list within their email client.
 
 ## Data Collected from Intersight Connected Virtual Appliance
 
@@ -799,7 +812,7 @@ It is highly recommended that you do not enable this option as it will quickly o
 
 ## Understanding Syslog Messages
 
-As an Account Administrator, you can configure a syslog server for an Intersight Appliance to receive syslog messages for the following:
+As an Account Administrator, you can configure a syslog server for Intersight Virtual Appliance to receive syslog messages for the following:
 
   * Web Server Access logs
 
@@ -812,9 +825,9 @@ To configure the syslog server:
 
   1. Log in as an Account Administrator.
 
-  2. Choose Settings > Networking Syslog.
+  2. Choose Settings > Networking > Syslog.
 
-  3. Configure the syslog server to include WebServer Access logs, Audit logs and/or Alarm logs.
+  3. Configure the syslog server to include WebServer Access logs, Audit logs, and Alarms.
 
 
 You may export these logs as a CSV file.
@@ -828,7 +841,7 @@ You may export these logs as a CSV file.
 Table 4. Header DescriptionField| Description  
 ---|---  
 Timestamp| The date and time at the source when the syslog message is created. The format varies based on the configuration defined in the syslog server.For example: `Aug 24 19:11:58`  
-Hostname| The hostname of the Intersight Appliance that sent the syslog message.For example: `example01.intersight.vapp`  
+Hostname| The hostname of the appliance that sent the syslog message.For example: `example01.intersight.vapp`  
 Tag| Determines the type of the syslog message.Possible values are:
 
   * Intersight-OnPrem [Web Server]: For the Web Server Access logs.
@@ -873,7 +886,7 @@ Field| Description
 
 Syslog messages for Audit Logs are generated as a result of one of the following operations:
 
-  * User operations in Intersight Appliance, such as creating a policy, creating a profile, or claiming a target.
+  * User operations in appliance, such as creating a policy, creating a profile, or claiming a target.
 
   * Admin user operations on the Intersight Appliance Maintenance Shell.
 
@@ -882,7 +895,7 @@ Syslog messages for Audit Logs are generated as a result of one of the following
 
 **Example 1:**
 
-The following example describes an Audit log message generated due to a user operation in Intersight Appliance.
+The following example describes an Audit log message generated due to a user operation in the appliance.
 
 **Format:** `<Timestamp> <Hostname> <Process_name>[PID]: <Intersight_timestamp> Object Type: <object type> Object: <Object_ID> Event: <Event_type> Request: <inputs> User ID:<username> Client IP: <IP_address> Session ID: <Session_ID>`
 
@@ -892,11 +905,11 @@ The following example describes an Audit log message generated due to a user ope
 
 Where, _Aug 24 19:11:58 example01.intersight.vapp Intersight-OnPrem_ is the Header. For more information, see the **Header Description** section.
 
-The following table describes the fields used in the Payload of an Audit log message generated due to a user operation in Intersight Appliance:
+The following table describes the fields used in the Payload of an Audit log message generated due to a user operation in the appliance:
 
 Field| Description  
 ---|---  
-Timestamp| The date and time at which the syslog message is generated at source. It is the data and time of the event collected by the syslog client running in the Intersight Appliance.  
+Timestamp| The date and time at which the syslog message is generated at source. It is the data and time of the event collected by the syslog client running in the appliance.  
 Hostname| The name of the appliance that sent the syslog message.  
 Process_name| Indicates that the syslog message is collected by Intersight.  
 PID| The process ID that collected the message from Intersight.  
@@ -923,7 +936,7 @@ The following example describes an Audit log generated due to a Admin user opera
 
 **Format:**
 
-<Timestamp> <Log_level> [Process:PID] <Command>
+<Timestamp> <Terminal_User: ${user_name}> <Terminal: ${tty}> <Remote_IP: ${remote_ip}> <Command>
 
 **Sample**
     
@@ -935,24 +948,33 @@ The following example describes an Audit log generated due to a Admin user opera
 
 Where, _Aug 24 19:28:39 example01.intersight.vapp Intersight-OnPrem [Admin Shell]_ is the Header. For more information, see the **Header Description** section.
 
-The following table describes the fields used in the Payload of an Audit log generated due to a user operation on Intersight Appliance Maintenance Shell.
+The following table describes the fields used in the Payload of an Audit log generated due to a user operation in Intersight Appliance Maintenance Shell.
 
 Field| Description  
 ---|---  
-Timestamp| The date and time when the action is performed.  
-Log_level| The severity of the log.The default value is INFO.  
-Process| The name of the process that handles the Maintenance Shell operation.The default value is `diag.py`.  
-PID| The process ID which created the event.  
-Command| The type of operation performed in Intersight Appliance Maintenance Shell.For example:
-
-  * RUN_PING
-  * RUN_CONNECTIVITY_TEST
-
+Timestamp| The date and time the action was performed.  
+Application name| The application generating the log.  
+Terminal_User| The user account used to launch the diagnostic utility.  
+Terminal| The terminal used to launch the diagnostic utility.  
+Remote_IP| The IP address from which the connection was made. If the diagnostic utility was launched from the hypervisor console, this field displays `console`.  
+Command| The operation performed in Intersight Appliance Maintenance Shell. Examples include `RUN_PING` and `RUN_CONNECTIVITY_TEST`.  
   
-  
+All commands launched from the admin-readonly shell are logged to remote syslog in the same format.
+
+**Sample message** :
+    
+    
+    Apr 13 05:36:16 vapp-10-23-222-139 Intersight-OnPrem [Admin ReadOnly Shell]: Terminal_User: admin 
+    Terminal: /dev/pts/0 Remote_IP: 10.24.83.223 Command: ifconfig
+    
+    Apr 13 05:40:47 vapp-10-23-222-139 Intersight-OnPrem [Admin ReadOnly Shell]: Terminal_User: admin 
+    Terminal: /dev/pts/0 Remote_IP: 10.24.83.223 Command: ping 10.199.110.57
+    
+    
+
 **Example 3:**
 
-The following example describes the Audit Log generated by Intersight Appliance.
+The following example describes the Audit Log generated by the appliance.
 
 **Format:**
 
@@ -972,7 +994,7 @@ The following table describes the fields used in the Payload of an Audit log gen
 Field| Description  
 ---|---  
 Timestamp| The date and time when the event occurred.  
-Hostname| The hostname of the Intersight Appliance on which the event occurred.  
+Hostname| The hostname of the appliance on which the event occurred.  
 Process| The process which created the syslog event.  
 Description| The unique ID of the process which created the event.  
   
@@ -999,7 +1021,7 @@ The following table describes the fields used in the Payload of an Alarms log.
 
 Field| Description  
 ---|---  
-Timestamp| The date and time at the source when the syslog message is generated. It is the date and time of the event collected by the syslog client running in the Intersight Appliance.  
+Timestamp| The date and time at the source when the syslog message is generated. It is the date and time of the event collected by the syslog client running in the appliance.  
 Hostname| The name of the appliance which sends the syslog message.  
 Process_name| Indicates that the syslog message is collected by Intersight.  
 PID| The process ID that collected message from Intersight.  
@@ -1162,7 +1184,7 @@ The Create Notification screen displays.
 
      1. If the required email address is not available in the list, type the email address into the drop-down field and click **+Add**.
 
-     2. You can add up to three email addresses for email notifications.
+     2. You can add up to 20 email addresses for each notification rule.
 
 Note: Email notifications generated by the system can contain sensitive information such as advisory type, severity/impact rating, source type, source name, and affected device counts. Ensure that only authorized individuals have access to these notifications.
 
@@ -1583,9 +1605,9 @@ Here is a full example demonstrating how to combine different condition types wi
 
 Note the following restrictions for configuring email notifications.
 
-  * You can configure up to three emails per rule.
+  * You can configure up to 20 email addresses for each notification rule.
 
-  * You can configure up to five rules per account.
+  * You can configure up to 40 rules per account.
 
   * You can specify a total of five filter conditions.
 
@@ -1737,7 +1759,7 @@ A popup window appears warning you that switching to self-signed certificates wi
 
 Intersight Virtual Appliance supports LDAP/AD based remote authentication. You can configure the appliance to authenticate a user login using LDAP. You can configure multiple LDAP domains and choose a domain for the login.
 
-An LDAP user can log into Intersight Virtual Appliance with email ID or username, and select the corresponding domain in which the LDAP user is configured. You can add up to 6 LDAP domains per Intersight Account. You can view the list of configured LDAP domains. Click [here](/help/video#cisco_intersight_virtual_appliance_ldap/ad_setup) to watch a video about how to integrate your virtual appliance with the LDAP/AD services.
+An LDAP user can log into Intersight Virtual Appliance with email ID or username, and select the corresponding domain in which the LDAP user is configured. You can add up to six LDAP domains per Intersight Account. You can view the list of configured LDAP domains. Click [here](/help/video#cisco_intersight_virtual_appliance_ldap/ad_setup) to watch a video about how to integrate your appliance with the LDAP/AD services.
 
 To set up LDAP authentication from Settings in Intersight Virtual Appliance, do the following:
 
@@ -1755,7 +1777,11 @@ To set up LDAP authentication from Settings in Intersight Virtual Appliance, do 
 
   * Bind DN—Enter a DN used to authenticate against the LDAP server and the password for the user.
 
+  * (Optional) User Search Attribute—Enter the LDAP attribute that uniquely identifies the user for login and lookup. Examples include _uid_ , _mail_ , _sAMAccountName_ , or a custom attribute that is unique in your LDAP directory. You may specify multiple attributes; if configured, users can log in using any of the defined values. For example, if you configure _sAMAccountName_ and _mail_ , a user can log in using either their _sAMAccountName_ or their email address. If this field is left empty, the appliance defaults to using _sAMAccountName_ and mail.
+
   * Group Attribute—Enter the Group member attribute to which an LDAP entry belongs. Intersight Virtual Appliance uses this Group attribute to map/assign Intersight roles to the user. The default value is member and you can change it from Edit LDAP settings.
+
+  * (Optional)Filter—Enter an LDAP filter to restrict the user search scope. For example: _(objectClass=person)_
 
   * Password—Enter a DN password for the user.
 
@@ -1824,23 +1850,36 @@ The Configure Local Users window displays.
 
 Password Policy Options| Allowed Range/Default Value  
 ---|---  
-Minimum Length of Password| 8-127 charactersDefault is 8  
-Minimum Number of Required Upper Case Characters| 1-64 charactersDefault is 1  
-Minimum Number of Required Lower Case Characters| 1-64 charactersDefault is 1  
-Minimum Number of Required Numeric Characters| 1-64 charactersDefault is 1  
-Minimum Number of Special Characters| 0-64 charactersDefault is 0Note:Special characters include punctuation and symbol characters.  
+Minimum Required Password Length| 8 -127 charactersDefault is 8  
+Minimum Required Upper Case Characters| 1- 64 charactersDefault is 1  
+Minimum Required Lower Case Characters| 1- 64 charactersDefault is 1  
+Minimum Required Numeric Characters| 1- 64 charactersDefault is 1  
+Minimum Required Special Characters| 0 - 64 charactersDefault is 0Note:Special characters include punctuation and symbol characters.  
 Number of Previous Passwords Disallowed| 0-10Default is 0  
-Minimum Number of Characters Different From Previous Password| 0-15Default is 0Note:Differences from the previous password are verified based on the same character location within the specified password.  
-Minimum Days Allowed Between Password Changes| 0-7 daysDefault is 0Note:If you specify a value of 0 for this password policy option, then the user is not limited on time between password changes.  
-Time Duration for Incorrect Login Attempts (Seconds)| 300 - 3600 seconds (5 – 60 minutes)Default is 1800 seconds (30 minutes)Time duration is tracked for consecutive incorrect login attempts. Users will be locked out if they exceed the configured number of max incorrect login attempts during this duration.For more information about the lockout capability, see [Locking Out Local User Accounts](/help/appliance/settings#locking_out_local_users_accounts).  
+Minimum Required Different Characters From Previous Password| 0-15Default is 0Note:Differences from the previous password are verified based on the same character location within the specified password.  
+Minimum Days Between Password Changes| 0-7 daysDefault is 0Note:If you specify a value of 0 for this password policy option, then the user is not limited on time between password changes.  
+Maximum Days Between Password Changes| 0-3650 days.Default is 0, which means that password expiry is not enforced.Note:If **Minimum Days Allowed Between Password Changes** and **Maximum Days Allowed with Same Password** are both enabled, make sure that the maximum value is greater than or equal to the minimum value.  
+Time Duration for Incorrect Login Attempts (Seconds)| 300 - 3600 seconds (5 – 60 minutes)Default is 1800 seconds (30 minutes)Time duration is tracked for consecutive incorrect login attempts. Users will be locked out if they exceed the configured number of maximum incorrect login attempts during this duration.For more information about the lockout capability, see [Locking Out Local User Accounts](/help/appliance/settings#locking_out_local_users_accounts).  
 Max Consecutive Incorrect Login Attempts Allowed| 3 -10Default is 5Users will be locked out after exceeding the max consecutive incorrect login attempts allowed within the configured time duration.  
 Enable Lockout for Admin User| Default is false.Determines if the user lockout feature must be enabled for the local “admin” user. This option is always enabled for other local users.For more information about the lockout capability, see [Locking Out Local User Accounts](/help/appliance/settings#locking_out_local_users_accounts).  
 Lockout Time Period (Seconds)| 60 – 3600 seconds (1 – 60 minutes)Default is 900 (15 minutes)Duration, in seconds, during which a local user account will remain locked. The account is automatically unlocked after the configured lockout time period elapses.  
   
   5. Click Save.
 
-You can verify the password policy changes on the next password change.
+You can verify the password policy changes on the next password change or the next local user login.
 
+
+Note:
+
+When your password is approaching expiration, the appliance displays a warning message after you sign in. The warning period is fixed at seven days before your password expires.
+
+**Password Expiration Behavior for Local Users**
+
+If your password has expired, you are redirected to the Change Password screen upon your next login attempt. To proceed, enter your current password, then enter and confirm your new password.
+
+Your new password must comply with the configured password policy for local users. Once successfully changed, you are redirected to the sign-in screen, where you can log in with your new credentials.
+
+If your password expires during an active session, your session remains uninterrupted. The expiration check occurs at your next sign-in attempt.
 
 ## Adding Users
 
@@ -1903,6 +1942,71 @@ The lockout capability:
   * Applies to only local users and does not apply to remote users.
 
   * Applies to local “admin” user only if the setting is enabled.
+
+
+## Resetting the Password for the Local Admin User
+
+If the password for the local admin user is unknown, you can initiate the password reset from the hypervisor console without contacting Cisco TAC. The reset process generates a temporary password for the local admin user. After the reset, log into the appliance web UI with the temporary password and set a new password.
+
+The new password applies to both web UI and SSH access after the password change is completed in the appliance web UI.
+
+**Before you Begin** :
+
+  * Verify that you have hypervisor console access to the appliance VM.
+
+  * Be aware that this task requires a reboot of the appliance VM. Before you begin, save your work and take any necessary backups.
+
+  * Be prepared to record the temporary password that appears in the console. You cannot copy and paste this password from the console.
+
+
+To reset the password of the local admin user:
+
+  1. From the hypervisor, reboot the appliance VM.
+
+  2. Launch the VM console.
+
+  3. During the appliance boot process, when the splash screen appears, press `o` within 10 seconds to open the Options menu.
+
+  4. Enter `1` to reset the local admin password and confirm that you want to reset the password.
+
+If you choose not to confirm the reset, exit the password change wizard and continue the boot process.
+
+  5. Record the temporary password displayed on the console by taking a screenshot or writing it down.
+
+  6. Confirm that you recorded the temporary password.
+
+  7. Wait for the reset to complete, exit out of the wizard, and then allow the appliance to continue starting.
+
+  8. In a browser, go to the appliance URL.
+
+The appliance login page is displayed. Other users can continue to log in normally while the local admin user completes the password change.
+
+  9. Log in as admin using the temporary password displayed in the hypervisor console.
+
+  10. When prompted to change the expired password, enter the temporary password as the current password.
+
+  11. Enter and confirm the new admin password.
+
+The new password must meet the local password policy.
+
+  12. Click Change Password.
+
+  13. After the password change completes, log in again as admin using the new password.
+
+After this successful login, the new password also applies to SSH access for the local admin user.
+
+
+For multi-node deployments, synchronization of the new password across all nodes can take a few minutes.
+
+**Troubleshooting Password Change for the Local Admin User**
+
+  * If you miss the boot prompt, reboot the appliance VM and try again during the displayed timeout.
+
+  * If the temporary password is rejected, verify that the password was transcribed exactly from the console, including capitalization.
+
+  * If the new password is rejected, choose a password that meets the configured local password policy.
+
+  * If SSH login with the new password fails immediately in a multi-node deployment, wait a few minutes for password synchronization and try again.
 
 
 ## Resetting the Password of Local Users
@@ -2275,49 +2379,67 @@ It is important that the access token be securely stored and appropriately utili
 
 ## Configuring Webhooks
 
-Webhooks are notifications that set up integration between software in your local environment and Intersight. Once you establish integration, you can configure a subscription in your local Intersight account to notify you of events detected on [Intersight.com](http://Intersight.com) or on your appliance, as the case may be. When an event is triggered, Intersight sends an HTTP POST (create) request with a payload containing event content to the webhook server payload URL destination.
+A webhook is a push-based mechanism where one system sends data to another in real time when specific events occur, using an HTTP request to a configured endpoint.
 
-In SaaS environments, if you use restrictive firewall or proxy server settings, you need to allow-list either the following IP address or Domain Name to ensure that Webhooks work as expected:
+In Intersight Virtual Appliance, webhooks allow the appliance to send event notifications to an external HTTP endpoint. You define the destination URL and select which events should trigger notifications, and the appliance delivers a payload with the relevant event details when those events occur.
 
-  * **Intersight North America Accounts** —IP address ([34.198.174.38](https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#Addresses:public-ip=34.198.174.38)) or Domain Name ([outbound.intersight.com](https://outbound.intersight.com) or [outbound.us-east-1.intersight.com](https://outbound.us-east-1.intersight.com))
+In Connected Virtual Appliance environments, if you use restrictive firewall or proxy server settings, you need to allow-list either the following IP address or Domain Name to ensure that Webhooks work as expected:
 
-  * **Intersight EMEA Accounts** —IP address ([18.156.131.186](https://eu-central-1.console.aws.amazon.com/vpc/home?region=us-east-1#Addresses:public-ip=18.156.131.186)) or Domain Name ([outbound.eu-central-1.intersight.com](http://outbound.eu-central-1.intersight.com%7Csmart-link))
+  * **Intersight North America Accounts** —IP address (34.198.174.38) or Domain Name (outbound.intersight.com or outbound.us-east-1.intersight.com)
+
+  * **Intersight EMEA Accounts** —IP address (18.156.131.186) or Domain Name (outbound.eu-central-1.intersight.com)
 
 
 The IP address does not change frequently but may change over long periods. Therefore, a periodic refresh of the configuration is required.
 
-To begin configuring a webhook, perform the following steps:
+To configure a webhook, perform the following steps:
 
-  1. Log into Intersight as an Account Administrator. To change your role, click the Profile menu in the system name area in the upper right of the Webhooks page. Select Account Administrator.
+  1. Log into Intersight as an Account Administrator.
 
-  2. Click the gear icon in the upper right portion of the Intersight home screen. A popup with options appears.
+  2. Navigate to Settings > API Settings > Webhooks.
 
-  3. Click Settings. A secondary navigation bar in the central part of the home screen appears.
+The Webhooks screen lists existing configured webhooks.
 
-  4. At the bottom of the secondary navigation bar, click Webhooks. The Webhooks page appears with a list of current webhook objects.
+  3. Click Add Webhook.
 
-  5. Click Add Webhook. The Add Webhook dialog box appears.
+  4. In the Add Webhook screen, enable the Webhook toggle button.
 
-  6. From the General portion of the Add Webhook screen, provide values for the following items:
+  5. Under General, provide values for the following fields:
 
-  * Name — The string you want to assign as the name of the webhook.
+  * Name—Name assigned to the webhook.
 
-  * Payload URL — The URL of the site from which changes will be evaluated by the webhook.
+  * Payload URL—Specifies the endpoint that receives webhook notifications.
 
-  * Secret — The string that gives Intersight access to examine the URL for changes.
+  * Secret—Specifies the shared secret used to validate incoming requests. Setting a webhook secret ensures that POST requests sent to the payload URL are from Intersight. When you set a secret, you receive the Authorization header in the webhook POST request.
+
+  6. Under Events, click Add Event to configure an event type that triggers the webhook.
+
+  7. Complete the steps in the Adding an Event and Creating the Webhook sections.
+
+Note: At least one event is required to configure a webhook.
+
+  8. (Optional) Under TLS, enable the TLS toggle button and select a certificate from the drop-down list.
+
+TLS provides security when the receiving webhook server utilizes a self-signed certificate or a certificate signed by a private certificate authority.
+
+  9. Click Add.
+
+The new webhook appears in the Webhooks list.
 
 
 ## Adding an Event
 
-To add an event, perform the following steps:
+To add an event, do the following:
 
-  1. From the Events portion of the Add Webhook screen, click Add Event to configure an event type that will trigger the webhook.
+  1. Under Events, click Add Event to configure an event type that triggers the webhook.
 
-  2. Ensure the Enable slider is in the right position so that you can expand the Event region.
+  2. Set the Enable slider to the On position to expand the Event section.
 
-  3. Click the plus (+) symbol to the left of the Event label to expand the Event region. The Event region expands.
+  3. Click + to expand the Event section.
 
-  4. Click the Object Type down arrow to display the event Object Type list. A list of available object types that can be evaluated by the webhook appear. The object type represents an event for which Intersight will send to the webhook server.
+  4. Select an Object Type from the list.
+
+The system displays available object types that the webhook can evaluate. This selection represents the specific event that Intersight sends to the webhook server.
 
 
 ## Understanding Event Object Types
@@ -2389,19 +2511,6 @@ You can alter the values originally provided for a webhook.
 
 The webhook list in the Webhook page appears. The webhook you edited will have new properties.
 
-
-## Limitations
-
-The following are limitations with webhooks:
-
-  * You can create up to 10 webhooks per account.
-
-  * You can create up to three events per webhook.
-
-
-## Webhooks Secret
-
-Setting a webhook secret ensures that POST requests sent to the payload URL are from Intersight. When you set a secret, you receive the Authorization header in the webhook POST request.
 
 ## Webhooks Alarms
 

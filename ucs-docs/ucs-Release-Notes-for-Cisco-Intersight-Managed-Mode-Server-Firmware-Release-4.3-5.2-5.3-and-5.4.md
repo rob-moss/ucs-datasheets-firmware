@@ -8,17 +8,224 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 4.3, 5.2, 5.3, and 5.4 |
 | **Source file** | `ucs-docs-raw/html/b_intersight_server_fw_rn_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:17:12 |
+| **Fetched on** | 2026-07-02 13:03:32 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/4_3/b_intersight_server_fw_rn_4_3.html
 
-###   
-  
+### 
+
+## Contents
+
+  * Overview
+  * Firmware Version Equivalency Between Cisco Intersight, Cisco IMC, and Cisco UCS Manager
+  * Latest Supported Firmware for End-of-Life Intersight Managed Mode Servers
+  * Revision History
+  * New Software Support
+  * New Hardware Features in Server Firmware Release
+  * New hardware in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None
+  * New hardware in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None
+  * New Hardware in X-Series M8, M7 5.4(0.260010), M6 5.4(0.260009), C-Series M8, M7, M6 4.3(6.260017), and B-Series M6, M5 5.4(0.260011) Server Firmware Release — None
+  * New Hardware in C-Series M5 Server Firmware Release 4.3(2.260007) — None
+  * New Hardware in Cisco UCS X-Series M7 5.4(0.260001) and C-Series M8, M7 4.3(6.260003) Server Firmware Release — None
+  * New Hardware in C-Series M5 Server Firmware Release 4.3(2.250063) — None
+  * New Hardware in Cisco UCS C-Series M7 Server Firmware Release 4.3(6.250117) — None
+  * New Hardware in Cisco UCS X-Series M8 5.4(0.250105), 5.4(0.250106), M7 5.4(0.250106), M6 5.4(0.250097), C-Series M8, M7, M6 4.3(6.250101), and B-Series M6, M5 5.4(0.250090) Server Firmware Release — None
+  * New Hardware in Cisco UCS C-Series M8 Server Firmware Release 4.3(5.250045) — None
+  * New Hardware in Cisco UCS C-Series M8 Server Firmware Release 4.3(6.250060) — None
+  * New Hardware in C-Series M5 Server Firmware Release 4.3(2.250045) — None
+  * New Hardware in C-Series M8 Server Firmware Release 4.3(5.250043) — None
+  * New Hardware in X-Series M8 5.4(0.250052), 5.4(0.250048), M7 5.4(0.250048), M6 5.4(0.250047), C-Series M8, M7, M6 4.3(6.250053), and B-Series M6 5.4(0.250048), M5 5.4(0.250047) Server Firmware Release — None
+  * New Hardware in C-series M5 Server Firmware Release 4.3(2.250037) — None
+  * New Hardware in X-Series M8 5.4(0.250040), 5.4(0.250044) and M7 5.4(0.250040), and C-Series 4.3(6.250044) Server Firmware Release — None
+  * New Hardware in C-Series M8, M7, and M6 Server Firmware Release 4.3(5.250033) — None
+  * New Hardware in X-Series M8 5.4(0.250037) and C-Series M8 Server4.3(6.250039) Firmware Release
+  * New Hardware in C-Series M8, M7, and M6 Server Firmware Release 4.3(5.250030) — None
+  * New Hardware in C-series M5 Server Firmware Release 4.3(2.250021) — None
+  * New Hardware in X-Series M8 5.3(0.250001) and C-Series M8 4.3(5.250001) Server Firmware Release
+  * New Hardware in X-Series M7 5.2(2.240080), M6 5.2(2.240078), B-Series M6, M5 5.2(2.240080), and C-series M7, M6 4.3(4.242066) Firmware Release — None
+  * New Hardware in X-Series and C-Series Server Firmware Release
+  * New Hardware in X-Series M7 5.2(2.240074), X-Series M6 5.2(2.240073), and B-series M6 5.2(2.240073) Firmware Release — None
+  * New Hardware Features in X-Series M7 and M6 Server Firmware 5.2(2.240053) and B-Series M6 Server Firmware 5.2(2.240051)
+  * New Hardware Support in X-Series M7 Firmware 5.2(1.240010) and C-Series M7 Firmware 4.3(3.240022)
+  * New Hardware Support in X-Series Firmware 5.2(0.230127), B-Series Firmware 5.2(0.230127), and C-Series Firmware Version 4.3(2.240002) — None
+  * New Hardware Support in X-Series M7 Firmware 5.2(0.230092)
+  * New Hardware Support in X-Series M7 Firmware 5.2(0.230041)
+  * New Hardware Support in B-Series M5 5.2(0.230127) and B-Series M6 Firmware 5.2(1.240010) — None
+  * New Hardware in C-series M5 Server Firmware Release 4.3(2.250016) — None
+  * New Hardware in C-series M5 Server Firmware Release 4.3(2.240107) — None
+  * New Hardware in C-Series M7 Server Firmware Release 4.3(4.242038)
+  * New Hardware Support in C-Series M7 and M6 Server Firmware Release 4.3(4.241063) — None
+  * New Hardware Support in C-Series M5 Firmware 4.3(2.240077) — None
+  * New Hardware Features in C-Series M8 Server Firmware Release 4.3(4.241014)
+  * New Hardware Features in C-Series M7 and M6 Server Firmware Release 4.3(4.240152)
+  * New Hardware Support in C-Series M5 Firmware 4.3(2.240053) — None
+  * New Hardware Support in C-Series M6 Firmware 4.3(2.240037) — None
+  * New Hardware Support in C-Series M7 and M6 4.3(3.240043) — None
+  * New Hardware Support in C-Series M7, M6, and M5 4.3(2.240009) — None
+  * New Hardware Support in C-Series Firmware 4.3(2.230270)
+  * New Hardware Support in C-Series Firmware 4.3(2.230207)
+  * New Hardware Support in C-Series Firmware 4.3(1.230097)
+  * Cross-Version Firmware Support
+  * Updating the Firmware
+  * Security Fixes
+  * Security fixes in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None
+  * Security fixes in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None
+  * Security Fixes in X-Series M8, M7 5.4(0.260010), M6 5.4(0.260009), C-Series M8, M7, M6 4.3(6.260017), and B-Series M6, M5 5.4(0.260011) Server Firmware Release — None
+  * Security Fixes in C-Series M5 Server Firmware Release 4.3(2.260007) — None
+  * Security Fixes in Cisco UCS X-Series M7 5.4(0.260001) and C-Series M8, M7 4.3(6.260003) Server Firmware Release — None
+  * Security Fixes in C-Series M5 Server Firmware Release 4.3(2.250063) — None
+  * Security Fixes in Cisco UCS C-Series M7 Server Firmware Release 4.3(6.250117) — None
+  * Security Fixes in Cisco UCS C-Series M7 and M6 Server Firmware Release 4.3(6.250101)
+  * Security Fixes in Cisco UCS C-Series M8 Server Firmware Release 4.3(5.250045) — None
+  * Security Fixes in Cisco UCS C-Series M8 Server Firmware Release 4.3(6.250060) — None
+  * Security Fixes in C-Series M5 Server Firmware Release 4.3(2.250045) — None
+  * Security Fixes in C-Series M8 Server Firmware Release 4.3(5.250043) — None
+  * Security Fixes in X-Series M6 5.4(0.250047), C-Series M6 4.3(6.250053), and B-Series M6 5.4(0.250048) Server Firmware Release
+  * Security Fixes in X-Series M7 5.4(0.250048) and C-Series M7 4.3(6.250053) Server Firmware Release
+  * Security Fixes in C-series M5 Server Firmware Release 4.3(2.250037)
+  * Security Fixes in X-Series M8 5.4(0.250040), 5.4(0.250044) and M7 5.4(0.250040), and C-Series 4.3(6.250044) Server Firmware Release — None
+  * Security Fixes in C-Series M8, M7, and M6 Server Firmware Release 4.3(5.250033) — None
+  * Security Fixes in B-Series M5 5.4(0.250034) Server Firmware Release
+  * Security Fixes in C-Series M8, M7, and M6 Server Firmware Release 4.3(5.250030)
+  * Security Fixes in C-series M5 Server Firmware Release 4.3(2.250021) — None
+  * Security Fixes in X-Series M8, M7, M6 5.3(0.250021) and B-Series M6, M5 5.3(0.250021) Server Firmware Release — None
+  * Security Fixes in X-Series M7 5.2(2.240080), M6 5.2(2.240078), B-Series M6, M5 5.2(2.240080), and C-series M7, M6 4.3(4.242066) Firmware Release — None
+  * Security Fixes in X- Series 5.3(0.240016) and B-Series 5.3(0.240014) Server Firmware Release
+  * Security Fixes in X-Series M7 5.2(2.240074), X-Series M6 5.2(2.240073), and B-series M6 5.2(2.240073) Firmware Release
+  * Security Fixes in X-Series M7 and M6 Firmware Release 5.2(2.240053) — None
+  * Security Fixes in X-Series M6 Server 5.2(0.230127), B-Series Server 5.2(0.230127), and C-Series M6 Server 4.3(2.240002)
+  * Security Fixes in B-Series M6 and M5 Server Firmware Release 5.2(2.240051) — None
+  * Security Fixes in B-Series M6 5.2(1.240010) and C-Series 4.3(3.240022), X-Series 5.2(1.240010) M6 and M7 Servers
+  * Security Fixes in C-series M5 Server Firmware Release 4.3(2.250016)
+  * Security Fixes in C-series M5 Server Firmware Release 4.3(2.240107) — None
+  * Security Fixes in C-Series M5 Server Firmware Release 4.3(2.240090)
+  * Security Fixes in C-Series M6 Server Firmware Release 4.3(4.242038)
+  * Security Fixes in C-Series M7 and M6 Server Firmware Release 4.3(4.241063)
+  * Security Fixes in C-Series M5 Firmware Release 4.3(2.240077)
+  * Security Fixes in C-Series M8 Server Firmware Release 4.3(4.241014) — None
+  * Security Fixes in C-Series M5, M6, and M7 Firmware Release 4.3(4.240152) — None
+  * Security Fixes in C-Series M5 Firmware Release 4.3(2.240053)
+  * Security Fixes in C-Series M6 Firmware Release 4.3(2.240037)— None
+  * Security Fixes in C-Series M7 and M6 Firmware Release 4.3(3.240043) — None
+  * Security Fixes in C-Series M7, M6, M5 Firmware 4.3(2.240009) — None
+  * Security Fixes in C-Series Firmware Release 4.3(2.230270)
+  * Security Fixes in C-Series Firmware Release 4.3(2.230207)
+  * Caveats
+  * Resolved Caveats
+  * Resolved issues in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049) and C-Series M8 4.3(6.260054) Server Firmware Release
+  * Resolved issues in Cisco UCS X-Series M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6 5.4(0.260028) Server Firmware Release
+  * Resolved Caveats in Cisco UCS B-Series M5 5.4(0.260011) and C-Series M7, M6 Server Firmware Release 4.3(6.260017)
+  * Resolved Caveats in C-Series M5 Server Firmware Release 4.3(2.260007)
+  * Resolved Caveats in Cisco UCS X-Series M7 5.4(0.260001) and C-Series M8, M7 Server Firmware Release 4.3(6.260003)
+  * Resolved Caveats in C-Series M5 Server Firmware Release 4.3(2.250063)
+  * Resolved Caveats in Cisco UCS C-Series M7 Server Firmware Release 4.3(6.250117)
+  * Resolved Caveats in Cisco UCS X-Series M8 5.4(0.250105) and C-Series M6 4.3(6.250101) Server Firmware Release
+  * Resolved Caveats in Cisco UCS C-Series M8 Server Firmware Release 4.3(5.250045)
+  * Resolved Caveats in Cisco UCS C-Series M8 Server Firmware Release 4.3(6.250060)
+  * Resolved Caveats in C-Series M5 Server Firmware Release 4.3(2.250045)
+  * Resolved Caveats in C-Series M8 Server Firmware Release 4.3(5.250043)
+  * Resolved Caveats in X-Series M8 5.4(0.250052) and C-Series M8 4.3(6.250053) Server Firmware Release
+  * Resolved Caveats in C-series M5 Server Firmware Release 4.3(2.250037)
+  * Resolved Caveats in C-Series M8 and M7 Server Firmware Release 4.3(6.250044)
+  * Resolved Caveats in C-Series M8, M7, and M6 Server Firmware Release 4.3(5.250033)
+  * Resolved Caveats in X-Series M8 5.4(0.250037) and 5.4(0.250035), M7 5.4(0.250035), M6 5.4(0.250033) and B-Series M6, M5 5.4(0.250034) Server Firmware Release
+  * Resolved Caveats in C-Series M8 Firmware Release 4.3(6.250040) and 4.3(6.250039)
+  * Resolved Caveats in C-Series M8, M7, and M6 Server Firmware Release 4.3(5.250030)
+  * Resolved Caveats in C-series M5 Server Firmware Release 4.3(2.250021)
+  * Resolved Caveats in X-Series M8, M7, M6 5.3(0.250021) and B-Series M6, M5 5.3(0.250021) Server Firmware Release
+  * Resolved Caveats in X-Series M8, M7, M6 5.3(0.250001) and B-Series M6, M5 5.3(0.250001) Server Firmware Release
+  * Resolved Caveats in X-Series M7 5.2(2.240080) and M6 5.2(2.240078) Server Firmware Release
+  * Resolved Caveats in X-Series Firmware Release 5.3(0.240016)
+  * Resolved Caveats in X-series M7 Server Firmware Release 5.2(2.240074)
+  * Resolved Caveats in X-Series M6 5.2(2.240073) Firmware Release — None
+  * Resolved Caveats in X-Series M6 and M7 Firmware Release 5.2(2.240053)
+  * Resolved Caveats in X-Series M7 and M6 Server Firmware Release 5.2(1.240010) — None
+  * Resolved Caveats in X-Series M7 Firmware Release 5.2(0.230127)
+  * Resolved Caveats in X-Series M7 Firmware Release 5.2(0.230092)
+  * Resolved Caveats in X-Series M7 Firmware Release 5.2(0.230061)
+  * Resolved Caveats in X-Series M6 Firmware Release 5.2(0.230127)
+  * Resolved Caveats in X-Series M6 Firmware Release 5.2(0.230040)
+  * Resolved Caveats in B-Series M6 and M5 Server Firmware Release 5.2(2.240080)
+  * Resolved Caveats in B-Series M6 Firmware Release 5.2(2.240073) — None
+  * Resolved Caveats in B-Series M6 and M5 Firmware Release 5.2(2.240051) — None
+  * Resolved Caveats in B-Series M6 5.2(1.240010) and M5 5.2(0.230127) Firmware Release — None
+  * Resolved Caveats in B-Series Firmware Release 5.2(0.230127) — None
+  * Resolved Caveats in B-Series Firmware Release 5.2(0.230039)
+  * Resolved Caveats in C-series M5 Server Firmware Release 4.3(2.250016)
+  * Resolved Caveats in C-Series M8, M7, and M6 4.3(5.250001) Server Firmware Release
+  * Drive PIDs for NVME Disk FRONT-NVME Inoperable Issue - CSCwn42969
+  * Resolved Caveats in C-series M7 and M6 Server Firmware Release 4.3(4.242066)
+  * Resolved Caveats in C-series M5 Server Firmware Release 4.3(2.240107)
+  * Resolved Caveats in C-series Server Firmware Release 4.3(5.240021)
+  * Resolved Caveats in C-Series M5 Server Firmware Release 4.3(2.240090)
+  * Resolved Caveats in C-Series M6 Server Firmware Release 4.3(4.242038) 
+  * Resolved Caveats in C-Series M7 and M6 Firmware Release 4.3(4.241063)
+  * Resolved Caveats in C-Series M5 Firmware Release 4.3(2.240077)
+  * Resolved Caveats in C-Series M8 Firmware Release 4.3(4.241014) — None
+  * Resolved Caveats in C-Series M7, M6, and M5 Firmware Release 4.3(4.240152) — None
+  * Resolved Caveats in C-Series M5 Firmware Release 4.3(2.240053)
+  * Resolved Caveats in C-Series M6 Server Firmware, Release 4.3(2.240037) — None
+  * Resolved Caveats in C-Series M7 and M6 Firmware Release 4.3(3.240043) — None
+  * Resolved Caveats in C-Series M7, M6, and M5 Server Firmware, Release 4.3(2.240009) 
+  * Resolved Caveats in C-Series Firmware Release 4.3(2.240002)
+  * Resolved Caveats in C-Series Firmware Release 4.3(2.230270)
+  * Resolved Caveats in C-Series Firmware Release 4.3(2.230207)
+  * Resolved Caveats in C-Series M7 Firmware Release 4.3(1.230138)
+  * Resolved Caveats in C-Series M7 Firmware Release 4.3(1.230124)
+  * Open Caveats
+  * Open issues in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None
+  * Open issues in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None
+  * Open Caveats in X-Series M8, M7 5.4(0.260010), M6 5.4(0.260009), C-Series M8, M7, M6 4.3(6.260017), and B-Series M6, M5 5.4(0.260011) Server Firmware Release — None
+  * Open Caveats in C-Series M5 Server Firmware Release 4.3(2.260007) — None
+  * Open Caveats in Cisco UCS X-Series M7 5.4(0.260001) and C-Series M8, M7 4.3(6.260003) Server Firmware Release — None
+  * Open Caveats in C-Series M5 Server Firmware Release 4.3(2.250063) — None
+  * Open Caveats in Cisco UCS C-Series M7 Server Firmware Release 4.3(6.250117) — None
+  * Open Caveats in Cisco UCS X-Series M8 5.4(0.250105), 5.4(0.250106), M7 5.4(0.250106), M6 5.4(0.250097), C-Series M8, M7, M6 4.3(6.250101), and B-Series M6, M5 5.4(0.250090) Server Firmware Release — None
+  * Open Caveats in Cisco UCS C-Series M8 Server Firmware Release 4.3(5.250045) — None
+  * Open Caveats in Cisco UCS C-Series M8 Server Firmware Release 4.3(6.250060) — None
+  * Open Caveats in C-Series M5 Server Firmware Release 4.3(2.250045) — None
+  * Open Caveats in C-Series M8 Server Firmware Release 4.3(5.250043) — None
+  * Open Caveats in X-Series M8 5.4(0.250052), M7 5.4(0.250048), M6 5.4(0.250047) and C-Series M8, M7, M6 4.3(6.250053) Server Firmware Release
+  * Open Caveats in C-series M5 Server Firmware Release 4.3(2.250037) — None
+  * Open Caveats in X-Series M8 5.4(0.250040), 5.4(0.250044) and M7 5.4(0.250040), and C-Series 4.3(6.250044) Server Firmware Release — None
+  * Open Caveats in C-Series M8, M7, and M6 Server Firmware Release 4.3(5.250033) — None
+  * Open Caveats in X-Series M8 5.4(0.250037) and C-Series M8 4.3(6.250040) and 4.3(6.250039), M7, M6 4.3(6.250040) Server Firmware Release
+  * Open Caveats in C-Series M8, M7, and M6 Server Firmware Release 4.3(5.250030) — None
+  * Open Caveats in C-series M5 Server Firmware Release 4.3(2.250021) — None
+  * Open Caveats in X-Series M8, M7, M6 5.3(0.250021) and B-Series M6, M5 5.3(0.250021) Server Firmware Release — None
+  * Open Caveats in X-Series M7 5.2(2.240080), M6 5.2(2.240078), B-Series M6, M5 5.2(2.240080), and C-series M7, M6 4.3(4.242066) Firmware Release — None
+  * Open Caveats in X-Series Server Firmware Release 5.3(0.240016)
+  * Open Caveats in X-Series M7 5.2(2.240074), X-Series M6 5.2(2.240073), and B-series M6 5.2(2.240073) Firmware Release — None
+  * Open Caveats in X-Series M7 and M6 Firmware Release 5.2(2.240053)
+  * Open Caveats in X-Series M7 Firmware Release 5.2(1.240010) — None
+  * Open Caveats in X-Series M7 Firmware Release 5.2(0.230127) — None
+  * Open Caveats in X-Series M6 Firmware Release 5.2(0.230127) — None
+  * Open Caveats in B-Series M6 and M5 Firmware Release 5.2(2.240051) — None
+  * Open Caveats in B-Series M5 Firmware Release 5.2(0.230127) and M6 Firmware Release 5.2(1.240010) — None
+  * Open Caveats in C-series M5 Server Firmware Release 4.3(2.250016)
+  * Open Caveats in C-series M5 Server Firmware Release 4.3(2.240107) — None
+  * Open Caveats in C-Series Server Firmware Release 4.3(5.240021)
+  * Open Caveats in C-Series M5 Server Firmware Release 4.3(2.240090)
+  * Open Caveats in C-Series M6 Server Firmware Release 4.3(4.242038)
+  * Open Caveats in C-Series M7 and M6 Firmware Release 4.3(4.241063) — None
+  * Open Caveats in C-Series M5 Firmware Release 4.3(2.240077) — None
+  * Open Caveats in C-Series M8 Server Firmware Release 4.3(4.241014)
+  * Open Caveats in C-Series M7, M6, and M5 Firmware Release 4.3(4.240152) — None
+  * Open Caveats in C-Series M5 Firmware Release 4.3(2.240053) — None
+  * Open Caveats in C-Series M6 Firmware Release 4.3(2.240037) — None
+  * Open Caveats in C-Series M7 and M6 Firmware Release 4.3(3.240043) — None
+  * Open Caveats in C-Series M7, M6, and M5 Firmware 4.3(2.240009) — None
+  * Open Caveats in C-Series Firmware Release 4.3(3.240022)
+  * Open Caveats in C-Series M7 Firmware Release 4.3(2.240002) — None
+  * Known Behavior and Limitations
+  * Related resources
+
+
 **First Published: November 15, 2023**
 
-**Last Updated: May 4, 2026**
+**Last Updated: June 25, 2026**
 
 # Overview
 
@@ -83,9 +290,9 @@ To view the complete matrix in PDF format, click [here](https://www.cisco.com/c/
 Platform |  Supported Latest Firmware version  
 ---|---  
 Cisco UCS C-Series M5 (C220, C240, C480) |  4.3(2.260007)  
-Cisco UCS C-Series M6 (C220, C240) |  4.3(6.260033)  
-Cisco UCS B-Series M5 (B200, B480) |  5.4(0.260028)  
-Cisco UCS B-Series M6 (B200) |  5.4(0.260028)  
+Cisco UCS C-Series M6 (C220, C240) |  4.3(6.260054)  
+Cisco UCS B-Series M5 (B200, B480) |  5.4(0.260050)  
+Cisco UCS B-Series M6 (B200) |  5.4(0.260050)  
   
 For more information, see [End-of-Life and End-of-Sale Notices for C-Series Servers](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/eos-eol-notice-listing.html) and [End-of-Life and End-of-Sale Notices for B-Series Servers](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/eos-eol-notice-listing.html). 
 
@@ -95,6 +302,19 @@ The following table includes the change history for this document.
 
 Table 1. Release 4.3(6) Revision Date |  Description  
 ---|---  
+June 25, 2026 |  Updated release notes for the following Server Firmware Release versions:
+
+  * Cisco UCS X-Series M8 and M7 Server Firmware Release 5.4(0.260049)
+  * Cisco UCS X-Series M8 Server Firmware Release 5.4(0.260044)
+  * Cisco UCS X-Series M6 Server Firmware Release 5.4(0.260042)
+  * Cisco UCS C-Series M8, M7, and M6 Server Firmware Release 4.3(6.260054)
+  * Cisco UCS B-Series M6 and M5 Server Firmware Release 5.4(0.260050)
+
+This release includes updates to:
+
+  * Resolved issues in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049) and C-Series M8 4.3(6.260054) Server Firmware Release
+
+It does not include any new hardware support, security fixes, or open issues.  
 May 04, 2026 |  Updated release notes for the following Server Firmware Release versions:
 
   * Cisco UCS X-Series M8 and M7 Server Firmware Release 5.4(0.260029)
@@ -411,6 +631,8 @@ August 16, 2023 |  Created release notes for the following server firmware relea
 Intersight software features may not align with the Intersight firmware release schedule. To know more about the latest software features, see the [What's New](https://intersight.com/help/saas/whats_new) section in Intersight Help Center. 
 
 ## New Hardware Features in Server Firmware Release
+
+### New hardware in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None 
 
 ### New hardware in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None 
 
@@ -1300,6 +1522,8 @@ To update the Cisco UCS firmware, see [Managing Firmware in Intersight Managed M
 
 ## Security Fixes
 
+### Security fixes in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None 
+
 ### Security fixes in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None 
 
 ### Security Fixes in X-Series M8, M7 5.4(0.260010), M6 5.4(0.260009), C-Series M8, M7, M6 4.3(6.260017), and B-Series M6, M5 5.4(0.260011) Server Firmware Release — None 
@@ -1720,6 +1944,15 @@ You can view the open issues, resolved issues, and security fixes using the [Cis
 
 ### **Resolved Caveats**
 
+#### Resolved issues in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049) and C-Series M8 4.3(6.260054) Server Firmware Release 
+
+The following table lists the resolved caveats in this release:
+
+Defect ID |  Description |  First Version Affected |  Resolved in Release  
+---|---|---|---  
+[CSCwt57564](https://cdetsng.cisco.com/webui/#view=CSCwt57564) |  On Cisco UCS X210c M8 servers with Cisco UCS Virtual Interface Card (VIC) adapters, VMware ESXi may display a Purple Screen of Death (PSOD) with a Peripheral Component Interconnect (PCI) bus error. The error message may indicate an undiagnosed PCI bus error and an event received for a port with no Downstream Port Containment (DPC) driver. This issue occurs when the posted value in the ring registers does not increment as expected, preventing the software from detecting that an indirect transaction has arrived.  This issue is resolved. |  X-Series M8 (X215c): 5.3(0.240016) X-Series M8 (X210c): 5.4(0.250037) X-Series M8 (X410c): 6.0(2.260040) |  X-Series M8 (X215c, X210c): 5.4(0.260044), 5.4(0.260049) X-Series M8 (X410c, X215c, X210c): 6.0(2.260143)  
+[CSCwn42410](https://cdetsng.cisco.com/webui/#view=CSCwn42410) |  A partial failure of one of the M.2 drives on a Cisco UCS-M2-HWRAID controller may cause the affected drive to be reported incorrectly and may degrade the RAID 1 virtual drive.  In this condition, the drive can appear in `PhyDriveInfo` with no valid device data visible, while the reported link speed is reduced to 1.5 GB.  Additional drive attributes such as power-on hours, power cycle count, percentage life, wear status days, and temperature may all appear as 0.  Product ID and firmware fields may also be blank even though the drive is still shown as online. In some cases, the messages log may incorrectly report the affected drive as having 0% life remaining by generating an `SSD LIFE TIME LAPSE` fault.  This issue has been observed on systems using the Cisco UCS-M2-HWRAID M.2 storage controller with M.2 drives configured in a RAID 1 virtual drive.  This issue is resolved. |  4.3(2.230207) |  C-Series: 4.3(6.260054), 6.0(2.260143)  
+  
 #### Resolved issues in Cisco UCS X-Series M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6 5.4(0.260028) Server Firmware Release 
 
 The following table lists the resolved caveats in this release:
@@ -2278,6 +2511,8 @@ Defect ID | Description | First Bundle Affected
 CSCwe47118 |  Redfish monitor core occured during combinational stress(Redfish stress included). |  4.3(1.230097)  
   
 ### Open Caveats
+
+#### Open issues in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None 
 
 #### Open issues in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None 
 

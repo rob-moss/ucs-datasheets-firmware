@@ -8,7 +8,7 @@
 | **HTML Title** | Resources |
 | **Source file** | `Using_Organizations_with_Policies_and_Profiles` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:18:00 |
+| **Fetched on** | 2026-07-02 13:04:22 |
 
 ---
 

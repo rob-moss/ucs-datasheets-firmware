@@ -8,113 +8,11 @@
 | **HTML Title** | Cisco UCS 6600 Series Fabric Interconnects Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-6600-series-fabric-interconnect-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:23:37 |
+| **Fetched on** | 2026-07-02 13:08:55 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS 6600 Series Fabric Interconnects Data Sheet
-
-Data Sheet
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.pdf) (262.9 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:January 7, 2026
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.pdf) (262.9 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:January 7, 2026
-
-#### Table of Contents
-
-  * Cisco Unified Computing System overview
-  * Product overview
-  * UCS Unified fabric: I/O consolidation
-  * Management Options
-  * Features and benefits
-  * Product specifications
-  * Cisco UCS FI 6600 series physical and environmental specifications
-  * Weight
-  * Regulatory standards compliance: safety and EMC
-  * Ordering information
-  * Warranty information
-  * Cisco environmental sustainability
-  * Cisco Services for Unified Computing
-  * Why Cisco?
-  * Cisco Capital
-  * For more information
-
 
 ` `
 
@@ -404,97 +302,9 @@ For more information about Cisco UCS, visit <https://www.cisco.com/en/US/product
 ### Learn more
 
 
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
 ---
 
 ## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6500-series-fabric-interconnects/ucs-6664-fabric-interconnect-aag.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS 6664 Fabric Interconnect At-a-Glance
-
-At a Glance
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-6500-series-fabric-interconnects/ucs-6664-fabric-interconnect-aag.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6500-series-fabric-interconnects/ucs-6664-fabric-interconnect-aag.pdf) (483.7 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:June 23, 2025
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-6500-series-fabric-interconnects/ucs-6664-fabric-interconnect-aag.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-6500-series-fabric-interconnects/ucs-6664-fabric-interconnect-aag.pdf) (483.7 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:June 23, 2025
-
-#### Table of Contents
-
-  * Overview
-  * Benefits
-  * What it does
-  * Learn more
-
 
 ` `
 
@@ -542,7 +352,5 @@ For more information about modernizing your infrastructure with Cisco UCS 6664 F
 
 ### Learn more
 
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

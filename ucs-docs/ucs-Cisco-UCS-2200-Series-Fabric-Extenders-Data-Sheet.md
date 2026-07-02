@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS 2200 Series Fabric Extenders Data Sheet |
 | **Source file** | `ucs-docs-raw/html/data_sheet_c78-675243.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:23:25 |
+| **Fetched on** | 2026-07-02 13:08:42 |
 
 ---
 
@@ -17,6 +17,12 @@
   * Skip to content
   * Skip to search
   * Skip to footer
+
+
+  *   * [Products & Services](/c/en/us/products/index.html)
+  * [Servers - Unified Computing](/c/en/us/products/servers-unified-computing/index.html)
+  * [Cisco UCS 6300 Series Fabric Interconnects](/c/en/us/products/servers-unified-computing/ucs-6300-series-fabric-interconnects/index.html)
+  * [Data Sheets](/c/en/us/products/servers-unified-computing/ucs-6300-series-fabric-interconnects/datasheet-listing.html)
 
 
 # Cisco UCS 2200 Series Fabric Extenders Data Sheet

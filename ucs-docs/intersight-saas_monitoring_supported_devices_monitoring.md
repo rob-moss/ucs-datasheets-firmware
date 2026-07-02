@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Supported Devices for Monitoring |
 | **URL** | https://intersight.com/help/saas/monitoring/supported_devices_monitoring |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260616155027767/docs/cloud/data/resources/monitoring/en/Supported_Devices.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/resources/monitoring/en/Supported_Devices.html |
 | **HTML Title** | Supported Devices |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_supported_devices_monitoring.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:17:50 |
+| **Fetched on** | 2026-07-02 13:04:13 |
 
 ---
 
@@ -16,7 +16,13 @@
 
 ## Supported Devices
 
-Cisco Intersight supports metrics collection from devices that are managed as an IMM or UMM domain. Only environmental metrics are collected for UMM devices. For more information on supported Fabric Interconnects, Chassis, and Servers and supported firmware, see [Supported Hardware for Intersight Managed Mode](/help/supported_systems/Intersight_Managed_Mode).
+Cisco Intersight supports metrics collection from devices that are managed as an Intersight Managed Mode (IMM), Intersight Standalone Mode (ISM), and UCSM Managed Mode (UMM).
+
+Note:
+
+Only environmental metrics are collected for UMM devices.
+
+For more information on supported Fabric Interconnects, Chassis, and Servers and supported firmware, see [Supported Hardware for Intersight Managed Mode](/help/supported_systems/Intersight_Managed_Mode).
 
 Important:
 
@@ -24,7 +30,7 @@ Metric collection for blade servers is only supported for the following Input/Ou
 
 Note:
 
-  * For metrics collection in IMM domains, all servers must have a valid Intersight license. In UMM domains, at least one server needs a valid Intersight license for metrics collection. For more information, see [Introduction to Intersight Licensing](/help/getting_started/licensing_requirements/lic_intro).
+  * For metrics collection in IMM domains, all servers must have a valid Intersight license. In UMM domains, at least one server needs a valid Intersight license for metrics collection. In ISM domains, all servers must have a valid Intersight license. For more information, see [Introduction to Intersight Licensing](/help/getting_started/licensing_requirements/lic_intro).
 
   * Metrics data collection is enabled automatically and cannot be disabled.
 
@@ -38,18 +44,45 @@ The following table lists the utilization and limits metrics and the correspondi
 Supported Server| Instrument| Metrics  
 ---|---|---  
 UCS Blades and Rack Server in Intersight Managed Mode| Physical Processor| Active CPU Utilization  
-| Temperature| Upper Non Critical Temperature LimitUpper Critical Temperature Limit  
-UCS Racks in Intersight Managed Mode| Fan| Lower Non Critical LimitLower Critical Limit  
-| Power Supply| Throttled Power LimitUpper Critical Power Limit  
+Temperature| 
+
+  * Upper Critical Temperature Limit
+  * Upper Non Critical Temperature Limit
+
+  
+UCS Racks in Intersight Managed Mode| Fan| 
+
+  * Lower Critical Limit
+  * Lower Non Critical Limit
+
+  
+Power Supply| 
+
+  * Throttled Power Limit
+  * Upper Critical Power Limit
+
+  
   
 **Chassis:**
 
 Supported Chassis| Instrument| Metrics  
 ---|---|---  
-UCS X-Series Chassis in Intersight Managed Mode| Fan| Max Fan Speed LimitLower Non Critical Fan Speed Limit Lower Critical Fan Speed LimitFan Speed Ratio  
-| Power Supply| Upper Critical Power Limit Throttled Power LimitMax Power Limit Power Supply Utilization  
+UCS X-Series Chassis in Intersight Managed Mode| Fan| 
+
+  * Fan Speed Ratio
+  * Lower Critical Fan Speed Limit
+  * Lower Non Critical Fan Speed Limit
+  * Max Fan Speed Limit
+
   
-For more information on supported Chassis and Servers and supported firmware, see Firmware Requirements for Chassis and Server–Limit and Utilization Metrics Collection.
+Power Supply| 
+
+  * Max Power Limit Power Supply Utilization
+  * Upper Critical Power Limit Throttled Power Limit
+
+  
+  
+For more information on supported Chassis and Servers and supported firmware, see [Firmware Requirements for Chassis and Server–Limit and Utilization Metrics Collection](../../../../../../../../../../../../..html#firmware_requirements_for_vic_metrics_collection).
 
 ## Firmware Requirements for VIC Metrics Collection
 
@@ -99,9 +132,9 @@ Metrics collection for IMM Chassis is supported only for UCS-IOM-2408 and all mo
 Supported Server| Minimum Firmware Version  
 ---|---  
 UCS X-Series Blade servers in Intersight Managed Mode| X-Series: 5.2(2.240053)  
-UCS M6+ Rack Server in Intersight Managed Mode| C-Series (M6+): 4.3(4.240152)  
+UCS M6 and later Rack servers in Intersight Managed Mode| C-Series (M6 and later servers): 4.3(4.240152)  
 UCS X-Series Chassis in Intersight Managed Mode| X-IFMs: 4.3(4a)  
-UCS M7+ Rack Servers in Intersight Standalone Mode| C-Series (M7+): 4.3(4.240152)  
+UCS M7 and later Rack servers in Intersight Standalone Mode| C-Series (M7 and later servers): 4.3(4.240152)  
   
 Note:
 
@@ -115,9 +148,8 @@ Supported PCIe Node| Metrics
 ---|---  
 UCSX-580P in Intersight Managed Mode| 
 
-  * Host Energy
+  * Hardware Status (Temperature sensor status)Host Energy
   * Host Power State (PCIe node power on/off status)
-  * Hardware Status (Temperature sensor status)
   * Temperature
 
   
@@ -142,17 +174,17 @@ Note:
 
 Metric| Supported GPUs  
 ---|---  
-GPU Temperature| Nvidia, Intel, AMD  
-GPU Power Consumption| Nvidia, Intel, AMD1  
-GPU Utilization| Nvidia1  
-GPU Memory Utilization| Nvidia1  
 GPU Clock Speed| Nvidia  
 GPU Memory Clock Speed| Nvidia  
 GPU Memory Total| Nvidia  
-GPU PCIe Link Width| Nvidia  
+GPU Memory Utilization| Nvidia1  
 GPU PCIe Link Generation| Nvidia  
+GPU PCIe Link Width| Nvidia  
+GPU Power Consumption| Nvidia, Intel, AMD1  
+GPU Temperature| Nvidia, Intel, AMD  
+GPU Utilization| Nvidia1  
   
-1—Available only after the appropriate drivers are installed. The required drivers depend on both the specific GPUand the operating system installed on the host. You can download the drivers from the [Software Download](https://software.cisco.com/download/home) page.
+1—Available only after the appropriate drivers are installed. The required drivers depend on both the specific GPU and the operating system installed on the host. You can download the drivers from the [Software Download](https://software.cisco.com/download/home) page.
 
 Note:
 

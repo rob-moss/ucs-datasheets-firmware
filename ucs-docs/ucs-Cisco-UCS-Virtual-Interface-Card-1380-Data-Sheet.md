@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Virtual Interface Card 1380 Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-732516.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:23:38 |
+| **Fetched on** | 2026-07-02 13:08:56 |
 
 ---
 
@@ -17,6 +17,12 @@
   * Skip to content
   * Skip to search
   * Skip to footer
+
+
+  *   * [Products & Services](/c/en/us/products/index.html)
+  * [Cisco Interfaces and Modules](/c/en/us/products/interfaces-modules/index.html)
+  * [Cisco Unified Computing System Adapters](/c/en/us/products/interfaces-modules/unified-computing-system-adapters/index.html)
+  * [Data Sheets](/c/en/us/products/interfaces-modules/unified-computing-system-adapters/datasheet-listing.html)
 
 
 # Cisco UCS Virtual Interface Card 1380 Data Sheet

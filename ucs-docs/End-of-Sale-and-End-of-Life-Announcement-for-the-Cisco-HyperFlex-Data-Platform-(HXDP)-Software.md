@@ -8,96 +8,11 @@
 | **HTML Title** | End-of-Sale and End-of-Life Announcement for the Cisco HyperFlex Data Platform (HXDP) Software |
 | **Source file** | `ucs-docs-raw/html/hyperflex-data-platform-eol.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:24:36 |
+| **Fetched on** | 2026-07-02 13:09:56 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/hyperconverged-infrastructure/hyperflex-hx-series/hyperflex-data-platform-eol.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# End-of-Sale and End-of-Life Announcement for the Cisco HyperFlex Data Platform (HXDP) Software
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/hyperconverged-infrastructure/hyperflex-hx-series/hyperflex-data-platform-eol.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/hyperconverged-infrastructure/hyperflex-hx-series/hyperflex-data-platform-eol.pdf) (956.9 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:September 12, 2023
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/hyperconverged-infrastructure/hyperflex-hx-series/hyperflex-data-platform-eol.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/hyperconverged-infrastructure/hyperflex-hx-series/hyperflex-data-platform-eol.pdf) (956.9 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:September 12, 2023
-
-#### Table of Contents
-
-  * Overview
-  * End-of-Life Milestones
-  * Product Part Numbers
-  * Product Migration Options
-  * For More Information
-
 
 ` `
 
@@ -401,7 +316,5 @@ Any authorized translation issued by Cisco Systems or affiliates of this end-of-
 
 ### Learn more
 
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

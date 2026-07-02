@@ -8,102 +8,11 @@
 | **HTML Title** | Release Notes for Cisco Intersight Unified Edge eCMC Firmware Release, 6.0 |
 | **Source file** | `ucs-docs-raw/html/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:17:03 |
+| **Fetched on** | 2026-07-02 13:03:23 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Release Notes for Cisco Intersight Unified Edge eCMC Firmware Release, 6.0
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.pdf) (273.1 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:March 27, 2026
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-Contact Cisco 
-
-  * [Open a TAC Case Online](https://mycase.cloudapps.cisco.com/case)
-  * US/Canada 800-553-2447
-  * [Worldwide Support Phone Numbers](//www.cisco.com/c/en/us/support/web/tsd-cisco-worldwide-contacts.html)
-  * [All Tools](//www.cisco.com/c/en/us/support/web/tools-catalog.html)
-  * [![Feedback](//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png) Feedback](https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.pdf) (273.1 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:March 27, 2026
-
-#### Table of Contents
-
-  * Cisco Intersight Unified Edge eCMC Firmware Release, 6.0
-  * Overview
-  * Revision History
-  * New software features
-  * New hardware features
-  * New Hardware Features in Release 6.0(2.260034)
-  * New Hardware Features in Release 6.0(2.260026)
-  * New Hardware Features in Release 6.0(1.251006)
-  * New Hardware Features in Release 6.0(1.251005)
-  * Security fixes
-  * Security fixes in Release 6.0(2.260034)
-  * Security fixes in Release 6.0(2.260026)
-  * Security fixes in Release 6.0(1.251006)
-  * Security fixes in Release 6.0(1.251005)
-  * Resolved issues
-  * Resolved issues in Release 6.0(2.260034)
-  * Resolved issues in Release 6.0(2.260026)
-  * Resolved issues in Release 6.0(1.251006)
-  * Resolved issues in Release 6.0(1.251005)
-  * Open issues
-  * Open issues in Release 6.0(2.260034)
-  * Open issues in Release 6.0(2.260026)
-  * Open issues in Release 6.0(1.251006)
-  * Open issues in Release 6.0(1.251005)
-  * Compatibility
-  * Cross-Version Firmware Support
-  * Related resources
-
 
 ` `
 
@@ -121,6 +30,7 @@ The following table shows the online change history for this document.
 
 Date |  Description  
 ---|---  
+June 25, 2026 |  Updated release notes for Cisco Unified Edge eCMC Infrastructure firmware 6.0(2.260143). This release includes updates to: - [Resolved issues in Release 6.0(2.260143)](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html#ResolvedissuesinRelease602260143) It does not include any new hardware feature, security fixes, or open issues.  
 April 23, 2026 |  Updated release notes for Cisco Unified Edge eCMC Infrastructure Firmware 6.0(2.260034). There is no corresponding XE Server Firmware release. This release includes fixes for issues identified internally.  
 March 16, 2026 |  Updated release notes for Cisco Unified Edge eCMC Infrastructure firmware 6.0(2.260026). This release includes updates to: - [New Hardware Features in Release 6.0(2.260026)](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html#NewHardwareFeaturesinRelease602260026) - [Open issues in Release 6.0(2.260026)](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html#OpenissuesinRelease602260026) This release includes fixes for issues identified internally.  
 January 16, 2025 |  Cisco UCS XE-Series M8 6.0(1.260001) Server Firmware version has been released. There is no corresponding Unified Edge eCMC Firmware release.  
@@ -132,6 +42,10 @@ New software features
 Intersight software features may not align with the Intersight firmware release schedule. To know more about the latest software features, see the [What's New](https://intersight.com/help/saas/whats_new) section in Intersight Help Center.
 
 New hardware features
+
+New Hardware Features in Release 6.0(2.260143)
+
+No new hardware is introduced in this release.
 
 New Hardware Features in Release 6.0(2.260034)
 
@@ -193,6 +107,10 @@ For more information, see [Cisco UCS XE9305 Data Sheet](https://www.cisco.com/si
 
 Security fixes
 
+Security fixes in Release 6.0(2.260143)
+
+There are no security fixes in this release.
+
 Security fixes in Release 6.0(2.260034)
 
 There are no security fixes in this release.
@@ -211,6 +129,16 @@ There are no security fixes in this release.
 
 Resolved issues
 
+Resolved issues in Release 6.0(2.260143)
+
+This section provides a brief description of the resolved issues.
+
+Defect ID |  Description |  First Version Affected |  Resolved in Release  
+---|---|---|---  
+[CSCws97818](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCws97818) |  On Unified Edge eCMC chassis running CMC version 6.0(2.260026), a critical alarm _EquipmentChassisTempSensorReadFailure_ may be reported for each installed sled. Attempts to connect to MTS/eCMC debug shell fail, and CLI commands such as connect ecmc, connect switch, and show firmware-version ecmc <local-eCMC-ID> also fail. The issue can occur at any time with no known external trigger, though it is not expected to be frequent. Cisco Intersight consistently reports the critical alarm during this failure state.  
+Reboot the affected eCMC to clear the critical alarms and restore command functionality.  
+This issue is resolved. |  6.0(2.260026) |  6.0(2.260143)  
+  
 Resolved issues in Release 6.0(2.260034)
 
 There are no resolved issues in this release.
@@ -233,6 +161,10 @@ There are no resolved issues in this release.
 
 Open issues
 
+Open issues in Release 6.0(2.260143)
+
+There are no open issues in this release.
+
 Open issues in Release 6.0(2.260034)
 
 There are no open issues in this release.
@@ -243,7 +175,7 @@ This section provides a brief description of the open issues.
 
 Defect ID |  Description |  Workaround |  First Version Affected  
 ---|---|---|---  
-[CSCws97818](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCws97818) |  On Unified Edge eCMC chassis running CMC version 6.0(2.260026), a critical alarm EquipmentChassisTempSensorReadFailure is reported for each installed sled. Attempts to connect to MTS/ECMC debug shell fail, and CLI commands such as connect ecmc, connect switch, and show firmware-version ecmc <local-eCMC-ID> also fail. The issue can occur at any time with no known external trigger, though it is not expected to be frequent. Cisco Intersight consistently reports the critical alarm during this failure state. |  Reboot the affected eCMC to clear the critical alarms and restore command functionality. |  6.0(2.260026)  
+[CSCws97818](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCws97818) |  On Unified Edge eCMC chassis running CMC version 6.0(2.260026), a critical alarm _EquipmentChassisTempSensorReadFailure_ may be reported for each installed sled. Attempts to connect to MTS/eCMC debug shell fail, and CLI commands such as connect ecmc, connect switch, and show firmware-version ecmc <local-eCMC-ID> also fail. The issue can occur at any time with no known external trigger, though it is not expected to be frequent. Cisco Intersight consistently reports the critical alarm during this failure state. |  Reboot the affected eCMC to clear the critical alarms and restore command functionality. |  6.0(2.260026)  
   
 Open issues in Release 6.0(1.251006)
 
@@ -255,7 +187,7 @@ This section provides a brief description of the open issues.
 
 Defect ID |  Description |  Workaround |  First Version Affected  
 ---|---|---|---  
-[CSCwr78089](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwr78089) |  After replacing an eCMC (controller module hardware), the new unit does not automatically match its firmware version with the other eCMC when that unit is already connected to Intersight. This causes the two controllers to have different firmware versions, leading to a mismatch alarm in Intersight. This issue happens after replacing a single eCMC. |  To fix the mismatch, upgrade the controller modules from Intersight (only the one with older software will update), or update the replaced module manually using the command-line interface (CLI), which is a text-based management tool. |  6.0(1.251005)  
+[CSCwr78089](https://cdetsng.cisco.com/webui/#view=CSCwr78089) |  After replacing an eCMC (controller module hardware), the new unit does not automatically match its firmware version with the other eCMC when that unit is already connected to Intersight. This causes the two controllers to have different firmware versions, leading to a mismatch alarm in Intersight. This issue happens after replacing a single eCMC. |  To fix the mismatch, upgrade the controller modules from Intersight (only the one with older software will update), or update the replaced module manually using the command-line interface (CLI), which is a text-based management tool. |  6.0(1.251005)  
   
 Compatibility
 
@@ -279,7 +211,5 @@ Related resources
 
 ### Learn more
 
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

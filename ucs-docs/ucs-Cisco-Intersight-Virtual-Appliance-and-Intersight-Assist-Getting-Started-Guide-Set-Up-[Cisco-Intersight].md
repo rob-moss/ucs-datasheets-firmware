@@ -8,14 +8,37 @@
 | **HTML Title** | Cisco Intersight Virtual Appliance and Intersight Assist Getting Started Guide - Set Up [Cisco Intersight] |
 | **Source file** | `ucs-docs-raw/html/m_setting_up_appliance.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:17:29 |
+| **Fetched on** | 2026-07-02 13:03:51 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html
 
-## Setting Up Single-Node Intersight Connected Virtual Appliance  
-  
+# Set Up
+
+  * Setting Up Single-Node Intersight Connected Virtual Appliance
+  * Setting Up Single-Node Intersight Private Virtual Appliance
+  * Setting Up Intersight Assist (Registering to Intersight SaaS)
+  * Setting Up Intersight Assist (Registering to Intersight Virtual Appliance)
+  * Configuring a Multi-Node Cluster for High Availability in Intersight Virtual Appliance
+  * Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance
+  * Recovering Intersight Connected Virtual Appliance
+  * Recovering Intersight Private Virtual Appliance
+  * Reconnecting Metrics Node in the Multi-Node Cluster
+  * Replacing a Node in the Multi-Node Cluster for Intersight Virtual Appliance
+  * Changing the Appliance Fully Qualified Domain Name (FQDN)
+  * Changing IPv4 Address of HA Management Nodes in the Multi-Node Cluster
+  * Changing IPv4 Address of Metrics Node in the Multi-Node Cluster
+  * Troubleshooting Add Node Issues During Multi-Node Cluster Configuration
+  * High Availability and Disaster Recovery for Cisco Intersight Virtual Appliance
+  * Logging In to Intersight Virtual Appliance
+  * Creating an Appliance Account for Downloading Software Packages
+  * Downloading Software Packages for Intersight Virtual Appliance
+  * Uploading Software Packages for Intersight Private Virtual Appliance
+
+
+## Setting Up Single-Node Intersight Connected Virtual Appliance
+
 Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or TAR file format. 
 
 Before You Begin: Ensure that you have installed Intersight Virtual Appliance software as per the instructions in [Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere](m_installation.html#id_95741). 
@@ -110,30 +133,1156 @@ Once you have successfully completed the initial set up of the single-node Inter
   * You can add a metrics node to create a multi-node cluster for advantage tier metrics data collection. For more information, see Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance. 
 
 
+## Setting Up Single-Node Intersight Private Virtual Appliance
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or TAR file format. 
+
+Before You Begin: Ensure that you have installed Intersight Virtual Appliance software as per the instructions in [Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere](m_installation.html#id_95741). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+An appliance installer is required to restore the appliance from a backup. If a backup is taken from appliance release version N, it can only be restored using an installer version N or higher. For example: 
+
+  * If the backup of your appliance is version 1.1.0-0, then you need appliance installer version 1.1.0-0 or higher.
+  * If the backup of your appliance is patch release version 1.1.1-1, then you need appliance installer version 1.1.1-1 or higher.
+
+A limited number of appliance installer versions are available on [Cisco Software Central](https://software.cisco.com/). If the required version of the installer is not present, contact Cisco TAC. 
+
+* * *  
+  
+---|---  
+  
+After the Cisco Intersight Virtual Appliance software deployment is complete, and the VM is powered on, access your VM using the <<https://your fqdn.com>> URL. The Intersight Appliance Installer screen appears and allows you to complete the setup for either a new install, recover the appliance software from backup, or add a node to the appliance. 
+
+The wizard runs through a series of steps to download and install software packages. You can view the progress of the installation. 
+
+Use the following instructions to complete the Intersight Private Virtual Appliance setup:
+
+### Procedure
+
+* * *
+
+**Step 1** |  On the Intersight Appliance Installer screen, select Install Private Virtual Appliance and click Start to proceed with setting up a single-node Private Virtual Appliance.  The Upload Software page displays. Upload a supported version of the appliance software that is either the same as, or newer than, the installer version.   
+---|---  
+**Step 2** |  In the Intersight Appliance Installer setup wizard, do the following: 
+
+  1. Check Network Requirements—View the results and click Next to proceed to the Configure Internal Network step.  Note that during the network requirements check if any of the DNS test fails, you cannot proceed with the configuration.
+  2. Configure Internal Network—If necessary, change the default Internal Network IP address and click Next to proceed to the Upload Software step.  **Note:** This IP address range is used for internal communications within Intersight Virtual Appliance. This range must be within the 172.16.0.0/12 subnet, but can be a smaller range (up to a subnet prefix size of 20). In most cases, the default value can be used. One reason to change the default value would be if the Appliance needs to communicate directly with other devices in the same subnet, that is without traversing IP translation mechanisms such as NAT. 
+  3. Upload Software—Upload a supported version of the appliance software that is either the same as, or newer than, the installer version.  Select either Local Machine or Network Share, depending on where you saved the software packages.  |  **Note** | 
+  * To manually update, install, or restore Intersight Connected Virtual Appliance, you will need to access the Appliance Account so that you can download the required software packages. For information, see Creating an Appliance Account for Downloading Software Packages and Downloading Software Packages for Intersight Virtual Appliance. 
+  * If you are using a major version installer, select the major version Intersight appliance bundle. If you are using a patch version installer, provide the major version Intersight appliance bundle and, optionally, a patch version Intersight appliance bundle. You must ensure that the patch bundle is compatible with the major bundle. 
+  * The appliance bundle version must be equal to or higher than the installer version. If you are using a patch installer, the combined version of the patch and major appliance bundles must be equal to or higher than the patch installer version.   
+---|---  
+  * For Local Machine, browse to where you saved the software image, and then click Finish to proceed to the Installation Result screen. 
+
+  * For the Network Share option, enter the protocol and enter details of the remote server from where you want to copy the file, and click Finish to proceed to the Installation Result screen. 
+
+  * Protocol—Communication protocol used for file transfer. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol) and SFTP (Secure File Transfer Protocol). 
+
+  * Server IP/Hostname—The host server from where the file is copied 
+
+  * Port—TCP port to use 
+
+  * Location—Directory where the file to be copied is stored 
+
+  * Software Bundle File Name for Appliance—Name of the file to be copied from the network share 
+
+  * Patch Bundle File Name for Appliance (Optional)—Name of the file to be copied from the network share. This is only applicable for patch version installers. 
+
+  * Username—Username for authenticating with the network share 
+
+  * Password—Password for authenticating with the network share 
+
+  4. Installation Results—You can view the progress of the installation on this screen. 
+
+
+  
+**Step 3** |  Log in to the Intersight Virtual Appliance Connect page. Use admin as the username and enter the password that you set during the installation process.   
+**Step 4** |  Complete the Register License process. 
+
+  1. Use the Reservation Request Code that you obtain on this page to generate Reservation Authorization Code in [Cisco Smart Software Manager](https://software.cisco.com/). 
+  2. Copy the Reservation Authorization Code that you generated in Cisco Smart Software Manager and paste it on the Reserve License screen. 
+  3. Click Install.  The license reservation process can take a few minutes to complete. For information about Intersight licensing tiers and registration, watch [Cisco Intersight Licensing Tiers and Registration](https://intersight.com/help/video#cisco_intersight_licensing_tiers_and_registration). 
+
+After you click Close, the Cisco Intersight Private Virtual Appliance dashboard displays.   
+  
+* * *
+
+### What to do next
+
+Once you have successfully completed the initial set up of the single-node Intersight Virtual Appliance: 
+
+  * You can add additional nodes to create a multi-node cluster for High Availability. For more information, see Configuring a Multi-Node Cluster for High Availability in Intersight Virtual Appliance. 
+
+  * You can add a metrics node to create a multi-node cluster for advantage tier metrics data collection. For more information, see Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance. 
+
+
+## Setting Up Intersight Assist (Registering to Intersight SaaS)
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or TAR file format. 
+
+Before You Begin: Ensure that you have installed Intersight Virtual Appliance software as per the instructions in [Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere](m_installation.html#id_95741). 
+
+After the Cisco Intersight Virtual Appliance software deployment is complete, and the VM is powered on, access your VM using the <<https://your fqdn.com>> URL. The Intersight Appliance Installer screen appears and allows you to complete the setup for either a new install, recover the appliance software from backup, or add a node to the appliance. 
+
+The wizard runs through a series of steps to download and install software packages. You can view the progress of the installation.
+
+Use the following instructions to register the Assist to Intersight SaaS:
+
+### Procedure
+
+* * *
+
+**Step 1** |  On the Intersight Appliance Installer screen, select Install Assist and click Start.  You have the option of registering the Assist to Intersight SaaS or to Intersight Virtual Appliance.  
+---|---  
+**Step 2** |  On the Connect screen, click Intersight SaaS. 
+
+  1. (Optional) Click Settings  to enable HTTPS Proxy Settings.  If an HTTP/S proxy is required to connect your Cisco Intersight Assist to the internet, you must configure proxy settings before you can complete the connection step. 
+  * Click Settings and enable the HTTPS Proxy option. 
+  * Add the Proxy Hostname or IP Address, and the Proxy Port.  The proxy port must be in the range between 1 and 65535. You can edit the Proxy settings from the appliance UI, Settings > Networking > Cloud Connection. 
+  2. Use the Device ID and Claim Code  that is displayed on the Connect page to complete connecting to Intersight. 
+  3. Ensure that the Connection status displays Claimed.  |  **Note** |  A new browser tab appears to display the status of the target claim in Intersight. If you do not have an Intersight account, you can create one in the Account Creation window and claim a target. If the target connection is successful, a successful message is displayed. Click Close to exit the tab and return to the Intersight Virtual Appliance setup wizard. If the target claim is unsuccessful, you will be taken to the Intersight login screen to restart the target claim workflow.   
+---|---  
+
+  
+**Step 3** |  Click Connect Intersight Virtual Appliance and log into Intersight using your Cisco ID. If you do not have a Cisco ID, you can create one [here](https://id.cisco.com/ui/v1.0/profile-ui).   
+**Step 4** |  In the Intersight Appliance Installer setup wizard, do the following: 
+
+  1. Connect—Click Next to proceed to the Check Network Requirements step. 
+  2. Check Network Requirements—View the results and click Next to proceed to the Configure Internal Network step.  Note that during the network requirements check if the DNS test fails, you cannot proceed with the configuration.
+  3. Configure Internal Network—If necessary, change the default Internal Network IP address and click Next to proceed to the Installations Results screen.  **Note:** This IP address range is used for internal communications within Intersight Virtual Appliance. This range must be within the 172.16.0.0/12 subnet but can be a smaller range (up to a subnet prefix size of 20). In most cases, the default value can be used. One reason to change the default value would be if the Appliance needs to communicate directly with other devices in the same subnet, that is without traversing IP translation mechanisms such as NAT. 
+  4. Installation Results—You can view the progress of the installation on this screen. 
+
+  
+  
+* * *
+
+## Setting Up Intersight Assist (Registering to Intersight Virtual Appliance)
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. 
+
+Before You Begin: Ensure that you have installed Intersight Virtual Appliance software as per the instructions in [Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere](m_installation.html#id_95741). 
+
+After the Cisco Intersight Virtual Appliance software deployment is complete, and the VM is powered on, access your VM using the <<https://your fqdn.com>> URL. The Intersight Appliance Installer screen appears and allows you to complete the setup for either a new install, recover the appliance software from backup, or add a node to the appliance. 
+
+The wizard runs through a series of steps to download and install software packages. You can view the progress of the installation. 
+
+Use the following instructions to register the Assist to Intersight Virtual Appliance:
+
+### Procedure
+
+* * *
+
+**Step 1** |  On the Intersight Appliance Installer screen, select Install Assist and click Start.  You have the option of registering the Assist to Intersight SaaS or to Intersight Virtual Appliance.  
+---|---  
+**Step 2** |  On the Connect screen, click Intersight Virtual Appliance.   
+**Step 3** |  In the Intersight Appliance Installer setup wizard, do the following: 
+
+  1. Connect—Enter the following information for claiming the Assist and click Next to proceed to the Check Network Requirements step. 
+  * Hostname—The hostname must be a fully-qualified domain name. For example: <<https://your fqdn.com>>. 
+  * Username—Name of the user that has privileges to claim the target. 
+  * Password—Password associated with the username. 
+  2. Check Network Requirements—View the results and click Next to proceed to the Configure Internal Network step.  Note that during the network requirements check if the DNS test fails, you cannot proceed with the configuration.
+  3. Configure Internal Network—If necessary, change the default Internal Network IP address and click Next to proceed to the Installations Results screen.  **Note:** This IP address range is used for internal communications within Intersight Virtual Appliance. This range must be within the 172.16.0.0/12 subnet, but can be a smaller range (up to a subnet prefix size of 20). In most cases, the default value can be used. One reason to change the default value would be if the Appliance needs to communicate directly with other devices in the same subnet, that is without traversing IP translation mechanisms such as NAT. 
+  4. Installation Results—You can view the progress of the installation on this screen. 
+
+  
+  
+* * *
+
+## Configuring a Multi-Node Cluster for High Availability in Intersight Virtual Appliance
+
+A multi-node cluster for Intersight Virtual Appliance allows for high availability, increased stability, and better resilience.
+
+Once you have completed the initial set up of the single-node appliance on VMware vSphere, KVM hypervisor, and Nutanix AHV hypervisor, you can add additional High Availability (HA) management nodes. After you successfully add two additional HA management nodes, you can create a multi-node cluster for high availability in Intersight Virtual Appliance. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Multi-node cluster configuration is on VMware vSphere, KVM hypervisor, and Nutanix AHV hypervisor installations.
+
+* * *  
+  
+---|---  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Important** | 
+
+* * *
+
+  * It is highly recommended that you take a backup of the single-node instance and VM snapshot before proceeding with the multi-node cluster configuration. If any issue arises during the multi-node cluster configuration, you can revert back to the single-node instance using the backup or snapshot. For information on backing up Intersight Virtual Appliance, see [Backing Up Data](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_settings_dashboard.html#id_93773). For information on restoring Intersight Connected Virtual Appliance, see [Recovering Intersight Connected Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7). For information on restoring Intersight Private Virtual Appliance, see [Recovering Intersight Private Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18). 
+  * Once you have set up a multi-node cluster for Intersight Virtual Appliance, you cannot revert back to the single-node instance.
+
+
+* * *  
+  
+---|---  
+  
+Requirements:
+
+  * You can set up a multi-node cluster for the appliance **only** after you have completed the initial set up of the single-node appliance. Ensure that you have set up single-node Intersight Virtual Appliance software as per the instructions in the following tasks: 
+
+  * Setting Up Intersight Connected Virtual Appliance
+
+  * Setting Up Intersight Private Virtual Appliance
+
+  * You can set up a multi-node cluster at any time after you have completed the initial set up of your appliance.
+
+  * The first node must be in Operational status to be able to add additional HA management nodes for creating a multi-node cluster for high availability in Intersight Virtual Appliance. 
+
+
+To set up a multi-node cluster for high availability for Connected Virtual Appliance and Private Virtual Appliance, do the following: 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Access your VM using the <<https://myhost2.mydomain.com/ URL.  
+---|---  
+**Step 2** |  On the Intersight Appliance Installer screen, click the Add Node to Appliance tab.   
+**Step 3** |  On the Add Node to Appliance screen, select High Availability (HA) Management Node, enter the details for the following fields, and click Finish. 
+
+  * Appliance Hostname—The hostname of the existing stand-alone appliance to which the node will be added. 
+  * Appliance Admin Username—The admin username of the existing stand-alone appliance. 
+  * Admin User Password—The admin password for the existing stand-alone appliance. 
+
+After the second management node (node2) is successfully added, it is ready to join the cluster. At this point, you can add a third management node (node3) so that you can create a cluster.  
+**Step 4** |  Repeat the instructions in Steps 1, 2, and 3 to add node3.  
+**Step 5** |  Once the node3 has been successfully added, click Go to Appliance Portal to proceed to the appliance.   
+**Step 6** |  Log into <<https:// mymanagementhost1.mydomain.com>>.  
+**Step 7** |  Choose System > Appliance Details.  Ensure that node2 and node3 are in the Ready to Join state.   
+**Step 8** |  Click Create Cluster.  |  **Important** |  The action of creating a cluster is irreversible. Note that the Appliance will switch to a maintenance mode while the cluster creation workflow is being executed. Allow 5-10 minutes for the progress page to load, after which you can view the progress of cluster creation on the Multi-Node Cluster Creation Results screen. You can also view the progress of cluster creation on node2 and node3 which is available right away.  When the setup is complete, the login screen appears.  
+---|---  
+**Step 9** |  Log into the Intersight Virtual Appliance Connect page.  Use admin as the username and enter the password that you set during the initial single-node appliance setup. At this point, you can log into node2 and node3 as well.   
+  
+* * *
+
+Multi-node cluster will be fully operational when one node goes down. The appliance automatically stabilizes when one node is down. During the transition stage, your appliance might not be accessible. 
+
+When two nodes go down, the multi-node cluster will move to maintenance mode. During this state, the system will not be operational.
+
+When the nodes come up, the multi-node cluster becomes Operational automatically. 
+
+After you successfully complete configuring the multi-node cluster for your existing single-node deployment, use the information in the following links to perform additional configuration for the multi-node cluster. 
+
+  * [Single Sign-on](m_settings_dashboard.html#id_95754)
+
+  * [SSL Certificates](m_settings_dashboard.html#reference_vjn_psh_kkb)
+
+
+After you successfully complete the HA management cluster set-up, you can add a metrics node for increased metrics scalability. For more information, see Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance. 
+
+## Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance
+
+You can deploy Intersight Virtual Appliance on VMware vSphere, KVM hypervisor, and Nutanix AHV hypervisor as a multi-node cluster which allows for advantage tier metrics data collection. This deployment option is either a two-node cluster that includes an appliance management node and a metrics node or a four-node cluster that includes a HA management cluster and a metrics node. Once you have completed the initial set up of the single-node appliance or a HA management cluster, you can add a metrics node. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Multi-node cluster configuration is supported on VMware vSphere, KVM hypervisor, and Nutanix AHV hypervisor installations.
+
+* * *  
+  
+---|---  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Important** | 
+
+* * *
+
+  * It is highly recommended that you take a backup of the single-node instance and VM snapshot before proceeding with the multi-node cluster configuration. If any issue arises during the multi-node cluster configuration, you can revert back to the single-node instance using the backup or snapshot. For information on backing up Intersight Virtual Appliance, see [Backing Up Data](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_settings_dashboard.html#id_93773). For information on restoring Intersight Connected Virtual Appliance, see [Recovering Intersight Connected Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7). For information on restoring Intersight Private Virtual Appliance, see [Recovering Intersight Private Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18). 
+  * If a **Pending Upgrade** is available, then complete the upgrade first. Once the upgrade is successful, configure the metrics node by following the instructions in this task. However, if you added the metrics node before the upgrade completes, ensure that the upgrade completes successfully before executing the **Join Metrics Node** workflow. 
+  * Once you have set up a multi-node cluster for Intersight Virtual Appliance, you cannot revert back to the single-node instance.
+
+
+* * *  
+  
+---|---  
+  
+Requirements:
+
+  * You can set up a two-node cluster for the appliance **only** after you have completed the initial set up of the single-node appliance and you can set up a four-node cluster **only** after you have completed the initial set up of the HA management cluster. Ensure that you have set up single-node appliance or a multi-node cluster for HA as per the instructions in the following tasks: 
+
+  * Setting Up Intersight Connected Virtual Appliance
+
+  * Setting Up Intersight Private Virtual Appliance
+
+  * Configuring a Multi-Node Cluster for High Availability in Intersight Virtual Appliance
+
+  * You can set up a multi-node cluster at any time after you have completed the initial set up of your appliance.
+
+  * In a two-node cluster, the first node must be in Operational status before you can add a metrics node. In a four-node cluster, all three HA management nodes must be in Operational status before you can add a metrics node. 
+
+
+To set up a multi-node cluster for advantage tier metrics data collection for Connected Virtual Appliance and Private Virtual Appliance, do the following: 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Access your VM using the <<https://mymetricshost.mydomain.com/>> URL.  
+---|---  
+**Step 2** |  On the Intersight Appliance Installer screen, click the Add Node to Appliance tab.   
+**Step 3** |  On the Add Node to Appliance screen, select Metrics Node, enter the details for the following fields, and click Finish. 
+
+  * Appliance Hostname—The hostname of the existing appliance to which the node will be added. 
+  * Appliance Admin Username—The admin username of the existing stand-alone appliance. 
+  * Admin User Password—The admin password for the existing stand-alone appliance. 
+
+After the metrics node is successfully added, it is ready to join the cluster.  
+**Step 4** |  Once the metrics node has been successfully added, click Go to Appliance Portal to proceed to the appliance.   
+**Step 5** |  Log into <<https:// mymanagementhost.mydomain.com>> or one of the HA management nodes in the case of HA management cluster.  
+**Step 6** |  Choose System > Appliance Details.  Ensure that the metrics node is in the Ready to Join state.   
+**Step 7** |  Click the ellipsis in the metrics node row and select Join Metrics Node.  |  **Important** | 
+
+  * The action of creating the multi-node cluster is irreversible.
+  * Metrics data collection will be interrupted while the metrics node workflow is being executed.
+
+  
+---|---  
+  
+* * *
+
+After you successfully complete configuring the multi-node cluster for advantage tier metrics data collection, use the information in the following links to perform additional configuration for the multi-node cluster. 
+
+  * [Single Sign-on](m_settings_dashboard.html#id_95754)
+
+  * [SSL Certificates](m_settings_dashboard.html#reference_vjn_psh_kkb)
+
+  * [Configuring Metrics Collection](m_settings_dashboard.html#configuring-metrics-collection)
+
+
+**Node Behavior in a Two-Node Cluster Setup** : You can expect the following node behavior in a multi-node cluster that includes the appliance management node and a metrics node: 
+
+  * When the appliance management node is up and the metrics node is down, the appliance UI and APIs are available and all the appliance management features are fully operational. However, the metrics data collection and reporting are not available, and the metrics data roll-up and purge are not functional as well. The maintenance shell and Console UI will indicate that the metrics node is down. As soon as the metrics node becomes operational, the metrics data collection and reporting resumes. 
+
+  * When the appliance management node is down and the metrics node is up, the entire appliance is not operational. Metrics data collection and reporting are not available. However, the metrics data roll-up and purge continue. The maintenance shell and Console UI will indicate that the appliance management node is down. As soon as the appliance management node becomes operational, metrics data collection and reporting resumes. 
+
+  * When the appliance management node and the metrics node are both down, the entire appliance is not operational. Metrics data collection and reporting will resume only after both the appliance management node **AND** the metrics node become fully operational. 
+
+
+**Node Behavior in a Four-Node Cluster Setup** : You can expect the following node behavior in a multi-node cluster that includes the HA management cluster and a metrics node: 
+
+  * When all the three HA management nodes are up and the metrics node is down, the appliance UI and APIs are available and all the appliance management features are fully operational. However, the metrics data collection and reporting are not available, and the metrics data roll-up and purge are not functional as well. The maintenance shell and Console UI will indicate that the metrics node is down. As soon as the metrics node becomes operational, the metrics data collection and reporting resumes. 
+
+  * When all three HA management nodes are down and the metrics node is up, the four-node setup goes into **Maintenance** mode. Metrics data collection and reporting is not available. The maintenance shell and Console UI will indicate that the HA management nodes are down. As soon as all three HA management nodes become operational, metrics data collection and reporting resumes. 
+
+  * When two of the three HA management nodes are down and the metrics node is up, the four-node setup goes into **Maintenance** mode. Metrics data collection and reporting are not available. The maintenance shell and Console UI will indicate that the HA management nodes are down. As soon as the two HA management nodes become operational, metrics data collection and reporting resumes. 
+
+  * When one of the three HA management nodes is down and the metrics node is up, the appliance UI and APIs are available and all the appliance management features are fully operational. Metrics data collection and reporting is also available. 
+
+  * When all three HA management nodes and the metrics node are down, the entire appliance is not operational. Metrics data collection and reporting will resume only after all three HA management nodes **AND** the metrics node become fully operational. 
+
+
+## Recovering Intersight Connected Virtual Appliance 
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual appliance installer contained in an Open Virtual Appliance (OVA) file format for VMware vSphere, ZIP file format for Microsoft Hyper-V, or TAR file format for KVM Hypervisor. 
+
+To restore a Connected Virtual Appliance configuration, you can recover the data from a backup file during the initial setup. When you restore from a backup, the installer OVA, major bundle, and patch bundle must be compatible with the backup version. An appliance version consists of a major release and an optional patch release. For example, 1.1.6-0.b is the major release, and 1.1.6-1.a is a patch release applied on top of it. 
+
+The OVA version must be equal to or higher than the major release version of the backup. During the restore process, if you choose to upload bundles, it must meet the following requirements: 
+
+  * **Major Release Backups** : The major bundle must be equal to or higher than the backup version. 
+
+  * **Patch Release Backups** : The patch version of the major bundle and its applicable patch bundle must be equal to or higher than the patch backup version. This process **aids** in ensuring system stability and data integrity. 
+
+
+**Bundle Upload Options**
+
+  * **Connected Virtual Appliance:** If you select the **Download Latest Version** option during the restore, the system automatically downloads the latest major and patch bundles. You only need to ensure the OVA version meets the deployment prerequisites. 
+
+  * **Connected Virtual Appliance (Local/Network Share)** : If you use the **Local Machine** or **Network Share** options, you must manually upload the major and patch bundles. 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+If the major bundle version already exceeds the patch backup version, the patch bundle is not required.
+
+* * *  
+  
+---|---  
+  
+**Restore Examples** : 
+
+  * **Major bundle** : Intersight-appliance-bundle-1.1.6-0.b.bin or higher. 
+
+  * **Patch bundle** : Intersight-appliance-patch-bundle-1.1.6-1.a.bin or higher; must be applicable to the major bundle. 
+
+
+A limited number of appliance installer versions are available on Cisco Software Central. If the required installer or bundles are not available, contact Cisco TAC for assistance. 
+
+Before You Begin: Ensure that you have installed Intersight Virtual Appliance software as per the instructions in [Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere](m_installation.html#id_95741). 
+
+After the Cisco Intersight Virtual Appliance software deployment is complete, and the VM is powered on, access your VM using the <<https://your fqdn.com>> URL. The Installer Options screen appears and allows you to complete the setup for either a new install or to recover the appliance software from backup. 
+
+The wizard runs through a series of steps to download and install software packages. You can view the progress of the recovery.
+
+**Ensure the backup server remains accessible and the backup files are available in the directory specified during backup creation throughout the recovery process.**
+
+Use these instructions to recover the configuration from a backup file:
+
+### Procedure
+
+* * *
+
+**Step 1** |  On the Installer Options screen, select the Recover from Backup tab and click Start.   
+---|---  
+**Step 2** |  On the Select Backup page, select the protocol and enter details of the remote server from where you want to recover the backed-up data. 
+
+  * Protocol—Communication protocol option used in the backup process. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol) and SFTP (Secure File Transfer Protocol) for backup. 
+  * Server IP/Hostname—The host from which backed-up data is recovered 
+  * Port—TCP port on the backup server 
+  * Location—Directory where the backup files are saved 
+  * Filename—Name of the backup file to restore 
+  * Username—Username for authenticating the backup client to the backup server 
+  * Password—Password for authenticating the backup client to the backup server 
+
+  
+**Step 3** |  Click Next.  |  **Important** |  **The restore process cannot be modified once it has started.**  
+---|---  
+**Step 4** |  Click Continue on the warning pop-up.   
+**Step 5** |  On the Select Software Version screen, you have the option to download the latest version of the appliance software, or you can upload any other supported version of the software that is the same as the installer version or greater than the installer version. 
+
+  1. To download the latest version of the appliance software, select the Download Latest Version button and click Finish. 
+  2. To upload a version of the appliance software, select either Local Machine or Network Share, depending on where you saved the software packages.  |  **Note** | 
+  * In order to manually restore Intersight Connected Virtual Appliance, you will need to access the Appliance Account so that you can download the required software packages. For information, see Creating an Appliance Account for Downloading Software Packages and Downloading Software Packages for Intersight Virtual Appliance. 
+  * If you are using a major version installer, select the major version Intersight appliance bundle. If you are using a patch version installer, provide the major version Intersight appliance bundle and, optionally, a patch version Intersight appliance bundle. You must ensure that the patch bundle is compatible with the major bundle. 
+  * The appliance bundle version must be equal to or higher than the installer version. If you are using a patch installer, the combined version of the patch and major appliance bundles must be equal to or higher than the patch installer version.   
+---|---  
+  * For Local Machine, browse to where you saved the software image, and then click Finish. 
+
+  * For the Network Share option, enter the protocol and enter details of the remote server from where you want to copy the file, and click Finish. 
+
+  * Protocol—Communication protocol used for file transfer. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol), and SFTP (Secure File Transfer Protocol) for backup. 
+
+  * Server IP/Hostname—The host server from where the file is copied 
+
+  * Port—TCP port to use 
+
+  * Location—Directory where the file to be copied is stored 
+
+**Note** |  CIFS share names must contain only alphanumeric characters and must conform to the regex _^(\w+)(/\w+)*/?$_. They cannot contain spaces or backtick symbol _`_. When specifying folders under the CIFS share, use the forward slash _/_ as a separator. For example: _backupshare/Intersight/Daily_ or _backupshare/Monthly_.  Because the regex does not allow for a preceding forward slash, do not include an initial forward slash when you enter the CIFS share name. For example: _share1/subdirectory1_.   
+---|---  
+  * Software Bundle File Name for Appliance—Name of the appliance software bundle file to be copied from the network share. 
+
+  * Patch Bundle File Name for Appliance—Name of the appliance patch bundle file to be copied from the network share. 
+
+**Note** | 
+  * This field is displayed in the UI only if the appliance backup was taken on a patch version.
+  * If the appliance software bundle version is the same or newer than the appliance backup version, leave the patch bundle field blank. Otherwise, specify a patch bundle that either matches or is higher than the appliance backup version. 
+  * Ensure that the software bundle and the patch bundle are copied to the same folder as specified in the Location field.   
+---|---  
+  * Username—Username for authenticating with the network share 
+
+  * Password—Password for authenticating with the network share. The password must not contain the backtick symbol _`_. 
+
+You can view the progress of the recovery on the Recovery Results page. After the recovery process is complete, the Cisco Intersight Connected Virtual Appliance dashboard is displayed. 
+
+
+  
+  
+* * *
+
+### What to do next
+
+For Recovering Multi-Node for HA Cluster Deployments: If you are recovering from a backup for a multi-node cluster deployment, first recover node1 and then add two additional nodes to create a multi-node cluster by following the steps in Configuring a Multi-Node Cluster for High Availability in Intersight Virtual Appliance. 
+
+For Recovering Multi-Node for Metrics Data Collection Deployments: While reverting snapshots taken from the supported hypervisor of either the management node in a two-node cluster, the HA management nodes in a four-node cluster, or the metrics node, it is strongly recommended that you use the reconnect option from the appliance details screen. For information on how to reconnect the metrics node, see Reconnecting Metrics Node in the Multi-Node Cluster. 
+
+Also, note that the reverted metrics node snapshots must be the same version as the management node or lower. When you revert to an older snapshot, the metrics data collected between the snapshot time and the current time is lost. After reverting from a snapshot, check the Appliance Details screen for the operational status of the metrics node as well as the Critical and Warning alarms to ensure that none of the services are impacted. 
+
+## Recovering Intersight Private Virtual Appliance 
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual appliance installer contained in an Open Virtual Appliance (OVA) file format for VMware vSphere, ZIP file format for Microsoft Hyper-V, or TAR file format for KVM Hypervisor. 
+
+To restore a Connected Virtual Appliance configuration, you can recover the data from a backup file during the initial setup. When you restore from a backup, the installer OVA, major bundle, and patch bundle must be compatible with the backup version. An appliance version consists of a major release and an optional patch release. For example, 1.1.6-0.b is the major release, and 1.1.6-1.a is a patch release applied on top of it. 
+
+The OVA version must be equal to or higher than the major release version of the backup. During the restore process, if you choose to upload bundles, it must meet the following requirements: 
+
+  * **Major Release Backups** : The major bundle must be equal to or higher than the backup version. 
+
+  * **Patch Release Backups** : The patch version of the major bundle and its applicable patch bundle must be equal to or higher than the patch backup version. This process **aids** in ensuring system stability and data integrity. 
+
+
+**Bundle Upload Options**
+
+  * **Private Virtual Appliance** : If you use the **Local Machine** or **Network Share** options, you must manually upload the major and patch bundles. 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+If the major bundle version already exceeds the patch backup version, the patch bundle is not required.
+
+* * *  
+  
+---|---  
+  
+**Restore Examples** : 
+
+  * **Major bundle** : Intersight-appliance-bundle-1.1.6-0.b.bin or higher. 
+
+  * **Patch bundle** : Intersight-appliance-patch-bundle-1.1.6-1.a.bin or higher; must be applicable to the major bundle. 
+
+
+A limited number of appliance installer versions are available on Cisco Software Central. If the required installer or bundles are not available, contact Cisco TAC for assistance. 
+
+Before You Begin: Ensure that you have installed Intersight Virtual Appliance software as per the instructions in [Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere](m_installation.html#id_95741). 
+
+After the Cisco Intersight Virtual Appliance software deployment is complete, and the VM is powered on, access your VM using the <<https://your fqdn.com>> URL. The Installer Options screen appears and allows you to complete the setup for either a new install or to recover the appliance software from backup. 
+
+The wizard runs through a series of steps to download and install software packages. You can view the progress of the recovery.
+
+**Ensure the backup server remains accessible and the backup files are available in the directory specified during backup creation throughout the recovery process.**
+
+Use these instructions to recover the configuration from a backup file:
+
+### Procedure
+
+* * *
+
+**Step 1** |  On the Installer Options screen, select the Recover from Backup tab and click Start.   
+---|---  
+**Step 2** |  On the Select Backup page, select the protocol and enter details of the remote server from where you want to recover the backed-up data. 
+
+  * Protocol—Communication protocol option used in the backup process. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol) and SFTP (Secure File Transfer Protocol) for backup. 
+  * Server IP/Hostname—The host from which backed-up data is recovered 
+  * Port—TCP port on the backup server 
+  * Location—Directory where the backup files are saved 
+  * Filename—Name of the backup file to restore 
+  * Username—Username for authenticating the backup client to the backup server 
+  * Password—Password for authenticating the backup client to the backup server 
+
+  
+**Step 3** |  Click Next.  |  **Important** |  **The restore process cannot be modified once it has started.**  
+---|---  
+**Step 4** |  Click Continue on the warning pop-up.   
+**Step 5** |  On the Select Software Version page, you can upload any other supported version of the software that is the same as the installer version or greater than the installer version.  |  **Note** | 
+
+  * In order to manually restore Intersight Private Virtual Appliance, you will need to access the Appliance Account so that you can download the required software packages. For information, see Creating an Appliance Account for Downloading Software Packages and Downloading Software Packages for Intersight Virtual Appliance. 
+  * If you are using a major version installer, select the major version Intersight appliance bundle. If you are using a patch version installer, provide the major version Intersight appliance bundle and, optionally, a patch version Intersight appliance bundle. You must ensure that the patch bundle is compatible with the major bundle. 
+  * The appliance bundle version must be equal to or higher than the installer version. If you are using a patch installer, the combined version of the patch and major appliance bundles must be equal to or higher than the patch installer version. 
+
+  
+---|---  
+  
+  * For Local Machine, browse to where you saved the software image, and then click Finish. 
+
+  * For the Network Share option, enter the protocol and enter details of the remote server from where you want to copy the file, and click Finish. 
+
+  * Protocol—Communication protocol used for file transfer. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol) and SFTP (Secure File Transfer Protocol) for backup. 
+
+  * Server IP/Hostname—The host server from where the file is copied 
+
+  * Port—TCP port to use 
+
+  * Location—Directory where the file to be copied is stored 
+
+**Note** |  CIFS share names must contain only alphanumeric characters and must conform to the regex _^(\w+)(/\w+)*/?$_. They cannot contain spaces or backtick symbol _`_. When specifying folders under the CIFS share, use the forward slash _/_ as a separator. For example: _backupshare/Intersight/Daily_ or _backupshare/Monthly_.  Because the regex does not allow for a preceding forward slash, do not include an initial forward slash when you enter the CIFS share name. For example: _share1/subdirectory1_.   
+---|---  
+  * Software Bundle File Name for Appliance —Name of the appliance software bundle file to be copied from the network share. 
+
+  * Patch Bundle File Name for Appliance —Name of the appliance patch bundle file to be copied from the network share. 
+
+**Note** | 
+  * This field is displayed in the UI only if the appliance backup was taken on a patch version.
+  * If the appliance software bundle version is the same or newer than the appliance backup version, leave the patch bundle field blank. Otherwise, specify a patch bundle that either matches or is higher than the appliance backup version. 
+  * Ensure that the software bundle and the patch bundle are copied to the same folder as specified in the Location field.   
+---|---  
+  * Username—Username for authenticating with the network share 
+
+  * Password—Password for authenticating with the network share. The password must not contain the backtick symbol _`_. 
+
+
+**Note** |   
+---|---  
+  
+You can view the progress of the recovery on the Recovery Results page. After the recovery process is complete, the Cisco Intersight Private Virtual Appliance dashboard is displayed.   
+  
+* * *
+
+### What to do next
+
+For Recovering Multi-Node for HA Cluster Deployments: If you are recovering from a backup for a multi-node cluster deployment, first recover node1 and then add two additional nodes to create a multi-node cluster by following the steps in Configuring a Multi-Node Cluster for High Availability in Intersight Virtual Appliance. 
+
+For Recovering Multi-Node for Metrics Data Collection Deployments: While reverting snapshots taken from the supported hypervisor of either the management node in a two-node cluster, the HA management nodes in a four-node cluster, or the metrics node, it is strongly recommended that you use the reconnect option from the appliance details screen. For information on how to reconnect the metrics node, see Reconnecting Metrics Node in the Multi-Node Cluster. 
+
+Also, note that the reverted metrics node snapshots must be the same version as the management node or lower. When you revert to an older snapshot, the metrics data collected between the snapshot time and the current time is lost. After reverting from a snapshot, check the Appliance Details screen for the operational status of the metrics node as well as the Critical and Warning alarms to ensure that none of the services are impacted. 
+
+## Reconnecting Metrics Node in the Multi-Node Cluster
+
+You must reconnect the metrics node in a multi-node cluster after one of the following scenarios:
+
+  * When you revert the metrics node VM snapshot.
+
+  * When you recover the management node and want to preserve the metrics data.
+
+
+To reconnect the metrics node, do the following:
+
+  1. Log into <<https://mymanagementhost.mydomain.com>>.
+
+  2. Power on <<https://mymetricshost.mydomain.com>>.
+
+  3. Click the ellipsis in the metrics node row on the Appliance Details screen and choose Reconnect Node. 
+
+
+You can monitor the progress of the workflow. Once the workflow runs successfully, the reconnected metrics node becomes completely operational. 
+
+## Replacing a Node in the Multi-Node Cluster for Intersight Virtual Appliance
+
+You can replace a node in a multi-node cluster due to one of the following reasons:
+
+  * If a node in a multi-node cluster becomes defective. 
+
+  * You might need to change the IP address of a HA management node in an existing multi-node cluster for HA in Intersight Virtual Appliance. 
+
+  * **IMPORTANT** : To change the IP address of a metrics node, use the maintenance shell because replacing the metrics node will result in loss of metrics data. For more information, see [Maintenance Shell](m_troubleshooting.html#reference_fjp_2qs_shb). 
+
+
+Perform these steps to replace a node in an existing cluster.
+
+### Procedure
+
+* * *
+
+**Step 1** |  From the hypervisor, power off and delete the defective node or the node for which you want to change the IPv4 address.  
+---|---  
+**Step 2** |  Log into another operational node in your multi-node cluster.  
+**Step 3** |  Choose System > Appliance Details.   
+**Step 4** |  In the table under Node, do the following: 
+
+  1. In the row of the node that either displays the Impaired or Unknown status, click the ellipsis. 
+  2. Click Replace Node. 
+
+The status for this node now displays as Out of Service.   
+**Step 5** |  Deploy a fresh OVA using the same DNS Domain value as the node being replaced, either using the same IPv4 address or using a new IPv4 address.  |  **Note** |  If you are changing the IPv4 address, update the DNS Domain value with the new IPv4 address.  
+---|---  
+  
+For more information about installing and deploying the appliance, see the [installation](m_installation.html#id_95741) chapter.   
+  
+**Step 6** |  Access your VM using the URL: https://_fqdn-of-your-appliance_.com.   
+**Step 7** |  On the Installer Options screen, click the Add Node to Appliance tab.   
+**Step 8** |  On the Add Node to Appliance page, select either HA Management Node or Metrics Node, enter the details for the following fields, and click Finish. 
+
+  * Appliance Hostname—The hostname of the existing appliance VM to which the node will be added. 
+  * Appliance Admin Username—The admin username of the existing appliance VM. 
+  * Admin User Password—The admin password for the existing appliance VM. 
+
+After the node is successfully added, it is ready to join the cluster.  
+**Step 9** |  Log into one of the operational nodes.  
+**Step 10** |  Click Go to Appliance Portal of the operational node and proceed to the appliance.   
+**Step 11** |  Navigate to Settings > Appliance Details.  In the row of the node that is ready to join the cluster, the node status indicates Ready to Replace.   
+**Step 12** |  Complete these steps to replace the node.
+
+  1. Click the ellipsis.
+  2. Click Join Cluster. 
+  3. On the pop-up screen, click Join. 
+
+|  **Note** |  In the row of the node that indicates a Ready to Replace status, if you delete it, the node will move back to Out of Service. At this point, you can redeploy the node.   
+---|---  
+  
+You can monitor the progress of the workflow. The replaced node becomes fully operational when the workflow runs successfully.  
+  
+* * *
+
+## Changing the Appliance Fully Qualified Domain Name (FQDN)
+
+These tasks describe how to change the Fully Qualified Domain Name (FQDN) of Intersight Virtual Appliance for single-node, two-node, three-node, and four-node setups. The process includes initiating FQDN change on the current appliance, creating a new backup, powering down the current appliance, and using the backup to restore the appliance with the new FQDN. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+This feature is not supported on Intersight Assist.
+
+* * *  
+  
+---|---  
+  
+### Changing Appliance FQDN for a Single-Node Set-up
+
+**Before you begin** : 
+
+**DNS Configuration** —Ensure that DNS records for both the new appliance FQDN (for example, `appliance-new.example.com`) and its corresponding device connector FQDN (for example, `dc-appliance-new.example.com`) are configured in your DNS settings. 
+
+To restore a **single-node appliance** using a new FQDN, perform the following steps: 
+
+  1. Navigate to System > Appliance Settings. 
+
+  2. Click Change Appliance FQDN. 
+
+  3. In the Change Appliance FQDN dialog box: 
+
+  * Enter the new appliance FQDN.
+
+  * Select the acknowledgement checkbox to confirm you understand the process.
+
+  * Click Change. 
+
+This action triggers a workflow to update all connected targets with the new FQDN information. Monitor this workflow to ensure it completes successfully. 
+
+  4. After the workflow in Step 3 completes successfully, create a new backup of the appliance. For more information, see [Creating a backup](m_settings_dashboard.html#id_83366). 
+
+  5. Power-down the appliance.
+
+  6. Recover the appliance using the backup file created in Step 4. For more information, see [Recovering Intersight Connected Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7) or [Recovering Intersight Private Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18). 
+
+
+You can monitor the recovery progress on the Recovery Results page. After the process is complete, the appliance will be accessible at the new FQDN. 
+
+**FQDN Transition Period** —For a 7-day transition period after the change, both the old and new FQDNs will be present on endpoint targets. After 7 days, only the new FQDN will remain. 
+
+**Next Steps** : 
+
+**SSL Certificates** —If your previous configuration used custom SSL certificates, you must regenerate them for the new FQDN using the same Certificate Authority (CA) and import them into the newly restored appliance. 
+
+### **Changing Appliance FQDN for a Three-Node Set-up**
+
+**Before you begin** : 
+
+**DNS Configuration** —Ensure that DNS records for both the new appliance FQDN (for example, `appliance-new.example.com`) and its corresponding device connector FQDN (for example, `dc-appliance-new.example.com`) are configured in your DNS settings. 
+
+To restore a **three-node HA cluster** using a new FQDN, perform the following steps on **any one of the HA management nodes** : 
+
+  1. Navigate to System > Appliance Settings. 
+
+  2. Click Change Appliance FQDN. 
+
+  3. In the Change Appliance FQDN dialog box: 
+
+  * Enter the new appliance FQDN.
+
+  * Select the acknowledgement checkbox to confirm you understand the process.
+
+  * Click Change. 
+
+This action triggers a workflow to update all connected targets with the new FQDN information. Monitor this workflow to ensure it completes successfully. 
+
+  4. After the workflow in Step 3 completes successfully, create a new backup of the three-node appliance. For more information, see [Creating a backup](m_settings_dashboard.html#id_83366). 
+
+  5. Power-down all the three HA management nodes.
+
+  6. Recover the appliance using the backup file created in Step 4. For more information, see [Recovering Intersight Connected Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7) or [Recovering Intersight Private Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18). 
+
+You can monitor the recovery progress on the Recovery Results page. After the process is complete, the appliance will be accessible at the new FQDN. 
+
+  7. Once you have confirmed that all the targets are in connected state on the HA management node, add additional nodes to create the HA cluster. For more information, see Configuring a Multi-Node Cluster for High Availability in Intersight Virtual Appliance. 
+
+
+**FQDN Transition Period** —For a 7-day transition period after the change, both the old and new FQDNs will be present on endpoint targets, when the appliance is in a stand-alone mode. After 7 days, only the new FQDN will remain. However, as soon as the two additional HA management nodes are added to form a three-node cluster, only the new FQDN will be present on endpoint targets. 
+
+**Next Steps** : 
+
+**SSL Certificates** —If your previous configuration used custom SSL certificates, you must regenerate them for the new FQDN using the same Certificate Authority (CA) and import them into the newly restored appliance. 
+
+### Changing Appliance FQDN for a Two-Node Set-up
+
+**Before you begin** : 
+
+**DNS Configuration** —Ensure that DNS records for both the new appliance FQDN (for example, `appliance-new.example.com`) and its corresponding device connector FQDN (for example, `dc-appliance-new.example.com`) are configured in your DNS settings. 
+
+To restore a **two-node appliance set-up (stand-alone appliance + metrics node)** using a new FQDN, perform the following steps **on the management node** : 
+
+  1. Navigate to System > Appliance Settings. 
+
+  2. Click Change Appliance FQDN. 
+
+  3. In the Change Appliance FQDN dialog box: 
+
+  * Enter the new appliance FQDN.
+
+  * Select the acknowledgement checkbox to confirm you understand the process.
+
+  * Click Change. 
+
+This action triggers a workflow to update all connected targets with the new FQDN information. Monitor this workflow to ensure it completes successfully. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Important** | 
+
+* * *
+
+If you need to change the IP address of the metrics node, it must be done before proceeding to Step 4. For more information, see Changing IPv4 Address of Metrics Node in the Multi-Node Cluster.  If you change the IP address of the metric node, ensure that the new IP address on your DNS server resolves to the existing FQDN before taking the backup. 
+
+* * *  
+  
+---|---  
+  4. After the workflow in Step 3 completes successfully, create a new backup of the appliance. For more information, see [Creating a backup](m_settings_dashboard.html#id_83366). 
+
+  5. Power-down the management node of the two-node appliance. 
+
+Note that even though the metrics node is not powered down, it is not operational at this time.
+
+  6. Recover the appliance using the backup file created in Step 4. For more information, see [Recovering Intersight Connected Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7) or [Recovering Intersight Private Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18). 
+
+You can monitor the recovery progress on the Recovery Results page. After the process is complete, the appliance will be accessible at the new FQDN. 
+
+  7. Reconnect metrics node using either the existing or the new FQDN. 
+
+     1. Navigate to System > Appliance Settings. 
+
+     2. Click the ellipsis (…) in the metrics node row and select Reconnect Node. 
+
+     3. In the Reconnect Node Using FQDN dialog box, enter the metrics node FQDN. 
+
+Ensure that this new FQDN resolves to the same IP address as the current metrics node. This action cannot be reverted. The process may take a few minutes to complete. 
+
+     4. Click Reconnect. 
+
+
+**FQDN Transition Period** —For a 7-day transition period after the change, both the old and new FQDNs will be present on endpoint targets. After 7 days, only the new FQDN will remain. 
+
+**Next Steps** : 
+
+**SSL Certificates** —If your previous configuration used custom SSL certificates, you must regenerate them for the new FQDN using the same Certificate Authority (CA) and import them into the newly restored appliance. 
+
+### Changing Appliance FQDN for a Four-Node Set-up
+
+**Before you begin** : 
+
+**DNS Configuration** —Ensure that DNS records for both the new appliance FQDN (for example, `appliance-new.example.com`) and its corresponding device connector FQDN (for example, `dc-appliance-new.example.com`) are configured in your DNS settings. 
+
+To restore a **Four-node appliance set-up (HA cluster + metrics node)** using a new FQDN, perform the following steps **on any one of the HA management nodes** : 
+
+  1. Navigate to System > Appliance Settings. 
+
+  2. Click Change Appliance FQDN. 
+
+  3. In the Change Appliance FQDN dialog box: 
+
+  * Enter the new appliance FQDN.
+
+  * Select the acknowledgement checkbox to confirm you understand the process.
+
+  * Click Change. 
+
+This action triggers a workflow to update all connected targets with the new FQDN information. Monitor this workflow to ensure it completes successfully. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Important** | 
+
+* * *
+
+If you need to change the IP address of the metrics node, it must be done before proceeding to Step 4. For more information, see Changing IPv4 Address of Metrics Node in the Multi-Node Cluster.  If you change the IP address of the metric node, ensure that the new IP address on your DNS server resolves to the existing FQDN before taking the backup. 
+
+* * *  
+  
+---|---  
+  4. After the workflow in Step 3 completes successfully, create a new backup of the three-node appliance. For more information, see [Creating a backup](m_settings_dashboard.html#id_83366). 
+
+  5. Power-down all three HA management nodes. 
+
+Note that even though the metrics node is not powered down, it is not operational at this time.
+
+  6. Recover the appliance using the backup file created in Step 4. For more information, see [Recovering Intersight Connected Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7) or [Recovering Intersight Private Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18). 
+
+You can monitor the recovery progress on the Recovery Results page. After the process is complete, the appliance will be accessible at the new FQDN. 
+
+  7. Reconnect metrics node using either the existing or the new FQDN. 
+
+     1. Navigate to System > Appliance Settings. 
+
+     2. Click the ellipsis (…) in the metrics node row and select Reconnect Node. 
+
+     3. In the Reconnect Node Using FQDN dialog box, enter either the existing or the new FQDN. 
+
+Ensure that this new FQDN resolves to the same IP address as the current metrics node. This action cannot be reverted. The process may take a few minutes to complete. 
+
+     4. Click Reconnect. 
+
+
+**FQDN Transition Period** —For a 7-day transition period after the change, both the old and new FQDNs will be present on endpoint targets. After 7 days, only the new FQDN will remain. 
+
+**Next Steps** : 
+
+**SSL Certificates** —If your previous configuration used custom SSL certificates, you must regenerate them for the new FQDN using the same Certificate Authority (CA) and import them into the newly restored appliance. 
+
+## Changing IPv4 Address of HA Management Nodes in the Multi-Node Cluster
+
+You can change the IPv4 address of HA management nodes in an existing multi-node cluster, sequentially one node at a time.
+
+To change the IPv4 address of HA management node:
+
+  1. Shut down the node for which you want to replace the IPv4 address.
+
+  2. Replace the node by following the instructions in Replacing a Node in the Multi-Node Cluster for Intersight Virtual Appliance. 
+
+
+After the node is replaced, it will reflect the new IPv4 address. To change the IPv4 address of multiple nodes in the cluster, ensure that the process of replacing one node has been completed, before moving on to replacing another node. 
+
+## Changing IPv4 Address of Metrics Node in the Multi-Node Cluster
+
+You can change the IPv4 address of the metrics node in an existing multi-node cluster using the maintenance shell. Ensure that all the nodes are in **Operational** status before you change the IPv4 address of the metrics node. For more information, see [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Although it is possible to change the IPv4 address of the metrics node by replacing the node, this option will result in loss of metrics data. 
+
+* * *  
+  
+---|---  
+  
+## Troubleshooting Add Node Issues During Multi-Node Cluster Configuration
+
+The following table lists some of the error messages you may encounter while adding nodes to configure a multi-node cluster and the possible resolution for each of them. 
+
+Table 1. Appliance Multi-Node Cluster Configuration Errors and Possible Resolutions Errors |  Possible Resolutions  
+---|---  
+Primary node appliance version does not meet the <version> requirements.  |  **Note** |  <version> is variable and serves as a placeholder text here.   
+---|---  
+The OVA version of the secondary node must be at least 1.1.1-0 and must be less than or equal to the appliance version of the primary node. For example, if you are using OVA version 1.1.1-0 for the secondary node, then the primary node must be running on an appliance release version 1.1.1-0 or higher.   
+Configuring a multi-node cluster is supported only for appliances deployed on <hypervisor list> hypervisors.  |  **Note** |  <hypervisor list> is variable and serves as a placeholder here.   
+---|---  
+The primary node and all secondary nodes must be deployed on a supported hypervisor. Currently, VMware vSphere, KVM hypervisor, and Nutanix AHV hypervisor are supported.   
+Primary node disk size is not adequate for adding a secondary node. |  The primary node must meet the disk size requirements. For more information, see [Managing Resources for Intersight Virtual Appliance Deployments](m_appliance_overview.html#managing-resources-for-appliance-deployments).   
+Secondary node must be installed on appliance installer <version> or later.  |  **Note** |  <version> is variable and serves as a placeholder text here.   
+---|---  
+The secondary node must be installed with OVA version 1.1.1-0 or higher in order to add it to the primary node.  
+  
+## High Availability and Disaster Recovery for Cisco Intersight Virtual Appliance
+
+Cisco Intersight Virtual Appliance supports migration architectures for High Availability (HA) and Disaster Recovery (DR). 
+
+The following requirements must be met to successfully migrate Intersight Virtual Appliance.
+
+  * Intersight Virtual Appliance has a Fully Qualified Domain Name (FQDN). To migrate Intersight Virtual Appliance, the FQDN (hostname) of the appliance must remain the same. However, the IP address and DNS/NTP of the appliance can be changed during the recovery process. 
+
+  * You can migrate the appliance from one site to another as long as the FQDN is reachable from the claimed end-point. This allows the backup taken from one site to be restored on another site. 
+
+  * Network connectivity between Intersight Virtual Appliance and its managed endpoints must be maintained.
+
+
+### High Availability for Intersight Virtual Appliance
+
+You can leverage any vendor-provided solution to provide High Availability (HA) capabilities in Intersight Virtual Appliance.
+
+**Intersight Virtual Appliance deployed on VMware vSphere** — Intersight Virtual Appliance supports VMware High Availability to ensure non-disruptive operation of the appliance. For more information about VMware HA, refer to the relevant documentation on VMware’s website. 
+
+**Intersight Virtual Appliance deployed on Microsoft Hyper-V Server** — Intersight Virtual Appliance supports Microsoft Hyper-V High Availability to ensure non-disruptive operation of the appliance. Microsoft Hyper-V offers the Failed-Over Clustering High Availability solution to protect the workloads running on the host servers, thereby protecting the appliance. Failover Clustering feature allows users to experience minimum disruptions in service. For more information about Microsoft Hyper-V HA, refer to the relevant documentation on Microsoft’s website. 
+
+**Intersight Virtual Appliance deployed on KVM Hypervisor** — KVM is supported by multiple Operating Systems (OS) vendors. The most common OS vendors are Red-Hat Virtualization and Ubuntu. For specific solutions for High Availability, refer to the documentation provided by the OS vendor. 
+
+**Intersight Virtual Appliance deployed on Nutanix AHV** — Intersight Virtual Appliance supports Nutanix AHV High Availability to ensure non-disruptive operation of the appliance. For more information about Nutanix HA, refer to the relevant documentation on Nutanix’s website. 
+
+### Disaster Recovery for Intersight Virtual Appliance
+
+For disaster recovery, use the existing Backup and Restore functionality in Intersight Virtual Appliance or consider third-party solutions. If you use a third-party solution, ensure that any features which automatically update the IP address of the Intersight Virtual Appliance VM are disabled. 
+
+**Backup and Restore in Intersight Virtual Appliance**
+
+Cisco strongly recommends taking periodic backup of Intersight Virtual Appliance.
+
+For information on backing up Intersight Virtual Appliance, see [Backing Up Data](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_settings_dashboard.html#id_93773). 
+
+For information on restoring Intersight Connected Virtual Appliance, see [Recovering Intersight Connected Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7). 
+
+For information on restoring Intersight Private Virtual Appliance, see [Recovering Intersight Private Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18). 
+
+**Third-Party Disaster Recovery Solutions**
+
+For disaster recovery configuration of the virtual machine, you can use any vendor-provided solutions to augment the DR capabilities. Refer to the vendor-specific documentation for configuration details. 
+
+**VMware DR Solutions**
+
+  * **VMware Snapshots** — In addition to the Intersight Virtual Appliance Backup and Restore functionality, VMware also provides VM snapshot for preserving the state and data of the virtual machine. Preserving the state includes the VM’s power state, and preserving data includes all the files including the disk, memory, and other devices' virtual network interface cards. **It is highly recommended that you power-off the appliance (VM) before you take the VM snapshot. Using snapshots from powered-on VMs are not supported.**
+
+When snapshotting a multi-node cluster Appliance, **all** nodes must be snapshotted. The complete set of snapshots represent the state of the overall Intersight Virtual Appliance, even though it happens to be spread across multiple VMs. It is highly recommended that you power down all nodes and then snapshot them while powered off as this guarantees a consistent set of snapshots. When reverting the Intersight Virtual Appliance to an earlier set of VM snapshots, **all** snapshots must be restored simultaneously. You cannot restore only some of the snapshots. 
+
+For more information about VM snapshot, refer to the relevant documentation on the VMware website.
+
+  * **Intersight Virtual Appliance deployed on VMware vSphere** — VMware provides multiple solutions for DR: 
+
+  * VMware-SRM (VMware Site Recovery Manager)
+
+  * VMware-VRS (VMware vSphere Replication) 
+
+
+**Microsoft Hyper-V DR Solutions**
+
+Microsoft Hyper-V includes a set of built-in features that provides an efficient VM disaster recovery. Hyper-V virtual machine DR can be performed either by backing up or replicating VMs. Both options have certain aspects that should be considered when creating a DR plan. For more information, refer to the relevant documentation on the Microsoft website. 
+
+**KVM Hypervisor DR Solutions**
+
+KVM is supported by multiple Operating Systems (OS) vendors. The most common OS vendors are Red Hat Virtualization and Ubuntu. For DR-specific solutions for Intersight Virtual Appliance deployed on KVM, refer to the documentation provided by the OS vendor. 
+
+For other approved Third-Party DR solutions, refer to the installation document of the Third-Party.
+
+## Logging In to Intersight Virtual Appliance
+
+### Logging In to Intersight Virtual Appliance
+
+After installing Intersight Virtual Appliance, you can log into the appliance as a user in one of the methods detailed below. The LDAP/AD and SSO tabs appear after you configure LDAP settings or SSO for the account. 
+
+![](/c/dam/en/us/td/i/300001-400000/300001-310000/307001-308000/307811.jpg)
+
+  * **Local User** —Use **admin** as the username and use the same password that you set at the time of registering the appliance. If the password you set at the time of registering is weak, Intersight prompts you to change your password to a stronger one. After a successful reset to a strong password, you are directly logged into the appliance. Intersight supports only one local user (admin). 
+
+  * **LDAP/AD** —Select the LDAP domain that you have configured, enter a **Username** or **Email** and the password that you have set up on the LDAP server. The username you use to log in must be the same as the sAMAccountName that you configure for the user in the LDAP server. For more information see LDAP Configuration, Add Users, and [Add Groups](m_settings_dashboard.html#id_93931). 
+
+  * **SSO** —Enter the email ID that you have used to set up SSO in the Identity Provider. Single Sign-On (SSO) authentication enables you to use a single set of credentials to log in to multiple applications. For more information about SSO, see [Setting up SSO](https://intersight.com/help/resources/sso_in_intersight_overview#overview_of_single_sign_on_\(sso\)_with_cisco_intersight). 
+
+
+**For Local User Only** —If the local user login fails because of an incorrect username or password, details of the failed login information will be logged in Audit Logs. You will be able to view the details of the failed login, in Audit Logs, after you successfully log into the appliance. 
+
+## Creating an Appliance Account for Downloading Software Packages
+
+To complete an Intersight Private Virtual Appliance deployment, or manually update Intersight Connected Virtual Appliance, you will need to access the Appliance Account so that you can download the Intersight Virtual Appliance, Hyperflex, UCS Director, and HCI software packages.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+It is highly recommended that you check the Appliance Account regularly for updates and remain on the latest version of the Intersight Virtual Appliance software, which is continuously enhanced with new features and improvements.  Intersight Virtual Appliance supports the latest major release and the three preceding major releases. Patch releases for each of these supported major releases are also supported. For example, if the latest major release is 1.1.3-0, the following versions are supported: 
+
+  * Major releases: 1.1.3-0, 1.1.2-0, 1.1.1-0, and 1.1.0-0
+  * Patch releases: 1.1.3-1, 1.1.2-1, 1.1.2-2, 1.1.2-3, and 1.1.1-1
+
+
+* * *  
+  
+---|---  
+  
+Use the steps in this task to create an Appliance Account:
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log in to <https://www.intersight.com/pvapp> using your Cisco ID. If you do not have a Cisco ID, you can create one [here](https://id.cisco.com/signin/register).  **Note:** You will need to log into <https://www.intersight.com/pvapp> only to create an Appliance Account. After you have created the Appliance Account, you can access it by logging into [Intersight](https://intersight.com).   
+---|---  
+**Step 2** |  Accept the General Terms and click Next.   
+**Step 3** |  Enter a name for the Appliance Account in the Appliance Account Creation screen.   
+**Step 4** |  Click Create.  After the Appliance Account is successfully created, you can log into [Intersight](https://intersight.com) to access the account and download the required Intersight Private Virtual Appliance, HyperFlex, or Cisco UCS Director software packages.  To download Cisco UCS Server Firmware and Cisco UCS Server Configuration Utility, go to [Cisco Software Central](https://software.cisco.com/).  |  **Note** |  Account Administrators can enable users and groups to be able to access any of the Appliance Accounts that have been created. For more information on how to add users and groups, see [Adding a User](m_settings_dashboard.html#id_93932) and [Adding a Group](m_settings_dashboard.html#id_93931).   
+---|---  
+**Note** |  You can configure email notifications to stay current with software updates for Intersight Virtual Appliance. For more information, see [Configuring Email Notifications for Software Updates in Intersight Virtual Appliance](https://intersight.com/help/appliance/getting_started/software_downloads/configure_email_notifications_software_download).   
+---|---  
+  
+* * *
+
+## Downloading Software Packages for Intersight Virtual Appliance
+
+Use the steps in this task to download Intersight Virtual Appliance, UCS Firmware, Hyperflex, UCS Director, and HCI software packages. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+To download Cisco UCS Server Firmware and Cisco UCS Server Configuration Utility, go to [Cisco Software Central](https://software.cisco.com/). 
+
+* * *  
+  
+---|---  
+  
+### Before you begin
+
+Ensure that you have created an Appliance Account. If you have not created an Appliance Account, see [Creating an Appliance Account for Downloading Software Packages](https://intersight.com/help/appliance/getting_started/software_downloads/creating_an_appliance_account). 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into [Intersight](https://intersight.com) using your Cisco ID. If you do not have a Cisco ID, you can create one [here](https://id.cisco.com).   
+---|---  
+**Step 2** |  Select the account that you created to access the Appliance Account.  The Software Download page is displayed.   
+**Step 3** |  Click Software Catalog.  You can download the required software packages from the tabs displayed on this page. You can also create custom tabs by clicking on the + icon.  From the Appliance tab, you can download the following appliance packages: 
+
+  * Intersight Appliance Software Bundle—Appliance software bundles such as 1.1.0-0 and 1.1.1-0. Use software bundles for new installations as well as updating existing appliances to a newer software version. 
+  * Intersight Appliance Patch Bundle—Appliance patch bundles such as 1.1.0-1, 1.1.0-2, 1.1.1-1, and 1.1.1-2. Use patch bundles to update existing Intersight Virtual Appliance that meets the software version criteria. 
+  * Intersight Appliance Intelligence Bundle—Use intelligence bundles to update Intersight intelligence such as Hardware Compatibility List (HCL) and Advisories as soon as it becomes available, independent of the appliance software update schedule. 
+
+For more information about appliance patch releases, see [Intersight Virtual Appliance Patch Releases](m_updating_the_intersight_virtual_appliance_software.html#appliance-versioning-scheme).  The My Download tab displays information about all your downloads as well as the latest version of the software that is available for you to download. In addition, you can locate the logs of all the downloads in Audit Logs for your appliance.  You can proceed to upload the software onto the appliance. For more information, see Uploading Software Packages for Intersight Private Virtual Appliance.  After uploading the software packages, you can install them on the claimed targets. To upgrade connector packs on Cisco UCS Director targets, see [Upgrading Connector Packs on UCS Director Instances](https://intersight.com/help/appliance/resources/connector-pack-upgrade-UCSD).  |  **Note** |  The ESXi software package is also downloaded as part of the Hyperflex software package. Hence, you do not have to download a separate ESXi software package.   
+---|---  
+  
+* * *
+
+## Uploading Software Packages for Intersight Private Virtual Appliance
+
+Intersight Private Virtual Appliance is intended for environments where you operate data centers in disconnected (air gap) mode. Hence, you must download software packages from either the Cisco Software Central site or by accessing the Appliance Account on [Intersight](https://intersight.com), and then uploading them on to the appliance. 
+
+Use this procedure to upload software packages for your Private Virtual Appliance.
+
+### Before you begin
+
+Ensure that you have downloaded the required software packages as follows:
+
+  * To download Cisco UCS Server Firmware and Cisco UCS Server Configuration Utility, go to [Cisco Software Central](https://software.cisco.com/). 
+
+  * To download Cisco HyperFlex, Cisco UCS Director or Intersight Private Virtual Appliance software packages, you will need to access your Appliance Account. For more information, see Creating an Appliance Account for Downloading Software Packages and Downloading Software Packages for Intersight Virtual Appliance. 
+
+
+### Procedure
+
+* * *
+
+**Step 1** |  From the left navigation panel, click Software Repository > Software.   
+---|---  
+**Step 2** |  Click Upload Software.  The Upload Software screen is displayed. 
+
+  1. Select either Local Machine or Network Share, depending on where you saved the software packages, and then click Next. 
+  2. For the Network Share option, enter the protocol and enter details of the remote server from where you want to copy the file. 
+  * Protocol—Communication protocol used for file transfer. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol), and SFTP (Secure File Transfer Protocol). 
+  * Server IP/Hostname—The network share server from where the file is copied 
+  * Port—TCP port to use 
+  * Location—Directory where the file to be copied is stored 
+  * Filename—Name of the file to be copied from the network share 
+  * Username—Username for authenticating with the network share 
+  * Password—Password for authenticating with the network share 
+
+You can track the upload progress by clicking on the **Requests** icon. When the upload process completes successfully, the software that you uploaded will appear on the Software Repository page.   
+  
+* * *
+
 ---
 
 ## Page 2: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/preface.html
 
-  * [Communications, Services, Bias-free Language, and Additional Information](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/preface.html)
-  * [Introduction to Intersight Managed Mode Server Bios Tokens](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/b_UCS_BIOS_Tokens_Guide_chapter_01.html)
-  * [Supported Platforms](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-supported-platforms-and-bios-tokens.html)
-  * [Boot Options BIOS Settings](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-boot-options-bios-settings.html)
-  * [Intel Directed IO](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-intel-directed-io.html)
-  * [LOM and PCIe Slots](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-lom-and-pcie-slots.html)
-  * [Main](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-main.html)
-  * [Memory](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-memory.html)
-  * [PCI](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-pci.html)
-  * [Power and Performance](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-power-and-performance.html)
-  * [Processor](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-processor.html)
-  * [QPI](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-qpi.html)
-  * [Server Management](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-server-management.html)
-  * [Trusted Platform](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-trusted-platform.html)
-  * [USB](/c/en/us/td/docs/unified_computing/ucs/Intersight/IMM_BIOS_Tokens_Guide/b_IMM_Server_BIOS_Tokens_Guide/m-usb.html)
+# Communications, Services, Bias-free Language, and Additional Information
 
+  * To receive timely, relevant information from Cisco, sign up at [Cisco Profile Manager](https://engage2demand.cisco.com/LP=6097?oid=pcuxa003033). 
+
+  * To get the business impact you’re looking for with the technologies that matter, visit [Cisco Services](https://www.cisco.com/go/services). 
+
+  * To submit a service request, visit [Cisco Support](https://www.cisco.com/c/en/us/support/index.html). 
+
+  * To discover and browse secure, validated enterprise-class apps, products, solutions and services, visit[ Cisco Marketplace](https://www.cisco.com/go/marketplace/). 
+
+  * To obtain general networking, training, and certification titles, visit [Cisco Press](https://www.ciscopress.com/). 
+
+  * To find warranty information for a specific product or product family, access [Cisco Warranty Finder](https://connectthedots.cisco.com/connectdots/serviceWarrantyFinderRequest?fl=wf). 
+
+
+## Documentation Feedback
+
+To provide feedback about Cisco technical documentation, use the feedback form available in the right pane of every online document. 
+
+## Cisco Bug Search Tool
+
+[Cisco Bug Search Tool](https://www.cisco.com/c/en/us/support/web/tools/bst/bsthelp/index.html) (BST) is a web-based tool that acts as a gateway to the Cisco bug tracking system that maintains a comprehensive list of defects and vulnerabilities in Cisco products and software. BST provides you with detailed defect information about your products and software. 
+
+## Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on standards documentation, or language that is used by a referenced third-party product. 
 
 ---
 
 ## Page 3: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_about_this_guide.html
+
+# About This Guide
 
 ## Introduction
 
@@ -143,9 +1292,108 @@ Cisco Intersight Assist helps you add endpoint devices to Cisco Intersight. A da
 
 The guide provides an overview of how to install and set up Cisco Intersight Virtual Appliance and Cisco Intersight Assist in your environment. 
 
+## New and Changed Information
+
+The following table provides an overview of the significant updates for the new features and functionality documented in this guide. 
+
+Table 1. New and Changed Features and Functionality When Updated |  Feature/Funtionality |  Description |  Where Documented  
+---|---|---|---  
+June 25, 2026 |  Configuring Syslog |  Added information for an enhancement that provides consistent, structured audit logs for maintenance and admin read-only shells, capturing the terminal, user, remote IP, and command executed in a single line.  |  [Configuring Syslog](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_6fbd30aa-44e8-4f10-8bbf-e889308adee1)  
+HA and metrics node support when Intersight Virtual Appliance is deployed on KVM Hypervisor |  Updated content to include support for high availability and a metrics node when deployed on KVM Hypervisor. |  [Installing Cisco Intersight Virtual Appliance and Intersight Assist on KVM Hypervisor](m_installation.html#Cisco_Task_in_List_GUI.dita_bb0eaad2-db9a-4b07-9bd3-7efbe5f8b11a)  
+Support for a medium or a large metrics node in combination with a small management node |  Updated content to include support for a medium or a large metrics node in combination with a small management node. |  [Supported Configuration Limits for Intersight Virtual Appliance](m_appliance_overview.html#reference_d1b_nhj_sjb)  
+Password reset for the local admin user |  Added information about initiating the local admin password reset from the hypervisor console without contacting Cisco TAC. |  [Resetting the Password for the Local Admin User](m_settings_dashboard.html#resetting_password_local_admin_user) [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb)  
+Support for local backups without requiring a remote file server |  Updated content for supporting local backups without requiring a remote file server. |  [Create Backup](m_settings_dashboard.html#id_83366)  
+Configuring LDAP settings |  Added information for the enhanced LDAP functionality in Intersight Virtual Appliance by adding customizable user search attributes and an optional LDAP filter for advanced user searches.  |  [Configuring LDAP Settings](m_settings_dashboard.html#task_cl1_1pd_qkb)  
+Configuring password policy for local users |  Updated the existing content to include information about configuring the maximum number of days that a local user password remains valid in Intersight Virtual Appliance  |  [Configuring Password Policy for Local Users](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_44f02df4-69e8-4ea0-94f5-756924598aeb)  
+March 19, 2026 |  Resource Monitoring support in Intersight Virtual Appliance |  Added new content that provides information about the ability to view real-time visual representation of appliance health status, including CPU, memory, and disk utilization.  |  [Intersight Virtual Appliance Monitoring](m_settings_dashboard.html#reference_rzp_xp5_kgb)  
+Small configuration support in Intersight Virtual Appliance |  Updated content to include information about resource requirements for small configuration in Appliance. |  [VM Resource Requirements for Intersight Virtual Appliance Deployments](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) [Supported Configuration Limits for Intersight Virtual Appliance](m_appliance_overview.html#reference_d1b_nhj_sjb)  
+Tiny configuration support in Intersight Assist |  Updated content to include information about resource requirements for tiny configuration in Assist. |  [VM Resource Requirements for Intersight Assist](m_appliance_overview.html#Cisco_Concept.dita_7663b259-3058-49e2-b27c-0282007dda2a_new)  
+SSL certificate management |  Added information about the new configuration option that is available in the maintenance shell to manage SSL certificates.  |  [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb)  
+December 11, 2025 |  Change the Appliance FQDN |  Added new content that provides information on how to change the appliance FQDN and recover the appliance using the new FQDN. |  [Changing the Appliance Fully Qualified Domain Name (FQDN)](m_setting_up_appliance.html#changing-appliance-fqdn)  
+Intersight Connected Virtual Appliance software updates |  Updated existing content to include information about switching between Automatic and Manual modes of software updates in Intersight Connected Virtual Appliance when a pending update exists.  |  [Updating Intersight Connected Virtual Appliance](m_updating_the_intersight_virtual_appliance_software.html#Cisco_Task_in_List_GUI.dita_43af1cc4-8230-4d44-a643-5c5baabf78d0)  
+Intersight Virtual Appliance on Microsoft Hyper-V installation |  Updated the Intersight Virtual Appliance on Microsoft Hyper-V installation task to include information on how to create a new virtual machine as importing a virtual machine is no longer supported.  |  [Installing Cisco Intersight Virtual Appliance and Intersight Assist on Microsoft Hyper-V Server](m_installation.html#Cisco_Task_in_List_GUI.dita_0f0fdb01-dc64-4db2-8d6c-38da86e97a33)  
+IP address and hostname requirements |  Deleted all references to PTR (reverse DNS) record requirements in this Getting Started Guide. |  [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e)  
+September 30, 2025 |  Launch a Linux bash shell in a read-only environment |  Updated content to include information about the new option 10 that is now available in the maintenance shell. |  [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb)  
+Grace period for Connected Virtual Appliance software updates in automatic mode |  Updated task to include information on how to customize the grace period for Connected Virtual Appliance software updates in automatic mode.  |  [Updating Intersight Connected Virtual Appliance](m_updating_the_intersight_virtual_appliance_software.html#Cisco_Task_in_List_GUI.dita_43af1cc4-8230-4d44-a643-5c5baabf78d0)  
+June 17, 2025 |  Four-node setup (includes multi-node for HA and metrics node) |  Updated the task to include information on how to configure an advantage tier metrics node in a three-node setup as well as four-node setup.  Updated the task for four-node setup. |  [Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance](m_setting_up_appliance.html#configuring-metrics-node) [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e)  
+Register Intersight Assist to Intersight Virtual Appliance |  Added new task to provide information on how to set up Intersight Assist to register to Intersight Virtual Appliance. |  [Setting Up Intersight Assist (Registering to Intersight Virtual Appliance)](m_setting_up_appliance.html#setting-up-assist-registering-to-appliance)  
+LDAP/AD Configuration |  Updated existing task for specifying multiple LDAP servers within a single configuration. |  [Configuring LDAP Settings](m_settings_dashboard.html#task_cl1_1pd_qkb)  
+Account Settings |  Updated existing task for configuring a default authentication method. |  [Configuring Account Settings](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_36dc66cf-f56b-46f5-8343-50006c0f5b2a)  
+April 2025 |  Configuring Email Notifications for Intersight Virtual Appliance Software Updates |  Added a new task for configuring email notifications for software updates. |  [Configuring Email Notifications for Intersight Virtual Appliance Software Updates](m_settings_dashboard.html#configuring-email-notifications-for-software-updates)  
+March 2025 |  Metrics Node |  Added a new task that provides information on how to configure an advantage tier metrics node. Added a new task about provides information on how to reconnect metrics node. Added a new topic that provides information on how to change the IPv4 Address of the metrics node. Updated the existing "IP Address and Hostname Requirements" section for two-node setup. |  [Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance](m_setting_up_appliance.html#configuring-metrics-node) [Reconnecting Metrics Node in the Multi-Node Cluster](m_setting_up_appliance.html#reconnecting-metrics-node-in-the-multi-node-cluster) [Changing the IPv4 Address of Metrics Node in the Multi-Node Cluster](m_setting_up_appliance.html#changing-ipv4-for-metrics-node) [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e)  
+LDAP/AD Configuration |  Updated the existing task for the "Test LDAP Settings" feature. |  [Configuring LDAP Settings](m_settings_dashboard.html#task_cl1_1pd_qkb)  
+SMTP Configuration |  Updated the existing task for the "Test SMTP Settings" feature. |  [Configuring SMTP Settings for Email Notifications](m_settings_dashboard.html#Cisco_Reference.dita_89281b7c-503f-4eea-a157-229fa4e7cc5c)  
+October 2024 |  Nutanix AHV |  Added a new task that provides information on how to install Intersight Virtual Appliance on Nutanix AHV |  [Installing Cisco Intersight Virtual Appliance on Nutanix AHV](m_installation.html#installing-appliance-and-assist-on-nutanix-ahv)  
+Intersight Virtual Appliance Console UI |  Created a new topic that provides information about the appliance Console UI |  [Intersight Virtual Appliance Console UI](m_troubleshooting.html#intersight-virtual-appliance-console-ui)  
+Add Node Errors and Possible Resolutions |  Created a new topic that includes information about errors encountered while adding nodes in a multi-node cluster configuration and possible resolutions for them.  |  [Troubleshooting Add Node Issues During Multi-node Cluster Configuration](m_setting_up_appliance.html#troubleshooting-add-node-issues-during-multi-node-cluster-creation)  
+August 2024 |  Appliance Patch Release Version 1.1.0-1 |  Added a new topic that includes information about patch releases in Intersight Virtual Appliance along with the version scheme for the software releases and patch releases.  Updated the "Updating Intersight Connected Virtual Appliance" and "Updating Intersight Private Virtual Appliance" tasks for the patch release.  |  [Intersight Virtual Appliance Patch Releases](m_updating_the_intersight_virtual_appliance_software.html#appliance-versioning-scheme) [Updating Intersight Connected Virtual Appliance](m_updating_the_intersight_virtual_appliance_software.html#Cisco_Task_in_List_GUI.dita_43af1cc4-8230-4d44-a643-5c5baabf78d0) [Updating Intersight Private Virtual Appliance](m_updating_the_intersight_virtual_appliance_software.html#Cisco_Task_in_List_GUI.dita_5da094ee-88d8-405e-a022-e880cceec4c5)  
+July 2024 |  AlmaLinux migration |  Added information regarding upgrade behavior due to AlmaLinux migration. |  [Intersight Virtual Appliance 1.1.0-0 Upgrade Behavior — Impact of CentOS 7 to AlmaLinux 9 Migration](m_updating_the_intersight_virtual_appliance_software.html#centos-to-almalinux-migration)  
+Changing IPv4 address |  Created a new topic that provides information on how to change an IPv4 address for a node in a multi-node cluster.  |  [Changing an IPv4 Address for a Node in the Multi-Node Cluster ](m_setting_up_appliance.html#change-ipv4-address-in-multinode-clusters)  
+Appliance software update failure issues |  Created a new topic that includes error messages pertaining to appliance software update failures and possible resolutions for them.  Updated the task that includes information on how to replace a node in a multi-node cluster. |  [Troubleshooting Intersight Virtual Appliance Software Update Failure Issues](m_updating_the_intersight_virtual_appliance_software.html#Cisco_Reference.dita_b1e630cc-e864-4635-97d8-076604a10894) [Replacing a Node in the Multi-Node Cluster for Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_b0a96d9a-cce5-41ca-98ec-afab725b6d50)  
+March 2024 |  Metrics Collection |  Added information in the table about the supported configuration limits for the Metrics Collection feature. |  [Supported Configuration](m_appliance_overview.html#reference_d1b_nhj_sjb)  
+Local users |  Updated task to include information on how to add local users. |  [Adding a User](m_settings_dashboard.html#id_93932)  
+Reset password of local users |  Added a new section that includes information about how to reset the password of local users. |  [Resetting the Password of Local Users](m_settings_dashboard.html#resetting-the-password-of-local-users)  
+Lockout local users account |  Added a new task that describes the lockout of local users accounts feature. Updated the table in Step 4 to add the fields required for configuring the lockout of local users account feature. |  [Locking Out Local Users Accounts](m_settings_dashboard.html#locking-out-local-users-accounts) [Configuring Password Policy for Local Users](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_44f02df4-69e8-4ea0-94f5-756924598aeb)  
+December 2023 |  Backup Retention |  Updated task to include information about the steps to follow for enabling backup retention. |  [Scheduling Backup](m_settings_dashboard.html#id_93924)  
+Support for CIFS protocol |  Updated task to include information pertaining to support for the CIFS protocol. |  [Creating a Backup](m_settings_dashboard.html#id_83366)  
+Backup Retention Scenarios |  Added a new table that describes the various backup retention scenarios and the expected outcomes. |  [Backup Retention Scenarios](m_settings_dashboard.html#backup-retention-scenarios)  
+Port Requirements |  Updated the topic to include port 9094 as a requirement for Intersight Virtual Appliance communication. |  [Port Requirements](m_appliance_overview.html#Cisco_Reference.dita_401365f4-d132-4b65-9e83-44788cf7931c)  
+October 2023 |  Resource requirements for existing appliance deployments. |  New task includes information about resource requirements for existing appliance deployments as well as disk size requirements for VMware vSphere installations.  |   
+Configuring External Syslog |  Updated the task to include information that it is now possible to configure up to five external syslog servers. |  [Configuring External Syslog ](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_6fbd30aa-44e8-4f10-8bbf-e889308adee1)  
+SSL Certificates |  Updated task to include information about switching to a self-signed certificate. |  [Adding SSL Certificates ](m_settings_dashboard.html#reference_vjn_psh_kkb)  
+Appliance Alarms |  Updated information in the table for the appliance alarms. |  [Alarms](m_settings_dashboard.html#reference_rzp_xp5_kgb)  
+Single Sign-on |  Updated the "IdP Requirements" section to include information for multi-node cluster configuration. |  [Single Sign-On with Intersight Virtual Appliance](m_settings_dashboard.html#id_95754)  
+July 2023 |  Collecting a Tech Support Bundle From Intersight Virtual Appliance |  Added support for collecting tech support bundles for Intersight Connected Virtual Appliance.  |  [Technical Assistance](m-technical-assistance.html#reference_f4d_kdp_mgb)  
+Configuring Cisco TAC Support Using a Serial Console |  Added new task to configure Cisco TAC Support using a serial console. |  [Configuring Cisco TAC Support Using a Serial Console](m-technical-assistance.html#Cisco_Reference.dita_b2778427-6c95-45f4-a027-a88c2a6aac0a)  
+Reserved IP Address Range Requirements |  Updated information in this section |  [Reserved IP Address Range Requirements](m_appliance_overview.html#Cisco_Reference.dita_c535dd98-f836-4f7c-bb7d-a0100f83c30b)  
+February 2023 |  Multi-Node Cluster Deployment  This feature is currently in Tech Preview. Tech Preview provides a preview of a functionality that is still under development. The Tech Preview features are not intended to be used in production environments. These features, including their GUI and API interfaces, may change between Tech Preview and General Availability. To provide your feedback for the tech preview, send an email to intersight-tech-preview-feedback@cisco.com |  Added a new task that provides information on how to configure a multi-node cluster for Intersight Virtual Appliance. |  [Configuring a Multi-Node Cluster for Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a18a1d2e-5c8e-42c8-a7de-6bb01b218fde)  
+Added a new task that provides information on how to replace a node in the multi-node cluster for Intersight Virtual Appliance. |  [Replacing a Node in the Multi-Node Cluster for Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_b0a96d9a-cce5-41ca-98ec-afab725b6d50)  
+January 2023 | Reserved IP Address Range Requirements | Added new section to include information about the requirements for reserved IP address range. |  [Reserved IP Address Range Requirements](m_appliance_overview.html#Cisco_Reference.dita_c535dd98-f836-4f7c-bb7d-a0100f83c30b)  
+November 2022 | Configuring External Syslog | Updated the Configuring External Syslog task to include support for exporting all Intersight alarms to the configured external syslog server.  |  [Configuring Syslog](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_6fbd30aa-44e8-4f10-8bbf-e889308adee1)  
+Supported Configuration Limits | Updated content to include information for large deployments. |  [Supported Configuration Limits for Intersight Virtual Appliance](m_appliance_overview.html#reference_d1b_nhj_sjb)  
+April 2022 | Intersight Virtual Appliance Monitoring  | Added a note in the Intersight Virtual Appliance Monitoring section to specify that UCS C-Series server-related faults are not forwarded by the Connected Virtual Appliance to an external syslog server.  |  [Intersight Virtual Appliance Monitoring](m_settings_dashboard.html#reference_rzp_xp5_kgb)  
+Configuring External Syslog | Added a note in the Configuring External Syslog task to specify that UCS C-Series server-related faults are not forwarded by the Connected Virtual Appliance to an external syslog server.  |  [Configuring Syslog](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_6fbd30aa-44e8-4f10-8bbf-e889308adee1)  
+January 2022 | High Availability and Disaster Recovery |  This guide now includes information about how to leverage High Availability using a vendor-provided solution. It also includes information about disaster recovery using the existing Backup and Restore functionality in Intersight Virtual Appliance as well as other third-party solutions.  |  [High Availability and Disaster Recovery for Cisco Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Concept.dita_c8e20ad0-a14c-4895-882b-4494ab52878e)  
+December 2021 | Merge the Intersight Assist Getting Started Guide content with the Intersight Virtual Appliance Getting Started Guide |  This guide now includes installation and set-up information for both Intersight Virtual Appliance and Intersight Assist. |  [About Cisco Intersight Virtual Appliance](m_appliance_overview.html#id_82950) [About Cisco Intersight Assist](m_appliance_overview.html#id_131616)  
+November 2021 | Configuring Account Settings |  Updated the Configuring Account Settings task to include information about the Audit Logs Retention Period field. |  [Configuring Account Settings](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_36dc66cf-f56b-46f5-8343-50006c0f5b2a)  
+October 2021 | Setting Up Intersight Virtual Appliance |  Added new tasks for setting up Intersight Connected Virtual Appliance, Intersight Private Virtual Appliance, and Intersight Assist.  |  [Setting Up Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_266a2c35-69a4-4a04-89c2-b9c0339b905a)  
+Recovering Intersight Virtual Appliance |  Added new tasks that provides information on how to recover Intersight Virtual Appliance. |  [Recovering Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7)  
+Updating the Intersight Virtual Appliance Software |  Added tasks that provide information on how to update Intersight Connected Virtual Appliance and Intersight Private Virtual Appliance.  |  [Updating the Intersight Virtual Appliance Software](m_updating_the_intersight_virtual_appliance_software.html#Cisco_Task_in_List_GUI.dita_43af1cc4-8230-4d44-a643-5c5baabf78d0)  
+July 2021 |  Enhancement to Intersight Virtual Appliance Settings |  Updated the configuring external syslog task to include support for UDP and TCP protocols, in addition to the existing TLS protocol.  |  [Configuring Syslog](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_6fbd30aa-44e8-4f10-8bbf-e889308adee1)  
+|  Updated the role creation task to include information on configuring the maximum number of concurrent sessions per role. |  [Adding a Role](m_settings_dashboard.html#reference_s4f_n5j_kkb)  
+May 2021 |  Enhancement to Intersight Virtual Appliance Settings |  Updated the task that provides information on how to download software packages for Intersight Virtual Appliance. |  [Downloading Software Packages for Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5)  
+Configuring NTP Servers |  Updated the task that provides information on how to configure a NTP server. |  [Configuring NTP](m_settings_dashboard.html#task_ej3_spr_cgb)  
+February 2021 |  Enhancements to Intersight Virtual Appliance Settings |  Added a new task that includes information about configuring password policy for local users. Added a new task that includes information about configuring a banner message for displaying before the login screen. |  [Configuring Password Policy for Local Users](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_44f02df4-69e8-4ea0-94f5-756924598aeb) [Configuring a Banner Message for Displaying Before the Login Screen](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_91b339ce-2e43-47c1-bc0e-5e1dc5eda30a)  
+Installing Appliance on KVM Hypervisor |  Added a new task that provides information on how to install Cisco Intersight Virtual Appliance on KVM Hypervisor. |  [Installing Cisco Intersight Virtual Appliance and Intersight Assist on KVM Hypervisor](m_installation.html#Cisco_Task_in_List_GUI.dita_bb0eaad2-db9a-4b07-9bd3-7efbe5f8b11a)  
+January 2021 |  Enhancement to Intersight Virtual Appliance Settings |  Added a new task that includes information about updating Intersight Intelligence for Intersight Virtual Appliance. |  [Updating Intersight Intelligence for Intersight Connected Virtual Appliance](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_da23fbd5-beb1-42f1-8979-2186fd24eb38)  
+October 2020 |  Enhancement to Intersight Virtual Appliance Settings |  Added a new task that includes information about configuring external syslog. |  [Configuring Syslog](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_6fbd30aa-44e8-4f10-8bbf-e889308adee1)  
+Support for IPv6 for endpoints |  Updated this section to include information about configuring IP addresses. |  [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb)  
+July 2020 |  Licensing requirements |  Updated this section to include licensing requirements for Intersight Private Virtual Appliance. |  [Licensing Requirements for Intersight Virtual Appliance](m_appliance_overview.html#id_82950)  
+Technical assistance |  Added a new section that includes information about collecting tech support bundles from Intersight Virtual Appliance. |  [Technical Assistance](m-technical-assistance.html#reference_f4d_kdp_mgb)  
+Installing Appliance on Microsoft Hyper-V Server  |  Added a new task that provides information on how to install Cisco Intersight Virtual Appliance on Microsoft Hyper-V Server. |  [Installing Cisco Intersight Virtual Appliance and Intersight Assist on Microsoft Hyper-V Server](m_installation.html#Cisco_Task_in_List_GUI.dita_0f0fdb01-dc64-4db2-8d6c-38da86e97a33)  
+Creating Private Appliance Account |  Added a new task that provides information about creating a Private Appliance Account for downloading software packages for Intersight Private Virtual Appliance deployments.  |  [Creating an Appliance Account for Downloading Software Packages](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1f723e1-5c59-42de-aa7e-b952edad87e8)  
+Downloading Software Packages  |  Added a new task that provides information about downloading software packages for Intersight Private Virtual Appliance deployments. |  [Downloading Software Packages for Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5)  
+Uploading Software Packages |  Added a new task that provides information about uploading software packages for Intersight Private Virtual Appliance deployments. |  [Uploading Software Packages for Intersight Private Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_0ac65b53-ff60-4647-95d0-27ebbbe27c9b)  
+March 2020 |  Configuration selection |  Added a step to the existing procedure. |  [Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere](m_installation.html#id_95741)  
+Supported Configuration Limits for Intersight Virtual Appliance |  The newly added Tiny(8 vCPU, 16 Gi RAM) option is applicable for Intersight Assist deployments only.  |  [Supported Configuration Limits for Intersight Virtual Appliance](m_appliance_overview.html#reference_d1b_nhj_sjb)  
+February 2020 |  LDAP Configuration |  Added support for multiple LDAP domains. Added support for LDAP/AD configurations without requiring email. | [Configuring LDAP Settings](m_settings_dashboard.html#task_cl1_1pd_qkb)  
+Change IP address |  Added the ability to change IP address of the virtual appliance VM. |  [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb)  
+January 2020 |  Organizations  |  Organizations to support multi-tenancy in an account and the ability to create user-defined roles with system-defined privileges. |  [Adding a Role](m_settings_dashboard.html#reference_s4f_n5j_kkb), and [Adding an Organization](m_settings_dashboard.html#id_126158)  
+Certificates |  Allow user-submitted certificates and ability to create a self-signed certificate. |  [Certificates](m_settings_dashboard.html#reference_vjn_psh_kkb)  
+December 2019 |  Supported Configuration Limits for Intersight Virtual Appliance |  Intersight Virtual Appliance can be deployed in Small or Medium deployment sizes to support 2000 or 5000 servers.  |  [Supported Configuration Limits for Intersight Virtual Appliance](m_appliance_overview.html#reference_d1b_nhj_sjb)  
+Graceful reboot of the Appliance VM |  Intersight Virtual Appliance can be gracefully rebooted from the Intersight Appliance Diagnostic Tool. |  [Intersight Appliance Diagnostic Tool](m_troubleshooting.html#reference_fjp_2qs_shb)  
+July 2019 |  Alerts based on Cloud Connection |  Enhanced messages to alert users about cloud connectivity and impact of a disrupted connection. |  [Cloud Connection for Intersight Connected Virtual Appliance](m_settings_dashboard.html#id_95755)  
+Intersight Appliance Diagnostic tool | A console-based diagnostic tool that helps in troubleshooting and addressing misconfiguration or networking issues during the appliance installation.  | [Troubleshooting](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_01000.html)  
+June 2019 |  Support for DHCP |  Enables the appliance to obtain IP addresses from the DHCP server running on the same network to avoid using static IP addresses. |  [Installing Cisco Intersight Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_00.html)  
+Scheduling Backup  |  Schedules a full state periodic backup of the data in the appliance based on a schedule and saves the backed-up data on a remote server.  |  [Scheduling Backup](m_settings_dashboard.html#id_93924)
+
 ---
 
 ## Page 4: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_appliance_overview.html
+
+# Overview  
+  
+### Overview of Cisco Intersight Virtual Appliance
 
 ## About Cisco Intersight Virtual Appliance
 
@@ -170,11 +1418,11 @@ Deployment options available for Intersight Virtual Appliance are as follows:
 
   * You can deploy Intersight Virtual Appliance as a single-node virtual machine. In the standalone configuration, you can opt-in to enable the essential tier metrics data collection. For more information about the supported configuration, see Supported Configuration Limits for Intersight Virtual Appliance. For more information about data collection, see [Data Collection](https://intersight.com/help/appliance/monitoring/monitoring_data_collection#supported_devices). 
 
-  * You can deploy Intersight Virtual Appliance on VMware vSphere as a multi-node cluster which allows for advantage tier metrics data collection. This deployment option is a two-node cluster that includes an appliance management node and a metrics node. Once you have completed the initial set up of the single-node appliance, you can add a metric node. For more information about configuring an advantage tier metrics node, see [Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance](m_setting_up_appliance.html#configuring-metrics-node). For more information about the supported configurations, see Supported Configuration Limits for Intersight Virtual Appliance. 
+  * You can deploy Intersight Virtual Appliance on VMware vSphere, KVM hypervisor, and Nutanix AHV hypervisor as a multi-node cluster which allows for advantage tier metrics data collection. This deployment option is a two-node cluster that includes an appliance management node and a metrics node. Once you have completed the initial set up of the single-node appliance, you can add a metric node. For more information about configuring an advantage tier metrics node, see [Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance](m_setting_up_appliance.html#configuring-metrics-node). For more information about the supported configurations, see Supported Configuration Limits for Intersight Virtual Appliance. 
 
-  * You can deploy Intersight Virtual Appliance on VMware vSphere as a multi-node cluster which allows for high availability. This deployment option is a three-node cluster that includes three High Availability (HA) management nodes. Once you have completed the initial set up of the single-node appliance, you can add additional High Availability (HA) management nodes. After you successfully add the two additional HA management nodes, you can create a multi-node cluster in Intersight Virtual Appliance for HA. Note that metrics data collection is not supported in the three-node cluster deployment. For more information, see, [Configuring a Multi-Node Cluster for High Availability in Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a18a1d2e-5c8e-42c8-a7de-6bb01b218fde). 
+  * You can deploy Intersight Virtual Appliance on VMware vSphere, KVM hypervisor, and Nutanix AHV hypervisor as a multi-node cluster which allows for high availability. This deployment option is a three-node cluster that includes three High Availability (HA) management nodes. Once you have completed the initial set up of the single-node appliance, you can add additional High Availability (HA) management nodes. After you successfully add the two additional HA management nodes, you can create a multi-node cluster in Intersight Virtual Appliance for HA. Note that metrics data collection is not supported in the three-node cluster deployment. For more information, see, [Configuring a Multi-Node Cluster for High Availability in Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a18a1d2e-5c8e-42c8-a7de-6bb01b218fde). 
 
-  * You can deploy Intersight Virtual Appliance on VMware vSphere as a multi-node cluster which allows for metrics data collection. This deployment option is a four-node cluster that includes HA management cluster and a metrics node. Once you have completed the initial set up of the HA management cluster, you can add a metric node. For more information about configuring an advantage tier metrics node, see [Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance](m_setting_up_appliance.html#configuring-metrics-node). For more information about the supported configurations, see Supported Configuration Limits for Intersight Virtual Appliance. 
+  * You can deploy Intersight Virtual Appliance on VMware vSphere, KVM hypervisor, and Nutanix AHV hypervisor as a multi-node cluster which allows for metrics data collection. This deployment option is a four-node cluster that includes HA management cluster and a metrics node. Once you have completed the initial set up of the HA management cluster, you can add a metric node. For more information about configuring an advantage tier metrics node, see [Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance](m_setting_up_appliance.html#configuring-metrics-node). For more information about the supported configurations, see Supported Configuration Limits for Intersight Virtual Appliance. 
 
 
 The following table summarizes the deployment options in Intersight Virtual Appliance.
@@ -189,9 +1437,27 @@ Single-node |  Standalone |  Intersight Virtual Appliance management capability.
   * Nutanix AHV
 
   
-Multi-node |  Two-node cluster |  Intersight Virtual Appliance management capability and a separate metrics node for metrics data collection. |  Yes - metrics node is required to enable essential and advantage tier metrics data collection.  |  VMware vSphere  
-Multi-node |  Three-node cluster |  Intersight Virtual Appliance management capability for high availability. |  No - metrics data collection is not supported in a three-node cluster configuration. |  VMware vSphere  
-Multi-node |  Four-node cluster |  Intersight Virtual Appliance management capability for high availability and a separate metrics node for metrics data collection.  |  Yes - metrics node is required to enable essential and advantage tier metrics data collection. |  VMware vSphere  
+Multi-node |  Two-node cluster |  Intersight Virtual Appliance management capability and a separate metrics node for metrics data collection. |  Yes - metrics node is required to enable essential and advantage tier metrics data collection.  | 
+
+  * VMware vSphere
+  * KVM Hypervisor
+  * Nutanix AHV
+
+  
+Multi-node |  Three-node cluster |  Intersight Virtual Appliance management capability for high availability. |  No - metrics data collection is not supported in a three-node cluster configuration. | 
+
+  * VMware vSphere
+  * KVM Hypervisor
+  * Nutanix AHV
+
+  
+Multi-node |  Four-node cluster |  Intersight Virtual Appliance management capability for high availability and a separate metrics node for metrics data collection.  |  Yes - metrics node is required to enable essential and advantage tier metrics data collection. | 
+
+  * VMware vSphere
+  * KVM Hypervisor
+  * Nutanix AHV
+
+  
 ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Attention** | 
 
@@ -207,13 +1473,525 @@ This guide provides an overview of how to install and set up Intersight Virtual 
 
 For latest updates on Intersight Virtual Appliance features and functionality, see [Intersight Appliance Help Center](https://intersight.com/help/appliance). 
 
+## Licensing Requirements for Intersight Virtual Appliance
+
+Cisco Intersight Virtual Appliance uses a subscription-based license that is required to use the features of the appliance. Intersight Essentials is a subscription license delivered via Cisco Smart Licensing. Please contact your Cisco sales representative, channel partner, or reseller to purchase Intersight Essentials. Enabled platforms are those Cisco UCS and Cisco HyperFlex systems with a Cisco Intersight device connector, including eligible Cisco UCS Manager, Cisco IMC, and Cisco HyperFlex software. 
+
+For a **Connected Virtual Appliance** deployment, you can register the license as part of the initial setup of Cisco Intersight Virtual Appliance. After you complete the installation of the appliance, launch the UI and log in with the password that you set during installation, connect the appliance to Intersight, and register the license. 
+
+Use the following instructions if you want to edit the settings after the initial setup: 
+
+  1. In the appliance UI, choose System > Licensing > Register License. 
+
+The Smart Software Licensing Product Registration window displays. 
+
+  2. Generate a Product Instance Registration Token from your specific virtual account in Cisco Smart Software Manager, if you do not have one already. 
+
+  3. Enter the Product Instance Registration Token that you obtained from Cisco Smart Software Manager and click Register. Click [here](https://intersight.com/help/video#cisco_intersight_licensing_tiers_and_registration) to watch a video about Cisco Intersight licensing tiers and registration. 
+
+
+For a **Private Virtual Appliance** deployment, you must reserve the license as part of the initial setup of Cisco Intersight Virtual Appliance. For information on how to reserve a license as part of the initial setup, see [Setting Up Single-Node Intersight Private Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e4dbd2b9-0c61-42b7-89e0-18c54ab1c576). 
+
+For instructions on how to**update** or **return** the license after the initial setup of your Private Virtual Appliance, see [Updating Intersight Private Virtual Appliance License ](https://intersight.com/help/appliance/getting_started/licensing_requirements/lic_intro#updating_intersight_private_virtual_appliance_license) and [Returning Intersight Private Virtual Appliance License](https://intersight.com/help/appliance/getting_started/licensing_requirements/lic_intro#returning_intersight_private_virtual_appliance_license). 
+
+You can obtain an Intersight evaluation license for Cisco Intersight Virtual Appliance from your Cisco sales representative, channel partner, or reseller. If you already have a Cisco Smart Account, the evaluation license will be added to your Cisco Smart Account. You can then generate a token for the virtual account in the Smart account and proceed with registering Cisco Intersight Virtual Appliance. For more information about how to activate and manage your license, and learn more about Smart Licenses, see [Managing Smart Licenses](https://www.cisco.com/c/en/us/products/software/smart-accounts/software-licensing.html#~stickynav=4). 
+
+For a complete understanding of **Reserve Licenses** feature in Cisco Smart Software Manager, see [Introduction to Smart Software Manager](https://www.cisco.com/c/en/us/support/docs/licensing/common-licensing-issues/how-to/lic217543-how-to-reserve-licenses-slr.html). 
+
+### System Requirements
+
+## Supported Configuration Limits for Intersight Virtual Appliance
+
+Cisco Intersight Virtual Appliance is available in multiple deployment sizes to support the scaling requirements of your environment. You can deploy the appliance as follows: 
+
+You can deploy Intersight Virtual Appliance in small, medium, or large configuration. Before selecting the size, assess your resource requirements and choose an appropriate option in the Intersight Appliance Maintenance Shell, and then select the required size to deploy. The selected size will be deployed when the appliance VM restarts. For information about resource requirements, see Resource Requirements for Intersight Virtual Appliance. 
+
+The following table lists the supported configuration limits: 
+
+Table 2. Supported Configuration Limits for Intersight Virtual Appliance Deployments Items |  Configuration Limits  
+---|---  
+Small  |  Medium |  Large  
+Number of Servers |  100 |  5000 |  8000  
+Number of Intersight Managed Mode (IMM) Domains (FI) |  10 |  Up to 32 |  64  
+Number of Intersight Managed Mode (IMM) Servers on stand-alone appliance |  100 (Total server count cannot exceed 100) |  500 (with essential tier metrics data collection enabled) |  2000 (with essential tier metrics data collection enabled)  
+5000 (with metrics collection disabled) |  8000 (with metrics collection disabled)  
+Number of Intersight Managed Mode (IMM) Servers on multi-node appliance (management node + metrics node) |  100 (with advantage tier metrics data collection enabled) |  250 (with advantage tier metrics data collection enabled)  |  750 (with advantage tier metrics data collection enabled)   
+Number of UCSM Managed Mode (UMM) Domains |  10 |  500 |  800  
+Number of UCSM Managed Mode (UMM) Servers |  100 (Total server count cannot exceed 100) |  Up to 5000 |  8000  
+Number of UCS Standalone Rack Servers |  100 (Total server count cannot exceed 100) |  5000 |  8000  
+Number of parallel HyperFlex Installations |  Not supported |  5 |  5  
+Number of Supported Concurrent Operations |  50 |  250 |  250  
+Number of Concurrent User Sessions (GUI and API) |  32 |  32 |  32  
+  
+## VM Resource Requirements for Intersight Virtual Appliance Deployments
+
+The Cisco Intersight Virtual Appliance can be deployed on VMware ESXi 8.0 or later, Microsoft Hyper-V on Windows Server 2016 or later, KVM hypervisor on Linux, and Nutanix AHV hypervisor (AOS versions currently supported and maintained by Nutanix). You can deploy Intersight Virtual Appliance in a small, medium, or large configuration. 
+
+For more information on the supported maximum configuration limits for Intersight Virtual Appliance Sizing Options, see Supported Configuration Limits for Intersight Virtual Appliance. 
+
+Table 3. Resource Requirements for Intersight Virtual Appliance Deployments Resource |  Requirements  
+---|---  
+Small |  Medium |  Large  
+vCPU (AVX Required) |  8 |  24 |  48  
+RAM |  32 GiB |  64 GiB |  96 GiB  
+Storage (Disk) |  600 GiB |  2 TiB |  2 TiB  
+Supported Hypervisors |  VMware ESXi 8.0 or later with VMware vSphere Web Client 8.0 or later Microsoft Hyper-V on Windows Server 2016 or later *KVM hypervisor on Linux **Nutanix AHV hypervisor (AOS versions currently supported and maintained by Nutanix)  
+  
+*Cisco Intersight Virtual Appliance supports all distributions of KVM; however, hypervisor-related issues such as virtual machine (VM) creation, network configuration, and other tasks at the hypervisor layer are not supported by Cisco. For assistance with these issues, contact the support desk for your hypervisor. Once the VM is operational, Cisco will provide support for issues related to the software and services running inside the VM. 
+
+**Cisco Intersight Virtual Appliance only supports Acropolis Operating System (AOS) versions that are currently being actively supported and maintained by Nutanix. For more information, see [Nutanix End-of-Life Information](https://portal.nutanix.com/page/documents/eol/list?type=aos). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+  * Cisco recommends reserving all vCPUs and RAM for the virtual machine. These reservation capabilities are provided by the respective hypervisor management tool. Without reserved vCPUs and RAM, compute performance may suffer, potentially causing task failures within the appliance. 
+  * Cisco also recommends using thick provisioning for disk storage allocation. Although thin provisioning is possible, over-provisioning can lead to insufficient storage capacity, resulting in service interruption or loss, and may require a restore from backup. Additionally, over-provisioning can degrade I/O performance to the point of causing task failures within the appliance. 
+  * It is highly recommended to place appliance disks on a volume backed by SSDs. 
+  * Do not change the default settings for disk sizes while installing Intersight Virtual Appliance on VMware vSphere. The disk sizes are computed based on the deployment configuration. 
+  * It is mandatory to have a CPU that supports the AVX feature. If you have the Enhanced vMotion Compatibility (EVC) level configured for your VMware vSphere cluster, ensure that the EVC level is set to a CPU family that supports the AVX feature. 
+  * Existing small configurations deployed prior to Appliance Software Release Version 1.1.6-0 will continue to be supported as long as the server count is less than 100. If the server count exceeds 100, it is strongly recommended that you upgrade to a medium configuration. 
+  * Metric collection:
+  * In a single-node deployment, metrics data collection is supported for the essential tier license and is an opt-in feature. For information on how to configure metrics collection, see [Configuring Metrics Collection](https://intersight.com/help/appliance/settings#configuring_metrics_collection). 
+  * In a multi-node deployment, you can add a metrics node to a standalone appliance (two-node setup) or to a HA management cluster (four-node setup) that allows for advantage tier metrics data collection. For information about configuring a metrics node, see [Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance](m_setting_up_appliance.html#configuring-metrics-node). 
+  * When the active server count for which metrics is collected exceeds the threshold that your appliance size can support, be it medium or large, Intersight Virtual Appliance automatically disables metrics collection. This precaution is taken to prevent any negative impacts on performance, allowing for smooth system operation without the need for manual intervention. Once the metrics collection is disabled, you will have to enable it manually, after the resource requirements are met for this feature. 
+  * In a multi-node deployment (two-node and four-node), when the storage capacity of disk8 on the metrics node reaches 90%, metrics data collection is automatically disabled. At this point, you must manually increase the storage capacity of disk8 on the metrics node and then proceed to re-enable the metrics data collection. For more information on managing resources, see Managing Resources for Intersight Virtual Appliance. 
+  * Any metrics that have been collected while the metrics collection was enabled will remain accessible, even if metrics collection is later paused. This ensures the continued availability of historical datasets for future analysis and reference. Enforcement of the storage and retention policies for metrics continues, even when the metrics collection is disabled. 
+  * For more information about metrics collection, see [Monitoring Overview](https://intersight.com/help/appliance/features/monitoring/monitoring_overview). 
+  * Additional Networking Requirements for Multi-node Deployments:
+  * Disk write speed must be greater than 150 megabytes per second.
+  * Latency between nodes must be less than 9 milliseconds.
+  * All three hostnames for the nodes must be resolved by the same set of DNS servers.
+
+
+* * *  
+  
+---|---  
+  
+## Managing Resources for Intersight Virtual Appliance Deployments
+
+### Managing Resources for Intersight Virtual Appliance Deployments
+
+You can view the deployment size of Intersight Virtual Appliance and make changes to CPU, RAM, and disk size as follows:
+
+  1. Choose System > Appliance Details. 
+
+  2. Review the other supported scaling options and choose the appropriate deployment size to suit your requirements. 
+
+  3. After you review the details of the resource requirement for a supported deployment option, shut down the VM, change the CPU, RAM, and disk size as required, and restart the VM. 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * You cannot change the disk sizes when you have a snapshot.
+  * To ensure optimal performance of the virtual sizing options, make sure your appliance is running the latest software version.
+
+
+* * *  
+  
+---|---  
+  
+The following table provides information about the disk size requirements for Intersight Virtual Appliance installations.
+
+Table 4. Disk Size Requirements for Intersight Virtual Appliance Installations **Disk** |  **Minimum Disk Size Requirements for all Deployments** |  **Recommended Disk Size for Small Deployments** |  **Recommended Disk Size for Medium and Large Deployments**  
+---|---|---|---  
+Disk1 |  Do not change the disk size. |  Do not change the disk size. |  Do not change the disk size.  
+Disk2 |  25 GiB |  25 GiB |  25 GiB  
+Disk3 |  130 GiB |  130 GiB |  130 GiB  
+Disk4 |  150 GiB |  150 GiB |  150 GiB  
+Disk5 |  100 GiB |  100 GiB |  190 GiB  
+Disk6 |  30 GiB |  30 GiB |  60 GiB  
+Disk7 |  60 GiB |  60 GiB |  360 GiB  
+Disk8 |  60 GiB |  60 GiB |  1200 GiB  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Alternatively, you can meet the disk requirements by performing a restore using the latest backup of the appliance. For more information, see [Recovering Intersight Connected Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7) and [Recovering Intersight Private Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18). 
+
+* * *  
+  
+---|---  
+  
+## IP Address and Hostname Requirements
+
+### IP Address and Hostname Requirements for Intersight Virtual Appliance
+
+**Setting up a single-node Intersight Virtual Appliance** requires an IPv4 address and 2 DNS records for that IP address. The DNS records must be in the following formats: 
+
+  * mymanagementhost.mydomain.com—A DNS record in this format is used to access the GUI. This must be defined as an A record in DNS. An A record is required to ensure proper forward DNS resolution. It allows the hostname to resolve to the correct IPv4 address, which must match the IP address specified during appliance configuration. **Do not** include the **dc-** prefix in this hostname. 
+
+  * dc-mymanagementhost.mydomain.com—The dc- must be prepended to your hostname. This DNS record must be defined as the CNAME of mymanagementhost.mydomain.com. DNS records in this format are used internally by the appliance to manage target connections. 
+
+
+**Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (two-node cluster)** requires an IPv4 address and 2 DNS records for that IP address for the single-node (appliance management node) and requires an IPv4 address and one DNS record for that IP address for the metrics node. The DNS records must be in the following format: 
+
+  * mymanagementhost.mydomain.com
+
+  * mymetricshost.mydomain.com
+
+  * dc-mymanagementhost.mydomain.com
+
+
+**Setting up a multi-node cluster for high availability in Intersight Virtual Appliance (three-node cluster)** requires three hostnames, three IP addresses, and one DC-CNAME for each hostname. The following is an example of the formats: 
+
+  * mymanagementhost1.mydomain.com
+
+  * mymanagementhost2.mydomain.com
+
+  * mymanagementhost3.mydomain.com
+
+  * dc-mymanagementhost1.mydomain.com
+
+  * dc-mymanagementhost2.mydomain.com
+
+  * dc-mymanagementhost3.mydomain.com
+
+
+**Setting up a multi-node for metrics data collection in Intersight Virtual Appliance (four-node cluster)** requires three hostnames, three IP addresses, and one DC-CNAME for each hostname for the HA management cluster. It also requires an IPv4 address and one DNS record for that IP address for the metrics node. The following is an example of the formats: 
+
+  * mymanagementhost1.mydomain.com
+
+  * mymanagementhost2.mydomain.com
+
+  * mymanagementhost3.mydomain.com
+
+  * dc-mymanagementhost1.mydomain.com
+
+  * dc-mymanagementhost2.mydomain.com
+
+  * dc-mymanagementhost3.mydomain.com
+
+  * mymetricshost.mydomain.com
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+Ensure that the appropriate entries of type A and CNAME exist in the DNS, as described above. 
+
+* * *  
+  
+---|---  
+  
+## Reserved IP Address Range Requirements
+
+Intersight Virtual Appliance reserves the following IP address ranges for internal communication:
+
+  * /20 subnet within the 172.16.0.0/12 range—This subnet is one-time configurable during the appliance installation. 
+
+  * 192.168.20.21/32—This IP address is reserved by the appliance and is non-configurable. 
+
+
+## Port Requirements
+
+### Port Requirements for Intersight Virtual Appliance
+
+The following table lists the ports that are required for Intersight Virtual Appliance communication.
+
+Port  |  Protocol |  Appliance Configuration Mode |  Description  
+---|---|---|---  
+443  |  TCP |  Single-node and multi-node |  This port is required for communication between:
+
+  * Intersight Virtual Appliance and the users' web browser.
+  * Intersight Virtual Appliance to and from the endpoint targets.
+
+For more information about connectivity, see the Network Connectivity Requirements section.   
+53, 68, 123 |  UDP |  Single-node and multi-node |  These ports are used to send and receive DNS, DHCP, and NTP traffic.  
+22, 2379, 6443, 2380, 9092, 9094, 9100, 10250  |  TCP |  Multi-node |  These ports are used for communication between the VMs in a multi-node configuration for Intersight Virtual Appliance.  
+51820, 51821 |  UDP |  Multi-node |  These ports are used for securing VPN between the VMs in a multi-node configuration for Intersight Virtual Appliance.  
+  
+## Network Connectivity Requirements for Intersight Connected Virtual Appliance
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+The information in this section is applicable only for Intersight Connected Virtual Appliance deployments.
+
+* * *  
+  
+---|---  
+  
+  * Ensure that Cisco Intersight Virtual Appliance has access to the following sites directly or through a proxy. For more information about setting up a proxy, see [Cloud Connection for Intersight Connected Virtual Appliance](m_settings_dashboard.html#id_95755). All the following URLs are accessed through HTTPS. 
+
+  * **Access to Cisco services (*.cisco.com)**. 
+
+Cisco Service |  Description |  Target Device   
+---|---|---  
+smartreceiver.cisco.com:443 |  For access to Cisco Smart Licensing Manager  |   
+swapi.cisco.com:443 |  For access to Cisco Smart Licensing Manager  |   
+tools.cisco.com:443 |  For access to Cisco Smart Licensing Manager  |   
+download-ssc.cisco.com*, dl.cisco.com, dl1.cisco.com, dl2.cisco.com  |  For access to Cisco Software download site |  Required for the following:
+  * C-Series Standalone Servers 
+  * UCSM Managed B-Series and C-Series servers
+  * UCSM Managed Fabric Interconnects
+  * UCSM Managed Fabric Interconnects-attached Cisco UCS S3260 Chassis  
+api.cisco.com:443  
+cloudsso.cisco.com:443 (**This service entry point will be deprecated in a future release. Ensure that your appliance can access id.cisco.com.**)   
+  
+* Cisco Intersight allows you to manage firmware downloads through a new domain _download-ssc.cisco.com_. Make sure that you add this new domain to the firewall and network rules. Because cloud destination IP addresses are dynamic, you must configure these exclusions using hostnames rather than currently resolvable IP addresses. For more information, see [Cisco Software Download](https://intersight.com/help/appliance/system/settings#cisco_software_download). 
+
+  * The Cisco services (*.cisco.com) that Intersight can access (either directly or through a proxy) to gain additional benefits are as follows: 
+
+Cisco Service |  Description |  Target Device   
+---|---|---  
+cdn.intersight.com, cdn.eu-central-1.intersight.com |  For faster download of firmware image  |  Required for the following:
+  * C-Series Standalone servers
+  * UCSM Managed B-Series and C-Series servers
+  * UCSM Managed Fabric Interconnects
+  * UCSM Managed Fabric Interconnects-attached Cisco UCS S3260 Chassis
+  * Fabric Interconnects and FI-attached servers in Intersight Managed Mode.  
+  
+Firmware can be directly downloaded through Intersight and does not require connection to Cisco repository. For more information, see [Cisco Software Download](https://intersight.com/help/appliance/system/settings#cisco_software_download). 
+
+Firmware for Cisco UCS C-Series M4 Standalone servers can be downloaded using the following methods:
+
+  * Network Share: Use a network share to access and download the firmware.
+
+  * Direct Download via Intersight: Ensure that the Content Delivery Network (CDN) domain is permitted to avoid download failures.
+
+  * **Access to Intersight Cloud services.**
+
+To claim Intersight Virtual Appliance, you must have access to the North American (us-east-1) endpoints. If the appliance is claimed by an EMEA account, you must have access to the EMEA (eu-central–1) URLs as well. 
+
+  * **North American accounts:** North American accounts require access to all North American endpoints before and after claiming targets. 
+
+  * **EMEA accounts:** Targets for EMEA accounts require access to the North American endpoints so they can be claimed. After the target is claimed, only access to the EMEA endpoints is required. 
+
+Table 5. Endpoint URLs Region |  Location |  URL |  **URLs required by device connectors**  
+---|---|---|---  
+North America |  intersight-aws-us-east-1​ |  intersight.com​ us-east-1.intersight.com​ |  svc.intersight.com​ svc.us-east-1.intersight.com​ svc-static1.intersight.com​* svc-static1.us-east-1.intersight.com* svc.ucs-connect.com* ucs-starship.com*​* ucs-connect.com*​*  
+EMEA |  intersight-aws-eu-central-1​ |  eu-central-1.intersight.com​ |  svc.eu-central-1.intersight.com​ svc-static1.eu-central-1.intersight.com*  
+  
+URLs marked with an asterisk (*) will be deprecated in the future.
+
+URLs marked with double asterisks (**) are deprecated.
+
+
+## Requirements for Successful Target Connection to Intersight Virtual Appliance
+
+For a successful target connection to Intersight Virtual Appliance, ensure that the following connectivity requirements are met: 
+
+  * Ensure that a network connection can be established from the Device Connector to the appliance.
+
+  * The Device Connector establishes an HTTPS connection to <https://dc-fqdn-of-your-appliance> and then upgrades the HTTPS connection to a web socket. Ensure that your security rules allow the device connector to establish a web socket connection. 
+
+  * Ensure that Intersight Management is enabled in the device connector (it is enabled by default). You can find Intersight Management in Admin > Device Connector > Intersight Management in Cisco UCS Manager/Cisco UCS Director/Cisco IMC, and Settings > Networking > Cloud Connection in the Cisco HyperFlex UI. 
+
+  * If any hop between CIMC and the Appliance requires an MTU of less than 1500 bytes, ensure that the CIMC settings for **ICMP Destination Unreachable Enabled** and **Redirect Enabled** are enabled. 
+
+  * Ensure that CIMC XML API is enabled.
+
+  * Check if a firewall is introduced between the managed target and the appliance, or if the rules for an existing firewall have changed, thus affecting connectivity. If the rules are changed, ensure that the changed rules permit traffic through the firewall. 
+
+  * Ensure that all applicable physical and Virtual IPs are allowed through the firewall.
+
+  * If you use an HTTP proxy to route traffic out of your premises, and if you have made changes to the HTTP proxy server configuration, ensure that you change the device connector configuration accordingly. This is required because the appliance does not automatically detect HTTP proxy servers. 
+
+  * Configure DNS and resolve the DNS name. The Device Connector must be able to send DNS requests to a DNS server and resolve DNS records. The Device Connector must be able to resolve dc-<fqdn-of-your-appliance> to an IP address. 
+
+  * Configure NTP and validate that the target time is properly synchronized with a time server.
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+When the target time is not properly synchronized, the Device Connector may be unable to establish a secure connection to the appliance, and the TLS certificate may be considered invalid. 
+
+* * *  
+  
+---|---  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+You must configure DNS and NTP on the management interface (Cisco UCS Manager/Cisco IMC/Cisco HyperFlex) and not on the Device Connector UI. 
+
+* * *  
+  
+---|---  
+  * You must configure security targets that are in the network path by enabling network connectivity to the appliance.
+
+
+## Supported Browsers
+
+### Supported Browsers for Intersight Virtual Appliance
+
+Cisco Intersight runs on the following minimum supported browser versions:
+
+  * Google Chrome 62.0.3202.94
+
+  * Firefox 57.0.1
+
+  * Safari 10.1.1
+
+  * Microsoft Edge (Chromium) Beta
+
+
+## Software Compatibility
+
+### Software Compatibility for Intersight Virtual Appliance
+
+This section contains details about the minimum versions of the following software supported by the appliance:
+
+Component |  Minimum Supported Version  
+---|---  
+Cisco UCS Manager |  3.2(1)  
+Cisco HyperFlex Connect and Data Platform |  2.6  
+Cisco IMC |  3.1(3) for M5 Servers 3.0(4) for M4 Servers For more information about the Cisco IMC Software requirements for the M4 and M5 Servers, see the Supported Systems section in the Help Center.  See [Device Connector Requirements.](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_010.html#concept_v43_pzw_jgb) for a complete list of the supported software and the required device connector versions.   
+Cisco UCS Director |  6.7.2.0  
+Cisco Intersight Managed Mode |  4.1(2a)  
+  
+### Overview of Cisco Intersight Assist
+
+## About Cisco Intersight Assist
+
+Cisco Intersight Assist helps you add endpoint devices to Cisco Intersight. A datacenter could have multiple devices that do not connect directly with Cisco Intersight. Any device that is supported by Cisco Intersight but does not connect directly with it, will need a connection mechanism. Intersight Assist provides that connection mechanism, and helps you add devices into Intersight. 
+
+Intersight Assist enables Intersight to communicate with targets that do not have a direct path to Intersight and do not have an embedded Intersight Device Connector. These include targets such as Storage Devices, Hypervisor Managers, Application Performance Management products, and much more. Intersight Assist communicates with the target’s native APIs and serves as the communication bridge to and from Intersight. Intersight Assist services run as a standalone appliance when used with Intersight SaaS. For Connected Virtual Appliance and Private Virtual Appliance, a separate Assist Appliance is not needed as the services are collocated. 
+
+You can view the Intersight Assist details by navigating to Appliance UI  > System > Target. 
+
+You can choose to install Intersight Assist from the installer during the set-up wizard. It can be installed on VMware ESXi 8.0 or later, Microsoft Hyper-V on Windows Server 2016 or later, KVM hypervisor on Linux, and Nutanix AHV hypervisor (AOS versions currently supported and maintained by Nutanix) 
+
+After claiming Intersight Assist Cisco Intersight, you can claim endpoint devices using the Claim Targets option. For more information, see [Claim Targets](https://www.intersight.com/help/saas/getting_started/claim_targets). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Intersight Virtual Appliance supports TLS 1.3 protocol for HTTPS communication for improved Transport Layer Security. Intersight Assist does not support IPv6 configurations. You can manage Pure Storage devices, Hitachi Virtual Storage Platform devices, NetApp storage controllers, VMware vCenter, and much more devices into Cisco Intersight after claiming them using Intersight Assist. 
+
+* * *  
+  
+---|---  
+  
+## Licensing Requirements for Intersight Assist
+
+For more information on licensing, see [Intersight Licensing](https://intersight.com/help/saas/getting_started/licensing_requirements/lic_intro). 
+
+## System Requirements for Intersight Assist
+
+### VM Resource Requirements for Intersight Assist
+
+You can deploy Intersight Assist on VMware ESXi 8.0 or later, Microsoft Hyper-V on Windows Server 2016 or later, KVM hypervisor on Linux, and Nutanix AHV hypervisor (AOS versions currently supported and maintained by Nutanix). You can deploy Intersight Assist in a tiny, small, medium, or large configuration. This section describes the system requirements to install and deploy Intersight Assist. 
+
+Table 6. Intersight Assist Resource Requirements Resource |  Requirements  
+---|---  
+|  **Tiny** |  **Small** |  **Medium** |  **Large**  
+vCPU  |  4 |  8 |  24 |  48  
+RAM |  8 GiB |  32 GiB |  64 GiB |  96 GiB  
+Supported Features |  ICO and IWO |  ICO and IWO |  ICO and IWO |  ICO and IWO  
+Supported Hypervisors |  VMware ESXi 8.0 and later with VMware vSphere Web Client 8.0 or later Microsoft Hyper-V on Windows Server 2016 or later *KVM hypervisor on Linux **Nutanix AHV hypervisor (AOS versions currently supported and maintained by Nutanix)  
+  
+*Cisco Intersight Virtual Appliance supports all distributions of KVM; however, hypervisor-related issues such as virtual machine (VM) creation, network configuration, and other tasks at the hypervisor layer are not supported by Cisco. For assistance with these issues, contact the support desk for your hypervisor. Once the VM is operational, Cisco will provide support for issues related to the software and services running inside the VM. 
+
+**Cisco Intersight Virtual Appliance only supports Acropolis Operating System (AOS) versions that are currently being actively supported and maintained by Nutanix. For more information, see [Nutanix End-of-Life Information](https://portal.nutanix.com/page/documents/eol/list?type=aos). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * Cisco recommends reserving all vCPUs and RAM for the virtual machine. These reservation capabilities are provided by the respective hypervisor management tool. Without reserved vCPUs and RAM, compute performance may suffer, potentially causing task failures within the appliance. 
+  * Cisco also recommends using thick provisioning for disk storage allocation. Although thin provisioning is possible, over-provisioning can lead to insufficient storage capacity, resulting in service interruption or loss, and may require a restore from backup. Additionally, over-provisioning can degrade I/O performance to the point of causing task failures within the appliance. 
+
+
+* * *  
+  
+---|---  
+  
+The following table provides information about the disk size requirements Intersight Assist deployments.
+
+Table 7. Disk Size Requirements for Intersight Assist Deployments **Disk** |  **Recommended Disk Size for all Deployments**  
+---|---  
+Disk1 |  45 GiB (Do not change the disk size)  
+Disk2 |  25 GiB  
+Disk3 |  130 GiB  
+Disk4 |  50 GiB  
+Disk5 |  100 GiB  
+Disk6 |  30 GiB  
+Disk7 |  60 GiB  
+Disk8 |  60 GiB  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+When deploying Intersight Assist on Microsoft Hyper-V or KVM, disk8 is set to 1200 GiB by default. If needed, you can reduce the size of disk8 to 60 GiB. 
+
+* * *  
+  
+---|---  
+  
+This following table lists the system requirements to deploy Cisco Intersight Assist for Intersight Workload Optimizer.
+
+Table 8. Intersight Assist Resource Requirements for Intersight Workload Optimizer Resource Requirement |  System Requirements  
+---|---  
+|  **Tiny** |  **Small** |  **Medium** |  **Large**  
+vCPU  |  4 |  8 |  24 |  48  
+RAM |  8 GiB |  32 GiB |  64 GiB |  96 GiB  
+Deploy Configuration |  Up to 1000 Virtual Machines |  Up to 1000 Virtual Machines |  Up to 30,000 Virtual Machines  |  Up to 100,000 Virtual Machines  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * Cisco recommends reserving all vCPUs and RAM for the virtual machine. These reservation capabilities are provided by the respective hypervisor management tool. Without reserved vCPUs and RAM, compute performance may suffer, potentially causing task failures within the appliance. 
+  * Cisco also recommends using thick provisioning for disk storage allocation. Although thin provisioning is possible, over-provisioning can lead to insufficient storage capacity, resulting in service interruption or loss, and may require a restore from backup. Additionally, over-provisioning can degrade I/O performance to the point of causing task failures within the appliance. 
+
+
+* * *  
+  
+---|---  
+  
+### Port Requirements for Intersight Assist
+
+The following table lists the port numbers that must be open for Cisco Intersight Assist communication.
+
+Port |  Protocol |  Description  
+---|---|---  
+443 |  TCP/UDP |  Required for communication between:
+
+  * Cisco Intersight Assist and the user's web browser.
+  * Cisco Intersight Assist to and from the endpoint devices.
+
+  
+  
+### Supported Browsers for Intersight Assist
+
+Cisco Intersight Assist and Cisco Intersight runs on the following minimum supported browser versions:
+
+  * Google Chrome 62.0.3202.94
+
+  * Firefox 57.0.1
+
+  * Safari 10.1.1
+
+  * Microsoft Edge (Chromium) Beta
+
+
 ---
 
 ## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_installation.html
 
+# Installation
+
 ## Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere
 
-Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Cisco Intersight Virtual Appliance supports VMware High Availability (VMHA) to ensure non-disruptive operation of the virtual appliance. For more information about VMHA, please refer to the documentation on vmware.com.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Cisco Intersight Virtual Appliance supports VMware High Availability (VMHA) to ensure non-disruptive operation of the virtual appliance. For more information about VMHA, refer to the relevant documentation on the VMware by Broadcom website.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Attention** | 
 
 * * *
@@ -234,7 +2012,7 @@ OVA version  |  CA Issuer  |  CA Serial Number  |  CA Expiration
 1.0.9-499  |  None  |  None  |  None   
 1.0.9-342  |  DigiCert Trusted G4 Code Signing 2021 CA1  |  08:ad:40:b2:60:d2:9c:4c:9f:5e:cd:a9:bd:93:ae:d9  |  April 28, 2036  
   
-Use the steps in the following task to install and deploy the appliance on VMware vSphere. To install and deploy a multi-node cluster for high availability for Intersight Virtual Appliance on VMware vSphere, repeat the steps in the following task three times.
+Use the steps in the following task to install and deploy the appliance on VMware vSphere. To install and deploy a multi-node cluster for high availability for Intersight Virtual Appliance on VMware vSphere, repeat the steps in this task three times.
 
 ### Before you begin
 
@@ -337,9 +2115,448 @@ For more information, see [Maintenance Shell for Intersight Virtual Appliance an
 
 For a demonstration of the Intersight Virtual Appliance Installation and troubleshooting, watch [Cisco Intersight Appliance Installation and Debug](https://www.youtube.com/watch?v=vHoDfixdi4g&feature=youtu.be). 
 
+## Installing Cisco Intersight Virtual Appliance and Intersight Assist on Microsoft Hyper-V Server
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or TAR file format. Install the appliance on Microsoft Hyper-V Server using the ZIP file format. For more information about Microsoft Hyper-V Server, refer to the Microsoft documentation.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Use the steps in the following task to install and deploy the appliance on Hyper-V Server Manager. 
+
+* * *  
+  
+---|---  
+  
+### Before you begin
+
+Ensure the following:
+
+  * Download the latest version of the Cisco Intersight Virtual Appliance and Assist installer package from the [Cisco Software Download](https://software.cisco.com/download/home/286319499/type) site. 
+
+  * If you are installing Private Virtual Appliance, also download the latest Cisco Intersight Private Virtual Appliance software package (intersight-appliance-bundle) from the Intersight Software Downloads Portal. For more information, see [Downloading Software Packages from Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+  * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
+  * Setting up a single-node Intersight Virtual Appliance requires an IP address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node cluster for Intersight Virtual Appliance is NOT supported on Microsoft Hyper-V. 
+  * Use only HTTPS protocol and fully qualified domain name to access the appliance via the Web user interface.
+
+
+* * *  
+  
+---|---  
+  
+### Procedure
+
+* * *
+
+**Step 1** |  Log in to Hyper-V Server Manager with administrator credentials and select a server for appliance installation.  
+---|---  
+**Step 2** |  From the **Actions** pane, select New > Virtual Machine, and click **Next**. 
+
+  1. Specify Name and Location—Select Generation 2 and click Next. 
+  2. Specify Generation—Enter the name and location for the new virtual machine, and click Next. 
+  3. Assign Memory—Enter memory size based on your appliance configuration. For more information, see [VM Resource Requirements for New Intersight Virtual Appliance Deployments](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5). Click Next. 
+  4. Configure Networking—In the Connection drop-down, select Hyper-V Switch. 
+  5. Connect Virtual Hard Disk—Select Use an existing virtual hard disk. 
+     1. Browse to the extracted Hyper-V ZIP file location, identify the first disk that is labeled _intersight-appliance-installer-hyperv-1.1.5-0-disk1.vhdx_ , as an example, and click Open. 
+     2. Click Next and Finish. 
+Disk1 is now added.
+
+  
+**Step 3** |  Add the other seven disks.
+
+  1. Navigate to the Hyper-V virtual machine.
+  2. Right click and select Settings > SCSI Controller. 
+  3. Click Virtual hard disk and browse to the folder where you extracted the Hyper-V installer. 
+  4. Select disk2 and click OK. 
+  5. Add disks 3 through 8 in order, following Steps 3a to 3d. **Important** : Adding disks out of order prevents successful appliance installation. 
+
+  
+**Step 4** |  Perform additional configuration.
+
+  1. Navigate to the Hyper-V virtual machine.
+  2. Right click and select Settings > Firmware. 
+  3. Under Boot order, ensure Network Adapter is at the bottom of the list. 
+  4. Click Processor and set virtual processors to match your appliance configuration. For example, enter 24 for a medium configuration. 
+  5. Click Security > Secure Boot and disable the Enable Secure Boot setting.  **Important** : If this setting is enabled, the appliance will not boot up. 
+  6. Click OK. 
+
+  
+**Step 5** |  In the **Actions** pane, select **Start** to power-on the virtual machine.   
+**Step 6** |  In the **Actions** pane, select **Connect** to connect to the virtual machine.  The Virtual Machine Connection console is displayed.   
+**Step 7** |  On the Virtual Machine Connection console, customize the password configuration and IP properties.  |  Property |  Description  
+---|---  
+Set password for user admin |  Set a new password for the admin user. |  **Note** |  Ensure that you remember this password as you will use the same one to log into the appliance.  
+---|---  
+Choose IP Assignment |  Type in **S** for static IP assignment or **D** for DHCP  Selecting DHCP for your IP assignment enables the appliance to obtain IP addresses from the DHCP server running on the same network to avoid using static IP addresses.   
+Appliance FQDN _(Values you input will be ignored if you Enable DHCP)_ |  Enter the Appliance’s fully qualified domain name (FQDN). For example: _appliance.example.com_  
+IP Address |  Enter the IP address of the node. For example: 10.0.0.100  
+Subnet Mask |  Enter the IP Net Mask. For example: 255.255.255.0  
+Default Gateway |  Enter the IP Default Gateway. For example: 10.0.1.254  
+DNS Servers |  Enter a comma-separated list of IP addresses for your DNS servers. A maximum of two DNS servers are supported.  
+DNS Domain |  Enter the DNS Search Domain.  
+NTP Servers |  Provide NTP information when configuring a static IP address. Enter a comma-separated list of hostnames or IPv4 addresses for your NTP servers. You may add up to three unauthenticated NTP servers at this stage. Once the appliance is fully installed, you can edit the NTP server settings to include any combination of authenticated and unauthenticated NTP servers (up to three total). This setting is required even if you use DHCP to obtain IP addresses.  You cannot provide NTP information if you configured DHCP for your IP assignment.  
+**Attention** | 
+
+  * **If the password you set at the time of registering your appliance is weak, Intersight prompts you to change your password to a stronger one. After a successful reset to a strong password, you are directly logged into the appliance. For more information about logging in, see[Logging In to Intersight Virtual Appliance](m_setting_up_appliance.html#id_93446)**. 
+  * Ensure that DNS, NTP, and file services are hosted outside of the infrastructure being managed by the appliance to avoid potential service conflicts. If you need to make changes to the infrastructure hosting these services, ensure they are configured with redundancy so that they remain available during maintenance. 
+
+  
+---|---  
+  
+Enabling DHCP
+
+Dynamic Host Configuration Protocol (DHCP) allows the Cisco Intersight Virtual Appliance VM to obtain an IP address through a DHCP server running on the network that it is installed on. When this option is enabled, the Cisco Intersight Virtual Appliance is equipped to handle IP address updates through DHCP, subject to lease requirements. 
+
+**Attention** |  For a single-node appliance, ensure that the following requirements are met for using DHCP:  
+---|---  
+  
+  * If you use DHCP, ensure that the IP address returned to the appliance VM resolves to the same FQDN you use to set up the appliance. Cisco strongly recommends configuring DHCP to assign a static IP address to the Appliance VM. Although the Appliance can handle changes when its DHCP lease is renewed, it operates more efficiently—especially when communicating with claimed devices—if its IP address remains constant. 
+
+  * The appliance only reads the IP address, netmask, gateway, and DNS-Servers from the DHCP lease information. NTP information for the Hyper-V Server must be input into the Virtual Machine Connection console when configuring static IP. 
+
+
+Limitations
+
+  * Frequent lease renewal could impact the VM configuration settings and could render the appliance unusable.
+
+
+  
+**Step 8** |  Proceed to <https://fqdn-of-your-appliance> to complete the post-install set-up of your appliance.  For information on how to complete the set-up of your appliance, see [Setting Up Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_266a2c35-69a4-4a04-89c2-b9c0339b905a).   
+  
+* * *
+
+Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+The diagnostic tool aims to:
+
+  * Detect and display issues with the installation prerequisites. 
+
+  * Enable editing the inputs that are provided during the OVA deployment. 
+
+  * Assist with continuing the installation after you fix the settings, or set network interface properties such as IP addresses, subnet mask, and default gateway during the OVA deployment. 
+
+
+For more information, see [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb) and [Intersight Virtual Appliance Console UI](m_troubleshooting.html#intersight-virtual-appliance-console-ui). 
+
+For a demonstration of the Intersight Virtual Appliance Installation and troubleshooting, watch [Cisco Intersight Appliance Installation and Debug](https://www.youtube.com/watch?v=vHoDfixdi4g&feature=youtu.be). 
+
+## Installing Cisco Intersight Virtual Appliance and Intersight Assist on KVM Hypervisor
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Install the appliance on KVM hypervisor using the TAR file format.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Software Requirements:
+
+  * Linux operating system with support for KVM hypervisor or Linux operating system pre-configured with KVM hypervisor. Ensure that you have the latest version of all the essential virtualization utilities such as qemu-kvm, libvirt, and virt-manager for your Linux distribution. It is important to verify that these utilities are compatible with the Linux kernel version running on your host system. 
+  * A virtual network bridge to provide network connectivity to VMs.
+
+
+* * *  
+  
+---|---  
+  
+Use the steps in the following task to install and deploy the appliance on KVM hypervisor using Virtual Machine Manager (VMM). To install and deploy a multi-node cluster for high availability for Intersight Virtual Appliance on KVM Hypervisor, repeat the steps in this task three times.
+
+### Before you begin
+
+Ensure the following:
+
+  * Download the latest version of the Cisco Intersight Virtual Appliance and Assist installer package from the [Cisco Software Download](https://software.cisco.com/download/home/286319499/type) site. 
+
+  * If you are installing Private Virtual Appliance, also download the latest Cisco Intersight Private Virtual Appliance software package (intersight-appliance-bundle) from the Intersight Software Downloads Portal. For more information, see [Downloading Software Packages from Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+  * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
+  * Setting up a single-node Intersight Virtual Appliance requires an IP address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (two-node cluster) requires an IPv4 address and 2 DNS records for that IP address for the single-node (appliance management node) and requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node cluster for high availability in Intersight Virtual Appliance requires three hostnames, three IP addresses, and one DC-CNAME for each hostname. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (four-node cluster) requires three hostnames, three IP addresses, and one DC-CNAME for each hostname for the HA management cluster. It also requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Use only HTTPS protocol and fully qualified domain name to access the appliance via the Web user interface.
+
+
+* * *  
+  
+---|---  
+  
+### Procedure
+
+* * *
+
+**Step 1** |  Launch the Virtual Machine Manager (VMM) client.  
+---|---  
+**Step 2** |  Select File > New Virtual Machine on the menu bar to install a new virtual machine on a KVM hypervisor.  The New VM dialog box appears and displays Step 1 of 4 of the New VM installation.   
+**Step 3** |  Under Choose how you would like to install the operating system, select Import existing disk image, and click Forward.  Step 2 of 4 is displayed.  
+**Step 4** |  Under Provide the existing storage path, click Browse.   
+**Step 5** |  Under Choose storage volume, browse your directories to locate and select the first disk of the Intersight Virtual Appliance image file (for example, intersight-appliance-installer-kvm-1.1.0-0-1.qcow2) that you have extracted on your system. 
+
+  1. Under Advanced options, select VirtIO. 
+
+|  **Note** |  VirtIO is the only supported disk bus for storage while installing Intersight Virtual Appliance and Intersight Assist on KVM Hypervisor.   
+---|---  
+**Step 6** |  Under Choose an operating system type and version, select Linux for OS type and AlmaLinux 9 for Version, and click Forward.  Step 3 of 4 is displayed.  
+**Step 7** |  Under Choose Memory and CPU settings, do the following for medium deployments, and click Forward. 
+
+  * Select or enter 64 GB for Memory (RAM)
+  * Set vCPU at 24
+
+Step 4 of 4 is displayed.  For more information about resource requirements and supported configuration limits, see [VM Resource Requirements for New Intersight Virtual Appliance Deployments](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) and [Supported Configuration Limits for Intersight Virtual Appliance](m_appliance_overview.html#reference_d1b_nhj_sjb).   
+**Step 8** |  In the dialog box, complete the following configuration:
+
+  * Under Ready to begin the installation, in the Name field, enter a name for the Intersight Virtual Appliance software. For example, intersight-appliance-1.1.0-0. 
+  * Ensure that you have selected the Customize configuration before install option. 
+  * Under Network selection, ensure that you select the appropriate virtual network bridge. 
+
+  
+**Step 9** |  Click Finish.  You have now completed the process of adding the first disk of the Intersight Virtual Appliance image.  Starting with release version 1.1.0-0, Appliance uses UEFI for the firmware. Under the Overview tab on the VMM console, click on Firmware and select the path to the OVMF firmware file such as /usr/share/edk2/ovmf/OVMF_CODE.fd for RedHat and AlmaLinux 9. The name and location of this file depend on the Linux distribution. On Ubuntu, the file is located at /usr/share/OVMF/OVMF_CODE.fd.  You will need to add disks 2 through 8, one by one, before you can begin the installation process.  
+**Step 10** |  On the VMM console, complete the following configuration: 
+
+  1. Click Add Hardware that you can find at the bottom of the left navigation panel. 
+  2. Under Storage, ensure that Select or create custom storage is selected. 
+  3. Browse your directories to locate and select the second disk of the Intersight Virtual Appliance image file (for example, intersight-appliance-installer-kvm-1.1.0-0-2.qcow2) that you have extracted on your system and click Choose volume. 
+  4. Click Finish. 
+
+Repeat this step until you have added disk3 through disk8. Ensure that all eight disks appear on the left navigation panel.  
+**Step 11** |  Click Begin installation.   
+**Step 12** |  On the VMM console, customize the password configuration and IP properties. |  Property |  Description  
+---|---  
+Set password for user admin |  Set a new password for admin user. |  **Note** |  Ensure that you remember this password as you will use the same one to log into the appliance.  
+---|---  
+Choose IP Assignment |  Type in **S** for static IP assignment or **D** for DHCP  Selecting DHCP for your IP assignment enables the appliance to obtain IP addresses from the DHCP server running on the same network to avoid using static IP addresses.   
+Appliance FQDN _(Values you input will be ignored if you Enable DHCP)_ |  Enter the Appliance’s fully qualified domain name (FQDN). For example: _appliance.example.com_  
+IP Address |  Enter the IPv4 address of the node. For example: 10.0.0.100 |  **Note** |  You must have an IPv4 address configured in order for the appliance to be functional.  
+---|---  
+  
+It is recommended that you configure IPv6 addresses subsequent to completing the initial installation and deployment of the appliance using an IPv4 address.   
+  
+Subnet Mask |  Enter the IP Net Mask. For example: 255.255.255.0  
+Default Gateway |  Enter the IP Default Gateway. For example: 10.0.1.254  
+DNS Servers |  Enter a comma-separated list of IP addresses for your DNS servers. A maximum of two DNS servers are supported.  
+DNS Domain |  Enter the DNS Search Domain.  
+NTP Servers |  Provide NTP information when configuring a static IP address. Enter a comma-separated list of hostnames or IPv4 addresses for your NTP servers. You may add up to three unauthenticated NTP servers at this stage. Once the appliance is fully installed, you can edit the NTP server settings to include any combination of authenticated and unauthenticated NTP servers (up to three total). This setting is required even if you use DHCP to obtain IP addresses.  You cannot provide NTP information if you configured DHCP for your IP assignment.  
+**Attention** | 
+
+  * **If the password you set at the time of registering your appliance is weak, Intersight prompts you to change your password to a stronger one. After a successful reset to a strong password, you are directly logged into the appliance. For more information about logging in, see[Logging In to Intersight Virtual Appliance](m_setting_up_appliance.html#id_93446)**. 
+  * Ensure that DNS, NTP, and file services are hosted outside of the infrastructure being managed by the appliance to avoid potential service conflicts. If you need to make changes to the infrastructure hosting these services, ensure they are configured with redundancy so that they remain available during maintenance. 
+
+  
+---|---  
+  
+Enabling DHCP
+
+Dynamic Host Configuration Protocol (DHCP) allows the Cisco Intersight Virtual Appliance VM to obtain an IP address through a DHCP server running on the network that it is installed on. When this option is enabled, the Cisco Intersight Virtual Appliance is equipped to handle IP address updates through DHCP, subject to lease requirements. 
+
+**Attention** |  For a single-node appliance, ensure that the following requirements are met for using DHCP:  
+---|---  
+  
+  * If you use DHCP, ensure that the IP address returned to the appliance VM resolves to the same FQDN you use to set up the appliance. Cisco strongly recommends configuring DHCP to assign a static IP address to the Appliance VM. Although the Appliance can handle changes when its DHCP lease is renewed, it operates more efficiently—especially when communicating with claimed devices—if its IP address remains constant. 
+
+  * The appliance only reads the IP address, netmask, gateway, and DNS-Servers from the DHCP lease information. NTP information for the KVM hypervisor must be input into the VMM console when configuring static IP. 
+
+
+Limitations
+
+  * Frequent lease renewal could impact the VM configuration settings and could render the appliance unusable.
+
+
+  
+**Step 13** |  Proceed to <https://fqdn-of-your-appliance> to complete the post-install set-up of your appliance.  For information on how to complete the set-up of your appliance, see [Setting Up Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_266a2c35-69a4-4a04-89c2-b9c0339b905a).   
+  
+* * *
+
+Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+The diagnostic tool aims to:
+
+  * Detect and display issues with the installation prerequisites. 
+
+  * Enable editing the inputs that are provided during the appliance image deployment. 
+
+  * Assist with continuing the installation after you fix the settings, or set network interface properties such as IP addresses, subnet mask, and default gateway during the appliance image deployment. 
+
+
+For more information, see [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb) and [Intersight Virtual Appliance Console UI](m_troubleshooting.html#intersight-virtual-appliance-console-ui). 
+
+For a demonstration of the Intersight Virtual Appliance Installation and troubleshooting, watch [Cisco Intersight Appliance Installation and Debug](https://www.youtube.com/watch?v=vHoDfixdi4g&feature=youtu.be). 
+
+## Installing Cisco Intersight Virtual Appliance and Intersight Assist on Nutanix AHV
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or TAR file format. Install the appliance on Nutanix AHV using the _Cisco Intersight Virtual Appliance and Assist for KVM_ installer package. To install and deploy a multi-node cluster for high availability for Intersight Virtual Appliance on Nutanix AHV, repeat the steps in the following task three times.
+
+### Before you begin
+
+Ensure the following:
+
+  * Download the latest version of the Cisco Intersight Virtual Appliance and Assist installer package from the [Cisco Software Download](https://software.cisco.com/download/home/286319499/type) site. 
+
+  * If you are installing Private Virtual Appliance, also download the latest Cisco Intersight Private Virtual Appliance software package (intersight-appliance-bundle) from the Intersight Software Downloads Portal. For more information, see [Downloading Software Packages from Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
+
+
+The qcow2 image files in the installer TAR file must be uploaded to Nutanix’s Image Service. 
+
+  * To upload files to Nutanix's Image Service from a webserver, copy the files to a directory with appropriate permissions such that they can be downloaded via unauthenticated HTTP. 
+
+  * To upload files to Nutanix's Image Service from your local computer, uncompress and expand the TAR file to a local directory.
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+  * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
+  * Setting up a single-node Intersight Virtual Appliance requires an IPv4 address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (two-node cluster) requires an IPv4 address and 2 DNS records for that IP address for the single-node (appliance management node) and requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node cluster for high availability in Intersight Virtual Appliance requires three hostnames, three IP addresses, and one DC-CNAME for each hostname. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (four-node cluster) requires three hostnames, three IP addresses, and one DC-CNAME for each hostname for the HA management cluster. It also requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * When accessing the Intersight Virtual Appliance’s web UI, only use the HTTPS protocol and the appliance’s fully qualified domain name. 
+
+
+* * *  
+  
+---|---  
+  
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Nutanix Prism using administrator credentials.  
+---|---  
+**Step 2** |  Navigate to Settings > Image Configuration and click Upload Image.  In the Create Image screen, enter the following information: 
+
+  * Name—Enter a name to allow for easy identification of the disk. For example, intersight-appliance-installer-kvm-1.1.1-0. 
+  * Image Type—Select DISK. 
+  * Storage Container—Select a storage container where you want to save the qcow2 images. 
+  * Image Source—Either input the URL to the qcow2 image on your webserver (for example, http://10.0.0.1/appliance/intersight-appliance-installer-kvm-1.1.0-0-1.qcow2), or upload the file from a disk. 
+
+  
+**Step 3** |  Click Save.   
+**Step 4** |  Repeat Step 2 and Step 3 to upload the remaining 7 qcow2 images.   
+**Step 5** |  Navigate to Home > VM > Create VM and enter the required information for creating the new VM. 
+
+  1. Under General Configuration: 
+  * Name
+  * Description
+  * Timezone
+  * Use this VM as an agent VM—Leave it unchecked. 
+  2. Under Compute Details, enter information for the following fields based on whether you want to create a medium or a large configuration. For more information about resource requirements and supported configuration limits, see [VM Resource Requirements for New Intersight Virtual Appliance Deployments](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) and [Supported Configuration Limits for Intersight Virtual Appliance](m_appliance_overview.html#reference_d1b_nhj_sjb). 
+  * vCPUs
+  * Number of Cores Per vCPU
+  * Memory
+  3. Under Boot Configuration, select UEFI.  Do **NOT** select Legacy BIOS. 
+  4. Under Disks, click Add New Disk, and enter the following information: 
+  * Type—Select DISK. 
+  * Operation—Select Clone from Image Service. 
+  * Bus Type—Select SCSI. Note that Intersight Virtual Appliance works only when bus type is set to SCSI. 
+  * Image—Select disk1 from the list of 8 disks. For example, if the naming convention for the files is intersight-appliance-installer-kvm-1.1.1-0-<sequence_number>.qcow2, then the first file that must be selected is intersight-appliance-installer-1.1.1-0-1.qcow2.  |  **Attention** |  You must select and assign disk1 through disk8 in a numerical order. As an example, if you select _intersight-appliance-installer-kvm-1.1.11.0-2.qcow2_ and assign it to disk1, the VM will not boot.   
+---|---  
+  * Logical Size (GiB)—The size is automatically selected based on the disk selection. 
+
+  * Index—Default 
+
+Click Save. 
+
+  5. Repeat Step d to add disks 2 through 8. 
+
+**Note** |  Ensure that the files are added in numerical order. For example, if the naming convention for the files is intersight-appliance-installer-kvm-1.1.1-0-<sequence_number>.qcow2, then the files must be added in the following order: 
+     1. intersight-appliance-installer-1.1.1-0-2.qcow2
+     2. intersight-appliance-installer-1.1.1-0-3.qcow2
+     3. intersight-appliance-installer-1.1.1-0-4.qcow2
+     4. intersight-appliance-installer-1.1.1-0-5.qcow2
+     5. intersight-appliance-installer-1.1.1-0-6.qcow2
+     6. intersight-appliance-installer-1.1.1-0-7.qcow2  
+---|---  
+  6. Under Network Adapter (NIC), click Add New NIC, and enter the following information: 
+
+  * Subnet Name—Select a subnet from the configured drop-down list. Note that the subnet must have been previously created in the virtual switch. Also, the default gateway, DNS services, etc. must be reachable via this subnet. 
+
+  * Network Connection State—Select Connected. 
+
+  7. Click Add. 
+
+
+  
+**Step 6** |  Click Save.  The newly created VM appears in the VM table.  
+**Step 7** |  Right-click on the newly created VM and click Power on.  The green light in the new VM row indicates that the VM is powered on.  
+**Step 8** |  Click Launch Console, from the menu bar at the bottom of the screen.   
+**Step 9** |  On the VM console, customize the password configuration and IP properties. |  Property |  Description  
+---|---  
+Set password for user admin |  Set a new password for admin user. |  **Note** |  Ensure that you remember this password as you will use the same one to log into the Intersight Virtual Appliance web UI.  
+---|---  
+Choose IP Assignment |  Type in **S** for static IP assignment or **D** for DHCP  Selecting DHCP for your IP assignment enables the appliance to obtain IP addresses from the DHCP server running on the same network to avoid using static IP addresses.   
+Appliance FQDN _(Values you input will be ignored if you Enable DHCP)_ |  Enter the Appliance’s fully qualified domain name (FQDN). For example: _appliance.example.com_  
+IP Address |  **Note** |  This field appears only if you selected Static IP assignment in the previous step.  
+---|---  
+Enter the IPv4 address of the node. For example: 10.0.0.100 You can configure an IPv6 address at the same time. For IPv6, you can choose either static assignment or Stateless Address Autoconfiguration (SLAAC).   
+Subnet Mask |  Enter the IP Net Mask. For example: 255.255.255.0  
+Default Gateway |  Enter the IP Default Gateway. For example: 10.0.1.254  
+DNS Servers |  Enter a comma-separated list of IP addresses for your DNS servers. A maximum of two IPv4 DNS servers are supported.  
+DNS Domain |  Enter the DNS Search Domain.  
+NTP Servers |  Provide NTP information when configuring a static IP. Enter a comma-separated list of hostnames or IPv4 addresses for your NTP servers. You may add up to three unauthenticated NTP servers at this stage. Once the appliance is fully installed, you can edit the NTP server settings to include any combination of authenticated and unauthenticated NTP servers (up to three total). This setting is required even if you use DHCP to obtain IP addresses.  You cannot provide NTP information if you configured DHCP for your IP assignment.  
+**Attention** | 
+
+  * **If the password you set at the time of registering your appliance is weak, Intersight prompts you to change your password to a stronger one. After a successful reset to a strong password, you are directly logged into the appliance. For more information about logging in, see[Logging In to Intersight Virtual Appliance](m_setting_up_appliance.html#id_93446)**. 
+  * Ensure that DNS, NTP, and file services are hosted outside of the infrastructure being managed by the appliance to avoid potential service conflicts. If you need to make changes to the infrastructure hosting these services, ensure they are configured with redundancy so that they remain available during maintenance. 
+
+  
+---|---  
+  
+Enabling DHCP
+
+Dynamic Host Configuration Protocol (DHCP) allows the Cisco Intersight Virtual Appliance VM to obtain an IP address through a DHCP server running on the network that it is installed on. When this option is enabled, the Cisco Intersight Virtual Appliance is equipped to handle IP address updates through DHCP, subject to lease requirements. 
+
+**Attention** |  For a single-node appliance, ensure that the following requirements are met for using DHCP:  
+---|---  
+  
+  * If you use DHCP, ensure that the IP address returned to the appliance VM resolves to the same FQDN you use to set up the appliance. Cisco strongly recommends configuring DHCP to assign a static IP address to the Appliance VM. Although the Appliance can handle changes when its DHCP lease is renewed, it operates more efficiently—especially when communicating with claimed devices—if its IP address remains constant. 
+
+  * The appliance only reads the IP address, netmask, gateway, and DNS-Servers from the DHCP lease information. 
+
+
+Limitations
+
+  * Frequent lease renewals can impact the VM configuration settings and render the appliance unusable.
+
+
+  
+**Step 10** |  Proceed to <https://fqdn-of-your-appliance> to complete the post-install set-up of your appliance.  For information on how to complete the set-up of your appliance, see [Setting Up Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_266a2c35-69a4-4a04-89c2-b9c0339b905a).   
+  
+* * *
+
+Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+The diagnostic tool aims to:
+
+  * Detect and display issues with the installation prerequisites. 
+
+  * Enable editing the inputs that are provided during the appliance image deployment. 
+
+  * Assist with continuing the installation after you fix the settings, or set network interface properties such as IP addresses, subnet mask, and default gateway during the appliance image deployment. 
+
+
+For more information, see [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb) and [Intersight Virtual Appliance Console UI](m_troubleshooting.html#intersight-virtual-appliance-console-ui). 
+
+For a demonstration of the Intersight Virtual Appliance Installation and troubleshooting, watch [Cisco Intersight Appliance Installation and Debug](https://www.youtube.com/watch?v=vHoDfixdi4g&feature=youtu.be). 
+
 ---
 
 ## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_updating_the_intersight_virtual_appliance_software.html
+
+# Software Update
 
 ## Intersight Virtual Appliance 1.1.0-0 Upgrade Behavior — Impact of CentOS 7 to AlmaLinux 9 Migration
 
@@ -389,9 +2606,290 @@ The following information highlights the key aspects of this migration:
   * Installation and upgrade bundle sizes for release version 1.1.0-0 are larger than the ones for the previous releases due to the switch to AlmaLinux. 
 
 
+## Intersight Virtual Appliance Patch Releases
+
+Starting with version 1.1.0-0, Intersight Virtual Appliance updated its version scheme to be a.b.c-d, where: 
+
+  * a.b.c — represents the appliance software release version. 
+
+  * d — represents the appliance patch release version. 
+
+
+This new version scheme allows Cisco to issue patch releases for important updates between software releases.
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * Patch releases are applicable to specific software versions. For example, the 1.1.0-3 patch bundle can be applied to appliances that are running on software versions 1.1.0-0, 1.1.0-1, or 1.1.0-2 only. It cannot be applied to software version 1.1.2-0. 
+  * Patch releases are cumulative. For example, you can directly update to appliance patch version 1.1.0-3 for an appliance that is running software version 1.1.0-0, without having to apply intermediate patch versions such as 1.1.0-1 and 1.1.0-2. 
+  * Appliances that are running on a patch version can be updated to either a higher version of a patch release or to a higher version of a software release. For example, if your appliance is running on version 1.1.0-2, you can either update to a patch release higher than 1.1.0-2 (patch releases pertaining to the 1.1.0-0 software release) or you can update to a software release that is higher than 1.1.0-0. 
+
+
+* * *  
+  
+---|---  
+  
+For more information about updating your appliance, see Updating Intersight Connected Virtual Appliance and Updating Intersight Private Virtual Appliance. 
+
+## Updating Intersight Connected Virtual Appliance
+
+Intersight Connected Virtual Appliance provides a way to either update automatically when new versions are made available by the update service, or to manually update to any available version that is higher than the running version. 
+
+When Connected Virtual Appliance is configured to update in the **Automatic** mode, it obtains bundles directly from the cloud to update the service packages, OS packages including the kernel, and other security fixes. Installation will occur as per the system default or custom installation settings. In the automatic mode, if there are no new updates available for more than 90 days, ensure that the appliance is connected to Intersight. 
+
+When the appliance is configured to update in the **Manual** mode, you have a choice of either uploading the image from the local machine or from a network share server, depending on where you saved the image. Once the image is uploaded, you can choose to install the update immediately, or you can schedule a date and time for the installation. Note that you need to download the required appliance software packages from the Appliance Portal to manually update your Connected Virtual Appliance. For more information, see [Creating an Appliance Account for Downloading Software Packages](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1f723e1-5c59-42de-aa7e-b952edad87e8) and [Downloading Software Packages for Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
+
+You can switch between the two software update modes at any time. However, if an update is pending, switching to a different mode will cancel the pending update. For example, if you have a pending update in **Automatic** mode and switch to **Manual** mode, the pending update will be canceled. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * It is recommended that you use the Automatic mode for updating the appliance. 
+  * It is highly recommended that you check the Appliance Account regularly for updates and remain on the latest version of the Intersight Virtual Appliance software, which is continuously enhanced with new features and improvements.  Intersight Virtual Appliance supports the latest major release and the three preceding major releases. Patch releases for each of these supported major releases are also supported. For example, if the latest major release is 1.1.3-0, the following versions are supported: 
+  * Major releases: 1.1.3-0, 1.1.2-0, 1.1.1-0, and 1.1.0-0
+  * Patch releases: 1.1.3-1, 1.1.2-1, 1.1.2-2, 1.1.2-3, and 1.1.1-1
+  * Ensure that the version of the appliance that you are manually uploading for installation is always higher than the running version. 
+  * There is no difference between an upgrade on a multi-node appliance versus an upgrade on a single-node appliance as the upgrade is done at the cluster-level and not at the node-level. 
+  * Intersight Virtual Appliance patch bundles are supported for specific software versions only. For more information about appliance release versioning scheme, see [Intersight Virtual Appliance Patch Releases](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_updating_the_intersight_virtual_appliance_software.html#appliance-versioning-scheme). 
+
+
+* * *  
+  
+---|---  
+  
+Use the following instructions to update Connected Virtual Appliance: 
+
+Before you begin: Ensure that Intersight Connected Virtual Appliance is connected to Intersight. 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.   
+---|---  
+**Step 2** |  Choose Settings > System > Appliance Updates. The following details about the installed version are displayed:  In the Automatic mode of configuration, the following details are displayed:
+
+  * Running Version—The current version number 
+  * Update Mode—Automatic 
+  * Installation Schedule—Displays the date and time when the update is scheduled 
+
+In the Manual mode of configuration, the following details are displayed:
+
+  * Running Version—The current appliance version number 
+  * Update Mode—Manual 
+
+In both modes, you may see the following details about the Pending Update: 
+
+  * Version—Indicates the appliance version that is scheduled to be updated 
+  * Update Impact Type—This could be Disruptive, Disruptive-reboot, or None. The impact could be disruptive because of an infrastructure upgrade or upgrade of other Intersight services. A disruptive update may cause Intersight to be unavailable for the duration specified in Update Impact Duration. The disruptive reboot of the appliance could be caused by kernel updates and restarting of services. A grace period is provided to help you plan and manage the update better. The UI displays appropriate messages to guide you if there is a disruptive reboot.  |  **Attention** |  An appliance update could take about 90 minutes to complete.  During this time, some features will be temporarily unavailable. It is recommended that you take a backup prior to triggering the update and do not reboot your appliance. If there is a requirement to reboot, Intersight Appliance does it automatically.  
+---|---  
+  * Installation Date/Time —Displays the date and time when the update is scheduled. You can click on the pencil icon to edit the installation date and time. 
+
+  * Release Notes—Includes a link to the "What's New" information in the Appliance Help Center. 
+
+
+The Appliance Updates screen also displays a table view of the appliance updates under Update History. This table lists the installation date, appliance version, a description of the version, and the status of the installation of the update. From this table view, you can search for a specific version of the appliance and the date it was installed on and the status of the installation.   
+  
+**Step 3** |  Click Update Settings to configure an update.   
+**Step 4** |  On the Appliance Updates screen, under Update Settings, make your selections for the update mode of configuration by choosing either automatic or manual mode.  For the Automatic mode: 
+
+  1. Select Automatic mode for updates. 
+  2. Select either System Default or Custom for the installation schedule.  **System Default** —Appliance updates are installed according to default appliance settings and customized configurations. 
+     1. **[Optional]** Enable Block Update Dates and specify the start and end of the block dates. During this period, the appliance will not be updated. 
+     2. Choose a strategy to update Intersight intelligence. For more information, see [Updating Intersight Intelligence for Intersight Connected Virtual Appliance](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_da23fbd5-beb1-42f1-8979-2186fd24eb38). 
+     3. Click Save. 
+**Custom** —Appliance updates are installed automatically based on the settings configured by you. 
+     1. **[Optional]** Enable Custom Grace Period and set your preferred grace period (1—6 weeks) for updates that require a reboot and for updates that do not require a reboot. This setting applies only to updates received subsequent to the setting of the custom grace period and not to any existing updates that are already pending. 
+     2. **[Optional]** Enable Block Update Dates and specify the start and end of the block dates. During this period, the appliance will not be updated. 
+     3. Choose a strategy to update Intersight intelligence. For more information, see [Updating Intersight Intelligence for Intersight Connected Virtual Appliance](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_da23fbd5-beb1-42f1-8979-2186fd24eb38). 
+     4. Click Save. 
+
+For the Manual mode:
+
+  1. Select Manual mode of update.  Choose a strategy to update Intersight intelligence. For more information, see [Updating Intersight Intelligence for Intersight Connected Virtual Appliance](m_settings_dashboard.html#Cisco_Task_in_List_GUI.dita_da23fbd5-beb1-42f1-8979-2186fd24eb38). 
+  2. Click Save. 
+  3. Navigate to Settings > System > Appliance Updates and click Install Updates.  The Upload Appliance Software page is displayed. 
+  4. Select either Local Machine or Network Share, depending on where you saved the image.
+     1. For the Local Machine option, browse to the location from where you want to upload the image and click Next. 
+     2. For the Network Share option, enter the protocol and enter details of the remote server from where you want to copy the file, and click Next. 
+  * Protocol—Communication protocol used for file transfer. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol) and SFTP (Secure File Transfer Protocol). 
+  * Server IP/Hostname—The network share server from where the file is copied 
+  * Port—TCP port to use 
+  * Location—Directory where the file to be copied is stored 
+  * Filename—Name of the file to be copied from the network share 
+  * Username—Username for authenticating with the network share 
+  * Password—Password for authenticating with the network share 
+     3. Select to install immediately or schedule the installation for a later date and time. 
+     4. Click Apply. 
+
+
+  1. You can track the upload progress by clicking on the Requests icon.  When the upload is completed, you will see details about the Pending Update on the Software page. From the Pending Update Details section, you will be able to cancel an update, update immediately, or edit the installation date and time.  |  **Note** |  In the Manual mode, if you cancel a pending update, you have to upload the appliance bundle again to be able to initiate an update.   
+---|---  
+
+**Note** |  If the update fails and if the update is recoverable, the Update History shows the installation as Failed, and the existing Pending Update Details remain as-is. You can try the upgrade process again. For more information about the update errors and possible resolutions, see Troubleshooting Appliance Update Failure Issues.  If the update fails and if the update is non-recoverable, the Update History shows the installation as Failed, and you will no longer see any existing Pending Update Details. However, all existing features and functionality continue to work as before. For more information about the update errors and possible resolutions, see Troubleshooting Appliance Update Failure Issues.  After the update, if you use the same browser to log in to the appliance, you might encounter an Error code: SEC_ERROR_REUSED_ISSUER_AND_SERIAL. To fix this issue, you will need to remove the system-generated certificate of the server from the same browser that you are using to log in to the appliance. For example, to remove the system-generated certificate of the server from Google Chrome, navigate to Settings > Authentication > Certificates. Select the system-generated certificate that you want to remove, click Remove, and click Close. Close the browser and then log in to the application from a new browser. For more information about certificates, see [Certificates](m_settings_dashboard.html#reference_vjn_psh_kkb).   
+---|---  
+  
+* * *
+
+## Updating Intersight Private Virtual Appliance
+
+Intersight Private Virtual Appliance provides a way to manually update to any available version that is higher than the running version. You have a choice of either uploading the image from the local machine or from a network share server, depending on where you saved the image. Once the image is uploaded, you can choose to install the update immediately, or you can schedule a date and time for the installation. 
+
+You can download the required packages from the Appliance Portal to manually update your Private Virtual Appliance. For more information, see [Creating an Appliance Account for Downloading Software Packages](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1f723e1-5c59-42de-aa7e-b952edad87e8) and [Downloading Software Packages for Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * It is highly recommended that you check the Appliance Account regularly for updates and remain on the latest version of the Intersight Virtual Appliance software, which is continuously enhanced with new features and improvements.  Intersight Virtual Appliance supports the latest major release and the three preceding major releases. Patch releases for each of these supported major releases are also supported. For example, if the latest major release is 1.1.3-0, the following versions are supported: 
+  * Major releases: 1.1.3-0, 1.1.2-0, 1.1.1-0, and 1.1.0-0
+  * Patch releases: 1.1.3-1, 1.1.2-1, 1.1.2-2, 1.1.2-3, and 1.1.1-1
+  * Ensure that the version of the appliance that you are manually uploading for installation is always higher than the running version. 
+  * There is no difference between an upgrade on a multi-node appliance versus an upgrade on a single-node appliance as the upgrade is done at the cluster-level and not at the node-level. 
+  * Intersight Virtual Appliance patch bundles are supported for specific software versions only. For more information about appliance release versioning scheme, see Intersight Virtual Appliance Patch Releases. 
+
+
+* * *  
+  
+---|---  
+  
+Before you begin: Ensure that you have downloaded the required packages from the Appliance Account to upgrade your Intersight Private Virtual Appliance. For more information on how to create the Private Appliance Account, see [Creating an Appliance Account for Downloading Software Packages](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1f723e1-5c59-42de-aa7e-b952edad87e8). 
+
+To configure an update for Private Virtual Appliance, do the following: 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log in to Intersight Virtual Appliance as a user with account administrator role.   
+---|---  
+**Step 2** |  Choose Settings > System > Appliance Updates.  You may see the following details about the Pending Update: 
+
+  * Version—Indicates the version that is scheduled to be updated 
+  * Update Impact Type—This could be Disruptive, Disruptive-reboot, or None. The impact could be disruptive because of an infrastructure upgrade or upgrade of other Intersight services. A disruptive update may cause Intersight to be unavailable for the duration specified in Update Impact Duration. The disruptive reboot of the appliance could be caused by kernel updates and restarting of services. A grace period is provided to help you plan and manage the update better. The UI displays appropriate messages to guide you if there is a disruptive reboot.  |  **Attention** |  An appliance update could take about 90 minutes to complete.  During this time, some features will be temporarily unavailable. It is recommended that you take a backup prior to triggering the update and do not reboot your appliance. If there is a requirement to reboot, Intersight Appliance does it automatically.  
+---|---  
+  * Installation Date/Time —Displays the date and time when the update is scheduled. You can click on the pencil icon to edit the installation date and time. 
+
+  * Release Notes—Includes a link to the release notes for the pending update 
+
+
+The Appliance Updates  screen also displays a table view of the appliance updates under Update History. This table lists the installation date, appliance version, a description of the version, and the status of the installation of the update. From this table view, you can search for a specific appliance version and the date it was installed, and the status of the installation.   
+  
+**Step 3** |  Click Install Updates.  The Appliance Updates screen is displayed.   
+**Step 4** |  Make your selections as follows:
+
+  1. To upload the appliance software, select either Local Machine or Network Share, depending on where the software image is saved. 
+     1. For Local Machine, browse to where the software image is saved, and then click Next. 
+     2. For the Network Share option, enter the protocol and enter details of the remote server from where you want to copy the file, and then click Next. 
+  * Protocol—Communication protocol used for file transfer. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol) and SFTP (Secure File Transfer Protocol). 
+  * Server IP/Hostname—The network share server from where the file is copied 
+  * Port—TCP port to use 
+  * Location—Directory where the file to be copied is stored 
+  * Filename—Name of the file to be copied 
+  * Username—Username for authenticating with the network share 
+  * Password—Password for authenticating with the network share 
+  2. Select to install immediately or schedule the installation for a later date and time. You can track the upload progress by clicking on the Requests icon.  When the upload is completed, you will see details about the Pending Update on the Appliance Updates screen. From the Pending Update Details section, you will be able to cancel an update, update immediately, or edit the installation date and time. 
+
+|  **Note** |  If you cancel a pending update, you will need to upload the appliance software again to be able to initiate an update. If the update fails and if the update is recoverable, the Update History shows the installation as Failed, and the existing Pending Update Details remain as-is. You can try the upgrade process again. For more information about the update errors and possible resolutions, see Troubleshooting Appliance Update Failure Issues.  If the update fails and if the update is non-recoverable, the Update History shows the installation as Failed, and you will no longer see any existing Pending Update Details. However, all existing features and functionality continue to work as before. For more information about the update errors and possible resolutions, see Troubleshooting Appliance Update Failure Issues.  After the update, if you use the same browser to log in to the appliance, you might encounter an Error code: SEC_ERROR_REUSED_ISSUER_AND_SERIAL. To fix this issue, you will need to remove the system-generated certificate of the server from the same browser that you are using to log in to the appliance. For example, to remove the system-generated certificate of the server from Google Chrome, navigate to Settings > Authentication > Certificates. Select the system-generated certificate that you want to remove, click Remove, and click Close. Close the browser and then log in to the application from a new browser. For more information about certificates, see [Certificates](m_settings_dashboard.html#reference_vjn_psh_kkb).   
+---|---  
+  
+* * *
+
+## Updating Intersight Assist
+
+Cisco Intersight Assist is auto-updated from Intersight Cloud, when new versions are made available by the update service. If no new updates are available for more than 90 days, ensure that Intersight Assist is connected to Intersight. Intersight Assist can be updated automatically from the cloud to update the service packages, OS packages including the kernel, and other security fixes. The appliance UI provides guidance about the update, including the impact of the update, and any service interruptions. 
+
+Use the following instructions to configure an update schedule:
+
+### Before you begin
+
+Ensure that Cisco Intersight Assist is connected to Intersight. 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Assist as an admin.   
+---|---  
+**Step 2** |  Navigate to the Software tab.  The following details are displayed.
+
+  * **Hostname** —Hostname of the installed Assist 
+  * **Deployment Size** —Deployment size of the installed Assist 
+  * **Version** —Version of the installed Assist 
+  * **Pending Version** —Available Assist version for upgrade 
+  * **Installation Date/Time** —Select a date and time to schedule the installation of the pending update version. When the update is triggered, a progress bar displays the status of the update. 
+  * Update Impact Type—This can be Disruptive, Disruptive-reboot, or None. The impact could be disruptive because of an infrastructure upgrade or upgrade of other Intersight services. A disruptive update may cause Intersight to be unavailable for the duration specified in Update Impact Duration. The disruptive reboot of the appliance could be caused by an update to the operating system or other component changes. A grace period is provided to help you plan and manage the update better. The UI displays appropriate messages to guide you if there is a disruptive reboot.  |  **Attention** |  An Assist update can take up to 120 minutes to complete.  **During this time, some features will be temporarily unavailable.** **It is recommended that you take a backup snapshot prior to triggering the update and do not reboot your appliance. Do not reboot the appliance manually while the appliance updates. If there is a requirement to reboot, Intersight Assist does it automatically.**  
+---|---  
+  * **Update Immediately** —Depending on your update schedule preferences, you can set an installation date and time for the update or choose to update immediately. 
+
+  * Upgrade History—A table view of the updates. This table lists the **Installation Date/Time** , **Version** , **Description** of the version, and the **Update Status** of the installation of the update. From this table view, you can search for a specific version and the date it was installed, and the status of the installation. 
+
+
+**Attention** |  An Assist update can take up to 120 minutes to complete.  **During this time, some features will be temporarily unavailable.** **It is recommended that you take a backup snapshot prior to triggering the update and do not reboot your appliance. Do not reboot the appliance manually while the appliance updates. If there is a requirement to reboot, Intersight Assist does it automatically.**  
+---|---  
+**Note** |  If you do not perform a manual update for Intersight Assist within the default scheduled window, the system triggers the update automatically.   
+---|---  
+**Note** |  If the upgrade fails and if the upgrade is recoverable, the **Update Immediately** button remains enabled. You can try the upgrading process again. For more information about the update errors and possible resolutions, see Troubleshooting Appliance Update Failure Issues.  If the upgrade fails and if the upgrade is non-recoverable, the **Update Immediately** button is disabled. However, all existing features and functionality continue to work as before. For more information about the update errors and possible resolutions, see Troubleshooting Appliance Update Failure Issues.  After the upgrade, if you use the same browser to log in to the appliance, you might encounter an Error code: SEC_ERROR_REUSED_ISSUER_AND_SERIAL. To fix this issue, you will need to remove the system-generated certificate of the server from the same browser that you are using to log in to the appliance. To manage SSL certificates, use the maintenance shell. For more information about the maintenance shell, see [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb). For more information about certificates, see [Certificates](m_settings_dashboard.html#reference_vjn_psh_kkb).   
+---|---  
+  
+* * *
+
+## Troubleshooting Intersight Virtual Appliance Software Update Failure Issues
+
+The following table lists some of the error messages you may encounter while updating your appliance and the possible resolution for each of them. If the issues still persist, contact Cisco TAC. 
+
+Table 1. Appliance Software Update Failure Issues Error Messages |  Possible Resolutions  
+---|---  
+The disk size does not meet the minimum requirement. |  Your appliance hardware disk space is not enough for a successful upgrade. Refer to the information in the [requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section and update your hardware to meet the requirements.   
+Appliance is currently running on version _CURRENTVERSION_. You must upgrade to version _INTERMEDIATEVERSION_ manually before you can upgrade to version _PENDINGVERSION_.  |  **Note** |  _CURRENTVERSION_ , _INTERMEDIATEVERSION_ , and _PENDINGVERSION_ are variables and serve as placeholder texts here. Follow the versions as indicated in the error message that you encounter.   
+---|---  
+Your appliance version does not support direct upgrade to the pending upgrade version. Trigger a manual upgrade to the intermediate version listed in the error message, before you upgrade to the pending version.   
+Appliance requires CPU that supports the AVX instruction set. |  The CPU used for your appliance does not offer AVX support. Upgrade the hardware and use a CPU that offers AVX support.  
+To upgrade to an appliance running AlmaLinux, you need to upgrade from Appliance Version _INTERMEDIATEVERSION_ or a newer version.  |  **Note** |  _INTERMEDIATEVERSION_ is a variable and serves as a placeholder text here. Follow the version as indicated in the error message that you encounter.   
+---|---  
+Your appliance version does not support direct upgrade to the pending upgrade version. Trigger a manual upgrade to the intermediate version listed in the error message, before you upgrade to the pending version.   
+Storage devices on appliance must use VirtIO drivers only. |  If running appliance on KVM, ensure that you are only using VirtIO drivers for storage.
+
 ---
 
 ## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_settings_dashboard.html
+
+# Dashboard Settings   
+  
+  * Configuring a Banner Message for Displaying Before the Login Screen
+  * Backing Up Data
+  * Configuring Metrics Collection
+  * Data Collected from Intersight Connected Virtual Appliance
+  * Updating Intersight Intelligence for Intersight Connected Virtual Appliance
+  * Cloud Connection for Intersight Connected Virtual Appliance
+  * Configuring DNS
+  * Configuring NTP
+  * Configuring Syslog
+  * Configuring SMTP Settings for Email Notifications
+  * Configuring Email Notifications for Intersight Virtual Appliance Software Updates
+  * Single Sign-On with Intersight Virtual Appliance
+  * Certificates
+  * Configuring LDAP Settings
+  * Configuring Password Policy for Local Users
+  * Adding a User
+  * Locking Out Local Users Accounts
+  * Resetting the Password for the Local Admin User
+  * Resetting the Password of Local Users
+  * Adding a Group
+  * Adding a Role
+  * Adding an Organization
+  * Generating and Managing API Keys
+  * OAuth2 Tokens
+  * Device Connector Requirements
+  * Configuring Account Settings
+  * Intersight Virtual Appliance Monitoring
+  * Intersight Virtual Appliance Settings
+
 
 ## Configuring a Banner Message for Displaying Before the Login Screen
 
@@ -416,10 +2914,1434 @@ You can configure a banner message in Intersight Virtual Appliance. When enabled
   
 * * *
 
+## Backing Up Data
+
+Backing up Intersight Virtual Appliance regularly is essential. Without regular backups, there is no automatic way to reconstruct configuration settings and recreate profiles and policies. 
+
+You can use the following methods to protect Intersight Virtual Appliance:
+
+  * VM snapshots—A VM snapshot is not a true backup unless you also copy it to a remote location. Snapshots are quick to create and restore, but they can become corrupted if they are taken while the VM is running. Always create application backups in addition to VM snapshots. 
+
+  * Application backups—Application backups capture the database and other data that are required to fully restore the appliance. If an application backup completes successfully, you can recover the appliance without the corruption risks that are associated with VM snapshots. 
+
+
+You can perform a backup once a day using a scheduled backup or create a backup on demand. Intersight Virtual Appliance supports full-state backups that can be saved to a remote server or to a local machine. In a site failure or other disaster recovery scenario, you can use the backup file to perform a full-state recovery of the appliance. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * Backup files do not include metrics data. To back up metrics data, take a snapshot of the metrics node VM.
+  * When you capture a snapshot of the Intersight Virtual Appliance VM, note the following storage size specifications:
+  * **Without Metrics Collection** —The snapshot size on disk is 180 GB. 
+  * **With Metrics Collection Enabled** —The snapshot size on disk exceeds 1 TB. 
+For more information, see [Supported Configuration Limits](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_appliance_overview.html#reference_d1b_nhj_sjb). 
+  * There is no difference between backups on a multi-node appliance and backups on a single-node appliance. Backup occurs at the cluster level and not at the node level. The backup originates from one node, but it is not restricted to a specific node. 
+
+
+* * *  
+  
+---|---  
+  
+Restore Requirements—An appliance installer is required to restore the appliance from a backup. If a backup is taken from appliance release version N, it can only be restored using the latest installer that is older than or equal to version N. For example: 
+
+  * If the backup of your appliance release version is 1.1.0-0, you need the latest appliance installer version that is older than or equal to 1.1.0-0, which is 1.1.0-0. 
+
+  * If the backup of your appliance release version is 1.1.1-1, you need the latest appliance installer version that is older than or equal to 1.1.1-1, which is 1.1.1-0. 
+
+
+Cisco recommends that you retain the appliance installer that corresponds to each backup you create. For more information, see [Recovering Intersight Connected Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7) and [Recovering Intersight Private Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18). 
+
+You can use one of the following backup options:
+
+  * Create Backup—Creates an on-demand full-state backup and saves it to a remote server or a local machine. If the backup file is saved to a local machine, note that the maximum number of downloadable local backups is five. 
+
+  * Backup Schedule—Configures a scheduled full-state backup and saves it to a remote server. 
+
+  * Backup Now—Initiates an immediate backup that runs independently of the configure backup schedule. This option can be triggered only when a **Backup Schedule** is already configured. 
+
+
+  * Create Backup
+  * Scheduling Backup
+  * Backup Retention Scenarios
+
+
+### Create Backup
+
+You can create a full-state backup of the Intersight Virtual Appliance and save the file to a remote server or a local machine. If you save the backup file to a local machine, note that the maximum number of downloadable local backups is five. When you attempt to create a sixth backup, the UI displays a confirmation prompt. After you acknowledge the prompt, the system deletes the oldest local backup entry from the backup table to accommodate the new backup. 
+
+To create a backup:
+
+#### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > System > Backups.   
+**Step 3** |  Click Create Backup.  The Backup window displays.   
+**Step 4** |  Enter the following details:
+
+  * Type—Backup destination type. Intersight Virtual Appliance currently supports SCP (Secure Copy Protocol), SFTP (Secure File Transfer Protocol), CIFS (Common Internet File System), and Local for backup.  Depending on the type that you select (SCP, SFTP, CIFS, or Local), enter the following fields as needed:
+  * Remote Port—Remote TCP port on the backup server. This field applies only to SCP and SFTP. 
+  * Remote Host—Remote host where the backup file is saved. Hostname and IP address are supported. 
+  * Remote Path—Directory where the backup file is saved.  |  **Note** |  CIFS share names must contain only alphanumeric characters and must conform to the regular expression _^(\w+)(/\w+)*/?$_. They cannot contain spaces. When you specify folders under the CIFS share, use a forward slash (_/_) as the separator. For example, _backupshare/Intersight/Daily_ and _backupshare/Monthly_.  Do not include a leading forward slash in the CIFS share name. For example, enter share1/subdirectory1, not /share1/subdirectory1.   
+---|---  
+  * File Prefix—Prefix for the backup file name. This is a mandatory field for local backup. 
+
+  * Username—Username for authenticating to the backup server. 
+
+  * Password—Password for authenticating to the backup server. 
+
+  * Password Confirmation—Reenter the password to confirm it. 
+
+
+  
+**Step 5** |  Click Create.  If you select Local, the backup file is generated on the appliance and then made available for download through your browser.   
+  
+* * *
+
+### Scheduling Backup
+
+Backup Schedule enables you to configure a periodic backup of the data in Intersight Virtual Appliance. You cannot schedule local backups. 
+
+#### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > System > Backups.   
+**Step 3** |  Under Backup Schedule, click Configure.  The Configure Backup Schedule  screen appears.   
+**Step 4** |  Enter the following information to configure a backup schedule.
+
+  * Backup Schedule
+  * Day of Week—Select the day on which to run the backup, or select Daily. 
+  * Time of Day—Specify when the backup runs. This value uses the browser time of your current session and is displayed in your local time zone. 
+  * Backup Destination
+  * Type—Backup destination type. Intersight Virtual Appliance currently supports SCP (Secure Copy Protocol), SFTP (Secure File Transfer Protocol), and CIFS (Common Internet File System).  Depending on your selection (SCP, SFTP, or CIFS), enter the next fields as needed.
+  * Remote Port—Remote TCP port on the backup server. This field applies only to SCP and SFTP. 
+  * Remote Host—Remote host where the backup file is saved. Hostname and IP address are supported. 
+  * Remote Path—Directory location where the backup file id saved.  |  **Note** |  CIFS share names must contain only alphanumeric characters and must conform to the regular expression _^(\w+)(/\w+)*/?$_. They cannot contain spaces. When you specify folders under the CIFS share, use a forward slash (_/_) as the separator. For example, _backupshare/Intersight/Daily_ and _backupshare/Monthly_.  Do not include a leading forward slash in the CIFS share name. For example, enter share1/subdirectory1, not /share1/subdirectory1.   
+---|---  
+  * File Prefix—Prefix for the backup file name. 
+
+  * Username—Username for authenticating to the backup server. 
+
+  * Password—Password for authenticating to the backup server. 
+
+  * Password Confirmation—Reenter the password to confirm it. 
+
+  * Backup Retention—Number of backups to retain. 
+
+Turn on Enable Backup Retention to specify how many backups to retain on the remote server. The default number is 1. You can enter a number from 1 to 100. 
+
+**Note** |  In order for the backup retention limits to function properly while using the SCP protocol, ensure that the SFTP protocol is also enabled on your remote host.   
+---|---  
+  
+For more information regarding the various backup retention scenarios, see Backup Retention Scenarios. 
+
+
+After the initial backup schedule is configured, you can edit or delete it by navigating to Settings > System > Backups.   
+  
+* * *
+
+### Backup Retention Scenarios
+
+The following table describes the various backup retention scenarios and the expected outcomes.
+
+Table 1. Backup Retention Scenarios Backup Retention Scenarios |  Expected Outcomes  
+---|---  
+You enable backup retention, allow backups to accrue, and then disable backup retention. |  The backups taken under the retention policy will not be deleted.  
+You enable backup retention, allow backups to accrue, and then disable backup retention. Now, you re-enable backup retention again.  |  The backups taken when retention was originally enabled will not be affected. Only backups taken after retention has been re-enabled will be part of the retention policy.   
+You change the file path or hostname in the retention policy. |  The backups taken before the change will not be affected. Only backups taken after the policy change will be part of the latest retention policy.   
+You increase the number of backups |  Backups will continue to accumulate as part of the retention policy until the maximum number of backups is reached, and then the oldest backup will be deleted.   
+You decrease the maximum number of backups from X to Y. |  The older backups in the original retention policy will no longer be part of the policy. This means that the retention policy will be implemented only on the most recent backups for the number, Y. The backups before that will remain as-is.  For example: Suppose you had a retention count of 5 and then you decrease the retention count to 3. In this case, the oldest 2 backups in the original retention policy will not be affected. Retention policy will be enabled only on the 3 backups.   
+  
+## Configuring Metrics Collection
+
+Metrics collection within the Intersight Virtual Appliance is disabled by default. After you install or upgrade Intersight Virtual Appliance, to start metrics collection, you must enable metrics collection in the Intersight Virtual Appliance on the Settings > System > Metrics screen. 
+
+In addition, the Metrics screen displays the active server count along with the threshold limits and disk usage. 
+
+After metrics collection is enabled for the Virtual Appliance, you can choose to enable or disable metrics collection on individual servers or all the servers in IMM or UMM domains. You can select the **Collect metrics for new servers** checkbox to automatically enable metrics collection for any new servers added to the domain. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+UMM devices collect only environmental metrics. For more information on metrics collection, see [Supported Metrics Overview](https://intersight.com/apidocs/introduction/supported-metrics-overview/). 
+
+* * *  
+  
+---|---  
+  
+To configure metrics collection, do the following:
+
+  1. Log into Intersight Virtual Appliance as a user with the account administrator role. 
+
+  2. Choose Settings > System > Metrics. 
+
+  3. Click Configure. 
+
+  4. Toggle Enable Metrics to enable metrics collection. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * Enabling metrics collection results in the immediate triggering of metrics gathering from the endpoints.
+  * Disabling metrics collection may result in a delay of up to one hour before the configuration changes are complete, and the collection of metrics stops. 
+
+* * *  
+  
+---|---  
+  5. Select the Collect metrics for new servers checkbox to automatically enable metric collection for new servers added to the IMM or UMM domains. 
+
+  6. To enable metrics collection for all the servers of the IMM or UMM domain, select the corresponding checkbox.
+
+  7. To select individual servers of a domain: 
+
+     1. Click the Edit icon in the Domains column. 
+
+     2. In the Select Servers screen, select the desired servers. 
+
+     3. Click Select. 
+
+  8. Click Configure. 
+
+
+## Data Collected from Intersight Connected Virtual Appliance 
+
+Cisco Intersight Connected Virtual Appliance works in a connected mode and requires connectivity to hosted Intersight services. You must register the appliance with Intersight to manage your UCS or HyperFlex infrastructure. 
+
+If you enable the option to allow collecting additional information, Intersight may collect other details about the managed systems, beyond what is listed in the table Minimum Data Collected. When any of the options under Data Collection in the Security & Privacy screen of the appliance UI is enabled, Cisco reserves the right to collect more data for diagnosis and proactive troubleshooting purposes. 
+
+The tables below list the details of the minimum data collected by Intersight: 
+
+Table 2. Minimum Data Collected Component |  Details of Data Collected  
+---|---  
+From Intersight Virtual Appliance | 
+
+  * The appliance ID (Serial Number)
+  * The IP address of the appliance
+  * The hostname of the appliance
+  * The device connector version and public key on the appliance
+
+  
+Appliance Software Auto-Upgrade |  Version of software components or the services running on the appliance  
+Appliance Health | 
+
+  * CPU usage
+  * Memory usage
+  * Disk usage
+  * Service statistics
+
+  
+Licensing |  Server count  
+Information about the endpoint target | 
+
+  * Serial number and PID (to support Connected TAC)
+  * UCS Domain ID
+  * Platform Type
+
+  
+Table 3. Data Collected During One-time Device Connector Upgrade Component |  Details of Data Collected  
+---|---  
+From the endpoint target, only if the one-time device connector upgrade is used  | 
+
+  * The endpoint target type - Cisco UCS Fabric Interconnect, Integrated Management Controller, Cisco HyperFlex System
+  * One or more firmware versions of the endpoint
+  * The serial number of the endpoint target
+  * The IP address of the endpoint target
+  * The hostname of the endpoint target
+  * The endpoint device connector version and the public key 
+
+  
+  
+For information about Proactive Support, see [Proactive Support enabled through Intersight](https://intersight.com/help/appliance/features/cisco_intersight/settings#proactive_support_enabled_through_intersight). 
+
+For detailed information about the Proactive Support workflow, supported faults, configuring the advanced options, setting tags, and caveats, see [Proactive RMA for Intersight Connected Devices](https://www.cisco.com/c/en/us/support/docs/servers-unified-computing/intersight/215172-proactive-rma-for-intersight-connected-d.html). 
+
+### Tech Support Diagnostic File Collection
+
+When you open a case with Cisco TAC, Intersight collects Tech Support diagnostic files to assist with an open support case. The data collected could include (but is not limited to) hardware telemetry, system configuration, and any other details which aid in active troubleshooting of the TAC case. Tech Support collection is allowed to occur regardless of data collection options you specify. However, this information is not collected arbitrarily, but only when you open a case for a system requiring assistance with the system's support. 
+
+## Updating Intersight Intelligence for Intersight Connected Virtual Appliance 
+
+Intersight Connected Virtual Appliance allows you to update Intersight intelligence such as Hardware Compatibility List (HCL) as soon as it becomes available, independent of the appliance software upgrade schedule. Updates for HCL include compatibility validation results and compliance status for server model, processor, firmware, adapters, operating system and drivers. For more information about HCL, see [Compliance with Hardware Combability List (HCL)](https://intersight.com/help/resources#compliance_with_hardware_compatibility_list_\(hcl\)). 
+
+Use the following instructions to update Intersight intelligence:
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.   
+---|---  
+**Step 2** |  Choose Settings > System > Appliance Updates.   
+**Step 3** |  Click Update Settings.  The Update Settings window displays.   
+**Step 4** |  Select Update Intersight Intelligence Immediately.   
+**Step 5** |  Click Save.   
+  
+* * *
+
+## Cloud Connection for Intersight Connected Virtual Appliance
+
+Cisco Intersight Connected Virtual Appliance is connected to Cisco Intersight through an embedded device connector. The device connector provides a secure way for the connected targets to send information and receive control instructions from Cisco Intersight, using a secure Internet connection. You can view the following details of the connection to the Cloud and also configure the settings from the Device Connector screen. 
+
+  1. In the appliance UI, choose Settings > Networking > Cloud Connection. 
+
+The Cloud Connection window displays. 
+
+You can view details such as Device ID, Claim Code, Access Mode, and device connector status. For more information about configuring the device connector, status, and error conditions, see Configuring Device Connector in Resources. 
+
+  2. Click Settings and configure the following settings. 
+
+  * General—Enable Device Connector so that you can claim the appliance and leverage the capabilities of Cisco Intersight, and select an Access Mode. If the Device Connector option is disabled, no communication is allowed to Cisco Intersight. Click Save. 
+
+  * Proxy Configuration
+
+  * Enable Enable Proxy. Add the Proxy Hostname or IP Address, and the Proxy Port. The proxy port must be in the range from 1 and 65535. 
+
+  * Enable Authentication and add a Username and Password for Authenticated Proxy. The proxy setting is automatically reset after restoring, and you must manually reset the appliance proxy. 
+
+Click Save. 
+
+  * Certificate Manager—Import proxy certificates. 
+
+
+## Configuring DNS 
+
+This task describes how to configure DNS settings in Cisco Intersight Virtual Appliance.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Wildcard DNS sinkholing is not supported in Intersight Virtual Appliance.
+
+* * *  
+  
+---|---  
+  
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > Networking > DNS.  The details of the existing DNS settings display.  
+**Step 3** |  Click Edit DNS.  Configure DNS window displays.   
+**Step 4** |  Update the following properties. 
+
+  * Preferred IPv4 DNS Server—Provide the IP address of the primary DNS server. 
+  * Alternate IPv4 DNS Server—Provide the IP address of the secondary DNS server. 
+
+  
+**Step 5** |  Click Save.   
+  
+* * *
+
+## Configuring NTP 
+
+It is mandatory to have at least one Network Time Protocol (NTP) server configured in Intersight Virtual Appliance to enable synchronizing the time on the appliance with the NTP servers. The authentication schema for the NTP servers can be either unauthenticated or authenticated. You can add the IP Addresses or the DNS names of up to three unauthenticated NTP servers during the initial setup of the appliance. Once the appliance is fully installed, you can edit the NTP server settings to include any combination of authenticated and unauthenticated NTP servers (up to three total). 
+
+Use the information in the following task to configure an NTP server.
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Cisco Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > Networking > NTP.  The details of the existing NTP settings display.  
+**Step 3** |  Click Configure.  Configure NTP window displays.   
+**Step 4** |  Click Add NTP Server, to add a new NTP server. 
+
+  1. Click +. 
+  2. Enter a server hostname or an IP address for the Server Name and click Save to save the NTP server as an unauthenticated one. 
+  3. Enable the Enable NTP Authentication button to add the NTP server as an authenticated one.  Enter the following information.
+  * Server Name—Server hostname or IP address 
+  * Symmetric Key Type—Type of symmetric key to use for this server 
+  * Symmetric Key ID—Positive integer that identifies a cryptographic key used to authenticate NTP messages 
+  * Symmetric Key Value—Value of the symmetric key 
+  4. Click Save.  To edit existing NTP server configurations, click + on any of the configured NTP servers, make your edits as needed, and save the edited configurations. 
+
+  
+  
+* * *
+
+## Configuring Syslog
+
+Intersight Virtual Appliance provides you with the ability to configure up to five syslog servers. When you enable syslog server in Intersight Virtual Appliance, you can export the following types of logs and alarms based on the details provided when configuring the syslog server. 
+
+  * Web Server Logs—Web server access logs for all transactions involving user session activities. 
+
+  * Audit Logs—Audit logs for events such as login, logout, created, modified, and deleted, that are displayed in the Audit Logs screen in Intersight Virtual Appliance. 
+
+  * Alarms —All Intersight alarms, including appliance alarms, that provide alerts about a failure (fault) in the managed target or when a threshold has been crossed. For information about alarms in Intersight, see [Alarms](https://intersight.com/help/saas/my_dashboard/dashboard_management#alarms). For more information about alarms in Intersight Virtual Appliance, see the Alarms in Intersight Virtual Appliance table in Appliance Monitoring. 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+  * In Intersight Virtual Appliance, you can use the TLS, UDP, and TCP protocols to provide secure communication to the syslog server. However, it is strongly recommended that you use **only** TLS in your production environment. 
+  * UCS C-Series server-related faults such as power supply and fan failures are not forwarded by Intersight Virtual Appliance to a syslog server. Please configure the syslog server on the UCS C-Series CIMC side to handle forwarding of the UCS C-Series events and faults. 
+
+
+* * *  
+  
+---|---  
+  
+To configure a syslog server in Intersight Virtual Appliance, do the following:
+
+### Before you begin
+
+Ensure that you have added the certificate for the syslog server where you want to send the web server log, audit logs, and alarms in Intersight Virtual Appliance. This certificate is used to verify TLS communication with the syslog server. For more information about how to add certificates, see Certificates. 
+
+  * If you plan on using FQDN in the Hostname/IP Address field while configuring the syslog server, set up the certificate for the syslog server with a proper FQDN entry in the Common Name or the DNS entry in the Subject Alternative Names. Enter this information in the Hostname/IP Address field while configuring the syslog. 
+
+  * If you plan on using either IPv4 or IPv6 address in the Hostname/IP Address field while configuring the syslog server, set up the certificate for the syslog server with the IP address in the Common Name. Enter this information in the Hostname/IP Address field while configuring the syslog server. 
+
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > Networking > Syslog.  You can view the details of the existing syslog settings.  
+**Step 3** |  Click Add Syslog Server.  The Add Syslog Server window displays.   
+**Step 4** |  Update the following fields as needed.
+
+  * Enable Syslog Server—When enabled, the Web Server Access Logs, Audit Logs, and Alarms are sent to the configured syslog server as per the configuration details provided in the Hostname/IP Address, Port, Protocol, and Minimum Severity of Alarms to Report fields. Note that the Minimum Severity of Alarms to Report field is applicable only for Alarms. 
+  * Web Server Access Logs—When enabled, you will be able to export the web server access logs for all transactions involving user session activities.  |  **Note** |  It is highly recommended that you do not enable this option as it will quickly overpopulate your log files. This option is mainly made available for customers that require the ability to export web server access logs.   
+---|---  
+  * Audit Logs—When enabled, the audit logs for events such as login, logout, created, modified, and deleted, that are displayed on the Audit Logs screen are sent to the configured syslog server. 
+
+  * Alarms—When enabled, the Intersight alarms, including appliance alarms, that provide alerts about a failure (fault) in the managed target or when a threshold has been crossed are sent to the configured syslog server. 
+
+  * Hostname/IP Address—Enter either an FQDN, an IPv4 address, or an IPv6 address. This information must match the details that you provided in the certificate for the syslog server. 
+
+  * Port—Port to use for the syslog server 
+
+  * Protocol—Select a protocol from the drop-down list. It is strongly recommended that you use **only** TLS in your production environment. 
+
+  * Minimum Severity of Alarms to Report (Applicable for Alarms Only) —Select either Warning, Info, or Critical as the minimum severity level for alarms to be reported. When the alarms of selected severity and above are cleared at the endpoints, the notification for the same also gets exported to the syslog server. 
+
+
+  
+**Step 5** |  Click Add.   
+  
+* * *
+
+## Configuring SMTP Settings for Email Notifications
+
+Networking systems and software frequently create alarms that indicate a concerning event, or a trend has been detected. Email notifications automatically poll for recent alarms, determine their severity, and direct concerning ones to a user's email address based on a rule you create. 
+
+To configure email notifications in Intersight Virtual Appliance, perform the following two tasks:
+
+  * Configure Simple Mail Transfer Protocol (SMTP) settings
+
+  * Create notification rules
+
+
+**Configuring SMTP settings**
+
+To configure SMTP settings, perform the following steps:
+
+  1. Log into Intersight Virtual Appliance as a user with account administrator role.
+
+  2. Choose Settings > Networking > SMTP. 
+
+You can view the details of the existing SMTP settings. If this session is your first instance of configuring SMTP for email notifications, the appliance displays default or no values in the fields. 
+
+  3. Click Configure. 
+
+  4. Enable the SMTP toggle button to configure email notifications.
+
+  5. In the SMTP Server Address field, type the IP address or domain name of the server in your domain that sends email notifications.
+
+  6. In the SMTP Port list, type or select the port number of the server that performs email notification forwarding. 
+
+Port 25 is the standard SMTP Relay port. Ports 465 or 587 are secure mail routing ports. The value range for port selection is 1 through 65535, and the default is 25. 
+
+  7. In the SMTP Sender Name field, type the email address of the user that sends email notifications.
+
+  8. (Optional) Enable the TLS toggle button.
+
+TLS is a form of authorization that provides security by verifying the certificate authority (CA) of the SMTP email server. To apply TLS security, select the CA you want to apply to from the list in the TLS region. 
+
+  9. (Optional) Enable the Authentication toggle button, if your SMTP server requires authentication, and provide the username and password used to authenticate to the SMTP server. 
+
+  10. Click Configure. 
+
+
+Once the configuration is complete, you can verify the SMTP settings by sending a test email. 
+
+  1. Click Test on the SMTP configuration screen. 
+
+  2. Add a valid email address in the Test pop-up screen for sending a test email. 
+
+  3. Click Send. 
+
+
+The result of trying to send a test email is displayed on the screen. If it is successful, you can confirm that you received the test email with the subject Cisco Intersight SMTP Configuration Test Email at the specified email address. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+The Test button is enabled only after the SMTP settings are configured. Also, emails are sent only for successful validations. 
+
+* * *  
+  
+---|---  
+  
+Next, complete the steps for creating notification rules.
+
+**Creating Notification Rules**
+
+Notifications are based on a rule you set for incoming alarms.
+
+To configure an email notification rule, perform the following steps:
+
+  1. In the appliance UI, choose Settings > System > Email Notifications. 
+
+You can view the notification rule list populated with the existing rules.
+
+Each rule is used as both a condition for notification generation (Alarms column) and a notification destination (Email column). If this session is your first time creating a notification rule for the email address set in the SMTP Sender Name in the Configure SMTP screen, no existing rules display in the list. The list displays the following columns: 
+
+  * Name—The name of the rule. 
+
+  * Enabled—The administrative state of the rule. A Yes setting indicates the rule is active and will generate email notifications when the rule conditions are met. A No setting indicates the rule is inactive and will not generate email notifications. 
+
+  * Email—The email address to which notifications will be sent. 
+
+  * Alarms—The required severity of an event for it to generate a notification. 
+
+  * Last Updated—The last time the notification was configured, either during a creation or an editing session. The timestamp is in the following format: <_day_ >:<_hour_ >:<_minute_ >. 
+
+  2. Click the Add Rule button in the upper right portion of the screen. 
+
+The Add Rule screen displays. 
+
+  3. To configure a rule, the Enable Rule toggle button MUST be enabled. 
+
+  4. In the Name field, type a string of up to 32 characters that you want to be the name of the rule.
+
+  5. In the Email field, type an email address to which you want generated email notifications sent. Click the (+) icon to enter additional email addresses for other destinations. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+You can create up to three email destinations for email notifications.
+
+* * *  
+  
+---|---  
+  6. In the Severity region, select an urgency level of an alarm you want to be reached for a notification email to be sent.
+
+The urgency levels for alarms are Critical (the most urgent), Warning (second-least urgent), and Info (no urgency). You can select one or multiple urgency levels. In the case of multiple Severity settings, the least urgent level will be the one, when reached, that triggers an email notification to be sent. 
+
+  7. Click Add. 
+
+The following warning message is displayed.
+         
+         WARNING! Email notifications may contain sensitive data. Ensure the emails contain no typos and are approved to receive data.
+
+  8. Click Continue. 
+
+Intersight returns to the Notifications screen displaying the new rule in the list.
+
+
+**Limitations**
+
+Note the following restrictions for configuring email notifications.
+
+  * You can configure up to three emails per rule.
+
+  * You can configure up to five rules per account.
+
+  * Events are collected in a sliding time window of 10 seconds. Intersight initially waits for a 10-second period where it polls for alarms. If an alarm or multiple alarms are detected in this initial period, Intersight waits an additional 10-second period to detect alarms. If it detects alarms in this period, additional periods occur until no alarms are detected. Once an additional 10-second period elapses with no alarms detected, Intersight bundles the discovered alarms into an alarm group and sends an email containing the alarms to the specified address. 
+
+  * An email address can be associated with up to 100 alarms, and the number of emails sent depends on how large the alarm group is. If an alarm group contains more than 100 alarms, an additional email is sent. Some events may generate 1,000 alarms. In that case, 10 emails are sent. 
+
+
+## Configuring Email Notifications for Intersight Virtual Appliance Software Updates
+
+Intersight Virtual Appliance allows you to configure email notifications when a new software update or a new patch update becomes available for installation and when a new software update or a patch update is completed. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Ensure that you have configured SMTP settings before proceeding to configure email notifications for software updates. For information on how to configure SMTP settings, see Configuring SMTP Settings for Email Notifications. 
+
+* * *  
+  
+---|---  
+  
+  1. Log into Intersight Virtual Appliance as a user with an account administrator role.
+
+  2. Choose Settings > System > Appliance Updates. 
+
+  3. Click Update Settings. 
+
+  4. Enable Email Notifications under Software Update Notifications. 
+
+  5. Choose when to send email notifications from the following options:
+
+  * Updates Are Ready to Install
+
+  * Updates Are Complete
+
+  6. Enter up to 3 valid emails.
+
+  7. Click Save. 
+
+
+Based on your selection for the notifications, emails are sent when an appliance software update or a patch update becomes available for installation and when a software update or a patch update is completed. To ensure that the configured users receive email notifications, and the emails do not end up in their Spam folder, it is recommended that the recipients add the sender's email address as per the SMTP configuration settings, to their "**approved senders** " list within their email client. 
+
+## Single Sign-On with Intersight Virtual Appliance
+
+Single Sign-On (SSO) authentication enables you to use a single set of credentials to log in to multiple applications. With SSO authentication, you can log in to Intersight with your corporate credentials. Intersight supports SSO through SAML 2.0, and acts as a service provider (SP), and enables integration with Identity Providers (IdPs) for SSO authentication. 
+
+To set up SSO through the appliance, you must log in to Cisco Intersight Virtual Appliance as a user with administrator role, download the SP metadata, and register your Identity Provider (IdP) in the Intersight Virtual Appliance. 
+
+### **IdP Requirements**
+
+The IdP you add to Intersight must support SAML 2.0 and a service provider initiated SSO. The most commonly used IdPs have different instructions to complete the setup. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+If you have a multi-node cluster setup for Intersight Virtual Appliance or if you are expanding from a single-node configuration to a multi-node cluster configuration, for some IdPs such as Okta you must manually configure the three SSOs, while for other IdPs such as ADFS you can directly import the xml file. For IdPs where the SSO configuration is a manual one, you must configure the three different SSO URLs specified in the metadata file downloaded from the appliance SSO screen. Once the three URLs are configured, you can proceed with the SSO login from any one of the three nodes. 
+
+* * *  
+  
+---|---  
+  
+Additional requirements for a multi-node cluster setup in appliance:
+
+  * SLO (Single Logout) is supported for a multi-node setup in appliance, but there is only one SLO endpoint. If the node specified in the SLO URL is down, then SLO will not work. In this case, you will only be logged out of Intersight. 
+
+  * The IDP initiated SSO works only for the entity node.
+
+
+For more information about setting up SSO with Intersight and examples of adding an Identity Provider, see, [Single Sign On with Intersight](https://intersight.com/help/appliance/resources#single_sign-on_with_intersight). Click [here](https://intersight.com/help/appliance/video#intersight_single_sign-on) to watch a video that shows how to enable Intersight Single Sign-On and set up a custom SAML 2.0 application in an external Identity Provider (IdP) with Intersight. 
+
+## Certificates
+
+To provide secure authentication to external targets (such as LDAP servers), you can add a third-party certificate from a trusted source that affirms the identity of your targets or add a self-signed certificate for secure HTTPS access of the appliance through the browser. 
+
+  * In a future release, Intersight Virtual Appliance will be phasing out support for certificates signed with the SHA-1 hash functions. It is strongly recommended that you upgrade your certificates to use signature algorithms with hash functions that are stronger than SHA-1, such as SHA-256, SHA-384, or SHA-512. 
+
+  * Certificates created for the LDAP server must include Subject Alternative Names (SANs) since the use of Common Name has been deprecated. Certificates without SANs will fail verification, resulting in connectivity issues. 
+
+
+### Trusted Certificates
+
+To provide secure authentication while connecting to external targets, you can add a third-party certificate from a trusted source or a self-signed certificate that affirms the identity of your targets. The third-party certificate is signed by the issuing trusted point, which can be a root certificate authority (CA), an intermediate CA, or a trust anchor that is part of a trust chain that leads to a root CA. 
+
+The Trusted Certificates table view that is accessible from Settings > Authentication > Certificates >Trusted displays the list of certificates that you added in Intersight. 
+
+### Add Certificate 
+
+The following task provides details on how to add trusted certificates in Intersight Virtual Appliance.
+
+  1. Log into Intersight Virtual Appliance as a user with account administrator role.
+
+  2. Choose Settings > Authentication > Certificates > Trusted. 
+
+The following details about the Trusted Certificates are displayed in the table view: 
+
+  * Name—Common name of the CA certificate 
+
+  * Issued By—Certificate issuing authority 
+
+  * Usage—Displays the number of targets using the certificate 
+
+  * Expires—The expiry date of the certificate 
+
+  3. Click Add Certificate to add a trusted certificate. 
+
+  4. Click Browse to select the certificate that is stored in your system and click Save. After the certificate is successfully imported, it is displayed in the Trusted Certificates table view. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Important** | 
+
+* * *
+
+The trusted certificate that you want to import must be in base64 encoded X.509(PEM) format.
+
+* * *  
+  
+---|---  
+
+
+### Adding SSL Certificates
+
+To enable secure HTTPS access of the appliance through the browser, you can generate a Certificate Signing Request and import a certificate, or you can switch to a self-signed certificate. You can access these tasks by navigating to Settings > Authentication > Certificates > SSL. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+While migrating from a single-node deployment to a multi-node cluster configuration, if the SSL certificate is already generated on the single-node deployment, once the migration to the multi-node cluster configuration is complete and the cluster is in a Healthy state, then delete and regenerate the SSL certificate. 
+
+* * *  
+  
+---|---  
+  
+To create a Certificate Signing Request (CSR):
+
+  1. In the appliance UI, choose Settings > Authentication > Certificates > SSL. 
+
+The following details about the **Current Certificate** are displayed: 
+
+  * Name—Common name of the CA certificate 
+
+  * Added By—User that added the certificate to the account 
+
+  * Issued By—Certificate issuing authority 
+
+  * Expires—Expiration date of the certificate 
+
+Click View All to display the View Certificate window. In addition to the details listed above, you can also view these details about the certificate: Fingerprints, Country, Locality, Organization, Organizational Unit, and the details of the Issuer Name, Organization, Common Name, and the Signature Algorithm. 
+
+  2. From the **Action** drop-down menu, select Create CSR. 
+
+The Create Certificate Signing Request wizard displays. Enter the following details as required. 
+
+  * Organization—The legal name of your organization.
+
+  * Organizational Unit—The subdivision of your organization that handles the certificate. For example HR, IT etc.
+
+  * Locality—The city/town where your organization is located.
+
+  * State—The state where your organization is located. 
+
+  * Country—The two-letter country code where your organization is located. For a complete list of the country codes, see [ISO 3166](https://www.iso.org/iso-3166-country-codes.html). 
+
+  * Email Address—An email address used to contact your organization.
+
+  * Modulus—Modulus of the RSA private key used to sign the CSR.
+
+  3. Click Create CSR. 
+
+
+When you click Create CSR, a new Certificate Signing Request (CSR) is generated. You can select one of the following options: 
+
+  * **Download CSR** —Allows you to download and store the CSR locally to obtain a trusted certificate from a Certificate Authority (CA). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Use only the appliance FQDN in the Subject Alternative Names (SAN) field during the certificate-issue request process. Do not enter hostnames or IP addresses in the SAN field while obtaining a trusted certificate for Intersight Appliance and Intersight Assist from a Certificate Authority. 
+
+* * *  
+  
+---|---  
+  * **Delete CSR** —Delete the CSR if you do not want to use it to generate a trusted certificate. 
+
+  * **Apply Certificate** —After the CA issues a certificate, click Apply to paste the contents of the certificate in the **Certificate** field in the Apply Certificate window. You can also click the Upload button and upload a certificate. Click Apply to complete the process. The CA-issued certificate can be in .csr, .pem or .crt format. 
+
+
+To switch to a self-signed certificate:
+
+  1. In the appliance UI, choose Settings > Authentication > Certificates > SSL. 
+
+  2. From the **Action** drop-down menu, select Switch to Self-Signed. 
+
+A popup window appears warning you that switching to self-signed certificates will take a few minutes.
+
+  3. Click Apply to proceed. 
+
+
+  * Cisco recommends that you use CA signed certificates to access the appliance. The latest browsers may disable access to the appliance if self-signed certificates are used. Intersight Virtual Appliance provides the option to switch to a self-signed certificate to extend the validity of the certificate, if the self-signed certificate provided by Cisco expires. 
+
+  * When you choose to switch to a self-signed certificate, the current SSL certificate will be replaced by the newly generated self-signed certificate. You can verify if the new certificate is applied by clicking the lock or the warning icon preceding the URL in the address (location) bar of your browser. After the refresh, you will be taken directly to the Settings > Certificates  page without having to log into the appliance once again. 
+
+
+## Configuring LDAP Settings 
+
+Intersight Virtual Appliance supports LDAP/AD based remote authentication. You can configure the appliance to authenticate a user login using LDAP. You can configure multiple LDAP domains and choose a domain for the login. 
+
+An LDAP user can log into Intersight Virtual Appliance with email ID or username and select the corresponding domain in which the LDAP user is configured. You can add up to six LDAP domains per Intersight Account. You can view the list of configured LDAP domains in Settings > Authentication > LDAP/AD  table view. Watch this [video](https://youtu.be/9DUEO2xXszM) to learn how to integrate your appliance with the LDAP/AD services. 
+
+To set up LDAP authentication in Intersight Virtual Appliance, do the following:
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > Authentication > LDAP/AD > Configure LDAP.  Configure LDAP window displays.   
+**Step 3** |  On the Configure LDAP page, add the corresponding details in the fields that are listed below, and click Save. 
+
+  * Name—Enter a name to easily identify the LDAP domain that you are configuring. 
+  * Base DN—Enter a Base Distinguished Name (DN) for the server. For example, DC=Intersight, DC=com. 
+  * Bind DN—Enter a DN used to authenticate against the LDAP server and the password for the user. 
+  * (Optional) User Search Attribute—Enter the LDAP attribute that uniquely identifies the user for login and lookup. Examples include _uid_ , _mail_ , _sAMAccountName_ , or a custom attribute that is unique in your LDAP directory. You may specify multiple attributes; if configured, users can log in using any of the defined values. For example, if you configure _sAMAccountName_ and _mail_ , a user can log in using either their _sAMAccountName_ or their email address. If this field is left empty, the appliance defaults to using _sAMAccountName_ and mail. 
+  * Group Attribute—Enter the Group member attribute to which an LDAP entry belongs. Intersight Virtual Appliance uses this Group attribute to map/assign Intersight roles to the user. The default value is member and you can change it from Edit LDAP settings. 
+  * (Optional)Filter—Enter an LDAP filter to restrict the user search scope. For example: _(objectClass=person)_
+  * Password—Enter a DN password for the user. 
+  * Nested Group Search—When enabled, an extended search runs through the chain of ancestry all the way to the root and returns all the groups and subgroups that each of the groups and subgroups belong to, recursively. 
+  * Enable Encryption—You must enable Encryption to secure the communication over the LDAP server. If encryption is enabled, a trusted root certificate has to be added. For more information, see Add Certificates.  |  **Note** | 
+  * In a future release, Intersight Virtual Appliance will be phasing out support for certificates signed with the SHA-1 hash functions. It is strongly recommended that you upgrade your certificates to use signature algorithms with hash functions that are stronger than SHA-1, such as SHA-256, SHA-384, or SHA-512. 
+  * Certificates created for the LDAP server must include Subject Alternative Names (SANs) since the use of Common Name has been deprecated. Certificates without SANs will fail verification, resulting in connectivity issues.   
+---|---  
+  * Configure LDAP Servers—Add up to three LDAP Server IP addresses or hostnames, and a corresponding LDAP Server port for each LDAP Server. 
+
+
+**Attention** | 
+
+  * LDAPS is supported on Port 636 and Port 3269. All other ports support LDAP on TLS.
+  * **Intersight Virtual Appliance uses the email ID or username to log in an LDAP user**. If you want to use email ID to log in to the appliance, configure the mail attribute in the LDAP server. If you want to use the username, use the sAMAccountName configured for that user in the LDAP server. 
+  * **After you add the required details to configure LDAP settings, wait for the DeployApplianceLDAP workflow to complete before you add a User or Group to assign appropriate roles to LDAP users. You can check the status of the workflow in **Requests**. For more information, see Adding a User or Adding a Group. **
+  * **If you are using the Intersight API to configure the Appliance LDAP login, ensure that the LDAP policies are tagged appliance.management:true. This is automatically done for the users configuring the LDAP under Settings.**
+
+  
+---|---  
+  
+After you add the required details to configure LDAP settings, wait for the DeployApplianceLDAP workflow to complete before you log in as an LDAP user. You can check the status of the workflow in **Requests**. 
+
+To verify the LDAP configuration settings: 
+
+  1. Click on the ellipsis in the row for which you want to verify the LDAP configuration settings.
+
+  2. Click Test Configuration. 
+
+The Test LDAP/AD Configuration pop-up screen appears. 
+
+  3. Add a valid username or email address and password.
+
+  4. Click Test. 
+
+
+Once the test completes, the results displayed in the Configuration Status column are as follows: 
+
+  * Verified—Indicates that the LDAP configuration has been verified successfully. Hover on it to see the number of user groups of the test user. 
+
+  * Failed—Indicates that the LDAP configuration verification test failed. Hover on it to read the error message. 
+
+  * Unverified—Indicates that a test has not been run on a configured LDAP server. 
+
+
+  
+  
+* * *
+
+## Configuring Password Policy for Local Users
+
+This task provides details on how to configure password policy for local users in Intersight Virtual Appliance.
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > Authentication > Local Users Password Policy.  You can view the details of the existing password policy.  
+**Step 3** |  Click Configure.  The Configure Local Users window displays.   
+**Step 4** |  Configure the password policy by updating the following password policy options as needed. |  Password Policy Options |  Allowed Range/Default Value  
+---|---  
+Minimum Required Password Length |  8-127 characters Default is 8  
+Minimum Required Upper Case Characters |  1-64 characters Default is 1  
+Minimum Required Lower Case Characters |  1-64 characters Default is 1  
+Minimum Required Numeric Characters |  1-64 characters Default is 1  
+Minimum Required Special Characters |  0-64 characters Default is 0 |  **Note** |  Special characters include punctuation and symbol characters.  
+---|---  
+Number of Previous Passwords Disallowed |  0-10 Default is 0  
+Minimum Required Different Characters From Previous Password |  0-15 Default is 0 |  **Note** |  Differences from the previous password are verified based on the same character location within the specified password.  
+---|---  
+Minimum Days Between Password Changes |  0-7 days Default is 0 |  **Note** |  If you specify a value of 0 for this password policy option, then the user is not limited on time between password changes.  
+---|---  
+Maximum Days Between Password Changes |  0-3650 days.  Default is 0, which means that password expiry is not enforced. |  **Note** |  If **Minimum Days Allowed Between Password Changes** and **Maximum Days Allowed with Same Password** are both enabled, make sure that the maximum value is greater than or equal to the minimum value.   
+---|---  
+Time Duration for Incorrect Login Attempts (Seconds) |  300 - 3600 seconds (5 – 60 minutes) Default is 1800 seconds (30 minutes) Time duration is tracked for consecutive incorrect login attempts. Users will be locked out if they exceed the configured number of maximum incorrect login attempts during this duration.  For more information about the lockout capability, see Locking Out Local Users Accounts.   
+Max Consecutive Incorrect Login Attempts Allowed |  3 -10 Default is 5 Users will be locked out after exceeding the maximum consecutive incorrect login attempts allowed within the configured time duration.   
+Enable Lockout for Admin User |  Default is false. Determines if the user lockout feature must be enabled for the local “admin” user. This option is always enabled for other local users.  For more information about the lockout capability, see Locking Out Local Users Accounts.   
+Lockout Time Period (Seconds) |  60 – 3600 seconds (1 – 60 minutes) Default is 900 (15 minutes) Duration, in seconds, during which a local user account will remain locked. The account is automatically unlocked after the configured lockout time period elapses.   
+**Step 5** |  Click Save.  You can verify the password policy changes on the next password change or the next local user login. |  **Note** |  When your password is approaching expiration, the appliance displays a warning message after you sign in. The warning period is fixed at seven days before your password expires.   
+---|---  
+**Password Expiration Behavior for Local Users**
+
+If your password has expired, you are redirected to the Change Password screen upon your next login attempt. To proceed, enter your current password, then enter and confirm your new password. 
+
+Your new password must comply with the configured password policy for local users. Once successfully changed, you are redirected to the sign-in screen, where you can log in with your new credentials. 
+
+If your password expires during an active session, your session remains uninterrupted. The expiration check occurs at your next sign-in attempt.   
+  
+* * *
+
+## Adding a User
+
+Intersight Virtual Appliance allows you to override Group role assignments to users. On the User page, you can view a list of the Users added to an account. The list displays the Name, Identity Provider, Email, Role, and the Last Login Time for a user. You can add Remote Users as well as Local Users. Note that you can add up to 100 Local Users. 
+
+  * Remote Users—authenticated via IDP (LDAP and SSO)
+
+  * Local Users—authenticated via Intersight Virtual Appliance 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+You must be an Account Administrator or User Access Administrator to create a user or assign user roles.
+
+* * *  
+  
+---|---  
+  
+Use these instructions to add a user in Intersight Virtual Appliance:
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Cisco Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > User Permissions > Users.   
+**Step 3** |  In the Add User window, add the following details:  You have the option of adding a Remote User or a Local User. Note that you can add up to 100 Local Users. **To add a Remote User, enter the following details:**
+
+  * Identity Provider—Select the Identity Provider that you want to add to this account. This can be any one of the Intersight validated Identity Providers. For more information, see Validated Identity Providers in the Supported Systems page in <Your FQDN>/help.  If you add an LDAP user, you must add them under the appropriate Identity Provider (IDP). The name of the IDP will be the same as the LDAP Domain Name that you have configured in LDAP Settings. 
+  * User ID—Enter a valid email ID or username used to register the account with the Identity Provider. **The username must be the same as the sAMAccountName that is configured on the LDAP server**. If you are using email to log in, ensure that the email ID is the same as configured in the mail attribute on the LDAP server. 
+  * Role—You can assign one role for a remote user account. For more information, see [Roles and Privileges](https://intersight.com/help/appliance/resources/RBAC#roles_and_privileges). 
+
+**To add a local user, enter the following details:**
+
+  * First Name—First name of the local user 
+  * Last Name—Last name of the local user 
+  * User ID—Enter an email ID or username which is used by the local user to log into the appliance. 
+  * Password—Enter a valid password as per the local user password policy. 
+  * Role—You can assign multiple roles to a local user account. For more information, see [Roles and Privileges](https://intersight.com/help/appliance/resources/RBAC#roles_and_privileges). 
+
+  
+**Step 4** |  Click Save to add the new user to your account.  |  **Attention** |  The UserID and password that is entered while adding the new local user must be conveyed to the new local user directly as there is no mechanism currently in Intersight Virtual Appliance to automatically notify the login credentials to the new local user. Once the new local user logs in using these credentials, a prompt appears that mandates the new local user to change the password.  Local users can change their passwords any time by navigating to Profile Menu in the top right of the screen and then clicking Change Password.   
+---|---  
+  
+* * *
+
+## Locking Out Local Users Accounts
+
+Consecutive incorrect login attempts within a configured time duration are tracked for local users and the accounts will be locked out if they exceed the configured number of maximum incorrect login attempts during this duration. Once the local user account is locked, the Local User table displays a warning icon next to the user. The account is automatically unlocked after the configured lockout period elapses. The Account Administrator or the User Access Administrator can unlock the account by resetting the password during the configured lockout period. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+The lockout capability:
+
+  * Applies to only local users and does not apply to remote users.
+  * Applies to local “admin” user only if the setting is enabled.
+
+
+* * *  
+  
+---|---  
+  
+## Resetting the Password for the Local Admin User
+
+If the password for the local admin user is unknown, you can initiate the password reset from the hypervisor console without contacting Cisco TAC. The reset process generates a temporary password for the local admin user. After the reset, log into the appliance web UI with the temporary password and set a new password. 
+
+The new password applies to both web UI and SSH access after the password change is completed in the appliance web UI.
+
+**Before you Begin** : 
+
+  * Verify that you have hypervisor console access to the appliance VM. 
+
+  * Be aware that this task requires a reboot of the appliance VM. Before you begin, save your work and take any necessary backups. 
+
+  * Be prepared to record the temporary password that appears in the console. You cannot copy and paste this password from the console. 
+
+
+To reset the password of the local admin user:
+
+  1. From the hypervisor, reboot the appliance VM.
+
+  2. Launch the VM console.
+
+  3. During the appliance boot process, when the splash screen appears, press `o` within 10 seconds to open the Options menu. 
+
+  4. Enter `1` to reset the local admin password and confirm that you want to reset the password. 
+
+If you choose not to confirm the reset, exit the password change wizard and continue the boot process. 
+
+  5. Record the temporary password displayed on the console by taking a screenshot or writing it down.
+
+  6. Confirm that you recorded the temporary password.
+
+  7. Wait for the reset to complete, exit out of the wizard, and then allow the appliance to continue starting.
+
+  8. In a browser, go to the appliance URL.
+
+The appliance login page is displayed. Other users can continue to log in normally while the local admin user completes the password change. 
+
+  9. Log in as admin using the temporary password displayed in the hypervisor console. 
+
+  10. When prompted to change the expired password, enter the temporary password as the current password.
+
+  11. Enter and confirm the new admin password.
+
+The new password must meet the local password policy.
+
+  12. Click Change Password. 
+
+  13. After the password change completes, log in again as admin using the new password. 
+
+After this successful login, the new password also applies to SSH access for the local admin user.
+
+
+For multi-node deployments, synchronization of the new password across all nodes can take a few minutes.
+
+**Troubleshooting Password Change for the Local Admin User**
+
+  * If you miss the boot prompt, reboot the appliance VM and try again during the displayed timeout.
+
+  * If the temporary password is rejected, verify that the password was transcribed exactly from the console, including capitalization.
+
+  * If the new password is rejected, choose a password that meets the configured local password policy.
+
+  * If SSH login with the new password fails immediately in a multi-node deployment, wait a few minutes for password synchronization and try again. 
+
+
+## Resetting the Password of Local Users
+
+Account Administrators can reset the password of local users. User Access Administrators can also reset the password of local users except for users with the role of Account Administrator. 
+
+To reset the password of a local user:
+
+  1. Log into Intersight Virtual Appliance as a user with account administrator role.
+
+  2. Choose Settings > User Permissions > Users. 
+
+  3. Select the local user that you want to reset the password.
+
+  4. Click the pencil icon and change the password.
+
+  5. Click Save. 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+When an Account Administrator resets the password for the local “admin” user, only the GUI password is changed. The SSH password of the local “admin” user remains unchanged. The local “admin” user must log into the appliance using the newly reset password. Once the local “admin” user is logged in, a prompt appears that mandates the local “admin” user to change the password, which then resets both the GUI and the SSH passwords. 
+
+* * *  
+  
+---|---  
+  
+## Adding a Group
+
+A Group represents a collection of users with a specific role, permissions, and privileges. You can create multiple user groups to assign common roles and privileges to a set of users. On the Group page, you can view a list of the Groups added to an account. The list displays the Name, Identity Provider, Role, and the Group Name in Identity Provider. Use these instructions to add a group: 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > User Permissions > Groups.   
+**Step 3** |  Click the Add Group button at the top right. The Add Group window displays.   
+**Step 4** |  In the Add Group window, add the following details: 
+
+  * Identity Provider—Select the Identity Provider you want to add to this account. This can be any one of the Intersight validated Identity Providers. For more information, see  Validated Identity Providers in the Supported Systems page in <Your FQDN>/help. You must select the appropriate LDAP domain for groups that would log in with their LDAP credentials. 
+  * Name—Enter a name to identify the group in Intersight. 
+  * Group Name in Identity Provider—Enter the user group name you have added in the Identity Provider. Group name must be in the LDAP distinguished name (DN) format. For example: 
+        
+        cn=Finance,cn=Users,dc=example,dc=com
+
+  * Role—You can assign one of the following System Defined roles to a user group as well as assign User Defined Roles. 
+  * Account Administrator—In this role, members of the group can claim targets, cross launch element managers, create profiles and policies, collect tech support bundles, and make configuration changes to the claimed targets or the account. 
+  * Read-Only—In this role, members of the group can view details, and status of the claimed targets within the account. However, you cannot make any configuration changes to the claimed targets or the account. 
+  * Device Technician—In this role, members of the group can claim a target in Intersight and view a list of the claimed targets in the Targets table view. 
+  * Device Administrator—In this role, members of the group can claim a target in Intersight, view a list of the claimed targets, and delete (unclaim) a target. 
+  * Server Administrator—In this role, members of the group can perform all server actions including firmware upgrade, collect tech support bundles, set server tags, create, edit, and deploy a server profile or policy, and view server details. 
+  * HyperFlex Cluster Administrator—In this role, members of the group can create, edit, and deploy a HyperFlex cluster profile, upgrade a cluster, set cluster tags, view cluster dashboard and summary, collect tech support bundles, monitor alarms, and launch and manage HX Connect. 
+  * User Access Administrator—In this role, members of the group can view account details, perform all User Access related actions, including adding a User, adding a Group, setting up Identity Providers and Single Sign-On, generate API keys related to the account. 
+
+|  **Attention** |  You must be an Account Administrator or User Access Administrator to create a group or assign user roles.  
+---|---  
+**Step 5** |  Click Save to add the new group to the account.   
+  
+* * *
+
+## Adding a Role
+
+### Creating a User Defined Role
+
+In addition to the system-defined roles in Intersight, you can create a user-defined role. On the Roles page, you can view a list of the roles added to an account. This list displays the Name, Type, Usage, Scope, and a Description of the roles. Use these instructions to create a user-defined role: 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+**Only users with Account Administrator or User Access Administrator privileges can create a user-defined role.**
+
+* * *  
+  
+---|---  
+  
+  1. Log into Cisco Intersight.
+
+  2. Choose Settings > User Permissions > Roles. 
+
+  3. From Roles, click Create Role. 
+
+  4. Enter a Name to identify the role in Intersight and a Description of the usage of the role. 
+
+You can choose to retain the default account level settings for Session Timeout, Idle Timeout, and Concurrent Sessions, or you can choose to customize these settings. 
+
+  5. Under Session & Idle Timeout settings, you can choose to do one of the following: 
+
+  * Enable Use Account Default Settings—This option is enabled by default. You can inherit the session timeout values from the Account level settings. The values will be used as the default settings during role creation. To check the account level Session Timeout and Idle Timeout details, navigate to System > Account Details. 
+
+  * Disable Use Account Default Settings—You can disable this option to set values for the following fields at the Role level. 
+
+  * Session Timeout (Seconds) is the session expiry duration in seconds. The minimum value is 300 seconds, and the maximum value is 31536000 seconds (1 year). The system default value is 57600 seconds. 
+
+  * Idle Timeout (Seconds) is the interval for the web session in seconds. When a session is not refreshed for this duration, the session is marked as idle and removed. The minimum value is 300 seconds, and the maximum value is 18000 seconds (5 hours). The system default value is 1800 seconds. 
+
+  * Maximum Number of Concurrent Sessions (Sessions) is the number of concurrent sessions allowed in an account or permission. The minimum number of sessions is 1 and maximum number of sessions is 128. The default value is 128. 
+
+  6. Click Next. 
+
+  7. Select a Scope to delegate the user access to resources in the account. You can choose to give a user access to the entire account or restrict access to a selected organization. 
+
+  * All—User has access to all account resources. Add Privileges to assign roles to the user. The selected privileges will be applied to the entire account. 
+
+  * Organization—User has access to the specified organizations only. Select one or more Organizations from the drop-down list and Add Privileges to assign roles to the user. For more information on Privileges, see the Roles section. 
+
+  8. Click Create to add the new User Defined Role to the account. 
+
+
+### Switching an Account or Role
+
+You can switch between accounts or roles in Cisco Intersight without logging out of the application. If you are logged into multiple accounts or roles, the Profile menu in the Intersight dashboard provides the option to Switch Account or Role. 
+
+![](/c/dam/en/us/td/i/300001-400000/300001-310000/306001-307000/306921.jpg) ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * The Switch Account or Role option is not available if you are authorized to access a single account and have only one role mapped to that account. 
+  * If you use the account URL to log in to Intersight, the Switch Account and Role option enables you to switch only between roles within the same account. 
+  * At the time of switching, accounts are re-evaluated based on the attributes returned by the Identity Provider (IdP) after authentication. The users added to the account are also re-authenticated for their roles by the Identity Provider. Therefore, before you switch between accounts, if Intersight detects that there is a change in your account or role, it appears in the Select Account and Role list. 
+  * For Intersight Virtual Appliance, you must configure LDAP or log in with SSO to view the Switch Account or Role option.
+
+
+* * *  
+  
+---|---  
+  
+Use the following steps to switch accounts: 
+
+  1. Navigate to Profile > Switch Account or Role. 
+
+Select Account and Role window displays. 
+
+  2. In the Select Account and Role window, select the account (or role) that you want to switch to. You will be logged in to the new account. 
+
+  3. To change the role, navigate to Settings > User Permissions > Users, and select the user that you want to change the role for, and click the Edit icon. 
+
+  4. In the Edit User window, select the role and click Save. 
+
+
+## Adding an Organization
+
+### Creating an Organization
+
+On the Organizations page, you can view a list of organizations added to an account. This list displays the Name, Memberships, Usage, and Description. Use these instructions to add an organization: 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+**Only users with Account Administrator privileges can create organizations. Users with User Access Administrator privileges cannot create organizations but can view them in the User Account and assign the organizations to roles.**
+
+* * *  
+  
+---|---  
+  
+  1. Log into Cisco Intersight.
+
+  2. Choose System > Organizations. 
+
+  3. Click Create Organization. 
+
+  4. Enter a Name to identify the organization in Intersight and a Description about the usage of the organization. 
+
+  5. Under Memberships, you can choose to assign access to all resources or restrict access to a selective group of resources. Select one of the following options for memberships: 
+
+  * Custom—From the list of targets available in the account, select the required targets, to allocate a set of physical resources to the organization. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Important** | 
+
+* * *
+
+Profiles and Policies that are created within a custom organization are applicable only to the targets in the same organization.
+
+* * *  
+  
+---|---  
+  * All—All the targets available in the account will be included in this organization. 
+
+  6. Click Create to add the new organization to the account. 
+
+
+To learn more about Organizations and how to leverage them to support multi-tenancy in an account, see the Role Based Access Control under [Resources](https://intersight.com/help/resources#role_based_access_control_\(rbac\)_in_intersight) in the [Help Center](https://intersight.com/help/home) or _< https://your fqdn.com>_/help. 
+
+## Generating and Managing API Keys 
+
+An API key is used to register your application with Cisco Intersight.
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Cisco Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > API Settings > Keys.   
+**Step 3** |  In the Generate New API Key screen, enter the purpose for the API Key, and click Generate. The API Key ID and RSA Private Key are displayed.   
+**Step 4** |  Save the private key information in a .pem file.  |  **Note** |  Make sure to save it in a location accessible from your scripts.  
+---|---  
+  
+* * *
+
+## OAuth2 Tokens
+
+You can view a list of OAuth2 tokens used by an application to access Intersight and the corresponding target details in the OAuth2 section under API. 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Cisco Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > API Settings > OAuth2 Tokens.  A table view of the OAuth2 tokens with the Application Name that uses the tokens, the Device Model, Login and Expiration time, the Client IP address, the User Role, and the Email ID is displayed.   
+  
+* * *
+
+## Device Connector Requirements
+
+You can claim a target in Cisco Intersight Virtual Appliance through the embedded device connector. Before you claim a target, ensure that the device connector requirements are met. The following table lists the software compatibility and the supported device connector versions for Intersight Virtual Appliance: 
+
+Table 4. Device Connector Requirements Component |  Minimum software version for Connected Virtual Appliance |  Minimum software version for Private Virtual Appliance |  Supported Device Connector version  |  Minimum supported versions that include supported Device Connectors  
+---|---|---|---|---  
+Cisco UCS Manager |  3.2(1) |  4.0(2a) |  1.0.9-2290 |  4.0(2a)  
+Cisco IMC Software |  For M5 Servers: 3.1(3a) For M4 Servers: 3.0(4) |  4.0(2d) |  1.0.9-335 |  4.0(2d)  
+HyperFlex Connect and Data Platform |  2.6 |  3.5(2a)  |  1.0.9-1335 |  3.5(2a)  
+CIsco UCS Director |  6.7.2.0 |  6.7.2.0 |  1.0.9-911 |  6.7.2.0  
+  
+### Device Connector Upgrade
+
+When the Device Connector on an endpoint is not at the compatible version, you can upgrade it in the following ways: 
+
+  * Perform a complete firmware upgrade to the version that has the supported Device Connector. This process could involve updating your configuration settings. 
+
+  * Manually upgrade the Device Connector. This option is supported only on Cisco UCS Manager. For more information, See Manual Upgrade. 
+
+  * Cisco Intersight Virtual Appliance supports upgrading the device connector from the cloud. When the target claim process detects that the device connector at the endpoint is not at the compatible version, it triggers an upgrade of the device connector from Intersight cloud. To facilitate this upgrade, port 80 must be open between the appliance and the endpoint target. The HTTPS proxy running on port 80 requires that your firewall settings allow communication through port 80. 
+
+Device Connector upgrade from Intersight Cloud is optional. During the upgrade from the cloud, some target data (server inventory) from the appliance leaves your premises. When you choose this option, the following data leaves your premises: 
+
+  * The endpoint target type - Cisco UCS Fabric Interconnect, Integrated Management Controller, Cisco HyperFlex System, Cisco UCS Director 
+
+  * The firmware version(s) of the endpoint
+
+  * The serial number(s) of the endpoint target
+
+  * The IP address of the endpoint target
+
+  * The hostname of the endpoint target
+
+  * The endpoint device connector version and the public key 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+Target claim could fail if the device connector is at an older version that does not support the appliance, and you have disabled the data collection option during the initial setup. This failure is caused due to details about the endpoint being required to leave the premises for the one-time upgrade to work. To avoid a target claim failure, select the **Enable Data Collection** option temporarily or upgrade the device connector in the other methods mentioned above. 
+
+* * *  
+  
+---|---  
+
+
+### Manual Upgrade of Device Connector (applicable only to Cisco UCS Fabric Interconnect)
+
+If you do not want to share the target data as part of the automatic device connector upgrade, you can choose to manually upgrade the device connector on a Cisco UCS Fabric Interconnect. Use these instructions to upgrade the device connector: 
+    
+    
+    Log in to your UCS Fabric Interconnect as an admin user and run the following command:
+    UCS-A# connect local-mgmt
+    UCS-A(local-mgmt)# copy scp://username@10.100.100.100/filepath/filename.bin workspace:/
+    UCS-A(local-mgmt)# update-device-connector workspace:/filename.bin 
+    Update Started
+    Updating Device Connector on local Fabric interconnect
+    Successfully updated device connector on local Fabric interconnect
+    UCS-A(local-mgmt)#
+
+## Configuring Account Settings
+
+This task provides details on how to configure account settings in Intersight Virtual Appliance.
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose System > Account Details.  You can view the details of the existing account settings.  
+**Step 3** |  Click Configure.  The Configure Account Settings window displays.   
+**Step 4** |  Update the following fields as needed.
+
+  * Account Name—Name of the account. 
+  * Default Idle Timeout (Seconds)—Provide the idle timeout interval for the web session in seconds. The system default value is 18,000 seconds (5 hours). 
+  * Default Session Timeout (Seconds)—Provide the session expiry duration in seconds. The system default is 57,600 (16 hours). 
+  * Maximum Concurrent Sessions per User (Sessions)—Provide the maximum number of concurrent sessions allowed per user. The system default as well as the maximum number of concurrent sessions is 32. 
+  * Audit Logs Retention Period (Months)—Provide the time-period for audit logs retention. The system default is 48 months. The allowed range is between 6 months and 48 months. The Audit logs deletion task is set to run on a daily basis at 6.00 AM UTC, and all the audit logs that meet the retention period set in this field will automatically start getting deleted at this time. Once deleted, audit logs cannot be retrieved. 
+  * Default Authentication Method—Choose from Local, SSO, and LDAP. 
+  * Default LDAP Domain—Choose from the available appliance LDAP configurations. 
+  * OAuth Applications without Expiry—Enables Account Admin to allow the creation of OAuth applications that do not have an expiration date. By default, this option is disabled, as a never-expiring OAuth application is a security threat. 
+  * OAuth Applications Maximum Expiration Time—The maximum allowed expiration period for an OAuth 2.0 application in this account. The maximum allowed expiration period is 360 days. The default expiration period is 180 days. 
+  * API Keys without Expiry—Enables Account Admin to allow the creation of API keys that do not have an expiration date. By default, this option is disabled, as a never-expiring API key is a security threat. 
+  * API Keys Maximum Expiration Time—The maximum allowed expiration period for an API key in this account. The maximum allowed expiration period is 360 days. The default expiration period is 180 days. 
+  * Tags—The tags created for the account. 
+
+  
+**Step 5** |  Click Save.   
+  
+* * *
+
+## Intersight Virtual Appliance Monitoring
+
+Intersight Virtual Appliance provides an overview of the appliance and health status and displays alarms when predefined limits are exceeded or when a threshold is raised. 
+
+In the appliance UI, choose System > Appliance Details to view the following details: 
+
+  * Health—Overall status of the appliance 
+
+  * Hostname—Your FQDN or hostname 
+
+  * Version—Installed version of the appliance software 
+
+  * Cluster Status—Indicates Single-node or Multi-node appliance setup 
+
+  * Node—A table view of the list of appliance nodes in Cisco Intersight Virtual Appliance. You can search for a specific node by Hostname, Operational Status, Node Type (node types include HA Management, Standalone, or Metrics), Deployment Size, IP Address, Gateway, or Netmask. You can view the alarms on the right pane and filter them by their severity. 
+
+  * Resource Monitoring—Visual representation of the appliance’s health status, offers real-time and historical insights into CPU, memory, and disk utilization. 
+
+  * CPU Usage and Memory Usage—Line charts display historical resource usage trends over a rolling 7-day window, showing hourly utilization percentages. Data can be filtered by individual cluster nodes. 
+
+  * Disk Usage—Table view presents the usage for disks 1 through 8. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * Disk 1 contains multiple filesystems. The filesystem with the highest usage is displayed in the table.
+  * The filesystem information is included in the alarm when an alarm is triggered.
+
+* * *  
+  
+---|---  
+
+
+**Alarms in Intersight Virtual Appliance**
+
+Intersight Virtual Appliance monitors certain critical parameters and raises alarms when predefined limits are exceeded or when a threshold is raised. The appliance currently reports system-level and node-level alarms. The following table shows the alarm levels and their descriptions. 
+
+Table 5. Alarms in Intersight Virtual Appliance Level |  Component |  Description |  Comments  
+---|---|---|---  
+System |  Node |  Critical: A node is down |  One alarm per node  
+System |  Node |  Critical: A node is not ready for service deployment. |  One alarm per node  
+Node |  CPU Usage |  Warning: CPU usage above threshold |  One alarm per node. Threshold: 75%  
+Node |  Memory Usage |  Warning: Memory usage above threshold |  One alarm per node. Threshold: 75%  
+Node |  File System Disk Usage |  Warning: File System disk usage above threshold |  One alarm per file system. Threshold: 75%  
+Node |  File System Disk Usage |  Critical: File System disk usage above threshold |  One alarm per file system. Threshold: 90%  
+System |  Number of service instances running |  Warning: Number of service instances running less than expected |  One alarm per service  
+System |  Number of service instances ready |  Warning: Number of service instances ready less than expected |  One alarm per service  
+System |  Web certificate |  Warning: Web certificate expires within 120 days Critical: Web certificate expires within 90 days |  One alarm per appliance  
+System |  Device certificate |  Warning: Device certificate expires within 120 days Critical: Device certificate expires within 90 days |  One alarm per appliance  
+System |  Appliance Backup |  Warning: An Intersight Appliance backup has not been created within the past week. Please schedule or create a new backup. |  One alarm per appliance  
+System |  Appliance Backup |  Critical: The most recent Intersight Appliance backup failed. Please schedule or create another backup. |  One alarm per appliance  
+System |  Cloud Connectivity |  Warning: Connection to Intersight cloud has been down for more than 30 days Critical: Connection to Intersight cloud has been down for more than 60 days Highly Critical: Connection to Intersight cloud has been down for more than 90 days; claiming new devices is not permitted until connection is restored.  |  One alarm per appliance  
+Node |  Network Link Connectivity |  Warning: The latency between cluster nodes is greater than 10ms |  One alarm per link per node  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Cisco UCS C-Series server-related faults such as power supply and fan failures are not forwarded by Intersight Virtual Appliance to an external syslog server. Please configure the external syslog server on the UCS C-Series CIMC side to handle the forwarding of the UCS C-Series events and faults. 
+
+* * *  
+  
+---|---  
+  
+## Intersight Virtual Appliance Settings
+
+You can monitor the appliance status, backup and restore data, upgrade the appliance software, configure network settings, add users and groups, and more on the Intersight Virtual Appliance Settings page. 
+
+Settings Option |  Description  
+---|---  
+System > Account Details |  View account details such as account name, account ID, access link, license type, default idle timeout, maximum number of concurrent sessions per user, and default session timeout.  You can also configure account settings such as default idle timeout, default session timeout, and maximum number of concurrent sessions per user. For more information, see Configuring Account Settings.   
+System > Access Details |  Displays the details of the user including the name, account name, email ID, role, idle timeout, session timeout, maximum concurrent sessions per user, login time, a brief description of the role, and a table view of the users and their privileges that is displayed in the bottom of this screen.   
+System > Appliance Details |  View the status of the appliance connection, view details including the appliance Health, Hostname, Version number, and Cluster status. A list of the connected Nodes displays the Hostnames, Operational Status, Node Type (node types include Management, HA Management, Standalone, or Metrics), IP address, Gateway, and Netmask for the connected nodes. You can also view the Alarms on the connected nodes.   
+Settings > System > Backup |  Create a full state backup of the appliance and save the image on a remote server. You can also schedule a backup from this page. For detailed instructions, see Create Backup and Schedule Backup.  You can recover the appliance configuration from a backup file using the instructions in [Recovering Intersight Connected Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7) and [Recovering Intersight Private Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18).   
+Settings > System > Banners |  View the configuration details of the banners. When enabled, the configured banner will be displayed before the user login screen. For more information, see Configuring a Banner Message for Displaying Before the Login Screen.   
+Settings > System > Appliance Updates |  View details of the current software version of the appliance, including the version number, the installed components, messages about the installation, and the Fingerprint of the installed software.  For more information about updating the Intersight Virtual Appliance software, see [Updating the Intersight Virtual Appliance Software](m_updating_the_intersight_virtual_appliance_software.html#Cisco_Task_in_List_GUI.dita_43af1cc4-8230-4d44-a643-5c5baabf78d0).   
+Settings > Networking > Cloud Connection |  |  **Note** |  This setting is applicable only for Connected Virtual Appliance deployments.  
+---|---  
+  
+View the status of the appliance connection to Intersight, the Access Mode, Device ID, and the Claim Code. From the Settings Menu in the Device Connector window, you can add an HTTPS Proxy. For more information, see Cloud Connection for Intersight Connected Virtual Appliance.   
+  
+Settings > Networking > DNS |  Configure DNS settings and add IPv4 DNS Server Addresses and Alternate IPv4 addresses of the DNS Servers. For more information, see Configuring DNS.   
+Settings > Networking > NTP |  Configure NTP servers as well as edit existing NTP server settings. For more information, see Configuring NTP.   
+Settings > Networking > Syslog |  Configure the syslog server settings including enabling and disabling sending audit logs and information of alarms to the syslog servers. For more information, see Configuring Syslog.   
+Settings > Authentication > LDAP/AD |  Create and configure the settings for LDAP servers, DNS parameters, Binding methods, Search parameters, and Group Authorization preferences. For more information, see Configuring LDAP Settings.   
+Settings > Authentication > Single Sign-On |  Set up Single Sign-on (SSO) authentication. SSO enables you to use a single set of credentials to log in to multiple applications. With SSO authentication, you can log in to Intersight with your corporate credentials instead of your Cisco ID. For more information about Single Sign-On in Intersight, see Single Sign-On with Intersight Virtual Appliance.   
+Settings > Authentication > Certificates |  Add a trusted certificate to verify TLS communication with the LDAP or HTTPS server. You can generate a Certificate Signing request or Generate a Self-Signed Certificate. For more information, see Certificates.   
+Settings > Authentication > Local Users Password Policy |  View details of the current password policy configuration or configure a new password policy. For more information, see Configuring Password Policy for Local Users.   
+Settings > User Permissions > Users |  View the users or add new users to allow access to Intersight using their email, specify identity provider and permission settings. For more information, see Adding a User.   
+Settings > User Permissions > Groups |  View the user Groups or add a new group for Single Sign-On or LDAP-based authentication. For more information, see Adding a Group.   
+Settings > User Permissions > Roles |  View the existing roles or create a custom role and assign privileges. For more information, see Adding a Role.   
+System > Organizations |  View the list of organizations or create a new organization to manage access to your logical and physical resources. For more information, see Adding an Organization.  
+Settings > API Settings > Keys |  View a list of the existing API Keys in the account or generate a new API Key. For more information, see [API Keys](https://intersight.com/help/features#api_keys).   
+SettingsAPI SettingsOAuth2 Tokens |  View a list of OAuth2 tokens and the details of the Apps and the associated targets.
+
 ---
 
 ## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_troubleshooting.html
 
+# Diagnostics  
+  
 ## Maintenance Shell for Intersight Virtual Appliance and Intersight Assist
 
 Cisco Intersight Virtual Appliance provides a diagnostic utility to monitor the installation and provide remediation steps to install the appliance successfully. This console-based utility helps in troubleshooting and addressing misconfiguration or networking issues during the appliance installation. The Maintenance Shell aims to: 
@@ -543,14 +4465,77 @@ Deployed <size> deployment size.
 Deploying <size > deployment size, after being under resourced. This message is displayed when the existing deployment is under-resourced for the current deployment size, and upon restarting the VM after the necessary resources have been added. This deployment could be in either size.  |  Deployed <size> deployment size, after being under resourced.  
 Deployed <size> deployment size. This message is displayed when the existing resources and the required resources are similar, and no upgrade is required. |  No change in deployment size during reboot. Current running deployment size is Small.  
 Downgrading deployment size from Medium to Small. This message is deployed when a medium deployment size is downgraded to a small deployment size. |  Downgraded deployment size from Medium to Small.  
-Upgrading from Small to Medium. This message is displayed when the deployment size is upgraded from small to medium deployment size. |  Upgraded from Small to Medium.
+Upgrading from Small to Medium. This message is displayed when the deployment size is upgraded from small to medium deployment size. |  Upgraded from Small to Medium.  
+  
+## Intersight Virtual Appliance Console UI
+
+The Intersight Virtual Appliance Console UI displays read-only status related to the appliance VM and infrastructure. This information can be especially helpful when troubleshooting problems or just looking for a quick “at a glance” information about the appliance. The Console UI displays upon boot-up of the appliance installer image, at which point the information displayed is minimal. For detailed information about the installation progress, proceed to the web UI. 
+
+Note the following information about the Console UI:
+
+  * The hypervisor provides the necessary authentication for viewing the appliance virtual console. 
+
+  * The Console UI displays system-level information at a high-level about the general state of the appliance. The Console UI does not replace the appliance web UI. For detailed information about the state or health of any individual appliance service, proceed to the web UI. 
+
+  * In addition to displaying relevant network information such as IP addresses and web UI URL, the Console UI displays common networking problems such as the required appliance DNS names not being resolvable. 
+
+  * The information displayed on the Console UI is read-only. The Console UI does not accept any input and does not perform any configuration changes to the appliance. 
+
+  * The information displayed on the Console UI is currently supported in US English only. 
+
+  * The Console UI is displayed on the default console screen. You can still log in as an **admin** user for the diagnostic shell, as an example, on alternate console screens. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+You can switch between the login console and the Console UI by using function keys; Alt+F2 to get to a login console and Alt+F1 to get back to the Console UI. 
+
+* * *  
+  
+---|---  
+  * The Console UI is independent of the hypervisor on which the appliance runs. 
+
+
+The following list includes some of the high-level information that is displayed on the Console UI.
+
+  * The appliance web UI URL.
+
+  * The overall health of the appliance.
+
+  * The version of the appliance.
+
+  * The cloud connection and claim status of the appliance.
+
+  * The cluster status (single-node versus multi-node) and node names of the appliance.
+
+  * Whether an upgrade is pending or in-progress.
+
+  * Network connectivity such as IPv4/IPv6 information, DNS, and NTP servers.
+
+
+The Console UI also displays warning messages when the following errors are encountered.
+
+  * Network link is down
+
+  * Required CPU flags are not set (for example, AVX).
+
+  * Disks are approaching maximum capacity.
+
+  * A correct DNS A record is not found.
+
+  * A correct DNS CNAME record is not found.
+
 
 ---
 
 ## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m-technical-assistance.html
 
-## Technical Assistance   
-  
+# Technical Assistance and Feedback
+
+## Technical Assistance 
+
 Technical support offered by Cisco Technical Assistance Center (TAC) is included in your Intersight License. If you face any issue with the installation, set up, or operations of Cisco Intersight Virtual Appliance, open a case with Cisco TAC for assistance. 
 
 The Cisco Technical Support website provides online documents and tools for troubleshooting and resolving technical issues with Cisco products and technologies: 
@@ -658,9 +4643,84 @@ You can download the tech support bundle for your appliance after the generation
 
 You can now proceed to [Cisco Support Case Manager](https://mycase.cloudapps.cisco.com/case) and create a service request. 
 
+## Configuring Cisco TAC Support Using a Serial Console
+
+In extreme cases where your Intersight Virtual Appliance becomes unreachable via SSH on the network and you need Cisco TAC support, it is not possible to enable the Cisco TAC support mode on the Appliance via the VMWare Remote Console (VMRC). Hence, you will need to add a Serial Port device to the Appliance virtual machine. This Serial Port will enable Cisco TAC, with your assistance, to connect to your Intersight Virtual Appliance and enter a Cisco TAC support mode. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Serial console support is only available on Intersight Virtual Appliance version 1.0.9-589 and later.
+
+* * *  
+  
+---|---  
+  
+To add a Serial Port device to the Appliance virtual machine, do the following: 
+
+  1. On the VMWare vSphere host where the Intersight Virtual Appliance virtual machine is running:
+
+     1. Select the Configure tab. 
+
+     2. Under the System group, select Firewall. 
+
+     3. Click the Edit button to edit the firewall rules. 
+
+     4. Ensure that the rule named VM serial port connected over network is enabled. 
+
+  * Note the range of TCP ports that are allowed for this rule (an example being 23 and 1024-65535) as you need to enter this port range in Step 3.c (Port URI). 
+
+  * Optionally, allow only designated source IP addresses in the firewall rule.
+
+     5. Save this rule.
+
+  2. Power down the Intersight Virtual Appliance virtual machine.
+
+  3. Edit the vSphere settings of the Intersight Virtual Appliance virtual machine.
+
+     1. Select Add a New Device. 
+
+     2. Under Other Devices, select Serial Port. 
+
+     3. Select the following settings on the new Serial Port: 
+
+        1. New Serial port: Use Network
+
+        2. Status: Connect At Power On is checked 
+
+        3. Direction: Server
+
+        4. Port URI: telnet://:PORT_NUMBER, where PORT_NUMBER is an integer representing an available port on the vCenter host that is within the range allowed by the firewall rule enabled in Step 1 (example is 12345). 
+
+        5. Save this new device.
+
+  4. Power on the Intersight Virtual Appliance virtual machine.
+
+
+You will now be able to telnet to the vCenter host IP address at the port you specified (example is 12345) and connect to the login prompt on your Intersight Virtual Appliance. Cisco TAC, via a screen-sharing session, will be able to use this connection to enable Cisco TAC support mode on the Appliance to recover its functionality. 
+
+## Send Feedback
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+This feature is available only for Intersight Connected Virtual Appliance deployments.
+
+* * *  
+  
+---|---  
+  
+You can share feedback about your experience with Cisco Intersight Virtual Appliance from the appliance UI. Click the Help drop-down list (the question mark representation) on the appliance dashboard, and select Send Us Feedback. You can rate your experience, report a defect, or leave a comment for enhancement of any feature or functionality. 
+
 ---
 
 ## Page 10: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_related_documentation.html
+
+# Related Documentation
 
 ## Links to Related Documentation
 
@@ -682,9 +4742,13 @@ For more information about Enabling Intersight Management on the Management Inte
   * [Cisco HyperFlex Systems Installation Guide for Cisco Intersight](https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/HyperFlex_Installation_Guide_for_Intersight/b_HyperFlex_Installation_Guide_for_Intersight/b_HyperFlex_Installation_Guide_for_Intersight_chapter_011.html?bookSearch=true)
 
 
+### 
+
 ---
 
 ## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_01000.html
+
+# Diagnostics
 
 ## Maintenance Shell for Intersight Virtual Appliance and Intersight Assist
 
@@ -809,15 +4873,80 @@ Deployed <size> deployment size.
 Deploying <size > deployment size, after being under resourced. This message is displayed when the existing deployment is under-resourced for the current deployment size, and upon restarting the VM after the necessary resources have been added. This deployment could be in either size.  |  Deployed <size> deployment size, after being under resourced.  
 Deployed <size> deployment size. This message is displayed when the existing resources and the required resources are similar, and no upgrade is required. |  No change in deployment size during reboot. Current running deployment size is Small.  
 Downgrading deployment size from Medium to Small. This message is deployed when a medium deployment size is downgraded to a small deployment size. |  Downgraded deployment size from Medium to Small.  
-Upgrading from Small to Medium. This message is displayed when the deployment size is upgraded from small to medium deployment size. |  Upgraded from Small to Medium.
+Upgrading from Small to Medium. This message is displayed when the deployment size is upgraded from small to medium deployment size. |  Upgraded from Small to Medium.  
+  
+## Intersight Virtual Appliance Console UI
+
+The Intersight Virtual Appliance Console UI displays read-only status related to the appliance VM and infrastructure. This information can be especially helpful when troubleshooting problems or just looking for a quick “at a glance” information about the appliance. The Console UI displays upon boot-up of the appliance installer image, at which point the information displayed is minimal. For detailed information about the installation progress, proceed to the web UI. 
+
+Note the following information about the Console UI:
+
+  * The hypervisor provides the necessary authentication for viewing the appliance virtual console. 
+
+  * The Console UI displays system-level information at a high-level about the general state of the appliance. The Console UI does not replace the appliance web UI. For detailed information about the state or health of any individual appliance service, proceed to the web UI. 
+
+  * In addition to displaying relevant network information such as IP addresses and web UI URL, the Console UI displays common networking problems such as the required appliance DNS names not being resolvable. 
+
+  * The information displayed on the Console UI is read-only. The Console UI does not accept any input and does not perform any configuration changes to the appliance. 
+
+  * The information displayed on the Console UI is currently supported in US English only. 
+
+  * The Console UI is displayed on the default console screen. You can still log in as an **admin** user for the diagnostic shell, as an example, on alternate console screens. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+You can switch between the login console and the Console UI by using function keys; Alt+F2 to get to a login console and Alt+F1 to get back to the Console UI. 
+
+* * *  
+  
+---|---  
+  * The Console UI is independent of the hypervisor on which the appliance runs. 
+
+
+The following list includes some of the high-level information that is displayed on the Console UI.
+
+  * The appliance web UI URL.
+
+  * The overall health of the appliance.
+
+  * The version of the appliance.
+
+  * The cloud connection and claim status of the appliance.
+
+  * The cluster status (single-node versus multi-node) and node names of the appliance.
+
+  * Whether an upgrade is pending or in-progress.
+
+  * Network connectivity such as IPv4/IPv6 information, DNS, and NTP servers.
+
+
+The Console UI also displays warning messages when the following errors are encountered.
+
+  * Network link is down
+
+  * Required CPU flags are not set (for example, AVX).
+
+  * Disks are approaching maximum capacity.
+
+  * A correct DNS A record is not found.
+
+  * A correct DNS CNAME record is not found.
+
+  * A correct DNS PTR record is not found.
+
 
 ---
 
 ## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_00.html
 
-## Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere  
-  
-Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Cisco Intersight Virtual Appliance supports VMware High Availability (VMHA) to ensure non-disruptive operation of the virtual appliance. For more information about VMHA, please refer to the documentation on vmware.com.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+# Installation
+
+## Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Cisco Intersight Virtual Appliance supports VMware High Availability (VMHA) to ensure non-disruptive operation of the virtual appliance. For more information about VMHA, refer to the relevant documentation on the VMware by Broadcom website.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
 **Attention** | 
 
 * * *
@@ -838,7 +4967,7 @@ OVA version  |  CA Issuer  |  CA Serial Number  |  CA Expiration
 1.0.9-499  |  None  |  None  |  None   
 1.0.9-342  |  DigiCert Trusted G4 Code Signing 2021 CA1  |  08:ad:40:b2:60:d2:9c:4c:9f:5e:cd:a9:bd:93:ae:d9  |  April 28, 2036  
   
-Use the steps in the following task to install and deploy the appliance on VMware vSphere. To install and deploy a multi-node cluster for high availability for Intersight Virtual Appliance on VMware vSphere, repeat the steps in the following task three times.
+Use the steps in the following task to install and deploy the appliance on VMware vSphere. To install and deploy a multi-node cluster for high availability for Intersight Virtual Appliance on VMware vSphere, repeat the steps in this task three times.
 
 ### Before you begin
 
@@ -941,9 +5070,448 @@ For more information, see [Maintenance Shell for Intersight Virtual Appliance an
 
 For a demonstration of the Intersight Virtual Appliance Installation and troubleshooting, watch [Cisco Intersight Appliance Installation and Debug](https://www.youtube.com/watch?v=vHoDfixdi4g&feature=youtu.be). 
 
+## Installing Cisco Intersight Virtual Appliance and Intersight Assist on Microsoft Hyper-V Server
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or TAR file format. Install the appliance on Microsoft Hyper-V Server using the ZIP file format. For more information about Microsoft Hyper-V Server, refer to the Microsoft documentation.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Use the steps in the following task to install and deploy the appliance on Hyper-V Server Manager. 
+
+* * *  
+  
+---|---  
+  
+### Before you begin
+
+Ensure the following:
+
+  * Download the latest version of the Cisco Intersight Virtual Appliance and Assist installer package from the [Cisco Software Download](https://software.cisco.com/download/home/286319499/type) site. 
+
+  * If you are installing Private Virtual Appliance, also download the latest Cisco Intersight Private Virtual Appliance software package (intersight-appliance-bundle) from the Intersight Software Downloads Portal. For more information, see [Downloading Software Packages from Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+  * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
+  * Setting up a single-node Intersight Virtual Appliance requires an IP address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node cluster for Intersight Virtual Appliance is NOT supported on Microsoft Hyper-V. 
+  * Use only HTTPS protocol and fully qualified domain name to access the appliance via the Web user interface.
+
+
+* * *  
+  
+---|---  
+  
+### Procedure
+
+* * *
+
+**Step 1** |  Log in to Hyper-V Server Manager with administrator credentials and select a server for appliance installation.  
+---|---  
+**Step 2** |  From the **Actions** pane, select New > Virtual Machine, and click **Next**. 
+
+  1. Specify Name and Location—Select Generation 2 and click Next. 
+  2. Specify Generation—Enter the name and location for the new virtual machine, and click Next. 
+  3. Assign Memory—Enter memory size based on your appliance configuration. For more information, see [VM Resource Requirements for New Intersight Virtual Appliance Deployments](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5). Click Next. 
+  4. Configure Networking—In the Connection drop-down, select Hyper-V Switch. 
+  5. Connect Virtual Hard Disk—Select Use an existing virtual hard disk. 
+     1. Browse to the extracted Hyper-V ZIP file location, identify the first disk that is labeled _intersight-appliance-installer-hyperv-1.1.5-0-disk1.vhdx_ , as an example, and click Open. 
+     2. Click Next and Finish. 
+Disk1 is now added.
+
+  
+**Step 3** |  Add the other seven disks.
+
+  1. Navigate to the Hyper-V virtual machine.
+  2. Right click and select Settings > SCSI Controller. 
+  3. Click Virtual hard disk and browse to the folder where you extracted the Hyper-V installer. 
+  4. Select disk2 and click OK. 
+  5. Add disks 3 through 8 in order, following Steps 3a to 3d. **Important** : Adding disks out of order prevents successful appliance installation. 
+
+  
+**Step 4** |  Perform additional configuration.
+
+  1. Navigate to the Hyper-V virtual machine.
+  2. Right click and select Settings > Firmware. 
+  3. Under Boot order, ensure Network Adapter is at the bottom of the list. 
+  4. Click Processor and set virtual processors to match your appliance configuration. For example, enter 24 for a medium configuration. 
+  5. Click Security > Secure Boot and disable the Enable Secure Boot setting.  **Important** : If this setting is enabled, the appliance will not boot up. 
+  6. Click OK. 
+
+  
+**Step 5** |  In the **Actions** pane, select **Start** to power-on the virtual machine.   
+**Step 6** |  In the **Actions** pane, select **Connect** to connect to the virtual machine.  The Virtual Machine Connection console is displayed.   
+**Step 7** |  On the Virtual Machine Connection console, customize the password configuration and IP properties.  |  Property |  Description  
+---|---  
+Set password for user admin |  Set a new password for the admin user. |  **Note** |  Ensure that you remember this password as you will use the same one to log into the appliance.  
+---|---  
+Choose IP Assignment |  Type in **S** for static IP assignment or **D** for DHCP  Selecting DHCP for your IP assignment enables the appliance to obtain IP addresses from the DHCP server running on the same network to avoid using static IP addresses.   
+Appliance FQDN _(Values you input will be ignored if you Enable DHCP)_ |  Enter the Appliance’s fully qualified domain name (FQDN). For example: _appliance.example.com_  
+IP Address |  Enter the IP address of the node. For example: 10.0.0.100  
+Subnet Mask |  Enter the IP Net Mask. For example: 255.255.255.0  
+Default Gateway |  Enter the IP Default Gateway. For example: 10.0.1.254  
+DNS Servers |  Enter a comma-separated list of IP addresses for your DNS servers. A maximum of two DNS servers are supported.  
+DNS Domain |  Enter the DNS Search Domain.  
+NTP Servers |  Provide NTP information when configuring a static IP address. Enter a comma-separated list of hostnames or IPv4 addresses for your NTP servers. You may add up to three unauthenticated NTP servers at this stage. Once the appliance is fully installed, you can edit the NTP server settings to include any combination of authenticated and unauthenticated NTP servers (up to three total). This setting is required even if you use DHCP to obtain IP addresses.  You cannot provide NTP information if you configured DHCP for your IP assignment.  
+**Attention** | 
+
+  * **If the password you set at the time of registering your appliance is weak, Intersight prompts you to change your password to a stronger one. After a successful reset to a strong password, you are directly logged into the appliance. For more information about logging in, see[Logging In to Intersight Virtual Appliance](m_setting_up_appliance.html#id_93446)**. 
+  * Ensure that DNS, NTP, and file services are hosted outside of the infrastructure being managed by the appliance to avoid potential service conflicts. If you need to make changes to the infrastructure hosting these services, ensure they are configured with redundancy so that they remain available during maintenance. 
+
+  
+---|---  
+  
+Enabling DHCP
+
+Dynamic Host Configuration Protocol (DHCP) allows the Cisco Intersight Virtual Appliance VM to obtain an IP address through a DHCP server running on the network that it is installed on. When this option is enabled, the Cisco Intersight Virtual Appliance is equipped to handle IP address updates through DHCP, subject to lease requirements. 
+
+**Attention** |  For a single-node appliance, ensure that the following requirements are met for using DHCP:  
+---|---  
+  
+  * If you use DHCP, ensure that the IP address returned to the appliance VM resolves to the same FQDN you use to set up the appliance. Cisco strongly recommends configuring DHCP to assign a static IP address to the Appliance VM. Although the Appliance can handle changes when its DHCP lease is renewed, it operates more efficiently—especially when communicating with claimed devices—if its IP address remains constant. 
+
+  * The appliance only reads the IP address, netmask, gateway, and DNS-Servers from the DHCP lease information. NTP information for the Hyper-V Server must be input into the Virtual Machine Connection console when configuring static IP. 
+
+
+Limitations
+
+  * Frequent lease renewal could impact the VM configuration settings and could render the appliance unusable.
+
+
+  
+**Step 8** |  Proceed to <https://fqdn-of-your-appliance> to complete the post-install set-up of your appliance.  For information on how to complete the set-up of your appliance, see [Setting Up Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_266a2c35-69a4-4a04-89c2-b9c0339b905a).   
+  
+* * *
+
+Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+The diagnostic tool aims to:
+
+  * Detect and display issues with the installation prerequisites. 
+
+  * Enable editing the inputs that are provided during the OVA deployment. 
+
+  * Assist with continuing the installation after you fix the settings, or set network interface properties such as IP addresses, subnet mask, and default gateway during the OVA deployment. 
+
+
+For more information, see [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb) and [Intersight Virtual Appliance Console UI](m_troubleshooting.html#intersight-virtual-appliance-console-ui). 
+
+For a demonstration of the Intersight Virtual Appliance Installation and troubleshooting, watch [Cisco Intersight Appliance Installation and Debug](https://www.youtube.com/watch?v=vHoDfixdi4g&feature=youtu.be). 
+
+## Installing Cisco Intersight Virtual Appliance and Intersight Assist on KVM Hypervisor
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Install the appliance on KVM hypervisor using the TAR file format.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Software Requirements:
+
+  * Linux operating system with support for KVM hypervisor or Linux operating system pre-configured with KVM hypervisor. Ensure that you have the latest version of all the essential virtualization utilities such as qemu-kvm, libvirt, and virt-manager for your Linux distribution. It is important to verify that these utilities are compatible with the Linux kernel version running on your host system. 
+  * A virtual network bridge to provide network connectivity to VMs.
+
+
+* * *  
+  
+---|---  
+  
+Use the steps in the following task to install and deploy the appliance on KVM hypervisor using Virtual Machine Manager (VMM). To install and deploy a multi-node cluster for high availability for Intersight Virtual Appliance on KVM Hypervisor, repeat the steps in this task three times.
+
+### Before you begin
+
+Ensure the following:
+
+  * Download the latest version of the Cisco Intersight Virtual Appliance and Assist installer package from the [Cisco Software Download](https://software.cisco.com/download/home/286319499/type) site. 
+
+  * If you are installing Private Virtual Appliance, also download the latest Cisco Intersight Private Virtual Appliance software package (intersight-appliance-bundle) from the Intersight Software Downloads Portal. For more information, see [Downloading Software Packages from Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+  * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
+  * Setting up a single-node Intersight Virtual Appliance requires an IP address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (two-node cluster) requires an IPv4 address and 2 DNS records for that IP address for the single-node (appliance management node) and requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node cluster for high availability in Intersight Virtual Appliance requires three hostnames, three IP addresses, and one DC-CNAME for each hostname. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (four-node cluster) requires three hostnames, three IP addresses, and one DC-CNAME for each hostname for the HA management cluster. It also requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Use only HTTPS protocol and fully qualified domain name to access the appliance via the Web user interface.
+
+
+* * *  
+  
+---|---  
+  
+### Procedure
+
+* * *
+
+**Step 1** |  Launch the Virtual Machine Manager (VMM) client.  
+---|---  
+**Step 2** |  Select File > New Virtual Machine on the menu bar to install a new virtual machine on a KVM hypervisor.  The New VM dialog box appears and displays Step 1 of 4 of the New VM installation.   
+**Step 3** |  Under Choose how you would like to install the operating system, select Import existing disk image, and click Forward.  Step 2 of 4 is displayed.  
+**Step 4** |  Under Provide the existing storage path, click Browse.   
+**Step 5** |  Under Choose storage volume, browse your directories to locate and select the first disk of the Intersight Virtual Appliance image file (for example, intersight-appliance-installer-kvm-1.1.0-0-1.qcow2) that you have extracted on your system. 
+
+  1. Under Advanced options, select VirtIO. 
+
+|  **Note** |  VirtIO is the only supported disk bus for storage while installing Intersight Virtual Appliance and Intersight Assist on KVM Hypervisor.   
+---|---  
+**Step 6** |  Under Choose an operating system type and version, select Linux for OS type and AlmaLinux 9 for Version, and click Forward.  Step 3 of 4 is displayed.  
+**Step 7** |  Under Choose Memory and CPU settings, do the following for medium deployments, and click Forward. 
+
+  * Select or enter 64 GB for Memory (RAM)
+  * Set vCPU at 24
+
+Step 4 of 4 is displayed.  For more information about resource requirements and supported configuration limits, see [VM Resource Requirements for New Intersight Virtual Appliance Deployments](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) and [Supported Configuration Limits for Intersight Virtual Appliance](m_appliance_overview.html#reference_d1b_nhj_sjb).   
+**Step 8** |  In the dialog box, complete the following configuration:
+
+  * Under Ready to begin the installation, in the Name field, enter a name for the Intersight Virtual Appliance software. For example, intersight-appliance-1.1.0-0. 
+  * Ensure that you have selected the Customize configuration before install option. 
+  * Under Network selection, ensure that you select the appropriate virtual network bridge. 
+
+  
+**Step 9** |  Click Finish.  You have now completed the process of adding the first disk of the Intersight Virtual Appliance image.  Starting with release version 1.1.0-0, Appliance uses UEFI for the firmware. Under the Overview tab on the VMM console, click on Firmware and select the path to the OVMF firmware file such as /usr/share/edk2/ovmf/OVMF_CODE.fd for RedHat and AlmaLinux 9. The name and location of this file depend on the Linux distribution. On Ubuntu, the file is located at /usr/share/OVMF/OVMF_CODE.fd.  You will need to add disks 2 through 8, one by one, before you can begin the installation process.  
+**Step 10** |  On the VMM console, complete the following configuration: 
+
+  1. Click Add Hardware that you can find at the bottom of the left navigation panel. 
+  2. Under Storage, ensure that Select or create custom storage is selected. 
+  3. Browse your directories to locate and select the second disk of the Intersight Virtual Appliance image file (for example, intersight-appliance-installer-kvm-1.1.0-0-2.qcow2) that you have extracted on your system and click Choose volume. 
+  4. Click Finish. 
+
+Repeat this step until you have added disk3 through disk8. Ensure that all eight disks appear on the left navigation panel.  
+**Step 11** |  Click Begin installation.   
+**Step 12** |  On the VMM console, customize the password configuration and IP properties. |  Property |  Description  
+---|---  
+Set password for user admin |  Set a new password for admin user. |  **Note** |  Ensure that you remember this password as you will use the same one to log into the appliance.  
+---|---  
+Choose IP Assignment |  Type in **S** for static IP assignment or **D** for DHCP  Selecting DHCP for your IP assignment enables the appliance to obtain IP addresses from the DHCP server running on the same network to avoid using static IP addresses.   
+Appliance FQDN _(Values you input will be ignored if you Enable DHCP)_ |  Enter the Appliance’s fully qualified domain name (FQDN). For example: _appliance.example.com_  
+IP Address |  Enter the IPv4 address of the node. For example: 10.0.0.100 |  **Note** |  You must have an IPv4 address configured in order for the appliance to be functional.  
+---|---  
+  
+It is recommended that you configure IPv6 addresses subsequent to completing the initial installation and deployment of the appliance using an IPv4 address.   
+  
+Subnet Mask |  Enter the IP Net Mask. For example: 255.255.255.0  
+Default Gateway |  Enter the IP Default Gateway. For example: 10.0.1.254  
+DNS Servers |  Enter a comma-separated list of IP addresses for your DNS servers. A maximum of two DNS servers are supported.  
+DNS Domain |  Enter the DNS Search Domain.  
+NTP Servers |  Provide NTP information when configuring a static IP address. Enter a comma-separated list of hostnames or IPv4 addresses for your NTP servers. You may add up to three unauthenticated NTP servers at this stage. Once the appliance is fully installed, you can edit the NTP server settings to include any combination of authenticated and unauthenticated NTP servers (up to three total). This setting is required even if you use DHCP to obtain IP addresses.  You cannot provide NTP information if you configured DHCP for your IP assignment.  
+**Attention** | 
+
+  * **If the password you set at the time of registering your appliance is weak, Intersight prompts you to change your password to a stronger one. After a successful reset to a strong password, you are directly logged into the appliance. For more information about logging in, see[Logging In to Intersight Virtual Appliance](m_setting_up_appliance.html#id_93446)**. 
+  * Ensure that DNS, NTP, and file services are hosted outside of the infrastructure being managed by the appliance to avoid potential service conflicts. If you need to make changes to the infrastructure hosting these services, ensure they are configured with redundancy so that they remain available during maintenance. 
+
+  
+---|---  
+  
+Enabling DHCP
+
+Dynamic Host Configuration Protocol (DHCP) allows the Cisco Intersight Virtual Appliance VM to obtain an IP address through a DHCP server running on the network that it is installed on. When this option is enabled, the Cisco Intersight Virtual Appliance is equipped to handle IP address updates through DHCP, subject to lease requirements. 
+
+**Attention** |  For a single-node appliance, ensure that the following requirements are met for using DHCP:  
+---|---  
+  
+  * If you use DHCP, ensure that the IP address returned to the appliance VM resolves to the same FQDN you use to set up the appliance. Cisco strongly recommends configuring DHCP to assign a static IP address to the Appliance VM. Although the Appliance can handle changes when its DHCP lease is renewed, it operates more efficiently—especially when communicating with claimed devices—if its IP address remains constant. 
+
+  * The appliance only reads the IP address, netmask, gateway, and DNS-Servers from the DHCP lease information. NTP information for the KVM hypervisor must be input into the VMM console when configuring static IP. 
+
+
+Limitations
+
+  * Frequent lease renewal could impact the VM configuration settings and could render the appliance unusable.
+
+
+  
+**Step 13** |  Proceed to <https://fqdn-of-your-appliance> to complete the post-install set-up of your appliance.  For information on how to complete the set-up of your appliance, see [Setting Up Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_266a2c35-69a4-4a04-89c2-b9c0339b905a).   
+  
+* * *
+
+Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+The diagnostic tool aims to:
+
+  * Detect and display issues with the installation prerequisites. 
+
+  * Enable editing the inputs that are provided during the appliance image deployment. 
+
+  * Assist with continuing the installation after you fix the settings, or set network interface properties such as IP addresses, subnet mask, and default gateway during the appliance image deployment. 
+
+
+For more information, see [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb) and [Intersight Virtual Appliance Console UI](m_troubleshooting.html#intersight-virtual-appliance-console-ui). 
+
+For a demonstration of the Intersight Virtual Appliance Installation and troubleshooting, watch [Cisco Intersight Appliance Installation and Debug](https://www.youtube.com/watch?v=vHoDfixdi4g&feature=youtu.be). 
+
+## Installing Cisco Intersight Virtual Appliance and Intersight Assist on Nutanix AHV
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or TAR file format. Install the appliance on Nutanix AHV using the _Cisco Intersight Virtual Appliance and Assist for KVM_ installer package. To install and deploy a multi-node cluster for high availability for Intersight Virtual Appliance on Nutanix AHV, repeat the steps in the following task three times.
+
+### Before you begin
+
+Ensure the following:
+
+  * Download the latest version of the Cisco Intersight Virtual Appliance and Assist installer package from the [Cisco Software Download](https://software.cisco.com/download/home/286319499/type) site. 
+
+  * If you are installing Private Virtual Appliance, also download the latest Cisco Intersight Private Virtual Appliance software package (intersight-appliance-bundle) from the Intersight Software Downloads Portal. For more information, see [Downloading Software Packages from Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
+
+
+The qcow2 image files in the installer TAR file must be uploaded to Nutanix’s Image Service. 
+
+  * To upload files to Nutanix's Image Service from a webserver, copy the files to a directory with appropriate permissions such that they can be downloaded via unauthenticated HTTP. 
+
+  * To upload files to Nutanix's Image Service from your local computer, uncompress and expand the TAR file to a local directory.
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+  * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
+  * Setting up a single-node Intersight Virtual Appliance requires an IPv4 address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (two-node cluster) requires an IPv4 address and 2 DNS records for that IP address for the single-node (appliance management node) and requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node cluster for high availability in Intersight Virtual Appliance requires three hostnames, three IP addresses, and one DC-CNAME for each hostname. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (four-node cluster) requires three hostnames, three IP addresses, and one DC-CNAME for each hostname for the HA management cluster. It also requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
+  * When accessing the Intersight Virtual Appliance’s web UI, only use the HTTPS protocol and the appliance’s fully qualified domain name. 
+
+
+* * *  
+  
+---|---  
+  
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Nutanix Prism using administrator credentials.  
+---|---  
+**Step 2** |  Navigate to Settings > Image Configuration and click Upload Image.  In the Create Image screen, enter the following information: 
+
+  * Name—Enter a name to allow for easy identification of the disk. For example, intersight-appliance-installer-kvm-1.1.1-0. 
+  * Image Type—Select DISK. 
+  * Storage Container—Select a storage container where you want to save the qcow2 images. 
+  * Image Source—Either input the URL to the qcow2 image on your webserver (for example, http://10.0.0.1/appliance/intersight-appliance-installer-kvm-1.1.0-0-1.qcow2), or upload the file from a disk. 
+
+  
+**Step 3** |  Click Save.   
+**Step 4** |  Repeat Step 2 and Step 3 to upload the remaining 7 qcow2 images.   
+**Step 5** |  Navigate to Home > VM > Create VM and enter the required information for creating the new VM. 
+
+  1. Under General Configuration: 
+  * Name
+  * Description
+  * Timezone
+  * Use this VM as an agent VM—Leave it unchecked. 
+  2. Under Compute Details, enter information for the following fields based on whether you want to create a medium or a large configuration. For more information about resource requirements and supported configuration limits, see [VM Resource Requirements for New Intersight Virtual Appliance Deployments](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) and [Supported Configuration Limits for Intersight Virtual Appliance](m_appliance_overview.html#reference_d1b_nhj_sjb). 
+  * vCPUs
+  * Number of Cores Per vCPU
+  * Memory
+  3. Under Boot Configuration, select UEFI.  Do **NOT** select Legacy BIOS. 
+  4. Under Disks, click Add New Disk, and enter the following information: 
+  * Type—Select DISK. 
+  * Operation—Select Clone from Image Service. 
+  * Bus Type—Select SCSI. Note that Intersight Virtual Appliance works only when bus type is set to SCSI. 
+  * Image—Select disk1 from the list of 8 disks. For example, if the naming convention for the files is intersight-appliance-installer-kvm-1.1.1-0-<sequence_number>.qcow2, then the first file that must be selected is intersight-appliance-installer-1.1.1-0-1.qcow2.  |  **Attention** |  You must select and assign disk1 through disk8 in a numerical order. As an example, if you select _intersight-appliance-installer-kvm-1.1.11.0-2.qcow2_ and assign it to disk1, the VM will not boot.   
+---|---  
+  * Logical Size (GiB)—The size is automatically selected based on the disk selection. 
+
+  * Index—Default 
+
+Click Save. 
+
+  5. Repeat Step d to add disks 2 through 8. 
+
+**Note** |  Ensure that the files are added in numerical order. For example, if the naming convention for the files is intersight-appliance-installer-kvm-1.1.1-0-<sequence_number>.qcow2, then the files must be added in the following order: 
+     1. intersight-appliance-installer-1.1.1-0-2.qcow2
+     2. intersight-appliance-installer-1.1.1-0-3.qcow2
+     3. intersight-appliance-installer-1.1.1-0-4.qcow2
+     4. intersight-appliance-installer-1.1.1-0-5.qcow2
+     5. intersight-appliance-installer-1.1.1-0-6.qcow2
+     6. intersight-appliance-installer-1.1.1-0-7.qcow2  
+---|---  
+  6. Under Network Adapter (NIC), click Add New NIC, and enter the following information: 
+
+  * Subnet Name—Select a subnet from the configured drop-down list. Note that the subnet must have been previously created in the virtual switch. Also, the default gateway, DNS services, etc. must be reachable via this subnet. 
+
+  * Network Connection State—Select Connected. 
+
+  7. Click Add. 
+
+
+  
+**Step 6** |  Click Save.  The newly created VM appears in the VM table.  
+**Step 7** |  Right-click on the newly created VM and click Power on.  The green light in the new VM row indicates that the VM is powered on.  
+**Step 8** |  Click Launch Console, from the menu bar at the bottom of the screen.   
+**Step 9** |  On the VM console, customize the password configuration and IP properties. |  Property |  Description  
+---|---  
+Set password for user admin |  Set a new password for admin user. |  **Note** |  Ensure that you remember this password as you will use the same one to log into the Intersight Virtual Appliance web UI.  
+---|---  
+Choose IP Assignment |  Type in **S** for static IP assignment or **D** for DHCP  Selecting DHCP for your IP assignment enables the appliance to obtain IP addresses from the DHCP server running on the same network to avoid using static IP addresses.   
+Appliance FQDN _(Values you input will be ignored if you Enable DHCP)_ |  Enter the Appliance’s fully qualified domain name (FQDN). For example: _appliance.example.com_  
+IP Address |  **Note** |  This field appears only if you selected Static IP assignment in the previous step.  
+---|---  
+Enter the IPv4 address of the node. For example: 10.0.0.100 You can configure an IPv6 address at the same time. For IPv6, you can choose either static assignment or Stateless Address Autoconfiguration (SLAAC).   
+Subnet Mask |  Enter the IP Net Mask. For example: 255.255.255.0  
+Default Gateway |  Enter the IP Default Gateway. For example: 10.0.1.254  
+DNS Servers |  Enter a comma-separated list of IP addresses for your DNS servers. A maximum of two IPv4 DNS servers are supported.  
+DNS Domain |  Enter the DNS Search Domain.  
+NTP Servers |  Provide NTP information when configuring a static IP. Enter a comma-separated list of hostnames or IPv4 addresses for your NTP servers. You may add up to three unauthenticated NTP servers at this stage. Once the appliance is fully installed, you can edit the NTP server settings to include any combination of authenticated and unauthenticated NTP servers (up to three total). This setting is required even if you use DHCP to obtain IP addresses.  You cannot provide NTP information if you configured DHCP for your IP assignment.  
+**Attention** | 
+
+  * **If the password you set at the time of registering your appliance is weak, Intersight prompts you to change your password to a stronger one. After a successful reset to a strong password, you are directly logged into the appliance. For more information about logging in, see[Logging In to Intersight Virtual Appliance](m_setting_up_appliance.html#id_93446)**. 
+  * Ensure that DNS, NTP, and file services are hosted outside of the infrastructure being managed by the appliance to avoid potential service conflicts. If you need to make changes to the infrastructure hosting these services, ensure they are configured with redundancy so that they remain available during maintenance. 
+
+  
+---|---  
+  
+Enabling DHCP
+
+Dynamic Host Configuration Protocol (DHCP) allows the Cisco Intersight Virtual Appliance VM to obtain an IP address through a DHCP server running on the network that it is installed on. When this option is enabled, the Cisco Intersight Virtual Appliance is equipped to handle IP address updates through DHCP, subject to lease requirements. 
+
+**Attention** |  For a single-node appliance, ensure that the following requirements are met for using DHCP:  
+---|---  
+  
+  * If you use DHCP, ensure that the IP address returned to the appliance VM resolves to the same FQDN you use to set up the appliance. Cisco strongly recommends configuring DHCP to assign a static IP address to the Appliance VM. Although the Appliance can handle changes when its DHCP lease is renewed, it operates more efficiently—especially when communicating with claimed devices—if its IP address remains constant. 
+
+  * The appliance only reads the IP address, netmask, gateway, and DNS-Servers from the DHCP lease information. 
+
+
+Limitations
+
+  * Frequent lease renewals can impact the VM configuration settings and render the appliance unusable.
+
+
+  
+**Step 10** |  Proceed to <https://fqdn-of-your-appliance> to complete the post-install set-up of your appliance.  For information on how to complete the set-up of your appliance, see [Setting Up Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_266a2c35-69a4-4a04-89c2-b9c0339b905a).   
+  
+* * *
+
+Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+The diagnostic tool aims to:
+
+  * Detect and display issues with the installation prerequisites. 
+
+  * Enable editing the inputs that are provided during the appliance image deployment. 
+
+  * Assist with continuing the installation after you fix the settings, or set network interface properties such as IP addresses, subnet mask, and default gateway during the appliance image deployment. 
+
+
+For more information, see [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb) and [Intersight Virtual Appliance Console UI](m_troubleshooting.html#intersight-virtual-appliance-console-ui). 
+
+For a demonstration of the Intersight Virtual Appliance Installation and troubleshooting, watch [Cisco Intersight Appliance Installation and Debug](https://www.youtube.com/watch?v=vHoDfixdi4g&feature=youtu.be). 
+
 ---
 
 ## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_010.html
+
+# Claiming a Target
 
 ## Device Connector Requirements
 
@@ -1006,9 +5574,146 @@ If you do not want to share the target data as part of the automatic device conn
     Successfully updated device connector on local Fabric interconnect
     UCS-A(local-mgmt)#
 
+## Data Collected from Intersight Virtual Appliance 
+
+Cisco Intersight Virtual Appliance works on a connected mode and requires connectivity to hosted Intersight services. You must register the appliance with Intersight to manage your UCS or HyperFlex infrastructure. 
+
+If you enable the option to allow collecting additional information, Intersight may collect other details about the managed systems, beyond what is listed in the table Minimum Data Collected. If the data collection option is enabled, Cisco reserves the right to collect more data for diagnosis and proactive troubleshooting purposes. 
+
+The tables below list the details of data collected by Intersight: 
+
+Table 2. Minimum Data Collected Component |  Details of Data Collected  
+---|---  
+From Intersight Virtual Appliance | 
+
+  * The appliance ID (Serial Number)
+  * The IP address of the appliance
+  * The hostname of the appliance
+  * The device connector version and public key on the appliance
+
+  
+Appliance Software Auto-Upgrade |  Version of software components or the services running on the appliance  
+Appliance Health | 
+
+  * CPU usage
+  * Memory usage
+  * Disk usage
+  * Service statistics
+
+  
+Licensing |  Server count  
+Information about the endpoint target | 
+
+  * Serial number and PID (to support Connected TAC)
+  * UCS Domain ID
+  * Platform Type
+
+  
+Table 3. Data Collected During One time Device Connector Upgrade Component |  Details of Data Collected  
+---|---  
+From the endpoint target, only if the one time device connector upgrade is used  | 
+
+  * The endpoint target type - Cisco UCS Fabric Interconnect, Integrated Management Controller, Cisco HyperFlex System
+  * One or more firmware versions of the endpoint
+  * The serial number of the endpoint target
+  * The IP address of the endpoint target
+  * The hostname of the endpoint target
+  * The endpoint device connector version and the public key 
+
+  
+  
+### TechSupport Diagnostic File Collection (Open a TAC Case) 
+
+When you open a case with Cisco TAC, Intersight collects Tech Support diagnostic files to assist with an open support case. The data collected could include (but is not limited to) hardware telemetry, system configuration, and any other details which aid in active troubleshooting of the TAC case. TechSupport collection is allowed to occur regardless of data collection options you specify. However, this information is not collected arbitrarily, but only when you open a case against a system, requiring assistance with the system support. 
+
+## Claiming a Target in Intersight Virtual Appliance 
+
+Log in to the appliance as a user with account administrator privileges. Use the following procedure to claim a target in Cisco Intersight Virtual Appliance: 
+
+### Before you begin
+
+  * Ensure that you have completed the Cisco Intersight Virtual Appliance OVA installation and set up the appliance.
+
+  * You have an account on the target being claimed that has administrative privileges.
+
+  * You can claim a target or multiple targets in bulk.
+
+
+### Procedure
+
+* * *
+
+**Step 1** |  Navigate to Admin > Targets > Claim a New Target.  You can either use the wizard to set the configuration or use a file to set the configuration.  
+---|---  
+**Step 2** |  To use the wizard to set the configuration, select the Use Wizard to Set the Configuration tab and click Start. 
+
+  1. Select Available for Claiming. 
+  2. Select the target type.
+  3. Enter the IP/Hostname of the target you want to claim, the Username for the target, and the Password for the user. This user must have administrative privileges. 
+  4. Click Claim to initiate the target claim. 
+
+  
+**Step 3** |  To use a file to set the configuration, select the Use a File to Set the Configuration tab and click Start. 
+
+  1. Click Browse to select the .csv file containing the target details.  For each target, add a line containing Target Type, Hostname or IP Address, User Name, and Password. Use the CIDR notation to specify the IP Range. You can add as many lines with these details in the .csv file. The following example shows the format to add target details in a .csv file: 
+         
+         UCSFI,10.1.1.3,user-1,password1
+         IMC,10.1.1.5/26,user-2,password2
+         HX,10.1.2.1/30,user-3,password3
+         UCSD,1.1.1.1,user-4,password4 
+
+  2. Click Next. 
+  3. Review the details on the Summary page and click Claim. 
+
+| **Important** |  The target claim process could take a few minutes. If required, the Device Connector will be automatically upgraded as part of the process.   
+---|---  
+  
+You can unclaim a target by selecting a target from Targets > Table view, and clicking Delete (trash can representation). You can reclaim the target later, as required by using the steps listed above for a target claim.   
+  
+* * *
+
+## Renewing Target Certificates
+
+In the event that the target certificate expires for an endpoint, the status reflects as Not Connected on the Target Table View page and the badge for this endpoint indicates that the target certificate has expired. 
+
+### Procedure
+
+* * *
+
+**Step 1** |  In the appliance UI, navigate to Admin > Targets and locate the target with the Not Connected status.   
+---|---  
+**Step 2** |  Hover on the badge to find out if the target certificate has expired.  
+**Step 3** |  Click the Actions menu for this target, and select Renew Certificate.  | **Note** |  The Renew Certificate option is available only if the certificate needs to be renewed for the selected endpoint.   
+---|---  
+**Step 4** |  In the Renew Certificate pop-up window, enter the username and password and click Renew.  After the certificate renewal process completes, the status for the endpoint indicates as Connected.   
+  
+* * *
+
 ---
 
 ## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_01.html
+
+# Set Up
+
+  * Setting Up Single-Node Intersight Connected Virtual Appliance
+  * Setting Up Single-Node Intersight Private Virtual Appliance
+  * Setting Up Intersight Assist (Registering to Intersight SaaS)
+  * Setting Up Intersight Assist (Registering to Intersight Virtual Appliance)
+  * Configuring a Multi-Node Cluster for High Availability in Intersight Virtual Appliance
+  * Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance
+  * Recovering Intersight Connected Virtual Appliance
+  * Recovering Intersight Private Virtual Appliance
+  * Reconnecting Metrics Node in the Multi-Node Cluster
+  * Replacing a Node in the Multi-Node Cluster for Intersight Virtual Appliance
+  * Changing IPv4 Address of HA Management Nodes in the Multi-Node Cluster
+  * Changing IPv4 Address of Metrics Node in the Multi-Node Cluster
+  * Troubleshooting Add Node Issues During Multi-Node Cluster Configuration
+  * High Availability and Disaster Recovery for Cisco Intersight Virtual Appliance
+  * Logging In to Intersight Virtual Appliance
+  * Creating an Appliance Account for Downloading Software Packages
+  * Downloading Software Packages for Intersight Virtual Appliance
+  * Uploading Software Packages for Intersight Private Virtual Appliance
+
 
 ## Setting Up Single-Node Intersight Connected Virtual Appliance
 
@@ -1103,9 +5808,893 @@ Once you have successfully completed the initial set up of the single-node Inter
   * You can add a metrics node to create a multi-node cluster for advantage tier metrics data collection. For more information, see Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance. 
 
 
+## Setting Up Single-Node Intersight Private Virtual Appliance
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or TAR file format. 
+
+Before You Begin: Ensure that you have installed Intersight Virtual Appliance software as per the instructions in [Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_00.html#id_95741). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+An appliance installer is required to restore the appliance from a backup. If a backup is taken from appliance release version N, it can only be restored using the latest installer that is less than or equal to version N. For example: 
+
+  * If you backup your appliance release version 1.1.0-0, you need the latest appliance installer version that is less than or equal to 1.1.0-0, which is 1.1.0-0. 
+  * If you backup your appliance release version 1.1.1-1, you need the latest appliance installer version that is less than or equal to 1.1.1-1, which is 1.1.1-0. 
+
+Hence, it is recommended that you retain the required downloaded appliance installer for the backup that you are creating. For more information, see Recovering Intersight Connected Virtual Appliance. 
+
+* * *  
+  
+---|---  
+  
+After the Cisco Intersight Virtual Appliance software deployment is complete, and the VM is powered on, access your VM using the <<https://your fqdn.com>> URL. The Intersight Appliance Installer screen appears and allows you to complete the setup for either a new install, recover the appliance software from backup, or add a node to the appliance. 
+
+The wizard runs through a series of steps to download and install software packages. You can view the progress of the installation. 
+
+Use the following instructions to complete the Intersight Private Virtual Appliance setup:
+
+### Procedure
+
+* * *
+
+**Step 1** |  On the Intersight Appliance Installer screen, select Install Private Virtual Appliance and click Start to proceed with setting up a single-node Private Virtual Appliance.  The Upload Software page displays. Upload a supported version of the appliance software that is either the same as, or newer than, the installer version.   
+---|---  
+**Step 2** |  In the Intersight Appliance Installer setup wizard, do the following: 
+
+  1. Check Network Requirements—View the results and click Next to proceed to the Configure Internal Network step.  Note that during the network requirements check if any of the DNS test fails, you cannot proceed with the configuration.
+  2. Configure Internal Network—If necessary, change the default Internal Network IP address and click Next to proceed to the Upload Software step.  **Note:** This IP address range is used for internal communications within Intersight Virtual Appliance. This range must be within the 172.16.0.0/12 subnet, but can be a smaller range (up to a subnet prefix size of 20). In most cases, the default value can be used. One reason to change the default value would be if the Appliance needs to communicate directly with other devices in the same subnet, that is without traversing IP translation mechanisms such as NAT. 
+  3. Upload Software—Upload a supported version of the appliance software that is either the same as, or newer than, the installer version.  Select either Local Machine or Network Share, depending on where you saved the software packages.  |  **Note** | 
+  * To manually update, install, or restore Intersight Connected Virtual Appliance, you will need to access the Appliance Account so that you can download the required software packages. For information, see Creating an Appliance Account for Downloading Software Packages and Downloading Software Packages for Intersight Virtual Appliance. 
+  * Select Intersight Appliance Software Bundle only. Intersight Appliance Patch Bundle cannot be used for new installations.   
+---|---  
+  * For Local Machine, browse to where you saved the software image, and then click Finish to proceed to the Installation Result screen. 
+
+  * For the Network Share option, enter the protocol and enter details of the remote server from where you want to copy the file, and click Finish to proceed to the Installation Result screen. 
+
+  * Protocol—Communication protocol used for file transfer. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol) and SFTP (Secure File Transfer Protocol). 
+
+  * Server IP/Hostname—The host server from where the file is copied 
+
+  * Port—TCP port to use 
+
+  * Location—Directory where the file to be copied is stored 
+
+  * Software Bundle File Name for Appliance—Name of the file to be copied from the network share 
+
+  * Username—Username for authenticating with the network share 
+
+  * Password—Password for authenticating with the network share 
+
+  4. Installation Results—You can view the progress of the installation on this screen. 
+
+
+  
+**Step 3** |  Log in to the Intersight Virtual Appliance Connect page. Use admin as the username and enter the password that you set during the installation process.   
+**Step 4** |  Complete the Register License process. 
+
+  1. Use the Reservation Request Code that you obtain on this page to generate Reservation Authorization Code in [Cisco Smart Software Manager](https://software.cisco.com/). 
+  2. Copy the Reservation Authorization Code that you generated in Cisco Smart Software Manager and paste it on the Reserve License screen. 
+  3. Click Install.  The license reservation process can take a few minutes to complete. For information about Intersight licensing tiers and registration, watch [Cisco Intersight Licensing Tiers and Registration](https://intersight.com/help/video#cisco_intersight_licensing_tiers_and_registration). 
+
+After you click Close, the Cisco Intersight Private Virtual Appliance dashboard displays.   
+  
+* * *
+
+### What to do next
+
+Once you have successfully completed the initial set up of the single-node Intersight Virtual Appliance: 
+
+  * You can add additional nodes to create a multi-node cluster for High Availability. For more information, see Configuring a Multi-Node Cluster for High Availability in Intersight Virtual Appliance. 
+
+  * You can add a metrics node to create a multi-node cluster for advantage tier metrics data collection. For more information, see Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance. 
+
+
+## Setting Up Intersight Assist (Registering to Intersight SaaS)
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or TAR file format. 
+
+Before You Begin: Ensure that you have installed Intersight Virtual Appliance software as per the instructions in [Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_00.html#id_95741). 
+
+After the Cisco Intersight Virtual Appliance software deployment is complete, and the VM is powered on, access your VM using the <<https://your fqdn.com>> URL. The Intersight Appliance Installer screen appears and allows you to complete the setup for either a new install, recover the appliance software from backup, or add a node to the appliance. 
+
+The wizard runs through a series of steps to download and install software packages. You can view the progress of the installation. 
+
+Use the following instructions to register the Assist to Intersight SaaS:
+
+### Procedure
+
+* * *
+
+**Step 1** |  On the Intersight Appliance Installer screen, select Install Assist and click Start.  You have the option of registering the Assist to Intersight SaaS or to Intersight Virtual Appliance.  
+---|---  
+**Step 2** |  On the Connect screen, click Intersight SaaS. 
+
+  1. (Optional) Click Settings  to enable HTTPS Proxy Settings.  If an HTTP/S proxy is required to connect your Cisco Intersight Assist to the internet, you must configure proxy settings before you can complete the connection step. 
+  * Click Settings and enable the HTTPS Proxy option. 
+  * Add the Proxy Hostname or IP Address, and the Proxy Port.  The proxy port must be in the range between 1 and 65535. You can edit the Proxy settings from the appliance UI, Settings > Networking > Cloud Connection. 
+  2. Use the Device ID and Claim Code  that is displayed on the Connect page to complete connecting to Intersight. 
+  3. Ensure that the Connection status displays Claimed.  |  **Note** |  A new browser tab appears to display the status of the target claim in Intersight. If you do not have an Intersight account, you can create one in the Account Creation window and claim a target. If the target connection is successful, a successful message is displayed. Click Close to exit the tab and return to the Intersight Virtual Appliance setup wizard. If the target claim is unsuccessful, you will be taken to the Intersight login screen to restart the target claim workflow.   
+---|---  
+
+  
+**Step 3** |  Click Connect Intersight Virtual Appliance and log into Intersight using your Cisco ID. If you do not have a Cisco ID, you can create one [here](https://id.cisco.com/ui/v1.0/profile-ui).   
+**Step 4** |  In the Intersight Appliance Installer setup wizard, do the following: 
+
+  1. Connect—Click Next to proceed to the Check Network Requirements step. 
+  2. Check Network Requirements—View the results and click Next to proceed to the Configure Internal Network step.  Note that during the network requirements check if the DNS test fails, you cannot proceed with the configuration.
+  3. Configure Internal Network—If necessary, change the default Internal Network IP address and click Next to proceed to the Installations Results screen.  **Note:** This IP address range is used for internal communications within Intersight Virtual Appliance. This range must be within the 172.16.0.0/12 subnet but can be a smaller range (up to a subnet prefix size of 20). In most cases, the default value can be used. One reason to change the default value would be if the Appliance needs to communicate directly with other devices in the same subnet, that is without traversing IP translation mechanisms such as NAT. 
+  4. Installation Results—You can view the progress of the installation on this screen. 
+
+  
+  
+* * *
+
+## Setting Up Intersight Assist (Registering to Intersight Virtual Appliance)
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. 
+
+Before You Begin: Ensure that you have installed Intersight Virtual Appliance software as per the instructions in [Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_00.html#id_95741). 
+
+After the Cisco Intersight Virtual Appliance software deployment is complete, and the VM is powered on, access your VM using the <<https://your fqdn.com>> URL. The Intersight Appliance Installer screen appears and allows you to complete the setup for either a new install, recover the appliance software from backup, or add a node to the appliance. 
+
+The wizard runs through a series of steps to download and install software packages. You can view the progress of the installation. 
+
+Use the following instructions to register the Assist to Intersight Virtual Appliance:
+
+### Procedure
+
+* * *
+
+**Step 1** |  On the Intersight Appliance Installer screen, select Install Assist and click Start.  You have the option of registering the Assist to Intersight SaaS or to Intersight Virtual Appliance.  
+---|---  
+**Step 2** |  On the Connect screen, click Intersight Virtual Appliance.   
+**Step 3** |  In the Intersight Appliance Installer setup wizard, do the following: 
+
+  1. Connect—Enter the following information for claiming the Assist and click Next to proceed to the Check Network Requirements step. 
+  * Hostname—The hostname must be a fully-qualified domain name. For example: <<https://your fqdn.com>>. 
+  * Username—Name of the user that has privileges to claim the target. 
+  * Password—Password associated with the username. 
+  2. Check Network Requirements—View the results and click Next to proceed to the Configure Internal Network step.  Note that during the network requirements check if the DNS test fails, you cannot proceed with the configuration.
+  3. Configure Internal Network—If necessary, change the default Internal Network IP address and click Next to proceed to the Installations Results screen.  **Note:** This IP address range is used for internal communications within Intersight Virtual Appliance. This range must be within the 172.16.0.0/12 subnet, but can be a smaller range (up to a subnet prefix size of 20). In most cases, the default value can be used. One reason to change the default value would be if the Appliance needs to communicate directly with other devices in the same subnet, that is without traversing IP translation mechanisms such as NAT. 
+  4. Installation Results—You can view the progress of the installation on this screen. 
+
+  
+  
+* * *
+
+## Configuring a Multi-Node Cluster for High Availability in Intersight Virtual Appliance
+
+A multi-node cluster for Intersight Virtual Appliance allows for high availability, increased stability, and better resilience.
+
+Once you have completed the initial set up of the single-node appliance on VMware vSphere, you can add additional High Availability (HA) management nodes. After you successfully add two additional HA management nodes, you can create a multi-node cluster for high availability in Intersight Virtual Appliance. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Multi-node cluster configuration is supported only on VMware vSphere installations.
+
+* * *  
+  
+---|---  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Important** | 
+
+* * *
+
+  * It is highly recommended that you take a backup of the single-node instance and VM snapshot before proceeding with the multi-node cluster configuration. If any issue arises during the multi-node cluster configuration, you can revert back to the single-node instance using the backup or snapshot. For information on backing up Intersight Virtual Appliance, see [Backing Up Data](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_settings_dashboard.html#id_93773). For information on restoring Intersight Connected Virtual Appliance, see [Recovering Intersight Connected Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7). For information on restoring Intersight Private Virtual Appliance, see [Recovering Intersight Private Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18). 
+  * Once you have set up a multi-node cluster for Intersight Virtual Appliance, you cannot revert back to the single-node instance.
+
+
+* * *  
+  
+---|---  
+  
+Requirements:
+
+  * You can set up a multi-node cluster for the appliance **only** after you have completed the initial set up of the single-node appliance. Ensure that you have set up single-node Intersight Virtual Appliance software as per the instructions in the following tasks: 
+
+  * Setting Up Intersight Connected Virtual Appliance
+
+  * Setting Up Intersight Private Virtual Appliance
+
+  * You can set up a multi-node cluster at any time after you have completed the initial set up of your appliance.
+
+  * The first node must be in Operational status to be able to add additional HA management nodes for creating a multi-node cluster for high availability in Intersight Virtual Appliance. 
+
+
+To set up a multi-node cluster for high availability for Connected Virtual Appliance and Private Virtual Appliance, do the following: 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Access your VM using the <<https://myhost2.mydomain.com/ URL.  
+---|---  
+**Step 2** |  On the Intersight Appliance Installer screen, click the Add Node to Appliance tab.   
+**Step 3** |  On the Add Node to Appliance screen, select High Availability (HA) Management Node, enter the details for the following fields, and click Finish. 
+
+  * Appliance Hostname—The hostname of the existing stand-alone appliance to which the node will be added. 
+  * Appliance Admin Username—The admin username of the existing stand-alone appliance. 
+  * Admin User Password—The admin password for the existing stand-alone appliance. 
+
+After the second management node (node2) is successfully added, it is ready to join the cluster. At this point, you can add a third management node (node3) so that you can create a cluster.  
+**Step 4** |  Repeat the instructions in Steps 1, 2, and 3 to add node3.  
+**Step 5** |  Once the node3 has been successfully added, click Go to Appliance Portal to proceed to the appliance.   
+**Step 6** |  Log into <<https:// mymanagementhost1.mydomain.com>>.  
+**Step 7** |  Choose System > Appliance Details.  Ensure that node2 and node3 are in the Ready to Join state.   
+**Step 8** |  Click Create Cluster.  |  **Important** |  The action of creating a cluster is irreversible. Note that the Appliance will switch to a maintenance mode while the cluster creation workflow is being executed. Allow 5-10 minutes for the progress page to load, after which you can view the progress of cluster creation on the Multi-Node Cluster Creation Results screen. You can also view the progress of cluster creation on node2 and node3 which is available right away.  When the setup is complete, the login screen appears.  
+---|---  
+**Step 9** |  Log into the Intersight Virtual Appliance Connect page.  Use admin as the username and enter the password that you set during the initial single-node appliance setup. At this point, you can log into node2 and node3 as well.   
+  
+* * *
+
+Multi-node cluster will be fully operational when one node goes down. The appliance automatically stabilizes when one node is down. During the transition stage, your appliance might not be accessible. 
+
+When two nodes go down, the multi-node cluster will move to maintenance mode. During this state, the system will not be operational.
+
+When the nodes come up, the multi-node cluster becomes Operational automatically. 
+
+After you successfully complete configuring the multi-node cluster for your existing single-node deployment, use the information in the following links to perform additional configuration for the multi-node cluster. 
+
+  * [Single Sign-on](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#id_95754)
+
+  * [SSL Certificates](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#reference_vjn_psh_kkb)
+
+
+After you successfully complete the HA management cluster set-up, you can add a metrics node for increased metrics scalability. For more information, see Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance. 
+
+## Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance
+
+You can deploy Intersight Virtual Appliance on VMware vSphere as a multi-node cluster which allows for advantage tier metrics data collection. This deployment option is either a two-node cluster that includes an appliance management node and a metrics node or a four-node cluster that includes a HA management cluster and a metrics node. Once you have completed the initial set up of the single-node appliance or a HA management cluster, you can add a metrics node. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Multi-node cluster configuration is supported only on VMware vSphere installations.
+
+* * *  
+  
+---|---  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Important** | 
+
+* * *
+
+  * It is highly recommended that you take a backup of the single-node instance and VM snapshot before proceeding with the multi-node cluster configuration. If any issue arises during the multi-node cluster configuration, you can revert back to the single-node instance using the backup or snapshot. For information on backing up Intersight Virtual Appliance, see [Backing Up Data](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_settings_dashboard.html#id_93773). For information on restoring Intersight Connected Virtual Appliance, see [Recovering Intersight Connected Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7). For information on restoring Intersight Private Virtual Appliance, see [Recovering Intersight Private Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18). 
+  * If a **Pending Upgrade** is available, then complete the upgrade first. Once the upgrade is successful, configure the metrics node by following the instructions in this task. However, if you added the metrics node before the upgrade completes, ensure that the upgrade completes successfully before executing the **Join Metrics Node** workflow. 
+  * Once you have set up a multi-node cluster for Intersight Virtual Appliance, you cannot revert back to the single-node instance.
+
+
+* * *  
+  
+---|---  
+  
+Requirements:
+
+  * You can set up a two-node cluster for the appliance **only** after you have completed the initial set up of the single-node appliance and you can set up a four-node cluster **only** after you have completed the initial set up of the HA management cluster. Ensure that you have set up single-node appliance or a multi-node cluster for HA as per the instructions in the following tasks: 
+
+  * Setting Up Intersight Connected Virtual Appliance
+
+  * Setting Up Intersight Private Virtual Appliance
+
+  * Configuring a Multi-Node Cluster for High Availability in Intersight Virtual Appliance
+
+  * You can set up a multi-node cluster at any time after you have completed the initial set up of your appliance.
+
+  * In a two-node cluster, the first node must be in Operational status before you can add a metrics node. In a four-node cluster, all three HA management nodes must be in Operational status before you can add a metrics node. 
+
+
+To set up a multi-node cluster for advantage tier metrics data collection for Connected Virtual Appliance and Private Virtual Appliance, do the following: 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Access your VM using the <<https://mymetricshost.mydomain.com/>> URL.  
+---|---  
+**Step 2** |  On the Intersight Appliance Installer screen, click the Add Node to Appliance tab.   
+**Step 3** |  On the Add Node to Appliance screen, select Metrics Node, enter the details for the following fields, and click Finish. 
+
+  * Appliance Hostname—The hostname of the existing appliance to which the node will be added. 
+  * Appliance Admin Username—The admin username of the existing stand-alone appliance. 
+  * Admin User Password—The admin password for the existing stand-alone appliance. 
+
+After the metrics node is successfully added, it is ready to join the cluster.  
+**Step 4** |  Once the metrics node has been successfully added, click Go to Appliance Portal to proceed to the appliance.   
+**Step 5** |  Log into <<https:// mymanagementhost.mydomain.com>> or one of the HA management nodes in the case of HA management cluster.  
+**Step 6** |  Choose System > Appliance Details.  Ensure that the metrics node is in the Ready to Join state.   
+**Step 7** |  Click the ellipsis in the metrics node row and select Join Metrics Node.  |  **Important** | 
+
+  * The action of creating the multi-node cluster is irreversible.
+  * Metrics data collection will be interrupted while the metrics node workflow is being executed.
+
+  
+---|---  
+  
+* * *
+
+After you successfully complete configuring the multi-node cluster for advantage tier metrics data collection, use the information in the following links to perform additional configuration for the multi-node cluster. 
+
+  * [Single Sign-on](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#id_95754)
+
+  * [SSL Certificates](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#reference_vjn_psh_kkb)
+
+  * [Configuring Metrics Collection](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#configuring-metrics-collection)
+
+
+**Node Behavior in a Two-Node Cluster Setup** : You can expect the following node behavior in a multi-node cluster that includes the appliance management node and a metrics node: 
+
+  * When the appliance management node is up and the metrics node is down, the appliance UI and APIs are available and all the appliance management features are fully operational. However, the metrics data collection and reporting are not available, and the metrics data roll-up and purge are not functional as well. The maintenance shell and Console UI will indicate that the metrics node is down. As soon as the metrics node becomes operational, the metrics data collection and reporting resumes. 
+
+  * When the appliance management node is down and the metrics node is up, the entire appliance is not operational. Metrics data collection and reporting are not available. However, the metrics data roll-up and purge continue. The maintenance shell and Console UI will indicate that the appliance management node is down. As soon as the appliance management node becomes operational, metrics data collection and reporting resumes. 
+
+  * When the appliance management node and the metrics node are both down, the entire appliance is not operational. Metrics data collection and reporting will resume only after both the appliance management node **AND** the metrics node become fully operational. 
+
+
+**Node Behavior in a Four-Node Cluster Setup** : You can expect the following node behavior in a multi-node cluster that includes the HA management cluster and a metrics node: 
+
+  * When all the three HA management nodes are up and the metrics node is down, the appliance UI and APIs are available and all the appliance management features are fully operational. However, the metrics data collection and reporting are not available, and the metrics data roll-up and purge are not functional as well. The maintenance shell and Console UI will indicate that the metrics node is down. As soon as the metrics node becomes operational, the metrics data collection and reporting resumes. 
+
+  * When all three HA management nodes are down and the metrics node is up, the four-node setup goes into **Maintenance** mode. Metrics data collection and reporting is not available. The maintenance shell and Console UI will indicate that the HA management nodes are down. As soon as all three HA management nodes become operational, metrics data collection and reporting resumes. 
+
+  * When two of the three HA management nodes are down and the metrics node is up, the four-node setup goes into **Maintenance** mode. Metrics data collection and reporting are not available. The maintenance shell and Console UI will indicate that the HA management nodes are down. As soon as the two HA management nodes become operational, metrics data collection and reporting resumes. 
+
+  * When one of the three HA management nodes is down and the metrics node is up, the appliance UI and APIs are available and all the appliance management features are fully operational. Metrics data collection and reporting is also available. 
+
+  * When all three HA management nodes and the metrics node are down, the entire appliance is not operational. Metrics data collection and reporting will resume only after all three HA management nodes **AND** the metrics node become fully operational. 
+
+
+## Recovering Intersight Connected Virtual Appliance 
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or TAR file format. 
+
+To restore a Connected Virtual Appliance configuration, you can recover the data from a backup file during the initial setup.
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Important** | 
+
+* * *
+
+If a backup is taken from appliance release version N, it can only be restored using the latest installer that is less than or equal to version N. For example: 
+
+  * If you backup your appliance release version 1.1.0-0, you need the latest appliance installer version that is less than or equal to 1.1.0-0, which is 1.1.0-0. 
+  * If you backup your appliance release version 1.1.1-1, you need the latest appliance installer version that is less than or equal to 1.1.1-1, which is 1.1.1-0. 
+
+A limited number of appliance installer versions are available on [Cisco Software Central](https://software.cisco.com/). If the required version of the installer is not present, contact Cisco TAC. 
+
+* * *  
+  
+---|---  
+  
+Before You Begin: Ensure that you have installed Intersight Virtual Appliance software as per the instructions in [Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_00.html#id_95741). 
+
+After the Cisco Intersight Virtual Appliance software deployment is complete, and the VM is powered on, access your VM using the <<https://your fqdn.com>> URL. The Installer Options screen appears and allows you to complete the setup for either a new install or to recover the appliance software from backup. 
+
+The wizard runs through a series of steps to download and install software packages. You can view the progress of the recovery.
+
+**Ensure the backup server remains accessible and the backup files are available in the directory specified during backup creation throughout the recovery process.**
+
+Use these instructions to recover the configuration from a backup file:
+
+### Procedure
+
+* * *
+
+**Step 1** |  On the Installer Options screen, select the Recover from Backup tab and click Start.   
+---|---  
+**Step 2** |  On the Select Backup page, select the protocol and enter details of the remote server from where you want to recover the backed-up data. 
+
+  * Protocol—Communication protocol option used in the backup process. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol) and SFTP (Secure File Transfer Protocol) for backup. 
+  * Server IP/Hostname—The host from which backed-up data is recovered 
+  * Port—TCP port on the backup server 
+  * Location—Directory where the backup files are saved 
+  * Filename—Name of the backup file to restore 
+  * Username—Username for authenticating the backup client to the backup server 
+  * Password—Password for authenticating the backup client to the backup server 
+
+  
+**Step 3** |  Click Next.  |  **Important** |  **The restore process cannot be modified once it has started.**  
+---|---  
+**Step 4** |  Click Continue on the warning pop-up.   
+**Step 5** |  On the Select Software Version screen, you have the option to download the latest version of the appliance software, or you can upload any other supported version of the software that is the same as the installer version or greater than the installer version. 
+
+  1. To download the latest version of the appliance software, select the Download Latest Version button and click Finish. 
+  2. To upload a version of the appliance software, select either Local Machine or Network Share, depending on where you saved the software packages.  |  **Note** |  In order to manually restore Intersight Connected Virtual Appliance, you will need to access the Appliance Account so that you can download the required software packages. For information, see Creating an Appliance Account for Downloading Software Packages and Downloading Software Packages for Intersight Virtual Appliance.   
+---|---  
+  * For Local Machine, browse to where you saved the software image, and then click Finish. 
+
+  * For the Network Share option, enter the protocol and enter details of the remote server from where you want to copy the file, and click Finish. 
+
+  * Protocol—Communication protocol used for file transfer. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol), and SFTP (Secure File Transfer Protocol) for backup. 
+
+  * Server IP/Hostname—The host server from where the file is copied 
+
+  * Port—TCP port to use 
+
+  * Location—Directory where the file to be copied is stored 
+
+**Note** |  CIFS share names must contain alpha-numeric characters only and must conform to the regular expression such as ^(\w+)(/\w+)*/?$. It cannot contain spaces. In addition, when specifying folders under the CIFS share, forward slash (/) must be used as a separator. For example, backupshare/Intersight/Daily and backupshare/Monthly.  Also, since the regular expression share names do not include a preceding forward slash, ensure that you enter the CIFs share name without an initial forward slash. For example, <share1/subdirectory1>.   
+---|---  
+  * Software Bundle File Name for Appliance—Name of the appliance software bundle file to be copied from the network share. 
+
+  * Patch Bundle File Name for Appliance—Name of the appliance patch bundle file to be copied from the network share. 
+
+**Note** | 
+  * This field is displayed in the UI only if the appliance backup was taken on a patch version.
+  * If the appliance software bundle version is the same or newer than the appliance backup version, leave the patch bundle field blank. Otherwise, specify a patch bundle that either matches or is higher than the appliance backup version. 
+  * Ensure that the software bundle and the patch bundle are copied to the same folder as specified in the Location field.   
+---|---  
+  * Username—Username for authenticating with the network share 
+
+  * Password—Password for authenticating with the network share 
+
+You can view the progress of the recovery on the Recovery Results page. After the recovery process is complete, the Cisco Intersight Connected Virtual Appliance dashboard is displayed. 
+
+
+  
+  
+* * *
+
+### What to do next
+
+For Recovering Multi-Node for HA Cluster Deployments: If you are recovering from a backup for a multi-node cluster deployment, first recover node1 and then add two additional nodes to create a multi-node cluster by following the steps in Configuring a Multi-Node Cluster for High Availability in Intersight Virtual Appliance. 
+
+For Recovering Multi-Node for Metrics Data Collection Deployments: While reverting snapshots taken from the supported hypervisor of either the management node in a two-node cluster, the HA management nodes in a four-node cluster, or the metrics node, it is strongly recommended that you use the reconnect option from the appliance details screen. For information on how to reconnect the metrics node, see Reconnecting Metrics Node in the Multi-Node Cluster. 
+
+Also, note that the reverted metrics node snapshots must be the same version as the management node or lower. When you revert to an older snapshot, the metrics data collected between the snapshot time and the current time is lost. After reverting from a snapshot, check the Appliance Details screen for the operational status of the metrics node as well as the Critical and Warning alarms to ensure that none of the services are impacted. 
+
+## Recovering Intersight Private Virtual Appliance 
+
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or TAR file format. 
+
+To restore a Private Virtual Appliance configuration, you can recover the data from a backup file during the initial setup.
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Important** | 
+
+* * *
+
+If a backup is taken from appliance release version N, it can only be restored using the latest installer that is less than or equal to version N. For example: 
+
+  * If you backup your appliance release version 1.1.0-0, you need the latest appliance installer version that is less than or equal to 1.1.0-0, which is 1.1.0-0. 
+  * If you backup your appliance release version 1.1.1-1, you need the latest appliance installer version that is less than or equal to 1.1.1-1, which is 1.1.1-0. 
+
+A limited number of appliance installer versions are available on [Cisco Software Central](https://software.cisco.com/). If the required version of the installer is not present, contact Cisco TAC. 
+
+* * *  
+  
+---|---  
+  
+Before You Begin: Ensure that you have installed Intersight Virtual Appliance software as per the instructions in [Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_00.html#id_95741). 
+
+After the Cisco Intersight Virtual Appliance software deployment is complete, and the VM is powered on, access your VM using the <<https://your fqdn.com>> URL. The Installer Options screen appears and allows you to complete the setup for either a new install or to recover the appliance software from backup. 
+
+The wizard runs through a series of steps to download and install software packages. You can view the progress of the recovery.
+
+**Ensure the backup server remains accessible and the backup files are available in the directory specified during backup creation throughout the recovery process.**
+
+Use these instructions to recover the configuration from a backup file:
+
+### Procedure
+
+* * *
+
+**Step 1** |  On the Installer Options screen, select the Recover from Backup tab and click Start.   
+---|---  
+**Step 2** |  On the Select Backup page, select the protocol and enter details of the remote server from where you want to recover the backed-up data. 
+
+  * Protocol—Communication protocol option used in the backup process. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol) and SFTP (Secure File Transfer Protocol) for backup. 
+  * Server IP/Hostname—The host from which backed-up data is recovered 
+  * Port—TCP port on the backup server 
+  * Location—Directory where the backup files are saved 
+  * Filename—Name of the backup file to restore 
+  * Username—Username for authenticating the backup client to the backup server 
+  * Password—Password for authenticating the backup client to the backup server 
+
+  
+**Step 3** |  Click Next.  |  **Important** |  **The restore process cannot be modified once it has started.**  
+---|---  
+**Step 4** |  Click Continue on the warning pop-up.   
+**Step 5** |  On the Select Software Version page, you can upload any other supported version of the software that is the same as the installer version or greater than the installer version.  |  **Note** |  In order to manually restore Intersight Private Virtual Appliance, you will need to access the Appliance Account so that you can download the required software packages. For information, see Creating an Appliance Account for Downloading Software Packages and Downloading Software Packages for Intersight Virtual Appliance.   
+---|---  
+  
+  * For Local Machine, browse to where you saved the software image, and then click Finish. 
+
+  * For the Network Share option, enter the protocol and enter details of the remote server from where you want to copy the file, and click Finish. 
+
+  * Protocol—Communication protocol used for file transfer. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol) and SFTP (Secure File Transfer Protocol) for backup. 
+
+  * Server IP/Hostname—The host server from where the file is copied 
+
+  * Port—TCP port to use 
+
+  * Location—Directory where the file to be copied is stored 
+
+**Note** |  CIFS share names must contain alpha-numeric characters only and must conform to the regular expression such as ^(\w+)(/\w+)*/?$. It cannot contain spaces. In addition, when specifying folders under the CIFS share, forward slash (/) must be used as a separator. For example, backupshare/Intersight/Daily and backupshare/Monthly.  Also, since the regular expression share names do not include a preceding forward slash, ensure that you enter the CIFs share name without an initial forward slash. For example, <share1/subdirectory1>.   
+---|---  
+  * Software Bundle File Name for Appliance —Name of the appliance software bundle file to be copied from the network share. 
+
+  * Patch Bundle File Name for Appliance —Name of the appliance patch bundle file to be copied from the network share. 
+
+**Note** | 
+  * This field is displayed in the UI only if the appliance backup was taken on a patch version.
+  * If the appliance software bundle version is the same or newer than the appliance backup version, leave the patch bundle field blank. Otherwise, specify a patch bundle that either matches or is higher than the appliance backup version. 
+  * Ensure that the software bundle and the patch bundle are copied to the same folder as specified in the Location field.   
+---|---  
+  * Username—Username for authenticating with the network share 
+
+  * Password—Password for authenticating with the network share 
+
+
+**Note** |   
+---|---  
+  
+You can view the progress of the recovery on the Recovery Results page. After the recovery process is complete, the Cisco Intersight Private Virtual Appliance dashboard is displayed.   
+  
+* * *
+
+### What to do next
+
+For Recovering Multi-Node for HA Cluster Deployments: If you are recovering from a backup for a multi-node cluster deployment, first recover node1 and then add two additional nodes to create a multi-node cluster by following the steps in Configuring a Multi-Node Cluster for High Availability in Intersight Virtual Appliance. 
+
+For Recovering Multi-Node for Metrics Data Collection Deployments: While reverting snapshots taken from the supported hypervisor of either the management node in a two-node cluster, the HA management nodes in a four-node cluster, or the metrics node, it is strongly recommended that you use the reconnect option from the appliance details screen. For information on how to reconnect the metrics node, see Reconnecting Metrics Node in the Multi-Node Cluster. 
+
+Also, note that the reverted metrics node snapshots must be the same version as the management node or lower. When you revert to an older snapshot, the metrics data collected between the snapshot time and the current time is lost. After reverting from a snapshot, check the Appliance Details screen for the operational status of the metrics node as well as the Critical and Warning alarms to ensure that none of the services are impacted. 
+
+## Reconnecting Metrics Node in the Multi-Node Cluster
+
+You must reconnect the metrics node in a multi-node cluster after one of the following scenarios:
+
+  * When you revert the metrics node VM snapshot.
+
+  * When you recover the management node and want to preserve the metrics data.
+
+
+To reconnect the metrics node, do the following:
+
+  1. Log into <<https://mymanagementhost.mydomain.com>>.
+
+  2. Power on <<https://mymetricshost.mydomain.com>>.
+
+  3. Click the ellipsis in the metrics node row on the Appliance Details screen and choose Reconnect Node. 
+
+
+You can monitor the progress of the workflow. Once the workflow runs successfully, the reconnected metrics node becomes completely operational. 
+
+## Replacing a Node in the Multi-Node Cluster for Intersight Virtual Appliance
+
+You can replace a node in a multi-node cluster due to one of the following reasons:
+
+  * A node in a multi-node cluster becomes defective. 
+
+  * When you want to change the IP address of a HA management node in an existing multi-node cluster for HA in Intersight Virtual Appliance. 
+
+  * **IMPORTANT** : To change the IP address of a metrics node, it is recommended that you use the maintenance shell as replacing the metrics node will result in loss of metrics data. For more information, see [Maintenance Shell](b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_01000.html#reference_fjp_2qs_shb). 
+
+
+To replace a node in an existing cluster, do the following:
+
+### Procedure
+
+* * *
+
+**Step 1** |  Power-off and delete the defective node or the node for which you want to change the IPv4 address, from the VMware vSphere installation.   
+---|---  
+**Step 2** |  Log into another operational node in your multi-node cluster.  
+**Step 3** |  Choose System > Appliance Details.   
+**Step 4** |  In the table under Node, do the following: 
+
+  1. In the row of the node that either displays the Impaired or Unknown status, click the ellipsis. 
+  2. Click Replace Node. 
+
+The status for this node now displays as Out of Service.   
+**Step 5** |  Deploy a fresh OVA using the same DNS Domain value as the node being replaced, either using the same IPv4 address or using a new IPv4 address.  |  **Note** |  If you are changing the IPv4 address, update the DNS Domain value with the new IPv4 address.  
+---|---  
+  
+For more information about installing and deploying the appliance, see the [installation](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_00.html#id_95741) chapter.   
+  
+**Step 6** |  Access your VM using the <<https://_fqdn-of-your-appliance_.com>> URL.   
+**Step 7** |  On the Installer Options screen, click the Add Node to Appliance tab.   
+**Step 8** |  On the Add Node to Appliance page, select either HA Management Node or Metrics Node, enter the details for the following fields, and click Finish. 
+
+  * Appliance Hostname—The hostname of the existing appliance VM to which the node will be added. 
+  * Appliance Admin Username—The admin username of the existing appliance VM. 
+  * Admin User Password—The admin password for the existing appliance VM. 
+
+After the node is successfully added, it is ready to join the cluster.  
+**Step 9** |  Log into one of the operational nodes.  
+**Step 10** |  Click Go to Appliance Portal of the operational node and proceed to the appliance.   
+**Step 11** |  Navigate to Settings > Appliance Details.   
+**Step 12** |  In the row of the node that is ready to join the cluster, do the following:
+
+  1. Click the ellipsis.
+  2. Click Join Cluster. 
+  3. On the pop-up screen, click Join. 
+
+You can monitor the progress of the workflow. Once the workflow runs successfully, the replaced node becomes completely operational.  
+  
+* * *
+
+## Changing IPv4 Address of HA Management Nodes in the Multi-Node Cluster
+
+You can change the IPv4 address of HA management nodes in an existing multi-node cluster, sequentially one node at a time.
+
+To change the IPv4 address of HA management node:
+
+  1. Shut down the node for which you want to replace the IPv4 address.
+
+  2. Replace the node by following the instructions in Replacing a Node in the Multi-Node Cluster for Intersight Virtual Appliance. 
+
+
+After the node is replaced, it will reflect the new IPv4 address. To change the IPv4 address of multiple nodes in the cluster, ensure that the process of replacing one node has been completed, before moving on to replacing another node. 
+
+## Changing IPv4 Address of Metrics Node in the Multi-Node Cluster
+
+You can change the IPv4 address of the metrics node in an existing multi-node cluster using the maintenance shell. Ensure that all the nodes are in **Operational** status before you change the IPv4 address of the metrics node. For more information, see [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_01000.html#reference_fjp_2qs_shb). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Although it is possible to change the IPv4 address of the metrics node by replacing the node, this option will result in loss of metrics data. 
+
+* * *  
+  
+---|---  
+  
+## Troubleshooting Add Node Issues During Multi-Node Cluster Configuration
+
+The following table lists some of the error messages you may encounter while adding nodes to configure a multi-node cluster and the possible resolution for each of them. 
+
+Table 1. Appliance Multi-Node Cluster Configuration Errors and Possible Resolutions Errors |  Possible Resolutions  
+---|---  
+Primary node appliance version does not meet the <version> requirements.  |  **Note** |  <version> is variable and serves as a placeholder text here.   
+---|---  
+The OVA version of the secondary node must be at least 1.1.1-0 and must be less than or equal to the appliance version of the primary node. For example, if you are using OVA version 1.1.1-0 for the secondary node, then the primary node must be running on an appliance release version 1.1.1-0 or higher.   
+Configuring a multi-node cluster is supported only for appliances deployed on <hypervisor list> hypervisors.  |  **Note** |  <hypervisor list> is variable and serves as a placeholder here.   
+---|---  
+The primary node and all secondary nodes must be deployed on a supported hypervisor. Currently, only VMware ESXi is supported.  
+Primary node disk size is not adequate for adding a secondary node. |  The primary node must meet the disk size requirements. For more information, see [Managing Resources for Intersight Virtual Appliance Deployments](b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_0111.html#managing-resources-for-appliance-deployments).   
+Secondary node must be installed on appliance installer <version> or later.  |  **Note** |  <version> is variable and serves as a placeholder text here.   
+---|---  
+The secondary node must be installed with OVA version 1.1.1-0 or higher in order to add it to the primary node.  
+  
+## High Availability and Disaster Recovery for Cisco Intersight Virtual Appliance
+
+Cisco Intersight Virtual Appliance supports migration architectures for High Availability (HA) and Disaster Recovery (DR). 
+
+The following requirements must be met to successfully migrate Intersight Virtual Appliance.
+
+  * Intersight Virtual Appliance has a Fully Qualified Domain Name (FQDN). To migrate Intersight Virtual Appliance, the FQDN (hostname) of the appliance must remain the same. However, the IP address and DNS/NTP of the appliance can be changed during the recovery process. 
+
+  * You can migrate the appliance from one site to another as long as the FQDN is reachable from the claimed end-point. This allows the backup taken from one site to be restored on another site. 
+
+  * Network connectivity between Intersight Virtual Appliance and its managed endpoints must be maintained.
+
+
+### High Availability for Intersight Virtual Appliance
+
+You can leverage any vendor-provided solution to provide High Availability (HA) capabilities in Intersight Virtual Appliance.
+
+**Intersight Virtual Appliance deployed on VMware vSphere** — Intersight Virtual Appliance supports VMware High Availability to ensure non-disruptive operation of the appliance. For more information about VMware HA, refer to the relevant documentation on VMware’s website. 
+
+**Intersight Virtual Appliance deployed on Microsoft Hyper-V Server** — Intersight Virtual Appliance supports Microsoft Hyper-V High Availability to ensure non-disruptive operation of the appliance. Microsoft Hyper-V offers the Failed-Over Clustering High Availability solution to protect the workloads running on the host servers, thereby protecting the appliance. Failover Clustering feature allows users to experience minimum disruptions in service. For more information about Microsoft Hyper-V HA, refer to the relevant documentation on Microsoft’s website. 
+
+**Intersight Virtual Appliance deployed on KVM Hypervisor** — KVM is supported by multiple Operating Systems (OS) vendors. The most common OS vendors are Red-Hat Virtualization and Ubuntu. For specific solutions for High Availability, refer to the documentation provided by the OS vendor. 
+
+**Intersight Virtual Appliance deployed on Nutanix AHV** — Intersight Virtual Appliance supports Nutanix AHV High Availability to ensure non-disruptive operation of the appliance. For more information about Nutanix HA, refer to the relevant documentation on Nutanix’s website. 
+
+### Disaster Recovery for Intersight Virtual Appliance
+
+For disaster recovery, you can use the existing Backup and Restore functionality in Intersight Virtual Appliance or other third-party solutions. 
+
+**Backup and Restore in Intersight Virtual Appliance**
+
+Cisco strongly recommends taking periodic backup of Intersight Virtual Appliance.
+
+For information on backing up Intersight Virtual Appliance, see [Backing Up Data](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_settings_dashboard.html#id_93773). 
+
+For information on restoring Intersight Connected Virtual Appliance, see [Recovering Intersight Connected Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7). 
+
+For information on restoring Intersight Private Virtual Appliance, see [Recovering Intersight Private Virtual Appliance](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18). 
+
+**Third-Party Disaster Recovery Solutions**
+
+For disaster recovery configuration of the virtual machine, you can use any vendor-provided solutions to augment the DR capabilities. Refer to the vendor-specific documentation for configuration details. 
+
+**VMware DR Solutions**
+
+  * **VMware Snapshots** — In addition to the Intersight Virtual Appliance Backup and Restore functionality, VMware also provides VM snapshot for preserving the state and data of the virtual machine. Preserving the state includes the VM’s power state, and preserving data includes all the files including the disk, memory, and other devices' virtual network interface cards. It is highly recommended that you power-off the appliance (VM) before you take the VM snapshot. 
+
+When snapshotting a multi-node cluster Appliance, **all** nodes must be snapshotted. The complete set of snapshots represent the state of the overall Intersight Virtual Appliance, even though it happens to be spread across multiple VMs. It is highly recommended that you power down all nodes and then snapshot them while powered off as this guarantees a consistent set of snapshots. When reverting the Intersight Virtual Appliance to an earlier set of VM snapshots, **all** snapshots must be restored simultaneously. You cannot restore only some of the snapshots. 
+
+For more information about VM snapshot, refer to the relevant documentation on the VMware website.
+
+  * **Intersight Virtual Appliance deployed on VMware vSphere** — VMware provides multiple solutions for DR: 
+
+  * VMware-SRM (VMware Site Recovery Manager)
+
+  * VMware-VRS (VMware vSphere Replication) 
+
+
+**Microsoft Hyper-V DR Solutions**
+
+Microsoft Hyper-V includes a set of built-in features that provides an efficient VM disaster recovery. Hyper-V virtual machine DR can be performed either by backing up or replicating VMs. Both options have certain aspects that should be considered when creating a DR plan. For more information, refer to the relevant documentation on the Microsoft website. 
+
+**KVM Hypervisor DR Solutions**
+
+KVM is supported by multiple Operating Systems (OS) vendors. The most common OS vendors are Red Hat Virtualization and Ubuntu. For DR-specific solutions for Intersight Virtual Appliance deployed on KVM, refer to the documentation provided by the OS vendor. 
+
+For other approved Third-Party DR solutions, refer to the installation document of the Third-Party.
+
+## Logging In to Intersight Virtual Appliance
+
+### Logging In to Intersight Virtual Appliance
+
+After installing Intersight Virtual Appliance, you can log into the appliance as a user in one of the methods detailed below. The LDAP/AD and SSO tabs appear after you configure LDAP settings or SSO for the account. 
+
+![](/c/dam/en/us/td/i/300001-400000/300001-310000/307001-308000/307811.jpg)
+
+  * **Local User** —Use **admin** as the username and use the same password that you set at the time of registering the appliance. If the password you set at the time of registering is weak, Intersight prompts you to change your password to a stronger one. After a successful reset to a strong password, you are directly logged into the appliance. Intersight supports only one local user (admin). 
+
+  * **LDAP/AD** —Select the LDAP domain that you have configured, enter a **Username** or **Email** and the password that you have set up on the LDAP server. The username you use to log in must be the same as the sAMAccountName that you configure for the user in the LDAP server. For more information see LDAP Configuration, Add Users, and [Add Groups](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#id_93931). 
+
+  * **SSO** —Enter the email ID that you have used to set up SSO in the Identity Provider. Single Sign-On (SSO) authentication enables you to use a single set of credentials to log in to multiple applications. For more information about SSO, see [Setting up SSO](https://intersight.com/help/resources/sso_in_intersight_overview#overview_of_single_sign_on_\(sso\)_with_cisco_intersight). 
+
+
+**For Local User Only** —If the local user login fails because of an incorrect username or password, details of the failed login information will be logged in Audit Logs. You will be able to view the details of the failed login, in Audit Logs, after you successfully log into the appliance. 
+
+## Creating an Appliance Account for Downloading Software Packages
+
+To complete an Intersight Private Virtual Appliance deployment, or manually update Intersight Connected Virtual Appliance, you will need to access the Appliance Account so that you can download the Intersight Virtual Appliance, Hyperflex, UCS Director, and HCI software packages.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+It is highly recommended that you check the Appliance Account regularly for updates and remain on the latest version of the Intersight Virtual Appliance software, which is continuously enhanced with new features and improvements.  It is also important to note that only the latest major release version ("N") and the three previous major versions ("N-1," "N-2," and "N-3") are supported. Additionally, patch release versions for each supported major release are also supported. For example, if the latest major release is version 1.1.3-0, then: 
+
+  * Supported major release versions include 1.1.3-0, 1.1.2-0, 1.1.1-0, and 1.1.0-0.
+  * Supported patch release versions include 1.1.3-1, 1.1.2-1, 1.1.2-2, 1.1.2-3, and 1.1.1-1.
+
+
+* * *  
+  
+---|---  
+  
+Use the steps in this task to create an Appliance Account:
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log in to <https://www.intersight.com/pvapp> using your Cisco ID. If you do not have a Cisco ID, you can create one [here](https://id.cisco.com/signin/register).  **Note:** You will need to log into <https://www.intersight.com/pvapp> only to create an Appliance Account. After you have created the Appliance Account, you can access it by logging into [Intersight](https://intersight.com).   
+---|---  
+**Step 2** |  Accept the General Terms and click Next.   
+**Step 3** |  Enter a name for the Appliance Account in the Appliance Account Creation screen.   
+**Step 4** |  Click Create.  After the Appliance Account is successfully created, you can log into [Intersight](https://intersight.com) to access the account and download the required Intersight Private Virtual Appliance, HyperFlex, or Cisco UCS Director software packages.  To download Cisco UCS Server Firmware and Cisco UCS Server Configuration Utility, go to [Cisco Software Central](https://software.cisco.com/).  |  **Note** |  Account Administrators can enable users and groups to be able to access any of the Appliance Accounts that have been created. For more information on how to add users and groups, see [Adding a User](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#id_93932) and [Adding a Group](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#id_93931).   
+---|---  
+**Note** |  You can configure email notifications to stay current with software updates for Intersight Virtual Appliance. For more information, see [Configuring Email Notifications for Software Updates in Intersight Virtual Appliance](https://intersight.com/help/appliance/getting_started/software_downloads/configure_email_notifications_software_download).   
+---|---  
+  
+* * *
+
+## Downloading Software Packages for Intersight Virtual Appliance
+
+Use the steps in this task to download Intersight Virtual Appliance, UCS Firmware, Hyperflex, UCS Director, and HCI software packages. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+To download Cisco UCS Server Firmware and Cisco UCS Server Configuration Utility, go to [Cisco Software Central](https://software.cisco.com/). 
+
+* * *  
+  
+---|---  
+  
+### Before you begin
+
+Ensure that you have created an Appliance Account. If you have not created an Appliance Account, see [Creating an Appliance Account for Downloading Software Packages](https://intersight.com/help/appliance/getting_started/software_downloads/creating_an_appliance_account). 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into [Intersight](https://intersight.com) using your Cisco ID. If you do not have a Cisco ID, you can create one [here](https://id.cisco.com).   
+---|---  
+**Step 2** |  Select the account that you created to access the Appliance Account.  The Software Download page is displayed.   
+**Step 3** |  Click Software Catalog.  You can download the required software packages from the tabs displayed on this page. You can also create custom tabs by clicking on the + icon.  From the Appliance tab, you can download the following appliance packages: 
+
+  * Intersight Appliance Software Bundle—Appliance software bundles such as 1.1.0-0 and 1.1.1-0. Use software bundles for new installations as well as updating existing appliances to a newer software version. 
+  * Intersight Appliance Patch Bundle—Appliance patch bundles such as 1.1.0-1, 1.1.0-2, 1.1.1-1, and 1.1.1-2. Use patch bundles to update existing Intersight Virtual Appliance that meets the software version criteria. 
+  * Intersight Appliance Intelligence Bundle—Use intelligence bundles to update Intersight intelligence such as Hardware Compatibility List (HCL) and Advisories as soon as it becomes available, independent of the appliance software update schedule. 
+
+For more information about appliance patch releases, see [Intersight Virtual Appliance Patch Releases](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_02.html#appliance-versioning-scheme).  The My Download tab displays information about all your downloads as well as the latest version of the software that is available for you to download. In addition, you can locate the logs of all the downloads in Audit Logs for your appliance.  You can proceed to upload the software onto the appliance. For more information, see Uploading Software Packages for Intersight Private Virtual Appliance.  After uploading the software packages, you can install them on the claimed targets. To upgrade connector packs on Cisco UCS Director targets, see [Upgrading Connector Packs on UCS Director Instances](https://intersight.com/help/appliance/resources/connector-pack-upgrade-UCSD).  |  **Note** |  The ESXi software package is also downloaded as part of the Hyperflex software package. Hence, you do not have to download a separate ESXi software package.   
+---|---  
+  
+* * *
+
+## Uploading Software Packages for Intersight Private Virtual Appliance
+
+Intersight Private Virtual Appliance is intended for environments where you operate data centers in disconnected (air gap) mode. Hence, you must download software packages from either the Cisco Software Central site or by accessing the Appliance Account on [Intersight](https://intersight.com), and then uploading them on to the appliance. 
+
+Use this procedure to upload software packages for your Private Virtual Appliance.
+
+### Before you begin
+
+Ensure that you have downloaded the required software packages as follows:
+
+  * To download Cisco UCS Server Firmware and Cisco UCS Server Configuration Utility, go to [Cisco Software Central](https://software.cisco.com/). 
+
+  * To download Cisco HyperFlex, Cisco UCS Director or Intersight Private Virtual Appliance software packages, you will need to access your Appliance Account. For more information, see Creating an Appliance Account for Downloading Software Packages and Downloading Software Packages for Intersight Virtual Appliance. 
+
+
+### Procedure
+
+* * *
+
+**Step 1** |  From the left navigation panel, click Software Repository > Software.   
+---|---  
+**Step 2** |  Click Upload Software.  The Upload Software screen is displayed. 
+
+  1. Select either Local Machine or Network Share, depending on where you saved the software packages, and then click Next. 
+  2. For the Network Share option, enter the protocol and enter details of the remote server from where you want to copy the file. 
+  * Protocol—Communication protocol used for file transfer. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol), and SFTP (Secure File Transfer Protocol). 
+  * Server IP/Hostname—The network share server from where the file is copied 
+  * Port—TCP port to use 
+  * Location—Directory where the file to be copied is stored 
+  * Filename—Name of the file to be copied from the network share 
+  * Username—Username for authenticating with the network share 
+  * Password—Password for authenticating with the network share 
+
+You can track the upload progress by clicking on the **Requests** icon. When the upload process completes successfully, the software that you uploaded will appear on the Software Repository page.   
+  
+* * *
+
 ---
 
 ## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html
+
+# Dashboard Settings 
+
+  * Configuring a Banner Message for Displaying Before the Login Screen
+  * Backing Up Data
+  * Configuring Metrics Collection
+  * Data Collected from Intersight Connected Virtual Appliance
+  * Updating Intersight Intelligence for Intersight Connected Virtual Appliance
+  * Cloud Connection for Intersight Connected Virtual Appliance
+  * Configuring DNS
+  * Configuring NTP
+  * Configuring Syslog
+  * Configuring SMTP Settings for Email Notifications
+  * Configuring Email Notifications for Intersight Virtual Appliance Software Updates
+  * Single Sign-On with Intersight Virtual Appliance
+  * Certificates
+  * Configuring LDAP Settings
+  * Configuring Password Policy for Local Users
+  * Adding a User
+  * Locking Out Local Users Accounts
+  * Resetting the Password for the Local Admin User
+  * Resetting the Password of Local Users
+  * Adding a Group
+  * Adding a Role
+  * Adding an Organization
+  * Generating and Managing API Keys
+  * OAuth2 Tokens
+  * Device Connector Requirements
+  * Configuring Account Settings
+  * Intersight Virtual Appliance Monitoring
+  * Intersight Virtual Appliance Settings
+
 
 ## Configuring a Banner Message for Displaying Before the Login Screen
 
@@ -1130,9 +6719,1435 @@ You can configure a banner message in Intersight Virtual Appliance. When enabled
   
 * * *
 
+## Backing Up Data
+
+Backing up Intersight Virtual Appliance regularly is essential. Without regular backups, there is no automatic way to reconstruct configuration settings and recreate profiles and policies. 
+
+You can use the following methods to protect Intersight Virtual Appliance:
+
+  * VM snapshots—A VM snapshot is not a true backup unless you also copy it to a remote location. Snapshots are quick to create and restore, but they can become corrupted if they are taken while the VM is running. Always create application backups in addition to VM snapshots. 
+
+  * Application backups—Application backups capture the database and other data that are required to fully restore the appliance. If an application backup completes successfully, you can recover the appliance without the corruption risks that are associated with VM snapshots. 
+
+
+You can perform a backup once a day using a scheduled backup or create a backup on demand. Intersight Virtual Appliance supports full-state backups that can be saved to a remote server or to a local machine. In a site failure or other disaster recovery scenario, you can use the backup file to perform a full-state recovery of the appliance. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * Backup files do not include metrics data. To back up metrics data, take a snapshot of the metrics node VM.
+  * When you capture a snapshot of the Intersight Virtual Appliance VM, note the following storage size specifications:
+  * **Without Metrics Collection** —The snapshot size on disk is 180 GB. 
+  * **With Metrics Collection Enabled** —The snapshot size on disk exceeds 1 TB. 
+For more information, see [Supported Configuration Limits](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_appliance_overview.html#reference_d1b_nhj_sjb). 
+  * There is no difference between backups on a multi-node appliance and backups on a single-node appliance. Backup occurs at the cluster level and not at the node level. The backup originates from one node, but it is not restricted to a specific node. 
+
+
+* * *  
+  
+---|---  
+  
+Restore Requirements—An appliance installer is required to restore the appliance from a backup. If a backup is taken from appliance release version N, it can only be restored using the latest installer that is older than or equal to version N. For example: 
+
+  * If the backup of your appliance release version is 1.1.0-0, you need the latest appliance installer version that is older than or equal to 1.1.0-0, which is 1.1.0-0. 
+
+  * If the backup of your appliance release version is 1.1.1-1, you need the latest appliance installer version that is older than or equal to 1.1.1-1, which is 1.1.1-0. 
+
+
+Cisco recommends that you retain the appliance installer that corresponds to each backup you create. For more information, see [Recovering Intersight Connected Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7) and [Recovering Intersight Private Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18). 
+
+You can use one of the following backup options:
+
+  * Create Backup—Creates an on-demand full-state backup and saves it to a remote server or a local machine. If the backup file is saved to a local machine, note that the maximum number of downloadable local backups is five. 
+
+  * Backup Schedule—Configures a scheduled full-state backup and saves it to a remote server. 
+
+  * Backup Now—Initiates an immediate backup that runs independently of the configure backup schedule. This option can be triggered only when a **Backup Schedule** is already configured. 
+
+
+  * Create Backup
+  * Scheduling Backup
+  * Backup Retention Scenarios
+
+
+### Create Backup
+
+You can create a full-state backup of the Intersight Virtual Appliance and save the file to a remote server or a local machine. If you save the backup file to a local machine, note that the maximum number of downloadable local backups is five. When you attempt to create a sixth backup, the UI displays a confirmation prompt. After you acknowledge the prompt, the system deletes the oldest local backup entry from the backup table to accommodate the new backup. 
+
+To create a backup:
+
+#### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > System > Backups.   
+**Step 3** |  Click Create Backup.  The Backup window displays.   
+**Step 4** |  Enter the following details:
+
+  * Type—Backup destination type. Intersight Virtual Appliance currently supports SCP (Secure Copy Protocol), SFTP (Secure File Transfer Protocol), CIFS (Common Internet File System), and Local for backup.  Depending on the type that you select (SCP, SFTP, CIFS, or Local), enter the following fields as needed:
+  * Remote Port—Remote TCP port on the backup server. This field applies only to SCP and SFTP. 
+  * Remote Host—Remote host where the backup file is saved. Hostname and IP address are supported. 
+  * Remote Path—Directory where the backup file is saved.  |  **Note** |  CIFS share names must contain only alphanumeric characters and must conform to the regular expression _^(\w+)(/\w+)*/?$_. They cannot contain spaces. When you specify folders under the CIFS share, use a forward slash (_/_) as the separator. For example, _backupshare/Intersight/Daily_ and _backupshare/Monthly_.  Do not include a leading forward slash in the CIFS share name. For example, enter share1/subdirectory1, not /share1/subdirectory1.   
+---|---  
+  * File Prefix—Prefix for the backup file name. This is a mandatory field for local backup. 
+
+  * Username—Username for authenticating to the backup server. 
+
+  * Password—Password for authenticating to the backup server. 
+
+  * Password Confirmation—Reenter the password to confirm it. 
+
+
+  
+**Step 5** |  Click Create.  If you select Local, the backup file is generated on the appliance and then made available for download through your browser.   
+  
+* * *
+
+### Scheduling Backup
+
+Backup Schedule enables you to configure a periodic backup of the data in Intersight Virtual Appliance. You cannot schedule local backups. 
+
+#### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > System > Backups.   
+**Step 3** |  Under Backup Schedule, click Configure.  The Configure Backup Schedule  screen appears.   
+**Step 4** |  Enter the following information to configure a backup schedule.
+
+  * Backup Schedule
+  * Day of Week—Select the day on which to run the backup, or select Daily. 
+  * Time of Day—Specify when the backup runs. This value uses the browser time of your current session and is displayed in your local time zone. 
+  * Backup Destination
+  * Type—Backup destination type. Intersight Virtual Appliance currently supports SCP (Secure Copy Protocol), SFTP (Secure File Transfer Protocol), and CIFS (Common Internet File System).  Depending on your selection (SCP, SFTP, or CIFS), enter the next fields as needed.
+  * Remote Port—Remote TCP port on the backup server. This field applies only to SCP and SFTP. 
+  * Remote Host—Remote host where the backup file is saved. Hostname and IP address are supported. 
+  * Remote Path—Directory location where the backup file id saved.  |  **Note** |  CIFS share names must contain only alphanumeric characters and must conform to the regular expression _^(\w+)(/\w+)*/?$_. They cannot contain spaces. When you specify folders under the CIFS share, use a forward slash (_/_) as the separator. For example, _backupshare/Intersight/Daily_ and _backupshare/Monthly_.  Do not include a leading forward slash in the CIFS share name. For example, enter share1/subdirectory1, not /share1/subdirectory1.   
+---|---  
+  * File Prefix—Prefix for the backup file name. 
+
+  * Username—Username for authenticating to the backup server. 
+
+  * Password—Password for authenticating to the backup server. 
+
+  * Password Confirmation—Reenter the password to confirm it. 
+
+  * Backup Retention—Number of backups to retain. 
+
+Turn on Enable Backup Retention to specify how many backups to retain on the remote server. The default number is 1. You can enter a number from 1 to 100. 
+
+**Note** |  In order for the backup retention limits to function properly while using the SCP protocol, ensure that the SFTP protocol is also enabled on your remote host.   
+---|---  
+  
+For more information regarding the various backup retention scenarios, see Backup Retention Scenarios. 
+
+
+After the initial backup schedule is configured, you can edit or delete it by navigating to Settings > System > Backups.   
+  
+* * *
+
+### Backup Retention Scenarios
+
+The following table describes the various backup retention scenarios and the expected outcomes.
+
+Table 1. Backup Retention Scenarios Backup Retention Scenarios |  Expected Outcomes  
+---|---  
+You enable backup retention, allow backups to accrue, and then disable backup retention. |  The backups taken under the retention policy will not be deleted.  
+You enable backup retention, allow backups to accrue, and then disable backup retention. Now, you re-enable backup retention again.  |  The backups taken when retention was originally enabled will not be affected. Only backups taken after retention has been re-enabled will be part of the retention policy.   
+You change the file path or hostname in the retention policy. |  The backups taken before the change will not be affected. Only backups taken after the policy change will be part of the latest retention policy.   
+You increase the number of backups |  Backups will continue to accumulate as part of the retention policy until the maximum number of backups is reached, and then the oldest backup will be deleted.   
+You decrease the maximum number of backups from X to Y. |  The older backups in the original retention policy will no longer be part of the policy. This means that the retention policy will be implemented only on the most recent backups for the number, Y. The backups before that will remain as-is.  For example: Suppose you had a retention count of 5 and then you decrease the retention count to 3. In this case, the oldest 2 backups in the original retention policy will not be affected. Retention policy will be enabled only on the 3 backups.   
+  
+## Configuring Metrics Collection
+
+Metrics collection within the Intersight Virtual Appliance is disabled by default. After you install or upgrade Intersight Virtual Appliance, to start metrics collection, you must enable metrics collection in the Intersight Virtual Appliance on the Settings > System > Metrics screen. 
+
+In addition, the Metrics screen displays the active server count along with the threshold limits and disk usage. 
+
+After metrics collection is enabled for the Virtual Appliance, you can choose to enable or disable metrics collection on individual servers or all the servers in IMM or UMM domains. You can select the **Collect metrics for new servers** checkbox to automatically enable metrics collection for any new servers added to the domain. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+UMM devices collect only environmental metrics. For more information on metrics collection, see [Supported Metrics Overview](https://intersight.com/apidocs/introduction/supported-metrics-overview/). 
+
+* * *  
+  
+---|---  
+  
+To configure metrics collection, do the following:
+
+  1. Log into Intersight Virtual Appliance as a user with the account administrator role. 
+
+  2. Choose Settings > System > Metrics. 
+
+  3. Click Configure. 
+
+  4. Toggle Enable Metrics to enable metrics collection. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * Enabling metrics collection results in the immediate triggering of metrics gathering from the endpoints.
+  * Disabling metrics collection may result in a delay of up to one hour before the configuration changes are complete, and the collection of metrics stops. 
+
+* * *  
+  
+---|---  
+  5. Select the Collect metrics for new servers checkbox to automatically enable metric collection for new servers added to the IMM or UMM domains. 
+
+  6. To enable metrics collection for all the servers of the IMM or UMM domain, select the corresponding checkbox.
+
+  7. To select individual servers of a domain: 
+
+     1. Click the Edit icon in the Domains column. 
+
+     2. In the Select Servers screen, select the desired servers. 
+
+     3. Click Select. 
+
+  8. Click Configure. 
+
+
+## Data Collected from Intersight Connected Virtual Appliance 
+
+Cisco Intersight Connected Virtual Appliance works in a connected mode and requires connectivity to hosted Intersight services. You must register the appliance with Intersight to manage your UCS or HyperFlex infrastructure. 
+
+If you enable the option to allow collecting additional information, Intersight may collect other details about the managed systems, beyond what is listed in the table Minimum Data Collected. When any of the options under Data Collection in the Security & Privacy screen of the appliance UI is enabled, Cisco reserves the right to collect more data for diagnosis and proactive troubleshooting purposes. 
+
+The tables below list the details of the minimum data collected by Intersight: 
+
+Table 2. Minimum Data Collected Component |  Details of Data Collected  
+---|---  
+From Intersight Virtual Appliance | 
+
+  * The appliance ID (Serial Number)
+  * The IP address of the appliance
+  * The hostname of the appliance
+  * The device connector version and public key on the appliance
+
+  
+Appliance Software Auto-Upgrade |  Version of software components or the services running on the appliance  
+Appliance Health | 
+
+  * CPU usage
+  * Memory usage
+  * Disk usage
+  * Service statistics
+
+  
+Licensing |  Server count  
+Information about the endpoint target | 
+
+  * Serial number and PID (to support Connected TAC)
+  * UCS Domain ID
+  * Platform Type
+
+  
+Table 3. Data Collected During One-time Device Connector Upgrade Component |  Details of Data Collected  
+---|---  
+From the endpoint target, only if the one-time device connector upgrade is used  | 
+
+  * The endpoint target type - Cisco UCS Fabric Interconnect, Integrated Management Controller, Cisco HyperFlex System
+  * One or more firmware versions of the endpoint
+  * The serial number of the endpoint target
+  * The IP address of the endpoint target
+  * The hostname of the endpoint target
+  * The endpoint device connector version and the public key 
+
+  
+  
+For information about Proactive Support, see [Proactive Support enabled through Intersight](https://intersight.com/help/appliance/features/cisco_intersight/settings#proactive_support_enabled_through_intersight). 
+
+For detailed information about the Proactive Support workflow, supported faults, configuring the advanced options, setting tags, and caveats, see [Proactive RMA for Intersight Connected Devices](https://www.cisco.com/c/en/us/support/docs/servers-unified-computing/intersight/215172-proactive-rma-for-intersight-connected-d.html). 
+
+### Tech Support Diagnostic File Collection
+
+When you open a case with Cisco TAC, Intersight collects Tech Support diagnostic files to assist with an open support case. The data collected could include (but is not limited to) hardware telemetry, system configuration, and any other details which aid in active troubleshooting of the TAC case. Tech Support collection is allowed to occur regardless of data collection options you specify. However, this information is not collected arbitrarily, but only when you open a case for a system requiring assistance with the system's support. 
+
+## Updating Intersight Intelligence for Intersight Connected Virtual Appliance 
+
+Intersight Connected Virtual Appliance allows you to update Intersight intelligence such as Hardware Compatibility List (HCL) as soon as it becomes available, independent of the appliance software upgrade schedule. Updates for HCL include compatibility validation results and compliance status for server model, processor, firmware, adapters, operating system and drivers. For more information about HCL, see [Compliance with Hardware Combability List (HCL)](https://intersight.com/help/resources#compliance_with_hardware_compatibility_list_\(hcl\)). 
+
+Use the following instructions to update Intersight intelligence:
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.   
+---|---  
+**Step 2** |  Choose Settings > System > Appliance Updates.   
+**Step 3** |  Click Update Settings.  The Update Settings window displays.   
+**Step 4** |  Select Update Intersight Intelligence Immediately.   
+**Step 5** |  Click Save.   
+  
+* * *
+
+## Cloud Connection for Intersight Connected Virtual Appliance
+
+Cisco Intersight Connected Virtual Appliance is connected to Cisco Intersight through an embedded device connector. The device connector provides a secure way for the connected targets to send information and receive control instructions from Cisco Intersight, using a secure Internet connection. You can view the following details of the connection to the Cloud and also configure the settings from the Device Connector screen. 
+
+  1. In the appliance UI, choose Settings > Networking > Cloud Connection. 
+
+The Cloud Connection window displays. 
+
+You can view details such as Device ID, Claim Code, Access Mode, and device connector status. For more information about configuring the device connector, status, and error conditions, see Configuring Device Connector in Resources. 
+
+  2. Click Settings and configure the following settings. 
+
+  * General—Enable Device Connector so that you can claim the appliance and leverage the capabilities of Cisco Intersight, and select an Access Mode. If the Device Connector option is disabled, no communication is allowed to Cisco Intersight. Click Save. 
+
+  * Proxy Configuration
+
+  * Enable Enable Proxy. Add the Proxy Hostname or IP Address, and the Proxy Port. The proxy port must be in the range from 1 and 65535. 
+
+  * Enable Authentication and add a Username and Password for Authenticated Proxy. The proxy setting is automatically reset after restoring, and you must manually reset the appliance proxy. 
+
+Click Save. 
+
+  * Certificate Manager—Import proxy certificates. 
+
+
+## Configuring DNS 
+
+This task describes how to configure DNS settings in Cisco Intersight Virtual Appliance.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Wildcard DNS sinkholing is not supported in Intersight Virtual Appliance.
+
+* * *  
+  
+---|---  
+  
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > Networking > DNS.  The details of the existing DNS settings display.  
+**Step 3** |  Click Edit DNS.  Configure DNS window displays.   
+**Step 4** |  Update the following properties. 
+
+  * Preferred IPv4 DNS Server—Provide the IP address of the primary DNS server. 
+  * Alternate IPv4 DNS Server—Provide the IP address of the secondary DNS server. 
+
+  
+**Step 5** |  Click Save.   
+  
+* * *
+
+## Configuring NTP 
+
+It is mandatory to have at least one Network Time Protocol (NTP) server configured in Intersight Virtual Appliance to enable synchronizing the time on the appliance with the NTP servers. The authentication schema for the NTP servers can be either unauthenticated or authenticated. You can add the IP Addresses or the DNS names of up to three unauthenticated NTP servers during the initial setup of the appliance. Once the appliance is fully installed, you can edit the NTP server settings to include any combination of authenticated and unauthenticated NTP servers (up to three total). 
+
+Use the information in the following task to configure an NTP server.
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Cisco Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > Networking > NTP.  The details of the existing NTP settings display.  
+**Step 3** |  Click Configure.  Configure NTP window displays.   
+**Step 4** |  Click Add NTP Server, to add a new NTP server. 
+
+  1. Click +. 
+  2. Enter a server hostname or an IP address for the Server Name and click Save to save the NTP server as an unauthenticated one. 
+  3. Enable the Enable NTP Authentication button to add the NTP server as an authenticated one.  Enter the following information.
+  * Server Name—Server hostname or IP address 
+  * Symmetric Key Type—Type of symmetric key to use for this server 
+  * Symmetric Key ID—Positive integer that identifies a cryptographic key used to authenticate NTP messages 
+  * Symmetric Key Value—Value of the symmetric key 
+  4. Click Save.  To edit existing NTP server configurations, click + on any of the configured NTP servers, make your edits as needed, and save the edited configurations. 
+
+  
+  
+* * *
+
+## Configuring Syslog
+
+Intersight Virtual Appliance provides you with the ability to configure up to five syslog servers. When you enable syslog server in Intersight Virtual Appliance, you can export the following types of logs and alarms based on the details provided when configuring the syslog server. 
+
+  * Web Server Logs—Web server access logs for all transactions involving user session activities. 
+
+  * Audit Logs—Audit logs for events such as login, logout, created, modified, and deleted, that are displayed in the Audit Logs screen in Intersight Virtual Appliance. 
+
+  * Alarms —All Intersight alarms, including appliance alarms, that provide alerts about a failure (fault) in the managed target or when a threshold has been crossed. For information about alarms in Intersight, see [Alarms](https://intersight.com/help/saas/my_dashboard/dashboard_management#alarms). For more information about alarms in Intersight Virtual Appliance, see the Alarms in Intersight Virtual Appliance table in Appliance Monitoring. 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+  * In Intersight Virtual Appliance, you can use the TLS, UDP, and TCP protocols to provide secure communication to the syslog server. However, it is strongly recommended that you use **only** TLS in your production environment. 
+  * UCS C-Series server-related faults such as power supply and fan failures are not forwarded by Intersight Virtual Appliance to a syslog server. Please configure the syslog server on the UCS C-Series CIMC side to handle forwarding of the UCS C-Series events and faults. 
+
+
+* * *  
+  
+---|---  
+  
+To configure a syslog server in Intersight Virtual Appliance, do the following:
+
+### Before you begin
+
+Ensure that you have added the certificate for the syslog server where you want to send the web server log, audit logs, and alarms in Intersight Virtual Appliance. This certificate is used to verify TLS communication with the syslog server. For more information about how to add certificates, see Certificates. 
+
+  * If you plan on using FQDN in the Hostname/IP Address field while configuring the syslog server, set up the certificate for the syslog server with a proper FQDN entry in the Common Name or the DNS entry in the Subject Alternative Names. Enter this information in the Hostname/IP Address field while configuring the syslog. 
+
+  * If you plan on using either IPv4 or IPv6 address in the Hostname/IP Address field while configuring the syslog server, set up the certificate for the syslog server with the IP address in the Common Name. Enter this information in the Hostname/IP Address field while configuring the syslog server. 
+
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > Networking > Syslog.  You can view the details of the existing syslog settings.  
+**Step 3** |  Click Add Syslog Server.  The Add Syslog Server window displays.   
+**Step 4** |  Update the following fields as needed.
+
+  * Enable Syslog Server—When enabled, the Web Server Access Logs, Audit Logs, and Alarms are sent to the configured syslog server as per the configuration details provided in the Hostname/IP Address, Port, Protocol, and Minimum Severity of Alarms to Report fields. Note that the Minimum Severity of Alarms to Report field is applicable only for Alarms. 
+  * Web Server Access Logs—When enabled, you will be able to export the web server access logs for all transactions involving user session activities.  |  **Note** |  It is highly recommended that you do not enable this option as it will quickly overpopulate your log files. This option is mainly made available for customers that require the ability to export web server access logs.   
+---|---  
+  * Audit Logs—When enabled, the audit logs for events such as login, logout, created, modified, and deleted, that are displayed on the Audit Logs screen are sent to the configured syslog server. 
+
+  * Alarms—When enabled, the Intersight alarms, including appliance alarms, that provide alerts about a failure (fault) in the managed target or when a threshold has been crossed are sent to the configured syslog server. 
+
+  * Hostname/IP Address—Enter either an FQDN, an IPv4 address, or an IPv6 address. This information must match the details that you provided in the certificate for the syslog server. 
+
+  * Port—Port to use for the syslog server 
+
+  * Protocol—Select a protocol from the drop-down list. It is strongly recommended that you use **only** TLS in your production environment. 
+
+  * Minimum Severity of Alarms to Report (Applicable for Alarms Only) —Select either Warning, Info, or Critical as the minimum severity level for alarms to be reported. When the alarms of selected severity and above are cleared at the endpoints, the notification for the same also gets exported to the syslog server. 
+
+
+  
+**Step 5** |  Click Add.   
+  
+* * *
+
+## Configuring SMTP Settings for Email Notifications
+
+Networking systems and software frequently create alarms that indicate a concerning event, or a trend has been detected. Email notifications automatically poll for recent alarms, determine their severity, and direct concerning ones to a user's email address based on a rule you create. 
+
+To configure email notifications in Intersight Virtual Appliance, perform the following two tasks:
+
+  * Configure Simple Mail Transfer Protocol (SMTP) settings
+
+  * Create notification rules
+
+
+**Configuring SMTP settings**
+
+To configure SMTP settings, perform the following steps:
+
+  1. Log into Intersight Virtual Appliance as a user with account administrator role.
+
+  2. Choose Settings > Networking > SMTP. 
+
+You can view the details of the existing SMTP settings. If this session is your first instance of configuring SMTP for email notifications, the appliance displays default or no values in the fields. 
+
+  3. Click Configure. 
+
+  4. Enable the SMTP toggle button to configure email notifications.
+
+  5. In the SMTP Server Address field, type the IP address or domain name of the server in your domain that sends email notifications.
+
+  6. In the SMTP Port list, type or select the port number of the server that performs email notification forwarding. 
+
+Port 25 is the standard SMTP Relay port. Ports 465 or 587 are secure mail routing ports. The value range for port selection is 1 through 65535, and the default is 25. 
+
+  7. In the SMTP Sender Name field, type the email address of the user that sends email notifications.
+
+  8. (Optional) Enable the TLS toggle button.
+
+TLS is a form of authorization that provides security by verifying the certificate authority (CA) of the SMTP email server. To apply TLS security, select the CA you want to apply to from the list in the TLS region. 
+
+  9. (Optional) Enable the Authentication toggle button, if your SMTP server requires authentication, and provide the username and password used to authenticate to the SMTP server. 
+
+  10. Click Configure. 
+
+
+Once the configuration is complete, you can verify the SMTP settings by sending a test email. 
+
+  1. Click Test on the SMTP configuration screen. 
+
+  2. Add a valid email address in the Test pop-up screen for sending a test email. 
+
+  3. Click Send. 
+
+
+The result of trying to send a test email is displayed on the screen. If it is successful, you can confirm that you received the test email with the subject Cisco Intersight SMTP Configuration Test Email at the specified email address. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+The Test button is enabled only after the SMTP settings are configured. Also, emails are sent only for successful validations. 
+
+* * *  
+  
+---|---  
+  
+Next, complete the steps for creating notification rules.
+
+**Creating Notification Rules**
+
+Notifications are based on a rule you set for incoming alarms.
+
+To configure an email notification rule, perform the following steps:
+
+  1. In the appliance UI, choose Settings > System > Email Notifications. 
+
+You can view the notification rule list populated with the existing rules.
+
+Each rule is used as both a condition for notification generation (Alarms column) and a notification destination (Email column). If this session is your first time creating a notification rule for the email address set in the SMTP Sender Name in the Configure SMTP screen, no existing rules display in the list. The list displays the following columns: 
+
+  * Name—The name of the rule. 
+
+  * Enabled—The administrative state of the rule. A Yes setting indicates the rule is active and will generate email notifications when the rule conditions are met. A No setting indicates the rule is inactive and will not generate email notifications. 
+
+  * Email—The email address to which notifications will be sent. 
+
+  * Alarms—The required severity of an event for it to generate a notification. 
+
+  * Last Updated—The last time the notification was configured, either during a creation or an editing session. The timestamp is in the following format: <_day_ >:<_hour_ >:<_minute_ >. 
+
+  2. Click the Add Rule button in the upper right portion of the screen. 
+
+The Add Rule screen displays. 
+
+  3. To configure a rule, the Enable Rule toggle button MUST be enabled. 
+
+  4. In the Name field, type a string of up to 32 characters that you want to be the name of the rule.
+
+  5. In the Email field, type an email address to which you want generated email notifications sent. Click the (+) icon to enter additional email addresses for other destinations. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+You can create up to three email destinations for email notifications.
+
+* * *  
+  
+---|---  
+  6. In the Severity region, select an urgency level of an alarm you want to be reached for a notification email to be sent.
+
+The urgency levels for alarms are Critical (the most urgent), Warning (second-least urgent), and Info (no urgency). You can select one or multiple urgency levels. In the case of multiple Severity settings, the least urgent level will be the one, when reached, that triggers an email notification to be sent. 
+
+  7. Click Add. 
+
+The following warning message is displayed.
+         
+         WARNING! Email notifications may contain sensitive data. Ensure the emails contain no typos and are approved to receive data.
+
+  8. Click Continue. 
+
+Intersight returns to the Notifications screen displaying the new rule in the list.
+
+
+**Limitations**
+
+Note the following restrictions for configuring email notifications.
+
+  * You can configure up to three emails per rule.
+
+  * You can configure up to five rules per account.
+
+  * Events are collected in a sliding time window of 10 seconds. Intersight initially waits for a 10-second period where it polls for alarms. If an alarm or multiple alarms are detected in this initial period, Intersight waits an additional 10-second period to detect alarms. If it detects alarms in this period, additional periods occur until no alarms are detected. Once an additional 10-second period elapses with no alarms detected, Intersight bundles the discovered alarms into an alarm group and sends an email containing the alarms to the specified address. 
+
+  * An email address can be associated with up to 100 alarms, and the number of emails sent depends on how large the alarm group is. If an alarm group contains more than 100 alarms, an additional email is sent. Some events may generate 1,000 alarms. In that case, 10 emails are sent. 
+
+
+## Configuring Email Notifications for Intersight Virtual Appliance Software Updates
+
+Intersight Virtual Appliance allows you to configure email notifications when a new software update or a new patch update becomes available for installation and when a new software update or a patch update is completed. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Ensure that you have configured SMTP settings before proceeding to configure email notifications for software updates. For information on how to configure SMTP settings, see Configuring SMTP Settings for Email Notifications. 
+
+* * *  
+  
+---|---  
+  
+  1. Log into Intersight Virtual Appliance as a user with an account administrator role.
+
+  2. Choose Settings > System > Appliance Updates. 
+
+  3. Click Update Settings. 
+
+  4. Enable Email Notifications under Software Update Notifications. 
+
+  5. Choose when to send email notifications from the following options:
+
+  * Updates Are Ready to Install
+
+  * Updates Are Complete
+
+  6. Enter up to 3 valid emails.
+
+  7. Click Save. 
+
+
+Based on your selection for the notifications, emails are sent when an appliance software update or a patch update becomes available for installation and when a software update or a patch update is completed. To ensure that the configured users receive email notifications, and the emails do not end up in their Spam folder, it is recommended that the recipients add the sender's email address as per the SMTP configuration settings, to their "**approved senders** " list within their email client. 
+
+## Single Sign-On with Intersight Virtual Appliance
+
+Single Sign-On (SSO) authentication enables you to use a single set of credentials to log in to multiple applications. With SSO authentication, you can log in to Intersight with your corporate credentials. Intersight supports SSO through SAML 2.0, and acts as a service provider (SP), and enables integration with Identity Providers (IdPs) for SSO authentication. 
+
+To set up SSO through the appliance, you must log in to Cisco Intersight Virtual Appliance as a user with administrator role, download the SP metadata, and register your Identity Provider (IdP) in the Intersight Virtual Appliance. 
+
+### **IdP Requirements**
+
+The IdP you add to Intersight must support SAML 2.0 and a service provider initiated SSO. The most commonly used IdPs have different instructions to complete the setup. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+If you have a multi-node cluster setup for Intersight Virtual Appliance or if you are expanding from a single-node configuration to a multi-node cluster configuration, for some IdPs such as Okta you must manually configure the three SSOs, while for other IdPs such as ADFS you can directly import the xml file. For IdPs where the SSO configuration is a manual one, you must configure the three different SSO URLs specified in the metadata file downloaded from the appliance SSO screen. Once the three URLs are configured, you can proceed with the SSO login from any one of the three nodes. 
+
+* * *  
+  
+---|---  
+  
+Additional requirements for a multi-node cluster setup in appliance:
+
+  * SLO (Single Logout) is supported for a multi-node setup in appliance, but there is only one SLO endpoint. If the node specified in the SLO URL is down, then SLO will not work. In this case, you will only be logged out of Intersight. 
+
+  * The IDP initiated SSO works only for the entity node.
+
+
+For more information about setting up SSO with Intersight and examples of adding an Identity Provider, see, [Single Sign On with Intersight](https://intersight.com/help/appliance/resources#single_sign-on_with_intersight). Click [here](https://intersight.com/help/appliance/video#intersight_single_sign-on) to watch a video that shows how to enable Intersight Single Sign-On and set up a custom SAML 2.0 application in an external Identity Provider (IdP) with Intersight. 
+
+## Certificates
+
+To provide secure authentication to external targets (such as LDAP servers), you can add a third-party certificate from a trusted source that affirms the identity of your targets or add a self-signed certificate for secure HTTPS access of the appliance through the browser. 
+
+  * In a future release, Intersight Virtual Appliance will be phasing out support for certificates signed with the SHA-1 hash functions. It is strongly recommended that you upgrade your certificates to use signature algorithms with hash functions that are stronger than SHA-1, such as SHA-256, SHA-384, or SHA-512. 
+
+  * Certificates created for the LDAP server must include Subject Alternative Names (SANs) since the use of Common Name has been deprecated. Certificates without SANs will fail verification, resulting in connectivity issues. 
+
+
+### Trusted Certificates
+
+To provide secure authentication while connecting to external targets, you can add a third-party certificate from a trusted source or a self-signed certificate that affirms the identity of your targets. The third-party certificate is signed by the issuing trusted point, which can be a root certificate authority (CA), an intermediate CA, or a trust anchor that is part of a trust chain that leads to a root CA. 
+
+The Trusted Certificates table view that is accessible from Settings > Authentication > Certificates >Trusted displays the list of certificates that you added in Intersight. 
+
+### Add Certificate 
+
+The following task provides details on how to add trusted certificates in Intersight Virtual Appliance.
+
+  1. Log into Intersight Virtual Appliance as a user with account administrator role.
+
+  2. Choose Settings > Authentication > Certificates > Trusted. 
+
+The following details about the Trusted Certificates are displayed in the table view: 
+
+  * Name—Common name of the CA certificate 
+
+  * Issued By—Certificate issuing authority 
+
+  * Usage—Displays the number of targets using the certificate 
+
+  * Expires—The expiry date of the certificate 
+
+  3. Click Add Certificate to add a trusted certificate. 
+
+  4. Click Browse to select the certificate that is stored in your system and click Save. After the certificate is successfully imported, it is displayed in the Trusted Certificates table view. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Important** | 
+
+* * *
+
+The trusted certificate that you want to import must be in base64 encoded X.509(PEM) format.
+
+* * *  
+  
+---|---  
+
+
+### Adding SSL Certificates
+
+To enable secure HTTPS access of the appliance through the browser, you can generate a Certificate Signing Request and import a certificate, or you can switch to a self-signed certificate. You can access these tasks by navigating to Settings > Authentication > Certificates > SSL. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+While migrating from a single-node deployment to a multi-node cluster configuration, if the SSL certificate is already generated on the single-node deployment, once the migration to the multi-node cluster configuration is complete and the cluster is in a Healthy state, then delete and regenerate the SSL certificate. 
+
+* * *  
+  
+---|---  
+  
+To create a Certificate Signing Request (CSR):
+
+  1. In the appliance UI, choose Settings > Authentication > Certificates > SSL. 
+
+The following details about the **Current Certificate** are displayed: 
+
+  * Name—Common name of the CA certificate 
+
+  * Added By—User that added the certificate to the account 
+
+  * Issued By—Certificate issuing authority 
+
+  * Expires—Expiration date of the certificate 
+
+Click View All to display the View Certificate window. In addition to the details listed above, you can also view these details about the certificate: Fingerprints, Country, Locality, Organization, Organizational Unit, and the details of the Issuer Name, Organization, Common Name, and the Signature Algorithm. 
+
+  2. From the **Action** drop-down menu, select Create CSR. 
+
+The Create Certificate Signing Request wizard displays. Enter the following details as required. 
+
+  * Organization—The legal name of your organization.
+
+  * Organizational Unit—The subdivision of your organization that handles the certificate. For example HR, IT etc.
+
+  * Locality—The city/town where your organization is located.
+
+  * State—The state where your organization is located. 
+
+  * Country—The two-letter country code where your organization is located. For a complete list of the country codes, see [ISO 3166](https://www.iso.org/iso-3166-country-codes.html). 
+
+  * Email Address—An email address used to contact your organization.
+
+  * Modulus—Modulus of the RSA private key used to sign the CSR.
+
+  3. Click Create CSR. 
+
+
+When you click Create CSR, a new Certificate Signing Request (CSR) is generated. You can select one of the following options: 
+
+  * **Download CSR** —Allows you to download and store the CSR locally to obtain a trusted certificate from a Certificate Authority (CA). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Use only the appliance FQDN in the Subject Alternative Names (SAN) field during the certificate-issue request process. Do not enter hostnames or IP addresses in the SAN field while obtaining a trusted certificate for Intersight Appliance and Intersight Assist from a Certificate Authority. 
+
+* * *  
+  
+---|---  
+  * **Delete CSR** —Delete the CSR if you do not want to use it to generate a trusted certificate. 
+
+  * **Apply Certificate** —After the CA issues a certificate, click Apply to paste the contents of the certificate in the **Certificate** field in the Apply Certificate window. You can also click the Upload button and upload a certificate. Click Apply to complete the process. The CA-issued certificate can be in .csr, .pem or .crt format. 
+
+
+To switch to a self-signed certificate:
+
+  1. In the appliance UI, choose Settings > Authentication > Certificates > SSL. 
+
+  2. From the **Action** drop-down menu, select Switch to Self-Signed. 
+
+A popup window appears warning you that switching to self-signed certificates will take a few minutes.
+
+  3. Click Apply to proceed. 
+
+
+  * Cisco recommends that you use CA signed certificates to access the appliance. The latest browsers may disable access to the appliance if self-signed certificates are used. Intersight Virtual Appliance provides the option to switch to a self-signed certificate to extend the validity of the certificate, if the self-signed certificate provided by Cisco expires. 
+
+  * When you choose to switch to a self-signed certificate, the current SSL certificate will be replaced by the newly generated self-signed certificate. You can verify if the new certificate is applied by clicking the lock or the warning icon preceding the URL in the address (location) bar of your browser. After the refresh, you will be taken directly to the Settings > Certificates  page without having to log into the appliance once again. 
+
+
+## Configuring LDAP Settings 
+
+Intersight Virtual Appliance supports LDAP/AD based remote authentication. You can configure the appliance to authenticate a user login using LDAP. You can configure multiple LDAP domains and choose a domain for the login. 
+
+An LDAP user can log into Intersight Virtual Appliance with email ID or username and select the corresponding domain in which the LDAP user is configured. You can add up to six LDAP domains per Intersight Account. You can view the list of configured LDAP domains in Settings > Authentication > LDAP/AD  table view. Watch this [video](https://youtu.be/9DUEO2xXszM) to learn how to integrate your appliance with the LDAP/AD services. 
+
+To set up LDAP authentication in Intersight Virtual Appliance, do the following:
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > Authentication > LDAP/AD > Configure LDAP.  Configure LDAP window displays.   
+**Step 3** |  On the Configure LDAP page, add the corresponding details in the fields that are listed below, and click Save. 
+
+  * Name—Enter a name to easily identify the LDAP domain that you are configuring. 
+  * Base DN—Enter a Base Distinguished Name (DN) for the server. For example, DC=Intersight, DC=com. 
+  * Bind DN—Enter a DN used to authenticate against the LDAP server and the password for the user. 
+  * (Optional) User Search Attribute—Enter the LDAP attribute that uniquely identifies the user for login and lookup. Examples include _uid_ , _mail_ , _sAMAccountName_ , or a custom attribute that is unique in your LDAP directory. You may specify multiple attributes; if configured, users can log in using any of the defined values. For example, if you configure _sAMAccountName_ and _mail_ , a user can log in using either their _sAMAccountName_ or their email address. If this field is left empty, the appliance defaults to using _sAMAccountName_ and mail. 
+  * Group Attribute—Enter the Group member attribute to which an LDAP entry belongs. Intersight Virtual Appliance uses this Group attribute to map/assign Intersight roles to the user. The default value is member and you can change it from Edit LDAP settings. 
+  * (Optional)Filter—Enter an LDAP filter to restrict the user search scope. For example: _(objectClass=person)_
+  * Password—Enter a DN password for the user. 
+  * Nested Group Search—When enabled, an extended search runs through the chain of ancestry all the way to the root and returns all the groups and subgroups that each of the groups and subgroups belong to, recursively. 
+  * Enable Encryption—You must enable Encryption to secure the communication over the LDAP server. If encryption is enabled, a trusted root certificate has to be added. For more information, see Add Certificates.  |  **Note** | 
+  * In a future release, Intersight Virtual Appliance will be phasing out support for certificates signed with the SHA-1 hash functions. It is strongly recommended that you upgrade your certificates to use signature algorithms with hash functions that are stronger than SHA-1, such as SHA-256, SHA-384, or SHA-512. 
+  * Certificates created for the LDAP server must include Subject Alternative Names (SANs) since the use of Common Name has been deprecated. Certificates without SANs will fail verification, resulting in connectivity issues.   
+---|---  
+  * Configure LDAP Servers—Add up to three LDAP Server IP addresses or hostnames, and a corresponding LDAP Server port for each LDAP Server. 
+
+
+**Attention** | 
+
+  * LDAPS is supported on Port 636 and Port 3269. All other ports support LDAP on TLS.
+  * **Intersight Virtual Appliance uses the email ID or username to log in an LDAP user**. If you want to use email ID to log in to the appliance, configure the mail attribute in the LDAP server. If you want to use the username, use the sAMAccountName configured for that user in the LDAP server. 
+  * **After you add the required details to configure LDAP settings, wait for the DeployApplianceLDAP workflow to complete before you add a User or Group to assign appropriate roles to LDAP users. You can check the status of the workflow in **Requests**. For more information, see Adding a User or Adding a Group. **
+  * **If you are using the Intersight API to configure the Appliance LDAP login, ensure that the LDAP policies are tagged appliance.management:true. This is automatically done for the users configuring the LDAP under Settings.**
+
+  
+---|---  
+  
+After you add the required details to configure LDAP settings, wait for the DeployApplianceLDAP workflow to complete before you log in as an LDAP user. You can check the status of the workflow in **Requests**. 
+
+To verify the LDAP configuration settings: 
+
+  1. Click on the ellipsis in the row for which you want to verify the LDAP configuration settings.
+
+  2. Click Test Configuration. 
+
+The Test LDAP/AD Configuration pop-up screen appears. 
+
+  3. Add a valid username or email address and password.
+
+  4. Click Test. 
+
+
+Once the test completes, the results displayed in the Configuration Status column are as follows: 
+
+  * Verified—Indicates that the LDAP configuration has been verified successfully. Hover on it to see the number of user groups of the test user. 
+
+  * Failed—Indicates that the LDAP configuration verification test failed. Hover on it to read the error message. 
+
+  * Unverified—Indicates that a test has not been run on a configured LDAP server. 
+
+
+  
+  
+* * *
+
+## Configuring Password Policy for Local Users
+
+This task provides details on how to configure password policy for local users in Intersight Virtual Appliance.
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > Authentication > Local Users Password Policy.  You can view the details of the existing password policy.  
+**Step 3** |  Click Configure.  The Configure Local Users window displays.   
+**Step 4** |  Configure the password policy by updating the following password policy options as needed. |  Password Policy Options |  Allowed Range/Default Value  
+---|---  
+Minimum Required Password Length |  8-127 characters Default is 8  
+Minimum Required Upper Case Characters |  1-64 characters Default is 1  
+Minimum Required Lower Case Characters |  1-64 characters Default is 1  
+Minimum Required Numeric Characters |  1-64 characters Default is 1  
+Minimum Required Special Characters |  0-64 characters Default is 0 |  **Note** |  Special characters include punctuation and symbol characters.  
+---|---  
+Number of Previous Passwords Disallowed |  0-10 Default is 0  
+Minimum Required Different Characters From Previous Password |  0-15 Default is 0 |  **Note** |  Differences from the previous password are verified based on the same character location within the specified password.  
+---|---  
+Minimum Days Between Password Changes |  0-7 days Default is 0 |  **Note** |  If you specify a value of 0 for this password policy option, then the user is not limited on time between password changes.  
+---|---  
+Maximum Days Between Password Changes |  0-3650 days.  Default is 0, which means that password expiry is not enforced. |  **Note** |  If **Minimum Days Allowed Between Password Changes** and **Maximum Days Allowed with Same Password** are both enabled, make sure that the maximum value is greater than or equal to the minimum value.   
+---|---  
+Time Duration for Incorrect Login Attempts (Seconds) |  300 - 3600 seconds (5 – 60 minutes) Default is 1800 seconds (30 minutes) Time duration is tracked for consecutive incorrect login attempts. Users will be locked out if they exceed the configured number of maximum incorrect login attempts during this duration.  For more information about the lockout capability, see Locking Out Local Users Accounts.   
+Max Consecutive Incorrect Login Attempts Allowed |  3 -10 Default is 5 Users will be locked out after exceeding the maximum consecutive incorrect login attempts allowed within the configured time duration.   
+Enable Lockout for Admin User |  Default is false. Determines if the user lockout feature must be enabled for the local “admin” user. This option is always enabled for other local users.  For more information about the lockout capability, see Locking Out Local Users Accounts.   
+Lockout Time Period (Seconds) |  60 – 3600 seconds (1 – 60 minutes) Default is 900 (15 minutes) Duration, in seconds, during which a local user account will remain locked. The account is automatically unlocked after the configured lockout time period elapses.   
+**Step 5** |  Click Save.  You can verify the password policy changes on the next password change or the next local user login. |  **Note** |  When your password is approaching expiration, the appliance displays a warning message after you sign in. The warning period is fixed at seven days before your password expires.   
+---|---  
+**Password Expiration Behavior for Local Users**
+
+If your password has expired, you are redirected to the Change Password screen upon your next login attempt. To proceed, enter your current password, then enter and confirm your new password. 
+
+Your new password must comply with the configured password policy for local users. Once successfully changed, you are redirected to the sign-in screen, where you can log in with your new credentials. 
+
+If your password expires during an active session, your session remains uninterrupted. The expiration check occurs at your next sign-in attempt.   
+  
+* * *
+
+## Adding a User
+
+Intersight Virtual Appliance allows you to override Group role assignments to users. On the User page, you can view a list of the Users added to an account. The list displays the Name, Identity Provider, Email, Role, and the Last Login Time for a user. You can add Remote Users as well as Local Users. Note that you can add up to 100 Local Users. 
+
+  * Remote Users—authenticated via IDP (LDAP and SSO)
+
+  * Local Users—authenticated via Intersight Virtual Appliance 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+You must be an Account Administrator or User Access Administrator to create a user or assign user roles.
+
+* * *  
+  
+---|---  
+  
+Use these instructions to add a user in Intersight Virtual Appliance:
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Cisco Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > User Permissions > Users.   
+**Step 3** |  In the Add User window, add the following details:  You have the option of adding a Remote User or a Local User. Note that you can add up to 100 Local Users. **To add a Remote User, enter the following details:**
+
+  * Identity Provider—Select the Identity Provider that you want to add to this account. This can be any one of the Intersight validated Identity Providers. For more information, see Validated Identity Providers in the Supported Systems page in <Your FQDN>/help.  If you add an LDAP user, you must add them under the appropriate Identity Provider (IDP). The name of the IDP will be the same as the LDAP Domain Name that you have configured in LDAP Settings. 
+  * User ID—Enter a valid email ID or username used to register the account with the Identity Provider. **The username must be the same as the sAMAccountName that is configured on the LDAP server**. If you are using email to log in, ensure that the email ID is the same as configured in the mail attribute on the LDAP server. 
+  * Role—You can assign one role for a remote user account. For more information, see [Roles and Privileges](https://intersight.com/help/appliance/resources/RBAC#roles_and_privileges). 
+
+**To add a local user, enter the following details:**
+
+  * First Name—First name of the local user 
+  * Last Name—Last name of the local user 
+  * User ID—Enter an email ID or username which is used by the local user to log into the appliance. 
+  * Password—Enter a valid password as per the local user password policy. 
+  * Role—You can assign multiple roles to a local user account. For more information, see [Roles and Privileges](https://intersight.com/help/appliance/resources/RBAC#roles_and_privileges). 
+
+  
+**Step 4** |  Click Save to add the new user to your account.  |  **Attention** |  The UserID and password that is entered while adding the new local user must be conveyed to the new local user directly as there is no mechanism currently in Intersight Virtual Appliance to automatically notify the login credentials to the new local user. Once the new local user logs in using these credentials, a prompt appears that mandates the new local user to change the password.  Local users can change their passwords any time by navigating to Profile Menu in the top right of the screen and then clicking Change Password.   
+---|---  
+  
+* * *
+
+## Locking Out Local Users Accounts
+
+Consecutive incorrect login attempts within a configured time duration are tracked for local users and the accounts will be locked out if they exceed the configured number of maximum incorrect login attempts during this duration. Once the local user account is locked, the Local User table displays a warning icon next to the user. The account is automatically unlocked after the configured lockout period elapses. The Account Administrator or the User Access Administrator can unlock the account by resetting the password during the configured lockout period. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+The lockout capability:
+
+  * Applies to only local users and does not apply to remote users.
+  * Applies to local “admin” user only if the setting is enabled.
+
+
+* * *  
+  
+---|---  
+  
+## Resetting the Password for the Local Admin User
+
+If the password for the local admin user is unknown, you can initiate the password reset from the hypervisor console without contacting Cisco TAC. The reset process generates a temporary password for the local admin user. After the reset, log into the appliance web UI with the temporary password and set a new password. 
+
+The new password applies to both web UI and SSH access after the password change is completed in the appliance web UI.
+
+**Before you Begin** : 
+
+  * Verify that you have hypervisor console access to the appliance VM. 
+
+  * Be aware that this task requires a reboot of the appliance VM. Before you begin, save your work and take any necessary backups. 
+
+  * Be prepared to record the temporary password that appears in the console. You cannot copy and paste this password from the console. 
+
+
+To reset the password of the local admin user:
+
+  1. From the hypervisor, reboot the appliance VM.
+
+  2. Launch the VM console.
+
+  3. During the appliance boot process, when the splash screen appears, press `o` within 10 seconds to open the Options menu. 
+
+  4. Enter `1` to reset the local admin password and confirm that you want to reset the password. 
+
+If you choose not to confirm the reset, exit the password change wizard and continue the boot process. 
+
+  5. Record the temporary password displayed on the console by taking a screenshot or writing it down.
+
+  6. Confirm that you recorded the temporary password.
+
+  7. Wait for the reset to complete, exit out of the wizard, and then allow the appliance to continue starting.
+
+  8. In a browser, go to the appliance URL.
+
+The appliance login page is displayed. Other users can continue to log in normally while the local admin user completes the password change. 
+
+  9. Log in as admin using the temporary password displayed in the hypervisor console. 
+
+  10. When prompted to change the expired password, enter the temporary password as the current password.
+
+  11. Enter and confirm the new admin password.
+
+The new password must meet the local password policy.
+
+  12. Click Change Password. 
+
+  13. After the password change completes, log in again as admin using the new password. 
+
+After this successful login, the new password also applies to SSH access for the local admin user.
+
+
+For multi-node deployments, synchronization of the new password across all nodes can take a few minutes.
+
+**Troubleshooting Password Change for the Local Admin User**
+
+  * If you miss the boot prompt, reboot the appliance VM and try again during the displayed timeout.
+
+  * If the temporary password is rejected, verify that the password was transcribed exactly from the console, including capitalization.
+
+  * If the new password is rejected, choose a password that meets the configured local password policy.
+
+  * If SSH login with the new password fails immediately in a multi-node deployment, wait a few minutes for password synchronization and try again. 
+
+
+## Resetting the Password of Local Users
+
+Account Administrators can reset the password of local users. User Access Administrators can also reset the password of local users except for users with the role of Account Administrator. 
+
+To reset the password of a local user:
+
+  1. Log into Intersight Virtual Appliance as a user with account administrator role.
+
+  2. Choose Settings > User Permissions > Users. 
+
+  3. Select the local user that you want to reset the password.
+
+  4. Click the pencil icon and change the password.
+
+  5. Click Save. 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+When an Account Administrator resets the password for the local “admin” user, only the GUI password is changed. The SSH password of the local “admin” user remains unchanged. The local “admin” user must log into the appliance using the newly reset password. Once the local “admin” user is logged in, a prompt appears that mandates the local “admin” user to change the password, which then resets both the GUI and the SSH passwords. 
+
+* * *  
+  
+---|---  
+  
+## Adding a Group
+
+A Group represents a collection of users with a specific role, permissions, and privileges. You can create multiple user groups to assign common roles and privileges to a set of users. On the Group page, you can view a list of the Groups added to an account. The list displays the Name, Identity Provider, Role, and the Group Name in Identity Provider. Use these instructions to add a group: 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > User Permissions > Groups.   
+**Step 3** |  Click the Add Group button at the top right. The Add Group window displays.   
+**Step 4** |  In the Add Group window, add the following details: 
+
+  * Identity Provider—Select the Identity Provider you want to add to this account. This can be any one of the Intersight validated Identity Providers. For more information, see  Validated Identity Providers in the Supported Systems page in <Your FQDN>/help. You must select the appropriate LDAP domain for groups that would log in with their LDAP credentials. 
+  * Name—Enter a name to identify the group in Intersight. 
+  * Group Name in Identity Provider—Enter the user group name you have added in the Identity Provider. Group name must be in the LDAP distinguished name (DN) format. For example: 
+        
+        cn=Finance,cn=Users,dc=example,dc=com
+
+  * Role—You can assign one of the following System Defined roles to a user group as well as assign User Defined Roles. 
+  * Account Administrator—In this role, members of the group can claim targets, cross launch element managers, create profiles and policies, collect tech support bundles, and make configuration changes to the claimed targets or the account. 
+  * Read-Only—In this role, members of the group can view details, and status of the claimed targets within the account. However, you cannot make any configuration changes to the claimed targets or the account. 
+  * Device Technician—In this role, members of the group can claim a target in Intersight and view a list of the claimed targets in the Targets table view. 
+  * Device Administrator—In this role, members of the group can claim a target in Intersight, view a list of the claimed targets, and delete (unclaim) a target. 
+  * Server Administrator—In this role, members of the group can perform all server actions including firmware upgrade, collect tech support bundles, set server tags, create, edit, and deploy a server profile or policy, and view server details. 
+  * HyperFlex Cluster Administrator—In this role, members of the group can create, edit, and deploy a HyperFlex cluster profile, upgrade a cluster, set cluster tags, view cluster dashboard and summary, collect tech support bundles, monitor alarms, and launch and manage HX Connect. 
+  * User Access Administrator—In this role, members of the group can view account details, perform all User Access related actions, including adding a User, adding a Group, setting up Identity Providers and Single Sign-On, generate API keys related to the account. 
+
+|  **Attention** |  You must be an Account Administrator or User Access Administrator to create a group or assign user roles.  
+---|---  
+**Step 5** |  Click Save to add the new group to the account.   
+  
+* * *
+
+## Adding a Role
+
+### Creating a User Defined Role
+
+In addition to the system-defined roles in Intersight, you can create a user-defined role. On the Roles page, you can view a list of the roles added to an account. This list displays the Name, Type, Usage, Scope, and a Description of the roles. Use these instructions to create a user-defined role: 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+**Only users with Account Administrator or User Access Administrator privileges can create a user-defined role.**
+
+* * *  
+  
+---|---  
+  
+  1. Log into Cisco Intersight.
+
+  2. Choose Settings > User Permissions > Roles. 
+
+  3. From Roles, click Create Role. 
+
+  4. Enter a Name to identify the role in Intersight and a Description of the usage of the role. 
+
+You can choose to retain the default account level settings for Session Timeout, Idle Timeout, and Concurrent Sessions, or you can choose to customize these settings. 
+
+  5. Under Session & Idle Timeout settings, you can choose to do one of the following: 
+
+  * Enable Use Account Default Settings—This option is enabled by default. You can inherit the session timeout values from the Account level settings. The values will be used as the default settings during role creation. To check the account level Session Timeout and Idle Timeout details, navigate to System > Account Details. 
+
+  * Disable Use Account Default Settings—You can disable this option to set values for the following fields at the Role level. 
+
+  * Session Timeout (Seconds) is the session expiry duration in seconds. The minimum value is 300 seconds, and the maximum value is 31536000 seconds (1 year). The system default value is 57600 seconds. 
+
+  * Idle Timeout (Seconds) is the interval for the web session in seconds. When a session is not refreshed for this duration, the session is marked as idle and removed. The minimum value is 300 seconds, and the maximum value is 18000 seconds (5 hours). The system default value is 1800 seconds. 
+
+  * Maximum Number of Concurrent Sessions (Sessions) is the number of concurrent sessions allowed in an account or permission. The minimum number of sessions is 1 and maximum number of sessions is 128. The default value is 128. 
+
+  6. Click Next. 
+
+  7. Select a Scope to delegate the user access to resources in the account. You can choose to give a user access to the entire account or restrict access to a selected organization. 
+
+  * All—User has access to all account resources. Add Privileges to assign roles to the user. The selected privileges will be applied to the entire account. 
+
+  * Organization—User has access to the specified organizations only. Select one or more Organizations from the drop-down list and Add Privileges to assign roles to the user. For more information on Privileges, see the Roles section. 
+
+  8. Click Create to add the new User Defined Role to the account. 
+
+
+### Switching an Account or Role
+
+You can switch between accounts or roles in Cisco Intersight without logging out of the application. If you are logged into multiple accounts or roles, the Profile menu in the Intersight dashboard provides the option to Switch Account or Role. 
+
+![](/c/dam/en/us/td/i/300001-400000/300001-310000/306001-307000/306921.jpg) ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * The Switch Account or Role option is not available if you are authorized to access a single account and have only one role mapped to that account. 
+  * If you use the account URL to log in to Intersight, the Switch Account and Role option enables you to switch only between roles within the same account. 
+  * At the time of switching, accounts are re-evaluated based on the attributes returned by the Identity Provider (IdP) after authentication. The users added to the account are also re-authenticated for their roles by the Identity Provider. Therefore, before you switch between accounts, if Intersight detects that there is a change in your account or role, it appears in the Select Account and Role list. 
+  * For Intersight Virtual Appliance, you must configure LDAP or log in with SSO to view the Switch Account or Role option.
+
+
+* * *  
+  
+---|---  
+  
+Use the following steps to switch accounts: 
+
+  1. Navigate to Profile > Switch Account or Role. 
+
+Select Account and Role window displays. 
+
+  2. In the Select Account and Role window, select the account (or role) that you want to switch to. You will be logged in to the new account. 
+
+  3. To change the role, navigate to Settings > User Permissions > Users, and select the user that you want to change the role for, and click the Edit icon. 
+
+  4. In the Edit User window, select the role and click Save. 
+
+
+## Adding an Organization
+
+### Creating an Organization
+
+On the Organizations page, you can view a list of organizations added to an account. This list displays the Name, Memberships, Usage, and Description. Use these instructions to add an organization: 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+**Only users with Account Administrator privileges can create organizations. Users with User Access Administrator privileges cannot create organizations but can view them in the User Account and assign the organizations to roles.**
+
+* * *  
+  
+---|---  
+  
+  1. Log into Cisco Intersight.
+
+  2. Choose System > Organizations. 
+
+  3. Click Create Organization. 
+
+  4. Enter a Name to identify the organization in Intersight and a Description about the usage of the organization. 
+
+  5. Under Memberships, you can choose to assign access to all resources or restrict access to a selective group of resources. Select one of the following options for memberships: 
+
+  * Custom—From the list of targets available in the account, select the required targets, to allocate a set of physical resources to the organization. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Important** | 
+
+* * *
+
+Profiles and Policies that are created within a custom organization are applicable only to the targets in the same organization.
+
+* * *  
+  
+---|---  
+  * All—All the targets available in the account will be included in this organization. 
+
+  6. Click Create to add the new organization to the account. 
+
+
+To learn more about Organizations and how to leverage them to support multi-tenancy in an account, see the Role Based Access Control under [Resources](https://intersight.com/help/resources#role_based_access_control_\(rbac\)_in_intersight) in the [Help Center](https://intersight.com/help/home) or _< https://your fqdn.com>_/help. 
+
+## Generating and Managing API Keys 
+
+An API key is used to register your application with Cisco Intersight.
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Cisco Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > API Settings > Keys.   
+**Step 3** |  In the Generate New API Key screen, enter the purpose for the API Key, and click Generate. The API Key ID and RSA Private Key are displayed.   
+**Step 4** |  Save the private key information in a .pem file.  |  **Note** |  Make sure to save it in a location accessible from your scripts.  
+---|---  
+  
+* * *
+
+## OAuth2 Tokens
+
+You can view a list of OAuth2 tokens used by an application to access Intersight and the corresponding target details in the OAuth2 section under API. 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Cisco Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose Settings > API Settings > OAuth2 Tokens.  A table view of the OAuth2 tokens with the Application Name that uses the tokens, the Device Model, Login and Expiration time, the Client IP address, the User Role, and the Email ID is displayed.   
+  
+* * *
+
+## Device Connector Requirements
+
+You can claim a target in Cisco Intersight Virtual Appliance through the embedded device connector. Before you claim a target, ensure that the device connector requirements are met. The following table lists the software compatibility and the supported device connector versions for Intersight Virtual Appliance: 
+
+Table 4. Device Connector Requirements Component |  Minimum software version for Connected Virtual Appliance |  Minimum software version for Private Virtual Appliance |  Supported Device Connector version  |  Minimum supported versions that include supported Device Connectors  
+---|---|---|---|---  
+Cisco UCS Manager |  3.2(1) |  4.0(2a) |  1.0.9-2290 |  4.0(2a)  
+Cisco IMC Software |  For M5 Servers: 3.1(3a) For M4 Servers: 3.0(4) |  4.0(2d) |  1.0.9-335 |  4.0(2d)  
+HyperFlex Connect and Data Platform |  2.6 |  3.5(2a)  |  1.0.9-1335 |  3.5(2a)  
+CIsco UCS Director |  6.7.2.0 |  6.7.2.0 |  1.0.9-911 |  6.7.2.0  
+  
+### Device Connector Upgrade
+
+When the Device Connector on an endpoint is not at the compatible version, you can upgrade it in the following ways: 
+
+  * Perform a complete firmware upgrade to the version that has the supported Device Connector. This process could involve updating your configuration settings. 
+
+  * Manually upgrade the Device Connector. This option is supported only on Cisco UCS Manager. For more information, See Manual Upgrade. 
+
+  * Cisco Intersight Virtual Appliance supports upgrading the device connector from the cloud. When the target claim process detects that the device connector at the endpoint is not at the compatible version, it triggers an upgrade of the device connector from Intersight cloud. To facilitate this upgrade, port 80 must be open between the appliance and the endpoint target. The HTTPS proxy running on port 80 requires that your firewall settings allow communication through port 80. 
+
+Device Connector upgrade from Intersight Cloud is optional. During the upgrade from the cloud, some target data (server inventory) from the appliance leaves your premises. When you choose this option, the following data leaves your premises: 
+
+  * The endpoint target type - Cisco UCS Fabric Interconnect, Integrated Management Controller, Cisco HyperFlex System, Cisco UCS Director 
+
+  * The firmware version(s) of the endpoint
+
+  * The serial number(s) of the endpoint target
+
+  * The IP address of the endpoint target
+
+  * The hostname of the endpoint target
+
+  * The endpoint device connector version and the public key 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+Target claim could fail if the device connector is at an older version that does not support the appliance, and you have disabled the data collection option during the initial setup. This failure is caused due to details about the endpoint being required to leave the premises for the one-time upgrade to work. To avoid a target claim failure, select the **Enable Data Collection** option temporarily or upgrade the device connector in the other methods mentioned above. 
+
+* * *  
+  
+---|---  
+
+
+### Manual Upgrade of Device Connector (applicable only to Cisco UCS Fabric Interconnect)
+
+If you do not want to share the target data as part of the automatic device connector upgrade, you can choose to manually upgrade the device connector on a Cisco UCS Fabric Interconnect. Use these instructions to upgrade the device connector: 
+    
+    
+    Log in to your UCS Fabric Interconnect as an admin user and run the following command:
+    UCS-A# connect local-mgmt
+    UCS-A(local-mgmt)# copy scp://username@10.100.100.100/filepath/filename.bin workspace:/
+    UCS-A(local-mgmt)# update-device-connector workspace:/filename.bin 
+    Update Started
+    Updating Device Connector on local Fabric interconnect
+    Successfully updated device connector on local Fabric interconnect
+    UCS-A(local-mgmt)#
+
+## Configuring Account Settings
+
+This task provides details on how to configure account settings in Intersight Virtual Appliance.
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.  
+---|---  
+**Step 2** |  Choose System > Account Details.  You can view the details of the existing account settings.  
+**Step 3** |  Click Configure.  The Configure Account Settings window displays.   
+**Step 4** |  Update the following fields as needed.
+
+  * Account Name—Name of the account. 
+  * Default Idle Timeout (Seconds)—Provide the idle timeout interval for the web session in seconds. The system default value is 18,000 seconds (5 hours). 
+  * Default Session Timeout (Seconds)—Provide the session expiry duration in seconds. The system default is 57,600 (16 hours). 
+  * Maximum Concurrent Sessions per User (Sessions)—Provide the maximum number of concurrent sessions allowed per user. The system default as well as the maximum number of concurrent sessions is 32. 
+  * Audit Logs Retention Period (Months)—Provide the time-period for audit logs retention. The system default is 48 months. The allowed range is between 6 months and 48 months. The Audit logs deletion task is set to run on a daily basis at 6.00 AM UTC, and all the audit logs that meet the retention period set in this field will automatically start getting deleted at this time. Once deleted, audit logs cannot be retrieved. 
+  * Default Authentication Method—Choose from Local, SSO, and LDAP. 
+  * Default LDAP Domain—Choose from the available appliance LDAP configurations. 
+  * OAuth Applications without Expiry—Enables Account Admin to allow the creation of OAuth applications that do not have an expiration date. By default, this option is disabled, as a never-expiring OAuth application is a security threat. 
+  * OAuth Applications Maximum Expiration Time—The maximum allowed expiration period for an OAuth 2.0 application in this account. The maximum allowed expiration period is 360 days. The default expiration period is 180 days. 
+  * API Keys without Expiry—Enables Account Admin to allow the creation of API keys that do not have an expiration date. By default, this option is disabled, as a never-expiring API key is a security threat. 
+  * API Keys Maximum Expiration Time—The maximum allowed expiration period for an API key in this account. The maximum allowed expiration period is 360 days. The default expiration period is 180 days. 
+  * Tags—The tags created for the account. 
+
+  
+**Step 5** |  Click Save.   
+  
+* * *
+
+## Intersight Virtual Appliance Monitoring
+
+Intersight Virtual Appliance provides an overview of the appliance and health status and displays alarms when predefined limits are exceeded or when a threshold is raised. 
+
+In the appliance UI, choose System > Appliance Details to view the following details: 
+
+  * Health—Overall status of the appliance 
+
+  * Hostname—Your FQDN or hostname 
+
+  * Version—Installed version of the appliance software 
+
+  * Cluster Status—Indicates Single-node or Multi-node appliance setup 
+
+  * Node—A table view of the list of appliance nodes in Cisco Intersight Virtual Appliance. You can search for a specific node by Hostname, Operational Status, Node Type (node types include HA Management, Standalone, or Metrics), Deployment Size, IP Address, Gateway, or Netmask. You can view the alarms on the right pane and filter them by their severity. 
+
+  * Resource Monitoring—Visual representation of the appliance’s health status, offers real-time and historical insights into CPU, memory, and disk utilization. 
+
+  * CPU Usage and Memory Usage—Line charts display historical resource usage trends over a rolling 7-day window, showing hourly utilization percentages. Data can be filtered by individual cluster nodes. 
+
+  * Disk Usage—Table view presents the usage for disks 1 through 8. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * Disk 1 contains multiple filesystems. The filesystem with the highest usage is displayed in the table.
+  * The filesystem information is included in the alarm when an alarm is triggered.
+
+* * *  
+  
+---|---  
+
+
+**Alarms in Intersight Virtual Appliance**
+
+Intersight Virtual Appliance monitors certain critical parameters and raises alarms when predefined limits are exceeded or when a threshold is raised. The appliance currently reports system-level and node-level alarms. The following table shows the alarm levels and their descriptions. 
+
+Table 5. Alarms in Intersight Virtual Appliance Level |  Component |  Description |  Comments  
+---|---|---|---  
+System |  Node |  Critical: A node is down |  One alarm per node  
+System |  Node |  Critical: A node is not ready for service deployment. |  One alarm per node  
+Node |  CPU Usage |  Warning: CPU usage above threshold |  One alarm per node. Threshold: 75%  
+Node |  Memory Usage |  Warning: Memory usage above threshold |  One alarm per node. Threshold: 75%  
+Node |  File System Disk Usage |  Warning: File System disk usage above threshold |  One alarm per file system. Threshold: 75%  
+Node |  File System Disk Usage |  Critical: File System disk usage above threshold |  One alarm per file system. Threshold: 90%  
+System |  Number of service instances running |  Warning: Number of service instances running less than expected |  One alarm per service  
+System |  Number of service instances ready |  Warning: Number of service instances ready less than expected |  One alarm per service  
+System |  Web certificate |  Warning: Web certificate expires within 120 days Critical: Web certificate expires within 90 days |  One alarm per appliance  
+System |  Device certificate |  Warning: Device certificate expires within 120 days Critical: Device certificate expires within 90 days |  One alarm per appliance  
+System |  Appliance Backup |  Warning: An Intersight Appliance backup has not been created within the past week. Please schedule or create a new backup. |  One alarm per appliance  
+System |  Appliance Backup |  Critical: The most recent Intersight Appliance backup failed. Please schedule or create another backup. |  One alarm per appliance  
+System |  Cloud Connectivity |  Warning: Connection to Intersight cloud has been down for more than 30 days Critical: Connection to Intersight cloud has been down for more than 60 days Highly Critical: Connection to Intersight cloud has been down for more than 90 days; claiming new devices is not permitted until connection is restored.  |  One alarm per appliance  
+Node |  Network Link Connectivity |  Warning: The latency between cluster nodes is greater than 10ms |  One alarm per link per node  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Cisco UCS C-Series server-related faults such as power supply and fan failures are not forwarded by Intersight Virtual Appliance to an external syslog server. Please configure the external syslog server on the UCS C-Series CIMC side to handle the forwarding of the UCS C-Series events and faults. 
+
+* * *  
+  
+---|---  
+  
+## Intersight Virtual Appliance Settings
+
+You can monitor the appliance status, backup and restore data, upgrade the appliance software, configure network settings, add users and groups, and more on the Intersight Virtual Appliance Settings page. 
+
+Settings Option |  Description  
+---|---  
+System > Account Details |  View account details such as account name, account ID, access link, license type, default idle timeout, maximum number of concurrent sessions per user, and default session timeout.  You can also configure account settings such as default idle timeout, default session timeout, and maximum number of concurrent sessions per user. For more information, see Configuring Account Settings.   
+System > Access Details |  Displays the details of the user including the name, account name, email ID, role, idle timeout, session timeout, maximum concurrent sessions per user, login time, a brief description of the role, and a table view of the users and their privileges that is displayed in the bottom of this screen.   
+System > Appliance Details |  View the status of the appliance connection, view details including the appliance Health, Hostname, Version number, and Cluster status. A list of the connected Nodes displays the Hostnames, Operational Status, Node Type (node types include Management, HA Management, Standalone, or Metrics), IP address, Gateway, and Netmask for the connected nodes. You can also view the Alarms on the connected nodes.   
+Settings > System > Backup |  Create a full state backup of the appliance and save the image on a remote server. You can also schedule a backup from this page. For detailed instructions, see Create Backup and Schedule Backup.  You can recover the appliance configuration from a backup file using the instructions in [Recovering Intersight Connected Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7) and [Recovering Intersight Private Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18).   
+Settings > System > Banners |  View the configuration details of the banners. When enabled, the configured banner will be displayed before the user login screen. For more information, see Configuring a Banner Message for Displaying Before the Login Screen.   
+Settings > System > Appliance Updates |  View details of the current software version of the appliance, including the version number, the installed components, messages about the installation, and the Fingerprint of the installed software.  For more information about updating the Intersight Virtual Appliance software, see [Updating the Intersight Virtual Appliance Software](m_updating_the_intersight_virtual_appliance_software.html#Cisco_Task_in_List_GUI.dita_43af1cc4-8230-4d44-a643-5c5baabf78d0).   
+Settings > Networking > Cloud Connection |  |  **Note** |  This setting is applicable only for Connected Virtual Appliance deployments.  
+---|---  
+  
+View the status of the appliance connection to Intersight, the Access Mode, Device ID, and the Claim Code. From the Settings Menu in the Device Connector window, you can add an HTTPS Proxy. For more information, see Cloud Connection for Intersight Connected Virtual Appliance.   
+  
+Settings > Networking > DNS |  Configure DNS settings and add IPv4 DNS Server Addresses and Alternate IPv4 addresses of the DNS Servers. For more information, see Configuring DNS.   
+Settings > Networking > NTP |  Configure NTP servers as well as edit existing NTP server settings. For more information, see Configuring NTP.   
+Settings > Networking > Syslog |  Configure the syslog server settings including enabling and disabling sending audit logs and information of alarms to the syslog servers. For more information, see Configuring Syslog.   
+Settings > Authentication > LDAP/AD |  Create and configure the settings for LDAP servers, DNS parameters, Binding methods, Search parameters, and Group Authorization preferences. For more information, see Configuring LDAP Settings.   
+Settings > Authentication > Single Sign-On |  Set up Single Sign-on (SSO) authentication. SSO enables you to use a single set of credentials to log in to multiple applications. With SSO authentication, you can log in to Intersight with your corporate credentials instead of your Cisco ID. For more information about Single Sign-On in Intersight, see Single Sign-On with Intersight Virtual Appliance.   
+Settings > Authentication > Certificates |  Add a trusted certificate to verify TLS communication with the LDAP or HTTPS server. You can generate a Certificate Signing request or Generate a Self-Signed Certificate. For more information, see Certificates.   
+Settings > Authentication > Local Users Password Policy |  View details of the current password policy configuration or configure a new password policy. For more information, see Configuring Password Policy for Local Users.   
+Settings > User Permissions > Users |  View the users or add new users to allow access to Intersight using their email, specify identity provider and permission settings. For more information, see Adding a User.   
+Settings > User Permissions > Groups |  View the user Groups or add a new group for Single Sign-On or LDAP-based authentication. For more information, see Adding a Group.   
+Settings > User Permissions > Roles |  View the existing roles or create a custom role and assign privileges. For more information, see Adding a Role.   
+System > Organizations |  View the list of organizations or create a new organization to manage access to your logical and physical resources. For more information, see Adding an Organization.  
+Settings > API Settings > Keys |  View a list of the existing API Keys in the account or generate a new API Key. For more information, see [API Keys](https://intersight.com/help/features#api_keys).   
+SettingsAPI SettingsOAuth2 Tokens |  View a list of OAuth2 tokens and the details of the Apps and the associated targets.
+
 ---
 
 ## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_0111.html
+
+# Overview  
+  
+Overview of Cisco Intersight Virtual Appliance
 
 ## About Cisco Intersight Virtual Appliance
 
@@ -1194,9 +8209,615 @@ This guide provides an overview of how to install and set up Intersight Virtual 
 
 For latest updates on Intersight Virtual Appliance features and functionality, see [Intersight Appliance Help Center](https://intersight.com/help/appliance). 
 
+## Licensing Requirements for Intersight Virtual Appliance
+
+Cisco Intersight Virtual Appliance uses a subscription-based license that is required to use the features of the appliance. Intersight Essentials is a subscription license delivered via Cisco Smart Licensing. Please contact your Cisco sales representative, channel partner, or reseller to purchase Intersight Essentials. Enabled platforms are those Cisco UCS and Cisco HyperFlex systems with a Cisco Intersight device connector, including eligible Cisco UCS Manager, Cisco IMC, and Cisco HyperFlex software. 
+
+For a **Connected Virtual Appliance** deployment, you must register the license as part of the initial setup of Cisco Intersight Virtual Appliance. After you complete the installation of the appliance, launch the UI and log in with the password that you set during installation, connect the appliance to Intersight, and register the license. 
+
+Use the following instructions if you want to edit the settings after the initial setup: 
+
+  1. In the appliance UI, choose System > Licensing > Register License. 
+
+The Smart Software Licensing Product Registration window displays. 
+
+  2. Generate a Product Instance Registration Token from your specific virtual account in Cisco Smart Software Manager, if you do not have one already. 
+
+  3. Enter the Product Instance Registration Token that you obtained from Cisco Smart Software Manager and click Register. Click [here](https://intersight.com/help/video#cisco_intersight_licensing_tiers_and_registration) to watch a video about Cisco Intersight licensing tiers and registration. 
+
+
+For a **Private Virtual Appliance** deployment, you must reserve the license as part of the initial setup of Cisco Intersight Virtual Appliance. For information on how to reserve a license as part of the initial setup, see [Setting Up Single-Node Intersight Private Virtual Appliance](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_01.html#Cisco_Task_in_List_GUI.dita_e4dbd2b9-0c61-42b7-89e0-18c54ab1c576). 
+
+For instructions on how to**update** or **return** the license after the initial setup of your Private Virtual Appliance, see [Updating Intersight Private Virtual Appliance License ](https://intersight.com/help/appliance/getting_started/licensing_requirements/lic_intro#updating_intersight_private_virtual_appliance_license) and [Returning Intersight Private Virtual Appliance License](https://intersight.com/help/appliance/getting_started/licensing_requirements/lic_intro#returning_intersight_private_virtual_appliance_license). 
+
+You can obtain an Intersight evaluation license for Cisco Intersight Virtual Appliance from your Cisco sales representative, channel partner, or reseller. If you already have a Cisco Smart Account, the evaluation license will be added to your Cisco Smart Account. You can then generate a token for the virtual account in the Smart account and proceed with registering Cisco Intersight Virtual Appliance. For more information about how to activate and manage your license, and learn more about Smart Licenses, see [Managing Smart Licenses](https://www.cisco.com/c/en/us/products/software/smart-accounts/software-licensing.html#~stickynav=4). 
+
+For a complete understanding of **Reserve Licenses** feature in Cisco Smart Software Manager, see[ Introduction to Smart Software Manager](https://software.cisco.com/web/fw/softwareworkspace/smartlicensing/ssmcompiledhelps/). 
+
+System Requirements
+
+## Supported Configuration Limits for Intersight Virtual Appliance
+
+Cisco Intersight Virtual Appliance is available in multiple deployment sizes to support the scaling requirements of your environment. You can deploy the Appliance as follows: 
+
+New Deployments—You can deploy Intersight Virtual Appliance in medium or large configurations. Before selecting the size, assess your resource requirements and choose an appropriate option in the Intersight Appliance Maintenance Shell, and then select the required size to deploy. The selected size will be deployed when the appliance VM restarts. For information about resource requirements, see Resource Requirements for Intersight Virtual Appliance. 
+
+The following table lists the supported configuration limits: 
+
+Table 2. Supported Configuration Limits for New Intersight Virtual Appliance Deployments Items |  Configuration Limits  
+---|---  
+Small (Supported on existing deployments only) |  Medium |  Large  
+Number of Servers |  2000 |  5000 |  8000  
+Number of Intersight Managed Mode (IMM) Domains (FI) |  4 |  Up to 32 |  64  
+Number of Intersight Managed Mode (IMM) Servers on stand-alone appliance |  170 (metrics collection is not supported on small deployments) |  500 (with essential tier metrics data collection enabled) |  2000 (with essential tier metrics data collection enabled)  
+5000 (with metrics collection disabled) |  8000 (with metrics collection disabled)  
+Number of Intersight Managed Mode (IMM) Servers on multi-node appliance (management node + metrics node) |  |  250 (with advantage tier metrics data collection enabled)  |  750 (with advantage tier metrics data collection enabled)   
+Number of UCSM Managed Mode (UMM) Domains |  30 |  500 |  800  
+Number of UCSM Managed Mode (UMM) Servers |  330 |  Up to 5000 |  8000  
+Number of UCS Standalone Rack Servers |  1500 |  5000 |  8000  
+Number of parallel HyperFlex Installations |  2 |  5 |  5  
+Number of Supported Concurrent Operations |  50 |  250 |  250  
+Number of Concurrent User Sessions (GUI and API) |  32 |  32 |  32  
+  
+## VM Resource Requirements for New Intersight Virtual Appliance Deployments
+
+The Cisco Intersight Virtual Appliance can be deployed on VMware ESXi 7.0 or later, Microsoft Hyper-V Server 2016, 2019, and 2022, KVM hypervisor on Linux, and Nutanix AHV hypervisor (AOS versions currently supported and maintained by Nutanix). You can deploy Intersight Virtual Appliance in a medium or large configurations. 
+
+For more information on the supported maximum configuration limits for Intersight Virtual Appliance Sizing Options, see Supported Configuration Limits for Intersight Virtual Appliance. 
+
+Table 3. Resource Requirements for New Intersight Virtual Appliance Deployments Resource |  Requirements  
+---|---  
+Medium |  Large  
+vCPU (AVX Required) |  24 |  48  
+RAM |  64 GiB |  96 GiB  
+Storage (Disk) |  2 TiB* |  2 TiB**  
+Supported Hypervisors |  VMware ESXi 7.0 or later with VMware vSphere Web Client 7.0 or later Microsoft Hyper-V Server 2016, 2019, and 2022 KVM hypervisor on Linux Nutanix AHV hypervisor (AOS versions currently supported and maintained by Nutanix*)  
+  
+*Cisco Intersight Virtual Appliance only supports Acropolis Operating System (AOS) versions that are currently being actively supported and maintained by Nutanix. For more information, see [Nutanix End-of-Life Information](https://portal.nutanix.com/page/documents/eol/list?type=aos). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+  * Cisco recommends reserving all vCPUs and RAM for the virtual machine. These reservation capabilities are provided by the respective hypervisor management tool. Without reserved vCPUs and RAM, compute performance may suffer, potentially causing task failures within the appliance. 
+  * Cisco also recommends using thick provisioning for disk storage allocation. Although thin provisioning is possible, over-provisioning can lead to insufficient storage capacity, resulting in service interruption or loss, and may require a restore from backup. Additionally, over-provisioning can degrade I/O performance to the point of causing task failures within the appliance. 
+  * It is highly recommended to place appliance disks on a volume backed by SSDs. 
+  * Do not change the default settings for disk sizes while installing Intersight Virtual Appliance on VMware vSphere. The disk sizes are computed based on the deployment configuration. 
+  * It is mandatory to have a CPU that supports the AVX feature. If you have the Enhanced vMotion Compatibility (EVC) level configured for your VMware vSphere cluster, ensure that the EVC level is set to a CPU family that supports the AVX feature. 
+  * If the allocated resources fall below the default values required for a medium deployment (24 for vCPU and 64 GiB for RAM), then Assist will be the only option available for deployment. Other options will be grayed out. 
+  * Small configuration is still supported on existing deployments. For more information, see VM Resource Requirements for Existing Intersight Virtual Appliance Deployments. 
+  * Metric collection:
+  * In a single-node deployment, metrics data collection is supported for the essential tier license and is an opt-in feature. For information on how to configure metrics collection, see [Configuring Metrics Collection](https://intersight.com/help/appliance/settings#configuring_metrics_collection). 
+  * In a multi-node deployment, you can add a metrics node to a standalone appliance (two-node setup) or to a HA management cluster (four-node setup) that allows for advantage tier metrics data collection. For information about configuring a metrics node, see [Configuring a Multi-Node Cluster for Increased Metrics Scalability in Intersight Virtual Appliance](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_01.html#configuring-metrics-node). 
+  * When the active server count for which metrics is collected exceeds the threshold that your appliance size can support, be it medium or large, Intersight Virtual Appliance automatically disables metrics collection. This precaution is taken to prevent any negative impacts on performance, allowing for smooth system operation without the need for manual intervention. Once the metrics collection is disabled, you will have to enable it manually, after the resource requirements are met for this feature. 
+  * In a multi-node deployment (two-node and four-node), when the storage capacity of disk8 on the metrics node reaches 90%, metrics data collection is automatically disabled. At this point, you must manually increase the storage capacity of disk8 on the metrics node and then proceed to re-enable the metrics data collection. For more information on managing resources, see Managing Resources for Intersight Virtual Appliance. 
+  * Any metrics that have been collected while the metrics collection was enabled will remain accessible, even if metrics collection is later paused. This ensures the continued availability of historical datasets for future analysis and reference. Enforcement of the storage and retention policies for metrics continues, even when the metrics collection is disabled. 
+  * For more information about metrics collection, see [Monitoring Overview](https://intersight.com/help/appliance/features/monitoring/monitoring_overview). 
+  * Additional Networking Requirements for Multi-node Deployments:
+  * Disk write speed must be greater than 150 megabytes per second.
+  * Latency between nodes must be less than 9 milliseconds.
+  * All three hostnames for the nodes must be resolved by the same set of DNS servers.
+
+
+* * *  
+  
+---|---  
+  
+## VM Resource Requirements for Existing Intersight Virtual Appliance Deployments
+
+Intersight evaluates the changes that are required in the CPU, RAM, and disk to determine the deployment size during the reboot after an update from the cloud service. As a result of the evaluation, one of the following outcomes occurs: 
+
+  * If the minimum required resources for a particular deployment size are not available, the Intersight services are shut down and the appliance remains powered on. However, the appliance may not be functional and the services running could be unstable. Intersight Appliance Maintenance Shell displays an error message regarding the resource status during the reboot. Log into the [Maintenance Shell](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_01000.html) to learn more about the error and the required remedial actions. 
+
+  * If the deployment size is the same as the existing deployment, the VM restarts without any change. You can upgrade to a higher deployment size after determining resource requirements. 
+
+
+Table 4. Resource Requirements for Existing Intersight Virtual Appliance Deployments Resource |  Requirements  
+---|---  
+Small (Metrics data collection is not supported) |  Medium |  Large  
+vCPU (AVX Required) |  16 |  24 |  48  
+RAM |  32 GiB |  64 GiB |  96 GiB  
+Storage (Disk) |  Minimum of 620 GiB (applicable starting with Appliance Release Version 1.0.9-631) |  2 TiB |  2 TiB  
+Supported Hypervisors |  VMware ESXi 7.0 or later with VMware vSphere Web Client 7.0 or later Microsoft Hyper-V Server 2016, 2019, 2022 KVM hypervisor on Linux Nutanix AHV hypervisor (AOS versions currently supported and maintained by Nutanix*)  
+  
+*Cisco Intersight Virtual Appliance only supports Acropolis Operating System (AOS) versions that are currently being actively supported and maintained by Nutanix. For more information, see [Nutanix End-of-Life Information](https://portal.nutanix.com/page/documents/eol/list?type=aos). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+  * Cisco recommends reserving all vCPUs and RAM for the virtual machine. These reservation capabilities are provided by the respective hypervisor management tool. Without reserved vCPUs and RAM, compute performance may suffer, potentially causing task failures within the appliance. 
+  * Cisco also recommends using thick provisioning for disk storage allocation. Although thin provisioning is possible, over-provisioning can lead to insufficient storage capacity, resulting in service interruption or loss, and may require a restore from backup. Additionally, over-provisioning can degrade I/O performance to the point of causing task failures within the appliance. 
+  * It is mandatory to have a CPU that supports the AVX feature. If you have the Enhanced vMotion Compatibility (EVC) level configured for your VMware vSphere cluster, ensure that the EVC level is set to a CPU family that supports the AVX feature. 
+  * It is highly recommended to place appliance disks on a volume backed by SSDs. 
+
+
+* * *  
+  
+---|---  
+  
+## Managing Resources for Intersight Virtual Appliance Deployments
+
+### Managing Resources for Intersight Virtual Appliance Deployments
+
+You can view the deployment size of Intersight Virtual Appliance and make changes to CPU, RAM, and disk size as follows:
+
+  1. Choose System > Appliance Details. 
+
+  2. Review the other supported scaling options and choose the appropriate deployment size to suit your requirements. 
+
+  3. After you review the details of the resource requirement for a supported deployment option, shut down the VM, change the CPU, RAM, and disk size as required, and restart the VM. 
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * You cannot change the disk sizes when you have a snapshot.
+  * To ensure optimal performance of the virtual sizing options, make sure your appliance is running the latest software version.
+
+
+* * *  
+  
+---|---  
+  
+The following table provides information about the disk size requirements for Intersight Virtual Appliance installations.
+
+Table 5. Disk Size Requirements for Intersight Virtual Appliance Installations **Disk** |  **Minimum Disk Size Requirements for all Deployments** |  **Recommended Disk Size Requirements for Medium and Large Deployments**  
+---|---|---  
+Disk1 |  Do not change the disk size. |  Do not change the disk size.  
+Disk2 |  25 GiB |  25 GiB  
+Disk3 |  150 GiB |  150 GiB  
+Disk4 |  150 GiB |  150 GiB  
+Disk5 |  100 GiB |  190 GiB  
+Disk6 |  30 GiB |  60 GiB  
+Disk7 |  60 GiB |  360 GiB  
+Disk8 |  60 GiB |  1190 GiB  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Alternatively, you can meet the disk requirements by performing a restore using the latest backup of the appliance. For more information, see [Recovering Intersight Connected Virtual Appliance](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_01.html#Cisco_Task_in_List_GUI.dita_e1993fc2-9060-4dac-be2f-da5b8480cdc7) and [Recovering Intersight Connected Virtual Appliance](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_01.html#Cisco_Task_in_List_GUI.dita_5a821d1e-fe70-4d56-afb2-531b3261ba18). 
+
+* * *  
+  
+---|---  
+  
+## IP Address and Hostname Requirements
+
+### IP Address and Hostname Requirements for Intersight Virtual Appliance
+
+**Setting up a single-node Intersight Virtual Appliance** requires an IPv4 address and 2 DNS records for that IP address. The DNS records must be in the following formats: 
+
+  * mymanagementhost.mydomain.com—A DNS record in this format is used to access the GUI. This must be defined as an A record and associated PTR record in DNS. The PTR record is required for reverse lookup of the IP address. If an IP address resolves to multiple hostnames, the first resolved hostname is used. **Do not** include the **dc-** prefix in this hostname. 
+
+  * dc-mymanagementhost.mydomain.com—The dc- must be prepended to your hostname. This DNS record must be defined as the CNAME of mymanagementhost.mydomain.com. DNS records in this format are used internally by the appliance to manage target connections. 
+
+
+**Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (two-node cluster)** requires an IPv4 address and 2 DNS records for that IP address for the single-node (appliance management node) and requires an IPv4 address and one DNS record for that IP address for the metrics node. The DNS records must be in the following format: 
+
+  * mymanagementhost.mydomain.com
+
+  * mymetricshost.mydomain.com
+
+  * dc-mymanagementhost.mydomain.com
+
+
+**Setting up a multi-node cluster for high availability in Intersight Virtual Appliance (three-node cluster)** requires three hostnames, three IP addresses, and one DC-CNAME for each hostname. The following is an example of the formats: 
+
+  * mymanagementhost1.mydomain.com
+
+  * mymanagementhost2.mydomain.com
+
+  * mymanagementhost3.mydomain.com
+
+  * dc-mymanagementhost1.mydomain.com
+
+  * dc-mymanagementhost2.mydomain.com
+
+  * dc-mymanagementhost3.mydomain.com
+
+
+**Setting up a multi-node for metrics data collection in Intersight Virtual Appliance (four-node cluster)** requires three hostnames, three IP addresses, and one DC-CNAME for each hostname for the HA management cluster. It also requires an IPv4 address and one DNS record for that IP address for the metrics node. The following is an example of the formats: 
+
+  * mymanagementhost1.mydomain.com
+
+  * mymanagementhost2.mydomain.com
+
+  * mymanagementhost3.mydomain.com
+
+  * dc-mymanagementhost1.mydomain.com
+
+  * dc-mymanagementhost2.mydomain.com
+
+  * dc-mymanagementhost3.mydomain.com
+
+  * mymetricshost.mydomain.com
+
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+Ensure that the appropriate entries of type A, CNAME, and PTR records exist in the DNS, as described above. 
+
+* * *  
+  
+---|---  
+  
+## Reserved IP Address Range Requirements
+
+Intersight Virtual Appliance reserves the following IP address ranges for internal communication:
+
+  * /20 subnet within the 172.16.0.0/12 range—This subnet is one-time configurable during the appliance installation. 
+
+  * 192.168.20.21/32—This IP address is reserved by the appliance and is non-configurable. 
+
+
+## Port Requirements
+
+### Port Requirements for Intersight Virtual Appliance
+
+The following table lists the ports that are required for Intersight Virtual Appliance communication.
+
+Port  |  Protocol |  Appliance Configuration Mode |  Description  
+---|---|---|---  
+443  |  TCP |  Single-node and multi-node |  This port is required for communication between:
+
+  * Intersight Virtual Appliance and the users' web browser.
+  * Intersight Virtual Appliance to and from the endpoint targets.
+
+For more information about connectivity, see the Network Connectivity Requirements section.   
+53, 68, 123 |  UDP |  Single-node and multi-node |  These ports are used to send and receive DNS, DHCP, and NTP traffic.  
+22, 2379, 6443, 2380, 9092, 9094, 9100, 10250  |  TCP |  Multi-node |  These ports are used for communication between the VMs in a multi-node configuration for Intersight Virtual Appliance.  
+51820, 51821 |  UDP |  Multi-node |  These ports are used for securing VPN between the VMs in a multi-node configuration for Intersight Virtual Appliance.  
+  
+## Network Connectivity Requirements for Intersight Connected Virtual Appliance
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+The information in this section is applicable only for Intersight Connected Virtual Appliance deployments.
+
+* * *  
+  
+---|---  
+  
+  * Ensure that Cisco Intersight Virtual Appliance has access to the following sites directly or through a proxy. For more information about setting up a proxy, see [Cloud Connection for Intersight Connected Virtual Appliance](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#id_95755). All the following URLs are accessed through HTTPS. 
+
+  * Access to Cisco services (*.cisco.com).
+
+Cisco Service |  Description |  Target Device   
+---|---|---  
+smartreceiver.cisco.com:443 |  For access to Cisco Smart Licensing Manager  |   
+swapi.cisco.com:443 |  For access to Cisco Smart Licensing Manager  |   
+tools.cisco.com:443 |  For access to Cisco Smart Licensing Manager  |   
+download-ssc.cisco.com*, dl.cisco.com, dl1.cisco.com, dl2.cisco.com  |  For access to Cisco Software download site |  Required for the following:
+  * C-Series Standalone Servers 
+  * UCSM Managed B-Series and C-Series servers
+  * UCSM Managed Fabric Interconnects
+  * UCSM Managed Fabric Interconnects-attached Cisco UCS S3260 Chassis  
+api.cisco.com:443  
+cloudsso.cisco.com:443 (**This service entry point will be deprecated in a future release. Ensure that your appliance can access id.cisco.com.**)   
+  
+* Cisco Intersight allows you to manage firmware downloads through a new domain _download-ssc.cisco.com_. Make sure that you add this new domain to the firewall and network rules. For more information, see [Cisco Software Download](https://intersight.com/help/appliance/system/settings#cisco_software_download). 
+
+  * The Cisco services (*.cisco.com) that Intersight can access (either directly or through a proxy) to gain additional benefits are as follows: 
+
+Cisco Service |  Description |  Target Device   
+---|---|---  
+cdn.intersight.com, cdn.eu-central-1.intersight.com |  For faster download of firmware image  |  Required for the following:
+  * C-Series Standalone servers
+  * UCSM Managed B-Series and C-Series servers
+  * UCSM Managed Fabric Interconnects
+  * UCSM Managed Fabric Interconnects-attached Cisco UCS S3260 Chassis
+  * Fabric Interconnects and FI-attached servers in Intersight Managed Mode.  
+  * Access to Intersight Cloud services. 
+
+Intersight Virtual Appliance connects to Intersight by resolving one of the following URLs:
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+IP addresses for service entry points are static. If you need specify firewall configurations for URLs with fixed IP addresses, the following are the static IP addresses corresponding to each region. 
+
+* * *  
+  
+---|---  
+  
+**North America (us-east-1) region**
+
+  * svc.intersight.com **(Preferred)**. 
+
+  * svc.us-east-1.intersight.com
+
+Both of these URLs resolve to the following IPv4 and IPv6 addresses:
+
+  * 52.223.48.112
+
+  * 99.83.178.202
+
+  * 2600:9000:a60c:6a4d:2d28:e9be:e3e:f0cf
+
+  * 2600:9000:a706:c634:41:731c:ad1e:bf00
+
+**EMEA (eu-central–1) region**
+
+  * svc.eu-central-1.intersight.com
+
+  * This URL resolves to the following IPv4 and IPv6 addresses:
+
+  * 52.223.57.109
+
+  * 99.83.140.236
+
+  * 2600:9000:a60c:6a4d:9a17:558a:9cc5:9196
+
+  * 2600:9000:a706:c634:ad62:5cbb:ea7e:3dc6
+
+
+  * The following service entry points will be deprecated in the future:
+
+  * svc-static1.intersight.com
+
+  * svc-static1.eu-central-1.intersight.com
+
+  * svc-static1.us-east-1.intersight.com
+
+  * svc.ucs-connect.com
+
+
+## Endpoint URLs Required to Claim Targets
+
+To claim a target, access to the North American (us-east-1) endpoints is required. If the target is claimed by a EMEA account, access to the EMEA (eu-central–1) URLs is also required. 
+
+  * **North American accounts:** North American accounts require access to all North American endpoints before and after claiming targets. 
+
+  * **EMEA accounts:** Targets for EMEA accounts require access to the North American endpoints so they can be claimed. After the target is claimed, only access to the EMEA endpoints is required. 
+
+
+Table 6. Endpoint URLs Region |  Location |  URL |  **URLs required by device connectors**  
+---|---|---|---  
+North America |  intersight-aws-us-east-1​ |  intersight.com​ us-east-1.intersight.com​ |  svc.intersight.com​ svc.us-east-1.intersight.com​ svc-static1.intersight.com​ ucs-starship.com*​ ucs-connect.com*​  
+EMEA |  intersight-aws-eu-central-1​ |  eu-central-1.intersight.com​ |  svc.eu-central-1.intersight.com​ svc-static1.eu-central-1.intersight.com  
+  
+URLs marked with an asterisk (*) are deprecated.
+
+## Requirements for Successful Target Connection to Intersight Virtual Appliance
+
+For a successful target connection to Intersight Virtual Appliance, ensure that the following connectivity requirements are met: 
+
+  * Ensure that a network connection can be established from the Device Connector to the appliance.
+
+  * The Device Connector establishes an HTTPS connection to <https://dc-fqdn-of-your-appliance> and then upgrades the HTTPS connection to a web socket. Ensure that your security rules allow the device connector to establish a web socket connection. 
+
+  * Ensure that Intersight Management is enabled in the device connector (it is enabled by default). You can find Intersight Management in Admin > Device Connector > Intersight Management in Cisco UCS Manager/Cisco UCS Director/Cisco IMC, and Settings > Networking > Cloud Connection in the Cisco HyperFlex UI. 
+
+  * If any hop between CIMC and the Appliance requires an MTU of less than 1500 bytes, ensure that the CIMC settings for **ICMP Destination Unreachable Enabled** and **Redirect Enabled** are enabled. 
+
+  * Ensure that CIMC XML API is enabled.
+
+  * Check if a firewall is introduced between the managed target and the appliance, or if the rules for an existing firewall have changed, thus affecting connectivity. If the rules are changed, ensure that the changed rules permit traffic through the firewall. 
+
+  * Ensure that all applicable physical and Virtual IPs are allowed through the firewall.
+
+  * If you use an HTTP proxy to route traffic out of your premises, and if you have made changes to the HTTP proxy server configuration, ensure that you change the device connector configuration accordingly. This is required because the appliance does not automatically detect HTTP proxy servers. 
+
+  * Configure DNS and resolve the DNS name. The Device Connector must be able to send DNS requests to a DNS server and resolve DNS records. The Device Connector must be able to resolve dc-<fqdn-of-your-appliance> to an IP address. 
+
+  * Configure NTP and validate that the target time is properly synchronized with a time server.
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+When the target time is not properly synchronized, the Device Connector may be unable to establish a secure connection to the appliance, and the TLS certificate may be considered invalid. 
+
+* * *  
+  
+---|---  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Attention** | 
+
+* * *
+
+You must configure DNS and NTP on the management interface (Cisco UCS Manager/Cisco IMC/Cisco HyperFlex) and not on the Device Connector UI. 
+
+* * *  
+  
+---|---  
+  * You must configure security targets that are in the network path by enabling network connectivity to the appliance.
+
+
+## Supported Browsers
+
+### Supported Browsers for Intersight Virtual Appliance
+
+Cisco Intersight runs on the following minimum supported browser versions:
+
+  * Google Chrome 62.0.3202.94
+
+  * Firefox 57.0.1
+
+  * Safari 10.1.1
+
+  * Microsoft Edge (Chromium) Beta
+
+
+## Software Compatibility
+
+### Software Compatibility for Intersight Virtual Appliance
+
+This section contains details about the minimum versions of the following software supported by the appliance:
+
+Component |  Minimum Supported Version  
+---|---  
+Cisco UCS Manager |  3.2(1)  
+Cisco HyperFlex Connect and Data Platform |  2.6  
+Cisco IMC |  3.1(3) for M5 Servers 3.0(4) for M4 Servers For more information about the Cisco IMC Software requirements for the M4 and M5 Servers, see the Supported Systems section in the Help Center.  See [Device Connector Requirements.](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_010.html#concept_v43_pzw_jgb) for a complete list of the supported software and the required device connector versions.   
+Cisco UCS Director |  6.7.2.0  
+Cisco Intersight Managed Mode |  4.1(2a)  
+  
+Overview of Cisco Intersight Assist
+
+## About Cisco Intersight Assist
+
+Cisco Intersight Assist helps you add endpoint devices to Cisco Intersight. A datacenter could have multiple devices that do not connect directly with Cisco Intersight. Any device that is supported by Cisco Intersight but does not connect directly with it, will need a connection mechanism. Cisco Intersight Assist provides that connection mechanism, and helps you add devices into Cisco Intersight. 
+
+Cisco Intersight Assist enables Cisco Intersight to communicate with targets that do not have a direct path to Cisco Intersight and do not have an embedded Intersight Device Connector. These include targets such as Storage Devices, Hypervisor Managers, Application Performance Management products, and much more. Intersight Assist communicates with the target’s native APIs and serves as the communication bridge to and from Cisco Intersight. Intersight Assist services run as a standalone appliance when used with Cisco Intersight SaaS. For Connected Virtual Appliance and Private Virtual Appliance, a separate Assist Appliance is not needed as the services are collocated. 
+
+You can view the Intersight Assist details by navigating to Appliance UI  > System > Target. 
+
+You can choose to install Cisco Intersight Assist from the installer during the set-up wizard. It can be installed on VMware ESXi 7.0 or later, Microsoft Hyper-V Server 2016, 2019, and 2022, KVM hypervisor on Linux, and Nutanix AHV hypervisor (AOS versions currently supported and maintained by Nutanix) 
+
+After claiming Intersight Assist into Cisco Intersight, you can claim endpoint devices using the Claim Targets option. For more information, see [Claim Targets](https://www.intersight.com/help/saas/getting_started/claim_targets). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Intersight Virtual Appliance supports TLS 1.3 protocol for HTTPS communication for improved Transport Layer Security. Cisco Intersight Assist does not support IPv6 configurations. You can add Pure Storage devices, Hitachi Virtual Storage Platform devices, NetApp storage controllers, VMware vCenter, and much more devices into Cisco Intersight after claiming them using Cisco Intersight Assist. 
+
+* * *  
+  
+---|---  
+  
+## Licensing Requirements for Intersight Assist
+
+For more information on licensing, see [Intersight Licensing](https://intersight.com/help/saas/getting_started/licensing_requirements/lic_intro). 
+
+## System Requirements for Intersight Assist
+
+### VM Resource Requirements for Intersight Assist
+
+You can deploy Cisco Intersight Assist on VMware ESXi 7.0 or later, Microsoft Hyper-V Server 2016, 2019, and 2022, KVM hypervisor on Linux, and Nutanix AHV hypervisor (AOS versions currently supported and maintained by Nutanix). This section describes the system requirements to install and deploy Cisco Intersight Assist. You can deploy Intersight Assist in small, medium, and large options. 
+
+New Deployments—You can deploy Intersight Virtual Appliance in small, medium, or large configurations. 
+
+Existing Deployments—Existing deployments are supported for tiny, small, medium, and large configurations. However, it is recommended that you migrate existing tiny deployments to small, medium, or large configurations. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * Tiny deployment is supported only for existing Assist deployments and is applicable only for Intersight Orchestrator.
+
+
+* * *  
+  
+---|---  
+Table 7. Intersight Assist Resource Requirements Resource |  Requirements  
+---|---  
+|  **Tiny (Supported for existing deployments only)** |  **Small** |  **Medium** |  **Large**  
+vCPU (AVX Required) |  8 |  16 |  24 |  48  
+RAM |  16 GiB |  32 GiB |  64 GiB |  96 GiB  
+Supported Features |  ICO |  ICO, IWO, and IST |  ICO, IWO, and IST |  ICO, IWO, and IST  
+Supported Hypervisors |  VMware ESXi 7.0 or later with VMware vSphere Web Client 7.0 or later Microsoft Hyper-V Server 2016, 2019, and 2022 KVM hypervisor on Linux Nutanix AHV hypervisor (AOS versions currently supported and maintained by Nutanix*)  
+  
+*Cisco Intersight Virtual Appliance only supports Acropolis Operating System (AOS) versions that are currently being actively supported and maintained by Nutanix. For more information, see [Nutanix End-of-Life Information](https://portal.nutanix.com/page/documents/eol/list?type=aos). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * Cisco recommends reserving all vCPUs and RAM for the virtual machine. These reservation capabilities are provided by the respective hypervisor management tool. Without reserved vCPUs and RAM, compute performance may suffer, potentially causing task failures within the appliance. 
+  * Cisco also recommends using thick provisioning for disk storage allocation. Although thin provisioning is possible, over-provisioning can lead to insufficient storage capacity, resulting in service interruption or loss, and may require a restore from backup. Additionally, over-provisioning can degrade I/O performance to the point of causing task failures within the appliance. 
+  * It is mandatory to have a CPU that supports the AVX feature. If you have the Enhanced vMotion Compatibility (EVC) level configured for your VMware vSphere cluster, ensure that the EVC level is set to a CPU family that supports the AVX feature. 
+
+
+* * *  
+  
+---|---  
+  
+This following table lists the system requirements to deploy Cisco Intersight Assist for Intersight Workload Optimizer.
+
+Table 8. Intersight Assist Resource Requirements for Intersight Workload Optimizer Resource Requirement |  System Requirements  
+---|---  
+|  **Small** |  **Medium** |  **Large**  
+vCPU (AVX Required) |  16 |  24 |  48  
+RAM |  32 GiB |  64 GiB |  96 GiB  
+Storage (Disks) |  500 GiB |  500 GiB/2TiB* |  2 TiB*  
+Deploy Configuration |  Up to 1000 Virtual Machines |  Up to 30,000 Virtual Machines  |  Up to 100,000 Virtual Machines  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * Cisco recommends reserving all vCPUs and RAM for the virtual machine. These reservation capabilities are provided by the respective hypervisor management tool. Without reserved vCPUs and RAM, compute performance may suffer, potentially causing task failures within the appliance. 
+  * Cisco also recommends using thick provisioning for disk storage allocation. Although thin provisioning is possible, over-provisioning can lead to insufficient storage capacity, resulting in service interruption or loss, and may require a restore from backup. Additionally, over-provisioning can degrade I/O performance to the point of causing task failures within the appliance. 
+  * *Existing deployments can upgrade from **Small** configuration to **Medium** configuration by either remaining at 500 GiB or upgrading to 2 TiB. 
+  * *New deployments for **Medium** and **Large** configuration will be supported only with full 2 TiB disk size configuration. 
+  * It is mandatory to have a CPU that supports the AVX feature. If you have the Enhanced vMotion Compatibility (EVC) level configured for your VMware vSphere cluster, ensure that the EVC level is set to a CPU family that supports the AVX feature. 
+
+
+* * *  
+  
+---|---  
+  
+This following table lists the resource requirements to deploy Cisco Intersight Assist for Intersight Service for HashiCorp Terraform Service (IST). 
+
+Table 9. Intersight Assist Resource Requirements for Intersight Service for HashiCorp Terraform Service (IST) **Resource** |  **Requirements**  
+---|---  
+|  **Small** |  **Medium** |  **Large**  
+vCPU (AVX Required) |  16 |  24 |  48  
+RAM |  32 GiB |  64 GiB |  96 GiB  
+Number of Terraform Agents  |  5 |  5 |  5  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * It is mandatory to have a CPU that supports the AVX feature. If you have the Enhanced vMotion Compatibility (EVC) level configured for your VMware vSphere cluster, ensure that the EVC level is set to a CPU family that supports the AVX feature. 
+
+
+* * *  
+  
+---|---  
+  
+### Port Requirements for Intersight Assist
+
+The following table lists the port numbers that must be open for Cisco Intersight Assist communication.
+
+Port |  Protocol |  Description  
+---|---|---  
+443 |  TCP/UDP |  Required for communication between:
+
+  * Cisco Intersight Assist and the user's web browser.
+  * Cisco Intersight Assist to and from the endpoint devices.
+
+  
+  
+### Supported Browsers for Intersight Assist
+
+Cisco Intersight Assist and Cisco Intersight runs on the following minimum supported browser versions:
+
+  * Google Chrome 62.0.3202.94
+
+  * Firefox 57.0.1
+
+  * Safari 10.1.1
+
+  * Microsoft Edge (Chromium) Beta
+
+
 ---
 
 ## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_02.html
+
+# Software Update
 
 ## Intersight Virtual Appliance 1.1.0-0 Upgrade Behavior — Impact of CentOS 7 to AlmaLinux 9 Migration
 
@@ -1243,5 +8864,282 @@ The following information highlights the key aspects of this migration:
 
   * Installation and upgrade bundle sizes for release version 1.1.0-0 are larger than the ones for the previous releases due to the switch to AlmaLinux. 
 
+
+## Intersight Virtual Appliance Patch Releases
+
+Starting with version 1.1.0-0, Intersight Virtual Appliance updated its version scheme to be a.b.c-d, where: 
+
+  * a.b.c — represents the appliance software release version. 
+
+  * d — represents the appliance patch release version. 
+
+
+This new version scheme allows Cisco to issue patch releases for important updates between software releases.
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * Patch releases are applicable to specific software versions. For example, the 1.1.0-3 patch bundle can be applied to appliances that are running on software versions 1.1.0-0, 1.1.0-1, or 1.1.0-2 only. It cannot be applied to software version 1.1.2-0. 
+  * Patch releases are cumulative. For example, you can directly update to appliance patch version 1.1.0-3 for an appliance that is running software version 1.1.0-0, without having to apply intermediate patch versions such as 1.1.0-1 and 1.1.0-2. 
+  * Appliances that are running on a patch version can be updated to either a higher version of a patch release or to a higher version of a software release. For example, if your appliance is running on version 1.1.0-2, you can either update to a patch release higher than 1.1.0-2 (patch releases pertaining to the 1.1.0-0 software release) or you can update to a software release that is higher than 1.1.0-0. 
+
+
+* * *  
+  
+---|---  
+  
+For more information about updating your appliance, see Updating Intersight Connected Virtual Appliance and Updating Intersight Private Virtual Appliance. 
+
+## Updating Intersight Connected Virtual Appliance
+
+Intersight Connected Virtual Appliance provides a way to either update automatically when new versions are made available by the update service, or to manually update to any available version that is higher than the running version. 
+
+When Connected Virtual Appliance is configured to update in the **Automatic** mode, it obtains bundles directly from the cloud to update the service packages, OS packages including the kernel, and other security fixes. Installation will occur as per the system default or custom installation settings. In the automatic mode, if there are no new updates available for more than 90 days, ensure that the appliance is connected to Intersight. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * It is recommended that you use the Automatic mode for updating the appliance. 
+  * There is no difference between an upgrade on a multi-node appliance versus an upgrade on a single-node appliance as the upgrade is done at the cluster-level and not at the node-level. 
+
+
+* * *  
+  
+---|---  
+  
+When the appliance is configured to update in the **Manual** mode, you have a choice of either uploading the image from the local machine or from a network share server, depending on where you saved the image. Once the image is uploaded, you can choose to install the update immediately, or you can schedule a date and time for the installation. Note that you need to download the required appliance software packages from the Appliance Portal to manually update your Connected Virtual Appliance. For more information, see [Creating an Appliance Account for Downloading Software Packages](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_01.html#Cisco_Task_in_List_GUI.dita_a1f723e1-5c59-42de-aa7e-b952edad87e8) and [Downloading Software Packages for Intersight Virtual Appliance](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_01.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * It is highly recommended that you check the Appliance Account regularly for updates and remain on the latest version of the Intersight Virtual Appliance software, which is continuously enhanced with new features and improvements.  It is also important to note that only the latest major release version ("N") and the three previous major versions ("N-1," "N-2," and "N-3") are supported. Additionally, patch release versions for each supported major release are also supported. For example, if the latest major release is version 1.1.3-0, then: 
+  * Supported major release versions include 1.1.3-0, 1.1.2-0, 1.1.1-0, and 1.1.0-0.
+  * Supported patch release versions include 1.1.3-1, 1.1.2-1, 1.1.2-2, 1.1.2-3, and 1.1.1-1.
+  * Ensure that the version of the appliance that you are manually uploading for installation is always higher than the running version. 
+  * There is no difference between an upgrade on a multi-node appliance versus an upgrade on a single-node appliance as the upgrade is done at the cluster-level and not at the node-level. 
+  * Intersight Virtual Appliance patch bundles are supported for specific software versions only. For more information about appliance release versioning scheme, see Intersight Virtual Appliance Patch Releases. 
+
+
+* * *  
+  
+---|---  
+  
+Use the following instructions to configure an update for Connected Virtual Appliance: 
+
+Before you begin: Ensure that Intersight Connected Virtual Appliance is connected to Intersight. 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Virtual Appliance as a user with account administrator role.   
+---|---  
+**Step 2** |  Choose Settings > System > Appliance Updates. The following details about the installed version are displayed:  In the Automatic mode of configuration, the following details are displayed:
+
+  * Running Version—The current version number 
+  * Update Mode—Automatic 
+  * Installation Schedule—Displays the date and time when the update is scheduled 
+
+In the Manual mode of configuration, the following details are displayed:
+
+  * Running Version—The current appliance version number 
+  * Update Mode—Manual 
+
+In both modes, you may see the following details about the Pending Update: 
+
+  * Version—Indicates the appliance version that is scheduled to be updated 
+  * Update Impact Type—This could be Disruptive, Disruptive-reboot, or None. The impact could be disruptive because of an infrastructure upgrade or upgrade of other Intersight services. A disruptive update may cause Intersight to be unavailable for the duration specified in Update Impact Duration. The disruptive reboot of the appliance could be caused by kernel updates and restarting of services. A grace period is provided to help you plan and manage the update better. The UI displays appropriate messages to guide you if there is a disruptive reboot.  |  **Attention** |  An appliance update could take about 90 minutes to complete.  During this time, some features will be temporarily unavailable. It is recommended that you take a backup prior to triggering the update and do not reboot your appliance. If there is a requirement to reboot, Intersight Appliance does it automatically.  
+---|---  
+  * Installation Date/Time —Displays the date and time when the update is scheduled. You can click on the pencil icon to edit the installation date and time. 
+
+  * Release Notes—Includes a link to the "What's New" information in the Appliance Help Center. 
+
+
+The Appliance Updates screen also displays a table view of the appliance updates under Update History. This table lists the installation date, appliance version, a description of the version, and the status of the installation of the update. From this table view, you can search for a specific version of the appliance and the date it was installed on and the status of the installation.   
+  
+**Step 3** |  Click Update Settings to configure an update.   
+**Step 4** |  On the Appliance Updates screen, under Update Settings, make your selections for the update mode of configuration by choosing either automatic or manual mode.  For the Automatic mode: 
+
+  1. Select Automatic mode for updates. 
+  2. Select either System Default or Custom for the installation schedule.  **System Default** —Appliance updates are installed according to default appliance settings and customized configurations. 
+     1. **[Optional]** Enable Block Update Dates and specify the start and end of the block dates. During this period, the appliance will not be updated. 
+     2. Choose a strategy to update Intersight intelligence. For more information, see [Updating Intersight Intelligence for Intersight Connected Virtual Appliance](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#Cisco_Task_in_List_GUI.dita_da23fbd5-beb1-42f1-8979-2186fd24eb38). 
+     3. Click Save. 
+**Custom** —Appliance updates are installed automatically based on the settings configured by you. 
+     1. **[Optional]** Enable Custom Grace Period and set your preferred grace period (1—6 weeks) for updates that require a reboot and for updates that do not require a reboot. This setting applies only to updates received subsequent to the setting of the custom grace period and not to any existing updates that are already pending. 
+     2. **[Optional]** Enable Block Update Dates and specify the start and end of the block dates. During this period, the appliance will not be updated. 
+     3. Choose a strategy to update Intersight intelligence. For more information, see [Updating Intersight Intelligence for Intersight Connected Virtual Appliance](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#Cisco_Task_in_List_GUI.dita_da23fbd5-beb1-42f1-8979-2186fd24eb38). 
+     4. Click Save. 
+
+For the Manual mode:
+
+  1. Select Manual mode of update.  Choose a strategy to update Intersight intelligence. For more information, see [Updating Intersight Intelligence for Intersight Connected Virtual Appliance](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#Cisco_Task_in_List_GUI.dita_da23fbd5-beb1-42f1-8979-2186fd24eb38). 
+  2. Click Save. 
+  3. Navigate to Settings > System > Appliance Updates and click Install Updates.  The Upload Appliance Software page is displayed. 
+  4. Select either Local Machine or Network Share, depending on where you saved the image.
+     1. For the Local Machine option, browse to the location from where you want to upload the image and click Next. 
+     2. For the Network Share option, enter the protocol and enter details of the remote server from where you want to copy the file, and click Next. 
+  * Protocol—Communication protocol used for file transfer. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol) and SFTP (Secure File Transfer Protocol). 
+  * Server IP/Hostname—The network share server from where the file is copied 
+  * Port—TCP port to use 
+  * Location—Directory where the file to be copied is stored 
+  * Filename—Name of the file to be copied from the network share 
+  * Username—Username for authenticating with the network share 
+  * Password—Password for authenticating with the network share 
+     3. Select to install immediately or schedule the installation for a later date and time. 
+     4. Click Apply. 
+
+
+  1. You can track the upload progress by clicking on the Requests icon.  When the upload is completed, you will see details about the Pending Update on the Software page. From the Pending Update Details section, you will be able to cancel an update, update immediately, or edit the installation date and time.  |  **Note** |  In the Manual mode, if you cancel a pending update, you have to upload the appliance bundle again to be able to initiate an update.   
+---|---  
+
+**Note** |  If the update fails and if the update is recoverable, the Update History shows the installation as Failed, and the existing Pending Update Details remain as-is. You can try the upgrade process again. For more information about the update errors and possible resolutions, see Troubleshooting Appliance Update Failure Issues.  If the update fails and if the update is non-recoverable, the Update History shows the installation as Failed, and you will no longer see any existing Pending Update Details. However, all existing features and functionality continue to work as before. For more information about the update errors and possible resolutions, see Troubleshooting Appliance Update Failure Issues.  After the update, if you use the same browser to log in to the appliance, you might encounter an Error code: SEC_ERROR_REUSED_ISSUER_AND_SERIAL. To fix this issue, you will need to remove the system-generated certificate of the server from the same browser that you are using to log in to the appliance. For example, to remove the system-generated certificate of the server from Google Chrome, navigate to Settings > Authentication > Certificates. Select the system-generated certificate that you want to remove, click Remove, and click Close. Close the browser and then log in to the application from a new browser. For more information about certificates, see [Certificates](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#reference_vjn_psh_kkb).   
+---|---  
+  
+* * *
+
+## Updating Intersight Private Virtual Appliance
+
+Intersight Private Virtual Appliance provides a way to manually update to any available version that is higher than the running version. You have a choice of either uploading the image from the local machine or from a network share server, depending on where you saved the image. Once the image is uploaded, you can choose to install the update immediately, or you can schedule a date and time for the installation. 
+
+You can download the required packages from the Appliance Portal to manually update your Private Virtual Appliance. For more information, see [Creating an Appliance Account for Downloading Software Packages](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_01.html#Cisco_Task_in_List_GUI.dita_a1f723e1-5c59-42de-aa7e-b952edad87e8) and [Downloading Software Packages for Intersight Virtual Appliance](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_01.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * It is highly recommended that you check the Appliance Account regularly for updates and remain on the latest version of the Intersight Virtual Appliance software, which is continuously enhanced with new features and improvements.  It is also important to note that only the latest major release version ("N") and the three previous major versions ("N-1," "N-2," and "N-3") are supported. Additionally, patch release versions for each supported major release are also supported. For example, if the latest major release is version 1.1.3-0, then: 
+  * Supported major release versions include 1.1.3-0, 1.1.2-0, 1.1.1-0, and 1.1.0-0.
+  * Supported patch release versions include 1.1.3-1, 1.1.2-1, 1.1.2-2, 1.1.2-3, and 1.1.1-1.
+  * Ensure that the version of the appliance that you are manually uploading for installation is always higher than the running version. 
+  * There is no difference between an upgrade on a multi-node appliance versus an upgrade on a single-node appliance as the upgrade is done at the cluster-level and not at the node-level. 
+  * Intersight Virtual Appliance patch bundles are supported for specific software versions only. For more information about appliance release versioning scheme, see Intersight Virtual Appliance Patch Releases. 
+
+
+* * *  
+  
+---|---  
+  
+Before you begin: Ensure that you have downloaded the required packages from the Appliance Account to upgrade your Intersight Private Virtual Appliance. For more information on how to create the Private Appliance Account, see [Creating an Appliance Account for Downloading Software Packages](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_01.html#Cisco_Task_in_List_GUI.dita_a1f723e1-5c59-42de-aa7e-b952edad87e8). 
+
+To configure an update for Private Virtual Appliance, do the following: 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log in to Intersight Virtual Appliance as a user with account administrator role.   
+---|---  
+**Step 2** |  Choose Settings > System > Appliance Updates.  You may see the following details about the Pending Update: 
+
+  * Version—Indicates the version that is scheduled to be updated 
+  * Update Impact Type—This could be Disruptive, Disruptive-reboot, or None. The impact could be disruptive because of an infrastructure upgrade or upgrade of other Intersight services. A disruptive update may cause Intersight to be unavailable for the duration specified in Update Impact Duration. The disruptive reboot of the appliance could be caused by kernel updates and restarting of services. A grace period is provided to help you plan and manage the update better. The UI displays appropriate messages to guide you if there is a disruptive reboot.  |  **Attention** |  An appliance update could take about 90 minutes to complete.  During this time, some features will be temporarily unavailable. It is recommended that you take a backup prior to triggering the update and do not reboot your appliance. If there is a requirement to reboot, Intersight Appliance does it automatically.  
+---|---  
+  * Installation Date/Time —Displays the date and time when the update is scheduled. You can click on the pencil icon to edit the installation date and time. 
+
+  * Release Notes—Includes a link to the release notes for the pending update 
+
+
+The Appliance Updates  screen also displays a table view of the appliance updates under Update History. This table lists the installation date, appliance version, a description of the version, and the status of the installation of the update. From this table view, you can search for a specific appliance version and the date it was installed, and the status of the installation.   
+  
+**Step 3** |  Click Install Updates.  The Appliance Updates screen is displayed.   
+**Step 4** |  Make your selections as follows:
+
+  1. To upload the appliance software, select either Local Machine or Network Share, depending on where the software image is saved. 
+     1. For Local Machine, browse to where the software image is saved, and then click Next. 
+     2. For the Network Share option, enter the protocol and enter details of the remote server from where you want to copy the file, and then click Next. 
+  * Protocol—Communication protocol used for file transfer. Intersight Virtual Appliance currently supports CIFS (Common Internet File System), SCP (Secure Copy Protocol) and SFTP (Secure File Transfer Protocol). 
+  * Server IP/Hostname—The network share server from where the file is copied 
+  * Port—TCP port to use 
+  * Location—Directory where the file to be copied is stored 
+  * Filename—Name of the file to be copied 
+  * Username—Username for authenticating with the network share 
+  * Password—Password for authenticating with the network share 
+  2. Select to install immediately or schedule the installation for a later date and time. You can track the upload progress by clicking on the Requests icon.  When the upload is completed, you will see details about the Pending Update on the Appliance Updates screen. From the Pending Update Details section, you will be able to cancel an update, update immediately, or edit the installation date and time. 
+
+|  **Note** |  If you cancel a pending update, you will need to upload the appliance software again to be able to initiate an update. If the update fails and if the update is recoverable, the Update History shows the installation as Failed, and the existing Pending Update Details remain as-is. You can try the upgrade process again. For more information about the update errors and possible resolutions, see Troubleshooting Appliance Update Failure Issues.  If the update fails and if the update is non-recoverable, the Update History shows the installation as Failed, and you will no longer see any existing Pending Update Details. However, all existing features and functionality continue to work as before. For more information about the update errors and possible resolutions, see Troubleshooting Appliance Update Failure Issues.  After the update, if you use the same browser to log in to the appliance, you might encounter an Error code: SEC_ERROR_REUSED_ISSUER_AND_SERIAL. To fix this issue, you will need to remove the system-generated certificate of the server from the same browser that you are using to log in to the appliance. For example, to remove the system-generated certificate of the server from Google Chrome, navigate to Settings > Authentication > Certificates. Select the system-generated certificate that you want to remove, click Remove, and click Close. Close the browser and then log in to the application from a new browser. For more information about certificates, see [Certificates](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#reference_vjn_psh_kkb).   
+---|---  
+  
+* * *
+
+## Updating Intersight Assist
+
+Cisco Intersight Assist is auto-upgraded from Intersight Cloud, when new versions are made available by the upgrade service. If there are no new upgrades available for more than 90 days, ensure that Intersight Assist is connected to Intersight. Intersight Assist can be upgraded automatically from the cloud to update the service packages, OS packages including the kernel, and other security fixes. The appliance UI provides guidance about the upgrade, including the impact of the upgrade, and any service interruptions. You can schedule an upgrade to occur automatically when an update is available during a weekly maintenance window. 
+
+Use the following instructions to configure an upgrade schedule:
+
+### Before you begin
+
+Ensure that Cisco Intersight Assist is connected to Intersight. 
+
+### Procedure
+
+* * *
+
+**Step 1** |  Log into Intersight Assist as a user with account administrator role.   
+---|---  
+**Step 2** |  Choose Settings > System > Appliance Updates. The following details about the installed Assist are displayed:  **New Version** section: 
+
+  * **Version** —The available Assist version number. 
+  * Upgrade Impact Type—This could be Disruptive, Disruptive-reboot, or None. The impact could be disruptive because of an infrastructure upgrade or upgrade of other Intersight services. A disruptive update may cause Intersight to be unavailable for the duration specified in Upgrade Impact Duration. The disruptive reboot of the appliance could be caused by an update to the operating system or other component changes. A grace period is provided to help you plan and manage the upgrade better. The UI displays appropriate messages to guide you if there is a disruptive reboot.  |  **Attention** |  An Assist upgrade could take up to 90 minutes to complete.  **During this time, some features will be temporarily unavailable.** **It is recommended that you take a backup prior to triggering the upgrade and do not reboot your appliance. Do not reboot the appliance manually while the appliance upgrades. If there is a requirement to reboot, Intersight Assist does it automatically.**  
+---|---  
+  * **Scheduled to Install On** —Date and time at which the new version is scheduled to be installed. When the upgrade is triggered, a progress bar displays the status of the update. 
+
+  * **Features** section—Lists the features, enhancements, and defect fixes that are part of the new version. 
+
+
+Depending on your upgrade schedule preferences, you can wait for the automatic upgrade on the scheduled install time or install the new version immediately by clicking Install Now. 
+
+**Note** |  Any new Assist version must be upgraded within seven days. If not, the Intersight Assist automatically completes the upgrade service.   
+---|---  
+  
+The following details about the currently installed Assist are also displayed: 
+
+  * Version—Currently installed Assist version. 
+
+  * Schedule—Displays one of the following upgrade statuses: 
+
+  * Automatic—If you have chosen automatic updates and scheduler is not configured
+
+  * Day and Time, if a specific update time is scheduled
+
+  * Click the pencil icon in the Schedule field to specify the following details: 
+
+      1. Select an update strategy to update the appliance. Choose Automatic or Weekly Maintenance Window. When you choose the Automatic option, the appliance will be updated automatically when an update is available. Upgrade is auto triggered if the upgrade service detects any pending update during the interval, once the grace period expires. You can view details of the upgrade from Settings > System > Appliance Updates. 
+
+      2. When you choose the  Weekly Maintenance Window option, select the Day of Week and the Time of Day within the following week to initiate the upgrade process. The schedule is an interval from the time of the day it was set until the end of the day. Upgrades are triggered based on the specific time and day of the week selected in the schedule. The Weekly Maintenance Window option upgrades only if an update is available. 
+
+      3. Choose a strategy to update Intersight intelligence. The Update Intersight Intelligence Immediately option is enabled by default. It allows you to update Intersight intelligence such as Hardware Compatibility List (HCL) as soon as it becomes available, independent of the upgrade schedule. For more information, see [Updating Intersight Intelligence for Intersight Connected Virtual Appliance](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#Cisco_Task_in_List_GUI.dita_da23fbd5-beb1-42f1-8979-2186fd24eb38). 
+
+  * Update History—A table view of the appliance updates. This table lists the **Installation Date** , **Version** , **Description** of the version, and the **Status** of the installation of the update. From this table view, you can search for a specific version and the date it was installed, and the status of the installation. 
+
+
+**Note** |  If the upgrade fails and if the upgrade is recoverable, the **Install Now** button remains enabled. You can try the upgrading process again. For more information about the update errors and possible resolutions, see Troubleshooting Appliance Update Failure Issues.  If the upgrade fails and if the upgrade is non-recoverable, the **Install Now** button is disabled. However, all existing features and functionality continue to work as before. For more information about the update errors and possible resolutions, see Troubleshooting Appliance Update Failure Issues.  After the upgrade, if you use the same browser to log in to the appliance, you might encounter an Error code: SEC_ERROR_REUSED_ISSUER_AND_SERIAL. To fix this issue, you will need to remove the system-generated certificate of the server from the same browser that you are using to log in to the appliance. For example, to remove the system-generated certificate of the server from Google Chrome, navigate to Settings > Authentication > Certificates. Select the system-generated certificate that you want to remove, click Remove, and click Close. Close the browser and then log in to the application from a new browser. For more information about certificate, see [Certificates](b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html#reference_vjn_psh_kkb).   
+---|---  
+  
+* * *
+
+## Troubleshooting Intersight Virtual Appliance Software Update Failure Issues
+
+The following table lists some of the error messages you may encounter while updating your appliance and the possible resolution for each of them. If the issues still persist, contact Cisco TAC. 
+
+Table 1. Appliance Software Update Failure Issues Error Messages |  Possible Resolutions  
+---|---  
+The disk size does not meet the minimum requirement. |  Your appliance hardware disk space is not enough for a successful upgrade. Refer to the information in the [requirements](b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_0111.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section and update your hardware to meet the requirements.   
+Appliance is currently running on version _CURRENTVERSION_. You must upgrade to version _INTERMEDIATEVERSION_ manually before you can upgrade to version _PENDINGVERSION_.  |  **Note** |  _CURRENTVERSION_ , _INTERMEDIATEVERSION_ , and _PENDINGVERSION_ are variables and serve as placeholder texts here. Follow the versions as indicated in the error message that you encounter.   
+---|---  
+Your appliance version does not support direct upgrade to the pending upgrade version. Trigger a manual upgrade to the intermediate version listed in the error message, before you upgrade to the pending version.   
+Appliance requires CPU that supports the AVX instruction set. |  The CPU used for your appliance does not offer AVX support. Upgrade the hardware and use a CPU that offers AVX support.  
+To upgrade to an appliance running AlmaLinux, you need to upgrade from Appliance Version _INTERMEDIATEVERSION_ or a newer version.  |  **Note** |  _INTERMEDIATEVERSION_ is a variable and serves as a placeholder text here. Follow the version as indicated in the error message that you encounter.   
+---|---  
+Your appliance version does not support direct upgrade to the pending upgrade version. Trigger a manual upgrade to the intermediate version listed in the error message, before you upgrade to the pending version.   
+Storage devices on appliance must use VirtIO drivers only. |  If running appliance on KVM, ensure that you are only using VirtIO drivers for storage.
 
 ---

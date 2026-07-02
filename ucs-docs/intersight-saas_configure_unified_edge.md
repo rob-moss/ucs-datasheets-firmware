@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Unified Edge guide |
 | **URL** | https://intersight.com/help/saas/configure/unified_edge |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260616155027767/docs/cloud/data/articles/features/unified_edge/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/articles/features/unified_edge/configure/en/index.html |
 | **HTML Title** | Unified Edge |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_unified_edge.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:17:36 |
+| **Fetched on** | 2026-07-02 13:03:58 |
 
 ---
 

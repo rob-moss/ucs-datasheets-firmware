@@ -8,13 +8,172 @@
 | **HTML Title** | Release Notes for Cisco UCS Manager, Release 4.2 |
 | **Source file** | `ucs-docs-raw/html/cisco-ucs-manager-rn-4-2.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:18:26 |
+| **Fetched on** | 2026-07-02 13:04:49 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/release/notes/cisco-ucs-manager-rn-4-2.html
 
 ### 
+
+## Contents
+
+  * Cisco UCS Manager 
+  * Deprecation Notice
+  * Revision History
+  * Top Reasons to Move to Cisco UCS Manager Release 4.2
+  * Supported Platforms and Release Compatibility Matrix
+  * Supported Platforms in this Release
+  * Cisco UCS Manager and Cisco UCS C-Series Release Compatibility Matrix for C-Series Rack-Mount Servers
+  * System Requirements
+  * Cisco UCS Central Integration
+  * Upgrade and Downgrade Guidelines
+  * Default Open Ports
+  * New Features in Release 4.2
+  * New Hardware in Release 4.2
+  * New Hardware in Release 4.2(3r)
+  * New Hardware in Release 4.2(3p)
+  * New Hardware in Release 4.2(3o)
+  * New Hardware in Release 4.2(3n)
+  * New Hardware in Release 4.2(3m)
+  * New Hardware in Release 4.2(3l)
+  * New Hardware in Release 4.2(3k)
+  * New Hardware in Release 4.2(3k)
+  * New Hardware in Release 4.2(3j)
+  * New Hardware in Release 4.2(3i)
+  * New Hardware in Release 4.2(3h)
+  * New Hardware in Release 4.2(3g)
+  * New Hardware in Release 4.2(3e)
+  * New Hardware in Release 4.2(3d)
+  * New Hardware in Release 4.2(3b)
+  * New Hardware in Release 4.2(2e)
+  * New Hardware in Release 4.2(2d)
+  * New Hardware in Release 4.2(2c)
+  * New Hardware in Release 4.2(2a)
+  * New Hardware in Release 4.2(1n)
+  * New Hardware in Release 4.2(1m)
+  * New Hardware in Release 4.2(1l) (Deprecated Release)
+  * New Hardware in Release 4.2(1i)
+  * New Hardware in Release 4.2(1f)
+  * New Hardware in Release 4.2(1d)
+  * New Software in Release 4.2
+  * New Software Features in Release 4.2(3r)
+  * New Software Features in Release 4.2(3p)
+  * New Software Features in Release 4.2(3o)
+  * New Software Features in Release 4.2(3n)
+  * New Software Features in Release 4.2(3m)
+  * New Software Features in Release 4.2(3l)
+  * New Software Features in Release 4.2(3k)
+  * New Software Features in Release 4.2(3k)
+  * New Software Features in Release 4.2(3j)
+  * New Software Features in Release 4.2(3i)
+  * New Software Features in Release 4.2(3h)
+  * New Software Features in Release 4.2(3g)
+  * New Software Features in Release 4.2(3e)
+  * New Software Features in Release 4.2(3d)
+  * New Software Features in Release 4.2(3b)
+  * New Software Features in Release 4.2(2e)
+  * New Software Features in Release 4.2(2d)
+  * New Software Features in Release 4.2(2c)
+  * New Software Features in Release 4.2(2a)
+  * New Software Features in Release 4.2(1n)
+  * New Software Features in Release 4.2(1m)
+  * New Software Features in Release 4.2(1l) (Deprecated Release)
+  * New Software Features in Release 4.2(1i)
+  * New Software Features in Release 4.2(1f)
+  * New Software Features in Release 4.2(1d)
+  * Deprecated Hardware and Software in Cisco UCS Manager Release 4.2
+  * Cross-Version Firmware Support
+  * Cisco UCS NVMeoF Support Matrix for 3rd Party Storage Vendors
+  * Internal Dependencies
+  * Cisco UCS 6536, 6400, 6300, 6332, and 6200 Series Fabric Interconnects and Components
+  * Blade Servers
+  * Rack Servers
+  * Adapters
+  * Cisco UCS Fabric Interconnect Server Compatibility Matrix - Release 4.2(3)
+  * Other Hardware
+  * Cisco UCS Mini and Components
+  * Capability Catalog
+  * Security Fixes
+  * Security Fixes in Release 4.2(3r)
+  * Security Fixes in Release 4.2(3p)
+  * Security Fixes in Release 4.2(3o)
+  * Security Fixes in Release 4.2(3n)
+  * Security Fixes in Release 4.2(3m)
+  * Security Fixes in Release 4.2(3l)
+  * Security Fixes in Release 4.2(3k)
+  * Security Fixes in Release 4.2(3j)
+  * Security Fixes in Release 4.2(3i)
+  * Security Fixes in Release 4.2(3h)
+  * Security Fixes in Release 4.2(3g)
+  * Security Fixes in Release 4.2(3e)
+  * Security Fixes in Release 4.2(3d)
+  * Security Fixes in Release 4.2(3b)
+  * Security Fixes in Release 4.2(2e)
+  * Security Fixes in Release 4.2(2d)
+  * Security Fixes in Release 4.2(2c)
+  * Security Fixes in Release 4.2(2a)
+  * Security Fixes in Release 4.2(1n)
+  * Security Fixes in Release 4.2(1m)
+  * Security Fixes in Release 4.2(1l)
+  * Security Fixes in Release 4.2(1k)
+  * Security Fixes in Release 4.2(1i)
+  * Security Fixes in Release 4.2(1f)
+  * Security Fixes in Release 4.2(1d)
+  * Resolved Caveats
+  * Resolved Caveats in Release 4.2(3r)
+  * Resolved Caveats in Release 4.2(3p)
+  * Resolved Caveats in Release 4.2(3o)
+  * Resolved Caveats in Release 4.2(3n)
+  * Resolved Caveats in Release 4.2(3m)
+  * Resolved Caveats in Release 4.2(3l)
+  * Resolved Caveats in Release 4.2(3k)
+  * Resolved Caveats in Release 4.2(3j)
+  * Resolved Caveats in Release 4.2(3i)
+  * Resolved Caveats in Release 4.2(3h)
+  * Resolved Caveats in Release 4.2(3g)
+  * Resolved Caveats in Release 4.2(3e)
+  * Resolved Caveats in Release 4.2(3d)
+  * Resolved Caveats in Release 4.2(3b)
+  * Resolved Caveats in Release 4.2(2e)
+  * Resolved Caveats in Release 4.2(2d)
+  * Resolved Caveats in Release 4.2(2c)
+  * Resolved Caveats in Release 4.2(2a)
+  * Resolved Caveats in Release 4.2(1n)
+  * Resolved Caveats in Release 4.2(1m)
+  * Resolved Caveats in Release 4.2(1l) (Deprecated Release)
+  * Resolved Caveats in Release 4.2(1i)
+  * Resolved Caveats in Release 4.2(1f)
+  * Resolved Caveats in Release 4.2(1d)
+  * Open Caveats
+  * Open Caveats for Release 4.2(3r)
+  * Open Caveats for Release 4.2(3p)
+  * Open Caveats for Release 4.2(3o)
+  * Open Caveats for Release 4.2(3n)
+  * Open Caveats for Release 4.2(3m)
+  * Open Caveats for Release 4.2(3l)
+  * Open Caveats for Release 4.2(3k)
+  * Open Caveats for Release 4.2(3j)
+  * Open Caveats for Release 4.2(3i)
+  * Open Caveats for Release 4.2(3h)
+  * Open Caveats for Release 4.2(3g)
+  * Open Caveats for Release 4.2(3e)
+  * Open Caveats for Release 4.2(3d)
+  * Open Caveats for Release 4.2(3b)
+  * Open Caveats for Release 4.2(2e)
+  * Open Caveats for Release 4.2(2d)
+  * Open Caveats for Release 4.2(2c)
+  * Open Caveats for Release 4.2(2a)
+  * Open Caveats for Release 4.2(1n)
+  * Open Caveats for Release 4.2(1m)
+  * Open Caveats for Release 4.2(1l)
+  * Open Caveats for Release 4.2(1k)
+  * Open Caveats for Release 4.2(1i)
+  * Open Caveats for Release 4.2(1f)
+  * Open Caveats for Release 4.2(1d)
+  * Known Behavior and Limitations
+  * Related Documentation
+
 
 **First Published: June 24, 2021**
 

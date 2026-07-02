@@ -8,104 +8,11 @@
 | **HTML Title** | IMM Configuration Sharing Across Organizations and Policy Cloning White Paper |
 | **Source file** | `ucs-docs-raw/html/imm-con-sharing-across-organization-cloning-wp.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:18:23 |
+| **Fetched on** | 2026-07-02 13:04:46 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# IMM Configuration Sharing Across Organizations and Policy Cloning White Paper
-
-White Paper
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.pdf) (1.9 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:October 24, 2023
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/cloud-systems-management/intersight/imm-con-sharing-across-organization-cloning-wp.pdf) (1.9 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:October 24, 2023
-
-#### Table of Contents
-
-  * Introduction
-  * Context – Where we were and where we are now
-  * Explanation – Configuration Sharing Across Organizations
-  * Example – Configuration Sharing Across Organizations
-  * Rules - Configuration Sharing Across Organizations
-  * Migrating considerations - Configuration Sharing Across Organizations
-  * Explanation – Policy Cloning Across Organizations
-  * Example – Policy Cloning Across Organizations
-  * Rules - Policy cloning
-  * Conclusion
-  * Additional resources
-
 
 ` `
 
@@ -431,8 +338,6 @@ Additional resources
 ### Learn more
 
 
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
 ---
 
 ## Page 2: https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/cx-services-intersight-aag.html
@@ -441,6 +346,70 @@ Additional resources
   * Skip to search
   * Skip to footer
 
+
+[ Cisco.com Worldwide ](https://www.cisco.com "Cisco.com Worldwide")
+
+###  Products and Services
+
+Close
+
+###  Solutions
+
+Close
+
+###  Support
+
+Close
+
+###  Learn
+
+Close
+
+###  Why Cisco
+
+Close
+
+###  Partners
+
+Close
+
+[ Trials and demos](/site/us/en/products/trials-demos.html?linkclickid=hdr-mainnav-trialsdemos)
+
+[ How to buy](/site/us/en/buy/index.html?linkclickid=hdr-utilnav-howtobuy)
+
+Partners
+
+EN US
+
+Profile
+
+[ Log in](/content/cdc/login.html?referer=)
+
+[ Trials and demos](/site/us/en/products/trials-demos.html?linkclickid=hdr-mainnav-trialsdemos)
+
+MENU
+
+CLOSE
+
+[ How to buy](/site/us/en/buy/index.html?linkclickid=hdr-utilnav-howtobuy)
+
+Partners
+
+Profile
+
+[ Log in](/content/cdc/login.html?referer=)
+
+EN US
+
+Close
+
+Close
+
+Close
+
+Close
+
+Close
 
 ![](/content/dam/cisco-cdc/site/images/heroes/services/cisco-iq-2400x1028.jpg)
 
@@ -572,14 +541,6 @@ United Airlines transformed its customer service operations, resulting in substa
 
 [See United Airlines’ story](https://www.cisco.com/c/m/en_us/customer-experience/customer-stories/united-airlines-customer-story.html)
 
-![](/content/dam/cisco-cdc/site/images/photography/elevating-connection-544x306.png)
-
-###  Elevating connections across a country 
-
-Norlys expanded the national network infrastructure of Denmark with minimal disruption while ensuring reliability and quality for the entire nation.
-
-[See Norlys’ story](https://www.cisco.com/c/m/en_us/customer-experience/customer-stories/norlys.html)
-
 * * *
 
 Show more
@@ -597,5 +558,42 @@ Discover how Cisco services can help transform your technology deployment, adopt
 __
 
 Hello, how can I help?
+
+###  Quick Links
+
+  * [About Cisco](/site/us/en/about/index.html)
+  * [Contact Us](/site/us/en/about/contact-cisco/index.html?linkclickid=ftr-contactus)
+  * [Careers](https://careers.cisco.com/global/en/home)
+  * [Connect with a partner](/site/us/en/partners/connect-with-a-partner/index.html)
+
+
+* * *
+
+###  Resources and Legal
+
+  * [Feedback](https://ciscocx.qualtrics.com/jfe/form/SV_bwrmeoKrBHYxOyW?Ref=/c/en/us/index.html)
+  * [Help](https://www.cisco.com/c/en/us/about/help.html)
+  * [Terms & Conditions](https://www.cisco.com/c/en/us/about/legal/terms-conditions.html)
+  * [Privacy  
+](https://www.cisco.com/c/en/us/about/legal/privacy-full.html)
+  * Cookies / Do not sell or share my personal data  
+
+  * [Accessibility](https://www.cisco.com/c/en/us/about/accessibility.html)
+  * [Trademarks](https://www.cisco.com/c/en/us/about/legal/trademarks.html)
+  * [Supply Chain Transparency](https://www.cisco.com/c/dam/en_us/about/supply-chain/cisco-modern-slavery-statement.pdf)
+  * [Newsroom](https://newsroom.cisco.com/c/r/newsroom/en/us/index.html)
+  * [Sitemap](/site/us/en/about/sitemap.html)
+
+
+* * *
+
+  * [ ](https://www.facebook.com/cisco/ "Facebook")
+  * [ ](https://x.com/Cisco/ "X")
+  * [ ](https://www.linkedin.com/company/cisco "LinkedIn")
+  * [ ](https://www.youtube.com/user/cisco "YouTube")
+  * [ ](https://www.instagram.com/cisco/ "Instagram")
+
+
+©  Cisco Systems, Inc.
 
 ---

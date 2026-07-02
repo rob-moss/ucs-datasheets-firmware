@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/x440p-specsheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-06-24 11:20:59 |
+| **Fetched on** | 2026-07-02 13:06:50 |
 
 ---
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Virtual Interface Card 1340 Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-732517.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:23:38 |
+| **Fetched on** | 2026-07-02 13:08:56 |
 
 ---
 
@@ -17,6 +17,12 @@
   * Skip to content
   * Skip to search
   * Skip to footer
+
+
+  *   * [Products & Services](/c/en/us/products.html)
+  * [collateral](/c/en/us/products/collateral.html)
+  * [interfaces-modules](/c/en/us/products/collateral/interfaces-modules.html)
+  * [ucs-virtual-interface-card-1340](/c/en/us/products/collateral/interfaces-modules/ucs-virtual-interface-card-1340.html)
 
 
 # Cisco UCS Virtual Interface Card 1340 Data Sheet

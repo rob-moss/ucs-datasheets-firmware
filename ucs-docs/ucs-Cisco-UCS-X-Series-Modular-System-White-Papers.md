@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X-Series Modular System - White Papers |
 | **Source file** | `ucs-docs-raw/html/white-paper-listing.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:23:09 |
+| **Fetched on** | 2026-07-02 13:08:38 |
 
 ---
 
@@ -23,6 +23,75 @@ Investigate the business and technical issues pertaining to a platform, solution
   * Skip to main content
   * Skip to search
   * Skip to footer
+
+
+[ Cisco.com Worldwide ](https://www.cisco.com "Cisco.com Worldwide")
+
+###  Products and Services
+
+Close
+
+###  Solutions
+
+Close
+
+###  Support
+
+Close
+
+###  Learn
+
+Close
+
+###  Why Cisco
+
+Close
+
+###  Partners
+
+Close
+
+[ Trials and demos](/site/us/en/products/trials-demos.html?linkclickid=hdr-mainnav-trialsdemos)
+
+[ How to buy](/site/us/en/buy/index.html?linkclickid=hdr-utilnav-howtobuy)
+
+Partners
+
+EN US
+
+Profile
+
+[ Log in](/content/cdc/login.html?referer=)
+
+[ Trials and demos](/site/us/en/products/trials-demos.html?linkclickid=hdr-mainnav-trialsdemos)
+
+MENU
+
+CLOSE
+
+[ How to buy](/site/us/en/buy/index.html?linkclickid=hdr-utilnav-howtobuy)
+
+Partners
+
+Profile
+
+[ Log in](/content/cdc/login.html?referer=)
+
+EN US
+
+Close
+
+Close
+
+Close
+
+Close
+
+Close
+
+  1. [ Products ](/site/us/en/products/index.html)
+  2. [ Computing ](/site/us/en/products/computing/index.html)
+  3. [ Servers ](/site/us/en/products/computing/servers-unified-computing-systems/index.html)
 
 
 ![](/content/dam/cisco-cdc/site/images/heroes/products/computing/ucs-x-series_marquee-v3-3200x1312.jpg)
@@ -311,6 +380,43 @@ Learn how award‑winning Reist Telecom built an AI‑ready foundation by runnin
 __
 
 Hello, how can I help?
+
+###  Quick Links
+
+  * [About Cisco](/site/us/en/about/index.html)
+  * [Contact Us](/site/us/en/about/contact-cisco/index.html?linkclickid=ftr-contactus)
+  * [Careers](https://careers.cisco.com/global/en/home)
+  * [Connect with a partner](/site/us/en/partners/connect-with-a-partner/index.html)
+
+
+* * *
+
+###  Resources and Legal
+
+  * [Feedback](https://ciscocx.qualtrics.com/jfe/form/SV_bwrmeoKrBHYxOyW?Ref=/c/en/us/index.html)
+  * [Help](https://www.cisco.com/c/en/us/about/help.html)
+  * [Terms & Conditions](https://www.cisco.com/c/en/us/about/legal/terms-conditions.html)
+  * [Privacy  
+](https://www.cisco.com/c/en/us/about/legal/privacy-full.html)
+  * Cookies / Do not sell or share my personal data  
+
+  * [Accessibility](https://www.cisco.com/c/en/us/about/accessibility.html)
+  * [Trademarks](https://www.cisco.com/c/en/us/about/legal/trademarks.html)
+  * [Supply Chain Transparency](https://www.cisco.com/c/dam/en_us/about/supply-chain/cisco-modern-slavery-statement.pdf)
+  * [Newsroom](https://newsroom.cisco.com/c/r/newsroom/en/us/index.html)
+  * [Sitemap](/site/us/en/about/sitemap.html)
+
+
+* * *
+
+  * [ ](https://www.facebook.com/cisco/ "Facebook")
+  * [ ](https://x.com/Cisco/ "X")
+  * [ ](https://www.linkedin.com/company/cisco "LinkedIn")
+  * [ ](https://www.youtube.com/user/cisco "YouTube")
+  * [ ](https://www.instagram.com/cisco/ "Instagram")
+
+
+©  Cisco Systems, Inc.
 
 ---
 

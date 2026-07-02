@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/cisco-ucs-6536-fabric-interconnect-spec-sheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-06-24 11:19:33 |
+| **Fetched on** | 2026-07-02 13:05:29 |
 
 ---
 

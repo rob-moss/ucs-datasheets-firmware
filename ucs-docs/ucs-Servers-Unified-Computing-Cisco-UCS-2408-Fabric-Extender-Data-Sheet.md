@@ -8,113 +8,11 @@
 | **HTML Title** | Servers - Unified Computing - Cisco UCS 2408 Fabric Extender Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-742624.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:23:32 |
+| **Fetched on** | 2026-07-02 13:08:49 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-742624.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS 2408 Fabric Extender Data Sheet
-
-[Back to Home](https://www.cisco.com/site/in/en/products/computing/servers-unified-computing-systems/index.html)
-
-Data Sheet
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-742624.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-742624.pdf) (1.0 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:November 27, 2024
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/c/en/us/about/social-justice/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-742624.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-742624.pdf) (1.0 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:November 27, 2024
-
-#### Table of Contents
-
-  * Cisco Unified Computing System overview
-  * Product overview
-  * Features and benefits
-  * Product specifications
-  * Physical specifications
-  * Regulatory standards compliance: Safety and EMC
-  * Fabric interconnect support
-  * Transceiver and cable support
-  * Ordering information
-  * Warranty information
-  * Cisco environmental sustainability
-  * Cisco Capital
-  * For more information
-  * Document history
-
 
 ` `
 
@@ -387,112 +285,9 @@ Updated breakout cables and FI 6536 support |  Table 4 |  November 2024
 ### Learn more
 
 
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
 ---
 
 ## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/data_sheet_c78-520522.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS Manager Data Sheet
-
-Data Sheet
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/data_sheet_c78-520522.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/data_sheet_c78-520522.pdf) (311.6 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:March 6, 2024
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/data_sheet_c78-520522.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/data_sheet_c78-520522.pdf) (311.6 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:March 6, 2024
-
-#### Table of Contents
-
-  * Product overview
-  * Features and benefits
-  * Service profiles
-  * Enhanced flexibility through storage profiles and disk groups
-  * Service profile templates
-  * Management interface options
-  * Management scope
-  * Licensing
-  * No additional system requirements
-  * Why Cisco?
-  * Cisco environmental sustainability
-  * Cisco Capital
-  * For more information
-  * Our experts recommend
-  * Document history
-
 
 ` `
 
@@ -662,109 +457,9 @@ New or revised topic |  Described in |  Date
 ### Learn more
 
 
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
 ---
 
 ## Page 3: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco UCS 6400 Series Fabric Interconnects Data Sheet
-
-Data Sheet
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.pdf) (1.4 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:April 21, 2021
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.html) to Save Content 
-
-Translations
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.pdf) (1.4 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:April 21, 2021
-
-#### Table of Contents
-
-  * Cisco Unified Computing System overview
-  * Product overview
-  * Features and benefits
-  * Product specifications
-  * Physical specifications
-  * Regulatory standards compliance: safety and EMC
-  * Ordering information
-  * Warranty information
-  * Cisco environmental sustainability
-  * Cisco Services for Unified Computing
-  * Why Cisco?
-  * For more information
-
 
 ` `
 
@@ -1281,8 +976,6 @@ For more information about Cisco UCS, visit <https://www.cisco.com/en/US/product
 ### Learn more
 
 
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-
 ---
 
 ## Page 4: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-manager/whitepaper_c11-697337.html
@@ -1290,6 +983,74 @@ For more information about Cisco UCS, visit <https://www.cisco.com/en/US/product
   * Skip to main content
   * Skip to search
   * Skip to footer
+
+
+[ Cisco.com Worldwide ](https://www.cisco.com "Cisco.com Worldwide")
+
+###  Products and Services
+
+Close
+
+###  Solutions
+
+Close
+
+###  Support
+
+Close
+
+###  Learn
+
+Close
+
+###  Why Cisco
+
+Close
+
+###  Partners
+
+Close
+
+[ Trials and demos](/site/us/en/products/trials-demos.html?linkclickid=hdr-mainnav-trialsdemos)
+
+[ How to buy](/site/us/en/buy/index.html?linkclickid=hdr-utilnav-howtobuy)
+
+Partners
+
+EN US
+
+Profile
+
+[ Log in](/content/cdc/login.html?referer=)
+
+[ Trials and demos](/site/us/en/products/trials-demos.html?linkclickid=hdr-mainnav-trialsdemos)
+
+MENU
+
+CLOSE
+
+[ How to buy](/site/us/en/buy/index.html?linkclickid=hdr-utilnav-howtobuy)
+
+Partners
+
+Profile
+
+[ Log in](/content/cdc/login.html?referer=)
+
+EN US
+
+Close
+
+Close
+
+Close
+
+Close
+
+Close
+
+  1. [ Products ](/site/us/en/products/index.html)
+  2. [ Networking ](/site/us/en/products/networking/index.html)
 
 
 ![A display showing Cisco Nexus Dashboard on a monitor screen, the Nexus 9504 chassis switch, and a stack with the Nexus 9332-GX2B switch and the Nexus 3550-T switch.](/content/dam/cisco-cdc/site/images/heroes/products/networking/datacentercloud-marquee-3200x1312.jpg)
@@ -1546,15 +1307,13 @@ Cisco Nexus One delivers a unified operating model with advanced intelligence, o
 
 [Explore Nexus One](https://www.cisco.com/site/us/en/products/networking/cloud-networking/nexus-one/index.html) [View solution overview](https://www.cisco.com/c/en/us/products/collateral/networking/ios-nx-os-software/nx-os/fabric-experience-so.html)
 
-* * *
+##  Evolve your data center for tomorrow 
 
-![Gartner logo](/content/dam/cisco-cdc/site/images/testing/meraki/gartner.svg)
+Find out how to transform your data center with a unified approach. Simplify operations, enhance security, and build a future-proof AI infrastructure tailored to your pace and needs. 
 
-###  Cisco named a Leader in Gartner® 2025 Magic Quadrant™ for Data Center Switching 
+[Take the next step ](https://www.cisco.com/site/us/en/solutions/data-center/index.html)
 
-See why we believe our industry-leading performance, simplicity, and scalability helped us earn this recognition.
-
-[Download Gartner report](https://www.cisco.com/c/en/us/solutions/data-center/networking-promotions-free-trials/gartner-magic-quadrant-data-center-switching.html?linkclickid=secondary)
+![](/content/dam/cisco-cdc/site/images/heroes/solutions/data-center/data-center-with-ai-overlay-2400x1028.jpg)
 
 ## We've got your back
 
@@ -1600,133 +1359,46 @@ __
 
 Hello, how can I help?
 
+###  Quick Links
+
+  * [About Cisco](/site/us/en/about/index.html)
+  * [Contact Us](/site/us/en/about/contact-cisco/index.html?linkclickid=ftr-contactus)
+  * [Careers](https://careers.cisco.com/global/en/home)
+  * [Connect with a partner](/site/us/en/partners/connect-with-a-partner/index.html)
+
+
+* * *
+
+###  Resources and Legal
+
+  * [Feedback](https://ciscocx.qualtrics.com/jfe/form/SV_bwrmeoKrBHYxOyW?Ref=/c/en/us/index.html)
+  * [Help](https://www.cisco.com/c/en/us/about/help.html)
+  * [Terms & Conditions](https://www.cisco.com/c/en/us/about/legal/terms-conditions.html)
+  * [Privacy  
+](https://www.cisco.com/c/en/us/about/legal/privacy-full.html)
+  * Cookies / Do not sell or share my personal data  
+
+  * [Accessibility](https://www.cisco.com/c/en/us/about/accessibility.html)
+  * [Trademarks](https://www.cisco.com/c/en/us/about/legal/trademarks.html)
+  * [Supply Chain Transparency](https://www.cisco.com/c/dam/en_us/about/supply-chain/cisco-modern-slavery-statement.pdf)
+  * [Newsroom](https://newsroom.cisco.com/c/r/newsroom/en/us/index.html)
+  * [Sitemap](/site/us/en/about/sitemap.html)
+
+
+* * *
+
+  * [ ](https://www.facebook.com/cisco/ "Facebook")
+  * [ ](https://x.com/Cisco/ "X")
+  * [ ](https://www.linkedin.com/company/cisco "LinkedIn")
+  * [ ](https://www.youtube.com/user/cisco "YouTube")
+  * [ ](https://www.instagram.com/cisco/ "Instagram")
+
+
+©  Cisco Systems, Inc.
+
 ---
 
 ## Page 5: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.html
-
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Cisco Compute Security Overview White Paper
-
-White Paper
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.pdf) (3.1 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:March 17, 2025
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-__ __ __ __
-
-Contact Cisco
-
-  * Contact Cisco __
-  * __
-
-  * __
-
-[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
-
-  * __
-
-Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
-US/CAN | 5am-5pm PT 
-
-  * __
-
-[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
-
-  * __
-
-[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-manager/compute-security-overview-wp.pdf) (3.1 MB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:March 17, 2025
-
-#### Table of Contents
-
-  * Intended use and audience
-  * Bias statement
-  * Legal notices
-  * Prerequisites
-  * Introduction
-  * Six pillars of security
-  * 1\. The Cisco Secure Development Lifecycle–CSDL
-  * CSDL philosophy
-  * Development milestones
-  * CSDL product adherence methodologies
-  * Cisco Security and Trust Organization
-  * Advisories, vulnerabilities, and incident responses
-  * CERT advisories
-  * Additional vulnerability testing measures
-  * Incident response
-  * 2\. Supply chain security
-  * Counterfeit prevention
-  * Consortiums for secure vendors
-  * 3\. Certifications and compliance
-  * Certification process
-  * Common criteria
-  * SOC 2 Type 2
-  * FIPS
-  * FIPS 140-3
-  * IPv6
-  * Defense information security agency approved product list
-  * Other certifications and procedural guidelines
-  * 4\. The mechanics of server security – system-level security
-  * Physical security
-  * Card boot - TAM
-  * System boot
-  * Deployment and management at scale
-  * SSL key management: UI certificates and self-encrypting drives
-  * 5\. Secure application operation
-  * Confidential computing
-  * 6\. Secure data delivery and storage
-  * Encryption and key management
-  * Self-encrypting drives
-  * Virtual interface card
-  * Conclusion
-  * For more information
-  * Document information
-
 
 ` `
 
@@ -2944,7 +2616,5 @@ Document summary |  Prepared for |  Prepared by
   
 ### Learn more
 
-
-![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 
 ---

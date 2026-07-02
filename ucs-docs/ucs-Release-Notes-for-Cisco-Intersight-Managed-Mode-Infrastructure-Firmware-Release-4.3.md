@@ -8,17 +8,88 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_imm_infra_fw_rn_lb.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:17:10 |
+| **Fetched on** | 2026-07-02 13:03:30 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/imm_infra_fw_rn_4_3/b_imm_infra_fw_rn_lb.html
 
-###   
-  
+### 
+
+## Contents
+
+  * Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3
+  * Firmware Version Equivalency Between Cisco Intersight, Cisco IMC, and Cisco UCS Manager
+  * Revision History
+  * New Software Support
+  * New Hardware Support
+  * New hardware support in Infrastructure Firmware Release 4.3(6.260036) — None
+  * New Hardware Support in Infrastructure Firmware Release 4.3(6.250135) and 4.3(6.250084) — None
+  * New Hardware Support in Infrastructure Firmware Release 4.3(5.250012) and 4.3(5.250034) — None
+  * New Hardware Support in Infrastructure Firmware Release 4.3(6.250048) and 4.3(6.250094)
+  * New Hardware Support in Infrastructure Firmware Release 4.3(5.250033) — None
+  * New Hardware Support in Infrastructure Firmware Release 4.3(5.250011) — None
+  * New Hardware Support in Infrastructure Firmware Release 4.3(5.240040) (Deprecated) — None
+  * New Hardware Support in Infrastructure Firmware Release 4.3(5.240032) — None
+  * New Hardware Support in Infrastructure Firmware Release 4.3(4.240074) — None
+  * New Hardware Support in Infrastructure Firmware Release 4.3(4.240078)
+  * New Hardware Support in Infrastructure Firmware Release 4.3(2.230129)
+  * New Hardware Support in Infrastructure Firmware Release 4.3(2.230117)
+  * Cross-Version Firmware Support
+  * Cisco UCS NVMeoF Support Matrix for Third Party Storage Vendors
+  * Compatibility and Support Matrix for Cisco Fabric Interconnects and MDS Switches
+  * Compatibility and Support Matrix for Cisco Fabric Interconnects and Nexus Switches
+  * Compatibility and Support Matrix for Cisco Fabric Interconnects and Brocade Switches
+  * Security Fixes
+  * Security fixes in Release 4.3(6.260036) — None
+  * Security Fixes in Release 4.3(6.250135) and 4.3(6.250084) — None
+  * Security Fixes in Release 4.3(5.250012) and 4.3(5.250034) — None
+  * Security Fixes in Release 4.3(6.250048) and 4.3(6.250094) — None
+  * Security Fixes in Release 4.3(5.250033) — None
+  * Security Fixes in Release 4.3(5.250011) — None
+  * Security Fixes in Release 4.3(5.240040) (Deprecated) — None
+  * Security Fixes in Release 4.3(5.240032)
+  * Security Fixes in Release 4.3(4.240066)
+  * Caveats
+  * Resolved Caveats
+  * Resolved issues in Release 4.3(6.260036)
+  * Resolved issues in Release 4.3(6.260026)
+  * Resolved Caveats in Release 4.3(6.250094)
+  * Resolved Caveats in Release 4.3(6.250135) and 4.3(6.250084)
+  * Resolved Caveats in Release 4.3(5.250012) and 4.3(5.250034)
+  * Resolved Caveats in Release 4.3(6.250048) and 4.3(6.250094) — None
+  * Resolved Caveats in Release 4.3(5.250033)
+  * Resolved Caveats in Release 4.3(5.250011)
+  * Resolved Caveats in Release 4.3(5.250004)
+  * Resolved Caveats in Release 4.3(5.240040) (Deprecated)
+  * Resolved Caveats in Release 4.3(5.240032) - None
+  * Resolved Caveats in Release 4.3(4.240074)
+  * Resolved Caveats in Release 4.3(4.240078) — None
+  * Resolved Caveats in Release 4.3(4.240066) — None
+  * Resolved Caveats in Release 4.3(3.240007)
+  * Resolved Caveats in Release 4.3(2.240002)
+  * Resolved Caveats in Release 4.3(2.230129)
+  * Resolved Caveats in Release 4.3(2.230117)
+  * Open Caveats
+  * Open issues in Release 4.3(6.260036) — None
+  * Open Caveats in Release 4.3(6.250135) and 4.3(6.250084) — None
+  * Open Caveats in Release 4.3(5.250012) and 4.3(5.250034) — None
+  * Open Caveats in Release 4.3(6.250094)
+  * Open Caveats in Release 4.3(5.250033) — None
+  * Open Caveats in Release 4.3(5.250011) — None
+  * Open Caveats in Release 4.3(5.240040) (Deprecated) — None
+  * Open Caveats in Release 4.3(5.240032)
+  * Open Caveats in Release 4.3(4.240074)
+  * Open Caveats in Release 4.3(4.240078)
+  * Open Caveats in Release 4.3(4.240066) — None
+  * Open Caveats in Release 4.3(3.240007) — None
+  * Open Caveats in Release 4.3(2.240002) — None
+  * Related Documentation
+
+
 **First Published: November 15, 2023**
 
-**Last Updated: May 4, 2026**
+**Last Updated: June 25, 2026**
 
 # Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3
 
@@ -40,6 +111,11 @@ The following table shows the online change history for this document.
 
 Revision Date  | Description   
 ---|---  
+June 25, 2026 |  Updated release notes for Cisco UCS 6500 and 6400 Series Fabric Interconnect Infrastructure firmware release 4.3(6.260036) and Cisco UCS X-Series Direct Fabric Interconnect Infrastructure Firmware version 4.3(6.260036).  This release includes updates to:
+
+  * Resolved issues in Release 4.3(6.260036)
+
+It does not include any new hardware support, security fixes, or open caveats.  
 May 04, 2026 |  Updated release notes for Cisco UCS 6500 and 6400 Series Fabric Interconnect Infrastructure firmware release 4.3(6.260026) and Cisco UCS X-Series Direct Fabric Interconnect Infrastructure Firmware version 4.3(6.260026).  This release includes updates to:
 
   * Resolved issues in Release 4.3(6.260026)
@@ -139,6 +215,8 @@ For more information on platform-specific hardware support, see [Release Notes f
   
 ---|---  
   
+### New hardware support in Infrastructure Firmware Release 4.3(6.260036) — None 
+
 ### New Hardware Support in Infrastructure Firmware Release 4.3(6.250135) and 4.3(6.250084) — None 
 
 ### New Hardware Support in Infrastructure Firmware Release 4.3(5.250012) and 4.3(5.250034) — None 
@@ -393,6 +471,8 @@ UCSX-S9108-100G |  — |  9.2
   
 ## Security Fixes
 
+### Security fixes in Release 4.3(6.260036) — None 
+
 ### Security Fixes in Release 4.3(6.250135) and 4.3(6.250084) — None 
 
 ### Security Fixes in Release 4.3(5.250012) and 4.3(5.250034) — None 
@@ -437,6 +517,15 @@ You can view the open issues, resolved issues, and security fixes using the [Cis
 
 ### Resolved Caveats
 
+#### Resolved issues in Release 4.3(6.260036)
+
+This section provides a brief description of the resolved issues.
+
+Defect ID |  Description |  First Version Affected |  Resolved in Release  
+---|---|---|---  
+[CSCwt48678](https://cdetsng.cisco.com/webui/#view=CSCwt48678) |  On Cisco UCS X-series chassis with UCSX-I-9108-100G Intelligent Fabric Modules (IFM), after running the factory reset command `debug platform software cmcctrl factory` to securely erase the embedded MultiMediaCard (eMMC) of an IFM, the IFM may become non-operational immediately following the reboot. When this condition occurs, the IFM becomes offline and no LED indicators are visible, but the chassis PSU and fans remain operational. There is no workaround after the IFM becomes non-operational. It is recommended to contact Cisco TAC for assistance.  This issue is resolved. |  4.3(6.250048) |  4.3(6.260036)  
+[CSCwt42965](https://cdetsng.cisco.com/webui/#view=CSCwt42965) |  On Cisco UCS X9508 chassis connected to Cisco Intersight Virtual Appliance, chassis profile deployment may fail when a Simple Network Management Protocol (SNMP) policy is attached to the profile. When this condition occurs, the device SNMP policy deployment fails, and the chassis profile does not fully deploy in Cisco Intersight.  This issue is resolved. |  4.3(6.250048) |  4.3(6.260036) 6.0(2.260067)  
+  
 #### Resolved issues in Release 4.3(6.260026)
 
 This section provides a brief description of the resolved issues.
@@ -591,6 +680,8 @@ CSCvh04298 |  The IOMs connected to an FI no longer reboot unexpectedly due to s
 CSCwf00940 |  UCSX-210C-M6, UCSX-210C-M7, and UCSX-410C-M7 Compute Nodes fail to boot with UCSX-X10C-RAIDF-D/ UCSX-X10C-RAIDF front mezzanine installed, and with the following SEL log:  `Platform alert PWR_SEQ_FAIL #0xa5 | Predictive Failure asserted | Asserted` `Power Fault Monitor log: FMEZZ_BLD_CARD_PWRGD TON_MAX Fault` Cisco UCS X210c RAID module power good response is high when host is powered on. New Vision PSOC image is released to improve AERO RAID Controller board power good response. The issue is resolved. | 4.2(3c)  
   
 ### Open Caveats
+
+#### Open issues in Release 4.3(6.260036) — None 
 
 #### Open Caveats in Release 4.3(6.250135) and 4.3(6.250084) — None 
 

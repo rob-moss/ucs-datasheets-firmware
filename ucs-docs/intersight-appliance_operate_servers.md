@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight Appliance Servers guide |
 | **URL** | https://intersight.com/help/appliance/operate/servers |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260616155027767/docs/onprem/data/articles/features/servers/operate/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/onprem/data/articles/features/servers/operate/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-appliance_operate_servers.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:18:03 |
+| **Fetched on** | 2026-07-02 13:04:26 |
 
 ---
 
@@ -149,6 +149,8 @@ Liquid immersion cooling is supported only on the following servers in Intersigh
 ## Properties
 
 The Properties area displays a graphical view of the front, rear, and top sections of the server. Toggling on the Health Overlay function allows you to monitor the health of the server ports. The bottom section displays the Power On/Off status, Locator LED status, number of CPUs, threads, CPU cores, enabled CPU cores, and adapters. You can also view memory capacity, CPU capacity, ID, UUID, and cooling method.
+
+Note: The dynamic display of riser configurations is supported across all server models in the rear view section of the server.
 
 ## Alarms
 

@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Monitoring SFP Metric |
 | **URL** | https://intersight.com/help/saas/monitoring/sfp_metric |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260616155027767/docs/cloud/data/resources/monitoring/en/sfp_metrics.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/resources/monitoring/en/sfp_metrics.html |
 | **HTML Title** | Metric Collection for Transceivers |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_sfp_metric.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:17:47 |
+| **Fetched on** | 2026-07-02 13:04:10 |
 
 ---
 
