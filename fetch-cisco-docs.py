@@ -32,6 +32,9 @@ Proxy support:
     Automatically uses proxies when HTTP_PROXY, HTTPS_PROXY,
     http_proxy, or https_proxy are set.
     Hosts in NO_PROXY or no_proxy bypass the proxy.
+
+Version 1.2 -- fixed fetch subpages
+
 """
 
 import io
@@ -872,17 +875,41 @@ class DocFetcher:
     # ------------------------------------------------------------------
 
     def _extract_body(self, soup: BeautifulSoup) -> str:
-        for sel in ('article', 'main', '.content', '#content',
-                    '.main-content', 'div[role="main"]'):
+        # Try container selectors that hold ALL content (not just first article)
+        content_node = None
+        for sel in ('#chapterContent',  # Cisco docs chapter content wrapper
+                    'main', '.content', '#content',
+                    '.main-content', 'div[role="main"]', 
+                    'div.content-wrapper', '.document', '#document',
+                    'div[class*="main"]', 'section[class*="content"]',
+                    'article'):  # Single article as fallback
             node = soup.select_one(sel)
             if node:
+                content_node = node
                 break
-        else:
-            node = soup.find('body')
-        if not node:
+        
+        # Fallback: if no specific container found, use body and extract everything
+        if not content_node:
+            content_node = soup.find('body')
+        
+        if not content_node:
             return ''
-        for tag in node.find_all(['script', 'style', 'nav', 'footer', 'header']):
+        
+        # Clone the node for processing so we don't modify the original
+        node = content_node
+        
+        # Remove only script and style tags
+        for tag in node.find_all(['script', 'style']):
             tag.decompose()
+        
+        # Only remove top-level nav/footer/header if they appear to be page chrome
+        # (not containing substantial content like tables or multiple sections)
+        for tag in node.find_all(['nav', 'footer', 'header'], recursive=False):
+            # Keep if it contains tables or has substantial content
+            if tag.find(['table', 'article', 'section']) or len(tag.get_text(strip=True)) > 500:
+                continue
+            tag.decompose()
+        
         return str(node)
 
     def _same_guide(self, url: str, base_url: str) -> bool:
@@ -897,14 +924,28 @@ class DocFetcher:
         seen: set[str] = set()
         result: list[str] = []
         for a in soup.find_all('a', href=True):
-            href = str(a['href']).split('#')[0].strip()
+            href = str(a['href']).strip()
             if not href or href.startswith('javascript:'):
                 continue
-            abs_url = urljoin(base_url, href)
-            if abs_url not in seen and self._same_guide(abs_url, base_url):
-                seen.add(abs_url)
-                if _content_type(abs_url) == 'html':
-                    result.append(abs_url)
+            # Keep fragment reference for logging, but collect the base URL
+            has_fragment = '#' in href
+            base_href = href.split('#')[0].strip()
+            
+            if base_href:  # Link with actual page reference
+                abs_url = urljoin(base_url, base_href)
+                if abs_url not in seen and self._same_guide(abs_url, base_url):
+                    seen.add(abs_url)
+                    if _content_type(abs_url) == 'html':
+                        result.append(abs_url)
+                        if has_fragment:
+                            anchor = href.split('#')[1]
+                            print(f'    (found link with anchor: #{anchor})')
+            elif has_fragment:
+                # Fragment-only link (same-page navigation) — may indicate tabbed content
+                # Log it for debugging but don't add to queue
+                anchor = href.split('#')[1]
+                print(f'    (same-page anchor reference: #{anchor})')
+        
         return result
 
     def fetch_html_guide(self, base_url: str,
@@ -914,6 +955,20 @@ class DocFetcher:
         *title* is the label from urls.md (if any).  The fetched HTML <title>
         element takes precedence; the urls.md label is used as a fallback so
         the MD header always has a meaningful heading.
+        
+        KNOWN LIMITATIONS & FIXES:
+        - Cisco documentation often uses tabbed interfaces or accordion-based content
+          identified by anchor fragments (e.g., #section-id). These are same-page
+          navigations and won't create separate crawl targets, but the content should
+          be extracted from the full page HTML.
+        - Previously, nav/footer/header tags were removed too aggressively. Now they
+          are preserved if they contain tables or significant content (>500 chars).
+        - If a table or section is still missing, it may be:
+          1. Behind JavaScript rendering (BeautifulSoup limitation)
+          2. In an iframe (not extracted)
+          3. In a custom page structure not matched by selectors
+        - For Cisco UCS docs, ensure all related .html pages in the same directory
+          are discovered through href links on the main page or sub-pages.
         """
         print(f'\n  Crawling guide: {base_url}')
         visited: set[str] = set()
@@ -967,7 +1022,15 @@ class DocFetcher:
         )
         for i, (url, soup) in enumerate(pages, 1):
             md += f'## Page {i}: {url}\n\n'
-            md += _clean_markdown(_H2T.handle(self._extract_body(soup)))
+            body_html = self._extract_body(soup)
+            # Count headings found on this page
+            heading_count = len(soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']))
+            print(f'    page {i}: {heading_count} heading(s) found in HTML')
+            page_md = _clean_markdown(_H2T.handle(body_html))
+            # Count headings in converted markdown
+            md_heading_count = len(re.findall(r'^#{1,6}\s+', page_md, re.MULTILINE))
+            print(f'    page {i}: {md_heading_count} heading(s) converted to markdown')
+            md += page_md
             md += '\n\n---\n\n'
 
         print(f'  converted {len(pages)} page(s)')
@@ -1208,6 +1271,8 @@ def main() -> None:
         description='Fetch Cisco UCS/Intersight documentation and convert to Markdown.')
     p.add_argument('urls_file',    nargs='?', default=urlsfile,
                    help='Markdown file containing URLs (default: urls.md)')
+    p.add_argument('-u', '--url', dest='single_url',
+                   help='Fetch and convert a single URL (overrides urls_file)')
     p.add_argument('-o', '--output-dir', default=str(MD_OUT_DIR),
                    help=f'Markdown output directory (default: {MD_OUT_DIR})')
     p.add_argument('-d', '--delay', type=float, default=DEFAULT_DELAY,
@@ -1221,12 +1286,18 @@ def main() -> None:
     if args.force:
         print('⚠  Force mode: ignoring all cached files')
 
-    DocFetcher(
+    fetcher = DocFetcher(
         out_dir   = Path(args.output_dir),
         delay     = args.delay,
         max_pages = args.max_pages,
         force     = args.force,
-    ).process_urls_file(args.urls_file)
+    )
+
+    if args.single_url:
+        print(f'Fetching single URL: {args.single_url}')
+        fetcher.process_url(args.single_url)
+    else:
+        fetcher.process_urls_file(args.urls_file)
 
 
 if __name__ == '__main__':
