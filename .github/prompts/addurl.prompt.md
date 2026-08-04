@@ -29,3 +29,13 @@ To write to urls.md, follow these steps:
 Always proceed, do not ask me for clarification.
 Always patch the file `urls.md`, do not ask me for clarification.
 Do not create a commit message.
+
+
+# Final command
+Once the URL has been added to urls.md, please respond with "URL added successfully."
+
+Then fetch the content of the URL using the following command:
+```
+source .venv/bin/activate
+fetch-cisco-docs.py -u <url>
+```
