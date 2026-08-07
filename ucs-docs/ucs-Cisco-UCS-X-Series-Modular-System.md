@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X-Series Modular System |
 | **Source file** | `ucs-docs-raw/html/series.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:08:39 |
+| **Fetched on** | 2026-08-05 10:05:12 |
 
 ---
 
@@ -137,25 +137,28 @@ use JS to put chosen tab in here or hide
 
 #### Data Sheets
 
-  * [Cisco UCS X210c M7 Compute Node Spec Sheet ](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x210cm7-specsheet.pdf)11-Jun-2026 (PDF)
-  * [Cisco UCS X210c M8 Compute Node Data Sheet ](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.html)04-Jun-2026updated
-  * [Cisco UCS C240 M8 Rack Server Data Sheet ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-ds.html)04-Jun-2026updated
-  * [Cisco UCS C220 M8 Rack Server Data Sheet ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-ds.html)04-Jun-2026updated
-  * [Cisco UCS X215c M8 Compute Node Spec Sheet ](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x215c-m8-compute-node.pdf)04-Jun-2026 (PDF)
-  * [Cisco UCS X210c M8 Compute Node Spec Sheet ](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x210cm8-specsheet.pdf)03-Jun-2026 (PDF)
+  * [Cisco UCS X410c M8 Compute Node Spec Sheet ](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x410cm8-specsheet.pdf)27-Jul-2026 (PDF)
+  * [Cisco UCS X210c M8 Compute Node Spec Sheet ](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x210cm8-specsheet.pdf)27-Jul-2026 (PDF)
+  * [Cisco UCS X215c M8 Compute Node Spec Sheet ](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x215c-m8-compute-node.pdf)20-Jul-2026 (PDF)
+  * [Cisco UCS X410c M7 Compute Node Spec Sheet ](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x410cm7-specsheet.pdf)14-Jul-2026 (PDF)
+  * [Cisco UCS X210c M7 Compute Node Spec Sheet ](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x210cm7-specsheet.pdf)14-Jul-2026 (PDF)
+  * [Cisco UCS X210c M8 Compute Node Data Sheet ](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m8-compute-node-ds.html)04-Jun-2026
+  * [Cisco UCS C240 M8 Rack Server Data Sheet ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-ds.html)04-Jun-2026
+  * [Cisco UCS C220 M8 Rack Server Data Sheet ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-ds.html)04-Jun-2026
   * [Cisco UCS 6536 Fabric Interconnect Spec Sheet ](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/cisco-ucs-6536-fabric-interconnect-spec-sheet.pdf)26-May-2026 (PDF)
-  * [Cisco UCS X410c M8 Compute Node Spec Sheet ](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x410cm8-specsheet.pdf)30-Apr-2026 (PDF)
   * [Cisco AI PODs: Pre-validated, Flexible and Modular Infrastructure for Cisco Secure AI Factory Data Sheet ](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ai-pods-ds.html)15-Apr-2026
   * [Cisco UCS X9508 Chassis Spec Sheet ](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x9508-specsheet.pdf)06-Apr-2026 (PDF)
   * [Cisco UCS X580p PCIe Node Spec Sheet ](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x580p-specsheet.pdf)27-Mar-2026 (PDF)
   * [Cisco UCS X580p PCIe Node Data Sheet ](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x580p-pcie-node-ds.html)16-Mar-2026
   * [Cisco UCS 6600 Series Fabric Interconnects Spec Sheet ](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-6600-series-fabric-interconnect-specsheet.pdf)12-Mar-2026 (PDF)
-  * [Cisco UCS X410c M7 Compute Node Spec Sheet ](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/x410cm7-specsheet.pdf)10-Mar-2026 (PDF)
   * [Cisco UCS 9108 100G Intelligent Fabric Module Spec Sheet ](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/cisco-ucs-9108-100g-intelligent-fabric-module-spec-sheet.pdf)18-Feb-2026 (PDF)
 [View all documentation of this type ](/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/datasheet-listing.html)
 
 #### End-of-Life and End-of-Sale Notices
 
+#### English
+
+  * [End-of-Sale and End-of-Life Announcement for the Cisco UCS X410c M7 Compute Node ](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x410c-m7-compute-node-eol.html)21-Jul-2026
   * [End-of-Sale and End-of-Life Announcement for the Cisco Select UCS and UCSX M6 Accessories ](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/select-ucs-ucsx-accessories-eol.html)16-Dec-2025
   * [End-of-Sale and End-of-Life Announcement for the Cisco UCS X210c M6 Compute Node ](/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x210c-m6-compute-node-eol.html)27-May-2025
 
@@ -244,7 +247,7 @@ use JS to put chosen tab in here or hide
 
 #### Troubleshooting TechNotes
 
-  * [Mitigate Microsoft Secure Boot Certificate Expiration ](/c/en/us/support/docs/servers-unified-computing/unified-computing-system/225712-mitigate-microsoft-secure-boot.html)11-Jun-2026updated
+  * [Mitigate Microsoft Secure Boot Certificate Expiration ](/c/en/us/support/docs/servers-unified-computing/unified-computing-system/225712-mitigate-microsoft-secure-boot.html)07-Jul-2026updated
   * [Clear Transient DIMM UECC Errors on Cisco UCS ](/c/en/us/support/docs/servers-unified-computing/ucs-b-series-blade-servers/224851-clear-transient-dimm-uecc-errors-on.html)10-Sep-2025
   * [Configure UCS B/C/X/S/HyperFlex-Series Team and Bond Options with the VIC Card Connected to Fabric Interconnects ](/c/en/us/support/docs/servers-unified-computing/ucs-b-series-blade-servers/200519-UCS-B-series-Teaming-Bonding-Options-wi.html)26-Aug-2020
 ### Literature

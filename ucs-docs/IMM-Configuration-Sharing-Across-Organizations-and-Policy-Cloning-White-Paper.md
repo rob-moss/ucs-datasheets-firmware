@@ -8,7 +8,7 @@
 | **HTML Title** | IMM Configuration Sharing Across Organizations and Policy Cloning White Paper |
 | **Source file** | `ucs-docs-raw/html/imm-con-sharing-across-organization-cloning-wp.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:04:46 |
+| **Fetched on** | 2026-08-05 10:01:08 |
 
 ---
 
@@ -411,73 +411,29 @@ Close
 
 Close
 
-![](/content/dam/cisco-cdc/site/images/heroes/services/cisco-iq-2400x1028.jpg)
+__
+
+Hello, how can I help?
 
 # Cisco Services
 
-##  Proactive, precise, and tailored for you. Meet Cisco IQ. 
+Combine expert guidance with AI-driven automation to accelerate your success using services designed for a world that doesn't stop.
 
-What’s Cisco IQ? Where human expertise meets agentic intelligence in every Cisco Services engagement. Built on 40 years of Cisco knowledge.
-
-Watch video (01:20) [Learn more](/site/us/en/services/support/index.html)
-
-Overview [Resources](/site/us/en/services/resources.html)
-
-## Real results from a partner you can trust
-
-![](/content/dam/cisco-cdc/site/images/illustrations/services/resilience-320x320-light-blue.jpg)
-
-Resiliency
-
-98% 
-
-Crush the configuration chaos with 98%+ change success
-
-![](/content/dam/cisco-cdc/site/images/illustrations/services/simplify-320x320-light-blue.jpg)
-
-Simplicity
-
-88% 
-
-88% attempting self-service are successful
-
-![](/content/dam/cisco-cdc/site/images/illustrations/services/timetovalue-320x320-light-blue.jpg)
-
-Time to value
-
-2-4x 
-
-2-4x faster support case resolution when fully processed by AI-enabled automation
-
-* * *
-
-Show more
-
-* * *
-
-## Services and support designed for a world that doesn’t stop
-
-Watch the video to see how Cisco IQ - where human expertise meets agentic intelligence - elevates support and professional services from reactive fixes to strategic, predictive powerhouses, giving you zero surprises.
-
-## Find solutions that work for you
+![Technician using laptop in Cisco data center](/content/dam/cisco-cdc/site/images/heroes/services/hero-cisco-professional-services-1600x900.jpg)
 
 ###  Cisco Professional Services 
 
-Get expert guidance, seamless deployment, and tailored solutions built for today’s evolving business landscape.
+Get expert guidance, seamless deployment, and tailored solutions built for today's evolving business landscape.
 
-[Get started with professional services](/site/us/en/services/professional/index.html)
+[Get started](/site/us/en/services/professional/index.html)
+
+![](/content/dam/cisco-cdc/site/images/heroes/services/hero-cisco-support-1600x900.jpg)
 
 ###  Cisco Support 
 
 Anticipate and act to prevent issues before they happen with a unified interface and personalized insights.
 
-[Get started with support](/site/us/en/services/support/index.html)
-
-###  Learn with Cisco 
-
-Empower your team to tackle any challenge with skills development, industry-recognized certifications and product training.
-
-[Get started with Learn with Cisco](/site/us/en/learn/training-certifications/index.html)
+[Find out how](/site/us/en/services/support/index.html)
 
 * * *
 
@@ -485,61 +441,87 @@ Show more
 
 * * *
 
-## Design the right solution for your business
+## Real results from a partner you can trust
 
-###  Turn AI’s possibility into reality 
+98% 
 
-Is your data center ready for AI? What about your teams? Learn how to identify the right solution for your needs, debunk common myths, and infuse security from the start.
+Eliminate configuration chaos with a change success rate up to 98%.
+
+88% 
+
+Simplify your operations with up to 88% self-service success.
+
+2–4x 
+
+Resolve support cases 2–4 times faster using AI-enabled automation.
+
+* * *
+
+Show more
+
+* * *
+
+![](/content/dam/cisco-cdc/site/images/backgrounds/services/hero-background-1600x900.jpg)
+
+## What's new in Cisco Services
+
+![](/content/dam/cisco-cdc/site/images/photography/lifestyle-photography/services/whats-new-defense-ai-era-800x450.jpg)
+
+###  Defense for the AI era 
+
+Turn your infrastructure into an always-on, self-defending engine. With Cisco Resilient Infrastructure Services, we can identify your most critical risks, systematically update your aging systems, and ensure ongoing continuous protection.
+
+[Read announcement](https://blogs.cisco.com/customerexperience/defending-the-future-today-cisco-resilient-infrastructure-services) [Read overview](https://www.cisco.com/c/dam/en_us/services/building-infrastructure-resilience-for-defense-in-the-ai-era.pdf)
+
+###  IDC: A new threat threshold 
+
+Learn steps analysts recommend to protect your infrastructure and organization from AI-driven threats.
+
+[Read IDC insights](https://www.cisco.com/c/dam/en_us/services/idc-brief-find-it-before-they-do.pdf)
+
+###  Defense at machine speed 
+
+Experience machine-speed insights with the judgment of human expertise with Cisco IQ.
+
+[Read how it's done](https://blogs.cisco.com/customerexperience/frontier-attacks-just-ended-the-defenders-advantage-cisco-iq-is-how-you-get-it-back)
+
+###  New Cisco IQ capabilities 
+
+Get peer benchmarking, quantum-ready assessment, and air-gapped deployment.
+
+[Read At-a-Glance (PDF)](https://www.cisco.com/c/dam/m/en_us/customer-experience/pdfs/cisco-support-aag.pdf)
+
+* * *
+
+Show more
+
+* * *
+
+![](/content/dam/cisco-cdc/site/images/backgrounds/services/whats-new-background-1400x915.jpg)
+
+## Design the solution that fits your business requirements
+
+![](/content/dam/cisco-cdc/site/images/photography/lifestyle-photography/services/solutions-datacenter-800x450.jpg)
+
+###  Turn AI's possibility into reality 
+
+Prepare your data center and teams for AI by learning how to identify the right solution for your needs, debunk common myths, and infuse security from the start.
 
 [Transform your data center](/site/us/en/services/modern-data-center/index.html)
+
+![](/content/dam/cisco-cdc/site/images/photography/lifestyle-photography/services/solutions-workplace-800x450.jpg)
 
 ###  Create productive connections 
 
 Empower your people with richer, more secure interactions wherever they gather and do work. Make your teams more effective and deliver better experiences.
 
-[Build the right workplace](/site/us/en/services/future-workplace/index.html)
+[Build the right workplace](/content/cdc//site/us/en/services/future-workplace/index.html)
 
-## Technology
+[Contact us](/site/us/en/about/contact-cisco/index.html)
 
-[ ![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/collaboration-services-320x320.png) Collaboration ](https://www.cisco.com/c/en_ca/solutions/collaboration/index.html)
+## Technologies supported by Cisco Services
 
-[ ![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/security-services-320x320.png) Security ](/site/us/en/products/security/services/index.html)
-
-[ ![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/observability-services-320x320.png) Observability ](https://www.splunk.com/en_us/products/observability.html)
-
-[ ![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/operations-services-320x320.png) Service provider ](/site/us/en/solutions/service-provider/index.html)
-
-[ ![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/data-center-services-320x320.png) Computing ](/site/us/en/products/computing/index.html)
-
-[ ![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/networking-services-320x320.png) Enterprise networking ](/site/us/en/products/networking/index.html)
-
-## Four stories, one trusted partner
-
-Leaders across industries rely on Cisco services to cut through complexity and achieve stronger, smarter outcomes.
-
-![](/content/dam/cisco-cdc/site/images/photography/nyc-health-544x306.png)
-
-###  Simplifying complexity for better care 
-
-NYC Health + Hospitals was able to enhance visibility and security across its IT infrastructure to ensure every patient receives the best possible care.
-
-[See NYC Health + Hospitals’ story](https://www.cisco.com/c/m/en_us/customer-experience/success-stories/customer/nyc-health-hospitals.html)
-
-![](/content/dam/cisco-cdc/site/images/photography/workday-544x306.png)
-
-###  Minimizing manual tasks with automation 
-
-Workday improved its security and resilience by implementing standardized configurations with the support of a more robust network.
-
-[See Workday’s story](https://www.cisco.com/c/m/en_us/customer-experience/success-stories/customer/workday.html)
-
-![](/content/dam/cisco-cdc/site/images/photography/united-airlines-544x306.png)
-
-###  Streamlining travel through real-time support 
-
-United Airlines transformed its customer service operations, resulting in substantially improved efficiency and accessibility for customers seeking assistance.
-
-[See United Airlines’ story](https://www.cisco.com/c/m/en_us/customer-experience/customer-stories/united-airlines-customer-story.html)
+Explore Cisco's product portfolios, backed by Cisco Services, designed to support you at every step.
 
 * * *
 
@@ -547,17 +529,143 @@ Show more
 
 * * *
 
-[See all stories](https://www.cisco.com/c/m/en_us/customer-experience/customer-stories.html)
+[ Collaboration ](/site/us/en/products/collaboration/index.html)
 
-##  Take the next step today 
+[ Security ](/site/us/en/products/security/services/index.html)
 
-Discover how Cisco services can help transform your technology deployment, adoption, and operations in the AI era.
+[ Observability ](/site/us/en/products/observability/index.html)
 
-[Contact Cisco](/site/us/en/about/contact-cisco/index.html)
+[ Service provider ](/site/us/en/solutions/service-provider/index.html)
 
-__
+[ Computing ](/site/us/en/products/computing/index.html)
 
-Hello, how can I help?
+[ Enterprise networking ](/site/us/en/products/networking/index.html)
+
+* * *
+
+Show more
+
+* * *
+
+## Three stories, one trusted partner
+
+##  Better patient care 
+
+"To have a partner like Cisco Services, to me, is incredible."
+
+[Read NYC Health + Hospitals' story](https://www.cisco.com/c/m/en_us/customer-experience/success-stories/customer/nyc-health-hospitals.html)
+
+![NYC Health + Hospitals logo; two men in a data center reviewing server racks](/content/dam/cisco-cdc/site/images/photography/lifestyle-photography/services/nyc-health-hospitals-1200x675.jpg)
+
+##  A more secure, resilient network 
+
+"I cannot imagine going back to a life without Cisco CX."
+
+[Read Workday's story](https://www.cisco.com/c/m/en_us/customer-experience/success-stories/customer/workday.html)
+
+![Workday logo in a modern office featuring open workstations, a meeting room, and a lounge area.](/content/dam/cisco-cdc/site/images/photography/lifestyle-photography/services/workday-1200x675.jpg)
+
+##  Real-time insights 
+
+"CX gives us that guidance to get it set up right the first time. It is a very complicated infrastructure."
+
+[Read United Airlines' story](https://www.cisco.com/c/m/en_us/customer-experience/customer-stories/united-airlines-customer-story.html)
+
+![United Airlines logo in an airport terminal with passengers sitting in chairs near large digital flight information boards.](/content/dam/cisco-cdc/site/images/photography/lifestyle-photography/services/united-1200x675.jpg)
+
+## Resources
+
+![IDC logo](/content/dam/cisco-cdc/site/images/logos/services/resources-idc-800x450.jpg)
+
+###  Intelligent support: A differentiator in the AI era 
+
+IDC reveals how AI-powered support models are transforming the customer experience. See how Cisco Support powered by Cisco IQ leverages proactive and predictive capabilities to reduce complexity, mitigate risks, and help organizations adapt to the evolving technology landscape.
+
+[Read analyst brief](https://www.cisco.com/c/dam/m/en_us/customer-experience/pdfs/idc-ai-and-intelligent-technical-support.pdf)
+
+![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/idc-new-threat-80x80.svg)
+
+###  IDC: A new threat threshold 
+
+Learn steps analysts recommend to protect your infrastructure and organization from new frontier AI models.
+
+[Read IDC insights](https://www.cisco.com/c/dam/en_us/services/idc-brief-find-it-before-they-do.pdf)
+
+![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/idc-services-ascode-80x80.svg)
+
+###  IDC: Cisco Services as code 
+
+Shifting to automated, code-driven operations can fundamentally transform how network and IT teams work. That leads to real business value.
+
+[Read IDC white paper (PDF)](https://www.cisco.com/c/dam/en_us/services/professional/idc-services-as-code-whitepaper.pdf)
+
+![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/forrester-cost-80x80.svg)
+
+###  Forrester: The cost of inaction 
+
+Professional services help you close capability gaps, reduce risk, and turn potential into measurable outcomes. See what the analyst survey reveals.
+
+[Download Forrester report](/site/us/en/services/professional/forrester-the-cost-of-inaction.html)
+
+![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/enterprise-agreement-80x80.svg)
+
+###  IDC: Enterprise Agreement 
+
+A Cisco Services for Enterprise Agreement enables faster deployment, cost savings, better budgeting, and operational stability.
+
+[Read white paper (PDF)](https://www.cisco.com/c/dam/m/en_us/customer-experience/collateral/idc-services-for-ea.pdf)
+
+* * *
+
+Show more
+
+* * *
+
+## FAQs
+
+###  What are Cisco Services?
+
+Cisco Services focus on your entire IT lifecycle, helping you deploy, operate, and optimize your IT infrastructure. Whether you need technical support or expert planning for new projects through professional services, we provide the guidance needed to keep your network, security, and collaboration tools running at their best.
+
+###  What is the difference between Cisco Support and Cisco Professional Services?
+
+Cisco Support focuses on software updates, hardware replacement, and rapid issue resolution to keep your operations running smoothly. Cisco Professional Services provide strategic consulting, design, and implementation expertise to help you build or transform your IT environment.
+
+###  What is Cisco IQ?
+
+Cisco IQ is an AI-powered digital experience embedded in Cisco Support that connects your entire journey with Cisco Services. It provides insights, automation, and expert guidance to help you plan, manage, and optimize your IT environment. By adapting to your specific infrastructure, Cisco IQ helps you prevent outages, resolve issues faster, and stay on top of transformation.
+
+###  What are Resilient Infrastructure Services?
+
+Resilient Infrastructure Services is our comprehensive path to shift organizations from a reactive, manual risk posture to a continuous, resilient operating model delivered at machine speed. Customers can access this offering through Cisco Support, **Cisco** Professional Services, or Partner-delivered services.
+
+###  How can Cisco Services help organizations adopt AI?
+
+Cisco Services help you assess your current infrastructure to ensure it can support AI-driven workloads. Experts provide guidance on architecture, security, and data management to integrate AI technologies into your operations reliably.
+
+###  How do I get started with Cisco Services?
+
+You can [get started](/site/us/en/buy/index.html) by contacting your Cisco account manager or an authorized partner to discuss your specific business needs. They will help you identify the right service options for your current infrastructure and goals.
+
+###  Why choose Cisco Services?
+
+Choosing IT services from Cisco gives you access to 40-plus years of deep technical expertise and a global partner network. Together we help minimize downtime, accelerate deployment, and ensure your IT investments deliver maximum value.
+
+###  How does the Cisco Services team work with my IT staff?
+
+Cisco Services and our network of partners act as an extension of your IT team. We provide the specialized expertise and tools needed to help your team manage complex environments more efficiently.
+
+###  What business outcomes can Cisco Services help achieve?
+
+IT services from Cisco help make your infrastructure more reliable, accelerate technology adoption, and reduce overall risk. These outcomes allow your organization to focus on innovation while maintaining a secure and high-performing IT environment.
+
+## Take the next step
+
+Cisco Services can help transform your technology deployment, adoption, and operations in the AI era.
+
+[ Contact us](/site/us/en/about/contact-cisco/index.html)
+
+![](/content/dam/cisco-cdc/site/images/backgrounds/services/endcap-background-1600x300.jpg)
 
 ###  Quick Links
 

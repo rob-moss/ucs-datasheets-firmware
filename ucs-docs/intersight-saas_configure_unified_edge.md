@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Unified Edge guide |
 | **URL** | https://intersight.com/help/saas/configure/unified_edge |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/articles/features/unified_edge/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260731131550565/docs/cloud/data/articles/features/unified_edge/configure/en/index.html |
 | **HTML Title** | Unified Edge |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_unified_edge.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:03:58 |
+| **Fetched on** | 2026-08-05 10:00:14 |
 
 ---
 
@@ -112,7 +112,28 @@ Management Configuration|
   
 ## Unified Edge Profile Templates
 
-Unified Edge profile templates enable you to create reusable configurations from which multiple Unified Edge profiles can be derived. Profiles attached to the template remain synchronized—any property modifications made in the template are reflected in all attached derived profiles. To stop sync, detach the profile from the template. Each derived profile can then be deployed and managed individually. Using templates allows multiple profiles to be created and modified at once, simplifying and speeding up configuration tasks. For more information, see [Creating a Template and Deriving Unified Edge Profiles](/help/configure/unified_edge#creating_a_template_and_deriving_unified_edge_profiles).
+Unified Edge profile templates enable you to create reusable configurations from which multiple Unified Edge profiles can be derived. Updates made to a template are applied to all derived profiles through a synchronization workflow. If a profile becomes out of sync with its template, the Template **Sync Status** indicates this condition, and you can use the available synchronization actions to review and synchronize the profile to bring it back in sync. Each derived profile can then be deployed and managed individually. Using templates allows multiple profiles to be created and modified at once, simplifying and speeding up configuration tasks. For more information, refer to [Creating a Template and Deriving Unified Edge Profiles](/help/configure/unified_edge#creating_a_template_and_deriving_unified_edge_profiles).
+
+## Unified Edge Template List View
+
+When you select **Templates** in the Intersight UI, the Unified Edge Profile Templates list view is seen.
+
+The list view shows the following details in a tabular format:
+
+  * Name: The name of the Unified Edge Profile Template.
+
+  * Sync Status: The sync status between the template and its derived profiles. The status of the template changes to Out of Sync, even if one of its derived profile is out of sync.
+
+  * Usage: The count of the Unified Edge profiles derived from the template.
+
+  * Description: The description of the template provided during template creation.
+
+  * Last Update: The date on which the template was last updated.
+
+  * Organization: The name of the organization.
+
+
+For more information on how to create a UCS Unified Edge Profile Template, [Creating a Template and Deriving Unified Edge Profiles](/help/configure/unified_edge#creating_a_template_and_deriving_unified_edge_profiles).
 
 ## Creating a Template and Deriving Unified Edge Profiles
 
@@ -148,19 +169,19 @@ When ready to derive the profiles, go to Configure > Templates > Unified Edge Pr
 
 Specify these parameters:
 
-        1. Profile Name Prefix—The profile name prefix auto-populates the source profile name, differentiates the derived profile from the source for identification. Modify and manage the name as required.
+        1. Profile Name Prefix: The profile name prefix auto-populates the source profile name, differentiates the derived profile from the source for identification. Modify and manage the name as required.
 
 Note:
 
 This field is displayed only when you choose to derive more than one profile.
 
-        2. Digits Count—You can include a digit to further differentiate the derived profiles. The digit automatically appends a numerical count to the derived name prefix, incrementing with each subsequent derived profile.
+        2. Digits Count: You can include a digit to further differentiate the derived profiles. The digit automatically appends a numerical count to the derived name prefix, incrementing with each subsequent derived profile.
 
 Note:
 
 This field is displayed only when you choose to create more than one clone.
 
-        3. Start Index for Suffix—You can choose the initial number for the suffix that will be appended to the derived name prefix. With a defined start index, each derived profile will have a unique suffix based on an incrementing count.
+        3. Start Index for Suffix: You can choose the initial number for the suffix that will be appended to the derived name prefix. With a defined start index, each derived profile will have a unique suffix based on an incrementing count.
 
 Note:
 
@@ -179,32 +200,43 @@ Unified Edge profiles get successfully derived from the template.
 
 The table view shows the following details in a tabular format:
 
-  * Description—The description for Unified Edge.
+  * Description: The description for Unified Edge.
 
-  * Last Update—The date the profile was last used.
+  * Last Update: The date and time that the Unified Edge profile was last updated.
 
-  * Name—The name of the Unified Edge profile.
+  * Name: The name of the Unified Edge profile.
 
-  * Organization—The name of the organization.
+  * Organization: The name of the organization.
 
-  * Status—The deployment status of the profile.
+  * Status: The deployment status of the profile. It can be OK, Not Deployed, Not Assigned, or Evaluating.
 
-  * Unified Edge—The name of the Unified Edge to which the profile is attached.
+  * Template Sync Status: The values are **Scheduled** , **Syncing** , **OK** , and **Out of Sync**.
 
-  * User Label—Displays the assigned user label that helps identify the server profiles.
+  * **Scheduled and Syncing** : Represents the transient states that occur while the Template Update Workflow is actively in progress.
+
+  * **OK** : The profile configuration is fully synchronized with the template; no differences exist.
+
+  * **Out of Sync** : The profile configuration differs from the template, indicating that updates or changes in the template have not yet been applied to the profile.
+
+  * Unified Edge: The name of the Unified Edge to which the profile is attached.
+
+  * Unified Edge Template: The name of the Unified Edge template to which the profile is attached. Each template can derive a maximum of 25 profiles in a single action. Maximum number of Unified Edge profiles supported per template is 500.
+
+  * User Label: Displays the assigned user label that helps identify the Unified Edge profiles.
 
 
 ## **Unified Edge Profile Actions**
 
 Profile Action| Description  
 ---|---  
-Edit| To edit the profile.  
-Clone| To clone the profile.  
-Delete| To delete the profile.  
+Edit| Edits the profile properties.  
+Clone| Clones the profile properties.  
+Delete| Deletes the profile properties.  
 Set User Label| To set, update, or delete user labels for each server.It must be between 1 and 64 alphanumeric characters and can contain only these special characters: `! # $ % & * + , ( ) [ ] { } | / . ? @ _ : ; ~`  
-Attach to Template| Attach the server profile to an existing template.This attachment overrides the config properties of the profile and replaces them with the template properties.A server profile attached to a template cannot be modified. The modifications can only be done in the associated template.  
+Attach to Template| Attach the Unified Edge profile to an existing template.This attachment overrides the config properties of the profile and replaces them with the template properties.A server profile attached to a template cannot be modified. The modifications can only be done in the associated template.  
 Create Template| Create a template from the profile.  
 Detach from Template| Detach the profile from the template.A server profile can be detached from a template and modified as per the requirements.A detached server profile can always be reattached to a template.  
+Sync with Template| Synchronize the profile with its template.  
   
 ## Learn More
 

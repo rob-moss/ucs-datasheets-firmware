@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager System Monitoring Guide Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b-ucsm-cli-system-monitoring-guide-4-3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:02:57 |
+| **Fetched on** | 2026-08-05 09:59:09 |
 
 ---
 

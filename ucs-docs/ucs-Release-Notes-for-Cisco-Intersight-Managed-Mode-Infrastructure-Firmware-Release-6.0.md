@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 6.0 |
 | **Source file** | `ucs-docs-raw/html/b-intersight-infrastructure-fw-rn-6-0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:03:29 |
+| **Fetched on** | 2026-08-05 09:59:41 |
 
 ---
 
@@ -40,6 +40,7 @@ The following table includes the change history for this document.
 
 Table 1. Release 6.0 Revision Date |  Description  
 ---|---  
+July 14, 2026 |  B-Series M5 6.0(1.260031) Server Firmware version has been released. There is no corresponding Infrastructure Firmware release.   
 June 25, 2026 |  Updated release notes for Cisco UCS 6600, 6500, and 6400 Series Fabric Interconnect and Cisco UCS X-Series Direct Fabric Interconnect Infrastructure Firmware version 6.0(2.260067).  This release includes updates to:
 
   * [Resolved issues in Release 6.0(2.260067)](m-resolved-issues.html#reference_yvq_wjm_rjc)
@@ -139,7 +140,7 @@ The Cisco UCS 6652 fabric interconnect supports an array of Gigabit Ethernet (Gb
 
 For more information, see the [_Cisco UCS 6600 Series Fabric Interconnects Data Sheet_](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.html). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -191,7 +192,7 @@ For more information, see [Cisco UCS X9516 X-Fabric Data Sheet](https://www.cisc
   * Fabric Interconnect Infrastructure Firmware: 6.0(1.250229)
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -212,7 +213,7 @@ The Cisco UCS 6664 Fabric Interconnect is a 2-rack unit (RU), fixed-port system 
 
 The Fabric Interconnect supports an array of Gigabit Ethernet (GbE), Fibre Channel (FC), and Fibre Channel over Ethernet (FCoE) ports to offer connectivity to peer data center devices. For more information, see [Cisco UCS 6600 Series Fabric Interconnects Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.html). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -450,7 +451,7 @@ Hitachi, Ltd. ® |  NVMe-TCP |  Hitachi VSP One Block 85 |  UCSX S9108 (EHM) |  
 NVMe-TCP |  Hitachi VSP One Block 24  
 NVMe-TCP |  Hitachi VSP One Block 26  
 NVMe-TCP |  Hitachi VSP One Block 28  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -473,7 +474,7 @@ UCS-FI-6536 |  9.2 |  9.4
 UCS-FI-6454 |  9.2 |  9.4  
 UCS-FI-64108 |  9.2 |  9.4  
 UCSX-S9108-100G |  — |  9.4  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -664,7 +665,7 @@ The Cisco UCS 6652 fabric interconnect supports an array of Gigabit Ethernet (Gb
 
 For more information, see the [_Cisco UCS 6600 Series Fabric Interconnects Data Sheet_](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.html). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -716,7 +717,7 @@ For more information, see [Cisco UCS X9516 X-Fabric Data Sheet](https://www.cisc
   * Fabric Interconnect Infrastructure Firmware: 6.0(1.250229)
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -737,7 +738,7 @@ The Cisco UCS 6664 Fabric Interconnect is a 2-rack unit (RU), fixed-port system 
 
 The Fabric Interconnect supports an array of Gigabit Ethernet (GbE), Fibre Channel (FC), and Fibre Channel over Ethernet (FCoE) ports to offer connectivity to peer data center devices. For more information, see [Cisco UCS 6600 Series Fabric Interconnects Data Sheet](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6600-series-fabric-interconnect-ds.html). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -904,7 +905,7 @@ Hitachi, Ltd. ® |  NVMe-TCP |  Hitachi VSP One Block 85 |  UCSX S9108 (EHM) |  
 NVMe-TCP |  Hitachi VSP One Block 24  
 NVMe-TCP |  Hitachi VSP One Block 26  
 NVMe-TCP |  Hitachi VSP One Block 28  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -927,7 +928,7 @@ UCS-FI-6536 |  9.2 |  9.4
 UCS-FI-6454 |  9.2 |  9.4  
 UCS-FI-64108 |  9.2 |  9.4  
 UCSX-S9108-100G |  — |  9.4  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *

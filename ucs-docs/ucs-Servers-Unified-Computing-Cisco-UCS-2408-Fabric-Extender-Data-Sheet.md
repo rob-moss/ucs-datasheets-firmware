@@ -8,7 +8,7 @@
 | **HTML Title** | Servers - Unified Computing - Cisco UCS 2408 Fabric Extender Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-742624.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:08:49 |
+| **Fetched on** | 2026-08-05 10:05:23 |
 
 ---
 
@@ -1155,7 +1155,7 @@ Bandwidth like you’ve never known. Adopt 400G with scalability to 800G with co
 
 [Explore 400G and 800G](https://www.cisco.com/c/en/us/solutions/data-center/high-capacity-400g-data-center-networking/index.html)
 
-###  CIsco Optics 
+###  Cisco Optics 
 
 Fiber-optic transceiver modules to accelerate your network connections.
 
@@ -1317,13 +1317,12 @@ Find out how to transform your data center with a unified approach. Simplify ope
 
 ## We've got your back
 
-Cisco Services
+###  Cisco Services 
 
-###  With you at every step 
+Get the most from your technology with expert guidance to plan and implement as well as AI-powered, expert-backed support with Cisco IQ.  
 
-Guide your data-center networking transformation journey with embedded services and expertise.
 
-[Access Cisco Services](/site/us/en/services/index.html)
+[Explore Cisco Services](/site/us/en/services/index.html)
 
 Cisco Hybrid Cloud
 

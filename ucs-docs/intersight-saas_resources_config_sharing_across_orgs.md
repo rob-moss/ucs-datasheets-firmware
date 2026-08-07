@@ -8,7 +8,7 @@
 | **HTML Title** | Resources |
 | **Source file** | `config_sharing_across_orgs` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:04:22 |
+| **Fetched on** | 2026-08-05 10:00:38 |
 
 ---
 

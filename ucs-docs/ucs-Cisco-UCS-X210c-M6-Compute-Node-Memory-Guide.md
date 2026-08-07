@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/x210c-m6-memory-guide.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-07-02 13:06:15 |
+| **Fetched on** | 2026-08-05 10:02:52 |
 
 ---
 

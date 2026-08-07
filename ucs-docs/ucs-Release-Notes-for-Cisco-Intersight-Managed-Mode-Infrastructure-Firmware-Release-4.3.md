@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_imm_infra_fw_rn_lb.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:03:30 |
+| **Fetched on** | 2026-08-05 09:59:41 |
 
 ---
 
@@ -89,7 +89,7 @@
 
 **First Published: November 15, 2023**
 
-**Last Updated: June 25, 2026**
+**Last Updated: July 14, 2026**
 
 # Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3
 
@@ -111,6 +111,7 @@ The following table shows the online change history for this document.
 
 Revision Date  | Description   
 ---|---  
+July 14, 2026 |  C-Series Server Firmware version 4.3(2.260020) has been released. There is no corresponding Infrastructure Firmware release.   
 June 25, 2026 |  Updated release notes for Cisco UCS 6500 and 6400 Series Fabric Interconnect Infrastructure firmware release 4.3(6.260036) and Cisco UCS X-Series Direct Fabric Interconnect Infrastructure Firmware version 4.3(6.260036).  This release includes updates to:
 
   * Resolved issues in Release 4.3(6.260036)
@@ -204,7 +205,7 @@ Intersight software features may not align with the Intersight firmware release 
 
 ## New Hardware Support
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -278,7 +279,7 @@ Cisco UCS X-Series Direct is made up of the following components:
   * Cisco UCS X440p PCIe Node with up to four GPUs used in conjunction with the 9416 X-Fabric Modules
 
 
-For more information on Cisco UCS X-Series Direct support in Intersight Managed Mode, see [Supported Hardware for Intersight Managed Mode](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Intersight_Managed_Mode_Configuration_Guide/b_intersight_managed_mode_guide_chapter_01010.html#Cisco_Reference.dita_69441f1c-0872-4ba2-81de-50bb71950193).  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+For more information on Cisco UCS X-Series Direct support in Intersight Managed Mode, see [Supported Hardware for Intersight Managed Mode](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Intersight_Managed_Mode_Configuration_Guide/b_intersight_managed_mode_guide_chapter_01010.html#Cisco_Reference.dita_69441f1c-0872-4ba2-81de-50bb71950193).  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -415,7 +416,7 @@ NVMe-TCP |  HV Hitachi VSP One Block 24 |  Cisco UCSX-S9108-100G |  Cisco UCS 15
 ---|---  
 HV Hitachi VSP One Block 26  
 HV Hitachi VSP One Block 28  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -436,7 +437,7 @@ UCS-FI-6454 |  8.4, 9.2 |  9.4
 UCS-FI-64108 |  8.4, 9.2 |  9.4  
 UCS-FI-6536 |  9.2 |  9.4  
 UCSX-S9108-100G |  — |  9.4  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *

@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco UCS Virtual Interface Card Drivers, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b-release-notes-for-cisco-ucs-virtual-interface-card-drivers-release-4-3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:04:58 |
+| **Fetched on** | 2026-08-05 10:01:19 |
 
 ---
 

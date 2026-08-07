@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco Intersight Virtual Appliance and Intersight Assist Getting Started Guide |
 | **Source file** | `ucs-docs-raw/html/b_Cisco_Intersight_Appliance_Getting_Started_Guide.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:04:35 |
+| **Fetched on** | 2026-08-05 10:00:51 |
 
 ---
 
@@ -869,6 +869,8 @@ Limitations
 
 Troubleshooting Tip: After providing the OVF parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes since power-on, you may use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
 
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
+
 Troubleshooting Tip: If the diag shell displays a hostname such as 192:, then it is possible that while deploying the appliance, the input for one or more network parameters (such as IP address, netmask, gateway, DNS servers, etc.) was entered incorrectly. It is also possible that the appliance VM is connected to a portgroup/vswitch that does not allow it to connect to the network and perform a successful DNS lookup. If you encounter this issue, check the inputs to the OVA as well as other network parameters. You can rectify the incorrect inputs using the maintenance shell. 
 
 The diagnostic tool aims to:
@@ -1003,6 +1005,8 @@ Limitations
 * * *
 
 Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
 
 The diagnostic tool aims to:
 
@@ -1148,6 +1152,8 @@ Limitations
 * * *
 
 Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
 
 The diagnostic tool aims to:
 
@@ -1308,6 +1314,8 @@ Limitations
 
 Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
 
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
+
 The diagnostic tool aims to:
 
   * Detect and display issues with the installation prerequisites. 
@@ -1395,7 +1403,7 @@ Use the following instructions to complete the Intersight Connected Virtual Appl
 **Step 3** |  In the Intersight Appliance Installer setup wizard, do the following: 
 
   1. Connect—Click Continue to proceed to the Check Network Requirements step. 
-  2. Check Network Requirements—View the results and click Next to proceed to the Configure Internal Network step.  Note that if any of the DNS test fails during the network requirements check, you cannot proceed with the configuration.
+  2. Check Network Requirements—View the results and click Next to proceed to the Configure Internal Network step.  Note that if any of the DNS test fails during the network requirements check, you cannot proceed with the configuration. If you encounter this issue, you must redeploy the appliance.
   3. Configure Internal Network—If necessary, change the default Internal Network IP address and click Next to proceed to the Select Software Version step.  **Note:** This IP address range is used for internal communications within Intersight Virtual Appliance. This range must be within the 172.16.0.0/12 subnet, but can be a smaller range (up to a subnet prefix size of 20). In most cases, the default value can be used. One reason to change the default value would be if the Appliance needs to communicate directly with other devices in the same subnet, that is without traversing IP translation mechanisms such as NAT. 
   4. Select Software Version—You have the option to download the latest version of the appliance software, or upload a supported version of the appliance software that is either the same as, or newer than, the installer version. 
 
@@ -1480,7 +1488,7 @@ Use the following instructions to complete the Intersight Private Virtual Applia
 ---|---  
 **Step 2** |  In the Intersight Appliance Installer setup wizard, do the following: 
 
-  1. Check Network Requirements—View the results and click Next to proceed to the Configure Internal Network step.  Note that during the network requirements check if any of the DNS test fails, you cannot proceed with the configuration.
+  1. Check Network Requirements—View the results and click Next to proceed to the Configure Internal Network step.  Note that during the network requirements check if any of the DNS test fails, you cannot proceed with the configuration. If you encounter this issue, you must redeploy the appliance.
   2. Configure Internal Network—If necessary, change the default Internal Network IP address and click Next to proceed to the Upload Software step.  **Note:** This IP address range is used for internal communications within Intersight Virtual Appliance. This range must be within the 172.16.0.0/12 subnet, but can be a smaller range (up to a subnet prefix size of 20). In most cases, the default value can be used. One reason to change the default value would be if the Appliance needs to communicate directly with other devices in the same subnet, that is without traversing IP translation mechanisms such as NAT. 
   3. Upload Software—Upload a supported version of the appliance software that is either the same as, or newer than, the installer version.  Select either Local Machine or Network Share, depending on where you saved the software packages.  |  **Note** | 
   * To manually update, install, or restore Intersight Connected Virtual Appliance, you will need to access the Appliance Account so that you can download the required software packages. For information, see Creating an Appliance Account for Downloading Software Packages and Downloading Software Packages for Intersight Virtual Appliance. 
@@ -6348,6 +6356,8 @@ Limitations
 
 Troubleshooting Tip: After providing the OVF parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes since power-on, you may use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
 
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
+
 Troubleshooting Tip: If the diag shell displays a hostname such as 192:, then it is possible that while deploying the appliance, the input for one or more network parameters (such as IP address, netmask, gateway, DNS servers, etc.) was entered incorrectly. It is also possible that the appliance VM is connected to a portgroup/vswitch that does not allow it to connect to the network and perform a successful DNS lookup. If you encounter this issue, check the inputs to the OVA as well as other network parameters. You can rectify the incorrect inputs using the maintenance shell. 
 
 The diagnostic tool aims to:
@@ -6482,6 +6492,8 @@ Limitations
 * * *
 
 Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
 
 The diagnostic tool aims to:
 
@@ -6627,6 +6639,8 @@ Limitations
 * * *
 
 Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
 
 The diagnostic tool aims to:
 
@@ -6786,6 +6800,8 @@ Limitations
 * * *
 
 Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
 
 The diagnostic tool aims to:
 
@@ -7662,7 +7678,7 @@ Use the following instructions to complete the Intersight Connected Virtual Appl
 **Step 3** |  In the Intersight Appliance Installer setup wizard, do the following: 
 
   1. Connect—Click Continue to proceed to the Check Network Requirements step. 
-  2. Check Network Requirements—View the results and click Next to proceed to the Configure Internal Network step.  Note that if any of the DNS test fails during the network requirements check, you cannot proceed with the configuration.
+  2. Check Network Requirements—View the results and click Next to proceed to the Configure Internal Network step.  Note that if any of the DNS test fails during the network requirements check, you cannot proceed with the configuration. If you encounter this issue, you must redeploy the appliance.
   3. Configure Internal Network—If necessary, change the default Internal Network IP address and click Next to proceed to the Select Software Version step.  **Note:** This IP address range is used for internal communications within Intersight Virtual Appliance. This range must be within the 172.16.0.0/12 subnet, but can be a smaller range (up to a subnet prefix size of 20). In most cases, the default value can be used. One reason to change the default value would be if the Appliance needs to communicate directly with other devices in the same subnet, that is without traversing IP translation mechanisms such as NAT. 
   4. Select Software Version—You have the option to download the latest version of the appliance software, or upload a supported version of the appliance software that is either the same as, or newer than, the installer version. 
 
@@ -7747,7 +7763,7 @@ Use the following instructions to complete the Intersight Private Virtual Applia
 ---|---  
 **Step 2** |  In the Intersight Appliance Installer setup wizard, do the following: 
 
-  1. Check Network Requirements—View the results and click Next to proceed to the Configure Internal Network step.  Note that during the network requirements check if any of the DNS test fails, you cannot proceed with the configuration.
+  1. Check Network Requirements—View the results and click Next to proceed to the Configure Internal Network step.  Note that during the network requirements check if any of the DNS test fails, you cannot proceed with the configuration. If you encounter this issue, you must redeploy the appliance.
   2. Configure Internal Network—If necessary, change the default Internal Network IP address and click Next to proceed to the Upload Software step.  **Note:** This IP address range is used for internal communications within Intersight Virtual Appliance. This range must be within the 172.16.0.0/12 subnet, but can be a smaller range (up to a subnet prefix size of 20). In most cases, the default value can be used. One reason to change the default value would be if the Appliance needs to communicate directly with other devices in the same subnet, that is without traversing IP translation mechanisms such as NAT. 
   3. Upload Software—Upload a supported version of the appliance software that is either the same as, or newer than, the installer version.  Select either Local Machine or Network Share, depending on where you saved the software packages.  |  **Note** | 
   * To manually update, install, or restore Intersight Connected Virtual Appliance, you will need to access the Appliance Account so that you can download the required software packages. For information, see Creating an Appliance Account for Downloading Software Packages and Downloading Software Packages for Intersight Virtual Appliance. 
@@ -9627,6 +9643,8 @@ Limitations
 
 Troubleshooting Tip: After providing the OVF parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes since power-on, you may use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
 
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
+
 Troubleshooting Tip: If the diag shell displays a hostname such as 192:, then it is possible that while deploying the appliance, the input for one or more network parameters (such as IP address, netmask, gateway, DNS servers, etc.) was entered incorrectly. It is also possible that the appliance VM is connected to a portgroup/vswitch that does not allow it to connect to the network and perform a successful DNS lookup. If you encounter this issue, check the inputs to the OVA as well as other network parameters. You can rectify the incorrect inputs using the maintenance shell. 
 
 The diagnostic tool aims to:
@@ -9761,6 +9779,8 @@ Limitations
 * * *
 
 Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
 
 The diagnostic tool aims to:
 
@@ -9906,6 +9926,8 @@ Limitations
 * * *
 
 Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
 
 The diagnostic tool aims to:
 
@@ -10065,6 +10087,8 @@ Limitations
 * * *
 
 Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
 
 The diagnostic tool aims to:
 
@@ -11349,6 +11373,8 @@ Limitations
 
 Troubleshooting Tip: After providing the OVF parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes since power-on, you may use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
 
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
+
 Troubleshooting Tip: If the diag shell displays a hostname such as 192:, then it is possible that while deploying the appliance, the input for one or more network parameters (such as IP address, netmask, gateway, DNS servers, etc.) was entered incorrectly. It is also possible that the appliance VM is connected to a portgroup/vswitch that does not allow it to connect to the network and perform a successful DNS lookup. If you encounter this issue, check the inputs to the OVA as well as other network parameters. You can rectify the incorrect inputs using the maintenance shell. 
 
 The diagnostic tool aims to:
@@ -11483,6 +11509,8 @@ Limitations
 * * *
 
 Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
 
 The diagnostic tool aims to:
 
@@ -11628,6 +11656,8 @@ Limitations
 * * *
 
 Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
 
 The diagnostic tool aims to:
 
@@ -11787,6 +11817,8 @@ Limitations
 * * *
 
 Troubleshooting Tip: After providing the password and IP property parameters, if you notice that your VM does not respond when you visit <https://fqdn-of-your-appliance> after about 15 minutes, you can use the Intersight Appliance Maintenance Shell to troubleshoot networking or misconfiguration issues. 
+
+Troubleshooting Tip: If an invalid DNS server is configured during the installation process, it cannot be corrected later, even via the diagnostic console. If you encounter this issue, you must redeploy the appliance. 
 
 The diagnostic tool aims to:
 

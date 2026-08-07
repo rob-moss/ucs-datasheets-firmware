@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Faults and Error Messages Reference Guide 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_cisco_ucs_faults_and_error_messages_reference-4-3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-06-24 11:18:40 |
+| **Fetched on** | 2026-08-05 10:01:27 |
 
 ---
 
@@ -19,6 +19,8 @@
 ---
 
 ## Page 2: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/4-3/b_cisco_ucs_faults_and_error_messages_reference-4-3/m_introduction_to_system_event_log_messages.html
+
+# System Event Log Messages
 
 ## Information about System Event Log Messages
 
@@ -35,14 +37,33 @@ For more information about the SEL, including how to view the SEL for each serve
 
 * * *  
   
----|---
+---|---  
+  
+## SEL File
+
+The SEL file is approximately 40 KB in size, and no further events are recorded when it is full. It must be cleared before additional events can be recorded. 
+
+## SEL Policy
+
+The SEL policy can be configured to backup the SEL to a remote server, and, optionally to clear the SEL after a backup operation occurs. A back up operation can be triggered based upon the following actions defined by the user as a part of SEL backup policy. 
+
+  * On SEL log full
+
+  * On change of server association
+
+  * On expiration of timer interval, and so on.
+
+
+User can also manually backup or clear the SEL.
 
 ---
 
 ## Page 3: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/4-3/b_cisco_ucs_faults_and_error_messages_reference-4-3/m_sem-faults_4-3.html
 
-## Cisco UCS SEM Faults  
-  
+# SEM Faults in Cisco UCS Manager
+
+## Cisco UCS SEM Faults
+
 ### fltFabricComputeSlotEpMisplacedInChassisSlot
 
 Fault Code: F0156 
@@ -64056,6 +64077,8 @@ Fault Details
 ---
 
 ## Page 4: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/4-3/b_cisco_ucs_faults_and_error_messages_reference-4-3/m_fsm-faults_4-3.html
+
+# FSM Faults in Cisco UCS Manager
 
 ## Cisco UCS FSM Faults
 
@@ -164150,6 +164173,8 @@ Fault Details
 
 ## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/4-3/b_cisco_ucs_faults_and_error_messages_reference-4-3/b_Cisco_UCS_Faults_and_Error_Messages_Reference_chapter_011.html
 
+# Call Home Faults
+
 ## About Call Home Messages
 
 When you configure Call Home to send messages, Cisco UCS Manager executes the appropriate command line interface (CLI) show command and attaches the command output to the message. 
@@ -164163,17 +164188,772 @@ Cisco UCS delivers Call Home messages in the following formats:
   * XML machine readable format—Uses Extensible Markup Language (XML) and Adaptive Messaging Language (AML) XML schema definition (XSD). The AML XSD is published on the Cisco.com website at <https://www.cisco.com/>. The XML format enables communication with the Cisco Systems Technical Assistance Center. 
 
 
+## Cisco UCS Faults that Raise Call Home Alerts
+
+If Smart Call Home is configured in the Cisco UCS instance, every fault listed in this section raises a Smart Call Home event to the Cisco Smart Call Home system. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+All Cisco UCS Manager faults that raise Call Home alerts are documented in “Cisco UCS Faults” The type of Call Home alert is included in the CallHome line of the Fault Details section for each fault.  You can also find additional information about Call Home faults in the Unified Computing System (UCS) section of [Monitoring Details for Cisco SMARTnet Service with Smart Call Home](http://www.cisco.com/en/US/services/ps2827/ps2978/ps7334/SCH_Monitoring_Details.pdf). 
+
+* * *  
+  
+---|---  
+  
+  * Faults Raised by a Fabric Interconnect
+  * Faults Raised by Syslog
+
+
+### Faults Raised by a Fabric Interconnect
+
+#### Diagnostic Faults Raised by a Fabric Interconnect
+
+TestFabricPort 
+    
+
+**Details**
+
+Severity: Major 
+
+Customer Notification: Yes 
+
+Service Request: Yes, if ports_failed > 25% 
+
+Cisco UCS Manager CLI: show diagnostic result module all 
+
+Call Home Support: 3.0, 3.1 
+
+**Explanation**
+
+This fault typically occurs because one or more of the ports have failed this diagnostic test either during the Power-On-Self-Test or during the run time monitoring. As a result, the Cisco UCS Manager shuts down the affected ports. The network connectivity to the devices connected on the failed ports is affected. 
+
+**Recommended Action**
+
+If you see this fault, take the following actions: 
+
+  1. If the failed port or ports are located in an expansion module, remove and re-insert the module. 
+
+Follow the instructions outlined in the hardware installation guide for the fabric interconnect on how to insert the modules.
+
+  2. Remove and re-insert the SFP or SFP+ and ensure the SFP or SFP+ is seated properly. 
+
+  3. Insert the suspected faulty SFP or SFP+ into a working port. If the working port becomes faulty, then the SFP or SFP+ is faulty. Consider replacing the faulty SFP or SFP+. 
+
+  4. If the SFP or SFP+ is working, then the module hardware is faulty. 
+
+     1. a. If the fixed module is affected, consider replacing the fabric interconnect. 
+
+     2. b. If an expansion module is affected, consider replacing the faulty module. 
+
+Schedule a downtime for the Cisco UCS instance to replace the hardware.
+
+
+TestForwardingEngine 
+    
+
+**Details**
+
+Severity: Major 
+
+Customer Notification: Yes 
+
+Service Request: Yes, if ports_failed > 25% 
+
+Cisco UCS Manager CLI: show diagnostic result module all 
+
+Call Home Support: 3.0, 3.1 
+
+**Explanation**
+
+One or more ports have failed this diagnostic test either during the Power-On-Self-Test or during the run time monitoring. As a result, the Cisco UCS Manager shuts down the affected ports. The network connectivity to the devices connected on the failed ports is affected. 
+
+**Recommended Action**
+
+If you see this fault, take the following actions: 
+
+  1. If the failed port or ports are located in an expansion module, remove and re-insert the module. 
+
+Follow the instructions outlined in the hardware installation guide for the fabric interconnect on how to insert the modules.
+
+  2. Remove and re-insert the SFP or SFP+ and ensure the SFP or SFP+ is seated properly. 
+
+  3. Insert the suspected faulty SFP or SFP+ into a working port. If the working port becomes faulty, then the SFP or SFP+ is faulty. Consider replacing the faulty SFP or SFP+. 
+
+  4. If the SFP or SFP+ is working, then the module hardware is faulty. 
+
+     1. If the fixed module is affected, consider replacing the fabric interconnect. 
+
+     2. If an expansion module is affected, consider replacing the faulty module. 
+
+Schedule a downtime for the Cisco UCS instance to replace the hardware.
+
+
+TestForwardingEnginePort 
+    
+
+**Details**
+
+Severity: Major 
+
+Customer Notification: Yes 
+
+Service Request: Yes, if ports_failed > 25% 
+
+Cisco UCS Manager CLI: show diagnostic result module all 
+
+Call Home Support: 3.0, 3.1 
+
+**Explanation**
+
+One or more ports have failed this diagnostic test either during the Power-On-Self-Test or during the run time monitoring. As a result, the Cisco UCS Manager shuts down the affected ports. the network connectivity to the devices connected on the failed ports is affected. 
+
+**Recommended Action**
+
+If you see this fault, take the following actions: 
+
+  1. If the failed port or ports are located in an expansion module, remove and re-insert the module. 
+
+Follow the instructions outlined in the hardware installation guide for the fabric interconnect on how to insert the modules.
+
+  2. Remove and re-insert the SFP or SFP+ and ensure the SFP or SFP+ is seated properly. 
+
+  3. Insert the suspected faulty SFP or SFP+ into a working port. If the working port becomes faulty, then the SFP or SFP+ is faulty. Consider replacing the faulty SFP or SFP+. 
+
+  4. If the SFP or SFP+ is working, then the module hardware is faulty. 
+
+     1. If the fixed module is affected, consider replacing the fabric interconnect. 
+
+     2. If an expansion module is affected, consider replacing the faulty module. 
+
+Schedule a downtime for the Cisco UCS instance to replace the hardware.
+
+
+TestFrontPort 
+    
+
+**Details**
+
+Severity: Major 
+
+Customer Notification: Yes 
+
+Service Request: Yes, if ports_failed > 25% 
+
+Cisco UCS Manager CLI: show diagnostic result module all 
+
+Call Home Support: 3.0, 3.1 
+
+**Explanation**
+
+One or more ports have failed this diagnostic test either during the Power-On-Self-Test or during the run time monitoring. As a result, the Cisco UCS Manager shuts down the affected ports. The network connectivity to the devices connected on the failed ports is affected. 
+
+**Recommended Action**
+
+If you see this fault, take the following actions: 
+
+  1. Move the devices connected on the affected ports to other functional ports of the fabric interconnect or to another fabric interconnect. 
+
+  2. If the failed port or ports are located in an expansion module, do the following:
+
+     1. Remove and re-insert the module. 
+
+Follow the instructions outlined in the hardware installation guide for the fabric interconnect on how to insert the modules.
+
+     2. If the problem persists and if all of the ports are required to be functional on the fabric interconnect, schedule a downtime and replace the expansion module. 
+
+  3. If the failed port or ports are located in the fixed module and all ports are required to be functional on the fabric interconnect, schedule a downtime and replace the fabric interconnect. 
+
+
+TestInbandPort 
+    
+
+**Details**
+
+Severity: Major 
+
+Customer Notification: Yes 
+
+Service Request: Yes 
+
+Cisco UCS Manager CLI: show diagnostic result module all 
+
+Call Home Support: 3.0, 3.1 
+
+**Explanation**
+
+This fault typically occurs because the inband connectivity to the fabric interconnect is experiencing a failure. The fabric interconnect uses inband connectivity for the control plane protocols to connect to peers such as servers, LAN switches, and SAN switches. Examples of these control plane protocols include DCX, STP, LACP, and FSPF. If a fabric interconnect cannot run the appropriate control plane protocols, it can no longer function and the Cisco UCS Manager shuts down all of the ports on the fabric interconnect to avoid topology problems. 
+
+**Recommended Action**
+
+If you see this fault, schedule a downtime and replace the fabric interconnect.
+
+TestFabricEngine 
+    
+
+**Details**
+
+Severity: Major 
+
+Customer Notification: Yes 
+
+Service Request: Yes 
+
+Cisco UCS Manager CLI: show diagnostic result module all 
+
+Call Home Support: 3.0, 3.1 
+
+**Explanation**
+
+This fault typically occurs because the fabric ASIC has reported a major failure. Connectivity among all of the ports depends upon the fabric ASIC. Therefore, the Cisco UCS Manager shuts down all ports on the fabric interconnect. 
+
+**Recommended Action**
+
+If you see this fault, schedule a downtime and replace the fabric interconnect.
+
+TestSPROM 
+    
+
+**Details**
+
+Severity: Major 
+
+Customer Notification: Yes 
+
+Service Request: Yes 
+
+Cisco UCS Manager CLI: show diagnostic result module all 
+
+Call Home Support: 3.0, 3.1 
+
+**Explanation**
+
+This fault typically occurs when the Cisco UCS Manager cannot bring the affected module online because the module type is unidentified. For the expansion modules, the Cisco UCS Manager determines the module type from information stored in the module SPROM. If you see this error, the checksum calculation for the SPROM content has most likely failed. 
+
+This fault can only occur on the expansion modules. It cannot occur on the fixed module.
+
+**Recommended Action**
+
+If you see this fault, take the following actions: 
+
+  1. Move the devices connected on the affected ports to other functional ports of the fabric interconnect or to another fabric interconnect: 
+
+  2. Remove and re-insert the module to ensure that all pins are in good contact with the backplane.
+
+Follow the instructions outlined in the hardware installation guide for the fabric interconnect on how to insert the modules.
+
+  3. If the problem persists after multiple re-insertions, schedule a downtime and replace the faulty module.
+
+
+TestOBFL 
+    
+
+**Details**
+
+Severity: Minor 
+
+Customer Notification: Yes 
+
+Service Request: Yes 
+
+Cisco UCS Manager CLI: show diagnostic result module all 
+
+Call Home Support: 3.0, 3.1 
+
+**Explanation**
+
+This fault typically occurs because the onboard fault logging (OBFL) flash has failed. The Cisco UCS Manager logs hardware failure messages to this flash component. That logging function is lost. However, other logs, such as the syslog, are not affected and can continue to work normally. 
+
+This fault does not affect the normal operation of the fabric interconnect. The fault can only occur on the fixed module. It cannot occur on the expansion modules. 
+
+**Recommended Action**
+
+Copy the message exactly as it appears on the console or in the system log. Research and attempt to resolve the issue using the tools and utilities provided at <http://www.cisco.com/tac>. Also refer to the Release Notes for Cisco UCS Manager and the Cisco UCS Troubleshooting Guide. If you cannot resolve the issue, execute the show tech-support command and contact Cisco Technical Support. 
+
+TestLED 
+    
+
+**Details**
+
+Severity: Minor 
+
+Customer Notification: Yes 
+
+Service Request: No 
+
+Cisco UCS Manager CLI: show diagnostic result module all 
+
+Call Home Support: 3.0, 3.1 
+
+**Explanation**
+
+This fault typically occurs when the Cisco UCS Manager cannot access the LED controls on a module. However, because the LED control uses the same transport mechanism that controls other key components on a module, this fault can indicate other failures. This fault can be caused by a bent pin on the module or fabric interconnect. 
+
+This fault can only occur on the expansion modules. It cannot occur on the fixed module.
+
+**Recommended Action**
+
+If you see this fault, take the following actions: 
+
+  1. Move the devices connected on the affected ports to other functional ports of the fabric interconnect or to another fabric interconnect: 
+
+  2. Remove and re-insert the module to ensure that all pins are in good contact with the backplane.
+
+Follow the instructions outlined in the hardware installation guide for the fabric interconnect on how to insert the modules.
+
+  3. If this failure continues after re-insertion, insert this module into a known good fabric interconnect to determine whether the same failure occurs. 
+
+  4. If the problem persists, schedule a downtime and replace the faulty module.
+
+
+#### Environmental Faults Raised by a Fabric Interconnect
+
+Temperature Alarm 
+    
+
+**Details**
+
+Severity: Major 
+
+Customer Notification: Yes 
+
+Service Request: No 
+
+Cisco UCS Manager CLI: show environment 
+
+Call Home Support: 3.0, 3.1 
+
+**Explanation**
+
+This fault typically occurs because the temperature sensor reports that the affected chassis has exceeded the major or minor threshold value and is at a dangerously high temperature. If the operating temperature is not reduced, the system shuts down the affected chassis to avoid causing permanent damage. The chassis is powered back on after the temperature returns to a reasonable level. 
+
+Each chassis needs at least seven functional fans to maintain operating temperature.
+
+**Recommended Action**
+
+If you see this fault, take the following actions: 
+
+  1. If the fault report includes fan_failure_found, do the following: 
+
+     1. In either the Cisco UCS Manager CLI or the Cisco UCS Manager GUI, check the status of the affected fan to determine whether the temperature-related alarm is due to the failure of a fan. 
+
+     2. Ensure that a minimum of seven fans are installed in the chassis and are functioning properly. 
+
+     3. Check the fan-related syslog messages to see the exact reason for the failure. For example, the fan may have become non-operational. 
+
+     4. Replace the faulty fan to resolve the issue.
+
+  2. If the fault report includes temp_current >= maj_threshold or temp_current =< min_threshold, do the following: 
+
+     1. In either the Cisco UCS Manager CLI or the Cisco UCS Manager GUI, view the acceptable temperature and voltage parameters and determine how much of the outlet or inlet temperature has reached or exceeded over the major or minor threshold value. 
+
+     2. Verify the following to ensure that the site where the chassis is installed meets the site guidelines:
+
+  * The area is dry, clean, well-ventilated and air-conditioned. 
+
+  * The air conditioner is working correctly and maintains an ambient temperature of 0 to 40 degrees C.
+
+  * The chassis is installed in an open rack whenever possible. If the installation on an enclosed rack is unavoidable, ensure that the rack has adequate ventilation. 
+
+  * The ambient airflow is unblocked to ensure normal operation. If the airflow is blocked or restricted, or if the intake air is too warm, an over temperature condition can occur. 
+
+  * The clearance around the ventilation openings of the chassis are at least 6 inches (15.24 cm).
+
+  * The chassis is not in an overly congested rack or is not directly next to another equipment rack. Heat exhaust from other equipment can enter the inlet air vents and cause an over temperature condition. 
+
+  * The equipment near the bottom of a rack is not generating excessive heat that is drawn upward and into the intake ports of the chassis. The warm air can cause an over temperature condition. 
+
+  * The cables from other equipment does not obstruct the airflow through the chassis or impair access to the power supplies or the cards. Route the cables away from any field-replaceable components to avoid disconnecting cables unnecessarily for equipment maintenance or upgrades. 
+
+
+PowerSupplyFailure 
+    
+
+**Details**
+
+Severity: Major 
+
+Customer Notification: Yes 
+
+Service Request: Yes 
+
+Cisco UCS Manager CLI: show environment 
+
+Call Home Support: 3.0, 3.1 
+
+**Explanation**
+
+This fault typically occurs because a failure was recorded in the affected power supply unit and the affected component is working with only one power supply unit. 
+
+**Recommended Action**
+
+If you see this fault, take the following actions: 
+
+  1. Check the power supply unit that has the problem, as follow:
+
+  * In the Cisco UCS Manager CLI, execute the show environment power command 
+
+  * In the Cisco UCS Manager GUI, view the PSUs tab of the Chassis node on the Equipment tab. 
+
+  2. Verify that the power cord is properly connected to the power supply and to the power source. 
+
+  3. Ensure that the fabric interconnect is supplied with 220V (this is the only supported power supply configuration). 
+
+  4. Ensure that the power supply is properly inserted and plugged in. 
+
+  5. If problem persists, remove and re-insert the power-supply unit.
+
+  6. If the power supply light is still not green and the status continues to show fail or shutdown, replace the faulty power supply unit. 
+
+
+TEMPERATURE_ALARM --- Sensor 
+    
+
+**Details**
+
+Severity: Major 
+
+Customer Notification: Yes 
+
+Service Request: Yes 
+
+Cisco UCS Manager CLI: show environment 
+
+Call Home Support: 3.0, 3.1 
+
+**Explanation**
+
+This fault typically occurs because the Cisco UCS Manager cannot access a temperature sensor. As a result, the Cisco UCS Manager cannot monitor or regulate the temperature for the affected component. The affected temperature sensor could be for a chassis, power supply, or module. 
+
+**Recommended Action**
+
+If you see this fault, take the following actions: 
+
+  1. View the logs to determine the set of sensors that has failed, as follow:
+
+  * In the Cisco UCS Manager CLI, execute the show logging command 
+
+  * In the Cisco UCS Manager GUI, view the logs under the Faults, Events, and Audit Log node on the Admin tab. 
+
+  2. If the failed sensors are on an expansion module or a power supply, do the following:
+
+     1. Remove and re-insert the power supply or module. 
+
+Follow the instructions outlined in the hardware installation guide for the fabric interconnect on how to insert the modules.
+
+     2. If the failure continues to persist after multiple re-insertions, replace the faulty power supply unit or the module.
+
+  3. If the failed sensors are on the fixed module, replace the fabric interconnect as it can no longer regulate and monitor the chassis temperature. 
+
+
+TestFAN -- fan speed speed out of range >= expected. speed rpm 
+    
+
+**Details**
+
+Severity: Major 
+
+Customer Notification: Yes 
+
+Service Request: No 
+
+Cisco UCS Manager CLI: show environment 
+
+Call Home Support: 3.0, 3.1 
+
+**Explanation**
+
+This fault typically occurs because the Cisco UCS Manager has detected a fan that is running at a speed that is too slow or too fast. A malfunctioning fan can affect the operating temperature of the chassis. 
+
+**Recommended Action**
+
+If you see this fault, take the following actions: 
+
+  1. If the fan is running below the expected speed, ensure that the fan blades are not blocked.
+
+  2. If the fan is running above the expected speed, remove and re-insert the fan.
+
+
+Multiple fans missing or failed 
+    
+
+**Details**
+
+Severity: Major 
+
+Customer Notification: Yes 
+
+Service Request: No 
+
+Cisco UCS Manager CLI: show environment 
+
+**Explanation**
+
+This fault typically occurs because the Cisco UCS Manager has detected multiple fan failures. The malfunctioning fans can result in high operating temperatures, affect performance, and cause the Cisco UCS Manager to shut down the affected component. 
+
+**Recommended Action**
+
+If you see this fault, take the following actions: 
+
+  1. If the chassis fans have failed, do the following:
+
+     1. Check the fan status.
+
+     2. Ensure that at least seven fans are installed and functioning properly. 
+
+     3. Check the fan-related syslog messages to see the exact reason for the failure. The fans may have become non-operational. 
+
+     4. Replace the faulty fans to resolve the issue.
+
+  2. If the power supply fans have failed and the power supply is operational, do the following:
+
+     1. Check the fan status. 
+
+     2. Remove and re-insert the power supply and verify whether the fan is operational.
+
+     3. If the problem persists, replace the power-supply.
+
+
+One fan missing or failed 
+    
+
+**Details**
+
+Severity: Minor 
+
+Customer Notification: Yes 
+
+Service Request: No 
+
+Cisco UCS Manager CLI: show environment 
+
+Call Home Support: 3.0, 3.1 
+
+**Explanation**
+
+This fault typically occurs because the Cisco UCS Manager has determined that a single fan is missing or has failed. A single missing or malfunctioning fan does not affect performance. A minimum of seven fans are required for a chassis to be operational. 
+
+**Recommended Action**
+
+If you see this fault, take the following actions: 
+
+  1. If the chassis fans have failed, do the following:
+
+     1. Check the fan status. 
+
+     2. Ensure that at least seven fans are installed and functioning properly. 
+
+     3. Check the fan-related syslog messages to see the exact reason for the failure. The fan may have become non-operational. 
+
+     4. Replace the faulty fan to resolve the issue.
+
+  2. If the power supply fans have failed and the power supply is operational, do the following:
+
+     1. Check the fan status. 
+
+     2. Remove and re-insert the power supply and verify whether the fan is operational.
+
+     3. If the problem persists, replace the power-supply.
+
+
+### Faults Raised by Syslog
+
+No license installed for feature, is on grace license, will expire in DD HH
+    
+
+**Details**
+
+Severity: Major
+
+Customer Notification: Yes
+
+Service Request: No
+
+Cisco UCS Manager CLI: show logging 
+
+Call Home Support: 3.0, 3.1
+
+**Explanation**
+
+The evaluation license installed for the affected feature is running under a grace period. The grace period expires on the date shown in the log at which time the Cisco UCS Manager disables the feature. To obtain more details, follow the instructions in the licensing chapter of the Cisco UCS Manager CLI Configuration Guide or the Cisco UCS Manager GUI Configuration Guide. 
+
+The impact on performance depends upon whether the affected feature is implemented.
+
+**Recommended Action**
+
+If you see this fault, obtain a permanent license for the affected feature through one of the following channels: 
+
+  * Contact your local Cisco sales representative.
+
+  * Use the ordering tool at <https://www.cisco.com/c/en/us/buy.html>. 
+
+
+License for feature, will expire in HH MM
+    
+
+**Details**
+
+Severity: Major
+
+Customer Notification: Yes
+
+Service Request: No
+
+Cisco UCS Manager CLI: show logging 
+
+Call Home Support: 3.0, 3.1
+
+**Explanation**
+
+The evaluation license installed for the affected feature expires within the number of hours and minutes listed in the alert. When that period expires, the Cisco UCS Manager disables the feature. To obtain more details, follow the instructions in the licensing chapter of the Cisco UCS Manager CLI Configuration Guide or the Cisco UCS Manager GUI Configuration Guide. 
+
+**Recommended Action**
+
+If you see this fault, obtain a permanent license for the affected feature through one of the following channels: 
+
+  * Contact your local Cisco sales representative.
+
+  * Use the ordering tool at <https://www.cisco.com/c/en/us/buy.html>. 
+
+
+License has expired for feature
+    
+
+**Details**
+
+Severity: Major
+
+Customer Notification: Yes
+
+Service Request: No
+
+Cisco UCS Manager CLI: show logging 
+
+Call Home Support: 3.0, 3.1
+
+**Explanation**
+
+The evaluation license installed for the affected feature has expired, and the Cisco UCS Manager has disabled the feature. To obtain more details, follow the instructions in the licensing chapter of the Cisco UCS Manager CLI Configuration Guide or the Cisco UCS Manager GUI Configuration Guide. 
+
+**Recommended Action**
+
+If you see this fault, obtain a permanent license for the affected feature through one of the following channels: 
+
+  * Contact your local Cisco sales representative.
+
+  * Use the ordering tool at <https://www.cisco.com/c/en/us/buy.html>. 
+
+
+License file is missing for feature
+    
+
+**Details**
+
+Severity: Major
+
+Customer Notification: Yes
+
+Service Request: No
+
+Cisco UCS Manager CLI: show logging 
+
+Call Home Support: 3.0, 3.1
+
+**Explanation**
+
+The previously installed license for the affected feature is missing from the fabric interconnect configuration storage, and the Cisco UCS Manager has disabled the feature. This issue can occur in rare circumstances such as flash corruption. To obtain more details, follow the instructions in the licensing chapter of the Cisco UCS Manager CLI Configuration Guide or the Cisco UCS Manager GUI Configuration Guide. 
+
+**Recommended Action**
+
+If you see this fault, re-install the license from the license backup.
+
+## Cisco UCS Faults and Call Home Priority Levels
+
+Because Call Home is present across several Cisco product lines, Call Home has developed its own standardized priority levels. The following table describes how the underlying Cisco UCS fault levels map to the Call Home priority levels. 
+
+Table 1. Mapping of Cisco UCS Faults and Call Home Priority Levels dsfdsUCS Fault |  Call Home Priority |  SCH Priority  
+---|---|---  
+—  |  (9) Catastrophic  |  —   
+—  |  (8) Disaster  |  —   
+—  |  (7) Fatal  |  —   
+(6) Critical  |  (6) Critical  |  Major   
+(5) Major  |  (5) Major  |  Major   
+(4) Minor  |  (4) Minor  |  Minor   
+(3) Warning  |  (3) Warning  |  Minor   
+—  |  (2) Notification  |  Minor   
+(1) Info  |  (1) Normal  |  Minor   
+  
+When Call Home information is communicated in an e-mail format, the priority levels and faults appear in the following places.
+
+  * The SCH priority is communicated in the e-mail subject line.
+
+  * The Call Home priority is communicated as a “Severity Level:” header to the e-mail message.
+
+  * The UCS fault information is attached in the body of the e-mail. 
+
+  * The UCS fault severity is identified within the attachment as “severity=”.
+
+
 ---
 
 ## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/4-3/b_cisco_ucs_faults_and_error_messages_reference-4-3/b_Cisco_UCS_Faults_and_Error_Messages_Reference_chapter_0100.html
+
+# Transient Faults
 
 ## Troubleshooting Transient Faults
 
 Transient faults can occur during initial set up and discovery or when a server or virtual machine starts up. You can typically ignore these transient faults, as Cisco UCS Manager clears them automatically. 
 
+## Initial Setup and Discovery Faults
+
+The table describes the transient faults that you may see during the initial setup and discovery process. The Cisco UCS Manager clears these faults. If you see them during the initial setup or discovery process, you can safely ignore these faults. 
+
+Table 1. Transient Faults that Occur during Initial Setup and Discovery Process Fault Code |  Fault Text |  Description   
+---|---|---  
+F16581  |  [FSM:STAGE:RETRY:]: user configuration to secondary(FSM-STAGE:sam:dme:AaaUserEpUpdateUserEp:SetUserPeer)  |  The FSM could not send the user configuration to the subordinate fabric interconnect during the initial cluster configuration or the setup.   
+F16745  |  [FSM:STAGE:RETRY:]: QoS Classification Definition classification configuration on secondary(FSM-STAGE:sam:dme:QosclassDefinitionConfigGlobalQoS:SetPeer)  |  The FSM could not send the quality of the service configuration to the subordinate fabric interconnect during the initial cluster configuration or the setup.   
+F16725  |  [FSM:STAGE:RETRY:]: VM profile configuration on external VM manager(FSM-STAGE:sam:dme:VnicProfileSetConfigVmm:SetLocal)  |  The FSM could not send the VM profile configuration to the the subordinate fabric interconnect during the initial cluster configuration or the setup.   
+F16580  |  [FSM:STAGE:RETRY:]: realm configuration to secondary(FSM-STAGE:sam:dme:AaaRealmUpdateRealm:SetRealmPeer)  |  The FSM could not send the security configuration to the subordinate fabric interconnect during the initial cluster configuration or the setup.   
+F16724  |  [FSM:STAGE:RETRY:]: external VM manager configuration on local fabric(FSM-STAGE:sam:dme:ExtvmmEpConfig:SetLocal)  |  The FSM could not send the VM manager configuration to the primary fabric interconnect during the initial cluster configuration or the setup.   
+F16579  |  [FSM:STAGE:RETRY:]: external aaa server configuration to secondary(FSM-STAGE:sam:dme:AaaEpUpdateEp:SetEpPeer)  |  The FSM could not send the security configuration to the subordinate fabric interconnect during the initial cluster configuration or the setup.   
+F16749  |  [FSM:STAGE:RETRY:]: Uplink eth port configuration on B(FSM-STAGE:sam:dme:SwEthLanBorderDeploy:UpdateConnectivity)  |  The FSM could not send the eth-uplink configuration to the fabric interconnects during the initial cluster configuration or the setup.   
+F16749  |  [FSM:STAGE:RETRY:]: internal network configuration on B(FSM-STAGE:sam:dme:SwAccessDomainDeploy:UpdateConnectivity)  |  The FSM could not send the internal network configuration to the fabric interconnects during the initial cluster configuration or the setup.   
+F16749  |  [FSM:STAGE:RETRY:]: Uplink fc port configuration on B(FSM-STAGE:sam:dme:SwFcSanBorderDeploy:UpdateConnectivity)  |  The FSM could not send the fibre channel uplink configuration to the fabric interconnects during the initial cluster configuration or the setup.   
+F16680  |  [FSM:STAGE:RETRY:]: Enable virtual interface on local fabric interconnect(FSM-STAGE:sam:dme:MgmtIfEnableVip:Local)  |  The FSM could not send the virtual interface configuration to the fabric interconnects during the initial cluster configuration or the setup.   
+F16579  |  [FSM:STAGE:RETRY:]: keyring configuration on secondary(FSM-STAGE:sam:dme:PkiEpUpdateEp:SetKeyRingPeer)  |  The FSM could not send the security configuration to the subordinate fabric interconnect during the initial cluster configuration or the setup.   
+F16539  |  [FSM:STAGE:RETRY:]: Fabric interconnect mode configuration to primary(FSM-STAGE:sam:dme:FabricLanCloudSwitchMode:SwConfigPeer)  |  The FSM could not send the end-host mode configuration on to the primary fabric interconnect during the initial cluster configuration or the setup.   
+F0429  |  Fabric Interconnect A, HA functionality not ready  |  The cluster configuration cannot be completed until the chassis discovery is completed.   
+F0400  |  Chassis 1 connectivity configuration: un-acknowledged  |  Cisco UCS Manager discovered the chassis with only one link in the first attempt although the chassis discovery policy is configured for four links. Cisco UCS Manager reacknowledges the chassis to activate the other links.   
+F0401  |  IOM 1/2 (B) current connectivity does not match discovery policy: unsupported-connectivity  |  Cisco UCS Manager discovered the chassis with only one link in the first attempt although the chassis discovery policy is configured for four links.  Cisco UCS Manager can clear this fault when the communication is established between the chassis and the fabric interconnect with that link.   
+F0440  |  Chassis discovery policy conflict: Link IOM 1/2/2 to fabric interconnect B:1/1 not configured  |  Cisco UCS Manager discovered the chassis with only one link in the first attempt although the chassis discovery policy is configured for four links. Until the discovery is successful with that link, the remaining links cannot be marked as active.  Cisco UCS Manager can clear this fault when the communication is established between the chassis and the fabric interconnect with that link.   
+F0332  |  AssociatePnuOSLocalDiskConfig fails with Service-Unavailable  |  During discovery, the server association failed due to an error when configuring the local disk controller. The associated remote invocation error code is 4106.   
+F0277  |  ether port 1 on fabric interconnect B oper state: link-up, reason: FEX not configured  |  Cisco UCS Manager discovered the chassis with only one link in the first attempt although the chassis discovery policy is configured for four links. Until the discovery is successful with that link, the remaining links cannot be marked as active.   
+F0276  |  ether port 4 on fabric interconnect B oper state: link-down, reason: Link failure or not-connected  |  One or more of the links on the chassis flapped during the initial discovery. This fault is generated when the link is down during the flapping.   
+F0206  |  Adapter 1/2/1 is unreachable  |  During discovery, the adapter information cannot be accessed from the server. This fault clears as soon as the information is available.   
+F0283  |  VIF 1 / 2 B-42/44 down, reason: Bound Physical Interface Down  |  The internal VIF that Cisco UCS Manager uses during discovery failed.   
+F0367  |  No link between IOM port 1/1/2 and fabric interconnect A:1/2  |  The ethernet server ports flapped on the fabric interconnect during the initial discovery, because the discovery policy was configured for more than one link.  Cisco UCS Manager clears this fault when the initial discovery succeeds with one link and the other links can be marked as active.   
+F0399  |  Current connectivity for chassis 1 does not match discovery policy: unsupported-connectivity  |  Cisco UCS Manager discovered the chassis with only one link in the first attempt although the chassis discovery policy is configured for four links. Until the discovery is successful with that link, the remaining links cannot be marked as active.   
+F16520  |  [FSM:STAGE:RETRY:]: Identify pre-boot environment agent on server 1/2(FSM-STAGE:sam:dme:ComputeBladeDiscover:PnuOSIdent)  |  The FSM failed to identify the pre-boot environment on the server during discovery.   
+F77960  |  [FSM:STAGE:REMOTE-ERROR]: Result: end-point-unavailable Code: unspecified Message: Waiting for BIOS POST Completion information from IBMC(sam:dme:ComputeBladeDiscover:BiosPostCompletion)  |  The FSM did not receive a response from the server during discovery and is waiting for the BIOS POST completion information.   
+F0320  |  Server 1/1 (service profile: ) has an invalid FRU: mismatch-identity-unestablishable  |  Cisco UCS Manager could not identify the FRUs from the servers during initial discovery.   
+F77959  |  [FSM:STAGE:REMOTE-ERROR]: Result: unidentified-fail Code: ERR-0505-IBMC-fru-retrieval-error Message: Could not get Fru from 7f060101, dn=fabric/server/chassis-1/slot-1 (sam:dme:FabricComputeSlotEpIdentify:ExecuteLocal)  |  Cisco UCS Manager could not identify the FRUs from the servers during initial discovery.   
+F16406  |  [FSM:STAGE:RETRY:]: triggering chassis discovery via IOM 1/2(right)(FSM-STAGE:sam:dme:EquipmentIOCardFeConn:DiscoverChassis)  |  In a cluster configuration, after Cisco UCS Manager discovers the chassis through the I/O module connected to the primary fabric interconnect, it raises discovery through the I/O module connected to the secondary fabric interconnect. F0401   
+  
+## Virtual Machine Startup Faults
+
+When you power on a virtual machine on a server that has network adaptors connected to a distributed virtual wwitch through a port profile, the Events tab of the VMware vCenter may display the following event: 
+
+Virtual machine powered On with vNICs connected to dvPorts that have a port level configuration, which might be different from the dvPort group configuration.
+
+If you see this event, you can safely ignore it.
+
 ---
 
 ## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/4-3/b_cisco_ucs_faults_and_error_messages_reference-4-3/b_Cisco_UCS_Faults_and_Error_Messages_Reference_chapter_0101.html
+
+# System Event Log Messages
 
 ## Information about System Event Log Messages
 
@@ -164190,24 +164970,396 @@ For more information about the SEL, including how to view the SEL for each serve
 
 * * *  
   
----|---
+---|---  
+  
+## SEL File
+
+The SEL file is approximately 40 KB in size, and no further events are recorded when it is full. It must be cleared before additional events can be recorded. 
+
+## SEL Policy
+
+The SEL policy can be configured to backup the SEL to a remote server, and, optionally to clear the SEL after a backup operation occurs. A back up operation can be triggered based upon the following actions defined by the user as a part of SEL backup policy. 
+
+  * On SEL log full
+
+  * On change of server association
+
+  * On expiration of timer interval, and so on.
+
+
+User can also manually backup or clear the SEL.
 
 ---
 
 ## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/4-3/b_cisco_ucs_faults_and_error_messages_reference-4-3/b_Cisco_UCS_Faults_and_Error_Messages_Reference_chapter_0110.html
 
-## Baseboard Management Controller Messages  
-  
+# Baseboard Management Controller Messages
+
+## Baseboard Management Controller Messages
+
 The Baseboard Management Controller (BMC) provides the interface to the System Event Log (SEL). The SEL can be accessed from the system side as well as from other external interfaces. The BMC uses a message handler to route messages between the different interfaces. It also monitors and manages the system board, including temperatures and voltages. 
+
+## SEL Device
+
+The SEL is a nonvolatile repository for system events. The SEL device is separate from the event receiver device and accepts commands to manage the contents. 
+
+### SEL Event Record Format
+
+The SEL messages are logged as a 16 byte string that contains the information about the change that triggered the message.
+
+  * Byte 1 and 2 is the record ID.
+
+  * Byte 3 is the record type.
+
+  * Bytes 4, 5, 6, and 7 is the timestamp
+
+  * Bytes 8 and 9 is the generator ID.
+
+  * Byte 10 is the version of the event message format.
+
+  * Byte 11 is the sensor type.
+
+  * Byte 12 is the sensor number.
+
+  * Byte 13 is either the event dir (assertion/deassertion event) or the event type.
+
+  * Byte 14, 15, and 16 are links to the event data field contents and determines whether the sensor class is about threshold, discrete, or original equipment manufacturer (OEM) settings. 
+
+
+### Sensor Initialization Agent
+
+The Sensor Initialization Agent is not a logical device, but a collection of functions and services specific to handling SDR information. The Sensor Initialization Agent works directly with the content of SDRs, in particular, with the sensor data records and the device locator records. 
+
+The agent uses the SDR information for sensor and IPMB device initialization during system startup. The agent interprets sensor data records and is directed by the init required fields to load thresholds to sensors that have the threshold initialization required bit set in the SDR records. Other bits in the record direct the agent to enable sensors and devices that come up with sensors, events, or both disabled. 
+
+The agent function runs at system power-up and at any system hard resets. We recommend that you run the agent function when the BMC first receives standby power. 
+
+In systems that implement power management, the system management software takes additional steps to restore intermediate settings after the system has powered up. 
+
+## Sensor Data Record Device
+
+The Sensor Data Record (SDR) device provides the interface to the sensor data records. A set of commands store and retrieve sensor data records. The SDR device provides a set of commands for discovering, configuring, and accessing sensors. 
+
+### SDR Repository Interface
+
+The SDR repository holds sensor, device locator, and entity association records for all sensors in the platform management subsystem. The BMC provides this interface to the SDR repository. The sensor data records can be accessed by using SDR commands. 
+
+### Modal and Nonmodal SDR Repositories
+
+There are two SDR repository implementations: modal and nonmodal. 
+
+A modal SDR repository is only updated when the controller is in SDR repository update mode. SDR information is kept in nonvolatile storage devices. Lengthy write operations during update can be required, which can interfere with other controller operations. For example, the SDR repository can be stored in a flash device that also holds a portion of the management controller code. A modal SDR repository implementation allows the functions associated with that code to be temporarily unavailable during the update process. 
+
+A nonmodal SDR repository can be written to at any time. Writing to the SDR does not impact the operation of other commands in the management controller. 
+
+## Event Receiver Device
+
+Event messages are special messages sent to management controllers when they detect significant or critical system management events. This includes messages for events such as temperature threshold exceeded, voltage threshold exceeded, power fault, and so on. The device generating an event message notifies the system by sending the message to the event receiver device. 
+
+Messages from the event receiver device are directly written into the system event log. The appropriate Add SEL Entry command is sent directly to the SEL device. 
+
+## BMC Commands
+
+SEL, SDR, and event commands are designed so that the devices that implement those command sets are isolated from the contents of the message. The devices do not interpret the messages. The event receiver device receives and routes event messages. The SEL devices retrieve and store log entries. The SDR devices retrieve and store sensor data records. 
+
+### SEL Device Commands
+
+These are the available SEL device commands:
+
+Table 1. SEL Device Commands Command |  Description  
+---|---  
+Get SEL Info |  This command returns the number of entries in the SEL, the SEL command version, and the timestamp for the most recent entry and delete or clear.   
+Get SEL Allocation Info |  This command returns the number of possible allocation units, the amount of usable free space (in allocation units), the allocation unit size (in bytes), and the size of the largest contiguous free region (in allocation units). The allocation unit size is the number of bytes in which storage is allocated. For example, if a 16 byte record is to be added, and the SEL has a 32 byte allocation unit size, the record takes up 32 bytes of storage.   
+Reserve SEL |  This command sets the present owner of the SEL, as identified by the software ID or by the requester slave address from the command. The reservation process provides a limited amount of protection at repository access from the Intelligent Platform Management Interface (IPMB) when records are being deleted or incrementally read.   
+Get SEL Entry |  This command retrieves entries from the SEL. The record data field in the response returns the 16 bytes of data from the SEL event record.   
+Add SEL Entry |  This command enables the BIOS to add records to the system event log. Normally, the SEL device and the event receiver service are incorporated into the same management controller. In this case, BIOS or the system SMI handler adds its own events to the SEL by formatting an event message and sending it to the SEL device rather than by using this command.   
+Partial Add SEL Entry |  This command is a version of the Add SEL Entry command. It allows the record to be incrementally added to the SEL. This command must be preceded by a Reserve SEL command. The first partial add must be to offset 0000h, and subsequent partial adds must be done sequentially, with no gaps or overlap between the adds.   
+Delete SEL Entry |  This command deletes the specified entry in the SEL.  
+Clear SEL |  This command erases the SEL contents. This process can take several seconds, based on the type of storage device. The command also shows the status of the erasure.   
+Get SEL Time |  This command returns the time from the SEL device,which uses it for event timestamps.  
+Set SEL Time |  This command initializes the time setting in the SEL device, which uses it for event timestamps.  
+Get Auxiliary Log Status |  This command allows remote software to know whether new information has been added to machine check architecture (MCA) log. The MCA log is a storage area that can be implemented in Intel Itanium-based computer systems and holds information from an MCA handler running from system firmware.   
+Set Auxiliary Log Status |  This command can be used by system software or firmware to set the status returned by the Get Auxiliary Log Status command. Some implementations mght use a private mechanism to set this status, in which case this command can not be provided even if the Get Auxiliary Log Status command is provided.   
+  
+### SDR Repository Device Commands
+
+The following commands control the SDR repository device actions:
+
+Table 2. SDR Repository Device Commands Command |  Description  
+---|---  
+Get SDR Repository Info |  This command returns the SDR command version for the SDR repository. It also returns a timestamp for the last add, delete, or clear commands.   
+Get SDR Repository Allocation Info |  This command returns the number of possible allocation units, the amount of usable free space (in allocation units), the allocation unit size (in bytes), and the size of the largest contiguous free region (in allocation units). The allocation unit size is the number of bytes in which storage is allocated. For example, if a 20 byte record is to be added, and the SDR repository has a 16 byte allocation unit size, then the record would take up 32 bytes of storage.   
+Reserve SDR Repository |  This command sets the present owner of the repository, as identified by the software ID or the requester slave address from the command. The reservation process provides a limited amount of protection on repository access from the IPMB when records are being deleted or incrementally read.   
+Get SDR |  This command returns the sensor record specified by the record ID. The command also accepts a byte range specification that allows a selected portion of the record to be retrieved (incremental read). The Reserve SDR Repository command must be issued first for an incremental read to an offset other than 0000h. (The Get SDR Repository Info command should be used to verify the version of the SDR repository before sending other SDR repository commands. The command format and operation could change between versions.)   
+Add SDR |  This command adds the specified sensor record to the SDR repository and returns its record ID. The data passed in the request must contain all of the SDR data.   
+Partial Add SDR |  This command is a version of the Add SDR command that allows the record to be incrementally added to the repository. This command must be preceded by a Reserve SDR Repository command. The first partial add must be to offset 0000h, and partial adds must be done sequentially, with no gaps or overlap between the adds.   
+Delete SDR |  This command deletes the sensor record specified by record ID. The requester ID and the reservation ID must also match the owner of the SDR repository.   
+Clear SDR Repository |  This command clears all records from the SDR repository and reinitializes the SDR repository subsystem. The requestor ID and reservation ID information must match the present owner of the SDR repository. We recommend that this command not be used within your utilities and system management software.   
+Get SDR Repository Time |  This command returns the time setting from the SDR repository device, which the SDR repository devices uses for tracking when changes to the SDR repository are made.   
+Set SDR Repository Time |  This command initializes the time setting in the SDR repository device, which the SDR repository devices uses for tracking when changes to the SDR repository are made.   
+Enter SDR Repository Update Mode |  This command enters a mode that allows a subset of normal commands. Available commands are Get Device ID, Get SDR, Add SDR, Partial Add SDR and Clear SDR Repository.   
+Exit SDR Repository Update Mode |  This command exits the SDR repository update mode and restores normal use of all commands.  
+Run Initialization Agent |  This command runs the initialization agent and can also check the status of the agent.  
+  
+### Event Receiver Commands
+
+The following commands can be executed on the event receiver device:
+
+Table 3. Event Receiver Commands Command |  Description  
+---|---  
+Set Event Receiver |  This is a global command to tell a controller where to send event messages. The slave address and LUN of the event receiver must be provided. A value FFh for the event receiver slave address disables the generation of event messages.   
+Get Event Receiver |  This is a global command to retrieve the present setting for the event receiver slave address and LUN.  
+Platform Event Message |  This command is a request for the BMC to process event data that the command contains. The data is logged to the SEL.  
+  
+## SEL Record Examples
+
+Examples that are reported to the SEL Repository are provided here. The raw record contains 16 bytes and are dislayed in the examples as hexadecimal values. Following the arrow is the translation of the data. The |-pipes are separators for ease of reading the translation. 
+
+### Device Presence Changes
+
+These are examples of presence assertions. This shows a boot-up process.
+    
+    
+    54 01 02 3c 0c 00 00 01 00 04 12 83 6f 01 ff 00   ------------> 154 | 01/01/1970 00:52:12 | BIOS 
+    | System Event #0x83 | OEM System Boot Event |  | Asserted
+    55 01 02 3d 0c 00 00 20 00 04 25 53 08 01 ff ff   ------------> 155 | 01/01/1970 00:52:13 | BMC
+      | Entity presence BIOS_POST_CMPLT #0x53 | Device Present | Asserted
+    56 01 02 54 0c 00 00 20 00 04 25 52 08 00 ff ff   ------------> 156 | 01/01/1970 00:52:36 | BMC
+      | Entity presence MAIN_POWER #0x52 | Device Absent | Asserted
+    57 01 02 25 00 00 00 20 00 04 25 41 08 01 ff ff   ------------> 157 | 01/01/1970 00:00:37 | BMC
+      | Entity presence MEZZ_PRS #0x41 | Device Present | Asserted
+    58 01 02 25 00 00 00 20 00 04 25 43 08 00 ff ff   ------------> 158 | 01/01/1970 00:00:37 | BMC
+      | Entity presence HDD1_PRS #0x43 | Device Absent | Asserted
+    59 01 02 25 00 00 00 20 00 04 25 45 08 01 ff ff   ------------> 159 | 01/01/1970 00:00:37 | BMC
+      | Entity presence P1_PRESENT #0x45 | Device Present | Asserted
+    5a 01 02 25 00 00 00 20 00 04 25 47 08 00 ff ff   ------------> 15a | 01/01/1970 00:00:37 | BMC
+      | Entity presence DDR3_P2_D2_PRS #0x47 | Device Absent | Asserted
+    5b 01 02 25 00 00 00 20 00 04 25 49 08 00 ff ff   ------------> 15b | 01/01/1970 00:00:37 | BMC
+      | Entity presence DDR3_P2_E2_PRS #0x49 | Device Absent | Asserted
+    5c 01 02 25 00 00 00 20 00 04 25 4b 08 00 ff ff   ------------> 15c | 01/01/1970 00:00:37 | BMC
+      | Entity presence DDR3_P2_F2_PRS #0x4b | Device Absent | Asserted
+    5d 01 02 26 00 00 00 20 00 04 25 4d 08 00 ff ff   ------------> 15d | 01/01/1970 00:00:38 | BMC
+      | Entity presence DDR3_P1_A2_PRS #0x4d | Device Absent | Asserted
+    5e 01 02 26 00 00 00 20 00 04 25 4f 08 00 ff ff   ------------> 15e | 01/01/1970 00:00:38 | BMC
+      | Entity presence DDR3_P1_B2_PRS #0x4f | Device Absent | Asserted
+    5f 01 02 26 00 00 00 20 00 04 25 51 08 00 ff ff   ------------> 15f | 01/01/1970 00:00:38 | BMC
+      | Entity presence DDR3_P1_C2_PRS #0x51 | Device Absent | Asserted
+    60 01 02 26 00 00 00 20 00 04 25 53 08 01 ff ff   ------------> 160 | 01/01/1970 00:00:38 | BMC
+      | Entity presence BIOS_POST_CMPLT #0x53 | Device Present | Asserted
+
+### LED Color Changes
+
+These are examples of LED color changes written into the SEL Repository.
+    
+    
+    34 05 02 2f 00 00 00 20 00 04 24 56 7f 00 04 10   ------------> 534 | 01/01/1970 00:00:47 | BMC
+      | Platform alert LED_MEZZ_TP_FLT #0x56 | LED is off | Asserted
+    35 05 02 30 00 00 00 20 00 04 24 56 7f 07 04 10   ------------> 535 | 01/01/1970 00:00:48 | BMC
+      | Platform alert LED_MEZZ_TP_FLT #0x56 | LED color is red | Asserted
+    36 05 02 30 00 00 00 20 00 04 24 58 7f 00 04 10   ------------> 536 | 01/01/1970 00:00:48 | BMC
+      | Platform alert LED_SYS_ACT #0x58 | LED is off | Asserted
+    37 05 02 31 00 00 00 20 00 04 24 58 7f 04 04 10   ------------> 537 | 01/01/1970 00:00:49 | BMC
+      | Platform alert LED_SYS_ACT #0x58 | LED color is green | Asserted
+    38 05 02 31 00 00 00 20 00 04 24 5a 7f 00 04 10   ------------> 538 | 01/01/1970 00:00:49 | BMC
+      | Platform alert LED_SAS1_FAULT #0x5a | LED is off | Asserted
+    39 05 02 32 00 00 00 20 00 04 24 5a 7f 05 04 10   ------------> 539 | 01/01/1970 00:00:50 | BMC
+      | Platform alert LED_SAS1_FAULT #0x5a | LED color is amber | Asserted
+
+### Voltage Changes
+
+These are examples of SEL messages when voltage thresholds are crossed.
+    
+    
+    7b 09 02 3d 19 00 00 20 00 04 02 00 01 52 b5 b7   ------------> 97b | 01/01/1970 01:47:41 | BMC
+      | Voltage P3V_BAT_SCALED #0x00 | Lower critical - going low | Asserted | Reading 2.39 < Threshold 2.42 Volts
+    8d 09 02 5b 19 00 00 20 00 04 02 00 81 52 bc b7   ------------> 98d | 01/01/1970 01:48:11 | BMC
+      | Voltage P3V_BAT_SCALED #0x00 | Lower critical - going low | Deasserted | Reading 2.48 > Threshold 2.42 Volts
+
+### Temperature Changes
+
+These are examples of SEL messages when temperature thresholds are crossed.
+    
+    
+    00 02 02 2b 00 00 00 20 00 04 19 18 05 00 ff ff   ------------> 200 | 01/01/1970 00:00:43 | BMC
+      | Chip Set IOH_THERMTRIP_N #0x18 | Limit Not Exceeded | Asserted
+    12 02 02 31 00 00 00 20 00 04 07 19 05 00 ff ff   ------------> 212 | 01/01/1970 00:00:49 | BMC
+      | Processor P2_THERMTRIP_N #0x19 | Limit Not Exceeded | Asserted
+    13 02 02 32 00 00 00 20 00 04 07 1a 05 00 ff ff   ------------> 213 | 01/01/1970 00:00:50 | BMC
+      | Processor P1_THERMTRIP_N #0x1a | Limit Not Exceeded | Asserted
 
 ---
 
 ## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/4-3/b_cisco_ucs_faults_and_error_messages_reference-4-3/b_Cisco_UCS_Faults_and_Error_Messages_Reference_chapter_0111.html
+
+# BIOS Messages
 
 ## POST Error Messages and Handling
 
 The BIOS outputs the current boot progress codes to the System Event Log (SEL) and to the UCS Manager. Progress codes are 32 bit quantities plus optional data. The 32 bits include class, subclass, and operation information. The class and subclass fields point to the type of hardware that is being initialized. The operation field represents the specific initialization activity. 
 
 Based on the data bit availability to display progress codes, a progress code can be customized to fit the data width. The higher the data bit, the higher the granularity of information that can be sent on the progress port. The progress codes can be reported by the system BIOS or optional ROMs. 
+
+## BIOS Message Severities
+
+BIOS messages have these severities:
+
+  * Minor—The system continues booting in a degraded state. The user might want to replace the unit. The POST Error Pause option setting in the BIOS setup does not have any effect on this error. 
+
+  * Major—The POST Error Pause option setting in the BIOS setup determines whether the error manager pauses the system to allow the user to take immediate corrective action or the system continues the booting process. 
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+For the 0048 Password check failed message, the system halts, and after the next reset or reboot, displays the error code on the screen.  When the F2 key is pressed on the keyboard, the error message is displayed on the screen, and an error is logged to the SEL with the error code. The system cannot boot unless the error is resolved. The faulty part must be replaced, and the system must be restarted. 
+
+* * *  
+  
+---|---  
+
+
+## BIOS Message Format
+
+The table describes the format used in BIOS messages.
+
+Table 1.  Generator ID |  Sensor Type Code |  Sensor number |  Type code |  Event Data1  |  Event Data2  |  Event Data3  
+---|---|---|---|---|---|---  
+**33h** (BIOS POST) |  **0Fh** (System Firmware Progress) |  **0Fh** (System Firmware Progress) |  **6Fh** (Sensor Specific Offset) |  **A0h** (OEM Codes in Data2 and Data3) |  **xxh** (Low Byte of POST Error Code) |  **xxh** (Low Byte of POST Error Code)  
+  
+## BIOS Messages and Codes
+
+The table lists messages that are from the baseline Intel BIOS and are present in the Cisco version of the BIOS.
+
+Table 2. List of BIOS messages and codes  Error Code  |  Severity  |  Error Message  |  Possible Needed Response   
+---|---|---|---  
+9687  |  Fatal  |  DXE core component encountered a illegal software state error.  |  Replace faulty part and restart.   
+8565  |  Major  |  DIMM_C2 component encountered a Serial Presence Detection (SPD) fail error.  |  Replace DIMM_C2.   
+8567  |  Major  |  DIMM_D2 component encountered a Serial Presence Detection (SPD) fail error.  |  Replace DIMM_D2.   
+85A2  |  Major  |  DIMM_B1 uncorrectable ECC error encountered.  |  Replace DIMM_B1.   
+85AB  |  Major  |  DIMM_F2 uncorrectable ECC error encountered.  |  Replace DIMM_F2.   
+9000  |  Major  |  Unspecified processor component has encountered a non-specific error.  |  Restart. If failure, replace.   
+0xB6A3  |  Major  |  DXE boot services driver unrecognized.  |  Restart. If failure, replace.   
+8604  |  Minor  |  Chipset reclaim of noncritical variables complete.  |  Restart. If failure, replace.   
+9223  |  Minor  |  Keyboard component was not detected.  |  Restart. If failure, replace.   
+9266  |  Minor  |  Local console component encountered a controller error.  |  Restart. If failure, replace.   
+9286  |  Minor  |  Remote console component encountered a controller error.  |  Restart. If failure, replace.   
+94C6  |  Minor  |  LPC component encountered a controller error.  |  Restart. If failure, replace.   
+95A7  |  Minor  |  PCI component encountered a read error.  |  Restart. If failure, replace.   
+9609  |  Minor  |  Unspecified software component encountered a start error.  |  Restart. If failure, replace.   
+0xA028  |  Minor  |  Processor component encountered a high-voltage error.  |  Restart. If failure, replace.   
+0xA501  |  Minor  |  ATA/ATPI ATA SMART is disabled.  |  Enable.   
+192  |  Fatal  |  Processor 0x cache size mismatch detected.  |  Replace faulty part and restart.   
+194  |  Fatal  |  Processor 0x family mismatch detected.  |  Replace faulty part and restart.   
+196  |  Fatal  |  Processor 0x model mismatch.  |  Replace faulty part and restart.   
+197  |  Fatal  |  Processor 0x speeds mismatched.  |  Replace faulty part and restart.   
+198  |  Fatal  |  Processor 0x family is not supported.  |  Replace faulty part and restart.   
+9667  |  Fatal  |  PEI module component encountered an illegal software state error.  |  Replace faulty part and restart.   
+96A7  |  Fatal  |  DXE boot services driver component encountered an illegal software state error.  |  Replace faulty part and restart.   
+960000000  |  Fatal  |  SMM driver component encountered an illegal software state error.  |  Replace faulty part and restart.   
+0xA421  |  Fatal  |  PCI component encountered a SERR error.  |  Replace faulty part and restart.   
+0xA5A1  |  Fatal  |  PCI Express component encountered a SERR error.  |  Replace faulty part and restart.   
+12  |  Major  |  CMOS date / time not set.  |  Set the time and date. how?   
+48  |  Major  |  Password check failed.  |  Verify user password. Restart. If failure, apply admin password. Replace if necessary.   
+113  |  Major  |  Fixed media SAS RAID firmware cannot run properly.  |  Reflash firmware. Restart. If failure, replace.   
+140  |  Major  |  PCI component encountered a PERR error.  |  Restart. If failure, replace.   
+141  |  Major  |  PCI resource conflict.  |  Restart. If failure, replace.   
+146  |  Major  |  PCI out of resources error.  |  Review resource allocation. Remove unneeded resources. Restart. If failure, replace.   
+195  |  Major  |  Processor 0x Intel QPI speed mismatch.  |  Restart. If failure, replace.   
+019F  |  Major  |  Processor and chipset stepping configuration is unsupported.  |  Restart. If failure, replace.   
+5220  |  Major  |  CMOS/NVRAM configuration cleared  |  Reset configurations. Restart. If failure, replace.   
+5221  |  Major  |  Passwords cleared by jumper.  |  Reset passwords. Restart. If failure, replace.   
+5224  |  Major  |  Password clear jumper is set.  |  Restart. If failure, replace.   
+8160  |  Major  |  Processor 01 unable to apply microcode update.  |  Restart. If failure, replace.   
+8161  |  Major  |  Processor 02 unable to apply microcode update.  |  Restart. If failure, replace.   
+8190  |  Major  |  Watchdog timer failed on last boot.  |  Restart. If failure, replace.   
+8198  |  Major  |  OS boot watchdog timer failure.  |  Reset timer. If failure, replace.   
+8300  |  Major  |  Baseboard management controller failed self test.  |  Restart. If failure, replace.   
+84F2  |  Major  |  Baseboard management controller failed to respond.  |  Restart. If failure, replace.   
+84F3  |  Major  |  Baseboard management controller in update mode.  |  Complete update, then restart.   
+84F4  |  Major  |  Sensor data record empty.  |  Review files. If none, restart.   
+8500  |  Major  |  Memory component could not be configured in the selected RAS mode.  |  Restart. If failure, replace.   
+8501  |  Major  |  DIMM population error.  |  Restart. If failure, replace.   
+8502  |  Major  |  CLTT configuration failure error.  |  Restart. If failure, replace.   
+8520  |  Major  |  DIMM_A1 failed self test (BIST).  |  Replace DIMM_A1.   
+8521  |  Major  |  DIMM_A2 failed self test (BIST).  |  Replace DIMM_A2.   
+8522  |  Major  |  DIMM_B1 failed self test (BIST).  |  Replace DIMM_B1.   
+8523  |  Major  |  DIMM_B2 failed self test (BIST).  |  Replace DIMM_B2.   
+8524  |  Major  |  DIMM_C1 failed self test (BIST).  |  Replace DIMM_C1.   
+8525  |  Major  |  DIMM_C2 failed self test (BIST).  |  Replace DIMM_C2.   
+8526  |  Major  |  DIMM_D1 failed self test (BIST).  |  Replace DIMM_D1.   
+8527  |  Major  |  DIMM_D2 failed self test (BIST).  |  Replace DIMM_D2.   
+8528  |  Major  |  DIMM_E1 failed self test (BIST).  |  Replace DIMM_E1   
+8562  |  Major  |  DIMM_B1 component encountered a Serial Presence Detection (SPD) fail error.  |  Replace DIMM_B1   
+8563  |  Major  |  DIMM_B2 component encountered a Serial Presence Detection (SPD) fail error.  |  Replace DIMM_B2.   
+8564  |  Major  |  DIMM_C1 component encountered a Serial Presence Detection (SPD) fail error.  |  Replace DIMM_C1.   
+8566  |  Major  |  DIMM_D1 component encountered a Serial Presence Detection (SPD) fail error.  |  Replace DIMM_D1.   
+8568  |  Major  |  DIMM_E1 component encountered a Serial Presence Detection (SPD) fail error.  |  Replace DIMM_E1.   
+8569  |  Major  |  DIMM_E2 component encountered a Serial Presence Detection (SPD) fail error.  |  Replace DIMM_E2.   
+856A  |  Major  |  DIMM_F1 component encountered a Serial Presence Detection (SPD) fail error.  |  Replace DIMM_F1.   
+856B  |  Major  |  DIMM_F2 component encountered a Serial Presence Detection (SPD) fail error.  |  Replace DIMM_F2.   
+85A0  |  Major  |  DIMM_A1 uncorrectable ECC error encountered.  |  Replace DIMM_A1.   
+85A1  |  Major  |  DIMM_A2 uncorrectable ECC error encountered.  |  Replace DIMM_A2.   
+85A3  |  Major  |  DIMM_B2 uncorrectable ECC error encountered.  |  Replace DIMM_B2.   
+85A4  |  Major  |  DIMM_C1 uncorrectable ECC error encountered.  |  Replace DIMM_C1.   
+85A5  |  Major  |  DIMM_C2 uncorrectable ECC error encountered.  |  Replace DIMM_C2.   
+85A6  |  Major  |  DIMM_D1 uncorrectable ECC error encountered.  |  Replace DIMM_D1.   
+85A7  |  Major  |  DIMM_D2 uncorrectable ECC error encountered.  |  Replace DIMM_D2.   
+85A8  |  Major  |  DIMM_E1 uncorrectable ECC error encountered.  |  Replace DIMM_E1.   
+85A9  |  Major  |  DIMM_E2 uncorrectable ECC error encountered.  |  Replace DIMM_E2.   
+85AA  |  Major  |  DIMM_F1 uncorrectable ECC error encountered.  |  Replace DIMM_F1.   
+92A3  |  Major  |  Serial port component was not detected.  |  Restart if component exists. If failure, replace. If no component, add.   
+92A9  |  Major  |  Serial port component encountered a resource conflict error.  |  Restart. If failure, replace.   
+94C9  |  Major  |  LPC component encountered a resource conflict error.  |  Restart. If failure, replace.   
+0xA022  |  Major  |  Processor component encountered a mismatch error.  |  Restart. If failure, replace.   
+0xA5A4  |  Major  |  PCI Express IBIST error.  |  Restart. If failure, replace.   
+0108  |  Minor  |  Keyboard component encountered a locked error.  |  Unlock the keyboard. how?   
+0109  |  Minor  |  Keyboard component encountered a stuck key error.  |  Restart. If failure, replace.   
+0193  |  Minor  |  Processor 0x stepping mismatch.  |  Restart. If failure, replace.   
+8180  |  Minor  |  Processor 0x microcode update not found.  |  Restart. If failure, replace.   
+84FF  |  Minor  |  System event log full.  |  Export event log and delete files.   
+9226  |  Minor  |  Keyboard component encountered a controller error.  |  Restart. If failure, replace.   
+9243  |  Minor  |  Mouse component was not detected.  |  Restart.   
+9246  |  Minor  |  Mouse component encountered a controller error.  |  Restart.   
+9268  |  Minor  |  Local uonsole component encountered an output error.  |  Restart.   
+9269  |  Minor  |  Local uonsole component encountered a resource conflict error.  |  Restart.   
+9287  |  Minor  |  Remote uonsole component encountered an input error.  |  Restart.   
+9288  |  Minor  |  Remote uonsole component encountered an output error.  |  Restart.   
+92C6  |  Minor  |  Serial port controller error.  |  Restart. If failure, replace.   
+92C7  |  Minor  |  Serial port component encountered an input error.  |  Restart. If failure, replace.   
+92C8  |  Minor  |  Serial port component encountered an output error.  |  Restart. If failure, replace.   
+9506  |  Minor  |  ATA/ATPI component encountered a controller error.  |  Restart. If failure, replace.   
+95A6  |  Minor  |  PCI component encountered a controller error.  |  Restart. If failure, replace.   
+95A8  |  Minor  |  PCI component encountered a write error.  |  Restart. If failure, replace.   
+9641  |  Minor  |  PEI Core component encountered a load error.  |  Restart. If failure, replace.   
+96AB  |  Minor  |  DXE boot services driver component encountered invalid configuration.  |  Restart. If failure, replace.   
+0xA000  |  Minor  |  TPM device not detected.  |  Add TPM device, otherwise replace.   
+0xA001  |  Minor  |  TPM device missing or not responding.  |  Add TPM device if needed, otherwise replace.   
+0xA002  |  Minor  |  TPM device failure.  |  Replace TMP device.   
+0xA003  |  Minor  |  TPM device failed self test.  |  Replace TPM device.   
+0xA027  |  Minor  |  Processor component encountered a low-voltage error.  |  Proceed but monitor. If other errors appear, replace.   
+0xA500  |  Minor  |  ATA/ATPI ATA bus SMART not supported.  |  Add, then restart. If fails again, replace.   
+0xA5A0  |  Minor  |  PCI Express component encountered a PERR error.  |  Restart. If fails again, replace.   
+0xA6A0  |  Minor  |  DXE boot services driver Not enough memory available to shadow a legacy option ROM.  |  Proceed if shadow memory is not required. Otherwise, remove unnecessary options to free memory.   
+  
+## Cisco BIOS Messages and Codes
+
+The table describes additional messages unique to the Cisco BIOS.
+
+Table 3. Additional messages unique to Cisco BIOS Code |  Severity |  message |  Added/Changed |  Action  
+---|---|---|---|---  
+E000  |  Major  |  Memory RAS mirror fail.  |  Added.  |  Replace failed DIMMs.   
+E001  |  Major  |  Memory RAS spare fail.  |  Added.  |  Replace failed DIMMs.   
+E00A  |  Major  |  Memory BMC SPD read fail.  |  Added.  |  Replace failed DIMMs.   
+E1xx  |  Major  |  DIMM xx disabled.  |  Changed from 854x.  |  Replace any failed DIMMs and verify DIMMs in valid configuration   
+E2xx  |  Major  |  DIMM xx component encountered a Serial Presence Detection (SPD) fail error.  |  Changed from 856x.  |  Replace failed DIMM.   
+E3xx  |  Major  |  DIMM xx encountered a mismatch error.  |  Added.  |  Replace mismatched DIMM.   
+E4xx  |  Major  |  DIMM xx failed self test (BIST).  |  Changed from 852x.  |  Replace failed DIMM.   
+E500  |  Major  |  Memory-other DIMM failed.  |  Added.  |  Replace failed DIMM.   
+E600  |  Major  |  Memory-invalid population.  |  Added.  |  Replace failed DIMM.   
+E700  |  Major  |  Memory-mismatch population.  |  Added.  |  Replace failed DIMM.   
+E800  |  Major  |  Memory-SPD error.  |  Added.  |  Replace failed DIMM.   
+E900  |  Major  |  Memory-platform specific.  |  Added.  |  Replace failed DIMM.   
+D000  |  Fatal (blade will not boot)  |  Unsupported SPI flash.  |  Added.  |  Blade manufactured with wrong SPI flash part. Return materials authorization (RMA) the blade. 
 
 ---

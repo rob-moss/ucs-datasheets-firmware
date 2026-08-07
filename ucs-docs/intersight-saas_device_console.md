@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Device Console |
 | **URL** | https://intersight.com/help/saas/device_console |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/articles/device_console/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260731131550565/docs/cloud/data/articles/device_console/en/index.html |
 | **HTML Title** | Device Console |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_device_console.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:04:24 |
+| **Fetched on** | 2026-08-05 10:00:39 |
 
 ---
 
@@ -52,17 +52,15 @@ This interface provides system information, including the model, serial number, 
 
 **Connecting to the eCMC**
 
-  1. If DHCP is used, check the DHCP server logs or interface to find the IP address assigned to the eCMC, using its hostname `(UCSXE-<serial number>-<A|B)`
+  1. If DHCP is used, check the DHCP server logs or interface to find the IP address assigned to the eCMC, using its hostname `(UCSXE-<serial number>-<A|B>)`.
 
-.
-  2. If DDNS is configured, access the eCMC using `https://<hostname>`
+  2. If DDNS is configured, access the eCMC using `https://<hostname>`.
 
-.
-  3. If the eCMC has fallen back to a link-local IP address (For example, due to no DHCP or network failure), you will need to:
+  3. If the eCMC has fallen back to a link-local IP address (for example, due to no DHCP or network failure), you will need to:
 
      1. Connect a laptop directly to the management port of the eCMC.
 
-     2. Configure the laptop's network adapter with an IP address in the same `169.254.254.x` subnet (e.g., `169.254.254.3`) to access the device UI via the eCMC's link-local IP.
+     2. Configure the laptop's network adapter with an IP address in the same `169.254.254.x` subnet (for example, `169.254.254.3`) to access the device UI via the eCMC's link-local IP.
 
 
 ## Logging in to Device Console and Resetting Default Password
@@ -170,13 +168,18 @@ Parameter| Description
 ---|---  
 Edge Chassis Management Controller A / B| Identifies two distinct eCMCs within a Unified Edge Chassis. They are typically redundant components for high availability.  
 Hostname| Displays the unique network name assigned to each eCMC for identification.  
-Slot number| Displays thephysical slot or position where the eCMC is installed within the chassis.  
+Slot number| Displays the physical slot or position where the eCMC is installed within the chassis.  
 Health| Displays the current operational status of the eCMC. Healthy indicates that the eCMC is functioning correctly. The other states are Warning and Critical.  
-Management IPs| Displays theIP address for network access, configuration, monitoring, and control of the eCMC.  
-Firmware Version| Displays the version of the firmware running on the eCMC.  
-Hardware Version| Displays theversion of the eCMC hardware.  
-Serial Number| Displays theHost ID/serial number of the eCMC.  
+Management IPs| Displays the IP address for network access, configuration, monitoring, and control of the eCMC.  
+Hardware Version| Displays the version of the eCMC hardware.  
+Serial Number| Displays the Host ID/serial number of the eCMC.  
 Model| Displays the Product ID (PID) identifying the eCMC model.  
+CMC Version| Displays the version of the Chassis Management Controller (CMC) firmware running on the module.  
+Hardware Version| Displays the hardware version of the eCMC module, indicating the specific revision or generation of the physical hardware.  
+DC Version| Displays the version of the Device Connector (DC) software component associated with the eCMC.  
+eCMC FPGA Version| Displays the version of the Field Programmable Gate Array (FPGA) firmware running on the eCMC module.  
+Management Package Version| Displays the version of the management software package installed on the eCMC, which handles configuration, monitoring, and control functions.  
+MTS Version| Displays the version of the Management Transport Service (MTS) firmware component.  
   
 ## Network Settings (Unified Edge)
 
@@ -267,13 +270,13 @@ Status| Displays the lifecycle state of the server. The values can be:
 
   * None — When the server has been recommissioned but discovery is yet to start.
   * Active — When the server is discovered.
-  * Decommissioned — When the server is removed from the Unified Edge chassis.
+  * Decommissioned — When the server is removed from the Cisco UCS configuration but remains physically present in the Cisco UCS instance.
   * DiscoveryFailed — When the server discovery has failed.
   * SlotMismatch — When the configuration of a blade server is not correct and server rediscovery is required in the slot.
 
   
 PID| Displays the Product ID (PID) of the server.  
-Serial| Displays the host ID/serial number of the server.  
+Serial| Displays the host ID or serial number of the server.  
 Server Profile| Displays the server profile that is associated with the server.  
 User Label| Displays the user label that is set for the server.  
   
@@ -300,14 +303,17 @@ Name| Displays the name for the chassis.
 ID| Displays the unique ID for the chassis.  
 Status| Displays the status of the chassis. The values can be:
 
-  * Active — When the chassis is discovered.
-  * Decommissioned —When the Chassis is physically present and connected.
-  * DiscoveryFailed — When the chassis discovery has failed.
+  * Active: When the chassis is discovered.
+  * Decommissioned: When the chassis is physically present and connected but temporarily removed from the Cisco UCS configuration.
+  * DiscoveryFailed: When the chassis discovery has failed.
+  * None: When no lifecycle state is available from the Device Connector inventory data. This is a neutral state and does not indicate a fault or health issue.
 
   
 Model| Displays the chassis model.  
-Serial| Displays the host ID/serial number of the chassis.  
+Serial| Displays the host ID or serial number of the chassis.  
   
+Select the gear icon to change the displayed table columns.
+
 **File and directory management** is a secure, web-based interface in the Device Console that allows you to upload, browse, download, and manage files and directories in supported storage locations.
 
 The storage feature provides these benefits:
@@ -325,11 +331,15 @@ The storage feature provides these benefits:
 
 The Storage tab displays the directory structure and operations for Unified Edge servers using Edge Chassis Management Controllers (eCMC).
 
+You can upload, browse, download, and manage files and directories in supported storage locations.
+
+The **Storage** tab allows you to manage files through self-service without needing CLI access, which reduces dependency on manual or external tools. Additionally, it serves as a scalable foundation for removable storage support and enables secure, chunked uploads for large files up to 2 GiB.
+
 The table describes the parameters in the Storage tab.
 
 Parameter| Description  
 ---|---  
-Partition| Name of the current workspace directory.Select the directory to view subdirectories or files on the device.  
+Partition| Name of the current workspace directory.Select a directory to view its files and subdirectories.  
 Size| Total file size of the directory.  
 Capacity| Percentage of used storage space.  
   
@@ -341,28 +351,23 @@ Use these actions to manage the directory structure and operations for servers:
 
 Action| Description| Notes  
 ---|---|---  
-New Directory| Creates a new directory.Enter a directory name and select Create.| You cannot create a new directory in the techsupport and core directories.  
-Upload| **Before you begin** The maximum file size for an upload is 2 GB.Follow these steps to upload a file.
+New Directory| Creates a new directory.You cannot create a new directory in the `core` or `techsupport` directories.| Enter a directory name and select **Create**.  
+Upload| Uploads a file to the selected directory. The maximum upload size is 2 GiB.You cannot upload files to the `core` or `techsupport` directories.| Follow these steps to upload a file.
 
-  1. Click Browse and select the file that you want to upload.
-  2. Decide whether to upload the file or cancel the action.Note:
-  * If you decide to upload the file, select Upload.
-  * If you decide to cancel the action, select Cancel.
+  1. Select **Browse** and choose the file that you want to upload.
+  2. Select **Upload**.
 
-| You cannot upload files to the techsupport and core directories.  
+  
 Download| Downloads the selected files to your browser.| The Download operation applies only to files.  
-Delete| Deletes a directory.| The directory must be empty before it can be deleted.  
-Copy / Move| To copy or move a directory or file:
+Delete| Deletes selected files or empty directories.| The directories must be empty before they can be deleted.  
+Rename| Renames a selected file or directory.You cannot rename the `core` or `techsupport` directories, or any files within those directories.| —  
+Copy / Move| Copies or moves a selected file or directory to a destination directory, except when the source and destination are the same or permissions are restricted.| To copy or move a directory or file:
 
-  1. In the Storage table view, select the directory and select Copy/Move.
-  2. Select Copy or Move.
-  3. Select the directory to copy or move.
-  4. Click Confirm.Note:Use the Search field to quickly locate specific files or directories in a large list.
-
-| You cannot copy or move a directory:
-
-  * if the source and destination are the same, or
-  * if permissions are restricted.
+  1. In the Storage table view, select the ellipsis (**...**) next to the directory that you want to copy or move, and then select **Copy / Move**.
+  2. Do one of these:
+     1. Select **Copy** or **Move**.
+     2. Selects the destination directory.
+  3. Select **Confirm**.
 
   
   
@@ -743,7 +748,7 @@ Command| Description| Note
 `**show mgmt-ip-tables**`|  Displays the IP table entries on both the management and default namespaces.| Not available for Unified Edge.  
 `**show mgmt-ipv6**`|  Displays the IPv6 management address.| Not available for Unified Edge.  
 `**show processes**`|  Displays a list of all processes that are currently running.| Not available for Unified Edge.  
-`**show self-signed-certificate**`|  Shows self signed certificate.| —  
+`**show self-signed-certificate**`|  Shows self-signed certificate.| —  
 `**show sshkey**`|  Displays the list of SSH public key of the host.| Not available for Unified Edge.  
 `**scope**` <scope-name>| Changes scope to the specified scope name.| Available only for Unified Edge.  
   
@@ -800,7 +805,7 @@ Command| Description| Note
 ---|---|---  
 `**cd**` { `**workspace:/**` | [path] `**| volatile:/**` | [path] `**|**` | [path] `**| usbdrive1:/ | usbdrive2:/**` }| Changes directory.| The volatile:, usbdrive1:, and usbdrive2: options are not available for Unified Edge.  
 `**pwd**`|  Displays the current working directory.| —  
-`**Is**`|  Lists the contents of the current working directory.| —  
+`**ls**`|  Lists the contents of the current working directory.| —  
 `**mkdir**` { `**workspace:/**` | [path] `**| volatile:/**` | [path] `**|**` | [path] `**| usbdrive1:/ | usbdrive2:/**` }| Creates a directory under allowed directories.| The volatile:, usbdrive1:, and usbdrive2: options are not available for Unified Edge.  
 `**rmdir**` { `**workspace:/**` | [path] `**| volatile:/**` | [path] `**|**` | [path] `**| usbdrive1:/ | usbdrive2:/**` }| Removes the directory.| The volatile:, usbdrive1:, and usbdrive2: options are not available for Unified Edge.  
 `**cp**` [from-filesystem:] [from-path] filename [to-filesystem:] to-path [dest-filename]| Copies a file from one directory to another.| TFTP is not a secure protocol. Use it only in trusted networks.  
@@ -818,9 +823,8 @@ Command| Description| Note
 `**change-mode**`|  Changes the management mode of the server.| Not available for Unified Edge.  
 `**change-password**`|  Changes the administrator password on the Fabric Interconnect.| Starting with Infrastructure Firmware release 6.0(2), strong password enforcement is enabled by default, requiring you to enter a strong password during configuration. If you downgrade to 6.0(1) or an earlier firmware version, this strong password enforcement remains in effect and is not removed.  
 `**clear**`|  Clears the screen.| —  
-`**clear-firmware-cache**`|  Clears an entry from the Intersight firmware cache.| —  
 `**clear-sshkey**` host-name| Clears the SSH public key of a remote host from cache.| Not available for Unified Edge.  
-`**cluster-start**`|  For initial HA setup, starts cluster server.| The cluster-start command is used in the backend as part of the developer script when adding an FI to a cluster.Not available for Unified Edge.  
+`**cluster-start**`|  For initial HA setup, starts cluster server.| Recommended only for Fabric Interconnect cluster initialization during deployment or recovery.Not available for Unified Edge.  
 `**connect**`|  Connects to an endpoint.| —  
 `**connect nxos**`|  Connects to NX-OS.| Not available for Unified Edge.  
 `**erase-configuration**`|  Erases configuration on the Fabric Interconnect.| Erase configuration will not affect or delete any existing data on the Fabric Interconnect.Not available for Unified Edge.  
@@ -828,7 +832,6 @@ Command| Description| Note
 `**fi-secure-erase**` [-preserveImage]| Erases all data and configuration on the Fabric Interconnect, run the command.Use the preserveImage flag to keep the system image while deleting all other data from the Fabric Interconnect.| FI Secure Erase may take 20 to 40 minutes to complete.For information on minimum firmware version requirement, see the Firmware Requirements for FI Secure Erase table below.Not available for Unified Edge.  
 `**generate-self-signed-certificate**`|  Generates a new self-signed certificate.| After generating the self-signed certificate, the command restarts the web server.Not available for Unified Edge.  
 `**help**`|  Displays help.| —  
-`**list-firmware-cache**`|  Displays the list of entries in the Intersight firmware cache.| —  
 `**list-storage-drives**`|  Lists storage drives.| Available only for Unified Edge.  
 `**md5sum**`|  Shows MD5 hash of the given file.| Available only for Unified Edge.  
 `**ping**` [ `**-c**` count ] [ `**-s**` packet-size ] [ `**-i**` interval ] [ `**-w**` timeout ] { host-ip-address | | | host-name }| Diagnoses basic network connectivity for IPv4 addresses.| —  
@@ -852,6 +855,24 @@ Command| Description| Note
 `**traceroute6**` [ `**-s**` source-address ] address| Displays the route to an IPv6 network host.| —  
 `**update-management-package workspace:/**` | `**volatile:/**` filename| Updates the Device management package on Fabric Interconnect.| Packages are not accessible to the customers. This operation is used by Cisco TAC for recovery purpose.The volatile: option is not available for Unified Edge.  
   
+Firmware Image Cache Cleanup Commands for Intersight Managed Mode Fabric Interconnects
+
+In this section, `cache` refers to images stored in the Intersight image repository and managed through [Image Lifecycle Management](/help/resources#image_lifecycle_management). The below listed commands provide a manual cleanup method for cached images that are otherwise governed by automatic image retention and cleanup behavior.
+
+Command| Description| Note  
+---|---|---  
+`**list-cache firmware**` or `**list-firmware-cache**`|  Lists cached firmware images from the Intersight cache.| Use for manual cleanup on Fabric Interconnects in Intersight Managed Mode.Note:While the `list-firmware-cache` command can list OS install and SCU images in other environments, in IMM, it is restricted exclusively to firmware images.  
+`**clear-cache <image-name>**` or `**clear-firmware-cache <image-name>**`| Deletes the specified firmware image from the Intersight cache.| Use only after confirming that the image is not used by an active workflow/operation.Note:
+
+  * While the `clear-cache` support OS install and SCU images in other environments, in IMM, they are limited exclusively to firmware images.
+  * Use this commands to delete cached image only when a specific image must be removed for recovery or troubleshooting. Before deleting an image, verify that it is not required by an active workflow.
+
+  
+  
+Note:
+
+For more information, refer to [Manual Image Cleanup](/help/resources/manual_image_cleanup#before_you_begin).
+
 Firmware Requirements for FI Secure Erase
 
 Fabric Interconnect| Minimum Infrastructure Firmware Version  
@@ -876,8 +897,8 @@ Command| Description
 ---|---  
 `**scope servers**`|  Enters server scope.  
 `**show servers**`|  Shows the attached server details.  
-`**power**` server-id `**on/off**`|  Powers On/Off the server.  
-`**show tech-support server**` server-id| Fetchs Tech support files from server.  
+`**power**` <server-id> `**on/off**`|  Powers on or powers off the server.  
+`**show tech-support server**` server-id| Fetches the tech support files from server.  
   
 **Chassis Configuration Commands**
 
@@ -893,7 +914,7 @@ Command| Description
 `**scope ecmcs**`|  Enters eCMC scope.  
 `**show ecmcs**`|  Shows attached edge chassis management controller details.  
 `**reboot**`|  Reboots the current running eCMC system.  
-`**factory-reset**`|  Resets both eCMCs to the default factory settings.  
+`**factory-reset**`|  Resets both eCMCs to the default factory settings.Important:This operation removes the existing configuration and should be performed only during recovery.  
 `**show tech-support ecmc**` ecmc-id/full| Fetch Tech support files from eCMCs.  
   
 **Firmware Configuration Commands**
@@ -901,8 +922,6 @@ Command| Description
 Command| Description  
 ---|---  
 `**scope firmware**`|  Enters firmware scope.  
-`**clear-firmware-cache**` <IDENTIFIER>| Clears an entry from the Intersight firmware cache.  
-`**list-firmware-cache**`|  Lists entries in the Intersight firmware cache.  
 `**update-device-connector**` <absolute_file_path>| Updates Device Connector of eCMC.  
 `**update-ecmc-firmware**` <absolute_file_path>| Updates eCMC firmware.  
 `**update-management-package**` <absolute_file_path>| Updates Management Package of eCMC.  
@@ -918,7 +937,7 @@ Command| Description
 `**scope network**`|  Enters network scope.  
 `**show management-network**`|  Shows management network configuration.  
 `**configure-mgmt-network chassis**`|  Configures management network settings of the chassis.  
-`**configure-mgmt-network ecmc**` ecmc-id| Configures eCMC management network configuration.  
+`**configure-mgmt-network ecmc**` ecmc-id/server-id [detail]| Configures eCMC management network configuration.  
   
 The ping, ping6, traceroute, traceroute6 commands are supported on Unified Edge. For more information on their usage, see the Other Operations section on this page.
 
@@ -930,14 +949,40 @@ Command| Description
 `**change-password**`|  Changes password of admin user.  
 `**tail-mgmt-log**`|  Prints management log of a given module.  
   
-**OS Install Configuration Commands**
+Firmware, OS Install, and SCU Image Cache Commands for Unified Edge Chassis
+
+Image Cache Cleanup Commands
+
+Use `scope cache` to access cache management commands for deployment images on Cisco Unified Edge. In this section, `cache` refers to images stored in the Intersight image repository and managed through [Image Lifecycle Management](/help/resources#image_lifecycle_management). The below listed commands provide a manual cleanup method for cached images that are otherwise governed by automatic image retention and cleanup behavior.
 
 Command| Description  
 ---|---  
-`**scope osinstall**`|  Enters OS Install scope.  
-`**clear-osinstall-cache**` <IDENTIFIER>| Clears an entry from the Intersight OS install cache.  
-`**list-osinstall-cache**`|  Lists entries in the Intersight OS install cache.  
+`**scope cache**`|  Enters cache scope.  
+`**list-cache firmware**` <Image name>| Lists cached firmware images from the Intersight cache.  
+`**list-cache osinstall**` <Image name>| Lists cached OS install and SCU images from the Intersight cache.  
+`**clear-cache**` <image-name>| Deletes the specified cached image from the Intersight cache. The image can be a firmware image, OS install image, or SCU image.Note:Use this commands to delete cached image only when a specific image must be removed for recovery or troubleshooting. Before deleting an image, verify that it is not required by an active workflow.For more information, refer to [Manual Image Cleanup](/help/resources/manual_image_cleanup).  
   
+Note:
+
+The `list-cache` command requires an image-type argument, such as `firmware` or `osinstall`. The `clear-cache` command uses only the image name. Do not include `firmware` or `osinstall` with the `clear-cache` command.
+
+Alternate Scope-Specific Image Cache Commands
+
+The `scope firmware` and `scope osinstall` commands support image cache management from their respective scopes.
+
+Command| Description  
+---|---  
+`**scope firmware**`|  Enters firmware scope.  
+`**list-firmware-cache**`|  Lists cached firmware images from the Intersight cache.  
+`**clear-firmware-cache**` <Image name>| Deletes the specified firmware image from the Intersight cache.  
+`**scope osinstall**` <image-name>| Enters OS Install scope.  
+`**list-osinstall-cache**` <image-name>| Lists cached OS install images from the Intersight cache.  
+`**clear-osinstall-cache**` <image-name>| Deletes the specified cached operating system install image from the Intersight cache.  
+  
+Note:
+
+For more information, refer to [Manual Image Cleanup](/help/resources/manual_image_cleanup).
+
 ## Updating eCMC and Server Firmware using CLI (Unified Edge)
 
 The CLI serves as an essential tool for emergency firmware upgrades, especially when Intersight access is unavailable and a firmware update is critical for restoring system functionality or access.

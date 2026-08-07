@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Servers guide |
 | **URL** | https://intersight.com/help/saas/operate/servers |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/articles/features/servers/operate/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260731131550565/docs/cloud/data/articles/features/servers/operate/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_operate_servers.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:03:54 |
+| **Fetched on** | 2026-08-05 10:00:10 |
 
 ---
 
@@ -115,6 +115,8 @@ For Out-of-Band configuration, all IP addresses in the management IP pool must b
   * Replaced — The discovered blade server has been physically removed from its original location, which is now populated with other blade server.
 
   * Decommissioned — The server is being decommissioned and removed from the Cisco UCS configuration. However, the server hardware remains physically present in the Cisco UCS environment.
+
+  * Decommissioned For Removal — The server is decommissioned and ready for physical removal. The locator LED remains ON to help identify the server. After the server is physically removed from the chassis, Cisco Intersight automatically removes it from inventory. If the server is not removed, you can recommission it.
 
   * Discovery In Progress — The server is being discovered in the chassis or slot.
 

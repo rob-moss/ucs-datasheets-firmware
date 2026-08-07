@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/x410cm8-specsheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-07-02 13:06:46 |
+| **Fetched on** | 2026-08-05 10:04:06 |
 
 ---
 
@@ -32,9 +32,9 @@ WWW.CISCO.COM
 
 PUBLICATION HISTORY 
 
-REV A.04
+REV A.05
 
-APRIL 30, 2026
+JULY 27, 2026
 
  
 OVERVIEW  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
@@ -1406,15 +1406,31 @@ Speed  Size
 
 E3.S
 E3.S
+E3.S
+E3.S
+E3.S
+E3.S
 
+NVMe
+NVMe
+NVMe
+NVMe
 NVMe
 NVMe
 
 6.4TB E3.S1T PM1745 HgPerf HgEnd Gen5 3X NVMe (TCG OPAL)
 12.8TB E3.S1T PM1745 HgPerf HgEnd Gen5 3X NVMe (TCG OPAL)
+1.9TB E3.S1T Kioxia CM7-R Gen 5 1DWPD NVMe (SED FIPS)
+3.8TB E3.S1T Kioxia CM7-R Gen 5 1DWPD NVMe (SED FIPS)
+7.6TB E3.S1T Kioxia CM7-R Gen 5 1DWPD NVMe (SED FIPS)
+15.3TB E3.S1T Kioxia CM7-R Gen 5 1DWPD NVMe (SED FIPS)
 
 UCSX-NVE16T4S1P
 UCSX-NVE112T8S1P
+UCSX-NVE11T9K2V9
+UCSX-NVE13T8K2V9
+UCSX-NVE17T6K2V9
+UCSX-NVE115T3K2V9
 NVMe 2.5
 UCSX-NVB1T6M2P
 UCSX-NVB3T2M2P
@@ -1437,8 +1453,8 @@ NVMe U.3
 1.9TB 2.5in U.3 15mm Micron 7500 Hg Perf Med End 1X NVMe
 NVMe U.3
 3.8TB 2.5in U.3 15mm Micron 7500 Hg Perf Med End 1X NVMe
-7.6TB 2.5in U.3 15mm Micron 7500 Hg Perf Med End 1X NVMe
 NVMe U.3
+7.6TB 2.5in U.3 15mm Micron 7500 Hg Perf Med End 1X NVMe
 1.9TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X NVMe FIPS NVMe U.3
 3.8TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X NVMe FIPS NVMe U.3
 7.6TB 2.5in U.3 15mm Micron 7500 HgPerf MedEnd 1X NVMe FIPS NVMe U.3
@@ -1446,6 +1462,10 @@ NVMe U.3
 
 6.4TB
 12.8TB
+1.9TB
+3.8 TB
+7.6TB
+15.3TB
 
 1.6TB
 3.2TB
@@ -2130,18 +2150,6 @@ Cisco UCS X410c M8 Compute Node
 TECHNICAL SPECIFICATIONS
 
 34
-
-Cisco UCS X410c M8 Compute Node
-
-TECHNICAL SPECIFICATIONS
-
-Cisco UCS X410c M8 Compute Node
-
-35
-
-TECHNICAL SPECIFICATIONS
-
-36
 
 Cisco UCS X410c M8 Compute Node
 

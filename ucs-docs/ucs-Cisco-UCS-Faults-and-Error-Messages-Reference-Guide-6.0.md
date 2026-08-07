@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Faults and Error Messages Reference Guide 6.0 |
 | **Source file** | `ucs-docs-raw/html/b_cisco_ucs_faults_and_error_messages_reference-6-0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:05:09 |
+| **Fetched on** | 2026-08-05 10:01:36 |
 
 ---
 
@@ -20,8 +20,8 @@
 
 ## Page 2: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/6-0/b_cisco_ucs_faults_and_error_messages_reference-6-0/m-introduction-to-ucs-faults.html
 
-# Introduction
-
+# Introduction  
+  
 ### Overview of Faults
 
 ## About Faults in the Cisco UCS
@@ -65984,7 +65984,17 @@ Fault Details
 
 # Call Home Faults
 
-## Call Home Faults
+## About Call Home Messages
+
+When you configure Call Home to send messages, Cisco UCS Manager executes the appropriate command line interface (CLI) show command and attaches the command output to the message. 
+
+Cisco UCS delivers Call Home messages in the following formats:
+
+  * The short text format—A one- or two-line description of the fault that is suitable for pagers or printed reports.
+
+  * Full text format—Fully formatted message with detailed information that is suitable for human reading.
+
+  * XML machine readable format—Uses Extensible Markup Language (XML) and Adaptive Messaging Language (AML) XML schema definition (XSD). The AML XSD is published on the Cisco.com website at <https://www.cisco.com/>. The XML format enables communication with the Cisco Systems Technical Assistance Center. 
 
 
 ## Cisco UCS Faults that Raise Call Home Alerts

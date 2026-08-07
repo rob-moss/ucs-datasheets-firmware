@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS C885A M8 Server Troubleshooting Guide |
 | **Source file** | `ucs-docs-raw/html/b_c885a-m8-server-troubleshooting-guide.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:08:28 |
+| **Fetched on** | 2026-08-05 10:05:01 |
 
 ---
 
@@ -577,7 +577,1274 @@ RED | Blinking 1Hz | Rebuild
 
 ---
 
-## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/m-Chapter-6-Troubleshooting-operating-system-issues.html
+## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/m-Chapter-5-Server-management-software-issues.html
+
+# Server Management Software Issues
+
+This Server Management Software Issues contains the following topics:
+
+## Maintenance
+
+  * How to get firmware information
+  * How to do BMC firmware update
+  * How to do BIOS firmware update
+  * How to do FPGA firmware update
+  * How to do factory reset
+  * Platform Management
+
+
+### How to get firmware information
+
+To retrieve firmware information, you can use the IPMI command. This command allows you to obtain component firmware version in your system, such as the BMC, BIOS, FPGA, and RoT. 
+
+**IPMI Command**
+
+**Command Format**
+    
+    
+    Ipmitool raw 0x30 0x20
+
+**Request Data**
+
+Not required.
+
+**Response Data**
+
+**Byte** |  **Data Field**  
+---|---  
+1 |  **Completion Code**  
+2:3 |  **BMC Firmware Revision** Byte 2: Major Revision Byte 3: Minor Revision  
+4:6 |  **BIOS Firmware Revision** Byte 4: Major Revision Byte 5: Minor Revision Byte 6: Iteration Revision  
+7:8 |  **DC-SCM FPGA Firmware Revision** Byte 7: Major Revision Byte 8: Minor Revision  
+9:10 |  **HPM FPGA Firmware Revision** Byte 9: Major Revision Byte 10: Minor Revision  
+11:12 |  **HIB FPGA Firmware Revision** Byte 11: Major Revision Byte 12: Minor Revision  
+13:14 |  **RoT Firmware Revision** Byte 13: Major Revision Byte 14: Minor Revision  
+  
+**Example: Obtain firmware version using IPMI Command**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525398.jpg)
+
+#### Redfish
+
+After using the command, you can find the firmware version in the red box.
+
+**Command format:**
+    
+    
+    curl -k -X GET
+    https://<username>:<password>@<BMC
+    IP>/redfish/v1/Managers/bmc | grep -A 6 -i
+    FirmwareVersion
+
+**Example: Obtain firmware version via Redfish**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525399.jpg)
+
+### How to do BMC firmware update
+
+**BMC Web UI**
+
+To ensure the proper functioning of the system, please follow the steps below to update the BMC firmware using the WEB GUI.
+
+To open Firmware Update page, click **Operations** > **Firmware** from the menu bar. A sample screenshot of the Firmware Update Page is displayed. 
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525919.jpg)
+
+Add File: Choose BMC firmware image.
+
+Start update: Choose Start update in the pop menu.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525921.jpg)
+
+Pop Menu: Choose Start update in the pop menu.
+
+The update procedure will be triggered as displayed.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525923.jpg)
+
+**Redfish**
+
+To ensure proper functioning of the system, perform the following to update the BMC firmware through Redfish:
+
+  1. Configure when the new BMC firmware image should be applied.
+
+**Command format:**
+         
+         curl -k -X PATCH
+         https://<username>:<password>@<BMC
+         IP>/redfish/v1/UpdateService/ -H "Content-Type:application/json"
+         -d '{"HttpPushUriOptions":{"HttpPushUriApplyTime":{"ApplyTime":
+         "Immediate"}}}'
+
+**Example: Configure the new BMC firmware image apply time**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525403.jpg)
+
+  2. Check whether the system is in provision or unprovision mode.
+
+**Command format:**
+         
+         curl -k -X GET
+         https://<username>:<password>@<BMC
+         IP>/redfish/v1/Managers/bmc | grep ProvisionStatus
+
+**Example: Check Provision Status**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525404.jpg)
+
+  3. Request BMC to download the BMC firmware image and update the BMC firmware. Once the command is executed successfully, BMC takes 10 to 12 minutes to update the firmware and wait for 3 to 5 minutes to boot up. 
+
+**Command format:**
+         
+         curl -k -X POST
+         https://<username>:<password>@<BMC
+         IP>/redfish/v1/UpdateService/ -H
+         "Content-Type:application/octet-stream" --data-binary @<BMC
+         firmware image name>
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+If system is unprovisioned, use **xxxx.tar** for the BMC firmware update. If system is provisioned, use **capsule** for the BMC firmware update. 
+
+* * *  
+  
+---|---  
+
+
+### How to do BIOS firmware update
+
+**BMC Web UI**
+
+To ensure the proper functioning of the system, perform the following to update the BIOS firmware through the WEB GUI:
+
+To open Firmware Update page, click **Operations** > **OEM** **Firmware** from the menu bar. A sample screenshot of the Firmware Update Page is displayed. 
+
+**Note** : Please confirm that the host power is turned off. 
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525925.jpg)
+
+To select BIOS for firmware update.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525927.jpg)
+
+Add File: Choose DC-SCM FPGA, MB FPGA or HIB FPGA firmware image.
+
+Start update: Choose Start update in the pop menu.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525929.jpg)
+
+Pop Menu: Choose OK in the pop menu.
+
+The update procedure will be triggered as displayed.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525931.jpg)
+
+**Redfish**
+
+To ensure the proper functioning of the system, perform the following to update the BIOS firmware through Redfish:
+
+  1. Request the BMC to download the BIOS firmware image.
+
+  * **Command format:**
+           
+           curl -k -X POST
+           https://<username>:<password>@<BMC
+           IP>/redfish/v1/Managers/c885a/UploadFile -H
+           "Content-Type:application/octet-stream" -H "Filename:oem.bin"
+           --data-binary @<BIOS firmware image name>
+
+  * **Example: Request BMC to download the BIOS firmware image**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525409.jpg)
+
+  2. Request the BMC to update the BIOS firmware.
+
+  * **Command format:**
+           
+           curl -k -X POST
+           https://<username>:<password>@<BMC
+           IP>/redfish/v1/Managers/c885a/OEMUpdate -d '{"updateDevice":
+           "bios"}'
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Use this command to get the updated status.
+
+* * *  
+  
+---|---  
+  * **Command format:**
+           
+           curl -k -X GET
+           https://<username>:<password>@<BMC
+           IP>/redfish/v1/Managers/c885a/OEMUpdate/CheckStatus
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * If the update is in progress, you will not receive any response.
+  * If the update is successful, the result will be success.
+
+* * *  
+  
+---|---  
+  
+**Example: Get BIOS update status**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525410.jpg)
+
+
+### How to do FPGA firmware update
+
+**BMC Web UI**
+
+To ensure the proper functioning of the system, perform the following to update the FPGA firmware through the WEB GUI:
+
+To open Firmware Update page, click **Operations** > **OEM** **Firmware** from the menu bar. A sample screenshot of Firmware Update Page is displayed. 
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525405.jpg)
+
+To select the DC-SCM FPGA, MB FPGA or HIB FPGA for firmware update.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525406.jpg)
+
+Add File: Choose DC-SCM FPGA, MB FPGA or HIB FPGA firmware image.
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+The FPGA firmware image should be .rpd file.
+
+* * *  
+  
+---|---  
+  
+Start update: Choose Start update in the pop menu.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525411.jpg)
+
+Pop Menu: Choose OK in the pop menu.
+
+The update procedure will be triggered as displayed.
+
+  * DC-SCM FPGA Firmware Update
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525412.jpg)
+
+  * MB FPGA Firmware Update
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525413.jpg)
+
+  * HIB FPGA Firmware Update
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525414.jpg)
+
+
+#### Redfish
+
+To ensure the proper functioning of the system, perform the following to update the FPGA firmware through Redfish.
+
+  1. Request BMC to download the FPGA firmware image using the following image:
+         
+         curl -k -X POST
+         https://<username>:<password>@<BMC
+         IP>/redfish/v1/Managers/c885a/UploadFile -H
+         "Content-Type:application/octet-stream" -H "Filename:oem.bin"
+         --data-binary @<FPGA firmware image name>
+
+  2. Request BMC to update DC-SCM FPGA firmware, MB FPGA firmware or HIB FPGA firmware using the following commands:
+
+**DC-SCM FPGA:**
+         
+         curl -k -X POST
+         https://<username>:<password>@<BMC
+         IP>/redfish/v1/Managers/c885a/OEMUpdate -d '{"updateDevice":
+         "dcscm-fpga"}'
+
+**MB FPGA:**
+         
+         curl -k -X POST
+         https://<username>:<password>@<BMC
+         IP>/redfish/v1/Managers/c885a/OEMUpdate -d '{"updateDevice":
+         "mb-fpga"}'
+
+**HIB FPGA:**
+         
+         curl -k -X POST
+         https://<username>:<password>@<BMC
+         IP>/redfish/v1/Managers/c885a/OEMUpdate -d '{"updateDevice":
+         "hib-fpga"}'
+
+  3. Verify the updated status using the following command:
+         
+         curl -k -X GET
+         https://<username>:<password>@<BMC
+         IP>/redfish/v1/Managers/c885a/OEMUpdate/CheckStatus
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+  * If the update is in the progress, you will not receive any response.
+  * If the update is successful, the Result will be success.
+
+* * *  
+  
+---|---  
+
+
+### How to do factory reset
+
+To perform a factory reset on your system, you can use the BMC Web UI. This method allows you to easily reset your system's configuration to its original factory settings. 
+
+**IPMI Command**
+
+ipmitool raw 0x30 0x41
+
+**Example: Factory reset using IPMI command**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525415.jpg)
+
+**BMC Web UI**
+
+To open the Factory reset page, click **Operations** > **Factory reset** from the menu bar. A sample screenshot of Factory reset Page is displayed. 
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525935.jpg)
+
+**Redfish**
+
+**Command format:**
+    
+    
+    curl -k -X POST
+    https://<username>:<password>@<BMC
+    IP>/redfish/v1/Managers/bmc/Actions/Manager.ResetToDefaults -H
+    "Content-Type:application/json" -d
+    '{"ResetToDefaultsType":"ResetAll"}'
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+After entering the command, the status **ok** is returned, and the factory reset starts. At this time, you still need to wait for a while. 
+
+* * *  
+  
+---|---  
+  
+**Example: Factory reset using Redfish**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525417.jpg)
+
+### Platform Management
+
+  * How to check sensor status and value
+  * How to set or get fan speed control
+  * How to get power state
+
+
+#### How to check sensor status and value
+
+To check the sensor status and values of your system, you can use either the IPMI command or the BMC Web UI. Both methods provide you with information about the various sensors in your system, such as temperature, voltage, fan speed, and power supply status. 
+
+**IPMI Command**
+
+`ipmitool sensor list`
+
+**Example: Get sensor list using the IPMI command**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525418.jpg)
+
+**BMC Web UI**
+
+  * To open the Sensors page, click **Hardware status** > **Sensors** from the menu bar. The Sensors page displays all the sensor related information. 
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525937.jpg)
+
+
+**Redfish**
+
+  * **Command format**
+        
+        curl -k -X GET
+        https://<username>:<password>@<BMC
+        IP>/redfish/v1/Chassis/c885a_Sensor/<sensor type>
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+The <sensor type> refers to the following: 
+  * Sensors: Contains the wattage of the power and status of the sensor.
+  * Thermal: Contains the sensor temperature and fan speed.
+
+* * *  
+  
+---|---  
+  * **Example: Get sensor list using Redfish**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525420.jpg)
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525421.jpg)
+
+
+#### How to set or get fan speed control
+
+This procedure explains how to set and retrieve the fan speed control parameters in your system by IPMI command.
+
+**IPMI Command**
+
+**_Set fan speed control_ **
+
+**Command format**
+
+`ipmitool 0x30 0x21 <control mode> <PWM>`
+
+**Request Data**
+
+**Byte** |  **Data Field**  
+---|---  
+1 |  **Control Mode** 01h = Manually Control. 00h = Auto Control (follow fan control algorithm)  
+2 |  **Fan PWM Duty Cycle** 00h ~ 64h for 0% ~ 100% PWM duty cycle. This field is valid only if the request data byte #1 equals to 01h.  
+  
+**Response Data**
+
+**Byte** |  **Data Field**  
+---|---  
+1 |  **Completion Code**  
+  
+**_Get fan speed control_ **
+
+**Command format**
+
+`ipmitool 0x30 0x22`
+
+**Request Data**
+
+Not required.
+
+**Response Data**
+
+**Byte** |  **Data Field**  
+---|---  
+1 |  **Completion Code**  
+2 |  **Control Mode** 01h = Manually Control 00h = Auto Control (Default, follow fan control algorithm)  
+3 |  **Fan PWM Duty Cycle** 00h ~ 64h for 0% ~ 100% PWM duty cycle  
+  
+#### How to get power state
+
+This procedure explains how to retrieve the power state of the system, indicating whether it is powered up or powered down. 
+
+**IPMI Command**
+
+  * **Command format:**
+
+`ipmitool power status`
+
+  * The system power state is powered up.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525422.jpg)
+
+  * The system power state is powered down.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525423.jpg)
+
+
+##### BMC Web UI
+
+  * The system power state is powered up.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525424.jpg)
+
+  * The system power state is powered down.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525425.jpg)
+
+
+##### Redfish
+
+  * **Command format:**
+        
+        curl -s -k -X GET
+        https://<username>:<password>@<BMC
+        IP>/redfish/v1/Systems/system | grep -i powerstate
+
+  * The system power state is powered up.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525426.jpg)
+
+  * The system power state is powered down.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525427.jpg)
+
+
+##### How to do power on
+
+The power on action is used to start up a system and bring it to an operational state. This procedure provides instructions on how to perform a power on action. 
+
+**IPMI Command**
+
+  * **Command format:**
+
+`ipmitool power on`
+
+  * Example: Power on using the IPMI command
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525428.jpg)
+
+
+##### BMC Web UI
+
+  * **Example:**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525429.jpg)
+
+
+##### Redfish
+
+  * **Redfish**
+        
+        curl -s -k -X POST
+        https://<username>:<password>@<BMC
+        IP>/redfish/v1/Systems/system/Actions/ComputerSystem.Reset -H
+        "Content-Type: application/json" -d '{"ResetType": "On"}'
+
+  * **Example: Power on using Redfish**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525430.jpg)
+
+
+##### How to do power off
+
+The power off action is used to shut down a system. This procedure provides instructions on how to perform a power off action.
+
+**IPMI Command**
+
+  * **Command format:**
+
+`ipmitool power off`
+
+  * **Example: Power off using IPMI command**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525431.jpg)
+
+
+**BMC Web UI**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525432.jpg)
+
+**Redfish**
+
+  * **Command format:**
+        
+        curl -s -k -X POST
+        https://<username>:<password>@<BMC
+        IP>/redfish/v1/Systems/system/Actions/ComputerSystem.Reset -H
+        "Content-Type: application/json" -d '{"ResetType":
+        "ForceOff"}'
+
+  * **Example: Power off using Redfish**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525433.jpg)
+
+
+**_**How to do power cycle** _ **
+
+This procedure provides instructions on how to perform a power cycle on a system.
+
+**IPMI Command**
+
+  * **Command format:**
+
+`ipmitool power cycle`
+
+  * **Example: Power cycle using IPMI command**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525434.jpg)
+
+
+**Redfish**
+
+  * **Command format:**
+        
+        curl -s -k -X POST
+        https://<username>:<password>@<BMC
+        IP>/redfish/v1/Systems/system/Actions/ComputerSystem.Reset -H
+        "Content-Type: application/json" -d '{"ResetType":
+        "PowerCycle"}'
+
+  * **Example: Power cycle using Redfish**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525435.jpg)
+
+
+**_**How to use LED to identify errors** _ **
+
+The BMC facilitates a range of LED functionalities, succinctly presented in the following Table:
+
+**LED Name** |  **Description** |  **State** |  **Color** |  **Control command**  
+---|---|---|---|---  
+ID LED | Unit identified | Solid On or Blinking | Blue | IPMI “Chassis Identify”  
+Deactivated | Off | None  
+Healthy LED | System power on and healthy | Solid On | Green | None  
+BMC not ready | Fast Blinking (2Hz) | Green | None  
+System power off and healthy | Slow Blinking (0.5Hz) | Green | None  
+System fault | Solid On | Amber | None  
+Fan Fail LED | Fan failure | Solid On | Amber | None  
+Fan healthy | Off | None | None  
+  
+The following are the System Fault conditions:
+
+  * Fan Failure.
+
+  * The component temperature reading exceeds the threshold.
+
+  * PSU not detected.
+
+  * PSU Failure.
+
+
+The following are the Fan Failure conditions:
+
+  * Fan not detected.
+
+  * BMC unable to reading fan speed.
+
+  * Fan speed reading is 0.
+
+  * Fan speed below the threshold.
+
+
+**_**How to configure BMC network** _ **
+
+OpenBMC provides diverse interface, including Web GUI, Redfish, and IPMI commands, to facilitate users in the comprehensive management of the BMC's network. 
+
+Network configuration encompasses a multitude of facets, encompassing tasks such as configuring IP addresses, IP addresses source, gateways, and other pivotal elements. 
+
+The following are some fundamental network configuration features:
+
+  * IP Addresses Source
+
+
+  * IP Address
+
+  * Gateways
+
+
+**IPMI Command**
+
+  * Set IP address source command format:
+
+
+    
+    
+    Ipmitool lan <channel> set ipsrc
+    <source>channel:eth0 = 1**Note:** Here,
+    <source> refers to the following:static = address manually
+    configured to be staticdhcp = address obtained by BMC running
+    DHCP
+
+  * Set channel IP address command format:
+
+
+    
+    
+    Ipmitool lan <channel> set ipaddr
+    <x.x.x.x>
+
+  * Set channel IP netmask command format:
+
+
+    
+    
+    Ipmitool lan <channel> set netmask
+    <x.x.x.x>
+
+**BMC Web GUI**
+
+Toggle DHCP button to enable or disable DHCP. After enabling DHCP, the IPv4 address will be automatically configured. When disabling DHCP, the IPv4 address will be manually configured. 
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525436.jpg)
+
+After disabling DHCP, it pops the “Add Static IPv4 address” window to configure the IPv4 address. In the "Add Static IPv4 Address" window, enter the IP address, gateway, and subnet mask. Click “Add” button to add the static IPV4 address. 
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525437.jpg)
+
+Click the "OK" button to apply the static IPv4 address configuration.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525438.jpg)
+
+It will pop up an "Information" window, notifying the user to login to the BMC Web GUI using the new IP.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525439.jpg)
+
+**Redfish**
+
+  * **Command format:**
+
+
+    
+    
+    curl -k -X PATCH
+    https://<username>:<password>@<BMC
+    IP>/redfish/v1/Managers/bmc/EthernetInterfaces/eth0 -H
+    "Content-Type:application/json" -d
+    '{"DHCPv4":{"DHCPEnabled":false},"IPv4StaticAddresses":[{"Address":"<ipaddr>","SubnetMask":"<subnetmask>","Gateway":"<gateway>"}]}'
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+If you want to set the network to DHCP, please set the DHCPEnabled field to true, or if you want to set the network to static, please set the DHCPEnabled field to false, and fill in ip address subnet mask and gateway in order. 
+
+* * *  
+  
+---|---  
+  
+  * **Example:**
+
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525440.jpg)
+
+**_How to get BMC time_ **
+
+This procedure explains how to retrieve the BMC time, which provides the date and time information of the BMC.
+
+**IPMI Command**
+    
+    
+    ipmitool sel time get**Example:** Get BMC time
+    using IPMI command
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525441.jpg)
+
+**BMC Web UI**
+
+**Example:**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525442.jpg)
+
+**Redfish**
+
+  * **Command format:**
+        
+        curl -s -k -X GET
+        https://<username>:<password>@<BMC
+        IP>/redfish/v1/Managers/bmc | grep -i "DateTime"
+
+  * **Example: Get BMC time using Redfish**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525443.jpg)
+
+
+**How to set BMC time**
+
+This procedure explains how to set the BMC time, which allows you to synchronize the BMC's date and time with the desired values. 
+
+**IPMI Command**
+
+  1. Disable NTP
+
+`ipmitool raw 0x30 0x42 0x00`
+
+  2. Wait for NTP to be closed, about 15 seconds
+
+  3. Set BMC time
+         
+         ipmitool sel time set “mm/dd/yyyy
+         hh:mm:ss”
+
+
+**Example: Set BMC time using IPMI**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525444.jpg)
+
+**BMC Web UI:**
+
+  * **Example: Set BMC time using Web UI**
+
+Please look for setting in the left column of the Web UI, click it and select date and time.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525445.jpg)
+
+
+**Redfish:**
+
+**Command:**
+
+  1. Disable NTP.
+         
+         curl -k -X PATCH
+         https://<username>:<password>@<BMC
+         IP>/redfish/v1/Managers/bmc/NetworkProtocol -H
+         "Content-Type:application/json" -d
+         '{"NTP":{"ProtocolEnabled":false}}'
+
+  2. Wait for NTP to be closed, about 15 seconds.
+
+  3. Set BMC time.
+         
+         curl -k -X PATCH
+         https://<username>:<password>@<BMC
+         IP>/redfish/v1/Managers/bmc/ -H "Content-Type:application/json"
+         -d '{"DateTime":"<yy-mm-dd hh:mm:ss>"}'
+
+
+**Example: Set BMC time using Redfish**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525446.jpg)
+
+**How to enable NTP time synchronization**
+
+This procedure provides instructions on how to enable NTP time synchronization on the BMC.
+
+**IPMI Command**
+
+`ipmitool raw 0x30 0x42 0x01`
+
+**Example: Enable NTP using IPMI**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525447.jpg)
+
+**BMC Web UI**
+
+  * **Example: Enable NTP using Web UI**
+
+The Manual option is set to the specified time, and the NTP option is to select the NTP server to automatically update the time. 
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525448.jpg)
+
+
+**Redfish**
+
+  * **Command format:**
+        
+        curl -k -X PATCH
+        https://<username>:<password>@<BMC
+        IP>/redfish/v1/Managers/bmc/NetworkProtocol -H
+        "Content-Type:application/json" -d
+        '{"NTP":{"ProtocolEnabled":true,"NTPServers":["NTP Server
+        Adderss"]}}'
+
+  * **Example: Enable NTP using Redfish**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525449.jpg)
+
+
+**How to enable/disable ssh/ipmi function**
+
+This procedure explains how to enable or disable the SSH (Secure Shell) and IPMI (Intelligent Platform Management Interface) functions within your system. By enabling these functions, you can gain remote access and management capabilities. Disabling them can help enhance security by limiting remote connectivity. 
+
+**BMC Web UI**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525450.jpg)
+
+## Authentication and Security
+
+  * How to add user
+  * How to remove user
+
+
+### How to add user
+
+Adding a user allows you to create new credentials for accessing and managing a system. This procedure provides instructions on how to add a user: 
+
+Username and Password Roles:
+
+  * **Username Roles:**
+
+  * Cannot start with a number. No special characters except underscore.
+
+  * **Password Roles:**
+
+  * Must be 8 to 20 characters.
+
+  * Cannot contain the username.
+
+  * Cannot be a palindrome.
+
+  * Consecutive or repeated characters cannot exceed half.
+
+
+**IPMI Command**
+
+  * **Command format:**
+        
+        ipmitool user set name <User ID> <User Name>
+        ipmitool user set password <User ID> <Password> 16
+        ipmitool user enable <User ID>
+        ipmitool user priv <User ID> < Privilege Level > < Channel Number >
+        ipmitool channel setaccess 1 <User ID> ipmi=on link=on privilege=<Privilege Level>
+        Channel Number:
+        0x01 - eth0
+        Privilege Level:
+        0x2 - User
+        0x3 - Operator
+        0x4 - Administrator
+        0xF - No Access
+        
+
+  * **Example: Add user using IPMI**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525451.jpg)
+
+
+**BMC Web UI**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525939.jpg)
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525453.jpg)
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+The password settings must be a high level of password complexity.
+
+* * *  
+  
+---|---  
+  
+**Redfish**
+
+  * **Command format:**
+
+
+    
+    
+    curl -s -k -X POST
+    https://<username>:<password>@<BMC
+    IP>/redfish/v1/AccountService/Accounts -H "Content-Type:
+    application/json" -d '{"UserName": "<Username>", "Password":
+    "<Password>", "RoleId": "<Privilege Level>" }'
+
+**Note:** The Privilege Level can be Administrator, Operator, or User. 
+
+  * **Example: Add user using Redfish**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525454.jpg)
+
+
+### How to remove user
+
+This procedure provides instructions on how to remove a user. 
+
+**IPMI Command**
+
+  * **Command format:**
+        
+        ipmitool raw 0x06 0x45 <User ID> 0x00 0x00 0x00 0x00
+        0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+
+  * **Example: Delete user using IPMI**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525455.jpg)
+
+
+#### BMC Web UI
+
+In Web UI, enter the user management page and click the trash can icon behind the account you want to delete to delete the account. 
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525456.jpg)
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525457.jpg)
+
+#### Redfish
+
+  * **Command format:**
+        
+        curl -s -k -X DELETE
+        https://<username>:<password>@<BMC
+        IP>/redfish/v1/AccountService/Accounts/{Username}
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+First use the GET command to get the information of all accounts, and then enter the name of the account you want to delete in the username field. 
+
+* * *  
+  
+---|---  
+  * **Example: Delete user using Redfish**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525458.jpg)
+
+
+## FRU
+
+The Field Replaceable Unit (FRU) information provides details about the hardware components of a system. This procedure explains how to display FRU information using the IPMI command. 
+
+The FRU device ID should start from #0 and if a system contains multiple FRUs, the FRU of the motherboard should use device ID #0. If there is no motherboard in the system (e.g., a chassis manager), the FRU indicates the DC-SCM should use device ID #0. 
+
+Boulder Board Item | FRU ID  
+---|---  
+FRU_SCM | ID 1  
+FRU_CHASSIS | ID 4  
+FRU_CPUSLED | ID14  
+FRU_SYS | ID15  
+FRU_MB_PSU1 | ID 19  
+FRU_MB_PSU2 | ID 20  
+FRU_PDB_PSU1 | ID 21  
+FRU_PDB_PSU2 | ID 22  
+FRU_PDB_PSU3 | ID 23  
+FRU_PDB_PSU4 | ID 24  
+FRU_PDB_PSU5 | ID 25  
+FRU_PDB_PSU6 | ID 26  
+  
+  * How to display FRU information
+
+
+### How to display FRU information
+
+**IPMI Command**
+
+  * **Command format:**
+        
+        ipmitool fru print <fru id>
+
+Here, **< fru id>** refers to the FRU device ID. You can view the ID list in the previous table. 
+
+  * **Examples: FAN Extension#1 FRU**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525459.jpg)
+
+
+## Event Log and Alerting
+
+The event log contains a recorded history of system events and activities, such as sensor readings, error messages, or system events. This procedure explains how to access and retrieve the event log 
+
+  * How to get event log
+  * How to get POST code logs
+
+
+### How to get event log
+
+**IPMI Command**
+
+  * **Command format:**
+
+`ipmitool sel list`
+
+  * **Example: IPMI SEL list**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525460.jpg)
+
+
+#### BMC Web UI
+
+This page displays the list of event logs occurred by the different sensors on this device.
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525461.jpg)
+
+#### Redfish
+
+  * **Command format:**
+        
+        curl -k -X GET
+        https://<username>:<password>@<BMC
+        IP>/redfish/v1/Systems/system/LogServices/EventLog/Entries
+
+  * **Example: Get SEL via Redfish**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525462.jpg)
+
+
+### How to get POST code logs
+
+#### BMC Web UI
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525463.jpg)
+
+## AMD CPU Management
+
+  * How to get CPU temperature
+  * How to get CPU current power consumption
+  * How to get CPU current power capping
+  * How to control CPU power capping
+
+
+### How to get CPU temperature
+
+To retrieve the CPU temperature of an AMD-based system, you can use various methods such as IPMI commands, BMC Web UI, or Redfish. 
+
+**IPMI Command:**
+
+  * **Command format:**
+
+`ipmitool sensor list | grep -i CPU`
+
+  * **Example: IPMI sensor list**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525464.jpg)
+
+
+#### BMC Web UI
+
+  * **Example: Web UI sensor list**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525465.jpg)
+
+
+#### Redfish
+
+  * **Command format:**
+        
+        curl -s -k -X GET https://
+        <username>:<password>@<BMC
+        IP>/redfish/v1/Chassis/c885a_Sensor/Thermal
+
+  * **Example: Read the CPU0 temperature**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525466.jpg)
+
+
+### How to get CPU current power consumption
+
+This procedure explains how to retrieve CPU temperature using various methods, including the IPMI command, BMC Web UI, and Redfish. 
+
+**IPMI Command:**
+
+  * **Command format:**
+
+`ipmitool sensor list | grep -i CPU`
+
+  * **Example: Get CPU power consumption via IPMI**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525467.jpg)
+
+
+**BMC Web UI**
+
+  * **Example: Get CPU power consumption using Web UI**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525468.jpg)
+
+
+**Redfish**
+
+  * **Command format:**
+        
+        curl -s -k -X GET https://
+        <username>:<password>@<BMC IP>
+        /redfish/v1/Chassis/c885a_Sensor/Sensors | grep -i CPUcurl -s -k
+        -X GET https:// <username>:<password>@<BMC IP>
+        /redfish/v1/Chassis/c885a_Sensor/Sensors/{member}
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+Here, **member** refers to the corresponding name of the CPU. 
+
+* * *  
+  
+---|---  
+  * **Example: Read CPU0 power consumption**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525469.jpg)
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525470.jpg)
+
+
+### How to get CPU current power capping
+
+This procedure explains how to retrieve the CPU's current power capping using the IPMI command and the BMC Web UI. 
+
+**IPMI Command**
+
+  * **Command format:**
+
+`ipmitool raw 0x30 0x26`
+
+  * **Example: Get CPU power capping using IPMI**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525471.jpg)
+
+
+**BMC Web UI**
+
+  * **Example: Get CPU power capping using Web UI**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525472.jpg)
+
+
+**Redfish**
+
+  * **Command format:**
+        
+        curl -k -X GET https://<username>:<password>@<BMC IP>/redfish/v1/Managers/bmc/Oem/c885a/CPU/Power
+
+  * **Example: Get CPU power capping using Redfish**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525473.jpg)
+
+
+### How to control CPU power capping
+
+This procedure explains how to control CPU power capping using the IPMI command and the BMC Web UI. 
+
+**IPMI Command**
+
+  * **Command format:**
+
+`ipmitool raw 0x30 0x27`
+
+  * **Example: Set CPU power capping using IPMI**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525474.jpg)
+
+
+**BMC Web UI**
+
+  * **Example: Set CPU power capping using Web UI**
+
+![](/c/dam/en/us/td/i/500001-600000/520001-530000/525001-526000/525941.jpg)
+
+
+**Redfish**
+
+  * **Command format:**
+        
+        curl -k -X POST https://
+        <username>:<password>@<BMC
+        IP>/redfish/v1/Managers/bmc/Oem/c885a/CPU/Power -H
+        "Content-Type:application/json" -d '{"Power Capping":"<power
+        value>"}'
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+**Note** | 
+
+* * *
+
+power value \- Enter a value to be set in the power value field. 
+
+* * *  
+  
+---|---  
+  * Example: Set CPUs power capping to 150 W
+
+
+---
+
+## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/m-Chapter-6-Troubleshooting-operating-system-issues.html
 
 # Troubleshooting Operating System Issues
 
@@ -938,7 +2205,7 @@ BOOT_IMAGE=/vmlinuz-5.15.0-101-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
 
 ---
 
-## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/m-Chapter-7-BIOS-Related-Issue.html
+## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/m-Chapter-7-BIOS-Related-Issue.html
 
 # BIOS Related Issue  
   
@@ -1803,7 +3070,7 @@ Note: We have both Agesa and BIOS Post codes during POST. The Agesa Post code is
 
 ---
 
-## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/b_c885a-m8-server-troubleshooting-guide_index.html
+## Page 10: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/hw/c885A/install/b_c885a-m8-server-troubleshooting-guide/b_c885a-m8-server-troubleshooting-guide_index.html
 
 > ## Contents  
 >   

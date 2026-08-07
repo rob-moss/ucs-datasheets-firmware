@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X9508 Server Chassis Installation Guide |
 | **Source file** | `ucs-docs-raw/html/b-ucs-x9508-install.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:04:43 |
+| **Fetched on** | 2026-08-05 10:01:02 |
 
 ---
 

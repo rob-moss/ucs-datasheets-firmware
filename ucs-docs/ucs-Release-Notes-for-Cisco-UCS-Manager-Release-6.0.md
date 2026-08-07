@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco UCS Manager, Release 6.0 |
 | **Source file** | `ucs-docs-raw/html/b_release-notes-ucsm-6_0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:04:59 |
+| **Fetched on** | 2026-08-05 10:01:20 |
 
 ---
 
@@ -2686,7 +2686,7 @@ For detailed information about supported operating system, see the interactive [
 Cisco UCS Manager GUI  |  Web Browsers   
 ---|---  
 HTML5  |  Apple Safari 16.2 (18614.3.7.1.5) Google Chrome 109.0.5414.75 Microsoft Internet Explorer 11.0.9600.18739 (Microsoft Internet Explorer is Retired. Support is available only until Windows 8.1 and Windows2008 R2)  Microsoft Edge 109.0.1518.55 Mozilla Firefox 108.0.2 Opera 94.0.4606.76  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -2705,7 +2705,7 @@ The Cisco UCS Manager Administration Management Guide, Release 4.2 provides deta
 
 Cisco UCS Manager Release 4.2 can only be registered with Cisco UCS Central, Release 2.0(1n) or later releases. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -2790,7 +2790,7 @@ While upgrading any Cisco UCS M5 B-Series server from 4.0(4m) or an earlier rele
 
 The section provides information on the upgrade paths to release 4.2(2) and downgrade limitations.
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3104,7 +3104,7 @@ Cisco recommends that once you migrate to UCS 6536 Fabric Interconnect, do not m
 
   * Support for Cisco UCS VIC 15411 – 4 x 10G mLOM adapter on Cisco UCS B-series M6 servers
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3143,7 +3143,7 @@ Support for the following:
 
   * Support of Cisco UCS VIC 15428 MLOM 4-port adapter on Cisco UCS C-series M6 rack servers
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3282,7 +3282,7 @@ The server supports the following features:
   * Optionally, the rear mezzanine slot can have a Cisco VIC Card (for example, a Cisco VIC 1480) or the pass-through Cisco UCS Port Expander Card. 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3330,7 +3330,7 @@ The server supports the following features:
   * Cisco 12 G SAS pass-through HBA to control SAS/SATA drives.
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3378,7 +3378,7 @@ The server supports the following features:
   * UCSC-C240-M6SN
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3527,7 +3527,7 @@ None
 
   * Maximum data LUNs Per Target is increased from [1-1024] to [1-4096] for Linux and ESX OS for Cisco UCS 13xx, 14xx, 15xxx VIC series adapters. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3550,7 +3550,7 @@ Software Enablement for New Hardware (Listed in the New hardware section)
 
   * Added the support to configure the Ethernet breakout ports on Cisco UCS 6536 and Cisco UCS 6400 Series Fabric Interconnects (UCS FI 6454 and UCS FI 64108) without leading the Fabric Interconnect to reboot. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3609,7 +3609,7 @@ Software Enablement for New Hardware (Listed in the New hardware section)
 
   * Beginning Cisco UCS Manager release 4.2(2a), the Cisco SSL version is upgraded to 1.1.1l-fips on Cisco UCS Mini, UCS 6200 series, UCS 6300 series, and UCS 6400 Series Fabric Interconnects. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3637,7 +3637,7 @@ The updated Cisco SSL version may require updated SSH Clients, which support upd
 
   * Cisco UCS Manager now supports HDD/SSD and SAS/SATA drive types diagnostic self-test. If the drive fails self test, a major fault is raised. Cisco recommends that you backup the data and replace the drive. For more details, see [Cisco UCS Manager Storage Management Guide, Release 4.2](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html) or [Cisco UCS Manager Server Management Using the CLI, Release 4.2](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-manager/products-installation-and-configuration-guides-list.html). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3657,7 +3657,7 @@ This feature does not support NVME JBOD drives. You may use third-party tools to
 
   * Added the capability of auto negotiation on Ethernet server, Fabric Interconnects, or Interfaces to determine the optimal speed of the connected device. While configuring server ports, you can enable or disable auto-negotiate option. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3669,7 +3669,7 @@ Auto-negotiate must be disabled for 100Gps server port connected to N9K-C93180YC
 ---|---  
   * Added the capability to enable/disable RFC 5424 compliance. While configuring the syslog using Cisco UCS Manager, you can click Enable to display the syslog messages as per RFC 5424 format. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3809,7 +3809,7 @@ ucs-k9-bundle- infra.4.2.3b.A.bin |  ucs-6300-k9-bundle- infra.4.2.3b.A.bin  |  
 4.1(2) |  Yes  |  Yes |  Yes |  Yes |  No  
 4.1(1) |  Yes  |  Yes  |  Yes  |  Yes  |  No  
 4.0(1), 4.0(4) (B, C Bundles) |  Yes  |  Yes  |  Yes  |  Yes  |  No  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Important** | 
 
 * * *
@@ -3858,7 +3858,7 @@ The following sections provide information on the interdependencies between Cisc
 
 #### Blade Servers
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3872,19 +3872,19 @@ Table 15. Minimum Host Firmware Versions for Blade Servers  Servers  |  Minimum 
 ---|---|---|---|---|---|---|---  
 UCS-IOM- 2204  UCS-IOM- 2208  |  UCS-IOM- 2204  UCS-IOM- 2208  |  UCS-IOM- 2304  |  UCS-IOM- 2304V2  |  UCS-IOM- 2204  UCS-IOM- 2208  UCS-IOM- 2408* |  UCS-IOM- 2204  UCS-IOM- 2208  UCS-IOM- 2408* |  UCS-IOM- 2304V1/V2  UCS-IOM- 2408 |  UCS-IOM-2204  UCS-IOM-2208  UCS-IOM-2408 UCS-IOM- 2304  UCS-IOM- 2304V2   
 |  |  |  |  UCS-IOM-2408 support on M4 and M5 server is with UCS 1300/1400 series VIC adapters. UCS-IOM-2408 is supported with UCS 6400 Series/UCS 6536 FI UCS IOM-2304v1/v2 is supported with UCS 6300/UCS 6536 FI UCS IOM-220x is supported with UCS 6200 series/UCS 6300 series/UCS 6400 series FI. Cisco UCS M6 servers are not supported with 6200 series FI Cisco UCS 6536 FI supports Cisco UCS M4 servers only with Cisco UCS VIC 1300 Series  
-B200 M6 |  N/A | 4.2(1d) | 4.2(1d) | 4.2(1d) | 4.2(1d) | 4.2(1d) |  4.2(3r) |  4.2(3r)  
-B200 M5  |  3.2(1d) |  3.2(1d) |  3.2(1d) |  4.0(4o) |  4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
-B480 M5 |  3.2(2b) |  3.2(2b) |  3.2(2b) |  4.0(4o) |  4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
-B200 M4  |  2.2(8a)  |  3.1(3a)  |  3.1(3a)  |  4.0(4o) |  4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
-B260 M4 E7-2800 v2  B260 M4 E7-4800 v2  B260 M4 E7-8800 v2  B260 M4 E7-4800 v3  B260 M4 E7-8800 v3  |  2.2(8a) 2.2(8a) 2.2(8a) 2.2(8a) 2.2(8a) |  3.1(3a)  3.1(3a)  3.1(3a)  3.1(3a)  3.1(3a)  |  3.1(3a)  |  4.0(4o) |  4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
-B260 M4 E7-4800 v4  B260 M4 E7-8800 v4  |  2.2(8b)  2.2(8b)  |  3.1(3a)  3.1(3a)  |  3.1(3a)  3.1(3a)  |  4.0(4o) |  4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
-B420 M4 E5-4600 v3  B420 M4 E5-4600 v4  |  2.2(8a) 2.2(8b)  |  3.1(3a)  3.1(3a)  |  3.1(3a)  3.1(3a)  |  4.0(4o) |  4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
-B460 M4 E7-4800 v2  B460 M4 E7-8800 v2  B460 M4 E7-4800 v3  B460 M4 E7-8800 v3  |  2.2(8a) 2.2(8a) 2.2(8a) 2.2(8a) |  3.1(3a)  3.1(3a)  3.1(3a)  3.1(3a)  |  3.1(3a)  |  4.0(4o) |  4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
-B460 M4 E7-4800 v4  B460 M4 E7-8800 v4  |  2.2(8b)  2.2(8b)  |  3.1(3a)  3.1(3a)  |  3.1(3a)  |  4.0(4o) |  4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
+B200 M6 |  N/A | 4.2(1d) | 4.2(1d) | 4.2(1d) | 4.2(1d) | 4.2(1d) | 4.2(3b) |  4.2(3r)  
+B200 M5  |  3.2(1d) |  3.2(1d) |  3.2(1d) |  4.0(4o) |  4.0(1a) |  4.1(1a) | 4.2(3b) |  4.2(3r)  
+B480 M5 |  3.2(2b) |  3.2(2b) |  3.2(2b) |  4.0(4o) |  4.0(1a) |  4.1(1a) | 4.2(3b) |  4.2(3r)  
+B200 M4  |  2.2(8a)  |  3.1(3a)  |  3.1(3a)  |  4.0(4o) |  4.0(1a) |  4.1(1a) | 4.2(3b) |  4.2(3r)  
+B260 M4 E7-2800 v2  B260 M4 E7-4800 v2  B260 M4 E7-8800 v2  B260 M4 E7-4800 v3  B260 M4 E7-8800 v3  |  2.2(8a) 2.2(8a) 2.2(8a) 2.2(8a) 2.2(8a) |  3.1(3a)  3.1(3a)  3.1(3a)  3.1(3a)  3.1(3a)  |  3.1(3a)  |  4.0(4o) |  4.0(1a) |  4.1(1a) | 4.2(3b) |  4.2(3r)  
+B260 M4 E7-4800 v4  B260 M4 E7-8800 v4  |  2.2(8b)  2.2(8b)  |  3.1(3a)  3.1(3a)  |  3.1(3a)  3.1(3a)  |  4.0(4o) |  4.0(1a) |  4.1(1a) | 4.2(3b) |  4.2(3r)  
+B420 M4 E5-4600 v3  B420 M4 E5-4600 v4  |  2.2(8a) 2.2(8b)  |  3.1(3a)  3.1(3a)  |  3.1(3a)  3.1(3a)  |  4.0(4o) |  4.0(1a) |  4.1(1a) | 4.2(3b) |  4.2(3r)  
+B460 M4 E7-4800 v2  B460 M4 E7-8800 v2  B460 M4 E7-4800 v3  B460 M4 E7-8800 v3  |  2.2(8a) 2.2(8a) 2.2(8a) 2.2(8a) |  3.1(3a)  3.1(3a)  3.1(3a)  3.1(3a)  |  3.1(3a)  |  4.0(4o) |  4.0(1a) |  4.1(1a) | 4.2(3b) |  4.2(3r)  
+B460 M4 E7-4800 v4  B460 M4 E7-8800 v4  |  2.2(8b)  2.2(8b)  |  3.1(3a)  3.1(3a)  |  3.1(3a)  |  4.0(4o) |  4.0(1a) |  4.1(1a) | 4.2(3b) |  4.2(3r)  
   
 #### Rack Servers
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3897,19 +3897,19 @@ In a mixed firmware configuration, we recommend that the minimum server bundle c
 Table 16. Minimum Host Firmware Versions for Rack Servers Servers  |  Minimum Software Version  UCS 6200 Series FI  |  Minimum Software Version  UCS 6332, 6332-16UP  |  Minimum Software Version  UCS 6454 |  Minimum Software Version  UCS 64108 |  Minimum Software Version  UCS 6536 |  Suggested Software Version  UCS 6200 Series FI  UCS 6332, 6332-16UP FI  UCS 6400 Series FI  
 ---|---|---|---|---|---|---  
 Cisco UCS M6 servers are not supported with 6200 series FI  
-C220 M6  |  N/A |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(3r) |  4.2(3r)  
-C240 M6  |  N/A |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(3r) |  4.2(3r)  
-C225 M6 |  N/A |  4.2(1l) |  4.2(1l) |  4.2(1l) |  4.2(3r) |  4.2(3r)  
-C245 M6 |  N/A |  4.2(1i) |  4.2(1i) |  4.2(1i) |  4.2(3r) |  4.2(3r)  
-C220 M5  |  3.2(1d) |  3.2(1d) | 4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
-C240 M5  |  3.2(1d) |  3.2(1d) | 4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
-C125 M5 |  NA | 4.0(1a) | 4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
-S3260 M5 |  3.2(3a) |  3.2(3a) | 4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
-C220 M4  |  2.2(8a) |  3.1(3a)  | 4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
-C240 M4  |  2.2(8a) |  3.1(3a)  | 4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
-C460 M4 E7-2800 v2  C460 M4 E7-4800 v2  C460 M4 E7-8800 v2  C460 M4 E7-4800 v3  C460 M4 E7-8800 v3  |  2.2(8a) 2.2(8a) 2.2(8a) 2.2(8a) 2.2(8a) |  3.1(3a)  3.1(3a)  3.1(3a)  3.1(3a)  3.1(3a)  | 4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
-C460 M4 E7-8800 v4  |  2.2(8b)  |  3.1(3a)  | 4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
-C480 M5 |  3.2(2b) |  3.2(2b) | 4.0(1a) |  4.1(1a) |  4.2(3r) |  4.2(3r)  
+C220 M6  |  N/A |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(3b) |  4.2(3r)  
+C240 M6  |  N/A |  4.2(1d) |  4.2(1d) |  4.2(1d) |  4.2(3b) |  4.2(3r)  
+C225 M6 |  N/A |  4.2(1l) |  4.2(1l) |  4.2(1l) |  4.2(3b) |  4.2(3r)  
+C245 M6 |  N/A |  4.2(1i) |  4.2(1i) |  4.2(1i) |  4.2(3b) |  4.2(3r)  
+C220 M5  |  3.2(1d) |  3.2(1d) | 4.0(1a) |  4.1(1a) |  4.2(3b) |  4.2(3r)  
+C240 M5  |  3.2(1d) |  3.2(1d) | 4.0(1a) |  4.1(1a) |  4.2(3b) |  4.2(3r)  
+C125 M5 |  NA | 4.0(1a) | 4.0(1a) |  4.1(1a) |  4.2(3b) |  4.2(3r)  
+S3260 M5 |  3.2(3a) |  3.2(3a) | 4.0(1a) |  4.1(1a) |  4.2(3b) |  4.2(3r)  
+C220 M4  |  2.2(8a) |  3.1(3a)  | 4.0(1a) |  4.1(1a) |  4.2(3b) |  4.2(3r)  
+C240 M4  |  2.2(8a) |  3.1(3a)  | 4.0(1a) |  4.1(1a) |  4.2(3b) |  4.2(3r)  
+C460 M4 E7-2800 v2  C460 M4 E7-4800 v2  C460 M4 E7-8800 v2  C460 M4 E7-4800 v3  C460 M4 E7-8800 v3  |  2.2(8a) 2.2(8a) 2.2(8a) 2.2(8a) 2.2(8a) |  3.1(3a)  3.1(3a)  3.1(3a)  3.1(3a)  3.1(3a)  | 4.0(1a) |  4.1(1a) |  4.2(3b) |  4.2(3r)  
+C460 M4 E7-8800 v4  |  2.2(8b)  |  3.1(3a)  | 4.0(1a) |  4.1(1a) |  4.2(3b) |  4.2(3r)  
+C480 M5 |  3.2(2b) |  3.2(2b) | 4.0(1a) |  4.1(1a) |  4.2(3b) |  4.2(3r)  
 S3260 M4 |  3.1(2b) |  3.1(3a)  | 4.0(1a) |  4.1(1a) |  NA |  4.2(3r)  
   
 #### Adapters
@@ -3918,19 +3918,19 @@ Table 17. Minimum Software Versions for Adapters Adapters  |  Minimum  Software 
 ---|---|---|---|---|---|---|---|---|---|---  
 UCS-IOM -2204  UCS-IOM -2208  |  UCS-IOM -2204  UCS-IOM -2208  |  UCS-IOM-2304  UCS-IOM-2304V2  |  2232 PP 2348 |  UCS-IOM- 2204  UCS-IOM -2208  UCS-IOM -2408* |  93180YC -FX3 (25G server ports) 2232 PP 2348 UPQ |  UCS-IOM -2204  UCS-IOM -2208  UCS-IOM -2408* |  UCS-IOM -2304 V1/V2 UCS-IOM -2408 |  93180YC -FX3 (25G server ports) 2348 UPQ (10G server ports) 2232 PP |  UCS-IOM -2204  UCS-IOM -2208  UCS-IOM -2408* UCS-IOM- 2304  UCS-IOM- 2304V2   
 |  |  |  |  * UCS-IOM-2408 supported on M4 and M5 only with UCS 6400 Series FI Cisco UCS IOMs are applicable only for Cisco UCS B-Series Servers  
-UCSC-M-V5Q50G (Cisco UCS VIC 15428 MLOM 4-port adapter) |  - |  - |  - |  4.2(1d) |  - |  4.2(1d) |  - |  - |  4.2(3r) |  4.2(3r)  
-UCSC-M-V5D200G (Cisco UCS VIC 15238 MLOM adapter) Direct Attached only |  - |  4.2(3r) Direct Attached only |  4.2(3r) Direct Attached only  |  4.2(3r) Direct Attached only |  - |  - |  - |  4.2(3r) Direct Attached only (40/100G) |  4.2(3r) Direct Attached only (40/100G) |  4.2(3r)  
-UCSBMLV5Q 10G  (Cisco VIC 15411) |  - |  4.2(1d) |  4.2(1d) |  - |  4.2(1d) |  - |  4.2(1d) |  4.2(3r) |  - |  4.2(3r)  
-UCSC-PCIE-C100 -04  (Cisco UCS VIC 1495) |  4.0(2a) |  4.0(2a) |  4.0(2a) |  - |  4.0(2a) |  - |  4.0(2a) |  4.2(3r) Direct Attach only (40/100G) |  4.2(3r) Direct Attach only (40/100G) |  4.2(3r)  
-UCSC-MLOM-C100 -04  (Cisco UCS VIC 1497) |  4.0(2a) |  4.0(2a) |  4.0(2a) |  - |  4.0(2a) |  - |  4.0(2a) |  4.2(3r) Direct Attach only (40/100G) |  4.2(3r) Direct Attach only (40/100G) |  4.2(3r)  
-UCSB-MLOM- 40G-04  (UCS VIC 1440) |  4.0(1a) |  4.0(1a) |  4.0(1a) |  - |  4.0(1a) |  - |  4.1(1a) |  4.2(3r) |  - |  4.2(3r)  
-UCSCM- V25-04 (UCS VIC 1467) |  - |  - |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  4.2(3r) |  4.2(3r)  
-UCSC-M-V100-04 (UCS VIC 1477) |  - |  4.2(1l)Direct Attached only  |  - |  - |  - |  4.2(3r) Direct Attached only |  4.2(3r)  
-UCSB-VIC- M84-4P  (UCS VIC 1480) | 4.0(1a) | 4.0(1a) | 4.0(1a) |  - |  4.0(1a) |  - |  4.1(1a) |  4.2(3r) |  - |  4.2(3r)  
-UCSC-PCIE- C25Q-04  (UCS VIC 1455) | 4.0(1a) | 4.0(1a) |  4.0(1a) |  4.2(3r) |  4.0(1a) |  4.2(3r) |  4.1(1a) |  - |  4.2(3r) |  4.2(3r)  
-UCSC-MLOM- C25Q-04  (UCS VIC 1457) | 4.0(1a) | 4.0(1a) | 4.0(1a) |  4.2(3r) |  4.0(1a) |  4.2(3r) |  4.1(1a) |  - |  4.2(3r) |  4.2(3r)  
-UCSC-PCIE-C40Q -03 (UCS VIC 1385) UCSC-MLOM-C40Q -03 (UCS VIC 1387) |  2.2(8a)  |  3.1(3a)  |  3.1(3a)  |  4.2(3r) |  4.0(1a) |  4.2(3r) |  4.1(1a) |  - |  4.2(3r) |  4.2(3r)  
-UCSB-MLOM- 40G-03 (UCS VIC 1340) UCSB-VIC- M83-8P (UCS VIC 1380) UCSC-MLOM-CSC -02 (UCS VIC 1227) |  2.2(8a) |  3.1(3a)  |  3.1(3a)  |  - |  4.0(1a) |  - |  4.1(1a) |  4.2(3r) |  - |  4.2(3r)  
+UCSC-M-V5Q50G (Cisco UCS VIC 15428 MLOM 4-port adapter) |  - |  - |  - |  4.2(1d) |  - |  4.2(1d) |  - |  - |  4.2(3b) |  4.2(3r)  
+UCSC-M-V5D200G (Cisco UCS VIC 15238 MLOM adapter) Direct Attached only |  - |  4.2(3r) Direct Attached only |  4.2(3r) Direct Attached only  |  4.2(3r) Direct Attached only |  - |  - |  - |  4.2(3b) Direct Attached only (40/100G) |  4.2(3b) Direct Attached only (40/100G) |  4.2(3r)  
+UCSBMLV5Q 10G  (Cisco VIC 15411) |  - |  4.2(1d) |  4.2(1d) |  - |  4.2(1d) |  - |  4.2(1d) |  4.2(3b) |  - |  4.2(3r)  
+UCSC-PCIE-C100 -04  (Cisco UCS VIC 1495) |  4.0(2a) |  4.0(2a) |  4.0(2a) |  - |  4.0(2a) |  - |  4.0(2a) |  4.2(3b) Direct Attach only (40/100G) |  4.2(3b) Direct Attach only (40/100G) |  4.2(3r)  
+UCSC-MLOM-C100 -04  (Cisco UCS VIC 1497) |  4.0(2a) |  4.0(2a) |  4.0(2a) |  - |  4.0(2a) |  - |  4.0(2a) |  4.2(3b) Direct Attach only (40/100G) |  4.2(3b) Direct Attach only (40/100G) |  4.2(3r)  
+UCSB-MLOM- 40G-04  (UCS VIC 1440) |  4.0(1a) |  4.0(1a) |  4.0(1a) |  - |  4.0(1a) |  - |  4.1(1a) |  4.2(3b) |  - |  4.2(3r)  
+UCSCM- V25-04 (UCS VIC 1467) |  - |  - |  - |  4.2(1l) |  - |  4.2(1l) |  - |  - |  4.2(3b) |  4.2(3r)  
+UCSC-M-V100-04 (UCS VIC 1477) |  - |  4.2(1l)Direct Attached only  |  - |  - |  - |  4.2(3b) Direct Attached only |  4.2(3r)  
+UCSB-VIC- M84-4P  (UCS VIC 1480) | 4.0(1a) | 4.0(1a) | 4.0(1a) |  - |  4.0(1a) |  - |  4.1(1a) |  4.2(3b) |  - |  4.2(3r)  
+UCSC-PCIE- C25Q-04  (UCS VIC 1455) | 4.0(1a) | 4.0(1a) |  4.0(1a) |  4.2(3r) |  4.0(1a) |  4.2(3r) |  4.1(1a) |  - |  4.2(3b) |  4.2(3r)  
+UCSC-MLOM- C25Q-04  (UCS VIC 1457) | 4.0(1a) | 4.0(1a) | 4.0(1a) |  4.2(3r) |  4.0(1a) |  4.2(3r) |  4.1(1a) |  - |  4.2(3b) |  4.2(3r)  
+UCSC-PCIE-C40Q -03 (UCS VIC 1385) UCSC-MLOM-C40Q -03 (UCS VIC 1387) |  2.2(8a)  |  3.1(3a)  |  3.1(3a)  |  4.2(3r) |  4.0(1a) |  4.2(3r) |  4.1(1a) |  - |  4.2(3b) |  4.2(3r)  
+UCSB-MLOM- 40G-03 (UCS VIC 1340) UCSB-VIC- M83-8P (UCS VIC 1380) UCSC-MLOM-CSC -02 (UCS VIC 1227) |  2.2(8a) |  3.1(3a)  |  3.1(3a)  |  - |  4.0(1a) |  - |  4.1(1a) |  4.2(3b) |  - |  4.2(3r)  
 UCSC-PCIE-CSC-02 (UCS VIC 1225) |  2.2(8a) |  3.1(3a)  |  3.1(3a)  |  - |  4.0(1a) |  - |  4.1(1a) |  - |  - |  -  
 UCSC-P- M5S100GF (Mellanox ConnectX-5 MCX515A- CCAT 1 x 100GbE QSFP PCI NIC) |  4.1(1a) |  4.1(1a) |  4.1(1a) |  - |  4.1(1a) |  - |  4.1(1a) |  - |  - |  4.2(3r)  
 UCSC-P -M5D25GF (Mellanox ConnectX-5 MCX512A- ACAT 2 x 25Gb/10GbE SFP PCI) |  4.1(1a) |  4.1(1a) |  4.1(1a) |  - |  4.1(1a) |  - |  4.1(1a) |  - |  - |  4.2(3r)  
@@ -4142,7 +4142,7 @@ Table 20. Supported Hardware for UCS 6332, UCS 6332-16UP Fabric Interconnects Ty
 **Fabric Interconnects** |  UCS 6332UP  UCS 6332-16UP   
 **Fabric Extenders** |  Cisco UCS 2208XP  Cisco UCS 2204XP  Cisco Nexus 2232PP  Cisco Nexus 2232TM-E  Cisco UCS 2304  Cisco UCS 2304V2 Cisco Nexus 2348UPQ   
 **Power Supplies** |  UCS-PSU-6332-AC UCS-PSU-6332-DC  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -4164,7 +4164,7 @@ Table 21. Supported Hardware for UCS 6200 Fabric Interconnects Type  |  Details
 
 Following is the list of Gb connector modules, transceiver modules, and supported cables: 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -4273,7 +4273,7 @@ SFP-10G-AOC10M
 
 2 SFP-10G-AOC cables are only supported for Cisco 1455 and 1457 VIC cards. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -4349,7 +4349,7 @@ UCSB-PSU-2500ACDV  UCSB-PSU-2500DC48  UCSC-PSU-930WDC  UCSC-PSU2V2-930WDC  UCSC-
 
 We recommend that you use the current software version for Gb port speed connections. Following is the list of Gb connector modules and supported cables: 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Firmware Management Guide, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_UCSM_GUI_Firmware_Management_Guide_4-3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:01:27 |
+| **Fetched on** | 2026-08-05 09:57:51 |
 
 ---
 

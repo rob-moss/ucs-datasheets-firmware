@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Fabric Interconnects guide |
 | **URL** | https://intersight.com/help/saas/configure/fabric_interconnects |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/articles/features/fabric_interconnects/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260731131550565/docs/cloud/data/articles/features/fabric_interconnects/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_fabric_interconnects.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:03:57 |
+| **Fetched on** | 2026-08-05 10:00:13 |
 
 ---
 

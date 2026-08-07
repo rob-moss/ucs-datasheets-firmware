@@ -8,7 +8,7 @@
 | **HTML Title** | Performance Tuning Best Practices Guide for Cisco UCS M7 Platforms |
 | **Source file** | `ucs-docs-raw/html/ucs-m7-platforms-wp.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:04:47 |
+| **Fetched on** | 2026-08-05 10:01:09 |
 
 ---
 

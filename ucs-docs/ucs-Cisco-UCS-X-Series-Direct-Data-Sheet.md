@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X-Series Direct Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-x-series-direct-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:08:32 |
+| **Fetched on** | 2026-08-05 10:05:05 |
 
 ---
 

@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Nutanix HCI guide |
 | **URL** | https://intersight.com/help/saas/configure/nutanix/hci_nutanix |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/articles/features/nutanix/hci/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260731131550565/docs/cloud/data/articles/features/nutanix/hci/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_nutanix_hci_nutanix.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:04:02 |
+| **Fetched on** | 2026-08-05 10:00:18 |
 
 ---
 
@@ -18,6 +18,9 @@ Cisco Compute Hyperconverged with Nutanix is a hyperconverged infrastructure (HC
 
   * Cisco HCI standalone rack servers in Intersight Standalone Mode (ISM) and Intersight Managed Mode (IMM).
 
+  * Cisco HCI Unified Edge servers managed using Intersight.
+
+
   * A mix of modular servers and rack servers is supported in the same Nutanix cluster, but they must be connected to the same pair of Fabric interconnects. This mix is not supported when using HCI-X Direct.
 
 
@@ -25,11 +28,11 @@ The Cisco HCI X-Series delivers performance, flexibility, and optimization for d
 
 Supported Cisco HCI servers claimed in Intersight can be deployed as a Nutanix cluster with policies and profiles defined in Intersight. The supported HCI servers can be added to an existing UCS-X 9508 chassis. HCI servers can co-exist with non-HCI servers in the same chassis. The co-engineered integration between Nutanix Prism Central and Cisco Intersight enables seamless zero-touch remote deployment of Nutanix clusters with Nutanix AHV or VMware ESXi hypervisors.
 
+Cisco Unified Edge with Nutanix HCI provides a purpose-built, hyperconverged solution designed to simplify operations at the edge. By combining Cisco Unified Edge servers with Nutanix HCI software, this solution enables you to remotely deploy and manage scalable clusters, ranging from one to five nodes, using the Cisco Intersight cloud-based control plane and Nutanix Prism Central. This integration delivers centralized, cloud-like operational management, making it ideal for distributed environments that require high availability, rapid deployment, and operational simplicity.
+
 All the required policies for node identity, network connectivity, BIOS, boot order, and more are automatically built based on Nutanix and Cisco recommended best practices. The resulting server profile is associated with each HCI server. After gathering the cluster configuration details, Nutanix Foundation Central (FC) orchestrates the end-to-end remote cluster deployment through Cisco Intersight without any manual intervention.
 
-Note:
-
-Nutanix Foundation Central (FC) is a service component of Nutanix Prism Central.
+Note: Nutanix Foundation Central (FC) can be deployed as a standalone appliance or enabled as a service component of Nutanix Prism Central.
 
 Cisco Compute Hyperconverged with Nutanix software delivers pre-configured Cisco HCI servers that are ready to be deployed as nodes to form Nutanix clusters in a variety of configurations. Each server contains three software layers:
 
@@ -40,7 +43,7 @@ Cisco Compute Hyperconverged with Nutanix software delivers pre-configured Cisco
   * Hyperconverged software (Nutanix AOS)
 
 
-Cisco Intersight provides integration support with Nutanix Prism Central to deploy Nutanix HCI clusters on Cisco UCS rack mount servers and X-series modular servers. This brings the HCI into remote edge and branch offices (ROBO) with cluster size starting from as low as one node and enterprise data centers for maximum scale. The solution provides maximum flexibility with choice of either a Cisco VIC or an Intel NIC for network connectivity leveraging existing network infrastructure without the need for additional networking gear.
+Cisco Intersight provides integration support with Nutanix Foundation Central to deploy Nutanix HCI clusters on Cisco UCS rack mount servers, X-series modular servers. This brings the HCI into remote edge and branch offices (ROBO) with cluster size starting from as low as one node and enterprise data centers for maximum scale. The solution provides maximum flexibility with choice of either a Cisco VIC or an Intel NIC for network connectivity leveraging existing network infrastructure without the need for additional networking gear.
 
 This document covers prerequisites, supported network topologies and post-installation operations to:
 

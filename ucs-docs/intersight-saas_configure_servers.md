@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Servers guide |
 | **URL** | https://intersight.com/help/saas/configure/servers |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/articles/features/servers/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260731131550565/docs/cloud/data/articles/features/servers/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_servers.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:03:55 |
+| **Fetched on** | 2026-08-05 10:00:11 |
 
 ---
 
@@ -228,11 +228,11 @@ The Show Attached Policies toggle is enabled by default, displaying only the lis
 
      2. To attach a policy, hover over the policy name and click Select Policy ![](491175.png). Select the required policy or create a new policy in the side navigation window. For more information on the Server Policies, see [Server Policies](/help/configure/servers#server_policies).
 
-     3. To detach a policy, hover over the attached policy name and click Detach ![](491172.png). A confirmation message “ _Policy <policy name> will be detached, and default configuration will be applied_.” appears. Click Detach to confirm.
+     3. To detach a policy, hover over the attached policy name and click Detach ![](../files/x.png). A confirmation message “ _Policy <policy name> will be detached, and default configuration will be applied_.” appears. Click Detach to confirm.
 
-     4. Click Preview ![](491173.png) to view the details of the attached policy.
+     4. Click Preview ![](../files/eye.png) to view the details of the attached policy.
 
-     5. Click Edit ![](491174.png) to edit the attached policy.
+     5. Click Edit ![](../files/pencil.png) to edit the attached policy.
 
 Note:
 
@@ -250,7 +250,7 @@ If you modify or add a policy to a deployed Server Profile, its Status changes t
 
      3. Click Assign.
 
-     4. To detach a UUID, hover over the Assigned UUID Pool and click ![](491172.png) to detach. A confirmation message “ _UUID pool <pool name> will be detached from the profile_.” appears. Click Detach to confirm. For more information, see [UUID Pools](../../../../../../../../../../help/resources/cisco_intersight_managed_mode_configuration#configuring_pools).
+     4. To detach a UUID, hover over the Assigned UUID Pool and click ![](../files/x.png) to detach. A confirmation message “ _UUID pool <pool name> will be detached from the profile_.” appears. Click Detach to confirm. For more information, see [UUID Pools](../../../../../../../../../../help/resources/cisco_intersight_managed_mode_configuration#configuring_pools).
 
 Note:
 

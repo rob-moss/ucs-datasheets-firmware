@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Virtual Interface Card 1380 Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-732516.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:08:56 |
+| **Fetched on** | 2026-08-05 10:05:29 |
 
 ---
 

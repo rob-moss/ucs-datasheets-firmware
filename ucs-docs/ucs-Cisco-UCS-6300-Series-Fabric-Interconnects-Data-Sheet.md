@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS 6300 Series Fabric Interconnects Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-736682.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:08:51 |
+| **Fetched on** | 2026-08-05 10:05:24 |
 
 ---
 

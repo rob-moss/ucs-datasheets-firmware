@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 4.3, 5.2, 5.3, and 5.4 |
 | **Source file** | `ucs-docs-raw/html/b_intersight_server_fw_rn_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:03:32 |
+| **Fetched on** | 2026-08-05 09:59:43 |
 
 ---
 
@@ -24,6 +24,7 @@
   * Revision History
   * New Software Support
   * New Hardware Features in Server Firmware Release
+  * New hardware in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release — None
   * New hardware in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None
   * New hardware in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None
   * New Hardware in X-Series M8, M7 5.4(0.260010), M6 5.4(0.260009), C-Series M8, M7, M6 4.3(6.260017), and B-Series M6, M5 5.4(0.260011) Server Firmware Release — None
@@ -70,6 +71,7 @@
   * Cross-Version Firmware Support
   * Updating the Firmware
   * Security Fixes
+  * Security fixes in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release — None
   * Security fixes in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None
   * Security fixes in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None
   * Security Fixes in X-Series M8, M7 5.4(0.260010), M6 5.4(0.260009), C-Series M8, M7, M6 4.3(6.260017), and B-Series M6, M5 5.4(0.260011) Server Firmware Release — None
@@ -114,6 +116,7 @@
   * Security Fixes in C-Series Firmware Release 4.3(2.230207)
   * Caveats
   * Resolved Caveats
+  * Resolved issues in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release
   * Resolved issues in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049) and C-Series M8 4.3(6.260054) Server Firmware Release
   * Resolved issues in Cisco UCS X-Series M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6 5.4(0.260028) Server Firmware Release
   * Resolved Caveats in Cisco UCS B-Series M5 5.4(0.260011) and C-Series M7, M6 Server Firmware Release 4.3(6.260017)
@@ -175,6 +178,7 @@
   * Resolved Caveats in C-Series M7 Firmware Release 4.3(1.230138)
   * Resolved Caveats in C-Series M7 Firmware Release 4.3(1.230124)
   * Open Caveats
+  * Open issues in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release — None
   * Open issues in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None
   * Open issues in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None
   * Open Caveats in X-Series M8, M7 5.4(0.260010), M6 5.4(0.260009), C-Series M8, M7, M6 4.3(6.260017), and B-Series M6, M5 5.4(0.260011) Server Firmware Release — None
@@ -225,11 +229,11 @@
 
 **First Published: November 15, 2023**
 
-**Last Updated: June 25, 2026**
+**Last Updated: July 14, 2026**
 
 # Overview
 
-![](/c/dam/en/us/td/i/400001-500000/470001-480000/473001-474000/473341.jpg) ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](/c/dam/en/us/td/i/400001-500000/470001-480000/473001-474000/473341.jpg) ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -248,7 +252,7 @@ Supported Cisco UCS servers managed through Intersight are:
 
 These include Cisco UCS B-Series, C-Series, and X-Series servers connected to Intersight through Cisco UCS Fabric Interconnects.
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -289,10 +293,10 @@ To view the complete matrix in PDF format, click [here](https://www.cisco.com/c/
 
 Platform |  Supported Latest Firmware version  
 ---|---  
-Cisco UCS C-Series M5 (C220, C240, C480) |  4.3(2.260007)  
-Cisco UCS C-Series M6 (C220, C240) |  4.3(6.260054)  
-Cisco UCS B-Series M5 (B200, B480) |  5.4(0.260050)  
-Cisco UCS B-Series M6 (B200) |  5.4(0.260050)  
+Cisco UCS C-Series M5 (C220, C240, C480) |  4.3(2.260020)  
+Cisco UCS C-Series M6 (C220, C240) |  6.0(2.260143)  
+Cisco UCS B-Series M5 (B200, B480) |  6.0(1.260031)  
+Cisco UCS B-Series M6 (B200) |  6.0(2.260143)  
   
 For more information, see [End-of-Life and End-of-Sale Notices for C-Series Servers](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/eos-eol-notice-listing.html) and [End-of-Life and End-of-Sale Notices for B-Series Servers](https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-b-series-blade-servers/eos-eol-notice-listing.html). 
 
@@ -545,6 +549,11 @@ February 15, 2024 |  Updated release notes for the following Server Firmware Rel
   
 Table 5. Release 4.3(2) Revision Date |  Description  
 ---|---  
+July 14, 2026 |  Updated release notes for Cisco UCS C-Series M5 Server Firmware Release 4.3(2.260020).  This release includes updates to:
+
+  * Resolved issues in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release
+
+It does not include any new hardware support, security fixes, or open caveats.  
 February 23, 2026 |  Updated release notes for Cisco UCS C-Series M5 Server Firmware Release 4.3(2.260007).  This release includes updates to:
 
   * Resolved Caveats in C-Series M5 Server Firmware Release 4.3(2.260007)
@@ -632,6 +641,8 @@ Intersight software features may not align with the Intersight firmware release 
 
 ## New Hardware Features in Server Firmware Release
 
+### New hardware in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release — None 
+
 ### New hardware in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None 
 
 ### New hardware in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None 
@@ -705,7 +716,7 @@ The Cisco UCS X210c M8 Compute Node provides these main features:
   * Security: The server supports an optional trusted platform module (TPM). Additional features include a secure boot FPGA and ACT2 anti-counterfeit provisions. 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -782,7 +793,7 @@ The Cisco UCS C220 M8 Server offers the following:
 
   * GPU: Up to three single-wide GPUs supported. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -851,7 +862,7 @@ The Cisco UCS C240 M8 Server offers the following:
   * GPU: Up to three double-wide or eight single-wide GPUs supported. 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -991,7 +1002,7 @@ The Cisco UCS X215c M8 Compute Node offers the following:
 
 For complete list of supported peripherals for Cisco UCS X215c M8 Compute Node, see [Cisco UCS X215c M8 Compute Node Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x215c-m8-compute-node.pdf). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1063,7 +1074,7 @@ The key features of Cisco UCS C225 M8 Servers include:
 
 For complete list of supported peripherals for Cisco UCS C225 M8 Servers, see [Cisco UCS C225 M8 SFF Rack Server Spec Sheet](https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c225-m8-sff-rack-server.pdf). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1254,7 +1265,7 @@ Support for the following Cisco UCS VIC 15000 Series Secure Boot-enabled mLOM ad
 
 UCSX-ML-V5D200GV2 - Cisco UCS VIC 15230 (2x100G or 4x25G) mLOM on X-Series M6 and M7 servers.
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1405,7 +1416,7 @@ Support for the following Cisco UCS VIC 15000 Series Secure Boot-enabled mLOM ad
   * UCSC-M-V5Q50GV2 - Cisco UCS VIC 15427 (4x10/25/50G) mLOM on C-Series M6 and M7 servers.
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1427,7 +1438,7 @@ For more information, see [Supported Hardware for Intersight Managed Mode](https
   * UCSC-P-V5Q50G - Cisco UCS VIC 15425 4x10/25/50G
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1521,6 +1532,8 @@ B-Series Server Firmware Version |  Infrastructure Firmware Version
 To update the Cisco UCS firmware, see [Managing Firmware in Intersight Managed Mode](https://intersight.com/help/saas/resources#managing_firmware_in_intersight_managed_mode). 
 
 ## Security Fixes
+
+### Security fixes in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release — None 
 
 ### Security fixes in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None 
 
@@ -1944,6 +1957,16 @@ You can view the open issues, resolved issues, and security fixes using the [Cis
 
 ### **Resolved Caveats**
 
+#### Resolved issues in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release 
+
+The following table lists the resolved caveats in C-Series M5 firmware release 4.3(2.260020): 
+
+Defect ID |  Description |  First Version Affected |  Resolved in Release  
+---|---|---|---  
+[CSCwn42410](https://cdetsng.cisco.com/webui/#view=CSCwn42410) |  A partial failure of one of the M.2 drives on a Cisco UCS-M2-HWRAID controller may cause the affected drive to be reported incorrectly and may degrade the RAID 1 virtual drive.  In this condition, the drive can appear in `PhyDriveInfo` with no valid device data visible, while the reported link speed is reduced to 1.5 GB.  Additional drive attributes such as power-on hours, power cycle count, percentage life, wear status days, and temperature may all appear as 0.  Product ID and firmware fields may also be blank even though the drive is still shown as online. In some cases, the messages log may incorrectly report the affected drive as having 0% life remaining by generating an `SSD LIFE TIME LAPSE` fault.  This issue has been observed on systems using the Cisco UCS-M2-HWRAID M.2 storage controller with M.2 drives configured in a RAID 1 virtual drive.  This issue is resolved. |  4.3(2.230207) |  C-Series: 4.3(2.260020) C-Series M8, M7, M6 servers: 6.0(2.260143) C-Series M8, M7, M6 servers: 4.3(6.260054) B-Series: 6.0(1.260031)  
+[CSCws11679](https://cdetsng.cisco.com/webui/#view=CSCws11679) |  On Cisco UCS C240 M5 rack servers, the Simple Network Management Protocol (SNMP) service on Cisco Integrated Management Controller (CIMC) may stop functioning intermittently. A core file will be generated for the SNMP daemon (`snmpd`). When this condition occurs, SNMP traps and monitoring may be disrupted, affecting management and alerting systems. Disable and then re-enable SNMP from the CIMC GUI to temporarily restore SNMP functionality.  This issue is resolved. |  4.3(3.240043) |  4.3(2.260020)  
+[CSCws82531](https://cdetsng.cisco.com/webui/#view=CSCws82531) |  On Cisco UCS C-Series M5 rack servers, Basic Input/Output System (BIOS) input validation is strengthened to address a potential heap overflow condition. This condition requires root access to the Baseboard Management Controller (BMC), which is not available through standard device access methods.  This issue is resolved. |  4.3(2.250049) |  4.3(2.260020)  
+  
 #### Resolved issues in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049) and C-Series M8 4.3(6.260054) Server Firmware Release 
 
 The following table lists the resolved caveats in this release:
@@ -2511,6 +2534,8 @@ Defect ID | Description | First Bundle Affected
 CSCwe47118 |  Redfish monitor core occured during combinational stress(Redfish stress included). |  4.3(1.230097)  
   
 ### Open Caveats
+
+#### Open issues in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release — None 
 
 #### Open issues in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None 
 

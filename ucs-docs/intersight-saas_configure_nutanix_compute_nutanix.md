@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Nutanix Compute Only guide |
 | **URL** | https://intersight.com/help/saas/configure/nutanix/compute_nutanix |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/articles/features/nutanix/compute/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260731131550565/docs/cloud/data/articles/features/nutanix/compute/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_nutanix_compute_nutanix.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:04:04 |
+| **Fetched on** | 2026-08-05 10:00:19 |
 
 ---
 

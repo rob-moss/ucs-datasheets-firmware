@@ -8,7 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/pdf/x410cm7-specsheet.pdf` |
 | **File type** | PDF |
-| **Fetched on** | 2026-07-02 13:06:42 |
+| **Fetched on** | 2026-08-05 10:03:58 |
 
 ---
 
@@ -34,7 +34,7 @@ PUBLICATION HISTORY
 
 REV A.27
 
-MARCH 10, 2026
+JULY 14, 2026
 
  
 STEP
@@ -745,14 +745,6 @@ Ranks/DIMM
 
 DDR5-5600MT/s PID list1
 
-UCSX-MRX16G1RE3
-
-16GB DDR5-5600 RDIMM 1Rx8 (16Gb)
-
-UCSX-MRX32G1RE3
-
-32GB DDR5-5600 RDIMM 1Rx4 (16Gb)
-
 UCSX-MRX96G2RF3
 
 96GB DDR5-5600 RDIMM 2Rx4 (24Gb)
@@ -764,10 +756,6 @@ UCSX-MRX64G2RE3
 UCSX-MR128G2RG3
 
 128GB DDR5-5600 RDIMM 2Rx4 (32Gb)
-
-1
-
-1
 
 2
 
@@ -1350,7 +1338,6 @@ accommodate one of the following mezzanine cards:
 NOTE:  
 
 ■ The Cisco UCS X410c M7 Compute Node can be ordered with or without the 
-
 front mezzanine adapter. Refer to Table 10 Available Front Mezzanine 
 Adapters
 
@@ -1701,6 +1688,7 @@ NVMe
 NVMe
 3.8TB 2.5in U.3 15mm Micron 7500 Hg Perf Med End 1X 
 NVMe
+1.6TB 2.5in U.3 15mm Micron 7500 Hg Perf Hg End 3X NVMe NVMe
 
 NVMe
 
@@ -1740,10 +1728,15 @@ U.3
 3.2TB
 3.8TB
 
+UCSX-NVB1T6M2P
 NOTE:  Cisco uses solid state drives from several vendors. All solid state drives are subject to physical write 
 limits and have varying maximum usage limitation specifications set by the manufacturer. Cisco will not replace 
 any solid state drives that have exceeded any maximum usage specifications set by Cisco or the manufacturer, as 
 determined solely by Cisco.
+
+1.6TB
+
+U.3
 
 Notes:
 

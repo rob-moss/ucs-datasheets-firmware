@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS S3260 Server Integration with Cisco UCS Manager Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_CLI_UCSM_3260_Integration_Guide_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-07-02 13:03:15 |
+| **Fetched on** | 2026-08-05 09:59:26 |
 
 ---
 
