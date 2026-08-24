@@ -502,11 +502,17 @@ if __name__ == "__main__":
         metavar="PORT",
         help="HTTP/TCP port to listen on (default: stdio)",
     )
+    parser.add_argument(
+        "--open",
+        action="store_true",
+        help="Listen on all network interfaces instead of localhost",
+    )
     args = parser.parse_args()
     
     if args.tcp:
         # FastMCP uses HTTP transport for TCP connections
         # Parameters: host (bind address), port (TCP port)
-        server.run(transport="http", host="127.0.0.1", port=args.tcp)
+        host = "0.0.0.0" if args.open else "127.0.0.1"
+        server.run(transport="http", host=host, port=args.tcp)
     else:
         server.run()
