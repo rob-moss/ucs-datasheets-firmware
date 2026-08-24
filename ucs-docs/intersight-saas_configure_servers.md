@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Servers guide |
 | **URL** | https://intersight.com/help/saas/configure/servers |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260731131550565/docs/cloud/data/articles/features/servers/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260821153740774/docs/cloud/data/articles/features/servers/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_servers.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 10:00:11 |
+| **Fetched on** | 2026-08-24 09:16:08 |
 
 ---
 
@@ -228,11 +228,11 @@ The Show Attached Policies toggle is enabled by default, displaying only the lis
 
      2. To attach a policy, hover over the policy name and click Select Policy ![](491175.png). Select the required policy or create a new policy in the side navigation window. For more information on the Server Policies, see [Server Policies](/help/configure/servers#server_policies).
 
-     3. To detach a policy, hover over the attached policy name and click Detach ![](../files/x.png). A confirmation message “ _Policy <policy name> will be detached, and default configuration will be applied_.” appears. Click Detach to confirm.
+     3. To detach a policy, hover over the attached policy name and click Detach ![](x.png). A confirmation message “ _Policy <policy name> will be detached, and default configuration will be applied_.” appears. Click Detach to confirm.
 
-     4. Click Preview ![](../files/eye.png) to view the details of the attached policy.
+     4. Click Preview ![](eye.png) to view the details of the attached policy.
 
-     5. Click Edit ![](../files/pencil.png) to edit the attached policy.
+     5. Click Edit ![](pencil.png) to edit the attached policy.
 
 Note:
 
@@ -250,7 +250,7 @@ If you modify or add a policy to a deployed Server Profile, its Status changes t
 
      3. Click Assign.
 
-     4. To detach a UUID, hover over the Assigned UUID Pool and click ![](../files/x.png) to detach. A confirmation message “ _UUID pool <pool name> will be detached from the profile_.” appears. Click Detach to confirm. For more information, see [UUID Pools](../../../../../../../../../../help/resources/cisco_intersight_managed_mode_configuration#configuring_pools).
+     4. To detach a UUID, hover over the Assigned UUID Pool and click ![](x.png) to detach. A confirmation message “ _UUID pool <pool name> will be detached from the profile_.” appears. Click Detach to confirm. For more information, see [UUID Pools](../../../../../../../../../../help/resources/cisco_intersight_managed_mode_configuration#configuring_pools).
 
 Note:
 
@@ -403,7 +403,14 @@ The Estimate Impact workflow, for standalone and Intersight Managed Mode servers
 
 **Deploying and Activating a Server Profile**
 
-Deploy and Activate are two explicit actions that can be performed on server profiles. Policy configuration staging happens as a part of server profile deployment. Policy staging allows you to stage the policy configurations and get an idea of the pending actions for activating the policies. You can activate the policy by rebooting servers manually or using the Activate action of the Server Profile during a maintenance window. Policy activation failures are identified when the Activate action is triggered.
+Deploy and Activate are two explicit actions that can be performed on server profiles.
+
+  * Deploy—This action stages or pushes the server profile configuration to the attached server.
+
+  * Activate—This action reboots the server to apply and activate the deployed configuration changes.
+
+
+Policy configuration staging happens as a part of server profile deployment. Policy staging allows you to stage the policy configurations and get an idea of the pending actions for activating the policies. You can activate the policy by rebooting servers manually or using the Activate action of the Server Profile during a maintenance window. Policy activation failures are identified when the Activate action is triggered.
 
 The Status widget in the Server Profiles table view shows the number of profiles in Inconsistent state. A server profile will be in the Inconsistent state when it has policy changes that have not yet been deployed or activated. The Inconsistency Reason widget shows the reason why a profile is in the Inconsistent state. A server profile could be in an Inconsistent state because:
 
@@ -429,7 +436,20 @@ The third check box appears when profile changes might lead to potential disrupt
 
 Click Deploy to proceed.
 
-The Activate action reboots the server and activates the configuration on the server. You can also opt to trigger Deploy to stage the configuration changes and later trigger Activate, during the maintenance window, to activate the deployed configuration.
+The Activate action reboots the server and activates the configuration on the server. When the **Persist OS Recovery Key** option is enabled and the Boot Order policy is displayed, the server executes the Trigger Key collection task to gather and persist the necessary OS recovery keys. You can also opt to trigger Deploy to stage the configuration changes and later trigger Activate, during the maintenance window, to activate the deployed configuration.
+
+Note:
+
+When the **Persist OS Recovery Key** option is enabled in Cisco Intersight, the system attempts to fetch the Recovery Key from the operating system or rotate the Recovery Key depending on the prevailing conditions.
+
+In the Server Profile **General** details page, you can view the Recovery Key status such as:
+
+  * **Available** —The recovery key is present and accessible, allowing for recovery operations if needed.
+
+  * **Not Available** —If the recovery key is unavailable, server profile migrations cannot proceed.
+
+  * **Out of Sync** —The stored recovery key does not match the current inventory or hardware state, indicating a mismatch that may require key rotation or re-synchronization to restore proper recovery functionality.
+
 
 Note:
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 4.3, 5.2, 5.3, and 5.4 |
 | **Source file** | `ucs-docs-raw/html/b_intersight_server_fw_rn_4_3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 09:59:43 |
+| **Fetched on** | 2026-08-24 09:15:51 |
 
 ---
 
@@ -24,6 +24,7 @@
   * Revision History
   * New Software Support
   * New Hardware Features in Server Firmware Release
+  * New hardware in Cisco UCS X-Series M8, M7 5.4(0.260056) and C-Series M8, M7 4.3(6.260058) Server Firmware Release
   * New hardware in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release — None
   * New hardware in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None
   * New hardware in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None
@@ -71,6 +72,7 @@
   * Cross-Version Firmware Support
   * Updating the Firmware
   * Security Fixes
+  * Security fixes in Cisco UCS X-Series M8, M7 5.4(0.260056) and C-Series M8, M7 4.3(6.260058) Server Firmware Release — None
   * Security fixes in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release — None
   * Security fixes in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None
   * Security fixes in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None
@@ -116,6 +118,7 @@
   * Security Fixes in C-Series Firmware Release 4.3(2.230207)
   * Caveats
   * Resolved Caveats
+  * Resolved issues in Cisco UCS X-Series M8, M7 5.4(0.260056) and C-Series M8, M7 4.3(6.260058) Server Firmware Release — None
   * Resolved issues in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release
   * Resolved issues in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049) and C-Series M8 4.3(6.260054) Server Firmware Release
   * Resolved issues in Cisco UCS X-Series M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6 5.4(0.260028) Server Firmware Release
@@ -178,6 +181,7 @@
   * Resolved Caveats in C-Series M7 Firmware Release 4.3(1.230138)
   * Resolved Caveats in C-Series M7 Firmware Release 4.3(1.230124)
   * Open Caveats
+  * Open issues in Cisco UCS X-Series M8, M7 5.4(0.260056) and C-Series M8, M7 4.3(6.260058) Server Firmware Release — None
   * Open issues in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release — None
   * Open issues in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None
   * Open issues in Cisco UCS X-Series M8 5.4(0.260029), 5.4(0.260025), M7 5.4(0.260029), M6 5.4(0.260025), C-Series M8, M7, M6 4.3(6.260033), and B-Series M6, M5 5.4(0.260028) Server Firmware Release — None
@@ -229,7 +233,7 @@
 
 **First Published: November 15, 2023**
 
-**Last Updated: July 14, 2026**
+**Last Updated: August 17, 2026**
 
 # Overview
 
@@ -306,6 +310,16 @@ The following table includes the change history for this document.
 
 Table 1. Release 4.3(6) Revision Date |  Description  
 ---|---  
+August 17, 2026 |  Updated release notes for the following Server Firmware Release versions:
+
+  * Cisco UCS X-Series M8 and M7 Server Firmware Release 5.4(0.260056)
+  * Cisco UCS C-Series M8 and M7 Server Firmware Release 4.3(6.260058)
+
+This release includes updates to:
+
+  * New hardware in Cisco UCS X-Series M8, M7 5.4(0.260056) and C-Series M8, M7 4.3(6.260058) Server Firmware Release
+
+It does not include any security fixes, resolved issues, or open issues.  
 June 25, 2026 |  Updated release notes for the following Server Firmware Release versions:
 
   * Cisco UCS X-Series M8 and M7 Server Firmware Release 5.4(0.260049)
@@ -640,6 +654,46 @@ August 16, 2023 |  Created release notes for the following server firmware relea
 Intersight software features may not align with the Intersight firmware release schedule. To know more about the latest software features, see the [What's New](https://intersight.com/help/saas/whats_new) section in Intersight Help Center. 
 
 ## New Hardware Features in Server Firmware Release
+
+### New hardware in Cisco UCS X-Series M8, M7 5.4(0.260056) and C-Series M8, M7 4.3(6.260058) Server Firmware Release 
+
+  * Added support for the following DDR5 Dual Inline Memory Modules (DIMMs), rated for a memory transfer speed of 6400 MT/s on Cisco UCS X215c M8 Compute Node and Cisco UCS C245 M8 and C225 M8 Rack servers: 
+
+  * UCS-MRX16G1RE5
+
+  * UCS-MRX32G1RE5
+
+  * UCS-MR128G2RG5
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
+**Note** | 
+
+* * *
+
+The listed DDR5-6400 DIMMs are supported with 4th Gen and 5th Gen AMD EPYC CPUs on Cisco UCS X215c M8 Compute Node and Cisco UCS C245 M8 and C225 M8 Rack servers. 
+
+* * *  
+  
+---|---  
+  * Added support for the following DDR5 Dual Inline Memory Modules (DIMMs), rated for a memory transfer speed of 6400 MT/s on Cisco UCS X210c M7 Compute Node and Cisco UCS C240 M7 and C220 M7 Rack servers: 
+
+  * UCS-MRX16G1RE5
+
+  * UCS-MRX32G1RE5
+
+  * UCS-MR128G2RG5
+
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
+**Note** | 
+
+* * *
+
+The listed DDR5-6400 DIMMs are supported with 5th Gen Intel® Xeon® Scalable Processors on Cisco UCS X210c M7 Compute Node and Cisco UCS C240 M7 and C220 M7 Rack servers. 
+
+* * *  
+  
+---|---  
+
 
 ### New hardware in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release — None 
 
@@ -1533,6 +1587,8 @@ To update the Cisco UCS firmware, see [Managing Firmware in Intersight Managed M
 
 ## Security Fixes
 
+### Security fixes in Cisco UCS X-Series M8, M7 5.4(0.260056) and C-Series M8, M7 4.3(6.260058) Server Firmware Release — None 
+
 ### Security fixes in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release — None 
 
 ### Security fixes in Cisco UCS X-Series M8 5.4(0.260044), 5.4(0.260049), M7 5.4(0.260049), M6 5.4(0.260042), C-Series M8, M7, M6 4.3(6.260054), and B-Series M6, M5 5.4(0.260050) Server Firmware Release — None 
@@ -1956,6 +2012,8 @@ Cisco UCS C-series M5 servers are affected by vulnerabilities identified by the 
 You can view the open issues, resolved issues, and security fixes using the [Cisco Bug Search Tool](https://bst.cloudapps.cisco.com/bugsearch). 
 
 ### **Resolved Caveats**
+
+#### Resolved issues in Cisco UCS X-Series M8, M7 5.4(0.260056) and C-Series M8, M7 4.3(6.260058) Server Firmware Release — None 
 
 #### Resolved issues in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release 
 
@@ -2534,6 +2592,8 @@ Defect ID | Description | First Bundle Affected
 CSCwe47118 |  Redfish monitor core occured during combinational stress(Redfish stress included). |  4.3(1.230097)  
   
 ### Open Caveats
+
+#### Open issues in Cisco UCS X-Series M8, M7 5.4(0.260056) and C-Series M8, M7 4.3(6.260058) Server Firmware Release — None 
 
 #### Open issues in Cisco UCS C-Series M5 4.3(2.260020) Server Firmware Release — None 
 

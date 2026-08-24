@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X-Series Modular System - Sales Resources |
 | **Source file** | `ucs-docs-raw/html/sales-resources-listing.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 10:05:11 |
+| **Fetched on** | 2026-08-24 09:17:50 |
 
 ---
 
@@ -453,5 +453,11 @@ Learn product details such as features and benefits, as well as hardware and sof
 ## Page 5: https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/white-paper-listing.html
 
 Investigate the business and technical issues pertaining to a platform, solution, or technology and examine its technical implications within the overall network architecture.
+
+---
+
+## Page 6: https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/eos-eol-notice-listing.html
+
+Find out why a Cisco product has reached its end of life, what product upgrade and substitution options are available, and when these changes will take effect.
 
 ---

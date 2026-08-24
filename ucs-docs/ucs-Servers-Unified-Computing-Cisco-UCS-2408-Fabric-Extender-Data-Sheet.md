@@ -8,7 +8,7 @@
 | **HTML Title** | Servers - Unified Computing - Cisco UCS 2408 Fabric Extender Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-742624.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 10:05:23 |
+| **Fetched on** | 2026-08-24 09:17:57 |
 
 ---
 
@@ -1065,6 +1065,14 @@ Stay in control with industry-leading network management, automation, real-time 
 
 Overview [Resources](/site/us/en/products/networking/cloud-networking/resources.html)
 
+![](/content/dam/cisco-cdc/site/images/heroes/solutions/networking/artificial-intelligence/Nexus-one-spotlight.png)
+
+###  Advancing Cisco Nexus One with Intelligence 
+
+Cisco Nexus One delivers a unified operating model with advanced intelligence, observability, security, breakthrough silicon, and systems for seamless and secure data-center and AI-workload deployment.
+
+[Explore Nexus One](https://www.cisco.com/site/us/en/products/networking/cloud-networking/nexus-one/index.html)
+
 ## Comprehensive connections
 
 * * *
@@ -1253,6 +1261,10 @@ New plug-and-play, cloud-managed operations and validation of the full lifecycle
 
 [Explore Cisco Nexus Hyperfabric](https://www.cisco.com/site/us/en/products/networking/data-center-networking/nexus-hyperfabric/index.html)
 
+###  SONiC NOS 
+
+Adopt an open, modular network OS on future-ready hardware, with containerized services, flexible management tools, and rich API integration.
+
 ###  Data center security
 
 ###  Cisco N9300 Series Smart Switches 
@@ -1269,11 +1281,11 @@ Mitigate common vulnerability and exposure (CVE) threats in real time and help e
 
 ![Woman working on laptop](/content/dam/cisco-cdc/site/us/en/images/networking/domaindatacentercloud-carousel-370.jpg)
 
-##  Build the infrastructure that scales with you 
+##  Deliver AI everywhere with intelligent networking 
 
-Access validated architectures, deployment guides, and technical resources. Whether you're integrating compute, networking, storage, or security—find the blueprints and expertise to modernize on your terms. 
+Built for high performance, simplified operations and security at scale with enhanced visibility.
 
-[Explore modernization paths](https://www.cisco.com/site/us/en/solutions/data-center/index.html)
+[Explore AI Networking](/site/us/en/solutions/artificial-intelligence/ai-networking-in-data-center/index.html)
 
 ### Better together, built to perform 
 
@@ -1283,11 +1295,11 @@ Smoothly manage your multicloud network with the exceptional pairing of Cisco AC
 
 [Explore SD-WAN](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/kb/Cisco-ACI-and-SDWAN-Integration.html#id_94875)
 
-###  Deftly handle AI workloads 
+###  Data Center Modernization 
 
-Deliver AI networking everywhere—at the edge, in the data center, in the cloud, across enterprises, Neoclouds, sovereign clouds, telcos, and hyperscalers. 
+Access validated architectures, deployment guides, and technical resources to modernize compute, networking, storage, and security with confidence.
 
-[Get started](https://www.cisco.com/site/us/en/solutions/artificial-intelligence/ai-networking-in-data-center/index.html)
+[Explore modernization paths](/site/us/en/solutions/data-center/index.html)
 
 ###  Network-as-Code 
 
@@ -1298,14 +1310,6 @@ Manage your data-center network as code to automate provisioning, ensure version
 Previous
 
 Next
-
-![nexus-one-spotlight-graphic](/content/dam/cisco-cdc/site/images/heroes/solutions/networking/artificial-intelligence/Nexus-one-spotlight.png)
-
-##  Advancing Cisco Nexus One with Intelligence 
-
-Cisco Nexus One delivers a unified operating model with advanced intelligence, observability, security, breakthrough silicon, and systems for seamless and secure data-center and AI-workload deployment. 
-
-[Explore Nexus One](https://www.cisco.com/site/us/en/products/networking/cloud-networking/nexus-one/index.html) [View solution overview](https://www.cisco.com/c/en/us/products/collateral/networking/ios-nx-os-software/nx-os/fabric-experience-so.html)
 
 ##  Evolve your data center for tomorrow 
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS C885A M8 Rack Server Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-c885a-m8-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 10:04:55 |
+| **Fetched on** | 2026-08-24 09:17:40 |
 
 ---
 
@@ -672,7 +672,7 @@ Figure 1.
 
 UCS C880A M8 Front facing
 
-![A close-up of a computerAI-generated content may be incorrect.](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c880a-m8-rack-server-ds.docx/_jcr_content/renditions/ucs-c880a-m8-rack-server-ds_1.png)
+![Related image, diagram or screenshot](/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c880a-m8-rack-server-ds.docx/_jcr_content/renditions/ucs-c880a-m8-rack-server-ds_1.png)
 
 Figure 2. 
 
@@ -745,6 +745,7 @@ Part # |  Product description
 **UCSC-880A-M8-B306** |  2x Intel Xeon 6776P 2.3 GHz (Max Turbo 3.9 GHz) CPUs, 8x NVIDIA HGX B300 SXM GPUs, 32x 128GB up to 5,200 MT/s DIMMs, 2x 960GB M.2 SATA Boot Drive, 2x E1.S 3.84TB NVMe SSD Data Drives, 8x NVIDIA ConnectX-8 (GPU board integrated) for East/West N/W, 2x NVIDIA B3240 (2x400G) crypto-enabled for North/South N/W, 1x Intel X710-T2L OCP   
 **UCSC-880A-M8-B307** |  2x Intel Xeon 6776P 2.3 GHz (Max Turbo 3.9 GHz) CPUs, 8x NVIDIA HGX B300 SXM GPUs, 32x 64GB up to 5,200 MT/s DIMMs, 2x 960GB M.2 SATA Boot Drive, 2x E1.S 3.84TB NVMe SSD Data Drives, 8x NVIDIA ConnectX-8 (GPU board integrated) for East/West N/W, 2x NVIDIA ConnectX-7 (2x200G) crypto-enabled for North/South N/W, 1x Intel X710-T2L OCP   
 **UCSC-880A-M8-B308** |  2x Intel Xeon 6767P 2.3 GHz (Max Turbo 3.9 GHz) CPUs, 8x NVIDIA HGX B300 SXM GPUs, 32x 96GB up to 5,200 MT/s DIMMs, 2x 960GB M.2 SATA Boot Drive, 2x E1.S 3.84TB NVMe SSD Data Drives, 8x NVIDIA ConnectX-8 (GPU board integrated) for East/West N/W, 2x NVIDIA ConnectX-7 (2x200G) crypto-enabled for North/South N/W, 1x Intel X710-T2L OCP  
+**UCSC-880A-M8-B315** |  2x Intel Xeon 6767P 2.3 GHz (Max Turbo 3.9 GHz) CPUs, 8x NVIDIA HGX B300 SXM GPUs, 32x 64GB up to 5,200 MT/s DIMMs, 2x 960GB M.2 SATA Boot Drive, 2x E1.S 3.84TB NVMe SSD Data Drives, 8x NVIDIA ConnectX-8 (GPU board integrated) for East/West N/W, 2x NVIDIA B3240 (2x400G) crypto-enabled for North/South N/W, 1x Intel X710-T2L OCP  
   
 Warranty information
 

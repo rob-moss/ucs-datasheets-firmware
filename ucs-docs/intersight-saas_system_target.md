@@ -4,14 +4,14 @@
 |---|---|
 | **URL Title** | Intersight SaaS System Target |
 | **URL** | https://intersight.com/help/saas/system/target |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260731131550565/docs/cloud/data/articles/features/cisco_intersight/admin/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260821153740774/docs/cloud/data/articles/features/cisco_intersight/admin/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_system_target.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 10:00:30 |
+| **Fetched on** | 2026-08-24 09:16:25 |
 
 ---
 
-To get started with Cisco Intersight, you must claim a target for use with the Cisco Intersight platform. In Intersight, you will need the device ID and claim code, both of which are unique to the target and retrieved from the target. For Intersight Virtual Appliance, you will need to enter the IP/Hostname of the target you want to claim, the Username for the device, and the Password for the user. This user must have administrative privileges.
+To get started with Cisco Intersight, you must claim a target. For Cisco Intersight, you need the device ID and claim code, both of which are unique to the target and retrieved from it. For Intersight Virtual Appliance, enter the IP address or hostname of the target, the device username, and the user password. The user must have administrative privileges.
 
-You can also unclaim targets or remove them from your list, and, reclaim later as required. For more information, go to [Unclaim Targets](/help/getting_started/claim_targets#unclaim_targets).
+You can also unclaim targets or remove them from your list and reclaim them later as needed. For more information, see [Unclaim Targets](/help/getting_started/claim_targets#unclaim_targets).

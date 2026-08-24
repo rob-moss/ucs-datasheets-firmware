@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS B480 M5 Blade Server Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-739280.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 10:01:41 |
+| **Fetched on** | 2026-08-24 09:17:16 |
 
 ---
 

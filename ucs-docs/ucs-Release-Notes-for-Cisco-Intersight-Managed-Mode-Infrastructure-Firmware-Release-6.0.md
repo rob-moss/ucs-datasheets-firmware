@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 6.0 |
 | **Source file** | `ucs-docs-raw/html/b-intersight-infrastructure-fw-rn-6-0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 09:59:41 |
+| **Fetched on** | 2026-08-24 09:15:49 |
 
 ---
 
@@ -40,6 +40,7 @@ The following table includes the change history for this document.
 
 Table 1. Release 6.0 Revision Date |  Description  
 ---|---  
+August 17, 2026 |  X-Series M8, M7 6.0(2.260180) and C-Series M8, M7 6.0(2.260180) Server Firmware versions have been released. There is no corresponding Infrastructure Firmware release.   
 July 14, 2026 |  B-Series M5 6.0(1.260031) Server Firmware version has been released. There is no corresponding Infrastructure Firmware release.   
 June 25, 2026 |  Updated release notes for Cisco UCS 6600, 6500, and 6400 Series Fabric Interconnect and Cisco UCS X-Series Direct Fabric Interconnect Infrastructure Firmware version 6.0(2.260067).  This release includes updates to:
 
@@ -260,7 +261,7 @@ This section provides a brief description of the resolved issues.
 
 Defect ID |  Description |  First Version Affected |  Resolved in Release  
 ---|---|---|---  
-[CSCwt42965](https://cdetsng.cisco.com/webui/#view=CSCwt42965) |  On Cisco UCS X9508 chassis connected to Cisco Intersight Virtual Appliance, chassis profile deployment may fail when a Simple Network Management Protocol (SNMP) policy is attached to the profile. When this condition occurs, the device SNMP policy deployment fails, and the chassis profile does not fully deploy in Cisco Intersight.  This issue is resolved. |  4.3(6.250048) |  6.0(2.260067) 4.3(6.260036)  
+[CSCwt42965](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwt42965) |  On Cisco UCS X9508 chassis connected to Cisco Intersight Virtual Appliance, chassis profile deployment may fail when a Simple Network Management Protocol (SNMP) policy is attached to the profile. When this condition occurs, the device SNMP policy deployment fails, and the chassis profile does not fully deploy in Cisco Intersight.  This issue is resolved. |  4.3(6.250048) |  6.0(2.260067) 4.3(6.260036)  
   
 ## Resolved issues in Release 6.0(1.260006)
 
@@ -587,7 +588,7 @@ This section provides a brief description of the resolved issues.
 
 Defect ID |  Description |  First Version Affected |  Resolved in Release  
 ---|---|---|---  
-[CSCwt42965](https://cdetsng.cisco.com/webui/#view=CSCwt42965) |  On Cisco UCS X9508 chassis connected to Cisco Intersight Virtual Appliance, chassis profile deployment may fail when a Simple Network Management Protocol (SNMP) policy is attached to the profile. When this condition occurs, the device SNMP policy deployment fails, and the chassis profile does not fully deploy in Cisco Intersight.  This issue is resolved. |  4.3(6.250048) |  6.0(2.260067) 4.3(6.260036)  
+[CSCwt42965](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwt42965) |  On Cisco UCS X9508 chassis connected to Cisco Intersight Virtual Appliance, chassis profile deployment may fail when a Simple Network Management Protocol (SNMP) policy is attached to the profile. When this condition occurs, the device SNMP policy deployment fails, and the chassis profile does not fully deploy in Cisco Intersight.  This issue is resolved. |  4.3(6.250048) |  6.0(2.260067) 4.3(6.260036)  
   
 ## Resolved issues in Release 6.0(1.260006)
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco 10GBASE SFP+ Modules Data Sheet |
 | **Source file** | `ucs-docs-raw/html/data_sheet_c78-455693.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 10:05:33 |
+| **Fetched on** | 2026-08-24 09:18:03 |
 
 ---
 

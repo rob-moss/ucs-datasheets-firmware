@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.2 |
 | **Source file** | `ucs-docs-raw/html/b_Intersight_Infra_FW_RN.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 09:59:42 |
+| **Fetched on** | 2026-08-24 09:15:50 |
 
 ---
 
@@ -24,6 +24,7 @@
   * New Software Support
   * New Features in Release 
   * New Hardware Features in Infra Firmware Releases
+  * New hardware support in 4.2(3o) — None
   * New Hardware Support in 4.2(3n) — None
   * New Hardware Support in 4.2(3m) — None
   * New Hardware Support in 4.2(3c)
@@ -32,11 +33,13 @@
   * New Hardware Support in 4.2(1e)
   * Cross Version Firmware Support
   * Security Fixes
+  * Security fixes in Release 4.2(3o) — None
   * Security Fixes in Release 4.2(3n)
   * Security Fixes in Release 4.2(3m) — None
   * Security Fixes in Release 4.2(3l)
   * Caveats
   * Resolved Caveats
+  * Resolved issues in Release 4.2(3o)
   * Resolved Caveats in Release 4.2(3n) — None
   * Resolved Caveats in Release 4.2(3m)
   * Resolved Caveats in Release 4.2(3l)
@@ -52,6 +55,7 @@
   * Resolved Caveats in Release 4.2(1n)
   * Resolved Caveats in Release 4.2(1l)
   * Open Caveats
+  * Open issues in Release 4.2(3o) — None
   * Open Caveats in Release 4.2(3n) — None
   * Open Caveats in Release 4.2(3m)
   * Open Caveats in Release 4.2(3l) — None
@@ -63,7 +67,7 @@
 
 **First Published: September 26, 2023**
 
-**Last Updated: May 21, 2026**
+**Last Updated: August 5, 2026**
 
 # Overview
 
@@ -83,6 +87,11 @@ The following table shows the online change history for this document.
 
 Revision Date  | Description   
 ---|---  
+August 05, 2026 |  Updated release notes for Infrastructure Firmware Release 4.2(3o).  This release includes updates to:
+
+  * Resolved issues in Release 4.2(3o)
+
+It does not include any new hardware support, security fixes, or open issues.  
 May 21, 2026 |  Cisco UCS X-Series 5.0(4k), B-Series 4.2(3o), and C-Series 4.2(3q) Server Firmware versions have been released. There is no corresponding Infrastructure Firmware release.   
 September 23, 2025 |  Updated release notes for Infrastructure Firmware Release 4.2(3n).  This release includes updates to:
 
@@ -120,6 +129,8 @@ Intersight software features may not align with the Intersight firmware release 
 
 ### New Hardware Features in Infra Firmware Releases
 
+#### New hardware support in 4.2(3o) — None 
+
 #### New Hardware Support in 4.2(3n) — None 
 
 #### New Hardware Support in 4.2(3m) — None 
@@ -133,7 +144,7 @@ Support for the following IOM in Intersight Managed Mode:
   * UCS-IOM-2304V2 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -148,7 +159,7 @@ For more information, see [Supported Hardware for Intersight Managed Mode](https
 
 #### New Hardware Support in 4.2(3b)
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -228,6 +239,8 @@ B-Series Server Firmware Version |  Infrastructure Firmware Version
   
 ## Security Fixes
 
+### Security fixes in Release 4.2(3o) — None 
+
 ### Security Fixes in Release 4.2(3n)
 
 The following security issues are resolved: 
@@ -282,6 +295,15 @@ You can view the open issues, resolved issues, and security fixes using the [Cis
 
 ### **Resolved Caveats**
 
+#### Resolved issues in Release 4.2(3o)
+
+The following caveats are resolved in Release 4.2(3o): 
+
+Defect ID |  Description |  First Version Affected |  Resolved in Release  
+---|---|---|---  
+[CSCwt48678](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwt48678) |  On Cisco UCS X-series chassis with UCSX-I-9108-100G Intelligent Fabric Modules (IFM), after running the factory reset command `debug platform software cmcctrl factory` to securely erase the embedded MultiMediaCard (eMMC) of an IFM, the IFM may become non-operational immediately following the reboot. When this condition occurs, the IFM becomes offline and no LED indicators are visible, but the chassis PSU and fans remain operational. There is no workaround after the IFM becomes non-operational. It is recommended to contact Cisco TAC for assistance.  This issue is resolved. |  Cisco UCS 6500 and 6400 Series FI: 4.2(2c) |  4.2(3o)  
+[CSCwt42965](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwt42965) |  On Cisco UCS X9508 chassis connected to Cisco Intersight Virtual Appliance, chassis profile deployment may fail when a Simple Network Management Protocol (SNMP) policy is attached to the profile. When this condition occurs, the device SNMP policy deployment fails, and the chassis profile does not fully deploy in Cisco Intersight.  This issue is resolved. |  Cisco UCS 6500 and 6400 Series FI: 4.2(2c) |  4.2(3o)  
+  
 #### Resolved Caveats in Release 4.2(3n) — None 
 
 #### Resolved Caveats in Release 4.2(3m)
@@ -438,6 +460,8 @@ Defect ID  |  Description  |  First Bundle Affected
 CSCvz92352 |  The Intelligent Fabric Management (IFM) experiences reboot loop due to a faulty Power Supply Unit in the chassis. A faulty PSU is indicated by non solid green PSU LED.  | 4.2(2a)  
   
 ### Open Caveats
+
+#### Open issues in Release 4.2(3o) — None 
 
 #### Open Caveats in Release 4.2(3n) — None 
 

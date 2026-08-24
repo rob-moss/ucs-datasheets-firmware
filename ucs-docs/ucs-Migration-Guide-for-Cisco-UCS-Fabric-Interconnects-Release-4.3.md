@@ -8,7 +8,7 @@
 | **HTML Title** | Migration Guide for Cisco UCS Fabric Interconnects, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_migration_guide_for_cisco_ucs_fabric_interconnects_4-3.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 09:58:23 |
+| **Fetched on** | 2026-08-24 09:14:48 |
 
 ---
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS 5100 Series Blade Server Chassis Data Sheet |
 | **Source file** | `ucs-docs-raw/html/data_sheet_c78-526830.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 10:05:12 |
+| **Fetched on** | 2026-08-24 09:17:51 |
 
 ---
 

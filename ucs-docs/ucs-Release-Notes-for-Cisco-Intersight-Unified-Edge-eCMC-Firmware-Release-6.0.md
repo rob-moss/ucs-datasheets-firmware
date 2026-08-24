@@ -8,7 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Unified Edge eCMC Firmware Release, 6.0 |
 | **Source file** | `ucs-docs-raw/html/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 09:59:34 |
+| **Fetched on** | 2026-08-24 09:15:45 |
 
 ---
 
@@ -187,7 +187,7 @@ This section provides a brief description of the open issues.
 
 Defect ID |  Description |  Workaround |  First Version Affected  
 ---|---|---|---  
-[CSCwr78089](https://cdetsng.cisco.com/webui/#view=CSCwr78089) |  After replacing an eCMC (controller module hardware), the new unit does not automatically match its firmware version with the other eCMC when that unit is already connected to Intersight. This causes the two controllers to have different firmware versions, leading to a mismatch alarm in Intersight. This issue happens after replacing a single eCMC. |  To fix the mismatch, upgrade the controller modules from Intersight (only the one with older software will update), or update the replaced module manually using the command-line interface (CLI), which is a text-based management tool. |  6.0(1.251005)  
+[CSCwr78089](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwr78089) |  After replacing an eCMC (controller module hardware), the new unit does not automatically match its firmware version with the other eCMC when that unit is already connected to Intersight. This causes the two controllers to have different firmware versions, leading to a mismatch alarm in Intersight. This issue happens after replacing a single eCMC. |  To fix the mismatch, upgrade the controller modules from Intersight (only the one with older software will update), or update the replaced module manually using the command-line interface (CLI), which is a text-based management tool. |  6.0(1.251005)  
   
 Compatibility
 

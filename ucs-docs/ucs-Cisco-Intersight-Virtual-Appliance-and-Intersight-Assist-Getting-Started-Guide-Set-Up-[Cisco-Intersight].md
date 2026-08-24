@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco Intersight Virtual Appliance and Intersight Assist Getting Started Guide - Set Up [Cisco Intersight] |
 | **Source file** | `ucs-docs-raw/html/m_setting_up_appliance.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 10:00:07 |
+| **Fetched on** | 2026-08-24 09:16:04 |
 
 ---
 
@@ -43,7 +43,7 @@ Cisco Intersight Virtual Appliance is distributed as a deployable virtual machin
 
 Before You Begin: Ensure that you have installed Intersight Virtual Appliance software as per the instructions in [Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere](m_installation.html#id_95741). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -139,7 +139,7 @@ Cisco Intersight Virtual Appliance is distributed as a deployable virtual machin
 
 Before You Begin: Ensure that you have installed Intersight Virtual Appliance software as per the instructions in [Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere](m_installation.html#id_95741). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -299,7 +299,7 @@ A multi-node cluster for Intersight Virtual Appliance allows for high availabili
 
 Once you have completed the initial set up of the single-node appliance on VMware vSphere, KVM hypervisor, and Nutanix AHV hypervisor, you can add additional High Availability (HA) management nodes. After you successfully add two additional HA management nodes, you can create a multi-node cluster for high availability in Intersight Virtual Appliance. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -309,7 +309,7 @@ Multi-node cluster configuration is on VMware vSphere, KVM hypervisor, and Nutan
 * * *  
   
 ---|---  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Important** | 
 
 * * *
@@ -380,7 +380,7 @@ After you successfully complete the HA management cluster set-up, you can add a 
 
 You can deploy Intersight Virtual Appliance on VMware vSphere, KVM hypervisor, and Nutanix AHV hypervisor as a multi-node cluster which allows for advantage tier metrics data collection. This deployment option is either a two-node cluster that includes an appliance management node and a metrics node or a four-node cluster that includes a HA management cluster and a metrics node. Once you have completed the initial set up of the single-node appliance or a HA management cluster, you can add a metrics node. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -390,7 +390,7 @@ Multi-node cluster configuration is supported on VMware vSphere, KVM hypervisor,
 * * *  
   
 ---|---  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Important** | 
 
 * * *
@@ -483,6 +483,8 @@ After you successfully complete configuring the multi-node cluster for advantage
 
 Cisco Intersight Virtual Appliance is distributed as a deployable virtual appliance installer contained in an Open Virtual Appliance (OVA) file format for VMware vSphere, ZIP file format for Microsoft Hyper-V, or TAR file format for KVM Hypervisor. 
 
+Intersight Virtual Appliance backups are hypervisor-independent. You can restore a backup from one supported hypervisor to another. For example, you can restore a backup from VMware vSphere/ESXi to Microsoft Hyper-V. Before you perform a restore, ensure that the target topology is supported and that the target installer and appliance software meet the required version specifications. 
+
 To restore a Connected Virtual Appliance configuration, you can recover the data from a backup file during the initial setup. When you restore from a backup, the installer OVA, major bundle, and patch bundle must be compatible with the backup version. An appliance version consists of a major release and an optional patch release. For example, 1.1.6-0.b is the major release, and 1.1.6-1.a is a patch release applied on top of it. 
 
 The OVA version must be equal to or higher than the major release version of the backup. During the restore process, if you choose to upload bundles, it must meet the following requirements: 
@@ -499,7 +501,7 @@ The OVA version must be equal to or higher than the major release version of the
   * **Connected Virtual Appliance (Local/Network Share)** : If you use the **Local Machine** or **Network Share** options, you must manually upload the major and patch bundles. 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -603,6 +605,8 @@ Also, note that the reverted metrics node snapshots must be the same version as 
 
 Cisco Intersight Virtual Appliance is distributed as a deployable virtual appliance installer contained in an Open Virtual Appliance (OVA) file format for VMware vSphere, ZIP file format for Microsoft Hyper-V, or TAR file format for KVM Hypervisor. 
 
+Intersight Virtual Appliance backups are hypervisor-independent. You can restore a backup from one supported hypervisor to another. For example, you can restore a backup from VMware vSphere/ESXi to Microsoft Hyper-V. Before you perform a restore, ensure that the target topology is supported and that the target installer and appliance software meet the required version specifications. 
+
 To restore a Connected Virtual Appliance configuration, you can recover the data from a backup file during the initial setup. When you restore from a backup, the installer OVA, major bundle, and patch bundle must be compatible with the backup version. An appliance version consists of a major release and an optional patch release. For example, 1.1.6-0.b is the major release, and 1.1.6-1.a is a patch release applied on top of it. 
 
 The OVA version must be equal to or higher than the major release version of the backup. During the restore process, if you choose to upload bundles, it must meet the following requirements: 
@@ -617,7 +621,7 @@ The OVA version must be equal to or higher than the major release version of the
   * **Private Virtual Appliance** : If you use the **Local Machine** or **Network Share** options, you must manually upload the major and patch bundles. 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -800,7 +804,7 @@ You can monitor the progress of the workflow. The replaced node becomes fully op
 
 These tasks describe how to change the Fully Qualified Domain Name (FQDN) of Intersight Virtual Appliance for single-node, two-node, three-node, and four-node setups. The process includes initiating FQDN change on the current appliance, creating a new backup, powering down the current appliance, and using the backup to restore the appliance with the new FQDN. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -909,7 +913,7 @@ To restore a **two-node appliance set-up (stand-alone appliance + metrics node)*
 
 This action triggers a workflow to update all connected targets with the new FQDN information. Monitor this workflow to ensure it completes successfully. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Important** | 
 
 * * *
@@ -970,7 +974,7 @@ To restore a **Four-node appliance set-up (HA cluster + metrics node)** using a 
 
 This action triggers a workflow to update all connected targets with the new FQDN information. Monitor this workflow to ensure it completes successfully. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Important** | 
 
 * * *
@@ -1026,7 +1030,7 @@ After the node is replaced, it will reflect the new IPv4 address. To change the 
 
 You can change the IPv4 address of the metrics node in an existing multi-node cluster using the maintenance shell. Ensure that all the nodes are in **Operational** status before you change the IPv4 address of the metrics node. For more information, see [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1141,7 +1145,7 @@ After installing Intersight Virtual Appliance, you can log into the appliance as
 
 ## Creating an Appliance Account for Downloading Software Packages
 
-To complete an Intersight Private Virtual Appliance deployment, or manually update Intersight Connected Virtual Appliance, you will need to access the Appliance Account so that you can download the Intersight Virtual Appliance, Hyperflex, UCS Director, and HCI software packages.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+To complete an Intersight Private Virtual Appliance deployment, or manually update Intersight Connected Virtual Appliance, you will need to access the Appliance Account so that you can download the Intersight Virtual Appliance, Hyperflex, UCS Director, and HCI software packages.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1177,7 +1181,7 @@ Use the steps in this task to create an Appliance Account:
 
 Use the steps in this task to download Intersight Virtual Appliance, UCS Firmware, Hyperflex, UCS Director, and HCI software packages. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1458,7 +1462,7 @@ Multi-node |  Four-node cluster |  Intersight Virtual Appliance management capab
   * Nutanix AHV
 
   
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -1541,7 +1545,7 @@ Supported Hypervisors |  VMware ESXi 8.0 or later with VMware vSphere Web Client
 
 **Cisco Intersight Virtual Appliance only supports Acropolis Operating System (AOS) versions that are currently being actively supported and maintained by Nutanix. For more information, see [Nutanix End-of-Life Information](https://portal.nutanix.com/page/documents/eol/list?type=aos). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -1582,7 +1586,7 @@ You can view the deployment size of Intersight Virtual Appliance and make change
   3. After you review the details of the resource requirement for a supported deployment option, shut down the VM, change the CPU, RAM, and disk size as required, and restart the VM. 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1607,7 +1611,7 @@ Disk5 |  100 GiB |  100 GiB |  190 GiB
 Disk6 |  30 GiB |  30 GiB |  60 GiB  
 Disk7 |  60 GiB |  60 GiB |  360 GiB  
 Disk8 |  60 GiB |  60 GiB |  1200 GiB  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1670,7 +1674,7 @@ Alternatively, you can meet the disk requirements by performing a restore using 
   * mymetricshost.mydomain.com
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -1710,7 +1714,7 @@ For more information about connectivity, see the Network Connectivity Requiremen
   
 ## Network Connectivity Requirements for Intersight Connected Virtual Appliance
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1801,7 +1805,7 @@ For a successful target connection to Intersight Virtual Appliance, ensure that 
 
   * Configure NTP and validate that the target time is properly synchronized with a time server.
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1811,7 +1815,7 @@ When the target time is not properly synchronized, the Device Connector may be u
 * * *  
   
 ---|---  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -1867,7 +1871,7 @@ You can choose to install Intersight Assist from the installer during the set-up
 
 After claiming Intersight Assist Cisco Intersight, you can claim endpoint devices using the Claim Targets option. For more information, see [Claim Targets](https://www.intersight.com/help/saas/getting_started/claim_targets). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1900,7 +1904,7 @@ Supported Hypervisors |  VMware ESXi 8.0 and later with VMware vSphere Web Clien
 
 **Cisco Intersight Virtual Appliance only supports Acropolis Operating System (AOS) versions that are currently being actively supported and maintained by Nutanix. For more information, see [Nutanix End-of-Life Information](https://portal.nutanix.com/page/documents/eol/list?type=aos). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1925,7 +1929,7 @@ Disk5 |  100 GiB
 Disk6 |  30 GiB  
 Disk7 |  60 GiB  
 Disk8 |  60 GiB  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1944,7 +1948,7 @@ Table 8. Intersight Assist Resource Requirements for Intersight Workload Optimiz
 vCPU  |  4 |  8 |  24 |  48  
 RAM |  8 GiB |  32 GiB |  64 GiB |  96 GiB  
 Deploy Configuration |  Up to 1000 Virtual Machines |  Up to 1000 Virtual Machines |  Up to 30,000 Virtual Machines  |  Up to 100,000 Virtual Machines  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -1991,7 +1995,7 @@ Cisco Intersight Assist and Cisco Intersight runs on the following minimum suppo
 
 ## Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere
 
-Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Cisco Intersight Virtual Appliance supports VMware High Availability (VMHA) to ensure non-disruptive operation of the virtual appliance. For more information about VMHA, refer to the relevant documentation on the VMware by Broadcom website.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Cisco Intersight Virtual Appliance supports VMware High Availability (VMHA) to ensure non-disruptive operation of the virtual appliance. For more information about VMHA, refer to the relevant documentation on the VMware by Broadcom website.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -2023,12 +2027,13 @@ Ensure the following:
   * If you are installing Private Virtual Appliance, also download the latest Cisco Intersight Private Virtual Appliance software package (intersight-appliance-bundle) from the Intersight Software Downloads Portal. For more information, see [Downloading Software Packages from Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
 
   * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
+  * It is not recommended to deploy Intersight Virtual Appliance on a VM cluster that will be managed by the same appliance. However, you can deploy the appliance with a standalone C-Series based VM cluster or with a HyperFlex cluster, as long as an external witness is used. 
   * Setting up a single-node Intersight Virtual Appliance requires an IP address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (two-node cluster) requires an IPv4 address and 2 DNS records for that IP address for the single-node (appliance management node) and requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node cluster for high availability in Intersight Virtual Appliance requires three hostnames, three IP addresses, and one DC-CNAME for each hostname. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
@@ -2119,7 +2124,7 @@ For a demonstration of the Intersight Virtual Appliance Installation and trouble
 
 ## Installing Cisco Intersight Virtual Appliance and Intersight Assist on Microsoft Hyper-V Server
 
-Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or TAR file format. Install the appliance on Microsoft Hyper-V Server using the ZIP file format. For more information about Microsoft Hyper-V Server, refer to the Microsoft documentation.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or TAR file format. Install the appliance on Microsoft Hyper-V Server using the ZIP file format. For more information about Microsoft Hyper-V Server, refer to the Microsoft documentation.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -2139,12 +2144,13 @@ Ensure the following:
   * If you are installing Private Virtual Appliance, also download the latest Cisco Intersight Private Virtual Appliance software package (intersight-appliance-bundle) from the Intersight Software Downloads Portal. For more information, see [Downloading Software Packages from Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
 
   * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
+  * It is not recommended to deploy Intersight Virtual Appliance on a VM cluster that will be managed by the same appliance. However, you can deploy the appliance with a standalone C-Series based VM cluster or with a HyperFlex cluster, as long as an external witness is used. 
   * Setting up a single-node Intersight Virtual Appliance requires an IP address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node cluster for Intersight Virtual Appliance is NOT supported on Microsoft Hyper-V. 
   * Use only HTTPS protocol and fully qualified domain name to access the appliance via the Web user interface.
@@ -2254,7 +2260,7 @@ For a demonstration of the Intersight Virtual Appliance Installation and trouble
 
 ## Installing Cisco Intersight Virtual Appliance and Intersight Assist on KVM Hypervisor
 
-Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Install the appliance on KVM hypervisor using the TAR file format.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Install the appliance on KVM hypervisor using the TAR file format.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -2280,12 +2286,13 @@ Ensure the following:
   * If you are installing Private Virtual Appliance, also download the latest Cisco Intersight Private Virtual Appliance software package (intersight-appliance-bundle) from the Intersight Software Downloads Portal. For more information, see [Downloading Software Packages from Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
 
   * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
+  * It is not recommended to deploy Intersight Virtual Appliance on a VM cluster that will be managed by the same appliance. However, you can deploy the appliance with a standalone C-Series based VM cluster or with a HyperFlex cluster, as long as an external witness is used. 
   * Setting up a single-node Intersight Virtual Appliance requires an IP address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (two-node cluster) requires an IPv4 address and 2 DNS records for that IP address for the single-node (appliance management node) and requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node cluster for high availability in Intersight Virtual Appliance requires three hostnames, three IP addresses, and one DC-CNAME for each hostname. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
@@ -2419,12 +2426,13 @@ The qcow2 image files in the installer TAR file must be uploaded to Nutanix’s 
   * To upload files to Nutanix's Image Service from your local computer, uncompress and expand the TAR file to a local directory.
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
 
   * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
+  * It is not recommended to deploy Intersight Virtual Appliance on a VM cluster that will be managed by the same appliance. However, you can deploy the appliance with a standalone C-Series based VM cluster or with a HyperFlex cluster, as long as an external witness is used. 
   * Setting up a single-node Intersight Virtual Appliance requires an IPv4 address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (two-node cluster) requires an IPv4 address and 2 DNS records for that IP address for the single-node (appliance management node) and requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node cluster for high availability in Intersight Virtual Appliance requires three hostnames, three IP addresses, and one DC-CNAME for each hostname. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
@@ -2570,7 +2578,7 @@ For a demonstration of the Intersight Virtual Appliance Installation and trouble
 
 Starting with Intersight Virtual Appliance Release Version 1.1.0-0, the underlying operating system is AlmaLinux 9.
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -2625,7 +2633,7 @@ Starting with version 1.1.0-0, Intersight Virtual Appliance updated its version 
 
 This new version scheme allows Cisco to issue patch releases for important updates between software releases.
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -2651,7 +2659,7 @@ When the appliance is configured to update in the **Manual** mode, you have a ch
 
 You can switch between the two software update modes at any time. However, if an update is pending, switching to a different mode will cancel the pending update. For example, if you have a pending update in **Automatic** mode and switch to **Manual** mode, the pending update will be canceled. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -2749,7 +2757,7 @@ Intersight Private Virtual Appliance provides a way to manually update to any av
 
 You can download the required packages from the Appliance Portal to manually update your Private Virtual Appliance. For more information, see [Creating an Appliance Account for Downloading Software Packages](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1f723e1-5c59-42de-aa7e-b952edad87e8) and [Downloading Software Packages for Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -2935,7 +2943,7 @@ You can use the following methods to protect Intersight Virtual Appliance:
 
 You can perform a backup once a day using a scheduled backup or create a backup on demand. Intersight Virtual Appliance supports full-state backups that can be saved to a remote server or to a local machine. In a site failure or other disaster recovery scenario, you can use the backup file to perform a full-state recovery of the appliance. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3075,7 +3083,7 @@ In addition, the Metrics screen displays the active server count along with the 
 
 After metrics collection is enabled for the Virtual Appliance, you can choose to enable or disable metrics collection on individual servers or all the servers in IMM or UMM domains. You can select the **Collect metrics for new servers** checkbox to automatically enable metrics collection for any new servers added to the domain. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3096,7 +3104,7 @@ To configure metrics collection, do the following:
 
   4. Toggle Enable Metrics to enable metrics collection. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3224,7 +3232,7 @@ Click Save.
 
 ## Configuring DNS 
 
-This task describes how to configure DNS settings in Cisco Intersight Virtual Appliance.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+This task describes how to configure DNS settings in Cisco Intersight Virtual Appliance.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3293,7 +3301,7 @@ Intersight Virtual Appliance provides you with the ability to configure up to fi
   * Alarms —All Intersight alarms, including appliance alarms, that provide alerts about a failure (fault) in the managed target or when a threshold has been crossed. For information about alarms in Intersight, see [Alarms](https://intersight.com/help/saas/my_dashboard/dashboard_management#alarms). For more information about alarms in Intersight Virtual Appliance, see the Alarms in Intersight Virtual Appliance table in Appliance Monitoring. 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -3401,7 +3409,7 @@ Once the configuration is complete, you can verify the SMTP settings by sending 
 
 The result of trying to send a test email is displayed on the screen. If it is successful, you can confirm that you received the test email with the subject Cisco Intersight SMTP Configuration Test Email at the specified email address. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3446,7 +3454,7 @@ The Add Rule screen displays.
 
   5. In the Email field, type an email address to which you want generated email notifications sent. Click the (+) icon to enter additional email addresses for other destinations. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3488,7 +3496,7 @@ Note the following restrictions for configuring email notifications.
 
 Intersight Virtual Appliance allows you to configure email notifications when a new software update or a new patch update becomes available for installation and when a new software update or a patch update is completed. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3530,7 +3538,7 @@ To set up SSO through the appliance, you must log in to Cisco Intersight Virtual
 
 The IdP you add to Intersight must support SAML 2.0 and a service provider initiated SSO. The most commonly used IdPs have different instructions to complete the setup. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3587,7 +3595,7 @@ The following details about the Trusted Certificates are displayed in the table 
 
   4. Click Browse to select the certificate that is stored in your system and click Save. After the certificate is successfully imported, it is displayed in the Trusted Certificates table view. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Important** | 
 
 * * *
@@ -3603,7 +3611,7 @@ The trusted certificate that you want to import must be in base64 encoded X.509(
 
 To enable secure HTTPS access of the appliance through the browser, you can generate a Certificate Signing Request and import a certificate, or you can switch to a self-signed certificate. You can access these tasks by navigating to Settings > Authentication > Certificates > SSL. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3655,7 +3663,7 @@ When you click Create CSR, a new Certificate Signing Request (CSR) is generated.
 
   * **Download CSR** —Allows you to download and store the CSR locally to obtain a trusted certificate from a Certificate Authority (CA). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3808,7 +3816,7 @@ Intersight Virtual Appliance allows you to override Group role assignments to us
   * Local Users—authenticated via Intersight Virtual Appliance 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -3852,7 +3860,7 @@ Use these instructions to add a user in Intersight Virtual Appliance:
 
 Consecutive incorrect login attempts within a configured time duration are tracked for local users and the accounts will be locked out if they exceed the configured number of maximum incorrect login attempts during this duration. Once the local user account is locked, the Local User table displays a warning icon next to the user. The account is automatically unlocked after the configured lockout period elapses. The Account Administrator or the User Access Administrator can unlock the account by resetting the password during the configured lockout period. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -3949,7 +3957,7 @@ To reset the password of a local user:
   5. Click Save. 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -4001,7 +4009,7 @@ A Group represents a collection of users with a specific role, permissions, and 
 
 In addition to the system-defined roles in Intersight, you can create a user-defined role. On the Roles page, you can view a list of the roles added to an account. This list displays the Name, Type, Usage, Scope, and a Description of the roles. Use these instructions to create a user-defined role: 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -4049,7 +4057,7 @@ You can choose to retain the default account level settings for Session Timeout,
 
 You can switch between accounts or roles in Cisco Intersight without logging out of the application. If you are logged into multiple accounts or roles, the Profile menu in the Intersight dashboard provides the option to Switch Account or Role. 
 
-![](/c/dam/en/us/td/i/300001-400000/300001-310000/306001-307000/306921.jpg) ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](/c/dam/en/us/td/i/300001-400000/300001-310000/306001-307000/306921.jpg) ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -4083,7 +4091,7 @@ Select Account and Role window displays.
 
 On the Organizations page, you can view a list of organizations added to an account. This list displays the Name, Memberships, Usage, and Description. Use these instructions to add an organization: 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -4106,7 +4114,7 @@ On the Organizations page, you can view a list of organizations added to an acco
 
   * Custom—From the list of targets available in the account, select the required targets, to allocate a set of physical resources to the organization. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Important** | 
 
 * * *
@@ -4189,7 +4197,7 @@ Device Connector upgrade from Intersight Cloud is optional. During the upgrade f
 
   * The endpoint device connector version and the public key 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -4269,7 +4277,7 @@ In the appliance UI, choose System > Appliance Details to view the following det
 
   * Disk Usage—Table view presents the usage for disks 1 through 8. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -4302,7 +4310,7 @@ System |  Appliance Backup |  Warning: An Intersight Appliance backup has not be
 System |  Appliance Backup |  Critical: The most recent Intersight Appliance backup failed. Please schedule or create another backup. |  One alarm per appliance  
 System |  Cloud Connectivity |  Warning: Connection to Intersight cloud has been down for more than 30 days Critical: Connection to Intersight cloud has been down for more than 60 days Highly Critical: Connection to Intersight cloud has been down for more than 90 days; claiming new devices is not permitted until connection is restored.  |  One alarm per appliance  
 Node |  Network Link Connectivity |  Warning: The latency between cluster nodes is greater than 10ms |  One alarm per link per node  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -4371,7 +4379,7 @@ Check the status of your installation by visiting <https://fqdn-of-your-applianc
 
        2. Log in as the admin user with username admin and enter the administrator password that you used during the appliance deployment. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -4443,7 +4451,7 @@ This option is useful when you fix the configuration on your network that was pr
 
   
 Maintenance Options |  **Options in this sub-menu are intended for debugging and recovery and must be used as instructed by Cisco TAC**. You can access this option as an **admin** user.  [4] Show system service status—This option provides a summary of the running/pending services and reports any errors. This option enables you to monitor the status of the appliance if the system is unresponsive or if there is a service disruption at any time.  [5] Restart system services—This option enables you to troubleshoot the appliance and restart the services running on it.  [6] Reboot virtual appliance node—This option stops services, reboots the appliance, and restores the services when the appliance reboots.  [7] Show node status—This option displays the fully qualified domain name of the appliance VM and their operational status.  [8] Launch console UI—This option enables you to launch the console UI from the maintenance shell.  [9] Shutdown appliance node—This option gracefully stops services and shuts down the appliance node from the maintenance shell.  [10] Read-only maintenance shell—This option launches a Linux bash shell in a primarily read-only environment. You cannot make changes to the Appliance from this shell, but you can perform read-only diagnostic actions to validate the appliance within your network environment. Common Linux commands such as curl, wget, dig, nslookup, ssh, scp, ping, and traceroute are available to help troubleshoot local networking issues.   
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -4493,7 +4501,7 @@ Note the following information about the Console UI:
 
   * The Console UI is displayed on the default console screen. You can still log in as an **admin** user for the diagnostic shell, as an example, on alternate console screens. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -4581,7 +4589,7 @@ Before you open a case, ensure that the following requirements are met:
   * Your Cisco ID is associated with the service contract.
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -4625,7 +4633,7 @@ After completing your appliance setup and claiming a target, you can collect a t
 
   * In the case of **HyperFlex Clusters** , after selecting a cluster and a corresponding node for the cluster, click the ellipsis (**...**) button for your selection and then select Collect Tech Support Bundle. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -4655,7 +4663,7 @@ You can now proceed to [Cisco Support Case Manager](https://mycase.cloudapps.cis
 
 In extreme cases where your Intersight Virtual Appliance becomes unreachable via SSH on the network and you need Cisco TAC support, it is not possible to enable the Cisco TAC support mode on the Appliance via the VMWare Remote Console (VMRC). Hence, you will need to add a Serial Port device to the Appliance virtual machine. This Serial Port will enable Cisco TAC, with your assistance, to connect to your Intersight Virtual Appliance and enter a Cisco TAC support mode. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -4711,7 +4719,7 @@ You will now be able to telnet to the vCenter host IP address at the port you sp
 
 ## Send Feedback
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -4954,7 +4962,7 @@ The Console UI also displays warning messages when the following errors are enco
 
 ## Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere
 
-Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Cisco Intersight Virtual Appliance supports VMware High Availability (VMHA) to ensure non-disruptive operation of the virtual appliance. For more information about VMHA, refer to the relevant documentation on the VMware by Broadcom website.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Cisco Intersight Virtual Appliance supports VMware High Availability (VMHA) to ensure non-disruptive operation of the virtual appliance. For more information about VMHA, refer to the relevant documentation on the VMware by Broadcom website.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -4986,12 +4994,13 @@ Ensure the following:
   * If you are installing Private Virtual Appliance, also download the latest Cisco Intersight Private Virtual Appliance software package (intersight-appliance-bundle) from the Intersight Software Downloads Portal. For more information, see [Downloading Software Packages from Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
 
   * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
+  * It is not recommended to deploy Intersight Virtual Appliance on a VM cluster that will be managed by the same appliance. However, you can deploy the appliance with a standalone C-Series based VM cluster or with a HyperFlex cluster, as long as an external witness is used. 
   * Setting up a single-node Intersight Virtual Appliance requires an IP address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (two-node cluster) requires an IPv4 address and 2 DNS records for that IP address for the single-node (appliance management node) and requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node cluster for high availability in Intersight Virtual Appliance requires three hostnames, three IP addresses, and one DC-CNAME for each hostname. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
@@ -5082,7 +5091,7 @@ For a demonstration of the Intersight Virtual Appliance Installation and trouble
 
 ## Installing Cisco Intersight Virtual Appliance and Intersight Assist on Microsoft Hyper-V Server
 
-Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or TAR file format. Install the appliance on Microsoft Hyper-V Server using the ZIP file format. For more information about Microsoft Hyper-V Server, refer to the Microsoft documentation.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or TAR file format. Install the appliance on Microsoft Hyper-V Server using the ZIP file format. For more information about Microsoft Hyper-V Server, refer to the Microsoft documentation.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -5102,12 +5111,13 @@ Ensure the following:
   * If you are installing Private Virtual Appliance, also download the latest Cisco Intersight Private Virtual Appliance software package (intersight-appliance-bundle) from the Intersight Software Downloads Portal. For more information, see [Downloading Software Packages from Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
 
   * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
+  * It is not recommended to deploy Intersight Virtual Appliance on a VM cluster that will be managed by the same appliance. However, you can deploy the appliance with a standalone C-Series based VM cluster or with a HyperFlex cluster, as long as an external witness is used. 
   * Setting up a single-node Intersight Virtual Appliance requires an IP address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node cluster for Intersight Virtual Appliance is NOT supported on Microsoft Hyper-V. 
   * Use only HTTPS protocol and fully qualified domain name to access the appliance via the Web user interface.
@@ -5217,7 +5227,7 @@ For a demonstration of the Intersight Virtual Appliance Installation and trouble
 
 ## Installing Cisco Intersight Virtual Appliance and Intersight Assist on KVM Hypervisor
 
-Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Install the appliance on KVM hypervisor using the TAR file format.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Install the appliance on KVM hypervisor using the TAR file format.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -5243,12 +5253,13 @@ Ensure the following:
   * If you are installing Private Virtual Appliance, also download the latest Cisco Intersight Private Virtual Appliance software package (intersight-appliance-bundle) from the Intersight Software Downloads Portal. For more information, see [Downloading Software Packages from Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
 
   * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
+  * It is not recommended to deploy Intersight Virtual Appliance on a VM cluster that will be managed by the same appliance. However, you can deploy the appliance with a standalone C-Series based VM cluster or with a HyperFlex cluster, as long as an external witness is used. 
   * Setting up a single-node Intersight Virtual Appliance requires an IP address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (two-node cluster) requires an IPv4 address and 2 DNS records for that IP address for the single-node (appliance management node) and requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node cluster for high availability in Intersight Virtual Appliance requires three hostnames, three IP addresses, and one DC-CNAME for each hostname. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
@@ -5382,12 +5393,13 @@ The qcow2 image files in the installer TAR file must be uploaded to Nutanix’s 
   * To upload files to Nutanix's Image Service from your local computer, uncompress and expand the TAR file to a local directory.
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
 
   * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
+  * It is not recommended to deploy Intersight Virtual Appliance on a VM cluster that will be managed by the same appliance. However, you can deploy the appliance with a standalone C-Series based VM cluster or with a HyperFlex cluster, as long as an external witness is used. 
   * Setting up a single-node Intersight Virtual Appliance requires an IPv4 address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (two-node cluster) requires an IPv4 address and 2 DNS records for that IP address for the single-node (appliance management node) and requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node cluster for high availability in Intersight Virtual Appliance requires three hostnames, three IP addresses, and one DC-CNAME for each hostname. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
@@ -6748,7 +6760,7 @@ You can use the following methods to protect Intersight Virtual Appliance:
 
 You can perform a backup once a day using a scheduled backup or create a backup on demand. Intersight Virtual Appliance supports full-state backups that can be saved to a remote server or to a local machine. In a site failure or other disaster recovery scenario, you can use the backup file to perform a full-state recovery of the appliance. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -6888,7 +6900,7 @@ In addition, the Metrics screen displays the active server count along with the 
 
 After metrics collection is enabled for the Virtual Appliance, you can choose to enable or disable metrics collection on individual servers or all the servers in IMM or UMM domains. You can select the **Collect metrics for new servers** checkbox to automatically enable metrics collection for any new servers added to the domain. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -6909,7 +6921,7 @@ To configure metrics collection, do the following:
 
   4. Toggle Enable Metrics to enable metrics collection. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -7037,7 +7049,7 @@ Click Save.
 
 ## Configuring DNS 
 
-This task describes how to configure DNS settings in Cisco Intersight Virtual Appliance.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+This task describes how to configure DNS settings in Cisco Intersight Virtual Appliance.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -7106,7 +7118,7 @@ Intersight Virtual Appliance provides you with the ability to configure up to fi
   * Alarms —All Intersight alarms, including appliance alarms, that provide alerts about a failure (fault) in the managed target or when a threshold has been crossed. For information about alarms in Intersight, see [Alarms](https://intersight.com/help/saas/my_dashboard/dashboard_management#alarms). For more information about alarms in Intersight Virtual Appliance, see the Alarms in Intersight Virtual Appliance table in Appliance Monitoring. 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -7214,7 +7226,7 @@ Once the configuration is complete, you can verify the SMTP settings by sending 
 
 The result of trying to send a test email is displayed on the screen. If it is successful, you can confirm that you received the test email with the subject Cisco Intersight SMTP Configuration Test Email at the specified email address. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -7259,7 +7271,7 @@ The Add Rule screen displays.
 
   5. In the Email field, type an email address to which you want generated email notifications sent. Click the (+) icon to enter additional email addresses for other destinations. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -7301,7 +7313,7 @@ Note the following restrictions for configuring email notifications.
 
 Intersight Virtual Appliance allows you to configure email notifications when a new software update or a new patch update becomes available for installation and when a new software update or a patch update is completed. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -7343,7 +7355,7 @@ To set up SSO through the appliance, you must log in to Cisco Intersight Virtual
 
 The IdP you add to Intersight must support SAML 2.0 and a service provider initiated SSO. The most commonly used IdPs have different instructions to complete the setup. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -7400,7 +7412,7 @@ The following details about the Trusted Certificates are displayed in the table 
 
   4. Click Browse to select the certificate that is stored in your system and click Save. After the certificate is successfully imported, it is displayed in the Trusted Certificates table view. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Important** | 
 
 * * *
@@ -7416,7 +7428,7 @@ The trusted certificate that you want to import must be in base64 encoded X.509(
 
 To enable secure HTTPS access of the appliance through the browser, you can generate a Certificate Signing Request and import a certificate, or you can switch to a self-signed certificate. You can access these tasks by navigating to Settings > Authentication > Certificates > SSL. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -7468,7 +7480,7 @@ When you click Create CSR, a new Certificate Signing Request (CSR) is generated.
 
   * **Download CSR** —Allows you to download and store the CSR locally to obtain a trusted certificate from a Certificate Authority (CA). 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -7621,7 +7633,7 @@ Intersight Virtual Appliance allows you to override Group role assignments to us
   * Local Users—authenticated via Intersight Virtual Appliance 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -7665,7 +7677,7 @@ Use these instructions to add a user in Intersight Virtual Appliance:
 
 Consecutive incorrect login attempts within a configured time duration are tracked for local users and the accounts will be locked out if they exceed the configured number of maximum incorrect login attempts during this duration. Once the local user account is locked, the Local User table displays a warning icon next to the user. The account is automatically unlocked after the configured lockout period elapses. The Account Administrator or the User Access Administrator can unlock the account by resetting the password during the configured lockout period. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -7762,7 +7774,7 @@ To reset the password of a local user:
   5. Click Save. 
 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -7814,7 +7826,7 @@ A Group represents a collection of users with a specific role, permissions, and 
 
 In addition to the system-defined roles in Intersight, you can create a user-defined role. On the Roles page, you can view a list of the roles added to an account. This list displays the Name, Type, Usage, Scope, and a Description of the roles. Use these instructions to create a user-defined role: 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -7862,7 +7874,7 @@ You can choose to retain the default account level settings for Session Timeout,
 
 You can switch between accounts or roles in Cisco Intersight without logging out of the application. If you are logged into multiple accounts or roles, the Profile menu in the Intersight dashboard provides the option to Switch Account or Role. 
 
-![](/c/dam/en/us/td/i/300001-400000/300001-310000/306001-307000/306921.jpg) ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](/c/dam/en/us/td/i/300001-400000/300001-310000/306001-307000/306921.jpg) ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -7896,7 +7908,7 @@ Select Account and Role window displays.
 
 On the Organizations page, you can view a list of organizations added to an account. This list displays the Name, Memberships, Usage, and Description. Use these instructions to add an organization: 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -7919,7 +7931,7 @@ On the Organizations page, you can view a list of organizations added to an acco
 
   * Custom—From the list of targets available in the account, select the required targets, to allocate a set of physical resources to the organization. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Important** | 
 
 * * *
@@ -8002,7 +8014,7 @@ Device Connector upgrade from Intersight Cloud is optional. During the upgrade f
 
   * The endpoint device connector version and the public key 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Attention** | 
 
 * * *
@@ -8082,7 +8094,7 @@ In the appliance UI, choose System > Appliance Details to view the following det
 
   * Disk Usage—Table view presents the usage for disks 1 through 8. 
 
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *
@@ -8115,7 +8127,7 @@ System |  Appliance Backup |  Warning: An Intersight Appliance backup has not be
 System |  Appliance Backup |  Critical: The most recent Intersight Appliance backup failed. Please schedule or create another backup. |  One alarm per appliance  
 System |  Cloud Connectivity |  Warning: Connection to Intersight cloud has been down for more than 30 days Critical: Connection to Intersight cloud has been down for more than 60 days Highly Critical: Connection to Intersight cloud has been down for more than 90 days; claiming new devices is not permitted until connection is restored.  |  One alarm per appliance  
 Node |  Network Link Connectivity |  Warning: The latency between cluster nodes is greater than 10ms |  One alarm per link per node  
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
+![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
 **Note** | 
 
 * * *

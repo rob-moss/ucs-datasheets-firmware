@@ -5,16 +5,85 @@
 | **URL Title** | UCS X-Series M6 Sustainability Offer Ordering Guide |
 | **URL** | https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucsx-m-sustain.pdf |
 | **Long URL** |  |
-| **HTML Title** | Cisco UCS X-Series Modular System - Cisco |
+| **HTML Title** | Cisco UCS X-Series Modular System   - Cisco |
 | **Source file** | `ucs-docs-raw/pdf/ucsx-m-sustain.pdf` |
 | **File type** | HTML (fallback from .pdf URL) |
-| **Fetched on** | 2026-06-24 11:20:01 |
+| **Fetched on** | 2026-08-24 09:17:29 |
 
 ---
 
   * Skip to main content
   * Skip to search
   * Skip to footer
+
+
+[ Cisco.com Worldwide ](https://www.cisco.com "Cisco.com Worldwide")
+
+###  Products and Services
+
+Close
+
+###  Solutions
+
+Close
+
+###  Support
+
+Close
+
+###  Learn
+
+Close
+
+###  Why Cisco
+
+Close
+
+###  Partners
+
+Close
+
+[ Trials and demos](/site/us/en/products/trials-demos.html?linkclickid=hdr-mainnav-trialsdemos)
+
+[ How to buy](/site/us/en/buy/index.html?linkclickid=hdr-utilnav-howtobuy)
+
+Partners
+
+EN US
+
+Profile
+
+[ Log in](/content/cdc/login.html?referer=)
+
+[ Trials and demos](/site/us/en/products/trials-demos.html?linkclickid=hdr-mainnav-trialsdemos)
+
+MENU
+
+CLOSE
+
+[ How to buy](/site/us/en/buy/index.html?linkclickid=hdr-utilnav-howtobuy)
+
+Partners
+
+Profile
+
+[ Log in](/content/cdc/login.html?referer=)
+
+EN US
+
+Close
+
+Close
+
+Close
+
+Close
+
+Close
+
+  1. [ Products ](/site/us/en/products/index.html)
+  2. [ Computing ](/site/us/en/products/computing/index.html)
+  3. [ Servers ](/site/us/en/products/computing/servers-unified-computing-systems/index.html)
 
 
 ![](/content/dam/cisco-cdc/site/images/heroes/products/computing/ucs-x-series_marquee-v3-3200x1312.jpg)
@@ -29,7 +98,11 @@ Finally, a box designed to rethink what a server can and should be. Get hybrid c
 
 Overview [Resources](/site/us/en/products/computing/servers-unified-computing-systems/ucs-x-series-modular-systems/resources.html)
 
-[ Watch it work](https://engage2demand.cisco.com/LP=27264)
+Primary CTA Reduced
+
+__
+
+Hello, how can I help?
 
 ## Flex like never before
 
@@ -180,9 +253,7 @@ Show more
 
 * * *
 
-* * *
-
-## Cisco AI PODs 
+## Cisco AI PODs
 
 ###  What are Cisco AI PODs? 
 
@@ -196,15 +267,13 @@ Explore the unique partnership between Cisco and NVIDIA to improve AI security a
 
 [Discover now ](https://www.cisco.com/site/us/en/solutions/artificial-intelligence/secure-ai-factory/index.html)
 
-* * *
+![](/content/dam/cisco-cdc/site/images/logos/3rd-party/omdia-750x422.jpg)
 
-![IDC logo](/content/dam/cisco-cdc/site/images/logos/3rd-party/IDC-logo.svg)
+###  Your infrastructure's AI-era reality check by Omdia 
 
-###  New IDC research: Infrastructure built for the AI era 
+See how Omdia independently tested and validated Cisco UCS X-Series M8 migrations and verified up to 63% lower power use. How much could you save? 
 
-See why organizations are turning to modular compute and unified lifecycle management as infrastructure environments grow in scale and complexity. 
-
-[Get IDC Spotlight](https://www.cisco.com/site/us/en/products/computing/offers/assets/intersight-idc-spotlight.html)
+[Download report](https://www.cisco.com/site/us/en/products/computing/offers/assets/omdia-technical-validation-report.html)
 
 ![](/content/dam/cisco-cdc/site/images/photography/products/computing/forrester-tei-report-stats-v2.svg)
 
@@ -216,11 +285,11 @@ Hear how Cisco Intersight improved IT productivity and provided a 192% ROI. Expl
 
 ![Cisco Intersight in Action](/content/dam/cisco-cdc/site/us/en/images/cloud-and-computing/ucs-x-series-demo-intersight-ui-670x377.jpg)
 
-## See the future in action
-
 Watch Cisco Intersight in action managing UCS, HyperFlex, and third-party devices.
 
-[View all demos ](https://www.cisco.com/site/us/en/products/computing/hybrid-cloud-operations/intersight-platform/demos.html)
+##  See the future in action 
+
+[View all demos](https://www.cisco.com/site/us/en/products/computing/hybrid-cloud-operations/intersight-platform/demos.html)
 
 ## Cisco AI servers portfolio
 
@@ -246,7 +315,7 @@ Boost AI performance with C845A and C240 rack servers with PCIe GPU density or N
 
 Bridge the gap between IT and AI applications with a modular platform that enables unmatched flexibility.
 
-[Explore Cisco AI servers](/site/us/en/solutions/cisco-on-cisco/ai-ready-automated-network-observability.html)
+[Explore Cisco AI servers](https://www.cisco.com/site/us/en/products/computing/servers-unified-computing-systems/x-series-ai/index.html)
 
 * * *
 
@@ -270,27 +339,49 @@ Drive simplicity and modernize your hyperconverged infrastructure (HCI) with the
 
 [See infographic](https://www.cisco.com/c/m/en_us/products/computing/hyperconverged/nutanix/cisco-hci-nutanix-infographic.html)
 
-## Jump-start your UCS X-Series journey with limited-time savings
+## Frequently Asked Questions
 
-###  Cisco UCS X-Series savings offer 
+###  What is Cisco Unified Computing System?
 
-New X-Series customers receive a free chassis and free Fabric Interconnect.
+Cisco Unified Computing System (Cisco UCS) is a set of pre-integrated data center components that includes blade servers, rack servers, storage servers, adapters, fabric interconnects, and fabric extenders (FEX) that are integrated under a common embedded management system. This approach results in far fewer system components and much better manageability, operational efficiencies, and flexibility than comparable data center platforms.
 
-This offer expires soon.
+###  How does Cisco UCS work?
 
-[Save now](https://www.cisco.com/c/en/us/solutions/computing/ucsx-chassis-promotional-offer.html?ccid=cc002971&oid=porcsm028956)
+Cisco UCS is the first data center platform that combines industry-standard, x86-architecture blade, rack, and storage servers with networking and storage access into a single converged system. The system is a set of pre-integrated data center components that creates a virtual server comprised of blade, rack, and storage servers, network adapters, fabric extenders, and fabric interconnects, all of which are integrated under a common embedded management system. The system is self-aware and self-integrating. It automatically discovers and inventories components. It enables cross-IT collaboration inside a single intuitive graphical interface using role-based access for multiple IT administrators (server, network, and storage).
 
-###  Cisco UCS X-Series M7 offer 
+###  What is the Cisco UCS X-Series?
 
-Get one free UCS X210c M7 Compute Node for every three you buy.
+The Cisco UCS X-Series with Cisco Intersight is a modular system managed from the cloud. It is designed to be shaped to meet the needs of modern applications and improve operational efficiency, agility, and scale through an adaptable, future-ready, modular design.
 
-[Start saving](https://www.cisco.com/c/en/us/solutions/cloud-computing/promotions-free-trials/x-series-m7-offer.html?ccid=cc002971&oid=podetr031310)
+###  What does a UCS X-Series Modular System do?
 
-## Read customer reviews
+The Cisco UCS X-Series provides functionalities of both blade and rack servers by offering compute density, storage capacity, and expandability in a single system, embracing a wide range of workloads in your data center.
 
-Previous
+###  What are the benefits of Cisco UCS X-Series Modular Systems?
 
-Next
+Benefits include:
+
+  * Adapt to any application: Consolidate onto a platform that combines the density and efficiency of blade servers with the expandability of rack servers.
+  * Prepare for the future: Embrace new technology and cut risk with a system designed to support future technology with management delivered as SaaS.
+  * Increase efficiency: Get better performance with 3rd, 4th, and 5th Gen Intel Xeon Scalable or 4th and 5th Gen AMD EPYC(tm) processors and up to 12 TB memory. Use Cisco UCS M8 servers with Intel Xeon 6 processors for HPC and data center applications
+  * Consolidate your older Cisco UCS M4 and M5 servers onto the Cisco UCS X-Series, with the following improvements:
+
+
+o Reduce total power consumption by 31%
+
+o Reduce recurring software costs by up to 27%
+
+o Reduce operating costs by 73%
+
+o Reduce hardware maintenance costs by 39%
+
+###  Where can I find support resources for Cisco UCS X-Series Modular System?
+
+For more detailed support information, please visit [this Cisco UCS X-Series Modular System support page.](https://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-x-series-modular-system/series.html)
+
+Discover articles, discussions and more at [this Cisco Unified Computing System community page. ](https://community.cisco.com/t5/unified-computing-system-ucs/ct-p/6011-dc-ucs)
+
+[Cisco UCS X-series At A Glance](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/ucs-x-series-direct-aag.html) [Explore more about UCS X-series System](https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/solution-overview-c22-2432175.html)
 
 Webinar | On demand 
 
@@ -300,6 +391,39 @@ Learn how award‑winning Reist Telecom built an AI‑ready foundation by runnin
 
 [Watch on demand ](https://experiences.cisco.com/amer/from-virtualization-to-ai-ready)
 
-__
+###  Quick Links
 
-Hello, how can I help?
+  * [About Cisco](/site/us/en/about/index.html)
+  * [Contact Us](/site/us/en/about/contact-cisco/index.html?linkclickid=ftr-contactus)
+  * [Careers](https://careers.cisco.com/global/en/home)
+  * [Connect with a partner](/site/us/en/partners/connect-with-a-partner/index.html)
+
+
+* * *
+
+###  Resources and Legal
+
+  * [Feedback](https://ciscocx.qualtrics.com/jfe/form/SV_bwrmeoKrBHYxOyW?Ref=/c/en/us/index.html)
+  * [Help](https://www.cisco.com/c/en/us/about/help.html)
+  * [Terms & Conditions](https://www.cisco.com/c/en/us/about/legal/terms-conditions.html)
+  * [Privacy  
+](https://www.cisco.com/c/en/us/about/legal/privacy-full.html)
+  * Cookies / Do not sell or share my personal data  
+
+  * [Accessibility](https://www.cisco.com/c/en/us/about/accessibility.html)
+  * [Trademarks](https://www.cisco.com/c/en/us/about/legal/trademarks.html)
+  * [Supply Chain Transparency](https://www.cisco.com/c/dam/en_us/about/supply-chain/cisco-modern-slavery-statement.pdf)
+  * [Newsroom](https://newsroom.cisco.com/c/r/newsroom/en/us/index.html)
+  * [Sitemap](/site/us/en/about/sitemap.html)
+
+
+* * *
+
+  * [ ](https://www.facebook.com/cisco/ "Facebook")
+  * [ ](https://x.com/Cisco/ "X")
+  * [ ](https://www.linkedin.com/company/cisco "LinkedIn")
+  * [ ](https://www.youtube.com/user/cisco "YouTube")
+  * [ ](https://www.instagram.com/cisco/ "Instagram")
+
+
+©  Cisco Systems, Inc.

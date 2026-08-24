@@ -8,7 +8,7 @@
 | **HTML Title** | Solutions - Cisco Unified Computing System Ethernet Switching Modes White Paper |
 | **Source file** | `ucs-docs-raw/html/whitepaper_c11-701962.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 10:01:06 |
+| **Fetched on** | 2026-08-24 09:16:53 |
 
 ---
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS 6600 Series Fabric Interconnects Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-6600-series-fabric-interconnect-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 10:05:28 |
+| **Fetched on** | 2026-08-24 09:18:00 |
 
 ---
 

@@ -4,16 +4,16 @@
 |---|---|
 | **URL Title** | Intersight SaaS Servers guide |
 | **URL** | https://intersight.com/help/saas/operate/servers |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260731131550565/docs/cloud/data/articles/features/servers/operate/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260821153740774/docs/cloud/data/articles/features/servers/operate/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_operate_servers.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 10:00:10 |
+| **Fetched on** | 2026-08-24 09:16:06 |
 
 ---
 
-Choose Operate > Servers, to launch the Server Table view. From this page, you can launch device endpoints, perform bulk server actions, and navigate to the server details page. Click the settings icon (the gear icon representation), and select the columns that you want in the Table view.
-
+Choose Operate > Servers, to launch the Server Table view. From this page, you can launch device endpoints, perform bulk server actions, and navigate to the server details page. Click the settings icon (the gear icon representation), and select the columns that you want in the Table view.  
+  
 You can add specific columns or custom tags to the Servers Table view to sort and filter.
 
 Columns in the Servers Table view can be sorted using the sort option. You can also apply filters based on any column using the Filters option to view and explore the server inventory.
@@ -63,6 +63,8 @@ Important:
   * The connection icon appears only for disconnected servers and indicates that the server is not currently connected to Intersight.
 
   * Health—Displays the server health status, based only on the server's known alarms. Hover over the status to view the top three active alarms. An icon ![](../../../../../../../../en/us/td/i/400001-500000/470001-480000/479567.jpg) next to the Health status indicates that the server's alarm notifications are currently suppressed. For more information, see [Alarm Suppression](/help/my_dashboard/dashboard_management#alarm_suppression).
+
+If an NVMe direct-attached drive is installed in a drive slot that is unsupported for the server hardware configuration, Intersight raises the **StoragePhysicalDiskUnavailableOffline** alarm and reflects the condition in the **Health** column. The source Redfish event reports **Warning** severity. Depending on the platform condition, the alarm details indicate either incompatible drive-slot hardware or a slot disabled because of a platform hardware limitation, together with the recommended remediation. For more details. refer to **Server Alarms** in the [Cisco Intersight Alarms Reference Guide](https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/IMM_Alarms_Guide/b_cisco_intersight_alarms_reference_guide.html).
 
   * Contract Status—Displays the status of service contract for the managed UCS and HyperFlex servers based on the current validity of their associated contracts. You can identify the SmartNet Contract ID details of the server, and cross launch the [Cisco Commerce Software Subscriptions and Service Portal](https://www.cisco.com/c/en/us/services/ordering/ccw-r.html).
 

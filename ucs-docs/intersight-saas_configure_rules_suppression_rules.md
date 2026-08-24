@@ -4,11 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Rule suppression guide |
 | **URL** | https://intersight.com/help/saas/configure/rules/suppression_rules |
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260731131550565/docs/cloud/data/articles/features/rules/suppression_rules/configure/en/index.html |
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260821153740774/docs/cloud/data/articles/features/rules/suppression_rules/configure/en/index.html |
 | **HTML Title** | Granular Alarm Suppression Rules |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_rules_suppression_rules.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-05 10:00:20 |
+| **Fetched on** | 2026-08-24 09:16:16 |
 
 ---
 
