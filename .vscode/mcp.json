@@ -13,7 +13,7 @@
     },
     "ucs-docs-mcp": {
       "type": "http",
-      "url": "http://localhost:31310"
+      "url": "http://localhost:31310/mcp"
     }
   }
 }

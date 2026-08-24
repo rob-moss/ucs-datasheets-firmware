@@ -14,11 +14,11 @@ Run from the command line:
     uv run mcp/mcp-server.py             # Run on stdio
     uv run mcp/mcp-server.py --tcp 31310 # Run on TCP port 31310
 
-Version 2.0 - Upgraded to mcp 2.0.0 Server API
+Version 3.0 - Converted to fastmcp with TCP support
 
 """
 
-__version__ = "1.2"
+__version__ = "3.0"
 
 import os
 import re
@@ -26,14 +26,7 @@ import sys
 from pathlib import Path
 from typing import Any, Optional
 
-from mcp.server import Server
-from mcp.types import (
-    CallToolRequestParams,
-    ListToolsRequest,
-    ListToolsResult,
-    RequestParams,
-    TextContent,
-)
+from fastmcp import FastMCP
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -227,123 +220,8 @@ def _get_tag_score(doc_tags: list[str], query_tags: list[str]) -> int:
 # MCP Server Setup
 # ---------------------------------------------------------------------------
 
-server = Server("ucs-docs")
+server = FastMCP("ucs-docs")
 
-
-# Create an empty params class for tools/list (which has no params)
-class EmptyListToolsParams(RequestParams):
-    """Empty parameters for list tools request."""
-    pass
-
-
-async def handle_list_tools(params: EmptyListToolsParams) -> ListToolsResult:
-    """Handle the list_tools request."""
-    return {
-        "tools": [
-            {
-                "name": "list_documents",
-                "description": "List all available UCS documentation files.",
-                "inputSchema": {
-                    "type": "object",
-                    "properties": {},
-                    "required": [],
-                },
-            },
-            {
-                "name": "search_documents",
-                "description": "Search across UCS documentation for the given query string, with optional tag filtering.",
-                "inputSchema": {
-                    "type": "object",
-                    "properties": {
-                        "query": {"type": "string", "description": "The keyword or phrase to search for"},
-                        "filename": {"type": "string", "description": "Optional file to restrict search to"},
-                        "tags": {
-                            "type": "array",
-                            "items": {"type": "string"},
-                            "description": "Optional tags to filter by",
-                        },
-                        "max_results": {"type": "integer", "description": "Maximum results to return (default 10)"},
-                    },
-                    "required": ["query"],
-                },
-            },
-            {
-                "name": "list_tags",
-                "description": "List all recognized tag categories and their valid values.",
-                "inputSchema": {
-                    "type": "object",
-                    "properties": {},
-                    "required": [],
-                },
-            },
-            {
-                "name": "read_document",
-                "description": "Read the full content of a documentation file.",
-                "inputSchema": {
-                    "type": "object",
-                    "properties": {
-                        "filename": {"type": "string", "description": "The filename to read"},
-                        "max_chars": {"type": "integer", "description": "Max characters to return (0 = unlimited)"},
-                    },
-                    "required": ["filename"],
-                },
-            },
-            {
-                "name": "get_document_outline",
-                "description": "Return the heading structure of a documentation file.",
-                "inputSchema": {
-                    "type": "object",
-                    "properties": {
-                        "filename": {"type": "string", "description": "The filename to analyze"},
-                    },
-                    "required": ["filename"],
-                },
-            },
-            {
-                "name": "read_document_page",
-                "description": "Read a single page section from a multi-page documentation file.",
-                "inputSchema": {
-                    "type": "object",
-                    "properties": {
-                        "filename": {"type": "string", "description": "The filename"},
-                        "page_number": {"type": "integer", "description": "The 1-based page number"},
-                    },
-                    "required": ["filename", "page_number"],
-                },
-            },
-        ]
-    }
-
-
-async def handle_call_tool(params: CallToolRequestParams) -> list[TextContent]:
-    """Handle tool calls."""
-    try:
-        name = params.name
-        arguments = params.arguments or {}
-        
-        if name == "list_documents":
-            result = list_documents()
-        elif name == "search_documents":
-            result = search_documents(**arguments)
-        elif name == "list_tags":
-            result = list_tags()
-        elif name == "read_document":
-            result = read_document(**arguments)
-        elif name == "get_document_outline":
-            result = get_document_outline(**arguments)
-        elif name == "read_document_page":
-            result = read_document_page(**arguments)
-        else:
-            result = f"Unknown tool: {name}"
-        
-        return [TextContent(type="text", text=str(result))]
-    except Exception as e:
-        return [TextContent(type="text", text=f"Error: {str(e)}")]
-
-
-# Register the handlers
-server.add_request_handler("tools/list", EmptyListToolsParams, handle_list_tools)
-server.add_request_handler("tools/call", CallToolRequestParams, handle_call_tool)
 
 
 # ---------------------------------------------------------------------------
@@ -351,6 +229,7 @@ server.add_request_handler("tools/call", CallToolRequestParams, handle_call_tool
 # ---------------------------------------------------------------------------
 
 
+@server.tool()
 def list_documents() -> list[dict]:
     """
     List all available UCS documentation files.
@@ -383,6 +262,7 @@ def list_documents() -> list[dict]:
     return results
 
 
+@server.tool()
 def search_documents(
     query: str,
     filename: Optional[str] = None,
@@ -501,6 +381,7 @@ def search_documents(
     return ranked[:max_results]
 
 
+@server.tool()
 def list_tags() -> dict:
     """
     List all recognized tag categories and their valid values.
@@ -511,6 +392,7 @@ def list_tags() -> dict:
     return TAG_CATEGORIES
 
 
+@server.tool()
 def read_document(filename: str, max_chars: int = 0) -> str:
     """
     Read the full content of a documentation file.
@@ -532,6 +414,7 @@ def read_document(filename: str, max_chars: int = 0) -> str:
     return text
 
 
+@server.tool()
 def get_document_outline(filename: str) -> list[dict]:
     """
     Return the heading structure (table of contents) of a documentation file.
@@ -569,6 +452,7 @@ def get_document_outline(filename: str) -> list[dict]:
     return outline
 
 
+@server.tool()
 def read_document_page(filename: str, page_number: int) -> str:
     """
     Read a single page section from a multi-page documentation file.
@@ -599,67 +483,30 @@ def read_document_page(filename: str, page_number: int) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Resources
-# ---------------------------------------------------------------------------
-
-# Note: mcp 2.0.0 doesn't support resources in the same way.
-# These are kept as helper functions that can be accessed via tools.
-
-
-def docs_index() -> str:
-    """A Markdown index of all available UCS documentation files."""
-    lines = ["# UCS Documentation Index\n"]
-    for path in _doc_files():
-        try:
-            text = path.read_text(encoding="utf-8")
-            meta = _parse_metadata(text)
-            title = _infer_title(path.name, meta)
-            url = meta.get("source_url", "")
-            fetched = meta.get("fetched_on", "unknown")
-            tags = meta.get("tags", [])
-            lines.append(f"## [{title}](docs://{path.name})")
-            if url:
-                lines.append(f"- **Source:** {url}")
-            if tags:
-                lines.append(f"- **Tags:** {', '.join(tags)}")
-            lines.append(f"- **Fetched:** {fetched}")
-            lines.append(f"- **File:** `{path.name}`\n")
-        except Exception as exc:
-            lines.append(f"## {path.name}\n- Error: {exc}\n")
-    return "\n".join(lines)
-
-
-# ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
 
-async def main():
-    """Start the MCP server on stdio."""
-    async with server:
-        pass
-
-
 if __name__ == "__main__":
     import argparse
-    import asyncio
     
     parser = argparse.ArgumentParser(
         description="UCS Docs MCP Server",
         epilog="Examples:\n"
-               "  python mcp/mcp-server.py         # Run on stdio (default)",
+               "  python mcp/mcp-server.py         # Run on stdio (default)\n"
+               "  python mcp/mcp-server.py --tcp 31310 # Run on HTTP/TCP port 31310",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
         "--tcp",
         type=int,
         metavar="PORT",
-        help="TCP mode not yet supported with mcp 2.0.0",
+        help="HTTP/TCP port to listen on (default: stdio)",
     )
     args = parser.parse_args()
     
     if args.tcp:
-        print("TCP mode is not yet implemented with mcp 2.0.0", file=sys.stderr)
-        print("Please run without --tcp flag", file=sys.stderr)
-        sys.exit(1)
-    
-    asyncio.run(main())
+        # FastMCP uses HTTP transport for TCP connections
+        # Parameters: host (bind address), port (TCP port)
+        server.run(transport="http", host="127.0.0.1", port=args.tcp)
+    else:
+        server.run()
