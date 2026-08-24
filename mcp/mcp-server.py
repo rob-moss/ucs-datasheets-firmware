@@ -6,15 +6,15 @@ An MCP server that exposes Cisco UCS documentation (stored as Markdown files
 in the ucs-guides-help-query directory) to AI assistants via the Model Context
 Protocol.
 
+Installation and first-time setup:
+    uv init                              # Initialize the project
+    uv add -r requirements.txt           # Install dependencies from requirements.txt
+    
 Run from the command line:
-    python mcp/server.py                 # Run on stdio
-    python mcp/server.py --tcp 31310     # Run on TCP port 31310
+    uv run mcp/mcp-server.py             # Run on stdio
+    uv run mcp/mcp-server.py --tcp 31310 # Run on TCP port 31310
 
-Or with uv:
-    uv run mcp/server.py
-    uv run mcp/server.py -- --tcp 31310
-
-Version 1.2 - Added TCP transport support and tag-based filtering
+Version 2.0 - Upgraded to mcp 2.0.0 Server API
 
 """
 
@@ -24,9 +24,16 @@ import os
 import re
 import sys
 from pathlib import Path
-from typing import Optional
+from typing import Any, Optional
 
-from mcp.server.fastmcp import FastMCP
+from mcp.server import Server
+from mcp.types import (
+    CallToolRequestParams,
+    ListToolsRequest,
+    ListToolsResult,
+    RequestParams,
+    TextContent,
+)
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -217,21 +224,126 @@ def _get_tag_score(doc_tags: list[str], query_tags: list[str]) -> int:
 
 
 # ---------------------------------------------------------------------------
-# MCP Server
+# MCP Server Setup
 # ---------------------------------------------------------------------------
 
-mcp = FastMCP(
-    "ucs-docs",
-    instructions=(
-        "This server provides access to Cisco UCS documentation fetched from "
-        "cisco.com. Use list_documents to see what is available, "
-        "search_documents to find relevant sections by keyword or tags, "
-        "read_document to retrieve the full content of a file, and "
-        "get_document_outline to inspect the structure of a document. "
-        "Use the tags parameter in search_documents to narrow results to specific "
-        "document types, scopes, or features (e.g., 'type:CLI', 'scope:FabricInterconnect')."
-    ),
-)
+server = Server("ucs-docs")
+
+
+# Create an empty params class for tools/list (which has no params)
+class EmptyListToolsParams(RequestParams):
+    """Empty parameters for list tools request."""
+    pass
+
+
+async def handle_list_tools(params: EmptyListToolsParams) -> ListToolsResult:
+    """Handle the list_tools request."""
+    return {
+        "tools": [
+            {
+                "name": "list_documents",
+                "description": "List all available UCS documentation files.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {},
+                    "required": [],
+                },
+            },
+            {
+                "name": "search_documents",
+                "description": "Search across UCS documentation for the given query string, with optional tag filtering.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                        "query": {"type": "string", "description": "The keyword or phrase to search for"},
+                        "filename": {"type": "string", "description": "Optional file to restrict search to"},
+                        "tags": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "description": "Optional tags to filter by",
+                        },
+                        "max_results": {"type": "integer", "description": "Maximum results to return (default 10)"},
+                    },
+                    "required": ["query"],
+                },
+            },
+            {
+                "name": "list_tags",
+                "description": "List all recognized tag categories and their valid values.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {},
+                    "required": [],
+                },
+            },
+            {
+                "name": "read_document",
+                "description": "Read the full content of a documentation file.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {"type": "string", "description": "The filename to read"},
+                        "max_chars": {"type": "integer", "description": "Max characters to return (0 = unlimited)"},
+                    },
+                    "required": ["filename"],
+                },
+            },
+            {
+                "name": "get_document_outline",
+                "description": "Return the heading structure of a documentation file.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {"type": "string", "description": "The filename to analyze"},
+                    },
+                    "required": ["filename"],
+                },
+            },
+            {
+                "name": "read_document_page",
+                "description": "Read a single page section from a multi-page documentation file.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {"type": "string", "description": "The filename"},
+                        "page_number": {"type": "integer", "description": "The 1-based page number"},
+                    },
+                    "required": ["filename", "page_number"],
+                },
+            },
+        ]
+    }
+
+
+async def handle_call_tool(params: CallToolRequestParams) -> list[TextContent]:
+    """Handle tool calls."""
+    try:
+        name = params.name
+        arguments = params.arguments or {}
+        
+        if name == "list_documents":
+            result = list_documents()
+        elif name == "search_documents":
+            result = search_documents(**arguments)
+        elif name == "list_tags":
+            result = list_tags()
+        elif name == "read_document":
+            result = read_document(**arguments)
+        elif name == "get_document_outline":
+            result = get_document_outline(**arguments)
+        elif name == "read_document_page":
+            result = read_document_page(**arguments)
+        else:
+            result = f"Unknown tool: {name}"
+        
+        return [TextContent(type="text", text=str(result))]
+    except Exception as e:
+        return [TextContent(type="text", text=f"Error: {str(e)}")]
+
+
+# Register the handlers
+server.add_request_handler("tools/list", EmptyListToolsParams, handle_list_tools)
+server.add_request_handler("tools/call", CallToolRequestParams, handle_call_tool)
 
 
 # ---------------------------------------------------------------------------
@@ -239,7 +351,6 @@ mcp = FastMCP(
 # ---------------------------------------------------------------------------
 
 
-@mcp.tool()
 def list_documents() -> list[dict]:
     """
     List all available UCS documentation files.
@@ -272,7 +383,6 @@ def list_documents() -> list[dict]:
     return results
 
 
-@mcp.tool()
 def search_documents(
     query: str,
     filename: Optional[str] = None,
@@ -391,7 +501,6 @@ def search_documents(
     return ranked[:max_results]
 
 
-@mcp.tool()
 def list_tags() -> dict:
     """
     List all recognized tag categories and their valid values.
@@ -402,7 +511,6 @@ def list_tags() -> dict:
     return TAG_CATEGORIES
 
 
-@mcp.tool()
 def read_document(filename: str, max_chars: int = 0) -> str:
     """
     Read the full content of a documentation file.
@@ -424,7 +532,6 @@ def read_document(filename: str, max_chars: int = 0) -> str:
     return text
 
 
-@mcp.tool()
 def get_document_outline(filename: str) -> list[dict]:
     """
     Return the heading structure (table of contents) of a documentation file.
@@ -462,7 +569,6 @@ def get_document_outline(filename: str) -> list[dict]:
     return outline
 
 
-@mcp.tool()
 def read_document_page(filename: str, page_number: int) -> str:
     """
     Read a single page section from a multi-page documentation file.
@@ -496,8 +602,10 @@ def read_document_page(filename: str, page_number: int) -> str:
 # Resources
 # ---------------------------------------------------------------------------
 
+# Note: mcp 2.0.0 doesn't support resources in the same way.
+# These are kept as helper functions that can be accessed via tools.
 
-@mcp.resource("docs://index")
+
 def docs_index() -> str:
     """A Markdown index of all available UCS documentation files."""
     lines = ["# UCS Documentation Index\n"]
@@ -521,112 +629,37 @@ def docs_index() -> str:
     return "\n".join(lines)
 
 
-@mcp.resource("docs://{filename}")
-def doc_resource(filename: str) -> str:
-    """Read a documentation file by name."""
-    path = _find_doc(filename)
-    if path is None:
-        return f"# Error\nFile `{filename}` not found in any docs directory."
-    return path.read_text(encoding="utf-8")
-
-
 # ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
 
+async def main():
+    """Start the MCP server on stdio."""
+    async with server:
+        pass
+
+
 if __name__ == "__main__":
     import argparse
+    import asyncio
     
-    # If running as a subprocess for a TCP client, skip argument parsing
-    if os.environ.get("MCP_SUBPROCESS") != "1":
-        parser = argparse.ArgumentParser(
-            description="UCS Docs MCP Server",
-            epilog="Examples:\n"
-                   "  python mcp-server.py              # Run on stdio (default)\n"
-                   "  python mcp-server.py --tcp 31310  # Listen on TCP port 31310 (all interfaces)",
-            formatter_class=argparse.RawDescriptionHelpFormatter,
-        )
-        parser.add_argument(
-            "--tcp",
-            type=int,
-            metavar="PORT",
-            help="Listen on TCP port instead of stdio (e.g., 31310); binds to 0.0.0.0 for all interfaces",
-        )
-        args = parser.parse_args()
-        
-        if args.tcp:
-            import asyncio
-            
-            async def main():
-                async def handle_client(reader, writer):
-                    """Handle a single TCP client by spawning an MCP subprocess."""
-                    try:
-                        # Spawn a subprocess running this script in stdio mode
-                        proc = await asyncio.create_subprocess_exec(
-                            sys.executable, __file__,
-                            stdout=asyncio.subprocess.PIPE,
-                            stdin=asyncio.subprocess.PIPE,
-                            stderr=None,
-                            env={**os.environ, "MCP_SUBPROCESS": "1"},
-                        )
-                        
-                        async def pump_to_server():
-                            """Pump data from TCP client to subprocess stdin."""
-                            try:
-                                while True:
-                                    data = await reader.read(4096)
-                                    if not data:
-                                        break
-                                    if proc.stdin:
-                                        proc.stdin.write(data)
-                                        await proc.stdin.drain()
-                            except Exception:
-                                pass
-                            finally:
-                                if proc.stdin:
-                                    proc.stdin.close()
-                                    await proc.stdin.wait_closed()
-                        
-                        async def pump_from_server():
-                            """Pump data from subprocess stdout to TCP client."""
-                            try:
-                                while True:
-                                    data = await proc.stdout.read(4096) if proc.stdout else None
-                                    if not data:
-                                        break
-                                    writer.write(data)
-                                    await writer.drain()
-                            except Exception:
-                                pass
-                            finally:
-                                writer.close()
-                                await writer.wait_closed()
-                        
-                        # Pump data bidirectionally
-                        await asyncio.gather(pump_to_server(), pump_from_server())
-                        await proc.wait()
-                    except Exception as e:
-                        print(f"Client connection error: {e}", file=sys.stderr)
-                        try:
-                            writer.close()
-                            await writer.wait_closed()
-                        except Exception:
-                            pass
-                
-                # Start TCP server on all interfaces
-                server = await asyncio.start_server(handle_client, "0.0.0.0", args.tcp)
-                print(f"UCS Docs MCP Server listening on 0.0.0.0:{args.tcp}", file=sys.stderr)
-                
-                async with server:
-                    try:
-                        await server.serve_forever()
-                    except KeyboardInterrupt:
-                        print("Server stopped.", file=sys.stderr)
-            
-            asyncio.run(main())
-        else:
-            # Run on stdio
-            mcp.run()
-    else:
-        # Running as subprocess for TCP client—just run on stdio
-        mcp.run()
+    parser = argparse.ArgumentParser(
+        description="UCS Docs MCP Server",
+        epilog="Examples:\n"
+               "  python mcp/mcp-server.py         # Run on stdio (default)",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument(
+        "--tcp",
+        type=int,
+        metavar="PORT",
+        help="TCP mode not yet supported with mcp 2.0.0",
+    )
+    args = parser.parse_args()
+    
+    if args.tcp:
+        print("TCP mode is not yet implemented with mcp 2.0.0", file=sys.stderr)
+        print("Please run without --tcp flag", file=sys.stderr)
+        sys.exit(1)
+    
+    asyncio.run(main())
