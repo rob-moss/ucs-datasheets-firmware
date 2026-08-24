@@ -8,7 +8,11 @@
 | **HTML Title** | Cisco UCS Manager Getting Started Guide, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_ucsm_getting_started_guide_4_3.html` |
 | **File type** | HTML |
+<<<<<<< HEAD
 | **Fetched on** | 2026-08-24 09:14:07 |
+=======
+| **Fetched on** | 2026-06-30 16:38:13 |
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 
@@ -1201,8 +1205,9 @@ The cluster configuration provides redundancy only for the management plane. Dat
 
 ---
 
-## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/b_ucsm_getting_started_guide_4_3/m_system_requirements.html
+## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/b_ucsm_getting_started_guide_4_3/m_initial_configuration.html
 
+<<<<<<< HEAD
 # System Requirements   
   
 ## System Requirements Overview 
@@ -1295,6 +1300,10 @@ The ports with the same speed can be configured in a port channel. A port channe
 
 ## Initial Configuration Overview 
 
+=======
+## Initial Configuration Overview   
+  
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 Before you get started with Cisco UCS Manager initial configuration, review the Fundamentals of Cisco Unified Computing System and System Requirements sections in this guide. 
 
 The Cisco UCS Manager initial configuration involves the following steps: 
@@ -1728,7 +1737,7 @@ Configure Service Profile Templates  |  Cisco UCS Service Profile Templates are 
 
 ---
 
-## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/b_ucsm_getting_started_guide_4_3/m_appendix.html
+## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/b_ucsm_getting_started_guide_4_3/m_appendix.html
 
 # Appendix  
   
@@ -1950,7 +1959,7 @@ A storage virtualization method that provides separate paths for data and contro
 
 ---
 
-## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/m_overview.html
+## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/m_overview.html
 
 # Overview
 
@@ -3000,7 +3009,7 @@ The cluster configuration provides redundancy only for the management plane. Dat
 
 ---
 
-## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/m_initial_configuration.html
+## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-3/m_initial_configuration.html
 
 # Initial Configuration   
   

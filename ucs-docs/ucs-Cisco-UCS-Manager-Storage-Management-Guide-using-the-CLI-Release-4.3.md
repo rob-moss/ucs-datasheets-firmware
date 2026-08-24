@@ -8,7 +8,11 @@
 | **HTML Title** | Cisco UCS Manager Storage Management Guide using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_cli_ucsm_storage_management_guide_4_3.html` |
 | **File type** | HTML |
+<<<<<<< HEAD
 | **Fetched on** | 2026-08-24 09:15:34 |
+=======
+| **Fetched on** | 2026-06-30 16:41:25 |
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 
@@ -2277,6 +2281,7 @@ The following example disables fabric channel member port 1 31 on fabric port ch
 
 ---
 
+<<<<<<< HEAD
 ## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_fc_zoning.html
 
 # Fibre Channel Zoning 
@@ -2726,6 +2731,9 @@ The following example deletes the storage connection policy named scPolicyZone1 
 ---
 
 ## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_named_vsans.html
+=======
+## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_named_vsans.html
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 # Named VSANs
 
@@ -3283,7 +3291,7 @@ The following is the example for creating and adding a member to a breakout VSAN
 
 ---
 
-## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_san_pin_groups.html
+## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_san_pin_groups.html
 
 # SAN Pin Groups 
 
@@ -3395,7 +3403,7 @@ The following is the example for creating breakout SAN pin-group:
 
 ---
 
-## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_fc_identity_assignment.html
+## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_fc_identity_assignment.html
 
 # FC Identity Assignment 
 
@@ -3422,7 +3430,7 @@ The FC Identity Tab in Cisco UCS Manager displays the FC Identity of the devices
 
 ---
 
-## Page 10: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_wwn_pools.html
+## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_wwn_pools.html
 
 # WWN Pools
 
@@ -3582,7 +3590,7 @@ The following example shows how to delete the WWN pool named pool4 and commit th
 
 ---
 
-## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_storage-related_policies.html
+## Page 10: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_storage-related_policies.html
 
 # Storage-Related Policies 
 
@@ -4492,7 +4500,7 @@ You can include the storage Autoconfiguration (Auto Config) mode option in your 
 
 ---
 
-## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_series_cli_configuring_storage_profiles_4_0.html
+## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_series_cli_configuring_storage_profiles_4_0.html
 
 # Storage Profiles   
   
@@ -7415,6 +7423,7 @@ This examples shows how to rename a LUN referenced by a service profile.
 
 ---
 
+<<<<<<< HEAD
 ## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_flex_flash_sd_card_support.html
 
 # Configuring SD Card Support
@@ -7500,6 +7509,9 @@ The C-Series M5 Rack-Mount servers support a Micro-SD (FlexUtil) memory card for
 ---
 
 ## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_mini_storage.html
+=======
+## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_mini_storage.html
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 # Mini Storage
 
@@ -7610,7 +7622,7 @@ This example displays information about the storage controller for the SD mini s
 
 ---
 
-## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_sed_management_cli.html
+## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_sed_management_cli.html
 
 # SED Security Policies
 
@@ -8711,7 +8723,7 @@ This example shows to how to display the security flag of a virtual disk for a b
 
 ---
 
-## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_storage_inventory1.html
+## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_storage_inventory1.html
 
 # Storage Inventory 
 
@@ -8868,7 +8880,7 @@ Enabling VMD also allows configuration of Intel® Virtual RAID on CPU (VRoC), a 
 
 ---
 
-## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_drive-diagnostics.html
+## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_drive-diagnostics.html
 
 # Drive Diagnostics
 
@@ -8897,7 +8909,7 @@ Cisco UCS Manager does not support on demand diagnostics. This feature checks th
 
 ---
 
-## Page 18: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_3260_storage_management.html
+## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/b_cli_ucsm_storage_management_guide_4_3/m_cli_3260_storage_management.html
 
 # Cisco UCS S3260 System Storage Management 
 
@@ -9421,7 +9433,7 @@ The following example deletes the secp1 SAS expander configuration policy:
 
 ---
 
-## Page 19: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_series_cli_configuring_storage_profiles_4_0.html
+## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_series_cli_configuring_storage_profiles_4_0.html
 
 # Storage Profiles 
 
@@ -12344,7 +12356,7 @@ This examples shows how to rename a LUN referenced by a service profile.
 
 ---
 
-## Page 20: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_cli_storage-related_policies.html
+## Page 18: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_cli_storage-related_policies.html
 
 # Storage-Related Policies 
 
@@ -13254,7 +13266,7 @@ You can include the storage Autoconfiguration (Auto Config) mode option in your 
 
 ---
 
-## Page 21: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_storage_inventory1.html
+## Page 19: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_storage_inventory1.html
 
 # Storage Inventory   
   
@@ -13411,7 +13423,7 @@ Enabling VMD also allows configuration of Intel® Virtual RAID on CPU (VRoC), a 
 
 ---
 
-## Page 22: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_cli_san_ports_and_port_channels.html
+## Page 20: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_cli_san_ports_and_port_channels.html
 
 # SAN Ports and Port Channels 
 
@@ -15320,7 +15332,7 @@ The following example disables fabric channel member port 1 31 on fabric port ch
 
 ---
 
-## Page 23: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_cli_named_vsans.html
+## Page 21: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_cli_named_vsans.html
 
 # Named VSANs
 
@@ -15878,7 +15890,7 @@ The following is the example for creating and adding a member to a breakout VSAN
 
 ---
 
-## Page 24: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_sed_management_cli.html
+## Page 22: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Storage-Mgmt/4-3/m_sed_management_cli.html
 
 # SED Security Policies
 

@@ -8,7 +8,11 @@
 | **HTML Title** | Fabric Interconnects, Chassis, Unified Edge, and Server Metrics |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_monitoring_monitoring_metrics_devices.html` |
 | **File type** | HTML |
+<<<<<<< HEAD
 | **Fetched on** | 2026-07-02 13:04:10 |
+=======
+| **Fetched on** | 2026-06-30 16:42:37 |
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 

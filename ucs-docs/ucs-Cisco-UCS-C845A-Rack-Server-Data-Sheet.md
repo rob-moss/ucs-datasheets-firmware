@@ -8,12 +8,116 @@
 | **HTML Title** | Cisco UCS C845A Rack Server Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-c845a-m8-rack-server-ds.html` |
 | **File type** | HTML |
+<<<<<<< HEAD
 | **Fetched on** | 2026-08-24 09:17:39 |
+=======
+| **Fetched on** | 2026-06-30 16:53:15 |
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html
 
+<<<<<<< HEAD
+=======
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS C845A Rack Server Data Sheet
+
+Data Sheet
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html) to Save Content 
+
+Translations
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.pdf) (449.9 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:June 4, 2026
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.html) to Save Content 
+
+Translations
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-ds.pdf) (449.9 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:June 4, 2026
+
+#### Table of Contents
+
+  * Product overview
+  * Features and benefits
+  * Product specifications
+  * Ordering information
+  * Warranty information
+  * Product sustainability
+  * Product environmental information
+  * Cisco and partner services
+  * Cisco Capital
+  * For more information
+  * Document history
+
+
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 ` `
 
 The Cisco UCS® C845A M8 Rack Server/RTX PRO Server is a highly scalable, flexible, and customizable AI system based on the NVIDIA MGX reference design for accelerated computing. With support for two (2) to eight (8) NVIDIA or AMD PCIe GPUs including NVIDIA RTX PRO 4500, RTX PRO 6000D, and 6000 Blackwell Server Edition GPUs and NVIDIA AI Enterprise software, it delivers high performance for a wide range of AI workloads and is optimized for enterprise AI inferencing, agentic AI, and the NVIDIA AI Data Platform in addition to generative AI fine-tuning and RAG.
@@ -217,7 +321,11 @@ New or Revised Topic |  Described In |  Date
   
 ### Our experts recommend
 
+<<<<<<< HEAD
   * [AI Performance: MLPerf Training on Cisco UCS C880A M8 Rack Server with NVIDIA B300 SXM GPUs White Paper](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-b300-training-ucs-c880a-m8-rs-wp.html "AI Performance: MLPerf Training on Cisco UCS C880A M8 Rack Server with NVIDIA B300 SXM GPUs White Paper")
+=======
+  * [AI Performance: MLPerf Inference on Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL, L40S and RTX PRO 6000 GPUs](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.html "AI Performance: MLPerf Inference on Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL, L40S and RTX PRO 6000 GPUs")
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
   * [Cisco UCS C845A M8 Rack Server At a Glance](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html "Cisco UCS C845A M8 Rack Server At a Glance")
   * [Cisco UCS Servers with Intel Xeon 6 CPUs FAQ](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html "Cisco UCS Servers with Intel Xeon 6 CPUs FAQ")
 
@@ -225,10 +333,171 @@ New or Revised Topic |  Described In |  Date
 ### Learn more
 
 
+<<<<<<< HEAD
+=======
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 ---
 
 ## Page 2: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.html
 
+<<<<<<< HEAD
+=======
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# BIOS Performance and workload:  
+Tuning guide for Cisco UCS M8 Platforms White Paper
+
+### Using the Intel® Xeon® 6 Processor Family
+
+### 
+
+White Paper
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.pdf) (612.6 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:March 26, 2026
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/bios-tuning-guide-ucs-m8-intel-xeon-wp.pdf) (612.6 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:March 26, 2026
+
+#### Table of Contents
+
+  * Purpose and scope
+  * What you will learn
+  * BIOS-tuning scenarios
+  * Tuning for general-purpose workloads
+  * Tuning for enterprise workloads
+  * Product overview
+  * Cisco UCS X210c M8 Compute Node
+  * Cisco UCS X410c M8 Compute Node
+  * Cisco UCS C220 M8 Rack Server
+  * Cisco UCS C240M8 Rack Server
+  * Intel Xeon 6 Processor Family
+  * Cisco UCS BIOS options
+  * Processor settings
+  * Intel Hyper-Threading Technology
+  * Enhanced Intel SpeedStep Technology
+  * Intel Turbo Boost Technology
+  * Processor Prefetchers
+  * Hardware prefetcher
+  * Adjacent-cache-line prefetcher
+  * Data cache unit streamer prefetcher
+  * Data cache unit–IP prefetcher
+  * Last-level cache prefetch
+  * Intel Virtualization Technology
+  * Intel Ultra Path Interconnect link enablement
+  * UPI power management
+  * UPI Link Frequency Select
+  * Sub-NUMA clustering
+  * Extended prediction table prefetch
+  * KTI prefetch
+  * XPT remote prefetch
+  * Last-Level Cache deadline
+  * Memory settings
+  * NUMA Optimized
+  * Virtual NUMA
+  * Memory RAS Configuration
+  * Patrol scrub
+  * Power and performance configuration
+  * Enhanced CPU performance
+  * Energy-efficient turbo mode
+  * Intel Turbo Boost Technology
+  * Processor C6 report
+  * Processor C1E
+  * Package C-state control
+  * Power Performance tuning
+  * Processor EPP Profile
+  * Latency Optimized Mode
+  * Workload configuration
+  * Fan policy
+  * BIOS settings for Cisco UCS M8 servers
+  * BIOS recommendations for various general-purpose workloads
+  * CPU-intensive workloads
+  * Energy-efficient workloads
+  * Low-latency workloads
+  * Summary of BIOS settings optimized for general-purpose workloads
+  * Additional BIOS recommendations for enterprise workloads
+  * Virtualization and Container-base workloads
+  * Virtualization workloads
+  * Container workloads
+  * Relational database workloads
+  * Data analytics workloads
+  * Analytical database systems workloads
+  * High-Performance Computing (HPC) workloads
+  * HPC workloads
+  * Summary of BIOS settings recommended for enterprise workloads
+  * Conclusion
+  * For more information
+
+
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 ` `
 
 Purpose and scope
@@ -941,10 +1210,107 @@ For more information about the Intel Xeon 6 Processor Family, Cisco UCS BIOS tok
 ### Learn more
 
 
+<<<<<<< HEAD
+=======
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 ---
 
 ## Page 3: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ai-pods-aag.html
 
+<<<<<<< HEAD
+=======
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco AI PODs At-a-Glance
+
+At a Glance
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ai-pods-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ai-pods-aag.pdf) (1.1 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:August 20, 2025
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ai-pods-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ai-pods-aag.pdf) (1.1 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:August 20, 2025
+
+#### Table of Contents
+
+  * Overview
+  * Benefits
+  * What is the full AI lifecycle?
+  * Cisco AI PODs solution
+  * Why Cisco® AI PODs?
+  * What it does
+  * For more information
+
+
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 ` `
 
   
@@ -1051,10 +1417,115 @@ Our experts recommend BIOS Performance and workload: Tuning guide for Cisco UCS 
 ### Learn more
 
 
+<<<<<<< HEAD
+=======
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 ---
 
 ## Page 4: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.html
 
+<<<<<<< HEAD
+=======
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# AI Performance: MLPerf Inference on Cisco UCS C845A M8 Rack Server with NVIDIA H200 NVL, L40S and RTX PRO 6000 GPUs
+
+White Paper
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.pdf) (5.0 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:May 15, 2026
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-ucs-c845a-m8-rack-server-wp.pdf) (5.0 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:May 15, 2026
+
+#### Table of Contents
+
+  * Executive summary
+  * Scope of this document
+  * Product overview
+  * MLPerf overview
+  * MLPerf has multiple benchmarks, including:
+  * MLPerf Training
+  * MLPerf Inference: Datacenter
+  * Test configuration
+  * MLPerf Inference performance results
+  * Performance data for NVIDIA H200 NVL PCIe GPU
+  * Performance data for NVIDIA L40S PCIe GPU
+  * Performance data for NVIDIA RTX PRO 6000 PCIe GPU
+  * Performance summary
+  * Appendix: Test environment
+  * For more information
+
+
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 ` `
 
 Executive summary
@@ -1524,6 +1995,7 @@ Cisco AI-Native Infrastructure for Data Center: <https://www.cisco.com/site/us/e
 ### Learn more
 
 
+<<<<<<< HEAD
 ---
 
 ## Page 5: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/mlperf-b300-training-ucs-c880a-m8-rs-wp.html
@@ -1803,6 +2275,99 @@ Cisco AI-Native Infrastructure for Data Center: <https://www.cisco.com/site/us/e
 ---
 
 ## Page 6: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html
+=======
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 5: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS C845A M8 Rack Server At a Glance
+
+At a Glance
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.pdf) (2.0 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:June 5, 2026
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c845a-m8-rack-server-aag.pdf) (2.0 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:June 5, 2026
+
+#### Table of Contents
+
+  * Overview
+  * Benefits
+  * What it offers
+  * Learn more
+
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ` `
 
@@ -1907,9 +2472,101 @@ For information about our data center solutions for AI visit <https://www.cisco.
 ### Learn more
 
 
+<<<<<<< HEAD
 ---
 
 ## Page 7: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html
+=======
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 6: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS Servers with Intel Xeon 6 CPUs FAQ
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.pdf) (965.1 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:February 24, 2025
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/intel-xeon-6-cpu-faq.pdf) (965.1 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:February 24, 2025
+
+#### Table of Contents
+
+  * Overview
+  * Cisco UCS X210c M8 Compute Node
+  * Cisco UCS C220 M8 Rack Server
+  * Cisco UCS C240 M8 Rack Server
+
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ` `
 
@@ -2047,9 +2704,103 @@ A. All eight PCIe and mLOM slots are PCIe Gen 5.
 ### Learn more
 
 
+<<<<<<< HEAD
 ---
 
 ## Page 8: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.html
+=======
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 7: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS C220 M8 Rack Server At-a-Glance
+
+At a Glance
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.pdf) (652.8 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:February 24, 2025
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c220-m8-rack-server-aag.pdf) (652.8 KB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:February 24, 2025
+
+#### Table of Contents
+
+  * Product overview
+  * Benefits
+  * What it offers
+  * Learn more
+
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ` `
 
@@ -2130,9 +2881,103 @@ For more information about modernizing your infrastructure with the Cisco UCS C2
 ### Learn more
 
 
+<<<<<<< HEAD
 ---
 
 ## Page 9: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.html
+=======
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+
+---
+
+## Page 8: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.html
+
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS C240 M8 Rack Server At-a-Glance
+
+At a Glance
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.pdf) (1.0 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:February 24, 2025
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.html) to Save Content 
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c240-m8-rack-server-aag.pdf) (1.0 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:February 24, 2025
+
+#### Table of Contents
+
+  * Product overview
+  * Benefits
+  * What it offers
+  * Learn more
+
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ` `
 
@@ -2215,6 +3060,7 @@ For more information about modernizing your infrastructure with the Cisco UCS C2
 ### Learn more
 
 
+<<<<<<< HEAD
 ---
 
 ## Page 10: https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-c880a-m8-rack-server-ds.html
@@ -2357,5 +3203,8 @@ Visit the [Dense GPU](https://www.cisco.com/site/us/en/products/computing/server
 
 ### Learn more
 
+=======
+![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---

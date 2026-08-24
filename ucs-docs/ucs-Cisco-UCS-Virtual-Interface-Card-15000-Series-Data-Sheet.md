@@ -8,12 +8,119 @@
 | **HTML Title** | Cisco UCS Virtual Interface Card 15000 Series Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-vic-15000-series-ds.html` |
 | **File type** | HTML |
+<<<<<<< HEAD
 | **Fetched on** | 2026-08-24 09:18:02 |
+=======
+| **Fetched on** | 2026-06-30 16:54:28 |
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.html
 
+<<<<<<< HEAD
+=======
+  * Skip to content
+  * Skip to search
+  * Skip to footer
+
+
+# Cisco UCS Virtual Interface Card 15000 Series Data Sheet
+
+Data Sheet
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.html) to Save Content 
+
+Translations
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.pdf) (2.4 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:April 28, 2026
+
+Bias-Free Language
+
+### Bias-Free Language
+
+The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
+
+__ __ __ __
+
+Contact Cisco
+
+  * Contact Cisco __
+  * __
+
+  * __
+
+[Get a call from Sales](https://www.cisco.com/site/us/en/about/contact-cisco/index.html?linkclickid=luh-contactus)
+
+  * __
+
+Call Sales: [ 1-800-553-6387 ](tel:18005536387)   
+US/CAN | 5am-5pm PT 
+
+  * __
+
+[Product / Technical Support](//www.cisco.com/c/en/us/support/index.html)
+
+  * __
+
+[Training & Certification](https://www.cisco.com/site/us/en/learn/training-certifications/index.html)
+
+
+Save
+
+[Log in](/c/login/index.html?referer=/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.html) to Save Content 
+
+Translations
+
+Download
+
+Print
+
+### Available Languages
+
+
+### Download Options
+
+  * [PDF](/c/en/us/products/collateral/interfaces-modules/unified-computing-system-adapters/ucs-vic-15000-series-ds.pdf) (2.4 MB)   
+View with Adobe Reader on a variety of devices
+
+
+Updated:April 28, 2026
+
+#### Table of Contents
+
+  * Cisco Unified Computing System overview
+  * Portfolio overview
+  * Features and benefits
+  * Next-generation data center features
+  * Product specifications
+  * Ordering information
+  * System requirements
+  * Warranty information
+  * Product sustainability
+  * Cisco Unified Computing Services
+  * Why Cisco?
+  * Cisco Capital
+  * For more information
+  * Document history
+
+
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 ` `
 
 Cisco Unified Computing System overview

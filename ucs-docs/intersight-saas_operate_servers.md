@@ -4,11 +4,19 @@
 |---|---|
 | **URL Title** | Intersight SaaS Servers guide |
 | **URL** | https://intersight.com/help/saas/operate/servers |
+<<<<<<< HEAD
 | **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260821153740774/docs/cloud/data/articles/features/servers/operate/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_operate_servers.html` |
 | **File type** | HTML |
 | **Fetched on** | 2026-08-24 09:16:06 |
+=======
+| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/articles/features/servers/operate/en/index.html |
+| **HTML Title** | Document |
+| **Source file** | `ucs-docs-raw/html/intersight-saas_operate_servers.html` |
+| **File type** | HTML |
+| **Fetched on** | 2026-06-30 16:42:29 |
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 

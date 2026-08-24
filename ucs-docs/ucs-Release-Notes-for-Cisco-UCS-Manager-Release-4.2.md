@@ -8,7 +8,11 @@
 | **HTML Title** | Release Notes for Cisco UCS Manager, Release 4.2 |
 | **Source file** | `ucs-docs-raw/html/cisco-ucs-manager-rn-4-2.html` |
 | **File type** | HTML |
+<<<<<<< HEAD
 | **Fetched on** | 2026-08-24 09:16:56 |
+=======
+| **Fetched on** | 2026-06-30 16:43:06 |
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 

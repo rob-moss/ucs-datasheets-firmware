@@ -8,7 +8,11 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Server Firmware, Release 6.0 |
 | **Source file** | `ucs-docs-raw/html/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0.html` |
 | **File type** | HTML |
+<<<<<<< HEAD
 | **Fetched on** | 2026-08-24 09:15:51 |
+=======
+| **Fetched on** | 2026-06-30 16:41:43 |
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 
@@ -104,11 +108,15 @@ Intersight software features may not align with the Intersight firmware release 
 
 ## Page 4: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0/m-new-hardware-features.html
 
+<<<<<<< HEAD
 # New hardware features
 
 ## New hardware features in Infrastructure Firmware Release 6.0(2.260067) — None 
 
 ## New hardware features in Infrastructure Firmware Release 6.0(1.260006) — None 
+=======
+## New hardware features in Infrastructure Firmware Release 6.0(2.260067) — None 
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ## New hardware features in Infrastructure Firmware Release 6.0(2.260045)
 
@@ -231,6 +239,7 @@ The Fabric Interconnect supports an array of Gigabit Ethernet (GbE), Fibre Chann
 
 ## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0/m-security-fixes.html
 
+<<<<<<< HEAD
 # Security fixes  
   
 You can view the open issues, resolved issues, and security fixes using the [Cisco Bug Search Tool](https://bst.cloudapps.cisco.com/bugsearch). 
@@ -238,6 +247,9 @@ You can view the open issues, resolved issues, and security fixes using the [Cis
 ## Security fixes in Release 6.0(2.260067) — None 
 
 ## Security fixes in Release 6.0(1.260006) — None 
+=======
+## Security fixes in Release 6.0(2.260067) — None 
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ## Security fixes in Release 6.0(2.260045) — None 
 
@@ -251,6 +263,7 @@ You can view the open issues, resolved issues, and security fixes using the [Cis
 
 ## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0/m-resolved-issues.html
 
+<<<<<<< HEAD
 # Resolved issues
 
 You can view the open issues, resolved issues, and security fixes using the [Cisco Bug Search Tool](https://bst.cloudapps.cisco.com/bugsearch). 
@@ -264,11 +277,15 @@ Defect ID |  Description |  First Version Affected |  Resolved in Release
 [CSCwt42965](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwt42965) |  On Cisco UCS X9508 chassis connected to Cisco Intersight Virtual Appliance, chassis profile deployment may fail when a Simple Network Management Protocol (SNMP) policy is attached to the profile. When this condition occurs, the device SNMP policy deployment fails, and the chassis profile does not fully deploy in Cisco Intersight.  This issue is resolved. |  4.3(6.250048) |  6.0(2.260067) 4.3(6.260036)  
   
 ## Resolved issues in Release 6.0(1.260006)
+=======
+## Resolved issues in Release 6.0(2.260067)
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 This section provides a brief description of the resolved issues.
 
 Defect ID |  Description |  First Version Affected |  Resolved in Release  
 ---|---|---|---  
+<<<<<<< HEAD
 [CSCwt36346](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwt36346) |  On Cisco UCS 6500 Series and 6400 Series Fabric Interconnects, when the allowed VLAN string on the vEth interface exceeds 900 characters, data corruption occurs over time. This eventually causes both Fabric Interconnects to perform a hard reboot. The generic error message `Reset Requested due to Fatal Module Error` is displayed when the `show system reset-reason` command is run.  This issue is resolved. |  6.0(1.250198) |  6.0(1.260006) 6.0(2.260045)  
 [CSCwn65484](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwn65484) |  Cisco UCS Fabric Interconnects (6400, 6500, 6600 Series, and Cisco UCS X-Series Direct UCS 9108 100G) may generate a missing FCOE_NPV_PKG license warning. The warning message is: %LICMGR-2-LOG_LIC_MISSING_WARNING.  Despite this warning, the FCoE feature continues to operate normally under honor-based licensing. This issue is resolved. |  4.3(3.240007) |  6.0(1.260006)  
   
@@ -297,11 +314,15 @@ CSCws83445 |  On Cisco UCS 6664 Fabric Interconnects, certain unified ports fail
 ## Resolved issues in Release 6.0(1.250229) — None 
 
 ## Resolved issues in Release 6.0(1.250198) — None 
+=======
+[CSCwt42965](https://cdetsng.cisco.com/webui/#view=CSCwt42965) |  On Cisco UCS X9508 chassis connected to Cisco Intersight Virtual Appliance, chassis profile deployment may fail when a Simple Network Management Protocol (SNMP) policy is attached to the profile. When this condition occurs, the device SNMP policy deployment fails, and the chassis profile does not fully deploy in Cisco Intersight.  This issue is resolved. |  4.3(6.250048) |  6.0(2.260067) 4.3(6.260036)
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 
 ## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0/m-open-issues.html
 
+<<<<<<< HEAD
 # Open issues
 
 You can view the open issues, resolved issues, and security fixes using the [Cisco Bug Search Tool](https://bst.cloudapps.cisco.com/bugsearch). 
@@ -309,6 +330,9 @@ You can view the open issues, resolved issues, and security fixes using the [Cis
 ## Open issues in Release 6.0(2.260067) — None 
 
 ## Open issues in Release 6.0(1.260006) — None 
+=======
+## Open issues in Release 6.0(2.260067) — None 
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ## Open issues in Release 6.0(2.260045)
 
@@ -347,11 +371,15 @@ CSCwo44245 |  On UCS FI 6664, Fibre Channel (FC) ports using 64G SFP modules may
 
 ## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/b-rn-cisco-intersight-managed-mode-server-firmware-release-6-0/m-known-issues.html
 
+<<<<<<< HEAD
 # Known issues  
   
 ## Known issues in Release 6.0(2.260067) — None 
 
 ## Known issues in Release 6.0(1.260006) — None 
+=======
+## Known issues in Release 6.0(2.260067) — None 
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ## Known issues in Release 6.0(2.260045)
 
@@ -578,6 +606,7 @@ Beginning with Intersight Infrastructure Firmware Release 6.0(1), the following 
 
 ## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/m-resolved-issues.html
 
+<<<<<<< HEAD
 # Resolved issues
 
 You can view the open issues, resolved issues, and security fixes using the [Cisco Bug Search Tool](https://bst.cloudapps.cisco.com/bugsearch). 
@@ -591,11 +620,15 @@ Defect ID |  Description |  First Version Affected |  Resolved in Release
 [CSCwt42965](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwt42965) |  On Cisco UCS X9508 chassis connected to Cisco Intersight Virtual Appliance, chassis profile deployment may fail when a Simple Network Management Protocol (SNMP) policy is attached to the profile. When this condition occurs, the device SNMP policy deployment fails, and the chassis profile does not fully deploy in Cisco Intersight.  This issue is resolved. |  4.3(6.250048) |  6.0(2.260067) 4.3(6.260036)  
   
 ## Resolved issues in Release 6.0(1.260006)
+=======
+## Resolved issues in Release 6.0(2.260067)
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 This section provides a brief description of the resolved issues.
 
 Defect ID |  Description |  First Version Affected |  Resolved in Release  
 ---|---|---|---  
+<<<<<<< HEAD
 [CSCwt36346](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwt36346) |  On Cisco UCS 6500 Series and 6400 Series Fabric Interconnects, when the allowed VLAN string on the vEth interface exceeds 900 characters, data corruption occurs over time. This eventually causes both Fabric Interconnects to perform a hard reboot. The generic error message `Reset Requested due to Fatal Module Error` is displayed when the `show system reset-reason` command is run.  This issue is resolved. |  6.0(1.250198) |  6.0(1.260006) 6.0(2.260045)  
 [CSCwn65484](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwn65484) |  Cisco UCS Fabric Interconnects (6400, 6500, 6600 Series, and Cisco UCS X-Series Direct UCS 9108 100G) may generate a missing FCOE_NPV_PKG license warning. The warning message is: %LICMGR-2-LOG_LIC_MISSING_WARNING.  Despite this warning, the FCoE feature continues to operate normally under honor-based licensing. This issue is resolved. |  4.3(3.240007) |  6.0(1.260006)  
   
@@ -624,16 +657,23 @@ CSCws83445 |  On Cisco UCS 6664 Fabric Interconnects, certain unified ports fail
 ## Resolved issues in Release 6.0(1.250229) — None 
 
 ## Resolved issues in Release 6.0(1.250198) — None 
+=======
+[CSCwt42965](https://cdetsng.cisco.com/webui/#view=CSCwt42965) |  On Cisco UCS X9508 chassis connected to Cisco Intersight Virtual Appliance, chassis profile deployment may fail when a Simple Network Management Protocol (SNMP) policy is attached to the profile. When this condition occurs, the device SNMP policy deployment fails, and the chassis profile does not fully deploy in Cisco Intersight.  This issue is resolved. |  4.3(6.250048) |  6.0(2.260067) 4.3(6.260036)
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 
 ## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/m-new-hardware-features.html
 
+<<<<<<< HEAD
 # New hardware features
 
 ## New hardware features in Infrastructure Firmware Release 6.0(2.260067) — None 
 
 ## New hardware features in Infrastructure Firmware Release 6.0(1.260006) — None 
+=======
+## New hardware features in Infrastructure Firmware Release 6.0(2.260067) — None 
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ## New hardware features in Infrastructure Firmware Release 6.0(2.260045)
 
@@ -756,6 +796,7 @@ The Fabric Interconnect supports an array of Gigabit Ethernet (GbE), Fibre Chann
 
 ## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/m-open-issues.html
 
+<<<<<<< HEAD
 # Open issues  
   
 You can view the open issues, resolved issues, and security fixes using the [Cisco Bug Search Tool](https://bst.cloudapps.cisco.com/bugsearch). 
@@ -763,6 +804,9 @@ You can view the open issues, resolved issues, and security fixes using the [Cis
 ## Open issues in Release 6.0(2.260067) — None 
 
 ## Open issues in Release 6.0(1.260006) — None 
+=======
+## Open issues in Release 6.0(2.260067) — None 
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ## Open issues in Release 6.0(2.260045)
 
@@ -801,11 +845,15 @@ CSCwo44245 |  On UCS FI 6664, Fibre Channel (FC) ports using 64G SFP modules may
 
 ## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Server-Firmware/6-0/m-known-issues.html
 
+<<<<<<< HEAD
 # Known issues  
   
 ## Known issues in Release 6.0(2.260067) — None 
 
 ## Known issues in Release 6.0(1.260006) — None 
+=======
+## Known issues in Release 6.0(2.260067) — None 
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ## Known issues in Release 6.0(2.260045)
 

@@ -8,7 +8,11 @@
 | **HTML Title** | Cisco UCS Manager - Configuration Guides |
 | **Source file** | `ucs-docs-raw/html/products-installation-and-configuration-guides-list.html` |
 | **File type** | HTML |
+<<<<<<< HEAD
 | **Fetched on** | 2026-05-27 10:50:55 |
+=======
+| **Fetched on** | 2026-06-30 16:37:36 |
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 
@@ -88,19 +92,19 @@ use JS to put chosen tab in here or hide
 
   * 25-Feb-2026
 
-[ Security Advisory: Cisco NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-n3kn9k_aci_lldp_dos-NdgRrrA3.html)
-
-  * 25-Feb-2026
-
 [ Security Advisory: Cisco FXOS and UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsciv-wGYtC78q.html)
 
   * 25-Feb-2026
 
-[ Security Advisory: Cisco UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-cmdinj-GvxLPeSB.html)
+[ Security Advisory: Cisco NX-OS Software Link Layer Discovery Protocol Denial of Service Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-n3kn9k_aci_lldp_dos-NdgRrrA3.html)
 
   * 25-Feb-2026
 
 [ Security Advisory: Cisco UCS Manager Software Privilege Escalation Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-afwae-mOgUfyLn.html)
+
+  * 25-Feb-2026
+
+[ Security Advisory: Cisco UCS Manager Software Command Injection Vulnerability ](/c/en/us/support/docs/csa/cisco-sa-ucsm-cmdinj-GvxLPeSB.html)
 
 
 ### Document Categories
@@ -159,10 +163,17 @@ use JS to put chosen tab in here or hide
 
 #### Release Notes
 
+<<<<<<< HEAD
   * [Release Notes for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-4_3.html)04-May-2026updated
   * [Release Bundle Contents for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-4-3.html)04-May-2026updated
   * [Release Notes for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-6_0.html)23-Apr-2026
   * [Release Bundle Contents for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-6-0.html)23-Apr-2026
+=======
+  * [Release Notes for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-6_0.html)25-Jun-2026updated
+  * [Release Notes for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_release-notes-ucsm-4_3.html)25-Jun-2026updated
+  * [Release Bundle Contents for Cisco UCS Manager, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-6-0.html)25-Jun-2026updated
+  * [Release Bundle Contents for Cisco UCS Manager, Release 4.3 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/ciscoucsmanager-rb-4-3.html)25-Jun-2026updated
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
   * [Cisco UCS Manager Internal Dependencies, Release 6.0 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/b_cisco-ucs-manager-internal-dependencies-release-6-0.html)23-Apr-2026
   * [Release Notes for Cisco UCS Tools ](/c/en/us/td/docs/unified_computing/ucs/release/notes/UCS-Tools-ESXi-RN.html)16-Apr-2026
   * [Release Notes for Cisco UCS Manager, Release 4.2 ](/c/en/us/td/docs/unified_computing/ucs/release/notes/cisco-ucs-manager-rn-4-2.html)14-Apr-2026
@@ -351,6 +362,8 @@ Reset
 ## Solved Issues
 
 ## Community Documents
+
+community.js \-->
 
 ![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
 

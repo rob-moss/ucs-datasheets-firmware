@@ -8,7 +8,11 @@
 | **HTML Title** | Cisco HyperFlex Data Platform Administration Guide, Release 5.5 |
 | **Source file** | `ucs-docs-raw/html/b-hxdp-admin-guide-5-5.html` |
 | **File type** | HTML |
+<<<<<<< HEAD
 | **Fetched on** | 2026-08-24 09:19:03 |
+=======
+| **Fetched on** | 2026-06-30 16:59:35 |
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 
@@ -10192,6 +10196,7 @@ Trash icon  |  Click the Trash icon to delete a rule.
 
 ---
 
+<<<<<<< HEAD
 ## Page 18: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_manage_storage_replication_adapter.html
 
 # Managing Storage Replication Adapter
@@ -10216,6 +10221,9 @@ HXDP Release 5.5(1x) users that need SRA admin content should refer to the **[Ma
 ---
 
 ## Page 19: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_users.html
+=======
+## Page 18: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m_hxdp_users.html
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 # Managing Users
 
@@ -10339,7 +10347,7 @@ Create the user.
 
 ---
 
-## Page 20: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-hxdp-iscsi-manage.html
+## Page 19: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-hxdp-iscsi-manage.html
 
 # Managing iSCSI
 
@@ -11257,7 +11265,7 @@ You should now have a disk with volume accessible and the volume label with read
 
 ---
 
-## Page 21: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-html-plug-in-for-vmware-vcenter.html
+## Page 20: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-html-plug-in-for-vmware-vcenter.html
 
 # Cisco HyperFlex HTML Plugin for VMware vCenter
 
@@ -12845,7 +12853,7 @@ Help support for the support bundle generation tool is hx-plugin-supportbundle -
 
 ---
 
-## Page 22: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-appendix.html
+## Page 21: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/b-hxdp-admin-guide-5-5/m-appendix.html
 
 # Appendix
 
@@ -12865,7 +12873,7 @@ Port Mappings |  Identifies the ports that are used for specific cable connectio
 
 ---
 
-## Page 23: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_maintenance_prep.html
+## Page 22: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_maintenance_prep.html
 
 # Preparing for HX Storage Cluster Maintenance  
   
@@ -13649,7 +13657,7 @@ Perform the following steps on the storage controller VM of the modified ESX hos
 
 ---
 
-## Page 24: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-html-plug-in-for-vmware-vcenter.html
+## Page 23: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-html-plug-in-for-vmware-vcenter.html
 
 # Cisco HyperFlex HTML Plugin for VMware vCenter
 
@@ -15237,7 +15245,7 @@ Help support for the support bundle generation tool is hx-plugin-supportbundle -
 
 ---
 
-## Page 25: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxcluster_overview.html
+## Page 24: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxcluster_overview.html
 
 # HX Storage Cluster Overview 
 
@@ -15761,7 +15769,7 @@ For additional information about VMware snapshots, see the "Overview of virtual 
 
 ---
 
-## Page 26: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_manage.html
+## Page 25: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_cluster_manage.html
 
 # Managing HX Storage Clusters
 
@@ -16669,7 +16677,7 @@ Similarly, Intersight connected clusters are automatically updated to the latest
 
 ---
 
-## Page 27: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_encryption.html
+## Page 26: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_encryption.html
 
 # Managing Encryption
 
@@ -17227,7 +17235,7 @@ Consider the followings before performing the secure erase operation:
 
 ---
 
-## Page 28: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_disks_manage.html
+## Page 27: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m_hxdp_disks_manage.html
 
 # Managing Disks
 
@@ -17743,7 +17751,7 @@ Mixing storage disks type or size on a server or across the storage cluster is n
 
 ---
 
-## Page 29: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-hxdp-logging-in-interfaces.html
+## Page 28: https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/5-5/m-hxdp-logging-in-interfaces.html
 
 # Logging in to HX Data Platform Interfaces
 

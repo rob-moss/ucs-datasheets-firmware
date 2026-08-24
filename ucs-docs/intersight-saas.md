@@ -8,7 +8,11 @@
 | **HTML Title** | Intersight Help |
 | **Source file** | `saas` |
 | **File type** | HTML |
+<<<<<<< HEAD
 | **Fetched on** | 2026-08-24 09:16:04 |
+=======
+| **Fetched on** | 2026-06-30 16:42:26 |
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 
@@ -23,7 +27,8 @@ Create an account, claim a target and you are good to go.
 - [Security in the Intersight Platform](https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/intersight/solution-overview-c22-744638.html)
 
 ## Upcoming Releases
-Learn more about the new features and functionality in preview.
+Learn more about the upcoming features and functionality below.
+- [What's New: Upcoming Features](/help/whats_new/upcoming)
 
 ## What do you want to do today?
 - [Claim a target in Intersight](/help/getting_started/claim_targets#target_claim)

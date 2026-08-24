@@ -8,7 +8,11 @@
 | **HTML Title** | Servers - Unified Computing - Cisco UCS 2408 Fabric Extender Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-742624.html` |
 | **File type** | HTML |
+<<<<<<< HEAD
 | **Fetched on** | 2026-08-24 09:17:57 |
+=======
+| **Fetched on** | 2026-06-30 16:54:04 |
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 
@@ -1163,7 +1167,11 @@ Bandwidth like you’ve never known. Adopt 400G with scalability to 800G with co
 
 [Explore 400G and 800G](https://www.cisco.com/c/en/us/solutions/data-center/high-capacity-400g-data-center-networking/index.html)
 
+<<<<<<< HEAD
 ###  Cisco Optics 
+=======
+###  CIsco Optics 
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 Fiber-optic transceiver modules to accelerate your network connections.
 
@@ -1281,11 +1289,19 @@ Mitigate common vulnerability and exposure (CVE) threats in real time and help e
 
 ![Woman working on laptop](/content/dam/cisco-cdc/site/us/en/images/networking/domaindatacentercloud-carousel-370.jpg)
 
+<<<<<<< HEAD
 ##  Deliver AI everywhere with intelligent networking 
 
 Built for high performance, simplified operations and security at scale with enhanced visibility.
 
 [Explore AI Networking](/site/us/en/solutions/artificial-intelligence/ai-networking-in-data-center/index.html)
+=======
+##  Build the infrastructure that scales with you 
+
+Access validated architectures, deployment guides, and technical resources. Whether you're integrating compute, networking, storage, or security—find the blueprints and expertise to modernize on your terms. 
+
+[Explore modernization paths](https://www.cisco.com/site/us/en/solutions/data-center/index.html)
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ### Better together, built to perform 
 
@@ -1297,9 +1313,15 @@ Smoothly manage your multicloud network with the exceptional pairing of Cisco AC
 
 ###  Data Center Modernization 
 
+<<<<<<< HEAD
 Access validated architectures, deployment guides, and technical resources to modernize compute, networking, storage, and security with confidence.
 
 [Explore modernization paths](/site/us/en/solutions/data-center/index.html)
+=======
+Deliver AI networking everywhere—at the edge, in the data center, in the cloud, across enterprises, Neoclouds, sovereign clouds, telcos, and hyperscalers. 
+
+[Get started](https://www.cisco.com/site/us/en/solutions/artificial-intelligence/ai-networking-in-data-center/index.html)
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ###  Network-as-Code 
 
@@ -1315,8 +1337,21 @@ Next
 
 Find out how to transform your data center with a unified approach. Simplify operations, enhance security, and build a future-proof AI infrastructure tailored to your pace and needs. 
 
+<<<<<<< HEAD
 [Take the next step ](https://www.cisco.com/site/us/en/solutions/data-center/index.html)
 
+=======
+Cisco Nexus One delivers a unified operating model with advanced intelligence, observability, security, breakthrough silicon, and systems for seamless and secure data-center and AI-workload deployment. 
+
+[Explore Nexus One](https://www.cisco.com/site/us/en/products/networking/cloud-networking/nexus-one/index.html) [View solution overview](https://www.cisco.com/c/en/us/products/collateral/networking/ios-nx-os-software/nx-os/fabric-experience-so.html)
+
+##  Evolve your data center for tomorrow 
+
+Find out how to transform your data center with a unified approach. Simplify operations, enhance security, and build a future-proof AI infrastructure tailored to your pace and needs. 
+
+[Take the next step ](https://www.cisco.com/site/us/en/solutions/data-center/index.html)
+
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 ![](/content/dam/cisco-cdc/site/images/heroes/solutions/data-center/data-center-with-ai-overlay-2400x1028.jpg)
 
 ## We've got your back
@@ -1325,6 +1360,10 @@ Find out how to transform your data center with a unified approach. Simplify ope
 
 Get the most from your technology with expert guidance to plan and implement as well as AI-powered, expert-backed support with Cisco IQ.  
 
+<<<<<<< HEAD
+=======
+Guide your data-center networking transformation journey with embedded services and expertise.
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 [Explore Cisco Services](/site/us/en/services/index.html)
 

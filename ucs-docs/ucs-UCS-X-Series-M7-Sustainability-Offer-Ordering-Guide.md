@@ -8,7 +8,11 @@
 | **HTML Title** | Cisco |
 | **Source file** | `ucs-docs-raw/pdf/ucsx-sustain.pdf` |
 | **File type** | HTML (fallback from .pdf URL) |
+<<<<<<< HEAD
 | **Fetched on** | 2026-08-24 09:17:30 |
+=======
+| **Fetched on** | 2026-06-30 16:47:21 |
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 

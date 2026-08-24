@@ -8,7 +8,11 @@
 | **HTML Title** | Cisco UCS Faults and Error Messages Reference Guide 6.0 |
 | **Source file** | `ucs-docs-raw/html/b_cisco_ucs_faults_and_error_messages_reference-6-0.html` |
 | **File type** | HTML |
+<<<<<<< HEAD
 | **Fetched on** | 2026-08-24 09:17:12 |
+=======
+| **Fetched on** | 2026-06-30 16:44:38 |
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 
@@ -65982,8 +65986,11 @@ Fault Details
 
 ## Page 4: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/6-0/b_cisco_ucs_faults_and_error_messages_reference-6-0/m-fsm-faults-in-cisco-ucs-manager.html
 
+<<<<<<< HEAD
 # FSM Faults in Cisco UCS Manager
 
+=======
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 ## Cisco UCS FSM Faults
 
 ### fsmStFailEquipmentChassisRemoveChassis:CleanupVnicsLocal
@@ -161961,6 +161968,7 @@ Fault Details
     Affected MO: sys/fw-system
     
 
+<<<<<<< HEAD
 ### 
 
 ---
@@ -161968,6 +161976,11 @@ Fault Details
 ## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/6-0/b_cisco_ucs_faults_and_error_messages_reference-6-0/b_Cisco_UCS_Faults_and_Error_Messages_Reference_chapter_011.html
 
 # Call Home Faults
+=======
+---
+
+## Page 5: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/6-0/b_cisco_ucs_faults_and_error_messages_reference-6-0/b_Cisco_UCS_Faults_and_Error_Messages_Reference_chapter_011.html
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ## About Call Home Messages
 
@@ -162693,8 +162706,11 @@ When Call Home information is communicated in an e-mail format, the priority lev
 ---
 
 ## Page 6: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/6-0/b_cisco_ucs_faults_and_error_messages_reference-6-0/b_Cisco_UCS_Faults_and_Error_Messages_Reference_chapter_0100.html
+<<<<<<< HEAD
 
 # Transient Faults
+=======
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ## Troubleshooting Transient Faults
 
@@ -162746,8 +162762,11 @@ If you see this event, you can safely ignore it.
 ---
 
 ## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/6-0/b_cisco_ucs_faults_and_error_messages_reference-6-0/m-introduction-to-system-event-log-messages.html
+<<<<<<< HEAD
 
 # System Event Log Messages
+=======
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ## Information about System Event Log Messages
 
@@ -162786,10 +162805,13 @@ User can also manually backup or clear the SEL.
 ---
 
 ## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/6-0/b_cisco_ucs_faults_and_error_messages_reference-6-0/b_Cisco_UCS_Faults_and_Error_Messages_Reference_chapter_0110.html
+<<<<<<< HEAD
 
 # Baseboard Management Controller Messages
 
 ## Baseboard Management Controller Messages
+=======
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 The Baseboard Management Controller (BMC) provides the interface to the System Event Log (SEL). The SEL can be accessed from the system side as well as from other external interfaces. The BMC uses a message handler to route messages between the different interfaces. It also monitors and manages the system board, including temperatures and voltages. 
 
@@ -162984,8 +163006,11 @@ These are examples of SEL messages when temperature thresholds are crossed.
 ---
 
 ## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/Reference-Docs/Faults-Error-Msgs/6-0/b_cisco_ucs_faults_and_error_messages_reference-6-0/b_Cisco_UCS_Faults_and_Error_Messages_Reference_chapter_0111.html
+<<<<<<< HEAD
 
 # BIOS Messages
+=======
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ## POST Error Messages and Handling
 

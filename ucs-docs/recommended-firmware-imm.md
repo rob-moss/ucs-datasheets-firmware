@@ -1,7 +1,11 @@
 # IMM Recommended Firmware
 
 This data is fetched directly from software.cisco.com using the fetch-imm.py script.
+<<<<<<< HEAD
 Generated on 2026-08-24 09:19:06
+=======
+Generated on 2026-06-30 16:59:45
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 
 | SupportedModels | Version | Name | PlatformType |

@@ -8,7 +8,11 @@
 | **HTML Title** | Cisco UCS 6324 Fabric Interconnect Data Sheet |
 | **Source file** | `ucs-docs-raw/html/datasheet-c78-732207.html` |
 | **File type** | HTML |
+<<<<<<< HEAD
 | **Fetched on** | 2026-08-24 09:17:58 |
+=======
+| **Fetched on** | 2026-06-30 16:54:19 |
+>>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 
