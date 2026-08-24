@@ -4,19 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Nutanix Compute Only guide |
 | **URL** | https://intersight.com/help/saas/configure/nutanix/compute_nutanix |
-<<<<<<< HEAD
 | **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260821153740774/docs/cloud/data/articles/features/nutanix/compute/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_nutanix_compute_nutanix.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-24 09:16:15 |
-=======
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/articles/features/nutanix/compute/configure/en/index.html |
-| **HTML Title** | Document |
-| **Source file** | `ucs-docs-raw/html/intersight-saas_configure_nutanix_compute_nutanix.html` |
-| **File type** | HTML |
-| **Fetched on** | 2026-06-30 16:42:34 |
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
+| **Fetched on** | 2026-08-24 11:19:12 |
 
 ---
 
@@ -44,7 +36,6 @@ Cisco Compute-Only nodes| Nutanix Foundation allocates the following minimum res
   * vRAM (in GiB): 32  
 M.2 boot drives with M.2 RAID controller (480GB is recommended)  
 Storage protocol: NVMe over Fabrics (NVMeoF) over TCP  
-<<<<<<< HEAD
 25Gb Ethernet network connection recommended between Cisco Nutanix Compute cluster and Everpure FlashArray (10Gb will be supported)  
 Minimum 3 CO nodes  
 Hypervisor| AHV only  
@@ -52,13 +43,6 @@ Management|
   * Intersight Managed Mode (IMM)
   * Intersight Standalone Mode (ISM)  
 Everpure| FlashArray //X, //XL, and, //C  
-=======
-25Gb Ethernet network connection recommended between Cisco Nutanix Compute cluster and Pure Storage FlashArray (10Gb will be supported)  
-Minimum 3 CO nodes  
-Hypervisor| AHV only  
-Management| Intersight Management Mode (IMM)  
-Pure Storage| FlashArray //X, //XL, and, //C  
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 Nutanix Cloud Platform Software| Supported Nutanix Software
   * Nutanix Cloud Infrastructure (NCI)
   * Nutanix Cloud Manager (NCM)

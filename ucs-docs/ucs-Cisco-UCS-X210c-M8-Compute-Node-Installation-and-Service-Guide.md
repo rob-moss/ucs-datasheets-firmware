@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X210c M8 Compute Node Installation and Service Guide |
 | **Source file** | `ucs-docs-raw/html/b-x210c-m8-install.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-24 09:16:53 |
+| **Fetched on** | 2026-08-24 11:19:27 |
 
 ---
 

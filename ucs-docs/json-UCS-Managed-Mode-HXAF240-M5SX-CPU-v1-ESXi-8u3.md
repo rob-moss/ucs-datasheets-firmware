@@ -8,11 +8,7 @@
 | **HTML Title** |  |
 | **Source file** | `ucs-docs-raw/json/searchResults__q_f1521103ab.json` |
 | **File type** | JSON |
-<<<<<<< HEAD
-| **Fetched on** | 2026-08-24 09:18:53 |
-=======
-| **Fetched on** | 2026-06-30 16:59:01 |
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
+| **Fetched on** | 2026-08-24 11:20:36 |
 
 ---
 

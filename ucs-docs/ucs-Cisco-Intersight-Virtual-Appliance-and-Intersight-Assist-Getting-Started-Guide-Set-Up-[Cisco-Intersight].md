@@ -8,11 +8,7 @@
 | **HTML Title** | Cisco Intersight Virtual Appliance and Intersight Assist Getting Started Guide - Set Up [Cisco Intersight] |
 | **Source file** | `ucs-docs-raw/html/m_setting_up_appliance.html` |
 | **File type** | HTML |
-<<<<<<< HEAD
-| **Fetched on** | 2026-08-24 09:16:04 |
-=======
-| **Fetched on** | 2026-06-30 16:42:23 |
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
+| **Fetched on** | 2026-08-24 11:19:10 |
 
 ---
 
@@ -1466,11 +1462,7 @@ Multi-node |  Four-node cluster |  Intersight Virtual Appliance management capab
   * Nutanix AHV
 
   
-<<<<<<< HEAD
 ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
-=======
-![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 **Attention** | 
 
 * * *
@@ -2003,11 +1995,7 @@ Cisco Intersight Assist and Cisco Intersight runs on the following minimum suppo
 
 ## Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere
 
-<<<<<<< HEAD
 Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Cisco Intersight Virtual Appliance supports VMware High Availability (VMHA) to ensure non-disruptive operation of the virtual appliance. For more information about VMHA, refer to the relevant documentation on the VMware by Broadcom website.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
-=======
-Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Cisco Intersight Virtual Appliance supports VMware High Availability (VMHA) to ensure non-disruptive operation of the virtual appliance. For more information about VMHA, refer to the relevant documentation on the VMware by Broadcom website.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 **Attention** | 
 
 * * *
@@ -4970,17 +4958,11 @@ The Console UI also displays warning messages when the following errors are enco
 
 ## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_00.html
 
-<<<<<<< HEAD
 # Installation
 
 ## Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere
 
 Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Cisco Intersight Virtual Appliance supports VMware High Availability (VMHA) to ensure non-disruptive operation of the virtual appliance. For more information about VMHA, refer to the relevant documentation on the VMware by Broadcom website.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg)  
-=======
-## Installing Cisco Intersight Virtual Appliance and Intersight Assist on VMware vSphere  
-  
-Cisco Intersight Virtual Appliance is distributed as a deployable virtual machine contained in an Open Virtual Appliance (OVA) file format, ZIP file format, or a TAR file format. Cisco Intersight Virtual Appliance supports VMware High Availability (VMHA) to ensure non-disruptive operation of the virtual appliance. For more information about VMHA, refer to the relevant documentation on the VMware by Broadcom website.  ![](https://www.cisco.com/content/dam/en/us/td/i/templates/note.gif)  
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 **Attention** | 
 
 * * *
@@ -5006,14 +4988,6 @@ Use the steps in the following task to install and deploy the appliance on VMwar
 ### Before you begin
 
 Ensure the following:
-<<<<<<< HEAD
-=======
-
-  * Download the latest version of the Cisco Intersight Virtual Appliance and Assist installer package from the [Cisco Software Download](https://software.cisco.com/download/home/286319499/type) site. 
-
-  * If you are installing Private Virtual Appliance, also download the latest Cisco Intersight Private Virtual Appliance software package (intersight-appliance-bundle) from the Intersight Software Downloads Portal. For more information, see [Downloading Software Packages from Intersight Virtual Appliance](m_setting_up_appliance.html#Cisco_Task_in_List_GUI.dita_a1922fb8-cac5-42c4-90e1-8370efd7e7e5). 
-
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
   * Download the latest version of the Cisco Intersight Virtual Appliance and Assist installer package from the [Cisco Software Download](https://software.cisco.com/download/home/286319499/type) site. 
 
@@ -5026,10 +5000,7 @@ Ensure the following:
 * * *
 
   * Before installing and setting up Intersight Virtual Appliance, it is strongly recommended that you read the information provided in the [System Requirements](m_appliance_overview.html#Cisco_Reference.dita_a6ea1ddc-e212-4367-9579-e9320b64f1b5) section. 
-<<<<<<< HEAD
   * It is not recommended to deploy Intersight Virtual Appliance on a VM cluster that will be managed by the same appliance. However, you can deploy the appliance with a standalone C-Series based VM cluster or with a HyperFlex cluster, as long as an external witness is used. 
-=======
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
   * Setting up a single-node Intersight Virtual Appliance requires an IP address and two DNS records for that IP address. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node for advantage tier metrics data collection in Intersight Virtual Appliance (two-node cluster) requires an IPv4 address and 2 DNS records for that IP address for the single-node (appliance management node) and requires an IPv4 address and one DNS record for that IP address for the metrics node. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
   * Setting up a multi-node cluster for high availability in Intersight Virtual Appliance requires three hostnames, three IP addresses, and one DC-CNAME for each hostname. For more information about IP addresses and Hostname requirements, see [IP Address and Hostname Requirements](m_appliance_overview.html#Cisco_Reference.dita_196c5c81-10b1-4bef-a3de-39375a05a75e). 
@@ -5115,7 +5086,6 @@ The diagnostic tool aims to:
 
 
 For more information, see [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb) and [Intersight Virtual Appliance Console UI](m_troubleshooting.html#intersight-virtual-appliance-console-ui). 
-<<<<<<< HEAD
 
 For a demonstration of the Intersight Virtual Appliance Installation and troubleshooting, watch [Cisco Intersight Appliance Installation and Debug](https://www.youtube.com/watch?v=vHoDfixdi4g&feature=youtu.be). 
 
@@ -5562,8 +5532,6 @@ The diagnostic tool aims to:
 
 
 For more information, see [Maintenance Shell for Intersight Virtual Appliance and Intersight Assist](m_troubleshooting.html#reference_fjp_2qs_shb) and [Intersight Virtual Appliance Console UI](m_troubleshooting.html#intersight-virtual-appliance-console-ui). 
-=======
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 For a demonstration of the Intersight Virtual Appliance Installation and troubleshooting, watch [Cisco Intersight Appliance Installation and Debug](https://www.youtube.com/watch?v=vHoDfixdi4g&feature=youtu.be). 
 
@@ -6724,7 +6692,6 @@ You can track the upload progress by clicking on the **Requests** icon. When the
 
 ## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_0110.html
 
-<<<<<<< HEAD
 # Dashboard Settings 
 
   * Configuring a Banner Message for Displaying Before the Login Screen
@@ -6757,8 +6724,6 @@ You can track the upload progress by clicking on the **Requests** icon. When the
   * Intersight Virtual Appliance Settings
 
 
-=======
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 ## Configuring a Banner Message for Displaying Before the Login Screen
 
 You can configure a banner message in Intersight Virtual Appliance. When enabled, the configured banner message will be displayed before the user login screen. 
@@ -6782,7 +6747,6 @@ You can configure a banner message in Intersight Virtual Appliance. When enabled
   
 * * *
 
-<<<<<<< HEAD
 ## Backing Up Data
 
 Backing up Intersight Virtual Appliance regularly is essential. Without regular backups, there is no automatic way to reconstruct configuration settings and recreate profiles and policies. 
@@ -8212,11 +8176,6 @@ SettingsAPI SettingsOAuth2 Tokens |  View a list of OAuth2 tokens and the detail
 # Overview  
   
 Overview of Cisco Intersight Virtual Appliance
-=======
----
-
-## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Getting_Started_Guide_chapter_0111.html
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ## About Cisco Intersight Virtual Appliance
 
@@ -8280,7 +8239,6 @@ For latest updates on Intersight Virtual Appliance features and functionality, s
 
 ## Licensing Requirements for Intersight Virtual Appliance
 
-<<<<<<< HEAD
 Cisco Intersight Virtual Appliance uses a subscription-based license that is required to use the features of the appliance. Intersight Essentials is a subscription license delivered via Cisco Smart Licensing. Please contact your Cisco sales representative, channel partner, or reseller to purchase Intersight Essentials. Enabled platforms are those Cisco UCS and Cisco HyperFlex systems with a Cisco Intersight device connector, including eligible Cisco UCS Manager, Cisco IMC, and Cisco HyperFlex software. 
 
 For a **Connected Virtual Appliance** deployment, you must register the license as part of the initial setup of Cisco Intersight Virtual Appliance. After you complete the installation of the appliance, launch the UI and log in with the password that you set during installation, connect the appliance to Intersight, and register the license. 
@@ -8885,8 +8843,6 @@ Cisco Intersight Assist and Cisco Intersight runs on the following minimum suppo
 
 ---
 
-=======
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 ## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_02.html
 
 # Software Update

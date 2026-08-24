@@ -8,11 +8,7 @@
 | **HTML Title** | Single sign-on SAML (Security Assertion Markup Language) protocol - Microsoft identity platform | Microsoft Learn |
 | **Source file** | `ucs-docs-raw/html/single-sign-on-saml-protocol.html` |
 | **File type** | HTML |
-<<<<<<< HEAD
-| **Fetched on** | 2026-08-24 09:19:05 |
-=======
-| **Fetched on** | 2026-06-30 16:59:42 |
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
+| **Fetched on** | 2026-08-24 11:20:38 |
 
 ---
 
@@ -22,11 +18,7 @@ Table of contents  Exit editor mode
 
 Ask Learn Ask Learn
 
-<<<<<<< HEAD
 Reading mode Table of contents Read in English Add Add to Plans [ Edit ](https://github.com/MicrosoftDocs/entra-docs/blob/main/docs/identity-platform/single-sign-on-saml-protocol.md)
-=======
-Reading mode Table of contents Read in English Add Add to plan [ Edit ](https://github.com/MicrosoftDocs/entra-docs/blob/main/docs/identity-platform/single-sign-on-saml-protocol.md)
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 * * *
 
@@ -366,21 +358,12 @@ Phone call | `Telephony`, or `MobileTwoFactorContract` when another factor is al
 Email | `MobileOneFactorUnregistered`, or `MobileTwoFactorContract` when another factor is also completed | One-time passcode delivered by email.  
 FIDO2 security key (phishing-resistant MFA) | `SmartcardPKI` | A FIDO2 security key, reported as a smartcard-backed certificate with a private key and PIN.  
 Passkey - device-bound (phishing-resistant MFA) | `SmartcardPKI` | A device-bound passkey.  
-<<<<<<< HEAD
 Passkey - synced (phishing-resistant MFA) | `SoftwarePKI` | A synced passkey, reported as a software-based PKI credential.  
 Windows Hello for Business (phishing-resistant MFA) | `SmartcardPKI` | Windows Hello for Business.  
 Certificate-based authentication (phishing-resistant MFA for multi-factor CBA) | `SmartcardPKI` when used as MFA; `X509` for single-factor CBA | Certificate-based authentication (CBA).  
 Temporary Access Pass (TAP) | `Unspecified` | A Temporary Access Pass.  
 Windows Integrated Authentication (Kerberos) | `Kerberos` | Windows Integrated Authentication.  
 Device based X509 authentication | `X509` | A certificate on the device proves the device's identity  
-=======
-Passkey - synced | `SoftwarePKI` | A synced passkey, reported as a software-based PKI credential.  
-Windows Hello for Business (phishing-resistant MFA) | `SmartcardPKI` | Windows Hello for Business.  
-Certificate-based authentication (phishing-resistant MFA) | `SmartcardPKI` when used as MFA; `X509` for single-factor CBA | Certificate-based authentication (CBA).  
-Temporary Access Pass (TAP) | `Unspecified` | A Temporary Access Pass.  
-Windows Integrated Authentication (Kerberos) | `Kerberos` | Windows Integrated Authentication.  
-Federated IdP (pass-through) | Existing rules apply | The value passes through from the federated identity provider.  
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
   
 #### authnmethodreferences
 
@@ -414,7 +397,6 @@ Phone call | `otp`, plus `multipleauthn` when MFA is completed with another fact
 Email | `otp`, plus `multipleauthn` when MFA is completed with another factor | One-time passcode delivered by email.  
 FIDO2 security key (phishing-resistant MFA) | `fido`, `multipleauthn` | A FIDO2 security key.  
 Passkey - device-bound (phishing-resistant MFA) | `fido`, `multipleauthn` | A device-bound passkey.  
-<<<<<<< HEAD
 Passkey - synced (phishing-resistant MFA) | `fido`, `multipleauthn` | A synced passkey.  
 Windows Hello for Business (phishing-resistant MFA) | `hwk`, `multipleauthn` | Windows Hello for Business, reported as a hardware-bound key.  
 Certificate-based authentication (phishing-resistant MFA for multi-factor CBA) | `x509`, plus `multipleauthn` (default for multifactor CBA, or when MFA is completed with another factor for single-factor CBA) | Certificate-based authentication.  
@@ -424,15 +406,6 @@ Device based X509 authentication | `x509` | A certificate on the device proves t
   
 Microsoft includes `x509` in the `amr` claim for both single-factor Certificate-Based Authentication (CBA) and device-based X.509 authentication. However, the presence of x509 alone does not qualify as phishing-resistant MFA (PRMFA). To meet PRMFA requirements, the user must also complete an additional MFA factor, which will be reflected by other authentication method indicators in the authentication context.
 
-=======
-Passkey - synced | `fido`, `multipleauthn` | A synced passkey.  
-Windows Hello for Business (phishing-resistant MFA) | `hwk`, `multipleauthn` | Windows Hello for Business, reported as a hardware-bound key.  
-Certificate-based authentication (phishing-resistant MFA) | `x509`, plus `multipleauthn` (default for multifactor CBA, or when MFA is completed with another factor for single-factor CBA) | Certificate-based authentication.  
-Temporary Access Pass (TAP) | `otp`, `multipleauthn` | A Temporary Access Pass.  
-Windows Integrated Authentication (Kerberos) | `wia` | Windows Integrated Authentication.  
-Federated IdP (pass-through) | Existing rules apply | The value passes through from the federated identity provider.  
-  
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 Note
 
 The `amr` claim is sent by default for Salesforce applications, so no configuration change is required for those apps. For all other SAML applications, the application administrator must add the optional `amr` claim with the `include_granular_amr` additional property to the app registration to request AMR claims. The `multipleauthn` and `mfa` values are emitted only when the user has completed MFA.

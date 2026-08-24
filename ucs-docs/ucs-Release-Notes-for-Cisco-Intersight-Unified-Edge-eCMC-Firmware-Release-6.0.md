@@ -8,114 +8,12 @@
 | **HTML Title** | Release Notes for Cisco Intersight Unified Edge eCMC Firmware Release, 6.0 |
 | **Source file** | `ucs-docs-raw/html/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html` |
 | **File type** | HTML |
-<<<<<<< HEAD
-| **Fetched on** | 2026-08-24 09:15:45 |
-=======
-| **Fetched on** | 2026-06-30 16:41:32 |
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
+| **Fetched on** | 2026-08-24 11:19:08 |
 
 ---
 
 ## Page 1: https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html
 
-<<<<<<< HEAD
-=======
-  * Skip to content
-  * Skip to search
-  * Skip to footer
-
-
-# Release Notes for Cisco Intersight Unified Edge eCMC Firmware Release, 6.0
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.pdf) (320.3 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:March 27, 2026
-
-Bias-Free Language
-
-### Bias-Free Language
-
-The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. [Learn more](https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html) about how Cisco is using Inclusive Language.
-
-Contact Cisco 
-
-  * [Open a TAC Case Online](https://mycase.cloudapps.cisco.com/case)
-  * US/Canada 800-553-2447
-  * [Worldwide Support Phone Numbers](//www.cisco.com/c/en/us/support/web/tsd-cisco-worldwide-contacts.html)
-  * [All Tools](//www.cisco.com/c/en/us/support/web/tools-catalog.html)
-  * [![Feedback](//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png) Feedback](https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=)
-
-
-Save
-
-[Log in](/c/login/index.html?referer=/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.html) to Save Content 
-
-Download
-
-Print
-
-### Available Languages
-
-
-### Download Options
-
-  * [PDF](/c/en/us/td/docs/unified_computing/Intersight/Infra-Firmware/Avatar-infra/b-rn-cisco-intersight-unified-edge-Infra-firmware-release-6-0.pdf) (320.3 KB)   
-View with Adobe Reader on a variety of devices
-
-
-Updated:March 27, 2026
-
-#### Table of Contents
-
-  * Cisco Intersight Unified Edge eCMC Firmware Release, 6.0
-  * Overview
-  * Revision History
-  * New software features
-  * New hardware features
-  * New Hardware Features in Release 6.0(2.260143)
-  * New Hardware Features in Release 6.0(2.260034)
-  * New Hardware Features in Release 6.0(2.260026)
-  * New Hardware Features in Release 6.0(1.251006)
-  * New Hardware Features in Release 6.0(1.251005)
-  * Security fixes
-  * Security fixes in Release 6.0(2.260143)
-  * Security fixes in Release 6.0(2.260034)
-  * Security fixes in Release 6.0(2.260026)
-  * Security fixes in Release 6.0(1.251006)
-  * Security fixes in Release 6.0(1.251005)
-  * Resolved issues
-  * Resolved issues in Release 6.0(2.260143)
-  * Resolved issues in Release 6.0(2.260034)
-  * Resolved issues in Release 6.0(2.260026)
-  * Resolved issues in Release 6.0(1.251006)
-  * Resolved issues in Release 6.0(1.251005)
-  * Open issues
-  * Open issues in Release 6.0(2.260143)
-  * Open issues in Release 6.0(2.260034)
-  * Open issues in Release 6.0(2.260026)
-  * Open issues in Release 6.0(1.251006)
-  * Open issues in Release 6.0(1.251005)
-  * Compatibility
-  * Cross-Version Firmware Support
-  * Related resources
-
-
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 ` `
 
 Cisco Intersight Unified Edge eCMC Firmware Release, 6.0
@@ -289,7 +187,7 @@ This section provides a brief description of the open issues.
 
 Defect ID |  Description |  Workaround |  First Version Affected  
 ---|---|---|---  
-[CSCwr78089](https://cdetsng.cisco.com/webui/#view=CSCwr78089) |  After replacing an eCMC (controller module hardware), the new unit does not automatically match its firmware version with the other eCMC when that unit is already connected to Intersight. This causes the two controllers to have different firmware versions, leading to a mismatch alarm in Intersight. This issue happens after replacing a single eCMC. |  To fix the mismatch, upgrade the controller modules from Intersight (only the one with older software will update), or update the replaced module manually using the command-line interface (CLI), which is a text-based management tool. |  6.0(1.251005)  
+[CSCwr78089](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwr78089) |  After replacing an eCMC (controller module hardware), the new unit does not automatically match its firmware version with the other eCMC when that unit is already connected to Intersight. This causes the two controllers to have different firmware versions, leading to a mismatch alarm in Intersight. This issue happens after replacing a single eCMC. |  To fix the mismatch, upgrade the controller modules from Intersight (only the one with older software will update), or update the replaced module manually using the command-line interface (CLI), which is a text-based management tool. |  6.0(1.251005)  
   
 Compatibility
 

@@ -1,11 +1,7 @@
 # UCS Manager Recommended Firmware
 This data is fetched directly from software.cisco.com using the fetch-ucsm.py script.
 
-<<<<<<< HEAD
-Generated on 2026-08-24 10:20:26
-=======
-Generated on 2026-06-30 16:59:45
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
+Generated on 2026-08-24 11:20:40
 
 ### Recommended firmware versions for Infrastructure
 The recommended firmware versions for Cisco UCS Manager are:

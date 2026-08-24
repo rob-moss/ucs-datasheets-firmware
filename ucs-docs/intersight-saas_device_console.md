@@ -4,19 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Device Console |
 | **URL** | https://intersight.com/help/saas/device_console |
-<<<<<<< HEAD
 | **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260821153740774/docs/cloud/data/articles/device_console/en/index.html |
 | **HTML Title** | Device Console |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_device_console.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-24 09:16:32 |
-=======
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/articles/device_console/en/index.html |
-| **HTML Title** | Device Console |
-| **Source file** | `ucs-docs-raw/html/intersight-saas_device_console.html` |
-| **File type** | HTML |
-| **Fetched on** | 2026-06-30 16:42:43 |
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
+| **Fetched on** | 2026-08-24 11:19:21 |
 
 ---
 
@@ -376,64 +368,6 @@ Copy / Move| Copies or moves a selected file or directory to a destination direc
      1. Select **Copy** or **Move**.
      2. Selects the destination directory.
   3. Select **Confirm**.
-
-  
-  
-**File and directory management** is a secure, web-based interface in the Device Console that allows you to upload, browse, download, and manage files and directories in supported storage locations.
-
-The storage feature provides these benefits:
-
-  * enables self-service file management without CLI access
-
-  * reduces dependency on manual or external tooling
-
-  * provides a scalable foundation for future removable storage support, and
-
-  * supports secure, chunked uploads for large files up to 2 GiB.
-
-
-**Storage Tab**
-
-The Storage tab displays the directory structure and operations for Unified Edge servers using Edge Chassis Management Controllers (eCMC).
-
-The table describes the parameters in the Storage tab.
-
-Parameter| Description  
----|---  
-Partition| Name of the current workspace directory.Select the directory to view subdirectories or files on the device.  
-Size| Total file size of the directory.  
-Capacity| Percentage of used storage space.  
-  
-**Edit View**
-
-Select the gear icon to change the displayed table columns.
-
-Use these actions to manage the directory structure and operations for servers:
-
-Action| Description| Notes  
----|---|---  
-New Directory| Creates a new directory.Enter a directory name and select Create.| You cannot create a new directory in the techsupport and core directories.  
-Upload| **Before you begin** The maximum file size for an upload is 2 GB.Follow these steps to upload a file.
-
-  1. Click Browse and select the file that you want to upload.
-  2. Decide whether to upload the file or cancel the action.Note:
-  * If you decide to upload the file, select Upload.
-  * If you decide to cancel the action, select Cancel.
-
-| You cannot upload files to the techsupport and core directories.  
-Download| Downloads the selected files to your browser.| The Download operation applies only to files.  
-Delete| Deletes a directory.| The directory must be empty before it can be deleted.  
-Copy / Move| To copy or move a directory or file:
-
-  1. In the Storage table view, select the directory and select Copy/Move.
-  2. Select Copy or Move.
-  3. Select the directory to copy or move.
-  4. Click Confirm.Note:Use the Search field to quickly locate specific files or directories in a large list.
-
-| You cannot copy or move a directory:
-
-  * if the source and destination are the same, or
-  * if permissions are restricted.
 
   
   

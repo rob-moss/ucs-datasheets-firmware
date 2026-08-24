@@ -4,19 +4,11 @@
 |---|---|
 | **URL Title** | Intersight SaaS Configure Nutanix HCI guide |
 | **URL** | https://intersight.com/help/saas/configure/nutanix/hci_nutanix |
-<<<<<<< HEAD
 | **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260821153740774/docs/cloud/data/articles/features/nutanix/hci/configure/en/index.html |
 | **HTML Title** | Document |
 | **Source file** | `ucs-docs-raw/html/intersight-saas_configure_nutanix_hci_nutanix.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-24 09:16:14 |
-=======
-| **Long URL** | https://cdn.intersight.com/components/an-hulk/1.0.11-20260626102158280/docs/cloud/data/articles/features/nutanix/hci/configure/en/index.html |
-| **HTML Title** | Document |
-| **Source file** | `ucs-docs-raw/html/intersight-saas_configure_nutanix_hci_nutanix.html` |
-| **File type** | HTML |
-| **Fetched on** | 2026-06-30 16:42:33 |
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
+| **Fetched on** | 2026-08-24 11:19:12 |
 
 ---
 

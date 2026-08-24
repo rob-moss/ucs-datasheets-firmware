@@ -8,11 +8,7 @@
 | **HTML Title** | Cisco UCS X-Series Modular System - Sales Resources |
 | **Source file** | `ucs-docs-raw/html/sales-resources-listing.html` |
 | **File type** | HTML |
-<<<<<<< HEAD
-| **Fetched on** | 2026-08-24 09:17:50 |
-=======
-| **Fetched on** | 2026-06-30 16:53:38 |
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
+| **Fetched on** | 2026-08-24 11:19:42 |
 
 ---
 
@@ -279,7 +275,6 @@ Explore the unique partnership between Cisco and NVIDIA to improve AI security a
 
 [Discover now ](https://www.cisco.com/site/us/en/solutions/artificial-intelligence/secure-ai-factory/index.html)
 
-<<<<<<< HEAD
 ![](/content/dam/cisco-cdc/site/images/logos/3rd-party/omdia-750x422.jpg)
 
 ###  Your infrastructure's AI-era reality check by Omdia 
@@ -287,17 +282,6 @@ Explore the unique partnership between Cisco and NVIDIA to improve AI security a
 See how Omdia independently tested and validated Cisco UCS X-Series M8 migrations and verified up to 63% lower power use. How much could you save? 
 
 [Download report](https://www.cisco.com/site/us/en/products/computing/offers/assets/omdia-technical-validation-report.html)
-=======
-* * *
-
-![IDC logo](/content/dam/cisco-cdc/site/images/logos/3rd-party/IDC-logo.svg)
-
-###  New IDC research: Infrastructure built for the AI era 
-
-See why organizations are turning to modular compute and unified lifecycle management as infrastructure environments grow in scale and complexity. 
-
-[Get IDC Spotlight](https://www.cisco.com/site/us/en/products/computing/offers/assets/intersight-idc-spotlight.html)
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ![](/content/dam/cisco-cdc/site/images/photography/products/computing/forrester-tei-report-stats-v2.svg)
 
@@ -385,21 +369,11 @@ The Cisco UCS X-Series provides functionalities of both blade and rack servers b
 
 Benefits include:
 
-<<<<<<< HEAD
   * Adapt to any application: Consolidate onto a platform that combines the density and efficiency of blade servers with the expandability of rack servers.
   * Prepare for the future: Embrace new technology and cut risk with a system designed to support future technology with management delivered as SaaS.
   * Increase efficiency: Get better performance with 3rd, 4th, and 5th Gen Intel Xeon Scalable or 4th and 5th Gen AMD EPYC(tm) processors and up to 12 TB memory. Use Cisco UCS M8 servers with Intel Xeon 6 processors for HPC and data center applications
   * Consolidate your older Cisco UCS M4 and M5 servers onto the Cisco UCS X-Series, with the following improvements:
 
-=======
-Webinar | On demand 
-
-##  Modernize for AI—without a rip‑and‑replace 
-
-Learn how award‑winning Reist Telecom built an AI‑ready foundation by running VMs and containers side by side on a single, secure, cost‑efficient Cisco platform. 
-
-[Watch on demand ](https://experiences.cisco.com/amer/from-virtualization-to-ai-ready)
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 o Reduce total power consumption by 31%
 

@@ -8,11 +8,7 @@
 | **HTML Title** | Cisco UCS Server BIOS Tokens in Intersight Managed Mode - Introduction to Intersight Managed Mode Server Bios Tokens [Cisco Intersight] |
 | **Source file** | `ucs-docs-raw/html/b_UCS_BIOS_Tokens_Guide_chapter_01.html` |
 | **File type** | HTML |
-<<<<<<< HEAD
-| **Fetched on** | 2026-08-24 09:15:57 |
-=======
-| **Fetched on** | 2026-06-30 16:42:07 |
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
+| **Fetched on** | 2026-08-24 11:19:09 |
 
 ---
 
@@ -6780,13 +6776,9 @@ Error Check Scrub |  Allows you to enable a memory device to perform memory chec
 Rank Margin Tool |  Allows automated memory margin testing and is used to identify DDR margins at the rank level. |  4.0(2) and later |  C220 M7, C240 M7, X210c M7, X410c M7, C220 M8, C240 M8, X210c M8, X410c M8, XE1X0M8 |  Enabled, Disabled |   
 Adaptive Refresh Management Level |  Selects Adaptive Refresh Management (ARFM) Level when refresh management (RFM) is required. |  4.0(2) and later |  C220 M7, C240 M7, X210c M7, X410c M7, C220 M8, C240 M8, X210c M8, X410c M8,XE1X0M8  | **Default** , Level A, Level B, Level C  |   
 Reset After Sync-Flood |  Enable AB to forward downstream sync-flood message to system controller. |  6.0(2x) |  C845A M8 |  **Enable** , Disable, Auto  |   
-<<<<<<< HEAD
 Delay Reset After Sync-Flood |  This control delay time for system reset when a Sync Flood is detected. The delayed minutes range from 5 to 255 minutes 0 ~ 4.  |  6.0(2x) |  C845A M8 |  Values are 0 to 255. Default is 5. |   
   
 ### 
-=======
-Delay Reset After Sync-Flood |  This control delay time for system reset when a Sync Flood is detected. The delayed minutes range from 5 to 255 minutes 0 ~ 4.  |  6.0(2x) |  C845A M8 |  Values are 0 to 255. Default is 5. | 
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---
 

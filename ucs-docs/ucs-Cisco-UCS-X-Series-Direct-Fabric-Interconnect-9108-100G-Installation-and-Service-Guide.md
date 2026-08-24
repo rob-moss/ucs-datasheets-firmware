@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X-Series Direct Fabric Interconnect 9108 100G Installation and Service Guide |
 | **Source file** | `ucs-docs-raw/html/ucs-x-series-direct-9108-100g.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-24 09:16:46 |
+| **Fetched on** | 2026-08-24 11:19:25 |
 
 ---
 

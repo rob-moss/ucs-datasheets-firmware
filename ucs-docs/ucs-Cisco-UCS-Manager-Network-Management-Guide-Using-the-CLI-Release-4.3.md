@@ -8,11 +8,7 @@
 | **HTML Title** | Cisco UCS Manager Network Management Guide Using the CLI, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_cli_ucsm_network_management_guide_4_3.html` |
 | **File type** | HTML |
-<<<<<<< HEAD
-| **Fetched on** | 2026-08-24 09:15:12 |
-=======
-| **Fetched on** | 2026-06-30 16:40:24 |
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
+| **Fetched on** | 2026-08-24 11:19:02 |
 
 ---
 
@@ -4708,7 +4704,6 @@ The following example disables fabric channel member port 1 31 on fabric port ch
 
 ---
 
-<<<<<<< HEAD
 ## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_0101.html
 
 # VLAN
@@ -6506,9 +6501,6 @@ The following example shows how to delete a VLAN 22 on the vNIC 37 in a service 
 ---
 
 ## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_0110.html
-=======
-## Page 7: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_0110.html
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 # LAN Pin Groups
 
@@ -6567,7 +6559,7 @@ Include the pin group in a vNIC template.
 
 ---
 
-## Page 8: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_0111.html
+## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_0111.html
 
 # Mac Pools
 
@@ -6650,7 +6642,7 @@ The following example shows how to delete the MAC pool named pool4 and commit th
 
 ---
 
-## Page 9: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01000.html
+## Page 10: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01000.html
 
 # Quality of Service
 
@@ -7195,7 +7187,7 @@ The following example displays the watchdog settings:
 
 ---
 
-## Page 10: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/m_cli_port_security.html
+## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/m_cli_port_security.html
 
 # Port Security
 
@@ -7292,7 +7284,7 @@ To return the violation mode to the default condition (restrict), use the no swi
 
 ---
 
-## Page 11: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01001.html
+## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01001.html
 
 # Upstream Disjointed Layer-2 Networks  
   
@@ -7563,7 +7555,7 @@ The following example displays the full details for uplink Ethernet ports assign
 
 ---
 
-## Page 12: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01011.html
+## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/b_CLI_UCSM_Network_Management_Guide_chapter_01011.html
 
 # Network-Related Policies
 
@@ -9948,7 +9940,6 @@ The following example creates a VMQ connection policy:
 
 ---
 
-<<<<<<< HEAD
 ## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_cli_ucsm_network_management_guide_4_3/m-cli-macsec-4-3.html
 
 # Configuring MACsec
@@ -11036,9 +11027,6 @@ The following example shows the MACsec statistics:
 ---
 
 ## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0100.html
-=======
-## Page 13: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0100.html
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 # Lan Ports and Port Channels
 
@@ -14718,7 +14706,6 @@ The following example disables fabric channel member port 1 31 on fabric port ch
 
 ---
 
-<<<<<<< HEAD
 ## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/m-cli-macsec-4-3.html
 
 # Configuring MACsec
@@ -15806,9 +15793,6 @@ The following example shows the MACsec statistics:
 ---
 
 ## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_4_1_chapter_011.html
-=======
-## Page 14: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_4_1_chapter_011.html
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 # Lan Connectivity
 
@@ -16565,7 +16549,6 @@ The following example shows how to set the fabric interconnect to end-host mode 
 
 ---
 
-<<<<<<< HEAD
 ## Page 18: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0101.html
 
 # VLAN
@@ -18363,9 +18346,6 @@ The following example shows how to delete a VLAN 22 on the vNIC 37 in a service 
 ---
 
 ## Page 19: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_01000.html
-=======
-## Page 15: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_01000.html
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 # Quality of Service
 
@@ -18910,7 +18890,7 @@ The following example displays the watchdog settings:
 
 ---
 
-## Page 16: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_01011.html
+## Page 20: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_01011.html
 
 # Network-Related Policies
 
@@ -21295,7 +21275,7 @@ The following example creates a VMQ connection policy:
 
 ---
 
-## Page 17: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0110.html
+## Page 21: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Network-Mgmt/4-3/b_CLI_UCSM_Network_Management_Guide_chapter_0110.html
 
 # LAN Pin Groups
 

@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS C885A M8 Rack Server Data Sheet |
 | **Source file** | `ucs-docs-raw/html/ucs-c885a-m8-ds.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-24 09:17:40 |
+| **Fetched on** | 2026-08-24 11:19:38 |
 
 ---
 

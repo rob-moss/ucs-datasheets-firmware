@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS X9508 Server Chassis Installation Guide - Intelligent Fabric Module (IFM) Field Replaceable Unit Instructions [Cisco UCS X-Series Modular System] |
 | **Source file** | `ucs-docs-raw/html/m_ifms-installation-instructions.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-24 09:16:51 |
+| **Fetched on** | 2026-08-24 11:19:27 |
 
 ---
 

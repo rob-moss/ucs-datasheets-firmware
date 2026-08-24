@@ -8,11 +8,7 @@
 | **HTML Title** | Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3 |
 | **Source file** | `ucs-docs-raw/html/b_imm_infra_fw_rn_lb.html` |
 | **File type** | HTML |
-<<<<<<< HEAD
-| **Fetched on** | 2026-08-24 09:15:50 |
-=======
-| **Fetched on** | 2026-06-30 16:41:42 |
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
+| **Fetched on** | 2026-08-24 11:19:08 |
 
 ---
 
@@ -97,11 +93,7 @@
 
 **First Published: November 15, 2023**
 
-<<<<<<< HEAD
 **Last Updated: August 17, 2026**
-=======
-**Last Updated: June 25, 2026**
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 # Release Notes for Cisco Intersight Managed Mode Infrastructure Firmware, Release 4.3
 
@@ -123,11 +115,8 @@ The following table shows the online change history for this document.
 
 Revision Date  | Description   
 ---|---  
-<<<<<<< HEAD
 August 17, 2026 |  Updated release notes for Cisco UCS X-Series Direct Fabric Interconnect Infrastructure Firmware version 4.3(6.260049).  It does not include any new hardware feature, security fixes, resolved issues, or open issues. Corresponding server firmware release notes have been updated for the following versions: X-Series M8, M7 5.4(0.260056) and C-Series M8, M7 4.3(6.260058).   
 July 14, 2026 |  C-Series Server Firmware version 4.3(2.260020) has been released. There is no corresponding Infrastructure Firmware release.   
-=======
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 June 25, 2026 |  Updated release notes for Cisco UCS 6500 and 6400 Series Fabric Interconnect Infrastructure firmware release 4.3(6.260036) and Cisco UCS X-Series Direct Fabric Interconnect Infrastructure Firmware version 4.3(6.260036).  This release includes updates to:
 
   * Resolved issues in Release 4.3(6.260036)
@@ -232,11 +221,8 @@ For more information on platform-specific hardware support, see [Release Notes f
   
 ---|---  
   
-<<<<<<< HEAD
 ### New hardware support in Infrastructure Firmware Release 4.3(6.260049) — None 
 
-=======
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 ### New hardware support in Infrastructure Firmware Release 4.3(6.260036) — None 
 
 ### New Hardware Support in Infrastructure Firmware Release 4.3(6.250135) and 4.3(6.250084) — None 
@@ -493,11 +479,8 @@ UCSX-S9108-100G |  — |  9.2
   
 ## Security Fixes
 
-<<<<<<< HEAD
 ### Security fixes in Release 4.3(6.260049) — None 
 
-=======
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 ### Security fixes in Release 4.3(6.260036) — None 
 
 ### Security Fixes in Release 4.3(6.250135) and 4.3(6.250084) — None 
@@ -544,24 +527,16 @@ You can view the open issues, resolved issues, and security fixes using the [Cis
 
 ### Resolved Caveats
 
-<<<<<<< HEAD
 #### Resolved issues in Release 4.3(6.260049) — None 
 
-=======
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 #### Resolved issues in Release 4.3(6.260036)
 
 This section provides a brief description of the resolved issues.
 
 Defect ID |  Description |  First Version Affected |  Resolved in Release  
 ---|---|---|---  
-<<<<<<< HEAD
 [CSCwt48678](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwt48678) |  On Cisco UCS X-series chassis with UCSX-I-9108-100G Intelligent Fabric Modules (IFM), after running the factory reset command `debug platform software cmcctrl factory` to securely erase the embedded MultiMediaCard (eMMC) of an IFM, the IFM may become non-operational immediately following the reboot. When this condition occurs, the IFM becomes offline and no LED indicators are visible, but the chassis PSU and fans remain operational. There is no workaround after the IFM becomes non-operational. It is recommended to contact Cisco TAC for assistance.  This issue is resolved. |  4.3(6.250048) |  4.3(6.260036)  
 [CSCwt42965](https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwt42965) |  On Cisco UCS X9508 chassis connected to Cisco Intersight Virtual Appliance, chassis profile deployment may fail when a Simple Network Management Protocol (SNMP) policy is attached to the profile. When this condition occurs, the device SNMP policy deployment fails, and the chassis profile does not fully deploy in Cisco Intersight.  This issue is resolved. |  4.3(6.250048) |  4.3(6.260036) 6.0(2.260067)  
-=======
-[CSCwt48678](https://cdetsng.cisco.com/webui/#view=CSCwt48678) |  On Cisco UCS X-series chassis with UCSX-I-9108-100G Intelligent Fabric Modules (IFM), after running the factory reset command `debug platform software cmcctrl factory` to securely erase the embedded MultiMediaCard (eMMC) of an IFM, the IFM may become non-operational immediately following the reboot. When this condition occurs, the IFM becomes offline and no LED indicators are visible, but the chassis PSU and fans remain operational. There is no workaround after the IFM becomes non-operational. It is recommended to contact Cisco TAC for assistance.  This issue is resolved. |  4.3(6.250048) |  4.3(6.260036)  
-[CSCwt42965](https://cdetsng.cisco.com/webui/#view=CSCwt42965) |  On Cisco UCS X9508 chassis connected to Cisco Intersight Virtual Appliance, chassis profile deployment may fail when a Simple Network Management Protocol (SNMP) policy is attached to the profile. When this condition occurs, the device SNMP policy deployment fails, and the chassis profile does not fully deploy in Cisco Intersight.  This issue is resolved. |  4.3(6.250048) |  4.3(6.260036) 6.0(2.260067)  
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
   
 #### Resolved issues in Release 4.3(6.260026)
 
@@ -718,11 +693,8 @@ CSCwf00940 |  UCSX-210C-M6, UCSX-210C-M7, and UCSX-410C-M7 Compute Nodes fail to
   
 ### Open Caveats
 
-<<<<<<< HEAD
 #### Open issues in Release 4.3(6.260049) — None 
 
-=======
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 #### Open issues in Release 4.3(6.260036) — None 
 
 #### Open Caveats in Release 4.3(6.250135) and 4.3(6.250084) — None 

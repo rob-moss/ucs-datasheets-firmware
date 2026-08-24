@@ -8,11 +8,7 @@
 | **HTML Title** | Cisco UCS X-Series Modular System |
 | **Source file** | `ucs-docs-raw/html/series.html` |
 | **File type** | HTML |
-<<<<<<< HEAD
-| **Fetched on** | 2026-08-24 09:17:51 |
-=======
-| **Fetched on** | 2026-06-30 16:53:38 |
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
+| **Fetched on** | 2026-08-24 11:19:42 |
 
 ---
 
@@ -297,20 +293,6 @@ Community
   * [Cisco Community Home](https://community.cisco.com/t5/technology-and-support/ct-p/technology-support)
   * [Ask a Question![login required](/etc/designs/cdc/fw/i/icon_lock_small.png)](//supportforums.cisco.com/node/add/discussion)
 
-<<<<<<< HEAD
-=======
-* * *
-
-![IDC logo](/content/dam/cisco-cdc/site/images/logos/3rd-party/IDC-logo.svg)
-
-###  New IDC research: Infrastructure built for the AI era 
-
-See why organizations are turning to modular compute and unified lifecycle management as infrastructure environments grow in scale and complexity. 
-
-[Get IDC Spotlight](https://www.cisco.com/site/us/en/products/computing/offers/assets/intersight-idc-spotlight.html)
-
-![](/content/dam/cisco-cdc/site/images/photography/products/computing/forrester-tei-report-stats-v2.svg)
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
   * Select a Community Board
 
@@ -343,82 +325,6 @@ Unless specified, documentation for the Cisco UCS X-Series Modular System is app
   * Cisco UCS X9516 X-Fabric Module
 
 
-<<<<<<< HEAD
 ![](//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345)
-=======
-[Discover more about dense servers](https://www.cisco.com/site/us/en/products/computing/servers-unified-computing-systems/dense-ai-gpu-servers/index.html)
-
-![Cisco RTX PRO Server image](/content/dam/cisco-cdc/site/images/photography/products/computing/servers-unified-computing-systems/pcie-nv-link-cross-link.jpg)
-
-###  PCIe and NVLink GPU servers for AI at scale 
-
-Boost AI performance with C845A and C240 rack servers with PCIe GPU density or NVLink-enabled configurations.
-
-[Explore Cisco RTX PRO servers](https://www.cisco.com/site/us/en/products/computing/servers-unified-computing-systems/ucs-c-series-rack-servers/pcie-gpu-servers/index.html)
-
-![Cisco RTX PRO Server image](/content/dam/cisco-cdc/site/images/photography/products/computing/servers-unified-computing-systems/x-series-for-ai-thumbnail.jpg)
-
-###  UCS X-Series for AI servers 
-
-Bridge the gap between IT and AI applications with a modular platform that enables unmatched flexibility.
-
-[Explore Cisco AI servers](/site/us/en/solutions/cisco-on-cisco/ai-ready-automated-network-observability.html)
-
-* * *
-
-Show more
-
-* * *
-
-##  Evolve your data center for tomorrow 
-
-Find out how to transform your data center with a unified approach. Simplify operations, enhance security, and build a future-proof AI infrastructure tailored to your pace and needs. 
-
-[Take the next step ](https://www.cisco.com/site/us/en/solutions/data-center/index.html)
-
-![](/content/dam/cisco-cdc/site/images/heroes/solutions/data-center/data-center-with-ai-overlay-2400x1028.jpg)
-
-![](/content/dam/cisco-cdc/site/images/poster-image/nutanix-658x370.png)
-
-##  Cisco Compute Hyperconverged with Nutanix 
-
-Drive simplicity and modernize your hyperconverged infrastructure (HCI) with the industry's most complete hyperconverged solution.
-
-[See infographic](https://www.cisco.com/c/m/en_us/products/computing/hyperconverged/nutanix/cisco-hci-nutanix-infographic.html)
-
-## Jump-start your UCS X-Series journey with limited-time savings
-
-###  Cisco UCS X-Series savings offer 
-
-New X-Series customers receive a free chassis and free Fabric Interconnect.
-
-This offer expires soon.
-
-[Save now](https://www.cisco.com/c/en/us/solutions/computing/ucsx-chassis-promotional-offer.html?ccid=cc002971&oid=porcsm028956)
-
-###  Cisco UCS X-Series M7 offer 
-
-Get one free UCS X210c M7 Compute Node for every three you buy.
-
-[Start saving](https://www.cisco.com/c/en/us/solutions/cloud-computing/promotions-free-trials/x-series-m7-offer.html?ccid=cc002971&oid=podetr031310)
-
-## Read customer reviews
-
-Previous
-
-Next
-
-Webinar | On demand 
-
-##  Modernize for AI—without a rip‑and‑replace 
-
-Learn how award‑winning Reist Telecom built an AI‑ready foundation by running VMs and containers side by side on a single, secure, cost‑efficient Cisco platform. 
-
-[Watch on demand ](https://experiences.cisco.com/amer/from-virtualization-to-ai-ready)
-
-__
-
-Hello, how can I help?
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ---

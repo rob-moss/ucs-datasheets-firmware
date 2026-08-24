@@ -8,11 +8,7 @@
 | **HTML Title** | IMM Configuration Sharing Across Organizations and Policy Cloning White Paper |
 | **Source file** | `ucs-docs-raw/html/imm-con-sharing-across-organization-cloning-wp.html` |
 | **File type** | HTML |
-<<<<<<< HEAD
-| **Fetched on** | 2026-08-24 09:16:54 |
-=======
-| **Fetched on** | 2026-06-30 16:42:59 |
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
+| **Fetched on** | 2026-08-24 11:19:27 |
 
 ---
 
@@ -351,27 +347,15 @@ Additional resources
   * Skip to footer
 
 
-<<<<<<< HEAD
 [ Cisco.com Worldwide ](https://www.cisco.com "Cisco.com Worldwide")
-=======
-![](/content/dam/cisco-cdc/site/images/heroes/services/cisco-iq-2400x1028.jpg)
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ###  Products and Services
 
-<<<<<<< HEAD
 Close
 
 ###  Solutions
 
 Close
-=======
-##  Proactive, precise, and tailored for you. Meet Cisco IQ. 
-
-What’s Cisco IQ? Where human expertise meets agentic intelligence in every Cisco Services engagement. Built on 40 years of Cisco knowledge.
-
-Watch video (01:20) [Learn more](/site/us/en/services/support/index.html)
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 ###  Support
 
@@ -409,7 +393,6 @@ CLOSE
 
 [ How to buy](/site/us/en/buy/index.html?linkclickid=hdr-utilnav-howtobuy)
 
-<<<<<<< HEAD
 Partners
 
 Profile
@@ -419,121 +402,14 @@ Profile
 EN US
 
 Close
-=======
-Watch the video to see how Cisco IQ - where human expertise meets agentic intelligence - elevates support and professional services from reactive fixes to strategic, predictive powerhouses, giving you zero surprises.
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 Close
 
-<<<<<<< HEAD
 Close
-=======
-###  Cisco Professional Services 
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 Close
 
-<<<<<<< HEAD
 Close
-=======
-[Get started with professional services](/site/us/en/services/professional/index.html)
-
-###  Cisco Support 
-
-Anticipate and act to prevent issues before they happen with a unified interface and personalized insights.
-
-[Get started with support](/site/us/en/services/support/index.html)
-
-###  Learn with Cisco 
-
-Empower your team to tackle any challenge with skills development, industry-recognized certifications and product training.
-
-[Get started with Learn with Cisco](/site/us/en/learn/training-certifications/index.html)
-
-* * *
-
-Show more
-
-* * *
-
-## Design the right solution for your business
-
-###  Turn AI’s possibility into reality 
-
-Is your data center ready for AI? What about your teams? Learn how to identify the right solution for your needs, debunk common myths, and infuse security from the start.
-
-[Transform your data center](/site/us/en/services/modern-data-center/index.html)
-
-###  Create productive connections 
-
-Empower your people with richer, more secure interactions wherever they gather and do work. Make your teams more effective and deliver better experiences.
-
-[Build the right workplace](/site/us/en/services/future-workplace/index.html)
-
-## Technology
-
-[ ![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/collaboration-services-320x320.png) Collaboration ](https://www.cisco.com/c/en_ca/solutions/collaboration/index.html)
-
-[ ![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/security-services-320x320.png) Security ](/site/us/en/products/security/services/index.html)
-
-[ ![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/observability-services-320x320.png) Observability ](https://www.splunk.com/en_us/products/observability.html)
-
-[ ![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/operations-services-320x320.png) Service provider ](/site/us/en/solutions/service-provider/index.html)
-
-[ ![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/data-center-services-320x320.png) Computing ](/site/us/en/products/computing/index.html)
-
-[ ![](/content/dam/cisco-cdc/site/images/icons-and-shapes/services/networking-services-320x320.png) Enterprise networking ](/site/us/en/products/networking/index.html)
-
-## Four stories, one trusted partner
-
-Leaders across industries rely on Cisco services to cut through complexity and achieve stronger, smarter outcomes.
-
-![](/content/dam/cisco-cdc/site/images/photography/nyc-health-544x306.png)
-
-###  Simplifying complexity for better care 
-
-NYC Health + Hospitals was able to enhance visibility and security across its IT infrastructure to ensure every patient receives the best possible care.
-
-[See NYC Health + Hospitals’ story](https://www.cisco.com/c/m/en_us/customer-experience/success-stories/customer/nyc-health-hospitals.html)
-
-![](/content/dam/cisco-cdc/site/images/photography/workday-544x306.png)
-
-###  Minimizing manual tasks with automation 
-
-Workday improved its security and resilience by implementing standardized configurations with the support of a more robust network.
-
-[See Workday’s story](https://www.cisco.com/c/m/en_us/customer-experience/success-stories/customer/workday.html)
-
-![](/content/dam/cisco-cdc/site/images/photography/united-airlines-544x306.png)
-
-###  Streamlining travel through real-time support 
-
-United Airlines transformed its customer service operations, resulting in substantially improved efficiency and accessibility for customers seeking assistance.
-
-[See United Airlines’ story](https://www.cisco.com/c/m/en_us/customer-experience/customer-stories/united-airlines-customer-story.html)
-
-![](/content/dam/cisco-cdc/site/images/photography/elevating-connection-544x306.png)
-
-###  Elevating connections across a country 
-
-Norlys expanded the national network infrastructure of Denmark with minimal disruption while ensuring reliability and quality for the entire nation.
-
-[See Norlys’ story](https://www.cisco.com/c/m/en_us/customer-experience/customer-stories/norlys.html)
-
-* * *
-
-Show more
-
-* * *
-
-[See all stories](https://www.cisco.com/c/m/en_us/customer-experience/customer-stories.html)
-
-##  Take the next step today 
-
-Discover how Cisco services can help transform your technology deployment, adoption, and operations in the AI era.
-
-[Contact Cisco](/site/us/en/about/contact-cisco/index.html)
->>>>>>> b54dc188455b65bee6c95ef06462b9c67adf0b3a
 
 __
 

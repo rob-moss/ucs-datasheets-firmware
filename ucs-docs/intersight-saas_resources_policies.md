@@ -8,7 +8,7 @@
 | **HTML Title** | Resources |
 | **Source file** | `policies` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-24 09:15:45 |
+| **Fetched on** | 2026-08-24 11:19:08 |
 
 ---
 

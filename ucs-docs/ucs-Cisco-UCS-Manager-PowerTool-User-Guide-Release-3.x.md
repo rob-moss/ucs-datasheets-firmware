@@ -8,7 +8,7 @@
 | **HTML Title** | Cisco UCS Manager PowerTool User Guide, Release 3.x |
 | **Source file** | `ucs-docs-raw/html/b_cisco_ucsm_powertool_ug_release_3x.html` |
 | **File type** | HTML |
-| **Fetched on** | 2026-08-24 09:13:57 |
+| **Fetched on** | 2026-08-24 11:18:51 |
 
 ---
 
