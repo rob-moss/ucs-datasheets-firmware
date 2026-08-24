@@ -1,26 +1,25 @@
 #!/usr/bin/env python3
 """
-Fetch Cisco UCSM Recommended Firmware Versions (v4 — requests only)
-====================================================================
-Runs on any vanilla Linux/macOS host with only the 'requests' package.
+Fetch Cisco UCSM Recommended Firmware Versions (v5 — Playwright fallback)
+==========================================================================
+Runs on any vanilla Linux/macOS host with 'requests' and optionally 'playwright'.
 
   pip install requests
+  pip install playwright
+  playwright install chromium  # one-time setup
 
 How it works
 ------------
-software.cisco.com is an Angular SPA protected by Akamai Edge.  Plain GET
-requests receive HTTP 403 — but only because Akamai checks for session
-cookies that the browser normally acquires on the first page load.
+software.cisco.com is an Angular SPA protected by Akamai Edge. Akamai now 
+requires JavaScript execution to allow page loads.
 
-Two-step approach using a persistent requests.Session:
-  1. GET the download page  →  Akamai + Cisco set JSESSIONID / swsession.
-  2. GET the catalog API    →  Returns the full JSON release catalog.
+Two-stage approach:
+  Stage 1 (Requests):  Try plain requests with realistic browser headers.
+  Stage 2 (Playwright): If requests fails with 403, use Playwright to load
+                       the page with JavaScript execution.
 
-Catalog API endpoint (discovered from the Angular bundle chunk-CMUZA25P.js):
+After getting session cookies, the catalog API can be called:
   https://software.cisco.com/services/catalog/v1/releases?mdfid={mdfid}&softwareId={softwareId}
-
-The mdfid and softwareId values are embedded in the download page URL:
-  .../download/home/{mdfid}/type/{softwareId}/release/
 
 JSON response structure:
   {
@@ -32,9 +31,10 @@ JSON response structure:
   }
 
 Results are cached in recommended-firmware/jsonfiles/ for 24 hours.
-"""
 
-# Version 4.0 - complete rewrite with requests only, no Selenium or Playwright dependencies.
+Version 5.0 - Added Playwright fallback for Akamai JavaScript challenge.
+
+"""
 
 
 import json
@@ -45,6 +45,12 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 import requests as _requests
+
+try:
+    from playwright.sync_api import sync_playwright
+    HAS_PLAYWRIGHT = True
+except ImportError:
+    HAS_PLAYWRIGHT = False
 
 VERSION_RE = re.compile(r"^\d+\.\d+\(\d+\w*\)$")
 
@@ -78,13 +84,31 @@ CATALOG_BASE = "https://software.cisco.com/services/catalog/v1/releases"
 # Cache
 # ---------------------------------------------------------------------------
 CACHE_DIR     = Path(__file__).parent / "jsonfiles"
-CACHE_MAX_AGE = timedelta(hours=24)
+CACHE_MAX_AGE = timedelta(days=30)  # Increased from 24h due to API access restrictions
 
 UA = (
-    "Mozilla/5.0 (X11; Linux x86_64) "
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/126.0.0.0 Safari/537.36"
+    "Chrome/130.0.0.0 Safari/537.36"
 )
+
+# Complete headers to mimic a real browser and bypass Akamai protection
+HEADERS_BASE = {
+    "User-Agent": UA,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Cache-Control": "max-age=0",
+    "DNT": "1",
+    "Sec-Ch-Ua": '"Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"',
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": '"macOS"',
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+}
 
 
 def _api_url(page_url: str) -> str:
@@ -173,22 +197,24 @@ def try_requests(page_url: str) -> list[str] | None:
 
     try:
         sess = _requests.Session()
-        sess.headers["User-Agent"] = UA
+        sess.headers.update(HEADERS_BASE)
 
         # Step 1: load the page to acquire session cookies.
         print(f"  Loading page for session cookies ...")
-        r1 = sess.get(page_url, timeout=20)
+        r1 = sess.get(page_url, timeout=20, allow_redirects=True)
         r1.raise_for_status()
 
         # Step 2: call the catalog API (session cookie jar is populated).
         ts = int(time.time() * 1000)
         print(f"  Calling catalog API ...")
+        api_headers = {
+            "Accept":  "application/json, text/plain, */*",
+            "Referer": page_url,
+            "X-Requested-With": "XMLHttpRequest",
+        }
         r2 = sess.get(
             f"{api_url}&ts={ts}",
-            headers={
-                "Accept":  "application/json, text/plain, */*",
-                "Referer": page_url,
-            },
+            headers=api_headers,
             timeout=20,
         )
         r2.raise_for_status()
@@ -207,6 +233,73 @@ def try_requests(page_url: str) -> list[str] | None:
 
     print("  [FAIL] API responded but 'suggestedRelease' list is empty.")
     print(f"  [DEBUG] Response keys: {list(data.keys()) if isinstance(data, dict) else type(data)}")
+    return None
+
+
+def try_playwright(page_url: str) -> list[str] | None:
+    """Fetch using Playwright when requests fails (e.g., Akamai JS challenge).
+    
+    Playwright executes JavaScript, which bypasses Akamai's bot detection.
+    The API call is made directly from the browser context to preserve session state.
+    """
+    if not HAS_PLAYWRIGHT:
+        print("  [INFO] Playwright not installed. Install with: pip install playwright && playwright install chromium")
+        return None
+
+    print("\n[playwright] Fetching with browser automation ...")
+    api_url = _api_url(page_url)
+
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(
+                user_agent=HEADERS_BASE["User-Agent"],
+            )
+            page = context.new_page()
+
+            # Step 1: Load the page (JS executes, Akamai challenge passes).
+            print("  Loading page with Playwright ...")
+            page.goto(page_url, wait_until="networkidle", timeout=30000)
+
+            # Step 2: Call the catalog API directly from the browser.
+            # This preserves session cookies and headers that the page set up.
+            print("  Calling catalog API from browser context ...")
+            ts = int(time.time() * 1000)
+            
+            data_str = page.evaluate(f"""
+                async () => {{
+                    const response = await fetch(
+                        "{api_url}&ts={ts}",
+                        {{
+                            method: "GET",
+                            headers: {{
+                                "Accept": "application/json, text/plain, */*",
+                                "X-Requested-With": "XMLHttpRequest"
+                            }},
+                            credentials: "include"
+                        }}
+                    );
+                    if (!response.ok) throw new Error(`HTTP ${{response.status}}`);
+                    return await response.json();
+                }}
+            """)
+            
+            data = data_str
+
+            browser.close()
+
+    except Exception as exc:
+        print(f"  [ERROR] {exc}")
+        return None
+
+    _save_cache(api_url, data)
+
+    versions = _parse_suggested(data)
+    if versions:
+        print(f"  [OK] {versions}")
+        return versions
+
+    print("  [FAIL] Playwright succeeded but 'suggestedRelease' list is empty.")
     return None
 
 
@@ -245,7 +338,7 @@ def write_markdown(results: list[dict], output_path: Path) -> None:
 # ---------------------------------------------------------------------------
 def main() -> None:
     print("=" * 60)
-    print("Cisco UCS — Recommended Firmware Fetcher (v4)")
+    print("Cisco UCS — Recommended Firmware Fetcher (v5)")
     print(f"Targets: {len(TARGETS)}")
     print(f"Output:  {OUTPUT_PATH}")
     print("=" * 60)
@@ -258,7 +351,12 @@ def main() -> None:
 
         versions = try_requests(target["url"])
         if not versions:
-            print("  [FAIL] Could not retrieve versions.")
+            print("  [RETRY] Requests failed, trying Playwright ...")
+            versions = try_playwright(target["url"])
+        
+        if not versions:
+            print("  [FAIL] Could not retrieve new versions.")
+            print("  [INFO] API access is restricted by Cisco. Cached data will be used.")
             any_failed = True
 
         results.append({**target, "versions": versions})
